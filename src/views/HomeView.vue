@@ -1,0 +1,221 @@
+<script setup>
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
+import { useRouter } from 'vue-router'
+import { useAppStore } from '../stores/app.js'
+import { getDataOwner, getHomeStats } from '../db/index.js'
+import { STAGES } from '../utils/stages.js'
+
+const router = useRouter()
+const store = useAppStore()
+const profileName = computed(() => store.profile?.grade ? `${store.profile.grade}学习者` : '今天也来学习一点')
+// 主页「从一个好奇开始」可展示的科目全集，用户自由勾选，默认只放五个主科。
+const allSubjects = [
+  { name: '数学', caption: '从概念到迁移', icon: '∑', color: 'mint' },
+  { name: '物理', caption: '用模型解释世界', icon: 'ϕ', color: 'violet' },
+  { name: '化学', caption: '从微观看见变化', icon: '⚗', color: 'sand' },
+  { name: '语文', caption: '读懂，也表达清楚', icon: '文', color: 'coral' },
+  { name: '英语', caption: '把语感变成能力', icon: 'Aa', color: 'blue' },
+  { name: '生物', caption: '看见生命的结构', icon: '◎', color: 'leaf' },
+  { name: '历史', caption: '把时间连成脉络', icon: '史', color: 'rose' },
+  { name: '地理', caption: '读懂地图与空间', icon: '地', color: 'sky' },
+  { name: '道德与法治', caption: '理解规则与责任', icon: '法', color: 'cream' },
+  { name: '政治', caption: '看清社会与制度', icon: '政', color: 'stone' }
+]
+const selectedSubjects = computed(() => {
+  const names = Array.isArray(store.settings.favoriteSubjects) ? store.settings.favoriteSubjects : []
+  return allSubjects.filter(subject => names.includes(subject.name))
+})
+const subjectDialogVisible = ref(false)
+const subjectDraft = ref([])
+const allSubjectsSelected = computed(() => allSubjects.length > 0 && subjectDraft.value.length === allSubjects.length)
+const someSubjectsSelected = computed(() => subjectDraft.value.length > 0 && subjectDraft.value.length < allSubjects.length)
+
+function openSubjectDialog() {
+  subjectDraft.value = selectedSubjects.value.map(subject => subject.name)
+  subjectDialogVisible.value = true
+}
+
+// 「全选」一次勾上或清空全部科目，和逐个勾选等价。
+function toggleAllSubjects(checked) {
+  subjectDraft.value = checked ? allSubjects.map(subject => subject.name) : []
+}
+
+async function saveFavorites() {
+  await store.updateSettings({ favoriteSubjects: [...subjectDraft.value] })
+  subjectDialogVisible.value = false
+}
+
+// 卡片右上角的移除按钮，移掉后随时可以从右上角重新勾回来。
+async function removeFavorite(name) {
+  await store.updateSettings({ favoriteSubjects: (store.settings.favoriteSubjects || []).filter(item => item !== name) })
+}
+const steps = [
+  { number: '01', title: '找到起点', text: '用一次轻量摸底，认识自己已经掌握和需要补上的地方。' },
+  { number: '02', title: '生成路线', text: 'AI 把知识依赖、学习时间和你的反馈变成今天能完成的任务。' },
+  { number: '03', title: '专注前进', text: '每次专注留下可复盘的脚印，下一轮计划会跟着你一起成长。' }
+]
+
+function startLearning() { router.push('/diagnosis') }
+// 科目卡带上科目参数，进入诊断页时直接预选，少一次选择。
+function openSubject(subject) { router.push({ path: '/diagnosis', query: { subject: subject.name } }) }
+
+// 主页所有数字都来自当前数据空间的学习记录，没有记录时显示如实提示。
+const stats = ref({ streakDays: 0, totalFocusMinutes: 0, todayFocusMinutes: 0, progressPercent: 0, remainingMinutes: 0, plansCount: 0, totalPlans: 0, knowledgeCount: 0, nextPlanName: '', nextPlanSubject: '', nextPlanTag: '', stageSubject: '' })
+const progressHint = computed(() => stats.value.remainingMinutes > 0 ? `还差 ${stats.value.remainingMinutes} 分钟` : '今日目标已完成')
+const mapSubtitle = computed(() => stats.value.nextPlanName
+  ? `${stats.value.nextPlanSubject} · ${stats.value.nextPlanTag || '知识专题'}`
+  : '先做一次摸底，生成第一条路线')
+const mapStatus = computed(() => stats.value.todayFocusMinutes > 0 ? '● 进行中' : '● 待开始')
+const evidence = computed(() => stats.value.plansCount
+  ? `已生成 ${stats.value.plansCount} 个任务 · 覆盖 ${stats.value.knowledgeCount} 个知识点`
+  : '不登录也能开始')
+
+// 悬浮卡上的三个数字：数据读回来后从 0 滚到真实值，避免一上来就是干巴巴的静态数字。
+const displayStats = ref({ streak: 0, today: 0, total: 0 })
+let statFrame = 0
+function rollHeroStats() {
+  cancelAnimationFrame(statFrame)
+  const from = { ...displayStats.value }
+  const target = { streak: stats.value.streakDays, today: stats.value.todayFocusMinutes, total: stats.value.totalFocusMinutes }
+  const start = performance.now()
+  const step = now => {
+    const progress = Math.min(1, (now - start) / 900)
+    const eased = 1 - Math.pow(1 - progress, 3)
+    displayStats.value = {
+      streak: Math.round(from.streak + (target.streak - from.streak) * eased),
+      today: Math.round(from.today + (target.today - from.today) * eased),
+      total: Math.round(from.total + (target.total - from.total) * eased)
+    }
+    if (progress < 1) statFrame = requestAnimationFrame(step)
+  }
+  statFrame = requestAnimationFrame(step)
+}
+
+// 首屏以下的分区进入视口再淡入；不支持 IntersectionObserver 时直接全部显示。
+const revealReady = ref(false)
+function setupReveal() {
+  const sections = [...document.querySelectorAll('.home-page .reveal')]
+  if (!('IntersectionObserver' in window)) {
+    sections.forEach(node => node.classList.add('is-revealed'))
+    return
+  }
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return
+      entry.target.classList.add('is-revealed')
+      observer.unobserve(entry.target)
+    })
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 })
+  sections.forEach(node => {
+    // 已经在视口里的分区先标记，避免开启隐藏样式时闪一下。
+    if (node.getBoundingClientRect().top < window.innerHeight * 0.92) node.classList.add('is-revealed')
+    observer.observe(node)
+  })
+  revealReady.value = true
+}
+
+const pathStages = STAGES.map(stage => stage.label)
+// 节点状态来自当前科目计划任务的真实阶段：全部归档的阶段点亮，当前任务所在阶段脉冲，其余待开始；没有计划时四个点都不假装进行中。
+const pathStates = computed(() => Array.isArray(stats.value.stageStates) && stats.value.stageStates.length === 4
+  ? stats.value.stageStates
+  : ['pending', 'pending', 'pending', 'pending'])
+
+// 阶段刚归档完成时播放一次约 1 秒的点亮动效，播完停在完成态；不做循环动画。
+// 上一次看过的状态记在 localStorage（按数据空间分开），只用来判断「这次有没有新的完成」。
+const celebratingStages = ref([])
+function syncStageCelebration() {
+  const states = pathStates.value
+  const subject = stats.value.stageSubject || ''
+  const key = `stage-seen:${getDataOwner()}`
+  let previous = ''
+  try { previous = localStorage.getItem(key) || '' } catch { previous = '' }
+  if (previous) {
+    const [previousSubject, previousStates = ''] = previous.split('|')
+    if (previousSubject === subject) {
+      const before = previousStates.split(',')
+      celebratingStages.value = states.map((state, index) => (state === 'done' && before[index] !== 'done' ? index : -1)).filter(index => index >= 0)
+      if (celebratingStages.value.length) setTimeout(() => { celebratingStages.value = [] }, 1200)
+    }
+  }
+  try { localStorage.setItem(key, `${subject}|${states.join(',')}`) } catch { /* 隐私模式下写不进去不影响展示 */ }
+}
+
+onMounted(async () => {
+  stats.value = await getHomeStats({ dailyMinutes: store.profile?.dailyMinutes })
+  rollHeroStats()
+  syncStageCelebration()
+  setupReveal()
+})
+onBeforeUnmount(() => cancelAnimationFrame(statFrame))
+</script>
+
+<template>
+  <div class="home-page page" :class="{ 'reveal-ready': revealReady }">
+    <section class="home-hero">
+      <div class="hero-copy">
+        <span class="home-kicker"><span class="spark-dot"></span> 为每一个问题找到下一步</span>
+        <h2>学习不是爬一座山，<br><em>而是点亮自己的地图。</em></h2>
+        <p>Ai学习小伙伴把摸底、计划、专注和答疑连成一条温柔的学习路线。你不需要一次变得很厉害，只要知道下一步往哪里走。</p>
+        <div class="hero-actions">
+          <el-button type="primary" size="large" round @click="startLearning">开始我的学习路线 <span class="arrow">→</span></el-button>
+          <el-button size="large" round plain @click="router.push('/tutor')">直接问 AI</el-button>
+        </div>
+        <div class="hero-note"><span>●</span> 本地优先保存 · {{ evidence }}</div>
+        <div class="hero-note hero-scope">初中覆盖全国 · 按人教版 / 北师大版 / 苏科版等教材版本出题，高中对齐新高考</div>
+      </div>
+      <div class="hero-visual" aria-label="学习地图预览">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="map-card map-card-main"><div class="map-card-top"><span>我的学习地图</span><span class="live-dot">{{ mapStatus }}</span></div><div class="map-title">{{ stats.nextPlanName || '还没有学习计划' }}</div><div class="map-subtitle">{{ mapSubtitle }}</div><div class="map-path"><template v-for="(stage, index) in pathStages" :key="stage"><span v-if="index" class="path-line" :class="{ filled: pathStates[index - 1] === 'done' }"></span><span class="map-node" :class="{ done: pathStates[index] === 'done', current: pathStates[index] === 'current', celebrate: celebratingStages.includes(index) }">{{ pathStates[index] === 'done' ? '✓' : index + 1 }}</span></template></div><div class="map-labels"><span v-for="stage in pathStages" :key="stage">{{ stage }}</span></div><div v-if="!stats.totalPlans" class="map-empty"><button class="map-empty-link" @click="startLearning">还没有计划 · 生成第一份 →</button></div><div class="map-progress"><span><strong>今日进度</strong><small>{{ progressHint }}</small></span><el-progress :percentage="stats.progressPercent" :show-text="false" color="#5e9f8f" :duration="900" /></div></div>
+        <div class="float-card streak-card"><span class="streak-icon">✦</span><span><strong>{{ displayStats.streak ? `连续 ${displayStats.streak} 天` : '还没开始' }}</strong><small>{{ displayStats.streak ? '稳定的脚步很重要' : '完成一次专注就有记录' }}</small></span></div>
+        <div class="float-card focus-card"><span class="focus-ring">{{ displayStats.today }}</span><span><strong>今日专注</strong><small>累计 {{ displayStats.total }} 分钟</small></span></div>
+      </div>
+    </section>
+
+    <section class="welcome-strip surface reveal"><div><span class="eyebrow">YOUR NEXT SMALL WIN</span><h3>{{ profileName }}，今天想点亮哪一块？</h3></div><el-button plain round @click="router.push('/tutor')">先问一个问题 <span class="arrow">→</span></el-button></section>
+
+    <section class="home-section reveal"><div class="section-heading"><div><span class="eyebrow">EXPLORE BY SUBJECT</span><h3>从一个好奇开始</h3></div><div class="section-actions"><button class="text-link" @click="openSubjectDialog">＋ 选择科目</button><button class="text-link" @click="startLearning">查看全部 <span>→</span></button></div></div><div class="subject-grid"><div v-for="(subject, index) in selectedSubjects" :key="subject.name" class="subject-card favorite" :class="subject.color" :style="{ animationDelay: `${Math.min(index, 9) * 45}ms` }" role="button" tabindex="0" @click="openSubject(subject)" @keydown.enter="openSubject(subject)"><button class="subject-remove" title="从主页移除" @click.stop="removeFavorite(subject.name)">×</button><span class="subject-icon">{{ subject.icon }}</span><span class="subject-name">{{ subject.name }}</span><span class="subject-caption">{{ subject.caption }}</span><span class="subject-arrow">↗</span></div><p v-if="!selectedSubjects.length" class="subject-empty">还没有展示任何科目，点右上角「选择科目」勾上你正在学的。</p></div></section>
+
+    <section class="path-section reveal"><div class="section-heading"><div><span class="eyebrow">HOW IT WORKS</span><h3>你的学习，应该有自己的节奏</h3></div></div><div class="steps-grid"><article v-for="step in steps" :key="step.number" class="step-card"><span class="step-number">{{ step.number }}</span><h4>{{ step.title }}</h4><p>{{ step.text }}</p></article></div></section>
+
+    <section class="home-cta reveal"><div><span class="eyebrow">READY WHEN YOU ARE</span><h3>不必等到准备好，<br>从一个小问题开始。</h3></div><el-button type="primary" size="large" round @click="startLearning">进入学习工作台 <span class="arrow">→</span></el-button></section>
+
+    <el-dialog v-model="subjectDialogVisible" title="选择展示的科目" width="420px" append-to-body>
+      <p class="subject-dialog-hint">这栏展示哪些科目由你决定，不选的（比如物理）不会出现；卡片右上角的 × 也能直接移除。</p>
+      <div class="subject-dialog-tools">
+        <el-checkbox :model-value="allSubjectsSelected" :indeterminate="someSubjectsSelected" @change="toggleAllSubjects">全选</el-checkbox>
+        <span class="subject-dialog-count">已选 {{ subjectDraft.length }} / {{ allSubjects.length }}</span>
+      </div>
+      <el-checkbox-group v-model="subjectDraft" class="subject-dialog-list">
+        <el-checkbox v-for="subject in allSubjects" :key="subject.name" :value="subject.name">{{ subject.name }}<span class="subject-dialog-caption">{{ subject.caption }}</span></el-checkbox>
+      </el-checkbox-group>
+      <template #footer>
+        <el-button @click="subjectDialogVisible = false">取消</el-button>
+        <el-button type="primary" @click="saveFavorites">保存</el-button>
+      </template>
+    </el-dialog>
+  </div>
+</template>
+
+<style scoped>
+/* 首页动效：hero 文案依次浮入、地图卡与悬浮卡随后到位，科目卡错开浮入，下方分区进入视口再淡入。 */
+.hero-copy > *{animation:heroFade .5s cubic-bezier(.2,.7,.3,1) both}
+.hero-copy > *:nth-child(2){animation-delay:.06s}
+.hero-copy > *:nth-child(3){animation-delay:.12s}
+.hero-copy > *:nth-child(4){animation-delay:.18s}
+.hero-copy > *:nth-child(5),.hero-copy > *:nth-child(6){animation-delay:.24s}
+.hero-visual{animation:heroVisualIn .55s ease-out .12s backwards}
+.map-card-main{animation:heroVisualIn .5s cubic-bezier(.2,.7,.3,1) .2s backwards}
+.float-card{animation:floatIn .5s cubic-bezier(.2,.7,.3,1) .5s backwards}
+.focus-card{animation-delay:.6s}
+.subject-card{animation:subjectIn .45s cubic-bezier(.2,.7,.3,1) backwards}
+.reveal{transition:opacity .55s cubic-bezier(.2,.7,.3,1),transform .55s cubic-bezier(.2,.7,.3,1)}
+.home-page.reveal-ready .reveal:not(.is-revealed){opacity:0;transform:translateY(16px)}
+@keyframes heroFade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@keyframes heroVisualIn{from{opacity:0}to{opacity:1}}
+@keyframes floatIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes subjectIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes nodeGlow{0%{transform:scale(.7);box-shadow:0 0 0 0 rgba(94,159,143,.45)}45%{transform:scale(1.16);box-shadow:0 0 0 12px rgba(94,159,143,0)}to{transform:none;box-shadow:none}}
+@media (prefers-reduced-motion: reduce){.hero-copy > *,.hero-visual,.map-card-main,.float-card,.subject-card{animation:none}.home-page.reveal-ready .reveal:not(.is-revealed){opacity:1;transform:none}.reveal{transition:none}}
+.home-page{max-width:1240px;padding-top:34px;padding-bottom:60px}.home-hero{display:grid;grid-template-columns:minmax(0,1.03fr) minmax(400px,.97fr);gap:48px;align-items:center;padding:24px 28px 42px}.home-kicker{display:inline-flex;align-items:center;gap:8px;color:var(--primary);font-size:13px;font-weight:700;letter-spacing:.04em}.spark-dot{width:9px;height:9px;display:inline-block;background:#eea77b;border-radius:50%;box-shadow:0 0 0 6px rgba(238,167,123,.16)}.hero-copy h2{font-size:clamp(34px,4.5vw,59px);line-height:1.14;letter-spacing:-.045em;margin:22px 0 20px;color:var(--text);font-weight:800}.hero-copy h2 em{font-style:normal;color:var(--primary)}.hero-copy p{font-size:16px;line-height:1.85;color:var(--muted);max-width:570px;margin:0}.hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:28px}.arrow{font-size:18px;margin-left:7px}.hero-note{color:var(--muted);font-size:12px;margin-top:18px}.hero-scope{margin-top:7px;color:#8ba4a8}.hero-note span{color:#70ad8b;margin-right:5px}.hero-visual{min-height:410px;position:relative;display:grid;place-items:center}.orbit{position:absolute;border:1px dashed rgba(77,141,142,.22);border-radius:50%;transform:rotate(-20deg)}.orbit-one{width:390px;height:270px}.orbit-two{width:310px;height:410px;transform:rotate(58deg)}.map-card{position:relative;z-index:2}.map-card-main{width:min(100%,395px);padding:24px;border:1px solid rgba(255,255,255,.7);border-radius:26px;background:linear-gradient(145deg,#ffffff,#eff8f6);box-shadow:0 24px 55px rgba(45,100,105,.18);transform:rotate(-3deg)}.map-card-top{display:flex;justify-content:space-between;color:var(--muted);font-size:11px}.live-dot{color:#6eaa87}.map-title{font-size:22px;line-height:1.25;font-weight:800;color:#284b54;margin-top:22px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;word-break:break-word}.map-subtitle{color:#769096;font-size:13px;margin-top:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.map-path{display:flex;align-items:center;margin-top:35px}.map-node{width:32px;height:32px;display:grid;place-items:center;border:2px solid #c8dddd;border-radius:50%;color:#8ba4a8;font-size:12px;background:#fff}.map-node.done{background:#5e9f8f;border-color:#5e9f8f;color:white}.map-node.current{background:#fff;border-color:#eea77b;color:#dd8c60;box-shadow:0 0 0 7px rgba(238,167,123,.16)}.path-line{height:2px;flex:1;background:#d1e2e2}.path-line.filled{background:#78b6a4}.map-labels{display:flex;justify-content:space-between;color:#84999c;font-size:10px;margin-top:9px}.map-node.celebrate{animation:nodeGlow 1.05s ease-out}.map-empty{margin-top:14px}.map-empty-link{border:0;background:transparent;padding:0;color:var(--primary);font-size:12px;font-weight:700;cursor:pointer}.map-progress{border-top:1px solid #deebea;margin-top:26px;padding-top:17px;display:grid;gap:10px}.map-progress>span{display:flex;justify-content:space-between;align-items:center}.map-progress strong{font-size:12px;color:#3d6469}.map-progress small{color:#9aabad}.float-card{position:absolute;z-index:3;display:flex;align-items:center;gap:9px;padding:11px 14px;border:1px solid rgba(255,255,255,.8);border-radius:15px;background:rgba(255,255,255,.88);box-shadow:0 12px 27px rgba(45,100,105,.14);font-size:12px;color:#3d6469}.float-card strong,.float-card small{display:block}.float-card small{font-size:10px;color:#91a4a6;margin-top:3px}.streak-card{top:42px;right:2px}.focus-card{bottom:-8px;left:2px}.streak-icon{display:grid;place-items:center;width:28px;height:28px;border-radius:9px;background:#fff0e8;color:#df966e}.focus-ring{display:grid;place-items:center;width:32px;height:32px;border:3px solid #a7d4cb;border-top-color:#4d8d8e;border-radius:50%;font-size:10px;color:#4d8d8e}.welcome-strip{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 24px;margin:0 28px 45px;border-radius:17px;background:linear-gradient(100deg,var(--surface),var(--primary-soft));box-shadow:none}.welcome-strip h3{margin:7px 0 0;font-size:18px}.home-section,.path-section{padding:0 28px;margin-bottom:52px}.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:19px}.section-heading h3{font-size:25px;letter-spacing:-.025em;margin:7px 0 0}.text-link{border:0;background:transparent;color:var(--primary);cursor:pointer;font-size:13px}.text-link span{font-size:18px;margin-left:4px}.subject-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.subject-card{min-height:175px;position:relative;border:1px solid transparent;border-radius:21px;padding:22px;text-align:left;cursor:pointer;color:#29464e;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}.subject-card:hover{transform:translateY(-5px);box-shadow:0 18px 35px rgba(52,94,102,.13)}.subject-card.mint{background:#e2f2ed;border-color:#d1e9e2}.subject-card.violet{background:#ebe8f7;border-color:#dfdaf1}.subject-card.coral{background:#f8e9e0;border-color:#f2ded2}.subject-card.blue{background:#e4eff6;border-color:#d4e5ef}.section-actions{display:flex;align-items:center;gap:16px}.subject-card.leaf{background:#e6f1e4;border-color:#d8e9d5}.subject-card.rose{background:#f7e7e7;border-color:#efd9d9}.subject-card.sky{background:#e6f1f1;border-color:#d7e7e7}.subject-card.cream{background:#f6efe0;border-color:#eee4cf}.subject-card.stone{background:#eceff1;border-color:#e1e6e8}.subject-card.sand{background:#f3eee3;border-color:#e9e1d1}.subject-card.favorite{cursor:pointer}.subject-remove{position:absolute;top:12px;right:12px;width:22px;height:22px;display:grid;place-items:center;border:0;border-radius:50%;background:rgba(255,255,255,.72);color:#5f7c80;font-size:13px;line-height:1;cursor:pointer;opacity:0;transition:opacity .15s,background .15s}.subject-card.favorite:hover .subject-remove,.subject-remove:focus-visible{opacity:1}.subject-card.favorite:hover .subject-remove:hover{background:#f1d6d3;color:#b06a63}.subject-dialog-hint{font-size:12px;line-height:1.7;color:var(--muted);margin:0 0 14px}.subject-dialog-tools{display:flex;align-items:center;justify-content:space-between;padding-bottom:10px;margin-bottom:6px;border-bottom:1px solid var(--border)}.subject-dialog-count{font-size:12px;color:var(--muted)}.subject-empty{grid-column:1/-1;margin:0;padding:26px 16px;text-align:center;font-size:13px;color:var(--muted);border:1px dashed var(--border);border-radius:18px}.subject-dialog-list{display:grid;gap:10px}.subject-dialog-caption{color:var(--muted);font-size:12px;margin-left:8px}@media(max-width:600px){.subject-remove{opacity:1}.section-actions{gap:10px}}.subject-icon{display:grid;place-items:center;width:45px;height:45px;border-radius:14px;background:rgba(255,255,255,.7);font-size:23px;font-weight:700;margin-bottom:auto}.subject-name{font-weight:800;font-size:20px}.subject-caption{font-size:12px;color:#6e888e;margin-top:5px}.subject-arrow{position:absolute;right:20px;bottom:19px;font-size:20px;color:#6b9290}.path-section{padding-top:5px}.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step-card{position:relative;padding:23px 22px 20px;background:var(--surface);border:1px solid var(--border);border-radius:19px;min-height:160px}.step-number{font:700 11px ui-monospace,monospace;color:var(--primary);letter-spacing:.08em}.step-card h4{font-size:18px;margin:23px 0 8px}.step-card p{font-size:13px;line-height:1.7;color:var(--muted);margin:0;max-width:280px}.home-cta{display:flex;justify-content:space-between;align-items:center;gap:20px;margin:0 28px;padding:32px 34px;border-radius:24px;background:#234a53;color:#fff;overflow:hidden;position:relative}.home-cta:after{content:'';position:absolute;width:260px;height:260px;border:1px solid rgba(167,212,203,.25);border-radius:50%;right:15%;top:-170px}.home-cta h3{font-size:27px;line-height:1.25;margin:8px 0 0;letter-spacing:-.03em}.home-cta .eyebrow{color:#a7d4cb}.home-cta :deep(.el-button){position:relative;z-index:1;background:#f1b18a;border-color:#f1b18a;color:#4c3b32}.home-cta :deep(.el-button:hover){background:#f7c2a0;border-color:#f7c2a0}@media(max-width:950px){.home-hero{grid-template-columns:1fr;gap:10px}.hero-copy{max-width:680px}.hero-visual{min-height:390px}.subject-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.home-page{padding:17px 0 35px}.home-hero{padding:15px 14px 28px}.hero-copy h2{font-size:37px}.hero-copy p{font-size:14px}.hero-visual{min-height:330px;transform:scale(.86);margin:-22px -25px}.map-card-main{width:350px}.streak-card{right:-2px}.focus-card{left:-5px}.welcome-strip,.home-section,.path-section{margin-left:14px;margin-right:14px;padding-left:0;padding-right:0}.welcome-strip{padding:17px;margin-bottom:36px}.welcome-strip h3{font-size:15px}.subject-grid,.steps-grid{grid-template-columns:1fr 1fr;gap:10px}.subject-card{min-height:145px;padding:16px}.subject-name{font-size:17px}.subject-caption{font-size:11px}.section-heading h3{font-size:22px}.home-cta{margin:0 14px;padding:25px 20px;align-items:flex-start;flex-direction:column}.home-cta h3{font-size:23px}}
+</style>
+

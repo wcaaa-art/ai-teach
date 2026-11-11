@@ -1,0 +1,42 @@
+{
+  "name": "ai-teach",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"node server/index.js\"",
+    "dev:client": "vite",
+    "dev:server": "node server/index.js",
+    "build": "vite build",
+    "typecheck": "node node_modules/typescript/lib/tsc.js --noEmit",
+    "test": "node --test",
+    "rag:build": "python scripts/build-rag-index.py",
+    "mcp": "node server/mcp.js",
+    "preview": "vite preview",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^0.10.22",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "@tensorflow/tfjs": "^4.22.0",
+    "@tensorflow/tfjs-backend-webgl": "^4.22.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "echarts": "^5.6.0",
+    "echarts-gl": "^2.0.9",
+    "element-plus": "2.11.8",
+    "express": "^4.21.2",
+    "idb": "^8.0.2",
+    "pinia": "^3.0.1",
+    "tesseract.js": "^6.0.1",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@vitejs/plugin-vue": "^5.2.3",
+    "concurrently": "^9.1.2",
+    "typescript": "^7.0.2",
+    "vite": "^6.2.0"
+  }
+}
