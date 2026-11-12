@@ -8,6 +8,7 @@ import { ASSESSMENT_SYSTEM_PROMPT, LEARNING_SYSTEM_PROMPT, PLAN_REPLACE_PROMPT, 
 import { buildAdaptivePlan, buildDiagnosticBlueprint, buildFallbackDiagnosticQuestions, listCurriculumChapters, listCurriculumSubjects, orderCurriculumPlans, stampDiagnosticQuestionIds } from './curriculum.js'
 import { PAPER_SPECS, buildFallbackQuizQuestions, buildQuizBlueprint, generateQuiz, mapWithLimit } from './quiz.js'
 import { resolveTextbookEdition } from './textbooks.js'
+import { buildVideoKeyword, buildVideoSearchUrl, fetchVideoPool, pickVideoBatch } from './videos.js'
 
 const app = express()
 const allowedOrigins = (process.env.CLIENT_ORIGINS || process.env.CLIENT_ORIGIN || 'http://localhost:5173,http://localhost:4173')
@@ -39,6 +40,30 @@ app.get('/api/curriculum/subjects', (req, res) => {
 app.get('/api/curriculum/chapters', (req, res) => {
   if (!req.query.grade || !req.query.subject) return ok(res, { chapters: [], error: 'missing-grade-or-subject' }, { source: 'validation' })
   return ok(res, listCurriculumChapters(String(req.query.grade), String(req.query.subject), req.query.edition ? String(req.query.edition) : ''))
+})
+
+// 学习视频推荐：代理 B 站搜索，按播放量排序；exclude / authors / reason 支撑「换一换」。
+app.get('/api/videos/recommend', async (req, res) => {
+  const chapter = String(req.query.chapter || '').trim()
+  const grade = String(req.query.grade || '').trim()
+  const subject = String(req.query.subject || '').trim()
+  const edition = String(req.query.edition || '').trim()
+  const keyword = buildVideoKeyword({ grade, subject, edition, chapter })
+  const fallbackUrl = buildVideoSearchUrl(keyword)
+  if (!chapter) return ok(res, { items: [], fallbackUrl, keyword }, { source: 'validation' })
+  const excludeBvids = String(req.query.exclude || '').split(',').map(item => item.trim()).filter(Boolean).slice(0, 30)
+  const excludeAuthors = String(req.query.authors || '').split(',').map(item => item.trim()).filter(Boolean).slice(0, 10)
+  const allowedReasons = ['old', 'fast', 'edition', 'author']
+  const reason = allowedReasons.includes(String(req.query.reason || '')) ? String(req.query.reason) : ''
+  const limit = Math.min(6, Math.max(1, Number(req.query.limit) || 3))
+  try {
+    const pool = await fetchVideoPool(keyword)
+    const items = pickVideoBatch(pool, { excludeBvids, excludeAuthors, reason, edition, chapter, grade, limit })
+    return ok(res, { items, fallbackUrl, keyword, poolSize: pool.length }, { source: 'bilibili' })
+  } catch {
+    // 上游风控或断网时不报错，交给前端展示「去 B 站搜」兜底入口。
+    return ok(res, { items: [], fallbackUrl, keyword }, { source: 'fallback', message: '视频检索暂时不可用，可直接去 B 站搜索。' })
+  }
 })
 
 // 摸底单题请求：一次只要一道题，便于和章节测试一样按题位并发。

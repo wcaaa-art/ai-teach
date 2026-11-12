@@ -53,6 +53,11 @@ export const generatePlanSkeleton = (payload) => request('/agent/plan/skeleton',
 // 科目按年级开设（物理从初二、化学从初三），必须把年级带上，否则只会返回首个年级的科目。
 export const getCurriculumSubjects = (stage, grade) => request(`/curriculum/subjects?stage=${encodeURIComponent(stage)}${grade ? `&grade=${encodeURIComponent(grade)}` : ''}`, undefined, { method: 'GET', bodyType: 'none', timeoutMs: 10000 })
 export const getCurriculumChapters = (grade, subject, edition) => request(`/curriculum/chapters?grade=${encodeURIComponent(grade)}&subject=${encodeURIComponent(subject)}${edition ? `&edition=${encodeURIComponent(edition)}` : ''}`, undefined, { method: 'GET', bodyType: 'none', timeoutMs: 10000 })
+// 视频推荐由后端代理 B 站搜索：exclude 传已看过的 bvid，authors 传要屏蔽的 UP 主，reason 是换一换原因。
+export const getVideoRecommendations = ({ grade = '', subject = '', edition = '', chapter = '', exclude = '', authors = '', reason = '', limit = 3 } = {}) => request(
+  `/videos/recommend?grade=${encodeURIComponent(grade)}&subject=${encodeURIComponent(subject)}&edition=${encodeURIComponent(edition)}&chapter=${encodeURIComponent(chapter)}&exclude=${encodeURIComponent(exclude)}&authors=${encodeURIComponent(authors)}&reason=${encodeURIComponent(reason)}&limit=${limit}`,
+  undefined, { method: 'GET', bodyType: 'none', timeoutMs: 12000 }
+)
 // 十道摸底题带推理生成约 60 秒，前端超时必须比后端（90 秒）宽，否则会先被浏览器掐断。
 export const generateDiagnosticQuestions = (payload) => request('/agent/assessment/generate', payload, { timeoutMs: 95000 })
 // 章节测试可能触发两轮命题（撞题重生成），超时放宽到 90 秒。

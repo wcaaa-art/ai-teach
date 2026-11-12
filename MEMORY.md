@@ -204,6 +204,23 @@
 - 同步改为「迁移」：同步成功后 `clearLocalLearningData()` 清空本地学习数据（保留设置），避免每次登录重复提示，也防止同一批数据串到别的账号。弹窗确认按钮为「同步并清空本地」。
 - 长短板左右两列在任一侧为空时自动折叠为单列（`.strength-grid.single`），空列不再渲染；「掌握较好」= 合并掌握度 ≥2/3（摸底单源约等于加权正确率 60%）。
 
+## 视频推荐（2026-11-11）
+
+- 本机接手环境：工程路径 `D:\aaa\ai-teach`（旧记录里的 `D:\trae-work`、`D:\AI-Teach-project` 属于上一台机器）；已从 `.env.example` 生成 `.env`，`DEEPSEEK_API_KEY` 留空待填（只记位置，不记值）；已 `git init` 并打基线提交 `a3e10b0`。
+- 上游接口：B 站 `GET https://api.bilibili.com/x/web-interface/wbi/search/type?search_type=video&order=click&keyword=...&page=N`，带桌面 UA + `Referer: https://www.bilibili.com/` 即可，**无需 WBI 签名**（2026-11-11 实测可用；仍有 412 风控风险，因此必须留兜底）。
+- 服务端 `server/videos.js`：两页并发抓取（`Promise.allSettled`，一页成功即用），15 分钟内存缓存（上限 50 个关键词）；过滤 `type=ketang`、广告 `is_union_video`、教资/试讲/课件类噪声；`pickVideoBatch` 是纯函数，负责 exclude、UP 主屏蔽与原因过滤。
+- 排序与过滤口径：先按教材版本匹配分组，组内按播放量降序（用户要求「按播放量排序」，但版本不对的视频不能压过匹配项）；`isRelevantVideo` 要求标题/标签含章节名或其拆分片段（否则「二次函数」会混进「一元二次方程」）；`matchesStage` 按年级排掉另一学段；「太旧」= 两年内、「讲得太快」= 8 分钟以上（元数据判断不了语速，只能按时长兜底）。
+- API：`GET /api/videos/recommend?grade&subject&edition&chapter&exclude=bvid,bvid&authors=UP主&reason=old|fast|edition|author&limit`；上游失败时返回 `success:true` + 空 `items` + `fallbackUrl`（B 站搜索页），前端展示兜底入口而不是报错。
+- 前端 `src/components/VideoSuggestion.vue`：在章节行内展开，最多 5 次换一换；「不喜欢这个老师」会把当前 UP 主加入屏蔽名单，其它原因交给后端过滤；5 次用完给文案 + 去 B 站搜链接。`DiagnosisView` 只维护 `activeVideoChapter` 一个状态，摸底结果页与二次查看报告两处复用同一组件。
+- 验证：`server/videos.test.js` + `src/utils/videos.test.js`，全套 80 项通过；临时预览页实测 3 条真实结果、点换一换后剩余次数 5→4 且列表变化、控制台 0 报错。改后端后必须重启 dev server（`node server/index.js` 没有 watch）。
+
+## AI 链路验证（2026-11-11）
+
+- `.env` 已由老大填入有效 key（只记位置：项目根 `.env`，已被 gitignore）；`LLM_BASE_URL=https://api.deepseek.com`、`LLM_MODEL_NAME=deepseek-flash` 可直连，无须代理或 `NODE_EXTRA_CA_CERTS`。
+- 实测：摸底 `/api/agent/assessment/generate` 3 题 8.6 秒、`source=deepseek`；章节测试 `/api/quiz/generate` 5 题 8.0 秒、`source=deepseek`；流式答疑 `/api/agent/tutor/stream` 事件序列为 meta → thinking(518) → token(440) → tool(4 次 RAG) → done，约 40 秒内完成，答案引用了真题解析。
+- 浏览器实测 `/tutor`：发送后约 6 秒开始流式输出，答案完整呈现，控制台 0 error。
+- 未覆盖：计划生成与迭代（`/api/agent/plan-sequence`、`/api/agent/diagnose`）需要完整计划数据，尚未实测。
+
 ## 协作约定
 
 - 每个任务收尾固定格式：**做了什么 / 验证结果 / 下一步建议**，必须带「下一步」，不等豪哥再问。

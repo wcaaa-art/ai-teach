@@ -4,12 +4,12 @@ import { ElMessage } from 'element-plus'
 import { useRoute, useRouter } from 'vue-router'
 import ChartPanel from '../components/ChartPanel.vue'
 import MistakeAttribution from '../components/MistakeAttribution.vue'
+import VideoSuggestion from '../components/VideoSuggestion.vue'
 import { getCurriculumChapters, getCurriculumSubjects, generateDiagnosticQuestions, generateLearningPlan, generatePlanSkeleton } from '../services/api.js'
 import { deleteExamScore, deletePlan, loadAssessments, loadExamScores, loadMistakes, loadPlans, loadProfile, loadQuizResults, makeId, saveAssessment, saveExamScore, savePlan, saveProfile } from '../db/index.js'
 import { mergeChapterMastery } from '../utils/mastery.js'
 import { useAppStore } from '../stores/app.js'
 import { formatMathText } from '../utils/formatMath.js'
-import { bilibiliSearchUrl } from '../utils/videos.js'
 
 const store = useAppStore()
 const route = useRoute()
@@ -182,8 +182,10 @@ const strengthSummary = computed(() => {
   if (!weakChapters.value.length) return `本次 ${masteryRows.value.length} 个专题都已达到掌握标准，可以进入迁移练习或下一章。`
   return `本次 ${masteryRows.value.length} 个专题中，${strongChapters.value.length} 个掌握较好，${weakChapters.value.length} 个需要补强。建议先补${weakNames}。`
 })
-function chapterVideoUrl(chapter) {
-  return bilibiliSearchUrl({ edition: profile.edition, grade: profile.grade, subject: profile.subject, chapter: chapter.name })
+// 视频补强：同一时间只展开一个章节，面板内自己管换一换计数。
+const activeVideoChapter = ref('')
+function toggleVideoPanel(chapter) {
+  activeVideoChapter.value = activeVideoChapter.value === chapter.id ? '' : chapter.id
 }
 // 摸底报告二次查看：结果只在提交当次可见，这里从 IndexedDB 记录还原一份只读报告。
 const reportSourceLabels = { agent: 'DeepSeek 出题', deepseek: 'DeepSeek 出题', 'deepseek-with-local-fill': 'DeepSeek 出题 + 本地补题', 'local-fallback': '本地题库', 'local-self-check': '本地自评', 'zero-baseline': '从零基础规划', 'assessment-skipped': '跳过摸底' }
@@ -230,9 +232,6 @@ function openReport(assessment) {
     legacy: (assessment.questions || []).length > 0 && new Set((assessment.questions || []).map(question => question.id)).size !== (assessment.questions || []).length
   }
   page.value = 'report'
-}
-function reportVideoUrl(chapter) {
-  return bilibiliSearchUrl({ edition: reportData.value?.edition, grade: reportData.value?.grade, subject: reportData.value?.subject, chapter: chapter.name })
 }
 // 专题全选：只在当前教材版本的目录里生效。
 const allChaptersSelected = computed(() => chapters.value.length > 0 && chapters.value.every(chapter => chapter.selected))
@@ -768,14 +767,15 @@ onBeforeUnmount(() => cancelAnimationFrame(countFrame))
           <div v-if="weakChapters.length" class="strength-column weak">
             <h4>需要补强<span>{{ weakChapters.length }}</span></h4>
             <ul>
-              <li v-for="row in weakChapters" :key="row.id">
+              <li v-for="row in weakChapters" :key="row.id" :class="{ 'video-open': activeVideoChapter === row.id }">
                 <div><strong>{{ row.name }}</strong><em>掌握度 {{ row.mastery }}/3 · {{ (row.sourceLabels || ['摸底']).join(' / ') }} · 置信度{{ row.confidence || '低' }}</em></div>
-                <a :href="chapterVideoUrl(row)" target="_blank" rel="noopener noreferrer">看视频补强</a>
+                <button type="button" class="video-link" @click="toggleVideoPanel(row)">{{ activeVideoChapter === row.id ? '收起视频' : '看视频补强' }}</button>
+                <VideoSuggestion v-if="activeVideoChapter === row.id" class="video-inline" :chapter-name="row.name" :grade="profile.grade" :subject="profile.subject" :edition="profile.edition" @close="activeVideoChapter = ''" />
               </li>
             </ul>
           </div>
         </div>
-        <p class="source-note">视频按钮按「版本 + 年级 + 科目 + 章节」跳转 B 站搜索结果，课程内容由 UP 主提供，平台只做检索推荐。</p>
+        <p class="source-note">视频列表按 B 站播放量排序，可按原因换一换；课程内容由 UP 主提供，平台只做检索推荐。</p>
       </section>
     </section>
 
@@ -808,7 +808,7 @@ onBeforeUnmount(() => cancelAnimationFrame(countFrame))
           </div>
           <div v-if="reportData.weak.length" class="strength-column weak">
             <h4>需要补强<span>{{ reportData.weak.length }}</span></h4>
-            <ul><li v-for="row in reportData.weak" :key="row.id"><div><strong>{{ row.name }}</strong><em>掌握度 {{ row.mastery }}/3</em></div><a :href="reportVideoUrl(row)" target="_blank" rel="noopener noreferrer">看视频补强</a></li></ul>
+            <ul><li v-for="row in reportData.weak" :key="row.id" :class="{ 'video-open': activeVideoChapter === row.id }"><div><strong>{{ row.name }}</strong><em>掌握度 {{ row.mastery }}/3</em></div><button type="button" class="video-link" @click="toggleVideoPanel(row)">{{ activeVideoChapter === row.id ? '收起视频' : '看视频补强' }}</button><VideoSuggestion v-if="activeVideoChapter === row.id" class="video-inline" :chapter-name="row.name" :grade="reportData.grade" :subject="reportData.subject" :edition="reportData.edition" @close="activeVideoChapter = ''" /></li></ul>
           </div>
         </div>
       </section>
@@ -877,8 +877,11 @@ onBeforeUnmount(() => cancelAnimationFrame(countFrame))
 .strength-column li div{display:grid;gap:3px}
 .strength-column strong{font-size:13px}
 .strength-column em{font-size:11px;font-style:normal;color:var(--muted)}
-.strength-column a{flex:none;font-size:12px;font-weight:600;color:var(--primary);text-decoration:none;padding:4px 10px;border:1px solid var(--primary);border-radius:999px}
-.strength-column a:hover{background:var(--primary-soft)}
+.strength-column a,.strength-column .video-link{flex:none;font-size:12px;font-weight:600;color:var(--primary);text-decoration:none;padding:4px 10px;border:1px solid var(--primary);border-radius:999px;background:transparent;cursor:pointer}
+.strength-column a:hover,.strength-column .video-link:hover{background:var(--primary-soft)}
+.strength-column li.video-open{flex-wrap:wrap;align-items:flex-start}
+.strength-column li .video-inline{flex:1 1 100%}
+.strength-column li .video-panel{display:grid;gap:8px}
 .strength-empty{font-size:12px;color:var(--muted);margin:0}
 @media(max-width:850px){.strength-grid{grid-template-columns:1fr}}
 .score-entry{margin-top:18px;padding:16px 18px;border:1px solid var(--border);border-radius:14px;background:var(--surface-soft)}
