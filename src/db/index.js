@@ -1,6 +1,7 @@
 // @ts-check
 import { openDB } from 'idb'
 import { stageOf, stageStatesOf } from '../utils/stages.js'
+import { createBackup, validateBackup } from '../utils/backup.js'
 
 export const DB_NAME = 'ai-teach-local'
 export const DB_VERSION = 5
@@ -130,6 +131,32 @@ export async function clearLocalLearningData() {
 }
 
 export const makeId = (prefix = 'item') => `${prefix}_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`
+
+// 导出当前数据空间的学习记录：本地优先模式下，换设备或清缓存前由用户自己备份。
+export async function exportLearningData() {
+  const database = await dbPromise
+  const stores = {}
+  for (const name of SYNC_STORES) {
+    stores[name] = database ? await database.getAll(name) : [...getMemoryStore(name).values()]
+  }
+  return createBackup({ owner: dataOwner, stores })
+}
+
+// 导入备份：按 id 覆盖同一条记录，不删除现有数据，避免一次误操作覆盖掉当天进度。
+export async function importLearningData(payload) {
+  const checked = validateBackup(payload)
+  if (!checked.ok) return { ...checked, imported: 0 }
+  let imported = 0
+  for (const name of SYNC_STORES) {
+    const records = Array.isArray(payload.stores[name]) ? payload.stores[name] : []
+    for (const record of records) {
+      if (!record || typeof record !== 'object' || !record.id) continue
+      await put(name, record)
+      imported += 1
+    }
+  }
+  return { ok: true, imported, counts: checked.counts }
+}
 
 async function put(store, value) {
   const database = await dbPromise

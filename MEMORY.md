@@ -219,7 +219,15 @@
 - `.env` 已由老大填入有效 key（只记位置：项目根 `.env`，已被 gitignore）；`LLM_BASE_URL=https://api.deepseek.com`、`LLM_MODEL_NAME=deepseek-flash` 可直连，无须代理或 `NODE_EXTRA_CA_CERTS`。
 - 实测：摸底 `/api/agent/assessment/generate` 3 题 8.6 秒、`source=deepseek`；章节测试 `/api/quiz/generate` 5 题 8.0 秒、`source=deepseek`；流式答疑 `/api/agent/tutor/stream` 事件序列为 meta → thinking(518) → token(440) → tool(4 次 RAG) → done，约 40 秒内完成，答案引用了真题解析。
 - 浏览器实测 `/tutor`：发送后约 6 秒开始流式输出，答案完整呈现，控制台 0 error。
-- 未覆盖：计划生成与迭代（`/api/agent/plan-sequence`、`/api/agent/diagnose`）需要完整计划数据，尚未实测。
+- 未覆盖：无（计划生成与迭代已于 2026-11-12 补测，见下）。
+- 补测：`/api/agent/diagnose` 15.8 秒返回 4 个阶段任务（source=deepseek，任务名/理由/时长均为模型生成）；`/api/agent/iterate` 10.5 秒返回 4 个调整后任务（source=deepseek，说明里明确引用了「变式题全错、图象平移没吃透」的反馈）。
+
+## 账号体系决策（2026-11-12）
+
+- 定为**本地优先**：账号只解决本机多用户隔离，凭据存 `server/data/users.json`（已有原子写临时文件 + rename，不改成数据库）；学习数据继续存浏览器 IndexedDB（按账号分库），不上云。
+- 理由：参加评审的隐私卖点就是「数据不出本机」；上服务端持久化要引入数据库和鉴权同步，收益低、风险高。代价是换设备/清缓存会丢数据，用**手动 JSON 备份**补：`src/utils/backup.js`（结构校验）+ `db/index.js` 的 `exportLearningData` / `importLearningData`，入口在账号中心。
+- 导入语义：按记录 id 覆盖（put），不删除现有数据；设置属于设备偏好，不导出；导入成功后整页刷新。
+- 登录方式同步定为「邮箱 + 口令，本机账号服务，不接第三方」。
 
 ## 协作约定
 
