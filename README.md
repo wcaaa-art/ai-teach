@@ -14,7 +14,7 @@
 
 高中按“语文、数学、英语、物理、化学、生物、政治、历史、地理”组织。
 
-卷型口径：**初中对齐佛山中考结构，高中对齐广东新高考（3+1+2）结构**。广东新高考下语文、数学、英语使用全国卷，其余选考科目由广东省命题，因此本项目不采用“全部全国统一卷”的说法。题目分值、题型与这两个口径保持一致，演示与文档描述时请沿用同一口径。
+卷型口径：**初中对齐全国中考常见结构，高中对齐新高考（3+1+2）结构**。不绑定具体省市卷；题目分值、题型按上述口径组织，提示词与出题规则保持一致（`server/prompts.js`、`server/quiz.js`）。
 
 
 ## 技术结构
@@ -31,33 +31,40 @@ ai-teach/
 │  ├─ main.js                 # Vue、Pinia、Element Plus 入口
 │  ├─ App.vue                 # 全局外壳与主题初始化
 │  ├─ styles.css              # 低饱和校园主题
-│  ├─ router/index.js         # 六个业务页面路由
+│  ├─ router/index.js         # 十个页面路由（含登录、账号中心）
 │  ├─ stores/app.js           # Pinia 临时 UI 和设置状态
-│  ├─ db/index.js             # idb/IndexedDB 表结构与存取方法
+│  ├─ db/index.js             # idb/IndexedDB 表结构、账号分库与备份
 │  ├─ services/api.js         # 后端 API 与 OCR 本地降级
+│  ├─ utils/                  # 掌握度合并、数学排版、备份校验、视频工具
 │  ├─ components/
 │  │  ├─ AppShell.vue
 │  │  ├─ CountdownTimer.vue
 │  │  ├─ CameraMonitor.vue
 │  │  ├─ AiFloatingTutor.vue
-│  │  └─ ChartPanel.vue
-│  └─ views/
-│     ├─ DiagnosisView.vue
-│     ├─ PlansView.vue
-│     ├─ FocusView.vue
-│     ├─ TutorView.vue
-│     ├─ DashboardView.vue
-│     └─ SettingsView.vue
+│  │  ├─ AgentTrace.vue
+│  │  ├─ ChartPanel.vue
+│  │  ├─ MistakeAttribution.vue
+│  │  ├─ VideoSuggestion.vue
+│  │  └─ DataBackupCard.vue
+│  └─ views/                  # Home / Auth / Diagnosis / Quiz / Plans / Focus / Tutor / Dashboard / Settings / Account
 ├─ server/
 │  ├─ index.js                # Express REST 路由
 │  ├─ agent.js                # DeepSeek 代理、工具循环、安全过滤和降级
-│  ├─ agent.test.js            # Tool Calling、多轮续接与数据规则单测
 │  ├─ tools.js                # 固定工具 JSON Schema 与执行器
-│  └─ prompts.js              # 学情、答疑、反馈迭代提示词
+│  ├─ prompts.js              # 学情、答疑、反馈迭代提示词
+│  ├─ curriculum.js           # 学段/年级/科目/专题目录
+│  ├─ textbooks.js            # 教材版本目录
+│  ├─ quiz.js                 # 出题蓝图与本地题库
+│  ├─ videos.js               # B 站视频检索、过滤与换一换
+│  ├─ auth.js                 # 本机账号服务（邮箱 + 口令）
+│  ├─ mcp.js                  # 标准 MCP stdio 服务
+│  ├─ rag/                    # 试卷真题 BM25 索引与检索
+│  └─ *.test.js               # 服务端单元测试
 └─ docs/
    ├─ 大赛交付材料.md
    ├─ 技术说明.md
-   └─ 启动调试与测试.md
+   ├─ 启动调试与测试.md
+   └─ 交接文档.md
 ```
 
 ## 快速启动
