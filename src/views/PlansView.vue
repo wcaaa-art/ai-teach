@@ -1005,7 +1005,17 @@ watch(() => route.query.focusTask, value => { if (value) focusTaskFromQuery() })
                   <p class="plan-sub">{{ rowMeta(item) }}</p>
                 </div>
                 <div class="plan-actions">
-                  <span v-if="!item.done" class="plan-enter" aria-hidden="true"></span>
+                  <!-- 以前这里只有一个悬停才出现的箭头，看不出是「进去做」的入口，改成常驻的文字按钮。 -->
+                  <button
+                    v-if="!item.done"
+                    type="button"
+                    class="plan-enter"
+                    :aria-label="'开始：' + planTitle(item.plan)"
+                    @click.stop="openPlanTask(item.plan)"
+                  >
+                    <span>开始</span>
+                    <svg viewBox="0 0 10 10" aria-hidden="true"><path d="M3.2 1.8 L6.6 5 L3.2 8.2" /></svg>
+                  </button>
                   <el-dropdown trigger="click" @command="command => onPlanCommand(command, item.plan)">
                     <button type="button" class="plan-more" aria-label="更多操作">⋯</button>
                     <template #dropdown>
@@ -1160,7 +1170,8 @@ watch(() => route.query.focusTask, value => { if (value) focusTaskFromQuery() })
 /* === 今日计划：已完成在上、待做在下，打开时停在第一条待做 === */
 .plan-wheel{position:relative;padding:18px 22px 24px;border:1px solid var(--plan-line);border-radius:22px;background:var(--plan-card)}
 .plan-list-head{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:16px;margin-bottom:6px}
-.plan-count{font-size:calc(11px*var(--fs-scale));font-weight:600;line-height:16px;color:var(--plan-muted);font-variant-numeric:tabular-nums}
+/* 窄屏下这行文字曾被日期轴挤成一字一行（「已完成」竖着排），锁住不换行。 */
+.plan-count{flex:none;white-space:nowrap;font-size:calc(11px*var(--fs-scale));font-weight:600;line-height:16px;color:var(--plan-muted);font-variant-numeric:tabular-nums}
 .plan-count b{font-weight:700;color:var(--plan-ink)}
 /* 日期轴：整月一条横轨，窗口只露 7 格，滚轮把它左右推。 */
 /* 右侧预留 58px 给「回今天」，用绝对定位压在预留位里，按钮出现/消失都不会把日期轴推走。 */
@@ -1257,9 +1268,11 @@ watch(() => route.query.focusTask, value => { if (value) focusTaskFromQuery() })
 .plan-row.is-clickable{cursor:pointer}
 .plan-row.is-clickable:hover{background:linear-gradient(90deg,color-mix(in srgb,var(--plan-mint) 62%,transparent),transparent 68%)}
 .plan-row.is-clickable:hover .plan-title strong{color:var(--plan-deep)}
-/* 一个指甲盖大的右箭头：悬停才浮出来，说明这行能直接点进去。 */
-.plan-enter{flex:none;width:7px;height:7px;margin-right:2px;border-right:1.6px solid var(--plan-deep);border-bottom:1.6px solid var(--plan-deep);transform:rotate(-45deg);opacity:0;transition:opacity .16s ease}
-.plan-row.is-clickable:hover .plan-enter{opacity:.55}
+/* 「开始」按钮：常驻显示，让人一眼知道这行能点进去做；悬停整行时加深，和行的交互反馈一起走。 */
+.plan-enter{flex:none;display:inline-flex;align-items:center;gap:2px;padding:2px 6px 2px 9px;border:1px solid var(--plan-line);border-radius:999px;background:transparent;color:var(--plan-muted);font-family:inherit;font-size:calc(11px*var(--fs-scale));font-weight:600;line-height:1.55;white-space:nowrap;cursor:pointer;transition:color .16s ease,border-color .16s ease,background .16s ease}
+.plan-enter svg{width:9px;height:9px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.plan-row.is-clickable:hover .plan-enter{color:var(--plan-deep);border-color:var(--plan-mint-strong);background:var(--plan-soft)}
+.plan-enter:focus-visible{outline:2px solid rgba(47,93,80,.4);outline-offset:1px}
 .plan-more{display:grid;place-items:center;width:26px;height:26px;border:0;border-radius:8px;background:none;color:var(--plan-muted);font-family:inherit;font-size:calc(16px*var(--fs-scale));line-height:1;cursor:pointer;opacity:0;transition:background .18s ease,color .18s ease}
 .plan-row:hover .plan-more,.plan-row:focus-within .plan-more{opacity:1}
 @media (hover:none){.plan-more{opacity:1}}
@@ -1296,7 +1309,7 @@ watch(() => route.query.focusTask, value => { if (value) focusTaskFromQuery() })
 .truth-card p{margin:10px 0 0;font-size:calc(13px*var(--fs-scale));line-height:1.8;color:var(--plan-ink)}
 @media(max-width:1100px){.plan-columns{grid-template-columns:minmax(0,1fr) 300px}}
 @media(max-width:980px){.plan-columns{grid-template-columns:1fr}.plan-side{grid-template-columns:1fr 1fr}.truth-card{grid-column:1/-1}}
-@media(max-width:760px){.plan-hero{flex-direction:column;align-items:flex-start;gap:14px}.hero-actions{width:100%}.hero-ghost{width:100%}.filter-bar{margin-bottom:14px}.subject-pills{flex-wrap:nowrap;overflow-x:auto;width:100%;padding-bottom:4px;scrollbar-width:none}.subject-pills::-webkit-scrollbar{display:none}.subject-pill{flex:none}.plan-wheel{padding:14px 14px 18px;border-radius:18px}.plan-list{max-height:clamp(220px,calc(100vh - 460px),520px)}.plan-row{grid-template-columns:32px 18px minmax(0,1fr) auto;padding:13px 0 15px}.plan-title{flex-wrap:wrap;align-items:flex-start}.plan-title strong{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;white-space:normal;overflow:hidden;font-size:calc(14px*var(--fs-scale));line-height:19px}.plan-sub{font-size:calc(11.5px*var(--fs-scale))}.plan-more{opacity:1}.plan-side{grid-template-columns:1fr}.truth-card{grid-column:auto}}
+@media(max-width:760px){.plan-hero{flex-direction:column;align-items:flex-start;gap:14px}.hero-actions{width:100%}.hero-ghost{width:100%}.filter-bar{margin-bottom:14px}.subject-pills{flex-wrap:nowrap;overflow-x:auto;width:100%;padding-bottom:4px;scrollbar-width:none}.subject-pills::-webkit-scrollbar{display:none}.subject-pill{flex:none}.plan-wheel{padding:14px 14px 18px;border-radius:18px}.plan-list-head{flex-wrap:wrap;row-gap:6px}.plan-list{max-height:clamp(220px,calc(100vh - 460px),520px)}.plan-row{grid-template-columns:32px 18px minmax(0,1fr) auto;padding:13px 0 15px}.plan-title{flex-wrap:wrap;align-items:flex-start}.plan-title strong{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;white-space:normal;overflow:hidden;font-size:calc(14px*var(--fs-scale));line-height:19px}.plan-sub{font-size:calc(11.5px*var(--fs-scale))}.plan-more{opacity:1}.plan-side{grid-template-columns:1fr}.truth-card{grid-column:auto}}
 @media (prefers-reduced-motion: reduce){.hero-ghost{transition:none}.week-bar i{transition:none}.plan-tick,.plan-tick svg,.plan-more{transition:none}}
 :deep(sub){font-size:.7em;line-height:0;vertical-align:sub}
 /* 从通知点进来、或刚新建完时给目标任务一圈高亮，2.8 秒后自动淡出。 */
