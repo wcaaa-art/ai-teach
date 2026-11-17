@@ -225,7 +225,6 @@ app.get('/api/ai/capabilities', (_req, res) => {
       ready: isRagReady(),
       engine: process.env.RAG_HYBRID === '1' ? 'BM25 + 稠密向量 RRF 融合' : 'BM25 稀疏检索',
       rerank: isRerankEnabled() ? '规则重排（覆盖度 + 可读性 + 结构 + 学科）' : '关闭',
-      rerank: isRerankEnabled() ? '规则重排（覆盖度 + 可读性 + 结构 + 学科）' : '关闭',
       evalCases: RAG_EVAL_CASES.length,
       negativeCases: RAG_NEGATIVE_CASES.length,
       // 可读性质量门：公式抽取丢失的片段不进「检索依据」。
