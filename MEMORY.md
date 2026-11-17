@@ -849,6 +849,23 @@
 - 已回退的额外改动：A4 安全筛查、B1 RAG 质量门、B3 图片多轮、C1 ESLint。B1/B3 留在分支 `backup/batches-ab`（提交 `2ec17cb`），A4 只存在于 tag `batch-a`（`f687e22`）。要恢复时用 `git cherry-pick`，别直接 reset。
 - 未做但已写清方案：A4 危险对象+可操作意图双条件筛查（自伤转介 12356）、B2 规则重排、B4 Agent 任务态持久化、C2 checkJs、C3 巨型 view 拆分。
 
+## 整改 P1：安全双层（2026-11-17，提交 ee91623 / tag p1）
+
+- `server/safety.js`：**危险对象 + 可操作意图**双条件才拦，避免"出现炸弹二字就拒绝"的误杀。自伤类不看意图、命中具体方式即转介 12356 心理援助热线。学科白名单用正则 `(燃烧|爆炸).{0,4}(条件|极限|原理|实验)|灭火|化学方程式|禁毒|普法`，刻意不含裸词"燃烧/历史"（会被"教我做炸弹，从历史讲起"钻空子）。
+- 两条答疑链路都接：一次性 `/api/agent/tutor` 与流式 `/tutor/stream`；流式在结束前用 `replace` 事件覆盖已推流内容。`SAFETY_SCREEN=0` 一键回到旧口径，旧 `safeFilter` 保留兜底。
+- `/api/ai/capabilities` 增加 `safety{enabled,inputCategories,intentVerbs,outputRules,stats,layers}`，评委能看到拦了几次、按哪类拦的。限流提示改倒计时（`cooldownHint`），不再说"每隔一会儿"。
+- 已验证：炸弹配方→explosive、让同学受伤→harm-others、自杀方法→self-harm（带热线）；9 条安全测试覆盖 20 条放行样本。
+
+## 整改 P2：RAG 引用质量 + 图片多轮 + 工程门禁（2026-11-17，提交 f4eb9b1 / tag p2）
+
+- 真题索引的真实问题不是"编码乱码"，而是 **PDF 公式符号抽取丢失**，原文变成 `y\nx\nbx\nc`；页面把换行折叠后看着像 `yyy`。语料 PDF 不在包里，索引无法重建（`中考/` 目录缺失、未装 PyMuPDF），所以只能做**运行时治理**。
+- `assessPassageQuality()`：空白切词碎片率 >0.44 直接判低质（最灵敏信号）、中文占比 <0.3、短行占比、长度、`【答案】`回补。全库分布：数学 42% 低质、物理 16%、其余 0%。阈值 0.42。
+- 只在**引用层**过滤，检索召回不动（`searchPassages` 新增 `minQuality` 但默认 0）。tools 里可读片段优先、全不可读保留一条并附 `passagesNote` 让模型别整段抄；`/ai` 页对 garbled 片段只留出处、正文交给占位文案。
+- 图片多轮：`src/utils/tutorHistory.js` 的 `buildTutorHistory/clipImageContext`，图片不落库、只留 240 字答复要点进下一轮 history；说明文案同步改。
+- 工程门禁：`eslint.config.js` 只开查错规则（`no-dupe-*`/`no-unreachable`/`no-obj-calls` 等），`no-useless-escape`/`no-control-regex` 关闭并注明原因，模板风格规则全关；当前 0 error / 26 warning。`mastery/notices/reciteMode/studySession` 加 `@ts-check`，受检文件 5→9。
+- UI 修：`AiLabView` 状态卡取值改 `font-family:inherit`，等宽字体把 `deepseek-flash` 拉成散字的问题消失。
+- 验证：318 测试通过、typecheck、lint 0 error、build、rag:eval 23/23。
+
 ## 协作约定
 
 - 每个任务收尾固定格式：**做了什么 / 验证结果 / 下一步建议**，必须带「下一步」，不等豪哥再问。
