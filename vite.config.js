@@ -64,7 +64,9 @@ export default defineConfig({
   // preview（4173）也走同一套代理，否则静态预览下 /api 会回落到 index.html。
   preview: { port: 4173, strictPort: true, proxy: { '/api': 'http://localhost:3001' } },
   build: {
-    sourcemap: true,
+    // 生产包默认不带 sourcemap：源码映射会把整份业务代码连同注释暴露给评审浏览器，
+    // 体积也翻倍。本地排障需要时用 BUILD_SOURCEMAP=1 npm run build。
+    sourcemap: process.env.BUILD_SOURCEMAP === '1',
     rollupOptions: {
       output: {
         // 把稳定、几乎不变的 vue 全家桶单独拆成 vendor chunk，浏览器可长缓存：

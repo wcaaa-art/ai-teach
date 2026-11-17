@@ -1,7 +1,7 @@
 import 'dotenv/config'
 import express from 'express'
 import cors from 'cors'
-import { TOOL_LABELS, buildPlanPrompt, callDeepSeek, extractJson, fallbackPlan, guardTutorAnswer, normalizeIterationOutput, normalizePlanOutput, normalizeReplacedPlan, safeFilter, streamAgent } from './agent.js'
+import { TOOL_LABELS, buildPlanPrompt, callDeepSeek, extractJson, fallbackPlan, getLlmRequestStats, guardTutorAnswer, normalizeIterationOutput, normalizePlanOutput, normalizeReplacedPlan, safeFilter, streamAgent } from './agent.js'
 import { createAuthRouter, createAuthService } from './auth.js'
 import { executeTool, toolSchemas } from './tools.js'
 import { mcpPrompts, mcpResources, mcpTools } from './mcp-capabilities.js'
@@ -22,6 +22,7 @@ import { looksGarbled, parseExamQuestions, reflowText } from './exam-text.js'
 import { getLocalLesson } from './lessons/index.js'
 import { generatePractice } from './practice.js'
 import { formatCitation, isRagReady, searchPassages } from './rag/index.js'
+import { isScreenEnabled, screenInput, screenOutput } from './safety.js'
 
 const app = express()
 const allowedOrigins = (process.env.CLIENT_ORIGINS || process.env.CLIENT_ORIGIN || 'http://localhost:5173,http://localhost:4173')
@@ -43,7 +44,8 @@ const tutorRate = new Map()
 
 const ok = (res, data, extra = {}) => res.json({ success: true, data, ...extra })
 
-app.get('/api/health', (req, res) => ok(res, { status: 'ok', model: process.env.LLM_MODEL_NAME || 'deepseek-flash' }))
+// 健康检查顺带暴露 LLM 重试计数：出问题时能一眼看出是上游限流还是配置错误。
+app.get('/api/health', (req, res) => ok(res, { status: 'ok', model: process.env.LLM_MODEL_NAME || 'deepseek-flash', llm: getLlmRequestStats() }))
 
 app.get('/api/curriculum/subjects', (req, res) => {
   return ok(res, listCurriculumSubjects(req.query.grade))
@@ -734,6 +736,11 @@ app.post('/api/agent/tutor', async (req, res) => {
     if (tutorRate.size > 1000) {
       for (const [key, timestamp] of tutorRate) if (Date.now() - timestamp > 60000) tutorRate.delete(key)
     }
+    // 先跑意图筛查：它给的拒绝话术更具体（自伤会转介热线），命中后再落到关键词兜底。
+    if (isScreenEnabled()) {
+      const screened = screenInput(body.question || '')
+      if (screened.blocked) return ok(res, { answer: screened.reply }, { source: 'safety-guard', guard: screened.category })
+    }
     const question = safeFilter(body.question || '')
     if (question !== body.question) return ok(res, { answer: question }, { source: 'safety-filter' })
     const history = Array.isArray(body.history) ? body.history
@@ -751,7 +758,10 @@ app.post('/api/agent/tutor', async (req, res) => {
     }
     const result = await callDeepSeek({ messages: [...history, { role: 'user', content: userContent }], systemPrompt: tutorSystemPrompt(tutorMode), context: body.context || {}, useTools: false })
     if (!result.success) return ok(res, { answer: tutorMode === 'explain' ? TUTOR_EXPLAIN_FALLBACK : TUTOR_FALLBACK_ANSWER }, { source: 'mock' })
-    return ok(res, { answer: guardTutorAnswer(result.content, { mode: tutorMode }) }, { source: result.source })
+    // 输出侧先过安全筛查，再走"引导模式不给答案"的守卫。
+    const screened = isScreenEnabled() ? screenOutput(result.content) : { blocked: false, text: result.content }
+    if (screened.blocked) return ok(res, { answer: screened.text }, { source: 'safety-guard', guard: screened.category })
+    return ok(res, { answer: guardTutorAnswer(screened.text, { mode: tutorMode }) }, { source: result.source })
   } catch (error) {
     const invalidKey = /LLM 401/.test(error.message || '')
     return ok(res, { answer: invalidKey ? 'DeepSeek API key 没有通过验证。请在项目根目录 .env 中填写有效的 DEEPSEEK_API_KEY，保存后重启 npm run dev。' : '模型暂时需要休息一下。你可以先写出已知条件和想用的知识点，稍后我再陪你检查。' }, { source: invalidKey ? 'config-error' : 'mock', error: error.message })
@@ -790,6 +800,10 @@ app.post('/api/agent/tutor/stream', async (req, res) => {
     writeEvent('done', { content: text, source })
   }
 
+  if (isScreenEnabled()) {
+    const screened = screenInput(String(body.question || ''))
+    if (screened.blocked) { await streamFallback(screened.reply, 'safety-guard'); return res.end() }
+  }
   const question = safeFilter(String(body.question || ''))
   if (!question.trim()) { await streamFallback('先告诉我你卡在哪一步，我好陪你一起拆。', 'validation'); return res.end() }
   if (question !== body.question) { await streamFallback(question, 'safety-filter'); return res.end() }
@@ -819,8 +833,9 @@ app.post('/api/agent/tutor/stream', async (req, res) => {
       else if (event.type === 'tool') writeEvent('tool', { name: event.name, label: event.label, status: event.status, summary: event.summary, citations: event.citations || [] })
       else if (event.type === 'done') { answer = event.content || answer; trace = event.tools || [] }
     }
-    const guarded = guardTutorAnswer(answer, { mode: tutorMode })
-    // 流式内容已经到达页面，若触发安全改写就下发 replace 覆盖，前端替换而不追加。
+    // 流式内容已经到达页面：命中输出侧安全规则就用 replace 覆盖，前端替换而不是追加。
+    const screened = isScreenEnabled() ? screenOutput(answer) : { blocked: false, text: answer }
+    const guarded = guardTutorAnswer(screened.text, { mode: tutorMode })
     if (guarded !== answer) writeEvent('replace', { content: guarded, reason: 'safety-guard' })
     writeEvent('done', { content: guarded, source: 'deepseek', tools: trace })
     return res.end()
