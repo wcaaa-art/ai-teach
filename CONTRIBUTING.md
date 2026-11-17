@@ -66,3 +66,64 @@ npm run lint       # 0 error 才算过（现有 warning 不阻塞）
 npm test           # node --test
 npm run typecheck  # 覆盖 // @ts-check 标注的核心模块
 ```
+
+## 新手日常流程（照抄命令即可）
+
+### 每天开工
+
+```powershell
+git switch main
+git pull --rebase
+npm install          # 只有 package.json 变了才需要
+```
+
+### 做一个改动
+
+```powershell
+git switch -c feat/my-topic          # 分支名英文小写，用连字符
+# ...改代码...
+npm test; npm run lint; npm run typecheck
+git status                           # 先看清改了哪些文件
+git add src/views/PracticeView.vue   # 按文件加，不要 git add .
+git commit -m "feat: 说明为什么改"
+git push -u origin feat/my-topic
+gh pr create --base main --fill
+```
+
+### 走完一个 PR
+
+1. 对方 review 并点 Approve —— **不能自己批自己的 PR**
+2. CI 的 `check` 必须是绿的
+3. 点 Squash and merge，勾上删除分支
+4. 回本地 `git switch main` 后 `git pull --rebase`
+
+## 五个高频卡点
+
+| 现象 | 原因 | 处理 |
+| --- | --- | --- |
+| `GH006 Protected branch update failed` | 直接在 main 上提交了 | 建分支重推，main 不接受直推 |
+| `This branch is out-of-date` | main 有了新提交，保护规则要求先同步 | 本地 `git pull --rebase origin main` 后重推 |
+| PR 显示 `CONFLICTING` | 两人改了同一段代码 | 见下方「解冲突」 |
+| CI 红灯 | lint / test / typecheck 没过 | 看 Actions 日志，本地复现后再推 |
+| 之前的 Approve 不见了 | 分支推了新提交，旧批准自动作废 | 让对方重新 review 一次 |
+
+### 解冲突
+
+```powershell
+git switch feat/my-topic
+git pull --rebase origin main
+# 打开冲突文件，会看到 <<<<<<<  =======  >>>>>>>
+# 只保留最终想要的内容，三行标记全部删掉
+git add 冲突文件
+git rebase --continue
+git push --force-with-lease
+```
+
+本地解完先跑一遍 `npm test`，别把半成品推上去让别人替你发现。
+
+## 两人分工规则
+
+- **按文件划分，不按功能划分**。同一文件两人同一天改，必冲突。
+- 动 `PracticeView.vue`、`QuizView.vue` 这类大页面前，先在群里说一声。
+- 单个 PR 只做一件事，超过 300 行就该拆。
+- 不确定能不能改的，先开 Issue 讨论，别先写代码。
