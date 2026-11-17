@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { useAppStore } from '../stores/app.js'
+import { markRouteDone, markRouteStart } from '../utils/routeProgress.js'
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -26,6 +27,11 @@ const router = createRouter({
   ],
   scrollBehavior: () => ({ top: 0 })
 })
+
+// 懒加载页面在点击后到渲染前会有空档，这里点亮顶部进度条给即时反馈。
+router.beforeEach(to => { markRouteStart(to) })
+router.afterEach(() => { markRouteDone() })
+router.onError(() => { markRouteDone() })
 
 // 依赖登录的页面先确认服务端会话，未登录时带上原路径跳转到登录页。
 router.beforeEach(async to => {

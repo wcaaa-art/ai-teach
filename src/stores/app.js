@@ -27,11 +27,18 @@ export const useAppStore = defineStore('app', () => {
   let authRequest = null
   const isDark = computed(() => settings.value.darkMode)
 
+// 主题镜像：IndexedDB 是异步的，首屏拿到设置前会闪一下浅色；
+// 把结果同步写一份到 localStorage，index.html 的内联脚本就能在首帧前把主题定下来。
+function mirrorTheme() {
+  try { localStorage.setItem('ai-teach-theme', settings.value.darkMode ? 'dark' : 'light') } catch (error) { /* 隐私模式下写不进去，忽略 */ }
+}
+
   async function hydrate() {
     if (hydrated.value) return
     try {
       const persisted = await getSettings()
       if (persisted) settings.value = { ...settings.value, ...persisted }
+      mirrorTheme()
     } catch (error) {
       console.warn('本机设置读取失败，将使用默认设置。', error)
     } finally {
@@ -44,6 +51,7 @@ export const useAppStore = defineStore('app', () => {
     // 展开成普通对象再写库：Vue 响应式 Proxy 无法被 IndexedDB 结构化克隆
     try { await saveSettings({ ...settings.value }) } catch (error) { console.warn('本机设置暂时无法持久化。', error) }
     document.documentElement.dataset.theme = settings.value.darkMode ? 'dark' : 'light'
+    mirrorTheme()
   }
 
   // 登录态通过 HttpOnly Cookie 在服务端维持，这里只缓存当前用户并去重并发查询。

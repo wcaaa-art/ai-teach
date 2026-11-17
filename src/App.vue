@@ -4,6 +4,7 @@ import { useRoute } from 'vue-router'
 import AppShell from './components/AppShell.vue'
 import ErrorBoundary from './components/ErrorBoundary.vue'
 import { useAppStore } from './stores/app.js'
+import { routeLoading } from './utils/routeProgress.js'
 
 const store = useAppStore()
 const route = useRoute()
@@ -35,6 +36,9 @@ watch(() => store.settings.darkMode, applyTheme)
 </script>
 
 <template>
+  <!-- 懒加载页面的即时反馈：细进度条固定在顶部，不占布局、不推挤内容 -->
+  <div v-if="routeLoading" class="route-bar" role="status" aria-label="页面加载中"></div>
+
   <AppShell v-if="ready" :key="contentKey" :title="route.meta.title || 'Ai学习小伙伴'">
     <ErrorBoundary>
       <router-view v-slot="{ Component, route: current }">
@@ -63,6 +67,14 @@ watch(() => store.settings.darkMode, applyTheme)
 </template>
 
 <style scoped>
+.route-bar{position:fixed;top:0;left:0;right:0;height:2px;z-index:99;background:var(--primary);opacity:.85;overflow:hidden}
+.route-bar::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.7),transparent);background-size:45% 100%;background-repeat:no-repeat;animation:routeSlide 1s linear infinite}
+@keyframes routeSlide{0%{background-position:-40% 0}100%{background-position:140% 0}}
+@media (prefers-reduced-motion: reduce){.route-bar::after{animation:none;background:none}}
+.route-bar{position:fixed;top:0;left:0;right:0;height:2px;z-index:99;background:var(--primary);opacity:.85;overflow:hidden}
+.route-bar::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.7),transparent);background-size:45% 100%;background-repeat:no-repeat;animation:routeSlide 1s linear infinite}
+@keyframes routeSlide{0%{background-position:-40% 0}100%{background-position:140% 0}}
+@media (prefers-reduced-motion: reduce){.route-bar::after{animation:none;background:none}}
 .app-boot{min-height:100vh;background:var(--bg);display:flex;flex-direction:column}
 .boot-bar{height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;border-bottom:1px solid var(--border);background:var(--surface)}
 .boot-logo{font-size:calc(15px*var(--fs-scale));font-weight:600;color:var(--text);letter-spacing:.02em}

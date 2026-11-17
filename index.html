@@ -9,6 +9,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-v4-32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-v4.png" />
     <title>Ai学习小伙伴</title>
+    <!-- 首帧前同步主题，避免深色用户先看到一帧浅色再跳变（设置以 IndexedDB 为准，这里只读镜像） -->
+    <script>
+      try {
+        if (localStorage.getItem('ai-teach-theme') === 'dark') document.documentElement.dataset.theme = 'dark'
+      } catch (error) {}
+    </script>
   </head>
   <body><div id="app"></div><script type="module" src="/src/main.js"></script></body>
 </html>
