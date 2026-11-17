@@ -1,6 +1,6 @@
 // @ts-check
 // 路由表独立成文件：不依赖 window，方便用 node --test 校验登录门禁的覆盖范围。
-// 访问策略：未登录只能进主页、专注空间和登录页，其余页面一律标记 requiresAuth。
+// 访问策略：未登录只能进主页、专注空间、设置和登录页，其余页面一律标记 requiresAuth。
 /** @type {import('vue-router').RouteRecordRaw[]} */
 export const routes = [
   { path: '/', redirect: '/home' },
@@ -23,6 +23,7 @@ export const routes = [
   // AI 能力地图：面向评委展示 Agent / RAG / MCP / 多模态与安全兜底，入口在导航和首页。
   { path: '/ai', name: 'ai-lab', component: () => import('../views/AiLabView.vue'), meta: { title: 'AI 能力', requiresAuth: true } },
   { path: '/dashboard', name: 'dashboard', component: () => import('../views/DashboardView.vue'), meta: { title: '学习看板', requiresAuth: true } },
-  { path: '/settings', name: 'settings', component: () => import('../views/SettingsView.vue'), meta: { title: '系统设置', requiresAuth: true } },
+  // 系统设置只改主题、字号等本机偏好，不涉及学习数据，未登录也放行。
+  { path: '/settings', name: 'settings', component: () => import('../views/SettingsView.vue'), meta: { title: '系统设置' } },
   { path: '/account', name: 'account', component: () => import('../views/AccountView.vue'), meta: { title: '账号中心', requiresAuth: true } }
 ]

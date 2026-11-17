@@ -15,7 +15,7 @@ router.beforeEach(to => { markRouteStart(to) })
 router.afterEach(() => { markRouteDone() })
 router.onError(() => { markRouteDone() })
 
-// 访问策略：只有主页、专注空间和登录页对未登录开放，其余页面先确认服务端会话，
+// 访问策略：只有主页、专注空间、设置和登录页对未登录开放，其余页面先确认服务端会话，
 // 未登录时带上原路径跳转到登录页，登录成功后由 AuthView 送回这里。
 router.beforeEach(async to => {
   if (!to.meta.requiresAuth) return true
