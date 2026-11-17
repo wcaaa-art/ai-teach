@@ -22,6 +22,7 @@ import { looksGarbled, parseExamQuestions, reflowText } from './exam-text.js'
 import { getLocalLesson } from './lessons/index.js'
 import { generatePractice } from './practice.js'
 import { formatCitation, isRagReady, searchPassages } from './rag/index.js'
+import { describeSafetyRules, getSafetyStats, isScreenEnabled, screenInput, screenOutput } from './safety.js'
 
 const app = express()
 const allowedOrigins = (process.env.CLIENT_ORIGINS || process.env.CLIENT_ORIGIN || 'http://localhost:5173,http://localhost:4173')
@@ -40,6 +41,12 @@ const authService = await createAuthService({ secret: process.env.AUTH_SESSION_S
 app.use('/api/auth', createAuthRouter(authService))
 let latestVisualStatus = { is_present: true, continuous_away_seconds: 0, updatedAt: Date.now() }
 const tutorRate = new Map()
+// 答疑冷却：同一来源 10 秒内只能问一次，提示里带上还要等几秒，避免"每隔一会儿"这种含糊话术。
+const TUTOR_COOLDOWN_MS = 10000
+function cooldownHint(previous) {
+  const wait = Math.max(1, Math.ceil((TUTOR_COOLDOWN_MS - (Date.now() - previous)) / 1000))
+  return `先消化一下刚才那一步，${wait} 秒后再问下一个问题。`
+}
 
 const ok = (res, data, extra = {}) => res.json({ success: true, data, ...extra })
 
@@ -184,6 +191,11 @@ app.get('/api/ai/capabilities', (_req, res) => {
       tools: mcpTools.map(({ name, description }) => ({ name, description })),
       resources: mcpResources.map(({ uri, name, description }) => ({ uri, name, description })),
       prompts: mcpPrompts.map(({ name, title, description }) => ({ name, title, description }))
+    },
+    safety: {
+      ...describeSafetyRules(),
+      stats: getSafetyStats(),
+      layers: ['输入侧意图筛查（危险对象 + 可操作意图）', '输出侧危险做法过滤', '青少年引导话术（不给完整答案）', '模型不可用降级']
     },
     rag: {
       ready: isRagReady(),
@@ -730,10 +742,15 @@ app.post('/api/agent/tutor', async (req, res) => {
     const tutorMode = body.mode === 'explain' ? 'explain' : 'guide'
     const rateKey = String(req.ip || 'local')
     const previous = tutorRate.get(rateKey) || 0
-    if (Date.now() - previous < 10000) return ok(res, { answer: '我们每隔一会儿再问一个问题，先把刚才的思路消化一下吧。' }, { source: 'rate-limit' })
+    if (Date.now() - previous < TUTOR_COOLDOWN_MS) return ok(res, { answer: cooldownHint(previous) }, { source: 'rate-limit' })
     tutorRate.set(rateKey, Date.now())
     if (tutorRate.size > 1000) {
       for (const [key, timestamp] of tutorRate) if (Date.now() - timestamp > 60000) tutorRate.delete(key)
+    }
+    // 先跑意图筛查：它给的拒绝话术更具体（自伤会转介热线），命中后再落到关键词兜底。
+    if (isScreenEnabled()) {
+      const screened = screenInput(body.question || '')
+      if (screened.blocked) return ok(res, { answer: screened.reply }, { source: 'safety-guard', guard: screened.category })
     }
     const question = safeFilter(body.question || '')
     if (question !== body.question) return ok(res, { answer: question }, { source: 'safety-filter' })
@@ -752,7 +769,10 @@ app.post('/api/agent/tutor', async (req, res) => {
     }
     const result = await callDeepSeek({ messages: [...history, { role: 'user', content: userContent }], systemPrompt: tutorSystemPrompt(tutorMode), context: body.context || {}, useTools: false })
     if (!result.success) return ok(res, { answer: tutorMode === 'explain' ? TUTOR_EXPLAIN_FALLBACK : TUTOR_FALLBACK_ANSWER }, { source: 'mock' })
-    return ok(res, { answer: guardTutorAnswer(result.content, { mode: tutorMode }) }, { source: result.source })
+    // 输出侧先过安全筛查，再走"引导模式不给答案"的守卫。
+    const screened = isScreenEnabled() ? screenOutput(result.content) : { blocked: false, text: result.content }
+    if (screened.blocked) return ok(res, { answer: screened.text }, { source: 'safety-guard', guard: screened.category })
+    return ok(res, { answer: guardTutorAnswer(screened.text, { mode: tutorMode }) }, { source: result.source })
   } catch (error) {
     const invalidKey = /LLM 401/.test(error.message || '')
     return ok(res, { answer: invalidKey ? 'DeepSeek API key 没有通过验证。请在项目根目录 .env 中填写有效的 DEEPSEEK_API_KEY，保存后重启 npm run dev。' : '模型暂时需要休息一下。你可以先写出已知条件和想用的知识点，稍后我再陪你检查。' }, { source: invalidKey ? 'config-error' : 'mock', error: error.message })
@@ -791,10 +811,14 @@ app.post('/api/agent/tutor/stream', async (req, res) => {
     writeEvent('done', { content: text, source })
   }
 
+  if (isScreenEnabled()) {
+    const screened = screenInput(String(body.question || ''))
+    if (screened.blocked) { await streamFallback(screened.reply, 'safety-guard'); return res.end() }
+  }
   const question = safeFilter(String(body.question || ''))
   if (!question.trim()) { await streamFallback('先告诉我你卡在哪一步，我好陪你一起拆。', 'validation'); return res.end() }
   if (question !== body.question) { await streamFallback(question, 'safety-filter'); return res.end() }
-  if (Date.now() - previous < 10000) { await streamFallback('我们每隔一会儿再问一个问题，先把刚才的思路消化一下吧。', 'rate-limit'); return res.end() }
+  if (Date.now() - previous < TUTOR_COOLDOWN_MS) { await streamFallback(cooldownHint(previous), 'rate-limit'); return res.end() }
   tutorRate.set(rateKey, Date.now())
   if (tutorRate.size > 1000) {
     for (const [key, timestamp] of tutorRate) if (Date.now() - timestamp > 60000) tutorRate.delete(key)
@@ -820,7 +844,9 @@ app.post('/api/agent/tutor/stream', async (req, res) => {
       else if (event.type === 'tool') writeEvent('tool', { name: event.name, label: event.label, status: event.status, summary: event.summary, citations: event.citations || [] })
       else if (event.type === 'done') { answer = event.content || answer; trace = event.tools || [] }
     }
-    const guarded = guardTutorAnswer(answer, { mode: tutorMode })
+    // 流式内容已经到达页面：命中输出侧安全规则就用 replace 覆盖，前端替换而不是追加。
+    const screened = isScreenEnabled() ? screenOutput(answer) : { blocked: false, text: answer }
+    const guarded = guardTutorAnswer(screened.text, { mode: tutorMode })
     if (guarded !== answer) writeEvent('replace', { content: guarded, reason: 'safety-guard' })
     writeEvent('done', { content: guarded, source: 'deepseek', tools: trace })
     return res.end()
