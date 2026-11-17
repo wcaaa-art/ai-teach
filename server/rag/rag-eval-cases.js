@@ -42,7 +42,14 @@ export const RAG_EVAL_CASES = [
   { id: 'bio-meristem', subject: '生物', grade: '初三', query: '植物分生组织能分裂产生新叶', expectKeywords: ['分生组织'] },
 
   // ===== 道德与法治 =====
-  { id: 'morality-emotion', subject: '道德与法治', grade: '初三', query: '美好的情感能够传递正能量', expectKeywords: ['情感'] }
+  { id: 'morality-emotion', subject: '道德与法治', grade: '初三', query: '美好的情感能够传递正能量', expectKeywords: ['情感'] },
+
+  // ===== 口语化提问（考查询问扩展：学生不会用课标原词）=====
+  { id: 'math-parabola-vertex', subject: '数学', grade: '初三', query: '抛物线顶点怎么求', expectKeywords: ['二次函数'] },
+  { id: 'math-triangle-stiff', subject: '数学', grade: '初二', query: '三角形为什么不容易变形', expectKeywords: ['稳定'], corpusGap: '语料中稳定性相关片段不足，用于观察覆盖缺口，不计入通过率' },
+  { id: 'physics-current-voltage', subject: '物理', grade: '初三', query: '电流和电压是什么关系', expectKeywords: ['欧姆'], corpusGap: '全库仅 3 个片段含欧姆定律，属语料覆盖不足' },
+  { id: 'chem-balance-equation', subject: '化学', grade: '初三', query: '反应式怎么配平', expectKeywords: ['化学方程式'] },
+  { id: 'hist-overthrow-monarchy', subject: '历史', grade: '初二', query: '推翻帝制的那场起义', expectKeywords: ['辛亥'] }
 ]
 
 // 期望检索不到任何片段的负例：过短或与语料无关的问题不能硬凑结果。

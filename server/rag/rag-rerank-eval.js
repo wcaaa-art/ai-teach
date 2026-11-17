@@ -21,7 +21,8 @@ function evaluate(useRerank) {
   let top1QualitySum = 0
   let top1Count = 0
   const rows = []
-  for (const testCase of RAG_EVAL_CASES) {
+  // 语料缺口用例（corpusGap）断言的是"语料有没有"，不参与重排对比。
+  for (const testCase of RAG_EVAL_CASES.filter(item => !item.corpusGap)) {
     const pool = searchPassages({
       query: testCase.query,
       subject: testCase.subject,
@@ -46,7 +47,7 @@ function evaluate(useRerank) {
     }
     rows.push({ id: testCase.id, passed, top3Low, top: passages[0], query: testCase.query })
   }
-  return { hit, total: RAG_EVAL_CASES.length, lowQualityInTop3, returned, rows, top1Low, top1SubjectHit, top1QualityAvg: top1Count ? top1QualitySum / top1Count : 0 }
+  return { hit, total: RAG_EVAL_CASES.filter(item => !item.corpusGap).length, lowQualityInTop3, returned, rows, top1Low, top1SubjectHit, top1QualityAvg: top1Count ? top1QualitySum / top1Count : 0 }
 }
 
 const baseline = evaluate(false)

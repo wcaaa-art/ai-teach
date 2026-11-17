@@ -4,6 +4,7 @@ import { readFileSync } from 'node:fs'
 import { gunzipSync } from 'node:zlib'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
+import { expandQuery } from './synonyms.js'
 
 const INDEX_PATH = join(dirname(fileURLToPath(import.meta.url)), 'rag-index.json.gz')
 const K1 = 1.2
@@ -131,11 +132,13 @@ function stageBoost(chunk, grade) {
  * @param {{ query?: string, subject?: string, grade?: string, topK?: number, minScore?: number, maxChars?: number, minQuality?: number }} [options]
  * @returns {Array<{ id: number, score: number, text: string, citation: string, source: string, subject: string, stage: string, exam: string, year: number, variant: string, file: string, quality: number, lowQuality: boolean }>}
  */
-export function searchPassages({ query = '', subject = '', grade = '', topK = 4, minScore = 4, maxChars = 900, subjectStrict = false, minQuality = 0 } = {}) {
+export function searchPassages({ query = '', subject = '', grade = '', topK = 4, minScore = 4, maxChars = 900, subjectStrict = false, minQuality = 0, expand = true } = {}) {
   const index = loadRagIndex()
   const normalizedQuery = normalizeText(query)
+  // 查询侧术语扩展：学生用口语提问时，用别名表把课标原词补进来。RAG_EXPAND=0 可关闭。
+  const expansion = expand && process.env.RAG_EXPAND !== '0' ? expandQuery(query) : { expanded: query, added: [] }
   if (normalizedQuery.length < 2) return []
-  const tokens = tokenizeQuery(query)
+  const tokens = tokenizeQuery(expansion.expanded)
   if (!tokens.length) return []
 
   const { chunks, postings, documentLengths, averageLength } = index

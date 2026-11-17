@@ -74,13 +74,19 @@ const compare = compareMode ? RAG_EVAL_CASES.map(item => {
   }
 }) : null
 
-const total = results.length
-const passed = results.filter(item => item.passed).length
-const subjectHits = results.filter(item => item.subjectHit).length
-const keywordHits = results.filter(item => item.keywordHit).length
+// 语料覆盖缺口用例：断言的是"语料里有没有"，不是"检索得好不好"，
+// 单独列出来观察，不计入通过率，避免优化分词时被这类用例误导。
+const gapIds = new Set(RAG_EVAL_CASES.filter(item => item.corpusGap).map(item => item.id))
+const scored = results.filter(item => !gapIds.has(item.id))
+const gapResults = results.filter(item => gapIds.has(item.id))
+
+const total = scored.length
+const passed = scored.filter(item => item.passed).length
+const subjectHits = scored.filter(item => item.subjectHit).length
+const keywordHits = scored.filter(item => item.keywordHit).length
 const negativesPassed = negatives.filter(item => item.passed).length
-const averageScore = results.reduce((sum, item) => sum + item.topScore, 0) / (total || 1)
-const averageCitations = results.reduce((sum, item) => sum + item.citations, 0) / (total || 1)
+const averageScore = scored.reduce((sum, item) => sum + item.topScore, 0) / (total || 1)
+const averageCitations = scored.reduce((sum, item) => sum + item.citations, 0) / (total || 1)
 const subjectAccuracy = total ? subjectHits / total : 0
 const keywordAccuracy = total ? keywordHits / total : 0
 const passRate = total ? passed / total : 0
@@ -95,7 +101,8 @@ const report = {
   averageCitations: Number(averageCitations.toFixed(2)),
   negativeCases: negatives.length,
   negativePassed: negativesPassed,
-  failures: results.filter(item => !item.passed).map(item => ({ id: item.id, query: item.query, subject: item.subject, returned: item.returned, subjectHit: item.subjectHit, keywordHit: item.keywordHit, topSubject: item.topSubject })),
+  corpusGaps: gapResults.map(item => ({ id: item.id, query: item.query, reason: RAG_EVAL_CASES.find(entry => entry.id === item.id)?.corpusGap || '', passed: item.passed })),
+  failures: scored.filter(item => !item.passed).map(item => ({ id: item.id, query: item.query, subject: item.subject, returned: item.returned, subjectHit: item.subjectHit, keywordHit: item.keywordHit, topSubject: item.topSubject })),
   details: results
 }
 
@@ -107,6 +114,10 @@ if (jsonMode) {
   console.log(`  学科命中率：${(report.subjectAccuracy * 100).toFixed(1)}%   关键词命中率：${(report.keywordAccuracy * 100).toFixed(1)}%`)
   console.log(`  Top-1 平均得分：${report.averageTopScore}   平均返回条数：${report.averageCitations}`)
   console.log(`  负例：${report.negativeCases} 条，通过 ${report.negativePassed} 条（不该硬凑结果）`)
+  if (report.corpusGaps.length) {
+    console.log(`  语料覆盖缺口（不计入通过率）：${report.corpusGaps.length} 条`)
+    for (const gap of report.corpusGaps) console.log(`    · ${gap.id}｜${gap.reason}｜${gap.passed ? '已命中' : '未命中'}`)
+  }
   if (report.failures.length) {
     console.log('  未通过用例：')
     for (const item of report.failures) console.log(`    - ${item.id}｜${item.subject}｜"${item.query}"｜返回 ${item.returned} 条｜学科命中 ${item.subjectHit ? '是' : '否'}｜关键词命中 ${item.keywordHit ? '是' : '否'}`)
