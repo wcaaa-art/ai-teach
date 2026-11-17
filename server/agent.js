@@ -208,12 +208,17 @@ export function publicCitations(result = {}, limit = 4) {
   const raw = Array.isArray(result?.citations) ? result.citations : []
   const seen = new Set()
   const citations = []
-  for (const item of raw) {
-    const text = String(item || '').trim()
+  for (const entry of raw) {
+    const text = String(typeof entry === 'string' ? entry : entry?.text || '').trim()
     if (!text || seen.has(text)) continue
     seen.add(text)
     const matched = text.match(/^《(.+?)》\s*[：:]\s*(.+)$/)
-    citations.push({ text, title: matched ? matched[1] : text, detail: matched ? matched[2] : text })
+    const citation = { text, title: matched ? matched[1] : text, detail: matched ? matched[2] : text }
+    // 片段原文只给核对用：折叠空白后截 240 字，避免把整段真题重新推回浏览器。
+    const snippet = String(entry?.snippet || '').replace(/\s+/g, ' ').trim()
+    if (snippet) citation.snippet = snippet.slice(0, 240)
+    if (entry?.lowQuality) citation.lowQuality = true
+    citations.push(citation)
     if (citations.length >= limit) break
   }
   return citations

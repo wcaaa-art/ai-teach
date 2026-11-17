@@ -1,3 +1,4 @@
+// @ts-check
 import { computed, ref } from 'vue'
 import { defineStore } from 'pinia'
 import { getSettings, saveSettings, setDataOwner } from '../db/index.js'

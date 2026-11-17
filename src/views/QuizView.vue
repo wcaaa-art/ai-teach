@@ -3,7 +3,9 @@
 import { computed, nextTick, onBeforeUnmount, onMounted, reactive, ref, watch } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { onBeforeRouteLeave, useRoute, useRouter } from 'vue-router'
-import { extractQuestion, getCurriculumChapters, getCurriculumSubjects, generateQuizQuestions, prefetchQuizQuestions } from '../services/api.js'
+import { getCurriculumChapters, getCurriculumSubjects, generateQuizQuestions, prefetchQuizQuestions } from '../services/api.js'
+import { useAnswerPhotos } from '../composables/useAnswerPhotos.js'
+import QuestionOptions from '../components/QuestionOptions.vue'
 import {
   clearQuizDraft, loadAssessments, loadMistakes, loadPlans, loadQuizDraft, loadQuizFingerprints, loadQuizResults, loadScannedPaper, makeId, saveMistake, savePlan,
   pruneQuizFingerprints, saveFocusSuggestion, saveQuizDraft, saveQuizFingerprints, saveQuizResult
@@ -150,90 +152,11 @@ watch(elapsedSeconds, async () => {
   await submitQuiz(true)
 })
 
-// 手写作答：拍照/上传后只在本机保存，OCR 识别是可选的辅助手段，识别结果可手动改。
-const answerImages = reactive({})
-const ocrLoading = reactive({})
-const photoFiles = new Map()
-const photoTarget = ref('')
-const photoInput = ref(null)
-
-function pickPhoto(question) {
-  photoTarget.value = question.id
-  photoInput.value?.click()
-}
-
-function removePhoto(question) {
-  delete answerImages[question.id]
-  photoFiles.delete(question.id)
-}
-
-function readFileAsDataUrl(file) {
-  return new Promise((resolve, reject) => {
-    const reader = new FileReader()
-    reader.onload = () => resolve(String(reader.result || ''))
-    reader.onerror = () => reject(new Error('读取图片失败'))
-    reader.readAsDataURL(file)
-  })
-}
-
-// 长边压到 1280 再存，避免整张原图把 IndexedDB 撑爆。
-async function compressImage(file) {
-  const raw = await readFileAsDataUrl(file)
-  try {
-    const image = await new Promise((resolve, reject) => {
-      const img = new Image()
-      img.onload = () => resolve(img)
-      img.onerror = reject
-      img.src = raw
-    })
-    const scale = Math.min(1, 1280 / Math.max(image.width, image.height))
-    const canvas = document.createElement('canvas')
-    canvas.width = Math.round(image.width * scale)
-    canvas.height = Math.round(image.height * scale)
-    canvas.getContext('2d').drawImage(image, 0, 0, canvas.width, canvas.height)
-    return canvas.toDataURL('image/jpeg', 0.72)
-  } catch { return raw }
-}
-
-async function onPhotoChange(event) {
-  const file = event.target.files?.[0]
-  event.target.value = ''
-  const id = photoTarget.value
-  if (!file || !id) return
-  if (!file.type.startsWith('image/')) { ElMessage.info('请选择图片文件。'); return }
-  photoFiles.set(id, file)
-  answerImages[id] = { dataUrl: await compressImage(file), name: file.name }
-  ElMessage.success('已添加手写稿，可点「识别成文字」自动填入，也可以只保留照片。')
-}
-
-async function recognizePhoto(question) {
-  if (ocrLoading[question.id]) return
-  let file = photoFiles.get(question.id)
-  // 草稿恢复后只剩压缩后的 dataURL，重新包成 File 再走 OCR，避免「照片在但识别不了」。
-  if (!file && answerImages[question.id]?.dataUrl) {
-    try {
-      const blob = await (await fetch(answerImages[question.id].dataUrl)).blob()
-      file = new File([blob], answerImages[question.id].name || 'answer.jpg', { type: blob.type || 'image/jpeg' })
-      photoFiles.set(question.id, file)
-    } catch { /* 转 File 失败时按没有原始照片处理 */ }
-  }
-  if (!file) { ElMessage.info('这份草稿只有照片预览，无法重新识别；请重新选择照片或手动输入。'); return }
-  ocrLoading[question.id] = true
-  try {
-    const response = await extractQuestion(file)
-    if (!response.success) {
-      ElMessage.warning(`识别失败：${response.error || '未知原因'}，可以手动输入或只保留照片。`)
-      return
-    }
-    const text = String(response.data?.text || '').trim()
-    if (!text) { ElMessage.info('没有识别到文字，可以手动输入或只保留照片。'); return }
-    const current = String(answers[question.id] ?? '').trim()
-    answers[question.id] = current ? `${current}\n${text}` : text
-    ElMessage.success('已识别并填入，手写内容可能有误，请核对后再交卷。')
-  } finally {
-    ocrLoading[question.id] = false
-  }
-}
+// 手写作答的拍照、压缩与 OCR 收在 composable 里，页面只负责展示与草稿存取。
+const {
+  answerImages, ocrLoading, photoInput,
+  pickPhoto, removePhoto, onPhotoChange, recognizePhoto, clearPhotoFiles
+} = useAnswerPhotos(answers)
 
 const MODE_NAMES = { daily: '日常测试', weekly: '周测', paper: '综合整卷', scan: '扫描试卷' }
 const isPaper = computed(() => mode.value === 'paper')
@@ -453,7 +376,7 @@ async function startQuiz() {
     Object.keys(answers).forEach(key => delete answers[key])
     Object.keys(selfGrades).forEach(key => delete selfGrades[key])
     Object.keys(answerImages).forEach(key => delete answerImages[key])
-    photoFiles.clear()
+    clearPhotoFiles()
     list.forEach(question => {
       if (question.type === 'multiple') answers[question.id] = []
     })
@@ -544,23 +467,18 @@ function reviewTag(row) {
   return row.correct === true ? { type: 'success', text: '回答正确' } : { type: 'danger', text: '回答错误' }
 }
 
-// 结果页直接把选项本身标记出来：选错的标红、正确项标绿，不用来回对照两行文字。
-function optionReviewState(question, index) {
-  const value = answers[question.id]
-  const chosen = question.type === 'multiple'
-    ? Array.isArray(value) && value.map(Number).includes(index)
-    : value !== undefined && value !== null && value !== '' && Number(value) === index
-  const correct = isOptionCorrect(question, index)
-  if (correct && chosen) return 'chosen-correct'
-  if (correct) return 'correct'
-  return chosen ? 'chosen-wrong' : ''
+// 结果页把选项本身标记出来：正解标绿、错选标红，和错题库/练习回顾共用 QuestionOptions。
+function correctOptionIndexes(question) {
+  if (Array.isArray(question.correctIndexes) && question.correctIndexes.length) return question.correctIndexes.map(Number)
+  const index = Number(question.correctIndex)
+  return Number.isInteger(index) && index >= 0 ? [index] : []
 }
-function optionReviewFlag(question, index) {
-  return {
-    'chosen-correct': '你的选择 · 正确',
-    correct: '正确答案',
-    'chosen-wrong': '你的选择 · 错误'
-  }[optionReviewState(question, index)] || ''
+function chosenOptionIndexes(question) {
+  const value = answers[question.id]
+  if (question.type === 'multiple') return Array.isArray(value) ? value.map(Number) : []
+  if (value === undefined || value === null || value === '') return []
+  const index = Number(value)
+  return Number.isInteger(index) ? [index] : []
 }
 
 // 解析默认展开，逐题可以单独收起，回头复习时不用滚过所有解析。
@@ -781,7 +699,7 @@ function nextQuiz() {
   Object.keys(answers).forEach(key => delete answers[key])
   Object.keys(selfGrades).forEach(key => delete selfGrades[key])
   Object.keys(answerImages).forEach(key => delete answerImages[key])
-  photoFiles.clear()
+  clearPhotoFiles()
 }
 
 // ---- 答题中退出：保存草稿后再离开 ----
@@ -869,7 +787,7 @@ async function resumeDraft() {
     Object.keys(answers).forEach(key => delete answers[key])
     Object.keys(selfGrades).forEach(key => delete selfGrades[key])
     Object.keys(answerImages).forEach(key => delete answerImages[key])
-    photoFiles.clear()
+    clearPhotoFiles()
     Object.assign(answers, draft.answers || {})
     Object.assign(selfGrades, draft.selfGrades || {})
     Object.assign(answerImages, draft.answerImages || {})
@@ -947,7 +865,7 @@ async function initScannedPaper(id) {
     Object.keys(answers).forEach(key => delete answers[key])
     Object.keys(selfGrades).forEach(key => delete selfGrades[key])
     Object.keys(answerImages).forEach(key => delete answerImages[key])
-    photoFiles.clear()
+    clearPhotoFiles()
     resultSummary.value = null
     suggestion.value = null
     submittedAt.value = 0
@@ -1212,13 +1130,13 @@ onBeforeUnmount(() => {
             <span class="score-hint">{{ resultSummary?.perQuestion?.find(row => row.questionId === question.id)?.earned || 0 }} / {{ question.score }} 分</span>
           </div>
           <h4 v-html="formatMathText(question.stem)"></h4>
-          <ul v-if="question.options?.length" class="review-options">
-            <li v-for="(option, optionIndex) in question.options" :key="optionIndex" :class="optionReviewState(question, optionIndex)">
-              <span class="option-key">{{ optionLabel(optionIndex) }}</span>
-              <span class="option-text" v-html="formatMathText(option)"></span>
-              <em v-if="optionReviewFlag(question, optionIndex)" class="option-flag">{{ optionReviewFlag(question, optionIndex) }}</em>
-            </li>
-          </ul>
+          <QuestionOptions
+            v-if="question.options?.length"
+            :options="question.options"
+            :correct="correctOptionIndexes(question)"
+            :chosen="chosenOptionIndexes(question)"
+            flags
+          />
           <template v-else>
             <p class="review-line"><strong>你的作答：</strong><span v-html="formatMathText(answerText(question, answers[question.id]))"></span></p>
             <p class="review-line"><strong>参考答案：</strong><span v-html="formatMathText(correctText(question))"></span></p>
@@ -1302,22 +1220,9 @@ onBeforeUnmount(() => {
 .result-topbar-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:calc(12px*var(--fs-scale))}
 .wrong-pill{padding:3px 10px;border-radius:999px;background:rgba(245,108,108,.12);color:var(--danger,#f56c6c);font-weight:700}
 .wrong-pill.good{background:rgba(103,194,58,.12);color:var(--success,#67c23a)}
-/* 逐题选项：正确项绿色、选错项红色，标签直接写在选项右侧。 */
-.review-options{list-style:none;margin:10px 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.review-options li{display:flex;align-items:flex-start;gap:8px;padding:8px 10px;border:1px solid var(--border);border-radius:10px;background:var(--surface);font-size:calc(13px*var(--fs-scale));line-height:1.6}
-.review-options li.correct,.review-options li.chosen-correct{border-color:var(--success,#67c23a);background:rgba(103,194,58,.1)}
-.review-options li.chosen-wrong{border-color:var(--danger,#f56c6c);background:rgba(245,108,108,.1)}
-.option-key{display:grid;place-items:center;width:20px;height:20px;flex:none;border-radius:8px;border:1px solid var(--border);background:var(--surface-soft);font:700 11px ui-monospace,monospace}
-.review-options li.correct .option-key,.review-options li.chosen-correct .option-key{color:var(--success,#67c23a);border-color:var(--success,#67c23a)}
-.review-options li.chosen-wrong .option-key{color:var(--danger,#f56c6c);border-color:var(--danger,#f56c6c)}
-.option-text{flex:1}
-.option-flag{flex:none;font-size:calc(11px*var(--fs-scale));font-style:normal;color:var(--muted);white-space:nowrap}
-.review-options li.correct .option-flag,.review-options li.chosen-correct .option-flag{color:var(--success,#67c23a)}
-.review-options li.chosen-wrong .option-flag{color:var(--danger,#f56c6c)}
 .explanation-head{display:flex;align-items:center;gap:8px;margin-bottom:4px}
 .explanation-head strong{font-size:calc(13px*var(--fs-scale))}
 .explanation-toggle{padding:0;border:none;background:none;color:var(--primary);font-size:calc(12px*var(--fs-scale));cursor:pointer}
-@media(max-width:560px){.review-options{grid-template-columns:1fr}}
 /* 综合整卷：覆盖范围、卷型规格与分段得分率。 */
 .paper-scope{display:flex;flex-wrap:wrap;gap:8px}
 .paper-spec-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}

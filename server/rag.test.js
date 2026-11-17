@@ -46,7 +46,7 @@ test('rag_knowledge_query 工具同时返回知识点与真题片段', () => {
   const result = executeTool('rag_knowledge_query', { subject: '化学', grade: '初三', keyword: '化学方程式配平' })
   assert.ok(result.items.length >= 1, '知识点检索为空')
   assert.ok(result.passages.length >= 1, '真题片段检索为空')
-  assert.ok(result.citations[0].includes('真题'))
+  assert.ok(result.citations[0].text.includes('真题'))
   assert.equal(result.source, 'curriculum+exam-rag')
 })
 

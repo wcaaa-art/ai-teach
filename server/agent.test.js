@@ -51,6 +51,19 @@ test('检索引用去重并拆出出处与题型', () => {
   assert.equal(publicCitations({ citations: ['本地题库'] })[0].title, '本地题库')
 })
 
+test('检索引用透传片段原文，折叠空白并截断到 240 字', () => {
+  const citations = publicCitations({ citations: [{
+    text: '《2024年广东省中考数学试卷（解析版）》：数学2024年中考真题',
+    snippet: `第一行\n\n第二行 ${'x'.repeat(400)}`,
+    lowQuality: true
+  }] })
+  assert.equal(citations[0].snippet.slice(0, 7), '第一行 第二行')
+  assert.equal(citations[0].snippet.length, 240)
+  assert.equal(citations[0].lowQuality, true)
+  // 字符串条目没有片段时不补空字段，保持旧结构。
+  assert.equal('snippet' in publicCitations({ citations: ['本地题库'] })[0], false)
+})
+
 test('流式 Agent 把 RAG 引用透传到工具事件与结束事件', async () => {
   const originalFetch = global.fetch
   const originalKey = process.env.DEEPSEEK_API_KEY

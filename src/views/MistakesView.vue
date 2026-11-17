@@ -5,6 +5,7 @@ import { useRoute, useRouter } from 'vue-router'
 import { deleteMistake, loadMistakes, loadProfile, saveMistake } from '../db/index.js'
 import { getCurriculumChapters } from '../services/api.js'
 import MistakeAttribution from '../components/MistakeAttribution.vue'
+import QuestionOptions from '../components/QuestionOptions.vue'
 import SourceBadge from '../components/SourceBadge.vue'
 import StudyTimer from '../components/StudyTimer.vue'
 import { formatMathText } from '../utils/formatMath.js'
@@ -419,21 +420,50 @@ const redoProgress = computed(() => redoQueue.value.length
   ? Math.round((redoQueueIndex.value + 1) / redoQueue.value.length * 100)
   : 0)
 
-const redoOptions = computed(() => Array.isArray(redoItem.value?.options) ? redoItem.value.options : [])
-// 老错题没存 correctIndex 时，从「A. 选项内容」格式的正确答案反推。
+// 错题记录里的选项：真实测验存的是 single，演示/旧数据可能是 choice，上传错题没有选项。
+const LETTERS = 'ABCD'
+const CHOICE_TYPES = new Set(['single', 'choice', 'multiple'])
+function mistakeOptions(item) {
+  return Array.isArray(item?.options) ? item.options.filter(option => String(option ?? '').trim()) : []
+}
+function isChoiceMistake(item) {
+  return mistakeOptions(item).length >= 2 && (!item?.type || CHOICE_TYPES.has(item.type))
+}
+// 作答和答案可能是「B」「B. 内容」或「A. 内容；C. 内容」，统一反推选项下标。
+function answerIndexes(answer, options) {
+  const text = String(answer || '').trim()
+  if (!text || text === '未作答') return []
+  const indexes = []
+  const pattern = /(^|[；;、,，])\s*([A-D])(?=[.、．\s]|$)/g
+  let match
+  while ((match = pattern.exec(text))) {
+    const index = LETTERS.indexOf(match[2])
+    if (index >= 0 && index < options.length && !indexes.includes(index)) indexes.push(index)
+  }
+  if (indexes.length) return indexes
+  const exact = options.findIndex(option => String(option).trim() === text)
+  return exact >= 0 ? [exact] : []
+}
+function correctIndexesOf(item) {
+  const options = mistakeOptions(item)
+  if (Array.isArray(item?.correctIndexes) && item.correctIndexes.length) {
+    return item.correctIndexes.map(Number).filter(index => Number.isInteger(index) && options[index] !== undefined)
+  }
+  const saved = Number(item?.correctIndex)
+  if (Number.isInteger(saved) && saved >= 0 && options[saved] !== undefined) return [saved]
+  return answerIndexes(item?.correctAnswer, options)
+}
+
+const redoOptions = computed(() => mistakeOptions(redoItem.value))
+// 老错题没存 correctIndex 时，从「A. 选项内容」格式的正确答案反推；多选题退回自评。
 const redoCorrectIndex = computed(() => {
-  const item = redoItem.value
-  if (!item) return -1
-  const saved = Number(item.correctIndex)
-  if (Number.isInteger(saved) && saved >= 0 && redoOptions.value[saved] !== undefined) return saved
-  const answer = String(item.correctAnswer || '').trim()
-  if (!answer) return -1
-  const letter = answer.match(/^([A-D])[.、．\s]/)
-  if (letter) return 'ABCD'.indexOf(letter[1])
-  const bare = answer.replace(/^[A-D][.、．\s]*/, '').trim()
-  return redoOptions.value.findIndex(option => String(option).trim() === bare)
+  const indexes = correctIndexesOf(redoItem.value)
+  return indexes.length === 1 ? indexes[0] : -1
 })
-const redoIsChoice = computed(() => redoItem.value?.type === 'single' && redoOptions.value.length >= 2 && redoCorrectIndex.value >= 0)
+const redoIsChoice = computed(() => {
+  const item = redoItem.value
+  return isChoiceMistake(item) && item?.type !== 'multiple' && redoCorrectIndex.value >= 0
+})
 const redoStreak = computed(() => correctStreak(redoItem.value?.redoHistory))
 const redoRemaining = computed(() => Math.max(1, AUTO_FIX_STREAK - redoStreak.value))
 
@@ -727,6 +757,12 @@ function onRedoKeydown(event) {
                   <p v-if="item.analysisSuggestion" class="muted">补强建议：{{ item.analysisSuggestion }}</p>
                 </div>
                 <div v-if="item.userAnswer || item.correctAnswer" class="answer-compare">
+                  <QuestionOptions
+                    v-if="isChoiceMistake(item)"
+                    :options="mistakeOptions(item)"
+                    :correct="correctIndexesOf(item)"
+                    :chosen="answerIndexes(item.userAnswer, mistakeOptions(item))"
+                  />
                   <p><strong>你的答案：</strong><span v-html="formatMathText(item.userAnswer || '未作答')"></span></p>
                   <p><strong>正确答案：</strong><span v-html="formatMathText(item.correctAnswer || '—')"></span></p>
                 </div>

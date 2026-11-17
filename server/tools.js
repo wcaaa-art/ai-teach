@@ -74,7 +74,12 @@ export function executeTool(name, args = {}, context = {}) {
       matches:result.matches.map(item=>item.name),
       items:result.matches,
       passages,
-      citations:citePassages.map(item=>`${item.citation}：${item.subject}${item.year}年${item.exam}真题`),
+      // 引用除出处文案外带上片段原文与低质标记，前端点开就能核对 AI 到底看了哪段。
+      citations:citePassages.map(item=>({
+        text:`${item.citation}：${item.subject}${item.year}年${item.exam}真题`,
+        snippet:item.text,
+        lowQuality:item.lowQuality
+      })),
       passagesNote:usablePassages.length<passages.length?'部分真题片段在 PDF 抽取时丢失公式符号，只能参考解析思路，不得整段引用或照抄题面。':'',
       source:'curriculum+exam-rag'
     }

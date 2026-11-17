@@ -1,3 +1,4 @@
+// @ts-check
 // 跨页面的专注快照：专注页离开时写入，AppShell 的手机端常驻计时胶囊读取。
 // 只存最小字段，剩余时间按 startedAt 推算，避免每秒钟都写 localStorage。
 const KEY = 'ai-teach-focus-live'

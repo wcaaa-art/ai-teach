@@ -1,3 +1,4 @@
+// @ts-check
 import { createRouter, createWebHistory } from 'vue-router'
 import { useAppStore } from '../stores/app.js'
 import { markRouteDone, markRouteStart } from '../utils/routeProgress.js'
