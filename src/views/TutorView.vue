@@ -10,6 +10,7 @@ import { pauseSpeech, resumeSpeech, speakWithFriendlyChineseVoice, stopSpeech } 
 import { loadConversations, loadMistakes, loadPlans, makeId, saveConversation, deleteConversation } from '../db/index.js'
 import { useAppStore } from '../stores/app.js'
 import { formatMathText } from '../utils/formatMath.js'
+import { buildTutorHistory, clipImageContext } from '../utils/tutorHistory.js'
 
 const store = useAppStore()
 const route = useRoute()
@@ -319,13 +320,17 @@ async function send(text = input.value) {
   messages.value.push({ role: 'user', content: shownText, image: imagePreview.value, createdAt: Date.now() })
   if (messages.value.length === 1) session.title = text.slice(0, 28) || attachment.value?.label || '图片学习提问'
   input.value = ''; loading.value = true; scrollBottom()
-  const history = messages.value.slice(-13, -1).map(message => ({ role: message.role, content: message.content }))
+  const history = buildTutorHistory(messages.value)
   if (imageData.value) {
-    // 图文多模态仍走一次性请求：图片体积大，流式收益低且模型兼容性更脆。
+    // 图片本身仍走一次性请求：体积大、流式收益低且兼容性更脆；
+    // 但答复要点会作为文本上下文留在会话里，支持后续多轮追问。
     const result = await askTutorWithImage({ question: apiQuestion, image: imageData.value, history, sessionId: session.id, mode: tutorMode.value })
     const answer = result.data?.answer || (result.error?.includes('401') ? 'DeepSeek API key 没有通过验证。请检查项目根目录 .env 中的 DEEPSEEK_API_KEY，并重启 npm run dev。' : (isExplain.value ? '这道题可以按「考点 → 步骤 → 结论」来拆。你把原题文字发我，我按步骤完整讲一遍。' : '我先帮你拆出题目中的已知条件，再一起判断要用哪个知识点。'))
     // 图片链路走一次性请求，后端同样会回传 source（模型 / 安全过滤 / 本地兜底），一并标注。
     messages.value.push({ role: 'assistant', content: answer, source: result.source || (result.success ? 'deepseek' : 'mock'), mode: tutorMode.value, createdAt: Date.now() })
+    // 只保留要点文本，不保留 base64：IndexedDB 里不留图片，也不让上下文无限膨胀。
+    const userMessage = messages.value[messages.value.length - 2]
+    if (userMessage?.role === 'user' && result.success) userMessage.imageContext = clipImageContext(answer)
     clearImage()
   } else {
     await streamAnswer(apiQuestion, history)
@@ -468,13 +473,13 @@ onBeforeUnmount(stopSpeaking)
         <div class="composer">
           <div v-if="imagePreview" class="image-draft">
             <img :src="imagePreview" alt="待发送图片" />
-            <div><strong>图片已添加</strong><small>{{ imageNote }} · 只在本次请求中发送，不写入本地历史</small></div>
+            <div><strong>图片已添加</strong><small>{{ imageNote }} · 图片只在本次请求中发送；答复要点会留在会话里，方便你继续追问</small></div>
             <button type="button" class="meta-btn" @click="clearImage">移除</button>
           </div>
           <el-input v-model="input" class="composer-input" type="textarea" :rows="2" resize="none" :placeholder="composerPlaceholder" @keydown="onComposerKeydown" />
           <div class="composer-bar">
             <div class="bar-left">
-              <button type="button" class="icon-btn" title="上传图片（只在本次请求中发送，不写入本地历史）" aria-label="上传图片" @click="selectImage">
+              <button type="button" class="icon-btn" title="上传图片（图片不上传保存，只留答复要点，便于继续追问）" aria-label="上传图片" @click="selectImage">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
               </button>
               <input ref="fileInput" type="file" accept="image/png,image/jpeg,image/webp,image/gif" hidden @change="handleImage" />
