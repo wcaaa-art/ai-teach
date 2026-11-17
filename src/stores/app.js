@@ -13,8 +13,8 @@ export const useAppStore = defineStore('app', () => {
     ttsEnabled: true,
     darkMode: false,
     lowPerformance: false,
-    // 主页「从一个好奇开始」展示的科目，用户可自由增减，只保存在本机设置
-    favoriteSubjects: ['数学', '物理', '化学', '语文', '英语'],
+    // 主页「从一个好奇开始」展示的科目，用户可自由增减，只保存在本机设置；默认只放语数英
+    favoriteSubjects: ['语文', '数学', '英语'],
     // 上一次在专注页选择的时长（分钟）；null 表示用户从未选过，由计划值兜底
     focusMinutes: null,
     // 上一次专注页的任务选择：plan 走计划任务，free 是计划外自定义专注
