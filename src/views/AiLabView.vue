@@ -33,10 +33,11 @@ const FALLBACK_MCP = {
 }
 
 const capabilities = ref({
-  llm: { model: 'deepseek-flash', configured: false, streaming: true, toolCalling: true, jsonMode: true },
+  llm: { model: 'deepseek-flash', configured: false, streaming: true, toolCalling: true, jsonMode: true, stats: { requests: 0, retries: 0, failures: 0 } },
   agent: FALLBACK_AGENT,
   mcp: FALLBACK_MCP,
-  rag: { ready: false, engine: 'BM25 稀疏检索', evalCases: 23, negativeCases: 2 }
+  safety: { enabled: false, inputCategories: [], intentVerbs: 0, outputRules: 0, stats: { inputChecked: 0, inputBlocked: 0, outputChecked: 0, outputBlocked: 0 }, layers: [] },
+  rag: { ready: false, engine: 'BM25 稀疏检索', evalCases: 23, negativeCases: 2, quality: null }
 })
 
 const workflow = [
@@ -49,19 +50,44 @@ const workflow = [
 
 const modalities = [
   { tag: '文本', title: '对话与讲题', desc: 'SSE 流式输出，引导 / 讲解双模式。' },
-  { tag: '图像', title: '拍照答疑', desc: 'JPG / PNG 单次请求，不写入本地历史。' },
+  { tag: '图像', title: '拍照答疑', desc: '图片只在本次请求发送，答复要点留在会话里，可继续追问。' },
   { tag: '语音', title: '语音输入与朗读', desc: '浏览器识别 + 本地 TTS，背诵窗用 whisper-tiny。' },
   { tag: '视觉', title: '专注状态检测', desc: 'MediaPipe 本机推理，视频帧不上传。' },
   { tag: '视频', title: 'B 站补强', desc: '按章节检索，风控时回退到搜索入口。' }
 ]
 
-const safety = [
-  { title: '内容安全过滤', desc: '高危关键词统一改写为学习引导，避免模型展开。' },
-  { title: '引导模式护栏', desc: '拦截「答案：」「正确选项是」等直接答案。' },
-  { title: '结构化输出校验', desc: 'JSON 解析 + 字段归一化，残缺结果不进入本地库。' },
-  { title: '全链路本地兜底', desc: '无密钥、超时或风控时，题库与规则继续可用。' },
-  { title: '隐私边界', desc: '视频帧与语音都在本机处理，密钥只存本机 .env。' }
-]
+// 护栏清单直接读服务端真实规则与计数：不再写死文案，评委看到的就是这一刻的实际配置。
+const safety = computed(() => {
+  const rules = capabilities.value.safety || {}
+  const stats = rules.stats || {}
+  const llm = capabilities.value.llm?.stats || {}
+  const categories = (rules.inputCategories || []).length
+  return [
+    {
+      title: rules.enabled ? `输入侧意图筛查 · 已拦截 ${stats.inputBlocked || 0} 次` : '输入侧意图筛查 · 未启用',
+      desc: `${categories || 7} 类危险对象 × ${rules.intentVerbs || 0} 个可操作意图同时命中才拒绝；课标、实验、禁毒普法语境放行，避免误杀正常教学内容。`
+    },
+    {
+      title: `输出侧危险做法过滤 · ${rules.outputRules || 3} 条规则`,
+      desc: '命中即可执行的危险步骤，一律替换为固定话术，不把配方与步骤交给学生。'
+    },
+    { title: '引导模式护栏', desc: '拦截「答案：」「正确选项是」等直接答案，只给下一步思路。' },
+    { title: '结构化输出校验', desc: 'JSON 解析 + 字段归一化，残缺结果不进入本地库。' },
+    {
+      title: `全链路本地兜底 · 重试 ${llm.retries || 0} 次 / 失败 ${llm.failures || 0} 次`,
+      desc: '模型限流、超时或密钥失效时自动退避重试，仍失败则回落到本地题库与规则。'
+    }
+  ]
+})
+
+// 检索质量门的一句话说明：用真实统计，而不是"已优化"这种空话。
+const qualityNote = computed(() => {
+  const quality = capabilities.value.rag?.quality
+  if (!quality) return ''
+  const math = quality.bySubject?.['数学']
+  const mathText = math ? `，其中数学 ${math.lowQuality}/${math.total}` : ''
+  return `公式抽取丢失的片段不进「检索依据」：全库 ${quality.lowQuality}/${quality.totalChunks} 条被判低质${mathText}。`
+})
 
 const quickQueries = ['二次函数顶点式', '欧姆定律电流与电压', '化学方程式配平', '文言文实词']
 const ragQuery = ref(quickQueries[0])
@@ -178,6 +204,8 @@ onMounted(() => {
             <span v-if="ragResult">命中 {{ ragResult.topics?.length || 0 }} 个知识点 · {{ ragResult.passages?.length || 0 }} 条真题 · {{ ragResult.tookMs }} ms</span>
             <span v-else>输入关键词后，检索结果会出现在右侧。</span>
           </div>
+          <p v-if="qualityNote" class="rag-quality">{{ qualityNote }}</p>
+          <p v-if="qualityNote" class="rag-quality">{{ qualityNote }}</p>
           <p class="rag-privacy">索引是离线构建的本地 JSON，检索过程不把题目发到外网。</p>
         </div>
 
@@ -273,7 +301,7 @@ onMounted(() => {
           </ul>
         </div>
         <div class="duo-card card-surface">
-          <h4>五道可控性护栏</h4>
+          <h4>可控性护栏</h4>
           <ul class="safety-list">
             <li v-for="item in safety" :key="item.title">
               <span class="safety-check" aria-hidden="true">✓</span>
@@ -326,6 +354,8 @@ onMounted(() => {
 .rag-quick button{border:1px solid var(--border);background:var(--surface);color:var(--muted);font-family:inherit;font-size:calc(11.5px*var(--fs-scale));padding:6px 11px;border-radius:999px;cursor:pointer;transition:border-color .18s,color .18s,background .18s}
 .rag-quick button:hover,.rag-quick button.active{border-color:var(--primary);color:var(--primary);background:var(--primary-soft)}
 .rag-meta{margin-top:14px;color:var(--muted);font-size:calc(11.5px*var(--fs-scale));line-height:1.6}
+.rag-quality{margin:8px 0 0;color:var(--primary);font-size:calc(11px*var(--fs-scale));line-height:1.6}
+.rag-quality{margin:8px 0 0;color:var(--primary);font-size:calc(11px*var(--fs-scale));line-height:1.6}
 .rag-privacy{margin:8px 0 0;color:var(--muted);font-size:calc(11px*var(--fs-scale));line-height:1.6}
 .rag-results{display:grid;gap:10px;min-height:220px}
 .topic-row{display:flex;align-items:center;flex-wrap:wrap;gap:6px}

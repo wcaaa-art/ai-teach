@@ -53,6 +53,25 @@ export function loadRagIndex() {
   return cache
 }
 
+// 质量门统计：按学科统计有多少片段因公式抽取丢失而不可读。
+// 结果按索引对象缓存一次，避免每次请求都遍历 1294 个 chunk。
+let qualitySummaryCache = null
+export function ragQualitySummary(threshold = 0.42) {
+  if (qualitySummaryCache && qualitySummaryCache.threshold === threshold) return qualitySummaryCache.data
+  const index = loadRagIndex()
+  const bySubject = {}
+  let lowQuality = 0
+  for (const chunk of index.chunks) {
+    const quality = assessPassageQuality(chunk.text)
+    const bucket = bySubject[chunk.subject] || (bySubject[chunk.subject] = { total: 0, lowQuality: 0 })
+    bucket.total += 1
+    if (quality.score < threshold) { bucket.lowQuality += 1; lowQuality += 1 }
+  }
+  const data = { threshold, totalChunks: index.chunks.length, lowQuality, bySubject }
+  qualitySummaryCache = { threshold, data }
+  return data
+}
+
 export function isRagReady() {
   try { loadRagIndex(); return true } catch { return false }
 }

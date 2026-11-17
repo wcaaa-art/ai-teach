@@ -21,7 +21,7 @@ import { loadQuestionBank, pickBankQuestions } from './question-bank.js'
 import { looksGarbled, parseExamQuestions, reflowText } from './exam-text.js'
 import { getLocalLesson } from './lessons/index.js'
 import { generatePractice } from './practice.js'
-import { formatCitation, isRagReady, searchPassages } from './rag/index.js'
+import { formatCitation, isRagReady, ragQualitySummary, searchPassages } from './rag/index.js'
 import { describeSafetyRules, getSafetyStats, isScreenEnabled, screenInput, screenOutput } from './safety.js'
 
 const app = express()
@@ -178,7 +178,9 @@ app.get('/api/ai/capabilities', (_req, res) => {
       configured: Boolean(apiKey && !apiKey.includes('TODO')),
       streaming: true,
       toolCalling: true,
-      jsonMode: true
+      jsonMode: true,
+      // 重试计数：让「有重试」这件事在页面上可见，而不是只写在代码里。
+      stats: getLlmRequestStats()
     },
     agent: toolSchemas.map(tool => ({
       name: tool.function.name,
@@ -201,7 +203,9 @@ app.get('/api/ai/capabilities', (_req, res) => {
       ready: isRagReady(),
       engine: process.env.RAG_HYBRID === '1' ? 'BM25 + 稠密向量 RRF 融合' : 'BM25 稀疏检索',
       evalCases: RAG_EVAL_CASES.length,
-      negativeCases: RAG_NEGATIVE_CASES.length
+      negativeCases: RAG_NEGATIVE_CASES.length,
+      // 可读性质量门：公式抽取丢失的片段不进「检索依据」。
+      quality: isRagReady() ? ragQualitySummary() : null
     }
   }, { source: 'local' })
 })
