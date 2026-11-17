@@ -1,6 +1,6 @@
 // 试卷真题检索（RAG）：读取离线构建的题块索引，用 BM25 + 学科/学段加权返回可引用的原文片段。
 // 索引由 scripts/build-rag-index.py 生成；运行时只读压缩 JSON，不依赖 Python 与外部向量服务。
-import { readFileSync } from 'node:fs'
+import { readFileSync, statSync } from 'node:fs'
 import { gunzipSync } from 'node:zlib'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
@@ -12,6 +12,9 @@ const B = 0.6
 
 /** @type {any} */
 let cache = null
+let cacheMtimeMs = 0
+let lastMtimeCheck = 0
+const MTIME_CHECK_MS = 2000
 
 // 全角转半角并去掉标点空白，与构建脚本使用同一套归一化规则，保证查询与索引词元一致。
 export function normalizeText(text = '') {
@@ -41,9 +44,35 @@ export function tokenizeQuery(text = '') {
   return [...tokens]
 }
 
+// 建库口径的分词：与 scripts/build-rag-index.py 的 tokenize 保持一致，
+// 否则增量入库的片段和既有索引会用两套词元，检索时对不上。
+export function tokenizeForIndex(text = '') {
+  const normalized = normalizeText(text)
+  const cjk = normalized.replace(/[^\u4e00-\u9fff]/g, '')
+  const tokens = []
+  for (const size of [2, 3]) {
+    for (let index = 0; index + size <= cjk.length; index += 1) tokens.push(cjk.slice(index, index + size))
+  }
+  for (const word of normalized.match(/[0-9a-z]{2,}/g) || []) tokens.push(word)
+  return tokens
+}
+
 export function loadRagIndex() {
-  if (cache) return cache
+  // 热加载：索引文件被重新构建（增量入库）后，最多 2 秒内自动生效，不用重启服务。
+  // 每次 stat 的成本在微秒级，且只按时间窗口抽样，不增加检索延迟。
+  if (cache) {
+    const now = Date.now()
+    if (now - lastMtimeCheck > MTIME_CHECK_MS) {
+      lastMtimeCheck = now
+      try {
+        const mtimeMs = statSync(INDEX_PATH).mtimeMs
+        if (mtimeMs !== cacheMtimeMs) cache = null
+      } catch (error) { /* 文件暂时不可读时沿用旧缓存 */ }
+    }
+    if (cache) return cache
+  }
   const raw = JSON.parse(gunzipSync(readFileSync(INDEX_PATH)).toString('utf8'))
+  try { cacheMtimeMs = statSync(INDEX_PATH).mtimeMs } catch (error) { cacheMtimeMs = 0 }
   const documentLengths = raw.docLengths || []
   const total = documentLengths.reduce((sum, length) => sum + length, 0)
   cache = {
