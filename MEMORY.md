@@ -907,5 +907,6 @@
 - main 保护：必须走 PR、至少 1 人 review、CI check 名 `check` 必须绿、禁 force push 与删除；`enforce_admins=false`，管理员保留绕过能力，避免单人时无法合并（GitHub 不允许自审通过）。
 - CI：`.github/workflows/ci.yml`，Node 22 + `npm ci` + `lint` + `test` + `typecheck`，首次推送即跑绿；本机是 Node 20.11.1 / npm 10.2.4，两边都过。
 - 协作入口：`.github/pull_request_template.md`、`.github/ISSUE_TEMPLATE/{bug_report,feature_request}.yml`、`CONTRIBUTING.md`。
+- 协作者：`zhi-life`（Write 权限，2026-11-17 邀请）；PR 需对方 review 才能合，反之亦然——GitHub 不允许自审通过。
 - 顺手修掉 `server/index.js` 能力清单里重复写两遍的 `rerank` 键（当时 lint 唯一 error）。
 - 公开前的敏感信息扫描结论：无真实密钥入库，`.env` 与 `server/data/` 均未跟踪；MEMORY.md 里只有本机路径 `C:/Users/豪` 与 Gitee 地址，属公开可见信息，未做脱敏。
