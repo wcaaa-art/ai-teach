@@ -866,6 +866,15 @@
 - UI 修：`AiLabView` 状态卡取值改 `font-family:inherit`，等宽字体把 `deepseek-flash` 拉成散字的问题消失。
 - 验证：318 测试通过、typecheck、lint 0 error、build、rag:eval 23/23。
 
+## 整改 P3：证据可见化 / RAG 重排 / 加载体验（2026-11-17）
+
+- P3-1（`423be70`）：`/api/ai/capabilities` 补 `llm.stats` 与 `rag.quality`（`ragQualitySummary()` 按索引对象缓存，避免每次遍历 1294 chunk）；`/ai` 页护栏清单从写死文案改为读真实配置与拦截计数，RAG 区显示"82/1294 低质，数学 57/136"。
+- P3-2（`7eec59a`）：新增 `server/rag/rerank.js`，在 BM25 上叠三字覆盖度、可读性、`【答案】`结构、学科一致、过短残块降权；**先召回 Top-6 再重排取 4/3**，召回范围不变只改顺序。`RAG_RERANK=0` 可退回。新增 `npm run rag:rerank:eval` 做前后对比：通过率与 Top-1 学科命中均不变，Top-1 平均可读性 0.90→0.93，无退化用例——**收益是真实的但很小，别在答辩里夸大成"大幅提升"**。
+- P3-3（`46e50f9`）：`routeProgress` + 路由钩子给懒加载页面加顶部 2px 进度条（弱网实测 250ms 出现、完成后消失）；深色主题镜像到 localStorage + `index.html` 内联脚本，慢网 6 倍降频下首帧即 dark，消除 FOUC。
+- 踩坑：`printf` 写提交信息时中文全角符号 + `%` 会报 `invalid format character`，改用 `cat > 文件 <<'EOF'` 再 `git commit -F`。
+- 现象级小事：Vite 每次 `package.json` / lockfile 变化会尝试 `rm -rf node_modules/.vite/deps`，被沙箱安全删除守卫拦下，表现为 vite 启动失败；处理办法是 `mv node_modules/.vite node_modules/.vite.bak.<时间>` 后重启。
+- 验证基线：`npm test` 325、lint 0 error / 26 warning、typecheck、build 全绿。
+
 ## 协作约定
 
 - 每个任务收尾固定格式：**做了什么 / 验证结果 / 下一步建议**，必须带「下一步」，不等豪哥再问。
