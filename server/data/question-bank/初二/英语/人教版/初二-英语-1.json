@@ -1,0 +1,184 @@
+{
+  "grade": "初二",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初二-英语-1",
+    "name": "一般过去时与过去进行时"
+  },
+  "generatedAt": "2026-11-14T12:15:00.424Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwgdc1fn",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "At 8:00 last night, while my mother ______ dinner, I ______ my homework.",
+      "options": [
+        "cooked; did",
+        "was cooking; was doing",
+        "was cooking; did",
+        "cooked; was doing"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：一般过去时表示过去某个时间发生的完整动作，不能突出“8:00 last night”这一时刻正在进行，也与while引导的同时进行语境不符。\nB. 正确：过去进行时表示过去某一时刻或某段时间内正在进行的动作；while强调两个动作同时进行，因此was cooking和was doing都符合语境。\nC. 错误：was cooking表示妈妈当时正在做饭，但did表示“我”做完作业这一完整动作，与while所强调的同时进行不一致。\nD. 错误：cooked表示做饭动作已完成，was doing表示当时正在做作业，前后时态不对应，不能准确表达两个动作同时进行。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwgdc1fn",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "While my mother ______ dinner, I was doing my homework.",
+      "options": [
+        "cooked",
+        "was cooking",
+        "cooks",
+        "is cooking"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：cooked 是一般过去时，表示已完成的动作；此处 while 从句强调过去某段时间正在进行的动作，应使用过去进行时。\nB. 正确：was cooking 是过去进行时，表示过去某段时间正在进行的动作，与 while 从句和主句 was doing 的时态一致。\nC. 错误：cooks 是一般现在时，不能用于描述过去某一时刻正在进行的动作。\nD. 错误：is cooking 是现在进行时，与主句 was doing 所表示的过去时间不一致。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-3-mwgdc1fn",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "— I called you at 8:00 last night, but you didn't answer.\n— Oh, sorry. I ______ a shower when the phone ______, so I didn't hear it.",
+      "options": [
+        "was taking; rang",
+        "took; rang",
+        "was taking; was ringing",
+        "am taking; rang"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：was taking 是过去进行时，表示过去某一具体时刻（昨晚八点对方打来电话时）正在进行的动作，用来交代当时的背景；when 引导的从句中“电话铃响”是瞬间发生的短动作，用一般过去时 rang，构成“长动作+短动作打断”的典型结构。\nB. 错误：took a shower 是一般过去时，表示“洗了澡”这一已完成的动作，无法说明“昨晚八点那一刻正在洗澡”，与问句询问的那个时间点冲突。\nC. 错误：was ringing 强调电话铃在过去持续不断地响，而句中铃声是突然响起并打断洗澡的短暂动作，此处应当用一般过去时 rang。\nD. 错误：am taking 是现在进行时，与句中的过去时间状语 last night 和上下文的过去语境矛盾，时态不一致。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-4-mwgdc1fn",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "—I called you at eight last night, but nobody answered.\n—Oh, sorry. I ______ a shower at that time.",
+      "options": [
+        "took",
+        "was taking",
+        "have taken",
+        "take"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：took 是一般过去时，强调动作在过去发生或完成；题干中 at that time 指“昨晚八点那一刻”，强调当时正在进行的动作，因此不能用一般过去时。\nB. 正确：was taking 是过去进行时，结构为 was/were + 动词-ing，表示过去某一时刻正在进行的动作，与 at eight last night 和 at that time 的时间背景完全吻合。\nC. 错误：have taken 是现在完成时，强调过去动作对现在的影响；题干叙述的是昨晚八点这一过去时刻的情况，时间焦点在过去，不能用现在完成时。\nD. 错误：take 是一般现在时，表示经常性动作或现在状态；题干中有 last night 这一明确的过去时间状语，时态冲突。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-5-mwgdc1fn",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "At eight o'clock last night, I ______ a book while my sister ______ TV.",
+      "options": [
+        "was reading; was watching",
+        "read; watched",
+        "was reading; watched",
+        "read; was watching"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：at eight o'clock last night 表示过去某一具体时刻，强调当时正在进行的动作；while 连接两个同时持续的过去动作，前后都应用过去进行时。\nB. 错误：read 和 watched 是一般过去时，强调动作发生或完成，不能突出“昨晚八点正在读书和看电视”的持续状态，与 at eight o'clock last night 的进行含义冲突。\nC. 错误：前半 was reading 符合过去进行时，但后半 watched 是一般过去时，与 while 表示两个动作同时持续的逻辑冲突。\nD. 错误：前半 read 是一般过去时，不能体现“昨晚八点正在读书”，与 at eight o'clock last night 冲突。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-6-mwgdc1fn",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "My brother ________ his bike when he ________ off and hurt his leg.",
+      "options": [
+        "rode; fell",
+        "was riding; fell",
+        "rode; was falling",
+        "was riding; was falling"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：两个空都用一般过去时，只能表示先后发生的两个事实，无法表达“正在骑车时突然摔下来”这一“持续背景+瞬间动作”的关系；rode 与 when 从句连用时语义不自然。\nB. 正确：过去进行时 was riding 表示过去某一时刻正在进行的动作，用作背景；when 引导的从句用一般过去时 fell 表示突然发生的短暂动作，符合“was/were doing ... when + 一般过去时”这一常见结构。\nC. 错误：主句用一般过去时 rode 不能体现“正在进行”，与 when 从句的突发事件不匹配；fall off 是瞬间动词，通常不用过去进行时 was falling 表示“正在摔下”，且与后面的 hurt 逻辑冲突。\nD. 错误：fall off 表示瞬间动作，一般不用过去进行时；两个进行时连用会被理解为两个持续动作同时进行，与“摔下车”这一瞬间事件不符。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-7-mwgdc1fn",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "While Mr. Green ______ the report in his study, the power ______ off, so he had to finish it by candlelight.",
+      "options": [
+        "was writing; went",
+        "wrote; was going",
+        "was writing; was going",
+        "wrote; went"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：while 引导的时间状语从句强调过去某一时刻正在进行的动作，用过去进行时 was writing；主句“停电”是突然发生的短暂动作，用一般过去时 went，符合“写报告时突然停电”的语境。\nB. 错误：while 从句通常表示正在进行的背景动作，用一般过去时 wrote 不能体现进行意义；was going off 表示“正在熄灭”，与突然停电的语义不符。\nC. 错误：was writing 正确，但 was going off 表示停电过程正在进行，不能突出突然发生并导致他不得不点蜡烛继续完成的短暂动作。\nD. 错误：两个一般过去时只叙述先后发生的事实，不能体现“正在写报告时突然停电”的进行背景与突发动作对比。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-8-mwgdc1fn",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "—What ______ you ______ at 8:00 last night?\n—I was reading a magazine.",
+      "options": [
+        "did; do",
+        "were; doing",
+        "did; doing",
+        "were; do"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：一般过去时问的是过去发生的动作，不能准确表达“过去某一具体时刻正在进行”的含义；而且 did 后应接动词原形，不能与 do 这样机械组合来构成进行时。\nB. 正确：at 8:00 last night 表示过去某一具体时刻，询问当时正在做什么应使用过去进行时，结构为 was/were + 动词-ing；主语 you 对应的 be 动词是 were，所以填 were; doing。\nC. 错误：did 是助动词，后接动词原形，不能接 doing；did doing 不是过去进行时的正确结构。\nD. 错误：were 后应接动词-ing 构成过去进行时，不能接动词原形 do；were do 结构不成立。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-9-mwgdc1fn",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "When the teacher came in, the students ______ about the coming sports meeting.",
+      "options": [
+        "talked",
+        "were talking",
+        "talk",
+        "have talked"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：talked 是一般过去时，表示过去发生的完整动作，不能突出“老师进来时学生正在交谈”的持续背景动作。\nB. 正确：were talking 是过去进行时，表示过去某一时刻正在进行的动作；when the teacher came in 是过去的时间点，强调当时学生正在交谈。\nC. 错误：talk 是一般现在时，与 when the teacher came in 的过去时间背景冲突。\nD. 错误：have talked 是现在完成时，强调对现在的影响，不能与明确的过去时间点 when the teacher came in 搭配表示当时正在进行。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-10-mwgdc1fn",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "At 8:00 last night, Lily ______ her homework when her father came back.",
+      "options": [
+        "did",
+        "was doing",
+        "does",
+        "is doing"
+      ],
+      "correctIndex": 1,
+      "explanation": "B. 正确：at 8:00 last night 表示过去某一具体时刻，when her father came back 表示另一个过去动作打断了正在进行的动作，强调当时正在进行，故用过去进行时 was doing。\nA. 错误：did 是一般过去时，只说明动作发生过，不能表达“昨晚八点那一刻正在进行”，也与 when 引导的打断动作不匹配。\nC. 错误：does 是一般现在时，与 last night 这一过去时间状语冲突。\nD. 错误：is doing 是现在进行时，与 last night 这一过去时间状语冲突。",
+      "difficulty": 2
+    }
+  ]
+}

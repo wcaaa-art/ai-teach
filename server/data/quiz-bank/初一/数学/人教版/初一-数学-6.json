@@ -1,0 +1,106 @@
+{
+  "grade": "初一",
+  "subject": "数学",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初一-数学-6",
+    "name": "实数与平方根"
+  },
+  "generatedAt": "2026-11-14T12:23:17.928Z",
+  "source": "deepseek",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初一-数学-6-f1",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "若一个正数的两个平方根分别是 2a-1 与 -a+4，则这个正数是______。",
+      "answer": "49",
+      "acceptableAnswers": [
+        "49"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 正数的两个平方根互为相反数，因此两式之和为 0。\n2. 解 (2a-1)+(-a+4)=0，得 a=-3，两个平方根分别为 -7 和 7。\n3. 由平方根定义，这个正数为 7^2=49，故填 49。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初一-数学-6-s1",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "已知一个正数 x 的两个平方根分别是 a+3 和 2a-15。\n（1）求 a 的值和 x 的值；\n（2）若 y=\\sqrt{x+1}，求 y 的整数部分和小数部分。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）因为正数 x 的两个平方根互为相反数，所以 (a+3)+(2a-15)=0，解得 3a-12=0，a=4。于是两个平方根分别为 7 和 -7，所以 x=7^2=49。\n（2）由（1）得 y=\\sqrt{49+1}=\\sqrt{50}。因为 7^2=49<50<64=8^2，所以 7<\\sqrt{50}<8，故 y 的整数部分是 7，小数部分是 \\sqrt{50}-7。",
+      "explanation": "1. 正确依据：正数的两个平方根互为相反数，因此 a+3 与 2a-15 的和为 0，解得 a=4。\n2. 由 a=4 得平方根为 7 和 -7，所以 x=7^2=49；不能只写 a=4 而漏求 x。\n3. 由 x=49 得 y=\\sqrt{50}；利用 7^2=49<50<64=8^2 判断 7<\\sqrt{50}<8。\n4. 因此整数部分为 7，小数部分为 \\sqrt{50}-7；常见错误是写成 0.\\sqrt{50} 或把小数部分误写成 \\sqrt{50}。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初一-数学-6-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "已知一个正数的两个平方根分别是 2a-1 和 -a+4，则这个正数是____。",
+      "answer": "49",
+      "acceptableAnswers": [
+        "49"
+      ],
+      "referenceAnswer": "",
+      "explanation": "正数的两个平方根互为相反数，所以 (2a-1)+(-a+4)=0，解得 a=-3。\n当 a=-3 时，两个平方根分别为 2×(-3)-1=-7 和 -(-3)+4=7，二者互为相反数。\n这个正数为 7^2=49（或 (-7)^2=49），故答案为 49。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初一-数学-6-s2",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "已知 a=\\sqrt{5}+2，b=\\sqrt{5}-2。\n(1) 求 a+b 与 ab 的值；\n(2) 求 a^2+b^2 的值；\n(3) 若 x 是 \\sqrt{5} 的整数部分，y 是 \\sqrt{5} 的小数部分，求 x-y+\\sqrt{5} 的值。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "(1) a+b=(\\sqrt{5}+2)+(\\sqrt{5}-2)=2\\sqrt{5}；ab=(\\sqrt{5}+2)(\\sqrt{5}-2)=5-4=1。\n(2) a^2+b^2=(a+b)^2-2ab=(2\\sqrt{5})^2-2×1=20-2=18。\n(3) 因为 2<\\sqrt{5}<3，所以 x=2，y=\\sqrt{5}-2；故 x-y+\\sqrt{5}=2-(\\sqrt{5}-2)+\\sqrt{5}=4。",
+      "explanation": "(1) 利用平方差公式求 ab，直接合并同类二次根式求 a+b，得 a+b=2\\sqrt{5}，ab=1，共占 4 分。\n(2) 由完全平方公式 (a+b)^2=a^2+2ab+b^2，得 a^2+b^2=(a+b)^2-2ab=18，占 3 分。\n(3) 由 2<\\sqrt{5}<3 确定整数部分 x=2，小数部分 y=\\sqrt{5}-2，代入计算得 4，占 3 分。\n常见错误：把 \\sqrt{5} 的小数部分误写成 0.236... 或漏掉小数部分表达式中的根号部分；计算 ab 时符号处理错误。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初一-数学-6-f3",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "一个正数的两个平方根分别是 a+2 和 2a-5，则这个正数是____。",
+      "answer": "9",
+      "acceptableAnswers": [
+        "9"
+      ],
+      "referenceAnswer": "",
+      "explanation": "设这个正数为 x。正数有两个平方根，它们互为相反数，所以 (a+2)+(2a-5)=0。\n解得 3a-3=0，即 a=1。\n两个平方根分别为 3 和 -3，因此这个正数为 3^2=9。\n常见错误：把两个平方根误写成相等，得到 a+2=2a-5，从而误得 a=7 或误判正数为 81。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初一-数学-6-s3",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "已知实数 a，b 满足 \\sqrt{a-1}+|b-2|=0。\n（1）求 a，b 的值；\n（2）求 a+b 的平方根；\n（3）若 c 是 \\sqrt{7} 的整数部分，求 b+c 的算术平方根。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）因为 \\sqrt{a-1}≥0，|b-2|≥0，且它们的和为0，所以 \\sqrt{a-1}=0，|b-2|=0，解得 a=1，b=2。\n（2）a+b=1+2=3，3的平方根是 ±\\sqrt{3}。\n（3）因为 2<\\sqrt{7}<3，所以 \\sqrt{7} 的整数部分 c=2，于是 b+c=2+2=4，4的算术平方根为2。",
+      "explanation": "第（1）问：由二次根式和绝对值均非负，得 \\sqrt{a-1}=0，|b-2|=0，所以 a=1，b=2，得3分。\n第（2）问：a+b=3，3的平方根为 ±\\sqrt{3}，漏写负平方根扣1分，得3分。\n第（3）问：因为 2<\\sqrt{7}<3，所以 c=2；b+c=2+2=4，4的算术平方根为2，得4分。常见错误：把 \\sqrt{7} 的整数部分误判为3。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初一-数学-6-f4",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "若二次根式 \\sqrt{x-2} 有意义，且 x 是整数，则 x 的最小值是____。",
+      "answer": "2",
+      "acceptableAnswers": [
+        "2"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 二次根式 \\sqrt{x-2} 有意义，需要被开方数非负，即 x-2≥ 0。\n2. 解得 x≥ 2。\n3. 因为 x 是整数，所以 x 的最小值为 2；常见错误是忽略被开方数非负条件而写成 1。",
+      "difficulty": 1,
+      "score": 3
+    }
+  ]
+}

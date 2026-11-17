@@ -1,26 +1,98 @@
 :root {
-  font-family: Inter, "PingFang SC", "Microsoft YaHei", sans-serif;
-  color: #243746; background: #eff6f7; font-synthesis: none; text-rendering: optimizeLegibility;
-  --bg: #eff6f7; --surface: #ffffff; --surface-soft: #f7fbfb; --text: #243746; --muted: #71828a;
-  --primary: #4d8d8e; --primary-soft: #dff0ef; --accent: #eea77b; --border: #d8e7e7; --shadow: 0 12px 30px rgba(53, 91, 102, .08);
-  /* 品牌渐变：logo、favicon、登录页标志共用同一色系（青绿 → 蓝绿） */
-  --brand-gradient: linear-gradient(135deg, #4d8d8e, #327a8e);
+  font-family: "Inter", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  color: #22322f; background: #f2f7f5; font-synthesis: none; text-rendering: optimizeLegibility;
+  /* 薄雾青：全站只有一套色。低饱和青绿主色 + 极小面积暖沙点缀，
+     颜色只用来表达结构（主色 / 弱化 / 边界），不用来制造热闹。 */
+  --bg: #f2f7f5; --surface: #ffffff; --surface-soft: #f6faf8; --text: #22322f; --muted: #5f736e;
+  --primary: #4d817a; --primary-soft: #e7f1ed; --accent: #c09a70; --accent-soft: #f3ece2; --border: #e0eae6;
+  --success: #5f9179; --warning: #b58450; --danger: #b96b63;
+  /* 阴影跟 18px 圆角配套：大扩散 + 低透明，边缘像纸面微微翘起，不像悬浮按钮。 */
+  --shadow: 0 14px 36px rgba(47, 82, 74, .07), 0 2px 8px rgba(47, 82, 74, .04);
+  --shadow-soft: 0 8px 24px rgba(47, 82, 74, .05);
+  /* 品牌渐变：logo、favicon、登录页标志共用同一色系（青绿 → 深青）。 */
+  --brand-gradient: linear-gradient(135deg, #5b928a, #3d726e);
+  /* 页面底色上叠一层很淡的青绿光晕，避免大面积纯色显得像办公软件。 */
+  --bg-glow: radial-gradient(900px 520px at 8% -12%, rgba(109, 158, 148, .14), transparent 62%), radial-gradient(760px 460px at 102% -6%, rgba(158, 190, 183, .10), transparent 58%);
+  /* 圆角体系：全站统一一套弧度，卡片、控件、弹层不再出现直角。 */
+  --radius-xs: 8px; --radius-sm: 12px; --radius-md: 16px; --radius-lg: 18px; --radius-pill: 999px;
+  --el-border-radius-base: 12px;
+  --el-border-radius-small: 10px;
+  --el-border-radius-round: 999px;
+  --el-border-radius-circle: 100%;
+  --el-tag-border-radius: 999px;
+  --el-checkbox-input-border-radius: 6px;
+  /* Element Plus 主色跟着站点青绿走，否则默认 #409eff 会把按钮、输入框焦点染成蓝色。 */
+  --el-color-primary: #4d817a;
+  --el-color-primary-light-3: #80a7a1;
+  --el-color-primary-light-5: #a6c1bd;
+  --el-color-primary-light-7: #cbdcd8;
+  --el-color-primary-light-8: #dbe8e4;
+  --el-color-primary-light-9: #edf3f1;
+  --el-color-primary-dark-2: #3e6863;
+  /* 语义色也降饱和：对错仍可分辨，但不再用荧光绿/大红打断安静的阅读。 */
+  --el-color-success: #5f9179;
+  --el-color-success-light-3: #8dae9e;
+  --el-color-success-light-5: #aec5ba;
+  --el-color-success-light-7: #cfdcd6;
+  --el-color-success-light-8: #dfe8e3;
+  --el-color-success-light-9: #eff4f1;
+  --el-color-success-dark-2: #4c7562;
+  --el-color-warning: #b58450;
+  --el-color-warning-light-3: #c9a37a;
+  --el-color-warning-light-5: #d7bda0;
+  --el-color-warning-light-7: #e6d5c3;
+  --el-color-warning-light-8: #ede1d4;
+  --el-color-warning-light-9: #f7f1e9;
+  --el-color-warning-dark-2: #91693f;
+  --el-color-danger: #b96b63; --el-color-error: #b96b63;
+  --el-color-danger-light-3: #cd948e; --el-color-error-light-3: #cd948e;
+  --el-color-danger-light-5: #dcb3af; --el-color-error-light-5: #dcb3af;
+  --el-color-danger-light-7: #e9d1ce; --el-color-error-light-7: #e9d1ce;
+  --el-color-danger-light-8: #efdddb; --el-color-error-light-8: #efdddb;
+  --el-color-danger-light-9: #f7efee; --el-color-error-light-9: #f7efee;
+  --el-color-danger-dark-2: #94554f; --el-color-error-dark-2: #94554f;
+  --el-color-info: #7c918c;
+  --el-color-info-light-3: #9daeaa;
+  --el-color-info-light-5: #b8c5c2;
+  --el-color-info-light-7: #d3dbd9;
+  --el-color-info-light-8: #e1e7e5;
+  --el-color-info-light-9: #f0f3f2;
+  --el-color-info-dark-2: #637470;
+  /* 全站字号倍率：所有 font-size 都乘这个值，统一放大又不用逐页改文案。 */
+  --fs-scale: 1.1;
+  --el-font-size-extra-large: calc(20px*var(--fs-scale));
+  --el-font-size-large: calc(18px*var(--fs-scale));
+  --el-font-size-medium: calc(16px*var(--fs-scale));
+  --el-font-size-base: calc(14px*var(--fs-scale));
+  --el-font-size-small: calc(13px*var(--fs-scale));
+  --el-font-size-extra-small: calc(12px*var(--fs-scale));
 }
-:root[data-theme='dark'] { color-scheme:dark; --bg: #17272e; --surface: #21363e; --surface-soft: #1d3037; --text: #e6f0ef; --muted: #a6babd; --border: #37535b; --primary-soft: #294b4c; --shadow: 0 12px 30px rgba(0,0,0,.2); --el-bg-color:#21363e; --el-bg-color-overlay:#21363e; --el-text-color-primary:#e6f0ef; --el-text-color-regular:#c2d2d4; --el-border-color:#37535b; --el-fill-color-blank:#21363e; --el-fill-color-light:#29434a; --el-mask-color:rgba(0,0,0,.62); }
+:root[data-theme='dark'] { color-scheme:dark; --bg: #132320; --surface: #1b2d29; --surface-soft: #172724; --text: #e6f0ec; --muted: #a3b8b2; --border: #2f4741; --primary: #7fb5ab; --primary-soft: #24423c; --accent: #d3ab7f; --accent-soft: #3a3126; --success: #7cae93; --warning: #c99a68; --danger: #cc857c; --shadow: 0 16px 40px rgba(0,0,0,.32), 0 2px 8px rgba(0,0,0,.2); --shadow-soft: 0 10px 26px rgba(0,0,0,.26); --brand-gradient: linear-gradient(135deg, #5fa79c, #458b86); --bg-glow: radial-gradient(900px 520px at 8% -12%, rgba(94, 159, 143, .12), transparent 62%), radial-gradient(760px 460px at 102% -6%, rgba(158, 190, 183, .07), transparent 58%); --el-bg-color:#1b2d29; --el-bg-color-overlay:#1b2d29; --el-text-color-primary:#e6f0ec; --el-text-color-regular:#c2d2cd; --el-border-color:#2f4741; --el-fill-color-blank:#1b2d29; --el-fill-color-light:#253b36; --el-mask-color:rgba(0,0,0,.62); --el-color-primary:#7fb5ab; --el-color-primary-light-3:#6c9d94; --el-color-primary-light-5:#58857d; --el-color-primary-light-7:#3f615b; --el-color-primary-light-8:#35534d; --el-color-primary-light-9:#2a443f; --el-color-primary-dark-2:#9cc8bf; }
 * { box-sizing: border-box; }
-body { margin: 0; min-width: 320px; background: var(--bg); color: var(--text); }
+body { margin: 0; min-width: 320px; background: var(--bg-glow), var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4 { letter-spacing: -.008em; }
+::selection { background: color-mix(in srgb, var(--primary) 20%, transparent); }
+/* 全站统一的眉标：一枚细点 + 疏排中文。各页原本混用英文大写标签，这里收成一种声音。 */
+.eyebrow { display: inline-flex; align-items: center; gap: 8px; color: var(--primary); font-size: calc(11.5px*var(--fs-scale)); font-weight: 600; letter-spacing: .18em; line-height: 1.5; }
+.eyebrow::before { content: ''; width: 5px; height: 5px; flex: none; border-radius: 50%; background: currentColor; opacity: .55; }
 button, input, textarea { font: inherit; }
-.page { max-width: 1180px; margin: 0 auto; padding: 26px; }
-.page-header { display: flex; justify-content: space-between; gap: 20px; align-items: flex-start; margin-bottom: 22px; }
-.page-title { margin: 0 0 7px; font-size: 28px; letter-spacing: .01em; }
-.page-subtitle { margin: 0; color: var(--muted); line-height: 1.7; }
+/* Element Plus 有些组件把字号写死在组件样式里，不会跟着 --el-font-size-base 走，这里补一刀。 */
+.el-dialog{--el-dialog-font-size:calc(14px*var(--fs-scale))}
+.el-dialog__body,.el-select__wrapper,.el-input__inner,.el-textarea__inner,.el-form-item__label,.el-radio__label,.el-checkbox__label,.el-message-box__message{font-size:calc(14px*var(--fs-scale))}
+/* 键盘操作时给所有控件一个清晰但不刺眼的焦点环，触屏点击不会出现。 */
+:focus-visible { outline: 3px solid rgba(77, 129, 122, .45); outline-offset: 2px; }
+/* 底部留出反馈小精灵的空间，避免最后一行内容被固定按钮挡住。 */
+.page { max-width: 1520px; margin: 0 auto; padding: 32px 36px 64px; }
+.page-header { display: flex; justify-content: space-between; gap: 20px; align-items: flex-end; margin-bottom: 26px; }
+.page-title { margin: 0 0 8px; font-size:calc(30px*var(--fs-scale)); font-weight: 600; letter-spacing: -.012em; line-height: 1.3; text-wrap: balance; }
+.page-subtitle { margin: 0; color: var(--muted); line-height: 1.8; font-size:calc(14.5px*var(--fs-scale)); max-width: 72ch; }
 .surface { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; box-shadow: var(--shadow); }
-.surface-pad { padding: 24px; }
+.surface-pad { padding: 26px; }
 .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 18px; }
 .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; }
-.stat-card { padding: 18px; background: var(--surface-soft); border: 1px solid var(--border); border-radius: 15px; }
-.stat-label { color: var(--muted); font-size: 13px; }.stat-value { margin-top: 8px; font-size: 28px; font-weight: 700; }
-.section-title { margin: 0 0 16px; font-size: 18px; }.section-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 16px; }.section-head .section-title { margin: 0; }.mastery-legend { display: flex; align-items: center; gap: 6px; flex: none; font-size: 11px; color: var(--muted); }.mastery-bar { width: 88px; height: 8px; border-radius: 4px; background: linear-gradient(90deg, #d4dfe0, #9bc6b9, #579895, #e6a16d); }.muted { color: var(--muted); }.tag-row { display: flex; flex-wrap: wrap; gap: 7px; }
+.stat-card { padding: 18px; background: var(--surface-soft); border: 1px solid var(--border); border-radius: 14px; }
+.stat-label { color: var(--muted); font-size:calc(13px*var(--fs-scale)); }.stat-value { margin-top: 8px; font-size:calc(28px*var(--fs-scale)); font-weight: 600; font-variant-numeric: tabular-nums; }
+.section-title { margin: 0 0 16px; font-size:calc(18px*var(--fs-scale)); font-weight: 600; }.section-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 16px; }.section-head .section-title { margin: 0; }.mastery-legend { display: flex; align-items: center; gap: 6px; flex: none; font-size:calc(11px*var(--fs-scale)); color: var(--muted); }.mastery-bar { width: 88px; height: 8px; border-radius: 999px; background: linear-gradient(90deg, #dbe6e2, #a7c8bf, #6b9c92, #c09a70); }.muted { color: var(--muted); }.tag-row { display: flex; flex-wrap: wrap; gap: 7px; }
 .actions { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
 .chart { min-height: 290px; }
 .empty { padding: 56px 20px; text-align: center; color: var(--muted); }
@@ -35,10 +107,50 @@ button, input, textarea { font: inherit; }
 /* 向量记号：字母上方加箭头，避免 a 与 |a| 分不清是向量还是数量。 */
 .vec { display: inline-block; position: relative; padding-top: .52em; line-height: 1.1; }
 .vec::before { content: '→'; position: absolute; left: 0; right: 0; top: -.02em; text-align: center; font-size: .7em; line-height: 1; }
-@media (max-width: 800px) { .page { padding: 18px 13px; }.grid-2,.grid-3 { grid-template-columns: 1fr; }.page-title { font-size: 24px; } }
+/* 公式整条不拆行：横向放不下时整体换到下一行，避免等号两边被拆到两行。 */
+.math-nowrap { white-space: nowrap; }
+/* 手机端两侧留出刘海/圆角的横向安全区，横屏时不压到侧边。 */
+@media (max-width: 800px) { .page { padding: 18px calc(13px + env(safe-area-inset-right)) 104px calc(13px + env(safe-area-inset-left)); }.grid-2,.grid-3 { grid-template-columns: 1fr; }.page-title { font-size:calc(24px*var(--fs-scale)); } }
 /* 全站路由过渡：旧页快速淡出，新页淡入并轻微上浮，避免页面切换硬切。 */
 .page-enter-active { transition: opacity .22s ease, transform .22s cubic-bezier(.2,.7,.3,1); }
 .page-leave-active { transition: opacity .14s ease; }
 .page-enter-from { opacity: 0; transform: translateY(8px); }
 .page-leave-to { opacity: 0; }
 @media (prefers-reduced-motion: reduce) { .page-enter-active,.page-leave-active { transition: none; } }
+/* 深色模式的首页地图卡：原来的白纸卡在深底上过亮，换成深色玻璃卡片并同步节点/进度文字。 */
+:root[data-theme='dark'] .home-page .map-card-main { border-color: var(--border); background: linear-gradient(145deg,#1d312d,#172825); box-shadow: 0 24px 55px rgba(0,0,0,.45); }
+:root[data-theme='dark'] .home-page .map-title { color: var(--text); }
+:root[data-theme='dark'] .home-page .map-subtitle,
+:root[data-theme='dark'] .home-page .map-card-top,
+:root[data-theme='dark'] .home-page .map-labels { color: var(--muted); }
+:root[data-theme='dark'] .home-page .map-node { background: var(--surface); border-color: var(--border); color: var(--muted); }
+:root[data-theme='dark'] .home-page .map-node.done { background: var(--primary); border-color: var(--primary); color: #10231f; }
+:root[data-theme='dark'] .home-page .map-node.current { background: var(--surface); border-color: var(--accent); color: var(--accent); box-shadow: 0 0 0 7px rgba(255,159,69,.16); }
+:root[data-theme='dark'] .home-page .path-line { background: var(--border); }
+:root[data-theme='dark'] .home-page .path-line.filled { background: #4f7f76; }
+:root[data-theme='dark'] .home-page .map-progress { border-top-color: var(--border); }
+:root[data-theme='dark'] .home-page .map-progress strong { color: var(--text); }
+:root[data-theme='dark'] .home-page .float-card { border-color: var(--border); background: rgba(33,54,62,.92); color: var(--text); box-shadow: 0 12px 27px rgba(0,0,0,.4); }
+:root[data-theme='dark'] .home-page .float-card small { color: var(--muted); }
+/* 深色下科目卡改回深色纸面：浅色底 + 浅色文字会失去对比度。 */
+:root[data-theme='dark'] .home-page .subject-grid .subject-card { background: var(--surface); border-color: var(--border); color: var(--text); }
+:root[data-theme='dark'] .home-page .subject-card:hover { box-shadow: 0 16px 36px rgba(0,0,0,.34); }
+:root[data-theme='dark'] .home-page .subject-icon { background: rgba(255,255,255,.06); }
+:root[data-theme='dark'] .home-page .subject-remove:hover { background: rgba(255,255,255,.12); color: var(--text); }
+/* Element Plus 里默认直角或小圆角的容器统一补弧度，避免弹窗、折叠面板、表格出现尖角。 */
+.el-dialog { border-radius: 22px; overflow: hidden; }
+.el-message-box { border-radius: 20px; overflow: hidden; }
+.el-message { border-radius: 14px; }
+.el-notification { border-radius: var(--radius-md); }
+.el-alert { border-radius: var(--radius-sm); }
+.el-collapse { border-radius: var(--radius-md); overflow: hidden; }
+.el-collapse-item__header { border-radius: var(--radius-md) var(--radius-md) 0 0; }
+.el-collapse-item:last-child .el-collapse-item__wrap { border-radius: 0 0 var(--radius-md) var(--radius-md); }
+.el-popover.el-popper, .el-dropdown-menu, .el-picker-panel, .el-select-dropdown { border-radius: var(--radius-md); }
+.el-tooltip__popper, .el-popper.is-dark { border-radius: 10px; }
+.el-upload-dragger { border-radius: var(--radius-md); }
+.el-segmented, .el-segmented__item { border-radius: var(--radius-pill); }
+.el-button--small { border-radius: 10px; }
+.el-checkbox__inner { border-radius: 6px; }
+.el-tag { border-radius: 999px; }
+.el-table { border-radius: var(--radius-md); overflow: hidden; }

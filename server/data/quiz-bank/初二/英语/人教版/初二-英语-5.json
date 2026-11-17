@@ -1,0 +1,114 @@
+{
+  "grade": "初二",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初二-英语-5",
+    "name": "阅读理解策略"
+  },
+  "generatedAt": "2026-11-14T13:36:00.000Z",
+  "source": "trae",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初二-英语-5-f1",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "阅读时先快速浏览标题、首尾段和各段首句，迅速把握文章大意，这种阅读方法叫 ______（可用英语或中文作答）。",
+      "answer": "skimming",
+      "acceptableAnswers": [
+        "skimming",
+        "略读",
+        "快速浏览"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：答出 skimming 或“略读”即可得3分。\n2. 语法依据：skimming 指快速通读全文、抓取主旨和大意的阅读策略；与之相对的 scanning 是查读，用于定位具体信息。\n3. 失分点：填 scanning 或“查读”不得分，因为查读只找时间、人名、数字等细节，不负责把握全文大意；只写“阅读”过于笼统，也不能得分。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-5-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "做主旨大意题（如 The main idea of the passage is ...）时，通常要重点关注各段的______句以及文章的首尾段。",
+      "answer": "主题句",
+      "acceptableAnswers": [
+        "主题句",
+        "topic sentence"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填“主题句”或 topic sentence，得3分。\n2. 语法依据：英语说明文和议论文常在段首或段尾设置主题句，概括本段中心；首尾段则常点明全文主旨，因此主旨题要优先关注这些位置。\n3. 失分点：填“细节句”或“例子句”不得分，因为细节和例子只支持主题，不能概括全文；只写“第一句”也不准确，因为主题句也可能出现在段尾。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-5-f3",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "阅读中需要快速查找时间、人名、数字等具体信息时，应采用 ______（填英语术语）的阅读策略。",
+      "answer": "scanning",
+      "acceptableAnswers": [
+        "scanning",
+        "scan",
+        "查读",
+        "寻读"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 scanning 或“查读/寻读”，得3分。\n2. 语法依据：scanning 指带着明确目标在文中快速扫视，寻找特定信息，如日期、价格、人名；不需要逐句理解全文。\n3. 失分点：填 skimming 是略读，目的是把握大意而非定位细节，属于概念混淆；填 reading 或“仔细阅读”不能体现“快速查找”的策略特点。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-5-f4",
+      "type": "fill",
+      "dimension": "transfer",
+      "stem": "做词义猜测题时，不能只盯着生词本身，而应利用生词前后的解释、举例、对比等______来推断词义，也可以借助构词法。",
+      "answer": "线索",
+      "acceptableAnswers": [
+        "线索",
+        "语境线索",
+        "上下文线索"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填“线索”或“语境线索/上下文线索”，得3分。\n2. 语法依据：词义猜测题考查的是利用上下文的能力，常见线索包括同义解释、举例（such as、for example）、对比（but、however）和因果关系，此外还可借助前缀、后缀、词根判断词义。\n3. 失分点：填“字典”或“记忆”不得分，因为题目要求根据上下文推断；只写“上下文”虽接近，但没有点明“线索”这一解题依据，通常酌情给分。",
+      "difficulty": 3,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-5-s1",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "阅读下面的短文，回答问题。\nMany students feel nervous before a test. In fact, a little stress can help you stay focused. The problem is that too much stress makes it hard to think. Here are some simple ways to deal with it. First, plan your study time. If you study a little every day, you will not need to stay up late before the test. Second, take short breaks. Ten minutes of walking or stretching can refresh your mind. Third, talk to someone you trust. Sharing your worries often makes them seem smaller. Remember, a test is only a way to check what you have learned. It does not decide who you are.\n(1) What is the main idea of the passage?\n(2) What are the three ways mentioned in the passage?\n(3) What does \"refresh\" probably mean? How did you guess its meaning?",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "(1) The passage is mainly about some simple ways to deal with stress before a test.\n(2) First, plan your study time; second, take short breaks; third, talk to someone you trust.\n(3) It probably means “to make your mind feel fresh and energetic again（使头脑恢复精力、清醒）”. I guessed it from the context: the sentence says ten minutes of walking or stretching can refresh your mind, so it must be about making the mind fresh after studying or sitting for a long time.",
+      "explanation": "第1步（第1题3分）：主旨题用略读策略，重点看首段和 Here are some simple ways to deal with it 这一总起句，答案应概括为“应对考试紧张的几种简单方法”。只答“考试让人紧张”只是背景，不是主旨，得0—1分。\n第2步（第2题3分）：细节题用查读策略，按 First、Second、Third 三个信号词定位，抄写三条方法，每条1分；漏一条扣1分，只写“多学习、多休息”过于笼统酌情扣分。\n第3步（第3题4分）：词义题先根据上下文推断 refresh 意为“使恢复精力、使清醒”，得2分；再说明推断依据——walking or stretching（散步或伸展）以及 your mind，说明它是让大脑在长时间学习后重新有精神，得2分。只说“查字典知道”不得分，因为没有体现上下文线索。\n常见失分点：主旨题答成某个细节；细节题没有找全三条；词义题只给中文意思而不说明猜测过程。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初二-英语-5-s2",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "阅读下面的短文，回答问题。\nLast summer, Emma joined a reading club at the town library. At first she went only because her best friend asked her to. The club met every Friday afternoon, and each member had to talk about one book. Emma was shy, so the first time she spoke for less than a minute. But the members listened carefully and asked her questions. After a few weeks, she began to look forward to the meetings. By the end of the summer, she read eight books and made several new friends. \"The club did not change my books,\" she says. \"It changed me.\"\n(1) Why did Emma join the club at first?\n(2) What can we infer from \"It changed me\"?\n(3) Which reading strategy did you use for Question 2? Explain how you used it.",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "(1) Because her best friend asked her to go with her.\n(2) The club made Emma less shy and more confident, and it helped her make new friends. It changed her personally, not just the books she read.\n(3) I used the inference strategy. I read the clues around the sentence: at first she was shy and spoke for less than a minute, but later she looked forward to the meetings and made several new friends. From these changes I inferred that the club made her more confident and outgoing, rather than simply giving her more books.",
+      "explanation": "第1步（第1题2分）：细节题定位 At first she went only because her best friend asked her to，答出“因为好朋友邀请她”即可得2分；只写 because she liked reading 与原文相反，不得分。\n第2步（第2题4分）：推断题不能照抄原句，要结合前文线索——Emma was shy、第一次发言不到一分钟，后来 look forward to the meetings、made several new friends——推断出她变得不那么害羞、更自信、交了新朋友，得4分；只翻译“它改变了我”而没有推断内容，最多得1分。\n第3步（第3题4分）：能指出使用推断（inference）策略得2分；能具体说明依据文中哪些词句、怎样由 shy 到 look forward to 的变化得出结论，得2分。只写“凭感觉”或“看懂了”不得分。\n常见失分点：推断题直接抄原文；把 changed me 理解成“改变了我的书”；策略说明与第2题实际做法不一致。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初二-英语-5-s3",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "请用英语写一段 60—70 词的短文，向同学介绍两条你做阅读理解时常用的策略，并各举一个简短例子。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "示例：I often use two reading strategies. First, I skim the passage before answering questions. I read the title, the first paragraph and the first sentence of each paragraph to get the main idea. Second, I scan for details. When a question asks about a date or a name, I look quickly through the passage until I find it. These two strategies help me read faster and make fewer mistakes.\n评分要点：①内容（4分）：介绍两条策略，并各配一个具体例子；②语言（4分）：策略术语使用准确，句子结构正确；③连贯与词数（2分）：衔接自然，60—70词。",
+      "explanation": "第1步（内容4分）：两条策略各2分，必须“策略名称 + 具体做法或例子”配套，如 skimming 用于找主旨、scanning 用于找日期或人名；只罗列 skimming、scanning 两个词而没有解释，最多得2分。\n第2步（语言4分）：术语使用准确得2分，如 skim、scan、main idea、detail；句子结构正确、拼写基本无误得2分，出现“I often use two reading strategy”这类主谓或单复数错误酌扣1分。\n第3步（连贯与词数2分）：使用 first、second、when 等衔接自然得1分；词数在60—70之间得1分，明显不足或超出扣1分。\n常见失分点：把 skimming 和 scanning 的用途说反；只写策略名称不举例；例子与策略不匹配，如说 scanning 却举“看首段找主旨”。",
+      "difficulty": 3,
+      "score": 10
+    }
+  ]
+}

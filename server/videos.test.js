@@ -75,17 +75,6 @@ test('章节相关性：同章前后的视频不会混进来', () => {
   assert.deepEqual(split.map(item => item.bvid), ['BVZ'])
 })
 
-test('学段过滤：初中章节不混入高中视频', () => {
-  const mixed = [
-    { bvid: 'BVA', title: '二次函数 高中 高考专题', tag: '', play: 999999 },
-    { bvid: 'BVB', title: '二次函数 初中 中考专题', tag: '', play: 100 }
-  ]
-  const junior = pickVideoBatch(mixed, { chapter: '二次函数', grade: '初三', limit: 3, now: NOW })
-  assert.deepEqual(junior.map(item => item.bvid), ['BVB'])
-  const senior = pickVideoBatch(mixed, { chapter: '二次函数', grade: '高二', limit: 3, now: NOW })
-  assert.deepEqual(senior.map(item => item.bvid), ['BVA'])
-})
-
 test('教材版本匹配优先，其次才按播放量', () => {
   const mixed = [
     { bvid: 'BVA', title: '二次函数 精讲', tag: '冀教版', play: 999999 },

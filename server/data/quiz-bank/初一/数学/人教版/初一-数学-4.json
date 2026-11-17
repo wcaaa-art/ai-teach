@@ -1,0 +1,115 @@
+{
+  "grade": "初一",
+  "subject": "数学",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初一-数学-4",
+    "name": "几何图形初步"
+  },
+  "generatedAt": "2026-11-14T12:23:19.381Z",
+  "source": "deepseek",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初一-数学-4-f1",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "已知线段 AB = 8 cm，点 C 在线段 AB 上，且 AC = 3 cm，点 D 是 BC 的中点，则 AD = ____ cm。",
+      "answer": "5.5",
+      "acceptableAnswers": [
+        "5.5",
+        "5.5 cm",
+        "11/2"
+      ],
+      "referenceAnswer": "",
+      "explanation": "由点 C 在线段 AB 上，AB = 8 cm，AC = 3 cm，得 BC = AB - AC = 5 cm。\n点 D 是 BC 的中点，所以 CD = \\frac{BC}{2} = 2.5 cm（即 \\frac{5}{2} cm）。\n因此 AD = AC + CD = 3 + 2.5 = 5.5 cm，故填 5.5。\n常见错误：误把点 D 当作 AB 的中点，得到 AD = 4 cm。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-数学-4-s1",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "已知点A，B，C在同一条直线上，M，N分别是线段AC，BC的中点，且AC=6 cm，BC=4 cm。（1）当点C在线段AB上时，求线段MN的长；（2）当点C在线段AB外时，求线段MN的长。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）因为M，N分别是AC，BC的中点，所以MC=\\frac{1}{2}AC=3 cm，NC=\\frac{1}{2}BC=2 cm。又C在线段AB上，M，C，N依次排列，故MN=MC+NC=3+2=5 cm。\n（2）当C在线段AB外时，因为AC=6 cm>BC=4 cm，所以点C只能在点B的外侧，即A，B，C依次排列。此时AC=AB+BC，得AB=6-4=2 cm。MC=3 cm，NC=2 cm，且M，N分别在AC，BC上，M在N的左侧，故MN=MC-NC=3-2=1 cm。所以MN的长为1 cm。",
+      "explanation": "1. 第（1）问：正确识别M，N为中点，得MC=3 cm，NC=2 cm，再由C在线段AB上得MN=MC+NC=5 cm。得4分。\n2. 第（2）问：需分类讨论。由AC>BC判定C只能在B的外侧，得AB=AC-BC=2 cm。得2分。\n3. 此时MC=3 cm，NC=2 cm，M在N的左侧，故MN=MC-NC=1 cm。得4分。\n常见错误：第（2）问漏掉“C在AB外”时不能直接用MC+NC；或未说明C的位置，把MN误算成5 cm。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初一-数学-4-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "一个角的补角是它的余角的3倍，则这个角的度数是______。",
+      "answer": "45°",
+      "acceptableAnswers": [
+        "45°",
+        "45度",
+        "45"
+      ],
+      "referenceAnswer": "",
+      "explanation": "设这个角的度数为 x°。\n由补角、余角的定义，它的补角为 (180 - x)°，余角为 (90 - x)°。\n依题意列方程：180 - x = 3(90 - x)，去括号得 180 - x = 270 - 3x，移项合并得 2x = 90，解得 x = 45。\n检验：补角为 135°，余角为 45°，135 = 3×45，符合题意，故答案为 45°。\n常见错误：把“补角是余角的3倍”列成 90 - x = 3(180 - x)，或去括号时漏乘 3 导致结果出错。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-数学-4-s2",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "（1）已知线段 AB=20 cm，点 C 在线段 AB 上，且 AC:CB=3:2，点 D 是线段 AC 的中点，求线段 BD 的长。\n（2）一个角的补角比它的余角的 2 倍多 10°，求这个角的度数。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）因为 AC:CB=3:2，AB=20 cm，所以 AC=12 cm，CB=8 cm。因为 D 是 AC 的中点，所以 AD=6 cm。故 BD=AB-AD=20-6=14 cm。\n（2）设这个角为 x°，则它的补角为 180-x，余角为 90-x。由题意得 180-x=2(90-x)+10，解得 x=10。答：这个角为 10°。",
+      "explanation": "第（1）问：由 AC:CB=3:2，AB=20 cm，得 AC=12 cm，CB=8 cm，得2分；由 D 是 AC 的中点，得 AD=6 cm，得2分；BD=AB-AD=14 cm，得1分。\n第（2）问：设这个角为 x°，正确写出补角 180-x、余角 90-x，得2分；列出方程 180-x=2(90-x)+10，得2分；解得 x=10 并作答，得1分。\n常见错误：第（1）问把 D 误认为 AB 的中点；第（2）问把补角与余角关系列反，或漏乘 2。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初一-数学-4-f3",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "已知∠α与∠β互为余角，且∠α=28°36′，则∠β=______。",
+      "answer": "61°24′",
+      "acceptableAnswers": [
+        "61°24′",
+        "61度24分",
+        "61°24分"
+      ],
+      "referenceAnswer": "",
+      "explanation": "余角定义：∠α+∠β=90°。\n90°=89°60′，所以∠β=89°60′-28°36′=61°24′。\n注意补角是与它相加为180°，不能误用180°去减。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-数学-4-s3",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "已知线段 AB=12 cm，点 C 在线段 AB 上，M、N 分别是 AC、BC 的中点。另有一个角，它的补角是它的余角的 4 倍。求线段 MN 的长和这个角的度数。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）因为 M 是 AC 的中点，所以 MC=AC÷2；因为 N 是 BC 的中点，所以 CN=BC÷2。又点 C 在线段 AB 上，所以 MN=MC+CN=AC÷2+BC÷2=(AC+BC)÷2=AB÷2=6 cm。\n（2）设这个角为 x°，则它的补角为 180°-x°，余角为 90°-x°。由题意得 180-x=4(90-x)，解得 180-x=360-4x，3x=180，x=60。所以这个角是 60°。",
+      "explanation": "1. 正确识别中点：MC=AC÷2，CN=BC÷2，得 3 分；由 MN=MC+CN=AB÷2=6 cm，得 2 分。\n2. 设未知角并正确表示补角、余角：补角为 180°-x，余角为 90°-x，得 2 分；列方程 180-x=4(90-x) 并解得 x=60，得 3 分。\n3. 常见错误：把 MN 误写成 AC 与 BC 的差，或把补角、余角概念混淆。\n4. 最终答案：MN=6 cm，这个角为 60°。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初一-数学-4-f4",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "已知∠α=35°18′，则∠α的余角等于______。",
+      "answer": "54°42′",
+      "acceptableAnswers": [
+        "54°42′",
+        "54°42'",
+        "54度42分",
+        "54°42分"
+      ],
+      "referenceAnswer": "",
+      "explanation": "余角定义：两个角的和为90°时互为余角。\n列式：90°-35°18′。\n借位计算：90°=89°60′，89°60′-35°18′=54°42′。\n所以∠α的余角为54°42′。",
+      "difficulty": 1,
+      "score": 3
+    }
+  ]
+}

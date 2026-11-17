@@ -1,0 +1,108 @@
+{
+  "grade": "初一",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初一-英语-3",
+    "name": "名词与代词"
+  },
+  "generatedAt": "2026-11-14T12:23:55.911Z",
+  "source": "deepseek",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初一-英语-3-f1",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用括号中所给词的适当形式填空：There are two ______ (box) on the desk.",
+      "answer": "boxes",
+      "acceptableAnswers": [
+        "boxes"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 句中有 two，后面接可数名词时要用复数形式。\n2. box 以 x 结尾，变复数时在词尾加 -es。\n3. 因此填 boxes；写成 boxs 或 box 均不得分。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-英语-3-s1",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "阅读下面短文，用括号内所给单词的正确形式填空，使短文完整、语法正确。每空一词，注意句首字母大写。\nHello! I am Lily. This is my family photo. These are my (1) (parent). The man is my father and the woman is my mother. (2) (they) names are Tom and Mary. I have a brother. (3) (he) name is Bob. We have two (4) (dog). They are white. I often play with (5) (they) after school.",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "1. parents\n2. Their\n3. His\n4. dogs\n5. them\n评分：每空2分，共10分；拼写或形式错误该空不得分。",
+      "explanation": "1. parents（2分）：These are 后接复数名词，parent 的复数为 parents。\n2. Their（2分）：修饰 names，需用形容词性物主代词，they 的形容词性物主代词是 their，句首大写。\n3. His（2分）：修饰 name，需用形容词性物主代词，he 的形容词性物主代词是 his，句首大写。\n4. dogs（2分）：two 后接可数名词复数，dog 的复数为 dogs。\n5. them（2分）：介词 with 后接宾格代词，they 的宾格是 them。常见错误：第2空误填 They，第5空误填 their。",
+      "difficulty": 1,
+      "score": 10
+    },
+    {
+      "id": "初一-英语-3-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "This is my sister. ______ name is Lily.",
+      "answer": "Her",
+      "acceptableAnswers": [
+        "Her",
+        "her"
+      ],
+      "referenceAnswer": "",
+      "explanation": "句意：这是我的姐姐/妹妹，她的名字叫莉莉。\n空格后接名词 name，需用形容词性物主代词修饰名词，指代 my sister，故填 Her。\n不能填 She，因为 She 是主格，不能直接修饰名词；也不能填 Hers，因为 Hers 是名词性物主代词，后面不能再接 name。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-英语-3-s2",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "请根据句意，用括号内所给名词或代词的适当形式完成句子，并说明每空所填词的依据。1. These are my two ______ (sister). 2. The blue pen is not mine. It is ______ (she). 3. ______ (we) English teacher is very kind. 4. I have a cat. ______ (it) name is Mimi. 5. This is Tom's book. Please give it to ______ (he).",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "1. sisters\n2. hers\n3. Our\n4. Its\n5. him\n评分要点：每空2分，共10分；拼写错误或词形错误该空不得分。1. two后接可数名词复数，sister变为sisters。2. 此处表示“她的（钢笔）”，用名词性物主代词hers。3. 修饰English teacher，用形容词性物主代词Our，句首大写。4. 修饰name，用形容词性物主代词Its，注意不加撇号。5. 介词to后接宾格代词him。",
+      "explanation": "每空2分，共10分。\n1. sisters：two后接可数名词复数，不能填单数sister。\n2. hers：此处作表语，表示“她的钢笔”，用名词性物主代词hers；her是形容词性物主代词，不能单独作表语。\n3. Our：修饰English teacher，用形容词性物主代词Our，句首大写；we是主格，不能直接修饰名词。\n4. Its：修饰name，用形容词性物主代词Its；it's意为“它是”，与句意不符。\n5. him：介词to后接宾格代词him；he是主格，不能作介词宾语。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初一-英语-3-f3",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用括号内所给词的适当形式填空：This is my sister. ______ (she) name is Linda.",
+      "answer": "Her",
+      "acceptableAnswers": [
+        "Her",
+        "her"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 句意：这是我的姐姐/妹妹，她的名字叫Linda。\n2. 空格后接名词name，需要用形容词性物主代词修饰名词。\n3. she的形容词性物主代词是her，句首首字母大写，故填Her。\n常见错误：误填She，把主格代词直接放在名词前作定语。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-英语-3-s3",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "阅读下面句子，用括号内所给词的适当形式填空，并写出第(2)、(4)小题中所填代词指代的内容。每小题2分，共10分。\n(1) There are three ___ (child) in the room.\n(2) Mary has a cat. ___ (it) name is Mimi.\n(3) These are the ___ (student) books. （表示这些书属于学生们）\n(4) Tom and Jack are my friends. I often play with ___ (they).\n(5) This is ___ (Lucy and Lily) room. （表示露西和莉莉共有的房间）",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "(1) children；child 的复数是不规则变化。\n(2) Its；it 的形容词性物主代词，作 name 的定语，指代 Mary 的猫（the cat）。\n(3) students'；表示“学生们的”，复数名词所有格先变复数再加 '。\n(4) them；they 的宾格，作介词 with 的宾语，指代 Tom and Jack（my friends）。\n(5) Lucy and Lily's；表示两人共有，只在最后一个名字后加 's。",
+      "explanation": "第(1)空：children，child 的复数是不规则变化，常见错误为 childs。\n第(2)空：Its 指“猫的”，指代 Mary 的 cat；注意 Its 不是 It's，常见错误为 It。\n第(3)空：students' 表示复数名词所有格，先写 students 再加 '，常见错误为 student's。\n第(4)空：them 作介词 with 的宾格，指代 Tom and Jack，常见错误为 they。\n第(5)空：Lucy and Lily's 表示两人共有，只在最后一个人名后加 's，常见错误为 Lucy's and Lily's。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初一-英语-3-f4",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用括号内所给代词的适当形式填空：These pens are not ours. They are ______ (they).",
+      "answer": "theirs",
+      "acceptableAnswers": [
+        "theirs"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 句意为“这些钢笔不是我们的，是他们的”。\n2. 空格后没有名词，需用名词性物主代词；they 的名词性物主代词是 theirs。\n3. 若填 their，后面必须接名词；若填 them，则是宾格，均不符合本句结构。",
+      "difficulty": 1,
+      "score": 3
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "grade": "初三",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初三-英语-4",
+    "name": "完形填空策略"
+  },
+  "generatedAt": "2026-11-14T14:15:00.000Z",
+  "source": "trae",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初三-英语-4-f1",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "做完形填空时，正确的第一步是跳过所有空格通读全文，把握文章的______，再逐空分析，避免断章取义。",
+      "answer": "主旨大意",
+      "acceptableAnswers": [
+        "主旨大意",
+        "中心思想",
+        "大意"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：答出“主旨大意（中心思想/大意）”得3分。\n2. 答题依据：完形填空是“语篇题”而不是单句题，首句通常不设空，往往点明人物、时间、地点或话题；先通读可以确定文章的体裁、情感基调和行文方向，为后续选择提供语境。\n3. 易错点：一上来就逐空选词，只看空格所在句，容易忽略上下文的转折、复现和伏笔，出现“每空都读得通、整篇却讲不通”的情况。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-4-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "根据上下文逻辑填空：The little boy tried his best in the race, ______ he still came last.",
+      "answer": "but",
+      "acceptableAnswers": [
+        "but",
+        "yet"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 but 或 yet 得3分。\n2. 依据：前半句“尽了最大努力”与后半句“仍然跑了最后一名”意思相反，构成转折关系，用并列连词 but；yet 也可表示转折。\n3. 易错点：填 so 会把句意理解为“所以得了最后一名”，逻辑不通；填 because 则表示因果，与前后语义不符；填 and 只表并列，读不出“努力却仍失败”的意味。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-4-f3",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "根据固定搭配填空：If you want to make ______ in English, you need to practise every day.",
+      "answer": "progress",
+      "acceptableAnswers": [
+        "progress"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 progress 得3分。\n2. 依据：make progress 是固定搭配，意为“取得进步”，progress 在此为不可数名词，前面不加 a，词尾也不加 -s。\n3. 易错点：填 a progress 或 progresses 都违反不可数名词的用法；填 improvement 虽然意思接近，但不能与 make 构成常见搭配，通常说 make improvements 时才用复数。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-4-f4",
+      "type": "fill",
+      "dimension": "transfer",
+      "stem": "完形填空中常出现“原词复现”线索。请根据上下文填空：Lucy felt very nervous before the speech. Her hands were shaking and her heart was beating fast. She had never been so ______ in her life.",
+      "answer": "nervous",
+      "acceptableAnswers": [
+        "nervous"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 nervous 得3分。\n2. 依据：首句直接给出 Lucy felt very nervous，后文“手发抖、心跳加快”是对 nervous 的具体解释，末句是对同一种情绪的强调，属于原词复现线索，因此仍填 nervous。\n3. 易错点：填 excited 只看到“心跳加快”，忽略了手发抖和演讲前的语境；填 angry 或 sad 与“演讲前紧张”无关。做完形时要善于抓住同一段内反复出现的同义词、近义词和原词。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-4-s1",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "阅读下面的短文，从每题所给的A、B、C、D四个选项中选出最佳选项。\nLast summer, my family moved to a small town. At first, I felt __1__ because I had no friends there. Every morning I walked to school alone, keeping my head down.\nOne day, a boy named Leo sat next to me in the science class. He asked if I wanted to join their robot club. I was __2__ and said nothing. He smiled and told me that everyone was welcome.\nThe next Friday, I went to the club. The members were building a small car. I knew little about robots, so I just watched. Leo handed me a screwdriver and said, “Try it.” My hands were shaking, __3__ I fixed the wheel at last. Everyone clapped, and I felt a warm feeling inside.\nFrom then on, I went to the club every week. I learned not only how to build robots but also how to __4__ with others. Leo and I became good friends. When I made mistakes, he never laughed at me. __5__, he helped me find the problem.\nNow I often tell my new classmates, “Don't be afraid of a new place. A simple ‘hello’ may __6__ your whole year.”\n1. A. excited B. lonely C. angry D. proud\n2. A. nervous B. pleased C. brave D. careless\n3. A. so B. but C. because D. or\n4. A. compare B. communicate C. compete D. agree\n5. A. Instead B. However C. Finally D. Suddenly\n6. A. waste B. change C. end D. save",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "1. B　2. A　3. B　4. B　5. A　6. B\n1. 由 because I had no friends there 可知“我”感到孤独，选 lonely。\n2. 面对陌生同学邀请，“我”说不出话，说明紧张害羞，选 nervous。\n3. “手在发抖”与“最终装好了轮子”是转折关系，选 but。\n4. 在社团中学会的是与他人“交流”，communicate with others 搭配正确。\n5. 前句说 Leo 从不嘲笑“我”，后句说反而帮忙找问题，用 Instead 表示“相反”。\n6. 一句简单的“hello”可能“改变”你一整年，选 change。",
+      "explanation": "第1步：每小题1.5分，共9分；答对选项即可得分，不要求写理由。\n第2步：第1题是因果线索，紧跟在 because 之后；第2题是动作线索，said nothing 说明紧张；第3题是逻辑转折，shaking 与 fixed at last 形成反差；第4题是搭配线索，communicate with 为固定搭配；第5题是语义对比，never laughed 与 helped 构成相反关系；第6题是主旨升华，结尾句呼应“不要害怕新环境”。\n第3步：答题说明1分，能指出至少两种线索类型（因果、转折、复现、搭配、主旨）即可。\n常见错误：第5题误选 However，However 后常接逗号且表示让步转折，此处是“不但不嘲笑，反而帮助”，用 Instead 更准确；第4题误选 agree，agree with 是“同意某人”，与“学会与人相处”不符。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初三-英语-4-s2",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "选出每题的最佳选项，并说明你依据的是哪种线索（逻辑关系、原词复现、固定搭配、常识或语法）。\n（1）It was raining hard, ______ the football match went on. A. so B. but C. because D. if\n（2）The doctor told him to give up smoking. He took the doctor's ______ and stopped at once. A. advice B. order C. medicine D. place\n（3）She is a warm-hearted girl. She is always ready to help ______. A. others B. herself C. nobody D. nothing\n（4）I have two tickets. One is for you, and the ______ is for your brother. A. other B. another C. others D. else\n（5）—Why didn't you answer my call? —Sorry, I ______ the piano at that time. A. play B. played C. was playing D. have played",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）B。逻辑关系：大雨与比赛继续进行构成转折。\n（2）A。固定搭配：take one's advice 意为“接受某人的建议”。\n（3）A。语义与常识：热心的人总是乐于帮助“别人”，others 泛指其他人。\n（4）A。固定搭配：one...the other... 表示两者中的“一个……另一个……”。\n（5）C。语法：at that time 指过去某一时刻，表示当时正在弹钢琴，用过去进行时。",
+      "explanation": "第1步：每小题1.5分，共7.5分；线索说明2.5分，每小题0.5分。\n第2步：第（1）题的关键是“雨很大”与“比赛继续”语义相反，属转折关系，but 最合适。第（2）题 take one's advice 是固定搭配，order 虽可表示“命令”，但与 take 搭配不自然。第（3）题要抓住 warm-hearted 的感情色彩，help others 才符合语境。第（4）题是两者范围的限定，只能用 the other，another 指三者以上中的另一个。第（5）题 at that time 是过去进行时的典型标志。\n第3步：只写选项不写线索的，每小题只得0.5分；线索类型判断错误，该小题不得分。\n常见错误：第（1）题选 so，把“雨大”当成“比赛继续”的原因；第（4）题选 another，忽略 two tickets 的限定。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初三-英语-4-s3",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "用方框中所给词的适当形式填空，使短文完整、通顺。方框中有两个词是多余的。\nA. interested　B. carefully　C. spent　D. wait　E. find　F. confident　G. think　H. valuable　I. waste　J. suddenly\nBooks are like doors. They open a new world for us. When I was eight, my father gave me a book about stars. I read it again and again and soon became __1__ in space. I __2__ my pocket money on more books about planets.\nReading helps me in many ways. First, it makes my vocabulary larger. When I meet a new word, I don't have to __3__ for a dictionary at once; I can guess its meaning from the story. Second, reading makes me __4__. I used to be shy, but now I can talk about what I have read with my classmates. Third, books teach me to think. A good story often makes me __5__ about people and life.\nOf course, we should choose books __6__. Some books are not good for us. We should also __7__ enough time to read every day instead of playing on the phone all the time.\nReading is a __8__ habit. It costs little but brings us a lot.",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "1. A（interested）　2. C（spent）　3. D（wait）　4. F（confident）　5. G（think）　6. B（carefully）　7. E（find）　8. H（valuable）\n多余的两个词是 I（waste）和 J（suddenly）。\n1. become interested in 是固定搭配，意为“对……产生兴趣”。\n2. spend money on sth. 表示“把钱花在……上”，全文为过去时，故用 spent。\n3. wait for 表示“等待”，与 not have to 构成“不必等查字典”。\n4. 与 used to be shy 形成对比，说明阅读让“我”变得自信。\n5. make sb. think about sth. 表示“使某人思考……”。\n6. 修饰动词 choose，用副词 carefully，表示“认真地选书”。\n7. find enough time 表示“挤出足够的时间”。\n8. 修饰名词 habit 用形容词 valuable，意为“有价值的”。",
+      "explanation": "第1步：每空1分，共8分；指出两个多余词得2分，合计10分。\n第2步：解题时先通读全文确定主题“阅读的益处”，再逐空判断词性和搭配：第1题在 became 后作表语，用形容词 interested；第2题缺谓语且全文为过去时，用 spent；第3题 have to 后接动词原形，wait for 搭配成立；第4题 make me 后接形容词作宾语补足语，用 confident；第5题 make sb. do sth.，用原形 think；第6题修饰动词，用副词 carefully；第7题情态动词 should 后用原形 find；第8题修饰名词，用形容词 valuable。\n第3步：若词性判断正确但形式错误（如 interest 代替 interested），该空不得分。\n常见错误：第2题填 waste，把“花零花钱买书”理解成“浪费钱”，与全文赞扬阅读的态度相反；第4题填 carefully，忽略 make me 后需要形容词。",
+      "difficulty": 3,
+      "score": 10
+    }
+  ]
+}

@@ -53,26 +53,26 @@ function toggleTrace() {
 </template>
 
 <style scoped>
-.trace-waiting{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);padding:6px 2px}
+.trace-waiting{display:flex;align-items:center;gap:8px;font-size:calc(12px*var(--fs-scale));color:var(--muted);padding:6px 2px}
 .waiting-dot{width:7px;height:7px;border-radius:50%;background:var(--primary);animation:trace-pulse 1.2s ease-in-out infinite}
 .agent-trace{margin:0 0 8px;border:1px solid var(--border);border-left:3px solid var(--primary);border-radius:10px;background:var(--surface-soft);overflow:hidden}
-.trace-head{width:100%;display:flex;align-items:center;gap:8px;padding:8px 12px;border:0;background:transparent;color:var(--text);font-size:12.5px;cursor:pointer;text-align:left}
+.trace-head{width:100%;display:flex;align-items:center;gap:8px;padding:8px 12px;border:0;background:transparent;color:var(--text);font-size:calc(12.5px*var(--fs-scale));cursor:pointer;text-align:left}
 .trace-head:hover{background:var(--primary-soft)}
 .trace-pulse{width:7px;height:7px;border-radius:50%;background:var(--muted);flex:none}
 .agent-trace.is-streaming .trace-pulse{background:var(--primary);animation:trace-pulse 1.2s ease-in-out infinite}
 .trace-title{font-weight:600}
-.trace-meta{margin-left:auto;color:var(--muted);font-size:11.5px}
-.trace-toggle{color:var(--primary);font-size:11.5px}
+.trace-meta{margin-left:auto;color:var(--muted);font-size:calc(11.5px*var(--fs-scale))}
+.trace-toggle{color:var(--primary);font-size:calc(11.5px*var(--fs-scale))}
 .trace-body{border-top:1px dashed var(--border);padding:10px 12px 12px}
-.trace-thinking{max-height:160px;overflow:auto;margin:0 0 8px;font-size:12px;line-height:1.65;color:var(--muted);white-space:pre-wrap}
+.trace-thinking{max-height:160px;overflow:auto;margin:0 0 8px;font-size:calc(12px*var(--fs-scale));line-height:1.65;color:var(--muted);white-space:pre-wrap}
 .trace-steps{list-style:none;margin:0;padding:0;display:grid;gap:6px}
-.trace-steps li{display:grid;grid-template-columns:18px 1fr auto;align-items:center;gap:6px;font-size:12px}
-.step-index{width:18px;height:18px;display:grid;place-items:center;border-radius:50%;background:var(--primary-soft);color:var(--primary);font-size:11px;font-weight:700}
+.trace-steps li{display:grid;grid-template-columns:18px 1fr auto;align-items:center;gap:6px;font-size:calc(12px*var(--fs-scale))}
+.step-index{width:18px;height:18px;display:grid;place-items:center;border-radius:50%;background:var(--primary-soft);color:var(--primary);font-size:calc(11px*var(--fs-scale));font-weight:700}
 .step-label{color:var(--text);font-weight:600}
-.step-state{color:var(--muted);font-size:11px}
+.step-state{color:var(--muted);font-size:calc(11px*var(--fs-scale))}
 .trace-steps li[data-status='start'] .step-state,.trace-steps li.start .step-state{color:var(--primary)}
-.step-summary{grid-column:2/4;color:var(--muted);font-size:11.5px;line-height:1.5}
-.trace-empty{margin:0;font-size:12px;color:var(--muted)}
+.step-summary{grid-column:2/4;color:var(--muted);font-size:calc(11.5px*var(--fs-scale));line-height:1.5}
+.trace-empty{margin:0;font-size:calc(12px*var(--fs-scale));color:var(--muted)}
 @keyframes trace-pulse{0%,100%{opacity:.35;transform:scale(.9)}50%{opacity:1;transform:scale(1.15)}}
 @media (prefers-reduced-motion: reduce){.waiting-dot,.agent-trace.is-streaming .trace-pulse{animation:none}}
 </style>

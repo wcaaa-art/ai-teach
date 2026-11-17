@@ -1,0 +1,184 @@
+{
+  "grade": "初三",
+  "subject": "数学",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初三-数学-5",
+    "name": "相似三角形"
+  },
+  "generatedAt": "2026-11-13T02:46:59.057Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwedlk1p",
+      "chapterId": "初三-数学-5",
+      "chapterName": "相似三角形",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列说法中，正确的是（ ）",
+      "options": [
+        "两个直角三角形一定相似",
+        "两个等腰三角形一定相似",
+        "两个等边三角形一定相似",
+        "两个面积相等的三角形一定相似"
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：两个直角三角形只有一个直角相等，锐角不一定分别相等，例如一个含30°、60°，另一个含45°、45°，它们不相似。\nB. 错误：两个等腰三角形虽然都有两边相等，但顶角不一定相等，例如顶角分别为40°和100°的等腰三角形不相似。\nC. 正确：等边三角形的三个内角都是60°，三个角分别相等，因此任意两个等边三角形都相似。\nD. 错误：面积相等不能保证形状相同，例如底和高分别为2、3与3、2的两个三角形面积都为3，但对应边不一定成比例，不一定相似。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwedlk1p",
+      "chapterId": "初三-数学-5",
+      "chapterName": "相似三角形",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "同一时刻，小华身高1.5 m，影长为2 m；旁边一根旗杆的影长为12 m。若太阳光线可看作平行光线，则旗杆的高度为（ ）",
+      "options": [
+        "8 m",
+        "9 m",
+        "10 m",
+        "16 m"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：由相似三角形对应边成比例可得 \\frac{旗杆高}{12}=\\frac{1.5}{2}，解得旗杆高为9 m，不是8 m。\nB. 正确：同一时刻太阳光线平行，小华与影长、旗杆与影长分别构成相似三角形，所以 \\frac{旗杆高}{12}=\\frac{1.5}{2}，解得旗杆高=9 m。\nC. 错误：10 m 不符合比例关系 \\frac{10}{12}\\neq\\frac{1.5}{2}，没有正确使用相似三角形对应边成比例。\nD. 错误：16 m 是把影长与身高关系误当作反比例或计算错误得到，代入检验 \\frac{16}{12}\\neq\\frac{1.5}{2}。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-3-mwedlk1p",
+      "chapterId": "初三-数学-5",
+      "chapterName": "相似三角形",
+      "type": "single",
+      "dimension": "concept",
+      "difficulty": 1,
+      "stem": "若两个三角形的对应角相等、对应边成比例，则这两个三角形？",
+      "options": [
+        "相似",
+        "全等",
+        "面积相等",
+        "周长相等"
+      ],
+      "correctIndex": 0,
+      "explanation": "对应角相等且对应边成比例是相似三角形的定义。"
+    },
+    {
+      "id": "diag-4-mwedlk1p",
+      "chapterId": "初三-数学-5",
+      "chapterName": "相似三角形",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "关于相似三角形的判定与性质，下列判断正确的是（ ）",
+      "options": [
+        "两个等腰三角形只要都有一个角是80°，就一定相似",
+        "两个直角三角形中，斜边和一条直角边分别对应成比例，则这两个直角三角形相似",
+        "若 \\frac{AB}{DE}=\\frac{AC}{DF}，且 \\angle B=\\angle E，则 \\triangle ABC \\sim \\triangle DEF",
+        "相似三角形的面积比等于对应边之比"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：反例：一个等腰三角形的顶角为80°，则底角为50°；另一个等腰三角形的一个底角为80°，则顶角为20°。两三角形角分别不是对应相等，故不一定相似。\nB. 正确：设两直角三角形斜边分别为 c、c'，一条直角边分别为 a、a'，且 c/c'=a/a'=k，则由勾股定理得另一直角边 b=\\sqrt{c^2-a^2}，b'=\\sqrt{c'^2-a'^2}，从而 b/b'=k，三边对应成比例，所以两三角形相似。\nC. 错误：两边成比例且夹角相等才能判定相似。题中 AB 与 AC 的夹角是 \\angle A，DE 与 DF 的夹角是 \\angle D，而 \\angle B=\\angle E 不是这两边的夹角，条件不足，不能推出相似。\nD. 错误：相似三角形的面积比等于对应边之比的平方，而不是对应边之比；例如对应边之比为2时，面积比应为4。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-5-mwedlk1p",
+      "chapterId": "初三-数学-5",
+      "chapterName": "相似三角形",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列各组图形中，一定相似的是（ ）",
+      "options": [
+        "两个等腰三角形",
+        "两个等边三角形",
+        "两个直角三角形",
+        "两个矩形"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：两个等腰三角形的顶角可以不同，例如顶角分别为40°和80°时，对应角不全部相等，因此不一定相似。\nB. 正确：等边三角形的三个内角都是60°，任意两个等边三角形的对应角都相等，且三边对应成比例，符合相似三角形的定义，所以一定相似。\nC. 错误：两个直角三角形的锐角可以不同，例如一个锐角为30°，另一个锐角为45°时，对应角不相等，因此不一定相似。\nD. 错误：两个矩形的四个角都是直角，但长宽比可以不同，例如长宽比分别为2:1和3:1时，对应边不成比例，因此不一定相似。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-6-mwedlk1p",
+      "chapterId": "初三-数学-5",
+      "chapterName": "相似三角形",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在△ABC中，点D、E分别在边AB、AC上，且DE∥BC。若AD=2，DB=3，AE=4，则EC的长为（ ）",
+      "options": [
+        "6",
+        "8",
+        "\\frac{10}{3}",
+        "3"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：因为DE∥BC，根据平行线分线段成比例定理，有\\frac{AD}{DB}=\\frac{AE}{EC}，代入得\\frac{2}{3}=\\frac{4}{EC}，解得EC=6。\nB. 错误：若EC=8，则\\frac{AE}{EC}=\\frac{4}{8}=\\frac{1}{2}，而\\frac{AD}{DB}=\\frac{2}{3}，两者不相等，与平行线分线段成比例定理矛盾。\nC. 错误：若EC=\\frac{10}{3}，则\\frac{AE}{EC}=\\frac{4}{\\frac{10}{3}}=\\frac{6}{5}，不等于\\frac{AD}{DB}=\\frac{2}{3}。\nD. 错误：若EC=3，则\\frac{AE}{EC}=\\frac{4}{3}，不等于\\frac{AD}{DB}=\\frac{2}{3}，不符合题意。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-7-mwedlk1p",
+      "chapterId": "初三-数学-5",
+      "chapterName": "相似三角形",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在△ABC中，∠C=90°，AC=6，BC=8。点D在边AB上，DE⊥AC于E，DF⊥BC于F，四边形DECF为矩形。若矩形DECF的面积为12，则AE的长为（ ）",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：当AE=2时，CE=4，由△ADE∽△ABC得DE=\\frac{4}{3}×2=\\frac{8}{3}，矩形面积为4×\\frac{8}{3}=\\frac{32}{3}，不等于12。\nB. 正确：设AE=x，则CE=6-x。因为DE∥BC，所以△ADE∽△ABC，得\\frac{DE}{BC}=\\frac{AE}{AC}，即DE=\\frac{8}{6}x=\\frac{4}{3}x。矩形DECF的面积为CE·DE=(6-x)·\\frac{4}{3}x=12，化简得x^2-6x+9=0，解得x=3。\nC. 错误：当AE=4时，CE=2，DE=\\frac{16}{3}，矩形面积为2×\\frac{16}{3}=\\frac{32}{3}，不等于12。\nD. 错误：当AE=5时，CE=1，DE=\\frac{20}{3}，矩形面积为1×\\frac{20}{3}=\\frac{20}{3}，不等于12。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-8-mwedlk1p",
+      "chapterId": "初三-数学-5",
+      "chapterName": "相似三角形",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "下列判断中，正确的是（　　）",
+      "options": [
+        "两个直角三角形中，若斜边与一条直角边的比对应相等，则这两个直角三角形相似",
+        "若两个三角形的面积比等于它们的对应高之比，则这两个三角形相似",
+        "若两个三角形有两边及其中一边的对角分别相等，则这两个三角形相似",
+        "两个相似三角形的对应中线之比等于它们的面积比"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：设两个直角三角形的斜边分别为 c、c'，一条直角边分别为 a、a'，且 \\frac{c}{c'}=\\frac{a}{a'}=k，则另一条直角边 b=\\sqrt{c^2-a^2}，b'=\\sqrt{c'^2-a'^2}，于是 \\frac{b}{b'}=k，三边对应成比例，由 SSS 判定两三角形相似。\nB. 错误：面积比等于底之比与高之比相乘，仅由“面积比等于对应高之比”不能推出对应角相等，例如底相同而高成比例的两个三角形面积比等于高比，但形状可以不同，不一定相似。\nC. 错误：两边及其中一边的对角分别相等属于 SSA 情形，不能唯一确定三角形，两个三角形可能不相似。\nD. 错误：相似三角形的对应中线之比等于相似比，而面积比等于相似比的平方，两者不一定相等。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-9-mwedlk1p",
+      "chapterId": "初三-数学-5",
+      "chapterName": "相似三角形",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列各组三角形中，一定相似的是（ ）",
+      "options": [
+        "两个直角三角形",
+        "两个等腰三角形",
+        "两个等边三角形",
+        "两个有一个角是40°的三角形"
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：两个直角三角形不一定相似，例如含30°角的直角三角形与含45°角的直角三角形，对应角不全相等。\nB. 错误：两个等腰三角形不一定相似，例如顶角分别为40°和80°的等腰三角形，对应角不全相等。\nC. 正确：等边三角形的三个内角都是60°，三边也成比例，因此任意两个等边三角形都相似。\nD. 错误：两个有一个角是40°的三角形不一定相似，另外两个角可以分别是60°、80°和70°、70°，对应角不全相等。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-1-mwedlpf4",
+      "chapterId": "初三-数学-5",
+      "chapterName": "相似三角形",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "已知△ABC∽△DEF，相似比为2:3。下列说法一定正确的是（ ）",
+      "options": [
+        "∠A与∠D相等，且\\frac{AB}{DE}=\\frac{3}{2}",
+        "△ABC与△DEF的周长比为\\frac{2}{3}，面积比为\\frac{4}{9}",
+        "若AB=4，则DE=6，且\\frac{BC}{EF}=\\frac{3}{2}",
+        "对应边上的高之比为\\frac{4}{9}"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：相似三角形对应角相等，所以∠A=∠D，但对应边之比应等于相似比\\frac{2}{3}，而\\frac{AB}{DE}=\\frac{3}{2}把对应边之比写反了。\nB. 正确：相似三角形的周长比等于相似比，所以周长比为\\frac{2}{3}；面积比等于相似比的平方，所以面积比为\\left(\\frac{2}{3}\\right)^2=\\frac{4}{9}。\nC. 错误：由相似比为2:3，若AB=4，则\\frac{AB}{DE}=\\frac{2}{3}，解得DE=6，这一步正确；但\\frac{BC}{EF}应等于相似比\\frac{2}{3}，不是\\frac{3}{2}。\nD. 错误：相似三角形对应边上的高之比等于相似比，应为\\frac{2}{3}；\\frac{4}{9}是面积比，不是高之比。",
+      "difficulty": 2
+    }
+  ]
+}

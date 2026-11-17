@@ -1,0 +1,110 @@
+{
+  "grade": "初三",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初三-英语-6",
+    "name": "中考写作结构"
+  },
+  "generatedAt": "2026-11-14T14:25:00.000Z",
+  "source": "trae",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初三-英语-6-f1",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "中考英语书面表达常采用“三段式”结构：第一段点明主题，第二段展开具体内容，第三段______全文或表明自己的观点。",
+      "answer": "总结",
+      "acceptableAnswers": [
+        "总结",
+        "总结全文",
+        "归纳"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：答出“总结（总结全文/归纳）”得3分。\n2. 写作依据：三段式作文首段开门见山点题，主体段用理由、事例或建议支撑主题，尾段用一两句话总结并表明观点或发出呼吁，形成“总—分—总”的完整结构。\n3. 易错点：尾段另起新话题会造成结构松散；只重复首段原句则显得空洞；尾段过长会挤占主体段篇幅，使文章详略失衡。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-6-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用适当的连接词填空，使行文连贯：First, we should listen to the teacher carefully in class. Second, we should take notes and finish our homework on time. ______, we should ask our teachers for help when we are in trouble.",
+      "answer": "Third",
+      "acceptableAnswers": [
+        "Third",
+        "Thirdly",
+        "Finally"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 Third/Thirdly/Finally 得3分。\n2. 写作依据：前面已用 First、Second 列举两条建议，第三空继续列举，应用表示顺序的连接词 Third 或 Finally，使列举层次清楚；Last but not least 也可用于最后一点。\n3. 易错点：填 Besides 只是补充，不能体现“第三点”的顺序；填 However 表示转折，会打断列举逻辑；连接词后应加逗号，写成 Third we should... 缺少逗号，格式上不规范。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-6-f3",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用括号内所给动词的适当形式填空：In my opinion, students should ______ (spend) more time on reading instead of playing games on the phone.",
+      "answer": "spend",
+      "acceptableAnswers": [
+        "spend"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 spend 得3分。\n2. 语法依据：情态动词 should 后接动词原形；spend time on sth. 是固定搭配，意为“在……上花时间”，此处 on reading 是介词短语作状语，spend 不需要变化。\n3. 易错点：填 spending 违背情态动词后接原形的规则；把 spend 与 take/cost 混淆，写成 should take more time on reading，搭配错误；另外 instead of 后接动名词 playing，不能写成 play。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-6-f4",
+      "type": "fill",
+      "dimension": "transfer",
+      "stem": "书信结尾常用句：I'm looking forward to ______ (hear) from you soon.",
+      "answer": "hearing",
+      "acceptableAnswers": [
+        "hearing"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 hearing 得3分。\n2. 语法依据：look forward to 意为“期待”，其中 to 是介词而不是动词不定式符号，介词后应接名词或动名词，故用 hearing。\n3. 易错点：填 hear 是最常见的错误，把 to 当成不定式符号；同类还有 be used to doing、pay attention to doing、devote...to doing，判断方法是看 to 后能否接名词。该句常放在书信结尾，用于表达期待回信。",
+      "difficulty": 3,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-6-s1",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "假设你校英语报正在征文，题目是“How to Be a Good Learner”。请根据以下要点写一篇80—100词的短文：\n1. 课前预习，了解重点；\n2. 课上认真听讲，做好笔记；\n3. 课后及时复习，多做练习。\n要求：用三段式结构，至少使用两个连接词，语句通顺，语法正确。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "How to Be a Good Learner\nBecoming a good learner is not difficult if we form good habits.\nFirst, we should preview the new lessons before class so that we can follow the teacher more easily. Second, we should listen carefully and take notes in class. It is also a good idea to ask questions when we don't understand. Finally, we should review what we have learned in time and do more practice.\nIn my opinion, good habits are the key to success. Everyone can become a better learner if he keeps trying.",
+      "explanation": "第1步：结构4分。第一段点题，第二段按“课前—课上—课后”展开，第三段总结并表明观点，三段齐全得4分；缺一段扣1—2分。\n第2步：内容4分。三个要点各1分，全部覆盖得3分；有具体细节（如 preview、take notes、review）再加1分。\n第3步：语言2分。至少使用 First、Second、Finally、In my opinion 等连接词，并使用 so that、when、what 等从句；每出现一处明显语法错误扣0.5分，扣完为止。\n第4步：词数须在80—100之间，少于80或多于100酌情扣1分；书写与分段规范也纳入印象分。\n常见错误：只罗列要点不作展开，文章像清单；三段式写成一段；连接词只用 and，层次不清。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初三-英语-6-s2",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "下面是一名同学作文中的五个句子，内容正确但句子之间缺少联系。请用适当的连接词和从句把它们连成一段通顺的话，并说明你这样改的理由。\n（1）I like English very much.\n（2）I often listen to English songs.\n（3）I can't understand the words at first.\n（4）I look them up in a dictionary.\n（5）Now I can sing three English songs.",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "I like English very much. First, I often listen to English songs, which helps me get used to the sound of English. However, I couldn't understand the words at first, so I looked them up in a dictionary. Now I can sing three English songs, and this makes me very proud.\n理由：用 First 表明第一个做法；用 which 引导非限制性定语从句补充说明听歌的作用；用 However 表示“听不懂”与“喜欢英语”之间的转折；用 so 表示因果；用 and 连接并列结果，并用 this 指代前文，使句子衔接自然。",
+      "explanation": "第1步：改写6分。五个句子信息完整保留得2分；使用三个以上连接词或从句得2分；语句通顺、时态一致得2分。\n第2步：理由说明4分。须指出所用连接词或从句的作用，如 First 表顺序、However 表转折、so 表因果、which 引导定语从句，每说明两点得1分；只写“这样更好”不得分。\n第3步：改写不是简单加 and，应根据语义关系选择连接手段：听歌与喜欢英语是递进，听不懂与查字典是因果，前后的变化可用 now 呼应。\n常见错误：五句仍各自独立，只在句首加 and；用 but 连接“查字典”和“会唱三首歌”，逻辑关系判断错误；改写后遗漏原有信息。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初三-英语-6-s3",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "你的英国朋友 Mike 打算学习中文，来信向你寻求建议。请用英语给他回一封80—100词的信，提出至少两条建议，并表达祝愿。\n要求：格式正确，使用三段式结构，至少使用一个宾语从句和一个连接词。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "Dear Mike,\nI'm glad to hear that you are going to learn Chinese. Here are some suggestions for you.\nFirst, try to listen to Chinese songs and watch Chinese films. It can make learning more fun. Second, don't be afraid of making mistakes when you speak. The more you practise, the more confident you will be. Besides, you can make a Chinese friend online and talk with him every week.\nI'm sure you will make progress soon. I'm looking forward to hearing from you.\nYours,\nLi Hua",
+      "explanation": "第1步：格式2分。称呼 Dear Mike, 与结尾 Yours, Li Hua 齐全得2分，缺一处扣1分。\n第2步：内容4分。开头说明写信目的1分，两条以上具体建议2分，表达祝愿1分；建议空泛（如只说 study hard）酌扣1分。\n第3步：语言3分。须使用宾语从句（如 I'm glad to hear that...、I'm sure you will...）和连接词（First、Second、Besides），各1分；时态、搭配错误酌情扣1分。\n第4步：词数1分，80—100词为宜，明显不足或超出酌情扣分。\n常见错误：忘记书信格式；建议只写一条；把 look forward to 后写成 hear；结尾用 Best wishes 却漏写署名。",
+      "difficulty": 3,
+      "score": 10
+    }
+  ]
+}

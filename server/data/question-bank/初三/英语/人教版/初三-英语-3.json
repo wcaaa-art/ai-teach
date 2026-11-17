@@ -1,0 +1,184 @@
+{
+  "grade": "初三",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初三-英语-3",
+    "name": "情态动词与时态复习"
+  },
+  "generatedAt": "2026-11-14T12:17:21.156Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwgdf20x",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Which sentence correctly expresses a present ability with a modal verb?",
+      "options": [
+        "She can sings very well.",
+        "She can sing very well.",
+        "She can sang very well.",
+        "She can singing very well."
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：情态动词 can 后应接动词原形，不能接第三人称单数形式 sings。\nB. 正确：can 表示现在的能力，后接动词原形 sing，句子结构正确。\nC. 错误：can 后不能接过去式 sang；若表示过去能力，可用 could sing。\nD. 错误：can 后不能接 V-ing 形式 singing，应接动词原形 sing。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwgdf20x",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "— Look! The light is still on in Mr. Li's office. Someone ______ be working late.\n— It ______ be Mr. Li. He has gone to Beijing on business.",
+      "options": [
+        "must; can't",
+        "can; mustn't",
+        "may; mustn't",
+        "must; needn't"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：由“办公室的灯还亮着”可作肯定推测，表示“一定在做某事”用 must be doing；由“他已经去北京出差了”可排除 Mr. Li，表示“不可能是”用 can't be。\nB. 错误：can 表示能力或理论上的可能性，不用于肯定推测“一定”；mustn't 表示“禁止”，不能表示“不可能是”。\nC. 错误：may 表示“可能”，语气弱于“一定”，与“灯还亮着”的较强推断不符；mustn't 也不能表示否定推测。\nD. 错误：第一空 must 正确，但 needn't 表示“不必”，不能表达“不可能是 Mr. Li”的排除性推测。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-3-mwgdf20x",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "—Whose English book is this?\n—It ______ be Lucy's. Look, her name is on the cover.\n—It ______ be hers. She ______ hers to me yesterday, and I still have it.",
+      "options": [
+        "must; can't; lent",
+        "can; mustn't; borrowed",
+        "must; needn't; lent",
+        "can; can't; borrow"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：第一空用must be表示有把握的肯定推测，因为封面上有Lucy的名字，证据明确；第二空用can't be表示有把握的否定推测，因为书已经被 Lucy 借给“我”了；第三空有yesterday这一过去时间状语，所以用一般过去时，lend的过去式是lent，且lend sth to sb意为“把某物借给某人”，与句意“她昨天把她的（书）借给了我”一致。\nB. 错误：can不能用于肯定推测，表示肯定推测要用must/may/might；mustn't意为“禁止、不许”，不能表示“不可能是”的否定推测（此处应为can't）；borrowed意为“借入”，与“hers to me”（她把她的书借给我）的方向相反，也与“我仍然拿着它”的事实冲突。\nC. 错误：needn't表示“不必”，属于必要性，不表示推测，与“封面上有她的名字”这一明确证据不符，此处应用can't表示否定推测；一、三空虽正确，但整体不能选。\nD. 错误：can不能用于肯定推测，第一空用法错误；第三空borrow是动词原形，与yesterday这一过去时间状语冲突，应用过去式lent。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-4-mwgdf20x",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "—Look! The light in Mr. Li's office is still on. He ______ be working late.\n—It ______ be him. He has gone to Shanghai for a meeting.",
+      "options": [
+        "must; can't",
+        "can; mustn't",
+        "may; needn't",
+        "must; may not"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：must 在此表示肯定推测，意为“一定”，与“办公室灯还亮着”相符；can't 表示否定推测，意为“不可能”，与“他已去上海开会”相符。\nB. 错误：can 通常不用于肯定推测；mustn't 表示“禁止、不许”，不能表示“不可能是他”。\nC. 错误：may 表示不确定的“可能”，不如 must 贴合语境；needn't 表示“不必”，不能表达对身份的否定推测。\nD. 错误：may not 表示“可能不”，语气较弱；后文已明确说明他去上海了，应用 can't 表示“不可能”。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-5-mwgdf20x",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Which sentence correctly expresses “他不可能已经完成了作业，因为他的练习册还是空白的”?",
+      "options": [
+        "He mustn't have finished his homework, because his exercise book is still blank.",
+        "He can't have finished his homework, because his exercise book is still blank.",
+        "He needn't have finished his homework, because his exercise book is still blank.",
+        "He shouldn't have finished his homework, because his exercise book is still blank."
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：mustn't 表示“禁止、不允许”，不能用于对过去情况的否定推测；mustn't have done 不是表达“不可能已经做完”的标准结构。\nB. 正确：can't have done 表示对过去事情的否定推测，意为“不可能已经做过某事”，与“练习册还是空白的”这一证据完全吻合。\nC. 错误：needn't have done 表示“本来不必做却做了”，强调没有必要，而不是“不可能已经完成”。\nD. 错误：shouldn't have done 表示“本来不该做却做了”，含有责备意味，与题干要表达的否定推测不符。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-6-mwgdf20x",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "—Must I return the library book before Friday?\n—No, you ______. You may keep it until next Monday.",
+      "options": [
+        "mustn't",
+        "needn't",
+        "can't",
+        "shouldn't"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：mustn't 表示“禁止、不允许”，与答语中“可以留到下周一”的允许延期语境矛盾。\nB. 正确：对 Must 引导的一般疑问句作否定回答时，用 needn't（或 don't have to），表示“不必”，符合“可以留到下周一”的语境。\nC. 错误：can't 表示“不能、不可能”，与允许继续持有图书直到下周一的语境不符。\nD. 错误：shouldn't 表示“不应该”，属于建议语气，不能准确回答 Must 问句所问的“是否必须”。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-7-mwgdf20x",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "—Why is Mary crying in her room?\n—She ______ the bad news. She ______ happy since she got the phone call.",
+      "options": [
+        "must have heard; hasn't been",
+        "can hear; wasn't",
+        "should have heard; isn't",
+        "might hear; hadn't been"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：第一空表示对过去已发生事情的肯定推测，用“must have + 过去分词”，即 must have heard；第二空 since 引导时间状语从句，主句用现在完成时，且主语 She 为第三人称单数，happy 为形容词，用 hasn't been，表示“自从接到电话后一直不高兴”。\nB. 错误：can hear 表示能力或可能性，不能表示对过去事情的肯定推测；wasn't 为一般过去时，与 since 引导的现在完成时语境冲突。\nC. 错误：should have heard 表示“本应该听说（但实际没听说）”，与“Mary 在哭”的语境矛盾；isn't 为一般现在时，不能与 since 从句连用表示持续状态。\nD. 错误：might hear 表示对现在或将来的不确定推测，不能表示对过去事情的推测；hadn't been 为过去完成时，与 since 从句及现在语境不匹配。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-8-mwgdf20x",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "—It's 8:30, but Tom promised to arrive at 8:00. Where is he?\n—He ______ the early bus. Let's wait a few more minutes.",
+      "options": [
+        "must miss",
+        "must have missed",
+        "should have missed",
+        "can't have missed"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：must miss 中的 must 表示“必须、一定（现在）”，后面接动词原形，只能表达现在的义务或对现在情况的推测，无法指向“已经发生的错过班车”这一过去动作，时态与语境冲突。\nB. 正确：must have done 表示对过去已发生情况的肯定推测，意为“一定做过某事”。由 It's 8:30 与“promised to arrive at 8:00”可知，错过早班车是过去已发生的事，且说话人语气肯定，故用 must have missed。\nC. 错误：should have done 意为“本应该做某事（却没做）”，带有责备或遗憾的语气，主语应是对该行为负责的人；此处是说话人对 Tom 迟到的客观推断，且后文“Let's wait”并无责备意味，与语境冲突。\nD. 错误：can't have done 表示“不可能做过某事”，是对过去的否定推测；若选它，就等于说 Tom 绝不可能错过班车，与后文“再等几分钟”所暗示的“他确实没赶上”相矛盾，肯否态度冲突。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-9-mwgdf20x",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "—Must I return the library book today?\n—No, you ________. You ________ it until next Monday.",
+      "options": [
+        "mustn't; can keep",
+        "needn't; can keep",
+        "needn't; must keep",
+        "can't; may keep"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：mustn't 表示“禁止”，不能用来回答 Must I...? 的否定；且 can keep 虽可表示允许，但前半空不符合语境。\nB. 正确：以 Must I...? 提问时，否定回答常用 No, you needn't. / No, you don't have to.；第二空 can keep 表示“可以保留”，与 until next Monday 搭配合理。\nC. 错误：needn't 正确，但 must keep 表示“必须保留”，与“可以到下周再还”的允许语气冲突。\nD. 错误：can't 表示“不能/不可以”，不是对 Must I...? 的常规否定回答；may keep 虽可表允许，但前半空不合题意。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-10-mwgdf20x",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "—Must I hand in the book report before Friday?\n—No, you ______. You can give it to me next Monday.",
+      "options": [
+        "mustn't",
+        "needn't",
+        "can't",
+        "shouldn't"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：mustn't 表示“禁止、不允许”，用于回答 Must I...? 的否定答语时会造成“你不准交”的语义，与后句“下周一给我也可以”相冲突。\nB. 正确：以 Must I...? 提问时，否定答语用 needn't 或 don't have to，表示“不必”，与后句“下周一交也可以”逻辑一致。\nC. 错误：can't 表示“不能、不可能”，强调能力或推测上的否定，不能表达“没有必要”这一含义。\nD. 错误：shouldn't 表示“不应该”，是建议性的否定，不能用来回答 Must I...? 表示“不必”。",
+      "difficulty": 1
+    }
+  ]
+}

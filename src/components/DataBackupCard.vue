@@ -86,5 +86,5 @@ async function importFile(event) {
 </template>
 
 <style scoped>
-.backup-card{grid-column:1/-1}.muted{font-size:13px;line-height:1.8}.backup-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
+.backup-card{grid-column:1/-1}.muted{font-size:calc(13px*var(--fs-scale));line-height:1.8}.backup-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
 </style>

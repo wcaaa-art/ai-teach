@@ -1,0 +1,184 @@
+{
+  "grade": "初二",
+  "subject": "数学",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初二-数学-5",
+    "name": "二次根式"
+  },
+  "generatedAt": "2026-11-13T02:44:16.695Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwedhyhh",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列各式中，一定是二次根式的是（ ）",
+      "options": [
+        "\\sqrt{a^2+1}",
+        "\\sqrt{-2}",
+        "\\sqrt[3]{3}",
+        "\\sqrt{x-1}"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：二次根式要求形如\\sqrt{a}，且被开方数a\\ge 0；因为a^2+1>0对任意实数a都成立，所以\\sqrt{a^2+1}一定是二次根式。\nB. 错误：\\sqrt{-2}的被开方数是负数，在实数范围内无意义，不符合二次根式的定义。\nC. 错误：\\sqrt[3]{3}是三次根式，根指数为3，不是二次根式。\nD. 错误：\\sqrt{x-1}只有在x-1\\ge 0，即x\\ge 1时才有意义，不能保证一定是二次根式。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwedhyhh",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "计算 \\sqrt{18}+\\sqrt{8}-\\sqrt{2} 的结果是（ ）",
+      "options": [
+        "3\\sqrt{2}",
+        "4\\sqrt{2}",
+        "5\\sqrt{2}",
+        "6\\sqrt{2}"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：\\sqrt{18}=3\\sqrt{2}，\\sqrt{8}=2\\sqrt{2}，原式应为 (3+2-1)\\sqrt{2}=4\\sqrt{2}，不是 3\\sqrt{2}。\nB. 正确：先化简 \\sqrt{18}=3\\sqrt{2}，\\sqrt{8}=2\\sqrt{2}，再合并同类二次根式，得 (3+2-1)\\sqrt{2}=4\\sqrt{2}。\nC. 错误：合并时漏减了最后一个 \\sqrt{2}，若算成 (3+2)\\sqrt{2}=5\\sqrt{2} 就与题干中的“-\\sqrt{2}”冲突。\nD. 错误：把系数误算为 3+2+1=6，忽略了题干中是减去 \\sqrt{2}，正确系数应为 3+2-1=4。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-3-mwedhyhh",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "某校劳动实践基地有一块长方形菜地，长为 (\\sqrt{18}+\\sqrt{8}) m，宽为 (\\sqrt{50}-\\sqrt{32}) m。若每平方米菜地铺设草皮的费用为 (\\sqrt{2}-1) 元，则这块菜地铺设草皮的总费用是多少元？",
+      "options": [
+        "10\\sqrt{2}-10",
+        "10\\sqrt{2}+10",
+        "10\\sqrt{2}",
+        "20\\sqrt{2}-20"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：先化简，\\sqrt{18}=3\\sqrt{2}，\\sqrt{8}=2\\sqrt{2}，所以长为5\\sqrt{2}；\\sqrt{50}=5\\sqrt{2}，\\sqrt{32}=4\\sqrt{2}，所以宽为\\sqrt{2}。面积为5\\sqrt{2}\\times\\sqrt{2}=10，总费用为10(\\sqrt{2}-1)=10\\sqrt{2}-10。\nB. 错误：该结果相当于把每平方米费用误算成(\\sqrt{2}+1)，与题干给出的(\\sqrt{2}-1)不符。\nC. 错误：该结果只计算了10\\sqrt{2}，漏乘了每平方米费用中的“-1”，与总费用应为10(\\sqrt{2}-1)冲突。\nD. 错误：该结果相当于把菜地面积误算成20；实际面积由长5\\sqrt{2}和宽\\sqrt{2}相乘得10，不是20。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-4-mwedhyhh",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "下列各式正确的是（ ）",
+      "options": [
+        "\\sqrt{(-5)^2}=-5",
+        "\\sqrt{(a-1)^2}=a-1",
+        "\\sqrt{16}=±4",
+        "\\sqrt{(-3)^2}=3"
+      ],
+      "correctIndex": 3,
+      "explanation": "A. 错误：\\sqrt{(-5)^2}=\\sqrt{25}=5，不是 -5；由 \\sqrt{a^2}=|a| 可知，当 a=-5 时结果为 5。\nB. 错误：\\sqrt{(a-1)^2}=|a-1|，只有当 a≥1 时才等于 a-1；如取 a=0，左边为 1，右边为 -1，等式不成立。\nC. 错误：\\sqrt{16} 表示 16 的算术平方根，结果为 4，不是 ±4；±4 是 16 的平方根。\nD. 正确：\\sqrt{(-3)^2}=\\sqrt{9}=3，也可由 \\sqrt{a^2}=|a| 得 |-3|=3。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-5-mwedhyhh",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "concept",
+      "difficulty": 1,
+      "stem": "下列二次根式中，属于最简二次根式的是？",
+      "options": [
+        "√8",
+        "√12",
+        "√15",
+        "√18"
+      ],
+      "correctIndex": 2,
+      "explanation": "15 不含大于 1 的平方因数，√15 不能再化简。"
+    },
+    {
+      "id": "diag-6-mwedhyhh",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "计算 \\sqrt{12}-\\sqrt{3} 的结果是（ ）",
+      "options": [
+        "\\sqrt{3}",
+        "3",
+        "\\sqrt{9}",
+        "1"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：先化简 \\sqrt{12}=\\sqrt{4\\times3}=2\\sqrt{3}，所以 \\sqrt{12}-\\sqrt{3}=2\\sqrt{3}-\\sqrt{3}=\\sqrt{3}。\nB. 错误：把被开方数直接相减，误算为 \\sqrt{12-3}=\\sqrt{9}=3，二次根式加减不能这样合并。\nC. 错误：\\sqrt{9}=3，与正确结果 \\sqrt{3} 不相等；且 \\sqrt{12}-\\sqrt{3} 不等于 \\sqrt{9}。\nD. 错误：\\sqrt{12}-\\sqrt{3}\\approx3.464-1.732=1.732=\\sqrt{3}，并不等于1。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-7-mwedhyhh",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "若实数 a，b 满足 b=\\sqrt{a-2}+\\sqrt{2-a}+4，则 \\sqrt{a^2+b^2} 的值为（ ）",
+      "options": [
+        "2\\sqrt{5}",
+        "4\\sqrt{2}",
+        "2\\sqrt{10}",
+        "6"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：由二次根式有意义的条件得 a-2\\ge 0 且 2-a\\ge 0，所以 a=2；代入得 b=0+0+4=4，因此 \\sqrt{a^2+b^2}=\\sqrt{2^2+4^2}=\\sqrt{20}=2\\sqrt{5}。\nB. 错误：4\\sqrt{2}=\\sqrt{32}，而由 a=2，b=4 得被开方数 a^2+b^2=20，不等于 32。\nC. 错误：2\\sqrt{10}=\\sqrt{40}，与实际计算的 \\sqrt{20} 不符。\nD. 错误：6=\\sqrt{36}，被开方数不是 36；本题结果为 2\\sqrt{5}，约等于 4.47，不是 6。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-8-mwedhyhh",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "下列判断正确的是（　　）",
+      "options": [
+        "\\sqrt{(-3)^2}=-3",
+        "(\\sqrt{-3})^2=-3",
+        "\\sqrt{(x-1)^2}=x-1 对任意实数 x 都成立",
+        "\\sqrt{(-3)^2}=|-3|=3"
+      ],
+      "correctIndex": 3,
+      "explanation": "A. 错误：\\sqrt{(-3)^2}=\\sqrt{9}=3，结果为非负数，不可能等于 -3；这里误把 \\sqrt{a^2} 直接写成了 a。\nB. 错误：\\sqrt{-3} 中被开方数是负数，在实数范围内无意义，因此 (\\sqrt{-3})^2 也不存在，不能等于 -3。\nC. 错误：由二次根式的性质得 \\sqrt{(x-1)^2}=|x-1|，并不恒等于 x-1；例如取 x=0 时，左边为 1，右边为 -1，二者不相等。\nD. 正确：先计算 (-3)^2=9，再开平方得 \\sqrt{9}=3；同时 |-3|=3，符合 \\sqrt{a^2}=|a| 这一性质。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-10-mwedhyhh",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "若最简二次根式 \\sqrt{3a-1} 与 \\sqrt{2a+3} 是同类二次根式，则 a 的值是（ ）",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：当 a=2 时，3a-1=5，2a+3=7，两个最简二次根式的被开方数不同，不是同类二次根式。\nB. 错误：当 a=3 时，3a-1=8，2a+3=9，被开方数不同，不能合并为同类二次根式。\nC. 正确：同类二次根式化成最简二次根式后被开方数相同。题中两个二次根式均为最简二次根式，因此 3a-1=2a+3，解得 a=4；此时两式的被开方数均为 11，符合题意。\nD. 错误：当 a=5 时，3a-1=14，2a+3=13，被开方数不同，不是同类二次根式。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-1-mwedi851",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "关于二次根式 \\sqrt{x^2} 的化简，下列说法正确的是（ ）",
+      "options": [
+        "结果一定等于 x",
+        "结果一定等于 -x",
+        "结果等于 |x|",
+        "结果等于 x^2"
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：当 x=-1 时，\\sqrt{(-1)^2}=1，而 x=-1，两者不相等，所以结果不一定等于 x。\nB. 错误：当 x=1 时，\\sqrt{1^2}=1，而 -x=-1，两者不相等，所以结果不一定等于 -x。\nC. 正确：根据二次根式性质 \\sqrt{a^2}=|a|，将 a 换成 x，得 \\sqrt{x^2}=|x|，它表示 x^2 的算术平方根，结果非负。\nD. 错误：例如 x=2 时，\\sqrt{2^2}=2，而 x^2=4，两者不相等，所以结果不等于 x^2。",
+      "difficulty": 1
+    }
+  ]
+}

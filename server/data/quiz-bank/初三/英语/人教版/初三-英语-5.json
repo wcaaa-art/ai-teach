@@ -1,0 +1,114 @@
+{
+  "grade": "初三",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初三-英语-5",
+    "name": "阅读理解与推断"
+  },
+  "generatedAt": "2026-11-14T14:20:00.000Z",
+  "source": "trae",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初三-英语-5-f1",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "阅读时先看标题、首段和末段，再快速浏览各段首句，以了解文章大意的阅读方法叫______（英语中称为 skimming）。",
+      "answer": "略读",
+      "acceptableAnswers": [
+        "略读",
+        "快速浏览",
+        "浏览"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：答出“略读（快速浏览）”得3分。\n2. 依据：skimming 指快速通读全文、抓取主旨和大意的阅读方式，与查找特定信息的 scanning（查读/寻读）不同。\n3. 易错点：答“精读”或“细读”与 skimming 的速度和目的相反；答“跳读”不够准确，跳读更接近寻找特定信息的 scanning。中考阅读中，主旨题和标题题常用略读，细节题则常需查读。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-5-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "根据上下文猜测词义：The room was so cramped that three of us could hardly move in it. 句中 cramped 的意思是______（用汉语回答）。",
+      "answer": "拥挤的",
+      "acceptableAnswers": [
+        "拥挤的",
+        "狭窄的",
+        "狭小的"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：答出“拥挤的/狭窄的/狭小的”得3分。\n2. 依据：so...that 结构提示结果“三个人几乎动不了”，能导致这种结果的房间必然是空间狭小、拥挤的，因此 cramped 意为“拥挤的、狭窄的”。\n3. 易错点：脱离上下文只凭外形猜词，容易答成“干净的”“明亮的”；词义猜测题必须回到原句，利用 so...that、such...that、破折号、举例等线索，而不是背单词表。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-5-f3",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "概括段落或文章的主旨大意时，应重点关注首段、末段以及各段的______句，因为它们往往承载段落的核心信息。",
+      "answer": "主题",
+      "acceptableAnswers": [
+        "主题",
+        "中心",
+        "首"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：答出“主题（中心/首）”得3分。\n2. 依据：英语说明文和议论文多采用“总—分—总”结构，段落主题句常位于段首，少数在段尾；抓住主题句就能迅速把握段落中心，避免被细节干扰。\n3. 易错点：把举例、数据或描写性细节当成主旨；只读首段就概括全文，忽略末段的总结或转折；主旨题答案应覆盖全文，而不是某一段的局部信息。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-5-f4",
+      "type": "fill",
+      "dimension": "transfer",
+      "stem": "阅读理解题干中常出现 infer, suggest, imply, conclude 等词，这类题目要求读出作者没有直接写出的意思，属于______题。",
+      "answer": "推理判断",
+      "acceptableAnswers": [
+        "推理判断",
+        "推理",
+        "推断"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：答出“推理判断（推断）”得3分。\n2. 依据：infer、suggest、imply、conclude 都要求考生依据文中的事实和逻辑推出隐含信息，答案通常不能在原文中直接找到原句，因此属于推理判断题。\n3. 易错点：把原文原句直接当作推断答案，属于“同义替换”而非推理；脱离文本主观想象，加入常识或个人观点，也是常见失分原因。正确做法是“原文有据、文中无句”。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-5-s1",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "阅读下面的短文，完成题目。\nThree years ago, the corner behind our school building was a piece of waste land. Weeds grew everywhere, and students threw rubbish there. Most of us walked past it without a second look.\nThen Ms. Chen, our biology teacher, had an idea. She asked her students to turn the land into a garden. At first, many of us thought it was a waste of time. We had never planted anything, and the soil was hard and poor.\nWe started in March. Every Tuesday afternoon, we dug the soil, pulled out the weeds and planted seeds. Our hands were dirty and our backs ached, but we kept going. Ms. Chen brought us books about plants and taught us how to water them properly.\nIn June, the first sunflowers opened. Their bright yellow faces turned towards the sun, and the whole corner seemed to light up. Younger students came to look at them, and some even brought their parents.\nNow the garden is the busiest place in our school. We grow tomatoes, beans and flowers. We also put a small bench there. When I sit on it after class, I understand what Ms. Chen once said: “A garden doesn't only grow plants; it grows people.”\n（1）What was the corner like three years ago?（2分）\n（2）What does the underlined word “ached” probably mean?（2分）\n（3）Why did the writer mention younger students and their parents?（3分）\n（4）What does Ms. Chen's words in the last paragraph mean?（3分）",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）It was a piece of waste land with weeds everywhere, and students threw rubbish there.（答出“荒地、杂草丛生、有人扔垃圾”中的两点即可）\n（2）It means “疼痛”（hurt/pained）. 因为我们挖土、拔草后手脏了、背疼了，说明 ache 指身体某部位持续疼痛。\n（3）为了说明花园的变化引起了更多人的关注：低年级学生来看花，有的还带父母来，从侧面表现花园从无人理睬的荒地变成了让大家自豪的地方，增强了说服力。\n（4）花园不仅种出了植物，更重要的是让学生在劳动中学会了坚持、合作和责任感，促进了人的成长；花木的成长与人的成长形成类比。",
+      "explanation": "第1步：第（1）题2分，属细节题，答案在首段，须答出“waste land、weeds、rubbish”中的两点；只写“很脏”得1分。\n第2步：第（2）题2分，属词义猜测题，须结合“dug the soil, pulled out the weeds”和“kept going”推断出“疼痛”，只写“累”得1分。\n第3步：第（3）题3分，属写作意图/推断题，答出“吸引更多人关注”得1分，答出“与过去荒地形成对比、表现变化”得2分。只复述“学生来看花”不得分。\n第4步：第（4）题3分，属句意理解与主旨题，须点明“种植物”与“育人”的双层含义，答出坚持、合作、责任感等成长收获中的两点得2分，点出类比手法得1分。\n常见错误：第（2）题脱离上下文猜成“脏”；第（4）题只翻译字面“花园不只种植物”，没有读出“育人”的深层含义。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初三-英语-5-s2",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "阅读下面的短文，完成题目。\nEvery evening after dinner, Mr. Li takes out an old bicycle and cleans it carefully. The paint has come off in many places, and the bell no longer rings, but he treats it like a treasure.\nHis son Wei was puzzled. “Dad, you have a new car. Why do you keep this old thing?” he asked.\nMr. Li smiled. “This bicycle took me to work for twelve years. When I bought it, I had just got my first job. Your mother and I rode it to the market every weekend. We couldn't afford a car then.”\nOne Saturday, Mr. Li asked Wei to help him repair the bicycle. Wei was not interested at first. But when he cleaned the wheels and oiled the chain, he began to enjoy the work. His father taught him how to fix a flat tyre and how to adjust the brake.\n“A thing is valuable not because it is new or expensive,” Mr. Li said, “but because of the time you have spent with it.”\nWei looked at his father's hands, covered with oil. For the first time, he felt he understood the man who had worked so hard for the family.\n（1）Why does Mr. Li keep the old bicycle?（3分）\n（2）How did Wei's attitude towards repairing the bicycle change?（3分）\n（3）What can we infer from the last paragraph?（4分）",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）因为旧自行车承载着他的回忆：它陪他上了十二年班，是他第一份工作后买的，还载着他和妻子去市场；它见证了他年轻时为家庭奋斗的岁月，所以在他看来比新车更珍贵。\n（2）起初他不感兴趣，不理解父亲为什么留着旧车；后来在擦车轮、给链条上油、学补胎和调刹车的劳动中，他逐渐喜欢上这份工作，态度由冷淡变为投入。\n（3）可以推断：Wei 看到父亲满是油污的双手，第一次真正理解了父亲为家庭付出的辛劳；他对父亲的情感由不解转为感激和敬重，父子关系更加亲近；同时他也开始接受父亲“价值来自陪伴与付出”的观念。",
+      "explanation": "第1步：第（1）题3分，属细节加概括题，答出“陪他上班十二年/第一份工作/和妻子去市场”中的两点得2分，答出“承载回忆、见证奋斗”得1分。只抄原文一句得1分。\n第2步：第（2）题3分，属信息梳理题，须答出“起初不感兴趣”1分、“劳动中产生兴趣”1分、“态度转变的概括”1分；只写“他变了”不得分。\n第3步：第（3）题4分，属推理判断题，答出“理解父亲的辛劳”得2分，答出“感激、敬重或关系亲近”得1分，答出“接受父亲的价值观”得1分。\n常见错误：第（3）题直接抄“父亲的手上都是油”，没有推出情感和认识的变化；或脱离文本写“父子吵架”，属于主观臆断。推理题必须做到原文有据。",
+      "difficulty": 3,
+      "score": 10
+    },
+    {
+      "id": "初三-英语-5-s3",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "阅读下面的短文，完成题目。\nLast Friday, Class 3 had a “No Phone Day”. Our teacher asked us to leave our phones in a box at the beginning of the day and take them back after school.\nAt first, many students felt worried. “What if my mother calls me?” “What if I miss an important message?” Some even looked at the box several times during the first hour.\nBut as the day went on, something interesting happened. During the break, we played table tennis and talked about a new film. At lunch, nobody looked down at a screen; we told jokes and laughed loudly. In the afternoon, we finished our group work faster than usual because no one was busy taking photos.\nAfter school, when we got our phones back, I found only two messages—one from my mother and one from a shopping app. I had been worried all day for nothing.\nI'm not saying phones are bad. They are useful tools. But perhaps we should ask ourselves: who is using whom? A day without a phone showed me that the best moments are often the ones we are actually looking at.\n（1）How did the students feel at first? Why?（3分）\n（2）What can we infer from “I had been worried all day for nothing”?（3分）\n（3）What is the writer's attitude towards phones?（4分）",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）他们一开始感到担心、焦虑。因为手机被收进盒子，他们害怕错过母亲的电话或重要信息，说明他们对手机有很强的依赖。\n（2）可以推断：作者一整天担心的“重要消息”其实并不存在，只有母亲和购物软件的两条消息；他意识到自己的焦虑是多余的，手机并没有想象中那么不可缺少。\n（3）作者的态度是理性的、辩证的：他并不认为手机是坏东西，承认手机是有用的工具；但他反对被手机控制，提醒我们要做手机的主人，多关注眼前真实的生活和身边的人。",
+      "explanation": "第1步：第（1）题3分，答出“担心/焦虑”得1分，答出“怕错过电话或重要信息”得2分；只写“不开心”得1分。\n第2步：第（2）题3分，属句意推断题，答出“消息并不重要/担心多余”得2分，答出“意识到手机没那么必要”得1分。\n第3步：第（3）题4分，属作者态度题，答出“辩证/理性”得1分，答出“手机是有用工具”得1分，答出“反对被手机控制、要做主人”得2分。\n第4步：态度题要依据文中“I'm not saying phones are bad”和“who is using whom”两处关键句，不能只凭结尾一句“最好的时刻”就判断作者完全反对手机。\n常见错误：第（2）题答成“作者很后悔带手机”，文中并无后悔；第（3）题答“作者讨厌手机”，与原文明确表态矛盾，属于过度推断。",
+      "difficulty": 3,
+      "score": 10
+    }
+  ]
+}

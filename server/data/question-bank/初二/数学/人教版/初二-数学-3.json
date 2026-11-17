@@ -1,0 +1,184 @@
+{
+  "grade": "初二",
+  "subject": "数学",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初二-数学-3",
+    "name": "整式乘法与因式分解"
+  },
+  "generatedAt": "2026-11-13T02:43:56.134Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwedhnm6",
+      "chapterId": "初二-数学-3",
+      "chapterName": "整式乘法与因式分解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列从左到右的变形中，属于因式分解的是（ ）",
+      "options": [
+        "x^2-4=(x+2)(x-2)",
+        "(x+2)(x-2)=x^2-4",
+        "x^2+2x+1=x(x+2)+1",
+        "x^2+6x+9=x(x+6)+9"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：因式分解是把一个多项式化成几个整式的积的形式，右边 (x+2)(x-2) 是整式乘积，且展开后等于左边。\nB. 错误：该变形是把积展开成多项式，属于整式乘法，与因式分解的方向相反。\nC. 错误：右边 x(x+2)+1 仍是和的形式，不是几个整式的积，不符合因式分解定义。\nD. 错误：右边 x(x+6)+9 仍是和的形式，没有化成整式乘积，因此不是因式分解。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwedhnm6",
+      "chapterId": "初二-数学-3",
+      "chapterName": "整式乘法与因式分解",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知 x+y=5，xy=6，则 x^2y+xy^2 的值为（ ）",
+      "options": [
+        "30",
+        "11",
+        "25",
+        "6"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：先提取公因式，x^2y+xy^2=xy(x+y)，代入 xy=6、x+y=5，得 6×5=30。\nB. 错误：11 是把 x+y 与 xy 直接相加得到的结果，与原式 x^2y+xy^2 不相等。\nC. 错误：25 是 (x+y)^2=5^2 的结果，而原式还含有公因式 xy，不能只算 (x+y)^2。\nD. 错误：6 只是 xy 的值，原式提取公因式后还要乘以 (x+y)，漏乘导致结果错误。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-3-mwedhnm6",
+      "chapterId": "初二-数学-3",
+      "chapterName": "整式乘法与因式分解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "已知 x+y=5，xy=3，则 x^3y+xy^3 的值为（ ）",
+      "options": [
+        "57",
+        "75",
+        "45",
+        "30"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：先提公因式得 x^3y+xy^3=xy(x^2+y^2)，再由 (x+y)^2=x^2+2xy+y^2 得 x^2+y^2=(x+y)^2-2xy=25-6=19，所以原式=3×19=57。\nB. 错误：若把 x^2+y^2 误算成 (x+y)^2=25，会得到 3×25=75，但平方展开中多加了 2xy=6，应减去，故75不符合题意。\nC. 错误：若原式为45，则由 xy=3 可得 x^2+y^2=15，与 x^2+y^2=(x+y)^2-2xy=19 矛盾。\nD. 错误：若原式为30，则由 xy=3 可得 x^2+y^2=10，与 x^2+y^2=19 矛盾，故30不是正确结果。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-4-mwedhnm6",
+      "chapterId": "初二-数学-3",
+      "chapterName": "整式乘法与因式分解",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "下列计算中，正确的是（ ）",
+      "options": [
+        "(2m-n)^2=4m^2-n^2",
+        "x^2-4x+4=(x-2)^2",
+        "-a^2+9=(a+3)(a-3)",
+        "(x+2)(x-2)=x^2-4x+4"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：由完全平方公式 (2m-n)^2=(2m)^2-2\\cdot 2m\\cdot n+n^2=4m^2-4mn+n^2，不是 4m^2-n^2，漏掉了中间项。\nB. 正确：因为 (x-2)^2=x^2-2\\cdot x\\cdot 2+2^2=x^2-4x+4，所以 x^2-4x+4=(x-2)^2。\nC. 错误：右边 (a+3)(a-3)=a^2-9，与左边 -a^2+9=9-a^2 不相等；正确分解应为 9-a^2=(3-a)(3+a)。\nD. 错误：由平方差公式 (x+2)(x-2)=x^2-2^2=x^2-4，不是 x^2-4x+4，多出了中间项 -4x 和常数项 4。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-5-mwedhnm6",
+      "chapterId": "初二-数学-3",
+      "chapterName": "整式乘法与因式分解",
+      "type": "single",
+      "dimension": "concept",
+      "difficulty": 1,
+      "stem": "计算 (x + 2)(x − 3)，结果是？",
+      "options": [
+        "x² − x − 6",
+        "x² + x − 6",
+        "x² − 5x − 6",
+        "x² − x + 6"
+      ],
+      "correctIndex": 0,
+      "explanation": "展开得 x² − 3x + 2x − 6 = x² − x − 6。"
+    },
+    {
+      "id": "diag-6-mwedhnm6",
+      "chapterId": "初二-数学-3",
+      "chapterName": "整式乘法与因式分解",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列运算正确的是（ ）",
+      "options": [
+        "(x+2)(x-3)=x^2-6",
+        "(2x-1)(x+3)=2x^2+5x-3",
+        "(x-2)^2=x^2-4",
+        "x^2-4=(x-2)(x-2)"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：由多项式乘法展开得 (x+2)(x-3)=x^2-3x+2x-6=x^2-x-6，不是 x^2-6，漏掉了中间项。\nB. 正确：由多项式乘法展开得 (2x-1)(x+3)=2x^2+6x-x-3=2x^2+5x-3，合并同类项正确。\nC. 错误：由完全平方公式得 (x-2)^2=x^2-4x+4，不是 x^2-4，缺少一次项且常数项符号不符。\nD. 错误：由平方差公式得 x^2-4=(x-2)(x+2)，不是 (x-2)(x-2)。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-7-mwedhnm6",
+      "chapterId": "初二-数学-3",
+      "chapterName": "整式乘法与因式分解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "已知 x+y=3，xy=-2，则 x^3+y^3 的值为（ ）",
+      "options": [
+        "45",
+        "27",
+        "9",
+        "15"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：利用恒等式 x^3+y^3=(x+y)^3-3xy(x+y)，代入 x+y=3，xy=-2，得 3^3-3×(-2)×3=27+18=45。\nB. 错误：27 只是 (x+y)^3 的值，漏掉了代数变形中 -3xy(x+y) 这一项，而该项实际为 18。\nC. 错误：9 是 (x+y)^2 的值，不是 x^3+y^3 的值，混淆了平方和与立方和。\nD. 错误：15 相当于把 xy=-2 错当成 xy=2 后得到 27-12=15，与题设 xy=-2 矛盾。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-8-mwedhnm6",
+      "chapterId": "初二-数学-3",
+      "chapterName": "整式乘法与因式分解",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "下列因式分解正确的是（ ）",
+      "options": [
+        "x^2-4x+4=(x-2)^2",
+        "x^2+4=(x+2)^2",
+        "x^2-4=(x-2)^2",
+        "-x^2+4x-4=(x-2)^2"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：x^2-4x+4 符合完全平方公式 a^2-2ab+b^2=(a-b)^2，其中 a=x，b=2。\nB. 错误：右边展开为 x^2+4x+4，与左边的 x^2+4 不相等，多出了 4x 项。\nC. 错误：x^2-4 应用平方差公式分解为 (x-2)(x+2)，而 (x-2)^2=x^2-4x+4。\nD. 错误：左边提取负号得 -(x^2-4x+4)=-(x-2)^2，不等于 (x-2)^2。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-10-mwedhnm6",
+      "chapterId": "初二-数学-3",
+      "chapterName": "整式乘法与因式分解",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "计算 (2x-1)(3x+2)-6x(x+1) 的结果是（ ）",
+      "options": [
+        "-5x-2",
+        "-5x+2",
+        "x-2",
+        "-7x-2"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：先算 (2x-1)(3x+2)=6x^2+4x-3x-2=6x^2+x-2，再算 6x(x+1)=6x^2+6x，所以原式=(6x^2+x-2)-(6x^2+6x)=-5x-2。\nB. 错误：常数项应为 -2，不是 +2；展开后 (2x-1)(3x+2) 的常数项是 (-1)×2=-2。\nC. 错误：合并 x 项时 x-6x=-5x，不是 x；不能漏减 6x(x+1) 中的 6x。\nD. 错误：x 项系数应为 1-6=-5，不是 -7；-7 来自把 4x-3x 误算成了 -x。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-1-mwedhs9w",
+      "chapterId": "初二-数学-3",
+      "chapterName": "整式乘法与因式分解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列关于整式乘法与因式分解关系的说法中，正确的是（ ）",
+      "options": [
+        "因式分解是把几个整式的积化为一个多项式",
+        "整式乘法与因式分解是互逆变形，可以用整式乘法检验因式分解是否正确",
+        "因式分解的结果中，每个因式都必须是一次式",
+        "只要等式左右两边相等，从左到右的变形就是因式分解"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：说法把方向颠倒了，因式分解是把一个多项式化成几个整式的积，而不是把积化成多项式。\nB. 正确：整式乘法把积展开成多项式，因式分解把多项式化成积，二者是互逆变形，因此可用整式乘法展开检验因式分解是否正确。\nC. 错误：因式分解后的因式不一定都是一次式，例如 x^4-1=(x^2+1)(x^2-1)，其中含有二次因式。\nD. 错误：等式左右两边相等不一定表示因式分解，例如 x^2+2x+1=x(x+2)+1 左右相等，但右边不是几个整式的积的形式。",
+      "difficulty": 1
+    }
+  ]
+}

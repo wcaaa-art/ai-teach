@@ -1,61 +1,112 @@
 #!/usr/bin/env node
 import { Server } from '@modelcontextprotocol/sdk/server/index.js'
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js'
-import { CallToolRequestSchema, ListToolsRequestSchema } from '@modelcontextprotocol/sdk/types.js'
+import {
+  CallToolRequestSchema,
+  ListToolsRequestSchema,
+  ListResourcesRequestSchema,
+  ListResourceTemplatesRequestSchema,
+  ReadResourceRequestSchema,
+  ListPromptsRequestSchema,
+  GetPromptRequestSchema
+} from '@modelcontextprotocol/sdk/types.js'
 import { executeTool } from './tools.js'
-import { listCurriculumChapters } from './curriculum.js'
-
-// MCP 侧只暴露纯函数工具：专注记录和视觉状态由浏览器推送，外部进程拿不到，
-// 不在协议层伪装成可用工具，避免调用方拿到永远为空的假数据。
-const mcpTools = [
-  {
-    name: 'search_curriculum',
-    description: '检索初高中课程标准知识点，支持跨年级与常用术语别名匹配，返回年级、科目与知识点名称。',
-    inputSchema: {
-      type: 'object',
-      properties: {
-        subject: { type: 'string', description: '科目，如 数学、物理、化学' },
-        grade: { type: 'string', description: '年级，如 初二、高一；不确定可填 不限' },
-        keyword: { type: 'string', description: '知识点或学生原话，如 二次函数顶点式' }
-      },
-      required: ['subject', 'grade', 'keyword'],
-      additionalProperties: false
-    }
-  },
-  {
-    name: 'calc_review_interval',
-    description: '按艾宾浩斯遗忘曲线计算下一次复习时间，返回间隔天数与下次复习时间戳。',
-    inputSchema: {
-      type: 'object',
-      properties: {
-        last_study_time: { type: 'number', description: '上次学习时间（毫秒时间戳）' },
-        mastery_level: { type: 'integer', enum: [0, 1, 2, 3], description: '0=未掌握，1=初步理解，2=基本掌握，3=熟练' }
-      },
-      required: ['last_study_time', 'mastery_level'],
-      additionalProperties: false
-    }
-  },
-  {
-    name: 'list_curriculum_chapters',
-    description: '列出指定年级与科目的课程专题目录，用于规划学习顺序。',
-    inputSchema: {
-      type: 'object',
-      properties: {
-        grade: { type: 'string', description: '年级，如 初三、高二' },
-        subject: { type: 'string', description: '科目，如 数学、物理' }
-      },
-      required: ['grade', 'subject'],
-      additionalProperties: false
-    }
-  }
-]
+import { mcpPrompts, mcpResourceTemplates, mcpResources, mcpTools } from './mcp-capabilities.js'
+import { listCurriculumChapters, listCurriculumSubjects } from './curriculum.js'
+import { searchPassages } from './rag/index.js'
 
 const ok = payload => ({ content: [{ type: 'text', text: JSON.stringify(payload, null, 2) }] })
 const fail = message => ({ content: [{ type: 'text', text: message }], isError: true })
 
-const server = new Server({ name: 'ai-teach-curriculum', version: '1.0.0' }, { capabilities: { tools: {} } })
+function readResource(uri) {
+  if (uri === 'ai-teach://curriculum/subjects') {
+    const grades = ['初一', '初二', '初三']
+    const data = Object.fromEntries(grades.map(grade => [grade, listCurriculumSubjects(grade)]))
+    return { uri, mimeType: 'application/json', text: JSON.stringify(data, null, 2) }
+  }
+  const chapters = uri.match(/^ai-teach:\/\/curriculum\/chapters\/([^/]+)\/(.+)$/)
+  if (chapters) {
+    const data = listCurriculumChapters(decodeURIComponent(chapters[1]), decodeURIComponent(chapters[2]))
+    return { uri, mimeType: 'application/json', text: JSON.stringify(data, null, 2) }
+  }
+  const passages = uri.match(/^ai-teach:\/\/exam\/passages\/(.+)$/)
+  if (passages) {
+    const subject = decodeURIComponent(passages[1])
+    const data = searchPassages({ query: subject, subject, topK: 8, maxChars: 600 })
+    return { uri, mimeType: 'application/json', text: JSON.stringify(data, null, 2) }
+  }
+  return null
+}
+
+function buildPrompt(name, args = {}) {
+  if (name === 'explain_mistake') {
+    const grade = args.grade || '初二'
+    const subject = args.subject || '数学'
+    const stem = args.stem || ''
+    return {
+      description: '错题归因与补强',
+      messages: [
+        { role: 'user', content: { type: 'text', text: `你是初中错题归因助手。年级：${grade}；科目：${subject}；题干：${stem}\n只返回合法 JSON：{"knowledgeTags":["知识点1","知识点2"],"errorCause":"可能的原因","suggestion":"补强建议"}。knowledgeTags 优先用教材名词；errorCause 用「可能」措辞，不编造学生作答过程；不要 Markdown。` } }
+      ]
+    }
+  }
+  if (name === 'plan_next_week') {
+    const minutes = Number(args.minutes) || 60
+    const grade = args.grade || '初二'
+    const subject = args.subject || '数学'
+    return {
+      description: '下一周学习计划编排',
+      messages: [
+        { role: 'user', content: { type: 'text', text: `你是初中学习路径编排 Agent。年级：${grade}；科目：${subject}；每日可用时长：${minutes} 分钟。\n每个专题拆成 concept（概念）→example（例题）→transfer（迁移）→review（复盘）四条任务，时长不超过每日可用时长，保留未掌握前置知识，不合并阶段。\n只返回合法 JSON：{"plans":[{"name":"任务名","stage":"concept|example|transfer|review","estimatedMinutes":25,"knowledgeTags":["知识点"]}],"explanation":"安排原因"}。` } }
+      ]
+    }
+  }
+  if (name === 'tutor_guide') {
+    const question = args.question || ''
+    return {
+      description: '初中生答疑（引导式）',
+      messages: [
+        { role: 'user', content: { type: 'text', text: `你是面向初中学生的温和答疑教练。问题：${question}\n固定规则：禁止直接输出题目的完整答案、最终选项或可直接抄写的完整证明；要通过拆解题意、回顾知识点、给出相似例子、提出自检问题来引导学生自己完成。回答简洁、适合青少年阅读；不输出危险、违法、歧视或不适宜内容。` } }
+      ]
+    }
+  }
+  return null
+}
+
+const server = new Server(
+  { name: 'ai-teach-curriculum', version: '1.1.0' },
+  { capabilities: { tools: {}, resources: {}, prompts: {} } }
+)
 
 server.setRequestHandler(ListToolsRequestSchema, async () => ({ tools: mcpTools }))
+
+server.setRequestHandler(ListResourcesRequestSchema, async () => ({ resources: mcpResources }))
+
+server.setRequestHandler(ListResourceTemplatesRequestSchema, async () => ({ resourceTemplates: mcpResourceTemplates }))
+
+server.setRequestHandler(ReadResourceRequestSchema, async request => {
+  const { uri } = request.params
+  try {
+    const resource = readResource(String(uri || ''))
+    if (!resource) return fail(`未知资源：${uri}`)
+    return { contents: [resource] }
+  } catch (error) {
+    return fail(`资源读取失败：${error.message}`)
+  }
+})
+
+server.setRequestHandler(ListPromptsRequestSchema, async () => ({ prompts: mcpPrompts }))
+
+server.setRequestHandler(GetPromptRequestSchema, async request => {
+  const { name, arguments: args = {} } = request.params
+  try {
+    const prompt = buildPrompt(String(name || ''), args || {})
+    if (!prompt) return fail(`未知提示词：${name}`)
+    return prompt
+  } catch (error) {
+    return fail(`提示词生成失败：${error.message}`)
+  }
+})
 
 server.setRequestHandler(CallToolRequestSchema, async request => {
   const { name, arguments: args = {} } = request.params

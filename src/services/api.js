@@ -46,6 +46,8 @@ export const logoutAccount = () => request('/auth/logout', undefined, { method: 
 export const diagnose = (payload) => request('/agent/diagnose', payload, { timeoutMs: 75000 })
 export const iteratePlan = (payload) => request('/agent/iterate', payload, { timeoutMs: 75000 })
 export const askTutor = (payload) => request('/agent/tutor', payload)
+// AI 周报：前端聚合近 7 天数据后交给服务端复盘，模型不可用时后端会返回本地兜底。
+export const generateWeeklyReport = (payload) => request('/agent/weekly-report', payload, { timeoutMs: 55000 })
 export const pushVisualStatus = (payload) => request('/agent/visual-status', payload, { timeoutMs: 5000 })
 export const generateLearningPlan = (payload) => request('/agent/diagnose', payload, { timeoutMs: 75000 })
 // 计划骨架只走本地课程规则，毫秒级返回，用于先把计划页撑起来，AI 文案随后合并。
@@ -53,6 +55,22 @@ export const generatePlanSkeleton = (payload) => request('/agent/plan/skeleton',
 // 科目按年级开设（物理从初二、化学从初三），必须把年级带上，否则只会返回首个年级的科目。
 export const getCurriculumSubjects = (stage, grade) => request(`/curriculum/subjects?stage=${encodeURIComponent(stage)}${grade ? `&grade=${encodeURIComponent(grade)}` : ''}`, undefined, { method: 'GET', bodyType: 'none', timeoutMs: 10000 })
 export const getCurriculumChapters = (grade, subject, edition) => request(`/curriculum/chapters?grade=${encodeURIComponent(grade)}&subject=${encodeURIComponent(subject)}${edition ? `&edition=${encodeURIComponent(edition)}` : ''}`, undefined, { method: 'GET', bodyType: 'none', timeoutMs: 10000 })
+// 资料库：章节详情聚合本地题库例题、RAG 真题片段与相关知识点；搜索只查本地索引，速度很快。
+export const getChapterMaterials = ({ grade, subject, edition = '', chapterId }) => request(
+  `/materials/chapter?grade=${encodeURIComponent(grade)}&subject=${encodeURIComponent(subject)}&edition=${encodeURIComponent(edition)}&chapterId=${encodeURIComponent(chapterId)}`,
+  undefined, { method: 'GET', bodyType: 'none', timeoutMs: 15000 }
+)
+// 章节讲解随章节资料一起返回（本地知识包），不再单独请求。
+export const searchMaterials = ({ q, grade = '', subject = '' }) => request(
+  `/materials/search?q=${encodeURIComponent(q)}&grade=${encodeURIComponent(grade)}&subject=${encodeURIComponent(subject)}`,
+  undefined, { method: 'GET', bodyType: 'none', timeoutMs: 15000 }
+)
+// AI 能力页：后端汇总 Agent 工具、MCP 清单与 RAG 状态；RAG 演示只检索、不调用模型。
+export const getAiCapabilities = () => request('/ai/capabilities', undefined, { method: 'GET', bodyType: 'none', timeoutMs: 10000 })
+export const searchRagPassages = ({ q, grade = '', subject = '' }) => request(
+  `/ai/rag-search?q=${encodeURIComponent(q)}&grade=${encodeURIComponent(grade)}&subject=${encodeURIComponent(subject)}`,
+  undefined, { method: 'GET', bodyType: 'none', timeoutMs: 15000 }
+)
 // 视频推荐由后端代理 B 站搜索：exclude 传已看过的 bvid，authors 传要屏蔽的 UP 主，reason 是换一换原因。
 export const getVideoRecommendations = ({ grade = '', subject = '', edition = '', chapter = '', exclude = '', authors = '', reason = '', limit = 3 } = {}) => request(
   `/videos/recommend?grade=${encodeURIComponent(grade)}&subject=${encodeURIComponent(subject)}&edition=${encodeURIComponent(edition)}&chapter=${encodeURIComponent(chapter)}&exclude=${encodeURIComponent(exclude)}&authors=${encodeURIComponent(authors)}&reason=${encodeURIComponent(reason)}&limit=${limit}`,
@@ -60,13 +78,25 @@ export const getVideoRecommendations = ({ grade = '', subject = '', edition = ''
 )
 // 十道摸底题带推理生成约 60 秒，前端超时必须比后端（90 秒）宽，否则会先被浏览器掐断。
 export const generateDiagnosticQuestions = (payload) => request('/agent/assessment/generate', payload, { timeoutMs: 95000 })
-// 章节测试可能触发两轮命题（撞题重生成），超时放宽到 90 秒。
-export const generateQuizQuestions = (payload) => request('/quiz/generate', payload, { timeoutMs: 90000 })
+// 选定范围后先预生成题库；超时放宽到 120 秒，失败不影响正式开始。
+export const prefetchDiagnosticQuestions = (payload) => request('/agent/assessment/prefetch', payload, { timeoutMs: 120000 })
+// 综合整卷 25 题按 6 路并发命题，最慢约 100 秒；正式出题放宽到 150 秒，预生成再留 20 秒余量。
+export const generateQuizQuestions = (payload) => request('/quiz/generate', payload, { timeoutMs: 150000 })
+export const prefetchQuizQuestions = (payload) => request('/quiz/prefetch', payload, { timeoutMs: 170000 })
+// 学习计划「练习/做题」：纯本地题库出题，秒出、不调模型。
+export const generatePracticeQuestions = (payload) => request('/practice/generate', payload, { timeoutMs: 15000 })
+// 试卷拍照识别：OCR 在前端完成，这里把整页文字交给模型拆题，长卷放宽到 120 秒。
+export const parsePaperText = (payload) => request('/agent/paper/parse', payload, { timeoutMs: 120000 })
+export const analyzeExamPaper = (payload) => request('/agent/paper/diagnose', payload, { timeoutMs: 120000 })
+// 错题 AI 分析：保存上传错题前生成知识点标签、错因推测与补强建议，模型不可用时后端返回本地兜底。
+export const analyzeMistake = (payload) => request('/agent/mistake/analyze', payload, { timeoutMs: 40000 })
 export const orderPlans = (payload) => request('/agent/plan-sequence', payload)
+// 背诵内容：模型不可用时后端返回本机内置篇目，前端按「学科 + 计划名」缓存后不再请求。
+export const generateReciteContent = (payload) => request('/agent/recite/content', payload, { timeoutMs: 50000 })
 // 单条任务替换：保留知识点，只换任务形式。
 export const replacePlanTask = (payload) => request('/agent/plan/replace', payload, { timeoutMs: 60000 })
-export async function askTutorWithImage({ question, image, history = [], sessionId }) {
-  return request('/agent/tutor', { question, image, history, sessionId })
+export async function askTutorWithImage({ question, image, history = [], sessionId, mode = 'guide' }) {
+  return request('/agent/tutor', { question, image, history, sessionId, mode })
 }
 // 流式答疑：逐帧解析后端 SSE，把推理、正文、工具步骤与安全改写交给调用方。
 /**
@@ -154,7 +184,7 @@ export async function prewarmOcr() {
   try { await ensureOcrWorker(); return true } catch { return false }
 }
 
-export async function extractQuestion(file) {
+export async function extractQuestion(file, { timeoutMs = 45000 } = {}) {
   let timedOut = false
   try {
     // OCR 在浏览器本地执行，题目照片不会发送到后端。
@@ -164,7 +194,7 @@ export async function extractQuestion(file) {
     })]).finally(() => clearTimeout(createTimer))
     let recognitionTimer
     const result = await Promise.race([worker.recognize(file), new Promise((_, reject) => {
-      recognitionTimer = setTimeout(() => reject(new Error('OCR 识别超时')), 45000)
+      recognitionTimer = setTimeout(() => reject(new Error('OCR 识别超时')), timeoutMs)
     })]).finally(() => clearTimeout(recognitionTimer))
     return { success: true, data: { text: result.data.text.trim() }, source: 'local-ocr' }
   } catch (error) {

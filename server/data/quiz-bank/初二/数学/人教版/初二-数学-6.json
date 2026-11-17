@@ -1,0 +1,107 @@
+{
+  "grade": "初二",
+  "subject": "数学",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初二-数学-6",
+    "name": "勾股定理"
+  },
+  "generatedAt": "2026-11-14T12:22:19.007Z",
+  "source": "deepseek",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初二-数学-6-f1",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "在Rt△ABC中，∠C=90°，AC=9，BC=12，则AB的长为____。",
+      "answer": "15",
+      "acceptableAnswers": [
+        "15"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 由∠C=90°可知AB是斜边，AC与BC是两条直角边。\n2. 根据勾股定理，AB^2=AC^2+BC^2=9^2+12^2=81+144=225。\n3. 因为边长取正值，所以AB=√225=15。\n4. 常见错误：只算出225而忘记开方，或把12误作斜边。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-数学-6-s1",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "一架长 65 dm 的梯子斜靠在竖直墙面上，梯子底端离墙脚 16 dm。若梯子顶端沿墙下滑 3 dm，且底端在水平地面上向外滑动，求梯子底端向外滑动的距离。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "设墙脚为 O，梯子初始底端为 A，顶端为 B。由勾股定理得 OB=\\sqrt{65^2-16^2}=63（dm）。顶端下滑 3 dm 后，顶端离地高为 63-3=60（dm）。设此时底端为 A'，则 OA'=\\sqrt{65^2-60^2}=25（dm）。所以底端向外滑动距离为 25-16=9（dm）。",
+      "explanation": "步骤1：在初始直角三角形中，墙高 OB=\\sqrt{65^2-16^2}=63 dm，得3分。\n步骤2：下滑后墙高为 63-3=60 dm，得2分。\n步骤3：新的水平距离 OA'=\\sqrt{65^2-60^2}=25 dm，得3分。\n步骤4：向外滑动 25-16=9 dm，得2分。\n常见错误：把下滑后的高度误写成 65-3，或直接用 16+3 计算，忽略了梯子长度不变。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初二-数学-6-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "在直角三角形中，两条直角边长分别为 9 和 12，则斜边长为____。",
+      "answer": "15",
+      "acceptableAnswers": [
+        "15"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 由勾股定理，斜边的平方等于两条直角边的平方和。\n2. 计算得 9^2+12^2=81+144=225。\n3. 225 的算术平方根为 15，所以斜边长为 15。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-数学-6-s2",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "在△ABC中，∠C=90°，AC=6 cm，BC=8 cm。点D在斜边AB上，且CD⊥AB，垂足为D。求：（1）AB的长；（2）CD的长；（3）AD的长。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）AB=10 cm。由勾股定理，AB^2=AC^2+BC^2=6^2+8^2=100，所以AB=10 cm。\n（2）CD=\\frac{24}{5} cm（即4.8 cm）。由△ABC面积相等，\\frac{1}{2}×AC×BC=\\frac{1}{2}×AB×CD，即\\frac{1}{2}×6×8=\\frac{1}{2}×10×CD，解得CD=\\frac{24}{5} cm。\n（3）AD=\\frac{18}{5} cm（即3.6 cm）。在Rt△ACD中，由勾股定理，AD^2=AC^2-CD^2=6^2-\\left(\\frac{24}{5}\\right)^2=\\frac{324}{25}，所以AD=\\frac{18}{5} cm。",
+      "explanation": "第（1）问：识别∠C=90°，直接对Rt△ABC使用勾股定理，得AB^2=6^2+8^2=100，AB=10，得2分。\n第（2）问：用同一三角形两种面积表示建立等式，\\frac{1}{2}×6×8=\\frac{1}{2}×10×CD，解得CD=\\frac{24}{5}，得4分。\n第（3）问：在Rt△ACD中应用勾股定理，AD^2=6^2-\\left(\\frac{24}{5}\\right)^2=\\frac{324}{25}，AD=\\frac{18}{5}，得4分。\n常见错误：求CD时漏乘\\frac{1}{2}导致结果错误；求AD时误用AB与CD作勾股关系，或忽略AD为正数。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初二-数学-6-f3",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "在Rt△ABC中，∠C=90°，AC=5，BC=12，则斜边AB的长为____。",
+      "answer": "13",
+      "acceptableAnswers": [
+        "13",
+        "AB=13"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 因为∠C=90°，所以AC、BC为直角边，AB为斜边。\n2. 由勾股定理，AB^2=AC^2+BC^2=5^2+12^2=169。\n3. 边长取正值得AB=13。\n常见错误：把斜边当作两直角边直接相加，即5+12=17，忽略了平方关系。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-数学-6-s3",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "在三角形ABC中，AB=13，BC=14，AC=15。作AD⊥BC，垂足为D，点D在边BC上。求BD的长和三角形ABC的面积。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "设BD=x，则DC=14-x。由AD是BC边上的高，得AD²=AB²-BD²=AC²-CD²，即13²-x²=15²-(14-x)²。化简得169-x²=29+28x-x²，解得x=5，所以BD=5。于是AD²=13²-5²=144，AD=12。三角形ABC的面积为1/2×BC×AD=1/2×14×12=84。答：BD=5，面积=84。",
+      "explanation": "得分点1：设BD=x并写出DC=14-x，利用同一条高AD建立等量关系。\n得分点2：由13²-x²=15²-(14-x)²正确解得x=5，得到BD=5。\n得分点3：用勾股定理求AD=12，再由面积公式求面积84。\n常见错误：忽略D在BC上导致CD表示错误；把面积公式中的高用错。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初二-数学-6-f4",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "在直角三角形中，两条直角边的长分别为 9 和 12，则斜边的长为____。",
+      "answer": "15",
+      "acceptableAnswers": [
+        "15"
+      ],
+      "referenceAnswer": "",
+      "explanation": "由勾股定理，斜边的平方等于两直角边平方和：9^2+12^2=81+144=225，所以斜边长为 225 的算术平方根，即 15。\n常见错误：把 9+12=21 当作斜边长；或忘记开平方，填 225。\n本题只考查直角三角形三边关系，答案应填 15。",
+      "difficulty": 1,
+      "score": 3
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "grade": "初二",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初二-英语-4",
+    "name": "宾语从句入门"
+  },
+  "generatedAt": "2026-11-14T13:32:00.000Z",
+  "source": "trae",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初二-英语-4-f1",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "宾语从句的三要素是：引导词、______和陈述语序。",
+      "answer": "时态",
+      "acceptableAnswers": [
+        "时态",
+        "时态呼应",
+        "时态一致"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：答出“时态（呼应/一致）”即可得3分。\n2. 语法依据：宾语从句由引导词（that、whether/if、疑问词）引导，从句必须用陈述语序，并且从句时态要与主句时态呼应：主句为过去时，从句一般用相应的过去时态。\n3. 失分点：把“语序”再写一遍与题干重复；只写“连接词”也不得满分，因为三要素是引导词、时态、语序。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-4-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用括号内所给动词的适当形式填空：He asked me where I ______ (come) from.",
+      "answer": "came",
+      "acceptableAnswers": [
+        "came"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 came，得3分。\n2. 语法依据：主句 asked 是一般过去时，从句时态要与之呼应，用一般过去时；where 引导宾语从句后必须用陈述语序 I came from，不能写成 did I come。\n3. 失分点：填 come 没有完成时态呼应；写成 did I come 语序错误，是本题最常见的失分点；写成 have come 与主句过去时不匹配。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-4-f3",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用恰当的连词填空：I don't know ______ he will come to the party or not.",
+      "answer": "whether",
+      "acceptableAnswers": [
+        "whether"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 whether，得3分。\n2. 语法依据：表示“是否”的宾语从句可用 whether 或 if 引导，但与 or not 直接连用时习惯上用 whether，构成 whether ... or not 结构。\n3. 失分点：填 that 没有“是否”的含义；填 if 与 or not 直接搭配不规范，本题只接受 whether；填 what 或 which 语义不通。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-4-f4",
+      "type": "fill",
+      "dimension": "transfer",
+      "stem": "用括号内所给动词的适当形式填空：The teacher told us that light ______ (travel) much faster than sound.",
+      "answer": "travels",
+      "acceptableAnswers": [
+        "travels"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 travels，得3分。\n2. 语法依据：宾语从句表示客观真理或自然规律时，即使主句是过去时 told，从句仍用一般现在时；light 作不可数名词，谓语用第三人称单数 travels。\n3. 失分点：填 traveled 是机械地呼应主句时态，属于本题最典型的错误；填 travel 主谓不一致；填 has traveled 也不符合客观规律的表达习惯。",
+      "difficulty": 3,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-4-s1",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "将下列句子合并为含宾语从句的复合句。\n(1) Where does he live? Do you know ...?\n(2) Will it rain tomorrow? I don't know ...\n(3) How can I get to the museum? Could you tell me ...?\n(4) \"I am busy,\" he said. → He said ...",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "(1) Do you know where he lives?\n(2) I don't know whether/if it will rain tomorrow.\n(3) Could you tell me how I can get to the museum?\n(4) He said (that) he was busy.",
+      "explanation": "第1步（每小题2.5分，共10分）：引导词正确1分，语序为陈述语序1分，时态与主句呼应0.5分。\n(1) 用 where 引导，从句还原为 he lives，去掉助动词 does，不能写成 where does he live。\n(2) 用 whether 或 if 引导，主句为一般现在时，从句保留 will，写成 it will rain tomorrow。\n(3) 用 how 引导，从句还原为 I can get to the museum，不能写成 how can I get。\n(4) 主句 said 为过去时，从句 am 要变为 was，连词 that 可省略。\n常见失分点：只把问句照抄进从句，忘记改语序；第(4)题时态未呼应；第(2)题误用 that 引导。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初二-英语-4-s2",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "下面每个句子有一处错误，请找出并改正，并说明理由。\n(1) Could you tell me where does he work?\n(2) He said that he will help me.\n(3) I don't know if or not she likes music.\n(4) The teacher told us that the earth moved around the sun.",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "(1) where does he work → where he works。理由：宾语从句必须用陈述语序，且主句 Could you tell me 表示现在，从句用一般现在时。\n(2) will → would。理由：主句 said 是过去时，从句时态要呼应，用过去将来时 would。\n(3) if or not → whether or not。理由：与 or not 直接连用时用 whether，构成 whether or not 结构。\n(4) moved → moves。理由：地球绕太阳转是客观真理，从句仍用一般现在时。",
+      "explanation": "第1步（每小题2.5分，共10分）：改对得1.5分，理由正确得1分。\n(1) 语序错误：宾语从句要用陈述语序，助动词 does 去掉，动词 work 加 -s，改为 where he works。\n(2) 时态错误：主句 said 为过去时，从句 will 应改为 would，构成过去将来时。\n(3) 连词错误：whether or not 是固定搭配，if 一般不与 or not 直接连用。\n(4) 客观真理例外：即使主句是过去时 told，从句表示自然规律仍用一般现在时 moves。\n常见失分点：只改错不写理由；第(1)题只删 does 却忘记给 work 加 -s；第(4)题误以为所有从句都要随主句变过去时。",
+      "difficulty": 3,
+      "score": 10
+    },
+    {
+      "id": "初二-英语-4-s3",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "你的英国笔友 Tom 发来消息，问了你三个问题：你周末通常做什么、你最喜欢的科目是什么、你长大后想做什么。请用英语写一段 60—70 词的回复，至少使用三个宾语从句，并注意语序和时态。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "示例：Hi Tom,\nYou asked me what I usually do at weekends, what my favourite subject is and what I want to be in the future. I often play basketball and read books at weekends. My favourite subject is English because it is interesting. I want to be a teacher in the future. Could you tell me something about your weekend?\nYours,\nLi Hua\n评分要点：①内容（3分）：三个问题逐一回答；②语法（5分）：三个宾语从句引导词、语序、时态正确；③语言与连贯（2分）：语句通顺，衔接自然，词数符合要求。",
+      "explanation": "第1步（内容3分）：三个问题必须逐一回应——周末活动、最喜欢的科目、未来职业，每缺一项扣1分。\n第2步（语法5分）：三个宾语从句各1.5分，检查引导词是否正确（what 作 do 的宾语、what 作表语、what 作 be 的宾语）、是否使用陈述语序（不能写成 what do I usually do）、时态是否与主句 asked 呼应（用一般现在时表示现在的习惯和想法，符合语境）。多写一个正确从句可加0.5分，但总分不超过10分。\n第3步（语言与连贯2分）：句子完整、拼写基本正确得1分；有称呼和署名、使用 because 等衔接、词数在60—70之间得1分。\n常见失分点：宾语从句仍用疑问语序；只写三个短句没有从句；回答内容与问题不匹配。",
+      "difficulty": 3,
+      "score": 10
+    }
+  ]
+}

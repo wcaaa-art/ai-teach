@@ -1,10 +1,11 @@
 // @ts-check
 import { searchCurriculum } from './curriculum.js'
 import { searchPassages, formatCitation } from './rag/index.js'
+import { hybridSearch } from './rag/hybrid.js'
 
 export const toolSchemas = [
   { type:'function', function:{ name:'calc_review_interval', description:'根据艾宾浩斯遗忘曲线计算复习时间', parameters:{ type:'object', properties:{ last_study_time:{type:'number'}, mastery_level:{type:'integer',enum:[0,1,2,3]} }, required:['last_study_time','mastery_level'], additionalProperties:false } } },
-  { type:'function', function:{ name:'rag_knowledge_query', description:'混合检索课标知识点与中考/高考真题解析，返回知识点名称和可引用的原文片段', parameters:{ type:'object', properties:{subject:{type:'string'},grade:{type:'string'},keyword:{type:'string'}}, required:['subject','grade','keyword'], additionalProperties:false } } },
+  { type:'function', function:{ name:'rag_knowledge_query', description:'混合检索课标知识点与中考真题解析，返回知识点名称和可引用的原文片段', parameters:{ type:'object', properties:{subject:{type:'string'},grade:{type:'string'},keyword:{type:'string'}}, required:['subject','grade','keyword'], additionalProperties:false } } },
   { type:'function', function:{ name:'get_recent_focus_record', description:'读取IndexedDB历史专注记录，包含：总时长、任务完成率、分心次数、视觉监督下的连续离岗记录', parameters:{type:'object',properties:{days:{type:'number'}},required:['days'],additionalProperties:false} } },
   { type:'function', function:{ name:'visual_monitor_get_status', description:'读取前端推送的视觉监督状态（前端持续推送状态给后端Agent上下文，不推送图像）', parameters:{type:'object',properties:{is_present:{type:'boolean'},continuous_away_seconds:{type:'number'}},required:['is_present','continuous_away_seconds'],additionalProperties:false} } }
 ]
@@ -54,7 +55,11 @@ export function executeTool(name, args = {}, context = {}) {
     if(![args.subject,args.grade,args.keyword].every(value=>typeof value==='string'&&value.trim()))return {error:'invalid_arguments'}
     const result=searchCurriculum(args)
     // 课标知识点负责“学什么”，真题片段负责“练什么、怎么讲”，两路结果合并给模型引用。
-    const passages=searchPassages({query:args.keyword,subject:args.subject,grade:args.grade,topK:4})
+    // 混合检索默认关闭：评测显示当前语料上稠密通道与 BM25 同源、无实质增益，
+    // 默认走 BM25 可保证答疑引用质量不受影响；设 RAG_HYBRID=1 可开启双路 RRF 融合。
+    const passages=process.env.RAG_HYBRID==='1'
+      ? hybridSearch({query:args.keyword,subject:args.subject,grade:args.grade,topK:4})
+      : searchPassages({query:args.keyword,subject:args.subject,grade:args.grade,topK:4})
     return {
       ...result,
       matches:result.matches.map(item=>item.name),

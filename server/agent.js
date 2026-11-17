@@ -5,9 +5,11 @@ export function safeFilter(text='') {
   return blocked.some(pattern=>pattern.test(text)) ? '这个问题不适合在学习助手中展开。我们可以回到课程知识点或学习方法上。' : text
 }
 
-export function guardTutorAnswer(text='') {
+export function guardTutorAnswer(text='', { mode = 'guide' } = {}) {
   const safe = safeFilter(String(text))
-  const directAnswerPatterns = [/最终答案\s*[:：]/, /正确答案\s*是/, /答案\s*是\s*[^，。\n]+/, /正确选项\s*是/, /综上(?:所述)?[，,。 ]{0,4}(?:答案|结果)/, /证明如下/]
+  // 讲解模式允许完整答案，只保留安全过滤和长度上限；引导模式维持原有拦截。
+  if (mode === 'explain') return safe.length > 2400 ? `${safe.slice(0, 2400)}…` : safe
+  const directAnswerPatterns = [/最终答案\s*[:：]/, /答案\s*[:：]/, /正确答案\s*是/, /答案\s*是\s*[^，。\n]+/, /正确选项\s*是/, /综上(?:所述)?[，,。 ]{0,4}(?:答案|结果)/, /证明如下/]
   return safe.length > 700 || directAnswerPatterns.some(pattern => pattern.test(safe))
     ? '我先不直接给出完整答案。我们可以先圈出已知条件，再判断应该用哪个知识点；你想从哪一步开始？'
     : safe
@@ -115,7 +117,7 @@ export async function callDeepSeek({messages, systemPrompt, context={}, maxRound
 export function buildPlanPrompt(payload) { return [{role:'user',content:JSON.stringify(payload)}] }
 
 // 工具名称的中文标签与结果摘要，用于前端「思考过程」里的步骤展示。
-const TOOL_LABELS = {
+export const TOOL_LABELS = {
   calc_review_interval: '计算复习间隔',
   rag_knowledge_query: '检索课标知识库',
   get_recent_focus_record: '读取近期专注记录',
@@ -139,6 +141,23 @@ export function summarizeToolResult(name, result = {}) {
     return result.is_present ? '当前在岗' : `连续离开 ${result.continuous_away_seconds || 0} 秒`
   }
   return ''
+}
+
+// 引用来源只回传展示字段：去重、限 4 条，并拆出「出处 / 题型」两段。
+// 完整真题正文留在工具结果里给模型引用，不重复推给浏览器。
+export function publicCitations(result = {}, limit = 4) {
+  const raw = Array.isArray(result?.citations) ? result.citations : []
+  const seen = new Set()
+  const citations = []
+  for (const item of raw) {
+    const text = String(item || '').trim()
+    if (!text || seen.has(text)) continue
+    seen.add(text)
+    const matched = text.match(/^《(.+?)》\s*[：:]\s*(.+)$/)
+    citations.push({ text, title: matched ? matched[1] : text, detail: matched ? matched[2] : text })
+    if (citations.length >= limit) break
+  }
+  return citations
 }
 
 // 解析单行 SSE：返回 { done } 或 { payload }；非 data 行与坏 JSON 一律忽略。
@@ -264,8 +283,10 @@ export async function* streamAgent({ messages = [], systemPrompt = '', context =
       if (!problem && !validateToolArguments(call.function.name, args)) problem = '工具参数不符合 schema'
       const result = problem ? { error: problem } : executeTool(call.function.name, args, context)
       const summary = problem ? problem : summarizeToolResult(call.function.name, result)
-      yield { type: 'tool', status: 'done', name: call.function.name, label, summary }
-      trace.push({ name: call.function.name, label, summary, status: 'done' })
+      // 检索结果带出处，前端在回答下方展示「检索依据」，让 RAG 可追溯而不是黑盒。
+      const citations = call.function.name === 'rag_knowledge_query' ? publicCitations(result) : []
+      yield { type: 'tool', status: 'done', name: call.function.name, label, summary, citations }
+      trace.push({ name: call.function.name, label, summary, status: 'done', citations })
       conversation.push({ role: 'tool', tool_call_id: call.id, content: JSON.stringify(result) })
     }
   }

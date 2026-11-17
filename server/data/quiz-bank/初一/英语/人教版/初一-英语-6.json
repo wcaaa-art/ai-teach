@@ -1,0 +1,112 @@
+{
+  "grade": "初一",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初一-英语-6",
+    "name": "阅读策略与语篇理解"
+  },
+  "generatedAt": "2026-11-14T13:08:05.000Z",
+  "source": "trae",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初一-英语-6-f1",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "阅读时，为了查找时间、地点、数字或人名等特定信息，我们带着问题快速扫读文章，而不逐词阅读。这种阅读策略的英文术语是 ______。",
+      "answer": "scanning",
+      "acceptableAnswers": [
+        "scanning",
+        "Scanning"
+      ],
+      "referenceAnswer": "",
+      "explanation": "依据：带着问题快速扫读文章、定位时间、地点、数字、人名等特定信息，这种阅读策略叫 scanning（查读），与 skimming（略读，快速浏览抓大意）相对。易错点：误填 skimming，因为它强调获取文章主旨而不是查找具体信息；拼写错误如 scaning、skiming 也不得分。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-英语-6-f2",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "Read the passage: Our school has a new library. It opens at 8:00 a.m. and closes at 6:00 p.m. Students can borrow two books at a time. There is also a reading room on the second floor. Many students like to read there after class.\nQuestion: What does the word 'It' in the sentence 'It opens at 8:00 a.m.' refer to? ______",
+      "answer": "the library",
+      "acceptableAnswers": [
+        "the library",
+        "library",
+        "the new library"
+      ],
+      "referenceAnswer": "",
+      "explanation": "依据：代词 It 所在句紧接第一句 Our school has a new library，主语是单数名词 library，与 It 在人称和数上一致，因此 It 指代 the library（新图书馆）。易错点：把 It 误认为 school 或 reading room，school 虽是单数但与 opens at 8:00 的语境不符，reading room 在后面才出现；忽略前一句的指代线索而随意猜测。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-英语-6-f3",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "Read the passage: Kate gets up at six thirty every morning. She runs for twenty minutes in the park near her home. Then she has breakfast with her family. At seven forty she walks to school with her best friend Anna.\nComplete the sentence with a word from the passage: Kate runs for ______ minutes every morning.",
+      "answer": "twenty",
+      "acceptableAnswers": [
+        "twenty",
+        "Twenty"
+      ],
+      "referenceAnswer": "",
+      "explanation": "依据：定位第二句 She runs for twenty minutes in the park near her home，可以直接找到 Kate 每天早上跑步二十分钟，因此填 twenty。易错点：把 six thirty（起床时间）或 seven forty（上学时间）误当成跑步时长；忽略题目要求“用短文中的词填空”而写成阿拉伯数字 20，或抄写时拼错 twenty。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-英语-6-f4",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "Read the passage: It was raining hard. Mike looked at his broken bike and then at the clock. The match would start in twenty minutes. He shook his head and called his coach.\nQuestion: From the passage, Mike probably felt ______ at that moment. Fill in one adjective.",
+      "answer": "worried",
+      "acceptableAnswers": [
+        "worried",
+        "sad",
+        "upset"
+      ],
+      "referenceAnswer": "",
+      "explanation": "依据：自行车坏了、比赛二十分钟后就要开始，Mike 又摇头又给教练打电话，这些细节说明他当时很着急、担心，因此填 worried（或 sad、upset 等表示负面情绪的形容词）。易错点：填 happy、excited 等与情节矛盾的词；只根据 raining 填 cold，忽略人物动作和事件带来的情绪；答案不是形容词或拼写错误。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初一-英语-6-s1",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "阅读下面短文，完成题目。\nLi Wei is a middle school student. He gets up at six every morning and runs for half an hour. He says running makes him strong and happy. After school, he often plays basketball with his classmates. He goes to bed at nine thirty. He thinks a good day starts with good habits.\n1. What time does Li Wei get up every morning? (2分)\n2. Why does Li Wei run every morning? (2分)\n3. What is the main idea of the passage? (3分)\n4. What good habit can you learn from Li Wei? Write one sentence. (3分)",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "1. He gets up at six every morning. 2. Because he says running makes him strong and happy. 3. It is mainly about Li Wei's good daily habits and how they make his day good. 4. 示例：I can get up early and exercise every morning, because good habits make me healthy and happy.",
+      "explanation": "第 1 题：定位第一句 He gets up at six every morning，答出 at six 得 2 分；答成 six thirty 或 nine thirty 等错误时间不得分。第 2 题：依据 He says running makes him strong and happy，答出强健身体、心情愉快得 2 分；只写 Because he likes running 而未说明原因得 1 分。第 3 题：主旨应概括 Li Wei 的良好生活习惯及其作用，得 3 分；只抄一句细节如 He plays basketball 得 1 分，偏离主题不得分。第 4 题：写出一个具体习惯并说明理由、语句通顺得 3 分；写 I should study hard 等与短文无关的内容得 1 分。常见错误：答语不完整、时态与原文不一致、直接抄整段。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初一-英语-6-s2",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "阅读下面短文，完成题目。\nPandas live in the mountains of Sichuan. They eat bamboo for about twelve hours a day. A grown panda can eat thirty kilograms of bamboo a day. Pandas are quiet animals and they like to live alone. Today, people are building more nature parks to protect them.\n1. What is the passage mainly about? (3分)\n2. How much bamboo can a grown panda eat a day? (2分)\n3. What does the word 'protect' probably mean in Chinese? (2分)\n4. Which reading strategy did you use to answer Question 2? (3分)",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "1. It is mainly about pandas and how people protect them. 2. A grown panda can eat about thirty kilograms of bamboo a day. 3. It means “保护”. 4. I used scanning: I read the question first, and then looked quickly for the number and the word bamboo in the passage.",
+      "explanation": "第 1 题：主旨要涵盖熊猫的生活习性和人们的保护措施，答出 pandas and how people protect them 得 3 分；只写 Pandas eat bamboo 只得 1 分。第 2 题：定位 thirty kilograms 得 2 分，答成 twelve hours 是把吃竹子的时间当成了数量，不得分。第 3 题：根据 building more nature parks to protect them 的语境推断 protect 意为“保护”，得 2 分；答成“建造”“喂养”不得分。第 4 题：答出 scanning 并说明先看问题、再快速查找数字等具体做法得 3 分；只写 reading 或 skimming 不能体现查找细节的策略，得 1 分。常见错误：细节题与主旨题混淆，词义题脱离上下文猜测。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初一-英语-6-s3",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "阅读下面短文，完成题目。\nAt first, Wang Mei was afraid of reading English stories. There were too many new words. Her teacher told her to read the whole story first and not to stop at every new word. Wang Mei tried. She guessed the meaning of new words from the pictures and the sentences around them. After two months, she could finish a short story in ten minutes. Now she loves reading English stories.\n1. What was Wang Mei's problem at first? (2分)\n2. What did her teacher tell her to do? (2分)\n3. What can we learn from Wang Mei's story? (3分)\n4. What reading strategy will you use when you meet new words? (3分)",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "1. She was afraid of reading English stories because there were too many new words. 2. Her teacher told her to read the whole story first and not to stop at every new word. 3. We can learn that guessing the meaning of new words from pictures and the sentences around them helps us read better, and that practice brings progress. 4. 示例：I will read the whole passage first, guess the new words from the context, and only look them up when they are really important.",
+      "explanation": "第 1 题：答出害怕读英语故事、生词太多得 2 分；只写 She didn't like English 得 1 分。第 2 题：答出先读完整篇、不要每个生词都停下来得 2 分；答成“查词典”与原文意思相反，不得分。第 3 题：答出根据图片和上下文猜词、坚持练习能取得进步得 3 分；只写“她要学好英语”过于空泛，得 1 分。第 4 题：能结合短文策略写出自己的做法，如先通读、利用上下文猜词、必要时再查，得 3 分；只写 read more 得 1 分。常见错误：概括题写成细节复述，推断题脱离原文，用中文作答或时态混乱。",
+      "difficulty": 3,
+      "score": 10
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "grade": "初二",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初二-英语-3",
+    "name": "情态动词与被动语态"
+  },
+  "generatedAt": "2026-11-14T12:15:18.103Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwgdcf2s",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The homework ______ before Friday, so we should start early.",
+      "options": [
+        "must finish",
+        "must be finished",
+        "must finished",
+        "must be finishing"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：must 后接动词原形，但 homework 不能执行 finish 这个动作，句子需要被动结构，因此不能选 must finish。\nB. 正确：情态动词 must 的被动语态结构是“must + be + 过去分词”，finish 的过去分词为 finished，表示“必须被完成”。\nC. 错误：must 后不能直接跟过去分词，缺少 be，结构不完整。\nD. 错误：must be finishing 表示“必须正在完成”，不是被动语态，也与 before Friday 所表达的完成要求不符。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwgdcf2s",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "—Mr. Li, can we leave the classroom now?\n—Not yet. The lights and computers ______ before we leave.",
+      "options": [
+        "must turn off",
+        "must be turned off",
+        "must be turning off",
+        "must turned off"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：must turn off是主动语态，主语The lights and computers是动作的承受者，不能主动执行turn off。\nB. 正确：含情态动词的被动语态结构为“情态动词+be+过去分词”，must be turned off表示“必须被关掉”，符合语境。\nC. 错误：must be turning off是情态动词后接进行时，表示主动进行，不能表达“灯和电脑被关掉”的被动含义。\nD. 错误：情态动词must后不能直接接过去分词turned，缺少be，被动语态结构不完整。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-3-mwgdcf2s",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "学校英语广播站播报了一则通知，请你选出最恰当的一项补全句子：\nAttention, please! Because of the heavy rain, the basketball match this afternoon ______, so please wait for further notice.",
+      "options": [
+        "must put off",
+        "must be put off",
+        "must be putting off",
+        "must have put off"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：must put off 是“情态动词+动词原形”的主动结构，主语 the basketball match 是 put off 这个动作的承受者，比赛本身不能去“推迟”别的安排，主动语态与主语关系冲突。\nB. 正确：主语 the basketball match 与 put off 之间是被动关系，情态动词的被动语态结构为“情态动词 + be + 过去分词”，即 must be put off，表示“（因大雨）必须被推迟”，符合广播通知的语境。\nC. 错误：must be putting off 是“情态动词+进行体”，意为“一定正在推迟……”，既与 this afternoon 表示的将来安排不符，put off 后也缺少被推迟的对象。\nD. 错误：must have put off 表示对过去情况的肯定推测“一定已经推迟了”，但句中 this afternoon 与 wait for further notice 说明比赛尚未举行，时态和语境都不吻合。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-4-mwgdcf2s",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "—Must the report ______ before 5 p.m.?\n—Yes, it must. The manager needs it for the meeting.",
+      "options": [
+        "finish",
+        "be finished",
+        "have finished",
+        "be finishing"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：report 是动作 finish 的承受者，应用被动语态；finish 为主动形式，与主语 report 的逻辑关系冲突。\nB. 正确：must 是情态动词，含情态动词的被动语态结构为“情态动词 + be + 过去分词”；report 与 finish 构成被动关系，故用 be finished。\nC. 错误：have finished 是主动完成式，既没有体现 report 被完成，也不能直接放在情态动词 must 后构成被动结构。\nD. 错误：be finishing 是主动进行式，表示“正在完成”，与“报告被完成”的语境及 must 后应接被动结构不符。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-5-mwgdcf2s",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The classroom ______ before the students enter it every morning. It is a school rule.",
+      "options": [
+        "must clean",
+        "must be cleaned",
+        "must be cleaning",
+        "must have cleaned"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：must clean 是“情态动词+动词原形”的主动结构，主语 the classroom 是动作的承受者，不能主动执行 clean。\nB. 正确：must be cleaned 是“情态动词 must + be + 过去分词”的被动语态结构，表示“教室必须被打扫”，符合主语是动作承受者且表达规则要求的语境。\nC. 错误：must be cleaning 是“情态动词+be+现在分词”的进行结构，强调正在打扫，不能表示被动含义。\nD. 错误：must have cleaned 表示对过去情况的推测或“必须已经打扫完”，与 every morning 的日常规则语境不符。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-6-mwgdcf2s",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "—Look at the sign. It says \"No photos\". —Sorry, I didn't notice. Photos ______ in the museum.",
+      "options": [
+        "mustn't take",
+        "mustn't be taken",
+        "needn't take",
+        "needn't be taken"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：mustn't take 是主动语态，photos 不能主动执行 take 的动作，且与主语 photos 的逻辑关系不符。\nB. 正确：photos 与 take 是被动关系，mustn't be taken 表示“禁止被拍摄”，符合 No photos 的语境。\nC. 错误：needn't take 是主动语态且表示“不必拿”，既不符合被动关系，也与“禁止拍照”的语义冲突。\nD. 错误：needn't be taken 虽为被动，但表示“不必被拍摄”，语气是“没有必要”，不能表达“禁止”。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-7-mwgdcf2s",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "The notice on the school gate says that the broken lights in the playground ______ before the sports meeting. They ______ right now, or the opening ceremony will be moved indoors.",
+      "options": [
+        "must repair; should repair",
+        "must be repaired; should be repaired",
+        "can repair; must repair",
+        "should be repaired; can repair"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：第一空主语 the broken lights 是 repair 的承受者，must 后应接 be repaired，不能用主动结构 must repair；第二空同样缺少被动结构。\nB. 正确：两空均考查“情态动词+被动语态”，结构为 must/should be + 过去分词；lights 与 repair 是被动关系，故用 must be repaired 和 should be repaired。\nC. 错误：can repair 和 must repair 均为主动语态，且第一空未体现被动，与主语 lights 和动词 repair 的关系冲突。\nD. 错误：第一空 should be repaired 正确，但第二空 can repair 是主动语态；主语 they 指 lights，不能主动 repair，应改为 can be repaired 或 must be repaired。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-8-mwgdcf2s",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "— Must the classroom ___ before the meeting?\n— Yes, it must.",
+      "options": [
+        "clean",
+        "be cleaned",
+        "cleaned",
+        "is cleaned"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：clean 是动词原形，此处 classroom 是动作的承受者，需要用被动语态；must 后虽接动词原形，但不能用主动形式表达“被打扫”。\nB. 正确：must 是情态动词，含情态动词的被动语态结构为“情态动词 + be + 过去分词”，clean 的过去分词是 cleaned，因此用 be cleaned。\nC. 错误：cleaned 是过去分词，前面缺少 be，不能与情态动词 must 直接构成被动语态。\nD. 错误：is cleaned 本身是被动语态，但 must 后需要接动词原形，不能再用 is，应改为 be cleaned。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-9-mwgdcf2s",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Which sentence correctly uses a modal verb in the passive voice?",
+      "options": [
+        "The homework must finish before Friday.",
+        "The homework must be finished before Friday.",
+        "The homework must finished before Friday.",
+        "The homework must be finish before Friday."
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：must 后虽接动词原形，但 homework 与 finish 是被动关系，不能直接用主动形式 finish 表示被动。\nB. 正确：含情态动词的被动语态结构为“情态动词 + be + 过去分词”，must be finished 符合该结构。\nC. 错误：must 后不能直接接过去分词 finished，缺少被动结构中的 be。\nD. 错误：be 后应接过去分词 finished，不能接动词原形 finish。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-10-mwgdcf2s",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "—Look at the new rule in the school library. It says the books in the reading room ______ out.\n—Yes, we can only read them there.",
+      "options": [
+        "mustn't take",
+        "mustn't be taken",
+        "needn't take",
+        "needn't be taken"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：mustn't take 是主动语态，主语 the books 不能主动执行 take out 的动作，且与“书被带出”的被动关系冲突。\nB. 正确：mustn't 表示“禁止”，the books 与 take out 之间是被动关系，情态动词后接 be + 过去分词，故用 mustn't be taken out。\nC. 错误：needn't take 表示“不需要拿”，且为主动语态；题干规则是“禁止带出”，不是“不需要拿”。\nD. 错误：needn't be taken 表示“不需要被带出”，语气是“没必要”，与图书馆规则“禁止带出”的 mustn't 不符。",
+      "difficulty": 1
+    }
+  ]
+}

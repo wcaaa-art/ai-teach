@@ -1,0 +1,184 @@
+{
+  "grade": "初三",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初三-英语-4",
+    "name": "完形填空策略"
+  },
+  "generatedAt": "2026-11-14T12:17:25.874Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwgdf5ny",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "完形填空中常利用上下文线索判断词义。阅读下面短文，选择最佳选项填入空格：When Jack first joined the school basketball team, he could hardly pass the ball well. But he practised every day after school. Three months later, he became one of the best players in the team. His story tells us that ______ is the key to success.",
+      "options": [
+        "luck",
+        "practice",
+        "money",
+        "talent"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：文中没有提到运气，且“每天放学后练习”与靠运气成功相冲突。\nB. 正确：前文“he practised every day after school”与“practice is the key to success”形成同义复现和上下文呼应，符合完形填空利用上下文线索解题的策略。\nC. 错误：全文未提及金钱，也没有任何信息支持“金钱是成功的关键”。\nD. 错误：Jack 起初连传球都做不好，后来通过每天练习进步，说明重点在练习而非天赋，且文中未强调 talent。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwgdf5ny",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "阅读下面短文，掌握其大意，然后从各题所给的四个选项中，选出能填入空白处的最佳选项。\nEvery Sunday morning, Ben carries a box of old books to the small park near his home. He puts them on a bench with a note that says, \"Free. Please take one and enjoy it.\" At first, only a few people stopped to look. But before long, more neighbours began to ______ the books, and some of them even brought their own books to the bench so that others could read them too.",
+      "options": [
+        "take",
+        "sell",
+        "hide",
+        "repair"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：便条上写着\"Free. Please take one and enjoy it.\"，说明书是让人免费取走的；后文\"brought their own books to the bench\"也表明邻居们把书拿去看，take 与上下文线索完全吻合。\nB. 错误：便条中的 Free 已明确书不收费，若填 sell，则与\"免费赠送\"这一关键信息直接矛盾。\nC. 错误：全文讲的是分享旧书、让更多人阅读，hide（藏起来）与\"分享\"的主题方向相反，且与后文邻居带书来给别人看冲突。\nD. 错误：文中没有任何信息提示书被损坏需要修理，repair 属于无中生有，无法与上下文衔接。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-3-mwgdf5ny",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Emma's grandmother gave her a small notebook. On the first page, she wrote, \"Write down one thing you are thankful for each day.\" Emma thought it was unnecessary, but she decided to try. A month later, when she felt upset after a test, she opened the notebook. Reading her own words, she felt warmth rise in her heart. The notebook didn't change her life, but it helped her see that every day had something ____.",
+      "options": [
+        "worth remembering",
+        "easy to forget",
+        "hard to explain",
+        "ready to change"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：前文写“每天记下一件值得感谢的事”，后文写她重读自己的记录后感到温暖，说明笔记本让她发现每天都有值得记住的美好，worth remembering 与全文语境和逻辑一致。\nB. 错误：easy to forget 表示“容易忘记”，与“记下并重读后感到温暖”的语境相反，也无法解释笔记本带来的积极变化。\nC. 错误：hard to explain 表示“难以解释”，文中没有任何信息表明每天的事物难以解释，属于脱离上下文的干扰项。\nD. 错误：ready to change 表示“准备改变”，文中强调的是发现已有生活中的美好，而不是每天的事物都准备改变。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-4-mwgdf5ny",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "阅读下面句子，选择最佳选项完成空白。\nAlthough the path was steep and slippery, the hikers moved forward ______, checking every step before they went on.",
+      "options": [
+        "carefully",
+        "carelessly",
+        "impatiently",
+        "proudly"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：Although 表示让步，说明山路陡且滑，因此后文“checking every step”提供了明确的语境线索，说明徒步者应“小心地”前进，carefully 最符合逻辑。\nB. 错误：carelessly 意为“粗心地”，与后文“checking every step”（每一步都检查）直接矛盾，也不符合陡峭湿滑山路的危险语境。\nC. 错误：impatiently 意为“不耐烦地”，如果徒步者不耐烦，就不会仔细检查每一步，与 checking every step 的语境冲突。\nD. 错误：proudly 意为“自豪地”，文中没有提供与自豪相关的信息，且不能与“检查每一步”形成合理搭配。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-5-mwgdf5ny",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "做完形填空时，出现在句首的空格往往要根据前后句的逻辑关系来判断。请读下面的片段：\n\"Molly never asked for any money for the vegetables on her table. ______, some neighbours would quietly leave a few coins under the basket without telling her.\"\n从上下文逻辑看，横线处最恰当的选项是（　）。",
+      "options": [
+        "However",
+        "Besides",
+        "Therefore",
+        "For example"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：前句说 Molly 从不收钱，后句说邻居仍悄悄把硬币留在篮子下；“从不收钱”和“仍然留钱”是相反、相对的情况，构成转折关系。However 表示转折，且放在句首后用逗号与后句隔开，形式和逻辑都符合。\nB. 错误：Besides 表示递进、补充，要求后句与前句方向一致，是对前句的追加说明；而“邻居悄悄留钱”并不是“她不收钱”的并列补充，而是与预期相反的情况，逻辑上说不通。\nC. 错误：Therefore 表示因果。“因为从不收钱，所以邻居留钱”不能构成合理的因果推论，也与后句 quietly…without telling her 所带的转折意味冲突。\nD. 错误：For example 用于举例，后句应是前句的具体事例；但“邻居留钱”不是“她不收钱”的例子，而是与之相对的情形，所以不能选。\n方法提示：做这类题时，先通读整段、抓住逻辑标志词（转折、因果、递进、举例），再代入选项检查前后是否一致，不要只看空格所在的那一句。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-6-mwgdf5ny",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "阅读下面短文，从所给选项中选出能填入空白处的最佳选项。\nLast winter, our class set up a small book corner at the back of the classroom. At first, only three or four students put their books there. But after Miss Li read us a story about a boy who travelled with a magic map, something ___1___ in the class: within two weeks, more than fifty books were standing on the shelf, and even the quietest girl began to talk about her favourite writer.",
+      "options": [
+        "changed",
+        "stopped",
+        "waited",
+        "repeated"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：空白前的 At first, only three or four students put their books there 说明起初参与的人很少，而 But 引出的转折与冒号后的 within two weeks, more than fifty books were standing on the shelf 说明情况完全改观，因此 something changed（情况发生了变化）与上下文逻辑一致，冒号后的内容正是对这一“变化”的具体解释。\nB. 错误：stopped 意为“停止”，若填 stopped，则与后文“两周内书架上有五十多本书、连最安静的女孩也开始谈论作家”这一积极结果直接冲突，语义自相矛盾。\nC. 错误：waited 意为“等待”，something waited 搭配不当，且“等待”无法解释参与人数和书籍数量的明显增加，与冒号后的解释句构不成对应关系。\nD. 错误：repeated 意为“重复”，强调同一动作再次发生，而文中呈现的是“从三四个同学到五十多本书”的由少到多的转变，并非原样重复，与语境不符。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-7-mwgdf5ny",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "阅读下面短文，掌握其大意，然后从各题所给的四个选项中选出最佳答案。\n\nLast Friday, Nina had to introduce her science project to the whole class. She had written down every sentence, but when she stood in front of the classroom, she felt nervous and her voice shook. Then she remembered her teacher's advice: do not read word by word; look at the key points and speak to your listeners. She took a deep breath, looked up, and began to ______ her idea in a clear and natural way. When she finished, the class clapped warmly.",
+      "options": [
+        "express",
+        "collect",
+        "compare",
+        "hide"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：express 表示“表达”，与后面的 her idea in a clear and natural way 搭配自然，符合语境中“把想法清楚地讲出来”的意思。\nB. 错误：collect 表示“收集”，与 her idea 搭配不合适，也不能体现演讲中清楚表达观点的语境。\nC. 错误：compare 表示“比较”，文中没有把她的想法与其他内容进行比较，因此不符合上下文。\nD. 错误：hide 表示“隐藏”，与老师建议她看着听众、自然表达以及同学们热烈鼓掌的语境相反。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-8-mwgdf5ny",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "阅读下面短文，从每小题所给的A、B、C、D四个选项中选出能填入空白处的最佳选项。\n\nEmma's little brother begs her to play chess with him every evening. At first she agrees, but she always wins in ten minutes and he walks away with a long face. Last night she did something different: twice she \"didn't notice\" his careless moves, and she even let him take her queen. When he finally won, he jumped up and shouted. Emma lost the game, ______ she had never felt happier.",
+      "options": [
+        "so",
+        "or",
+        "but",
+        "because"
+      ],
+      "correctIndex": 2,
+      "explanation": "C. 正确：空格前后\"Emma lost the game（输了棋）\"与\"she had never felt happier（从没这么开心过）\"在意思上相反、形成对比，是典型的转折关系，用 but 连接，符合\"输棋却开心\"的让步意味，句意通顺。\nA. 错误：so 表示结果，若填 so 则变成\"输了棋，所以她从没这么开心过\"，把\"输棋\"当成\"开心\"的原因，与上文她故意让弟弟赢、希望他高兴的情节相反，因果关系不成立。\nB. 错误：or 表示选择或\"否则\"，前后两个分句并不是二选一的关系，也不存在\"否则\"的条件警告意味，填进去句意不通。\nD. 错误：because 引导原因，填 because 会理解为\"她输了棋，因为她从没这么开心过\"，原因和结果被颠倒，与段落逻辑冲突。\n做这类题时，先通读全段抓住情感走向（弟弟失落→弟弟欢呼、姐姐欣慰），再判断空格处需要的逻辑连接，不要只凭\"逗号后接句子\"的语法感觉随手选 so。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-9-mwgdf5ny",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "阅读下面短文，掌握其大意，然后从每小题所给的四个选项中，选出一个最佳答案。\n\nLucy's grandmother lives in a small village. Every summer Lucy spends two weeks there. Last July, Grandma's old radio stopped working. Lucy noticed that Grandma missed the evening news very much, so Lucy decided to ______ it. She watched videos online and learned how to do it herself. When Grandma heard the radio again, she smiled happily.",
+      "options": [
+        "fix",
+        "sell",
+        "hide",
+        "borrow"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：完形填空要抓住上下文线索。后面说“She watched videos online and learned how to do it herself”和“Grandma heard the radio again”，说明露西决定“修理”收音机；decide to 后接动词原形 fix，语境合适。\nB. 错误：如果填 sell（卖掉），就无法解释露西上网看视频学习动手操作、之后奶奶又重新听到收音机；卖掉旧收音机与下文情节矛盾。\nC. 错误：hide（藏起来）与“Grandma missed the evening news very much”体现的体谅心情方向相反，也不能使收音机重新发出声音。\nD. 错误：borrow（借）不能使坏掉的收音机恢复工作，且后文“heard the radio again”说的是奶奶自己的收音机被修好，而不是借来一台。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-10-mwgdf5ny",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "阅读下面短文，掌握其大意，然后从每题所给的四个选项中选出最佳答案。\n\nOn the first day of the new term, our English teacher gave each of us a small notebook. She asked us to write down one new word every morning and then use it in a sentence. At first I thought it was boring, but after three months I found that my vocabulary had grown a lot. Small habits, I learned, can make a big ______ to our study.",
+      "options": [
+        "difference",
+        "mistake",
+        "decision",
+        "promise"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：make a big difference 是固定搭配，意为“产生很大影响或带来很大改变”，与上文“三个月后我的词汇量增加了许多”这一积极结果完全吻合，是本空的语境线索答案。\nB. 错误：make a mistake 意为“犯错误”，文中作者是在说明小习惯带来的正面变化，若填 mistake 则与“词汇量增长”的肯定语气直接冲突。\nC. 错误：make a decision 意为“做决定”，空格处需要表示“影响、改变”的名词，填 decision 后句子意为“小习惯对我们的学习做出大决定”，语义不通。\nD. 错误：make a promise 意为“许诺、答应”，与上下文讨论学习习惯效果的话题无关，也不能与 to our study 搭配。",
+      "difficulty": 1
+    }
+  ]
+}

@@ -66,6 +66,8 @@ export function mergeChapterMastery({ assessments = [], quizResults = [], mistak
 
   const mistakeCounts = new Map()
   for (const item of mistakes.filter(match)) {
+    // 已消灭的错题是正向证据，不再按负向扣分。
+    if (item.fixedAt) continue
     if (!item.chapterId) continue
     mistakeCounts.set(item.chapterId, (mistakeCounts.get(item.chapterId) || 0) + 1)
   }

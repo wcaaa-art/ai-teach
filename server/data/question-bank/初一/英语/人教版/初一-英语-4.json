@@ -1,0 +1,184 @@
+{
+  "grade": "初一",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初一-英语-4",
+    "name": "There be 句型"
+  },
+  "generatedAt": "2026-11-14T12:13:11.792Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwgd9hlg",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "There ______ a pen and two books on the desk.",
+      "options": [
+        "is",
+        "are",
+        "have",
+        "has"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：There be 句型表示“某处有某物”，be 动词要与离它最近的主语保持人称和数的一致；最近的主语是 a pen，为单数，所以用 is。\nB. 错误：are 用于复数主语，但本题最近的主语 a pen 是单数，不符合就近原则。\nC. 错误：have 表示“拥有”，主语通常是人或物；There be 句型不能改用 have 来表示“某处有某物”。\nD. 错误：has 是 have 的第三人称单数形式，不能用于 There be 句型中作谓语。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-3-mwgd9hlg",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "There ______ a new notice board and two reading corners in our school library next term. We can read there after class.",
+      "options": [
+        "is going to have",
+        "are going to have",
+        "is going to be",
+        "are going to be"
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：There be 句型表示“某处有某物”，不能与 have 混用，there is going to have 结构不成立。\nB. 错误：既误用了 have，又忽略了 there be 句型的主语就近原则。\nC. 正确：next term 表示将来，应使用 There is/are going to be；空格后离 be 最近的主语是 a new notice board（单数），按就近原则用 is going to be。\nD. 错误：are going to be 虽是 there be 的将来形式，但最近的主语 a new notice board 是单数，应使用 is；若主语顺序改为 two reading corners and a new notice board，则可用 are going to be。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-6-mwgd9hlg",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "—What's in your schoolbag?\n—______ a pencil box and two books in it.",
+      "options": [
+        "There is",
+        "There are",
+        "It is",
+        "They are"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：There be 句型表示“某处有某物”，当 be 动词后接并列主语时遵循“就近原则”；离 be 动词最近的主语 a pencil box 是单数，因此用 There is。\nB. 错误：There are 用于 be 动词后最近的主语为复数时；本题最近的主语是单数 a pencil box，与 are 不一致。\nC. 错误：It is 用于指代前文提到的单数事物，不能在本句中表示“书包里有……”。\nD. 错误：They are 用于指代复数事物，且不能与 a pencil box and two books 构成正确的“存在”表达。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-8-mwgd9hlg",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "选择正确的选项补全句子：There ______ a pen and two books on the desk.",
+      "options": [
+        "is",
+        "are",
+        "have",
+        "has"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：There be 句型表示“某处有某物”，当主语是“a pen and two books”这样的并列名词时，be 动词遵循就近原则，靠近 be 的 a pen 是单数，所以用 is。\nB. 错误：are 用于复数主语；本题虽然整体涉及两个 books，但 be 动词先与最近的 a pen 保持一致，因此不能用 are。\nC. 错误：have 表示“拥有”，不能放在 There 后构成“There have”结构；表示“存在”应使用 There be 句型。\nD. 错误：has 是 have 的第三人称单数形式，同样不能用于 There be 句型，与“某处存在某物”的表达冲突。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-9-mwgd9hlg",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "There ______ an apple and some bananas in the basket.",
+      "options": [
+        "is",
+        "are",
+        "have",
+        "has"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：There be 句型表示“某处有某物”，be 动词的单复数遵循就近原则；离空格最近的名词是 an apple，为单数，因此用 is。\nB. 错误：are 用于复数名词前；本题最近的名词 an apple 是单数，不能因为后面还有 bananas 就改用 are。\nC. 错误：have 表示“拥有”，常用于人或物作主语的句子；There have 不是表示“存在”的标准 There be 结构。\nD. 错误：has 是 have 的第三人称单数形式，同样表示“拥有”，不能放入 There be 存在句型中。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-10-mwgd9hlg",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "Look! There ______ a map of China and some pictures on the wall.",
+      "options": [
+        "is",
+        "are",
+        "have",
+        "has"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：There be 句型表示“某处有某物”，be 动词的形式遵循就近原则；空格后最近的名词是单数 a map，因此用 is。\nB. 错误：are 用于复数主语；虽然后面还有 some pictures，但 There be 句型按最近的主语 a map 决定 be 动词，所以不能用 are。\nC. 错误：have 表示“拥有”，主语通常是人或物；本句表示“墙上有……”，应使用 There be 结构，不能用 have。\nD. 错误：has 是 have 的第三人称单数形式，也表示“拥有”；本句不是表达某物拥有某物，而是表达某处存在某物，因此不能用 has。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-1-mwgd9pm5",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "选择正确表达“我们班有五十名学生。”的句子：",
+      "options": [
+        "There are fifty students in our class.",
+        "There have fifty students in our class.",
+        "Our class there are fifty students.",
+        "There is fifty students in our class."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：There be 句型表示“某地存在某物”，主语是 fifty students，为复数，因此用 There are。\nB. 错误：There be 句型不能与 have 连用；表达“我们班有……”可用 Our class has fifty students.，不能写成 There have...\nC. 错误：地点状语 in our class 应放在句末，不能放在 There 前写成 Our class there are...\nD. 错误：主语 fifty students 是复数，be 动词应用 are，不能用 is。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwgd9pm5",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "—______ any orange juice in the fridge?\n—Yes, but only a little.",
+      "options": [
+        "Is there",
+        "Are there",
+        "Is it",
+        "Are they"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：orange juice 是不可数名词，There be 句型变一般疑问句时把 is 提前，构成 Is there any...？与答语 a little 相符。\nB. 错误：Are there 用于可数名词复数，不能与不可数名词 orange juice 搭配。\nC. 错误：Is it 中 it 指代不明，也不能构成 There be 句型表示“有……吗”的疑问结构。\nD. 错误：Are they 是复数代词形式，与不可数名词 orange juice 不一致，也不符合 There be 疑问句结构。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-3-mwgd9pm5",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Welcome to our new science building! On the first floor, there ______ a science lab and two music rooms. The science lab ______ many interesting pictures on the wall.",
+      "options": [
+        "is; has",
+        "are; has",
+        "is; have",
+        "are; have"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：第一空为 There be 句型，遵循就近原则，离空最近的主语 a science lab 是单数，所以用 is；第二空主语 The science lab 是单数，表示“拥有”用 has。\nB. 错误：第一空后紧跟的主语 a science lab 是单数，不能用 are；第二空 has 虽然正确，但整体不符合。\nC. 错误：第一空 is 正确；第二空主语 The science lab 是单数，不能用 have。\nD. 错误：第一空误用 are，第二空误用 have，均与主语的单复数不一致。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-4-mwgd9pm5",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "There ______ any water in the glass, but there ______ some tomatoes in the box.",
+      "options": [
+        "isn't; are",
+        "aren't; is",
+        "isn't; is",
+        "aren't; are"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：water 是不可数名词，否定句中用 There isn't any water；tomatoes 是可数名词复数，肯定句中用 There are some tomatoes，前后搭配一致。\nB. 错误：water 不可数，不能用 aren't 作 There be 的谓语；tomatoes 为复数，后半也不能用 is。\nC. 错误：前半 There isn't any water 正确，但后半 some tomatoes 是复数，应与 are 搭配，不能用 is。\nD. 错误：water 不可数，前半不能用 aren't；后半 there are some tomatoes 虽正确，但整体仍错。",
+      "difficulty": 2
+    }
+  ]
+}

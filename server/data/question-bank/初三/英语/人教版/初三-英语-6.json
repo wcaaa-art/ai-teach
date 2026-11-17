@@ -1,0 +1,184 @@
+{
+  "grade": "初三",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初三-英语-6",
+    "name": "中考写作结构"
+  },
+  "generatedAt": "2026-11-14T12:17:30.440Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwgdf96t",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在中考英语书面表达中采用常见的“三段式”结构时，第二段（主体段）最核心的作用是什么？",
+      "options": [
+        "引出话题并表明作者观点",
+        "用原因、细节或例子支撑文章中心观点",
+        "重复标题并罗列生词",
+        "总结全文并向读者发出号召"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：引出话题并表明观点通常是第一段（开头段）的功能，不是主体段的核心作用。\nB. 正确：三段式结构中的第二段是主体段，核心作用是围绕中心观点展开论述，用原因、细节或例子进行支撑。\nC. 错误：重复标题和罗列生词既不能有效展开中心，也不符合主体段组织内容的要求。\nD. 错误：总结全文并发出号召通常是第三段（结尾段）的功能，与第二段的主体展开作用不符。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwgdf96t",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在英语作文中，若要把“Firstly... Secondly... Finally...”三个建议组织成一个完整段落，下列哪种写法最符合“主题句—支撑句—总结句”的段落结构？",
+      "options": [
+        "Firstly, we should read aloud. Secondly, we should take notes. Finally, we should ask questions.",
+        "Good learners usually have three habits. Firstly, they read aloud. Secondly, they take notes. Finally, they ask questions. In short, good habits help us learn better.",
+        "I like English. My friend likes English, too. We are happy.",
+        "Good habits are important. Good habits are important. Good habits are important."
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：该选项只有 Firstly、Secondly、Finally 的并列建议，缺少主题句和总结句，段落结构不完整。\nB. 正确：第一句用 Good learners usually have three habits 提出主题，中间用 Firstly、Secondly、Finally 展开支撑，最后用 In short 总结，符合“主题句—支撑句—总结句”的结构。\nC. 错误：该选项写个人喜好和朋友喜好，没有围绕“三个建议”展开，也没有主题句、支撑句和总结句的层次。\nD. 错误：该选项重复同一句话，既没有具体支撑内容，也没有形成总结，不能构成完整段落。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-3-mwgdf96t",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "You are asked to write an English passage for the school newspaper on “How to Be a Better Time Manager”. Which structure is most appropriate for this writing task?",
+      "options": [
+        "Introduction: state the importance of time management → body: give three practical suggestions with examples → conclusion: call on students to take action",
+        "Body: list five unrelated personal stories in time order → end without a conclusion",
+        "Conclusion: give the main idea first → body: repeat only one suggestion several times → no introduction",
+        "A dialogue between two students about their weekend plans → no topic sentence, suggestions, or conclusion"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：建议类作文常采用“引入主题—分点建议—总结呼吁”的结构；先说明时间管理的重要性，再给出具体建议和例子，最后发出行动号召，层次清楚且符合中考英语写作结构要求。\nB. 错误：五个无关的个人故事按时间排列缺少统一主题和分点建议，而且没有结论，结构松散，不能有效回应“如何成为更好的时间管理者”。\nC. 错误：先给结论、只重复一个建议且没有引入，缺少论证展开和层次，不符合建议类作文的完整结构。\nD. 错误：对话形式缺少明确的主题句、建议分点和总结，不能直接完成征文任务，结构不符合要求。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-4-mwgdf96t",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "阅读下面短文的句子排列，从写作结构角度看，哪一句最应调整或删除？\n①My school life is busy but colorful. ②In the morning, I have four classes and take notes carefully. ③After lunch, I often play basketball with my classmates. ④My favourite subject is English because it is interesting. ⑤After school, I join the reading club. ⑥In short, I enjoy my school life.",
+      "options": [
+        "第①句",
+        "第②句",
+        "第④句",
+        "第⑥句"
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：第①句是全文主题句，用“busy but colorful”总领下文，结构上起统领作用，不需要调整。\nB. 错误：第②句写上午上课和记笔记，属于按时间顺序展开的支持细节，与上下文衔接自然。\nC. 正确：第④句突然转入“最喜欢的科目及原因”，打断了上午—午休—放学的时间线，也没有直接支撑“忙碌而多彩”的校园生活主题，最应调整或删除。\nD. 错误：第⑥句用“In short”总结全文，并与首句主题呼应，是合理的结尾句，不应删除。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-5-mwgdf96t",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "关于中考英语短文写作的基本结构，下列表述正确的是：",
+      "options": [
+        "一篇短文只需把相关词汇罗列出来，不必有主题句",
+        "段落通常由主题句、支撑句和总结句构成，主题句点明该段中心",
+        "为使文章连贯，应把 all in all、besides、however 等连接词全部堆在文章开头",
+        "结尾段必须提出与主题无关的新观点，以增加文章字数"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：短文写作需要有中心思想，主题句能帮助读者快速把握段落或文章要点，单纯罗列词汇无法形成连贯语篇。\nB. 正确：段落的基本结构通常包括主题句、支撑句和总结句；主题句概括该段中心，支撑句用细节或例子展开，总结句收束段落。\nC. 错误：连接词应根据语义和逻辑关系放在需要过渡的位置，堆在开头会造成逻辑混乱，反而破坏连贯性。\nD. 错误：结尾段应总结全文或呼应主题，提出与主题无关的新观点会偏离中心，影响内容切题和结构完整。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-6-mwgdf96t",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "假设你要写一段关于“学生如何减少塑料垃圾”的短文，段落采用“观点—例证—小结”结构。下列哪一句最适合作为该段首句（主题句）？",
+      "options": [
+        "Every student can help reduce plastic waste by making small changes in daily life.",
+        "For example, I bring a reusable water bottle to school every day.",
+        "In short, small actions make a big difference to our environment.",
+        "Last week, our class held a meeting about environmental protection."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：该句提出段落中心观点，概括“学生可通过日常小改变减少塑料垃圾”，能够统领后文例证并在段尾被小结，符合主题句要求。\nB. 错误：该句以 For example 引出具体做法，属于支撑细节，不能统领整段。\nC. 错误：该句以 In short 引出总结，适合放在段尾作小结，不适合作为段首主题句。\nD. 错误：该句只交代一次班级活动的背景信息，既不是关于减少塑料垃圾的中心观点，也不能统领例证。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-7-mwgdf96t",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "你校英语报正在以“Making Good Use of My Spare Time”为题征文。写作要点为：1. 目前存在的问题；2. 你的具体做法；3. 收获与建议。下列段落安排中最符合“总—分—总”结构且逻辑连贯的是哪一项？",
+      "options": [
+        "第一段点明空闲时间利用中存在的问题；第二段按“先运动、再阅读、最后做家务”列举自己的做法；第三段总结收获并给同学提出建议。",
+        "第一段详细列举自己的具体做法；第二段点明空闲时间利用中存在的问题；第三段再次重复开头内容。",
+        "第一段直接给同学提出建议；第二段写目前存在的问题；第三段写自己的具体做法，但不作总结。",
+        "全文分为四段：第一段写问题，第二段写做法，第三段继续写做法，第四段写收获，但全篇没有主题句和总结句。"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：第一段总起并点明问题，第二段围绕要点分述具体做法，第三段总结收获并提出建议，符合“总—分—总”结构，也符合问题—做法—收获的逻辑顺序。\nB. 错误：第一段先详列做法、第二段才提出问题，造成因果倒置；第三段重复开头内容，既没有总结收获，也未完成建议任务。\nC. 错误：第一段直接给建议而将问题放在第二段，逻辑顺序不顺；第三段只写做法却没有总结，结构不完整。\nD. 错误：主体部分把做法拆成两段却缺少主题句，结尾也没有总结句，未能体现“总—分—总”的完整结构。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-8-mwgdf96t",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "某同学的中考英语作文提纲如下：第一段提出“学生应学会管理时间”；第二段写“很多同学常熬夜完成作业”；第三段写“我建议每天先完成最重要的事”；第四段又补充“熬夜会影响第二天听课效率”。从段落结构看，最需要调整的是哪一项？",
+      "options": [
+        "把第一段中的“学生应学会管理时间”改为更长的句子，使开头更充实",
+        "把第四段关于熬夜影响听课效率的内容移到第二段，使问题与原因集中呈现",
+        "把第三段中的“最重要的事”换成“the most important thing”，以增加英语表达",
+        "在结尾段增加一个与主题无关的名人故事，使文章更生动"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：把主题句改长只是句子层面的润色，不能解决段落之间内容重复、逻辑分散的结构问题。\nB. 正确：第二段写熬夜问题，第四段又写熬夜影响听课效率，二者属于同一层次的问题与原因；移到第二段可使段落中心集中，符合中考写作“段落统一、层次清晰”的要求。\nC. 错误：替换词语属于语言表达层面的修改，不涉及段落结构安排。\nD. 错误：增加与主题无关的名人故事会破坏结尾段与中心主题的一致性，反而造成结构松散。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-9-mwgdf96t",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "关于中考英语书面表达的结构安排，下列说法最恰当的是：",
+      "options": [
+        "开头段直接点明写作目的或主题，主体段用主题句和支撑细节展开，结尾段总结或提出建议。",
+        "为显得内容充实，开头段应罗列所有细节，主体段重复开头内容，结尾段可以省略。",
+        "中考英语作文必须写成一段，否则会因分段而扣分。",
+        "主体段只需堆砌高级词汇，不需要主题句和逻辑衔接。"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：中考英语书面表达通常采用清晰的结构，开头点明主题或写作目的，主体用主题句加支撑细节展开，结尾进行总结、建议或呼应主题。\nB. 错误：开头罗列全部细节会使重点不突出，主体重复开头内容会造成信息冗余，结尾段也不应随意省略。\nC. 错误：合理分段有助于层次清晰，中考英语作文并非必须写成一段，规范分段通常不会因此扣分。\nD. 错误：高级词汇不能替代结构逻辑，主体段仍需要主题句、支撑细节和必要的衔接词来保证表达连贯。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-10-mwgdf96t",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "你要写一篇题为“How to Keep Healthy”的英语短文，向同学提出建议。下列篇章结构最合理的是哪一项？",
+      "options": [
+        "开头点明主题，主体分条给出2—3条建议，结尾总结并发出号召",
+        "开头列出生词，主体抄写课文句子，结尾不作总结",
+        "先写与健康无关的周末经历，再突然给出建议，结尾重复开头原句",
+        "全篇只使用问句，不给出任何具体建议或结论"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：中考英语建议类短文通常采用“总—分—总”结构，开头点题，主体分条展开建议，结尾总结或号召，层次清楚。\nB. 错误：列生词和抄写课文不能形成围绕主题的完整篇章，结尾缺少总结，不符合写作结构要求。\nC. 错误：开头写无关周末经历会偏离“How to Keep Healthy”主题，主体建议突兀，结构不连贯。\nD. 错误：全篇问句且无具体建议和结论，不能完成“向同学提出建议”的交际任务。",
+      "difficulty": 1
+    }
+  ]
+}

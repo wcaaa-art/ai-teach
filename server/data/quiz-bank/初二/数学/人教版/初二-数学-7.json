@@ -1,0 +1,110 @@
+{
+  "grade": "初二",
+  "subject": "数学",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初二-数学-7",
+    "name": "平行四边形"
+  },
+  "generatedAt": "2026-11-14T13:10:35.000Z",
+  "source": "trae",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初二-数学-7-f1",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "平行四边形的对角线互相____。",
+      "answer": "平分",
+      "acceptableAnswers": [
+        "平分",
+        "互相平分"
+      ],
+      "referenceAnswer": "",
+      "explanation": "得分点：平行四边形的性质之一是两条对角线互相平分，填“平分”。\n易错点：与矩形的“对角线相等”、菱形的“对角线互相垂直”混淆；或写成“垂直”，把不同特殊平行四边形的性质混在一起。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-数学-7-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "在平行四边形 ABCD 中，∠A=65°，则∠C=____。",
+      "answer": "65°",
+      "acceptableAnswers": [
+        "65°",
+        "65度"
+      ],
+      "referenceAnswer": "",
+      "explanation": "得分点：平行四边形的对角相等，∠A 与∠C 是一组对角，所以∠C=∠A=65°。\n易错点：把对角相等误记成邻角相等，得到 115°；或把∠C 与∠B 的对角关系弄混。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-数学-7-f3",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "平行四边形 ABCD 的周长为 20，AB=6，则 BC=____。",
+      "answer": "4",
+      "acceptableAnswers": [
+        "4",
+        "BC=4"
+      ],
+      "referenceAnswer": "",
+      "explanation": "得分点：平行四边形对边相等，周长=2(AB+BC)。由 2(6+BC)=20 得 6+BC=10，所以 BC=4。\n易错点：把周长直接除以 2 后忘记减去 AB，得到 10；或误认为四条边都等于 6，算出周长 24。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-数学-7-f4",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "在△ABC 中，D、E 分别是 AB、AC 的中点，若 DE=5，则 BC=____。",
+      "answer": "10",
+      "acceptableAnswers": [
+        "10",
+        "BC=10"
+      ],
+      "referenceAnswer": "",
+      "explanation": "得分点：三角形的中位线平行于第三边，并且等于第三边的一半，所以 BC=2DE=10。\n易错点：把中位线当成第三边的一半后仍填 5；或误用“中位线等于第三边”直接写 5；忽略 D、E 必须是两边中点这一条件。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-数学-7-s1",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "在平行四边形 ABCD 中，E、F 分别是边 AD、BC 的中点，连接 BE、DF。求证：四边形 BEDF 是平行四边形。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "证明：因为四边形 ABCD 是平行四边形，\n所以 AD∥BC，AD=BC。\n因为 E、F 分别是 AD、BC 的中点，\n所以 DE=AD÷2，BF=BC÷2，\n所以 DE=BF。\n又 DE∥BF，\n所以四边形 BEDF 是平行四边形（一组对边平行且相等的四边形是平行四边形）。",
+      "explanation": "第1步：由平行四边形 ABCD 得出 AD∥BC 且 AD=BC，得 3 分；只写平行或只写相等，扣 1 分。\n第2步：利用中点条件得出 DE=AD÷2、BF=BC÷2，得 2 分。\n第3步：由 AD=BC 推出 DE=BF，得 2 分；这一步是连接条件与结论的关键，缺少扣 2 分。\n第4步：指出 DE∥BF，得 1 分。\n第5步：依据“一组对边平行且相等”判定平行四边形，得 2 分；判定依据写成“两组对边分别相等”而实际未证明 AB∥EF 等，扣 1 分。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初二-数学-7-s2",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "在矩形 ABCD 中，对角线 AC、BD 相交于点 O，∠AOD=120°，AB=4。求对角线 AC 的长。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "解：因为四边形 ABCD 是矩形，\n所以 OA=OB=OC=OD=AC÷2。\n又∠AOD=120°，所以∠AOB=180°-120°=60°。\n在△AOB 中，OA=OB，∠AOB=60°，\n所以△AOB 是等边三角形，\n所以 OA=AB=4。\n所以 AC=2OA=8。",
+      "explanation": "第1步：利用矩形对角线互相平分且相等，得出 OA=OB=AC÷2，得 3 分；漏写“对角线相等”会无法得到 OA=OB。\n第2步：由邻补角求出∠AOB=60°，得 2 分；直接用 120° 计算是常见错误。\n第3步：由 OA=OB 且∠AOB=60° 判定△AOB 为等边三角形，得 3 分；只写“等腰”不写 60° 不能推出等边。\n第4步：得出 OA=AB=4，再由 AC=2OA 求出 AC=8，得 2 分；把 OA 当成 AC 直接答 4 扣 1 分。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初二-数学-7-s3",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "在△ABC 中，AD 平分∠BAC，DE∥AC 交 AB 于点 E，DF∥AB 交 AC 于点 F。求证：四边形 AEDF 是菱形。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "证明：因为 DE∥AC，DF∥AB，\n所以四边形 AEDF 是平行四边形。\n因为 DE∥AC，所以∠EDA=∠DAF。\n因为 AD 平分∠BAC，所以∠EAD=∠DAF。\n所以∠EDA=∠EAD，\n所以 AE=DE（等角对等边）。\n所以平行四边形 AEDF 是菱形（有一组邻边相等的平行四边形是菱形）。",
+      "explanation": "第1步：由 DE∥AC、DF∥AB 得出四边形 AEDF 是平行四边形，得 3 分；只写一组平行不能判定平行四边形。\n第2步：由 DE∥AC 找出内错角∠EDA=∠DAF，得 2 分；角的位置判断错误则后续推理不成立。\n第3步：由 AD 平分∠BAC 得出∠EAD=∠DAF，得 2 分。\n第4步：等量代换得∠EDA=∠EAD，再由“等角对等边”得 AE=DE，得 2 分；误用“等边对等角”扣 1 分。\n第5步：依据“有一组邻边相等的平行四边形是菱形”得出结论，得 1 分；只写“平行四边形”不写菱形特征不得分。",
+      "difficulty": 3,
+      "score": 10
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "grade": "初一",
+  "subject": "数学",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初一-数学-5",
+    "name": "相交线与平行线"
+  },
+  "generatedAt": "2026-11-13T02:43:31.319Z",
+  "source": "deepseek-with-local-fill",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwedgptm",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列说法中，正确的是（ ）",
+      "options": [
+        "相等的两个角一定是对顶角",
+        "在同一平面内，过直线外一点有且只有一条直线与已知直线平行",
+        "两条直线被第三条直线所截，同位角一定相等",
+        "互补的两个角一定是邻补角"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：对顶角相等，但相等的两个角不一定是对顶角，例如两条不相交直线中两个大小相同但位置不对应的角。\nB. 正确：这是平行公理的基本内容：在同一平面内，过直线外一点有且只有一条直线与已知直线平行。\nC. 错误：两条直线被第三条直线所截时，只有这两条直线平行，同位角才相等；缺少“两直线平行”的条件不能推出同位角相等。\nD. 错误：互补只说明两个角的和是180°，邻补角还要求两个角有公共顶点且一边互为反向延长线，因此互补的两个角不一定是邻补角。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwedgptm",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "直线AB与CD相交于点O，OE⊥AB，且OE在∠AOC的内部。若∠EOC=35°，则∠BOD的度数为（ ）",
+      "options": [
+        "35°",
+        "55°",
+        "125°",
+        "145°"
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：35°只是题中∠EOC的度数，∠BOD与∠EOC不是对顶角，不能直接相等。\nB. 错误：55°可能是误把∠BOC算成90°-35°=55°，但题目要求的是∠BOD，它与∠AOC是对顶角。\nC. 正确：因为OE⊥AB，所以∠AOE=90°；又OE在∠AOC内部，所以∠AOC=∠AOE+∠EOC=90°+35°=125°；对顶角相等，故∠BOD=∠AOC=125°。\nD. 错误：145°可能是用180°-35°得到，但35°的邻补角并不是∠BOD，∠BOD应与∠AOC相等。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-3-mwedgptm",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "已知AB∥CD，点E在AB与CD之间，点A在AB上，点C在CD上，且A、C都在点E的左侧。连接AE、CE，若∠BAE=35°，∠DCE=25°，则∠AEC等于（　　）",
+      "options": [
+        "25°",
+        "35°",
+        "60°",
+        "120°"
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：25°只是∠DCE的度数，∠AEC由上方和下方两个角共同组成，不能只取其中一个角。\nB. 错误：35°只是∠BAE的度数，漏掉了∠DCE对应的一部分，因此不是∠AEC。\nC. 正确：过点E作EF∥AB，且F在E的左侧，因为AB∥CD，所以EF∥CD。由两直线平行，内错角相等，得∠AEF=∠BAE=35°，∠CEF=∠DCE=25°，所以∠AEC=∠AEF+∠CEF=35°+25°=60°。\nD. 错误：120°是把35°与25°的和当作同旁内角互补来算，得到180°-(35°+25°)=120°；但本题中EF分出的两个角与已知角是内错角关系，应相等而不是互补。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-4-mwedgptm",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "concept",
+      "difficulty": 1,
+      "stem": "两条直线相交，若其中一个角为 40°，则它的对顶角为？",
+      "options": [
+        "40°",
+        "50°",
+        "140°",
+        "160°"
+      ],
+      "correctIndex": 0,
+      "explanation": "对顶角相等，因此对顶角也是 40°。"
+    },
+    {
+      "id": "diag-6-mwedgptm",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "直线 a∥b，直线 c 分别与 a，b 相交，∠1 与 ∠2 是截线同侧、两平行线之间的同旁内角。若 ∠1=65°，则 ∠2 的度数为（ ）",
+      "options": [
+        "115°",
+        "65°",
+        "25°",
+        "125°"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：因为 a∥b，且 ∠1 与 ∠2 是同旁内角，根据“两直线平行，同旁内角互补”，所以 ∠2=180°-65°=115°。\nB. 错误：65° 与 ∠1 相等，符合同位角或内错角在平行条件下的关系，但题干已说明 ∠1 与 ∠2 是同旁内角，同旁内角应互补，不能相等。\nC. 错误：25°=90°-65°，这是把同旁内角误当成互余关系；两平行线被截时同旁内角互补，不是互余。\nD. 错误：125° 与 65° 的和为 190°，不满足同旁内角互补关系 65°+∠2=180°。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-7-mwedgptm",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "已知AB∥CD，直线EF分别交AB、CD于点E、F，点E在点F的右上方，点B在点E的右侧，点D在点F的右侧。EG平分∠BEF，交CD于点G。若∠EFD=50°，则∠EGF的度数是（ ）",
+      "options": [
+        "50°",
+        "65°",
+        "115°",
+        "130°"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：50°只是已知∠EFD的度数；∠BEF与∠EFD是两条平行线被EF所截形成的同旁内角，二者互补，因此∠BEF=180°-50°=130°，不能直接取50°。\nB. 正确：由AB∥CD得∠BEF+∠EFD=180°，所以∠BEF=130°；EG平分∠BEF，得∠BEG=65°；又AB∥CD，EG为截线，∠EGF与∠BEG是内错角，故∠EGF=65°。\nC. 错误：115°是把130°误作与所求角互补或把角平分线误作补角计算得到，未按EG平分∠BEF得到65°。\nD. 错误：130°是∠BEF的度数，而EG平分∠BEF后，所求∠EGF等于其一半，不是130°。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-10-mwedgptm",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "直线 l_1∥l_2，直线 m 分别与 l_1、l_2 相交，∠1 与 ∠2 是同旁内角。若 ∠1=68°，则 ∠2 的度数为（ ）",
+      "options": [
+        "68°",
+        "112°",
+        "22°",
+        "122°"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：68°是∠1的度数；同旁内角不一定相等，只有同位角或内错角在平行条件下才相等，不能直接推出∠2=68°。\nB. 正确：因为 l_1∥l_2，两直线平行时同旁内角互补，所以∠2=180°-68°=112°。\nC. 错误：22°是由90°-68°得到，误用了互余关系；同旁内角之间应为互补关系，不是互余关系。\nD. 错误：122°是按180°-58°计算所得，与题干已知∠1=68°不对应，计算依据错误。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-1-mwedh94l",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在同一平面内，直线 a 与直线 b 不相交，直线 c 与直线 b 相交，则直线 a 与直线 c 的位置关系是（ ）",
+      "options": [
+        "平行",
+        "相交",
+        "垂直",
+        "无法确定"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：同一平面内，a 与 b 不相交，所以 a∥b；若 a∥c，则 c∥b，这与已知“c 与 b 相交”矛盾。\nB. 正确：同一平面内两条直线只有平行和相交两种位置关系；由 a∥b 且 c 与 b 相交可知，a 与 c 不可能平行，因此 a 与 c 必相交。\nC. 错误：相交不一定垂直，题干没有给出任何角度条件，不能推出 a⊥c。\nD. 错误：由 a∥b 且 c 与 b 相交，可以确定 a 与 c 必相交，位置关系是确定的，不是无法确定。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwedh94l",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "如图，直线 a∥b，直线 c 分别与 a、b 相交，∠1 与 ∠2 是同位角。若 ∠1=(3x+10)°，∠2=(5x-30)°，则 ∠1 的度数为（ ）",
+      "options": [
+        "70°",
+        "80°",
+        "100°",
+        "110°"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：因为 a∥b，且 ∠1 与 ∠2 是同位角，所以 ∠1=∠2，即 3x+10=5x-30，解得 x=20，因此 ∠1=3×20+10=70°。\nB. 错误：若 ∠1=80°，则 3x+10=80，得 x=\\frac{70}{3}，此时 ∠2=5×\\frac{70}{3}-30=\\frac{260}{3}°，与 ∠1 不相等，违背两直线平行同位角相等。\nC. 错误：若 ∠1=100°，则 3x+10=100，得 x=30，此时 ∠2=5×30-30=120°，∠1 与 ∠2 不相等，与平行线性质矛盾。\nD. 错误：若 ∠1=110°，则 3x+10=110，得 x=\\frac{100}{3}，此时 ∠2=5×\\frac{100}{3}-30=\\frac{410}{3}°，不等于 ∠1，不符合同位角相等。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-3-mwedh94l",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "concept",
+      "difficulty": 2,
+      "stem": "直线 a ∥ b，一条截线与它们相交。若其中一个同旁内角为 65°，则另一个同旁内角为？",
+      "options": [
+        "65°",
+        "115°",
+        "125°",
+        "25°"
+      ],
+      "correctIndex": 1,
+      "explanation": "两直线平行时同旁内角互补，180° − 65° = 115°。"
+    }
+  ]
+}

@@ -101,25 +101,6 @@ function matchesReason(item, { reason = '', edition = '', now = Date.now() } = {
   return true
 }
 
-// 学段串味：搜初中章节会带出高中同名知识点，按年级把另一学段的标题排掉。
-const STAGE_NOISE = {
-  junior: /高中|高考|高一|高二|高三/,
-  senior: /初中|中考|初一|初二|初三|七年级|八年级|九年级/
-}
-
-export function stageOf(grade = '') {
-  const text = String(grade || '')
-  if (/初[一二三]|七|八|九/.test(text)) return 'junior'
-  if (/高[一二三]/.test(text)) return 'senior'
-  return ''
-}
-
-export function matchesStage(item = {}, grade = '') {
-  const stage = stageOf(grade)
-  if (!stage) return true
-  return !STAGE_NOISE[stage].test(`${item.title || ''} ${item.tag || ''}`)
-}
-
 // 章节相关性：B 站搜索会带出同章前后的视频（搜「二次函数」混进「一元二次方程」），
 // 所以标题/标签里必须出现章节名，或章节名拆分后的任一片段。
 export function isRelevantVideo(item = {}, chapter = '') {
@@ -131,14 +112,13 @@ export function isRelevantVideo(item = {}, chapter = '') {
   return tokens.some(token => haystack.includes(token))
 }
 
-// 纯函数：排除已看过的视频/UP 主，过滤跨学段与无关章节，按原因过滤，
+// 纯函数：排除已看过的视频/UP 主，过滤无关章节，按原因过滤，
 // 再按「教材版本匹配优先、播放量从高到低」取一批。
-export function pickVideoBatch(pool = [], { excludeBvids = [], excludeAuthors = [], reason = '', edition = '', chapter = '', grade = '', limit = 3, now = Date.now() } = {}) {
+export function pickVideoBatch(pool = [], { excludeBvids = [], excludeAuthors = [], reason = '', edition = '', chapter = '', limit = 3, now = Date.now() } = {}) {
   const skippedBvids = new Set(excludeBvids)
   const skippedAuthors = new Set(excludeAuthors)
   return pool
     .filter(item => item && item.bvid && !skippedBvids.has(item.bvid) && !skippedAuthors.has(item.author))
-    .filter(item => matchesStage(item, grade))
     .filter(item => isRelevantVideo(item, chapter))
     .filter(item => matchesReason(item, { reason, edition, now }))
     .sort((left, right) => {

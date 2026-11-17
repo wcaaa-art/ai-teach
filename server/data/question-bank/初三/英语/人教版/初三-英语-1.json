@@ -1,0 +1,184 @@
+{
+  "grade": "初三",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初三-英语-1",
+    "name": "宾语从句与定语从句"
+  },
+  "generatedAt": "2026-11-14T12:17:08.654Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwgdesdm",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Which of the following sentences is grammatically correct?",
+      "options": [
+        "The book which I borrowed it from the library is interesting.",
+        "Could you tell me where is the nearest bookstore?",
+        "The girl who she won the first prize is my sister.",
+        "I don't know when he will come back."
+      ],
+      "correctIndex": 3,
+      "explanation": "A. 错误：定语从句中关系代词 which 已作 borrowed 的宾语，从句中不能再使用代词 it，应改为 The book which I borrowed from the library is interesting.\nB. 错误：宾语从句应使用陈述语序，应改为 Could you tell me where the nearest bookstore is?\nC. 错误：定语从句中关系代词 who 已作从句主语，不能再使用 she，应改为 The girl who won the first prize is my sister.\nD. 正确：when 引导宾语从句，从句使用陈述语序 he will come back，符合宾语从句的语序和时态要求。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwgdesdm",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "—Could you tell me ______? —Sure. He is the boy ______ won first prize in the speaking competition.",
+      "options": [
+        "who the boy is; who",
+        "who is the boy; which",
+        "who the boy is; which",
+        "whom the boy is; who"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：第一空是宾语从句，连接词 who 在从句中作表语，宾语从句必须用陈述语序 who the boy is；第二空先行词 the boy 指人，且在定语从句中作主语，应用关系代词 who。\nB. 错误：第一空 who is the boy 是疑问语序，宾语从句不能用疑问语序；第二空先行词 the boy 指人，不能用只能指物的 which。\nC. 错误：第一空 who the boy is 语序正确，但第二空先行词 the boy 指人，which 只能指物，与先行词冲突。\nD. 错误：第一空 who 在从句中作表语，不能用宾格 whom；第二空 who 虽正确，但第一空已经错误，故整体不正确。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-3-mwgdesdm",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "—Excuse me, could you tell me ____?\n—He is the engineer ____ designed the new bridge.",
+      "options": [
+        "who is the engineer; who",
+        "who the engineer is; who",
+        "who was the engineer; which",
+        "whom the engineer is; that"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：宾语从句应使用陈述语序，应为 who the engineer is，而不是 who is the engineer；后半句 who 本身可以，但前半句语序错误。\nB. 正确：宾语从句用陈述语序 who the engineer is；定语从句先行词 the engineer 指人，且在从句中作主语，因此用 who 引导。\nC. 错误：问句回答是 He is the engineer，说明用一般现在时 is，不用 was；同时先行词指人，不能用 which。\nD. 错误：宾语从句中 who 作表语，不能用宾格 whom；后半句 that 虽可指人作主语，但前半句结构和格错误。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-4-mwgdesdm",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "—Do you know ______?\n—Yes. It's the book ______ we talked about yesterday.",
+      "options": [
+        "what is he reading; that",
+        "what he is reading; that",
+        "what is he reading; who",
+        "what he is reading; who"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：宾语从句中应使用陈述语序，what is he reading 是疑问语序；后半部分用 that 指代 book 虽可，但前半部分已不符合语法。\nB. 正确：宾语从句要用陈述语序，故第一空为 what he is reading；先行词 book 指物，关系代词 that 在定语从句中作 talked about 的宾语，故第二空用 that。\nC. 错误：第一空 what is he reading 语序错误；第二空 who 只能指人，不能指物 book。\nD. 错误：第一空 what he is reading 语序正确，但先行词 book 指物，不能用关系代词 who。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-5-mwgdesdm",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列句子中，从句部分使用正确的一项是：",
+      "options": [
+        "Could you tell me where does he live?",
+        "This is the book who I bought yesterday.",
+        "I don't know when will the meeting start.",
+        "The girl who is singing is my sister."
+      ],
+      "correctIndex": 3,
+      "explanation": "A. 错误：where引导的是宾语从句，从句应使用陈述语序，应改为where he lives，不能使用does he live的疑问语序。\nB. 错误：先行词the book表示物，定语从句的关系代词应用that或which，不能用who；who通常指人。\nC. 错误：when引导的是宾语从句，从句应使用陈述语序，应改为when the meeting will start，不能把will提到主语前。\nD. 正确：who引导定语从句，先行词the girl指人，who在从句中作主语，句子结构和关系代词使用均正确。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-6-mwgdesdm",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "—Could you tell me ___?\n—He is the boy ___ helped the old man cross the road.",
+      "options": [
+        "who he is; who",
+        "who is he; which",
+        "who he is; which",
+        "whom he is; who"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：第一空是宾语从句，应用陈述语序，故用“who he is”；第二空先行词 the boy 指人，关系词在定语从句中作主语，故用 who。\nB. 错误：第一空“who is he”是疑问语序，宾语从句中语序错误；第二空先行词指人，关系词不能用 which。\nC. 错误：第一空语序正确，但第二空先行词 the boy 指人，关系词不能用 which。\nD. 错误：第一空在系动词 is 后作表语，应用 who，不用 whom；第二空 who 虽正确，但第一空错误，故整体不能选。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-7-mwgdesdm",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "—Could you tell me ______?\n—Yes. He is the man ______ helped us with the project yesterday.",
+      "options": [
+        "who he is; who",
+        "who is he; which",
+        "who he is; which",
+        "whom he is; who"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：tell me后接宾语从句，应用陈述语序“who he is”；先行词the man指人，且在定语从句中作主语，故用关系代词who。\nB. 错误：宾语从句“who is he”使用了疑问语序，不符合宾语从句要求；同时which指物，不能指代the man。\nC. 错误：宾语从句“who he is”语序正确，但which只能指物，不能指代the man并在定语从句中作主语。\nD. 错误：询问身份时宾语从句中作表语应用who，不能用whom；虽然后半部分who正确，但前半部分错误导致整项不成立。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-8-mwgdesdm",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "下列句子中，从句使用完全正确的一项是（ ）",
+      "options": [
+        "Could you tell me where does he live?",
+        "This is the house where we visited last week.",
+        "The teacher asked us whether we had finished our homework.",
+        "I don't know the boy who he is standing under the tree."
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：宾语从句必须用陈述语序，where 后应接 he lives，不能保留助动词 does 构成疑问语序；正确形式为 Could you tell me where he lives?\nB. 错误：先行词 the house 在定语从句中作 visited 的宾语，应使用关系代词 that/which，或省略关系代词；where 在定语从句中作地点状语，不能作 visited 的宾语。正确形式为 This is the house that/which we visited last week.\nC. 正确：whether 引导宾语从句，主句 asked 为过去时，从句用过去完成时 had finished 表示动作发生在主句动作之前；从句使用陈述语序，连接词和时态均正确。\nD. 错误：定语从句中关系代词 who 已经作主语，不能再保留人称代词 he；正确形式为 I don't know the boy who/that is standing under the tree.",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-9-mwgdesdm",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列句子中，方括号内的从句在复合句中作宾语的是（　）",
+      "options": [
+        "The book [that you lent me] is very interesting.",
+        "I don't know [whether he will come tomorrow].",
+        "The boy [who is playing basketball] is my cousin.",
+        "This is the school [where my father works]."
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：that you lent me 修饰先行词 the book，说明“你借给我的”是哪本书，属于定语从句，在复合句中作定语，不作宾语。\nB. 正确：whether he will come tomorrow 位于动词 know 之后，作 know 的宾语，因此是宾语从句；whether 表示“是否”，从句使用陈述语序。\nC. 错误：who is playing basketball 修饰 The boy，说明“正在打篮球的”男孩是谁，属于定语从句，在复合句中作定语。\nD. 错误：where my father works 修饰 the school，说明“我父亲工作的”学校，属于定语从句，在复合句中作定语。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-10-mwgdesdm",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "—Could you tell me ____ tomorrow?\n—We'll visit the science museum.",
+      "options": [
+        "where will we go",
+        "where we will go",
+        "where we go",
+        "where did we go"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：宾语从句应使用陈述句语序，where will we go 中 will 位于主语 we 之前，语序不当。\nB. 正确：tell me 后接宾语从句，应用陈述句语序 where we will go；tomorrow 表示将来，因此用 will go。\nC. 错误：where we go 虽为陈述语序，但 tomorrow 表明动作发生在将来，不能用一般现在时 go。\nD. 错误：where did we go 使用疑问语序和一般过去时，既不符合宾语从句的陈述语序，也与 tomorrow 的将来时间冲突。",
+      "difficulty": 1
+    }
+  ]
+}

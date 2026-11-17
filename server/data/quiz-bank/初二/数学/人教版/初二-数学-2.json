@@ -1,0 +1,110 @@
+{
+  "grade": "初二",
+  "subject": "数学",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初二-数学-2",
+    "name": "轴对称与等腰三角形"
+  },
+  "generatedAt": "2026-11-14T13:06:20.000Z",
+  "source": "trae",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初二-数学-2-f1",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "线段垂直平分线上的点到这条线段两个端点的距离____。",
+      "answer": "相等",
+      "acceptableAnswers": [
+        "相等",
+        "一样长"
+      ],
+      "referenceAnswer": "",
+      "explanation": "得分点：线段垂直平分线的性质是“垂直平分线上的点到线段两端点的距离相等”，填“相等”。\n易错点：与“到角两边距离相等的点在角平分线上”混淆；或写成“垂直”，把位置关系当成距离关系。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-数学-2-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "点 A(2,-5) 关于 y 轴对称的点的坐标是____。",
+      "answer": "(-2,-5)",
+      "acceptableAnswers": [
+        "(-2,-5)",
+        "（-2，-5）"
+      ],
+      "referenceAnswer": "",
+      "explanation": "得分点：关于 y 轴对称的两点纵坐标不变、横坐标互为相反数，所以点 A(2,-5) 的对称点为(-2,-5)。\n易错点：把“关于 y 轴对称”记成横坐标不变、纵坐标变号，误答(2,5)；或只改变一个坐标的符号。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-数学-2-f3",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "等腰三角形的两边长分别为 6 和 13，则它的周长为____。",
+      "answer": "32",
+      "acceptableAnswers": [
+        "32",
+        "32cm"
+      ],
+      "referenceAnswer": "",
+      "explanation": "得分点：若腰长为 6，则三边为 6、6、13，因为 6+6<13，不能构成三角形；所以腰长只能为 13，三边为 13、13、6，周长为 13+13+6=32。\n易错点：不检验三边关系，直接把 6 当腰算出 25；或把 6 和 13 都当成腰重复计算。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初二-数学-2-f4",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "在△ABC 中，AB=AC，∠A=36°，BD 平分∠ABC 交 AC 于点 D，则∠BDC=____。",
+      "answer": "72°",
+      "acceptableAnswers": [
+        "72°",
+        "72度"
+      ],
+      "referenceAnswer": "",
+      "explanation": "得分点：由 AB=AC 得∠ABC=∠C=(180°-36°)÷2=72°；BD 平分∠ABC，所以∠ABD=36°；再由三角形外角性质得∠BDC=∠A+∠ABD=36°+36°=72°。\n易错点：只求出∠ABC=72° 就作答，忽略 BD 的平分作用；或把∠BDC 当成∠DBC，得到 36°。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初二-数学-2-s1",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "在△ABC 中，AB=AC，BC=10，AB 的垂直平分线交 AB 于点 E，交 AC 于点 D，连接 BD。若△BCD 的周长为 18，求 AB 的长。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "解：因为 DE 垂直平分 AB，所以 AD=BD。\n△BCD 的周长=BC+CD+BD=BC+CD+AD=BC+AC。\n又 BC=10，所以 10+AC=18，解得 AC=8。\n因为 AB=AC，所以 AB=8。",
+      "explanation": "第1步：由垂直平分线的性质得出 AD=BD，得 3 分；写成 AD=AB 或 BD=BE 均不得分。\n第2步：把△BCD 的周长转化为 BC+CD+AD，即 BC+AC，得 3 分；不会等量代换是本题主要失分点。\n第3步：代入 BC=10、周长 18，求出 AC=8，得 2 分。\n第4步：由 AB=AC 得出 AB=8，得 2 分；求出 AC 后忘记回答 AB，扣 1 分。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初二-数学-2-s2",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "在△ABC 中，∠ACB=90°，∠A=30°，CD⊥AB 于点 D，AB=8。求 BD 的长。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "解：在 Rt△ABC 中，∠ACB=90°，∠A=30°，\n所以 BC=AB÷2=8÷2=4。\n又∠B=180°-90°-30°=60°。\n因为 CD⊥AB，所以∠CDB=90°，\n在 Rt△BCD 中，∠BCD=90°-60°=30°，\n所以 BD=BC÷2=4÷2=2。\n答：BD 的长为 2。",
+      "explanation": "第1步：利用“直角三角形中 30° 角所对的直角边等于斜边的一半”，由∠A=30° 得 BC=4，得 3 分；误把 BC 当成斜边是常见错误。\n第2步：求出∠B=60°，并结合 CD⊥AB 得到∠BCD=30°，得 3 分；角度推理不完整扣 1 分。\n第3步：在 Rt△BCD 中再次使用 30° 角性质，得 BD=BC÷2=2，得 3 分。\n第4步：写出结论并带单位，得 1 分。常见错误是直接在△ABC 中把 BD 当成 AB 的一半，忽略 D 不是 AB 的中点。",
+      "difficulty": 3,
+      "score": 10
+    },
+    {
+      "id": "初二-数学-2-s3",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "在△ABC 中，BD 平分∠ABC 交 AC 于点 D，过点 D 作 DE∥BC 交 AB 于点 E。若 DE=5，求 BE 的长，并说明理由。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "解：BE=5。\n理由：因为 DE∥BC，所以∠EDB=∠DBC（两直线平行，内错角相等）。\n因为 BD 平分∠ABC，所以∠EBD=∠DBC。\n所以∠EDB=∠EBD，所以 BE=DE（等角对等边）。\n又 DE=5，所以 BE=5。",
+      "explanation": "第1步：由 DE∥BC 找出内错角∠EDB=∠DBC，得 3 分；把内错角说成同位角或同旁内角不得分。\n第2步：由 BD 平分∠ABC 得出∠EBD=∠DBC，得 2 分。\n第3步：通过等量代换得到∠EDB=∠EBD，得 2 分；缺少这一步直接写 BE=DE 会被扣分。\n第4步：由“等角对等边”得出 BE=DE=5，得 3 分。常见错误是误用“等边对等角”，或忽略平行线才能提供相等的角。",
+      "difficulty": 2,
+      "score": 10
+    }
+  ]
+}

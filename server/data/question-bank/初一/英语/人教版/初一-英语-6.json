@@ -1,0 +1,184 @@
+{
+  "grade": "初一",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初一-英语-6",
+    "name": "阅读策略与语篇理解"
+  },
+  "generatedAt": "2026-11-14T12:13:08.499Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwgd9n2l",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "阅读一篇英语短文前，先看标题、插图和第一段，猜测文章大致会讲什么。这种阅读策略主要是（ ）。",
+      "options": [
+        "预测（predicting）",
+        "扫读（scanning）",
+        "略读（skimming）",
+        "精读（intensive reading）"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：预测是读者利用标题、图片、首段等线索，在正式细读前对文章内容作出合理猜测，题干描述正符合这一策略。\nB. 错误：扫读是快速浏览全文以寻找姓名、时间、数字等特定信息，不是根据线索猜测文章大意。\nC. 错误：略读是快速通读文章、抓住首尾段和关键词以把握主旨，题干强调“读前猜测”，并非已通读全文。\nD. 错误：精读是逐句理解细节、推断词义和结构，速度较慢，与题干中“先看标题、插图和第一段”的读前活动不符。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwgd9n2l",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "阅读下面短文，选择最佳答案。\n\nClass Three has a \"Green Day\" every Friday. On that day, students walk or ride bikes to school. They bring lunch boxes from home and do not use plastic bags. At noon, they eat together in the classroom and put the rubbish in the right bins. Tom says, \"It is easy, and we feel great.\"\n\nWhat is the passage mainly about?",
+      "options": [
+        "Why students like Friday best.",
+        "What students do on Green Day.",
+        "How students go home after school.",
+        "Where students have lunch every day."
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：短文只提到周五是“Green Day”，Tom 的话也只表示感受，并没有说明学生为什么最喜欢周五，这不能概括全文。\nB. 正确：全文围绕“Green Day”展开，依次介绍步行或骑车上学、自带饭盒、不用塑料袋、在教室一起吃午饭和垃圾分类等具体做法，因此主旨是介绍学生在绿色日做什么。\nC. 错误：文中“walk or ride bikes to school”讲的是上学方式，没有涉及放学后如何回家；而且它只是文中的一个细节，不能作为主旨。\nD. 错误：文中确实提到中午在教室一起吃饭，但这只是绿色日的一项活动；另外，“every day”与原文“every Friday”矛盾，所以不能选。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-3-mwgd9n2l",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "阅读以下学校海报，选择最佳答案。\n\nBook Swap Day\nDo you have old books at home? Bring them to the school hall on Friday, June 14th, from 3:00 p.m. to 5:00 p.m. You can exchange them for other books. Remember: no textbooks or magazines. For more information, call Mary at 555-1234.\n\nWhat is the main purpose of this poster?",
+      "options": [
+        "To invite students to exchange books.",
+        "To sell new books to students.",
+        "To ask students to write a book report.",
+        "To introduce the school library."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：海报介绍了“Book Swap Day”，邀请学生带来旧书交换其他书，并给出时间、地点和注意事项，因此主要目的是邀请学生参与图书交换活动。\nB. 错误：海报说的是“exchange them for other books”，即用旧书交换其他书，并非卖书，也没有提到新书。\nC. 错误：海报没有提到写读书报告，只涉及图书交换。\nD. 错误：海报没有介绍图书馆，而是关于在学校大厅举办的换书活动。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-4-mwgd9n2l",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "阅读下面短文，然后回答问题。\nMany students believe that the faster they read, the better they understand. Mr Li, an English teacher, does not agree. Before reading, he asks his class to look at the title and the pictures for one minute and guess what the text is about. While reading, they stop at the end of each paragraph and write one sentence about its main idea. After reading, they close the book and retell the text to a partner. \"Slow readers who think while reading often do better than fast readers who only move their eyes,\" Mr Li says.\n\nLeo reads a passage very quickly and can remember every word of it, but when the teacher asks him about the main idea of Paragraph 2, he cannot answer. According to the passage, what should Leo do?",
+      "options": [
+        "Read more slowly and think about the main idea of each paragraph while reading.",
+        "Look at the title and the pictures only after he has finished the whole text.",
+        "Retell the text to a partner before he begins to read it.",
+        "Ask the teacher for the main idea instead of reading by himself."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：文中说 “While reading, they stop at the end of each paragraph and write one sentence about its main idea”，老师还说 “Slow readers who think while reading often do better than fast readers who only move their eyes”。Leo 读得快却只“动了眼睛”，没有边读边想段落主旨，因此应放慢速度、读中思考每段大意。\nB. 错误：原文中看标题和图片预测内容的时间是 “Before reading”（读前），该选项把这一步骤挪到读完全文之后，与原文时间顺序直接冲突。\nC. 错误：向同伴复述属于 “After reading”（读后）活动，选项中“读前复述”颠倒了读前、读后的步骤，属于顺序混淆。\nD. 错误：全文只建议学生自己写段落主旨句并向同伴复述，并未提出“遇到困难直接向老师要答案”，该选项属于无中生有。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-5-mwgd9n2l",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "阅读一篇英语短文时，先快速浏览全文，跳过个别细节，重点了解文章主要讲了什么。这种阅读方法主要属于哪一种阅读策略？",
+      "options": [
+        "略读（skimming）",
+        "查读（scanning）",
+        "预测（predicting）",
+        "猜测词义（guessing meaning）"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：略读是快速浏览全文、抓取文章主旨和大意的阅读策略，符合题干“跳过细节、了解文章主要讲了什么”。\nB. 错误：查读是带着具体问题快速寻找特定信息，如时间、地点、数字等，不是概括全文大意。\nC. 错误：预测是读前根据标题、图片或已有知识推测文章内容，题干强调的是阅读中快速浏览获取大意。\nD. 错误：猜测词义是根据上下文推断生词含义，题干没有涉及生词理解。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-6-mwgd9n2l",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "阅读下面短文，选择最佳答案。\n\nLucy is in the school reading club. Every Friday afternoon, she meets her friends in the library. They read stories together and talk about their favourite characters. Sometimes they act out a short part of a story. Lucy says the club helps her understand stories better and makes reading fun.\n\nWhat is the passage mainly about?",
+      "options": [
+        "Lucy's school reading club.",
+        "Lucy's favourite story character.",
+        "How to borrow books from the library.",
+        "Why Friday is Lucy's busiest day."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：短文围绕Lucy参加阅读俱乐部、每周五的活动内容以及她的感受展开，主旨是介绍她的阅读俱乐部。\nB. 错误：文中只提到同学们讨论最喜欢的角色，角色只是活动中的细节，不是全文中心。\nC. 错误：文中提到library，但没有介绍如何借书，不能概括全文。\nD. 错误：Friday只是俱乐部活动的时间，文中没有说这是Lucy最忙的一天。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-7-mwgd9n2l",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "阅读下面的通知，然后回答问题。\n\nNOTICE\nDear students,\nOur school will have a \"Reading Buddy Week\" from May 12 to May 16. Students in Grade 7 will read storybooks to the children in Grade 1 for 20 minutes every afternoon in the school library.\nBefore you read, please choose a book with big pictures and short sentences. When you read, speak slowly and show the pictures to the little kids. Stop and ask them simple questions, like \"What color is the cat?\"\nIf you want to join us, write your name on the board outside Room 203 before May 8.\n— Mr. Li, School Library\n\nWhich of the following students will most probably do a good job in Reading Buddy Week?",
+      "options": [
+        "Tom chooses a thick book with long stories and reads it to the kids very fast.",
+        "Amy chooses a picture book, reads slowly and stops to ask the kids easy questions.",
+        "Jack signs his name on May 10 and reads his science magazine to the kids.",
+        "Lily reads to the kids but never shows them the pictures in the book."
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：通知要求选“big pictures and short sentences”的书并“speak slowly”，Tom 选的是又厚又长故事的书且读得很快，与文中两条要求都冲突。\nB. 正确：Amy 的做法与通知中“choose a book with big pictures and short sentences”“speak slowly and show the pictures”“ask them simple questions”三处信息完全一致，因此最可能做好这件事。\nC. 错误：通知要求“write your name on the board outside Room 203 before May 8”，Jack 在 5 月 10 日才报名，已过截止日期；而且给一年级小朋友读科学杂志也不符合“storybook”的要求。\nD. 错误：通知明确说“show the pictures to the little kids”，Lily 从不展示图片，直接违背了文中的做法要求。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-8-mwgd9n2l",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "阅读短文，选择最佳答案。\nTom is a Grade 7 student. He gets up at 6:30 and rides to school. He has four classes in the morning. After lunch, he reads in the school library for twenty minutes. He goes home at 4:50 and helps his mother walk the dog. In the evening, he does his homework first and then reads for fun. He never plays computer games on school nights.\nWhich of the following is NOT true according to the passage?",
+      "options": [
+        "Tom rides to school after getting up.",
+        "Tom reads in the library after lunch.",
+        "Tom walks the dog before he goes home.",
+        "Tom doesn't play computer games on school nights."
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：原文说“He gets up at 6:30 and rides to school.”，说明他起床后骑车上学，该选项符合原文，因此不是 NOT true 的答案。\nB. 错误：原文说“After lunch, he reads in the school library for twenty minutes.”，说明午饭后他在图书馆阅读，该选项符合原文，因此不能选。\nC. 正确：原文说“He goes home at 4:50 and helps his mother walk the dog.”，说明他是回家后遛狗，而选项说“before he goes home”即回家前遛狗，与原文时间顺序矛盾，所以它是 NOT true 的正确选项。\nD. 错误：原文说“He never plays computer games on school nights.”，说明上学日的晚上他不玩电脑游戏，该选项符合原文，因此不能选。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-9-mwgd9n2l",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "阅读下面短文，回答问题。\n\nMany students underline every word when they read. This is not a good habit. Underlining too much makes important ideas hard to see. A better way is to mark only the key words and then write a one-sentence summary after each paragraph.\n\nWhat reading strategy does the passage mainly suggest?",
+      "options": [
+        "Copying the whole text into a notebook.",
+        "Marking only key words and writing a short summary.",
+        "Looking up every new word in a dictionary.",
+        "Reading as fast as possible without stopping."
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：短文反对把重点淹没在大量标记中，并没有建议抄写全文，抄写全文也不是提取主旨的有效策略。\nB. 正确：短文明确提出“mark only the key words”并“write a one-sentence summary after each paragraph”，这正是标记关键词和概括段意的阅读策略。\nC. 错误：短文没有提到查词典，且“每个生词都查”会打断阅读，与短文强调抓关键词和概括的主旨不符。\nD. 错误：短文强调筛选关键词和概括，并未主张一味追求速度而不停顿，快速阅读不能等同于理解语篇主旨。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-10-mwgd9n2l",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "阅读短文，选择最佳答案。\nEvery Friday, Class 3 has a 'Book Swap'. Students bring a book they do not need and put it in a box. Then they can take one book home. Lucy brings an old storybook and takes a science book. She says, 'I can read something new, and my old book can make someone else happy.'\nWhat is the main idea of the passage?",
+      "options": [
+        "Lucy buys a new science book every Friday.",
+        "Class 3 has a book swap and Lucy likes it.",
+        "Students must read all the books in the box.",
+        "Lucy's old storybook is lost at school."
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：文中说 Lucy takes a science book，并没有说她每周五都买一本新的科学书。\nB. 正确：短文介绍 Class 3 每周五的 Book Swap，并用 Lucy 的话说明她觉得这个活动很好。\nC. 错误：文中只说明学生可以带一本书回家，没有说必须读完盒子里的所有书。\nD. 错误：Lucy 把旧故事书放进盒子用于交换，不是丢在学校。",
+      "difficulty": 1
+    }
+  ]
+}

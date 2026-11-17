@@ -1,0 +1,109 @@
+{
+  "grade": "初二",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初二-英语-1",
+    "name": "一般过去时与过去进行时"
+  },
+  "generatedAt": "2026-11-14T13:20:00.000Z",
+  "source": "trae",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初二-英语-1-f1",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "过去进行时表示过去某一时刻或某一段时间正在进行的动作，其基本结构是 was/were + ______。",
+      "answer": "现在分词",
+      "acceptableAnswers": [
+        "现在分词",
+        "动词的现在分词",
+        "v-ing",
+        "-ing形式"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：答出“现在分词（v-ing）”即可得3分。\n2. 语法依据：过去进行时由“was/were + 动词的现在分词”构成，如 was reading、were playing，助动词和分词缺一不可。\n3. 失分点：只写“动词原形”或“过去式”不得分；还要注意主语为 I/he/she/it 时用 was，you/we/they 时用 were，写成“was/were + 过去式”属于结构错误。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-1-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用括号内所给动词的适当形式填空：While I ______ (read) in the library, my phone rang.",
+      "answer": "was reading",
+      "acceptableAnswers": [
+        "was reading"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 was reading，得3分。\n2. 语法依据：while 引导的时间状语从句强调“在过去某段时间里正在进行”，主句 rang 是一般过去时，从句应用过去进行时；主语 I 搭配 was。\n3. 失分点：只填 read 或 reading 均不得分；写成 were reading 属于主谓不一致，是本题最常见的错误。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-1-f3",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用括号内所给动词的适当形式填空：When the rainstorm came, the children ______ (play) football on the playground.",
+      "answer": "were playing",
+      "acceptableAnswers": [
+        "were playing"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 were playing，得3分。\n2. 语法依据：when 从句用一般过去时 came 表示突然发生的动作，主句表示当时正在进行的动作，用过去进行时；主语 the children 是复数，be 动词用 were。\n3. 失分点：填 played 只表示动作完成，无法体现“正在进行”的背景；填 was playing 则主谓不一致，不能得分。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-1-f4",
+      "type": "fill",
+      "dimension": "transfer",
+      "stem": "根据语境用括号内所给动词的适当形式填空：Last Saturday, I ______ (walk) home when I met an old friend. We stopped and talked for half an hour.",
+      "answer": "was walking",
+      "acceptableAnswers": [
+        "was walking"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 was walking，得3分。\n2. 语法依据：这里用过去进行时描述“过去某刻正在进行的背景动作”，met 是突然发生的动作，构成“was/were doing ... when did ...”的典型结构。\n3. 失分点：填 walked 会把“走路”和“遇见”并列成两个先后动作，丢失“正在走”的背景意味；本题不能只凭 last Saturday 就判定为一般过去时，要结合 when 的语义判断。",
+      "difficulty": 3,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-1-s1",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "改错并说明理由。下面每个句子有一处时态错误，请找出并改正，然后简要说明理由。\n(1) While I was doing my homework, my sister watched TV.\n(2) When the teacher came in, the students talked loudly.\n(3) Last night at eight, I read a book in my room.",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "(1) watched → was watching。理由：while 从句用过去进行时表示持续动作，主句也应表示同一时段正在进行的动作，故用过去进行时。\n(2) talked → were talking。理由：when 从句 came 表示突然发生的动作，主句表示当时正在进行的动作，用过去进行时；主语 the students 为复数，用 were。\n(3) read → was reading。理由：last night at eight 是过去某一具体时刻，强调当时正在进行，应用过去进行时。",
+      "explanation": "第1步：第(1)题改出 was watching，并说明 while 表示持续、主从句动作同时进行，得3分；只改错不说明理由扣1分。\n第2步：第(2)题改出 were talking 并注意主谓一致，得4分；写成 was talking 扣1分，只改错不说明理由再扣1分。\n第3步：第(3)题改出 was reading，并点明“过去某一具体时刻正在进行”，得3分；改成 have read 或 reads 不得分。\n常见失分点：只抄正确句子而不指出错误；把两种时态的区别笼统说成“时间不同”，没有落到“动作是否正在进行”这一核心区别上。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初二-英语-1-s2",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "用一般过去时和过去进行时写一段 50—60 词的短文，描述上周六晚上八点你家里每个人正在做什么，并交代一件随后发生的具体事情。要求至少使用 2 个过去进行时句子和 2 个一般过去时句子。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "示例：Last Saturday at eight, my family were all at home. I was doing my homework in my room, and my mother was cooking dinner in the kitchen. My father was reading a newspaper on the sofa. Suddenly, the lights went out. We stopped what we were doing and looked for a torch. A few minutes later, the lights came back and we all laughed.\n评分要点：①内容（4分）：写清至少两个家人的活动，并交代随后发生的一件事；②时态（3分）：过去进行时用于描述当时正在进行的动作，一般过去时用于突然发生或先后发生的动作；③语言（2分）：主谓一致、拼写和标点基本正确；④结构（1分）：使用 at eight、suddenly、a few minutes later 等衔接，词数符合要求。",
+      "explanation": "第1步（内容4分）：要写清“谁、在哪里、正在做什么”，至少两个人物，并另写一件随后发生的事，如突然停电、有人敲门；只罗列动作而没有随后事件，最多得2分。\n第2步（时态3分）：描述八点时正在进行的动作用 was/were + 现在分词，如 was cooking、were reading；描述突然发生或接连发生的动作用一般过去时，如 went out、stopped。两种时态各用够两句才可得满分，混用一处扣1分。\n第3步（语言2分）：注意主语与 be 动词一致，如 my mother was、my parents were；拼写错误较多酌扣1分。\n第4步（结构1分）：使用时间状语和衔接词使叙述连贯，词数在50—60之间；明显超出或不足扣1分。常见失分点：全篇只用过去进行时，没有推动情节的一般过去时；或全篇一般过去时，缺少背景动作。",
+      "difficulty": 3,
+      "score": 10
+    },
+    {
+      "id": "初二-英语-1-s3",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "情景写作：上周日下午，学校突然停电。请用英语写一段 60 词左右的短文，描述停电时你正在做什么、周围的人正在做什么，以及停电后你们做了什么。要求正确使用一般过去时和过去进行时。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "示例：Last Sunday afternoon, I was watching a film in the classroom when the lights suddenly went out. Some classmates were reading, and others were playing chess. At first we were surprised, but soon we calmed down. We opened the windows to let in some light and told jokes to each other. Half an hour later, the lights came back. It was an unforgettable afternoon.\n评分要点：①内容（4分）：停电时“我”的活动、周围人的活动、停电后的做法三点齐全；②时态（3分）：过去进行时写背景动作，一般过去时写突发和后续动作；③语言（2分）：句子结构、拼写、标点基本正确；④连贯与词数（1分）：衔接自然，60词左右。",
+      "explanation": "第1步（内容4分）：三个要点各约1分，写出“我”当时正在做的事、周围同学正在做的事、停电后大家的应对，内容完整再给1分；漏掉一个要点扣1—2分。\n第2步（时态3分）：停电瞬间用一般过去时 went out，之前正在进行的动作用 was/were doing，停电后的动作用一般过去时 opened、told、came back；若通篇只用一种时态，最多得1分。\n第3步（语言2分）：注意 when 引导的时间状语从句与主句的搭配，动词过去式拼写正确；错误较多酌扣1分。\n第4步（连贯与词数1分）：使用 at first、soon、half an hour later 等衔接词，词数约60；字数严重不足或句子堆砌扣1分。常见失分点：把“停电”写成 is going out，时态与情景不符。",
+      "difficulty": 2,
+      "score": 10
+    }
+  ]
+}

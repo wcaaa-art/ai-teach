@@ -1,0 +1,114 @@
+{
+  "grade": "初三",
+  "subject": "数学",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初三-数学-5",
+    "name": "相似三角形"
+  },
+  "generatedAt": "2026-11-14T02:18:00.000Z",
+  "source": "trae",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初三-数学-5-f1",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "若 △ABC ∽ △DEF，相似比为 2:3，则它们的面积比为______。",
+      "answer": "4:9",
+      "acceptableAnswers": [
+        "4:9",
+        "4∶9",
+        "4比9"
+      ],
+      "referenceAnswer": "",
+      "explanation": "相似三角形的面积比等于相似比的平方。已知相似比为 2:3，所以面积比为 2²:3²=4:9。这一结论来源于相似三角形对应高也按相似比缩放，底与高各乘一次相似比，面积就乘相似比的平方。易错点是直接写成 2:3，把面积比与周长比、对应边比混为一谈。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初三-数学-5-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "在 △ABC 中，点 D、E 分别在边 AB、AC 上，且 DE ∥ BC。若 AD:DB=1:2，则 AE:EC=______。",
+      "answer": "1:2",
+      "acceptableAnswers": [
+        "1:2",
+        "1∶2",
+        "1比2"
+      ],
+      "referenceAnswer": "",
+      "explanation": "由平行线分线段成比例的基本事实，DE∥BC 时，△ADE∽△ABC，于是 AD:AB=AE:AC，变形可得 AD:DB=AE:EC。已知 AD:DB=1:2，所以 AE:EC=1:2。也可以直接使用“平行于三角形一边的直线截其他两边，所得对应线段成比例”。易错点是把 AD:DB 当成 AD:AB，错误地得出 AE:AC=1:2 后再写成 AE:EC=1:1。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初三-数学-5-f3",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "两个相似三角形的周长比等于它们的______。",
+      "answer": "相似比",
+      "acceptableAnswers": [
+        "相似比",
+        "对应边之比",
+        "对应边的比"
+      ],
+      "referenceAnswer": "",
+      "explanation": "相似三角形对应边成比例，设相似比为 k，则三组对应边都是原来的 k 倍，三边之和即周长也是原来的 k 倍，所以周长比等于相似比。与面积比等于相似比的平方要区分开。易错点是答成“相似比的平方”，把周长比与面积比的结论混淆，或答成“对应角相等”，那不是比值关系。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初三-数学-5-f4",
+      "type": "fill",
+      "dimension": "transfer",
+      "stem": "同一时刻，身高 1.6 m 的小明在阳光下的影长为 2 m，旁边旗杆的影长为 15 m，则旗杆的高度为______m。",
+      "answer": "12",
+      "acceptableAnswers": [
+        "12",
+        "12m",
+        "12 m"
+      ],
+      "referenceAnswer": "",
+      "explanation": "同一时刻、同一地点，阳光可视为平行光线，人与旗杆都垂直于地面，因此人与影、旗杆与影分别构成两个直角三角形，且对应角相等，两个三角形相似。设旗杆高为 h m，由相似三角形对应边成比例得 h:15=1.6:2，解得 h=15×1.6÷2=12。易错点是把比例式列成 h:1.6=15:2，导致结果错误；或忘记统一单位。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初三-数学-5-s1",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "在 △ABC 中，点 D、E 分别在边 AB、AC 上，DE ∥ BC，AD=2，DB=3，DE=4。求 BC 的长。（10分）",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "因为 DE∥BC，所以 △ADE∽△ABC。由相似三角形对应边成比例得 DE:BC=AD:AB。又 AB=AD+DB=2+3=5，所以 4:BC=2:5，即 2BC=20，解得 BC=10。答：BC 的长为 10。",
+      "explanation": "第一步由 DE∥BC 判定 △ADE∽△ABC，占 2 分，未写判定依据扣 1 分；第二步写出对应边成比例 DE:BC=AD:AB，占 3 分，对应关系写错不得分；第三步求出 AB=5，占 2 分，漏加 DB 而误用 AB=2 扣 2 分；第四步代入数据解比例式，占 2 分；第五步得出 BC=10 并作答，占 1 分。常见错误是把 AD:DB 当作 AD:AB，或把相似比的反比代入。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初三-数学-5-s2",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "在 △ABC 中，点 D 在边 AB 上，且 ∠ACD=∠B，AD=2，AB=8。求证 △ACD ∽ △ABC，并求 AC 的长。（10分）",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "证明：在 △ACD 与 △ABC 中，∠A 是公共角，即 ∠CAD=∠BAC，又已知 ∠ACD=∠B，所以 △ACD∽△ABC（两角分别相等的两个三角形相似）。由相似三角形对应边成比例得 AC:AB=AD:AC，即 AC²=AD·AB=2×8=16。因为 AC 是线段长度，取正值，所以 AC=4。答：AC 的长为 4。",
+      "explanation": "第一步指出 ∠A 为公共角，占 2 分；第二步结合已知 ∠ACD=∠B，用“两角分别相等”判定相似，占 3 分，判定定理名称或对应角写错扣 1 分；第三步由相似写出比例式 AC:AB=AD:AC，占 3 分，对应边找错不得分；第四步转化为 AC²=AD·AB 并代入计算，占 1 分；第五步取正值得 AC=4，占 1 分，写成 ±4 未舍负扣 1 分。常见错误是把比例式写成 AC:AB=AD:BC，导致无法求出 AC。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初三-数学-5-s3",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "为测量河宽 AB，在河岸一侧取点 A，对岸取点 B，使 AB 垂直于河岸。沿岸边取点 C，使 AC=12 m，在 AC 上取点 D，使 CD=3 m，过点 D 作 DE⊥AC，交 BC 于点 E，测得 DE=4 m。求河宽 AB。（10分）",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "因为 AB⊥AC，DE⊥AC，所以 AB∥DE，于是 △CDE∽△CAB。由相似三角形对应边成比例得 DE:AB=CD:CA。已知 DE=4，CD=3，CA=12，代入得 4:AB=3:12，即 3AB=48，解得 AB=16。答：河宽 AB 为 16 m。",
+      "explanation": "第一步由 AB⊥AC、DE⊥AC 得出 AB∥DE，占 2 分；第二步判定 △CDE∽△CAB，占 2 分，对应顶点写错扣 1 分；第三步写出比例式 DE:AB=CD:CA，占 3 分，把 CD 误用成 AD 不得分；第四步代入数据 4:AB=3:12 并解方程，占 2 分；第五步得出 AB=16 m 并作答，占 1 分。常见错误是误以为 CD:DA=DE:AB，或忽略 DE 与 AB 的平行关系而无法建立相似。",
+      "difficulty": 3,
+      "score": 10
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "grade": "初三",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初三-英语-1",
+    "name": "宾语从句与定语从句"
+  },
+  "generatedAt": "2026-11-14T14:00:00.000Z",
+  "source": "trae",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初三-英语-1-f1",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "宾语从句无论主句是陈述句还是疑问句，从句一律使用______语序，即“主语+谓语”的顺序。",
+      "answer": "陈述句",
+      "acceptableAnswers": [
+        "陈述句",
+        "陈述",
+        "陈述句语序"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：答出“陈述句（陈述语序）”得3分。\n2. 语法依据：疑问句转化为宾语从句时，必须把助动词、be动词或情态动词放回主语之后，恢复“主语+谓语”的顺序，如 Could you tell me where he lives? 不能说 where does he live。\n3. 易错点：受主句疑问语气影响，从句仍保留 do/does/did 或把助动词提前，是本题最常见的错误；主句为 Could you... 时，从句同样不能用疑问语序。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-1-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用适当的连接词填空：—Could you tell me ______ we will have a school trip next week? —Yes, we will. I'm sure of it.",
+      "answer": "whether",
+      "acceptableAnswers": [
+        "whether",
+        "if"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 whether 或 if 得3分。\n2. 语法依据：原句是一般疑问句 Will we have a school trip...? 变为宾语从句后，用 whether/if 引导，表示“是否”，从句用陈述语序 we will have。\n3. 易错点：填 that 会丢掉“是否”的含义；填 what 则与句意不符。另外，从句后面直接跟 or not 或在介词之后时，只能用 whether，不能用 if。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-1-f3",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用适当的关系代词填空：This is the science museum ______ we visited last month.",
+      "answer": "that",
+      "acceptableAnswers": [
+        "that",
+        "which"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 that 或 which 得3分。\n2. 语法依据：先行词 the science museum 指物，定语从句 we visited 中缺少宾语，因此用关系代词 that/which 充当 visited 的宾语，作宾语时也可以省略。\n3. 易错点：看到先行词是地点就填 where，是本题最常见的错误；where 在从句中作地点状语，而本句从句缺的是宾语，visited 后必须有一个宾语。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-1-f4",
+      "type": "fill",
+      "dimension": "transfer",
+      "stem": "用适当的关系代词填空：The boy ______ father is a doctor sits next to me.",
+      "answer": "whose",
+      "acceptableAnswers": [
+        "whose"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 whose 得3分。\n2. 语法依据：先行词 the boy 与 father 之间是所属关系，即“男孩的父亲”，定语从句中需要用 whose 作定语修饰 father，whose father 相当于 the father of whom。\n3. 易错点：填 who's 是读音相同但并非关系代词；填 who 或 that 不能直接修饰名词 father；填 which 则把指人的先行词当成物，均不得分。",
+      "difficulty": 3,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-1-s1",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "将下列直接引语改为含宾语从句的复合句，并说明时态和状语的变化。\n（1）He said, “I am busy now.”\n（2）She asked, “Will you come tomorrow?”\n（3）The teacher told us, “The earth moves around the sun.”\n（4）Tom asked me, “Where did you buy the book?”",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）He said (that) he was busy then.\n（2）She asked whether/if I would come the next day.\n（3）The teacher told us (that) the earth moves around the sun.\n（4）Tom asked me where I had bought the book.\n变化说明：主句为一般过去时，从句时态原则上向过去推一步，am→was，will→would，did→had done；时间状语 now→then，tomorrow→the next day；从句表示客观真理时仍用一般现在时；疑问句变来的从句一律用陈述语序，不再保留助动词 did。",
+      "explanation": "第1步：每小题2分，其中连接词与语序1分，时态与状语1分。第（1）题须去掉引号并用 that 引导，am 变 was，now 变 then。第（2）题用 whether/if 引导，语序改为 I would come，tomorrow 变 the next day。第（3）题虽主句为过去时，但地球绕太阳转是客观真理，从句仍用 moves。第（4）题用 where 引导，did you buy 改为 I had bought，体现“过去的过去”。\n第2步：变化说明2分，须写出“时态向过去推一步”“时间状语相应变化”“真理不变时态”三点中的两点以上。\n常见错误：只改时态不改语序；把 whether 写成 that；第（4）题仍保留 did。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初三-英语-1-s2",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "用适当的关系词填空，并说明第（1）（2）两题选择该关系词的理由。\n（1）I'll never forget the day ______ I joined the army.\n（2）This is the village ______ my grandparents live.\n（3）Do you know the woman ______ is talking with our head teacher?\n（4）Please tell me the reason ______ you were late.\n（5）The book is very interesting. I borrowed it from the library yesterday.（用定语从句合并为一句）",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）when。理由：先行词 the day 指时间，从句 I joined the army 主谓宾完整，只缺时间状语，故用关系副词 when，相当于 on which。\n（2）where。理由：先行词 the village 指地点，从句 my grandparents live 不缺主语和宾语，缺地点状语，故用关系副词 where，相当于 in which。\n（3）who/that。先行词 the woman 指人，从句缺主语。\n（4）why。先行词 the reason，从句缺原因状语，why 相当于 for which。\n（5）The book (that/which) I borrowed from the library yesterday is very interesting.",
+      "explanation": "第1步：第（1）（2）题各2分，关系词1分，理由1分；理由必须指出“先行词指时间/地点”且“从句不缺主语宾语、只缺状语”，只写“固定搭配”不得分。\n第2步：第（3）题2分，who 或 that 均可，从句缺主语，不能用 where。第（4）题2分，why 引导原因状语，易误填 that 或 because。\n第3步：第（5）题2分，须把 The book 提前作先行词，从句用 that/which 作 borrowed 的宾语，主句谓语仍为 is；写成 The book which I borrowed it... 多出宾语 it，扣1分。\n常见错误：把关系代词与关系副词混用，只看先行词词性而不分析从句成分。",
+      "difficulty": 3,
+      "score": 10
+    },
+    {
+      "id": "初三-英语-1-s3",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "下面一段文字中有5处从句使用错误，请找出并改正，并简要说明理由。\nMy cousin is a boy who he likes playing basketball. Last Sunday we went to the park where is near our home. He told me that he will join the school team next term. I asked him when would the team start training. He said he didn't know if the coach had chosen him or not, but he was sure that he could do well.",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）who he likes → who likes：定语从句中 who 已作主语，不能再保留主语 he。\n（2）where is near our home → which/that is near our home：从句缺主语，先行词 the park 指物，应用关系代词；where 只能作状语。\n（3）he will join → he would join：主句 told 为过去时，宾语从句时态要向过去推一步。\n（4）when would the team start → when the team would start：宾语从句必须用陈述语序。\n（5）if the coach had chosen him or not → whether the coach had chosen him or not：与 or not 直接连用时只能用 whether。",
+      "explanation": "第1步：每找出一处并改对得1.5分，共7.5分；理由说明共2.5分，每点0.5分，合计10分。\n第2步：判断错误时要先分析从句成分。第（1）题 who 作主语后重复主语 he，属成分重复；第（2）题从句缺主语而非缺状语，所以不能用 where。\n第3步：宾语从句两条铁律是“陈述语序”和“时态呼应”，第（3）（4）题分别对应这两条。第（5）题考 whether 与 if 的区别，or not 紧跟时只能用 whether。\n常见错误：只改单词不说明理由；把第（2）题改成 where it is near our home，仍保留了错误的关系副词。",
+      "difficulty": 3,
+      "score": 10
+    }
+  ]
+}

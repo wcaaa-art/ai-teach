@@ -1,0 +1,107 @@
+{
+  "grade": "初一",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初一-英语-1",
+    "name": "日常交际与自我介绍"
+  },
+  "generatedAt": "2026-11-14T12:23:41.545Z",
+  "source": "deepseek",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初一-英语-1-f1",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "—What's your name?\n—______ name is Peter.",
+      "answer": "My",
+      "acceptableAnswers": [
+        "My",
+        "my"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 问句 What's your name? 询问对方姓名，答语应说明“我的名字是……”。\n2. name 前需要形容词性物主代词修饰，说话人指自己，因此用 My。\n3. 句首单词首字母需大写，故填 My；小写 my 在句首不规范但可作为可接受写法。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-英语-1-s1",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "假设你是李华，要在英语角用英语介绍自己。请根据下面的信息卡，写一段自我介绍。\n信息卡：Name: Li Hua；Age: 13；Class: Class 3, Grade 7；Hobbies: reading and playing basketball；Favourite subject: English；Friend: Tom；Dream: to be a teacher。\n要求：1. 包含信息卡中的全部信息；2. 不少于50词；3. 开头已给出，不计入总词数。\nHello, everyone!",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "Hello, everyone! My name is Li Hua. I am 13 years old. I am in Class 3, Grade 7. I like reading and playing basketball. My favourite subject is English. Tom is my friend. My dream is to be a teacher. I hope we can be friends. Thank you!（参考答案不唯一，包含全部信息、语句通顺、不少于50词即可）",
+      "explanation": "1. 内容要点：必须写出姓名 Li Hua、年龄 13、班级 Class 3, Grade 7、爱好 reading and playing basketball、最喜欢的科目 English、朋友 Tom、梦想 to be a teacher，缺一个信息点扣1分。\n2. 语言表达：人称用第一人称，时态以一般现在时为主；句子结构完整，如 My name is... / I am... / My favourite subject is...，语法或拼写错误酌情扣分。\n3. 连贯与字数：句子之间可使用 and、but 等简单连接，开头已给出，正文不少于50词；字数明显不足扣1分。\n4. 常见错误：把 I am 13 years old 写成 I have 13 years old；把 favourite 拼错；漏写班级或梦想；全篇只罗列单词不成句。",
+      "difficulty": 1,
+      "score": 10
+    },
+    {
+      "id": "初一-英语-1-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "补全对话，每空一词。\n—Hi! I'm Wang Lin. What's your ______?\n—My name is Mike.",
+      "answer": "name",
+      "acceptableAnswers": [
+        "name"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 由答语 My name is Mike. 可知问句在询问对方姓名，故填 name。\n2. What's your name? 是初次见面时询问姓名的固定表达，符合自我介绍与日常交际语境。\n3. 常见错误：误填 names 或 name's；此处 your 后应接名词单数 name。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-英语-1-s2",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "假设你是王明，13岁，在七年级三班学习，喜欢打篮球和读书。请用英语写一段自我介绍，向新同学问候并介绍自己的姓名、年龄、班级和爱好，最后表达想和大家交朋友的愿望。要求不少于5个完整句子。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "Hello, everyone! My name is Wang Ming. I am thirteen years old. I am in Class Three, Grade Seven. I like playing basketball and reading. I want to make friends with you. Nice to meet you!",
+      "explanation": "评分要点：\n1. 问候与姓名：写出 Hello, everyone! 和 My name is Wang Ming.，得2分；缺少问候或姓名各扣1分。\n2. 年龄与班级：写出 I am thirteen years old. 和 I am in Class Three, Grade Seven.，得3分；班级顺序或年龄表达错误酌情扣分。\n3. 爱好：写出 I like playing basketball and reading.，得2分；like 后动词形式错误扣1分。\n4. 交友愿望与结束语：写出 I want to make friends with you. 和 Nice to meet you!，得2分；句子不完整或未表达交友愿望扣1分。\n5. 语言规范：句子数量不少于5句、拼写和标点基本正确，得1分；句数不足或影响理解酌情扣分。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初一-英语-1-f3",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "—Hello! My name ___ Li Hua. —Nice to meet you!",
+      "answer": "is",
+      "acceptableAnswers": [
+        "is"
+      ],
+      "referenceAnswer": "",
+      "explanation": "主语 My name 表示“我的名字”，是第三人称单数。\nbe 动词要与主语一致，第三人称单数用 is。\n常见错误是受 I 影响误填 am，或对复数主语误用 are，本题应填 is。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-英语-1-s3",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "请根据以下情境写一段英语自我介绍，不少于5句、不超过8句（约40—60词）。情境：新学期第一天，你在班上向老师和同学介绍自己。内容必须包括：问候、姓名、年龄、所在班级、一个爱好，以及表达希望与大家成为朋友。不要出现真实姓名和学校名。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "Good morning, everyone! My name is Li Hua. I am twelve years old. I am in Class 1, Grade 7. I like playing basketball and reading books. I hope we can be good friends. Thank you!",
+      "explanation": "1. 内容要点齐全（6分）：问候1分，姓名1分，年龄1分，班级1分，爱好1分，希望成为朋友1分。\n2. 语言准确（2分）：一般现在时、I am / My name is / I like 等表达基本正确；每处严重错误扣0.5分，扣完为止。\n3. 语篇与得体（2分）：词数约40—60且不少于5句，顺序合理、交际礼貌各1分；明显超词或不足酌情扣1分。\n4. 常见失分：遗漏班级或爱好；自我介绍误用 He/She；缺少问候或结束语。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初一-英语-1-f4",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用括号内动词的适当形式填空：Hello, everyone. I ______ (be) Li Mei and I'm from Beijing.",
+      "answer": "am",
+      "acceptableAnswers": [
+        "am"
+      ],
+      "referenceAnswer": "",
+      "explanation": "I 作主语，be 动词用 am。\n句子是自我介绍，时态为一般现在时，不能用 is 或 are。\n常见错误：受 Li Mei 影响误用 is，或忽略主语 I 误用 are。",
+      "difficulty": 1,
+      "score": 3
+    }
+  ]
+}

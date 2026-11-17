@@ -1,0 +1,108 @@
+{
+  "grade": "初三",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初三-英语-2",
+    "name": "被动语态综合"
+  },
+  "generatedAt": "2026-11-14T14:05:00.000Z",
+  "source": "trae",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初三-英语-2-f1",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "被动语态的基本结构是“be + ______”，其中 be 动词的形式由时态和主语的人称、数决定。",
+      "answer": "过去分词",
+      "acceptableAnswers": [
+        "过去分词",
+        "动词的过去分词",
+        "past participle"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：答出“过去分词”得3分。\n2. 语法依据：被动语态由“be + 动词的过去分词”构成，be 负责体现时态和人称，过去分词负责体现“被动、完成”的意义，如 is cleaned、was built、has been sold。\n3. 易错点：填“现在分词”会构成进行时或主动意义；填“过去式”则把 be 与实义动词的过去式并列，结构错误；还要注意 write→written、build→built 等不规则动词的过去分词形式。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-2-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用括号内所给动词的适当形式填空：Our classroom ______ (clean) twice a day.",
+      "answer": "is cleaned",
+      "acceptableAnswers": [
+        "is cleaned"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 is cleaned 得3分。\n2. 语法依据：主语 our classroom 是动作 clean 的承受者，二者是被动关系；twice a day 表示经常性动作，用一般现在时，主语为单数，故用 is + cleaned。\n3. 易错点：填 cleans 是主动语态，主语成了“打扫”的执行者，与句意不符；填 are cleaned 主谓不一致；填 is cleaning 则变成现在进行时，也不能表示习惯性动作。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-2-f3",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用括号内所给动词的适当形式填空：A new library ______ (build) in our town last year.",
+      "answer": "was built",
+      "acceptableAnswers": [
+        "was built"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 was built 得3分。\n2. 语法依据：时间状语 last year 表示一般过去时；主语 a new library 是 build 的承受者，用一般过去时的被动语态 was/were + 过去分词，主语为单数，故用 was built。\n3. 易错点：填 built 是主动语态，图书馆不能自己“建造”；填 is built 时态与 last year 矛盾；写成 was build 则没有使用过去分词，是最常见的结构错误。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-2-f4",
+      "type": "fill",
+      "dimension": "transfer",
+      "stem": "用括号内所给动词的适当形式填空：These problems must ______ (solve) before the meeting begins.",
+      "answer": "be solved",
+      "acceptableAnswers": [
+        "be solved"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 be solved 得3分。\n2. 语法依据：情态动词 must 后接动词原形，problems 与 solve 是被动关系，因此用“情态动词 + be + 过去分词”结构，即 must be solved。\n3. 易错点：填 solved 漏掉 be，情态动词后直接跟过去分词不成立；填 must been solved 或 must being solved 都属于结构混乱；填 to solve 则违背情态动词后接原形的规则。",
+      "difficulty": 3,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-2-s1",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "将下列主动句改为被动句。\n（1）People speak English in many countries.\n（2）They built the bridge in 1998.\n（3）Someone has taken away my dictionary.\n（4）We will hold a sports meeting next week.",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）English is spoken in many countries.\n（2）The bridge was built in 1998.\n（3）My dictionary has been taken away.\n（4）A sports meeting will be held next week.",
+      "explanation": "第1步：每小题2分，共8分。改写的固定步骤是：把原句宾语提到句首作主语，把谓语动词变为“be + 过去分词”，be 的时态与原句一致，原主语用 by 引出时可省略。\n第2步：第（1）题原句为一般现在时，主语 English 不可数，用 is spoken；第（2）题原句为一般过去时，用 was built，注意 build 的过去分词是 built。第（3）题原句为现在完成时，被动结构为 has been taken away，不能漏掉 been。第（4）题原句为一般将来时，用 will be held。\n第3步：步骤说明2分，须答出“宾语提前、be+过去分词、时态不变”三点。\n常见错误：第（3）题写成 has taken away 或 has being taken；第（4）题写成 will held。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初三-英语-2-s2",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "用被动语态翻译下列句子。\n（1）这座桥是十年前建的。\n（2）每天都有许多树被种下。\n（3）会议已经被推迟了。\n（4）这个问题正在被讨论。\n（5）孩子们应该被允许有自己的爱好。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）This bridge was built ten years ago.\n（2）Many trees are planted every day.\n（3）The meeting has been put off.\n（4）The problem is being discussed.\n（5）Children should be allowed to have their own hobbies.",
+      "explanation": "第1步：每小题2分，共10分，每句须同时满足“被动结构正确”和“时态正确”两个要求。\n第2步：第（1）题 ten years ago 对应一般过去时被动 was built。第（2）题 every day 对应一般现在时被动 are planted，主语 many trees 为复数。第（3）题“已经”对应现在完成时被动 has been put off，put off 的过去分词仍是 put。第（4）题“正在”对应现在进行时被动 is being discussed，being 不可漏。第（5）题情态动词被动为 should be allowed to do。\n第3步：若只写主动句或只译出词汇而结构错误，该小题不得分；时态错误扣1分。\n常见错误：第（4）题写成 is discussing 或 is been discussed；第（5）题漏掉 to，写成 be allowed have。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初三-英语-2-s3",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "下面短文中有5处被动语态使用错误，请找出并改正，并简要说明理由。\nThe accident was happened near the school gate last night. Luckily, no one was hurt. A boy was took to hospital, but he is fine now. The reason is still being find out. The school has been told that students must be careful when crossing the road. More traffic lights will are put up soon. In my opinion, the road should widen next year.",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）was happened → happened：happen 是不及物动词，没有被动语态，直接用过去式。\n（2）was took → was taken：被动语态应为“be + 过去分词”，take 的过去分词是 taken。\n（3）is still being find out → is still being found out：现在进行时被动为“is/are being + 过去分词”。\n（4）will are put up → will be put up：will 后不能再用 are，一般将来时被动为“will be + 过去分词”。\n（5）should widen → should be widened：road 与 widen 是被动关系，情态动词后应用“be + 过去分词”。\n说明：“no one was hurt”和“has been told”都是正确的被动结构，不能误改。本题共5处被动错误，每处改正1.5分、理由0.5分，共10分。",
+      "explanation": "第1步：先判断谓语与主语是主动还是被动关系，再检查 be 动词与过去分词是否齐全。第（1）题是最典型的错误，happen、take place、rise 等不及物动词或短语没有被动语态，直接用过去式 happened。\n第2步：第（2）题考查不规则动词，take-took-taken，被动中必须用 taken。第（3）题考查进行时被动，结构是 be being done，两个形式缺一不可。第（4）题 will 后应接动词原形 be，构成 will be put up。第（5）题考查情态动词被动，should be widened。\n第3步：文中“no one was hurt”“has been told”都是正确的被动结构，不能误改，能识别正确项也是本题的能力点。\n常见错误：把 was happened 改成 was happening，时态对了但被动错误依旧；把 being find 改成 being found 却漏掉 is；把 will are put up 改成 will put up，仍旧是主动语态。",
+      "difficulty": 3,
+      "score": 10
+    }
+  ]
+}

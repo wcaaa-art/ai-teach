@@ -1,0 +1,184 @@
+{
+  "grade": "初一",
+  "subject": "数学",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初一-数学-4",
+    "name": "几何图形初步"
+  },
+  "generatedAt": "2026-11-13T02:42:51.844Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwedgaep",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列说法正确的是（ ）",
+      "options": [
+        "射线AB与射线BA是同一条射线",
+        "直线AB与直线BA是同一条直线",
+        "线段AB与线段BA不是同一条线段",
+        "经过一点只能画一条直线"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：射线AB的端点是A，射线BA的端点是B，二者端点不同、方向也不同，不是同一条射线。\nB. 正确：直线由两点确定，直线AB与直线BA表示经过A、B两点的同一条直线，字母顺序不影响直线的表示。\nC. 错误：线段AB与线段BA的端点相同、长度相同，表示的是同一条线段。\nD. 错误：经过一点可以画无数条直线，只有经过两点才能确定一条直线。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwedgaep",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "点 C 在线段 AB 上，且 C 是 AB 的中点，D 是 CB 的中点。若 AB = 12 cm，则 AD 的长为（ ）",
+      "options": [
+        "6 cm",
+        "9 cm",
+        "10 cm",
+        "12 cm"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：6 cm 是 AC 或 CB 的长，不是 AD 的长；由 C 是 AB 的中点可得 AC = CB = 6 cm，但 AD 还要加上 CD。\nB. 正确：因为 C 是 AB 的中点，所以 AC = CB = \\frac{12}{2} = 6 cm；又因为 D 是 CB 的中点，所以 CD = \\frac{6}{2} = 3 cm；因此 AD = AC + CD = 6 + 3 = 9 cm。\nC. 错误：10 cm 与线段中点的等分关系矛盾，按题意计算应为 9 cm。\nD. 错误：12 cm 是整条线段 AB 的长，而 AD 只是 AB 的一部分，应小于 12 cm。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-3-mwedgaep",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "用一个平面去截一个正方体，所得截面不可能是（　　）",
+      "options": [
+        "三角形",
+        "五边形",
+        "六边形",
+        "七边形"
+      ],
+      "correctIndex": 3,
+      "explanation": "A. 可能：例如平面截去正方体的一个角时，截面与三个面相交，可得三角形，因此不是“不可能”。\nB. 可能：平面依次与正方体的五个面相交时，可得五边形截面，因此不是“不可能”。\nC. 可能：当平面与正方体的六个面都相交时，可得六边形截面，因此不是“不可能”。\nD. 不可能：截面的每一条边都来自平面与正方体一个面的交线，而正方体最多只有6个面，所以截面最多为六边形，不能是七边形；故选D。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-4-mwedgaep",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "下列关于直线、射线和线段的说法中，正确的是（ ）",
+      "options": [
+        "射线AB和射线BA是同一条射线",
+        "直线AB和直线BA是同一条直线",
+        "线段AB和线段BA不是同一条线段",
+        "经过两点只能画一条射线"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：射线AB的端点是A，经过点B；射线BA的端点是B，经过点A，二者端点不同，方向也不同，不是同一条射线。\nB. 正确：直线没有端点，经过A、B两点的直线只有一条，因此直线AB与直线BA表示同一条直线。\nC. 错误：线段的两个端点确定后，线段AB与线段BA的端点和长度都相同，表示同一条线段。\nD. 错误：经过两点可以确定一条直线，但以其中一点为端点并经过另一点的射线有两条，即射线AB和射线BA，所以不是只能画一条射线。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-5-mwedgaep",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "将直角三角形绕它的一条直角边所在直线旋转一周，得到的几何体是（ ）",
+      "options": [
+        "圆柱",
+        "圆锥",
+        "球",
+        "棱柱"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：矩形绕它的一边所在直线旋转一周，得到的几何体是圆柱，不是由直角三角形旋转得到的。\nB. 正确：直角三角形绕它的一条直角边所在直线旋转一周，另一条直角边扫过的部分形成圆锥的侧面，斜边形成圆锥的母线，因此得到圆锥。\nC. 错误：球可以由半圆绕它的直径所在直线旋转一周得到，不是由直角三角形绕直角边旋转得到的。\nD. 错误：棱柱的表面由平面多边形围成，通常不是由平面图形旋转一周形成的。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-6-mwedgaep",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知点 C 在线段 AB 上，AB=10 cm，AC=4 cm，点 D 是线段 BC 的中点，则线段 CD 的长为（ ）",
+      "options": [
+        "2 cm",
+        "3 cm",
+        "4 cm",
+        "6 cm"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：2 cm 是把 BC 的一半再取一半得到的，不符合 CD 是 BC 中点所对应的长度。\nB. 正确：因为点 C 在线段 AB 上，所以 BC=AB-AC=10-4=6 cm；又 D 是 BC 的中点，所以 CD=\\frac{1}{2}BC=\\frac{1}{2}\\times 6=3 cm。\nC. 错误：4 cm 等于 AC 的长，不是 BC 的一半。\nD. 错误：6 cm 是 BC 的长，没有取中点，CD 应为 BC 的一半。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-7-mwedgaep",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "从同一观测点 O 测得目标 A 在北偏东 60° 方向，目标 B 在南偏西 30° 方向。若 OA 与 OB 是两条射线，则 ∠AOB（小于平角）的度数是（ ）",
+      "options": [
+        "30°",
+        "90°",
+        "150°",
+        "210°"
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：30°是把“南偏西 30°”误当成与“北偏东 60°”近似反向的“南偏西 60°”后比较得到的差值，实际两条射线的夹角不是 30°。\nB. 错误：90°没有依据；北偏东 60°方向与正北方向夹角为 60°，南偏西 30°方向与正南方向夹角为 30°，两射线所成角应为 150°，不是 90°。\nC. 正确：北偏东 60°对应从正北顺时针转 60°，南偏西 30°对应从正北顺时针转 180°+30°=210°；两方向角的差为 210°-60°=150°，且 150°小于平角，所以 ∠AOB=150°。\nD. 错误：210°是从北偏东 60°方向顺时针转到南偏西 30°方向的转角，大于平角，不符合题中“∠AOB 小于平角”的要求。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-8-mwedgaep",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "下列说法中，正确的是（ ）",
+      "options": [
+        "射线AB与射线BA表示同一条射线",
+        "直线AB与直线BA表示同一条直线",
+        "若AC=BC，则点C是线段AB的中点",
+        "两点之间的线段叫做两点之间的距离"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：射线AB的端点是A，射线BA的端点是B，两条射线的端点和延伸方向都不同，不是同一条射线。\nB. 正确：直线由两点确定，直线AB与直线BA经过相同的两个点，因此表示同一条直线。\nC. 错误：AC=BC只说明点C到A、B两点的距离相等；若点C不在线段AB上，例如在线段AB的垂直平分线上，则点C不是线段AB的中点。\nD. 错误：两点之间线段的长度才叫做两点之间的距离，线段本身不是距离。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-9-mwedgaep",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "汽车雨刷在挡风玻璃上左右摆动，雨刷扫过的区域形成一个扇形面。这一现象最能说明的数学事实是（ ）",
+      "options": [
+        "点动成线",
+        "线动成面",
+        "面动成体",
+        "面与面相交成线"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：点动成线描述的是一个点运动后形成线，而雨刷本身不是点，扫过区域也不是线。\nB. 正确：雨刷可以看作一条线段，它绕固定点摆动时，这条线段运动扫过的区域形成一个面，体现“线动成面”。\nC. 错误：面动成体描述的是平面图形运动后形成立体图形，雨刷扫过的是挡风玻璃上的平面区域，不是立体。\nD. 错误：面与面相交成线描述的是两个面相交产生交线，与雨刷摆动扫出扇形面的现象不符。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-1-mwedgeo3",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "关于五棱柱的顶点数、棱数和面数，下列判断正确的是（ ）",
+      "options": [
+        "五棱柱有5个面",
+        "五棱柱有10条棱",
+        "五棱柱有10个顶点",
+        "五棱柱有7个侧面"
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：五棱柱有2个底面和5个侧面，共7个面，不是5个面。\nB. 错误：五棱柱有5条侧棱，上、下底面各有5条棱，共15条棱，不是10条。\nC. 正确：五棱柱的上、下底面各有5个顶点，且对应顶点不重合，共10个顶点。\nD. 错误：五棱柱的侧面数与底面边数相同，为5个侧面，不是7个。",
+      "difficulty": 1
+    }
+  ]
+}

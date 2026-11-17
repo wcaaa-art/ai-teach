@@ -3,12 +3,12 @@
 // 账号只解决本机多用户隔离，学习数据仍存在浏览器 IndexedDB，所以换设备/清缓存前要由用户手动备份。
 
 export const BACKUP_APP = 'ai-teach'
-export const BACKUP_VERSION = 5
+export const BACKUP_VERSION = 6
 
 // 与 db/index.js 的同步范围保持一致：设置属于设备偏好，不随学习数据导出。
 export const BACKUP_STORES = [
   'profile', 'plans', 'focusSessions', 'distractions', 'feedbacks', 'assessments', 'visualLogs',
-  'conversations', 'quizFingerprints', 'quizResults', 'focusSuggestions', 'examScores', 'mistakes'
+  'conversations', 'quizFingerprints', 'quizResults', 'focusSuggestions', 'examScores', 'mistakes', 'scannedPapers'
 ]
 
 export function createBackup({ owner = 'local', stores = {}, exportedAt = Date.now() } = {}) {

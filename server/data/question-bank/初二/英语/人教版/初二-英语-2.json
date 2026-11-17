@@ -1,0 +1,184 @@
+{
+  "grade": "初二",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初二-英语-2",
+    "name": "现在完成时入门"
+  },
+  "generatedAt": "2026-11-14T12:15:06.682Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwgdc69j",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "请选出正确使用现在完成时、并表达“过去发生的动作对现在有影响”的句子。",
+      "options": [
+        "I have finished my homework, so I can play football now.",
+        "I finished my homework, so I can play football now.",
+        "I have finish my homework, so I can play football now.",
+        "I has finished my homework, so I can play football now."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：现在完成时的结构是 have/has + 过去分词；主语 I 用 have，finish 的过去分词是 finished，句子表示作业已经完成，对现在的影响是“可以踢足球了”。\nB. 错误：finished 是一般过去时，不是现在完成时结构，不能体现 have/has + 过去分词这一考点。\nC. 错误：have 后应接过去分词 finished，不能接动词原形 finish。\nD. 错误：主语 I 应与 have 搭配，不能用 has；该句主谓不一致。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwgdc69j",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "— Have you finished your homework yet?\n— Yes. I ______ it an hour ago.",
+      "options": [
+        "have finished",
+        "finished",
+        "finish",
+        "will finish"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：现在完成时 have finished 不能与表示明确过去时间的 an hour ago 连用，句子中的动作发生在过去的具体时间。\nB. 正确：an hour ago 是一般过去时的标志，finish 的过去式为 finished，表示“一小时前完成了作业”。\nC. 错误：一般现在时 finish 表示习惯性或经常性动作，与 an hour ago 所指的具体过去时间冲突。\nD. 错误：will finish 表示将来才完成，与 an hour ago 的过去时间不符。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-3-mwgdc69j",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "I ______ this book twice, and I ______ it to my friend yesterday.",
+      "options": [
+        "have read; lent",
+        "read; have lent",
+        "have read; have lent",
+        "read; lent"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：twice 表示“到目前为止的次数”，强调过去经历对现在的影响，第一空用现在完成时 have read；yesterday 是明确的过去时间状语，第二空用一般过去时 lent。\nB. 错误：第一空用一般过去时 read 只叙述过去动作，不能与 twice 的“至今经历”语义搭配；第二空 have lent 与 yesterday 的明确过去时间冲突。\nC. 错误：第一空正确；第二空 have lent 不能与明确的过去时间 yesterday 连用，应改为 lent。\nD. 错误：第一空 read 未体现“到目前为止读过两次”的现在完成时意义；第二空 lent 虽正确，但第一空与 twice 语境冲突。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-4-mwgdc69j",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "—Have you finished your science report ______?\n—No, I haven't. I ______ it last night, but it's too difficult.",
+      "options": [
+        "already; finished",
+        "yet; started",
+        "ever; have started",
+        "just; start"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：already 常用于肯定句，且若说 finished it last night，就表示昨晚已完成，与答语 No, I haven't 矛盾。\nB. 正确：yet 用于疑问句末尾表示“已经”，符合“Have you finished...?”；last night 是明确的过去时间，第二空应用一般过去时 started。\nC. 错误：ever 意为“曾经”，与本题询问报告是否完成的语境不符；have started 不能与过去时间状语 last night 连用。\nD. 错误：just 表示“刚刚”，与答语 No, I haven't 的语境不吻合；start 是原形，不能与 last night 搭配，应用 started。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-5-mwgdc69j",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列句子中，哪一句正确使用现在完成时表示“过去发生的动作对现在造成影响”？",
+      "options": [
+        "I have finished my homework, so I can watch TV now.",
+        "I finish my homework yesterday.",
+        "I have finish my homework.",
+        "I have finished my homework yesterday."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：现在完成时由“have/has + 过去分词”构成，have finished 表示作业已完成，so I can watch TV now 表示该动作对现在造成的影响。\nB. 错误：yesterday 是一般过去时的时间状语，谓语应为 finished，不能用一般现在时 finish。\nC. 错误：have 后应接过去分词 finished，不能接动词原形 finish。\nD. 错误：yesterday 表示明确的过去时间，不能与现在完成时 have finished 连用，应改为 I finished my homework yesterday。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-6-mwgdc69j",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "—Have you ever ______ to the Palace Museum?\n—Yes. I ______ there with my parents last summer.",
+      "options": [
+        "been; went",
+        "gone; went",
+        "been; have gone",
+        "gone; have been"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：问句用现在完成时，have been to 表示“曾经去过某地（现已回来）”，与 ever 搭配询问经历很合适；答句 last summer 是明确的过去时间状语，因此要用一般过去时 went。\nB. 错误：have gone to 表示“去了某地，人还在那里或在路上”，不能用来询问“是否曾经去过”的经历；后面的 went 虽然正确，但第一空不对。\nC. 错误：第一空 been 是对的，但 last summer 是具体的过去时间，句中不能再使用现在完成时 have gone，应该用一般过去时。\nD. 错误：第一空 have gone to 不能表示经历；第二空 have been 与 last summer 表示的过去时间相矛盾，两个空都不正确。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-7-mwgdc69j",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "阅读下面的对话，选择最佳选项补全空白处：\n— ______ you ______ this bike?\n— For about two years. My uncle gave it to me as a birthday present.",
+      "options": [
+        "have; bought",
+        "did; buy",
+        "have; had",
+        "do; have"
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：buy 是短暂性动词，只表示“买”这一个瞬间动作，不能和表示一段时间的 for about two years 连用，其完成时也不能回答 how long 的提问，应换成延续性动词 have。\nB. 错误：一般过去时 did...buy 只说明“过去某时买了”，无法表达“从买到现在已经持续两年”这一延续含义，与答语中的 for about two years 矛盾。\nC. 正确：how long 询问动作持续的时间，答语 for about two years 表示一段时间，需用现在完成时；have 是延续性动词，故用 have had，构成 How long have you had this bike? 表示“这辆自行车你拥有多久了”。\nD. 错误：一般现在时 do...have 表示经常性的习惯或现在的状态，不能与表示持续时段的 for about two years 搭配，也不能与答语中“叔叔送给我”这一过去事件相呼应。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-8-mwgdc69j",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "下列句子中，现在完成时使用正确的一项是（ ）。",
+      "options": [
+        "I have bought this bike for two years.",
+        "She has gone to Beijing twice.",
+        "They have been in the club since 2022.",
+        "He has joined the army for three years."
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：buy 是短暂性动词，不能与表示一段时间的 for two years 连用，应改为 I have had this bike for two years。\nB. 错误：has gone to 表示“去了某地（现在不在这里）”，不能与 twice 表示经历连用，应改为 She has been to Beijing twice。\nC. 正确：have been in + 地点或组织 + since + 时间点，表示从过去持续到现在的状态，符合现在完成时的用法。\nD. 错误：join 是短暂性动词，不能与 for three years 连用，应改为 He has been in the army for three years。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-9-mwgdc69j",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列句子中，哪一句正确使用了现在完成时来表达“过去发生的动作对现在造成影响”？",
+      "options": [
+        "I have finished my homework, so I can play now.",
+        "I finished my homework, so I can play now.",
+        "I have finished my homework yesterday.",
+        "I finish my homework since morning."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：使用have finished，结构为“have/has + 过去分词”，表示作业已经完成，并对现在产生“可以玩了”的影响，符合现在完成时的基本概念。\nB. 错误：使用一般过去时finished，只说明过去完成了作业，不是现在完成时，不符合题干“正确使用现在完成时”的要求。\nC. 错误：现在完成时不能与yesterday这类明确的过去时间状语连用；应改为I finished my homework yesterday.。\nD. 错误：finish为动词原形，不是“have/has + 过去分词”的现在完成时结构；且finish是短暂动词，不宜与since morning连用表示持续。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-10-mwgdc69j",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "—Have you finished your homework ___?\n—Yes, I have ___ finished it.",
+      "options": [
+        "yet; already",
+        "already; yet",
+        "yet; yet",
+        "already; already"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：第一空所在句是一般疑问句，询问“是否已经完成”，yet常用于疑问句句末；第二空所在句是肯定回答，表示“已经完成”，already常用于肯定句中。\nB. 错误：第一空为疑问句，通常不用already；第二空为肯定句，表示“已经”应用already，不能用yet。\nC. 错误：第一空用yet正确，但第二空是肯定句，表示“已经”完成应使用already，yet多用于否定句或疑问句。\nD. 错误：第一空在疑问句中用already不符合常规用法；虽然第二空用already可以，但第一空已使用不当，故整体不正确。",
+      "difficulty": 2
+    }
+  ]
+}

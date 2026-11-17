@@ -1,0 +1,111 @@
+{
+  "grade": "初三",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初三-英语-3",
+    "name": "情态动词与时态复习"
+  },
+  "generatedAt": "2026-11-14T14:10:00.000Z",
+  "source": "trae",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初三-英语-3-f1",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "—Must I hand in the homework today? —No, you ______. You can hand it in tomorrow.",
+      "answer": "needn't",
+      "acceptableAnswers": [
+        "needn't",
+        "need not",
+        "don't have to"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 needn't 或 don't have to 得3分。\n2. 语法依据：由 must 引导的一般疑问句，肯定回答用 Yes, you must.，否定回答表示“不必、没有必要”，用 needn't 或 don't have to，不能用 mustn't。\n3. 易错点：mustn't 表示“禁止、不许”，语气很强，用来回答 Must I...? 会造成“你不准交作业”的误解，是本题最常见的错误。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-3-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "You ______ smoke here. Look at the sign—it says “No Smoking”.",
+      "answer": "mustn't",
+      "acceptableAnswers": [
+        "mustn't",
+        "must not",
+        "can't"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 mustn't 得3分，填 can't 也可接受。\n2. 语法依据：句中有 No Smoking 的警示牌，表示规定上“禁止吸烟”，mustn't 语气最强，最符合标志语的强制性；can't 在口语中也可表示“不允许”。\n3. 易错点：填 needn't 会变成“你不必吸烟”，语义完全错误；填 don't have to 表示“没有必要”，无法体现禁止；另外 mustn't 后必须接动词原形 smoke，不能写成 smoking。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-3-f3",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用括号内所给动词的适当形式填空：By the end of last term, we ______ (learn) about 1,200 English words.",
+      "answer": "had learned",
+      "acceptableAnswers": [
+        "had learned",
+        "had learnt"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 had learned 或 had learnt 得3分。\n2. 语法依据：“by the end of + 过去时间”表示“到过去某一时间为止”，动作在该时间点之前已经完成，用过去完成时 had + 过去分词。\n3. 易错点：填 have learned 是把参照时间当成了现在，与 last term 矛盾；填 learned 只是一般过去时，无法体现“过去的过去”；had 不能写成 have，主谓也不能漏掉 had。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-3-f4",
+      "type": "fill",
+      "dimension": "transfer",
+      "stem": "Look! The ground is wet. It ______ have rained last night.",
+      "answer": "must",
+      "acceptableAnswers": [
+        "must"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 must 得3分。\n2. 语法依据：“must have + 过去分词”表示对过去事情的肯定推测，意为“一定做过某事”；地湿是现在看到的证据，rain 发生在昨晚，故用 must have rained。\n3. 易错点：填 can 不行，can have done 一般不用于肯定句；填 should 表示“本应该”，与“一定下过雨”的推断不符；填 needn't 则表示“本不必”，语义相反。若是否定推测“不可能下过雨”，才用 can't have rained。",
+      "difficulty": 3,
+      "score": 3
+    },
+    {
+      "id": "初三-英语-3-s1",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "用适当的情态动词填空，并说明 must 与 have to 的区别。\n（1）—______ I use your dictionary? —Sure, here you are.\n（2）You ______ be tired after the long walk. You look pale.\n（3）Students ______ wear school uniforms on Mondays. It's a school rule.\n（4）—Need I finish it now? —No, you ______.",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）May/Can/Could。表示请求许可。\n（2）must。表示肯定推测，“一定累了”。\n（3）must/have to。表示规定要求。\n（4）needn't/don't have to。对 Need I...? 的否定回答表示“不必”。\n区别：must 多表示说话人主观认为“必须”，have to 强调客观情况造成的“不得不”；must 只有现在时形式，过去或将来需要时用 had to/will have to；must 的否定回答用 needn't 或 don't have to，而 mustn't 表示禁止。",
+      "explanation": "第1步：每空1.5分，共6分。第（1）题请求允许，May/Can/Could 均可，不能用 Must。第（2）题有“走了很远、脸色苍白”的证据，属肯定推测，用 must。第（3）题是学校规定，must 或 have to 均可。第（4）题 Need I...? 的否定回答用 needn't 或 don't have to，不能用 mustn't。\n第2步：区别说明4分，须答出“主观必须/客观不得不”“must 无过去将来形式”“mustn't 表禁止”中的三点，每点1分，语言准确1分。\n常见错误：第（4）题答 mustn't，把“不必”误作“禁止”；区别说明只写中文“必须”而不涉及主客观差异。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初三-英语-3-s2",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "用括号内所给动词的适当形式填空，并写出判断依据。\n（1）My uncle ______ (work) in that factory since 2010.\n（2）Listen! Someone ______ (sing) in the next room.\n（3）We ______ (visit) the Great Wall next Sunday if it doesn't rain.\n（4）When I got home, my mother ______ (cook) dinner.\n（5）He ______ (not finish) his homework yet.\n（6）Our teacher told us that light ______ (travel) faster than sound.",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）has worked。since 2010 表示从过去持续到现在，用现在完成时。\n（2）is singing。Listen! 提示此刻正在进行，用现在进行时。\n（3）will visit。next Sunday 表示将来，if 条件句用一般现在时，主句用一般将来时。\n（4）was cooking。got home 是过去的时间点，当时正在做饭，用过去进行时。\n（5）hasn't finished。yet 常用于现在完成时的否定句。\n（6）travels。客观真理不受主句过去时影响，仍用一般现在时。",
+      "explanation": "第1步：每空1分，共6分，时态形式和主谓一致都正确才给分。\n第2步：判断依据4分，每两条正确依据得1分。要抓住时间标志词：since 对应现在完成时，Listen! 对应现在进行时，next Sunday 对应一般将来时，got home 对应过去进行时，yet 对应现在完成时。\n第3步：第（6）题是特殊规则，宾语从句表示客观真理时，即使主句是 told，从句仍用一般现在时 travels，不能写成 would travel 或 traveled。\n常见错误：第（3）题把 if 从句也写成 will visit；第（4）题用 cooked，无法体现“正在”；第（5）题漏掉 has，写成 didn't finish。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初三-英语-3-s3",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "下面短文中有5处情态动词或时态错误，请找出并改正，并简要说明理由。\nMy brother has joined the army for three years. Last Sunday, when I called him, he is training on the playground. He told me he will come home next month. I have asked my mother to cook his favourite dishes already. You mustn't worry about him—he needn't any help from us.",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）has joined the army for three years → has been in the army for three years。join 是短暂性动词，不能与 for three years 连用，应改为表示状态的 be in the army。\n（2）he is training → he was training。主句 called 为过去时，从句表示当时正在进行，用过去进行时。\n（3）he will come → he would come。主句 told 为过去时，宾语从句时态要向过去推一步。\n（4）he needn't any help → he doesn't need any help。此处 need 是实义动词，否定需借助 doesn't，后接名词宾语；情态动词 need 后必须接动词原形。\n（5）You mustn't worry → You needn't worry / don't need to worry。mustn't 表示“禁止”，语境是劝对方“不必担心”，应用 needn't。",
+      "explanation": "第1步：每处改正1.5分，共7.5分；理由说明2.5分，每点0.5分。\n第2步：第（1）题考短暂性动词与时间段连用的限制，常见还有 buy→have、borrow→keep、die→be dead。第（2）（3）题都涉及时态呼应，一个考查过去进行时，一个考查宾语从句时态后移。\n第3步：第（4）题要区分 need 的两种词性：作情态动词时用于否定句和疑问句，后接动词原形；作实义动词时有人称和数的变化，否定用 don't/doesn't need。第（5）题考 mustn't 与 needn't 的语义差别。\n常见错误：把 has joined 改成 joined，仍不能与 for three years 连用；把 needn't any help 改成 needn't to need help，结构更加混乱。",
+      "difficulty": 3,
+      "score": 10
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "grade": "初一",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初一-英语-3",
+    "name": "名词与代词"
+  },
+  "generatedAt": "2026-11-14T12:12:57.485Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwgd9ekp",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "—Is this blue notebook ___?\n—No, it isn't. It's ___.",
+      "options": [
+        "yours; Lucy's",
+        "your; Lucy",
+        "yours; Lucy",
+        "your; Lucy's"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：第一空在系动词 is 后作表语，用名词性物主代词 yours，相当于 your notebook；第二空表示“露西的（笔记本）”，用名词所有格 Lucy's。\nB. 错误：your 是形容词性物主代词，后面必须接名词，不能单独作表语；Lucy 不是所有格，不能表示“露西的”。\nC. 错误：第一空 yours 正确，但第二空 Lucy 未用所有格，无法表示所属关系。\nD. 错误：第一空 your 后没有名词，不能单独使用；第二空 Lucy's 虽正确，但整体搭配不符合语境。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwgd9ekp",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "This is my new friend Lucy. ______ is from Canada, and ______ English is very good.",
+      "options": [
+        "She; her",
+        "Her; she",
+        "She; she",
+        "Her; her"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：第一空在句中作主语，指代 Lucy，应使用人称代词主格 She；第二空修饰名词 English，表示“她的英语”，应使用形容词性物主代词 her。\nB. 错误：第一空 Her 是形容词性物主代词，不能单独作句子主语；第二空 she 是人称代词主格，不能放在名词 English 前作定语。\nC. 错误：第一空 She 正确，但第二空 she 不能修饰名词 English，应改为 her。\nD. 错误：第一空 Her 不能作主语，第二空 her 虽正确，但整体不符合句法要求。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-3-mwgd9ekp",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "These two notebooks aren't ______. Maybe they are ______.",
+      "options": [
+        "mine; Lucy's",
+        "my; Lucy",
+        "mine; Lucy",
+        "my; Lucy's"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：mine 是名词性物主代词，可单独作表语，表示“我的（笔记本）”；Lucy's 是名词所有格，表示“露西的（笔记本）”，两句意思完整。\nB. 错误：my 是形容词性物主代词，后面必须接名词，不能单独放在 isn't 后作表语；Lucy 也不是所有格形式，不能表示“露西的”。\nC. 错误：mine 使用正确，但第二个空用 Lucy 不能表示所属关系，应改为 Lucy's。\nD. 错误：第一个空 my 不能单独作表语，应使用名词性物主代词 mine；第二个空 Lucy's 虽正确，但整体搭配不符合句意。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-4-mwgd9ekp",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "My cousin and I both like reading. This is ______ book, and that one on the desk is ______.",
+      "options": [
+        "my; my sister",
+        "mine; my sister's",
+        "my; my sister's",
+        "mine; my sister"
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：第一空后有名词 book，应用形容词性物主代词 my；第二空 my sister 不能直接表示“我姐姐/妹妹的（书）”，缺少名词所有格形式。\nB. 错误：mine 是名词性物主代词，不能放在名词 book 前作定语；第二空 my sister's 形式正确，但第一空不符合语法。\nC. 正确：第一空后有名词 book，需用形容词性物主代词 my 修饰；第二空独立作表语，表示“我姐姐/妹妹的（书）”，用名词所有格 my sister's，相当于 my sister's book。\nD. 错误：第一空 mine 不能修饰名词 book；第二空 my sister 不是所有格形式，不能替代 my sister's book。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-5-mwgd9ekp",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "—What are these on the desk?\n—They are two ____ of my family, and ____ are very nice.",
+      "options": [
+        "photos; they",
+        "photoes; them",
+        "photos; them",
+        "photoes; they"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：photo 虽以字母 o 结尾，但它属于缩写词，复数直接加 -s，故为 photos；第二空在句中作主语，指代前文的 photos，要用主格 they。\nB. 错误：photo 的复数不能写成 photoes（只有 potato、tomato、hero 等少数名词加 -es）；且 them 是宾格，不能作主语，应改为 they。\nC. 错误：第一空 photos 正确，但第二空用宾格 them 作主语是错的，主语位置必须用主格 they。\nD. 错误：第一空 photoes 复数形式拼写错误，应为 photos；虽有 they 正确，但前半部分已经不合语法。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-6-mwgd9ekp",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "—Are these your two ______? —No, they aren't. ______ are in the classroom.",
+      "options": [
+        "dictionary; Mine",
+        "dictionaries; Mine",
+        "dictionary; My",
+        "dictionaries; My"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：two 后应接可数名词复数，dictionary 是单数，应改为 dictionaries；Mine 虽可作主语，但前半句已错。\nB. 正确：two dictionaries 符合“数词+可数名词复数”的用法；Mine 是名词性物主代词，相当于 My dictionaries，可单独作主语。\nC. 错误：dictionary 为单数，与 two 冲突；My 是形容词性物主代词，不能单独作主语，后面需要接名词。\nD. 错误：dictionaries 使用正确，但 My 不能单独作主语，应使用 Mine（=My dictionaries）。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-7-mwgd9ekp",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Lucy and Lily are twins and they share one room. Look at the two girls. This is ___ room. The schoolbags on the bed are ___.",
+      "options": [
+        "Lucy and Lily's; theirs",
+        "Lucy's and Lily's; theirs",
+        "Lucy and Lily's; their",
+        "Lucy's and Lily's; their"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：两人共同拥有一个房间时，名词所有格只在最后一个名字后加’s，即 Lucy and Lily's room；theirs 是名词性物主代词，可单独作表语，表示“她们的（书包）”。\nB. 错误：Lucy's and Lily's room 表示两人各自的房间，与题干 share one room“共用一个房间”冲突。\nC. 错误：their 是形容词性物主代词，后面必须接名词，不能单独放在 are 后作表语。\nD. 错误：Lucy's and Lily's room 表示各自房间，与 share one room 不符；且 their 不能单独作表语。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-8-mwgd9ekp",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "—Are these your ______?  —No, they aren't. They are ______.",
+      "options": [
+        "tomato; her",
+        "tomatoes; hers",
+        "tomatos; she",
+        "tomato; hers"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：these 后应接可数名词复数，tomato 是单数形式；her 是形容词性物主代词，后面必须接名词，不能单独作表语。\nB. 正确：these 后接可数名词复数 tomatoes；hers 是名词性物主代词，相当于 her tomatoes，可以单独使用。\nC. 错误：tomato 的复数形式是 tomatoes，不是 tomatos；she 是人称代词主格，不能表示“她的（西红柿）”。\nD. 错误：tomato 是单数，与 these 不一致；hers 虽正确，但前半部分错误。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-9-mwgd9ekp",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "My sister and I are in the same class. ______ English teacher is Miss Li.",
+      "options": [
+        "Our",
+        "We",
+        "Us",
+        "Ours"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：our 是形容词性物主代词，意为“我们的”，后面接名词 English teacher，作定语，符合句意。\nB. 错误：we 是人称代词主格，通常在句中作主语，不能直接修饰名词 teacher。\nC. 错误：us 是人称代词宾格，通常作动词或介词的宾语，不能修饰名词 teacher。\nD. 错误：ours 是名词性物主代词，相当于 our + 名词，后面不能再接名词 teacher。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-10-mwgd9ekp",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "There are two ___ in the classroom. They are drawing pictures.",
+      "options": [
+        "boy",
+        "boys",
+        "boies",
+        "boyes"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：two 后应接可数名词复数，boy 是单数形式，与 two 冲突。\nB. 正确：boy 的复数形式是 boys，two boys 表示“两个男孩”，符合句意和语法。\nC. 错误：boy 以元音字母加 y 结尾，变复数直接加 -s，不能写成 boies。\nD. 错误：boyes 不是 boy 的正确复数拼写，不能随意加 -es。",
+      "difficulty": 1
+    }
+  ]
+}

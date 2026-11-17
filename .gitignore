@@ -2,11 +2,13 @@ node_modules/
 dist/
 .env
 coverage/
-server/data/
+# 账号数据与本机密钥不入库，但离线题库要随包分发
+server/data/*
+!server/data/question-bank/
+!server/data/quiz-bank/
 .screenshots/
 传智杯提交包/
 传智杯提交包.zip
 
 # 题库原始 PDF（体积大，需要时自行放回）
 中考/
-高考/

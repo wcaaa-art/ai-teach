@@ -2,6 +2,7 @@
 import { onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import AppShell from './components/AppShell.vue'
+import ErrorBoundary from './components/ErrorBoundary.vue'
 import { useAppStore } from './stores/app.js'
 
 const store = useAppStore()
@@ -20,11 +21,13 @@ watch(() => store.settings.darkMode, value => { document.documentElement.dataset
 <template>
   <div v-if="!ready" class="app-loading">正在准备本地学习空间…</div>
   <AppShell v-else :title="route.meta.title || 'Ai学习小伙伴'">
-    <router-view v-slot="{ Component, route: current }">
-      <transition name="page" mode="out-in">
-        <component :is="Component" :key="current.path" />
-      </transition>
-    </router-view>
+    <ErrorBoundary>
+      <router-view v-slot="{ Component, route: current }">
+        <transition name="page" mode="out-in">
+          <component :is="Component" :key="current.path" />
+        </transition>
+      </router-view>
+    </ErrorBoundary>
   </AppShell>
 </template>
-<style scoped>.app-loading{min-height:100vh;display:grid;place-items:center;color:var(--muted);font-size:14px}</style>
+<style scoped>.app-loading{min-height:100vh;display:grid;place-items:center;color:var(--muted);font-size:calc(14px*var(--fs-scale))}</style>

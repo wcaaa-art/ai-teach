@@ -1,0 +1,184 @@
+{
+  "grade": "初二",
+  "subject": "数学",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初二-数学-1",
+    "name": "三角形与全等"
+  },
+  "generatedAt": "2026-11-13T02:39:44.767Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwedbyvb",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "已知 \\triangle ABC \\cong \\triangle DEF，且 \\angle A=50^\\circ，\\angle B=60^\\circ，AB=4，则下列结论一定成立的是（ ）",
+      "options": [
+        "\\angle D=60^\\circ",
+        "DE=4",
+        "BC=4",
+        "\\angle F=50^\\circ"
+      ],
+      "correctIndex": 1,
+      "explanation": "由 \\triangle ABC \\cong \\triangle DEF 可知，对应顶点为A与D、B与E、C与F，全等三角形的对应边相等、对应角相等。\nA. 错误：\\angle D 与 \\angle A 是对应角，应等于50^\\circ，不是60^\\circ。\nB. 正确：AB与DE是对应边，由全等三角形对应边相等，得DE=AB=4。\nC. 错误：BC的对应边是EF，题干没有给出BC或EF的长度，不能推出BC=4。\nD. 错误：\\angle F 与 \\angle C 是对应角，由三角形内角和得 \\angle C=180^\\circ-50^\\circ-60^\\circ=70^\\circ，所以 \\angle F=70^\\circ，不是50^\\circ。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwedbyvb",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知△ABC≌△DEF，对应顶点依次为A与D、B与E、C与F。若∠A=50°，∠B=60°，EF=6，则下列结论一定正确的是（ ）",
+      "options": [
+        "∠F=70°",
+        "AB=6",
+        "∠C=60°",
+        "DF=6"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：全等三角形对应角相等，∠C与∠F对应；由三角形内角和，∠C=180°-50°-60°=70°，所以∠F=70°。\nB. 错误：EF与BC对应，已知EF=6只能推出BC=6，不能推出AB=6。\nC. 错误：由三角形内角和得∠C=70°，不是60°；∠B才等于60°。\nD. 错误：DF与AC对应，已知EF=6不能推出DF=6，除非另有条件。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-3-mwedbyvb",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在四边形ABCD中，AB=AD，CB=CD，连接AC。若∠BAD=80°，∠BCD=100°，则∠ABC的度数为（ ）",
+      "options": [
+        "80°",
+        "90°",
+        "100°",
+        "110°"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：由全等可推出∠BAC=40°，∠BCA=50°，所以∠ABC=180°-40°-50°=90°，不是80°。\nB. 正确：因为AB=AD，CB=CD，AC=AC，所以△ABC≌△ADC（SSS），从而∠BAC=∠DAC=\\frac{1}{2}∠BAD=40°，∠BCA=∠DCA=\\frac{1}{2}∠BCD=50°。在△ABC中，∠ABC=180°-40°-50°=90°。\nC. 错误：100°是∠BCD的度数，不是∠ABC的度数；由角平分关系和三角形内角和可得∠ABC=90°。\nD. 错误：若∠ABC=110°，则与∠BAC=40°、∠BCA=50°推出∠ABC=90°矛盾。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-4-mwedbyvb",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "关于全等三角形的判定与性质，下列判断正确的是（ ）",
+      "options": [
+        "两个三角形若周长相等，则一定全等",
+        "两个三角形若面积相等，则一定全等",
+        "两个全等三角形的对应中线一定相等",
+        "两个三角形若有两边分别相等，则一定全等"
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：周长相等只说明三边和相等，不能推出三边分别对应相等；例如边长分别为2、3、4与3、3、3的三角形周长都为9，但不全等。\nB. 错误：面积相等只反映底与高的乘积关系，形状可以不同；例如底为6、高为2与底为3、高为4的三角形面积都为6，但对应边不一定相等。\nC. 正确：全等三角形的对应边、对应角分别相等，对应边上的中线由对应顶点连对应边中点得到，可证明两条中线所在的小三角形全等，因此对应中线相等。\nD. 错误：仅有两边分别相等还缺少夹角或第三边等条件，不能判定全等；如两边为2和3、夹角分别为30°和60°的两个三角形不一定全等。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-6-mwedbyvb",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在三角形ABC和三角形ADC中，点B、D在AC的两侧，已知AB=AD，BC=DC，∠BAC=40°，则∠DAC的度数是（ ）",
+      "options": [
+        "20°",
+        "40°",
+        "50°",
+        "80°"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：若∠DAC=20°，则与∠BAC=40°不相等，而由已知条件可判定两三角形全等，对应角应相等，故矛盾。\nB. 正确：AC为公共边，且AB=AD，BC=DC，所以由SSS可判定△ABC≌△ADC，从而∠BAC与∠DAC是对应角，故∠DAC=∠BAC=40°。\nC. 错误：50°与∠BAC=40°不相等，无法满足全等三角形的对应角相等。\nD. 错误：80°与∠BAC=40°不相等，且没有条件支持∠DAC为80°。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-8-mwedbyvb",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "小明说：“如果两个三角形都有两边长分别为3和5，并且长度为3的边所对的角都是30°，那么这两个三角形一定全等。”下列判断正确的是（ ）",
+      "options": [
+        "小明的说法正确，因为这是两边及其夹角对应相等，可用SAS判定全等",
+        "小明的说法错误，因为“两边和其中一边的对角”不能判定全等，这样的条件可能对应两个不全等的三角形",
+        "小明的说法正确，因为两边长固定且30°角固定后，由三角形内角和可唯一确定三角形",
+        "小明的说法错误，因为30°角不是两边的夹角，所以只能依据AAS判定全等"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：SAS要求的是两边及其夹角分别相等，而题中30°角是长度为3的边所对的角，并不是3和5这两边的夹角，不能套用SAS。\nB. 正确：题设属于“边边角”条件，它不是三角形全等的判定依据；按条件作三角形时，长度为5的边的另一端点可能出现两个不同位置，从而得到两个不全等的三角形。\nC. 错误：已知一个角为30°并不能唯一确定另外两个角；且该角不是已知两边的夹角，三角形的形状仍可能不唯一，故不能由内角和推出唯一确定。\nD. 错误：AAS需要两个角和其中一个角的对边分别相等，题中只给出了一个角，条件不足；且小明结论错误的根本原因是“边边角”不能判定全等，而不是因为要用AAS。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-9-mwedbyvb",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "已知△ABC≌△DEF，顶点A、B、C分别对应D、E、F。下列结论中，不一定成立的是（ ）",
+      "options": [
+        "∠A=∠D",
+        "AB=DE",
+        "△ABC的周长等于△DEF的周长",
+        "△ABC的面积等于△DEF的周长"
+      ],
+      "correctIndex": 3,
+      "explanation": "A. 正确：全等三角形的对应角相等，由△ABC≌△DEF且A对应D可知∠A=∠D。\nB. 正确：全等三角形的对应边相等，由A对应D、B对应E可知AB与DE是对应边，所以AB=DE。\nC. 正确：全等三角形的对应边分别相等，因此三边之和相等，两个三角形的周长相等。\nD. 错误：全等只能推出两个三角形面积相等，不能推出一个三角形的面积等于另一个三角形的周长；例如边长为3、4、5的直角三角形面积为6，周长为12，二者不相等。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-10-mwedbyvb",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知△ABC≌△DEF，对应顶点为A↔D，B↔E，C↔F。若AB=5，BC=7，AC=6，∠A=60°，则下列结论正确的是（ ）",
+      "options": [
+        "DE=6",
+        "EF=7",
+        "DF=7",
+        "∠D=50°"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：全等三角形对应边相等，AB的对应边是DE，所以DE=AB=5，不是6。\nB. 正确：全等三角形对应边相等，BC的对应边是EF，所以EF=BC=7。\nC. 错误：AC的对应边是DF，所以DF=AC=6，不是7。\nD. 错误：全等三角形对应角相等，∠A的对应角是∠D，所以∠D=∠A=60°，不是50°。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-1-mwedcebh",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列表述中，最符合全等三角形定义的是（ ）",
+      "options": [
+        "形状相同的两个三角形",
+        "面积相等的两个三角形",
+        "能够完全重合的两个三角形",
+        "有一条边相等的两个三角形"
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：形状相同只能说明两个三角形相似，大小可以不同；例如边长为1的等边三角形与边长为2的等边三角形形状相同，但不能完全重合，不全等。\nB. 错误：面积相等只说明大小的一种度量相同，不能保证对应边、对应角相等；例如底为4、高为3和底为6、高为2的两个三角形面积都为6，但形状不同，不一定全等。\nC. 正确：全等三角形的定义是能够完全重合的两个三角形，重合后对应边相等、对应角相等。\nD. 错误：只有一条边相等不能保证其他边和角分别对应相等；例如边长分别为3、4、5和3、5、6的两个三角形都有一条边为3，但不全等。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwedcebh",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "用直尺和圆规作∠AOB的平分线时，先以点O为圆心、适当长为半径画弧，分别交OA、OB于点C、D；再分别以点C、D为圆心、大于\\frac{1}{2}CD的长为半径画弧，两弧在∠AOB内部交于点P；作射线OP。连接PC、PD，则判定△OCP≌△ODP的依据是（ ）",
+      "options": [
+        "SSS",
+        "SAS",
+        "ASA",
+        "AAS"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：由作图可知OC=OD，PC=PD，且OP=OP，三边分别对应相等，所以△OCP≌△ODP的依据是SSS。\nB. 错误：SAS需要两边及其夹角分别相等，而∠COP与∠DOP正是要说明相等的角，不能直接作为已知条件使用。\nC. 错误：ASA需要两角及其夹边分别相等，当前由作图直接得到的是三组边相等，没有两角相等的现成条件。\nD. 错误：AAS需要两角及其中一角的对边分别相等，同样缺少可直接使用的两角相等条件。",
+      "difficulty": 2
+    }
+  ]
+}

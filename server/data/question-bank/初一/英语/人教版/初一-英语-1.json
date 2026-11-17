@@ -1,0 +1,184 @@
+{
+  "grade": "初一",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初一-英语-1",
+    "name": "日常交际与自我介绍"
+  },
+  "generatedAt": "2026-11-14T12:12:45.509Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwgd95c0",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "英语课上，老师请同学们用英语做自我介绍并和同桌打招呼。下列表达中，最符合英语初次见面交际习惯的是：",
+      "options": [
+        "I'm Li Hua. Nice to meet you.",
+        "My name Li Hua. Nice meet you.",
+        "I'm Li Hua. How old are you?",
+        "I'm Li Hua. Give me your book, please."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：初次见面先介绍自己的姓名，常用“I'm + 姓名.”，再用“Nice to meet you.”表示“很高兴见到你”，符合英语自我介绍与打招呼的习惯，句子结构也完整。\nB. 错误：“My name Li Hua.”缺少系动词 is，应为“My name is Li Hua.”；“Nice meet you.”也漏掉了 to，应为“Nice to meet you.”，因此该选项存在两处语法错误，不能作为规范表达。\nC. 错误：“How old are you?”是询问年龄的句子。在英语交际中，初次见面直接询问对方年龄通常被认为不礼貌，不符合自我介绍场合的交际习惯。\nD. 错误：“Give me your book, please.”是向别人索要物品的祈使句，与“自我介绍、初次见面打招呼”的交际目的无关，也不属于见面问候语。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwgd95c0",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "英语课上，Lily第一次见到新同学Tom，她微笑着说：“Hi, Tom. I'm Lily. Nice to meet you.” Tom最合适的回应是：",
+      "options": [
+        "Nice to meet you, too.",
+        "I'm fine, thank you.",
+        "You're welcome.",
+        "Goodbye."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：初次见面常用“Nice to meet you.”，礼貌回应是“Nice to meet you, too.”。\nB. 错误：“I'm fine, thank you.”用于回答“How are you?”，不是对“Nice to meet you.”的回应。\nC. 错误：“You're welcome.”用于回答别人的感谢，与初次见面的问候不匹配。\nD. 错误：“Goodbye.”用于告别，不符合题干中新同学初次见面的交际场景。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-3-mwgd95c0",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "开学第一天，李华来到新班级，班主任请他向同班同学 Peter 做自我介绍，并互相认识。下列哪一组对话在该语境中最得体、最符合英语交际习惯？",
+      "options": [
+        "—Hi, I'm Li Hua. Nice to meet you.  —Nice to meet you, too. Welcome to our class!",
+        "—I'm Li Hua. Who are you?  —I'm Peter.  —OK, goodbye.",
+        "—Good morning, Miss Li. I'm Li Hua. He is Peter.  —Nice to meet you.",
+        "—How are you, Peter?  —I'm Li Hua, thanks."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：自我介绍用“I'm + 姓名”；初次见面说 Nice to meet you.，对方按习惯回应 Nice to meet you, too.；Welcome to our class! 既回应了新生身份又礼貌热情，完全符合初次见面互相认识的交际目的。\nB. 错误：当面介绍自己后紧接着用 Who are you? 询问对方身份语气唐突、不礼貌，通常应说 What's your name? 或 And you?；结尾 OK, goodbye. 直接结束对话，与题干“互相认识”的交际任务冲突。\nC. 错误：向他人介绍第三方应用 This is Peter.，不能用 He is Peter.；而且 Peter 是男生，指代男性用 he，用 He is Peter. 既不符合介绍他人的固定表达，也让人不知道在指谁。\nD. 错误：How are you? 是询问对方身体或近况，应答 I'm fine, thank you. 或 Very well, thanks.；答语 I'm Li Hua, thanks. 答非所问，而且整段对话没有完成自我介绍和认识对方的目的。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-4-mwgd95c0",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "下列自我介绍的表达中，没有语法错误且符合日常交际习惯的是哪一项？",
+      "options": [
+        "My name is Wang Mei.",
+        "I name is Wang Mei.",
+        "My name Wang Mei.",
+        "I am name Wang Mei."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：自我介绍时常用“My name is + 姓名”这一结构，My 是形容词性物主代词，修饰 name，句子成分完整。\nB. 错误：I 是主格代词，不能直接修饰名词 name，应改为 My name is Wang Mei.。\nC. 错误：句中缺少系动词 is，不能直接说 My name Wang Mei.，应为 My name is Wang Mei.。\nD. 错误：I am 后应接姓名或身份，不能接 name 再加姓名，应改为 I am Wang Mei. 或 My name is Wang Mei.。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-5-mwgd95c0",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "开学第一天，你在校门口遇到新同学 Peter，他主动向你问好并介绍自己。请从下列选项中选出最恰当的答语，补全对话。\nPeter: Hello! I'm Peter. I'm new here.\nYou: ______\nPeter: Nice to meet you, too.",
+      "options": [
+        "Nice to meet you, Peter. I'm Li Hua.",
+        "I'm fine, thank you.",
+        "Yes, you are new.",
+        "How old are you?"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：初次见面时英语的固定应答是 Nice to meet you.（很高兴见到你），同时用 I'm + 姓名 介绍自己，与下文的 Nice to meet you, too. 构成“问候—回敬+自我介绍—回敬”的完整交际链，符合英语交际习惯。\nB. 错误：I'm fine, thank you. 是用来回答 How are you?（你好吗）的答语，而 Peter 说的是 I'm Peter. I'm new here.，并未询问身体状况，答非所问，且下文出现 too 也失去照应对象。\nC. 错误：Yes, you are new. 只是重复对方所说内容，既不礼貌也不构成初次见面的问候回应，下文 Nice to meet you, too. 中的 too 无从对应。\nD. 错误：How old are you? 是询问年龄，与“初次见面互相介绍”这一情境不符，在英语文化中直接问年龄也不得体，且同样无法与下文的 too 衔接。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-6-mwgd95c0",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "—Hello, I'm Li Hua. Nice to meet you.\n—______",
+      "options": [
+        "Nice to meet you, too.",
+        "Goodbye, Li Hua.",
+        "I'm fine, thank you.",
+        "You're welcome."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：对方说“Nice to meet you.”时，初次见面的礼貌回应是“Nice to meet you, too.”，符合日常交际语境。\nB. 错误：“Goodbye”用于告别，不能回应初次见面的问候。\nC. 错误：“I'm fine, thank you.”用于回答“How are you?”，与题干中的自我介绍和见面问候不匹配。\nD. 错误：“You're welcome.”用于回答感谢，不能作为“Nice to meet you.”的回应。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-7-mwgd95c0",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在英语角，你想礼貌地加入对话，先介绍自己并询问对方来自哪里。下列哪一句最合适？",
+      "options": [
+        "Hello, I'm Li Hua. Where are you from?",
+        "Hello, I'm Li Hua. Where you from?",
+        "Hello, I Li Hua. Where are you from?",
+        "Hello, my name Li Hua. Where are you from?"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：I'm Li Hua 是自我介绍的正确表达，Where are you from? 是询问对方来自哪里的完整问句，符合日常交际语境。\nB. 错误：Where you from? 缺少 be 动词 are，应为 Where are you from?。\nC. 错误：I Li Hua 缺少 be 动词 am，不能构成完整的自我介绍。\nD. 错误：my name Li Hua 缺少 is，应为 My name is Li Hua。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-8-mwgd95c0",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "在英语课上做自我介绍时，下列句子表达正确的一项是：",
+      "options": [
+        "I am a student. I am 13 year old.",
+        "My name is Li Hua. I'm from China.",
+        "I am fine, and I am 13 years.",
+        "I name is Li Hua, I from China."
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：表示年龄时，\"13 year old\"中的year应用复数形式years，正确表达为\"I am 13 years old\"，该项在名词单复数上出错。\nB. 正确：\"My name is Li Hua.\"用My name is介绍姓名，\"I'm from China.\"用be from介绍来自哪里，两句都符合自我介绍的表达习惯和语法规则。\nC. 错误：\"13 years\"后面缺少old，不能单独用\"I am 13 years\"表示\"我13岁\"，应改为\"I am 13 years old\"。\nD. 错误：\"I name is...\"中主语不能用I，应改为\"My name is...\"；\"I from China\"缺少系动词am，应改为\"I am from China\"。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-9-mwgd95c0",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "开学第一天，李华要在班里作自我介绍，并顺便介绍身边的朋友王明。下列表达既得体又符合英语交际习惯的是哪一项？",
+      "options": [
+        "Hello, I'm Li Hua. This is my friend, Wang Ming.",
+        "Hello, I'm Li Hua. He is me, Wang Ming.",
+        "Hello, Wang Ming is I.",
+        "Hello, this is me, and I am Wang Ming."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：英语中介绍自己用“I'm + 姓名”，介绍他人用“This is + 姓名”，前半句和后半句分工清楚，表达得体。\nB. 错误：“He is me”中 he 指王明，却说他就是“我”，逻辑自相矛盾；而且介绍他人应当用“This is...”，不能用“He is me”。\nC. 错误：“Wang Ming is I”把姓名放在主语位置、把 I 放在表语位置，不符合英语表达习惯；介绍他人应说“This is Wang Ming”。\nD. 错误：“This is me”通常用于指着照片或物品说明“这是我”，不能用来介绍别人，且与后半句“I am Wang Ming”重复、指代混乱。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-10-mwgd95c0",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "新学期第一天，你想向新同学介绍自己，下面哪句话最合适？",
+      "options": [
+        "Hello! My name is Wang Lin.",
+        "Hello! Your name is Wang Lin.",
+        "Hello! He is Wang Lin.",
+        "Hello! She is Wang Lin."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：自我介绍时用“My name is ...”说明自己的姓名，符合日常交际情境。\nB. 错误：“Your name is Wang Lin.”是在说对方的姓名，不是介绍自己。\nC. 错误：“He is Wang Lin.”用he指代男性第三人称，不能用来介绍自己。\nD. 错误：“She is Wang Lin.”用she指代女性第三人称，不能用来介绍自己。",
+      "difficulty": 1
+    }
+  ]
+}

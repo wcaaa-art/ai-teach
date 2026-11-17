@@ -1,0 +1,106 @@
+{
+  "grade": "初一",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初一-英语-5",
+    "name": "一般过去时入门"
+  },
+  "generatedAt": "2026-11-14T12:23:58.972Z",
+  "source": "deepseek",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初一-英语-5-f1",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "Last Sunday, Tom ____ (help) his mother clean the room.",
+      "answer": "helped",
+      "acceptableAnswers": [
+        "helped"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：由 Last Sunday 可知动作发生在过去，句子需用一般过去时。\n2. 得分点：help 是规则动词，其过去式在词尾加 -ed，变为 helped。\n3. 常见错误：填 help 或 helps 没有体现过去时间；填 helpeded 属于重复加 -ed。\n4. 结论：空格处应填 helped。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-英语-5-s1",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "请用括号内动词的正确形式补全短文，每空2分，共10分。\nLast weekend, Lily and her family 1. (be) very busy. On Saturday morning, they 2. (visit) the science museum. Lily 3. (see) many old robots there. In the afternoon, they 4. (play) games in the park. They 5. (have) a great time.",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "1. were；2. visited；3. saw；4. played；5. had。每空2分，共10分。",
+      "explanation": "第1空2分：主语they是复数，一般过去时be动词用were。常见错误：误用was。\n第2空2分：visit是规则动词，过去式加-ed，写作visited。常见错误：误写成visitted。\n第3空2分：see是不规则动词，过去式为saw。常见错误：写成seed或see。\n第4空2分：play是规则动词，直接加-ed，写作played。常见错误：写成playd。\n第5空2分：have是不规则动词，过去式为had。常见错误：写成haved。",
+      "difficulty": 1,
+      "score": 10
+    },
+    {
+      "id": "初一-英语-5-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用括号内动词的适当形式填空：Last weekend, Lily ____ (visit) her grandparents.",
+      "answer": "visited",
+      "acceptableAnswers": [
+        "visited"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 由时间状语 Last weekend 可知动作发生在过去，应使用一般过去时。\n2. visit 是规则动词，其过去式在词尾加 -ed，因此填 visited。\n3. 常见错误：写成 visit 或 visits；visited 的词尾拼写应为 -ed，不要误写为双写 t 再加 -ed。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-英语-5-s2",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "用括号内动词的适当形式完成句子，并按要求改写第1句。1. Lucy ____ (visit) her grandparents last Sunday. 2. They ____ (not watch) TV yesterday evening. 3. ____ you ____ (clean) your room last weekend? 4. Tom ____ (play) football with his friends two days ago. 5. 将第1句改为一般疑问句并作否定回答。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "1. visited；2. didn't watch（did not watch 也可）；3. Did；clean；4. played；5. Did Lucy visit her grandparents last Sunday? No, she didn't.（No, she did not. 也可）",
+      "explanation": "1. 第1空2分：last Sunday 表示过去，visit 用过去式 visited。\n2. 第2空2分：否定句用 didn't + 动词原形 watch，不能写 didn't watched。\n3. 第3、4空各1分：一般疑问句以 Did 开头，实义动词 clean 用原形。\n4. 第4句2分：two days ago 表示过去，play 用过去式 played。\n5. 第5题2分：一般疑问句需把 visited 还原为 visit，并用 didn't 作否定回答；写成 Did Lucy visited... 或 No, she doesn't. 均扣分。",
+      "difficulty": 1,
+      "score": 10
+    },
+    {
+      "id": "初一-英语-5-f3",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用括号中动词的适当形式填空：Last weekend, I ___ (visit) my grandparents.",
+      "answer": "visited",
+      "acceptableAnswers": [
+        "visited"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 识别时间状语 Last weekend，表示过去发生的动作。\n2. visit 是规则动词，一般过去式在词尾加 -ed。\n3. 因此填 visited。常见错误：误填 visits 或 visiting，均不能与过去时间状语搭配。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-英语-5-s3",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "用括号内动词的适当形式填空，并按要求完成句子。每小题2分，共10分。\n1. I ______ (visit) my grandparents last weekend.\n2. She ______ (not watch) TV yesterday evening.\n3. They ______ (go) to the park two days ago.\n4. 将“Tom played football yesterday.”改为一般疑问句：______ Tom ______ football yesterday?\n5. 将“We were at home last night.”改为否定句：We ______ ______ at home last night.",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "1. visited\n2. didn't watch（或 did not watch）\n3. went\n4. Did; play\n5. were not",
+      "explanation": "第1题：last weekend 表示过去，visit 的过去式为 visited，占2分。\n第2题：yesterday evening 表示过去，否定句用 didn't + 动词原形 watch，占2分；写成 doesn't watch 不得分。\n第3题：two days ago 表示过去，go 的过去式为 went，占2分。\n第4题：含实义动词 played 的一般过去时疑问句用 Did 开头，后接动词原形 play，占2分。\n第5题：be 动词 were 的否定形式为 were not，占2分。",
+      "difficulty": 1,
+      "score": 10
+    },
+    {
+      "id": "初一-英语-5-f4",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用括号内动词的适当形式填空：Last weekend, Tom ____ (visit) his grandparents.",
+      "answer": "visited",
+      "acceptableAnswers": [
+        "visited"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 由时间状语 Last weekend 可知动作发生在过去，应使用一般过去时。\n2. visit 是规则动词，过去式在词尾直接加 -ed，变为 visited。\n3. 主语 Tom 是第三人称单数，但一般过去时动词不随主语变化，仍用 visited。\n4. 常见错误：误填 visit 或 visits，均与过去时间状语冲突。",
+      "difficulty": 1,
+      "score": 3
+    }
+  ]
+}

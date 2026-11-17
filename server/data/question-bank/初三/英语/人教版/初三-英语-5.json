@@ -1,0 +1,184 @@
+{
+  "grade": "初三",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初三-英语-5",
+    "name": "阅读理解与推断"
+  },
+  "generatedAt": "2026-11-14T12:17:24.446Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwgdf4k9",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "In reading comprehension, which statement best describes a correct inference?",
+      "options": [
+        "An inference is a personal guess that does not need any clues from the passage.",
+        "A good inference is based on details in the passage and reasonable thinking.",
+        "You can infer anything you want as long as the idea sounds interesting.",
+        "Inference questions only ask for facts that are directly stated in the text."
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：推断不是脱离文本的随意猜测，必须以文章中的词句、细节或逻辑关系为依据。\nB. 正确：推断是在文本细节基础上进行合理思考，得出文中未直接说明但可以推出的结论。\nC. 错误：有趣或新奇不能作为推断依据，推断必须受到文章内容的限制。\nD. 错误：直接陈述的事实属于事实细节题，推断题要求得出文中没有直接写出的合理结论。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwgdf4k9",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "阅读下面短文，从每小题所给的四个选项中选出能回答所提问题的最佳答案。\n\nLast Saturday, Emma planned to meet her friend Lucy at the city library at 9 a.m. When she arrived, the door was locked and a notice said the library would open at 10 a.m. because of a staff meeting. Emma remembered that Lucy did not have a phone. She waited at the bus stop opposite the library, where Lucy usually got off. At 9:20, Lucy appeared, looking worried. “I thought you might be waiting inside,” she said. Emma smiled. “The library isn’t open yet, but I knew you’d come this way.”\n\nWhat can we infer from the passage?",
+      "options": [
+        "Emma knew before leaving home that the library would open late.",
+        "Lucy usually takes a bus to the library.",
+        "Lucy called Emma to change the meeting place.",
+        "Emma waited inside the library for Lucy."
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：文中只说Emma到达后看到通知才知道图书馆因员工会议10点开门，并不能推断她出门前就知道。\nB. 正确：文中提到Emma在图书馆对面的公交车站等，而这是Lucy“usually got off”的地方，可合理推断Lucy通常乘公交车到图书馆。\nC. 错误：文中明确说Lucy没有手机，且没有提到她打电话改地点。\nD. 错误：Emma到达时图书馆门是锁着的，她是在外面的公交车站等Lucy，而不是在图书馆里面等。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-3-mwgdf4k9",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Read the passage and answer the question.\n\nLast October, the community center in Hilltown placed a small wooden box outside its front door. Inside were used books, and a sign read: \"Take one if you need it; leave one if you can.\" At first, only a few people stopped. Then someone added a notebook and asked readers to write down what they thought of the books. Soon the box was filled with notes, and neighbors began to recognize each other's handwriting. The center now plans to put a second box near the bus stop.\n\nWhat can we infer from the passage?",
+      "options": [
+        "The wooden box was designed to sell used books.",
+        "The notebook helped turn the book box into a place for sharing ideas.",
+        "The community center will stop placing boxes after October.",
+        "People only took books and never left any."
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：标志上写的是“需要就拿一本；可以的话留一本”，说明这是免费交换，不是售卖。\nB. 正确：有人放了笔记本请读者写下想法，随后盒子里装满笔记，邻居还能认出彼此的笔迹，可推断这个书箱逐渐成为交流想法的地方。\nC. 错误：文中说社区中心计划在公交站附近再放一个箱子，并不是要在十月后停止放箱子。\nD. 错误：标志鼓励人们“leave one if you can”，且后来出现许多笔记，说明人们并非只拿书、从不留下东西。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-4-mwgdf4k9",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "Many students use apps to make flashcards. Some believe that the more cards they make, the better they will remember. However, a study of 300 middle school students found that those who reviewed 20 key cards twice did better on a test than those who reviewed 100 cards once. The researchers say that regular review and careful choice of important points matter more than the number of cards.\n\nWhich of the following is NOT supported by the passage?",
+      "options": [
+        "Making more cards does not always lead to better memory.",
+        "Reviewing key cards twice helped students in the study.",
+        "The number of cards is the most important factor in remembering.",
+        "Researchers suggest choosing important points carefully."
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 正确（符合文意）：文中提到“the more cards... the better”只是一些学生的想法，而研究显示复习20张重点卡片两次的学生比复习100张卡片一次的学生表现更好，说明卡片多不一定记得更好。\nB. 正确（符合文意）：文中明确说“those who reviewed 20 key cards twice did better on a test”，因此复习重点卡片两次在研究中确有帮助。\nC. 错误（不符合文意，本题答案）：文中研究者的结论是“regular review and careful choice of important points matter more than the number of cards”，即卡片数量并非最重要因素，该选项把它说成最重要因素，属于过度推断。\nD. 正确（符合文意）：文中“careful choice of important points”说明研究者建议认真选择重要知识点，与选项一致。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-5-mwgdf4k9",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Read the passage and answer the question.\nAfter the final bell, Leo stayed in the classroom. He put three small robots on a desk. Each robot moved forward, turned left, and stopped at the desk's edge. Leo wrote some notes, smiled, and turned off the lights.\nWhat is the best inference about Leo?",
+      "options": [
+        "He is cleaning the classroom for the school.",
+        "He is testing robots for a project.",
+        "He is afraid that the robots will break.",
+        "He is waiting for his parents to pick him up."
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：文中只写Leo放学后留在教室、把机器人放在桌上并记录，没有出现扫帚、抹布、打扫动作等清洁线索，因此不能推出他在打扫教室。\nB. 正确：推断要基于文本线索且不超出文本。Leo放学后留下，把三个小机器人放在桌上，观察它们前进、左转、停在桌边，还写下笔记并微笑，这些线索共同支持“他在为某个项目测试机器人”的合理推断。\nC. 错误：他看到机器人运动后微笑并记录，没有害怕、后退、躲避或担忧的动作与情绪描写，与文本信息不符。\nD. 错误：文中没有提到父母、等待或接送等信息，属于无依据的过度推断；留在教室可能有其他原因。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-6-mwgdf4k9",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "阅读下面短文，从每小题所给的四个选项中选出最佳答案。\nLast month, Green Hill School set up a \"sharing shelf\" in the library. Students can leave books they no longer need and take home books they are interested in. No records are kept. At first, teachers worried that the shelf would soon be empty. But after three weeks, there were more books than before. A note on the wall says, \"Take one, leave one. If you have none to leave, take one anyway—just bring it back when you can.\"\nWhat can we infer from the passage?",
+      "options": [
+        "The sharing shelf works better than the teachers expected.",
+        "Students must leave a book before they take one.",
+        "The library keeps a record of every book on the shelf.",
+        "The shelf became empty after three weeks."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：文中说老师们起初担心书架很快会空，但三周后书反而更多，可推断共享书架的效果好于老师预期。\nB. 错误：墙上的提示说明如果没有书可留，也可以先拿一本，之后归还，并非必须先留下书。\nC. 错误：文中明确说“No records are kept”，即不记录借还情况。\nD. 错误：文中说三周后书比之前更多，与“书架变空”矛盾。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-7-mwgdf4k9",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "阅读下面短文，选择最佳答案。\n\nAt the school's \"Green Week\", students brought old books to the hall. Instead of throwing them away, they wrote a short note on each cover about why the book was worth reading. On Friday, every student could take home one \"new\" book without paying. Lily, a Grade 9 student, said, \"I came for a free book, but I stayed because I loved reading the notes. Now I want to write one for my favorite story next year.\"\n\nWhat can we infer from Lily's words?",
+      "options": [
+        "Lily only cares about getting free books.",
+        "The notes made the book exchange more meaningful to Lily.",
+        "Lily thinks the activity should be stopped next year.",
+        "Lily has already written a note for her favorite story."
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：Lily 说“I came for a free book, but I stayed because I loved reading the notes”，说明她最初为免费书而来，但后来被书封上的推荐语吸引，不能推断她只在乎免费书。\nB. 正确：Lily 因喜欢读这些推荐语而留下，并表示明年想为自己最喜欢的故事写推荐语，说明这些推荐语让旧书交换活动对她更有意义。\nC. 错误：Lily 说“Now I want to write one for my favorite story next year”，表明她期待并愿意参与明年的活动，与“应该停止活动”相矛盾。\nD. 错误：Lily 说的是“next year”想写推荐语，不能推断她已经写好了；选项中的“already”与原文时间信息冲突。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-8-mwgdf4k9",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "Read the passage and choose the statement that is NOT supported by it.\n\nLast spring, Class 3 started a \"zero-waste week\" at school. Students weighed the rubbish from their classroom every afternoon. On Monday it was 4.2 kg. After they began using both sides of paper and bringing reusable water bottles, the rubbish dropped to 2.5 kg on Friday. However, the monitor noticed that the recycling bin was often filled with clean paper that could still be used. The class then decided to put a \"Use Me Again\" box beside it.",
+      "options": [
+        "The class weighed their classroom rubbish every afternoon during the week.",
+        "The amount of classroom rubbish on Friday was smaller than that on Monday.",
+        "All students stopped using disposable water bottles after Monday.",
+        "The class noticed a problem with clean paper in the recycling bin and took action."
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 有依据：文中明确说 Students weighed the rubbish from their classroom every afternoon，因此该说法得到支持。\nB. 有依据：文中给出周一 4.2 kg、周五 2.5 kg，周五垃圾量确实比周一少。\nC. 正确：题干问 NOT supported，文中只说同学们开始 bringing reusable water bottles，并不能推出“所有学生都停止使用一次性水瓶”；All 过于绝对，属于过度推断。\nD. 有依据：文中提到 monitor noticed that the recycling bin was often filled with clean paper，随后班级决定放置 “Use Me Again” box，说明他们发现问题并采取行动。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-9-mwgdf4k9",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "阅读下面短文，选出能从文中合理推断出的一项。\n\nWhen Emma's family moved to a new city, she put her old bike in the corner of the garage. Every morning she walked past it on her way to the bus stop, but she never touched it. Then one Saturday morning, she wheeled the bike out, wiped the dust off, and rode slowly to the park two streets away. When she got home, she was smiling. \"Mum,\" she said, \"there are three kids on our street who ride bikes too!\"\n\nWhich of the following can we infer from the passage?",
+      "options": [
+        "Emma had never liked riding bikes before she moved.",
+        "Before that Saturday, Emma had few friends to play with in the new city.",
+        "Emma's mother asked her to clean the garage that Saturday.",
+        "The park is quite far from Emma's new home."
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：文中只说她搬家后把旧自行车放在车库角落、每天路过却不碰它，并未交代她以前不喜欢骑车，这个选项属于没有依据的过度推断。\nB. 正确：搬家后她一直没动那辆自行车，周六第一次骑车出门，回来时笑着告诉妈妈“我们街上有三个小孩也骑车”，说明她此前在新城市缺少玩伴，是这次出门让她找到了同伴，属于基于细节的合理推断。\nC. 错误：文中没有出现妈妈让她打扫车库的情节，wiped the dust off 是她自己擦掉自行车上的灰，与选项内容冲突。\nD. 错误：文中明确说公园在 two streets away（相隔两条街），距离很近，与选项“quite far”直接矛盾。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-10-mwgdf4k9",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "阅读下面短文，从每题所给的四个选项中选出最佳答案。\n\nMany families in Guangzhou now use a small smart speaker in their homes. You can ask it to play music, tell you the weather, or turn off the lights. But some parents have a new worry: their children talk to the speaker more than they talk to them. A teacher at a middle school said, \"The speaker can answer a question in a second, but it can never ask a child, 'How was your day?'\" She advises families to use smart devices as helpers, not as family members.\n\nWhat does the teacher advise families to do?",
+      "options": [
+        "To stop using smart speakers at home.",
+        "To use smart devices as helpers instead of family members.",
+        "To ask the speaker to answer more questions for children.",
+        "To spend less time talking with their children."
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：文中老师说 \"use smart devices as helpers, not as family members\"，是建议合理使用，并未要求完全停止使用智能音箱，该选项与原文冲突。\nB. 正确：末句 \"She advises families to use smart devices as helpers, not as family members\" 直接表明老师建议把智能设备当作帮手而非家庭成员。\nC. 错误：文中提到孩子和音箱说话比和父母说话还多，并引用 \"The speaker can answer a question in a second, but it can never ask a child, 'How was your day?'\"，意图是提醒家长多陪伴，而非让孩子多问音箱问题。\nD. 错误：老师引用音箱不会问孩子 \"How was your day?\" 正是暗示家长应多与孩子交流，与“少花时间与孩子交谈”相反。",
+      "difficulty": 2
+    }
+  ]
+}

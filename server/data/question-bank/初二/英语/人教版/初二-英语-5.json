@@ -1,0 +1,184 @@
+{
+  "grade": "初二",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初二-英语-5",
+    "name": "阅读理解策略"
+  },
+  "generatedAt": "2026-11-14T12:15:16.657Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwgdcdyh",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "阅读一篇介绍人工智能帮助做家务的短文时，如果只需快速判断文章主要讲什么，最合适的阅读策略是（ ）。",
+      "options": [
+        "Skimming the title, first and last sentences of each paragraph.",
+        "Scanning for every number and name in the passage.",
+        "Reading every word aloud slowly from beginning to end.",
+        "Translating each sentence into Chinese before reading on."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：略读（skimming）通过快速浏览标题、首尾句和关键词把握文章主旨，正符合“快速判断文章主要讲什么”的目的。\nB. 错误：扫读（scanning）用于定位具体数字、人名等细节，而且“每一个”数字和名字会耗费大量时间，不能高效获取主旨。\nC. 错误：逐词慢读并朗读会把注意力放在局部词句上，速度慢且不利于整体理解文章大意。\nD. 错误：逐句翻译会增加认知负担，也不是快速把握文章主旨的阅读策略。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwgdcdyh",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "阅读下面短文，选择最佳答案。\n\nLast Saturday, Tom planned to visit a science museum with his friends. When he got to the bus stop, he found he had left his wallet at home. Instead of going back, he called his sister and asked her to bring it to the museum. While waiting, he read the museum guide online and chose three exhibitions to see. In the end, he still had a great time.\n\nWhat does the passage mainly tell us?",
+      "options": [
+        "Tom forgot his wallet and missed the museum trip.",
+        "Tom solved a problem and still enjoyed his visit.",
+        "Tom's sister worked at the science museum.",
+        "Tom spent the whole day reading online."
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：文中说Tom最后仍然玩得很开心，并没有错过参观，该选项与结尾冲突。\nB. 正确：文章先写Tom忘带钱包，再写他请姐姐送来并利用等待时间规划参观，最后仍玩得开心，主旨是他解决问题并享受了参观。\nC. 错误：文中只说姐姐帮他把钱包送到博物馆，没有说她在那儿工作，属于无中生有。\nD. 错误：Tom只是在等待时上网看博物馆指南，并不是整天都在上网阅读。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-3-mwgdcdyh",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Read the passage and answer the question.\n\nLast month, our class started a \"reading buddy\" programme. Each Friday, we read a short article and then meet in pairs to talk about it. At first, I thought reading was just about finishing the words quickly. But my buddy, Lin, showed me a different way. Before reading, she looked at the title and the first picture and guessed what the article might be about. While reading, she marked the sentence that best told the main idea. After reading, she wrote down one question she still had. I tried her way. The article no longer felt like a wall of words; it became a conversation with the writer. Now I use these steps before every reading task, and I understand more in less time.\n\nWhat does the writer mean by saying \"it became a conversation with the writer\"?",
+      "options": [
+        "She began to write letters to the writer.",
+        "She understood the article better and read more actively.",
+        "She found that the writer was in the same class.",
+        "She stopped reading short articles."
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：文中“conversation with the writer”是比喻，指读者与文本进行主动交流，并不是真的给作者写信；后文也没有提到通信。\nB. 正确：前文提到先看标题和图片预测、阅读时标出主题句、读后写下问题，后文说文章“不再是一堵字墙”，说明她理解更深入、阅读更主动，因此这句话表示她与文本产生了积极互动。\nC. 错误：文中只说明作者和Lin是阅读伙伴，没有信息表明文章作者与她们同班；“with the writer”是阅读感受的表达，不是事实陈述。\nD. 错误：文中说她“Now I use these steps before every reading task”，说明她仍在进行阅读任务，而且“understand more in less time”表示效率提高，不是停止读短文章。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-4-mwgdcdyh",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "阅读下面短文，选择最佳答案。\n\nMany students think that the faster they read, the better they understand. But a study of 200 middle school readers found something different. Students who stopped after each paragraph and wrote a one-sentence summary remembered more details a week later than those who just raced through the whole text. However, summarizing took almost twice as long. So it is helpful, but not practical for every reading task—for example, when you only skim a notice to find a date.\n\nWhat can we learn from the passage?",
+      "options": [
+        "The faster students read, the more details they remember.",
+        "Summarizing helps memory but takes more time, so we should choose a reading way according to the task.",
+        "Students should write a summary of every paragraph in every reading task.",
+        "Skimming a notice to find a date is a bad reading habit."
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：文章第一句只说“许多学生这样认为”，紧接着用 But 引出研究结果，且研究显示边读边概括的学生一周后记住的细节更多，与“读得越快记得越多”相反，属于把错误观点当成事实。\nB. 正确：文章既指出概括能帮助记住更多细节，又指出它“almost twice as long（耗时近两倍）”，并说“not practical for every reading task”，因此要根据任务选择合适的阅读方式，这是对全文的准确归纳。\nC. 错误：文章明确说概括“not practical for every reading task”，并举了只浏览通知找日期的例子，选项把“有帮助”夸大成“每个任务都要做”，属于过度推断。\nD. 错误：文章说浏览通知找日期时不适合逐段概括，并没有否定浏览这种读法，也没有说它是坏习惯，属于曲解原文。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-5-mwgdcdyh",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "In reading comprehension, what is the main purpose of skimming a passage before reading it carefully?",
+      "options": [
+        "To learn every word and grammar rule in the passage",
+        "To get the general idea and structure of the passage quickly",
+        "To translate each sentence into Chinese word by word",
+        "To remember all the new words before reading carefully"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：略读不要求掌握每个单词和语法规则，这是精读或语言学习时更关注的内容。\nB. 正确：略读的核心目的是快速获取文章大意和结构，帮助读者先建立整体理解。\nC. 错误：逐句翻译会明显放慢阅读速度，不属于略读的主要目的。\nD. 错误：略读不是先背会所有生词；生词记忆是词汇学习活动，不是略读策略的定义。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-6-mwgdcdyh",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "阅读下面短文，从每题所给的A、B、C、D四个选项中选出最佳答案。\n\nMany students read every word slowly when they do reading exercises. That is not always a good idea. First, read the questions quickly. Then, read the passage to find the key information. For example, if a question asks about time, you only need to look for numbers like 7:30 or Monday. This way, you can finish the reading part in less time.\n\nAccording to the passage, what should students do first when doing reading exercises?",
+      "options": [
+        "Read every word slowly.",
+        "Read the questions quickly.",
+        "Look for numbers only.",
+        "Finish the reading part in less time."
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：文中说“read every word slowly”并不总是好主意，与题干“首先应该做什么”不符。\nB. 正确：文中明确说“First, read the questions quickly”，说明做阅读练习时应先快速读题。\nC. 错误：文中提到“numbers like 7:30 or Monday”只是举例子说明如何找时间信息，并不是要求只看数字。\nD. 错误：“finish the reading part in less time”是采用正确方法后的结果，不是第一步。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-7-mwgdcdyh",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Read the passage and choose the best title.\nLast month, our class started a 'Green Corner'. At first, only three students brought old bottles. Miss Li didn't tell us to do more. Instead, she put a small sign on the wall: 'One bottle today, one tree tomorrow.' Soon, more students joined. By Friday, the corner was full of bottles, and we used the money to buy two young trees. Now we understand that a small action can grow into something big.\nWhat is the best title for the passage?",
+      "options": [
+        "A Sign on the Wall",
+        "From Bottles to Trees",
+        "Miss Li's Class",
+        "How to Save Money"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：墙上的标语只是文中推动学生参与的一个细节，不能概括全文主要内容，作为标题范围过窄。\nB. 正确：文章从收集旧瓶子开始，写到更多学生加入，最后用卖瓶子的钱买树，标题应概括这一核心过程。\nC. 错误：Miss Li 的班级只是故事发生的背景，标题没有体现“旧瓶变树”的主要事件，范围过宽。\nD. 错误：文中重点是环保行动和结果，不是教人如何省钱；用钱买树只是结果，不能作为主旨标题。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-8-mwgdcdyh",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "阅读下面短文，选择正确答案。\n\nLast month, our school library started a \"quiet hour\" every Wednesday afternoon. From 2:30 to 3:30, students may borrow books, but they must not talk or use phones. The library used to close at 3:00, so the new rule gives students half an hour more to read. However, the quiet hour is not for group study; students who need to discuss a project should go to Room 204. The librarian says the change was made because many students asked for a quieter place to prepare for exams.\n\nWhich of the following is TRUE according to the passage?",
+      "options": [
+        "The library now closes half an hour later than before.",
+        "Students can discuss projects in the library during the quiet hour.",
+        "The quiet hour is held every afternoon from 2:30 to 3:30.",
+        "The change was made because students wanted more group study rooms."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：文中说“The library used to close at 3:00”以及新规持续到3:30，因此现在比过去晚半小时关闭，符合原文信息。\nB. 错误：文中明确说“the quiet hour is not for group study”，并建议需要讨论项目的学生去Room 204，因此不能在图书馆安静时段讨论项目。\nC. 错误：文中说的是“every Wednesday afternoon”，不是“every afternoon”，选项把频率扩大为每天下午，与原文冲突。\nD. 错误：文中说明改变的原因是学生想要“a quieter place to prepare for exams”，不是想要更多小组学习室；该选项偷换了原因。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-9-mwgdcdyh",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "When you read a passage quickly just to get the main idea, which reading strategy are you using?",
+      "options": [
+        "Skimming",
+        "Scanning",
+        "Guessing word meaning from context",
+        "Predicting"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：Skimming 指快速浏览文章，重点抓取文章主旨和大意，符合题干“just to get the main idea”。\nB. 错误：Scanning 是查读，用于快速寻找文中特定信息，如数字、人名或时间，而不是概括主旨。\nC. 错误：Guessing word meaning from context 是根据上下文猜测生词含义，目标是理解词义，不是获取全文主旨。\nD. 错误：Predicting 是根据标题、图片或前文预测后续内容，属于预测策略，不是快速浏览抓主旨。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-10-mwgdcdyh",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "Read the passage and choose the best answer.\nLast Saturday, Class 2 held a book sale in the school hall. Students brought old books from home and sold them at low prices. The money will be used to buy new books for the school library. Many students also helped by making posters and putting books in order. At the end of the day, they raised 800 yuan. Their teacher said the sale was not only about money, but also about learning to share and help others.\nWhat is the passage mainly about?",
+      "options": [
+        "A class activity that raised money for the school library.",
+        "How students bought new books from a shop.",
+        "Why the school library needs old posters.",
+        "A teacher's lesson about making money."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：文章围绕二班举办旧书义卖、为校图书馆筹款展开，首尾都强调活动及帮助他人的意义，因此主旨是班级为校图书馆筹款的活动。\nB. 错误：文中学生是“带来旧书并低价出售”，不是从商店买新书；筹款用于买新书，也不是学生购买新书。\nC. 错误：海报是学生制作来帮助义卖，文中未说图书馆需要旧海报，该选项把细节张冠李戴。\nD. 错误：老师的话强调义卖不只是钱，还在于学会分享和帮助他人，并非讲授“赚钱”的课。",
+      "difficulty": 1
+    }
+  ]
+}

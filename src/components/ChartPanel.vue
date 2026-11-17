@@ -41,8 +41,40 @@ function zeroed(option) {
   }
 }
 
+// ECharts 默认的坐标轴/图例文字是深灰色，在深色底上几乎看不见；
+// 这里按当前主题补一层默认颜色，浅色模式保持原样，不动系列本身的配色。
+function isDarkTheme() {
+  return document.documentElement.dataset.theme === 'dark'
+}
+
+function darkAxis(axis) {
+  if (!axis) return axis
+  const paint = single => {
+    if (!single || typeof single !== 'object') return single
+    return {
+      ...single,
+      axisLabel: { color: '#a6babd', ...(single.axisLabel || {}) },
+      axisLine: { ...(single.axisLine || {}), lineStyle: { color: '#37535b', ...(single.axisLine?.lineStyle || {}) } },
+      splitLine: { ...(single.splitLine || {}), lineStyle: { color: 'rgba(255,255,255,.08)', ...(single.splitLine?.lineStyle || {}) } }
+    }
+  }
+  return Array.isArray(axis) ? axis.map(paint) : paint(axis)
+}
+
+function themedOption(option) {
+  if (!isDarkTheme()) return option
+  return {
+    ...option,
+    textStyle: { color: '#a6babd', ...(option.textStyle || {}) },
+    xAxis: darkAxis(option.xAxis),
+    yAxis: darkAxis(option.yAxis),
+    ...(option.legend ? { legend: { ...option.legend, textStyle: { color: '#c2d2d4', ...(option.legend.textStyle || {}) } } } : {})
+  }
+}
+
 async function render() {
   const token = ++renderToken
+  const option = themedOption(props.option)
   if (!chart && needsGl(props.option)) {
     await loadGl()
     // 等待 gl 模块期间可能已经卸载或有了更新，旧任务直接放弃，避免覆盖新数据。
@@ -54,12 +86,24 @@ async function render() {
   }
   if (props.animateIn && !revealed) {
     revealed = true
-    chart.setOption(zeroed(props.option), true)
-    window.requestAnimationFrame(() => { if (chart && !chart.isDisposed()) chart.setOption(props.option) })
+    chart.setOption(zeroed(option), true)
+    window.requestAnimationFrame(() => { if (chart && !chart.isDisposed()) chart.setOption(option) })
     return
   }
-  chart.setOption(props.option, true)
+  chart.setOption(option, true)
 }
-onMounted(() => { render(); window.addEventListener('resize', render) }); watch(() => props.option, render, {deep:true}); onBeforeUnmount(()=>{window.removeEventListener('resize',render);chart?.dispose()})
+// 主题切换时要重画一次，否则轴文字还停留在上一套配色上。
+const themeObserver = new MutationObserver(() => render())
+onMounted(() => {
+  render()
+  window.addEventListener('resize', render)
+  themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] })
+})
+watch(() => props.option, render, { deep: true })
+onBeforeUnmount(() => {
+  themeObserver.disconnect()
+  window.removeEventListener('resize', render)
+  chart?.dispose()
+})
 </script>
 <template><div ref="el" class="chart" :style="{height: `${height}px`}"></div></template>

@@ -3,7 +3,20 @@
 
 export const QUIZ_MODE_LIMITS = {
   daily: { min: 5, max: 8, default: 6, label: '日常测试' },
-  weekly: { min: 10, max: 15, default: 12, label: '周测' }
+  weekly: { min: 10, max: 15, default: 12, label: '周测' },
+  // 综合整卷题量固定，按中考常见卷型配 25 题；建议用时 90 分钟。
+  paper: { min: 25, max: 25, default: 25, label: '综合整卷' },
+  // 扫描试卷练习由识别结果决定题量，不走上限校验。
+  scan: { min: 1, max: 60, default: 25, label: '扫描试卷' }
+}
+
+// 综合整卷规格：数学、英语按 120 分，其余科目 100 分；25 题、建议 90 分钟。
+// 题型数量与分值由服务端按此规格拆分，前端只负责展示，避免两边口径不一致。
+export const PAPER_SPEC = {
+  durationMinutes: 90,
+  questionCount: 25,
+  fullScoreFor: subject => ['数学', '英语'].includes(subject) ? 120 : 100,
+  sectionCounts: { single: 10, fill: 6, short: 9 }
 }
 
 // 全角字符转半角，便于同一道题在不同输入法下得到相同指纹。
@@ -59,7 +72,7 @@ export function gradeQuestion(question = {}, answer) {
     const selected = toIndexList(answer)
     const correctSet = toIndexList(question.correctIndexes)
     if (!selected.length || !correctSet.length) return { correct: false, earned: 0, maxScore, needsSelfGrade: false }
-    // 错选一个即 0 分；少选按选对项比例给部分分（新高考多选题规则）。
+    // 错选一个即 0 分；少选按选对项比例给部分分。
     if (selected.some(index => !correctSet.includes(index))) return { correct: false, earned: 0, maxScore, needsSelfGrade: false }
     if (selected.length === correctSet.length) return { correct: true, earned: maxScore, maxScore, needsSelfGrade: false }
     return { correct: false, earned: roundScore(maxScore * selected.length / correctSet.length), maxScore, needsSelfGrade: false, partial: true }

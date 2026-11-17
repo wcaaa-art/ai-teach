@@ -1,0 +1,184 @@
+{
+  "grade": "初二",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初二-英语-4",
+    "name": "宾语从句入门"
+  },
+  "generatedAt": "2026-11-14T12:15:18.317Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwgdcaqb",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列句子中，宾语从句的连接词和语序使用都正确的是哪一项？",
+      "options": [
+        "Could you tell me where does he live?",
+        "I don't know if he will come tomorrow.",
+        "She asked me that what I was doing.",
+        "Do you know when is the meeting?"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：宾语从句应使用陈述语序，where does he live应改为where he lives。\nB. 正确：if引导宾语从句，表示“是否”，且从句he will come tomorrow使用陈述语序。\nC. 错误：what已经充当从句的引导词和宾语，不能再加that；应改为She asked me what I was doing。\nD. 错误：宾语从句应使用陈述语序，when is the meeting应改为when the meeting is。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwgdcaqb",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "—Could you tell me ______?\n—Sure. He lives in Beijing.",
+      "options": [
+        "where does he live",
+        "where he lives",
+        "where he live",
+        "where did he live"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：where does he live 使用疑问语序，宾语从句应使用陈述语序，助动词 does 不应放在主语 he 前。\nB. 正确：宾语从句要用陈述语序，结构为“where + 主语 + 谓语”，且主语 he 为第三人称单数，谓语用 lives。\nC. 错误：where he live 中主语 he 是第三人称单数，一般现在时谓语应为 lives，不能使用动词原形 live。\nD. 错误：where did he live 既使用疑问语序，又使用一般过去时；题干回答 He lives in Beijing 表明谈的是现在居住地，时态和语序均不符。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-3-mwgdcaqb",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "—Could you tell me ______?\n—Sure. He lives in Room 305.",
+      "options": [
+        "where does Mr. Li live",
+        "where Mr. Li lives",
+        "where Mr. Li live",
+        "where did Mr. Li live"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：宾语从句应使用陈述语序，does 放在主语前形成疑问语序，与从句要求冲突。\nB. 正确：where 引导宾语从句，从句用陈述语序“Mr. Li lives”；答语表示现在的住址，用一般现在时。\nC. 错误：主语 Mr. Li 是第三人称单数，谓语动词 live 应变为 lives，不能直接用原形。\nD. 错误：答语“He lives...”说明询问现在的情况，用一般现在时；did 既造成时态不一致，又形成疑问语序。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-4-mwgdcaqb",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "—Could you tell me ______?\n—Sure. It's next to the bank.",
+      "options": [
+        "where the post office is",
+        "where is the post office",
+        "where the post office was",
+        "where was the post office"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：宾语从句须用陈述语序，即“连接词+主语+谓语”；此处询问邮局现在的位置，用一般现在时 is 正确。\nB. 错误：where is the post office 是疑问语序，宾语从句中不能倒装，应改为 where the post office is。\nC. 错误：was 表示过去的位置，与答语 It's next to the bank 所描述的现在位置冲突。\nD. 错误：既使用了疑问语序 where was the post office，又错误使用了过去时 was。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-5-mwgdcaqb",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Which of the following sentences contains a correct object clause?",
+      "options": [
+        "I want to know where does he live.",
+        "Do you know what time is it now?",
+        "She asked me whether I could help her.",
+        "He told me that he will go to Beijing yesterday."
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：宾语从句应使用陈述语序，where does he live 为疑问语序，应改为 where he lives。\nB. 错误：what time is it now 为疑问语序，宾语从句中应改为 what time it is now。\nC. 正确：whether 引导宾语从句，从句使用陈述语序 I could help her，符合宾语从句的基本结构。\nD. 错误：主句 told 为过去时，从句时间状语 yesterday 也表过去，不能用 will go，应改为 had gone 或 went。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-6-mwgdcaqb",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "Do you know ______ next Friday?",
+      "options": [
+        "when will the school concert begin",
+        "when the school concert will begin",
+        "when does the school concert begin",
+        "when the school concert began"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：宾语从句必须使用陈述语序，will应放在主语the school concert之后，不能使用疑问倒装语序。\nB. 正确：宾语从句使用“连接词+主语+谓语”的陈述语序；next Friday表示将来，因此用will begin。\nC. 错误：does是助动词，宾语从句中不能使用疑问倒装结构；同时next Friday表示将来，一般现在时begin与时间状语冲突。\nD. 错误：next Friday表示将来的时间，不能用一般过去时began。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-7-mwgdcaqb",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "—Mum, I wonder ______ this weekend.\n—We'll go hiking if it doesn't rain.",
+      "options": [
+        "what will we do",
+        "whether we will go hiking",
+        "when will we go hiking",
+        "if we go hiking or not"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：宾语从句应使用陈述语序，what will we do 中 will we 是疑问语序；且答语说的是是否去远足，不是问具体做什么。\nB. 正确：wonder 后可用 whether 引导宾语从句，表示“是否”；从句用陈述语序 we will，时态与 this weekend 及答语 We'll go hiking 的将来语境一致。\nC. 错误：when will we go hiking 仍是疑问语序，宾语从句应为 when we will go hiking；同时答语重点不是询问具体时间。\nD. 错误：if 虽可表示“是否”，但 if ... or not 的搭配不规范，通常用 whether ... or not；且 go 与 this weekend 的将来计划语境不一致。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-9-mwgdcaqb",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Which sentence correctly uses an object clause?",
+      "options": [
+        "Could you tell me where is the library?",
+        "I don't know what does he want.",
+        "She asked me if I had finished my homework.",
+        "He said that where he lived."
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：宾语从句应使用陈述语序，where is the library 是疑问语序，应改为 where the library is。\nB. 错误：宾语从句应使用陈述语序，what does he want 是疑问语序，应改为 what he wants。\nC. 正确：if 引导宾语从句，从句使用陈述语序 I had finished my homework，且主句为过去时 asked，从句用过去完成时表示动作发生在主句动作之前，符合宾语从句的语序和时态要求。\nD. 错误：that 和 where 不能同时引导同一个宾语从句，且从句应为陈述语序 where he lived，可改为 He said where he lived 或 He said that he lived there。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-10-mwgdcaqb",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "— Excuse me, could you tell me ______? I want to send a letter to him.\n— Sure. He lives in Room 302, Building 5.",
+      "options": [
+        "where does he live",
+        "where he lives",
+        "where he live",
+        "where did he live"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：where does he live 是疑问句语序，助动词 does 被提到主语前；宾语从句必须使用陈述语序，因此该选项与从句语序规则冲突。\nB. 正确：宾语从句由疑问词 where 引导时，后面要用“主语 + 谓语”的陈述语序；同时主语 he 是第三人称单数，一般现在时谓语用 lives，因此 where he lives 语序和主谓一致都正确。\nC. 错误：语序虽然正确，但主语 he 是第三人称单数，一般现在时谓语应为 lives；he live 主谓不一致。\nD. 错误：did 提前构成疑问语序，不符合宾语从句要求；而且主句 could you tell me 表示现在的请求，答语 He lives in Room 302 也是现在时，从句不需要用过去时。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-1-mwgdcf8r",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在复合句中，宾语从句的主要作用是充当哪一句子成分？",
+      "options": [
+        "主语",
+        "宾语",
+        "定语",
+        "状语"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：作主语的从句叫主语从句，例如 That he is right is clear 中 That he is right 作主语，不是宾语从句。\nB. 正确：宾语从句是句子作宾语，常放在及物动词或介词后，例如 I know that he is right 中 that he is right 作 know 的宾语。\nC. 错误：作定语的是定语从句，例如 The book that I bought is new 中 that I bought 修饰 book，不是宾语从句。\nD. 错误：作状语的是状语从句，例如 When he came, we left 中 When he came 表示时间，不是宾语从句。",
+      "difficulty": 1
+    }
+  ]
+}

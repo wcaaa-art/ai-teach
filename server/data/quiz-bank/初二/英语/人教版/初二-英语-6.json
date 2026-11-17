@@ -1,0 +1,114 @@
+{
+  "grade": "初二",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初二-英语-6",
+    "name": "书面表达组织"
+  },
+  "generatedAt": "2026-11-14T13:07:00.000Z",
+  "source": "trae",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初二-英语-6-f1",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "英语段落通常由主题句、支持句和总结句构成。概括全段中心意思、统领全段其他句子的一句话叫做____（用中文填写）。",
+      "answer": "主题句",
+      "acceptableAnswers": [
+        "主题句",
+        "主题句（topic sentence）",
+        "topic sentence"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 题干的关键信息是“概括全段中心意思”“统领全段其他句子”。\n2. 具备这一功能的句子叫主题句（topic sentence），通常放在段首。\n3. 支持句围绕主题句举例、说明，总结句收束全段，三者不能混淆。\n易错点：把结尾的总结句误当作主题句；或只答“第一句”，没有指出它在段落中的功能。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-6-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "在书面表达中，为使层次清楚，需要恰当使用连接词。请用表示“此外、而且”的连接词补全句子（首字母为 B）：\nThe plan is easy to follow. ____, it saves us a lot of time.",
+      "answer": "Besides",
+      "acceptableAnswers": [
+        "Besides",
+        "besides",
+        "Besides,"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 前后两句是递进关系，后一句在前一句的基础上补充一个优点。\n2. 表示“此外、而且”且以 B 开头的连接词是 Besides，置于句首时后面要加逗号。\n3. 若用 First、Finally，则分别表示“首先”“最后”，与递进关系不符；Also 虽可表示递进，但首字母不是 B。\n易错点：把 Besides 写成 Beside，后者意为“在……旁边”，词性也不同。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-6-s1",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "假设你是李华，你的英国笔友 Peter 想了解你校的社团活动。请你用英语给他写一封电子邮件，内容包括：\n1. 你参加了哪个社团及活动时间；\n2. 你在社团里做了什么；\n3. 邀请他介绍自己学校的社团。\n要求：70 词左右；至少使用 First、Then、Also、Finally 中的两个连接词；开头和结尾已给出，不计入总词数；文中不得出现真实校名和姓名。\n开头：Dear Peter,\n结尾：Yours, Li Hua",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "参考范文：\nDear Peter,\nI am glad to tell you about our school clubs. I joined the reading club, and we meet every Friday afternoon. First, we choose a book and read it for half an hour. Then we share what we think about the story. Also, we sometimes act out a part of the book. It is great fun. What clubs do you have in your school? Please write and tell me.\nYours,\nLi Hua\n评分要点：\n1. 格式（1 分）：有称呼 Dear Peter, 和署名 Yours, Li Hua，位置正确。\n2. 内容（4 分）：社团名称与活动时间、社团里的具体活动、邀请对方介绍，三点各 1 分，表达清楚完整再得 1 分。\n3. 组织（3 分）：段落层次清楚，至少使用 First、Then、Also 中的两个连接词，指代与衔接自然。\n4. 语言（2 分）：全文以一般现在时为主，主谓一致，拼写和标点基本正确，70 词左右。",
+      "explanation": "第一步，审题定文体：写电子邮件，用第一人称和一般现在时，70 词左右，需覆盖社团名称与活动时间、具体活动、邀请介绍三个要点。\n第二步，安排结构：开头点明写信目的，主体按 First—Then—Also 的顺序展开活动内容，结尾提出邀请并礼貌收束。\n第三步，分步给分：格式 1 分；三个内容要点各 1 分，表达完整再加 1 分；层次与连接词 3 分；时态、主谓一致、拼写标点共 2 分。\n常见错误：三个要点挤在一段且没有连接词；漏掉邀请；用一般过去时描述经常性活动；词数明显不足 60 词。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初二-英语-6-f3",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "英语书面表达常采用“三段式”结构：开头段点明写作目的或表明观点，主体段分点展开内容，结尾段____（用中文填写，如“总结全文”）。",
+      "answer": "总结全文",
+      "acceptableAnswers": [
+        "总结全文",
+        "收束全文",
+        "总结全文，呼应开头"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 三段式结构中，开头段引出话题，主体段展开要点，结尾段收束全文。\n2. 结尾段的常见做法是总结全文、重申观点或发出呼吁，使文章结构完整。\n3. 因此本空可填“总结全文”，写“收束全文”也算正确。\n易错点：把结尾段的功能写成“提出观点”，那是开头段的作用；或只写“写完了”，没有指出段落功能。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-6-s2",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "假设你是李华，你校英语报正在举办“绿色校园”征文活动。请你以 How to Make Our School Greener 为题写一篇短文，内容包括：\n1. 校园中存在的两个环境问题；\n2. 你提出的两条具体建议；\n3. 号召同学们一起行动。\n要求：80 词左右；至少使用两个连接词（如 First、Besides、Therefore）；文中不得出现真实校名和姓名。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "参考范文：\nHow to Make Our School Greener\nOur school is beautiful, but there are still some problems. First, many students throw paper and bottles on the playground. Besides, some lights are left on in empty classrooms.\nHere are my suggestions. First, we should put waste into different bins so that it can be recycled. Besides, we must turn off the lights and computers when we leave.\nTherefore, let us start with small things and make our school greener.\n评分要点：\n1. 标题与结构（2 分）：写出标题，并按“问题—建议—号召”三层展开。\n2. 内容（4 分）：两个环境问题各 1 分，两条具体建议各 1 分，缺一点扣 1 分。\n3. 组织（2 分）：至少使用两个连接词，层次之间过渡自然。\n4. 语言（2 分）：时态恰当，should、must 等用法正确，拼写和标点基本无误，80 词左右。",
+      "explanation": "第一步，审题：题目要求写倡议类短文，必须包含问题、建议、号召三部分，80 词左右，并使用两个以上连接词。\n第二步，搭结构：开头点出校园仍存在环境问题，主体用 First、Besides 分别列出问题和建议，结尾用 Therefore 引出号召，形成“问题—建议—行动”的递进。\n第三步，分步给分：标题与三层结构 2 分；两个问题 2 分，两条建议 2 分；连接词与过渡 2 分；时态、情态动词、拼写标点 2 分。\n常见错误：只写问题不给建议；建议空泛如“要环保”而无具体做法；连接词堆砌但逻辑不对应；把倡议写成日记或书信格式。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初二-英语-6-f4",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "在介绍活动安排的书面表达中，First、Then、Next、Finally 这类连接词主要用来表示内容之间的____关系（用中文填写）。",
+      "answer": "顺序",
+      "acceptableAnswers": [
+        "顺序",
+        "先后顺序",
+        "时间顺序"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. First、Then、Next、Finally 依次引出先后发生的环节，体现的是顺序（时间先后）关系。\n2. 这类连接词能让读者清楚看出活动的步骤，避免把内容杂乱地堆在一起。\n3. 表示转折用 However，表示因果用 because、so，表示递进用 Besides，功能各不相同。\n易错点：把顺序连接词当作因果连接词；或在并列的两个要点之间误用 Finally，造成层次混乱。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-6-s3",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "假设你是李华，你们班就“中学生是否应该做家务”进行了讨论。请你根据讨论结果写一篇短文投给校英语报，内容包括：\n1. 部分同学认为做家务会占用学习时间；\n2. 另一部分同学认为做家务能培养责任感、减轻父母负担；\n3. 你的看法及理由。\n要求：80 词左右；观点对比清楚，至少使用两个表示对比或递进的连接词；文中不得出现真实校名和姓名。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "参考范文：\nShould Middle School Students Do Housework?\nOur class had a discussion about housework last week. Some students think we should not do it, because they believe housework takes up too much time and affects our study.\nHowever, others disagree. In their opinion, doing housework can develop our sense of responsibility and help our parents relax after work. Besides, we can learn basic life skills.\nAs for me, I agree with the second group. Doing some housework every day costs little time but makes our family closer.\n评分要点：\n1. 内容（5 分）：第一种观点及理由 2 分，第二种观点及理由 2 分，自己的看法与理由 1 分。\n2. 组织（3 分）：先摆分歧再表明立场，层次清楚；使用 However、Besides、As for me 等连接成分两个以上得 2 分，首尾完整、衔接自然再得 1 分。\n3. 语言（2 分）：时态与人称一致，主谓一致，拼写标点基本正确，80 词左右。",
+      "explanation": "第一步，审题：这是观点对比类短文，要客观呈现两种观点及各自理由，再表明自己的看法，80 词左右，并至少使用两个对比或递进连接词。\n第二步，搭结构：开头交代讨论话题，主体用 Some students think... However, others... 对比两种观点，结尾用 As for me 表明立场并给出理由，形成“提出话题—对比观点—表明立场”的完整链条。\n第三步，分步给分：内容 5 分（观点一 2 分、观点二 2 分、个人看法 1 分）；组织 3 分（对比结构 2 分、首尾与衔接 1 分）；语言 2 分（时态人称、主谓一致、拼写标点）。\n常见错误：只写一方观点，缺少对比；However 后不加逗号或用于并列句中间；自己的看法与前面理由矛盾；全篇时态混用。",
+      "difficulty": 3,
+      "score": 10
+    }
+  ]
+}

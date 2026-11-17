@@ -1,0 +1,184 @@
+{
+  "grade": "初一",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初一-英语-2",
+    "name": "一般现在时"
+  },
+  "generatedAt": "2026-11-14T12:12:54.136Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwgd9bzp",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Which sentence correctly uses the simple present tense to describe a regular habit?",
+      "options": [
+        "Lily goes to school by bike every day.",
+        "Lily is going to school by bike every day.",
+        "Lily went to school by bike every day.",
+        "Lily will go to school by bike every day."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：every day 表示经常性习惯，应用一般现在时；主语 Lily 是第三人称单数，动词用 goes。\nB. 错误：is going 是现在进行时，强调正在发生或将来安排，与 every day 表示的经常性习惯冲突。\nC. 错误：went 是一般过去时，表示过去发生，与 every day 表示现在的习惯不符。\nD. 错误：will go 是一般将来时，表示将来，与 every day 表示的经常性习惯冲突。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwgd9bzp",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "My brother ______ to school by bike every day. 选择最佳选项完成句子。",
+      "options": [
+        "go",
+        "goes",
+        "going",
+        "went"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：主语 My brother 是第三人称单数，一般现在时肯定句中谓语动词要用第三人称单数形式；go 是动词原形，与主语不一致。\nB. 正确：every day 表示经常性、习惯性动作，句子用一般现在时；主语 My brother 为第三人称单数，动词 go 应变为 goes。\nC. 错误：going 是现在分词或动名词，不能单独作一般现在时的谓语，句子会缺少谓语动词。\nD. 错误：went 是 go 的过去式，表示过去发生的动作，与 every day 表示的习惯性动作冲突。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-3-mwgd9bzp",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "学校英语社团要张贴一张英文招新通知。请你根据语境和一般现在时的用法，为下面通知中的三个空格选出最恰当的选项：\nEnglish Club Notice\nOur English Club ______ new members every September. Each member ______ a small notebook at the first meeting and ______ notes during the club activities. Come and join us!",
+      "options": [
+        "welcomes; gets; takes",
+        "welcome; gets; take",
+        "welcomes; get; takes",
+        "welcome; get; take"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：Our English Club 是单数第三人称主语，一般现在时表示习惯性动作用动词原形加 -s，故用 welcomes；Each member 作主语时视为单数，谓语用 gets；and 连接的并列谓语与前面保持一致，也用第三人称单数形式 takes。句中的 every September 也提示这里描述的是经常性安排，应用一般现在时。\nB. 错误：welcome 没有和单数主语 Our English Club 保持一致，应为 welcomes；take 也没有和单数主语 Each member 保持一致，应为 takes。\nC. 错误：get 没有和单数主语 Each member 保持一致，应为 gets，属于第三人称单数漏加 -s 的典型错误。\nD. 错误：三处谓语 welcome、get、take 都没有使用第三人称单数形式，与各自的主语 Our English Club 和 Each member 不一致。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-4-mwgd9bzp",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "Which of the following sentences is grammatically correct?",
+      "options": [
+        "Does your father goes to work by bus every day?",
+        "Your father goes to work by bus every day?",
+        "Your father don't go to work by bus every day.",
+        "Does your father go to work by bus every day?"
+      ],
+      "correctIndex": 3,
+      "explanation": "A. 错误：一般现在时的疑问句在助动词 Does 后应使用动词原形，goes 应改为 go。\nB. 错误：该句是疑问句，缺少助动词 Does，且没有采用助动词提前的疑问语序。\nC. 错误：主语 Your father 是第三人称单数，否定句应使用 doesn't，不能用 don't。\nD. 正确：一般现在时中主语为第三人称单数时，疑问句结构为“Does + 主语 + 动词原形 + 其他？”，go 使用正确。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-5-mwgd9bzp",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列句子中，哪一句使用一般现在时来表示「经常性、习惯性的动作」？",
+      "options": [
+        "My father goes to work by bike every day.",
+        "My father is going to work by bike now.",
+        "My father went to work by bike yesterday.",
+        "My father will go to work by bike tomorrow."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：一般现在时表示经常发生、习惯性的动作或客观事实，句中 every day 是典型的一般现在时时间状语，主语 My father 是第三人称单数，动词用 goes，形式与意义都正确。\nB. 错误：句中含有 now，并且用了 be + going 结构，这是现在进行时，表示此刻正在进行的动作，不是习惯性动作，与题干要求的时态不符。\nC. 错误：yesterday 表示过去的时间，谓语 went 是 go 的过去式，属于一般过去时，与一般现在时表达习惯性动作的功能不符。\nD. 错误：tomorrow 表示将来的时间，will go 是一般将来时，不能用来表示经常性、习惯性的动作。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-6-mwgd9bzp",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "My brother ___ to school by bike every day.",
+      "options": [
+        "go",
+        "goes",
+        "going",
+        "went"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：主语 My brother 是第三人称单数，go 是动词原形，只与 I/you/we/they 等非第三人称单数主语搭配，此处主谓不一致。\nB. 正确：every day 表示经常性、习惯性的动作，句子用一般现在时；主语 My brother 为第三人称单数，实义动词要加 -es，go 变为 goes，构成“主语+动词第三人称单数形式”的正确结构。\nC. 错误：going 是现在分词，不能单独在句中作谓语，必须与 be 动词连用构成进行时，而本句没有 be 动词，也不表示正在进行。\nD. 错误：went 是 go 的一般过去时，表示过去发生的动作，与 every day 这一表示习惯性现在的时间状语在时态上冲突。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-7-mwgd9bzp",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "假设你正在向新同学介绍班级的日常安排，下面哪一句在语境和语法上都最恰当？",
+      "options": [
+        "Our class has a reading corner, and we often read books there after lunch.",
+        "Our class has a reading corner, and we often readed books there after lunch.",
+        "Our class has a reading corner, and we are often read books there after lunch.",
+        "Our class has a reading corner, and we often reading books there after lunch."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：介绍班级日常、习惯性安排用一般现在时；主语 we 后谓语动词用原形 read，often 是常见的一般现在时频率副词，句子语法与语境都正确。\nB. 错误：readed 不是 read 的正确过去式（read 的过去式仍拼作 read），且 often 表示习惯，应用一般现在时，与过去式冲突。\nC. 错误：are read 是“被读”的被动结构，主语 we 与 read 是主动关系，且 often 表示习惯，不能用现在进行时的被动形式，结构错误。\nD. 错误：often 后缺少谓语动词，reading 不能单独作谓语，应改为 read。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-8-mwgd9bzp",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "下列句子中，动词形式使用完全正确的一项是：",
+      "options": [
+        "My brother go to school by bike every day.",
+        "Lily doesn't likes apples.",
+        "The little boy often watches TV after dinner.",
+        "Do he play football on Sundays?"
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：主语 My brother 是第三人称单数，一般现在时表示经常性动作时谓语动词要加 -s，go 应改为 goes，本句动词形式与主语不一致。\nB. 错误：一般现在时的否定句借助助动词 doesn't 构成，助动词后必须跟动词原形，likes 应改为 like，本句多加了 -s。\nC. 正确：一般现在时表示经常性、习惯性的动作，主语 The little boy 为第三人称单数，动词 watch 以 ch 结尾，加 -es 变为 watches，主语与谓语形式一致，用法正确。\nD. 错误：主语 he 是第三人称单数，一般现在时的一般疑问句应借助助动词 does，且其后动词用原形，正确形式为 Does he play football on Sundays?，本句误用了 Do。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-9-mwgd9bzp",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列句子中，使用一般现在时并表示经常性动作的是哪一句？",
+      "options": [
+        "Lily goes to school by bike every day.",
+        "Lily went to school by bike yesterday.",
+        "Lily is going to school by bike now.",
+        "Lily will go to school by bike tomorrow."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：goes 是一般现在时第三人称单数形式，every day 表示经常性动作，符合一般现在时的概念。\nB. 错误：went 是一般过去时，yesterday 表示过去时间，与一般现在时表示经常性动作不符。\nC. 错误：is going 是现在进行时，now 表示正在发生，不是一般现在时。\nD. 错误：will go 是一般将来时，tomorrow 表示将来时间，与一般现在时表示经常性动作不符。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-10-mwgd9bzp",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "My brother usually ______ to school by bike.",
+      "options": [
+        "goes",
+        "go",
+        "going",
+        "went"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：usually 表示经常性动作，句子用一般现在时；主语 My brother 是第三人称单数，动词 go 要变为 goes。\nB. 错误：go 是动词原形，不能与第三人称单数主语 My brother 搭配。\nC. 错误：going 是现在分词或动名词，不能单独在此处作谓语。\nD. 错误：went 是一般过去时，与 usually 表示的经常性动作及一般现在时语境不符。",
+      "difficulty": 1
+    }
+  ]
+}

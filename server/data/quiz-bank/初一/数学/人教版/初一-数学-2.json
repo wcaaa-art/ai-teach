@@ -1,0 +1,109 @@
+{
+  "grade": "初一",
+  "subject": "数学",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初一-数学-2",
+    "name": "整式加减"
+  },
+  "generatedAt": "2026-11-14T12:23:00.596Z",
+  "source": "deepseek",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初一-数学-2-f1",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "化简：3(2a-b)-2(a-3b)=____．",
+      "answer": "4a+3b",
+      "acceptableAnswers": [
+        "4a+3b",
+        "3b+4a"
+      ],
+      "referenceAnswer": "",
+      "explanation": "第一步：去括号，得 6a-3b-2a+6b。\n第二步：合并同类项，a 的同类项为 6a-2a=4a，b 的同类项为 -3b+6b=3b。\n所以化简结果为 4a+3b；若写成 3b+4a 也正确。\n常见错误：去第二个括号时漏变号，把 -2(a-3b) 错写成 -2a-6b。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-数学-2-s1",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "已知 A=2x^2-3xy+y^2，B=x^2+2xy-5y^2。请先化简 3A-2B，再求当 x=-1，y=2 时 3A-2B 的值。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "3A=6x^2-9xy+3y^2，2B=2x^2+4xy-10y^2，所以 3A-2B=6x^2-9xy+3y^2-(2x^2+4xy-10y^2)=4x^2-13xy+13y^2。当 x=-1，y=2 时，原式=4×1-13×(-1)×2+13×4=4+26+52=82。",
+      "explanation": "1. 正确：先算 3A=6x^2-9xy+3y^2，2B=2x^2+4xy-10y^2。\n2. 正确：代入 3A-2B 时，注意 2B 前有负号，去括号得 6x^2-9xy+3y^2-2x^2-4xy+10y^2。\n3. 正确：合并同类项得 4x^2-13xy+13y^2；再把 x=-1，y=2 代入，得 4+26+52=82。\n4. 常见错误：去括号时只对第一项变号，或把 xy 项符号算错；得分点可为去括号、合并同类项、代入计算各占相应分值。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初一-数学-2-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "化简：3a^2-2a+1-(a^2-4a+3)=________。",
+      "answer": "2a^2+2a-2",
+      "acceptableAnswers": [
+        "2a^2+2a-2",
+        "2a^{2}+2a-2"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 去括号得：3a^2-2a+1-a^2+4a-3。\n2. 合并同类项：a^2项为3a^2-a^2=2a^2，a项为-2a+4a=2a，常数项为1-3=-2。\n3. 所以最简结果为2a^2+2a-2；去括号时括号前是负号，各项都要变号，漏变号不得分。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-数学-2-s2",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "已知 A=3x^2-2xy+y^2，B=2x^2+xy-3y^2。请完成下列各题：\n（1）求 A+B；\n（2）求 A-2B；\n（3）当 x=-1，y=2 时，求 A-2B 的值。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）A+B=(3x^2-2xy+y^2)+(2x^2+xy-3y^2)=5x^2-xy-2y^2。\n（2）A-2B=3x^2-2xy+y^2-2(2x^2+xy-3y^2)=3x^2-2xy+y^2-4x^2-2xy+6y^2=-x^2-4xy+7y^2。\n（3）当 x=-1，y=2 时，A-2B=-(-1)^2-4×(-1)×2+7×2^2=-1+8+28=35。",
+      "explanation": "（1）合并同类项：3x^2+2x^2=5x^2，-2xy+xy=-xy，y^2-3y^2=-2y^2，得 A+B=5x^2-xy-2y^2，本问3分。\n（2）用 2 乘 B 时每一项都要乘，得到 4x^2+2xy-6y^2；再去括号变号，合并同类项得 -x^2-4xy+7y^2，本问4分。常见错误是只把 2 乘第一项，或去括号时没有把后两项变号。\n（3）代入 x=-1，y=2 计算：-(-1)^2-4×(-1)×2+7×2^2=-1+8+28=35，本问3分。常见错误是把 (-1)^2 算成 -1 后再取负处理混乱。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初一-数学-2-f3",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "若单项式 -3x^2y^m 与 5x^ny^3 是同类项，则 m+n 的值为____。",
+      "answer": "5",
+      "acceptableAnswers": [
+        "5"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 同类项要求所含字母相同，并且相同字母的指数也分别相同。\n2. 由 -3x^2y^m 与 5x^ny^3 是同类项，得 n=2，m=3。\n3. 所以 m+n=3+2=5。\n4. 常见错误是把系数 -3 和 5 也作为判断同类项的条件，或误把指数相加。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-数学-2-s3",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "已知 A = 2x^2 - 3xy + y^2，B = x^2 + 2xy - 3y^2。\n(1) 求 A - 2B；\n(2) 当 x = -1，y = 2 时，求 A - 2B 的值；\n(3) 若 A - 2B 的值与 x 的取值无关，求 y 的值。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "(1) A - 2B = (2x^2 - 3xy + y^2) - 2(x^2 + 2xy - 3y^2) = 2x^2 - 3xy + y^2 - 2x^2 - 4xy + 6y^2 = -7xy + 7y^2。\n(2) 当 x = -1，y = 2 时，A - 2B = -7×(-1)×2 + 7×2^2 = 14 + 28 = 42。\n(3) A - 2B = -7xy + 7y^2 = (-7y)x + 7y^2。若该式的值与 x 的取值无关，则 x 的系数为 0，即 -7y = 0，所以 y = 0。",
+      "explanation": "步骤1：去括号时，-2与括号内每一项相乘，得 -2x^2 - 4xy + 6y^2；再合并同类项，得 A - 2B = -7xy + 7y^2。本步常见错误是去括号时只改变第一项的符号。\n步骤2：把 x = -1，y = 2 代入 -7xy + 7y^2，得 -7×(-1)×2 + 7×4 = 14 + 28 = 42。也可以先化成 7y(y - x) 再代入，结果相同。\n步骤3：把 -7xy + 7y^2 看成关于 x 的一次式，即 (-7y)x + 7y^2。要使式子的值与 x 的取值无关，必须使 x 的系数为 0，所以 -7y = 0，得 y = 0。常见错误是把 y = 0 误写成整个式子恒为 0 或漏掉“与 x 无关”的条件。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初一-数学-2-f4",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "化简：3(2x^2 - xy) - 2(x^2 - 3xy) = ____。",
+      "answer": "4x^2+3xy",
+      "acceptableAnswers": [
+        "4x^2+3xy",
+        "3xy+4x^2"
+      ],
+      "referenceAnswer": "",
+      "explanation": "第一步：去括号，3(2x^2 - xy) = 6x^2 - 3xy，-2(x^2 - 3xy) = -2x^2 + 6xy。\n第二步：合并同类项，6x^2 - 2x^2 = 4x^2，-3xy + 6xy = 3xy。\n第三步：结果为 4x^2 + 3xy，注意第二项去括号时符号变为 +6xy，漏改符号是常见错误。",
+      "difficulty": 2,
+      "score": 3
+    }
+  ]
+}

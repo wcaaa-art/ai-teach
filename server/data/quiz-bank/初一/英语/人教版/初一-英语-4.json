@@ -1,0 +1,106 @@
+{
+  "grade": "初一",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初一-英语-4",
+    "name": "There be 句型"
+  },
+  "generatedAt": "2026-11-14T12:24:01.590Z",
+  "source": "deepseek",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初一-英语-4-f1",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "There ______ a pen and two books on the desk.",
+      "answer": "is",
+      "acceptableAnswers": [
+        "is"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 该句为 There be 句型，表示“书桌上有一支钢笔和两本书”。\n2. There be 句型中，be 动词通常与最靠近的主语保持一致，a pen 是单数。\n3. 因此填 is；若填 are，会与最近的主语 a pen 不一致。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-英语-4-s1",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "按要求完成下列句子。每小题2分，共10分。\n1. There is a book on the desk.（改为复数句）\n2. There are some apples in the basket.（改为否定句）\n3. There is a library in our school.（改为一般疑问句，并作肯定回答）\n4. Our classroom has twenty students.（用 There be 句型改写）\n5. There is a pen and two rulers in the pencil box.（对 a pen and two rulers 提问）",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "1. There are some books on the desk.\n2. There aren't any apples in the basket. / There are not any apples in the basket.\n3. Is there a library in our school? Yes, there is.\n4. There are twenty students in our classroom.\n5. What is in the pencil box? / What's in the pencil box?",
+      "explanation": "第1题：复数句需把 a book 改为 some books，be 动词 is 改为 are。\n第2题：否定句在 are 后加 not，some 改为 any。\n第3题：一般疑问句把 Is 提到 there 前；肯定回答用 Yes, there is。\n第4题：has 表所属，改为 There be 句型时用 There are twenty students in our classroom。\n第5题：对物品提问用 What is/What's in the pencil box? 注意不能再用 There is 开头。常见错误：第1题漏改 is；第2题否定句仍用 some；第3题回答写成 Yes, it is；第4题误用 There is；第5题句序错误。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初一-英语-4-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用括号内动词的适当形式填空：Look! There ___ (be) a pen and two books on the desk.",
+      "answer": "is",
+      "acceptableAnswers": [
+        "is"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 本题考查 There be 句型的就近原则：be 动词的单复数由最靠近它的主语决定。\n2. 紧邻 There be 的名词是 a pen，为可数名词单数，因此 be 动词用 is。\n3. 句意为“看！桌子上有一支钢笔和两本书”，时态为一般现在时，故填 is。\n4. 常见错误：把 a pen and two books 整体看作复数而填 are，这忽略了就近原则，不得分。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-英语-4-s2",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "按要求完成下列句子，每空一词。（本题共10分，每小题2分）\n1. There is a map on the wall.（改为一般疑问句）\n______ ______ a map on the wall?\n2. There are two libraries in our school.（对 two 提问）\n______ ______ libraries are there in our school?\n3. There is a pencil in the pencil box.（对 a pencil 提问）\n______ ______ in the pencil box?\n4. There are some birds in the tree.（改为一般疑问句）\n______ ______ ______ birds in the tree?\n5. There is some milk in the glass.（改为一般疑问句并作肯定回答）\n______ ______ ______ milk in the glass? ______, ______ ______.",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "1. Is there\n2. How many\n3. What is\n4. Are there any\n5. Is there any；Yes, there is",
+      "explanation": "第1题2分：Is there。一般疑问句将 be 动词 is 提到 there 前，句末用问号；写成 There is 不得分。\n第2题2分：How many。对数量提问用 How many，后接复数名词 libraries。\n第3题2分：What is。对物品提问用 What，there be 结构中 be 仍用 is。\n第4题2分：Are there any。一般疑问句将 are 提前，some 在疑问句中改为 any。\n第5题2分：Is there any；Yes, there is。疑问句把 is 提前，some 变 any；肯定回答用 Yes, there is。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初一-英语-4-f3",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用括号内动词的适当形式填空：There ______ (be) a pen and two books on the desk.",
+      "answer": "is",
+      "acceptableAnswers": [
+        "is"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 正确：There be 句型中，be 动词的形式与最靠近的主语一致。\n2. 关键步骤：空格后最近的名词是 a pen，为单数，因此用 is。\n3. 常见错误：看到后面的 two books 就误用 are，忽略了就近原则。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-英语-4-s3",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "请按要求完成下列各句，每空一词或按括号内要求改写，注意 There be 句型的就近原则。1. 我们教室里有一块黑板和两扇门。（用 There be 句型翻译）________________。2. There are some books on the desk.（改为一般疑问句）________________？3. There is a pen and two rulers in the box.（改为否定句）________________。4. Are there any pictures on the wall?（作肯定回答）________________。5. There is a cat under the chair.（对 under the chair 提问）________________。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "1. There is a blackboard and two doors in our classroom. 2. Are there any books on the desk? 3. There isn't a pen or two rulers in the box. 4. Yes, there are. 5. Where is the cat?",
+      "explanation": "第1题3分：主语按就近原则，a blackboard 为单数，用 There is；two doors 保留在 and 后。\n第2题2分：some 在疑问句中改为 any，并把 are 提到 There 前。\n第3题2分：否定句在 be 动词后加 not；并列主语按就近原则用 is，连接两项用 or 更自然。\n第4题1分：Are there 的肯定回答为 Yes, there are.，不能答 Yes, there is.。\n第5题2分：对地点 under the chair 提问用 Where is the cat?，语序为疑问词加 be 动词加主语。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初一-英语-4-f4",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "There ______ a book and two pens on the desk.",
+      "answer": "is",
+      "acceptableAnswers": [
+        "is"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 正确：There be 句型中，be 动词要与最靠近的主语保持一致。\n2. 本题最靠近空格的主语是 a book，为单数，所以填 is。\n3. 常见错误：受 two pens 影响误填 are，忽略了“就近原则”。\n4. 完整句子为：There is a book and two pens on the desk.",
+      "difficulty": 1,
+      "score": 3
+    }
+  ]
+}

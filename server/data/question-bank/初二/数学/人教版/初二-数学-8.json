@@ -1,0 +1,184 @@
+{
+  "grade": "初二",
+  "subject": "数学",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初二-数学-8",
+    "name": "一次函数"
+  },
+  "generatedAt": "2026-11-13T02:44:37.458Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwedio5s",
+      "chapterId": "初二-数学-8",
+      "chapterName": "一次函数",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列函数中，y是x的一次函数的是（ ）",
+      "options": [
+        "y=2x-1",
+        "y=x^2+1",
+        "y=1/x",
+        "y=√x"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：一次函数的一般形式为 y=kx+b（k≠0），y=2x-1 中 k=2，b=-1，符合定义。\nB. 错误：y=x^2+1 中 x 的最高次数是 2，属于二次函数，不是一次函数。\nC. 错误：y=1/x 中 x 出现在分母上，不是形如 y=kx+b 的函数。\nD. 错误：y=√x 中 x 在根号内，不是 x 的一次整式，因此不是一次函数。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwedio5s",
+      "chapterId": "初二-数学-8",
+      "chapterName": "一次函数",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某快递点寄件的费用 y（元）与所寄物品质量 x（kg）之间满足一次函数关系。已知寄 3 kg 物品收费 15 元，寄 8 kg 物品收费 30 元，则 y 关于 x 的函数表达式是（ ）",
+      "options": [
+        "y=3x+6",
+        "y=3x-6",
+        "y=5x",
+        "y=6x+3"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：设 y=kx+b，由题意得 3k+b=15，8k+b=30，两式相减得 5k=15，所以 k=3，再代入得 b=6，因此 y=3x+6。\nB. 错误：若 y=3x-6，当 x=3 时 y=3，与题中收费 15 元矛盾。\nC. 错误：若 y=5x，当 x=3 时 y=15 虽符合，但当 x=8 时 y=40，与题中收费 30 元矛盾。\nD. 错误：若 y=6x+3，当 x=3 时 y=21，与题中收费 15 元矛盾。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-3-mwedio5s",
+      "chapterId": "初二-数学-8",
+      "chapterName": "一次函数",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在平面直角坐标系中，一次函数 y=2x-4 的图象与 x 轴、y 轴分别交于点 A、B。将该直线沿 x 轴向右平移 3 个单位长度得到直线 l，直线 l 与 x 轴、y 轴分别交于点 C、D，O 为坐标原点，则三角形 OCD 的面积为（ ）",
+      "options": [
+        "25",
+        "20",
+        "10",
+        "4"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：原直线 y=2x-4 与 x 轴交于 A(2,0)，与 y 轴交于 B(0,-4)。向右平移 3 个单位后，直线 l 的表达式为 y=2(x-3)-4=2x-10，所以 C(5,0)，D(0,-10)。三角形 OCD 的面积为 \\frac{1}{2}\\times 5\\times 10=25。\nB. 错误：20 不是由直线 l 与两坐标轴交点坐标计算得到的面积；若把 C、D 坐标误读为 (5,0)、(0,-8) 才会得到 20，与 y=2x-10 的截距不符。\nC. 错误：10 是把底或高少乘了一次，或误把 C、D 的一个坐标绝对值取成 2，和 C(5,0)、D(0,-10) 的实际坐标冲突。\nD. 错误：4 是原直线与坐标轴围成的三角形 OAB 的面积，题目问的是平移后的三角形 OCD 的面积，不是未平移前的面积。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-4-mwedio5s",
+      "chapterId": "初二-数学-8",
+      "chapterName": "一次函数",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "若关于 x 的函数 y=(m-2)x^{m^2-3}+1 是一次函数，则 m 的值为（ ）",
+      "options": [
+        "-2",
+        "2",
+        "±2",
+        "0"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：一次函数的一般形式为 y=kx+b（k≠0），所以指数满足 m^2-3=1，且系数 m-2≠0。由 m^2=4 得 m=±2，又因为 m≠2，所以 m=-2。\nB. 错误：当 m=2 时，m-2=0，函数变为 y=1，不是一次函数，忽略了 k≠0 的限制。\nC. 错误：m=±2 中 m=2 会使一次项系数为 0，因此不能同时取 ±2。\nD. 错误：当 m=0 时，m^2-3=-3，函数为 y=-2x^{-3}+1，不是一次函数。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-5-mwedio5s",
+      "chapterId": "初二-数学-8",
+      "chapterName": "一次函数",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "已知函数 y=(k-1)x+|k|-2，若 y 是 x 的一次函数，则 k 应满足（ ）",
+      "options": [
+        "k≠1",
+        "k=1",
+        "k>1",
+        "k≠0且k≠1"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：一次函数的一般形式为 y=kx+b（k≠0），这里 x 的系数是 k-1，因此必须 k-1≠0，即 k≠1；常数项 |k|-2 不影响该判断。\nB. 错误：当 k=1 时，x 的系数为 0，函数变为 y=|1|-2=-1，是常函数而不是一次函数。\nC. 错误：k>1 只是满足 k≠1 的一部分情况，例如 k=0 时 y=-x-2 仍是一次函数，所以 k>1 不是必要条件。\nD. 错误：一次函数只要求 x 的系数不为 0，即 k-1≠0；对 k 本身没有 k≠0 的要求，例如 k=0 时函数 y=-x-2 仍为一次函数。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-6-mwedio5s",
+      "chapterId": "初二-数学-8",
+      "chapterName": "一次函数",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某水箱原有水50 L，打开排水阀后以每小时8 L的速度匀速排水。排水过程中，水箱内剩余水量 y（单位：L）与排水时间 x（单位：h）之间的函数关系为 y=50-8x。当水箱内剩余水量为18 L时，排水时间 x 为（ ）",
+      "options": [
+        "3 h",
+        "4 h",
+        "5 h",
+        "6 h"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：代入 x=3，得 y=50-8×3=26，不是18 L。\nB. 正确：令 50-8x=18，移项得 8x=32，解得 x=4，符合题意。\nC. 错误：代入 x=5，得 y=50-8×5=10，不是18 L。\nD. 错误：代入 x=6，得 y=50-8×6=2，不是18 L。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-7-mwedio5s",
+      "chapterId": "初二-数学-8",
+      "chapterName": "一次函数",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "某快递公司有两种计费方式：甲方式首重1 kg收费10元，超过1 kg的部分每千克收费4元；乙方式每千克收费6元，另收包装费2元。设寄送物品质量为 x kg（x>1），甲、乙两种方式的总费用分别为 y_甲、y_乙。若寄送一件质量为3.5 kg的物品，选择哪种方式更省钱？比另一种方式省多少元？",
+      "options": [
+        "甲方式，省3元",
+        "乙方式，省3元",
+        "甲方式，省1元",
+        "两种方式费用相同"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：由题意，x>1时，y_甲=10+4(x-1)=4x+6，y_乙=6x+2。当x=3.5时，y_甲=4×3.5+6=20，y_乙=6×3.5+2=23，所以甲方式更省钱，省23-20=3元。\nB. 错误：代入x=3.5得y_甲=20，y_乙=23，乙方式费用更高，不是乙方式省钱。\nC. 错误：两种方式费用之差为23-20=3元，不是1元。\nD. 错误：y_甲=20与y_乙=23不相等，两种方式费用并不相同。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-8-mwedio5s",
+      "chapterId": "初二-数学-8",
+      "chapterName": "一次函数",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "已知函数 y=(m-2)x^{|m|-1}+1 是一次函数，则 m 的值为（ ）",
+      "options": [
+        "2",
+        "-2",
+        "2或-2",
+        "0"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：当 m=2 时，|m|-1=1，但 m-2=0，函数变为 y=1，不是一次函数。\nB. 正确：一次函数应形如 y=kx+b 且 k≠0，因此需 |m|-1=1 且 m-2≠0。由 |m|=2 得 m=±2，再排除 m=2，所以 m=-2。\nC. 错误：m=2 或 m=-2 只保证 x 的指数为 1，其中 m=2 会使一次项系数为 0，不符合一次函数定义。\nD. 错误：当 m=0 时，|m|-1=-1，x 的指数不是 1，函数不是一次函数。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-9-mwedio5s",
+      "chapterId": "初二-数学-8",
+      "chapterName": "一次函数",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "已知 y=kx+b 是一次函数（k，b 为常数），下列关于该函数的说法中，正确的是（ ）",
+      "options": [
+        "当 b=0 时，它一定是正比例函数",
+        "k 可以等于 0",
+        "b 必须不等于 0",
+        "它的图象一定经过原点"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：一次函数中 k≠0，当 b=0 时，y=kx（k≠0）符合正比例函数的定义，所以它一定是正比例函数。\nB. 错误：若 k=0，则 y=b 是常数函数，不再是一次函数，与一次函数定义中 k≠0 矛盾。\nC. 错误：一次函数 y=kx+b 中 b 可以等于 0，例如 y=2x 也是一次函数。\nD. 错误：只有当 b=0 时，图象才经过原点；b≠0 时图象不经过原点。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-10-mwedio5s",
+      "chapterId": "初二-数学-8",
+      "chapterName": "一次函数",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知一次函数 y=kx+b 的图象经过点 (1,3) 和点 (3,7)，则它的表达式是（ ）",
+      "options": [
+        "y=2x+1",
+        "y=2x-1",
+        "y=x+2",
+        "y=3x"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：设 y=kx+b，代入两点得 k+b=3，3k+b=7；两式相减得 2k=4，所以 k=2，再代回得 b=1，故 y=2x+1。\nB. 错误：将点 (1,3) 代入 y=2x-1 得 y=1，与图象经过 (1,3) 冲突。\nC. 错误：将点 (3,7) 代入 y=x+2 得 y=5，与图象经过 (3,7) 冲突。\nD. 错误：将点 (3,7) 代入 y=3x 得 y=9，与图象经过 (3,7) 冲突。",
+      "difficulty": 1
+    }
+  ]
+}

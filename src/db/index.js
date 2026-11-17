@@ -4,7 +4,9 @@ import { stageOf, stageStatesOf } from '../utils/stages.js'
 import { createBackup, validateBackup } from '../utils/backup.js'
 
 export const DB_NAME = 'ai-teach-local'
-export const DB_VERSION = 5
+// v8：新增背诵内容缓存与背诵记录。老库打开时会走 upgrade，只补建缺的表，
+// 其它表的数据不受影响（其余 store 都在同一个数组里，用 contains 判断过）。
+export const DB_VERSION = 8
 const USER_DB_PREFIX = 'ai-teach-user-'
 const memoryFallback = new Map()
 const settingsFallback = new Map()
@@ -46,7 +48,15 @@ function openDatabase(name) {
         ['focusSuggestions', { keyPath: 'id' }],
         // 学校考试成绩用于计算与目标分的差距；错题用于按章节归因长短板。
         ['examScores', { keyPath: 'id' }],
-        ['mistakes', { keyPath: 'id' }]
+        ['mistakes', { keyPath: 'id' }],
+        // 未交卷的答题草稿固定写 current，退出/离开页面时保存，下次进入可继续作答。
+        ['quizDrafts', { keyPath: 'id' }],
+        // 试卷拍照识别后保存的 digital paper，可反复练习或回看识别结果。
+        ['scannedPapers', { keyPath: 'id' }],
+        // 背诵内容缓存：按「学科 + 计划名」存一份确认过的原文/词表，避免重复请求模型。
+        ['reciteContents', { keyPath: 'id' }],
+        // 背诵记录：逐句/逐词的结果与耗时，背诵时长也据此写进专注统计。
+        ['reciteSessions', { keyPath: 'id' }]
       ]
       stores.forEach(([name, options]) => {
         if (!db.objectStoreNames.contains(name)) db.createObjectStore(name, options)
@@ -94,7 +104,7 @@ export async function getLocalDataSummary() {
 }
 
 // 只复制学习数据，不复制设置；同 id 记录以本地数据为准。
-const SYNC_STORES = ['profile', 'plans', 'focusSessions', 'distractions', 'feedbacks', 'assessments', 'visualLogs', 'conversations', 'quizFingerprints', 'quizResults', 'focusSuggestions', 'examScores', 'mistakes']
+const SYNC_STORES = ['profile', 'plans', 'focusSessions', 'distractions', 'feedbacks', 'assessments', 'visualLogs', 'conversations', 'quizFingerprints', 'quizResults', 'focusSuggestions', 'examScores', 'mistakes', 'scannedPapers', 'reciteContents', 'reciteSessions']
 
 export async function syncLocalDataToOwner(owner) {
   const targetName = databaseNameFor(owner)
@@ -202,7 +212,14 @@ export const savePlan = (plan) => put('plans', plan)
 export const loadPlans = () => getAll('plans')
 export const deletePlan = (id) => remove('plans', id)
 export const saveFocusSession = (data) => put('focusSessions', data)
+// 背诵内容按「学科 + 计划名」做幂等缓存；同一篇改过之后覆盖同一行。
+export const reciteContentId = (subject, name) => `${subject || '综合'}::${name || ''}`
+export const loadReciteContent = (subject, name) => get('reciteContents', reciteContentId(subject, name))
+export const saveReciteContent = (record) => put('reciteContents', record)
+export const saveReciteSession = (record) => put('reciteSessions', record)
+export const loadReciteSessions = () => getAll('reciteSessions')
 export const loadFocusSessions = () => getAll('focusSessions')
+export const deleteFocusSession = (id) => remove('focusSessions', id)
 export const saveDistraction = (data) => put('distractions', data)
 export const loadDistractions = () => getAll('distractions')
 export const saveFeedback = (data) => put('feedbacks', data)
@@ -213,6 +230,7 @@ export const saveVisualLog = (data) => put('visualLogs', data)
 export const loadVisualLogs = () => getAll('visualLogs')
 export const saveConversation = (data) => put('conversations', data)
 export const loadConversations = () => getAll('conversations')
+export const deleteConversation = (id) => remove('conversations', id)
 // 设置是设备级偏好，固定读写本地模式库，不随账号切换。
 export async function saveSettings(settings) {
   // 设置对象来自 Pinia 的响应式代理，写入 IndexedDB 前同样要转成普通数据。
@@ -246,12 +264,20 @@ export async function pruneQuizFingerprints(days = 14) {
 }
 export const saveQuizResult = (data) => put('quizResults', data)
 export const loadQuizResults = () => getAll('quizResults')
+// 未交卷的作答进度：只保留一份 current，交卷或放弃后删除。
+export const saveQuizDraft = (data) => put('quizDrafts', { ...data, id: 'current', updatedAt: Date.now() })
+export const loadQuizDraft = () => get('quizDrafts', 'current')
+export const clearQuizDraft = () => remove('quizDrafts', 'current')
 export const saveExamScore = (data) => put('examScores', data)
 export const loadExamScores = () => getAll('examScores')
 export const deleteExamScore = (id) => remove('examScores', id)
 export const saveMistake = (data) => put('mistakes', data)
 export const loadMistakes = () => getAll('mistakes')
 export const deleteMistake = (id) => remove('mistakes', id)
+export const saveScannedPaper = (data) => put('scannedPapers', data)
+export const loadScannedPapers = () => getAll('scannedPapers')
+export const loadScannedPaper = (id) => get('scannedPapers', id)
+export const deleteScannedPaper = (id) => remove('scannedPapers', id)
 // 专注建议固定写 current 一条；FocusView 侧可用 loadFocusSuggestion() 读取 recommendedMinutes。
 export const saveFocusSuggestion = (data) => put('focusSuggestions', { ...data, id: 'current' })
 export const loadFocusSuggestion = () => get('focusSuggestions', 'current')

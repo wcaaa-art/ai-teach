@@ -1,0 +1,106 @@
+{
+  "grade": "初一",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初一-英语-2",
+    "name": "一般现在时"
+  },
+  "generatedAt": "2026-11-14T12:23:46.439Z",
+  "source": "deepseek",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初一-英语-2-f1",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用括号内动词的适当形式填空：My brother often ___ (watch) TV after dinner.",
+      "answer": "watches",
+      "acceptableAnswers": [
+        "watches"
+      ],
+      "referenceAnswer": "",
+      "explanation": "主语 My brother 是第三人称单数。\noften 表示经常性动作，句子应使用一般现在时。\nwatch 以 ch 结尾，第三人称单数形式加 -es，所以填 watches。\n常见错误是写成 watch 或 watchs。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-英语-2-s1",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "请用括号内动词的适当形式完成短文，并说明每空使用该形式的理由。My cousin Tom ___ (be) a middle school student. He ___ (get) up at six every morning. He and his sister ___ (go) to school by bus. Tom ___ (not like) to be late. After school, he often ___ (play) basketball with his friends.",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "答案：is；gets；go；doesn't like；plays。评分要点：每空2分，其中形式1分，理由1分。1. 第1空填 is，因为主语 My cousin Tom 是第三人称单数，一般现在时 be 动词用 is。2. 第2空填 gets，因为主语 He 是第三人称单数，一般现在时实义动词 get 加 s。3. 第3空填 go，因为主语 He and his sister 是复数，一般现在时动词用原形。4. 第4空填 doesn't like，因为主语 Tom 是第三人称单数，否定式用 doesn't 加动词原形。5. 第5空填 plays，因为主语 he 是第三人称单数，often 表示经常性动作，play 加 s。",
+      "explanation": "1. 第1空：主语 My cousin Tom 是第三人称单数，一般现在时 be 动词用 is。\n2. 第2空：主语 He 是第三人称单数，一般现在时实义动词 get 加 s，用 gets。\n3. 第3空：主语 He and his sister 是复数，一般现在时动词用原形 go。\n4. 第4空：主语 Tom 是第三人称单数，否定式用 doesn't + 动词原形，填 doesn't like。\n5. 第5空：主语 he 是第三人称单数，often 表示经常性动作，play 加 s，用 plays。\n常见错误：主语单复数判断错误，第三人称单数漏加 s，或否定式误写为 doesn't likes。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初一-英语-2-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "My brother usually ___ (go) to school by bike.",
+      "answer": "goes",
+      "acceptableAnswers": [
+        "goes"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 时态判断：usually 表示经常性习惯，使用一般现在时。\n2. 主语判断：My brother 是第三人称单数，谓语动词 go 要变为 goes。\n3. 答案核验：go 以 o 结尾，第三人称单数加 -es；写成 go 或 gos 均不得分。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-英语-2-s2",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "用括号内动词的适当形式填空，并完成改写。1. My father ______ (go) to work by bus every day. 2. We ______ (not have) any classes on Sunday. 3. ______ your sister ______ (like) English? Yes, she does. 4. Tom and Jack ______ (play) football after school. 5. 将 She does her homework at home. 改为一般疑问句并作肯定回答。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "1. goes 2. don't have 3. Does；like 4. play 5. Does she do her homework at home? Yes, she does.",
+      "explanation": "1. 主语 My father 是第三人称单数，一般现在时肯定句动词 go 变为 goes，得2分；写成 go 不得分。\n2. 主语 We 是复数，否定句用 don't + 动词原形 have，得2分；写成 doesn't have 不得分。\n3. 主语 your sister 是第三人称单数，一般疑问句用 Does 开头，实义动词 like 用原形，两空各1分；写成 Do/likes 不得分。\n4. 主语 Tom and Jack 是复数，一般现在时动词用原形 play，得2分；写成 plays 不得分。\n5. 改为一般疑问句需借 Does，并将 does 还原为 do，答语用 Yes, she does.，问句1分、答语1分；若写成 Does she does... 不得分。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初一-英语-2-f3",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用括号内动词的适当形式填空：My sister often ______ (read) English stories before bed.",
+      "answer": "reads",
+      "acceptableAnswers": [
+        "reads"
+      ],
+      "referenceAnswer": "",
+      "explanation": "句中 often 表示经常性动作，应使用一般现在时。\n主语 My sister 是第三人称单数。\n动词 read 的第三人称单数形式为 reads，所以填 reads。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初一-英语-2-s3",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "请用括号内动词的适当形式完成句子，并按要求改写第(5)句。\n(1) My brother usually ______ (get) up at six thirty.\n(2) We ______ (not have) classes on Sunday.\n(3) ______ your sister ______ (watch) TV in the evening?\n(4) Tom and Jack ______ (go) to school by bike every day.\n(5) Lucy does her homework after dinner. (改为否定句)",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "(1) gets\n(2) don't have（或 do not have）\n(3) Does; watch\n(4) go\n(5) Lucy doesn't do her homework after dinner.（或 Lucy does not do her homework after dinner.）",
+      "explanation": "第(1)题：主语 My brother 是第三人称单数，一般现在时动词 get 变为 gets。\n第(2)题：主语 We 是复数，否定句用 don't + 动词原形 have。\n第(3)题：主语 your sister 是第三人称单数，一般疑问句用 Does 开头，后接动词原形 watch。\n第(4)题：主语 Tom and Jack 是复数，一般现在时动词用原形 go。\n第(5)题：主语 Lucy 是第三人称单数，否定句用 doesn't + 动词原形 do，不能写成 doesn't does。",
+      "difficulty": 1,
+      "score": 10
+    },
+    {
+      "id": "初一-英语-2-f4",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "My brother often ______ (play) basketball after school.",
+      "answer": "plays",
+      "acceptableAnswers": [
+        "plays"
+      ],
+      "referenceAnswer": "",
+      "explanation": "主语 My brother 是第三人称单数。\noften 表示经常性动作，句子用一般现在时。\n动词 play 在第三人称单数主语后变为 plays。\n若填 play，则没有体现第三人称单数，不得分。",
+      "difficulty": 1,
+      "score": 3
+    }
+  ]
+}

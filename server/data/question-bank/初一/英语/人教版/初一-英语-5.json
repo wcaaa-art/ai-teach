@@ -1,0 +1,184 @@
+{
+  "grade": "初一",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初一-英语-5",
+    "name": "一般过去时入门"
+  },
+  "generatedAt": "2026-11-14T12:13:05.212Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwgd9kjd",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Yesterday afternoon, Lucy ____ her grandparents in the countryside.",
+      "options": [
+        "visits",
+        "visited",
+        "will visit",
+        "is visiting"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：visits 是一般现在时的第三人称单数形式，不能与表示过去的时间状语 yesterday afternoon 搭配。\nB. 正确：一般过去时表示过去发生的动作，yesterday afternoon 是过去时间标志，visit 的过去式为 visited。\nC. 错误：will visit 是一般将来时，表示将来要发生的动作，与 yesterday afternoon 冲突。\nD. 错误：is visiting 是现在进行时，表示现在正在进行的动作，与 yesterday afternoon 冲突。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwgd9kjd",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The children ____ football in the park yesterday afternoon.",
+      "options": [
+        "played",
+        "play",
+        "plays",
+        "are playing"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：yesterday afternoon 表示明确的过去时间，play 的过去式是 played，句子应使用一般过去时。\nB. 错误：play 是动词原形，通常用于一般现在时，不能与表示过去的时间状语 yesterday afternoon 直接搭配。\nC. 错误：plays 是第三人称单数现在时形式，主语 children 是复数，且与 yesterday afternoon 的过去时语境冲突。\nD. 错误：are playing 是现在进行时，表示现在正在发生，与 yesterday afternoon 表示的过去时间不一致。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-3-mwgd9kjd",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "—Did you have a good weekend?\n—Yes. I ______ basketball with Tom and then we ______ to a bookshop.",
+      "options": [
+        "play; go",
+        "played; went",
+        "played; go",
+        "play; went"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：对话询问的是已经过去的周末经历，play和go都是一般现在时，不能描述已经发生的动作。\nB. 正确：答句描述周末已经发生的两个动作，应使用一般过去时；play的过去式为played，go的过去式为went。\nC. 错误：第一个空played正确，但第二个空go是一般现在时，与and连接的过去动作不一致。\nD. 错误：第一个空play是一般现在时，与过去语境冲突；第二个空went虽为过去式，但整体时态前后不一致。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-4-mwgd9kjd",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "下列句子中，一般过去时使用正确的是哪一句？",
+      "options": [
+        "I go to the park yesterday.",
+        "Did you see the film last night?",
+        "She didn't watched TV yesterday.",
+        "We was at home last Sunday."
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：yesterday 表示过去时间，谓语动词应使用过去式 went，不能用原形 go。\nB. 正确：一般过去时的疑问句可借助 did 构成，did 后接动词原形 see，符合“Did + 主语 + 动词原形”的结构。\nC. 错误：didn't 后应接动词原形 watch，不能接过去式 watched。\nD. 错误：主语 We 是复数，be 动词的过去式应用 were，不能用 was。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-5-mwgd9kjd",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列句子中，哪一句使用了一般过去时，表示过去某个时间发生的动作？",
+      "options": [
+        "She goes to school by bike every day.",
+        "She went to the park with her sister yesterday.",
+        "She is going to visit her grandma tomorrow.",
+        "She is reading a book now."
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：goes 是动词 go 的第三人称单数形式，属于一般现在时；every day 表示经常性、习惯性的动作，与“过去某个时间发生的动作”不符。\nB. 正确：went 是 go 的过去式，yesterday 明确表示过去的时间，整句结构为“主语 + 动词过去式”，正是本专题所学的“一般过去时”，用来描述过去发生的动作。\nC. 错误：is going to visit 是“be going to + 动词原形”构成的一般将来时结构，tomorrow 表示将来时间，不是过去。\nD. 错误：is reading 是“be + 动词-ing”构成的现在进行时，now 表示此刻正在发生，不是过去发生的动作。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-6-mwgd9kjd",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "Yesterday evening, Lucy ___ her grandparents with her parents.",
+      "options": [
+        "visits",
+        "visited",
+        "visit",
+        "is visiting"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：visits 是一般现在时，表示经常性动作，与题干中的 Yesterday evening 所表示的过去时间冲突。\nB. 正确：一般过去时用于描述过去发生并结束的动作；visit 的过去式为 visited，符合 Yesterday evening 的过去时间语境。\nC. 错误：visit 是动词原形，不能单独作谓语表示过去发生的动作，也不符合一般过去时的形式要求。\nD. 错误：is visiting 是现在进行时，表示现在正在进行的动作，与 Yesterday evening 的过去时间语境冲突。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-7-mwgd9kjd",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Last Sunday, Tom and his father ______ a farm. They ______ many animals and Tom ______ a horse for the first time. He ______ very happy.",
+      "options": [
+        "visit; see; ride; is",
+        "visited; saw; rode; was",
+        "visits; sees; rides; is",
+        "will visit; will see; will ride; will be"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：visit、see、ride、is 都是一般现在时，与开头的时间状语 Last Sunday 所表示的过去时间冲突。\nB. 正确：由 Last Sunday 可知整段叙述的是过去发生的事，四个动词都应使用一般过去时，分别为 visited、saw、rode、was，且与各自主语搭配正确。\nC. 错误：visits、sees、rides、is 是一般现在时或第三人称单数形式，不能用于描述 Last Sunday 的完整经历。\nD. 错误：will visit、will see、will ride、will be 构成一般将来时，表示将来会发生的事，与 Last Sunday 的过去语境冲突。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-8-mwgd9kjd",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "— Did your brother ___ his homework last night?\n— Yes, he did. He finished it before dinner.",
+      "options": [
+        "finish",
+        "finished",
+        "finishes",
+        "finishing"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：Did 是助动词 do 的过去式，一般疑问句中助动词后必须接动词原形，finish 符合要求；last night 的过去时间已由 Did 体现。\nB. 错误：finished 是过去式，不能紧跟在助动词 Did 后；若使用 finished，应改为肯定句 He finished his homework last night。\nC. 错误：finishes 是一般现在时第三人称单数形式，与 last night 表示的过去时间冲突，也不能放在 Did 后。\nD. 错误：finishing 是 -ing 形式，不能单独在助动词后作谓语，Did 后应接动词原形。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-9-mwgd9kjd",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Which sentence is in the simple past tense?",
+      "options": [
+        "I go to school by bike every day.",
+        "She is reading a book now.",
+        "They visited the museum last Sunday.",
+        "We will have a picnic tomorrow."
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：句中的 go 是一般现在时，every day 表示经常性动作，与一般过去时不符。\nB. 错误：句中的 is reading 是现在进行时，now 表示正在发生，与一般过去时不符。\nC. 正确：visited 是动词 visit 的过去式，last Sunday 表示过去时间，句子使用一般过去时。\nD. 错误：句中的 will have 是一般将来时，tomorrow 表示将来时间，与一般过去时不符。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-10-mwgd9kjd",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "Yesterday, Lucy ______ her homework before dinner.",
+      "options": [
+        "finishes",
+        "finished",
+        "finish",
+        "is finishing"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：finishes 是一般现在时第三人称单数形式，与时间状语 Yesterday 表示过去时间相冲突。\nB. 正确：finished 是 finish 的一般过去式，表示昨天晚饭前完成的动作，符合一般过去时的基本用法。\nC. 错误：finish 是动词原形，不能直接表示过去发生的动作；若用于一般现在时，主语 Lucy 为第三人称单数，也应用 finishes。\nD. 错误：is finishing 是现在进行时，表示现在正在进行的动作，与 Yesterday 不搭配。",
+      "difficulty": 1
+    }
+  ]
+}

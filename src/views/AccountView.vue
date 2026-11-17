@@ -48,5 +48,5 @@ async function logout() {
 </template>
 
 <style scoped>
-.account-row{display:flex;justify-content:space-between;gap:15px;align-items:center;padding:14px 0;border-bottom:1px solid var(--border)}.account-row:last-of-type{border-bottom:0}.account-row span{font-size:13px;color:var(--muted)}.account-row strong{font-size:14px;word-break:break-all}.muted{font-size:13px;line-height:1.8}
+.account-row{display:flex;justify-content:space-between;gap:15px;align-items:center;padding:14px 0;border-bottom:1px solid var(--border)}.account-row:last-of-type{border-bottom:0}.account-row span{font-size:calc(13px*var(--fs-scale));color:var(--muted)}.account-row strong{font-size:calc(14px*var(--fs-scale));word-break:break-all}.muted{font-size:calc(13px*var(--fs-scale));line-height:1.8}
 </style>

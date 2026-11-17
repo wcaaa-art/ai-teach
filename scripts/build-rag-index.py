@@ -1,6 +1,6 @@
-# 离线构建 RAG 检索索引：把中考/高考真题 PDF 切成题目级文本块，统计 2~3 字元组词频。
+# 离线构建 RAG 检索索引：把中考真题 PDF 切成题目级文本块，统计 2~3 字元组词频。
 # 只做一次性构建，运行时由 server/rag/index.js 读取压缩后的 JSON，不再依赖 Python。
-# 用法：python scripts/build-rag-index.py [--corpus 中考,高考] [--out server/rag/rag-index.json.gz]
+# 用法：python scripts/build-rag-index.py [--corpus 中考] [--out server/rag/rag-index.json.gz]
 import argparse
 import gzip
 import json
@@ -101,7 +101,7 @@ def collect_files(corpus_roots):
             variant = detect_variant(path.name)
             year_match = re.search(r'(20\d{2})', str(path))
             files.append({
-                'path': path, 'exam': root.name, 'stage': '初中' if root.name == '中考' else '高中',
+                'path': path, 'exam': root.name, 'stage': '初中',
                 'year': int(year_match.group(1)) if year_match else 0,
                 'subject': subject, 'variant': variant
             })
@@ -111,7 +111,7 @@ def collect_files(corpus_roots):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--corpus', default='中考,高考')
+    parser.add_argument('--corpus', default='中考')
     parser.add_argument('--out', default='server/rag/rag-index.json.gz')
     args = parser.parse_args()
 

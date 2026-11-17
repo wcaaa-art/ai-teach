@@ -1,6 +1,6 @@
 # Ai学习小伙伴
 
-面向初高中学生的 AI Agent 自适应学习规划与多模态专注平台。项目通过“学段/年级/科目/专题选择 → 可选专题摸底 → 个性化计划 → 番茄专注 → 视觉/页面状态采集 → 学习反馈 → 下一轮计划迭代”形成持续闭环。计划按学科文件夹归类，专题之间自动插入桥接复习；看板提供可旋转的三维掌握图。默认使用浏览器本地 IndexedDB，摄像头默认关闭；只有学生主动点击并同意后才启动本地检测。
+面向初中学生的 AI Agent 自适应学习规划与多模态专注平台。项目通过“学段/年级/科目/专题选择 → 可选专题摸底 → 个性化计划 → 番茄专注 → 视觉/页面状态采集 → 学习反馈 → 下一轮计划迭代”形成持续闭环。计划按学科文件夹归类，专题之间自动插入桥接复习；看板提供可旋转的三维掌握图。默认使用浏览器本地 IndexedDB，摄像头默认关闭；只有学生主动点击并同意后才启动本地检测。
 
 ## 适用范围与卷型口径
 
@@ -12,9 +12,7 @@
 | 初二 | 上述科目 + 物理（物理从八年级开始） |
 | 初三 | 上述科目 + 化学（化学从九年级开始） |
 
-高中按“语文、数学、英语、物理、化学、生物、政治、历史、地理”组织。
-
-卷型口径：**初中对齐全国中考常见结构，高中对齐新高考（3+1+2）结构**。不绑定具体省市卷；题目分值、题型按上述口径组织，提示词与出题规则保持一致（`server/prompts.js`、`server/quiz.js`）。
+卷型口径：**初中对齐全国中考常见结构**。不绑定具体省市卷；题目分值、题型按上述口径组织，提示词与出题规则保持一致（`server/prompts.js`、`server/quiz.js`）。
 
 
 ## 技术结构
@@ -31,7 +29,7 @@ ai-teach/
 │  ├─ main.js                 # Vue、Pinia、Element Plus 入口
 │  ├─ App.vue                 # 全局外壳与主题初始化
 │  ├─ styles.css              # 低饱和校园主题
-│  ├─ router/index.js         # 十个页面路由（含登录、账号中心）
+│  ├─ router/index.js         # 十二个页面路由（含登录、账号中心、背诵学习窗、练习做题窗）
 │  ├─ stores/app.js           # Pinia 临时 UI 和设置状态
 │  ├─ db/index.js             # idb/IndexedDB 表结构、账号分库与备份
 │  ├─ services/api.js         # 后端 API 与 OCR 本地降级
@@ -46,7 +44,7 @@ ai-teach/
 │  │  ├─ MistakeAttribution.vue
 │  │  ├─ VideoSuggestion.vue
 │  │  └─ DataBackupCard.vue
-│  └─ views/                  # Home / Auth / Diagnosis / Quiz / Plans / Focus / Tutor / Dashboard / Settings / Account
+│  └─ views/                  # Home / Auth / Diagnosis / Quiz / Plans / Recite / Focus / Tutor / Dashboard / Settings / Account
 ├─ server/
 │  ├─ index.js                # Express REST 路由
 │  ├─ agent.js                # DeepSeek 代理、工具循环、安全过滤和降级
@@ -76,7 +74,7 @@ Copy-Item .env.example .env
 npm run dev
 ```
 
-打开 `http://localhost:5173`。Node.js 20 LTS 可运行；若使用较新的依赖环境，建议 Node.js 22 LTS。密钥文件位于项目根目录 `.env`，字段名为 `DEEPSEEK_API_KEY`；如果你把密钥填在 `.env.example`，请先执行 `Copy-Item .env.example .env`。即使不配置密钥，课程专题、自评摸底、专注计时、IndexedDB、演示模式和看板仍可使用本地降级；配置后会启用 DeepSeek 专题摸底题、计划优化和图片答疑。摄像头仅限 `localhost` 或 HTTPS 安全上下文，并需要浏览器授权。类型检查用 `npm run typecheck`，覆盖标注了 `// @ts-check` 的核心模块（`src/services`、`src/utils`、`src/db`、`server/tools.js`）。
+打开 `http://localhost:5173`。Node.js 20 LTS 可运行；若使用较新的依赖环境，建议 Node.js 22 LTS。密钥文件位于项目根目录 `.env`，字段名为 `DEEPSEEK_API_KEY`；如果你把密钥填在 `.env.example`，请先执行 `Copy-Item .env.example .env`。即使不配置密钥，课程专题、自评摸底、专注计时、IndexedDB、演示模式和看板仍可使用本地降级；配置后会启用 DeepSeek 专题摸底题、计划优化和图片答疑。摄像头仅限 `localhost` 或 HTTPS 安全上下文，并需要浏览器授权；检测用 MediaPipe Face Landmarker 全程本地推理，不上传视频帧。类型检查用 `npm run typecheck`，覆盖标注了 `// @ts-check` 的核心模块（`src/services`、`src/utils`、`src/db`、`server/tools.js`）。
 
 ### 启动要点（前后端两个服务）
 
@@ -91,7 +89,22 @@ npm run dev
 - `server/` 下的代码和提示词不热重载，改完要重启后端（`npm run dev` 需要整个重跑，或单独重启 `npm run dev:server`）。
 - `.env` 缺失或密钥无效不会阻止启动，出题/计划/答疑会自动降级为本地题库或本地规则；只有需要 AI 能力时才必须配 `DEEPSEEK_API_KEY`。
 
-大赛简介、答辩大纲、演示脚本和评审问答见 [`docs/大赛交付材料.md`](docs/大赛交付材料.md)。IndexedDB、工具 schema 与系统提示词见 [`docs/技术说明.md`](docs/技术说明.md)。启动调试和 20 项验收清单见 [`docs/启动调试与测试.md`](docs/启动调试与测试.md)。**接手开发先读 [`docs/交接文档.md`](docs/交接文档.md)**。
+大赛简介、答辩大纲、演示脚本和评审问答见 [`docs/大赛交付材料.md`](docs/大赛交付材料.md)。IndexedDB、工具 schema 与系统提示词见 [`docs/技术说明.md`](docs/技术说明.md)。启动调试和 20 项验收清单见 [`docs/启动调试与测试.md`](docs/启动调试与测试.md)。商业路径与竞品对标见 [`docs/商业路径与竞品对标.md`](docs/商业路径与竞品对标.md)。**接手开发先读 [`docs/交接文档.md`](docs/交接文档.md)**。
+
+## 质量自检命令
+
+```powershell
+npm test          # 单元测试（283 条）：检索、混合召回、提示词契约、周报数字校验、MCP 集成
+npm run typecheck # 类型检查：覆盖标注了 // @ts-check 的核心模块
+npm run rag:eval  # RAG 检索效果评测：23 条用例的学科命中率与关键词命中率
+npm run rag:compare # 双路对比：稀疏 BM25 vs BM25+稠密 RRF 融合，并给出是否该启用的结论
+npm run build     # 生产构建
+```
+
+`npm run rag:eval` 会输出用例通过率、学科命中率、Top-1 平均得分与未通过用例明细；改动分词或检索权重后先跑它，能立刻看出检索有没有退化。`npm run rag:compare` 会在此基础上多跑一路稠密召回并给出结论——**当前结论是默认仍走 BM25**，理由见 [`docs/技术说明.md`](docs/技术说明.md) 的「混合检索」一节。
+
+稠密向量索引（可选产物，1.2MB）由 `npm run rag:build-vector` 离线构建；产物缺失时混合检索自动退回纯 BM25，功能不受影响。
+
 
 ## MCP 服务
 
@@ -101,7 +114,11 @@ npm run dev
 npm run mcp
 ```
 
-暴露三个纯函数工具：`search_curriculum`（课标知识点检索，支持跨年级与术语别名）、`calc_review_interval`（艾宾浩斯复习间隔）、`list_curriculum_chapters`（专题目录）。专注记录与视觉状态由浏览器推送，未纳入 MCP，避免外部调用拿到空数据。
+暴露三类能力：
+
+- **Tools**（可调用的动作，三个纯函数）：`search_curriculum`（课标知识点检索，支持跨年级与术语别名）、`calc_review_interval`（艾宾浩斯复习间隔）、`list_curriculum_chapters`（专题目录）。专注记录与视觉状态由浏览器推送，未纳入 MCP，避免外部调用拿到空数据。
+- **Resources**（可读取的数据）：`ai-teach://curriculum/subjects`（各年级学科目录）、`ai-teach://curriculum/chapters/{grade}/{subject}`（专题目录）、`ai-teach://exam/passages/{subject}`（中考真题片段，带出处）。外部 Agent 读资源不用自己拼查询参数，省 token 也更不容易用错口径。
+- **Prompts**（可复用的工作流模板）：`explain_mistake`（错题归因与补强）、`plan_next_week`（四阶段计划编排）、`tutor_guide`（只引导不给答案的初中生答疑）。这三个模板与项目内部 Agent 用的是同一套口径，外部 Agent 无需重新发明指令。
 
 外部 Agent 配置示例：
 

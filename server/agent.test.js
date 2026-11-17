@@ -1,8 +1,9 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { callDeepSeek, createStreamAccumulator, guardTutorAnswer, normalizeStage, parseSseLine, safeFilter, fallbackPlan, normalizePlanOutput, normalizeReplacedPlan, summarizeToolResult } from './agent.js'
+import { callDeepSeek, createStreamAccumulator, guardTutorAnswer, normalizeStage, parseSseLine, publicCitations, safeFilter, fallbackPlan, normalizePlanOutput, normalizeReplacedPlan, streamAgent, summarizeToolResult } from './agent.js'
 import { executeTool, toolSchemas, validateToolArguments } from './tools.js'
 import { buildAdaptivePlan, buildDiagnosticBlueprint, buildFallbackDiagnosticQuestions, listCurriculumChapters, listCurriculumSubjects, searchCurriculum, stampDiagnosticQuestionIds } from './curriculum.js'
+import { tutorSystemPrompt } from './prompts.js'
 
 test('SSE 行解析能识别完成标记并忽略无效行', () => {
   assert.deepEqual(parseSseLine('data: [DONE]'), { done: true })
@@ -29,6 +30,62 @@ test('工具结果摘要能给出可读的步骤说明', () => {
   assert.equal(summarizeToolResult('rag_knowledge_query', { matches: ['二次函数', '一元二次方程'] }), '命中 2 个知识点：二次函数、一元二次方程')
   assert.equal(summarizeToolResult('calc_review_interval', { intervalDays: 4 }), '建议 4 天后复习')
   assert.equal(summarizeToolResult('rag_knowledge_query', { error: 'bad' }), '参数校验未通过，已跳过')
+})
+
+test('检索引用去重并拆出出处与题型', () => {
+  const citations = publicCitations({ citations: [
+    '《2024年广东省中考数学试卷（解析版）》：数学2024年中考真题',
+    '《2024年广东省中考数学试卷（解析版）》：数学2024年中考真题',
+    '《2023年广东省中考物理真题》：物理2023年中考真题',
+    '《2022年广东省中考化学真题》：化学2022年中考真题',
+    '《2021年广东省中考语文真题》：语文2021年中考真题'
+  ] })
+  assert.equal(citations.length, 4)
+  assert.deepEqual(citations[0], {
+    text: '《2024年广东省中考数学试卷（解析版）》：数学2024年中考真题',
+    title: '2024年广东省中考数学试卷（解析版）',
+    detail: '数学2024年中考真题'
+  })
+  assert.equal(citations[1].detail, '物理2023年中考真题')
+  // 非标准格式原样保留，避免丢来源。
+  assert.equal(publicCitations({ citations: ['本地题库'] })[0].title, '本地题库')
+})
+
+test('流式 Agent 把 RAG 引用透传到工具事件与结束事件', async () => {
+  const originalFetch = global.fetch
+  const originalKey = process.env.DEEPSEEK_API_KEY
+  const originalBase = process.env.LLM_BASE_URL
+  process.env.DEEPSEEK_API_KEY = 'test-key'
+  process.env.LLM_BASE_URL = 'https://example.test'
+  const sse = payload => `data: ${JSON.stringify(payload)}\n\n`
+  const toolRound = sse({
+    choices: [{ delta: { tool_calls: [{ index: 0, id: 'call_rag', function: {
+      name: 'rag_knowledge_query',
+      arguments: JSON.stringify({ subject: '数学', grade: '初三', keyword: '二次函数' })
+    } }] } }]
+  }) + 'data: [DONE]\n\n'
+  const answerRound = sse({ choices: [{ delta: { content: '先看顶点式。' } }] }) + 'data: [DONE]\n\n'
+  let round = 0
+  global.fetch = async () => {
+    round += 1
+    return new Response(round === 1 ? toolRound : answerRound, { status: 200, headers: { 'Content-Type': 'text/event-stream' } })
+  }
+  try {
+    const events = []
+    for await (const event of streamAgent({ messages: [{ role: 'user', content: '二次函数顶点怎么求' }], systemPrompt: '测试提示词' })) events.push(event)
+    const toolDone = events.find(event => event.type === 'tool' && event.status === 'done')
+    assert.ok(toolDone, '应产出工具完成事件')
+    assert.ok(toolDone.citations.length > 0, '工具事件应带引用')
+    assert.match(toolDone.citations[0].detail, /数学/)
+    const done = events.find(event => event.type === 'done')
+    assert.equal(done.tools[0].citations.length, toolDone.citations.length)
+  } finally {
+    global.fetch = originalFetch
+    if (originalKey === undefined) delete process.env.DEEPSEEK_API_KEY
+    else process.env.DEEPSEEK_API_KEY = originalKey
+    if (originalBase === undefined) delete process.env.LLM_BASE_URL
+    else process.env.LLM_BASE_URL = originalBase
+  }
 })
 
 test('课标检索能跨年级命中整词、术语与别名', () => {
@@ -95,6 +152,16 @@ test('答疑安全过滤与 mock 计划都可独立运行', () => {
   const plan = fallbackPlan({ subjects: ['数学'], weakPoints: '二次函数' })
   assert.equal(plan.plans[0].subject, '数学')
   assert.ok(plan.plans[0].knowledgeTags.includes('二次函数'))
+})
+
+test('答疑双模式：引导拦截答案，讲解放行完整步骤', () => {
+  const answer = '这道题考二次函数顶点式。答案：y=(x-1)^2+2。第一步配方，第二步合并常数项。'
+  assert.match(guardTutorAnswer(answer), /不直接给出完整答案/)
+  assert.equal(guardTutorAnswer(answer, { mode: 'explain' }), answer)
+  const longAnswer = '步骤'.repeat(1300)
+  assert.ok(guardTutorAnswer(longAnswer, { mode: 'explain' }).length <= 2401)
+  assert.match(tutorSystemPrompt('guide'), /禁止直接输出题目的完整答案/)
+  assert.match(tutorSystemPrompt('explain'), /可以直接给出完整答案/)
 })
 
 test('计划结构校验会限制每日总时长并补全固定字段', () => {
@@ -170,7 +237,8 @@ test('思考模式工具续轮完整回传 reasoning_content 与 tool_call_id', 
 })
 
 test('课程目录按学段和科目返回专题，摸底题具备本地降级路径', () => {
-  const subjects = listCurriculumSubjects('初中', '初三')
+  const subjects = listCurriculumSubjects('初三')
+  assert.equal(subjects.stage, '初中')
   assert.ok(subjects.subjects.includes('数学'))
   const chapters = listCurriculumChapters('初三', '数学').chapters
   assert.ok(chapters.some(chapter => chapter.name === '二次函数'))
@@ -240,11 +308,4 @@ test('阶段性摸底至少六次使用不同的本地代表题', () => {
   assert.ok(history.every(question => question.explanation))
 })
 
-test('高中物理无 API 时使用全国卷 I 风格原创客观题而非自评题', () => {
-  const chapters = listCurriculumChapters('高三', '物理').chapters.slice(0, 3)
-  const result = buildFallbackDiagnosticQuestions({ grade: '高三', subject: '物理', chapters, questionCount: 10, attempt: 1 })
-  assert.equal(result.source, 'local-gaokao-style-physics')
-  assert.ok(result.questions.every(question => question.selfAssessment !== true))
-  assert.ok(result.questions.every(question => Number.isInteger(question.correctIndex)))
-  assert.ok(result.questions.some(question => question.stem.includes('m/s') || question.stem.includes('实验') || question.stem.includes('电阻')))
-})
+

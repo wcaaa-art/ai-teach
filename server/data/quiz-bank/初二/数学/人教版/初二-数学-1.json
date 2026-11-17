@@ -1,0 +1,112 @@
+{
+  "grade": "初二",
+  "subject": "数学",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初二-数学-1",
+    "name": "三角形与全等"
+  },
+  "generatedAt": "2026-11-14T13:05:12.000Z",
+  "source": "trae",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初二-数学-1-f1",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "已知三角形的两边长分别为 5 和 9，第三边长为 x，则 x 的取值范围是____。",
+      "answer": "4<x<14",
+      "acceptableAnswers": [
+        "4<x<14",
+        "4＜x＜14",
+        "4 < x < 14"
+      ],
+      "referenceAnswer": "",
+      "explanation": "得分点：由三角形三边关系，第三边大于两边之差且小于两边之和，得 9-5<x<9+5，即 4<x<14。\n易错点：只记住“两边之和大于第三边”而写成 x<14，漏掉下界；或把端点取到，写成 4≤x≤14，实际上第三边不能等于两边之差或两边之和。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-数学-1-f2",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "在△ABC 中，∠A=50°，∠B=60°，则∠C=____。",
+      "answer": "70°",
+      "acceptableAnswers": [
+        "70°",
+        "70度"
+      ],
+      "referenceAnswer": "",
+      "explanation": "得分点：三角形内角和等于 180°，所以 ∠C=180°-∠A-∠B=180°-50°-60°=70°。\n易错点：把内角和误记成 360°；或只减去一个已知角，得到 120° 等错误结果；漏写角度单位“°”也会被扣分。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-数学-1-f3",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "已知△ABC≌△DEF，其中点 A 与点 D、点 B 与点 E 分别是对应顶点。若∠A=48°，∠B=72°，则∠F=____。",
+      "answer": "60°",
+      "acceptableAnswers": [
+        "60°",
+        "60度"
+      ],
+      "referenceAnswer": "",
+      "explanation": "得分点：先由三角形内角和求 ∠C=180°-48°-72°=60°；再由全等三角形对应角相等，∠F 与 ∠C 是对应角，所以 ∠F=60°。\n易错点：不按对应顶点顺序找对应角，误认为 ∠F 与 ∠A 或 ∠B 对应；也有人在求出 ∠C 后忘记写结论。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-数学-1-f4",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "在 Rt△ABC 和 Rt△DEF 中，∠C=∠F=90°，AB=DE，AC=DF，则判定这两个三角形全等的依据是____（填简写）。",
+      "answer": "HL",
+      "acceptableAnswers": [
+        "HL",
+        "斜边、直角边",
+        "斜边直角边"
+      ],
+      "referenceAnswer": "",
+      "explanation": "得分点：两个直角三角形中，斜边 AB=DE，一条直角边 AC=DF，满足“斜边和一条直角边分别相等”，判定依据简写为 HL。\n易错点：写成 SSA，而 SSA 不能判定一般三角形全等；HL 只适用于直角三角形，答题时要先指明两个三角形都是直角三角形。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初二-数学-1-s1",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "在△ABC 中，AB=AC，点 D 在边 BC 上，且 BD=CD。连接 AD，求证：∠BAD=∠CAD，AD⊥BC。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "证明：连接 AD。\n在△ABD 和△ACD 中，AB=AC，BD=CD，AD=AD，\n所以△ABD≌△ACD（SSS）。\n所以∠BAD=∠CAD，∠ADB=∠ADC。\n又因为点 D 在 BC 上，∠ADB+∠ADC=180°，\n所以∠ADB=∠ADC=90°，即 AD⊥BC。",
+      "explanation": "第1步：连接 AD，得到两个三角形的公共边，得 1 分；不作辅助线则无法直接列出三组边。\n第2步：列出 AB=AC、BD=CD、AD=AD 三组对应边，得 2 分；漏写公共边 AD=AD 扣 1 分。\n第3步：由 SSS 判定△ABD≌△ACD，得 2 分；判定依据写成 SAS、SSA 等不得分。\n第4步：由全等得∠BAD=∠CAD、∠ADB=∠ADC，得 2 分。\n第5步：由∠ADB+∠ADC=180°推出两角均为 90°，从而 AD⊥BC，得 3 分；只说“全等所以垂直”而缺少平角推理，扣 1 分。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初二-数学-1-s2",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "在△ABC 中，AD 是 BC 边上的中线，即 BD=CD。延长 AD 到点 E，使 DE=AD，连接 BE。\n（1）求证：BE=AC；\n（2）若 AB=8，AC=6，求中线 AD 长的取值范围。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）证明：因为 AD 是 BC 边上的中线，所以 BD=CD。\n又∠BDE 与∠CDA 是对顶角，所以∠BDE=∠CDA。\n在△BDE 和△CDA 中，BD=CD，∠BDE=∠CDA，DE=AD，\n所以△BDE≌△CDA（SAS），所以 BE=AC。\n（2）由（1）得 BE=AC=6，且 AE=AD+DE=2AD。\n在△ABE 中，由三角形三边关系得 AB-BE<AE<AB+BE，\n即 8-6<2AD<8+6，所以 2<2AD<14，解得 1<AD<7。",
+      "explanation": "第（1）问共 5 分：指出 BD=CD 得 1 分；找出对顶角∠BDE=∠CDA 得 1 分；完整列出三组条件并用 SAS 判定全等得 2 分；由全等得出 BE=AC 得 1 分。常见错误是把对顶角说成同位角，或漏写 DE=AD 这一组边。\n第（2）问共 5 分：由（1）把 BE 转化为 6、把 AE 转化为 2AD 得 2 分；正确使用三角形三边关系列出 2<2AD<14 得 2 分；解得 1<AD<7 得 1 分。常见错误是只列 AE<AB+BE 而漏掉 AE>AB-BE，导致范围缺少下界；也有人在最后忘记把 2AD 除以 2。",
+      "difficulty": 3,
+      "score": 10
+    },
+    {
+      "id": "初二-数学-1-s3",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "在△ABC 中，∠C=90°，AD 平分∠BAC 交 BC 于点 D，DE⊥AB 于点 E。若 BC=8，BD=5，求 DE 的长，并证明 AC=AE。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "解：因为 AD 平分∠BAC，DC⊥AC，DE⊥AB，\n所以 DE=DC（角平分线上的点到角两边的距离相等）。\n又 DC=BC-BD=8-5=3，所以 DE=3。\n证明：在 Rt△ACD 和 Rt△AED 中，AD=AD，DC=DE，\n所以 Rt△ACD≌Rt△AED（HL），所以 AC=AE。",
+      "explanation": "第1步：由 AD 平分∠BAC 且 DC⊥AC、DE⊥AB，得出 DE=DC，得 3 分；只写“角平分线”而不说明到两边距离相等，扣 1 分。\n第2步：由 DC=BC-BD=3 求出 DE=3，得 2 分；误用 BD 代替 DC 是常见错误。\n第3步：在 Rt△ACD 与 Rt△AED 中列出公共斜边 AD=AD、直角边 DC=DE，得 2 分。\n第4步：用 HL 判定全等并得出 AC=AE，得 3 分；写成 SSA 或 SAS 不得分，因为这里只有斜边和一条直角边对应相等。",
+      "difficulty": 2,
+      "score": 10
+    }
+  ]
+}

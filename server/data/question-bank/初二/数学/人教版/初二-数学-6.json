@@ -1,0 +1,184 @@
+{
+  "grade": "初二",
+  "subject": "数学",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初二-数学-6",
+    "name": "勾股定理"
+  },
+  "generatedAt": "2026-11-13T02:44:34.318Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwedilqj",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在 Rt△ABC 中，∠A=90°，则下列关系一定成立的是（ ）",
+      "options": [
+        "AB^2+BC^2=AC^2",
+        "AB^2+AC^2=BC^2",
+        "BC^2+AC^2=AB^2",
+        "AB+AC=BC"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：∠A=90°时，斜边是∠A所对的BC，不是AC；不能把AC当作斜边列式。\nB. 正确：∠A=90°，AB、AC是两条直角边，BC是斜边，由勾股定理得 AB^2+AC^2=BC^2。\nC. 错误：AB是直角边，不是斜边；∠A所对的BC才是斜边，因此不能写成 BC^2+AC^2=AB^2。\nD. 错误：三角形任意两边之和大于第三边，应有 AB+AC>BC；勾股定理描述的是平方关系，不是边长直接相加。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwedilqj",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某社区有一块直角三角形空地，两条直角边分别长9 m和12 m。现要沿斜边修建一条步道，这条步道的长度是多少？",
+      "options": [
+        "9 m",
+        "12 m",
+        "15 m",
+        "21 m"
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：9 m是已知的一条直角边，不是斜边；斜边应比每条直角边都长。\nB. 错误：12 m是另一条直角边，不是斜边；若斜边为12 m，则12^2=9^2+12^2不成立。\nC. 正确：设斜边长为c，由勾股定理得c^2=9^2+12^2=81+144=225，所以c=15 m。\nD. 错误：21 m等于两条直角边长度之和，而斜边必须小于两边之和，且21^2≠9^2+12^2。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-3-mwedilqj",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在凸四边形ABCD中，∠ABC=∠ADC=90°，AB=3，BC=4，且AD=CD。求四边形ABCD的面积。",
+      "options": [
+        "\\frac{49}{4}",
+        "12",
+        "\\frac{25}{2}",
+        "13"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：在Rt△ABC中，由勾股定理得AC^2=AB^2+BC^2=3^2+4^2=25，所以AC=5；在Rt△ADC中，∠ADC=90°且AD=CD，设AD=CD=y，则y^2+y^2=AC^2=25，得y^2=\\frac{25}{2}，所以S_{\\triangle ADC}=\\frac{1}{2}AD\\cdot CD=\\frac{1}{2}y^2=\\frac{25}{4}；又S_{\\triangle ABC}=\\frac{1}{2}\\times3\\times4=6，凸四边形ABCD的面积为6+\\frac{25}{4}=\\frac{49}{4}。\nB. 错误：若面积为12，则△ADC面积应为6，即\\frac{1}{2}AD\\cdot CD=6，AD=CD=\\sqrt{12}，此时AD^2+CD^2=24，与AC^2=25矛盾。\nC. 错误：\\frac{25}{2}是把△ADC面积误算为\\frac{1}{2}AC^2或漏乘\\frac{1}{2}后的结果；实际上AD=CD时，S_{\\triangle ADC}=\\frac{1}{4}AC^2=\\frac{25}{4}，不是\\frac{25}{2}。\nD. 错误：13相当于把△ADC面积算成7，但由AC=5且AD=CD可确定其面积为\\frac{25}{4}，不是7，因此总面积不可能为13。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-4-mwedilqj",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "一个直角三角形的两条边长分别为3和4，则第三条边的长为（ ）",
+      "options": [
+        "5",
+        "\\sqrt{7}",
+        "5或\\sqrt{7}",
+        "7"
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：只考虑了3和4都是直角边，得到斜边为\\sqrt{3^2+4^2}=5，漏掉了4可能为斜边的情况。\nB. 错误：只考虑了4是斜边，得到第三边为\\sqrt{4^2-3^2}=\\sqrt{7}，漏掉了3和4都为直角边的情况。\nC. 正确：需分类讨论。若3和4都是直角边，则第三边为斜边，长为\\sqrt{3^2+4^2}=5；若4是斜边，则第三边为直角边，长为\\sqrt{4^2-3^2}=\\sqrt{7}。所以第三边长可能为5或\\sqrt{7}。\nD. 错误：7既不等于5，也不等于\\sqrt{7}，且不满足勾股定理或勾股定理的变形关系，不能作为第三条边的长。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-5-mwedilqj",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "关于勾股定理，下列说法正确的是（　　）",
+      "options": [
+        "直角三角形中，两条直角边的平方和等于斜边的平方",
+        "直角三角形中，任意两条边的平方和都等于第三条边的平方",
+        "钝角三角形的三条边也满足「两边的平方和等于第三边的平方」",
+        "勾股定理只适用于等腰直角三角形"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：这就是勾股定理的内容；在直角三角形中，若两条直角边长分别为 a、b，斜边长为 c，则 a^2+b^2=c^2，其中斜边是直角所对的边，也是最长边。\nB. 错误：定理中的两条边必须是直角边，不能是任意两边；以边长为 3、4、5 的直角三角形为例，3^2+5^2=34\\neq 4^2，可见把斜边当成直角边代入并不成立。\nC. 错误：勾股定理及其逆定理刻画的是直角三角形；以边长为 2、3、4 的三角形为例，2^2+3^2=13<4^2，它是钝角三角形，三条边并不满足两边平方和等于第三边平方。\nD. 错误：等腰直角三角形只是直角三角形的一种特例，勾股定理对一切直角三角形都成立；例如边长为 6、8、10 的直角三角形，6^2+8^2=36+64=100=10^2，同样成立。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-6-mwedilqj",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一架长 13 m 的梯子斜靠在竖直墙面上，梯脚到墙脚的距离为 5 m。已知墙面与地面垂直，则梯顶到地面的高度为（ ）",
+      "options": [
+        "12 m",
+        "8 m",
+        "√194 m",
+        "18 m"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：墙面与地面垂直，梯子、墙面和地面构成直角三角形，梯子长为斜边。由勾股定理得 h^2+5^2=13^2，所以 h^2=144，h=12 m。\nB. 错误：8 m 是用 13-5 得到的，勾股定理中斜边与直角边不能直接相减求另一条直角边。\nC. 错误：√194 m 来自 13^2+5^2，这是把所求高度误当成斜边，与题意中梯子长 13 m 为斜边矛盾。\nD. 错误：18 m 是用 13+5 得到的，不能把斜边与直角边直接相加来求高度。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-7-mwedilqj",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在矩形ABCD中，AB=10，AD=6，点E在边BC上，将△ABE沿AE折叠，点B恰好落在边CD上的点F处，求CE的长。",
+      "options": [
+        "2",
+        "\\frac{8}{3}",
+        "3",
+        "\\frac{10}{3}"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：2是CF的长，不是CE的长；由AF=AB=10，AD=6，可得DF=8，所以CF=CD-DF=10-8=2。\nB. 正确：由折叠得AF=AB=10，EF=BE。在Rt△ADF中，DF=\\sqrt{AF^2-AD^2}=\\sqrt{10^2-6^2}=8，所以CF=10-8=2。设BE=EF=x，则CE=6-x，在Rt△ECF中，x^2=(6-x)^2+2^2，解得x=\\frac{10}{3}，所以CE=6-\\frac{10}{3}=\\frac{8}{3}。\nC. 错误：若CE=3，则BE=3，折叠后EF=3，但Rt△ECF中CF=2，应有EF^2=CE^2+CF^2，即3^2=3^2+2^2不成立。\nD. 错误：\\frac{10}{3}是BE的长，由上述方程解得BE=\\frac{10}{3}，因此CE应为6-\\frac{10}{3}=\\frac{8}{3}。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-8-mwedilqj",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "下列关于勾股定理及其逆定理的说法中，正确的是（ ）",
+      "options": [
+        "若一个三角形的三边长分别为 \\sqrt{3}，\\sqrt{4}，\\sqrt{5}，则它一定是直角三角形",
+        "已知直角三角形的两边长分别为 6 和 8，则第三边长一定是 10",
+        "若三角形三边 a，b，c 满足 a^2+b^2=c^2，则 c 边所对的角是直角",
+        "若三角形三边为 4，5，6，则这个三角形是直角三角形"
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：三边平方分别为 3，4，5，较小两边平方和为 3+4=7，不等于最大边平方 5，不满足勾股定理逆定理。\nB. 错误：题中未说明 8 是直角边还是斜边；若 6 和 8 都是直角边，则第三边为 10，但若 8 是斜边，则第三边为 \\sqrt{8^2-6^2}=2\\sqrt{7}。\nC. 正确：这是勾股定理的逆定理，三边满足 a^2+b^2=c^2 时，c 边所对的角为直角。\nD. 错误：4^2+5^2=41，而 6^2=36，41\\neq36，因此该三角形不是直角三角形。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-9-mwedilqj",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在△ABC中，若∠A=90°，则下列等式一定成立的是（ ）",
+      "options": [
+        "AB^2+AC^2=BC^2",
+        "AB^2+BC^2=AC^2",
+        "AC^2+BC^2=AB^2",
+        "AB+AC=BC"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：∠A=90°，所以BC是斜边，AB、AC是两条直角边，由勾股定理得AB^2+AC^2=BC^2。\nB. 错误：该式把直角边AC当成斜边，把斜边BC当成直角边；勾股定理应为两条直角边的平方和等于斜边的平方。\nC. 错误：该式把直角边AB当成斜边，把斜边BC当成直角边，与∠A=90°时BC为斜边矛盾。\nD. 错误：三角形两边之和大于第三边，AB+AC>BC；若AB+AC=BC，则A、B、C三点共线，不能构成三角形。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-10-mwedilqj",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一架长为 13 m 的梯子斜靠在竖直墙面上，梯子底端离墙脚的水平距离为 5 m。若墙面与地面互相垂直，则梯子顶端离地面的高度是多少？",
+      "options": [
+        "12 m",
+        "8 m",
+        "18 m",
+        "√194 m"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：梯子、墙面和地面构成直角三角形，梯长为斜边，水平距离 5 m 为一条直角边。设高度为 h，由勾股定理得 h^2+5^2=13^2，所以 h^2=169-25=144，h=12（取正值），即高度为 12 m。\nB. 错误：8 m 来自直接用 13-5=8，这是把斜边与直角边直接相减；勾股定理要求先平方再求差，不能这样计算。\nC. 错误：18 m 来自 13+5=18，斜边不可能等于两条直角边长度之和，且本题中 13 m 是斜边，不是另一条直角边。\nD. 错误：√194 m 来自计算 √(13^2+5^2)，这是把 13 m 和 5 m 都当成了直角边；但梯子长为斜边，5 m 才是直角边，因此不符合题意。",
+      "difficulty": 1
+    }
+  ]
+}

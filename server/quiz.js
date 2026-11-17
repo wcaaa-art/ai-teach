@@ -1,9 +1,10 @@
 // 章节测试命题：卷型蓝图、模型题校验、7 天去重、无密钥本地兜底。
 import { callDeepSeek, extractJson, safeFilter } from './agent.js'
 import { QUIZ_SYSTEM_PROMPT } from './prompts.js'
-import { QUIZ_MODE_LIMITS, stemHash } from '../src/utils/quiz.js'
+import { PAPER_SPEC, QUIZ_MODE_LIMITS, stemHash } from '../src/utils/quiz.js'
+import { pickBankQuestions, pickQuizBankQuestions } from './question-bank.js'
 
-// 两种卷型的结构规范会同时进入系统提示词和用户消息，模型与兜底题都按它出题。
+// 初中卷型结构规范会同时进入系统提示词和用户消息，模型与兜底题都按它出题。
 export const PAPER_SPECS = {
   '初中': {
     label: '初中（全国中考常见结构）',
@@ -13,17 +14,6 @@ export const PAPER_SPECS = {
       { type: 'single', name: '单项选择题', perQuestion: 3, note: '四个选项只有一项正确' },
       { type: 'fill', name: '填空题', perQuestion: 3, note: '答案唯一，写关键结论' },
       { type: 'short', name: '解答题', perQuestion: '6–12', note: '写出必要步骤，按步骤给分' }
-    ]
-  },
-  '高中': {
-    label: '高中（新高考结构）',
-    totalScore: 150,
-    difficultyRatio: '基础:中档:难 ≈ 5:3:2',
-    sections: [
-      { type: 'single', name: '单项选择题', perQuestion: 5 },
-      { type: 'multiple', name: '多项选择题', perQuestion: 6, note: '全对得 6 分；选对但不全按比例得部分分；有错选得 0 分' },
-      { type: 'fill', name: '填空题', perQuestion: 5 },
-      { type: 'short', name: '解答题', perQuestion: '10–17', note: '分步给分' }
     ]
   }
 }
@@ -38,28 +28,44 @@ function clampCount(mode, value) {
   return Math.max(limits.min, Math.min(limits.max, Math.round(requested)))
 }
 
-function scoreFor(stage, type) {
-  if (stage === '高中') return type === 'single' ? 5 : type === 'multiple' ? 6 : type === 'fill' ? 5 : 12
+function scoreFor(type) {
   return type === 'single' ? 3 : type === 'fill' ? 3 : 10
 }
 
-// 题型配比按学段和科目调整：高中理科含多选，文科不硬套多选。
-function typePatternFor(stage, subject) {
-  const science = ['数学', '物理', '化学', '生物'].includes(subject)
-  if (stage === '高中' && science) {
-    return ['single', 'multiple', 'fill', 'short', 'single', 'fill', 'single', 'multiple', 'short', 'fill', 'single', 'short']
-  }
-  if (stage === '高中') {
-    return ['single', 'single', 'short', 'fill', 'single', 'short', 'fill', 'single', 'short', 'single', 'fill', 'short']
-  }
+// 题型配比按科目调整：初中卷型只有单选、填空、解答三种题型。
+function typePatternFor() {
   return ['single', 'single', 'fill', 'short', 'single', 'fill', 'single', 'short', 'single', 'fill', 'short', 'single']
+}
+
+// 综合整卷分值表：120 分与 100 分各一套，题量都是 25（选择 10 + 填空 6 + 解答 9）。
+const PAPER_SCORE_PLANS = {
+  120: { single: 3, fill: 3, short: [4, 4, 6, 6, 8, 8, 10, 12, 14] },
+  100: { single: 3, fill: 2, short: [2, 2, 4, 6, 6, 8, 8, 10, 12] }
+}
+
+// 整卷按「题型段」排题：先选择、再填空、最后解答；章节按题位轮转，保证覆盖整本教材。
+function buildPaperBlueprint({ stage = '初中', grade = '', subject = '', chapters = [] } = {}) {
+  const selected = (Array.isArray(chapters) ? chapters : []).filter(chapter => chapter && chapter.id).slice(0, 16)
+  if (!selected.length) return { mode: 'paper', stage, grade, subject, total: 0, requested: 0, items: [] }
+  const fullScore = PAPER_SPEC.fullScoreFor(subject)
+  const plan = PAPER_SCORE_PLANS[fullScore]
+  const slots = []
+  for (let index = 0; index < PAPER_SPEC.sectionCounts.single; index += 1) slots.push({ type: 'single', score: plan.single })
+  for (let index = 0; index < PAPER_SPEC.sectionCounts.fill; index += 1) slots.push({ type: 'fill', score: plan.fill })
+  plan.short.forEach(score => slots.push({ type: 'short', score }))
+  const items = slots.map((slot, index) => {
+    const chapter = selected[index % selected.length]
+    return { chapterId: chapter.id, chapterName: chapter.name, count: 1, types: [slot.type], scores: [slot.score] }
+  })
+  return { mode: 'paper', stage, grade, subject, total: items.length, requested: items.length, fullScore, items }
 }
 
 // 按章节平均分配题量，再为每道题指定题型，避免模型把题目集中到少数章节。
 export function buildQuizBlueprint({ mode = 'daily', stage = '初中', grade = '', subject = '', chapters = [], questionCount } = {}) {
+  if (mode === 'paper') return buildPaperBlueprint({ stage, grade, subject, chapters })
   const selected = (Array.isArray(chapters) ? chapters : []).filter(chapter => chapter && chapter.id).slice(0, 8)
   const total = clampCount(mode, questionCount)
-  const pattern = typePatternFor(stage, subject)
+  const pattern = typePatternFor()
   const base = selected.length ? Math.floor(total / selected.length) : 0
   const remainder = selected.length ? total % selected.length : 0
   let cursor = 0
@@ -70,7 +76,7 @@ export function buildQuizBlueprint({ mode = 'daily', stage = '初中', grade = '
       cursor += 1
       return type
     })
-    return { chapterId: chapter.id, chapterName: chapter.name, count, types }
+    return { chapterId: chapter.id, chapterName: chapter.name, count, types, scores: types.map(scoreFor) }
   }).filter(item => item.count > 0)
   return { mode, stage, grade, subject, total: items.reduce((sum, item) => sum + item.count, 0), requested: total, items }
 }
@@ -85,14 +91,12 @@ function optionList(raw) {
 }
 
 // 模型题结构校验：章节必须属于所选范围，答案字段必须齐全，否则丢弃交给兜底补齐。
-export function sanitizeModelQuestion(raw, { chapters = [], stage = '初中', subject = '' } = {}) {
+export function sanitizeModelQuestion(raw, { chapters = [] } = {}) {
   if (!raw || typeof raw !== 'object') return null
   const chapter = chapters.find(item => item.id === raw.chapterId) || chapters.find(item => item.name === raw.chapterName)
   if (!chapter) return null
-  let type = ['single', 'multiple', 'fill', 'short'].includes(raw.type) ? raw.type : 'single'
+  let type = ['single', 'fill', 'short'].includes(raw.type) ? raw.type : 'single'
   // 初中卷型没有多选题，模型误给时降级为单选，避免判分规则不一致。
-  if (stage === '初中' && type === 'multiple') type = 'single'
-  if (stage === '高中' && !['数学', '物理', '化学', '生物'].includes(subject) && type === 'multiple') type = 'single'
   const stem = text(raw.stem)
   if (!stem) return null
   const common = {
@@ -104,9 +108,9 @@ export function sanitizeModelQuestion(raw, { chapters = [], stage = '初中', su
     stem,
     explanation: text(raw.explanation, 1000),
     difficulty: Math.max(1, Math.min(3, Number(raw.difficulty) || 1)),
-    score: Math.max(1, Math.min(20, Number(raw.score) || scoreFor(stage, type)))
+    score: Math.max(1, Math.min(20, Number(raw.score) || scoreFor(type)))
   }
-  if (type === 'single' || type === 'multiple') {
+  if (type === 'single') {
     const options = optionList(raw.options)
     if (options.length < 2) return null
     if (type === 'single') {
@@ -472,40 +476,6 @@ function biologyDraft(name, type, variant) {
   return draftBase({ stem: '简述“结构决定功能”在生物学习中的一个例子。', referenceAnswer: '例如小肠绒毛增大了吸收面积，有利于营养物质的吸收，体现结构与功能相适应。', explanation: '结合具体器官说明结构与功能的关系。', difficulty, dimension: 'transfer' })
 }
 
-// 高中多选兜底：只覆盖理科，给出两条明确正确的表述。
-function multipleDraft(subject, variant) {
-  if (subject === '物理') {
-    const statements = [
-      { stem: '关于牛顿运动定律，下列说法正确的有？', options: ['物体不受力时保持静止或匀速直线运动', '合力越大，质量一定的物体加速度越大', '作用力与反作用力大小相等、方向相反', '加速度方向总与速度方向相同'], correctIndexes: [0, 1, 2], explanation: 'A. 正确：牛顿第一定律，不受力时物体保持静止或匀速直线运动状态。\nB. 正确：由 a = F/m 可知，质量一定时合力越大加速度越大。\nC. 正确：牛顿第三定律，作用力与反作用力等大反向，作用在两个不同物体上。\nD. 错误：反例——汽车减速时加速度方向与速度方向相反，加速度方向由合力方向决定，与速度方向无关。' },
-      { stem: '关于功和能，下列说法正确的有？', options: ['功是能量转化的量度', '合外力做正功，物体动能增加', '重力做负功，重力势能增加', '摩擦力一定不做功'], correctIndexes: [0, 1, 2], explanation: 'A. 正确：功是能量转化的量度，做功的过程就是能量转化的过程。\nB. 正确：动能定理 W合 = ΔEk，合外力做正功时动能增加。\nC. 正确：重力做负功说明物体上升，重力势能增加，W重 = -ΔEp。\nD. 错误：反例——物体随传送带一起加速时，静摩擦力对物体做正功，摩擦力可以做正功、负功或不做功。' }
-    ]
-    const item = statements[variant % statements.length]
-    return draftBase({ ...item, difficulty: 2, dimension: 'concept' })
-  }
-  if (subject === '化学') {
-    const statements = [
-      { stem: '关于化学反应，下列说法正确的有？', options: ['化学反应遵循质量守恒定律', '催化剂能改变反应速率', '所有反应都会放出热量', '化学平衡时正逆反应速率相等'], correctIndexes: [0, 1, 3], explanation: 'A. 正确：化学反应前后原子种类和数目不变，质量守恒。\nB. 正确：催化剂降低反应活化能，加快反应速率，但本身质量和化学性质不变。\nC. 错误：反例——Ba(OH)₂·8H₂O 与 NH₄Cl 的反应吸热，多数分解反应也需要持续吸热，并非所有反应都放热。\nD. 正确：化学平衡的实质是正、逆反应速率相等且各组分浓度不变。' },
-      { stem: '关于溶液与酸碱盐，下列说法正确的有？', options: ['pH 小于 7 的溶液呈酸性', '酸与碱反应生成盐和水', '所有盐溶液都呈中性', '金属活动性顺序可用于判断置换反应'], correctIndexes: [0, 1, 3], explanation: 'A. 正确：常温下 pH < 7 的溶液呈酸性，pH 越小酸性越强。\nB. 正确：酸与碱发生中和反应，生成盐和水。\nC. 错误：反例——Na₂CO₃ 是强碱弱酸盐，其溶液呈碱性（pH > 7）；NH₄Cl 溶液则呈酸性。\nD. 正确：金属活动性顺序中排在前面的金属能把后面的金属从其盐溶液中置换出来。' }
-    ]
-    const item = statements[variant % statements.length]
-    return draftBase({ ...item, difficulty: 2, dimension: 'concept' })
-  }
-  if (subject === '生物') {
-    const statements = [
-      { stem: '关于细胞结构与功能，下列说法正确的有？', options: ['细胞膜控制物质进出', '叶绿体是光合作用的场所', '所有细胞都有细胞壁', '线粒体与能量代谢有关'], correctIndexes: [0, 1, 3], explanation: 'A. 正确：细胞膜具有选择透过性，控制物质进出细胞。\nB. 正确：叶绿体含叶绿素，是绿色植物进行光合作用的场所。\nC. 错误：反例——动物细胞没有细胞壁，只有植物细胞、真菌和多数细菌才有细胞壁。\nD. 正确：线粒体是有氧呼吸的主要场所，与能量代谢密切相关。' },
-      { stem: '关于遗传与变异，下列说法正确的有？', options: ['基因控制生物性状', 'DNA 是主要的遗传物质', '所有变异都能遗传给后代', '染色体由 DNA 和蛋白质组成'], correctIndexes: [0, 1, 3], explanation: 'A. 正确：基因通过控制蛋白质的合成来控制生物性状。\nB. 正确：绝大多数生物的遗传物质是 DNA，所以说 DNA 是主要遗传物质（少数病毒以 RNA 为遗传物质）。\nC. 错误：反例——仅由环境引起的变异（如晒黑）以及体细胞突变一般不能遗传，只有生殖细胞中的可遗传变异才会传给后代。\nD. 正确：染色体主要由 DNA 和蛋白质组成。' }
-    ]
-    const item = statements[variant % statements.length]
-    return draftBase({ ...item, difficulty: 2, dimension: 'concept' })
-  }
-  const statements = [
-    { stem: '关于函数与导数，下列说法正确的有？', options: ['函数在某点可导则在该点连续', '导数为正时函数在该区间单调递增', '函数的极值点一定是导数为零的点', '闭区间上连续函数一定有最大值和最小值'], correctIndexes: [0, 1, 3], explanation: 'A. 正确：可导必连续，这是导数定义直接推出的结论。\nB. 正确：在区间内 f′(x) > 0，则 f(x) 在该区间单调递增。\nC. 错误：反例——f(x) = x³ 在 x = 0 处 f′(0) = 0，但不是极值点；又如 f(x) = |x| 在 x = 0 处不可导却是极小值点。导数为零只是极值的必要条件。\nD. 正确：闭区间上连续函数必有最大值和最小值（最值定理）。' },
-    { stem: '关于数列，下列说法正确的有？', options: ['等差数列的通项是关于 n 的一次函数', '等比数列中任意两项的比等于公比', '等差数列前 n 项和公式可用于求最值', '所有数列都存在通项公式'], correctIndexes: [0, 2], explanation: 'A. 正确：aₙ = a₁ + (n − 1)d，公差 d ≠ 0 时是关于 n 的一次函数。\nB. 错误：反例——等比数列中 a₃/a₁ = q²，并不是公比 q；只有相邻两项的比才等于公比。\nC. 正确：Sₙ = na₁ + n(n − 1)d/2 是关于 n 的二次函数（d ≠ 0），可用对称轴求最值。\nD. 错误：反例——并非所有数列都能写出通项公式，例如按质数顺序排列的数列就没有简洁通项。' }
-  ]
-  const item = statements[variant % statements.length]
-  return draftBase({ ...item, difficulty: 2, dimension: 'concept' })
-}
-
 function genericDraft(subject, name, type, variant) {
   const difficulty = variant < 2 ? 1 : variant < 4 ? 2 : 3
   const methods = {
@@ -525,10 +495,6 @@ function genericDraft(subject, name, type, variant) {
 }
 
 function buildFallbackDraft(subject, chapterName, type, variant) {
-  if (type === 'multiple') {
-    if (subject === '数学') return multipleDraft('数学', variant)
-    return multipleDraft(subject, variant)
-  }
   if (subject === '数学') return mathDraft(chapterName, type, variant)
   if (subject === '物理') return physicsDraft(chapterName, type, variant)
   if (subject === '化学') return chemistryDraft(chapterName, type, variant)
@@ -545,6 +511,7 @@ export function buildFallbackQuizQuestions({ blueprint, excluded = new Set(), se
   for (const item of blueprint?.items || []) {
     for (let index = 0; index < item.count; index += 1) {
       const type = item.types?.[index] || item.types?.[item.types.length - 1] || 'single'
+      const score = Number(item.scores?.[index]) || scoreFor(type)
       let question = null
       for (let offset = 0; offset < 6 && !question; offset += 1) {
         const variant = (seed + index + offset) % 6
@@ -556,7 +523,7 @@ export function buildFallbackQuizQuestions({ blueprint, excluded = new Set(), se
           chapterId: item.chapterId,
           chapterName: item.chapterName,
           type,
-          score: scoreFor(blueprint.stage, type),
+          score,
           options: draft.options || []
         }
         if (!seen.has(stemHash(candidate.stem))) question = candidate
@@ -571,7 +538,7 @@ export function buildFallbackQuizQuestions({ blueprint, excluded = new Set(), se
             chapterId: item.chapterId,
             chapterName: item.chapterName,
             type,
-            score: scoreFor(blueprint.stage, type),
+            score,
             options: draft.options || [],
             stem: `${draft.stem}（变式 ${serial + 1}）`
           }
@@ -602,17 +569,21 @@ export async function mapWithLimit(list, limit, worker) {
 }
 
 // 单题位请求：一次只出一题。串行出 6 题要约 30 秒，按题并发能把墙钟压到最慢一题的水平。
-async function requestSlotQuestion(slot, { mode, stage, grade, subject, edition, attempt, excludeStems }) {
+// 单题请求同时供在线章节测试与离线题库脚本复用。
+export async function requestSlotQuestion(slot, { mode, stage, grade, subject, edition, attempt, excludeStems, fullScore }) {
   try {
     const result = await callDeepSeek({
       messages: [{
         role: 'user',
         content: JSON.stringify({
-          mode, stage, grade, subject,
+          mode, stage, grade, subject, fullScore,
           textbookEdition: edition || '',
-          paperSpec: PAPER_SPECS[stage] || PAPER_SPECS['初中'],
+          // 整卷的满分随科目变化，覆盖通用卷型里的 120，避免模型按错误总分配分。
+          paperSpec: mode === 'paper'
+            ? { ...(PAPER_SPECS[stage] || PAPER_SPECS['初中']), totalScore: fullScore || 100, label: `初中综合整卷（${fullScore || 100} 分）` }
+            : (PAPER_SPECS[stage] || PAPER_SPECS['初中']),
           chapters: [{ id: slot.chapterId, name: slot.chapterName }],
-          blueprint: [{ chapterId: slot.chapterId, chapterName: slot.chapterName, count: 1, types: [slot.type] }],
+          blueprint: [{ chapterId: slot.chapterId, chapterName: slot.chapterName, count: 1, types: [slot.type], scores: [slot.score] }],
           requiredCount: 1,
           round: 1,
           attempt,
@@ -626,13 +597,65 @@ async function requestSlotQuestion(slot, { mode, stage, grade, subject, edition,
     const parsed = extractJson(result.content)
     const raw = Array.isArray(parsed?.questions) ? parsed.questions.find(item => item && item.stem) : null
     if (!raw) return null
-    // 请求只包含一个章节，模型漏填或写错章节字段时直接按本题位归位。
-    return sanitizeModelQuestion({ ...raw, chapterId: slot.chapterId, chapterName: slot.chapterName }, {
-      chapters: [{ id: slot.chapterId, name: slot.chapterName }], stage, subject
+    // 请求只包含一个章节，模型漏填或写错章节字段时直接按本题位归位；分值以蓝图为准，防止模型改分。
+    const normalized = sanitizeModelQuestion({ ...raw, chapterId: slot.chapterId, chapterName: slot.chapterName }, {
+      chapters: [{ id: slot.chapterId, name: slot.chapterName }]
     })
+    return normalized ? { ...normalized, score: Number(slot.score) || normalized.score } : null
   } catch {
     return null
   }
+}
+
+// 直连模型批量出填空/解答题：离线题库脚本使用，不经过本地 HTTP 接口。
+// 只请求主观题位，单选由摸底题库覆盖，避免重复生成。
+export async function generateQuizSubjectivesDirect({ grade, subject, edition = '', chapter, count = 15, attempt = 1 } = {}) {
+  if (!grade || !subject || !chapter?.id) return []
+  const blueprint = buildQuizBlueprint({
+    mode: 'weekly', stage: '初中', grade, subject, edition,
+    chapters: [{ id: chapter.id, name: chapter.name }], questionCount: count
+  })
+  const slots = blueprint.items.flatMap(item => (item.types || []).map((type, index) => ({
+    chapterId: item.chapterId, chapterName: item.chapterName, type, score: item.scores?.[index]
+  }))).filter(slot => slot.type === 'fill' || slot.type === 'short')
+  const answers = await mapWithLimit(slots, QUIZ_CONCURRENCY, slot => requestSlotQuestion(slot, {
+    mode: 'weekly', stage: '初中', grade, subject, edition, attempt, excludeStems: [], fullScore: blueprint.fullScore
+  }))
+  return answers.filter(Boolean)
+}
+
+// 题位优先从离线题库抽题，返回「题位序号 → 题库题」的映射：
+// 单选走摸底题库，填空/解答走章节测试题库；没命中的题位再交给模型。
+export function planQuizBankPicks({ grade, subject, edition = '', slots = [], excludeStems = [], index, quizIndex } = {}) {
+  const bankByIndex = new Map()
+  const dimensions = ['concept', 'basic-application', 'transfer']
+  const singleIndexes = slots.map((slot, slotIndex) => (slot.type === 'single' ? slotIndex : -1)).filter(slotIndex => slotIndex >= 0)
+  if (singleIndexes.length) {
+    const picked = pickBankQuestions({
+      grade, subject, edition, excludeStems, index,
+      slots: singleIndexes.map((slotIndex, order) => ({
+        chapterId: slots[slotIndex].chapterId,
+        dimension: dimensions[order % dimensions.length]
+      }))
+    })
+    picked.forEach((question, order) => {
+      if (question) bankByIndex.set(singleIndexes[order], question)
+    })
+  }
+  const subjectiveIndexes = slots
+    .map((slot, slotIndex) => (slot.type === 'fill' || slot.type === 'short' ? slotIndex : -1))
+    .filter(slotIndex => slotIndex >= 0)
+  if (subjectiveIndexes.length) {
+    const picked = pickQuizBankQuestions({
+      grade, subject, edition, index: quizIndex,
+      excludeStems: [...excludeStems, ...[...bankByIndex.values()].map(question => question.stem)],
+      slots: subjectiveIndexes.map(slotIndex => ({ chapterId: slots[slotIndex].chapterId, type: slots[slotIndex].type }))
+    })
+    picked.forEach((question, order) => {
+      if (question) bankByIndex.set(subjectiveIndexes[order], question)
+    })
+  }
+  return bankByIndex
 }
 
 // 生成一卷：按题位并发请求模型，缺失或撞题的题位用本地兜底补齐，顺序保持章节与题型安排。
@@ -648,34 +671,71 @@ export async function generateQuiz({ mode = 'daily', stage = '初中', grade = '
   const excludeStems = (Array.isArray(recentStems) ? recentStems : [])
     .slice(-60).map(item => String(item?.stem || '').slice(0, 220)).filter(Boolean)
 
-  const slots = blueprint.items.flatMap(item => (item.types || []).map(type => ({ chapterId: item.chapterId, chapterName: item.chapterName, type })))
-  const answers = await mapWithLimit(slots, QUIZ_CONCURRENCY, slot => requestSlotQuestion(slot, {
-    mode, stage, grade, subject, edition, attempt, excludeStems
-  }))
+  const slots = blueprint.items.flatMap(item => (item.types || []).map((type, typeIndex) => ({
+    chapterId: item.chapterId, chapterName: item.chapterName, type, score: item.scores?.[typeIndex]
+  })))
+  // 离线题库先行：命中的单选位不再请求模型，未命中的题位继续走模型。
+  const bankByIndex = planQuizBankPicks({ grade, subject, edition, slots, excludeStems })
+  const modelIndexes = []
+  const modelSlots = []
+  slots.forEach((slot, index) => {
+    if (bankByIndex.has(index)) return
+    modelIndexes.push(index)
+    modelSlots.push(slot)
+  })
+  const answers = modelSlots.length
+    ? await mapWithLimit(modelSlots, QUIZ_CONCURRENCY, slot => requestSlotQuestion(slot, {
+      mode, stage, grade, subject, edition, attempt, excludeStems, fullScore: blueprint.fullScore
+    }))
+    : []
+  const modelAnswers = new Map(modelIndexes.map((slotIndex, answerIndex) => [slotIndex, answers[answerIndex]]))
 
   const questions = []
+  // 每题单独请求时模型会反复返回 q1，整卷必须按题位重发唯一 id，否则答案会串题。
+  const stamp = Date.now().toString(36)
   let modelCount = 0
+  let bankCount = 0
   slots.forEach((slot, index) => {
-    const candidate = answers[index]
+    const bankQuestion = bankByIndex.get(index)
+    if (bankQuestion) {
+      const bankHash = stemHash(bankQuestion.stem)
+      if (excluded.has(bankHash)) return
+      excluded.add(bankHash)
+      questions.push({
+        ...bankQuestion,
+        chapterId: slot.chapterId,
+        chapterName: slot.chapterName,
+        type: bankQuestion.type || slot.type,
+        id: `quiz-${stamp}-${index + 1}`,
+        score: Number(slot.score) || bankQuestion.score || scoreFor('single'),
+        origin: 'bank'
+      })
+      bankCount += 1
+      return
+    }
+    const candidate = modelAnswers.get(index)
     if (candidate && !excluded.has(stemHash(candidate.stem))) {
       excluded.add(stemHash(candidate.stem))
-      questions.push(candidate)
+      questions.push({ ...candidate, id: `quiz-${stamp}-${index + 1}`, score: Number(slot.score) || candidate.score, origin: 'model' })
       modelCount += 1
       return
     }
     // 该题位没有可用模型题时，用本地兜底补一题，保持题目顺序与原卷型一致。
     const fallback = buildFallbackQuizQuestions({
-      blueprint: { ...blueprint, items: [{ chapterId: slot.chapterId, chapterName: slot.chapterName, count: 1, types: [slot.type] }] },
+      blueprint: { ...blueprint, items: [{ chapterId: slot.chapterId, chapterName: slot.chapterName, count: 1, types: [slot.type], scores: [slot.score] }] },
       excluded,
       seed: Math.max(0, attempt * 3 + index * 7 + (Date.now() % 11))
     })[0]
     if (!fallback) return
     excluded.add(stemHash(fallback.stem))
-    // 逐题兜底会重复用到同一批模板 id，补上题位序号避免 id 冲突。
-    questions.push({ ...fallback, id: `${fallback.id}-${index}` })
+    questions.push({ ...fallback, id: `quiz-${stamp}-${index + 1}`, score: Number(slot.score) || fallback.score, origin: 'local' })
   })
 
-  const source = !modelCount ? 'local-fallback' : modelCount >= slots.length ? 'deepseek' : 'deepseek-with-local-fill'
+  const source = !modelCount && bankCount
+    ? bankCount === questions.length ? 'question-bank' : 'question-bank-partial'
+    : !modelCount ? 'local-fallback'
+      : bankCount ? 'question-bank-with-model'
+        : modelCount >= slots.length ? 'deepseek' : 'deepseek-with-local-fill'
   return {
     questions,
     blueprint,

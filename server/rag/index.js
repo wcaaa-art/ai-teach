@@ -20,14 +20,23 @@ export function normalizeText(text = '') {
 }
 
 // 中文按 2~3 字滑窗切分，数字和英文按整段保留；查询侧去重，避免长词重复计分。
+// 滑窗会切到 "xx"/"zz" 这类单字符重复词元：它们多来自填空占位符与公式残留，
+// 而 BM25 里稀有词元 IDF 更高，无意义查询（"zzzzzzzzxxxx"）反而能靠它们硬凑出高分结果。
+// 这里直接丢弃同字符重复的词元，保留真实语言里普遍存在的滑动片段。
 export function tokenizeQuery(text = '') {
   const normalized = normalizeText(text)
   const tokens = new Set()
   const cjk = normalized.replace(/[^0-9a-z\u4e00-\u9fff]/g, '')
   for (const size of [2, 3]) {
-    for (let index = 0; index + size <= cjk.length; index += 1) tokens.add(cjk.slice(index, index + size))
+    for (let index = 0; index + size <= cjk.length; index += 1) {
+      const token = cjk.slice(index, index + size)
+      if (/^(.)\1+$/.test(token)) continue
+      tokens.add(token)
+    }
   }
-  for (const word of normalized.match(/[0-9a-z]{2,}/g) || []) tokens.add(word)
+  // 英文与数字按整段保留：语料里的英文单词本身是完整的，切开反而匹配不上。
+  // 少于 3 个字符的英文词（is / am / a 之类）区分度太低，不参与检索。
+  for (const word of normalized.match(/[0-9a-z]{3,}/g) || []) tokens.add(word)
   return [...tokens]
 }
 
@@ -61,17 +70,17 @@ export function formatCitation(chunk = /** @type {any} */ ({})) {
 
 function stageBoost(chunk, grade) {
   const gradeText = String(grade || '')
+  // 只服务初中：初中年级对初中课标片段加权，高中年级不应出现（query 里不会有）。
   if (gradeText.startsWith('初') && chunk.stage === '初中') return 1.15
-  if (gradeText.startsWith('高') && chunk.stage === '高中') return 1.15
   return 1
 }
 
 /**
  * 检索与问题最相关的真题片段。
- * @param {{ query?: string, subject?: string, grade?: string, topK?: number, minScore?: number }} [options]
+ * @param {{ query?: string, subject?: string, grade?: string, topK?: number, minScore?: number, maxChars?: number }} [options]
  * @returns {Array<{ id: number, score: number, text: string, citation: string, source: string, subject: string, stage: string, exam: string, year: number, variant: string, file: string }>}
  */
-export function searchPassages({ query = '', subject = '', grade = '', topK = 4, minScore = 4 } = {}) {
+export function searchPassages({ query = '', subject = '', grade = '', topK = 4, minScore = 4, maxChars = 900, subjectStrict = false } = {}) {
   const index = loadRagIndex()
   const normalizedQuery = normalizeText(query)
   if (normalizedQuery.length < 2) return []
@@ -107,6 +116,10 @@ export function searchPassages({ query = '', subject = '', grade = '', topK = 4,
   for (let id = 0; id < scores.length; id += 1) {
     if (scores[id] <= 0) continue
     const chunk = chunks[id]
+    // 产品只做初中：索引里仍有高考语料，但检索阶段直接跳过，不能出现在答疑引用里。
+    if (chunk.stage === '高中') continue
+    // 学习资料的章节检索必须同学科；答疑保留跨学科加权，避免学生跨学科提问时检索为空。
+    if (subjectStrict && subject && chunk.subject !== subject) continue
     let score = scores[id]
     // 关键词覆盖率决定排序：只说“历史”不说“辛亥革命”的片段让位给真正讲这道题的解析。
     if (coverageTotal > 0) score *= 0.5 + coverage[id] / coverageTotal
@@ -129,7 +142,7 @@ export function searchPassages({ query = '', subject = '', grade = '', topK = 4,
     picked.push({
       id: chunk.id,
       score: Number(score.toFixed(2)),
-      text: chunk.text.slice(0, 900),
+      text: chunk.text.slice(0, maxChars),
       citation: formatCitation(chunk),
       source: chunk.file,
       subject: chunk.subject,

@@ -1,0 +1,184 @@
+{
+  "grade": "初三",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初三-英语-2",
+    "name": "被动语态综合"
+  },
+  "generatedAt": "2026-11-14T12:17:14.968Z",
+  "source": "deepseek",
+  "count": 10,
+  "questions": [
+    {
+      "id": "diag-1-mwgdex92",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列关于英语被动语态基本结构的表述，正确的是哪一项？",
+      "options": [
+        "被动语态的基本结构是“be + 动词过去式”，其中 be 不随主语人称和时态变化。",
+        "被动语态的基本结构是“be + 动词过去分词”，其中 be 的形式需根据主语和时态变化。",
+        "所有动词都可以用于被动语态，包括不及物动词和系动词。",
+        "主动句变被动句时，原句宾语一定变为主语，原句主语必须省略，不能用 by 引出。"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：被动语态不是“be + 动词过去式”，而是“be + 动词过去分词”；同时 be 的形式要随主语人称、数和时态变化。\nB. 正确：被动语态的基本结构是“be + 动词过去分词”，be 的形式需根据主语和时态变化，如 is written、was written、will be written。\nC. 错误：并非所有动词都能用于被动语态；不及物动词通常没有被动语态，如 happen、appear 等不能随意构成被动句。\nD. 错误：主动句变被动句时，原句主语可以放在 by 后表示动作执行者，也可在不必强调时省略，但不是必须省略且不能用 by。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-2-mwgdex92",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "—A new library ______ in our town last year.\n—Yes, and it has become a favourite place for students.",
+      "options": [
+        "built",
+        "was built",
+        "has built",
+        "is built"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：built 是 build 的过去式或过去分词，此处若单独使用则构成主动语态，但主语 a new library 是动作的承受者而不是执行者，句子不成立。\nB. 正确：主语 a new library 是 build 这一动作的承受者，需用被动语态；时间状语 last year 表示过去，因此用一般过去时的被动语态 was/were + 过去分词，主语为单数，故填 was built。\nC. 错误：has built 是主动语态的现在完成时，主语应为动作的执行者；若要表示现在完成时的被动，应为 has been built，且与明确的过去时间状语 last year 连用也不恰当。\nD. 错误：is built 是一般现在时的被动语态，与题干中表示过去的 last year 在时态上冲突。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-3-mwgdex92",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "These old trees ______ good care of, and a new fence ______ around the garden since last year.",
+      "options": [
+        "must be taken; has been built",
+        "must take; has built",
+        "must be taken; was built",
+        "must take; has been built"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：trees 与 take good care of 是被动关系，情态动词 must 后要用“be + 过去分词”，短语动词 take care of 变被动时介词 of 不能丢，故第一空为 must be taken；a new fence 与 build 是被动关系，since last year 表示从过去持续到现在，需用现在完成时的被动语态 has been built。\nB. 错误：第一空 must take 是主动结构，但主语 These old trees 不能主动“take good care of”；第二空 has built 也是主动结构，且 fence 不能主动建造。\nC. 错误：第一空 must be taken 正确，但第二空 was built 是一般过去时被动，不能与 since last year 所表示的持续到现在的时间状语搭配。\nD. 错误：第二空 has been built 正确，但第一空 must take 是主动结构，与 trees 和 take care of 之间的被动关系冲突。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-4-mwgdex92",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "This dictionary ______ to the school library, so you must return it on time.",
+      "options": [
+        "is belonged",
+        "belongs",
+        "is belonging",
+        "has been belonged"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：belong to 是不及物动词短语，不能用于被动语态，is belonged 结构不成立，应改用主动形式。\nB. 正确：belong to 表示“属于”，此处描述当前所属关系，用一般现在时主动语态 belongs to，主语 This dictionary 为第三人称单数。\nC. 错误：belong to 表示状态，通常不用现在进行时；is belonging 与状态含义冲突。\nD. 错误：has been belonged 既错误地使用了被动语态，又与题干 must return it on time 所表达的当前所属关系不符。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-5-mwgdex92",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Which sentence correctly uses the passive voice in the simple present tense?",
+      "options": [
+        "The classroom is cleaned every day.",
+        "The classroom cleans every day.",
+        "The classroom is cleaning every day.",
+        "The classroom cleaned every day."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：一般现在时的被动语态结构为“am/is/are + 过去分词”，主语 The classroom 是动作 clean 的承受者，is cleaned 符合该结构。\nB. 错误：cleans 是主动语态，主语 The classroom 不能主动执行 clean 这一动作，与被动语态概念冲突。\nC. 错误：is cleaning 是现在进行时的主动结构，表示“正在打扫”，不是一般现在时被动语态。\nD. 错误：cleaned 是一般过去时的主动形式，缺少被动语态必需的 be 动词，也不是一般现在时。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-6-mwgdex92",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "A new notice board ______ at the school gate last week, so students can read the latest news there now.",
+      "options": [
+        "puts up",
+        "put up",
+        "was put up",
+        "is put up"
+      ],
+      "correctIndex": 2,
+      "explanation": "A. 错误：puts up 是主动语态的一般现在时，主语 A new notice board 是物，不能执行 put up 的动作，且与 last week 的过去时间冲突。\nB. 错误：put up 是主动语态的一般过去时，notice board 与 put up 之间应是被动关系，不能用主动形式表示“被张贴”。\nC. 正确：notice board 与 put up 是被动关系，last week 表示一般过去时，因此用一般过去时的被动语态 was put up，结构为“was/were + 过去分词”。\nD. 错误：is put up 是一般现在时的被动语态，与题干中的 last week 这一过去时间状语冲突。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-7-mwgdex92",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "A new community library ______ near our school at present, and it ______ to the public next spring.",
+      "options": [
+        "is being built; will be opened",
+        "is building; will open",
+        "has been built; is opened",
+        "is built; will be opened"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：at present 表示现阶段正在进行，图书馆是“被建造”，用现在进行时的被动语态 is being built；next spring 表示将来，图书馆“被开放”，用一般将来时的被动语态 will be opened。\nB. 错误：library 不能主动 building，第一空应使用被动语态；第二空 will open 是主动形式，与“图书馆被向公众开放”不符。\nC. 错误：has been built 表示已经建成，与 at present“目前正在”冲突；is opened 是一般现在时被动，不能表达 next spring 的将来动作。\nD. 错误：is built 是一般现在时被动，不能体现现阶段正在建设；第二空 will be opened 虽正确，但第一空不符合语境。",
+      "difficulty": 3
+    },
+    {
+      "id": "diag-8-mwgdex92",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "These storybooks ___ well because they ___ by a famous writer.",
+      "options": [
+        "sell; were written",
+        "are sold; wrote",
+        "sell; wrote",
+        "are sold; were written"
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：sell well 表示“畅销”，用主动形式表被动意义，说明书本身的特点；they 与 write 是被动关系，且由 by a famous writer 可知用一般过去时被动语态 were written。\nB. 错误：are sold well 把“畅销”机械套成被动，不符合英语习惯；wrote 是主动语态，书不能主动“写”，与 by a famous writer 冲突。\nC. 错误：第一空 sell 正确，但第二空 wrote 是主动语态，与主语 they（书）及 by a famous writer 的被动关系冲突。\nD. 错误：第一空 are sold well 不符合“畅销”的固定表达；第二空 were written 虽正确，但第一空已使整项不成立。",
+      "difficulty": 2
+    },
+    {
+      "id": "diag-9-mwgdex92",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列句子中，被动语态使用正确且表示“一般现在时的被动语态”的是：",
+      "options": [
+        "The classroom is cleaned by us every day.",
+        "The classroom cleans by us every day.",
+        "The classroom is cleaning by us every day.",
+        "The classroom was cleaned by us every day."
+      ],
+      "correctIndex": 0,
+      "explanation": "A. 正确：一般现在时的被动语态结构为“am/is/are + 过去分词”，is cleaned 表示“每天被打扫”，与 every day 匹配。\nB. 错误：cleans 是主动语态形式，且“教室”不能主动执行 clean，缺少被动结构 be + 过去分词。\nC. 错误：is cleaning 是现在进行时主动结构，不能表示被动；现在进行时的被动应为 is being cleaned。\nD. 错误：was cleaned 是一般过去时的被动语态，与句末 every day 表示的一般现在时时间不符。",
+      "difficulty": 1
+    },
+    {
+      "id": "diag-10-mwgdex92",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The new library ______ to the public next month, so we will have a good place to read.",
+      "options": [
+        "will open",
+        "will be opened",
+        "is opened",
+        "has been opened"
+      ],
+      "correctIndex": 1,
+      "explanation": "A. 错误：will open 是主动语态，主语 The new library 是“被开放”的对象，不能主动发出 open 的动作。\nB. 正确：next month 表示将来，library 与 open 之间是被动关系，因此用一般将来时的被动语态 will be opened。\nC. 错误：is opened 是一般现在时被动语态，与时间状语 next month 表示的将来时间冲突。\nD. 错误：has been opened 是现在完成时被动语态，表示已经开放，与 next month 冲突。",
+      "difficulty": 1
+    }
+  ]
+}

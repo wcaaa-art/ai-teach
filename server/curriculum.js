@@ -3,8 +3,7 @@
 import { listTextbookEditionMap, resolveTextbookEdition, textbookEditionChapters } from './textbooks.js'
 
 export const CURRICULUM_SOURCES = [
-  { name: '教育部义务教育课程方案和课程标准（2022年版）', url: 'https://hudong.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html' },
-  { name: '教育部普通高中课程方案和各学科课程标准（2017年版2020年修订）', url: 'https://hudong.moe.gov.cn/jyb_xxgk/xxgk/neirong/fenlei/kcjc/kcjc_js/jcjs_kcbz/' }
+  { name: '教育部义务教育课程方案和课程标准（2022年版）', url: 'https://hudong.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html' }
 ]
 
 const catalog = {
@@ -37,46 +36,12 @@ const catalog = {
     '地理': ['中国区域地理综合', '世界区域地理综合', '人口资源环境', '地图判读与地理实践', '地理图表分析'],
     '生物': ['生物圈中的人', '生物的遗传与变异', '生物的进化', '生态系统与环境保护', '实验探究与图表分析'],
     '道德与法治': ['宪法与公民权利', '法治国家与法治生活', '国情与基本制度', '社会责任与担当', '时政材料分析']
-  },
-  '高一': {
-    '语文': ['必修上：现代诗歌与文学阅读', '必修上：古代诗歌与文言文', '必修上：实用性阅读与交流', '必修下：小说与戏剧', '必修下：古代议论性散文', '必修下：表达与交流'],
-    '数学': ['集合与常用逻辑用语', '一元二次函数与方程', '函数的概念与性质', '指数函数与对数函数', '三角函数', '平面向量', '复数与数学建模初步'],
-    '英语': ['必修：主题语篇与阅读', '词汇构词与语境', '时态语态综合', '定语从句', '听说策略', '应用文写作'],
-    '物理': ['运动的描述', '匀变速直线运动', '相互作用与牛顿运动定律', '抛体运动与圆周运动', '功和能', '动量与碰撞'],
-    '化学': ['物质及其变化', '离子反应与氧化还原', '钠与氯及其化合物', '铁与金属材料', '原子结构与元素周期律', '化学键与物质结构'],
-    '生物': ['细胞的分子组成', '细胞结构与功能', '细胞代谢', '细胞增殖与分化', '遗传信息的传递', '生物学实验设计'],
-    '历史': ['中华文明起源与早期国家', '诸侯纷争与变法运动', '秦汉统一国家', '三国两晋南北朝', '隋唐至明清的国家治理'],
-    '地理': ['地球运动与地图', '大气与水的运动', '地貌与土壤', '植被与自然环境', '人口与城镇', '区域发展与地理实践'],
-    '政治': ['中国特色社会主义', '经济发展与社会进步', '政治制度与国家治理', '哲学与文化']
-  },
-  '高二': {
-    '语文': ['选择性必修：思辨性阅读与表达', '古代诗文专题', '中国现当代文学', '外国文学与比较阅读', '学术论著与研讨', '写作论证与表达'],
-    '数学': ['数列', '导数及其应用', '空间向量与立体几何', '直线与圆', '圆锥曲线', '计数原理', '概率与统计'],
-    '英语': ['选择性必修主题阅读', '非谓语动词与复杂句', '语篇逻辑与推断', '概要写作', '议论文表达', '跨文化理解'],
-    '物理': ['静电场', '电路与电能', '磁场与电磁感应', '交变电流与传感器', '机械振动与机械波', '光学与波粒二象性'],
-    '化学': ['化学反应与热能', '化学反应速率与平衡', '水溶液中的离子平衡', '氧化还原与电化学', '有机化合物结构与性质', '化学实验探究'],
-    '生物': ['稳态与调节', '生物的遗传规律', '基因与染色体', '生物进化', '生态系统', '生物技术与工程'],
-    '历史': ['晚清至民国的国家转型', '中华人民共和国发展', '世界殖民体系与亚非拉', '两次世界大战与国际秩序', '现代化与全球联系'],
-    '地理': ['自然环境整体性与差异性', '人口与区域发展', '产业区位与交通', '环境与国家安全', '区域发展案例研究'],
-    '政治': ['经济与社会', '政治与法治', '哲学与文化', '当代国际政治与经济']
-  },
-  '高三': {
-    '语文': ['现代文阅读综合', '古诗文阅读综合', '语言文字运用', '作文审题与论证', '跨文本比较阅读'],
-    '数学': ['函数与导数综合', '三角函数与平面向量综合', '数列综合', '立体几何综合', '解析几何综合', '概率统计综合', '数学建模与综合应用'],
-    '英语': ['阅读理解与七选五', '完形填空与语篇', '语法填空', '应用文写作', '读后续写', '听力与口语整合'],
-    '物理': ['力学综合与实验', '电磁学综合', '热学与近代物理', '物理图像与模型', '实验设计与数据分析'],
-    '化学': ['化学反应原理综合', '物质结构与元素周期律', '有机化学综合', '实验方案评价', '工艺流程与定量计算'],
-    '生物': ['遗传规律与系谱分析', '稳态调节综合', '生态与环境', '实验探究与数据分析', '生物技术综合'],
-    '历史': ['时空观念与阶段特征', '史料实证与历史解释', '中外历史比较', '历史论述题写作'],
-    '地理': ['自然地理综合判读', '人文地理区位分析', '区域比较与发展', '地理过程与图表综合'],
-    '政治': ['经济制度与高质量发展', '政治制度与法治', '哲学原理应用', '国际关系与时政分析']
   }
 }
 
 const importanceWeights = {
-  '函数的概念与性质': 5, '二次函数': 5, '导数及其应用': 5, '函数与导数综合': 5,
-  '一元二次方程': 4, '指数函数与对数函数': 4, '三角函数': 4, '数列': 4,
-  '欧姆定律': 5, '电功率与家庭电路': 5, '化学方程式': 5, '化学反应与平衡': 5
+  '二次函数': 5, '一元二次方程': 4,
+  '欧姆定律': 5, '电功率与家庭电路': 5, '化学方程式': 5
 }
 
 // 人教版初中数学/英语的教材单元对照：只做展示标注，不改章节 id，避免已保存的掌握度与计划断裂。
@@ -114,15 +79,14 @@ const renjiaoUnitLabels = {
 }
 
 function stageOf(grade = '') {
-  return String(grade).startsWith('高') ? '高中' : String(grade).startsWith('初') ? '初中' : ''
+  return String(grade).startsWith('初') ? '初中' : ''
 }
 
-export function listCurriculumSubjects(stage, grade) {
-  const normalizedStage = stage || stageOf(grade)
-  const grades = Object.keys(catalog).filter(item => !normalizedStage || stageOf(item) === normalizedStage)
+export function listCurriculumSubjects(grade) {
+  const grades = Object.keys(catalog)
   const selectedGrade = grades.includes(grade) ? grade : grades[0]
   const subjects = Object.keys(catalog[selectedGrade] || {})
-  return { stage: normalizedStage, grade: selectedGrade, grades, subjects, editions: listTextbookEditionMap(subjects), sources: CURRICULUM_SOURCES }
+  return { stage: '初中', grade: selectedGrade, grades, subjects, editions: listTextbookEditionMap(subjects), sources: CURRICULUM_SOURCES }
 }
 
 export function orderCurriculumPlans(plans = [], preferredOrder = []) {
@@ -200,9 +164,7 @@ const TOPIC_ALIASES = {
   '相似三角形': ['相似比', '位似'],
   '圆的性质与证明': ['圆周角', '切线', '垂径定理'],
   '锐角三角函数': ['正弦', '余弦', '正切'],
-  '概率与统计综合': ['随机事件', '频率'],
-  '一元二次函数与方程': ['二次函数', '判别式', '顶点'],
-  '导数及其应用': ['求导', '单调性', '极值']
+  '概率与统计综合': ['随机事件', '频率']
 }
 
 function scoreTopic(item, fragments, query, preferredGrade) {
@@ -223,7 +185,7 @@ function scoreTopic(item, fragments, query, preferredGrade) {
 
 export function searchCurriculum({ subject = '', grade = '', keyword = '' } = {}) {
   const requested = String(grade || '')
-  const normalized = catalog[requested] ? requested : (requested.startsWith('高') ? '高一' : '初三')
+  const normalized = catalog[requested] ? requested : '初三'
   const query = normalizeQuery(keyword)
   const fragments = queryFragments(query)
   const candidates = Object.keys(catalog).flatMap(gradeKey => {
@@ -283,12 +245,134 @@ export function buildDiagnosticBlueprint(chapters = [], questionCount) {
   return { blueprint, total, dimensions: diagnosticDimensions, requestedCount: targetCount }
 }
 
+// 初中数学离线客观题库：每个专题至少 3 道原创单选题，difficulty 1/2/3 对应容易/中等/困难。
+// attempt 与题目序号共同决定轮换到哪一道，避免同一张试卷里重复题面。
 const mathItems = {
-  '有理数与数轴': { stem: '数轴上表示 −3 的点到原点的距离是多少？', options: ['−3', '3', '0', '无法确定'], correctIndex: 1, explanation: '点到原点的距离是绝对值，因此为 |−3|。' },
-  '一元一次方程': { stem: '若 2x + 3 = 11，先从等式两边同时减去 3，得到什么？', options: ['2x = 8', '2x = 14', 'x = 8', '2x = 11'], correctIndex: 0, explanation: '等式两边同时减去 3，得到 2x = 8。' },
-  '二次函数': { stem: '抛物线 y = (x − 2)² + 1 的顶点坐标是什么？', options: ['(2, 1)', '(−2, 1)', '(2, −1)', '(1, 2)'], correctIndex: 0, explanation: '顶点式 y = (x − h)² + k 的顶点为 (h, k)。' },
-  '勾股定理': { stem: '直角三角形两条直角边为 3 和 4，斜边长度是多少？', options: ['5', '6', '7', '12'], correctIndex: 0, explanation: '由勾股定理，斜边平方为 3² + 4² = 25。' },
-  '函数的概念与性质': { stem: '函数 y = 2x + 1 中，当 x 增加 1 时，y 的变化量是多少？', options: ['增加 1', '增加 2', '减少 1', '不变'], correctIndex: 1, explanation: '一次函数的斜率为 2，x 增加 1 时 y 增加 2。' }
+  '有理数与数轴': [
+    { difficulty: 1, stem: '数轴上表示 −3 的点到原点的距离是多少？', options: ['−3', '3', '0', '无法确定'], correctIndex: 1, explanation: '点到原点的距离是绝对值，因此为 |−3|。' }
+  ],
+  '一元一次方程': [
+    { difficulty: 1, stem: '若 2x + 3 = 11，先从等式两边同时减去 3，得到什么？', options: ['2x = 8', '2x = 14', 'x = 8', '2x = 11'], correctIndex: 0, explanation: '等式两边同时减去 3，得到 2x = 8。' }
+  ],
+  '二次函数': [
+    { difficulty: 1, stem: '抛物线 y = (x − 2)² + 1 的顶点坐标是什么？', options: ['(2, 1)', '(−2, 1)', '(2, −1)', '(1, 2)'], correctIndex: 0, explanation: '顶点式 y = (x − h)² + k 的顶点为 (h, k)。' }
+  ],
+  '勾股定理': [
+    { difficulty: 1, stem: '直角三角形两条直角边为 3 和 4，斜边长度是多少？', options: ['5', '6', '7', '12'], correctIndex: 0, explanation: '由勾股定理，斜边平方为 3² + 4² = 25。' }
+  ],
+  '函数的概念与性质': [
+    { difficulty: 1, stem: '函数 y = 2x + 1 中，当 x 增加 1 时，y 的变化量是多少？', options: ['增加 1', '增加 2', '减少 1', '不变'], correctIndex: 1, explanation: '一次函数的斜率为 2，x 增加 1 时 y 增加 2。' }
+  ],
+  '整式加减': [
+    { difficulty: 1, stem: '计算 3a + 2a − a 的结果是？', options: ['4a', '4a²', '5a', '5a²'], correctIndex: 0, explanation: '同类项系数相加减：3 + 2 − 1 = 4，因此结果为 4a。' },
+    { difficulty: 2, stem: '当 x = −2 时，代数式 2x² − 3x + 1 的值是？', options: ['3', '9', '15', '19'], correctIndex: 2, explanation: '代入得 2×4 − 3×(−2) + 1 = 8 + 6 + 1 = 15。' },
+    { difficulty: 3, stem: '若多项式 A 与 2x² − 3x + 1 的和为 5x² + x − 4，则 A 是？', options: ['3x² − 4x − 5', '3x² + 4x − 5', '7x² − 2x − 3', '3x² + 4x + 5'], correctIndex: 1, explanation: 'A = (5x² + x − 4) − (2x² − 3x + 1) = 3x² + 4x − 5。' }
+  ],
+  '几何图形初步': [
+    { difficulty: 1, stem: '下列几何体中，由三个面围成的是？', options: ['圆柱', '圆锥', '球', '三棱柱'], correctIndex: 0, explanation: '圆柱由两个底面和一个侧面共三个面围成。' },
+    { difficulty: 2, stem: '一个角的补角比它的余角大多少度？', options: ['45°', '60°', '90°', '180°'], correctIndex: 2, explanation: '设这个角为 x，则 (180° − x) − (90° − x) = 90°。' },
+    { difficulty: 3, stem: '点 C 在线段 AB 上，AB = 10 cm，M、N 分别是 AC、BC 的中点，则 MN 的长为？', options: ['4 cm', '5 cm', '6 cm', '10 cm'], correctIndex: 1, explanation: 'MN = MC + CN = AC/2 + BC/2 = AB/2 = 5 cm。' }
+  ],
+  '相交线与平行线': [
+    { difficulty: 1, stem: '两条直线相交，若其中一个角为 40°，则它的对顶角为？', options: ['40°', '50°', '140°', '160°'], correctIndex: 0, explanation: '对顶角相等，因此对顶角也是 40°。' },
+    { difficulty: 2, stem: '直线 a ∥ b，一条截线与它们相交。若其中一个同旁内角为 65°，则另一个同旁内角为？', options: ['65°', '115°', '125°', '25°'], correctIndex: 1, explanation: '两直线平行时同旁内角互补，180° − 65° = 115°。' },
+    { difficulty: 3, stem: '一个角的两边分别平行于另一个角的两边，且第一个角为 70°，则第二个角为？', options: ['70°', '110°', '70° 或 110°', '无法确定'], correctIndex: 2, explanation: '两边分别平行的两个角相等或互补，因此第二个角为 70° 或 110°。' }
+  ],
+  '实数与平方根': [
+    { difficulty: 1, stem: '16 的算术平方根是？', options: ['4', '±4', '8', '16'], correctIndex: 0, explanation: '算术平方根取非负值，4² = 16，所以结果是 4。' },
+    { difficulty: 2, stem: '若 x² = 9，且 x < 0，则 x + √16 的值是？', options: ['−1', '1', '7', '−7'], correctIndex: 1, explanation: 'x < 0 时 x = −3，√16 = 4，因此 x + √16 = 1。' },
+    { difficulty: 3, stem: '√81 的算术平方根是？', options: ['±3', '±9', '3', '9'], correctIndex: 2, explanation: '先算 √81 = 9，再求 9 的算术平方根，结果为 3。' }
+  ],
+  '平面直角坐标系': [
+    { difficulty: 1, stem: '点 P(−2, 3) 在平面直角坐标系的哪个象限？', options: ['第一象限', '第二象限', '第三象限', '第四象限'], correctIndex: 1, explanation: '横坐标为负、纵坐标为正的点位于第二象限。' },
+    { difficulty: 2, stem: '点 A(1, −2) 关于 x 轴对称的点的坐标是？', options: ['(−1, −2)', '(−1, 2)', '(1, 2)', '(2, 1)'], correctIndex: 2, explanation: '关于 x 轴对称时横坐标不变、纵坐标取相反数，得到 (1, 2)。' },
+    { difficulty: 3, stem: '点 P 在第二象限，到 x 轴的距离为 3，到 y 轴的距离为 4，则 P 的坐标是？', options: ['(4, 3)', '(−3, 4)', '(4, −3)', '(−4, 3)'], correctIndex: 3, explanation: '第二象限横坐标为负、纵坐标为正；到 x 轴距离 3 得纵坐标 3，到 y 轴距离 4 得横坐标 −4。' }
+  ],
+  '二元一次方程组': [
+    { difficulty: 1, stem: '下列各组数中，是方程 x + y = 5 的解的是？', options: ['x = 1，y = 4', 'x = 2，y = 2', 'x = 3，y = 1', 'x = 0，y = 4'], correctIndex: 0, explanation: '把各组数代入，只有 1 + 4 = 5 成立。' },
+    { difficulty: 2, stem: '解方程组 x + y = 7，x − y = 1，则 x 的值是？', options: ['3', '4', '5', '6'], correctIndex: 1, explanation: '两式相加得 2x = 8，所以 x = 4。' },
+    { difficulty: 3, stem: '若 x = 2，y = 1 是方程 ax + by = 7 与 ax − by = 1 的公共解，则 a、b 的值是？', options: ['a = 3，b = 2', 'a = 1，b = 5', 'a = 2，b = 3', 'a = 2，b = 1'], correctIndex: 2, explanation: '代入得 2a + b = 7，2a − b = 1；两式相加得 4a = 8，a = 2，再得 b = 3。' }
+  ],
+  '不等式与不等式组': [
+    { difficulty: 1, stem: '若 a > b，则下列不等式一定成立的是？', options: ['a − 3 > b − 3', 'a + 3 < b + 3', '−a > −b', '3a < 3b'], correctIndex: 0, explanation: '不等式两边同时减去同一个数，不等号方向不变。' },
+    { difficulty: 2, stem: '不等式 2x − 3 < 5 的解集是？', options: ['x < 1', 'x < 4', 'x > 4', 'x > 1'], correctIndex: 1, explanation: '移项得 2x < 8，两边除以 2 得 x < 4。' },
+    { difficulty: 3, stem: '不等式组 x − 1 > 0，3 − x ≥ 0 的整数解共有几个？', options: ['1 个', '3 个', '4 个', '2 个'], correctIndex: 3, explanation: '解集为 1 < x ≤ 3，整数解是 2 和 3，共 2 个。' }
+  ],
+  '数据收集与整理': [
+    { difficulty: 1, stem: '为了解全班同学的身高情况，最适合采用的调查方式是？', options: ['全面调查', '抽样调查', '查阅资料', '对照实验'], correctIndex: 0, explanation: '班级人数有限且需要准确结果，适合对全班逐一测量。' },
+    { difficulty: 2, stem: '一组数据 2，3，3，5，7 的中位数是？', options: ['2', '3', '4', '5'], correctIndex: 1, explanation: '数据已按从小到大排列，共 5 个数，中位数是第 3 个数 3。' },
+    { difficulty: 3, stem: '某班 40 名学生中，参加社团的学生占 60%。在扇形统计图中，参加社团部分对应的圆心角度数是？', options: ['144°', '180°', '216°', '240°'], correctIndex: 2, explanation: '圆心角 = 360° × 60% = 216°。' }
+  ],
+  '三角形与全等': [
+    { difficulty: 1, stem: '判定两个三角形全等时，下列条件中不能单独使用的是？', options: ['SSS', 'SAS', 'ASA', 'SSA'], correctIndex: 3, explanation: 'SSA 不能保证三角形唯一确定，因此不能作为单独的全等判定条件。' },
+    { difficulty: 2, stem: '已知 △ABC ≌ △DEF，∠A = 50°，∠B = 60°，则 ∠F 的度数是？', options: ['50°', '60°', '70°', '80°'], correctIndex: 2, explanation: '∠C = 180° − 50° − 60° = 70°，全等三角形对应角相等，所以 ∠F = ∠C = 70°。' },
+    { difficulty: 3, stem: '一个三角形的两边长分别为 3 和 7，第三边长为整数，则第三边最长为？', options: ['8', '9', '10', '11'], correctIndex: 1, explanation: '第三边应满足 7 − 3 < c < 7 + 3，即 4 < c < 10，整数最大为 9。' }
+  ],
+  '轴对称与等腰三角形': [
+    { difficulty: 1, stem: '等边三角形共有几条对称轴？', options: ['1 条', '2 条', '3 条', '6 条'], correctIndex: 2, explanation: '等边三角形每条边的垂直平分线都是对称轴，共 3 条。' },
+    { difficulty: 2, stem: '等腰三角形的一个底角为 70°，则它的顶角为？', options: ['40°', '55°', '70°', '110°'], correctIndex: 0, explanation: '两个底角相等，顶角 = 180° − 70° × 2 = 40°。' },
+    { difficulty: 3, stem: '等腰三角形的一边长为 4，另一边长为 9，则它的周长为？', options: ['17', '22', '17 或 22', '26'], correctIndex: 1, explanation: '若腰为 4，则 4 + 4 < 9 不能构成三角形；腰只能为 9，周长为 9 + 9 + 4 = 22。' }
+  ],
+  '整式乘法与因式分解': [
+    { difficulty: 1, stem: '计算 (x + 2)(x − 3)，结果是？', options: ['x² − x − 6', 'x² + x − 6', 'x² − 5x − 6', 'x² − x + 6'], correctIndex: 0, explanation: '展开得 x² − 3x + 2x − 6 = x² − x − 6。' },
+    { difficulty: 2, stem: '分解因式 x² − 4x + 4，结果是？', options: ['(x − 2)(x + 2)', '(x − 2)²', '(x + 2)²', 'x(x − 4) + 4'], correctIndex: 1, explanation: 'x² − 4x + 4 是完全平方式，等于 (x − 2)²。' },
+    { difficulty: 3, stem: '若 x + y = 5，xy = 6，则 x² + y² 的值是？', options: ['11', '19', '25', '13'], correctIndex: 3, explanation: 'x² + y² = (x + y)² − 2xy = 25 − 12 = 13。' }
+  ],
+  '分式': [
+    { difficulty: 1, stem: '分式 (x − 1)/(x + 2) 有意义的条件是？', options: ['x ≠ 1', 'x ≠ −2', 'x ≠ 2', 'x ≠ −1'], correctIndex: 1, explanation: '分母不能为零，由 x + 2 ≠ 0 得 x ≠ −2。' },
+    { difficulty: 2, stem: '化简 (x² − 1)/(x + 1)（x ≠ −1），结果是？', options: ['x + 1', 'x', '1', 'x − 1'], correctIndex: 3, explanation: '分子分解为 (x + 1)(x − 1)，约去 x + 1 后得 x − 1。' },
+    { difficulty: 3, stem: '分式方程 1/(x − 2) = 3/x 的解是？', options: ['x = 1', 'x = 2', 'x = 3', '无解'], correctIndex: 2, explanation: '交叉相乘得 x = 3(x − 2)，解得 x = 3；代入分母均不为零，成立。' }
+  ],
+  '二次根式': [
+    { difficulty: 1, stem: '下列二次根式中，属于最简二次根式的是？', options: ['√8', '√12', '√15', '√18'], correctIndex: 2, explanation: '15 不含大于 1 的平方因数，√15 不能再化简。' },
+    { difficulty: 2, stem: '计算 √2 × √8 的结果是？', options: ['2', '4', '8', '16'], correctIndex: 1, explanation: '√2 × √8 = √16 = 4。' },
+    { difficulty: 3, stem: '若 √(x − 3) + |y + 2| = 0，则 x + y 的值是？', options: ['1', '5', '−1', '无法确定'], correctIndex: 0, explanation: '两个非负数之和为零，则各自为零：x = 3，y = −2，所以 x + y = 1。' }
+  ],
+  '平行四边形': [
+    { difficulty: 1, stem: '平行四边形的两条对角线一定？', options: ['相等', '互相垂直', '互相平分', '平分内角'], correctIndex: 2, explanation: '平行四边形对角线互相平分；相等或垂直只在特殊平行四边形中成立。' },
+    { difficulty: 2, stem: '在平行四边形 ABCD 中，∠A = 70°，则 ∠C 的度数是？', options: ['70°', '110°', '140°', '20°'], correctIndex: 0, explanation: '平行四边形对角相等，因此 ∠C = ∠A = 70°。' },
+    { difficulty: 3, stem: '平行四边形 ABCD 的周长为 24，AB = 5，则 BC 的长为？', options: ['5', '7', '6', '12'], correctIndex: 1, explanation: '邻边之和为周长的一半：AB + BC = 12，所以 BC = 7。' }
+  ],
+  '一次函数': [
+    { difficulty: 1, stem: '一次函数 y = −2x + 3 的图像经过哪几个象限？', options: ['第一、二、三象限', '第一、二、四象限', '第一、三、四象限', '第二、三、四象限'], correctIndex: 1, explanation: 'k < 0 时图像从左上到右下，b > 0 时与 y 轴正半轴相交，经过第一、二、四象限。' },
+    { difficulty: 2, stem: '一次函数 y = 3x − 6 的图像与 x 轴的交点坐标是？', options: ['(0, −6)', '(−2, 0)', '(2, 0)', '(0, 2)'], correctIndex: 2, explanation: '令 y = 0，得 3x − 6 = 0，x = 2，交点为 (2, 0)。' },
+    { difficulty: 3, stem: '一次函数 y = kx + b 的图像经过点 (1, 3) 和 (−1, 5)，则 k、b 的值是？', options: ['k = −1，b = 4', 'k = 1，b = 2', 'k = −2，b = 5', 'k = 2，b = 1'], correctIndex: 0, explanation: '代入两点得 k + b = 3，−k + b = 5；两式相加得 b = 4，再得 k = −1。' }
+  ],
+  '数据分析': [
+    { difficulty: 1, stem: '一组数据 3，5，5，7，10 的众数是？', options: ['5', '3', '6', '7'], correctIndex: 0, explanation: '出现次数最多的数据是 5，因此众数为 5。' },
+    { difficulty: 2, stem: '数据 4，6，8，10 的平均数是？', options: ['6', '8', '9', '7'], correctIndex: 3, explanation: '平均数 = (4 + 6 + 8 + 10) ÷ 4 = 7。' },
+    { difficulty: 3, stem: '数据 1，3，5，7，9 的方差是？', options: ['4', '8', '10', '40'], correctIndex: 1, explanation: '平均数为 5，方差 = (16 + 4 + 0 + 4 + 16) ÷ 5 = 8。' }
+  ],
+  '一元二次方程': [
+    { difficulty: 1, stem: '方程 x² − 5x + 6 = 0 的解是？', options: ['x₁ = 2，x₂ = 3', 'x₁ = −2，x₂ = −3', 'x₁ = 1，x₂ = 6', 'x₁ = −1，x₂ = −6'], correctIndex: 0, explanation: '因式分解得 (x − 2)(x − 3) = 0，所以 x₁ = 2，x₂ = 3。' },
+    { difficulty: 2, stem: '若关于 x 的方程 x² − 4x + c = 0 有两个相等的实数根，则 c 的值是？', options: ['2', '4', '8', '16'], correctIndex: 1, explanation: '判别式 Δ = 16 − 4c = 0，解得 c = 4。' },
+    { difficulty: 3, stem: '某商品原价 200 元，连续两次降价且每次降价的百分率相同，现价为 128 元，则每次降价的百分率是？', options: ['10%', '15%', '20%', '36%'], correctIndex: 2, explanation: '设每次降价率为 x，则 200(1 − x)² = 128，(1 − x)² = 0.64，取正值得 x = 0.2，即 20%。' }
+  ],
+  '旋转与圆': [
+    { difficulty: 1, stem: '一个图形绕某点旋转 180° 后能与原图形重合，这个图形一定是？', options: ['轴对称图形', '中心对称图形', '等边三角形', '无法确定'], correctIndex: 1, explanation: '绕某点旋转 180° 后与自身重合，是中心对称图形的定义。' },
+    { difficulty: 2, stem: '钟表的分针从 12 点位置走到 3 点位置，转过的角度是？', options: ['30°', '60°', '90°', '180°'], correctIndex: 2, explanation: '表盘每相邻两个大格之间为 30°，从 12 到 3 共 3 格，转过的角度为 90°。' },
+    { difficulty: 3, stem: '在半径为 5 的圆中，一条弦的长为 8，则圆心到这条弦的距离是？', options: ['2', '4', '5', '3'], correctIndex: 3, explanation: '弦的一半为 4，由垂径定理和勾股定理得距离 = √(5² − 4²) = 3。' }
+  ],
+  '圆的性质与证明': [
+    { difficulty: 1, stem: '同圆中，同弧所对的圆周角与圆心角的关系是？', options: ['圆周角是圆心角的一半', '相等', '圆周角是圆心角的两倍', '互补'], correctIndex: 0, explanation: '同弧所对的圆周角等于圆心角的一半。' },
+    { difficulty: 2, stem: '若圆的半径为 6，则直径所对的圆周角的度数是？', options: ['30°', '60°', '90°', '180°'], correctIndex: 2, explanation: '直径所对的圆周角是直角，为 90°。' },
+    { difficulty: 3, stem: '圆内接四边形 ABCD 中，∠A = 80°，则 ∠C 的度数是？', options: ['80°', '90°', '160°', '100°'], correctIndex: 3, explanation: '圆内接四边形对角互补，∠C = 180° − 80° = 100°。' }
+  ],
+  '相似三角形': [
+    { difficulty: 1, stem: '若两个三角形的对应角相等、对应边成比例，则这两个三角形？', options: ['相似', '全等', '面积相等', '周长相等'], correctIndex: 0, explanation: '对应角相等且对应边成比例是相似三角形的定义。' },
+    { difficulty: 2, stem: '若 △ABC ∽ △DEF，相似比为 1 : 2，则它们的面积比为？', options: ['1 : 2', '2 : 1', '1 : 4', '1 : 1'], correctIndex: 2, explanation: '相似三角形面积比等于相似比的平方，即 1² : 2² = 1 : 4。' },
+    { difficulty: 3, stem: '身高 1.6 m 的小明在阳光下的影长为 2 m，同一时刻某旗杆的影长为 10 m，则旗杆的高度为？', options: ['6 m', '8 m', '10 m', '12.5 m'], correctIndex: 1, explanation: '同一时刻物高与影长成比例：1.6 : 2 = h : 10，解得 h = 8 m。' }
+  ],
+  '锐角三角函数': [
+    { difficulty: 1, stem: '在 Rt△ABC 中，∠C = 90°，则 sin A 等于？', options: ['BC/AB', 'AC/AB', 'BC/AC', 'AC/BC'], correctIndex: 0, explanation: '∠A 的对边是 BC，斜边是 AB，所以 sin A = BC/AB。' },
+    { difficulty: 2, stem: 'sin 30° + cos 60° 的值是？', options: ['0.5', '1', '√2', '√3'], correctIndex: 1, explanation: 'sin 30° = 0.5，cos 60° = 0.5，相加得 1。' },
+    { difficulty: 3, stem: '在 Rt△ABC 中，∠C = 90°，AC = 3，BC = 4，则 tan A 的值是？', options: ['3/4', '3/5', '4/3', '4/5'], correctIndex: 2, explanation: 'tan A = ∠A 的对边/邻边 = BC/AC = 4/3。' }
+  ],
+  '概率与统计综合': [
+    { difficulty: 1, stem: '掷一枚质地均匀的骰子，出现点数为 3 的概率是？', options: ['1/2', '1/3', '1/6', '1/12'], correctIndex: 2, explanation: '骰子有 6 个等可能结果，点数为 3 只有 1 种，概率为 1/6。' },
+    { difficulty: 2, stem: '一个不透明的袋中有 2 个红球和 3 个白球，除颜色外都相同，随机摸出一个球是红球的概率是？', options: ['2/5', '1/5', '3/5', '2/3'], correctIndex: 0, explanation: '共有 5 个球，其中红球 2 个，概率为 2/5。' },
+    { difficulty: 3, stem: '甲、乙两人各掷一次质地均匀的骰子，点数之和为 7 的概率是？', options: ['1/12', '1/9', '1/6', '1/3'], correctIndex: 2, explanation: '共有 36 种等可能结果，和为 7 的有 6 种，概率为 6/36 = 1/6。' }
+  ]
 }
 
 const scienceItems = {
@@ -296,8 +380,6 @@ const scienceItems = {
   '化学方程式': { stem: '配平化学方程式时，通常可以改变哪些量？', options: ['化学式前的系数', '物质的化学式下标', '元素种类', '生成物种类'], correctIndex: 0, explanation: '配平只调整化学式前的化学计量数，不改变物质组成。' },
   '细胞结构与功能': { stem: '植物细胞中，通常含有而动物细胞通常没有的结构组合是？', options: ['细胞壁、叶绿体、大液泡', '细胞膜、细胞质、细胞核', '线粒体、细胞膜、细胞核', '细胞质、核糖体、细胞膜'], correctIndex: 0, explanation: '植物细胞常见结构包括细胞壁、叶绿体和较大的液泡。' }
 }
-
-const physicsTopics = ['力学综合与实验', '电磁学综合', '热学与近代物理', '物理图像与模型', '实验设计与数据分析']
 
 const selfAssessmentLabels = {
   concept: ['核心概念辨析', '定义与条件判断', '概念关系判断', '关键性质理解', '概念边界判断', '知识结构判断'],
@@ -310,42 +392,45 @@ function questionTextKey(value) {
   return String(value || '').replace(/\s+/g, '').trim()
 }
 
-// 离线题库为常见专题准备六个不同参数/情境的客观题版本，保证阶段复测不重复原题。
-function buildLocalObjectiveVariant(chapterName, bank, attempt) {
-  const variant = (Math.max(1, attempt) - 1) % 6
+// 离线题库按 attempt 与题序轮换原创客观题，保证阶段复测和同卷多题不重复题面。
+function buildLocalObjectiveVariant(chapterName, bank, attempt, index = 0) {
+  const items = Array.isArray(bank) ? bank : [bank]
+  const step = (Math.max(1, attempt) - 1) + Math.max(0, index)
+  const variant = step % 6
+  const base = items[step % items.length] || items[0]
   if (chapterName.includes('有理数与数轴')) {
     const values = [-3, -5, -8, -7, -6, -9]
     const value = values[variant]
     const answer = Math.abs(value)
-    return { ...bank, stem: `数轴上表示 ${value} 的点到原点的距离是多少？`, options: [String(value), String(answer), '0', String(answer + 1)], correctIndex: 1, explanation: `点到原点的距离是绝对值，因此为 |${value}| = ${answer}。` }
+    return { ...base, stem: `数轴上表示 ${value} 的点到原点的距离是多少？`, options: [String(value), String(answer), '0', String(answer + 1)], correctIndex: 1, explanation: `点到原点的距离是绝对值，因此为 |${value}| = ${answer}。` }
   }
   if (chapterName.includes('一元一次方程')) {
     const values = [[2, 3, 4], [3, 2, 5], [4, 5, 3], [5, 1, 2], [6, 4, 3], [7, 6, 2]]
     const [a, b, x] = values[variant]
     const result = a * x
-    return { ...bank, stem: `解方程 ${a}x + ${b} = ${result + b} 时，先从等式两边同时减去 ${b}，得到什么？`, options: [`${a}x = ${result}`, `${a}x = ${result + b}`, `x = ${result}`, `${a}x = ${result - b}`], correctIndex: 0, explanation: `等式两边同时减去 ${b}，得到 ${a}x = ${result}。` }
+    return { ...base, stem: `解方程 ${a}x + ${b} = ${result + b} 时，先从等式两边同时减去 ${b}，得到什么？`, options: [`${a}x = ${result}`, `${a}x = ${result + b}`, `x = ${result}`, `${a}x = ${result - b}`], correctIndex: 0, explanation: `等式两边同时减去 ${b}，得到 ${a}x = ${result}。` }
   }
   if (chapterName.includes('二次函数')) {
     const values = [[2, 1], [-3, 2], [4, -1], [1, 3], [-2, 0], [5, -4]]
     const [h, k] = values[variant]
     const hText = h < 0 ? `x + ${Math.abs(h)}` : `x − ${h}`
-    return { ...bank, stem: `抛物线 y = (${hText})² ${k < 0 ? '− ' + Math.abs(k) : '+ ' + k} 的顶点坐标是什么？`, options: [`(${h}, ${k})`, `(${-h}, ${k})`, `(${h}, ${-k})`, `(${k}, ${h})`], correctIndex: 0, explanation: `顶点式 y = (x − h)² + k 的顶点为 (${h}, ${k})。` }
+    return { ...base, stem: `抛物线 y = (${hText})² ${k < 0 ? '− ' + Math.abs(k) : '+ ' + k} 的顶点坐标是什么？`, options: [`(${h}, ${k})`, `(${-h}, ${k})`, `(${h}, ${-k})`, `(${k}, ${h})`], correctIndex: 0, explanation: `顶点式 y = (x − h)² + k 的顶点为 (${h}, ${k})。` }
   }
   if (chapterName.includes('勾股定理')) {
     const values = [[3, 4, 5], [5, 12, 13], [8, 15, 17], [7, 24, 25], [9, 12, 15], [6, 8, 10]]
     const [a, b, c] = values[variant]
-    return { ...bank, stem: `直角三角形两条直角边为 ${a} 和 ${b}，斜边长度是多少？`, options: [String(c), String(c + 1), String(c - 1), String(a + b)], correctIndex: 0, explanation: `由勾股定理，斜边平方为 ${a}² + ${b}² = ${c}²，因此斜边长为 ${c}。` }
+    return { ...base, stem: `直角三角形两条直角边为 ${a} 和 ${b}，斜边长度是多少？`, options: [String(c), String(c + 1), String(c - 1), String(a + b)], correctIndex: 0, explanation: `由勾股定理，斜边平方为 ${a}² + ${b}² = ${c}²，因此斜边长为 ${c}。` }
   }
   if (chapterName.includes('函数的概念与性质')) {
     const slopes = [2, -3, 4, -1, 5, -2]
     const slope = slopes[variant]
-    return { ...bank, stem: `一次函数 y = ${slope}x + 2 中，当 x 增加 1 时，y 的变化量是多少？`, options: [String(slope + 1), String(slope), String(slope - 1), '0'], correctIndex: 1, explanation: `一次函数的斜率为 ${slope}，x 增加 1 时 y 的变化量为 ${slope}。` }
+    return { ...base, stem: `一次函数 y = ${slope}x + 2 中，当 x 增加 1 时，y 的变化量是多少？`, options: [String(slope + 1), String(slope), String(slope - 1), '0'], correctIndex: 1, explanation: `一次函数的斜率为 ${slope}，x 增加 1 时 y 的变化量为 ${slope}。` }
   }
   if (chapterName.includes('欧姆定律')) {
     const values = [[6, 2], [12, 3], [15, 5], [8, 4], [18, 6], [20, 4]]
     const [voltage, resistance] = values[variant]
     const current = voltage / resistance
-    return { ...bank, stem: `某电路电阻保持 ${resistance} Ω，电压为 ${voltage} V，电流是多少？`, options: [`${current} A`, `${current + 1} A`, `${current * 2} A`, `${resistance} A`], correctIndex: 0, explanation: `根据欧姆定律 I = U / R = ${voltage} / ${resistance} = ${current} A。` }
+    return { ...base, stem: `某电路电阻保持 ${resistance} Ω，电压为 ${voltage} V，电流是多少？`, options: [`${current} A`, `${current + 1} A`, `${current * 2} A`, `${resistance} A`], correctIndex: 0, explanation: `根据欧姆定律 I = U / R = ${voltage} / ${resistance} = ${current} A。` }
   }
   if (chapterName.includes('化学方程式')) {
     const equations = [
@@ -357,7 +442,7 @@ function buildLocalObjectiveVariant(chapterName, bank, attempt) {
       ['HCl + NaOH → NaCl + H₂O', ['1, 1, 1, 1', '2, 1, 1, 1', '1, 2, 1, 2', '2, 2, 1, 1'], 0]
     ]
     const [equation, options, correctIndex] = equations[variant]
-    return { ...bank, stem: `配平 ${equation}，按方程式中物质出现的顺序，系数应为哪一组？`, options, correctIndex, explanation: `依据反应前后各元素原子数守恒，${equation} 的最简整数系数为 ${options[correctIndex]}。` }
+    return { ...base, stem: `配平 ${equation}，按方程式中物质出现的顺序，系数应为哪一组？`, options, correctIndex, explanation: `依据反应前后各元素原子数守恒，${equation} 的最简整数系数为 ${options[correctIndex]}。` }
   }
   if (chapterName.includes('细胞结构与功能')) {
     const variants = [
@@ -368,127 +453,9 @@ function buildLocalObjectiveVariant(chapterName, bank, attempt) {
       { stem: '下列哪种结构通常存在于植物细胞而动物细胞没有？', options: ['细胞壁', '细胞膜', '细胞质', '线粒体'], correctIndex: 0, explanation: '植物细胞有细胞壁；细胞膜、细胞质和线粒体也可见于动物细胞。' },
       { stem: '观察植物细胞时，能帮助维持细胞形态并位于细胞膜外侧的是？', options: ['细胞壁', '细胞核', '液泡', '叶绿体'], correctIndex: 0, explanation: '细胞壁位于细胞膜外侧，具有支持和保护作用。' }
     ]
-    return { ...bank, ...variants[variant] }
+    return { ...base, ...variants[variant] }
   }
-  return bank
-}
-
-// 高中物理离线题采用新课标高考常见的情境、实验和计算能力结构编写原创变式。
-// 用 attempt 和 questionIndex 改变数据与设问，保证阶段性复测前六轮不复用题面。
-function buildPhysicsQuestion(chapterName, attempt, questionIndex) {
-  const seed = (Math.max(1, Number(attempt) || 1) - 1) * 10 + Math.max(0, Number(questionIndex) || 0)
-  const variant = Math.floor(seed / 10) % 6
-  const type = seed % 10
-  const number = 2 + variant
-  const base = { type: 'single', difficulty: type >= 7 ? 3 : type >= 4 ? 2 : 1 }
-  if (chapterName.includes('力学') || chapterName.includes('运动') || chapterName.includes('功与机械能') || chapterName.includes('动量') || chapterName.includes('实验')) {
-    if (type === 0) {
-      const distance = (number + 2) * 10
-      const time = number + 2
-      const speed = distance / time
-      return { ...base, dimension: 'basic-application', stem: `一物体做匀速直线运动，${time} s 内通过 ${distance} m，则其速度大小为？`, options: [`${speed} m/s`, `${speed + 2} m/s`, `${distance + time} m/s`, `${time / distance} m/s`], correctIndex: 0, explanation: `匀速运动速度 v = s/t = ${distance}/${time} = ${speed} m/s。` }
-    }
-    if (type === 1) {
-      const acceleration = number + 1
-      const time = 2 + (variant % 3)
-      const finalSpeed = acceleration * time
-      return { ...base, dimension: 'concept', stem: `物体由静止开始做匀加速直线运动，加速度为 ${acceleration} m/s²，经过 ${time} s 时速度为？`, options: [`${finalSpeed} m/s`, `${acceleration + time} m/s`, `${finalSpeed / 2} m/s`, `${acceleration * time * 2} m/s`], correctIndex: 0, explanation: `由 v = v₀ + at，v₀ = 0，所以 v = ${acceleration}×${time} = ${finalSpeed} m/s。` }
-    }
-    if (type === 2) {
-      const mass = number + 1
-      const acceleration = 2 + (variant % 3)
-      const force = mass * acceleration
-      return { ...base, dimension: 'basic-application', stem: `质量为 ${mass} kg 的物体受到合力作用，产生 ${acceleration} m/s² 的加速度，合力大小为？`, options: [`${force} N`, `${mass + acceleration} N`, `${force / 2} N`, `${mass / acceleration} N`], correctIndex: 0, explanation: `根据牛顿第二定律 F = ma = ${mass}×${acceleration} = ${force} N。` }
-    }
-    if (type === 3) {
-      const mass = number + 1
-      const velocity = 3 + variant
-      const energy = 0.5 * mass * velocity * velocity
-      return { ...base, dimension: 'transfer', stem: `质量为 ${mass} kg 的物体以 ${velocity} m/s 的速度运动，其动能为？`, options: [`${energy} J`, `${mass * velocity} J`, `${mass * velocity * velocity} J`, `${energy * 2} J`], correctIndex: 0, explanation: `动能 Eₖ = ½mv² = ½×${mass}×${velocity}² = ${energy} J。` }
-    }
-    if (type === 4) {
-      const mass = number + 1
-      const height = 2 + variant
-      const energy = mass * 10 * height
-      return { ...base, dimension: 'transfer', stem: `取 g = 10 m/s²，质量为 ${mass} kg 的物体升高 ${height} m，重力势能增加多少？`, options: [`${energy} J`, `${mass * height} J`, `${energy / 2} J`, `${mass * 10} J`], correctIndex: 0, explanation: `重力势能增加量 ΔEₚ = mgΔh = ${mass}×10×${height} = ${energy} J。` }
-    }
-    if (type === 5) {
-      const mass = number + 1
-      const velocity = 4 + variant
-      const momentum = mass * velocity
-      return { ...base, dimension: 'transfer', stem: `质量为 ${mass} kg 的小球以 ${velocity} m/s 的速度沿直线运动，其动量大小为？`, options: [`${momentum} kg·m/s`, `${mass + velocity} kg·m/s`, `${velocity / mass} kg·m/s`, `${momentum * 2} kg·m/s`], correctIndex: 0, explanation: `动量 p = mv = ${mass}×${velocity} = ${momentum} kg·m/s。` }
-    }
-    if (type === 6) {
-      const force = 10 + variant * 2
-      const distance = 2 + variant
-      const work = force * distance
-      return { ...base, dimension: 'basic-application', stem: `物体在恒定水平力 ${force} N 作用下沿力方向移动 ${distance} m，力对物体做功为？`, options: [`${work} J`, `${force + distance} J`, `${work / 2} J`, `${force / distance} J`], correctIndex: 0, explanation: `力与位移同向，W = Fs = ${force}×${distance} = ${work} J。` }
-    }
-    if (type === 7) {
-      const deltaV = 6 + variant
-      const deltaT = 2 + (variant % 2)
-      const acceleration = deltaV / deltaT
-      return { ...base, dimension: 'error-analysis', stem: `实验中测得物体在 ${deltaT} s 内速度变化 ${deltaV} m/s，则由 a = Δv/Δt 求得加速度为？`, options: [`${acceleration} m/s²`, `${deltaV * deltaT} m/s²`, `${deltaV + deltaT} m/s²`, `${deltaT / deltaV} m/s²`], correctIndex: 0, explanation: `加速度 a = Δv/Δt = ${deltaV}/${deltaT} = ${acceleration} m/s²。` }
-    }
-    if (type === 8) {
-      const mass = number + 1
-      const force = mass * (variant + 2)
-      return { ...base, dimension: 'error-analysis', stem: `用控制变量法探究加速度与合力的关系时，若质量保持 ${mass} kg 不变，合力增大，正确结论是？`, options: ['加速度随合力增大而增大', '加速度随合力增大而减小', '加速度保持不变', '无法判断任何关系'], correctIndex: 0, explanation: `质量一定时由 F = ma 可知 a = F/m，加速度与合力成正比；本组实验中的合力可取 ${force} N 进行比较。` }
-    }
-    const mass = number + 1
-    const force = 2 * mass
-    const initialAcceleration = force / mass
-    return { ...base, dimension: 'error-analysis', stem: `“探究加速度与力的关系”实验中，小车质量保持 ${mass} kg，合力由 ${force} N 增大为 ${force * 2} N。若其他条件不变，加速度应如何变化？`, options: ['由 2 m/s² 增大为 4 m/s²', '由 2 m/s² 减小为 1 m/s²', '始终为 2 m/s²', '仅凭质量无法判断'], correctIndex: 0, explanation: `质量不变时 a = F/m。初始加速度为 ${force}/${mass} = ${initialAcceleration} m/s²；合力加倍后加速度也加倍。` }
-  }
-  if (chapterName.includes('图像') || chapterName.includes('模型')) {
-    if (type % 2 === 0) {
-      const time = variant + 2
-      const velocity = variant + 3
-      const displacement = time * velocity
-      return { ...base, dimension: 'concept', stem: `某物体的位移—时间图像是一条直线，${time} s 内位移由 0 增至 ${displacement} m。图线斜率表示的速度大小为？`, options: [`${velocity} m/s`, `${displacement} m/s`, `${time} m/s`, `${displacement + time} m/s`], correctIndex: 0, explanation: `位移—时间图像的斜率表示速度，v = Δx/Δt = ${displacement}/${time} = ${velocity} m/s。` }
-    }
-    const time = variant + 2
-    const acceleration = variant + 1
-    const deltaV = time * acceleration
-    return { ...base, dimension: 'transfer', stem: `速度—时间图像显示物体在 ${time} s 内速度均匀增加 ${deltaV} m/s，图线斜率表示的加速度为？`, options: [`${acceleration} m/s²`, `${deltaV} m/s²`, `${time} m/s²`, `${deltaV + time} m/s²`], correctIndex: 0, explanation: `速度—时间图像的斜率表示加速度，a = Δv/Δt = ${deltaV}/${time} = ${acceleration} m/s²。` }
-  }
-  if (chapterName.includes('电流') || chapterName.includes('欧姆') || chapterName.includes('电功率') || chapterName.includes('电路')) {
-    const voltage = 6 + variant * 2
-    const resistance = 2 + (variant % 4)
-    const current = voltage / resistance
-    if (type % 3 === 0) return { ...base, dimension: 'basic-application', stem: `定值电阻为 ${resistance} Ω，两端电压为 ${voltage} V，通过电阻的电流为？`, options: [`${current} A`, `${voltage + resistance} A`, `${resistance / voltage} A`, `${current * 2} A`], correctIndex: 0, explanation: `根据欧姆定律 I = U/R = ${voltage}/${resistance} = ${current} A。` }
-    if (type % 3 === 1) { const power = voltage * current; return { ...base, dimension: 'transfer', stem: `上述电阻消耗的电功率为？`, options: [`${power} W`, `${voltage + current} W`, `${power / 2} W`, `${resistance * current} W`], correctIndex: 0, explanation: `电功率 P = UI = ${voltage}×${current} = ${power} W。` }
-    }
-    const changedVoltage = voltage + 2
-    return { ...base, dimension: 'error-analysis', stem: `测量导体电阻时，电流保持 ${current} A，电压由 ${voltage} V 增大到 ${changedVoltage} V。根据 R = U/I，电阻如何变化？`, options: [`由 ${resistance} Ω 增大到 ${changedVoltage / current} Ω`, '保持不变', `由 ${resistance} Ω 减小到 ${changedVoltage / current} Ω`, '无法根据电压和电流判断'], correctIndex: 0, explanation: `由 R = U/I，电流不变时电压增大，计算得到的电阻由 ${resistance} Ω 增大到 ${changedVoltage / current} Ω。` }
-  }
-  if (chapterName.includes('电磁') || chapterName.includes('磁场')) {
-    const turns = 20 + variant * 5
-    const current = 1 + variant
-    if (type % 3 === 0) return { ...base, dimension: 'concept', stem: `在研究通电螺线管磁性强弱时，其他条件相同，将线圈匝数由 ${turns} 匝增加到 ${turns + 10} 匝，磁性通常如何变化？`, options: ['增强', '减弱', '不变', '一定消失'], correctIndex: 0, explanation: `在电流约为 ${current} A 且其他条件相同时，增加匝数通常会增强通电螺线管的磁性。` }
-    if (type % 3 === 1) { const speed = 2 + variant; const force = current * (variant + 1); return { ...base, dimension: 'basic-application', stem: `一根通电导线在磁场中受到安培力。若电流增大为原来的 ${speed} 倍，其他条件不变，安培力大小如何变化？`, options: [`增大为原来的 ${speed} 倍`, `减小为原来的 1/${speed}`, '保持不变', '先增大后减小'], correctIndex: 0, explanation: `安培力在其他因素不变时与电流成正比，因此增大为原来的 ${speed} 倍；示例力值可取 ${force} N。` } }
-    const flux = 0.02 + variant * 0.01
-    const time = 0.1 + (variant % 3) * 0.1
-    const emf = flux / time
-    return { ...base, dimension: 'transfer', stem: `闭合线圈中的磁通量在 ${time} s 内由 ${flux} Wb 均匀减小到 0，感应电动势大小为？`, options: [`${emf} V`, `${flux * time} V`, `${time / flux} V`, `${flux + time} V`], correctIndex: 0, explanation: `法拉第电磁感应定律给出 E = |ΔΦ|/Δt = ${flux}/${time} = ${emf} V。` }
-  }
-  if (chapterName.includes('内能') || chapterName.includes('热')) {
-    const mass = 1 + variant
-    const deltaT = 5 + variant
-    const specificHeat = 4200
-    const heat = mass * specificHeat * deltaT
-    if (type % 3 === 0) return { ...base, dimension: 'basic-application', stem: `质量为 ${mass} kg 的水温度升高 ${deltaT} ℃，取水的比热容 c = 4.2×10³ J/(kg·℃)，吸收热量约为？`, options: [`${heat} J`, `${mass * deltaT} J`, `${specificHeat * deltaT} J`, `${heat / 2} J`], correctIndex: 0, explanation: `吸收热量 Q = cmΔt = 4.2×10³×${mass}×${deltaT} = ${heat} J。` }
-    if (type % 3 === 1) { const work = (mass + 1) * 10; return { ...base, dimension: 'concept', stem: `关于改变物体内能的方式，下列说法正确的是？本题以对物体做功 ${work} J 的情境为例。`, options: ['做功和热传递都能改变物体内能', '只有做功能改变内能', '只有热传递能改变内能', '温度不变时内能一定不变'], correctIndex: 0, explanation: '做功和热传递是改变物体内能的两种方式；温度不变时内能也可能因状态变化而改变。' } }
-    const pressure = 1 + variant
-    return { ...base, dimension: 'transfer', stem: `一定质量理想气体温度保持不变，体积压缩为原来的 1/${pressure + 1}，气体内能如何变化？`, options: ['理想气体内能不变', '内能一定增加', '内能一定减少', '无法由等温条件判断'], correctIndex: 0, explanation: `理想气体内能只由温度决定；等温过程温度不变，因此内能不变，压缩过程中的功由热交换平衡。` }
-  }
-  if (chapterName.includes('光') || chapterName.includes('透镜')) {
-    const objectDistance = 20 + variant * 5
-    if (type % 3 === 0) return { ...base, dimension: 'basic-application', stem: `凸透镜焦距为 10 cm，物距为 ${objectDistance} cm 时，物体位于？`, options: ['二倍焦距以外', '焦点以内', '焦点处', '一倍焦距与二倍焦距之间'], correctIndex: objectDistance > 20 ? 0 : 3, explanation: `焦距为 10 cm，二倍焦距为 20 cm；物距 ${objectDistance} cm 与 20 cm 的关系决定物体所在区域。` }
-    if (type % 3 === 1) return { ...base, dimension: 'concept', stem: `在探究凸透镜成像规律时，物距为 ${objectDistance} cm、焦距为 10 cm 且物距大于二倍焦距，成像特点通常是？`, options: ['倒立、缩小的实像', '正立、放大的虚像', '倒立、放大的实像', '正立、缩小的虚像'], correctIndex: 0, explanation: '物距大于二倍焦距时，像在一倍与二倍焦距之间，是倒立、缩小的实像。' }
-    return { ...base, dimension: 'error-analysis', stem: `近视眼看远处物体时，像落在视网膜前。应选用哪类透镜矫正？（本题镜片焦距为 ${10 + variant} cm）`, options: ['凹透镜', '凸透镜', '平面镜', '柱面镜'], correctIndex: 0, explanation: '近视眼成像在视网膜前，需要凹透镜发散光线，使像后移到视网膜。' }
-  }
-  return null
+  return base
 }
 
 export function buildFallbackDiagnosticQuestions({ grade, subject, chapters = [], questionCount, attempt = 1, excludeQuestions = [] } = {}) {
@@ -498,21 +465,13 @@ export function buildFallbackDiagnosticQuestions({ grade, subject, chapters = []
   const attemptNumber = Math.max(1, Number(attempt) || 1)
   const questions = blueprint.flatMap(item => Array.from({ length: item.count }, (_, index) => {
     const chapter = chapters.find(candidate => candidate.id === item.chapterId)
-    const bank = Object.entries(banks).find(([key]) => chapter.name.includes(key) || key.includes(chapter.name.slice(0, 4)))?.[1]
+    const bank = Object.entries(banks).find(([key]) => chapter.name.includes(key))?.[1]
     const dimension = item.dimensions[index] || 'transfer'
-    const localObjective = subject === '物理' && String(grade).startsWith('高')
-      ? buildPhysicsQuestion(chapter.name, attemptNumber, index)
-      : bank ? buildLocalObjectiveVariant(chapter.name, bank, attemptNumber) : null
+    const localObjective = bank ? buildLocalObjectiveVariant(chapter.name, bank, attemptNumber, index) : null
     if (localObjective && !excludedStems.has(questionTextKey(localObjective.stem))) {
       const bankQuestion = { id: `local-${chapter.id}-${attemptNumber}-${index + 1}`, chapterId: chapter.id, chapterName: chapter.name, type: 'single', dimension, difficulty: 1, ...localObjective }
       excludedStems.add(questionTextKey(bankQuestion.stem))
       return bankQuestion
-    }
-    if (subject === '物理' && String(grade).startsWith('高') && localObjective) {
-      // 同一专题需要多题时，使用不同的新课标高考风格能力题，不能退化成学习状态自评。
-      const physicsQuestion = { ...localObjective, id: `local-${chapter.id}-${attemptNumber}-${index + 1}`, chapterId: chapter.id, chapterName: chapter.name, dimension, stem: `${localObjective.stem}（变式 ${index + 1}）` }
-      excludedStems.add(questionTextKey(physicsQuestion.stem))
-      return physicsQuestion
     }
     const labels = selfAssessmentLabels[dimension] || selfAssessmentLabels.transfer
     let label = labels[(attemptNumber - 1 + index) % labels.length]
@@ -531,7 +490,7 @@ export function buildFallbackDiagnosticQuestions({ grade, subject, chapters = []
       masteryByOption: [0, 1, 2, 3], selfAssessment: true
     }
   }))
-  return { questions, source: questions.some(item => item.selfAssessment) ? 'local-self-check' : subject === '物理' && String(grade).startsWith('高') ? 'local-gaokao-style-physics' : 'local-question-bank', grade, subject }
+  return { questions, source: questions.some(item => item.selfAssessment) ? 'local-self-check' : 'local-question-bank', grade, subject }
 }
 
 export function buildAdaptivePlan({ grade, subject, edition = '', chapters = [], masteryByChapter = {}, dailyMinutes = 60, targetScore, targetFullScore, baselineScore } = {}) {

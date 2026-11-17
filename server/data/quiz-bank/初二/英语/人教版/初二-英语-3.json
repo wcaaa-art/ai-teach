@@ -1,0 +1,109 @@
+{
+  "grade": "初二",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初二-英语-3",
+    "name": "情态动词与被动语态"
+  },
+  "generatedAt": "2026-11-14T13:28:00.000Z",
+  "source": "trae",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初二-英语-3-f1",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "英语被动语态的基本结构是“be + ______”，其中 be 动词的形式要随时态和主语变化。",
+      "answer": "过去分词",
+      "acceptableAnswers": [
+        "过去分词",
+        "动词的过去分词",
+        "past participle"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：答出“过去分词”即可得3分。\n2. 语法依据：被动语态由“be + 过去分词”构成，一般现在时为 am/is/are + done，一般过去时为 was/were + done，如 is cleaned、was built。\n3. 失分点：写成“现在分词”构成的是进行时，不是被动语态；只写“过去式”也不对；如“房间被打扫”应写 is cleaned，不能写成 is clean。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-3-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用括号内所给动词的适当形式填空：Our classroom ______ (clean) by the students every afternoon.",
+      "answer": "is cleaned",
+      "acceptableAnswers": [
+        "is cleaned"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 is cleaned，得3分。\n2. 语法依据：主语 our classroom 是动作的承受者，by the students 引出执行者，应用被动语态；every afternoon 表示经常性动作，用一般现在时，主语为单数，be 动词用 is，clean 的过去分词是 cleaned。\n3. 失分点：填 cleans 是主动语态，主语与动作关系错误；填 are cleaned 主谓不一致；填 is cleaning 是现在进行时，均不能得分。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-3-f3",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用恰当的情态动词填空：You ______ smoke here. Look at the sign — it's a hospital.",
+      "answer": "mustn't",
+      "acceptableAnswers": [
+        "mustn't",
+        "must not"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 mustn't 或 must not，得3分。\n2. 语法依据：mustn't 表示“禁止、不允许”，语气最强；医院禁烟标识属于明确规定，因此用 mustn't。\n3. 失分点：填 don't have to 表示“不必”，只是没有义务，不能体现“禁止”；填 can't 多表示能力或推测；填 needn't 同样表示“不必”，均不符合医院禁烟的语境。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-3-f4",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用括号内所给动词的适当形式填空：This stone bridge ______ (build) more than 200 years ago.",
+      "answer": "was built",
+      "acceptableAnswers": [
+        "was built"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 was built，得3分。\n2. 语法依据：bridge 是 build 动作的承受者，应用被动语态；more than 200 years ago 表示明确的过去时间，用一般过去时被动语态 was/were + 过去分词；主语单数，用 was，build 的过去分词是 built。\n3. 失分点：填 built 是主动语态；填 has been built 与 ago 冲突，因为 ago 不能与现在完成时连用；填 is built 时态不符。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-3-s1",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "将下列主动句改为被动句。\n(1) People grow tea in this area.\n(2) Someone stole my bike yesterday.\n(3) We must finish the work today.",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "(1) Tea is grown in this area.\n(2) My bike was stolen yesterday.\n(3) The work must be finished today.",
+      "explanation": "第1步（每题3分，共9分）：改对被动结构得2分，时态与主谓一致正确得1分。\n(1) 一般现在时被动：Tea is grown in this area，注意 tea 不可数作主语用 is，grow 的过去分词是 grown。\n(2) 一般过去时被动：My bike was stolen yesterday，steal 的过去分词是 stolen，不能写成 stole。\n(3) 含情态动词的被动：The work must be finished today，结构为“情态动词 + be + 过去分词”，must 后不能加 is。\n第2步（语言规范1分）：三句均无拼写和标点错误得1分，否则酌扣。\n常见失分点：改为被动后仍保留原主语 people/someone；忘记把动词变成过去分词；情态动词后误写成 must is finished。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初二-英语-3-s2",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "从 mustn't, don't have to, can, may, should 中选择恰当的情态动词填空，并简要说明理由。\n(1) — ______ I use your dictionary? — Sure, here you are.\n(2) You ______ talk in the library. It's a rule.\n(3) It's Sunday tomorrow, so I ______ get up early.\n(4) You look tired. You ______ have a rest.",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "(1) May / Can。理由：请求对方允许，May I...? 较正式，Can I...? 较口语化，均符合语境。\n(2) mustn't。理由：图书馆的规定，表示“禁止喧哗”，用 mustn't 语气最强。\n(3) don't have to。理由：明天是周日，没有早起的必要，表示“不必”，用 don't have to。\n(4) should。理由：针对“看起来很累”提出建议，表示“应该”，用 should。",
+      "explanation": "第1步（填空4分）：每小题1分，(1) May 或 Can，(2) mustn't，(3) don't have to，(4) should；第(3)题写成 mustn't 不得分，因为“不必”和“禁止”语义完全不同。\n第2步（理由6分）：每小题1.5分，要说出情态动词的表意功能——请求许可、禁止、没有必要、提出建议。只写出单词而不说明语义，扣1分；理由与所填词矛盾，该小题不得分。\n常见失分点：把 mustn't 与 don't have to 混为一谈；第(1)题填 Should 不符合请求许可的交际功能；第(4)题填 must 语气过强，变成命令而非建议。",
+      "difficulty": 3,
+      "score": 10
+    },
+    {
+      "id": "初二-英语-3-s3",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "假设你是学校英语报小记者，请写一段 60—70 词的短文介绍你们学校图书馆的规则，至少使用两处情态动词和两处被动语态。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "示例：Our school library is a quiet place for reading. Books must be returned on time, and food and drinks mustn't be taken into the reading room. Students should keep quiet and mustn't use their phones there. Everyone can borrow two books at a time. If you lose a book, you should tell the librarian. I think these rules should be followed by all of us.\n评分要点：①内容（4分）：写出至少三条具体规则，并表达自己的看法；②语法（4分）：两处情态动词、两处被动语态使用正确；③语言与连贯（2分）：语句通顺，衔接自然，词数符合要求。",
+      "explanation": "第1步（内容4分）：要写出三条以上图书馆规则，如按时还书、不得带食物饮料、保持安静、每次限借两本等，并有一句自己的评价；规则少于两条扣2分。\n第2步（语法4分）：情态动词使用正确得2分，如 must、mustn't、should、can；被动语态结构正确得2分，如 must be returned、mustn't be taken、should be followed。每出现一处“情态动词 + 动词原形”的被动错误扣1分。\n第3步（语言与连贯2分）：句子完整、拼写基本正确得1分；使用 and、if、I think 等衔接自然、词数在60—70之间得1分。\n常见失分点：全篇只有主动句，没有被动语态；把 mustn't be taken 写成 mustn't take；规则罗列但缺少连接词，读起来像清单。",
+      "difficulty": 3,
+      "score": 10
+    }
+  ]
+}

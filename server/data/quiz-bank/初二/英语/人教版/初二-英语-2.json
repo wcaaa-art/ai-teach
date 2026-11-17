@@ -1,0 +1,109 @@
+{
+  "grade": "初二",
+  "subject": "英语",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初二-英语-2",
+    "name": "现在完成时入门"
+  },
+  "generatedAt": "2026-11-14T13:24:00.000Z",
+  "source": "trae",
+  "count": 7,
+  "questions": [
+    {
+      "id": "初二-英语-2-f1",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "现在完成时的基本结构是 have/has + ______，其中 have/has 要随主语的人称和数变化。",
+      "answer": "过去分词",
+      "acceptableAnswers": [
+        "过去分词",
+        "动词的过去分词",
+        "past participle"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：答出“过去分词”即可得3分，写“动词的过去分词”同样正确。\n2. 语法依据：现在完成时由“have/has + 动词的过去分词”构成，如 have finished、has seen；主语为第三人称单数时用 has，其余用 have。\n3. 失分点：写成“现在分词”会变成现在完成进行时或进行时结构；写成“过去式”则混淆了时态形式，如 have went 属于典型错误。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-2-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用括号内所给动词的适当形式填空：We ______ (be) good friends since we entered this school.",
+      "answer": "have been",
+      "acceptableAnswers": [
+        "have been"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 have been，得3分。\n2. 语法依据：since 引导的从句用一般过去时 entered，主句表示从过去持续到现在的状态，用现在完成时；主语 We 用 have，be 的过去分词是 been。\n3. 失分点：填 are 只描述现在，无法体现“从入学一直到现在”；填 were 只讲过去，与 since 从句的持续含义不匹配；写成 have be 属于分词形式错误。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-2-f3",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用适当的介词填空：My grandpa has worked in this hospital ______ 2015.",
+      "answer": "since",
+      "acceptableAnswers": [
+        "since"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 since，得3分。\n2. 语法依据：现在完成时常与 since 或 for 引导的时间状语连用；since 后接过去的具体时间点，2015 是时间点，表示“自2015年以来”。\n3. 失分点：填 for 后必须接时间段，如 for ten years，不能直接接 2015；填 in 只表示“在2015年”，不能体现持续到现在，均不得分。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-2-f4",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "用括号内所给动词的适当形式填空：I ______ (not see) that film yet, so I'd like to watch it this weekend.",
+      "answer": "haven't seen",
+      "acceptableAnswers": [
+        "haven't seen",
+        "have not seen"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 得分点：填 haven't seen 或 have not seen，得3分。\n2. 语法依据：yet 常用于否定句或疑问句末尾，强调“到现在为止还没有”，句子应使用现在完成时；主语 I 用 have，see 的过去分词是 seen。\n3. 失分点：写成 didn't see 只叙述过去，不能表达“到现在还没看、所以这周末想看”的结果；写成 haven't saw 属于过去分词错误，是本题最常见的失分点。",
+      "difficulty": 2,
+      "score": 3
+    },
+    {
+      "id": "初二-英语-2-s1",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "用括号内所给动词的适当形式补全短文（每空2分，共10分）。\nLi Ming is my classmate. He (1) ______ (learn) English for six years. He (2) ______ (read) more than twenty English storybooks so far. Last year he (3) ______ (join) the school English club. Since then, he (4) ______ (make) three new friends there. He says he (5) ______ (never be) to an English-speaking country, but he hopes to go one day.",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "(1) has learned / has learnt\n(2) has read\n(3) joined\n(4) has made\n(5) has never been",
+      "explanation": "第1步：第(1)空看 for six years，表示从过去持续到现在，用现在完成时，主语 He 用 has，填 has learned 或 has learnt，得2分；只填 learned 扣2分。\n第2步：第(2)空看 so far（到目前为止），用现在完成时 has read，得2分；填 read 或 reads 不得分。\n第3步：第(3)空看 Last year，这是明确的过去时间，必须用一般过去时 joined，得2分；填 has joined 是本题最典型的失分点，因为现在完成时不能与明确的过去时间连用。\n第4步：第(4)空看 Since then（自那以后），用现在完成时 has made，得2分。\n第5步：第(5)空 never 表示“从未”，用现在完成时 has never been，得2分；注意 have/has been to 表示“去过某地”，写成 has never gone to 意思变成“去了还没回来”，属于搭配错误。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初二-英语-2-s2",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "请用括号内动词的适当形式填空，并简要说明每句为什么用一般过去时或现在完成时。\n(1) I ______ (lose) my key yesterday, so I couldn't open the door.\n(2) I ______ (lose) my key. I can't open the door now.\n(3) My family ______ (move) to this city in 2020.\n(4) My family ______ (live) in this city for five years.",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "(1) lost。理由：yesterday 是明确的过去时间，动作已结束，与现在无关，用一般过去时。\n(2) have lost。理由：强调“钥匙丢了”这一过去动作对现在造成的结果——现在打不开门，用现在完成时。\n(3) moved。理由：in 2020 是明确的过去时间点，用一般过去时。\n(4) have lived。理由：for five years 表示从过去持续到现在，用现在完成时；主语 My family 视为复数，用 have。",
+      "explanation": "第1步（填空4分）：每空1分，(1) lost，(2) have lost，(3) moved，(4) have lived；第(2)空写成 lost 不得分，第(4)空写成 has lived 需结合 family 作“家人”理解，本句视为复数更自然，用 have。\n第2步（理由6分）：每小题理由1.5分，必须点明判断依据——(1)(3)有 yesterday、in 2020 等明确过去时间，用一般过去时；(2)(4)分别强调对现在的结果和从过去持续到现在，用现在完成时。只写“习惯用法”而不指出时间状语或语义，扣1分。\n常见失分点：看到 lose 就一律填 have lost，忽略 yesterday；或看到 for five years 仍填 moved，没有识别持续含义；理由与所填时态自相矛盾。",
+      "difficulty": 3,
+      "score": 10
+    },
+    {
+      "id": "初二-英语-2-s3",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "请以“My English Learning”为题写一段 60—70 词的短文，介绍你学习英语的经历，至少使用三处现在完成时，并恰当使用 already、since、for、ever 等标志词中的两个。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "示例：I have learned English for about five years. I have already read many English storybooks, and I have learned more than one thousand words. Since I joined the English club last year, I have made several friends who also love English. Have you ever tried to speak English outside class? I think practice is the best way to learn.\n评分要点：①内容（4分）：写出学习时间、做过的事、感受或建议，内容具体；②语法（4分）：至少三处现在完成时结构正确，标志词使用恰当；③语言与连贯（2分）：语句通顺，衔接自然，词数符合要求。",
+      "explanation": "第1步（内容4分）：要交代学习英语的时长、具体做过的事情（读故事书、记单词、参加社团等）以及自己的感受或建议，三方面齐全得4分，缺一方面扣1—2分。\n第2步（语法4分）：现在完成时结构必须完整，如 have learned、have read、have made；每出现一处“have + 过去式”之类的结构错误扣1分，三处以上正确才可得满分。标志词要与时态匹配：for + 时间段、since + 时间点、already 用于肯定句、ever 多用于疑问句。\n第3步（语言与连贯2分）：句子完整、拼写基本正确得1分；使用 and、since、because 等衔接自然、词数在60—70之间得1分。\n常见失分点：全篇只用一般过去时；把 already 放进否定句；词数明显不足或只罗列单词不成句。",
+      "difficulty": 3,
+      "score": 10
+    }
+  ]
+}

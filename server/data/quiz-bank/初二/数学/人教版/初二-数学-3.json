@@ -1,0 +1,181 @@
+{
+  "grade": "初二",
+  "subject": "数学",
+  "edition": "人教版",
+  "chapter": {
+    "id": "初二-数学-3",
+    "name": "整式乘法与因式分解"
+  },
+  "generatedAt": "2026-11-14T12:26:42.116Z",
+  "source": "deepseek",
+  "count": 12,
+  "questions": [
+    {
+      "id": "初二-数学-3-f1",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "因式分解：4x^2-12xy+9y^2=______。",
+      "answer": "(2x-3y)^2",
+      "acceptableAnswers": [
+        "(2x-3y)^2",
+        "(2x-3y)(2x-3y)"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 原式可写成 (2x)^2-2·(2x)·(3y)+(3y)^2。\n2. 符合完全平方公式 a^2-2ab+b^2=(a-b)^2，所以结果为 (2x-3y)^2。\n3. 常见错误：中间项符号或系数处理错误，误写成 (2x+3y)^2 或 (2x-3y)(2x+3y)。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-数学-3-f2",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "分解因式：x^2-4x+4=____。",
+      "answer": "(x-2)^2",
+      "acceptableAnswers": [
+        "(x-2)^2",
+        "(x-2)(x-2)"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 观察多项式 x^2-4x+4，首项是 x^2，末项 4=2^2。\n2. 中间项 -4x=-2·x·2，符合完全平方公式 a^2-2ab+b^2=(a-b)^2。\n3. 令 a=x，b=2，得 x^2-4x+4=(x-2)^2，故填空答案为 (x-2)^2。\n4. 常见错误是写成 (x+2)^2，其中中间项应为 +4x，与题中 -4x 不符。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-数学-3-f3",
+      "type": "fill",
+      "dimension": "concept",
+      "stem": "因式分解：x^2-6x+9=____。",
+      "answer": "(x-3)^2",
+      "acceptableAnswers": [
+        "(x-3)^2",
+        "(x-3)(x-3)"
+      ],
+      "referenceAnswer": "",
+      "explanation": "利用完全平方公式：a^2-2ab+b^2=(a-b)^2。\n这里 a=x，b=3，因为 x^2-2·x·3+3^2=x^2-6x+9。\n所以因式分解结果为 (x-3)^2；写成 (x-3)(x-3) 也等价。\n常见错误：误写为 (x+3)^2，展开后中间项为 +6x，与题不符。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-数学-3-f4",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "已知 a+b=5，ab=6，则 a^2b+ab^2 的值为 ______。",
+      "answer": "30",
+      "acceptableAnswers": [
+        "30"
+      ],
+      "referenceAnswer": "",
+      "explanation": "第一步：a^2b+ab^2=ab(a+b)，提公因式 ab。\n第二步：代入 a+b=5，ab=6，得 6×5=30。\n常见错误：把 a^2b+ab^2 误写成 ab(a^2+b^2)，或先分别求 a、b 的具体值；本题无需分别求 a、b。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-数学-3-s1",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "已知 a+b=7，ab=10。\n（1）求 a^2+b^2 的值；\n（2）求 a^3b+ab^3 的值；\n（3）利用因式分解计算 102^2-4×102+4 的值。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）a^2+b^2=(a+b)^2-2ab=7^2-2×10=29。\n（2）a^3b+ab^3=ab(a^2+b^2)=10×29=290。\n（3）102^2-4×102+4=(102-2)^2=100^2=10000。",
+      "explanation": "第(1)问：利用完全平方公式变形，得 a^2+b^2=(a+b)^2-2ab，代入得 29，得3分。\n第(2)问：先提取公因式 ab，得 ab(a^2+b^2)，再代入得 290，得4分。\n第(3)问：逆用完全平方公式因式分解，得 (102-2)^2，计算得 10000，得3分。\n常见错误：把 a^2+b^2 误写成 (a+b)^2；提取公因式后漏乘 ab；第(3)问未先因式分解而计算失误。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初二-数学-3-f5",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "分解因式：2x^2-8=____。",
+      "answer": "2(x+2)(x-2)",
+      "acceptableAnswers": [
+        "2(x+2)(x-2)",
+        "2(x-2)(x+2)"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 先提取公因式2：2x^2-8=2(x^2-4)。\n2. 再用平方差公式：x^2-4=(x+2)(x-2)。\n3. 所以结果为2(x+2)(x-2)。\n常见错误：只分解到2(x^2-4)，未继续分解。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-数学-3-f6",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "因式分解：3a^2-12=____。",
+      "answer": "3(a+2)(a-2)",
+      "acceptableAnswers": [
+        "3(a+2)(a-2)",
+        "3(a-2)(a+2)"
+      ],
+      "referenceAnswer": "",
+      "explanation": "1. 先提取公因式：3a^2-12=3(a^2-4)。\n2. 再用平方差公式：a^2-4=(a+2)(a-2)。\n3. 所以结果为3(a+2)(a-2)；常见错误是漏写公因式3。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-数学-3-s2",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "解答下列各题：\n（1）利用乘法公式计算：2026^2-2025×2027；\n（2）因式分解：4x^2-12xy+9y^2；\n（3）已知 a+b=5，ab=3，求 a^2+b^2 的值。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）2026^2-2025×2027=2026^2-(2026-1)(2026+1)=2026^2-(2026^2-1)=1。\n（2）4x^2-12xy+9y^2=(2x)^2-2·2x·3y+(3y)^2=(2x-3y)^2。\n（3）a^2+b^2=(a+b)^2-2ab=5^2-2×3=25-6=19。",
+      "explanation": "第（1）问：把2025×2027写成(2026-1)(2026+1)，利用平方差公式得(2026-1)(2026+1)=2026^2-1，所以原式=2026^2-(2026^2-1)=1；常见错误是未用公式而计算过程繁琐，结果正确但缺少公式步骤可适当扣分。\n第（2）问：4x^2=(2x)^2，9y^2=(3y)^2，中间项12xy=2·2x·3y，符合完全平方公式a^2-2ab+b^2=(a-b)^2，所以原式=(2x-3y)^2；常见错误是把符号写成加号，得到(2x+3y)^2，与中间项-12xy矛盾。\n第（3）问：由完全平方公式(a+b)^2=a^2+2ab+b^2，得a^2+b^2=(a+b)^2-2ab=5^2-2×3=25-6=19；常见错误是直接把a^2+b^2写成(a+b)^2=25，漏减2ab。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初二-数学-3-f7",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "把多项式 a^3-4a 分解因式，结果是 ______。",
+      "answer": "a(a+2)(a-2)",
+      "acceptableAnswers": [
+        "a(a+2)(a-2)",
+        "a(a-2)(a+2)"
+      ],
+      "referenceAnswer": "",
+      "explanation": "第1步：先观察各项公因式，a^3 与 -4a 都有因式 a，提出后得 a^3-4a=a(a^2-4)，若漏掉这个 a 则分解不彻底。\n第2步：括号内 a^2-4 是两项平方差，符合 a^2-b^2=(a+b)(a-b)，其中 b=2，故 a^2-4=(a+2)(a-2)。\n第3步：把两步合并得 a(a+2)(a-2)，因式分解必须进行到每个因式都不能再分解为止。\n常见错误：只写成 a(a^2-4) 就停止，没有继续分解；或把 a^2-4 误写成 (a-2)^2，这只对 a^2-4a+4 成立。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-数学-3-s3",
+      "type": "short",
+      "dimension": "transfer",
+      "stem": "已知 x+y=7，xy=10，完成下列各题：\n（1）求 x^2+y^2 的值；\n（2）求 (x-y)^2 的值；\n（3）先因式分解，再求值：x^3y+xy^3。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）由完全平方公式得 (x+y)^2=x^2+2xy+y^2，所以 x^2+y^2=(x+y)^2-2xy=7^2-2×10=49-20=29。\n（2）由 (x-y)^2=x^2-2xy+y^2，得 (x-y)^2=(x^2+y^2)-2xy=29-20=9；也可直接算 (x+y)^2-4xy=49-40=9。\n（3）x^3y+xy^3=xy(x^2+y^2)。由（1）知 x^2+y^2=29，又 xy=10，所以原式=10×29=290。",
+      "explanation": "第（1）问共3分：正确写出 (x+y)^2=x^2+2xy+y^2 得1分，代入 x+y=7、xy=10 得1分，结果29得1分。常见错误是把 x^2+y^2 直接写成 (x+y)^2。\n第（2）问共3分：正确使用 (x-y)^2=(x+y)^2-4xy 或 (x-y)^2=x^2+y^2-2xy 得1分，代入数据得1分，结果9得1分。常见错误是误写成 (x-y)^2=(x+y)^2。\n第（3）问共4分：正确提取公因式得 x^3y+xy^3=xy(x^2+y^2) 得2分，代入 xy=10、x^2+y^2=29 得1分，结果290得1分。常见错误是只提取 x 或 y，导致因式分解不完整。",
+      "difficulty": 2,
+      "score": 10
+    },
+    {
+      "id": "初二-数学-3-f8",
+      "type": "fill",
+      "dimension": "basic-application",
+      "stem": "因式分解：x^2-4x+4 = ______。",
+      "answer": "(x-2)^2",
+      "acceptableAnswers": [
+        "(x-2)^2",
+        "（x-2）^2"
+      ],
+      "referenceAnswer": "",
+      "explanation": "利用完全平方公式：a^2-2ab+b^2=(a-b)^2，这里 a=x，b=2。\n所以 x^2-4x+4=(x-2)^2。\n常见错误：写成 (x+2)^2 会得到 x^2+4x+4，中间项符号不符。\n也可展开 (x-2)^2=x^2-4x+4 验证。",
+      "difficulty": 1,
+      "score": 3
+    },
+    {
+      "id": "初二-数学-3-s4",
+      "type": "short",
+      "dimension": "basic-application",
+      "stem": "计算与因式分解：\n（1）化简：(2x+1)(2x-1)-(x-3)^2；\n（2）因式分解：2a^3b-8ab^3。",
+      "answer": "",
+      "acceptableAnswers": [],
+      "referenceAnswer": "（1）(2x+1)(2x-1)-(x-3)^2=(4x^2-1)-(x^2-6x+9)=3x^2+6x-10。\n（2）2a^3b-8ab^3=2ab(a^2-4b^2)=2ab(a+2b)(a-2b)。",
+      "explanation": "1. 第（1）问先用平方差公式得 (2x+1)(2x-1)=4x^2-1，再用完全平方公式得 (x-3)^2=x^2-6x+9，相减时注意括号，结果为 3x^2+6x-10。\n2. 第（2）问先提取公因式 2ab，得 2ab(a^2-4b^2)，再用平方差公式分解为 2ab(a+2b)(a-2b)。\n3. 常见错误：第（1）问去括号时把 -(x-3)^2 写成 -x^2-6x+9；第（2）问漏提公因式或把 a^2-4b^2 错写成 (a-2b)^2。",
+      "difficulty": 2,
+      "score": 10
+    }
+  ]
+}
