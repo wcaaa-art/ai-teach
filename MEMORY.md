@@ -875,6 +875,15 @@
 - 现象级小事：Vite 每次 `package.json` / lockfile 变化会尝试 `rm -rf node_modules/.vite/deps`，被沙箱安全删除守卫拦下，表现为 vite 启动失败；处理办法是 `mv node_modules/.vite node_modules/.vite.bak.<时间>` 后重启。
 - 验证基线：`npm test` 325、lint 0 error / 26 warning、typecheck、build 全绿。
 
+## 整改 P4 / P5（2026-11-17，24 小时窗口，老大要求三阶段连做）
+
+- P4（`28822a9` / tag `p4`）：Agent 运行态（IDB v9 + `agentRuns` 表，仅记录真调过工具的轮次）、工具护栏（`server/tool-runtime.js`：3s 超时 + 重试 1 次 + 连续 3 次失败熔断 30s）、MCP 结构化错误码（INVALID_ARGS/TOOL_NOT_FOUND/TOOL_TIMEOUT）、PII 脱敏（`server/pii.js`）与 60 条安全评测（30 对抗 + 30 正常，`npm run safety:eval`，当前 100% 拦截 / 0 误杀）。`/ai` 页展示最近运行与安全评测数字。
+- P5-1（`2ab48bd`）：`server/rag/synonyms.js` 15 组别名做查询扩展（`RAG_EXPAND=0` 可关）。评测集补 5 条口语化用例；把 2 条"语料根本没有这个考点"的用例标 `corpusGap` 单独列出、不计入通过率（全库仅 3 个片段含欧姆定律）。实测：扩展开启 26/26，关闭 25/26。
+- P5-2（`4e36bfc`）：`scripts/rag-add-doc.mjs`（`npm run rag:add`）增量入库 + `loadRagIndex` 按 mtime 2 秒窗口热加载；`tokenizeForIndex` 与 Python 建库同口径。实测新增一条扇形面积题 3 秒内可被接口检索到，恢复索引后自动消失，全程未重启。
+- 踩坑：本环境里同一条 bash 命令偶尔会被执行两次，导致 python 批量替换重复插入（`App.vue`、`AiLabView.vue` 各出现过一次重复 import/声明）。写文件后要 `grep -c` 校验唯一性，别假设只改了一遍。
+- 当前基线：`npm test` 352、lint 0 error / 26 warning、typecheck、build、`rag:eval` 26/26 + 2 语料缺口、`rag:rerank:eval` 无退化、`safety:eval` 100%/0%。
+- 待做：P5-3 句向量（独立分支）、P5-4 图片链路流式、P6 前端工程（checkJs / 巨型页抽 composable / 引用可点击）。
+
 ## 协作约定
 
 - 每个任务收尾固定格式：**做了什么 / 验证结果 / 下一步建议**，必须带「下一步」，不等豪哥再问。
