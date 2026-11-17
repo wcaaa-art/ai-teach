@@ -908,5 +908,7 @@
 - CI：`.github/workflows/ci.yml`，Node 22 + `npm ci` + `lint` + `test` + `typecheck`，首次推送即跑绿；本机是 Node 20.11.1 / npm 10.2.4，两边都过。
 - 协作入口：`.github/pull_request_template.md`、`.github/ISSUE_TEMPLATE/{bug_report,feature_request}.yml`、`CONTRIBUTING.md`。
 - 协作者：`zhi-life`（Write 权限，2026-11-17 邀请）；PR 需对方 review 才能合，反之亦然——GitHub 不允许自审通过。
+- 升级 `maintain` / `admin` 被 GitHub 拒绝（`422 Cannot assign ... permission of admin`，admin 与 maintain 均失败），根因未确认；需要设置权限只能迁到 Organization 再授 admin，当前接受保持 Write。
+- 排障陷阱：非 admin 调 `GET /branches/main/protection` 返回 **404**（GitHub 对无权资源一律 404 不返 403），`GET /rulesets` 为空是因为用的是 classic 保护而非 ruleset；这两个现象都**不能**作为「没有保护」的依据。验证保护是否生效，用普通写权限账号直接 `git push origin main`，应被 `GH006 Protected branch update failed` 拒绝。
 - 顺手修掉 `server/index.js` 能力清单里重复写两遍的 `rerank` 键（当时 lint 唯一 error）。
 - 公开前的敏感信息扫描结论：无真实密钥入库，`.env` 与 `server/data/` 均未跟踪；MEMORY.md 里只有本机路径 `C:/Users/豪` 与 Gitee 地址，属公开可见信息，未做脱敏。
