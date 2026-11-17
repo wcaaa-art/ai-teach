@@ -1,3 +1,4 @@
+// @ts-check
 const friendlyVoiceNames = /xiaoxiao|晓晓|小晓|tingting|婷婷|mei.?jia|美佳|google.*普通话|普通话.*google|yaoyao|瑶瑶|huihui|慧慧/i
 
 export function chooseFriendlyChineseVoice() {

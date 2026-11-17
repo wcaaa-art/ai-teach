@@ -41,7 +41,7 @@ test('rag_knowledge_query 默认走稀疏路，行为与改造前一致', () => 
   assert.ok(result.items.length >= 1)
   assert.ok(result.passages.length >= 1)
   assert.equal(result.source, 'curriculum+exam-rag')
-  assert.ok(result.citations[0].includes('真题'))
+  assert.ok(result.citations[0].text.includes('真题'))
 })
 
 test('开启 RAG_HYBRID 后工具仍能返回完整片段', () => {

@@ -10,6 +10,7 @@ import { loadPlans, loadProfile, loadMistakes, saveMistake } from '../db/index.j
 import { computeQuizSummary } from '../utils/quiz.js'
 import { formatMathText } from '../utils/formatMath.js'
 import StudyTimer from '../components/StudyTimer.vue'
+import QuestionOptions from '../components/QuestionOptions.vue'
 
 const route = useRoute()
 const router = useRouter()
@@ -65,6 +66,20 @@ function correctText(question) {
 
 function isOptionCorrect(question, index) {
   return Number(question.correctIndex) === index
+}
+
+// 回顾页把选项铺开：正解标绿、错选标红，和错题库/测验回顾同一套展示。
+function correctOptionIndexes(question) {
+  if (Array.isArray(question.correctIndexes) && question.correctIndexes.length) return question.correctIndexes.map(Number)
+  const index = Number(question.correctIndex)
+  return Number.isInteger(index) && index >= 0 ? [index] : []
+}
+function chosenOptionIndexes(question) {
+  const value = answers[question.id]
+  if (question.type === 'multiple') return Array.isArray(value) ? value.map(Number) : []
+  if (value === undefined || value === null || value === '') return []
+  const index = Number(value)
+  return Number.isInteger(index) ? [index] : []
 }
 
 function explanationRows(question) {
@@ -423,6 +438,12 @@ onMounted(() => {
           <p class="pq-stem" v-html="formatMathText(question.stem)"></p>
 
           <div class="review-answer">
+            <QuestionOptions
+              v-if="question.options?.length"
+              :options="question.options"
+              :correct="correctOptionIndexes(question)"
+              :chosen="chosenOptionIndexes(question)"
+            />
             <p><span class="ra-label">你的答案</span> {{ answerText(question, answers[question.id]) }}</p>
             <p class="ra-correct"><span class="ra-label">正确答案</span> {{ correctText(question) }}</p>
             <img v-if="answerImages[question.id]" class="pq-photo-preview" :src="answerImages[question.id].dataUrl" :alt="`第 ${index + 1} 题手写稿`" />

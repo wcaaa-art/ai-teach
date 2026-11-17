@@ -882,11 +882,25 @@
 - P5-2（`4e36bfc`）：`scripts/rag-add-doc.mjs`（`npm run rag:add`）增量入库 + `loadRagIndex` 按 mtime 2 秒窗口热加载；`tokenizeForIndex` 与 Python 建库同口径。实测新增一条扇形面积题 3 秒内可被接口检索到，恢复索引后自动消失，全程未重启。
 - 踩坑：本环境里同一条 bash 命令偶尔会被执行两次，导致 python 批量替换重复插入（`App.vue`、`AiLabView.vue` 各出现过一次重复 import/声明）。写文件后要 `grep -c` 校验唯一性，别假设只改了一遍。
 - 当前基线：`npm test` 352、lint 0 error / 26 warning、typecheck、build、`rag:eval` 26/26 + 2 语料缺口、`rag:rerank:eval` 无退化、`safety:eval` 100%/0%。
-- 待做：P5-3 句向量（独立分支）、P5-4 图片链路流式、P6 前端工程（checkJs / 巨型页抽 composable / 引用可点击）。
+- 待做：P5-3 句向量（独立分支）、P5-4 图片链路流式、P6 剩余（DiagnosisView / FocusView 抽 composable、全局 checkJs）。
+
+## 整改 P6：引用可点击 / QuizView 抽 composable / checkJs 扩展（2026-11-17）
+
+- 引用可点击：`server/tools.js` 的 `rag_knowledge_query` 把 `citations` 从字符串改为 `{text,snippet,lowQuality}`；`server/agent.js` 的 `publicCitations` 兼容字符串与对象，片段折叠空白后截 240 字。前端 `AnswerCitations.vue` 标签改 `<button>` + `el-popover`，点开显示卷名、题型、命中片段，低质片段附「公式抽取不完整」提示；弹层 teleport 到 body，样式走 `popper-class="citation-popper"` + `:global`。没做路由跳转：引用里没有章节 id，资料库只索引知识点，搜不到真题卷，跳过去只会空结果。
+- QuizView 抽 composable：手写稿拍照/压缩/OCR 整块搬到 `src/composables/useAnswerPhotos.js`（`answers` 参数注入，暴露 `clearPhotoFiles`），QuizView 只留解构调用；模板与草稿存取不动。DiagnosisView（93.7KB）/ FocusView（84.8KB）尚未抽。
+- checkJs 扩展：`stores/app.js`、`utils/tutorHistory.js`、`utils/agentRun.js`、`utils/liveFocus.js`、`services/speech.js`、`router/index.js` 加 `// @ts-check`；新增 `src/shims-vue.d.ts`，`tsconfig.json` include 补 `src/**/*.d.ts`。受检 JS 8 → 14 个，typecheck 0 错误。全局 `checkJs: true` 仍会带出 server 约 60 条错误，需单独立项。
+- 顺手修：`server/index.js` 原 227/228 行重复的 `rerank` 键（lint `no-dupe-keys`，疑似历史上重复执行插入），删一条，行为不变。
+- 错题选项可见性（2026-11-17 补）：`MistakesView` 展开详情新增 `.detail-options`，按 `correctIndexes / correctIndex / 答案文本` 反推选项下标，红色标错选、绿色标正解；兼容 `single / choice / multiple` 与旧记录。复习弹窗不再只认 `single`。`demoMistakes` 全量换成真实选项与 `single` 类型，填空题只留答案。坑：演示数据原来写 `type: 'choice'`，复习判定只认 `single`，导致选择题被误降级成自评。
+- 选项展示统一（2026-11-17 补 2）：新增 `src/components/QuestionOptions.vue`（props：options / correct / chosen 下标数组 / flags），错题详情、练习回顾、测验回顾三处共用；测验回顾保留「你的选择 · 正确/错误、正确答案」标记。QuizView 删掉本地 `optionReviewState / optionReviewFlag` 与 `review-options` 样式，净减约 150 行。
+- 选项展示统一（2026-11-17 补 3）：`QuestionOptions` 加 `selectable` + `select` 事件（点击/回车/空格选中）；`PaperScanView` 删掉手写 radio 与 `.scan-options` 样式，改用该组件，点选项即写 `correctIndex` 并同步「参考答案」；`DiagnosisView` 结果页「摸底答案与解析」与历史报告「答案与解析」改用该组件，自评题（选项代表掌握程度）仍按文字回显，避免被标成红错选项。走查：摸底结果页、历史报告均显示 A-D 与正确/错误标记；试卷识别页上传图片→OCR→拆题→点 C 后参考答案变 C；三处控制台 0 error。
+- 摸底题目生成抽 composable（2026-11-17 补 4）：新增 `src/composables/useDiagnosticQuestions.js`，集中 `buildPayload`（含按已选章节排除历史题）、900ms 防抖预生成、token 取消、`fetchQuestions` 的参数校验/loading/错误提示，及卸载清理。`DiagnosisView.startAssessment` 只保留「应用结果 + 清空作答 + 翻页」，不再直接引用 `generateDiagnosticQuestions / prefetchDiagnosticQuestions`。
+- 填空题答案核对（2026-11-17 补 4）：`PaperScanView` 标题在「答案待核对」之外，给有答案的填空题加 `info` 标签「参考答案请核对」；单选题仍只在未标正确项时提示。走查：摸底题 10 题正常生成、预生成提示「题库已就绪」；试卷识别页单选题无提示、填空题显示「参考答案请核对」；控制台 0 error。
+- 验证（2026-11-17 补 4）：`npm test` 353 通过、lint 0 error / 26 warning、typecheck、build 19.55s；浏览器 `/diagnosis` 确认预生成提示与答题页题目正常，`/paper-scan` 确认填空题核对标签，均 0 console error。
+- 验证：`npm test` 353 通过（新增引用片段截断用例）、lint 0 error / 26 warning、typecheck、build 15.99s；SSE 实测 tool done 事件带 `snippet` 与 `lowQuality`；浏览器 `/tutor` 点「检索依据」弹出「2022年广东省中考数学真题（解析版）」+ 片段 + 低质提示，控制台 0 error；`/quiz` 选题页正常、切「日常测试」无报错。`/mistakes?demo=mistakes` 走查：展开卡片 4 个选项 A 绿 / C 红，复习弹窗选项可点并给反馈，控制台 0 error。dev 已重启（后端无热重载）。
 
 ## 协作约定
 
-- 每个任务收尾固定格式：**做了什么 / 验证结果 / 下一步建议**，必须带「下一步」，不等豪哥再问。
+- 每个任务收尾固定格式：**做了什么 / 验证结果 / 下一步建议**，必须带「下一步」，不等老大再问。
 - 对话中始终称呼用户「老大」；每次改完代码，回复末尾都要附最新网页入口 `http://localhost:5173`（API 3001），方便直接点开检查。
 
 ## 待补充
@@ -899,9 +913,22 @@
 - 测试 294 → 300（新增 `server/retry.test.js` 6 条）。
 - 超出范围的 A4/B1/B3/C1 已回退：B1/B3 在分支 `backup/batches-ab`，A4 在 tag `batch-a`。
 
+## 学情诊断首屏重构（2026-11-17）
+
+- `/diagnosis` 的 `select` 分支改为三段式：左 340px 范围卡（已测/已选计数 + 纯 CSS 四档刻度 + 上次结果），右侧主卡 `flex:1` 与章节测试/试卷分析两张次卡，底部「诊断之后」+ 来源说明；1080 单列、700 次卡单列、430 收紧内距；01/02/03 编号已去掉，只留暖色「建议先做」。
+- 数据地基：新增 `refreshMergedMastery()`，在 onMounted（assessmentHistory 赋值后）、grade watcher（rememberGrade 后）、subject/edition watcher（loadChapters 后）、savePaperAnalysis 命中当前范围时调用；内部用 `masteryMergeToken`/`masteryMergeKey` 丢弃切科目迟到的旧结果，key 变化先清空 `mergedMastery`。原因：此前 `mergedMastery` 只在提交摸底后赋值，刷新首屏左卡会误报 0/N。
+- 新增 computed：`selectChapters/selectTestedChapters/selectTestedCount/selectUntestedCount/selectAverage/scaleRows/scaleMoreCount/lastReport/lastReportRows/lastReportAverage/lastReportWeakest`。平均掌握只除已测专题，未测不按 0；老报告无 `masteryByChapter` 时只显示 `topicText`，不补 0/NaN。
+- 验证：test 353/353、typecheck 通过、lint 0 error/26 warning、build 20.47s；浏览器走查（刷新/切年级科目/390 宽/Tab 焦点）控制台 0 error，390 无横向滚动。
+- 2026-11-17 追加：首屏「上次结果」改为只取当前年级+科目的最近一条，切年级/科目不再串全局记录（右上 popover 仍是全局列表）；按老大要求删除「诊断之后」说明块，页面顶部 padding 32→18、header 下间距 26→14、栅格/卡片间距与刻度行高收紧。
+- V2（2026-11-17 晚）：左卡只保留 `selectSummary` 一处百分比；刻度改为 0–3 轴 + 五态图例（未测/未掌握/薄弱/中等/稳固），阈值等价 `Math.round(score)`，行内只写档位词；主卡标题用 `<br>` 强制逗号后换行，删「调整」与题量 meta，底部恢复「诊断之后」三列；顶部去掉绿色标签，报告按钮带 `dateShort`。`mergedMastery` 在 key 变化时清为 `{}`（不是 null），避免异步合并期间回落到上一科 `masteryByChapter`；`selectTestedChapters` 增加 score 有限性校验。
+- 数据核对受限：`effectiveMastery` 是 `<script setup>` 内部变量，未挂 `window`，`console.table(effectiveMastery...)` 无法在控制台直接执行；本会话浏览器自动化持续报 viewport 不可用，因此没有伪造核对表。代码口径：条目不存在=未测，不计入平均；存在且 0=未掌握，计入。zero-baseline / assessment-skipped 也会写 0，若 5/5 中的 0 来自这两类记录，需要另议是否从「已测」排除。
+- 知识摸底弹窗（2026-11-17）：只允许改年级/科目/教材版本，知识点全量只读。`loadChapters` 统一 `selected:true`，删除 `pendingChapterIds` 恢复、`toggleChapter`、全选与 `chapterSelected`。知识点列表改成错题页「知识点分布」同款：单列行式（8px 圆点 + 名称 + 右侧序号），`--chapter-row:40px`、gap 2px，`max-height:calc(40px*5 + 2px*4 + 22px)=230px` 正好 5 行完整 + 第 6 行半行；溢出时才加 `is-scroll`（与错题页 `.point-legend` 完全同款滚动条：5px、thumb `#CDD8D1`、hover `#B9C7BF`、track 透明）+ `is-at-end` 控制底部 20px 渐隐，滚到底撤掉渐隐，最后一行不被蒙住。滚动容器默认 `overflow-y:hidden`，`is-scroll` 才 `auto`；**不要写 `scrollbar-gutter:stable` 或右侧 `padding-right`**，否则会多常驻一条 5px 槽/空隙，和错题页的贴边细条不一样（Chrome 读到 `scrollbar-width` 也会退化系统滚动条）。`syncChapterScrollFade` 由 `@scroll.passive`、`chapters.length`/`catalogLoading` watch、el-dialog `@opened` 三处触发（弹窗 display:none 时 scrollHeight 为 0，必须 `@opened` 补测）。
+- 验证（2026-11-17 知识点滚动）：test 353/353、typecheck 0、lint 0 error/24 warning、build 26.67s；运行态截图仍受浏览器 viewport 不可用限制，未实测。
+
 ## GitHub 协作基线（2026-11-17）
 
 - 主仓库 `https://github.com/wcaaa-art/ai-teach`（**Public**），账号 `wcaaa-art`；Gitee 仍作国内备份，两边历史独立。
+- **唯一开发目录是 `D:\aaa\ai-teach`**（已配 origin、已跟踪 origin/main）。`d:\aaa\trae-cn\temp_20261117_01\ai-teach` 只是压缩包解出的临时副本，不要在里面写代码——2026-11-17 就因为在压缩包副本之外的 D 盘目录继续开发且未配 remote，整批改动差点没同步出去。
 - CLI：`gh` 2.104.0，路径 `C:\Program Files\GitHub CLI\gh.exe`（winget 装，当前 shell 的 PATH 未刷新，调用时写全路径）。token scope 为 `repo / workflow / gist / read:org`；**推 `.github/workflows/*` 必须带 `workflow` scope**，否则 push 被 OAuth 拒（`refusing to allow an OAuth App to create or update workflow`），补授权用 `gh auth refresh -s workflow`。
 - 免费版**私有**仓库调分支保护/规则集一律 403（`Upgrade to GitHub Pro or make this repository public`），所以仓库转为 Public；再次转私有会掉保护。
 - main 保护：必须走 PR、至少 1 人 review、CI check 名 `check` 必须绿、禁 force push 与删除；`enforce_admins=false`，管理员保留绕过能力，避免单人时无法合并（GitHub 不允许自审通过）。
@@ -912,3 +939,4 @@
 - 排障陷阱：非 admin 调 `GET /branches/main/protection` 返回 **404**（GitHub 对无权资源一律 404 不返 403），`GET /rulesets` 为空是因为用的是 classic 保护而非 ruleset；这两个现象都**不能**作为「没有保护」的依据。验证保护是否生效，用普通写权限账号直接 `git push origin main`，应被 `GH006 Protected branch update failed` 拒绝。
 - 顺手修掉 `server/index.js` 能力清单里重复写两遍的 `rerank` 键（当时 lint 唯一 error）。
 - 公开前的敏感信息扫描结论：无真实密钥入库，`.env` 与 `server/data/` 均未跟踪；MEMORY.md 里只有本机路径 `C:/Users/豪` 与 Gitee 地址，属公开可见信息，未做脱敏。
+

@@ -4,12 +4,14 @@ import { ElMessage } from 'element-plus'
 import { useRoute, useRouter } from 'vue-router'
 import ChartPanel from '../components/ChartPanel.vue'
 import VideoSuggestion from '../components/VideoSuggestion.vue'
-import { analyzeExamPaper, extractQuestion, getCurriculumChapters, getCurriculumSubjects, generateDiagnosticQuestions, generateLearningPlan, generatePlanSkeleton, prefetchDiagnosticQuestions } from '../services/api.js'
+import { analyzeExamPaper, extractQuestion, getCurriculumChapters, getCurriculumSubjects, generateLearningPlan, generatePlanSkeleton } from '../services/api.js'
 import { deletePlan, loadAssessments, loadExamScores, loadMistakes, loadPlans, loadProfile, loadQuizResults, makeId, saveAssessment, saveMistake, savePlan, saveProfile } from '../db/index.js'
 import { buildAssessmentMistakes } from '../utils/assessmentMistakes.js'
 import { mergeChapterMastery } from '../utils/mastery.js'
+import { useDiagnosticQuestions } from '../composables/useDiagnosticQuestions.js'
 import { useAppStore } from '../stores/app.js'
 import { formatMathText } from '../utils/formatMath.js'
+import QuestionOptions from '../components/QuestionOptions.vue'
 
 const store = useAppStore()
 const route = useRoute()
@@ -17,10 +19,6 @@ const router = useRouter()
 const page = ref('select')
 const loading = ref(false)
 const catalogLoading = ref(false)
-const assessmentLoading = ref(false)
-const prefetchState = ref('')
-let prefetchTimer = null
-let prefetchToken = 0
 const errorMessage = ref('')
 const gradeOptions = ref([])
 const subjectOptions = ref([])
@@ -44,6 +42,18 @@ function reviewExplanationRows(question) {
     const index = 'ABCDEFGH'.indexOf(match[1])
     return { label: match[1], text: match[2], verdict: index === Number(question.correctIndex) ? 'right' : 'wrong' }
   })
+}
+// 回顾里的选择题把选项铺开，和错题库、测验回顾一致；自评题的选项是掌握程度，仍按文字回显。
+function hasReviewOptions(question) {
+  return !question.selfAssessment && Array.isArray(question.options) && question.options.length > 0
+}
+function reviewCorrect(question) {
+  const index = Number(question.correctIndex)
+  return Number.isInteger(index) && index >= 0 ? [index] : []
+}
+function reviewChosen(question) {
+  const index = Number(question.chosenIndex)
+  return question.chosenIndex === null || question.chosenIndex === undefined || !Number.isInteger(index) || index < 0 ? [] : [index]
 }
 const masteryByChapter = ref({})
 const assessmentSource = ref('')
@@ -89,10 +99,25 @@ const matchingAssessments = computed(() => {
   return assessmentHistory.value.filter(item => Array.isArray(item.questions) && item.questions.length && item.grade === profile.grade && item.subject === profile.subject && (item.chapterIds || []).some(id => selected.has(id)))
 })
 const assessmentAttemptCount = computed(() => matchingAssessments.value.length)
+// 题目生成与预生成交给 composable，页面只保留作答与结果展示状态。
+const { assessmentLoading, prefetchState, fetchQuestions } = useDiagnosticQuestions({
+  page, profile, chapters, selectedChapterIds, questionCount, matchingAssessments, assessmentAttemptCount
+})
 const canStartAssessment = computed(() => Boolean(profile.grade && profile.subject && selectedChapterIds.value.length && !assessmentLoading.value))
 // 三个入口都走弹窗：摸底在弹窗里选范围和专题，测试在弹窗里选模式，试卷分析在弹窗里上传照片。
 const assessmentDialogVisible = ref(false)
 const quizDialogVisible = ref(false)
+// 知识点列表超过一屏才显示细滚动条和底部渐隐；滚到底撤掉渐隐，最后一行不会被蒙住。
+const chapterScrollRef = ref(null)
+const chapterScrollMore = ref(false)
+const chapterScrollAtEnd = ref(true)
+function syncChapterScrollFade() {
+  const el = chapterScrollRef.value
+  if (!el) { chapterScrollMore.value = false; chapterScrollAtEnd.value = true; return }
+  chapterScrollMore.value = el.scrollHeight - el.clientHeight > 2
+  chapterScrollAtEnd.value = el.scrollTop + el.clientHeight >= el.scrollHeight - 2
+}
+watch([() => chapters.value.length, () => catalogLoading.value, assessmentDialogVisible], () => nextTick(syncChapterScrollFade), { flush: 'post' })
 // 章节测试需要范围就绪；范围缺失时在弹窗里一键转去摸底弹窗选专题。
 function openAssessmentDialog() { assessmentDialogVisible.value = true }
 function switchQuizToAssessment() {
@@ -286,15 +311,27 @@ async function savePaperRecord() {
     await saveAssessment(record)
     assessmentHistory.value = [record, ...assessmentHistory.value]
     paperSaved.value = true
-    if (record.grade === profile.grade && record.subject === profile.subject) {
-      const [quizResults, mistakeRecords] = await Promise.all([loadQuizResults(), loadMistakes()])
-      mergedMastery.value = mergeChapterMastery({ assessments: assessmentHistory.value, quizResults, mistakes: mistakeRecords, grade: profile.grade, subject: profile.subject, edition: profile.edition })
-    }
+    if (record.grade === profile.grade && record.subject === profile.subject) await refreshMergedMastery()
     ElMessage.success('已保存为学情记录，可在右上角「查看上次报告」回看。')
   } catch { ElMessage.error('保存失败，请稍后重试。') }
 }
 // 合并掌握度：摸底 + 章节测试 + 错题按时间衰减加权，学校成绩只进计划配比。
 const mergedMastery = ref(null)
+// 进首屏就按当前年级/科目/版本合并一次；token 丢弃切科目时迟到的旧结果。
+let masteryMergeToken = 0
+let masteryMergeKey = ''
+async function refreshMergedMastery() {
+  const token = ++masteryMergeToken
+  const key = `${profile.grade}|${profile.subject}|${profile.edition}`
+  if (key !== masteryMergeKey) { masteryMergeKey = key; mergedMastery.value = {} }
+  if (!profile.grade || !profile.subject) return
+  const [quizResults, mistakeRecords] = await Promise.all([loadQuizResults(), loadMistakes()])
+  if (token !== masteryMergeToken) return
+  mergedMastery.value = mergeChapterMastery({
+    assessments: assessmentHistory.value, quizResults, mistakes: mistakeRecords,
+    grade: profile.grade, subject: profile.subject, edition: profile.edition
+  })
+}
 const effectiveMastery = computed(() => {
   if (mergedMastery.value) return mergedMastery.value
   return Object.fromEntries(Object.entries(masteryByChapter.value).map(([id, score]) => [id, { score, sourceLabels: ['摸底'], confidence: '低' }]))
@@ -305,6 +342,55 @@ const masteryRows = computed(() => chapters.value.filter(chapter => effectiveMas
 const planMastery = computed(() => mergedMastery.value
   ? Object.fromEntries(Object.entries(mergedMastery.value).map(([id, item]) => [id, item.score]))
   : masteryByChapter.value)
+
+// 首屏「本次范围」：只统计已勾选专题，未测专题不按 0 分计入平均。
+const selectChapters = computed(() => chapters.value.filter(chapter => chapter.selected))
+const selectTestedChapters = computed(() => selectChapters.value.filter(chapter => Number.isFinite(Number(effectiveMastery.value[chapter.id]?.score))))
+const selectTestedCount = computed(() => selectTestedChapters.value.length)
+const selectUntestedCount = computed(() => Math.max(0, selectChapters.value.length - selectTestedCount.value))
+const selectAverage = computed(() => {
+  const tested = selectTestedChapters.value
+  if (!tested.length) return null
+  const total = tested.reduce((sum, chapter) => sum + Number(effectiveMastery.value[chapter.id]?.score || 0), 0)
+  return Math.round(total / tested.length / 3 * 100)
+})
+function masteryBand(score) {
+  if (score === null) return { key: 'untested', label: '未测', current: -1 }
+  const level = Math.round(Math.max(0, Math.min(3, score)))
+  const labels = ['未掌握', '薄弱', '中等', '稳固']
+  const keys = ['zero', 'weak', 'medium', 'solid']
+  return { key: keys[level], label: labels[level], current: level }
+}
+// 一行只表达一个结论：已测只算 effectiveMastery 里真实存在的条目，未测不进平均分。
+const selectSummary = computed(() => {
+  if (!selectChapters.value.length) return '还没选范围，点「调整」勾选本次专题'
+  if (!selectTestedCount.value) return `共 ${selectChapters.value.length} 个专题 · 尚未测过任何一项`
+  return `已测 ${selectTestedCount.value} / ${selectChapters.value.length} 个专题 · 平均 ${selectAverage.value}%`
+})
+const selectRangeHint = computed(() => {
+  if (!selectChapters.value.length) return '先在弹窗里选年级、科目与专题'
+  if (!selectUntestedCount.value) return `本次范围 ${selectChapters.value.length} 个专题 · 都已测过，可再摸一次校准`
+  return `本次范围 ${selectChapters.value.length} 个专题 · 其中 ${selectUntestedCount.value} 个还没测过`
+})
+// 刻度尺：0–3 四档，轴与点共用同一套列宽；未测留空环，0 分仍是「未掌握」。
+const scaleRows = computed(() => selectChapters.value.slice(0, 8).map(chapter => {
+  const record = effectiveMastery.value[chapter.id]
+  const raw = record ? Number(record.score) : null
+  const score = raw !== null && Number.isFinite(raw) ? raw : null
+  const band = masteryBand(score)
+  return {
+    id: chapter.id, name: chapter.name, score,
+    key: band.key, label: band.label, current: band.current,
+    spoken: score === null ? `${chapter.name}，未测` : `${chapter.name}，掌握度 ${score} 分，${band.label}`
+  }
+}))
+const scaleMoreCount = computed(() => Math.max(0, selectChapters.value.length - scaleRows.value.length))
+function scaleDotClass(row, index) {
+  if (row.score === null) return index === 0 ? 'untested' : 'idle'
+  if (index > row.current) return 'idle'
+  if (row.current === 0) return index === 0 ? 'zero current' : 'idle'
+  return [row.key, index === row.current ? 'current' : '']
+}
 // 掌握度 3 档制：2 档及以上算掌握较好，其余进入补强清单。
 const strongChapters = computed(() => masteryRows.value.filter(row => row.mastery >= 2))
 const weakChapters = computed(() => masteryRows.value.filter(row => row.mastery < 2).sort((left, right) => left.mastery - right.mastery))
@@ -321,6 +407,7 @@ function toggleVideoPanel(chapter) {
 }
 // 摸底报告二次查看：结果只在提交当次可见，这里从 IndexedDB 记录还原一份只读报告。
 const reportSourceLabels = { agent: 'DeepSeek 出题', deepseek: 'DeepSeek 出题', 'deepseek-with-local-fill': 'DeepSeek 出题 + 本地补题', 'local-fallback': '本地题库', 'local-self-check': '本地自评', 'zero-baseline': '从零基础规划', 'assessment-skipped': '跳过摸底', paper: '试卷分析' }
+const reportKindLabels = { 'zero-baseline': '从零基础', 'assessment-skipped': '跳过摸底', paper: '试卷分析' }
 // 摸底报告入口移到页头右上角：下拉面板按时间倒序列出历史记录，行内展示年级 / 学科 / 知识点。
 const reportPopoverVisible = ref(false)
 const reportHistory = computed(() => [...assessmentHistory.value]
@@ -332,10 +419,31 @@ const reportHistory = computed(() => [...assessmentHistory.value]
     return {
       ...item,
       dateText: new Date(item.createdAt).toLocaleDateString('zh-CN'),
+      dateShort: (() => {
+        const date = new Date(item.createdAt)
+        return `${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`
+      })(),
       sourceLabel: reportSourceLabels[item.source] || '摸底',
+      kindLabel: reportKindLabels[item.source] || '摸底',
       topicText: names.length ? `${names.slice(0, 2).join('、')}${names.length > 2 ? ` 等 ${names.length} 个专题` : ''}` : `${(item.chapterIds || []).length} 个专题`
     }
   }))
+const latestReportShort = computed(() => reportHistory.value[0]?.dateShort || '')
+// 首屏「上次结果」：只取当前年级/科目的最近一条，切年级或科目后不显示其他范围的历史。
+const lastReport = computed(() => reportHistory.value.find(item => item.grade === profile.grade && item.subject === profile.subject) || null)
+const lastReportRows = computed(() => {
+  const record = lastReport.value
+  if (!record) return []
+  const nameById = new Map((record.chapters || []).map(item => [item.id, item.name]))
+  for (const question of record.questions || []) if (!nameById.has(question.chapterId)) nameById.set(question.chapterId, question.chapterName)
+  return Object.entries(record.masteryByChapter || {}).map(([id, score]) => {
+    const value = Number(score)
+    return Number.isFinite(value) ? { id, name: nameById.get(id) || id, score: value } : null
+  }).filter(Boolean)
+})
+const lastReportWeakest = computed(() => lastReportRows.value
+  .filter(row => row.score < 3)
+  .sort((left, right) => left.score - right.score)[0]?.name || '')
 function openReportFromHistory(item) {
   reportPopoverVisible.value = false
   openReport(item)
@@ -379,9 +487,6 @@ function openReport(assessment) {
   page.value = 'report'
 }
 // 专题全选：只在当前教材版本的目录里生效。
-const allChaptersSelected = computed(() => chapters.value.length > 0 && chapters.value.every(chapter => chapter.selected))
-const someChaptersSelected = computed(() => { const count = chapters.value.filter(chapter => chapter.selected).length; return count > 0 && count < chapters.value.length })
-function toggleAllChapters(checked) { chapters.value.forEach(chapter => { chapter.selected = checked }) }
 const radarValues = computed(() => chapters.value.slice(0, 8).map(chapter => Math.round((effectiveMastery.value[chapter.id]?.score || 0) / 3 * 100)))
 const radarOption = computed(() => ({
   tooltip: { formatter: item => `${item.name}：${item.value}%` },
@@ -423,8 +528,6 @@ function ensureEdition() {
 }
 
 let chapterRequestId = 0
-// 回到本页时待恢复的专题勾选，章节加载完成后一次性应用。
-let pendingChapterIds = null
 async function loadChapters() {
   if (!profile.grade || !profile.subject) { chapters.value = []; return }
   const requestId = ++chapterRequestId
@@ -434,16 +537,12 @@ async function loadChapters() {
   // 快速切换科目时丢弃过期响应，避免旧列表覆盖当前选择。
   if (requestId !== chapterRequestId) return
   if (response.success) {
-    chapters.value = response.data?.chapters || []
+    // 首屏范围固定为当前目录的全部知识点，弹窗里只改年级、科目和教材版本。
+    chapters.value = (response.data?.chapters || []).map(chapter => ({ ...chapter, selected: true }))
     editionNote.value = response.data?.editionNote || ''
   } else {
     errorMessage.value = '课程专题暂时无法加载，请检查后端服务。'
     chapters.value = []
-  }
-  // 首次进入时把上次诊断的专题勾选还原，保证「从零基础规划」等按钮立即可用。
-  if (pendingChapterIds) {
-    for (const chapter of chapters.value) chapter.selected = pendingChapterIds.includes(chapter.id)
-    pendingChapterIds = null
   }
   catalogLoading.value = false
 }
@@ -464,16 +563,21 @@ watch(() => profile.grade, async grade => {
   subjectOptions.value = response.data?.subjects || []
   editionsBySubject.value = response.data?.editions || {}
   await rememberGrade(grade)
+  await refreshMergedMastery()
 })
-watch(() => profile.subject, () => {
+watch(() => profile.subject, async () => {
   ensureEdition()
   // 每个科目首次使用目标分时给一份默认值，换科目不会带走上一科的目标。
   ensureTarget()
-  loadChapters()
+  await loadChapters()
+  await refreshMergedMastery()
   loadExamScoresForSubject()
 })
 // 换版本要重新取该版本目录，已选专题会随 id 变化自动清空。
-watch(() => profile.edition, loadChapters)
+watch(() => profile.edition, async () => {
+  await loadChapters()
+  await refreshMergedMastery()
+})
 
 // 鼠标悬停学段控件展开初中三个年级；选择后立即生效。
 function selectGrade(grade) {
@@ -496,8 +600,6 @@ async function findGradeForSubject(subject) {
   return ''
 }
 
-function chapterSelected(id) { return chapters.value.find(chapter => chapter.id === id)?.selected === true }
-function toggleChapter(chapter) { chapter.selected = !chapter.selected }
 
 // 进入章节测试页时带上当前学段/年级/科目和已选专题，减少重复选择。
 function openQuiz(mode) {
@@ -514,58 +616,11 @@ function openQuiz(mode) {
   })
 }
 
-// 预生成和正式开始共用同一份请求参数，服务端才能命中同一份题库缓存。
-function assessmentPayload() {
-  const selected = chapters.value.filter(chapter => chapter.selected)
-  const selectedIds = new Set(selected.map(chapter => chapter.id))
-  const previousQuestions = matchingAssessments.value.flatMap(item => (item.questions || []).filter(question => selectedIds.has(question.chapterId)))
-  return {
-    grade: profile.grade, subject: profile.subject, edition: profile.edition,
-    chapters: selected, questionCount: questionCount.value, attempt: assessmentAttemptCount.value + 1,
-    excludeQuestions: previousQuestions.map(question => ({ id: question.id, stem: question.stem, chapterId: question.chapterId, dimension: question.dimension }))
-  }
-}
-
-// 选择范围变化后延迟预生成，避免连续勾选章节时反复请求。
-function schedulePrefetch() {
-  clearTimeout(prefetchTimer)
-  const token = ++prefetchToken
-  prefetchState.value = ''
-  if (page.value !== 'select' || !profile.grade || !profile.subject || !selectedChapterIds.value.length) return
-  prefetchTimer = setTimeout(async () => {
-    prefetchState.value = 'preparing'
-    const response = await prefetchDiagnosticQuestions(assessmentPayload())
-    if (token !== prefetchToken) return
-    prefetchState.value = response.success && response.data?.ready ? 'ready' : ''
-  }, 900)
-}
-
-watch(
-  () => [page.value, profile.grade, profile.subject, profile.edition, questionCount.value, assessmentAttemptCount.value, selectedChapterIds.value.join(',')],
-  schedulePrefetch,
-  { immediate: true }
-)
-
 async function startAssessment() {
-  if (!profile.grade || !profile.subject) { ElMessage.info('请先选择当前年级和主要科目。'); return }
-  if (!selectedChapterIds.value.length) { ElMessage.info('请至少选择一个学习专题。'); return }
-  assessmentLoading.value = true
-  let response
-  try {
-    // 选范围时可能已经预生成好，这里按同一参数请求即可直接命中缓存。
-    response = await generateDiagnosticQuestions(assessmentPayload())
-  } catch (error) {
-    // 网络或超时异常时必须解除 loading，否则「开始摸底」按钮会永久禁用。
-    console.warn('摸底题生成请求失败。', error)
-    ElMessage.warning('摸底题暂时无法生成，仍可选择从零基础规划。')
-    return
-  } finally {
-    assessmentLoading.value = false
-  }
-  if (!response.success) { ElMessage.warning('摸底题暂时无法生成，仍可选择从零基础规划。'); return }
-  questions.value = response.data?.questions || []
-  if (!questions.value.length) { ElMessage.warning('暂时没有生成摸底题，请稍后重试或从零基础规划。'); return }
-  assessmentSource.value = response.source || 'agent'
+  const generated = await fetchQuestions()
+  if (!generated) return
+  questions.value = generated.questions
+  assessmentSource.value = generated.source
   assessmentReview.value = []
   Object.keys(answers).forEach(key => delete answers[key])
   page.value = 'assessment'
@@ -840,13 +895,13 @@ onMounted(async () => {
         }
       }
     }
-    // 年级 watcher 会在恢复资料时清空科目，这里补回上次的科目与专题勾选，否则回到本页按钮会全部禁用。
+    // 年级 watcher 会在恢复资料时清空科目，这里补回上次的科目；知识点始终按当前目录全量带入。
     if (!requestedSubject && old?.subject && subjectOptions.value.includes(old.subject)) {
-      pendingChapterIds = old.chapterIds || []
       if (!profile.subject) profile.subject = old.subject
       await loadChapters()
     }
     assessmentHistory.value = await loadAssessments()
+    await refreshMergedMastery()
   } catch (error) { errorMessage.value = '课程目录暂时无法加载，请确认 API 服务已经启动。' }
   store.setPlans(await loadPlans())
 })
@@ -859,7 +914,7 @@ onBeforeUnmount(() => cancelAnimationFrame(countFrame))
       <div><span class="eyebrow">学情诊断</span><h2 class="page-title">测一次，就知道下一步该学什么</h2><p class="page-subtitle">三种入口共用同一份学情：做一组摸底题、按专题做章节测试，或上传学校试卷让 AI 拆解知识点与错因。</p></div>
       <div class="header-actions">
         <el-popover v-model:visible="reportPopoverVisible" trigger="click" placement="bottom-end" :width="340">
-          <template #reference><el-button plain round>查看上次报告</el-button></template>
+          <template #reference><el-button plain round>查看上次报告<i class="report-entry-date">{{ latestReportShort || '暂无记录' }}</i></el-button></template>
           <div class="report-panel">
             <div class="report-panel-head"><strong>摸底报告</strong><span class="muted">{{ reportHistory.length }} 次</span></div>
             <div v-if="reportHistory.length" class="report-panel-list">
@@ -872,39 +927,109 @@ onBeforeUnmount(() => cancelAnimationFrame(countFrame))
             <p v-else class="report-panel-empty">还没有摸底记录，先选好专题做一次。</p>
           </div>
         </el-popover>
-        <el-tag type="success" effect="plain">本地保存 · 可跳过摸底</el-tag>      </div>
+      </div>
     </div>
 
     <el-alert v-if="errorMessage" :title="errorMessage" type="warning" :closable="false" show-icon class="notice" />
 
-    <section v-if="page === 'select'" class="hub">
-      <!-- 首屏只留三个入口，卡片垂直居中撑满主视口，避免下方大片空白。 -->
-      <div class="hub-cards">
-        <button type="button" class="hub-card" @click="openAssessmentDialog">
-          <span class="hub-card-badge">建议先做</span>
-          <span class="hub-card-kicker"><em>01</em>知识摸底</span>
-          <strong class="hub-card-title">用一组题测出掌握度，生成下一步学习计划</strong>
-          <span class="hub-card-desc">AI 按所选专题出题，提交后给出掌握度、长短板和计划编排顺序。</span>
-          <span class="hub-card-meta">{{ selectedChapterIds.length ? `${profile.grade} · ${profile.subject || '未选科目'} · ${selectedChapterIds.length} 个专题` : '进入后选择年级、科目和专题' }}</span>
-          <span class="hub-card-cta">开始第 {{ assessmentAttemptCount + 1 }} 次摸底<i aria-hidden="true">→</i></span>
-        </button>
-        <button type="button" class="hub-card" @click="quizDialogVisible = true">
-          <span class="hub-card-kicker"><em>02</em>章节测试</span>
-          <strong class="hub-card-title">日常、周测或整卷，按专题即时出题</strong>
-          <span class="hub-card-desc">做完立刻判分，结果按章节并入掌握度，和摸底一起决定计划优先级。</span>
-          <span class="hub-card-meta">{{ profile.grade }} · {{ profile.subject || '未选科目' }} · {{ selectedChapterIds.length ? `${selectedChapterIds.length} 个专题` : '未选专题' }}</span>
-          <span class="hub-card-cta">选择测试类型<i aria-hidden="true">→</i></span>
-        </button>
-        <button type="button" class="hub-card" @click="openPaperDialog">
-          <span class="hub-card-kicker"><em>03</em>试卷分析</span>
-          <strong class="hub-card-title">上传学校试卷，让 AI 拆知识点与错因</strong>
-          <span class="hub-card-desc">拍 1–3 张试卷照片，识别题目、作答和批改痕迹，输出薄弱点与补强建议。</span>
-          <span class="hub-card-meta">照片只在本机 OCR · 只把识别出的文字发给 AI</span>
-          <span class="hub-card-cta">上传试卷分析<i aria-hidden="true">→</i></span>
-        </button>
+    <section v-if="page === 'select'" class="hub-select">
+      <div class="diagnosis-select-grid">
+        <aside class="surface surface-pad scope-card">
+          <div class="scope-head">
+            <div>
+              <span class="eyebrow">本次范围</span>
+              <h3 class="scope-title">{{ profile.grade || '未选年级' }} · {{ profile.subject || '未选科目' }}</h3>
+            </div>
+            <button type="button" class="scope-adjust" @click="openAssessmentDialog">调整</button>
+          </div>
+
+          <p class="scope-summary">{{ selectSummary }}</p>
+
+          <div v-if="scaleRows.length" class="scale-axis" aria-hidden="true">
+            <span class="scale-axis-title">掌握度</span>
+            <span class="scale-axis-track"><i>0</i><i>1</i><i>2</i><i>3</i></span>
+            <span></span>
+          </div>
+          <ol v-if="scaleRows.length" class="mastery-scale">
+            <li v-for="row in scaleRows" :key="row.id" class="scale-row" :class="{ untested: row.score === null }" :aria-label="row.spoken">
+              <span class="scale-name">{{ row.name }}</span>
+              <span class="scale-track" aria-hidden="true">
+                <i v-for="point in 4" :key="point" class="scale-dot" :class="scaleDotClass(row, point - 1)"></i>
+              </span>
+              <span class="scale-state" :class="row.key">{{ row.label }}</span>
+            </li>
+          </ol>
+          <p v-if="scaleMoreCount" class="scale-more">另有 {{ scaleMoreCount }} 个专题未在此显示</p>
+          <div class="scale-legend">
+            <span><i class="scale-dot untested"></i>未测</span>
+            <span><i class="scale-dot zero"></i>未掌握</span>
+            <span><i class="scale-dot weak"></i>薄弱</span>
+            <span><i class="scale-dot medium"></i>中等</span>
+            <span><i class="scale-dot solid"></i>稳固</span>
+          </div>
+
+          <section v-if="lastReport" class="last-report">
+            <div class="last-report-head">
+              <strong>上次{{ lastReport.kindLabel }} · {{ lastReport.dateShort }}</strong>
+            </div>
+            <template v-if="lastReportRows.length">
+              <p v-if="lastReportWeakest" class="last-report-weak">最该补 {{ lastReportWeakest }}</p>
+              <p v-else class="last-report-weak">这次没有明显薄弱点</p>
+            </template>
+            <p v-else class="last-report-legacy">{{ lastReport.topicText }}</p>
+            <button type="button" class="last-report-link" @click="openReportFromHistory(lastReport)">看这份报告 →</button>
+          </section>
+          <section v-else class="last-report last-report-empty">
+            <div class="last-report-head"><strong>测完你会拿到</strong></div>
+            <p>一份可回看的掌握度报告：每个专题的刻度、整体情况和最该补的专题。</p>
+            <button type="button" class="last-report-link" @click="openAssessmentDialog">先做一次摸底 →</button>
+          </section>
+        </aside>
+
+        <div class="diagnosis-main">
+          <article class="surface surface-pad select-main-card">
+            <div class="select-main-top">
+              <div class="select-main-head">
+                <span class="select-badge">建议先做</span>
+                <span class="select-kicker">知识摸底</span>
+              </div>
+              <h3 class="select-main-title">用一组题测出掌握度，<br>生成下一步学习计划</h3>
+              <p class="select-scope-line">{{ selectRangeHint }}</p>
+            </div>
+            <div class="select-main-actions">
+              <p class="select-state">{{ startHint }}</p>
+              <el-button type="primary" size="large" @click="openAssessmentDialog">开始第 {{ assessmentAttemptCount + 1 }} 次摸底</el-button>
+            </div>
+          </article>
+
+          <div class="select-secondary">
+            <button type="button" class="surface select-sub-card" @click="quizDialogVisible = true">
+              <span class="select-sub-kicker">章节测试</span>
+              <strong>日常、周测或整卷，按专题即时出题</strong>
+              <span class="select-sub-desc">做完立刻判分，结果按章节并入掌握度，和摸底一起决定计划优先级。</span>
+              <span class="select-sub-cta">选择测试类型 <i aria-hidden="true">→</i></span>
+            </button>
+            <button type="button" class="surface select-sub-card" @click="openPaperDialog">
+              <span class="select-sub-kicker">试卷分析</span>
+              <strong>上传学校试卷，让 AI 拆知识点与错因</strong>
+              <span class="select-sub-desc">拍 1–3 张试卷照片，识别题目、作答和批改痕迹，输出薄弱点与补强建议。</span>
+              <span class="select-sub-meta">照片只在本机 OCR · 只把识别出的文字发给 AI</span>
+              <span class="select-sub-cta">上传试卷分析 <i aria-hidden="true">→</i></span>
+            </button>
+          </div>
+        </div>
       </div>
 
-      <p class="hub-foot">三种入口共用同一份掌握度 · 学习数据只保存在本机浏览器 · 摸底可随时重做</p>
+      <section class="surface surface-pad select-after">
+        <span class="eyebrow">诊断之后</span>
+        <div class="select-after-grid">
+          <div><strong>掌握度雷达</strong><p>每个专题按 0–3 分档，长短板同屏看清</p></div>
+          <div><strong>计划编排顺序</strong><p>先补哪块、后练哪块，每条都写明理由</p></div>
+          <div><strong>补强入口</strong><p>薄弱专题直接给练习与视频，不用自己找</p></div>
+        </div>
+        <p class="select-after-note">三种入口共用同一份掌握度 · 学习数据只保存在本机浏览器 · 摸底可随时重做</p>
+      </section>
+
       <p class="source-note">课程依据：教育部义务教育课程标准（2022年版）。章节顺序跟随所选教材版本；语文、历史、道德与法治使用全国统编教材。专题由平台整理，不是出版社逐字目录或官方题库。</p>
     </section>
 
@@ -921,7 +1046,7 @@ onBeforeUnmount(() => cancelAnimationFrame(countFrame))
     <section v-else-if="page === 'result'" class="result-layout">
       <div class="surface surface-pad result-header"><span class="eyebrow">你的学习计划</span><h2>{{ profile.grade }} · {{ profile.subject }}学习路线已准备好</h2><p v-if="assessmentReview.length" class="assessment-score">本次已答 {{ assessmentAnsweredCount }} / {{ questions.length }} 题<span v-if="assessmentObjectiveCount">，客观题答对 {{ assessmentCorrectCount }} / {{ assessmentObjectiveCount }} 题</span><span v-else>，本次题目为学习状态自评，不计客观对错</span>。下面可以核对正确答案和解析。</p><p class="muted">{{ explanation }}</p><div class="actions"><el-button type="primary" @click="$router.push('/plans')">按科目查看学习计划</el-button><el-button plain @click="$router.push('/dashboard')">查看掌握度立体图</el-button><el-button text @click="restartDiagnosis">继续添加其他专题</el-button></div></div>
       <div class="result-grid"><section class="surface surface-pad mastery-card"><div class="mastery-head"><h3 class="section-title">摸底掌握度</h3><span v-if="masteryRows.length" class="mastery-average">平均 <strong>{{ radarAverageShown }}</strong>%</span></div><ChartPanel v-if="masteryRows.length" :option="radarOption" :height="330" animate-in/><div v-else class="empty">暂无可量化的诊断分数；完成学习反馈后，掌握图会逐步建立。</div></section><section class="surface surface-pad"><h3 class="section-title">Agent 编排顺序</h3><ol class="sequence-list"><li v-for="plan in generatedPlans.slice(0,7)" :key="plan.id" :class="{bridge:plan.isBridge}"><span class="sequence-dot">{{ plan.isBridge ? '↳' : plan.sequenceOrder }}</span><div><strong>{{ plan.name }}</strong><p class="muted">{{ plan.reason || `${plan.estimatedMinutes} 分钟 · ${plan.priority}优先` }}</p></div></li></ol></section></div>
-      <section v-if="assessmentReview.length" class="surface surface-pad answer-review"><h3 class="section-title">摸底答案与解析</h3><article v-for="(question,index) in assessmentReview" :key="`review-${question.id}`" class="review-card" :class="question.isCorrect === true ? 'correct' : question.isCorrect === false ? 'wrong' : 'self-check'"><div class="question-meta"><el-tag effect="plain">第 {{ index + 1 }} 题 · {{ question.chapterName }}</el-tag><el-tag v-if="question.isCorrect === true" type="success">回答正确</el-tag><el-tag v-else-if="question.isCorrect === false" type="danger">回答错误</el-tag><el-tag v-else type="info">自评题 / 未作答</el-tag></div><h4 v-html="formatMathText(question.stem)"></h4><p class="review-line"><strong>你的选择：</strong><span v-if="question.chosenIndex === null">未作答</span><span v-else v-html="formatMathText(question.options[question.chosenIndex])"></span></p><p v-if="!question.selfAssessment" class="review-line"><strong>正确答案：</strong><span v-html="formatMathText(question.options[question.correctIndex])"></span></p><p class="review-explanation"><strong>解析：</strong></p><ul class="explanation-list"><li v-for="(row,rowIndex) in reviewExplanationRows(question)" :key="`row-${rowIndex}`" :class="row.verdict"><span v-if="row.label" class="option-badge">{{ row.label }}</span><span v-html="formatMathText(row.text)"></span><em v-if="row.verdict" class="verdict">{{ row.verdict === 'right' ? '正确项 · 成立依据' : '错误项 · 反例' }}</em></li></ul></article></section>
+      <section v-if="assessmentReview.length" class="surface surface-pad answer-review"><h3 class="section-title">摸底答案与解析</h3><article v-for="(question,index) in assessmentReview" :key="`review-${question.id}`" class="review-card" :class="question.isCorrect === true ? 'correct' : question.isCorrect === false ? 'wrong' : 'self-check'"><div class="question-meta"><el-tag effect="plain">第 {{ index + 1 }} 题 · {{ question.chapterName }}</el-tag><el-tag v-if="question.isCorrect === true" type="success">回答正确</el-tag><el-tag v-else-if="question.isCorrect === false" type="danger">回答错误</el-tag><el-tag v-else type="info">自评题 / 未作答</el-tag></div><h4 v-html="formatMathText(question.stem)"></h4><QuestionOptions v-if="hasReviewOptions(question)" :options="question.options" :correct="reviewCorrect(question)" :chosen="reviewChosen(question)" flags /><template v-else><p class="review-line"><strong>你的选择：</strong><span v-if="question.chosenIndex === null">未作答</span><span v-else v-html="formatMathText(question.options[question.chosenIndex])"></span></p><p v-if="!question.selfAssessment" class="review-line"><strong>正确答案：</strong><span v-html="formatMathText(question.options[question.correctIndex])"></span></p></template><p class="review-explanation"><strong>解析：</strong></p><ul class="explanation-list"><li v-for="(row,rowIndex) in reviewExplanationRows(question)" :key="`row-${rowIndex}`" :class="row.verdict"><span v-if="row.label" class="option-badge">{{ row.label }}</span><span v-html="formatMathText(row.text)"></span><em v-if="row.verdict" class="verdict">{{ row.verdict === 'right' ? '正确项 · 成立依据' : '错误项 · 反例' }}</em></li></ul></article></section>
       <section v-if="masteryRows.length" class="surface surface-pad strength-card">
         <div class="strength-head"><h3 class="section-title">长短板与视频补强</h3><el-tag effect="plain">{{ profile.edition }}</el-tag></div>
         <p class="strength-summary">{{ strengthSummary }}</p>
@@ -972,8 +1097,11 @@ onBeforeUnmount(() => cancelAnimationFrame(countFrame))
           <el-collapse-item v-for="(question,index) in reportData.review" :key="`report-${index}`" :name="String(index)">
             <template #title><span>第 {{ index + 1 }} 题 · {{ question.chapterName }}</span><el-tag v-if="question.isCorrect === true" type="success" class="review-flag">正确</el-tag><el-tag v-else-if="question.isCorrect === false" type="danger" class="review-flag">错误</el-tag><el-tag v-else type="info" class="review-flag">未判分</el-tag></template>
             <h4 v-html="formatMathText(question.stem)"></h4>
-            <p class="review-line"><strong>你的选择：</strong><span v-if="question.chosenIndex === null">未作答</span><span v-else v-html="formatMathText(question.options[question.chosenIndex])"></span></p>
-            <p v-if="!question.selfAssessment" class="review-line"><strong>正确答案：</strong><span v-html="formatMathText(question.options[question.correctIndex])"></span></p>
+            <QuestionOptions v-if="hasReviewOptions(question)" :options="question.options" :correct="reviewCorrect(question)" :chosen="reviewChosen(question)" flags />
+            <template v-else>
+              <p class="review-line"><strong>你的选择：</strong><span v-if="question.chosenIndex === null">未作答</span><span v-else v-html="formatMathText(question.options[question.chosenIndex])"></span></p>
+              <p v-if="!question.selfAssessment" class="review-line"><strong>正确答案：</strong><span v-html="formatMathText(question.options[question.correctIndex])"></span></p>
+            </template>
             <ul class="explanation-list"><li v-for="(row,rowIndex) in reviewExplanationRows(question)" :key="`report-row-${rowIndex}`" :class="row.verdict"><span v-if="row.label" class="option-badge">{{ row.label }}</span><span v-html="formatMathText(row.text)"></span></li></ul>
           </el-collapse-item>
         </el-collapse>
@@ -993,39 +1121,47 @@ onBeforeUnmount(() => cancelAnimationFrame(countFrame))
       </section>
     </section>
 
-    <el-dialog v-model="assessmentDialogVisible" title="知识摸底" width="min(920px,94vw)">
-      <p class="dialog-lead">选好年级、科目和专题，AI 按专题出一组题；提交后给出掌握度、长短板和学习计划。</p>
-      <div class="dialog-form">
-        <label class="dialog-field">
-          <span>年级</span>
-          <el-dropdown trigger="hover" placement="bottom-start" :disabled="catalogLoading" @command="selectGrade">
-            <button type="button" class="stage-trigger"><span>初中 · {{ profile.grade || '初一' }}</span><span class="stage-trigger-arrow" aria-hidden="true">▾</span></button>
-            <template #dropdown>
-              <el-dropdown-menu><el-dropdown-item v-for="grade in gradeOptions" :key="grade" :command="grade">{{ grade }}</el-dropdown-item></el-dropdown-menu>
-            </template>
-          </el-dropdown>
-        </label>
-        <label class="dialog-field"><span>科目</span><el-select v-model="profile.subject" placeholder="先选年级"><el-option v-for="subject in subjectOptions" :key="subject" :label="subject" :value="subject" /></el-select></label>
-        <label class="dialog-field"><span>教材版本</span><el-select v-model="profile.edition" placeholder="选择版本" :disabled="!profile.subject"><el-option v-for="item in editionOptions" :key="item.edition" :label="item.edition" :value="item.edition" /></el-select></label>
-      </div>
+    <el-dialog v-model="assessmentDialogVisible" title="知识摸底" class="assessment-dialog" width="min(920px,94vw)" @opened="syncChapterScrollFade">
+      <div class="assessment-dialog-body">
+        <p class="dialog-lead">选好年级、科目和教材版本，当前目录的知识点会全部带入；AI 按这些知识点出一组题，提交后给出掌握度、长短板和学习计划。</p>
+        <div class="dialog-form">
+          <label class="dialog-field">
+            <span>年级</span>
+            <el-dropdown trigger="hover" placement="bottom-start" :disabled="catalogLoading" @command="selectGrade">
+              <button type="button" class="stage-trigger"><span>初中 · {{ profile.grade || '初一' }}</span><span class="stage-trigger-arrow" aria-hidden="true">▾</span></button>
+              <template #dropdown>
+                <el-dropdown-menu><el-dropdown-item v-for="grade in gradeOptions" :key="grade" :command="grade">{{ grade }}</el-dropdown-item></el-dropdown-menu>
+              </template>
+            </el-dropdown>
+          </label>
+          <label class="dialog-field"><span>科目</span><el-select v-model="profile.subject" placeholder="先选年级"><el-option v-for="subject in subjectOptions" :key="subject" :label="subject" :value="subject" /></el-select></label>
+          <label class="dialog-field"><span>教材版本</span><el-select v-model="profile.edition" placeholder="选择版本" :disabled="!profile.subject"><el-option v-for="item in editionOptions" :key="item.edition" :label="item.edition" :value="item.edition" /></el-select></label>
+        </div>
 
-      <div class="dialog-chapter-head">
-        <strong>学习专题<span class="dialog-chapter-count">{{ selectedChapterIds.length }} / {{ chapters.length }}</span></strong>
-        <div class="dialog-chapter-tools"><el-checkbox :model-value="allChaptersSelected" :indeterminate="someChaptersSelected" :disabled="!chapters.length" @change="toggleAllChapters">全选</el-checkbox></div>
-      </div>
-      <p v-if="editionNote" class="dialog-note">{{ editionNote }}</p>
-      <div v-if="catalogLoading" class="empty">正在读取课程专题…</div>
-      <div v-else-if="chapters.length" class="dialog-chapters">
-        <button v-for="chapter in chapters" :key="chapter.id" type="button" class="chapter-chip" :class="{ selected: chapter.selected }" @click="toggleChapter(chapter)">
-          <span class="chapter-order">{{ String(chapter.order).padStart(2, '0') }}</span>
-          <span class="chapter-name"><span v-if="chapter.unitLabel" class="chapter-unit">{{ chapter.unitLabel }}</span>{{ chapter.name }}</span>
-          <span class="chapter-check">{{ chapter.selected ? '✓' : '+' }}</span>
-        </button>
-      </div>
-      <div v-else class="empty">没有找到这个组合的专题目录。</div>
+        <div class="dialog-chapter-head">
+          <strong>知识点<span class="dialog-chapter-count">共 {{ chapters.length }} 个</span></strong>
+          <span class="dialog-chapter-note">按教材目录顺序</span>
+        </div>
+        <p v-if="editionNote" class="dialog-note">{{ editionNote }}</p>
+        <div
+          ref="chapterScrollRef"
+          class="chapter-scroll"
+          :class="{ 'is-scroll': chapterScrollMore, 'is-at-end': chapterScrollAtEnd }"
+          @scroll.passive="syncChapterScrollFade"
+        >
+          <div v-if="catalogLoading" class="empty">正在读取课程专题…</div>
+          <div v-else-if="chapters.length" class="dialog-chapters">
+            <div v-for="chapter in chapters" :key="chapter.id" class="chapter-chip is-static" :title="chapter.name">
+              <span class="chapter-order">{{ String(chapter.order).padStart(2, '0') }}</span>
+              <span class="chapter-name"><span v-if="chapter.unitLabel" class="chapter-unit">{{ chapter.unitLabel }}</span>{{ chapter.name }}</span>
+            </div>
+          </div>
+          <div v-else class="empty">没有找到这个组合的专题目录。</div>
+        </div>
 
-      <p class="dialog-hint">{{ startHint }}</p>
-      <p v-if="assessmentAttemptCount" class="dialog-tip">当前范围已完成 {{ assessmentAttemptCount }} 次摸底，下一次会自动避开历史题目。</p>
+        <p class="dialog-hint">{{ startHint }}</p>
+        <p v-if="assessmentAttemptCount" class="dialog-tip">当前范围已完成 {{ assessmentAttemptCount }} 次摸底，下一次会自动避开历史题目。</p>
+      </div>
       <template #footer>
         <div class="dialog-footer">
           <label class="dialog-count">题数<el-input-number v-model="questionCount" :min="1" :max="30" size="small" controls-position="right" /></label>
@@ -1138,7 +1274,7 @@ onBeforeUnmount(() => cancelAnimationFrame(countFrame))
 </template>
 
 <style scoped>
-.diagnosis-page{max-width:1520px}.header-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:flex-end}.notice{margin:0 0 16px}
+.diagnosis-page{max-width:1520px;padding-top:18px}.diagnosis-page .page-header{margin-bottom:14px}.report-entry-date{margin-left:6px;font-size:calc(11px*var(--fs-scale));font-style:normal;font-weight:400;color:var(--muted)}.header-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:flex-end}.notice{margin:0 0 16px}
 /* 右上角摸底报告弹层：和 AI 答疑的会话选择一样，点开直接挑一条历史报告。 */
 .report-panel{display:grid;gap:10px}
 .report-panel-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:8px;border-bottom:1px solid var(--border)}
@@ -1151,27 +1287,72 @@ onBeforeUnmount(() => cancelAnimationFrame(countFrame))
 .report-panel-topics{font-size:calc(12px*var(--fs-scale));line-height:1.5}
 .report-panel-meta{font-size:calc(11px*var(--fs-scale));color:var(--muted)}
 .report-panel-empty{margin:4px 0;font-size:calc(12px*var(--fs-scale));color:var(--muted);line-height:1.6}
-/* 首屏行动中心：三张入口卡垂直居中，撑满主视口，避免卡片下方留空。 */
-.hub{display:flex;flex-direction:column;justify-content:flex-start;gap:18px;padding:22px 0 12px}
-.hub-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-/* 三张卡统一浅绿：同一底色、同一描边，靠编号区分入口。 */
-.hub-card{position:relative;display:flex;flex-direction:column;gap:10px;min-height:290px;padding:24px 22px;overflow:hidden;text-align:left;font-family:inherit;color:var(--text);border:1px solid var(--border);border-radius:18px;background:linear-gradient(158deg,#fafdfb 0%,#edf5f1 100%);box-shadow:var(--shadow-soft);cursor:pointer;transition:transform .2s,border-color .2s,box-shadow .2s}
-.hub-card::after{content:'';position:absolute;right:-40px;bottom:-52px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(77,129,122,.09),rgba(77,129,122,.02));transition:transform .28s;pointer-events:none}
-.hub-card>*{position:relative;z-index:1}
-/* 三卡同色后，用右上角小角标标出建议先做的入口，不再靠底色区分。 */
-.hub-card-badge{position:absolute;top:14px;right:14px;z-index:2;padding:3px 9px;border-radius:999px;background:var(--primary);color:#fff;font-size:calc(10px*var(--fs-scale));font-weight:700;letter-spacing:.06em}
-.hub-card:hover{transform:translateY(-3px);border-color:var(--primary);box-shadow:0 24px 48px rgba(53,91,102,.15)}
-.hub-card:hover::after{transform:scale(1.14)}
-.hub-card-kicker{display:flex;align-items:center;gap:8px;font-size:calc(12px*var(--fs-scale));font-weight:700;letter-spacing:.08em;color:var(--primary)}
-.hub-card-kicker em{font-style:normal;padding:3px 8px;border-radius:999px;background:rgba(77,141,142,.14);font-size:calc(11px*var(--fs-scale));letter-spacing:.1em}
-.hub-card-title{font-size:calc(18px*var(--fs-scale));line-height:1.5;font-weight:600}
-.hub-card-desc{font-size:calc(13px*var(--fs-scale));line-height:1.75;color:var(--muted)}
-.hub-card-meta{margin-top:auto;padding-top:14px;border-top:1px dashed rgba(77,141,142,.28);font-size:calc(12px*var(--fs-scale));line-height:1.6;color:#5d7774}
-.hub-card-cta{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:calc(13px*var(--fs-scale));font-weight:700;color:var(--primary)}
-.hub-card-cta i{font-style:normal;transition:transform .2s}
-.hub-card:hover .hub-card-cta i{transform:translateX(4px)}
-.hub-foot{margin:0;text-align:center;font-size:calc(12px*var(--fs-scale));color:var(--muted)}
-.hub .source-note{margin:0;text-align:center}
+/* 首屏三段式：左范围刻度 + 右主卡/次卡 + 底部说明。 */
+.hub-select{display:grid;gap:12px;padding:0 0 8px}
+.diagnosis-select-grid{display:grid;grid-template-columns:340px minmax(0,1fr);gap:12px;align-items:stretch}
+.scope-card{display:flex;flex-direction:column;gap:8px;min-width:0;--faint:#7d918b}
+.scope-card,.select-main-card{padding:20px}
+.scope-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.scope-title{margin:6px 0 0;font-size:calc(20px*var(--fs-scale));line-height:1.4}
+.scope-adjust{padding:5px 12px;font-family:inherit;font-size:calc(12px*var(--fs-scale));font-weight:700;color:var(--primary);background:var(--primary-soft);border:1px solid transparent;border-radius:999px;cursor:pointer;transition:border-color .16s}
+.scope-adjust:hover{border-color:var(--primary)}
+.scope-summary{margin:0;font-size:calc(12px*var(--fs-scale));line-height:1.6;color:var(--muted)}
+.scale-axis,.scale-row{display:grid;grid-template-columns:96px minmax(140px,1fr) 48px;column-gap:8px;align-items:center;min-width:0}
+.scale-axis{font-size:calc(11px*var(--fs-scale));color:var(--muted)}
+.scale-axis-title{font-size:calc(11px*var(--fs-scale));color:var(--muted)}
+.scale-axis-track{display:grid;grid-template-columns:repeat(4,1fr);justify-items:center}
+.scale-axis-track i{font-style:normal;font-variant-numeric:tabular-nums}
+.mastery-scale{list-style:none;margin:0;padding:0;display:grid;gap:5px}
+.scale-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:calc(12px*var(--fs-scale));color:var(--text)}
+.scale-track{position:relative;display:grid;grid-template-columns:repeat(4,1fr);align-items:center;justify-items:center;height:16px;min-width:0}
+.scale-track::before{content:'';position:absolute;left:2px;right:2px;top:50%;height:1px;background-image:repeating-linear-gradient(90deg,currentColor 0 3px,transparent 3px 6px);color:var(--border);opacity:.2}
+.scale-row.untested .scale-track::before{opacity:.1}
+.scale-dot{position:relative;z-index:1;justify-self:center;width:5px;height:5px;border:1px solid var(--border);border-radius:50%;background:var(--surface,#fff)}
+.scale-dot.weak{background:#c08a63;border-color:#c08a63}
+.scale-dot.medium{background:#86ab9f;border-color:#86ab9f}
+.scale-dot.solid{background:#4d817a;border-color:#4d817a}
+.scale-dot.zero{background:#cbd9d4;border-color:#cbd9d4}
+.scale-dot.untested{width:6px;height:6px;border-style:dashed;background:transparent}
+.scale-dot.current{width:10px;height:10px;box-shadow:0 0 0 3px rgba(77,129,122,.18)}
+.scale-state{justify-self:end;font-size:calc(12px*var(--fs-scale));color:var(--faint,var(--muted));white-space:nowrap}
+.scale-state.untested{color:var(--muted)}
+.scale-more{margin:0;font-size:calc(12px*var(--fs-scale));line-height:1.6;color:var(--muted)}
+.scale-legend{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:calc(11px*var(--fs-scale));color:var(--muted)}
+.scale-legend span{display:inline-flex;align-items:center;gap:5px}
+.scale-legend .scale-dot{width:5px;height:5px;box-shadow:none}
+.last-report{display:grid;gap:8px;margin-top:auto;padding:12px;border:1px dashed var(--border);border-radius:12px;background:var(--surface-soft)}
+.last-report-head strong{font-size:calc(13px*var(--fs-scale))}
+.last-report p{margin:0;font-size:calc(12px*var(--fs-scale));line-height:1.6;color:var(--muted)}
+.last-report-link{align-self:flex-start;padding:0;font-family:inherit;font-size:calc(12px*var(--fs-scale));font-weight:700;color:var(--primary);background:transparent;border:0;cursor:pointer}
+.last-report-link:hover{text-decoration:underline}
+.last-report-empty{border-style:solid}
+.diagnosis-main{display:flex;flex-direction:column;gap:12px;min-width:0}
+.select-main-card{position:relative;flex:1;display:flex;flex-direction:column;justify-content:space-between;gap:16px;min-height:200px;overflow:hidden;background:linear-gradient(150deg,#fbfdfc 0%,#edf5f1 100%)}
+.select-main-top{display:grid;gap:10px;min-width:0}
+.select-main-head{display:flex;align-items:center;gap:10px}
+.select-badge{padding:4px 10px;border-radius:999px;background:#c08a63;color:#fff;font-size:calc(10px*var(--fs-scale));font-weight:700;letter-spacing:.06em}
+.select-kicker{font-size:calc(12px*var(--fs-scale));font-weight:700;letter-spacing:.08em;color:var(--primary)}
+.select-main-title{margin:0;max-width:23ch;font-size:calc(24px*var(--fs-scale));line-height:1.45;font-weight:600;text-wrap:balance}
+.select-scope-line,.select-state{margin:0;font-size:calc(13px*var(--fs-scale));line-height:1.7;color:var(--muted)}
+.select-state{flex:1 1 260px;color:var(--text)}
+.select-main-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.select-main-actions .el-button{flex:none}
+.select-secondary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.select-sub-card{display:flex;flex-direction:column;gap:8px;padding:20px;text-align:left;font-family:inherit;color:var(--text);border:1px solid var(--border);border-radius:16px;background:var(--surface);cursor:pointer;transition:transform .2s,border-color .2s,box-shadow .2s}
+.select-sub-card:hover{transform:translateY(-2px);border-color:var(--primary);box-shadow:var(--shadow-soft)}
+.select-sub-kicker{font-size:calc(11px*var(--fs-scale));font-weight:700;letter-spacing:.08em;color:var(--primary)}
+.select-sub-card strong{font-size:calc(15px*var(--fs-scale));line-height:1.5}
+.select-sub-desc,.select-sub-meta{font-size:calc(12px*var(--fs-scale));line-height:1.7;color:var(--muted)}
+.select-sub-cta{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto;padding-top:10px;font-size:calc(13px*var(--fs-scale));font-weight:700;color:var(--primary)}
+.select-sub-cta i{font-style:normal;transition:transform .2s}
+.select-sub-card:hover .select-sub-cta i{transform:translateX(4px)}
+.select-after{display:grid;gap:12px;padding:20px}
+.select-after-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 18px}
+.select-after-grid strong{display:block;margin-bottom:3px;font-size:calc(13px*var(--fs-scale))}
+.select-after-grid p{margin:0;font-size:calc(12px*var(--fs-scale));line-height:1.6;color:var(--muted)}
+.select-after-note{margin:0;padding-top:12px;border-top:1px dashed var(--border);font-size:calc(12px*var(--fs-scale));line-height:1.7;color:var(--muted)}
+.hub-select .source-note{margin:0}
+.scope-adjust:focus-visible,.last-report-link:focus-visible,.select-sub-card:focus-visible{outline:2px solid var(--primary);outline-offset:3px}
 /* 弹窗共用：范围三列、专题双列滚动。 */
 .dialog-lead{margin:0 0 16px;font-size:calc(13px*var(--fs-scale));line-height:1.7;color:var(--muted)}
 .dialog-form{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:18px}
@@ -1179,8 +1360,24 @@ onBeforeUnmount(() => cancelAnimationFrame(countFrame))
 .dialog-field :deep(.el-select),.dialog-field :deep(.el-dropdown){display:block;width:100%}
 .dialog-chapter-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px;font-size:calc(13px*var(--fs-scale))}
 .dialog-chapter-count{margin-left:8px;font-size:calc(12px*var(--fs-scale));font-weight:600;color:var(--muted)}
-.dialog-chapters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;max-height:330px;overflow:auto;padding:2px 4px 2px 2px}
-.dialog-chapters .chapter-chip{min-height:52px;padding:10px 12px}
+.assessment-dialog-body{display:flex;flex-direction:column}
+/* 知识点列表：单列行式，固定露出 5 行完整 + 第 6 行半行；剩余知识点靠滚轮下滑查看。 */
+/* 滚动条与错题页「知识点分布」的 .point-legend 完全同款：溢出才开滚动、5px 细条、无 gutter。
+   别加 scrollbar-width / scrollbar-gutter：Chrome 读到就会改用系统滚动条，把下面的宽度盖掉。 */
+.chapter-scroll{--chapter-row:40px;flex:none;max-height:calc(var(--chapter-row) * 5 + 2px * 4 + 22px);overflow-y:hidden}
+.chapter-scroll.is-scroll{overflow-y:auto}
+.chapter-scroll.is-scroll::-webkit-scrollbar{width:5px}
+.chapter-scroll.is-scroll::-webkit-scrollbar-thumb{background:#CDD8D1;border-radius:999px}
+.chapter-scroll.is-scroll::-webkit-scrollbar-thumb:hover{background:#B9C7BF}
+.chapter-scroll.is-scroll::-webkit-scrollbar-track{background:transparent}
+.chapter-scroll.is-scroll:not(.is-at-end){-webkit-mask-image:linear-gradient(to bottom,#000 calc(100% - 20px),transparent);mask-image:linear-gradient(to bottom,#000 calc(100% - 20px),transparent)}
+.dialog-chapter-note{font-size:calc(11px*var(--fs-scale));color:var(--muted)}
+.dialog-chapters{display:grid;gap:2px;padding:2px 0 2px 2px}
+.dialog-chapters .chapter-chip{display:flex;align-items:center;gap:10px;min-height:var(--chapter-row);padding:4px 10px;border:0;border-radius:10px;background:none}
+.dialog-chapters .chapter-chip::before{content:'';flex:none;width:8px;height:8px;border-radius:50%;background:var(--primary)}
+.dialog-chapters .chapter-name{display:block;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dialog-chapters .chapter-unit{display:inline;margin-right:6px}
+.dialog-chapters .chapter-order{order:2;flex:none;margin-left:auto;font:600 calc(11px*var(--fs-scale))/1 ui-monospace,monospace;font-variant-numeric:tabular-nums;color:var(--muted)}
 .dialog-note{font-size:calc(11px*var(--fs-scale));line-height:1.6;color:var(--primary);margin:0 0 8px}
 .dialog-hint{margin:14px 0 0;font-size:calc(12px*var(--fs-scale));line-height:1.6;color:var(--primary)}
 .dialog-tip{margin:12px 0 0;font-size:calc(11px*var(--fs-scale));line-height:1.6;color:var(--muted)}
@@ -1251,13 +1448,13 @@ onBeforeUnmount(() => cancelAnimationFrame(countFrame))
 .paper-result-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding-top:12px;border-top:1px dashed var(--border)}
 .paper-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .paper-footer-note{font-size:calc(12px*var(--fs-scale));color:var(--muted)}
-/* 专题 chip：弹窗内双列，选中态和桌面端一致。 */
+/* 专题 chip：弹窗内只读展示全部知识点。 */
 .chapter-chip{display:flex;align-items:center;gap:12px;min-height:62px;padding:12px;text-align:left;border:1px solid var(--border);border-radius:14px;background:var(--surface-soft);color:var(--text);font-family:inherit;cursor:pointer;transition:background .18s,border-color .18s,transform .18s}
 .chapter-chip:hover{border-color:var(--primary);transform:translateY(-1px)}
-.chapter-chip.selected{border-color:var(--primary);background:var(--primary-soft)}
+.chapter-chip.is-static{cursor:default}
+.chapter-chip.is-static:hover{border-color:var(--border);transform:none}
 .chapter-order{color:var(--muted);font:700 11px ui-monospace,monospace}
 .chapter-chip>span:nth-child(2){flex:1;font-size:calc(13px*var(--fs-scale))}
-.chapter-check{font-size:calc(17px*var(--fs-scale));color:var(--primary)}
 .chapter-name{display:grid;gap:2px;min-width:0}
 .chapter-unit{font-size:calc(10px*var(--fs-scale));font-weight:600;letter-spacing:.02em;color:var(--primary)}
 .source-note{font-size:calc(11px*var(--fs-scale));color:var(--muted);margin:14px 0 0}
@@ -1282,11 +1479,12 @@ onBeforeUnmount(() => cancelAnimationFrame(countFrame))
 .bridge .sequence-dot{background:#d7dadd;color:#72777c}
 .result-header{background:linear-gradient(125deg,var(--surface),var(--primary-soft))}
 .result-header .actions{margin-top:16px}
-@media(max-width:960px){.hub{min-height:0}.hub-cards{grid-template-columns:1fr;gap:12px}.hub-card{min-height:0}}
-@media(max-width:900px){.dialog-chapters{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:1080px){.diagnosis-select-grid{grid-template-columns:1fr}.scope-card{min-height:0}.scale-axis,.scale-row{grid-template-columns:84px minmax(140px,1fr) 48px}}
 @media(max-width:800px){.paper-layout{grid-template-columns:1fr}.paper-upload{min-height:0}}
 @media(max-width:850px){.result-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.diagnosis-page .page-header{flex-direction:column;align-items:stretch}.header-actions{justify-content:flex-start}.result-grid,.answer-options{grid-template-columns:1fr}.hub-card{padding:20px 18px}.dialog-form,.paper-form,.dialog-chapters{grid-template-columns:1fr}.dialog-footer{align-items:stretch;flex-direction:column}.dialog-footer-actions,.dialog-footer-actions .el-button{width:100%}.assessment-submit{flex-direction:column}.assessment-submit .el-button{width:100%}}
+@media(max-width:560px){.diagnosis-page .page-header{flex-direction:column;align-items:stretch}.header-actions{justify-content:flex-start}.result-grid,.answer-options{grid-template-columns:1fr}.dialog-form,.paper-form{grid-template-columns:1fr}.dialog-footer{align-items:stretch;flex-direction:column}.dialog-footer-actions,.dialog-footer-actions .el-button{width:100%}.assessment-submit{flex-direction:column}.assessment-submit .el-button{width:100%}}
+@media(max-width:700px){.select-secondary{grid-template-columns:1fr}.select-after-grid{grid-template-columns:1fr}}
+@media(max-width:430px){.hub-select{padding:10px 0 6px}.scope-card,.select-main-card,.select-after{padding:16px}.select-sub-card{padding:16px}.select-main-title{font-size:calc(20px*var(--fs-scale))}.scope-summary{line-height:1.7}}
 .assessment-score{font-weight:700;color:var(--primary)}.answer-review{display:grid;gap:12px}.review-card{padding:16px;border:1px solid var(--border);border-left:4px solid var(--border);border-radius:12px;background:var(--surface-soft)}.review-card.correct{border-left-color:var(--success,#67c23a)}.review-card.wrong{border-left-color:var(--danger,#f56c6c)}.review-card.self-check{border-left-color:var(--info,#909399)}.review-card h4{margin:12px 0 8px;line-height:1.6}.review-line,.review-explanation{margin:6px 0;font-size:calc(13px*var(--fs-scale));line-height:1.6}.review-explanation{color:var(--text)}.explanation-list{display:grid;gap:5px;margin:4px 0 0;padding:0;list-style:none}.explanation-list li{display:flex;gap:8px;align-items:flex-start;line-height:1.7;border-radius:10px;padding:4px 7px}.explanation-list li.right{background:rgba(103,194,58,.09)}.explanation-list li.wrong{background:rgba(245,108,108,.09)}.option-badge{display:grid;place-items:center;width:20px;height:20px;flex:none;border-radius:8px;background:#fff;border:1px solid var(--border);font:700 11px ui-monospace,monospace;margin-top:3px}.explanation-list li.right .option-badge{color:var(--success,#67c23a);border-color:var(--success,#67c23a)}.explanation-list li.wrong .option-badge{color:var(--danger,#f56c6c);border-color:var(--danger,#f56c6c)}.explanation-list .verdict{flex:none;margin-left:auto;align-self:center;font-size:calc(11px*var(--fs-scale));font-style:normal;color:var(--muted);white-space:nowrap}.explanation-list li.right .verdict{color:var(--success,#67c23a)}.explanation-list li.wrong .verdict{color:var(--danger,#f56c6c)}
 /* 结果页入场：雷达卡片先淡入上浮，雷达图整体从 .94 放大，多边形由 ChartPanel 从中心展开。 */
 .mastery-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
@@ -1327,7 +1525,8 @@ onBeforeUnmount(() => cancelAnimationFrame(countFrame))
 .stage-trigger-arrow{font-size:calc(11px*var(--fs-scale));color:var(--muted)}
 
 /* 深色模式：页面本地色板跟随全局 token，避免浅纸卡在深底上发白。 */
-:global(:root[data-theme='dark'] .hub-card){border-color:var(--border);background:linear-gradient(158deg,#1d312d,#182a26);box-shadow:0 14px 34px rgba(0,0,0,.3)}
-:global(:root[data-theme='dark'] .hub-card::after){background:radial-gradient(circle at 35% 35%,rgba(127,181,171,.10),transparent 70%)}
-:global(:root[data-theme='dark'] .hub-card:hover){border-color:var(--primary);box-shadow:0 20px 44px rgba(0,0,0,.36)}
+:global(:root[data-theme='dark'] .scope-card){--faint:#9db2ac}
+:global(:root[data-theme='dark'] .select-main-card){border-color:var(--border);background:linear-gradient(158deg,#1d312d,#182a26);box-shadow:0 14px 34px rgba(0,0,0,.3)}
+:global(:root[data-theme='dark'] .last-report){background:rgba(255,255,255,.03)}
+:global(:root[data-theme='dark'] .select-sub-card:hover){border-color:var(--primary);box-shadow:0 20px 44px rgba(0,0,0,.36)}
 </style>

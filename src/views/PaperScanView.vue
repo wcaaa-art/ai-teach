@@ -6,6 +6,7 @@ import { useRouter } from 'vue-router'
 import { extractQuestion, getCurriculumSubjects, parsePaperText } from '../services/api.js'
 import { deleteScannedPaper, loadScannedPapers, makeId, saveScannedPaper } from '../db/index.js'
 import { formatMathText } from '../utils/formatMath.js'
+import QuestionOptions from '../components/QuestionOptions.vue'
 
 const router = useRouter()
 const MAX_PHOTOS = 6
@@ -159,6 +160,11 @@ async function parseQuestions() {
 function typeLabel(type) { return typeLabels[type] || '解答' }
 function letter(index) { return String.fromCharCode(65 + Number(index)) }
 function syncAnswer(question) { if (question.correctIndex >= 0) question.answer = letter(question.correctIndex) }
+// 点选项即标记这道题的正确答案，选项样式和回顾页保持一致。
+function markCorrect(question, index) {
+  question.correctIndex = Number(index)
+  syncAnswer(question)
+}
 function hasAnswer(question) { return question.type === 'single' ? question.correctIndex >= 0 : Boolean(String(question.answer || '').trim()) }
 function removeQuestion(index) { questions.value.splice(index, 1) }
 
@@ -297,16 +303,14 @@ function formatDate(value) {
               <el-tag size="small" effect="plain">{{ typeLabel(question.type) }}</el-tag>
               <span class="scan-stem" v-html="formatMathText(question.stem)"></span>
               <el-tag v-if="!hasAnswer(question)" size="small" type="warning" effect="plain">答案待核对</el-tag>
+              <el-tag v-else-if="question.type === 'fill'" size="small" type="info" effect="plain">参考答案请核对</el-tag>
             </div>
           </template>
           <div class="scan-edit">
             <el-input v-model="question.stem" type="textarea" :rows="3" placeholder="题干" />
-            <div v-if="question.type === 'single' && question.options.length" class="scan-options">
-              <label v-for="(option, optionIndex) in question.options" :key="optionIndex">
-                <input v-model="question.correctIndex" type="radio" :value="optionIndex" @change="syncAnswer(question)">
-                <span>{{ letter(optionIndex) }}. {{ option }}</span>
-              </label>
-            </div>
+            <QuestionOptions v-if="question.type === 'single' && question.options.length"
+              :options="question.options" :correct="question.correctIndex >= 0 ? [question.correctIndex] : []"
+              selectable @select="index => markCorrect(question, index)" />
             <div class="scan-edit-row">
               <el-input v-model="question.answer" placeholder="参考答案" />
               <el-input v-model="question.explanation" placeholder="解析（可选）" />
@@ -359,8 +363,6 @@ function formatDate(value) {
 .scan-stem { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .scan-edit { display: grid; gap: 10px; padding: 4px 2px 10px; }
 .scan-edit-row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
-.scan-options { display: grid; gap: 6px; padding: 8px 10px; border: 1px dashed var(--border); border-radius: 10px; }
-.scan-options label { display: flex; align-items: center; gap: 8px; font-size:calc(13px*var(--fs-scale)); }
 .scan-recent { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); }
 .scan-recent:last-child { border-bottom: 0; }
 .scan-recent p { margin: 3px 0 0; }
