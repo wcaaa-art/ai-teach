@@ -6,16 +6,14 @@ import { computed, onMounted, reactive, ref } from 'vue'
 import { ElMessage } from 'element-plus'
 import { useRoute, useRouter } from 'vue-router'
 import { generatePracticeQuestions, extractQuestion, prewarmOcr } from '../services/api.js'
-import { loadPlans, loadProfile, loadMistakes, saveMistake, makeId } from '../db/index.js'
-import { gradeQuestion, computeQuizSummary } from '../utils/quiz.js'
+import { loadPlans, loadProfile, loadMistakes, saveMistake } from '../db/index.js'
+import { computeQuizSummary } from '../utils/quiz.js'
 import { formatMathText } from '../utils/formatMath.js'
 import StudyTimer from '../components/StudyTimer.vue'
 import QuestionOptions from '../components/QuestionOptions.vue'
-import { useAppStore } from '../stores/app.js'
 
 const route = useRoute()
 const router = useRouter()
-const store = useAppStore()
 
 const plan = ref(null)
 const loading = ref(true)
