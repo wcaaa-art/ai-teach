@@ -68,38 +68,6 @@ export function formatCitation(chunk = /** @type {any} */ ({})) {
   return `《${name.replace(/\.pdf$/i, '')}》`
 }
 
-// 片段可读性评估。
-// 真题 PDF 抽取时公式符号会整段丢失，原文变成 "y\nx\nbx\nc" 这类碎行：
-// 检索排序可以接受它（关键词确实命中），但把它当"依据"展示给学生会显得系统在胡言乱语。
-// 这里只判断"能不能读"，不判断"相关不相关"，所以阈值取宽一点，避免把正常题面也误杀。
-export function assessPassageQuality(text = '') {
-  const raw = String(text || '')
-  if (!raw.trim()) return { score: 0, low: true, reason: 'empty' }
-  const compact = raw.replace(/\s+/g, '')
-  const cjk = (compact.match(/[\u4e00-\u9fff]/g) || []).length
-  const visible = compact.length || 1
-  const cjkRatio = cjk / visible
-  // 空白切出来的词有多碎：正常中文题面的词都在 3 字以上，
-  // 公式整体丢失后就会碎成 "0," "1," "y" 这种单字符片段，这是最灵敏的一个信号。
-  const tokens = raw.split(/\s+/).filter(Boolean)
-  const shortRatio = tokens.length ? tokens.filter(token => token.length <= 1).length / tokens.length : 1
-  const lines = raw.split('\n').map(line => line.trim()).filter(Boolean)
-  const fragmentRatio = lines.length ? lines.filter(line => line.length <= 2).length / lines.length : 1
-
-  let score = 1
-  if (shortRatio > 0.44) score -= 0.6
-  else if (shortRatio > 0.3) score -= 0.25
-  if (cjkRatio < 0.3) score -= 0.25
-  else if (cjkRatio < 0.42) score -= 0.1
-  if (fragmentRatio > 0.45) score -= 0.2
-  if (visible < 40) score -= 0.2
-  // 有明确解析结构（【答案】/【解析】）说明抽取基本完整，给一点回补，避免误杀带公式的正常题。
-  if (/【(答案|解析|分析)】/.test(raw)) score += 0.12
-
-  const finalScore = Math.max(0, Math.min(1, Number(score.toFixed(2))))
-  return { score: finalScore, low: finalScore < 0.42, reason: finalScore < 0.42 ? 'garbled-math' : '', metrics: { cjkRatio: Number(cjkRatio.toFixed(2)), shortRatio: Number(shortRatio.toFixed(2)), fragmentRatio: Number(fragmentRatio.toFixed(2)) } }
-}
-
 function stageBoost(chunk, grade) {
   const gradeText = String(grade || '')
   // 只服务初中：初中年级对初中课标片段加权，高中年级不应出现（query 里不会有）。
@@ -109,10 +77,10 @@ function stageBoost(chunk, grade) {
 
 /**
  * 检索与问题最相关的真题片段。
- * @param {{ query?: string, subject?: string, grade?: string, topK?: number, minScore?: number, maxChars?: number, minQuality?: number }} [options]
- * @returns {Array<{ id: number, score: number, text: string, citation: string, source: string, subject: string, stage: string, exam: string, year: number, variant: string, file: string, quality: number, lowQuality: boolean }>}
+ * @param {{ query?: string, subject?: string, grade?: string, topK?: number, minScore?: number, maxChars?: number }} [options]
+ * @returns {Array<{ id: number, score: number, text: string, citation: string, source: string, subject: string, stage: string, exam: string, year: number, variant: string, file: string }>}
  */
-export function searchPassages({ query = '', subject = '', grade = '', topK = 4, minScore = 4, maxChars = 900, subjectStrict = false, minQuality = 0 } = {}) {
+export function searchPassages({ query = '', subject = '', grade = '', topK = 4, minScore = 4, maxChars = 900, subjectStrict = false } = {}) {
   const index = loadRagIndex()
   const normalizedQuery = normalizeText(query)
   if (normalizedQuery.length < 2) return []
@@ -171,14 +139,10 @@ export function searchPassages({ query = '', subject = '', grade = '', topK = 4,
     if (picked.length >= topK) break
     // 同一道题的解析版与原卷版往往高度重叠，保留分高的一条，避免四条结果说的是同一题。
     if (picked.some(item => overlap(item.text, chunk.text) > 0.62)) continue
-    const quality = assessPassageQuality(chunk.text)
-    if (quality.score < minQuality) continue
     picked.push({
       id: chunk.id,
       score: Number(score.toFixed(2)),
       text: chunk.text.slice(0, maxChars),
-      quality: quality.score,
-      lowQuality: quality.low,
       citation: formatCitation(chunk),
       source: chunk.file,
       subject: chunk.subject,

@@ -60,17 +60,12 @@ export function executeTool(name, args = {}, context = {}) {
     const passages=process.env.RAG_HYBRID==='1'
       ? hybridSearch({query:args.keyword,subject:args.subject,grade:args.grade,topK:4})
       : searchPassages({query:args.keyword,subject:args.subject,grade:args.grade,topK:4})
-    // 公式抽取丢失的片段留给自己参考，但不作为「检索依据」展示，也不许模型整段引用。
-    // 若整批都不可读，至少保留分最高的一条（宁可给一条带出处的残句，也不要让「依据」整块消失）。
-    const usablePassages=passages.filter(item=>item.quality===undefined||item.quality>=0.42)
-    const citePassages=usablePassages.length?usablePassages:passages.slice(0,1)
     return {
       ...result,
       matches:result.matches.map(item=>item.name),
       items:result.matches,
       passages,
-      citations:citePassages.map(item=>`${item.citation}：${item.subject}${item.year}年${item.exam}真题`),
-      passagesNote:usablePassages.length<passages.length?'部分真题片段在 PDF 抽取时丢失公式符号，只能参考解析思路，不得整段引用或照抄题面。':'',
+      citations:passages.map(item=>`${item.citation}：${item.subject}${item.year}年${item.exam}真题`),
       source:'curriculum+exam-rag'
     }
   }
