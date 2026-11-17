@@ -839,6 +839,16 @@
 - 深色模式逐页补了本地色板覆盖：专注页（纸面/时长 chip）、诊断 hub 卡、计划页、练习/背诵页。材料页的气泡在深色下仍是浅色珍珠，文字可读，暂时保留。
 - 验证：`npm test` 294 通过、`npm run typecheck` 通过、`npm run build` 通过；CDP 1440×1000 + 390×844 全 14 条路由截图 `D:\trae-work\tmp\ai-teach-theme\`，`overflow=0`、控制台 0 报错；深色模式 home/diagnosis/focus/plans/dashboard/ai/tutor/auth/quiz/mistakes/materials/practice 逐页核查。
 
+## 整改批次 0 + A1/A2/A3（2026-11-17，按老大要求只做这三项）
+
+- 基线：`2a43fa3` / tag `baseline-20261117`，把导入包后 146 处未提交改动一次性固化，`.env` 与 `server/data` 账号数据未入库（题库保留）。回滚命令：`git reset --hard baseline-20261117`。
+- A1 重试（`server/agent.js`）：新增 `fetchWithRetry`，只重试 429/408/425/5xx 与网络错误，退避 300/900/2000ms，最多 2 次；`TimeoutError`/`AbortError`/4xx 一律不重试。关键点：每次重试必须 `makeInit` 新建 `AbortSignal.timeout()`，复用旧 signal 会立刻 abort。`/api/health` 返回 `llm:{requests,retries,failures}`。
+- A2 首屏（`src/App.vue`）：2 秒看门狗 + 骨架屏，`<AppShell :key="store.user?.id || 'local'">` 按数据空间重挂，晚到的登录态不会读错库。实测后端挂起（端口通但不响应）时 1 秒出骨架、3 秒出内容，改造前要等 10 秒超时。
+- A3 构建：`sourcemap` 改由 `BUILD_SOURCEMAP=1` 控制，默认关闭；`dist` 内 `.map` 归零。
+- 验证口径：`npm test` 300 通过（294 基线 + A1 的 6 条）、`typecheck`、`build`、首页实拍。
+- 已回退的额外改动：A4 安全筛查、B1 RAG 质量门、B3 图片多轮、C1 ESLint。B1/B3 留在分支 `backup/batches-ab`（提交 `2ec17cb`），A4 只存在于 tag `batch-a`（`f687e22`）。要恢复时用 `git cherry-pick`，别直接 reset。
+- 未做但已写清方案：A4 危险对象+可操作意图双条件筛查（自伤转介 12356）、B2 规则重排、B4 Agent 任务态持久化、C2 checkJs、C3 巨型 view 拆分。
+
 ## 协作约定
 
 - 每个任务收尾固定格式：**做了什么 / 验证结果 / 下一步建议**，必须带「下一步」，不等豪哥再问。
@@ -847,3 +857,9 @@
 ## 待补充
 
 - 无。认证方案已于 2026-11-12 定案（本地优先 + 邮箱口令），见上。
+
+## 整改基线（2026-11-17）
+
+- 基线提交 `2a43fa3` / tag `baseline-20261117`；本轮只做 A1（LLM 重试）、A2（首屏看门狗+骨架）、A3（默认关 sourcemap），提交 `a2863c0` / tag `scope-a`。
+- 测试 294 → 300（新增 `server/retry.test.js` 6 条）。
+- 超出范围的 A4/B1/B3/C1 已回退：B1/B3 在分支 `backup/batches-ab`，A4 在 tag `batch-a`。
