@@ -21,7 +21,8 @@
     "start": "node server/index.js",
     "lint": "eslint src server scripts",
     "lint:fix": "eslint src server scripts --fix",
-    "rag:rerank:eval": "node server/rag/rag-rerank-eval.js"
+    "rag:rerank:eval": "node server/rag/rag-rerank-eval.js",
+    "safety:eval": "node scripts/safety-eval.mjs"
   },
   "dependencies": {
     "@huggingface/transformers": "^4.3.2",

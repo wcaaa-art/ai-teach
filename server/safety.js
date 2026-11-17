@@ -19,9 +19,9 @@ export function normalizeForScreen(text = '') {
 
 // 危险对象：只作为"和意图组合"的一半条件，单独出现不拦截。
 const HAZARDS = [
-  { key: 'explosive', words: ['炸弹', '炸药', '雷管', 'tnt', '黑火药配方', '燃烧弹', '毒气弹', '自制枪', '自制炸弹'] },
+  { key: 'explosive', words: ['炸弹', '炸药', '雷管', 'tnt', '黑火药配方', '燃烧弹', '毒气弹', '毒气', '神经毒剂', '芥子气', '自制枪', '自制炸弹'] },
   { key: 'weapon', words: ['枪支', '手枪', '步枪', '弹药', '仿真枪', '管制刀具'] },
-  { key: 'drug', words: ['毒品', '冰毒', '海洛因', '大麻', '摇头丸', 'k粉', '制毒'] },
+  { key: 'drug', words: ['毒品', '冰毒', '海洛因', '大麻', '摇头丸', 'k粉', '制毒', '吸毒', '吸食'] },
   { key: 'sexual', words: ['色情', '裸照', '约炮', '性行为', '黄色网站', '成人视频'] },
   { key: 'gamble', words: ['赌博', '赌球', '博彩', '网赌'] },
   { key: 'selfharm', words: ['自杀', '自残', '割腕', '上吊', '轻生', '不想活', '结束生命'] }
@@ -31,12 +31,20 @@ const HAZARDS = [
 const INTENT = ['制作', '做出来', '怎么弄', '如何弄', '怎么做', '怎样做', '合成', '配制', '提炼', '提纯', '配方', '比例', '教程', '步骤', '教我', '告诉我方法', '弄到', '搞到']
 // 购买/获取渠道用正则判断，避免"哪里可以买到"这种中间插词的写法逃过子串匹配。
 const BUY_INTENT = /(哪里|在哪|哪儿|怎么|如何|怎样)[^。；\n]{0,6}(买|购|弄到|搞到|获得)/
+// 疑问 + 动作：覆盖"雷管怎么接线""教我制作毒气"这类动词不固定的写法。
+const ACTION_INTENT = /(怎么|如何|怎样|教我|告诉我|求)[^。；\n]{0,8}(做|弄|配|制作|合成|提|接|试|搞|炼|吸|约)/
+
+// 内容索取与灰产渠道：这类不需要"制作"语义，出现即拦。
+const UNSAFE_REQUEST = [
+  /(给我|发我|来点|推荐|分享|哪有|哪里有)[^。；\n]{0,8}(色情|裸照|成人视频|黄色网站|黄片|约炮)/,
+  /(网赌|赌博|赌球|博彩)[^。；\n]{0,8}(平台|网站|软件|app|地址|稳赢|技巧|群|代理)/
+]
 
 // 伤害他人：动词与对象要出现在同一句里。这类没有正当学习场景，命中即拦。
 const HARM_PATTERNS = [
   /(怎么|如何|怎样|教我)[^。；\n]{0,10}(伤害|弄伤|打伤|杀死|报复|下毒|投毒|捅|砍)/,
   /(下毒|投毒|弄伤|打伤|杀死)[^。；\n]{0,8}(同学|老师|家人|父母|室友|别人|他人)/,
-  /(让|把)[^。；\n]{0,6}(同学|老师|家人|父母|别人|他人)[^。；\n]{0,4}(受伤|出事|消失|闭嘴)/
+  /(让|把)[^。；\n]{0,6}(同学|老师|家人|父母|别人|他人)[^。；\n]{0,4}(受伤|弄伤|打伤|出事|消失|闭嘴)/
 ]
 
 // 正当学习语境：命中这些才放行危险词组合（化学实验、安全教育、禁毒普法等）。
@@ -83,7 +91,9 @@ export function screenInput(text = '') {
 
   const hazard = HAZARDS.find(item => item.words.some(word => normalized.includes(normalizeForScreen(word))))
   const inStudyContext = STUDY_CONTEXT.test(normalized)
-  const hasIntent = INTENT.some(word => normalized.includes(normalizeForScreen(word))) || BUY_INTENT.test(normalized)
+  const hasIntent = INTENT.some(word => normalized.includes(normalizeForScreen(word)))
+    || BUY_INTENT.test(normalized)
+    || ACTION_INTENT.test(normalized)
 
   // 自伤类不看意图：只要提到具体方式就优先转介，这是红线。
   if (hazard?.key === 'selfharm') {
@@ -92,6 +102,12 @@ export function screenInput(text = '') {
   }
 
   if (HARM_PATTERNS.some(pattern => pattern.test(normalized))) { safetyStats.inputBlocked += 1; return { blocked: true, category: 'harm-others', reply: HARM_REPLY } }
+
+  // 内容索取与灰产渠道：没有"制作"语义也要拦。
+  if (UNSAFE_REQUEST.some(pattern => pattern.test(normalized))) {
+    safetyStats.inputBlocked += 1
+    return { blocked: true, category: 'unsafe-request', reply: HARM_REPLY }
+  }
 
   if (hazard && hasIntent && !inStudyContext) {
     safetyStats.inputBlocked += 1

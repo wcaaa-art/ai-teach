@@ -3,6 +3,8 @@ import { computed, onMounted, ref } from 'vue'
 import { ElMessage } from 'element-plus'
 import { useRouter } from 'vue-router'
 import { getAiCapabilities, searchRagPassages } from '../services/api.js'
+import { loadAgentRuns } from '../db/index.js'
+import { summarizeRun } from '../utils/agentRun.js'
 
 const router = useRouter()
 
@@ -80,6 +82,10 @@ const safety = computed(() => {
   ]
 })
 
+// 安全评测数字：对抗样本拦截率与误杀率，可本地复现。
+const safetyEval = computed(() => capabilities.value.safety?.eval || null)
+
+// 安全评测数字：对抗样本拦截率与误杀率，可本地复现。
 // 检索质量门的一句话说明：用真实统计，而不是"已优化"这种空话。
 const qualityNote = computed(() => {
   const quality = capabilities.value.rag?.quality
@@ -140,8 +146,26 @@ async function copyMcpConfig() {
   }
 }
 
+// 运行记录：只读本机 IndexedDB，展示最近几轮真正调过工具的答疑。
+const recentRuns = ref([])
+async function loadRecentRuns() {
+  try {
+    const runs = await loadAgentRuns()
+    recentRuns.value = runs
+      .filter(run => run && run.status !== 'running')
+      .sort((left, right) => (right.startedAt || 0) - (left.startedAt || 0))
+      .slice(0, 4)
+  } catch (error) { console.warn('运行记录读取失败。', error) }
+}
+function runClock(ts) {
+  const date = new Date(ts || Date.now())
+  return `${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')} ${String(date.getHours()).padStart(2, '0')}:${String(date.getMinutes()).padStart(2, '0')}`
+}
+const statusLabel = { done: '完成', error: '出错', interrupted: '安全改写' }
+
 onMounted(() => {
   loadCapabilities()
+  loadRecentRuns()
   // 首屏先跑一次检索，评委打开页面就能看到 RAG 结果，不用先操作。
   runRag()
 })
@@ -259,6 +283,52 @@ onMounted(() => {
       </div>
     </section>
 
+    <section v-if="recentRuns.length" class="lab-section">
+      <div class="section-head">
+        <div><span class="eyebrow">运行记录</span><h3>最近几轮 Agent 真的做了什么</h3></div>
+        <span class="section-note">只存本机 IndexedDB，服务端不留运行日志</span>
+      </div>
+      <div class="run-list">
+        <article v-for="run in recentRuns" :key="run.id" class="run-row">
+          <div class="run-head">
+            <span class="run-time">{{ runClock(run.startedAt) }}</span>
+            <strong class="run-title">{{ run.title || '答疑' }}</strong>
+            <span class="run-status" :class="`is-${run.status}`">{{ statusLabel[run.status] || run.status }}</span>
+          </div>
+          <p class="run-summary">{{ summarizeRun(run) }}</p>
+          <div class="run-tools">
+            <span v-for="(tool, index) in run.tools" :key="`${tool.name}-${index}`" class="run-tool" :class="{ failed: tool.ok === false }">
+              {{ tool.label || tool.name }}<em v-if="tool.attempts > 1"> ×{{ tool.attempts }}</em>
+            </span>
+            <span v-if="run.citationCount" class="run-cite">引用 {{ run.citationCount }} 条</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section v-if="recentRuns.length" class="lab-section">
+      <div class="section-head">
+        <div><span class="eyebrow">运行记录</span><h3>最近几轮 Agent 真的做了什么</h3></div>
+        <span class="section-note">只存本机 IndexedDB，服务端不留运行日志</span>
+      </div>
+      <div class="run-list">
+        <article v-for="run in recentRuns" :key="run.id" class="run-row">
+          <div class="run-head">
+            <span class="run-time">{{ runClock(run.startedAt) }}</span>
+            <strong class="run-title">{{ run.title || '答疑' }}</strong>
+            <span class="run-status" :class="`is-${run.status}`">{{ statusLabel[run.status] || run.status }}</span>
+          </div>
+          <p class="run-summary">{{ summarizeRun(run) }}</p>
+          <div class="run-tools">
+            <span v-for="(tool, index) in run.tools" :key="`${tool.name}-${index}`" class="run-tool" :class="{ failed: tool.ok === false }">
+              {{ tool.label || tool.name }}<em v-if="tool.attempts > 1"> ×{{ tool.attempts }}</em>
+            </span>
+            <span v-if="run.citationCount" class="run-cite">引用 {{ run.citationCount }} 条</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section class="lab-section">
       <div class="section-head">
         <div><span class="eyebrow">MCP 协议</span><h3>MCP：同一套能力，外部 Agent 也能用</h3></div>
@@ -308,6 +378,9 @@ onMounted(() => {
               <div><strong>{{ item.title }}</strong><small>{{ item.desc }}</small></div>
             </li>
           </ul>
+          <p v-if="safetyEval" class="safety-eval">
+            对抗样本 {{ safetyEval.adversarial.blocked }}/{{ safetyEval.adversarial.total }} 拦截（{{ Math.round(safetyEval.adversarial.rate * 100) }}%）· 正常样本 {{ safetyEval.benign.falselyBlocked }}/{{ safetyEval.benign.total }} 误杀 · <code>npm run safety:eval</code> 可复现
+          </p>
         </div>
       </div>
     </section>
@@ -366,6 +439,36 @@ onMounted(() => {
 .passage-index{width:20px;height:20px;flex:none;display:grid;place-items:center;border-radius:50%;background:var(--primary-soft);color:var(--primary);font-size:calc(10.5px*var(--fs-scale));font-weight:700}
 .passage-cite{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:calc(12.5px*var(--fs-scale));font-weight:600;color:var(--text)}
 .passage-score{margin-left:auto;flex:none;color:var(--primary);font-size:calc(11px*var(--fs-scale))}
+.safety-eval{margin:10px 0 0;color:var(--muted);font-size:calc(11px*var(--fs-scale));line-height:1.6}
+.safety-eval code{color:var(--primary)}
+.run-list{display:grid;gap:10px}
+.run-row{padding:14px 16px;border:1px solid var(--border);border-radius:14px;background:var(--surface)}
+.run-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.run-time{font-size:calc(11px*var(--fs-scale));color:var(--muted);font-variant-numeric:tabular-nums}
+.run-title{font-size:calc(13px*var(--fs-scale));color:var(--text);font-weight:600;max-width:52%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.run-status{margin-left:auto;font-size:calc(11px*var(--fs-scale));padding:2px 8px;border-radius:999px;background:var(--surface-soft);color:var(--muted)}
+.run-status.is-done{background:var(--primary-soft);color:var(--primary)}
+.run-status.is-error{background:rgba(185,107,99,.12);color:#b96b63}
+.run-summary{margin:7px 0 0;font-size:calc(12px*var(--fs-scale));color:var(--muted);line-height:1.6}
+.run-tools{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+.run-tool{font-size:calc(11px*var(--fs-scale));padding:3px 9px;border-radius:999px;background:var(--primary-soft);color:var(--primary)}
+.run-tool.failed{background:rgba(185,107,99,.12);color:#b96b63}
+.run-tool em{font-style:normal;opacity:.75}
+.run-cite{font-size:calc(11px*var(--fs-scale));padding:3px 9px;border-radius:999px;background:var(--surface-soft);color:var(--muted)}
+.run-list{display:grid;gap:10px}
+.run-row{padding:14px 16px;border:1px solid var(--border);border-radius:14px;background:var(--surface)}
+.run-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.run-time{font-size:calc(11px*var(--fs-scale));color:var(--muted);font-variant-numeric:tabular-nums}
+.run-title{font-size:calc(13px*var(--fs-scale));color:var(--text);font-weight:600;max-width:52%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.run-status{margin-left:auto;font-size:calc(11px*var(--fs-scale));padding:2px 8px;border-radius:999px;background:var(--surface-soft);color:var(--muted)}
+.run-status.is-done{background:var(--primary-soft);color:var(--primary)}
+.run-status.is-error{background:rgba(185,107,99,.12);color:#b96b63}
+.run-summary{margin:7px 0 0;font-size:calc(12px*var(--fs-scale));color:var(--muted);line-height:1.6}
+.run-tools{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+.run-tool{font-size:calc(11px*var(--fs-scale));padding:3px 9px;border-radius:999px;background:var(--primary-soft);color:var(--primary)}
+.run-tool.failed{background:rgba(185,107,99,.12);color:#b96b63}
+.run-tool em{font-style:normal;opacity:.75}
+.run-cite{font-size:calc(11px*var(--fs-scale));padding:3px 9px;border-radius:999px;background:var(--surface-soft);color:var(--muted)}
 .passage-snippet{margin:9px 0 7px;color:var(--muted);font-size:calc(12.5px*var(--fs-scale));line-height:1.7;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .passage-meta{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:calc(10.5px*var(--fs-scale))}
 .passage-flag{padding:1px 6px;border-radius:5px;background:var(--accent-soft);color:#96703f;font-size:calc(9.5px*var(--fs-scale))}

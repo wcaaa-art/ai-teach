@@ -4,9 +4,10 @@ import { stageOf, stageStatesOf } from '../utils/stages.js'
 import { createBackup, validateBackup } from '../utils/backup.js'
 
 export const DB_NAME = 'ai-teach-local'
+// v9：新增 Agent 运行记录（工具链、耗时、成败），用于回看与观测。
 // v8：新增背诵内容缓存与背诵记录。老库打开时会走 upgrade，只补建缺的表，
 // 其它表的数据不受影响（其余 store 都在同一个数组里，用 contains 判断过）。
-export const DB_VERSION = 8
+export const DB_VERSION = 9
 const USER_DB_PREFIX = 'ai-teach-user-'
 const memoryFallback = new Map()
 const settingsFallback = new Map()
@@ -56,7 +57,9 @@ function openDatabase(name) {
         // 背诵内容缓存：按「学科 + 计划名」存一份确认过的原文/词表，避免重复请求模型。
         ['reciteContents', { keyPath: 'id' }],
         // 背诵记录：逐句/逐词的结果与耗时，背诵时长也据此写进专注统计。
-        ['reciteSessions', { keyPath: 'id' }]
+        ['reciteSessions', { keyPath: 'id' }],
+        // Agent 运行记录：一轮对话调用过哪些工具、各步耗时与成败，只在本机保存。
+        ['agentRuns', { keyPath: 'id' }]
       ]
       stores.forEach(([name, options]) => {
         if (!db.objectStoreNames.contains(name)) db.createObjectStore(name, options)
@@ -104,7 +107,7 @@ export async function getLocalDataSummary() {
 }
 
 // 只复制学习数据，不复制设置；同 id 记录以本地数据为准。
-const SYNC_STORES = ['profile', 'plans', 'focusSessions', 'distractions', 'feedbacks', 'assessments', 'visualLogs', 'conversations', 'quizFingerprints', 'quizResults', 'focusSuggestions', 'examScores', 'mistakes', 'scannedPapers', 'reciteContents', 'reciteSessions']
+const SYNC_STORES = ['profile', 'plans', 'focusSessions', 'distractions', 'feedbacks', 'assessments', 'visualLogs', 'conversations', 'quizFingerprints', 'quizResults', 'focusSuggestions', 'examScores', 'mistakes', 'scannedPapers', 'reciteContents', 'reciteSessions', 'agentRuns']
 
 export async function syncLocalDataToOwner(owner) {
   const targetName = databaseNameFor(owner)
@@ -217,6 +220,10 @@ export const reciteContentId = (subject, name) => `${subject || '综合'}::${nam
 export const loadReciteContent = (subject, name) => get('reciteContents', reciteContentId(subject, name))
 export const saveReciteContent = (record) => put('reciteContents', record)
 export const saveReciteSession = (record) => put('reciteSessions', record)
+// Agent 运行记录：写入与最近 N 条读取，列表页只取最近的，避免整表加载。
+export const saveAgentRun = (record) => put('agentRuns', record)
+export const loadAgentRuns = () => getAll('agentRuns')
+export const deleteAgentRun = (id) => remove('agentRuns', id)
 export const loadReciteSessions = () => getAll('reciteSessions')
 export const loadFocusSessions = () => getAll('focusSessions')
 export const deleteFocusSession = (id) => remove('focusSessions', id)

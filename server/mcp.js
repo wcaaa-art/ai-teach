@@ -14,9 +14,13 @@ import { executeTool } from './tools.js'
 import { mcpPrompts, mcpResourceTemplates, mcpResources, mcpTools } from './mcp-capabilities.js'
 import { listCurriculumChapters, listCurriculumSubjects } from './curriculum.js'
 import { searchPassages } from './rag/index.js'
+import { withToolTimeout } from './tool-runtime.js'
+
+// MCP 侧的护栏：单个工具 3 秒超时，错误统一带 code，外部 Agent 能按 code 决定是否重试。
+const MCP_TOOL_TIMEOUT_MS = 3000
 
 const ok = payload => ({ content: [{ type: 'text', text: JSON.stringify(payload, null, 2) }] })
-const fail = message => ({ content: [{ type: 'text', text: message }], isError: true })
+const fail = (message, code = 'TOOL_ERROR') => ({ content: [{ type: 'text', text: JSON.stringify({ code, message }) }], isError: true })
 
 function readResource(uri) {
   if (uri === 'ai-teach://curriculum/subjects') {
@@ -87,11 +91,11 @@ server.setRequestHandler(ListResourceTemplatesRequestSchema, async () => ({ reso
 server.setRequestHandler(ReadResourceRequestSchema, async request => {
   const { uri } = request.params
   try {
-    const resource = readResource(String(uri || ''))
-    if (!resource) return fail(`未知资源：${uri}`)
+    const resource = await withToolTimeout(() => readResource(String(uri || '')), MCP_TOOL_TIMEOUT_MS, 'resource')
+    if (!resource) return fail(`未知资源：${uri}`, 'RESOURCE_NOT_FOUND')
     return { contents: [resource] }
   } catch (error) {
-    return fail(`资源读取失败：${error.message}`)
+    return fail(`资源读取失败：${error.message}`, /timeout/i.test(error?.message || '') ? 'RESOURCE_TIMEOUT' : 'RESOURCE_ERROR')
   }
 })
 
@@ -112,21 +116,25 @@ server.setRequestHandler(CallToolRequestSchema, async request => {
   const { name, arguments: args = {} } = request.params
   try {
     if (name === 'search_curriculum') {
-      const result = executeTool('rag_knowledge_query', {
+      const result = await withToolTimeout(() => executeTool('rag_knowledge_query', {
         subject: args.subject, grade: args.grade || '不限', keyword: args.keyword
-      })
-      if (result.error) return fail('参数不合法：subject、grade、keyword 都需要是非空字符串。')
+      }), MCP_TOOL_TIMEOUT_MS, name)
+      if (result.error) return fail('参数不合法：subject、grade、keyword 都需要是非空字符串。', 'INVALID_ARGS')
       return ok(result)
     }
     if (name === 'calc_review_interval') {
-      const result = executeTool('calc_review_interval', args)
-      if (result.error) return fail('参数不合法：last_study_time 需为数字，mastery_level 需为 0-3 的整数。')
+      const result = await withToolTimeout(() => executeTool('calc_review_interval', args), MCP_TOOL_TIMEOUT_MS, name)
+      if (result.error) return fail('参数不合法：last_study_time 需为数字，mastery_level 需为 0-3 的整数。', 'INVALID_ARGS')
       return ok(result)
     }
-    if (name === 'list_curriculum_chapters') return ok(listCurriculumChapters(args.grade, args.subject))
-    return fail(`未知工具：${name}`)
+    if (name === 'list_curriculum_chapters') {
+      const result = await withToolTimeout(() => listCurriculumChapters(args.grade, args.subject), MCP_TOOL_TIMEOUT_MS, name)
+      return ok(result)
+    }
+    return fail(`未知工具：${name}`, 'TOOL_NOT_FOUND')
   } catch (error) {
-    return fail(`工具执行失败：${error.message}`)
+    const code = /timeout/i.test(error?.message || '') ? 'TOOL_TIMEOUT' : 'TOOL_ERROR'
+    return fail(`工具执行失败：${error.message}`, code)
   }
 })
 

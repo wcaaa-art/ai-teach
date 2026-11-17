@@ -61,3 +61,19 @@ test('提示词可以按参数生成', async () => {
     await client.close()
   }
 })
+
+test('工具错误返回结构化错误码，外部 Agent 可按 code 处理', async () => {
+  const client = await connect()
+  try {
+    const invalid = await client.callTool({ name: 'calc_review_interval', arguments: { last_study_time: 'x', mastery_level: 9 } })
+    assert.equal(invalid.isError, true)
+    const payload = JSON.parse(invalid.content[0].text)
+    assert.equal(payload.code, 'INVALID_ARGS')
+
+    const unknown = await client.callTool({ name: 'not_exists', arguments: {} })
+    assert.equal(unknown.isError, true)
+    assert.equal(JSON.parse(unknown.content[0].text).code, 'TOOL_NOT_FOUND')
+  } finally {
+    await client.close()
+  }
+})

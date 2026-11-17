@@ -7,10 +7,11 @@ import AgentTrace from '../components/AgentTrace.vue'
 import AnswerCitations from '../components/AnswerCitations.vue'
 import SourceBadge from '../components/SourceBadge.vue'
 import { pauseSpeech, resumeSpeech, speakWithFriendlyChineseVoice, stopSpeech } from '../services/speech.js'
-import { loadConversations, loadMistakes, loadPlans, makeId, saveConversation, deleteConversation } from '../db/index.js'
+import { loadConversations, loadMistakes, loadPlans, makeId, saveAgentRun, saveConversation, deleteConversation } from '../db/index.js'
 import { useAppStore } from '../stores/app.js'
 import { formatMathText } from '../utils/formatMath.js'
 import { buildTutorHistory, clipImageContext } from '../utils/tutorHistory.js'
+import { createAgentRun, finishAgentRun, recordRunTool } from '../utils/agentRun.js'
 
 const store = useAppStore()
 const route = useRoute()
@@ -269,6 +270,8 @@ async function streamAnswer(text, history) {
   messages.value.push({ role: 'assistant', content: '', thinking: '', tools: [], citations: [], source: '', guard: '', streaming: true, mode: answerMode, createdAt: Date.now() })
   // 必须操作数组里的响应式代理：直接改 push 前的原始对象不会触发渲染，token 会攒到结束才一次性出现。
   const assistant = messages.value[messages.value.length - 1]
+  // 运行记录：只落库真正调过工具的轮次，避免把每次闲聊都写进本地库。
+  const run = createAgentRun({ kind: 'tutor', title: text })
   streaming.value = true
   scrollBottom()
   const result = await streamTutor(
@@ -279,6 +282,7 @@ async function streamAnswer(text, history) {
       onThinking: delta => { assistant.thinking += delta; scrollBottom() },
       onToken: delta => { assistant.content += delta; scrollBottom() },
       onTool: tool => {
+        recordRunTool(run, tool)
         if (tool.status === 'start') assistant.tools.push({ name: tool.name, label: tool.label, status: 'start', summary: '' })
         else {
           const target = assistant.tools.find(item => item.name === tool.name && item.status === 'start')
@@ -298,6 +302,14 @@ async function streamAnswer(text, history) {
   assistant.streaming = false
   assistant.tools.forEach(tool => { if (tool.status === 'start') tool.status = 'done' })
   streamController.value = null
+  if (run.tools.length) {
+    const finished = finishAgentRun(run, {
+      status: result?.error ? 'error' : (assistant.guard ? 'interrupted' : 'done'),
+      source: assistant.source,
+      citationCount: assistant.citations.length
+    })
+    try { await saveAgentRun(finished) } catch (error) { console.warn('运行记录写入失败。', error) }
+  }
   streaming.value = false
   if (result.cancelled) {
     if (!assistant.content) assistant.content = '已停止生成。'

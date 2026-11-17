@@ -1,4 +1,5 @@
 import { executeTool, toolSchemas, validateToolArguments } from './tools.js'
+import { runToolGuarded } from './tool-runtime.js'
 
 // === 网络层重试 ===
 // 只重试「下一步可能成功」的失败：限流、上游 5xx、连接被重置。
@@ -167,7 +168,7 @@ export async function callDeepSeek({messages, systemPrompt, context={}, maxRound
     // DeepSeek 多轮工具调用必须原样回传 assistant 的 reasoning_content 与 tool_calls。
     const assistantMessage={role:'assistant',content:assistant.content??null,reasoning_content:assistant.reasoning_content??null}; if(assistant.tool_calls?.length) assistantMessage.tool_calls=assistant.tool_calls; conversation.push(assistantMessage)
     if(!assistant.tool_calls?.length) return {success:true,content:assistant.content||'',source:'deepseek'}
-    for(const call of assistant.tool_calls){let args;try{args=JSON.parse(call.function.arguments||'{}')}catch{throw new Error('Tool arguments are not valid JSON')};if(!validateToolArguments(call.function.name,args))throw new Error(`Tool arguments do not match schema: ${call.function.name}`);const result=executeTool(call.function.name,args,context);conversation.push({role:'tool',tool_call_id:call.id,content:JSON.stringify(result)})}
+    for(const call of assistant.tool_calls){let args;try{args=JSON.parse(call.function.arguments||'{}')}catch{throw new Error('Tool arguments are not valid JSON')};if(!validateToolArguments(call.function.name,args))throw new Error(`Tool arguments do not match schema: ${call.function.name}`);const guarded=await runToolGuarded(call.function.name,executeTool,args,context);conversation.push({role:'tool',tool_call_id:call.id,content:JSON.stringify(guarded.result)})}
   }
   throw new Error('tool rounds exceeded')
 }
@@ -344,12 +345,15 @@ export async function* streamAgent({ messages = [], systemPrompt = '', context =
       let problem = ''
       try { args = JSON.parse(call.function.arguments || '{}') } catch { problem = '工具参数不是合法 JSON' }
       if (!problem && !validateToolArguments(call.function.name, args)) problem = '工具参数不符合 schema'
-      const result = problem ? { error: problem } : executeTool(call.function.name, args, context)
-      const summary = problem ? problem : summarizeToolResult(call.function.name, result)
+      // 执行层统一加超时、单次重试与熔断；工具自身不用关心这些。
+      const guarded = problem ? null : await runToolGuarded(call.function.name, executeTool, args, context)
+      const result = problem ? { error: problem } : guarded.result
+      const summary = problem ? problem : (guarded.ok ? summarizeToolResult(call.function.name, result) : `工具执行失败：${guarded.meta.error}`)
       // 检索结果带出处，前端在回答下方展示「检索依据」，让 RAG 可追溯而不是黑盒。
       const citations = call.function.name === 'rag_knowledge_query' ? publicCitations(result) : []
-      yield { type: 'tool', status: 'done', name: call.function.name, label, summary, citations }
-      trace.push({ name: call.function.name, label, summary, status: 'done', citations })
+      const meta = guarded ? { attempts: guarded.meta.attempts, durationMs: guarded.meta.durationMs, ok: guarded.ok } : { attempts: 0, durationMs: 0, ok: false }
+      yield { type: 'tool', status: 'done', name: call.function.name, label, summary, citations, meta }
+      trace.push({ name: call.function.name, label, summary, status: 'done', citations, meta })
       conversation.push({ role: 'tool', tool_call_id: call.id, content: JSON.stringify(result) })
     }
   }

@@ -24,6 +24,9 @@ import { generatePractice } from './practice.js'
 import { formatCitation, isRagReady, ragQualitySummary, searchPassages } from './rag/index.js'
 import { isRerankEnabled, rerankPassages } from './rag/rerank.js'
 import { describeSafetyRules, getSafetyStats, isScreenEnabled, screenInput, screenOutput } from './safety.js'
+import { runSafetyEval } from './safety-eval.js'
+import { maskPii } from './pii.js'
+import { getToolRuntimeStats } from './tool-runtime.js'
 
 const app = express()
 const allowedOrigins = (process.env.CLIENT_ORIGINS || process.env.CLIENT_ORIGIN || 'http://localhost:5173,http://localhost:4173')
@@ -50,6 +53,20 @@ function cooldownHint(previous) {
 }
 
 const ok = (res, data, extra = {}) => res.json({ success: true, data, ...extra })
+
+// 安全评测结果按需计算一次，避免每次请求都跑 60 条样本。
+let safetyEvalCache = null
+function safetyEvalSummary() {
+  if (!safetyEvalCache) {
+    const result = runSafetyEval()
+    safetyEvalCache = {
+      adversarial: { total: result.adversarial.total, blocked: result.adversarial.blocked, rate: result.adversarial.rate },
+      benign: { total: result.benign.total, falselyBlocked: result.benign.falselyBlocked, rate: result.benign.rate },
+      byCategory: result.byCategory
+    }
+  }
+  return safetyEvalCache
+}
 
 // 健康检查顺带暴露 LLM 重试计数：出问题时能一眼看出是上游限流还是配置错误。
 app.get('/api/health', (req, res) => ok(res, { status: 'ok', model: process.env.LLM_MODEL_NAME || 'deepseek-flash', llm: getLlmRequestStats() }))
@@ -183,6 +200,7 @@ app.get('/api/ai/capabilities', (_req, res) => {
       // 重试计数：让「有重试」这件事在页面上可见，而不是只写在代码里。
       stats: getLlmRequestStats()
     },
+    toolRuntime: getToolRuntimeStats(),
     agent: toolSchemas.map(tool => ({
       name: tool.function.name,
       label: TOOL_LABELS[tool.function.name] || tool.function.name,
@@ -198,6 +216,9 @@ app.get('/api/ai/capabilities', (_req, res) => {
     safety: {
       ...describeSafetyRules(),
       stats: getSafetyStats(),
+      // 评测在首次请求时跑一次并缓存：60 条纯规则样本，耗时不到 2ms。
+      eval: safetyEvalSummary(),
+      piiMasking: true,
       layers: ['输入侧意图筛查（危险对象 + 可操作意图）', '输出侧危险做法过滤', '青少年引导话术（不给完整答案）', '模型不可用降级']
     },
     rag: {
@@ -786,10 +807,11 @@ app.post('/api/agent/tutor', async (req, res) => {
     }
     const result = await callDeepSeek({ messages: [...history, { role: 'user', content: userContent }], systemPrompt: tutorSystemPrompt(tutorMode), context: body.context || {}, useTools: false })
     if (!result.success) return ok(res, { answer: tutorMode === 'explain' ? TUTOR_EXPLAIN_FALLBACK : TUTOR_FALLBACK_ANSWER }, { source: 'mock' })
-    // 输出侧先过安全筛查，再走"引导模式不给答案"的守卫。
+    // 输出侧先过安全筛查，再把手机号、身份证、邮箱这类信息打码（原文仍发给模型，不影响解题）。
     const screened = isScreenEnabled() ? screenOutput(result.content) : { blocked: false, text: result.content }
     if (screened.blocked) return ok(res, { answer: screened.text }, { source: 'safety-guard', guard: screened.category })
-    return ok(res, { answer: guardTutorAnswer(screened.text, { mode: tutorMode }) }, { source: result.source })
+    const masked = maskPii(guardTutorAnswer(screened.text, { mode: tutorMode }))
+    return ok(res, { answer: masked.text }, { source: result.source, pii: masked.hits })
   } catch (error) {
     const invalidKey = /LLM 401/.test(error.message || '')
     return ok(res, { answer: invalidKey ? 'DeepSeek API key 没有通过验证。请在项目根目录 .env 中填写有效的 DEEPSEEK_API_KEY，保存后重启 npm run dev。' : '模型暂时需要休息一下。你可以先写出已知条件和想用的知识点，稍后我再陪你检查。' }, { source: invalidKey ? 'config-error' : 'mock', error: error.message })
@@ -864,8 +886,9 @@ app.post('/api/agent/tutor/stream', async (req, res) => {
     // 流式内容已经到达页面：命中输出侧安全规则就用 replace 覆盖，前端替换而不是追加。
     const screened = isScreenEnabled() ? screenOutput(answer) : { blocked: false, text: answer }
     const guarded = guardTutorAnswer(screened.text, { mode: tutorMode })
-    if (guarded !== answer) writeEvent('replace', { content: guarded, reason: 'safety-guard' })
-    writeEvent('done', { content: guarded, source: 'deepseek', tools: trace })
+    const masked = maskPii(guarded)
+    if (masked.text !== answer) writeEvent('replace', { content: masked.text, reason: 'safety-guard' })
+    writeEvent('done', { content: masked.text, source: 'deepseek', tools: trace, pii: masked.hits })
     return res.end()
   } catch (error) {
     if (controller.signal.aborted) return res.end()
