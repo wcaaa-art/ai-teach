@@ -22,6 +22,7 @@ import { looksGarbled, parseExamQuestions, reflowText } from './exam-text.js'
 import { getLocalLesson } from './lessons/index.js'
 import { generatePractice } from './practice.js'
 import { formatCitation, isRagReady, ragQualitySummary, searchPassages } from './rag/index.js'
+import { isRerankEnabled, rerankPassages } from './rag/rerank.js'
 import { describeSafetyRules, getSafetyStats, isScreenEnabled, screenInput, screenOutput } from './safety.js'
 
 const app = express()
@@ -202,6 +203,8 @@ app.get('/api/ai/capabilities', (_req, res) => {
     rag: {
       ready: isRagReady(),
       engine: process.env.RAG_HYBRID === '1' ? 'BM25 + 稠密向量 RRF 融合' : 'BM25 稀疏检索',
+      rerank: isRerankEnabled() ? '规则重排（覆盖度 + 可读性 + 结构 + 学科）' : '关闭',
+      rerank: isRerankEnabled() ? '规则重排（覆盖度 + 可读性 + 结构 + 学科）' : '关闭',
       evalCases: RAG_EVAL_CASES.length,
       negativeCases: RAG_NEGATIVE_CASES.length,
       // 可读性质量门：公式抽取丢失的片段不进「检索依据」。
@@ -238,7 +241,9 @@ app.get('/api/ai/rag-search', (req, res) => {
   let passages = []
   if (isRagReady()) {
     try {
-      const mapped = searchPassages({ query: keyword, subject, grade, topK: 6, minScore: 6 })
+      const recalled = searchPassages({ query: keyword, subject, grade, topK: 6, minScore: 6 })
+      const ranked = isRerankEnabled() ? rerankPassages(recalled, { query: keyword, subject, grade }) : recalled
+      const mapped = ranked
         .map(item => {
           // 真题 PDF 抽出来的文本会带私用区字符，先清掉再截到「答案」之前，
           // 只给评委看题干命中预览；公式符号缺失时用 garbled 标记说明，不直接留白。

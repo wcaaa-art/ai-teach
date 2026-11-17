@@ -223,7 +223,7 @@ onMounted(() => {
               <div class="passage-head">
                 <span class="passage-index">{{ index + 1 }}</span>
                 <span class="passage-cite">{{ passage.citation }}</span>
-                <span class="passage-score">{{ passage.score }} 分</span>
+                <span class="passage-score">相关度 {{ passage.score }}</span>
               </div>
               <p v-if="passage.snippet" class="passage-snippet">{{ passage.snippet }}</p>
               <p v-else class="passage-snippet muted">这一题在原卷里用公式或图片排版，文本版暂不展开。</p>

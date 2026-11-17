@@ -2,6 +2,7 @@
 import { searchCurriculum } from './curriculum.js'
 import { searchPassages, formatCitation } from './rag/index.js'
 import { hybridSearch } from './rag/hybrid.js'
+import { isRerankEnabled, rerankPassages } from './rag/rerank.js'
 
 export const toolSchemas = [
   { type:'function', function:{ name:'calc_review_interval', description:'根据艾宾浩斯遗忘曲线计算复习时间', parameters:{ type:'object', properties:{ last_study_time:{type:'number'}, mastery_level:{type:'integer',enum:[0,1,2,3]} }, required:['last_study_time','mastery_level'], additionalProperties:false } } },
@@ -57,9 +58,13 @@ export function executeTool(name, args = {}, context = {}) {
     // 课标知识点负责“学什么”，真题片段负责“练什么、怎么讲”，两路结果合并给模型引用。
     // 混合检索默认关闭：评测显示当前语料上稠密通道与 BM25 同源、无实质增益，
     // 默认走 BM25 可保证答疑引用质量不受影响；设 RAG_HYBRID=1 可开启双路 RRF 融合。
-    const passages=process.env.RAG_HYBRID==='1'
-      ? hybridSearch({query:args.keyword,subject:args.subject,grade:args.grade,topK:4})
-      : searchPassages({query:args.keyword,subject:args.subject,grade:args.grade,topK:4})
+    // 先多取两题做候选池，再重排取前 4 条：重排只改顺序，不改变"能不能召回到"。
+    const recalled=process.env.RAG_HYBRID==='1'
+      ? hybridSearch({query:args.keyword,subject:args.subject,grade:args.grade,topK:6})
+      : searchPassages({query:args.keyword,subject:args.subject,grade:args.grade,topK:6})
+    const passages=isRerankEnabled()
+      ? rerankPassages(recalled,{query:args.keyword,subject:args.subject,grade:args.grade}).slice(0,4)
+      : recalled.slice(0,4)
     // 公式抽取丢失的片段留给自己参考，但不作为「检索依据」展示，也不许模型整段引用。
     // 若整批都不可读，至少保留分最高的一条（宁可给一条带出处的残句，也不要让「依据」整块消失）。
     const usablePassages=passages.filter(item=>item.quality===undefined||item.quality>=0.42)

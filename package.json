@@ -20,7 +20,8 @@
     "preview": "vite preview",
     "start": "node server/index.js",
     "lint": "eslint src server scripts",
-    "lint:fix": "eslint src server scripts --fix"
+    "lint:fix": "eslint src server scripts --fix",
+    "rag:rerank:eval": "node server/rag/rag-rerank-eval.js"
   },
   "dependencies": {
     "@huggingface/transformers": "^4.3.2",
