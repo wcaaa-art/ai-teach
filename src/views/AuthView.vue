@@ -10,15 +10,20 @@ const router = useRouter()
 const route = useRoute()
 const store = useAppStore()
 const mode = ref('login')
+// 登录标识：用户名或邮箱都能登，所以只用一个输入框。
+const account = ref('')
+const username = ref('')
+// 邮箱改为选填，只有注册时出现，用来以后找回账号。
 const email = ref('')
 const password = ref('')
-const displayName = ref('')
 const agreed = ref(false)
 // 只控制会话 Cookie 是否保留 7 天；不把密码写进本地存储。
 const remember = ref(true)
 const submitting = ref(false)
 const errorMessage = ref('')
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+// 与 server/auth.js 的 USERNAME_PATTERN 保持一致。
+const USERNAME_PATTERN = /^[\p{L}\p{N}_-]{2,20}$/u
 
 function switchMode(value) {
   mode.value = value
@@ -26,7 +31,13 @@ function switchMode(value) {
 }
 
 function validate() {
-  if (!EMAIL_PATTERN.test(email.value.trim())) return '请输入有效的邮箱地址。'
+  if (mode.value === 'login') {
+    if (!account.value.trim()) return '请输入用户名或邮箱。'
+  } else {
+    if (!USERNAME_PATTERN.test(username.value.trim())) return '用户名需要 2 到 20 个字符，可用中文、字母、数字、下划线和连字符。'
+    const mail = email.value.trim()
+    if (mail && !EMAIL_PATTERN.test(mail)) return '邮箱格式不正确；不需要邮箱可以留空。'
+  }
   if (password.value.length < 8 || password.value.length > 128) return '密码长度需要为 8 到 128 个字符。'
   if (mode.value === 'register' && !agreed.value) return '请先同意学习数据使用说明。'
   return ''
@@ -73,8 +84,9 @@ async function submit() {
   submitting.value = true
   const previousOwner = getDataOwner()
   try {
-    const payload = { email: email.value.trim(), password: password.value, remember: remember.value }
-    if (mode.value === 'register') payload.displayName = displayName.value.trim()
+    const payload = mode.value === 'login'
+      ? { account: account.value.trim(), password: password.value, remember: remember.value }
+      : { username: username.value.trim(), email: email.value.trim(), password: password.value, remember: remember.value }
     const result = mode.value === 'login' ? await loginAccount(payload) : await registerAccount(payload)
     if (!result.success) {
       errorMessage.value = result.error || '账号服务暂时不可用，请稍后再试。'
@@ -96,7 +108,7 @@ async function submit() {
     <div class="auth-back"><el-button text @click="router.push('/home')">← 返回学习主页</el-button></div>
     <section class="auth-layout">
       <div class="auth-story"><div class="story-mark brand-grid" role="img" aria-label="Ai学习"><span class="mark-latin">A</span><span class="mark-latin">i</span><span class="mark-cjk">学</span><span class="mark-cjk">习</span></div><span class="eyebrow">你的学习空间</span><h2>把每一次<br><em>“我不会”</em><br>变成下一步。</h2><p>登录后同步你的学习计划、专注记录和成长轨迹。现在也可以先用本地模式体验。</p><div class="story-foot"><span class="story-line"></span><small>学习数据由你掌握</small></div></div>
-      <div class="auth-card surface"><div class="auth-tabs"><button :class="{active:mode==='login'}" @click="switchMode('login')">登录</button><button :class="{active:mode==='register'}" @click="switchMode('register')">注册</button></div><div class="auth-heading"><h3>{{ mode === 'login' ? '欢迎回来' : '创建你的学习空间' }}</h3><p>{{ mode === 'login' ? '继续今天的学习路线' : '先留下一个称呼，学习从这里开始' }}</p></div><el-form @submit.prevent="submit"><el-form-item v-if="mode==='register'" label="称呼"><el-input v-model="displayName" placeholder="怎么称呼你（可选）" size="large" maxlength="40" /></el-form-item><el-form-item label="邮箱"><el-input v-model="email" type="email" autocomplete="email" placeholder="name@example.com" size="large" /></el-form-item><el-form-item label="密码"><el-input v-model="password" type="password" show-password :autocomplete="mode === 'register' ? 'new-password' : 'current-password'" placeholder="至少 8 位字符" size="large" @keyup.enter="submit" /></el-form-item><div class="auth-options"><el-checkbox v-model="remember">7 天内自动登录</el-checkbox><span>公共电脑请取消勾选</span></div><el-checkbox v-if="mode==='register'" v-model="agreed">我同意学习数据使用说明</el-checkbox><el-alert v-if="errorMessage" :title="errorMessage" type="error" :closable="false" show-icon style="margin-top:16px" /><el-button type="primary" size="large" class="auth-submit" :loading="submitting" @click="submit">{{ mode === 'login' ? '登录学习空间' : '创建账号' }} <span>→</span></el-button></el-form><div class="auth-divider"><span>或</span></div><el-button plain size="large" class="local-button" @click="router.push('/home')">继续使用本地模式</el-button><p class="auth-privacy">隐私优先 · 不登录也能使用摸底、计划和专注功能</p></div>
+      <div class="auth-card surface"><div class="auth-tabs"><button :class="{active:mode==='login'}" @click="switchMode('login')">登录</button><button :class="{active:mode==='register'}" @click="switchMode('register')">注册</button></div><div class="auth-heading"><h3>{{ mode === 'login' ? '欢迎回来' : '创建你的学习空间' }}</h3><p>{{ mode === 'login' ? '继续今天的学习路线' : '先起一个用户名，学习从这里开始' }}</p></div><el-form @submit.prevent="submit"><el-form-item v-if="mode==='login'" label="用户名或邮箱"><el-input v-model="account" autocomplete="username" placeholder="用户名，或注册时填的邮箱" size="large" maxlength="64" @keyup.enter="submit" /></el-form-item><template v-else><el-form-item label="用户名"><el-input v-model="username" autocomplete="username" placeholder="2-20 个字符，登录时用它" size="large" maxlength="20" /></el-form-item><el-form-item label="邮箱（选填）"><el-input v-model="email" type="email" autocomplete="email" placeholder="不填也能用，之后可以补" size="large" maxlength="254" /></el-form-item></template><el-form-item label="密码"><el-input v-model="password" type="password" show-password :autocomplete="mode === 'register' ? 'new-password' : 'current-password'" placeholder="至少 8 位字符" size="large" @keyup.enter="submit" /></el-form-item><div class="auth-options"><el-checkbox v-model="remember">7 天内自动登录</el-checkbox><span>公共电脑请取消勾选</span></div><el-checkbox v-if="mode==='register'" v-model="agreed">我同意学习数据使用说明</el-checkbox><el-alert v-if="errorMessage" :title="errorMessage" type="error" :closable="false" show-icon style="margin-top:16px" /><el-button type="primary" size="large" class="auth-submit" :loading="submitting" @click="submit">{{ mode === 'login' ? '登录学习空间' : '创建账号' }} <span>→</span></el-button></el-form><div class="auth-divider"><span>或</span></div><el-button plain size="large" class="local-button" @click="router.push('/home')">继续使用本地模式</el-button><p class="auth-privacy">隐私优先 · 不登录也能使用摸底、计划和专注功能</p></div>
     </section>
   </div>
 </template>
