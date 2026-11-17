@@ -928,6 +928,7 @@
 ## GitHub 协作基线（2026-11-17）
 
 - 主仓库 `https://github.com/wcaaa-art/ai-teach`（**Public**），账号 `wcaaa-art`；Gitee 仍作国内备份，两边历史独立。
+- **唯一开发目录是 `D:\aaa\ai-teach`**（已配 origin、已跟踪 origin/main）。`d:\aaa\trae-cn\temp_20261117_01\ai-teach` 只是压缩包解出的临时副本，不要在里面写代码——2026-11-17 就因为在压缩包副本之外的 D 盘目录继续开发且未配 remote，整批改动差点没同步出去。
 - CLI：`gh` 2.104.0，路径 `C:\Program Files\GitHub CLI\gh.exe`（winget 装，当前 shell 的 PATH 未刷新，调用时写全路径）。token scope 为 `repo / workflow / gist / read:org`；**推 `.github/workflows/*` 必须带 `workflow` scope**，否则 push 被 OAuth 拒（`refusing to allow an OAuth App to create or update workflow`），补授权用 `gh auth refresh -s workflow`。
 - 免费版**私有**仓库调分支保护/规则集一律 403（`Upgrade to GitHub Pro or make this repository public`），所以仓库转为 Public；再次转私有会掉保护。
 - main 保护：必须走 PR、至少 1 人 review、CI check 名 `check` 必须绿、禁 force push 与删除；`enforce_admins=false`，管理员保留绕过能力，避免单人时无法合并（GitHub 不允许自审通过）。
