@@ -139,13 +139,13 @@ const weekNote = computed(() => {
   if (!weekRemaining.value) return '这周的计划都完成了，不用加码。'
   return `还差 ${weekRemaining.value} 项，每天 ${Math.ceil(weekRemaining.value / Math.max(1, daysLeft.value))} 项刚好`
 })
-// === 今日计划列表：已完成在上，待做在下，中间是当前时间 ===
-// 已完成只放出最近两条，更早的记录不占列表空间；未完成全部保留，超出内容框高度时在框内滚动。
-// 往上滑能回看今天做完的计划；20 条够覆盖一天，再多也没人翻。
+// === 今日计划列表：未完成在上，已完成沉到最后单独一段 ===
+// 已完成只放出最近 20 条，更早的记录不再占用列表空间；未完成全部保留，超出内容框高度时在框内滚动。
 const DONE_PREVIEW = 20
-const visibleDonePlans = computed(() => listDonePlans.value.slice(-DONE_PREVIEW))
+const visibleDonePlans = computed(() => listDonePlans.value.slice(-DONE_PREVIEW).reverse())
+// 已完成可以一键收起：待做多的时候不必一路滚过历史记录。
+const doneCollapsed = ref(false)
 const listItems = computed(() => {
-  const done = visibleDonePlans.value.map(plan => ({ key: plan.id, plan, done: true }))
   const pending = listPendingPlans.value.map(plan => ({
     key: plan.id,
     plan,
@@ -153,16 +153,17 @@ const listItems = computed(() => {
     // 未来才开始的计划虽然可能是昨天建的，但不算「昨天未完成」。
     carried: isCarriedFromYesterday(plan) && !(Number(plan.startAt) >= startOfDay(now.value) + DAY_MS)
   }))
-  return [...done, ...pending]
+  const done = doneCollapsed.value ? [] : visibleDonePlans.value.map(plan => ({ key: plan.id, plan, done: true }))
+  return [...pending, ...done]
 })
-const listDoneCount = computed(() => listItems.value.filter(item => item.done).length)
 // 角标统计真实总数。
 const listTotalCount = computed(() => listDonePlans.value.length + listPendingPlans.value.length)
 const listDoneTotal = computed(() => listDonePlans.value.length)
-// 「现在」插在第一条待做之前；全部完成时不在列表里出现。
-const nowIndex = computed(() => listDoneCount.value)
+// 已完成的头一条：它上面要插一行「已完成」分区标题。
+const firstDoneKey = computed(() => listItems.value.find(item => item.done)?.key || '')
+const isDoneHead = item => item.done && item.key === firstDoneKey.value
 
-// === 按天分组：今天（含昨天顺延）在最上面，之后按自然日一天一组 ===
+// === 按天分组：只给未完成的任务分组，已完成的统一沉在最后一段 ===
 // 归组口径和队列一致：没开始时间的、昨天及更早的，都算今天；未来的按 startAt 的日期切。
 function planDayKey(plan) {
   const stamp = Number(plan.startAt) || 0
@@ -172,11 +173,12 @@ function planDayKey(plan) {
 const dayGroups = computed(() => {
   const map = new Map()
   for (const item of listItems.value) {
+    // 已完成的计划不再按天拆开，它们在列表末尾有自己的分区标题。
+    if (item.done) continue
     const key = planDayKey(item.plan)
     if (!map.has(key)) map.set(key, { key, items: [], done: 0 })
     const group = map.get(key)
     group.items.push(item)
-    if (item.done) group.done += 1
   }
   const today = startOfDay(now.value)
   for (const group of map.values()) {
@@ -188,8 +190,11 @@ const dayGroups = computed(() => {
         : offset === 2 ? '后天'
           : offset < 7 ? `周${WEEKDAY_LABELS[(date.getDay() + 6) % 7]}`
             : `${date.getMonth() + 1}/${date.getDate()}`
-    // 今天这组顺带报一下完成度，未来的只报个数。
-    group.meta = offset === 0 ? `已完成 ${group.done} / ${group.items.length}` : `${group.items.length} 个`
+    // 今天这组顺带报一下完成度：已完成的任务全部落在今天，直接取总数。
+    const doneCount = offset === 0 ? listDoneTotal.value : 0
+    group.meta = offset === 0
+      ? `已完成 ${doneCount} / ${group.items.length + doneCount}`
+      : `${group.items.length} 个`
   }
   return map
 })
@@ -198,6 +203,7 @@ const dayHeadKeys = computed(() => {
   const keys = new Set()
   let last = null
   for (const item of listItems.value) {
+    if (item.done) continue
     const key = planDayKey(item.plan)
     if (key !== last) keys.add(item.key)
     last = key
@@ -383,13 +389,12 @@ function syncRail() {
   // 按滚动比例映射到第几条刻度：滚到底一定是最后一条，不会停在半路。
   railIndex.value = max > 0 ? Math.round((el.scrollTop / max) * (total - 1)) : 0
 }
-// 打开页面时停在第一条未完成上：上方是今天做完的，往上滑能回看，往下才是待办。
+// 打开页面时停在第一条待做上：列表现在以待做开头，已完成的沉在末尾。
 function anchorToFirstPending() {
   const el = planList.value
-  const row = el?.querySelectorAll('[data-plan-id]')?.[nowIndex.value]
+  const row = el?.querySelectorAll('[data-plan-id]')?.[0]
   if (!el || !row) return
   // 第一条待办所在分组的日期标题要一起露出来，否则打开页面看不到「今天」这一组从哪开始。
-  // 今天做完的太多（超过大半屏）时不回头找标题，优先让人看见待办。
   const head = el.querySelector('.plan-day-head')
   const keepHead = head && row.offsetTop - head.offsetTop < el.clientHeight * 0.6
   const top = keepHead ? head.offsetTop : row.offsetTop - 6
@@ -966,15 +971,21 @@ watch(() => route.query.focusTask, value => { if (value) focusTaskFromQuery() })
 
         <div v-if="listItems.length" class="plan-scrollbox">
           <ol ref="planList" class="plan-list" tabindex="0" aria-label="今日计划列表，可滚动" @scroll.passive="syncRail">
-            <template v-for="(item, index) in listItems" :key="item.key">
+            <template v-for="item in listItems" :key="item.key">
               <!-- 每个分组的第一条计划上面插一行日期标题，不占刻度条。 -->
               <li v-if="groupHead(item)" class="plan-day-head" :data-day="groupHead(item).key">
                 <span class="plan-day-label">{{ groupHead(item).label }}</span>
                 <span class="plan-day-meta">{{ groupHead(item).meta }}</span>
               </li>
+              <!-- 已完成与待做分开：待做全部排完，才进入这一段。 -->
+              <li v-if="isDoneHead(item)" class="plan-section-head">
+                <span class="plan-section-label">已完成</span>
+                <span class="plan-section-meta">{{ listDoneTotal }} 项</span>
+                <button type="button" class="plan-section-toggle" @click="doneCollapsed = true">收起</button>
+              </li>
               <li
                 class="plan-row"
-                :class="{ 'is-done': item.done, 'is-clickable': !item.done, 'is-highlighted': highlightId === item.plan.id, 'is-dragging': draggingId === item.plan.id }"
+                :class="{ 'is-done': item.done, 'is-done-first': isDoneHead(item), 'is-clickable': !item.done, 'is-highlighted': highlightId === item.plan.id, 'is-dragging': draggingId === item.plan.id }"
                 :data-plan-id="item.plan.id"
                 :draggable="!item.done"
                 @dragstart="onRowDragStart(item, $event)"
@@ -1021,6 +1032,12 @@ watch(() => route.query.focusTask, value => { if (value) focusTaskFromQuery() })
                 </div>
               </li>
             </template>
+            <!-- 收起后仍然留一行入口，否则已完成的任务看起来像凭空消失了。 -->
+            <li v-if="doneCollapsed && listDoneTotal" class="plan-section-head">
+              <span class="plan-section-label">已完成</span>
+              <span class="plan-section-meta">{{ listDoneTotal }} 项</span>
+              <button type="button" class="plan-section-toggle" @click="doneCollapsed = false">展开</button>
+            </li>
           </ol>
           <!-- 刻度滚动条：一条刻度对一个计划；鼠标移上去向左展开计划清单，点名字直接跳到那一行。 -->
           <div class="plan-rail-zone" @mouseenter="openRail" @mouseleave="closeRail">
@@ -1172,6 +1189,15 @@ watch(() => route.query.focusTask, value => { if (value) focusTaskFromQuery() })
 .plan-day-head:first-child{padding-top:2px}
 .plan-day-label{font-size:calc(12px*var(--fs-scale));font-weight:700;letter-spacing:.01em;color:var(--plan-deep)}
 .plan-day-meta{font-size:calc(10.5px*var(--fs-scale));font-weight:600;color:var(--plan-faint);font-variant-numeric:tabular-nums}
+/* 已完成分区：和待做之间用一条线切开，标题行兼作收起/展开入口。
+   粘在列表底部，滚动时也始终看得见还有多少条已完成，不会被卡片边缘裁掉半行。 */
+.plan-section-head{position:sticky;bottom:0;z-index:2;display:flex;align-items:center;gap:8px;margin:12px 0 0;padding:14px 0 8px;border-top:1px solid var(--plan-line);background:var(--plan-card);list-style:none}
+.plan-section-label{font-size:calc(12px*var(--fs-scale));font-weight:700;letter-spacing:.01em;color:var(--plan-muted)}
+.plan-section-meta{font-size:calc(10.5px*var(--fs-scale));font-weight:600;color:var(--plan-faint);font-variant-numeric:tabular-nums}
+.plan-section-toggle{margin-left:auto;padding:0;border:0;background:transparent;color:var(--plan-deep);font-size:calc(11.5px*var(--fs-scale));font-weight:600;cursor:pointer}
+.plan-section-toggle:hover{text-decoration:underline}
+.plan-section-toggle:focus-visible{outline:2px solid var(--plan-deep);outline-offset:2px;border-radius:4px}
+.plan-row.is-done-first{border-top:0}
 /* 列表自己滚；原生滚动条隐藏，右侧刻度列负责显示位置。 */
 .plan-scrollbox{position:relative}
 .plan-list{margin:0 -6px 0 0;padding:0 18px 4px 0;list-style:none;max-height:clamp(240px,calc(100vh - 414px),720px);overflow-y:auto;overscroll-behavior:contain;touch-action:pan-y;-webkit-overflow-scrolling:touch;contain:paint;will-change:scroll-position;scrollbar-width:none}
