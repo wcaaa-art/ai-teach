@@ -1,0 +1,43 @@
+name: 功能需求
+description: 新增能力或调整现有行为
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 要解决的问题
+      description: 谁在什么场景下遇到什么困难；不要直接写实现方案
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议做法
+      description: 可选。涉及哪些页面或接口（src/views、server/）
+    validations:
+      required: false
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: 影响范围
+      multiple: true
+      options:
+        - 前端页面
+        - 后端接口
+        - AI 提示词 / 工具调用
+        - RAG 检索
+        - 本地数据 / IndexedDB
+        - 仅文档
+    validations:
+      required: true
+
+  - type: textarea
+    id: accept
+    attributes:
+      label: 验收标准
+      description: 怎样算做完，要可验证
+      placeholder: 例如：计划页生成 7 天计划时，每天至少包含 1 个桥接复习专题，且 npm test 新增用例通过
+    validations:
+      required: true
