@@ -143,9 +143,9 @@ export async function createAuthService({ dataDir = path.resolve('server/data'),
       return valid && user ? { user: publicUser(user) } : { error: '用户名或密码不正确。', status: 401 }
     },
 
-    // 改称呼；老账号（邮箱注册、没有用户名）还可以补设一次用户名，设过之后不允许再改，
+    // 改称呼、改邮箱；老账号（邮箱注册、没有用户名）还可以补设一次用户名，设过之后不允许再改，
     // 免得换用户名后别人找不到这个账号。
-    async updateProfile(userId, { displayName, username } = {}) {
+    async updateProfile(userId, { displayName, username, email } = {}) {
       const user = users.find(item => item.id === userId)
       if (!user) return { error: '登录状态已失效，请重新登录。', status: 401 }
       const next = {}
@@ -166,8 +166,23 @@ export async function createAuthService({ dataDir = path.resolve('server/data'),
         }
         next.username = cleanUsername
       }
+      // 邮箱可改也可解绑：传空字符串表示不绑定。填了才校验格式与占用。
+      if (email !== undefined) {
+        const normalizedEmail = String(email).trim().toLowerCase()
+        if (!normalizedEmail) {
+          next.email = ''
+        } else {
+          if (!EMAIL_PATTERN.test(normalizedEmail) || normalizedEmail.length > 254) {
+            return { error: '邮箱格式不正确。', status: 400 }
+          }
+          if (users.some(item => item.id !== userId && item.email === normalizedEmail)) {
+            return { error: '这个邮箱已经绑定到其他账号了。', status: 409 }
+          }
+          next.email = normalizedEmail
+        }
+      }
       if (!Object.keys(next).length) return { error: '没有需要保存的改动。', status: 400 }
-      const previous = { displayName: user.displayName, username: user.username || '' }
+      const previous = { displayName: user.displayName, username: user.username || '', email: user.email || '' }
       Object.assign(user, next)
       try { await persist() } catch {
         Object.assign(user, previous)
@@ -177,6 +192,7 @@ export async function createAuthService({ dataDir = path.resolve('server/data'),
     },
 
     // 改密码必须验旧密码，避免会话被劫持后直接改掉密码锁死账号。
+    // 改完把会话版本 +1：所有旧令牌（含当前这台设备）立刻失效，必须用新密码重新登录。
     async changePassword(userId, { currentPassword, newPassword } = {}) {
       const user = users.find(item => item.id === userId)
       if (!user) return { error: '登录状态已失效，请重新登录。', status: 401 }
@@ -190,19 +206,29 @@ export async function createAuthService({ dataDir = path.resolve('server/data'),
       const valid = expected.length === actual.length && timingSafeEqual(expected, actual)
       if (!valid) return { error: '当前密码不正确。', status: 401 }
       if (current === nextPassword) return { error: '新密码不能和当前密码相同。', status: 400 }
-      const previous = { salt: user.salt, passwordHash: user.passwordHash }
+      const previous = { salt: user.salt, passwordHash: user.passwordHash, sessionVersion: user.sessionVersion || 0 }
       user.salt = randomBytes(16).toString('hex')
       user.passwordHash = (await scrypt(nextPassword, user.salt, 64)).toString('hex')
+      user.sessionVersion = (user.sessionVersion || 0) + 1
       try { await persist() } catch {
         Object.assign(user, previous)
         return { error: '密码暂时无法保存，请检查本机服务目录权限。', status: 500 }
       }
-      return { user: publicUser(user) }
+      return { user: publicUser(user), reauthRequired: true }
     },
 
     createSession(user, remember = true) {
       const now = Math.floor(Date.now() / 1000)
-      const payload = Buffer.from(JSON.stringify({ sub: user.id, iat: now, exp: now + SESSION_SECONDS })).toString('base64url')
+      // 入参可能是 publicUser（登录/注册返回的对象不带内部字段），
+      // 会话版本必须从内部记录取，否则改过密码的账号重新登录会被自己的新令牌挡在门外。
+      const version = users.find(item => item.id === user.id)?.sessionVersion || 0
+      const payload = Buffer.from(JSON.stringify({
+        sub: user.id,
+        // 会话版本：改密码后自增，旧令牌随即失效。
+        ver: version,
+        iat: now,
+        exp: now + SESSION_SECONDS
+      })).toString('base64url')
       const value = `${payload}.${sign(payload, secret)}`
       return `${SESSION_COOKIE}=${encodeURIComponent(value)}; ${cookieOptions(process.env.NODE_ENV === 'production', remember)}`
     },
@@ -223,7 +249,11 @@ export async function createAuthService({ dataDir = path.resolve('server/data'),
         const claims = JSON.parse(Buffer.from(payload, 'base64url').toString('utf8'))
         if (!claims.sub || !Number.isFinite(claims.exp) || claims.exp <= Math.floor(Date.now() / 1000)) return null
         const user = users.find(item => item.id === claims.sub)
-        return user ? publicUser(user) : null
+        if (!user) return null
+        // 改过密码的账号会话版本已自增，旧令牌（版本不匹配）一律作废。
+        // 老令牌与老账号都没有这个字段，按 0 处理，避免升级后把所有人踢下线。
+        if (Number(claims.ver || 0) !== Number(user.sessionVersion || 0)) return null
+        return publicUser(user)
       } catch { return null }
     }
   }
@@ -284,7 +314,9 @@ export function createAuthRouter(authService) {
   router.post('/password', requireUser, async (req, res) => {
     const result = await authService.changePassword(req.currentUser.id, req.body || {})
     if (result.error) return res.status(result.status || 400).json({ success: false, message: result.error })
-    return res.json({ success: true, data: { user: result.user } })
+    // 改完密码会话版本已变，这个响应本身就把 Cookie 清掉，前端据 reauthRequired 回登录页。
+    if (result.reauthRequired) res.set('Set-Cookie', authService.clearSessionCookie())
+    return res.json({ success: true, data: { user: result.user, reauthRequired: Boolean(result.reauthRequired) } })
   })
   return router
 }

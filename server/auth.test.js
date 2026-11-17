@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
-import { randomBytes, scryptSync } from 'node:crypto'
-import { mkdir, mkdtemp, rm, writeFile } from 'node:fs/promises'
+import { createHmac, randomBytes, scryptSync } from 'node:crypto'
+import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import test from 'node:test'
 import { createAuthService } from './auth.js'
@@ -120,3 +120,69 @@ test('会话令牌能还原用户，签名被篡改后失效', () => withService
   assert.equal(service.getUserFromToken(`${token}x`), null)
   assert.equal(service.getUserFromToken(''), null)
 }))
+
+test('邮箱可以绑定、修改和解绑', () => withService(async service => {
+  const { user } = await service.register({ username: 'xiaoming', password: 'study1234' })
+  assert.equal(user.email, '')
+  // 绑定
+  assert.equal((await service.updateProfile(user.id, { email: 'Kid@Example.com ' })).user.email, 'kid@example.com')
+  // 修改
+  assert.equal((await service.updateProfile(user.id, { email: 'new@example.com' })).user.email, 'new@example.com')
+  // 解绑：传空字符串
+  assert.equal((await service.updateProfile(user.id, { email: '' })).user.email, '')
+  // 解绑后不能再用旧邮箱登录
+  assert.equal((await service.login({ account: 'new@example.com', password: 'study1234' })).status, 401)
+}))
+
+test('邮箱格式错误与被其他账号占用时拒绝修改', () => withService(async service => {
+  const { user } = await service.register({ username: 'xiaoming', password: 'study1234' })
+  await service.register({ username: 'taken', email: 'taken@example.com', password: 'study1234' })
+  assert.match((await service.updateProfile(user.id, { email: 'not-an-email' })).error, /邮箱格式/)
+  const dup = await service.updateProfile(user.id, { email: 'TAKEN@example.com' })
+  assert.equal(dup.status, 409)
+  assert.match(dup.error, /已经绑定到其他账号/)
+  // 冲突失败后原值不变
+  assert.equal((await service.updateProfile(user.id, { email: 'kid@example.com' })).user.email, 'kid@example.com')
+}))
+
+test('改密码后旧会话立即失效，必须用新密码重新登录', async () => {
+  const dataDir = await makeDataDir()
+  try {
+    const service = await createAuthService({ dataDir })
+    const { user } = await service.register({ username: 'xiaoming', password: 'study1234' })
+    const readToken = cookie => decodeURIComponent(cookie.split(';')[0].split('=')[1])
+    const oldSession = readToken(service.createSession(user))
+    assert.equal(service.getUserFromToken(oldSession).id, user.id)
+
+    const changed = await service.changePassword(user.id, { currentPassword: 'study1234', newPassword: 'fresh1234' })
+    assert.equal(changed.reauthRequired, true)
+    // 改密码前签发的令牌（含当前设备）全部作废
+    assert.equal(service.getUserFromToken(oldSession), null)
+
+    // 用新密码重新登录拿到的新令牌可用
+    const relogin = await service.login({ account: 'xiaoming', password: 'fresh1234' })
+    const freshSession = readToken(service.createSession(relogin.user))
+    assert.equal(service.getUserFromToken(freshSession).id, user.id)
+  } finally {
+    await rm(dataDir, { recursive: true, force: true })
+  }
+})
+
+test('升级前的旧令牌（没有会话版本）继续有效，不被误踢下线', async () => {
+  const dataDir = await makeDataDir()
+  try {
+    const service = await createAuthService({ dataDir })
+    const { user } = await service.register({ username: 'xiaoming', password: 'study1234' })
+    // 按改造前的格式手工签一枚令牌：payload 里只有 sub/iat/exp。
+    const secret = (await readFile(path.join(dataDir, 'session-secret'), 'utf8')).trim()
+    const now = Math.floor(Date.now() / 1000)
+    const payload = Buffer.from(JSON.stringify({ sub: user.id, iat: now, exp: now + 3600 })).toString('base64url')
+    const legacyToken = `${payload}.${createHmac('sha256', secret).update(payload).digest('base64url')}`
+    assert.equal(service.getUserFromToken(legacyToken).id, user.id)
+    // 但一旦改过密码，这枚旧令牌同样失效。
+    await service.changePassword(user.id, { currentPassword: 'study1234', newPassword: 'fresh1234' })
+    assert.equal(service.getUserFromToken(legacyToken), null)
+  } finally {
+    await rm(dataDir, { recursive: true, force: true })
+  }
+})

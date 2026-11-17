@@ -14,29 +14,50 @@ const createdAt = computed(() => {
   return time ? new Date(time).toLocaleDateString('zh-CN') : '—'
 })
 
-// 改称呼与补设用户名共用一个小弹窗：两者都是单个文本字段，只是校验和提示不同。
+// 称呼、用户名、邮箱共用一个小弹窗：都是单个文本字段，只是校验和提示不同。
 const editor = reactive({ open: false, field: 'displayName', value: '', saving: false })
 const USERNAME_PATTERN = /^[\p{L}\p{N}_-]{2,20}$/u
+const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
+const editorTitle = computed(() => {
+  if (editor.field === 'username') return '设置用户名'
+  if (editor.field === 'email') return store.user?.email ? '修改邮箱' : '绑定邮箱'
+  return '修改称呼'
+})
+const editorHint = computed(() => {
+  if (editor.field === 'username') return '用户名用于登录，设置后不能再改，想清楚了再保存。'
+  if (editor.field === 'email') return '邮箱只用于以后找回账号，随时可以改；留空保存表示解绑。'
+  return '称呼只影响页面上显示的名字，随时可以再改。'
+})
+const editorMaxlength = computed(() => (editor.field === 'username' ? 20 : editor.field === 'email' ? 254 : 40))
 
 function openEditor(field) {
+  const current = { username: username.value, email: store.user?.email || '', displayName: store.user?.displayName || '' }
   editor.field = field
-  editor.value = field === 'username' ? username.value : (store.user?.displayName || '')
+  editor.value = current[field] ?? ''
   editor.open = true
 }
 
 async function saveEditor() {
   if (editor.saving) return
   const value = editor.value.trim()
-  if (!value) {
-    ElMessage.warning(editor.field === 'username' ? '请输入用户名。' : '称呼不能为空。')
+  const field = editor.field
+  if (field === 'email') {
+    // 邮箱允许留空（解绑）；填了才校验格式。
+    if (value && !EMAIL_PATTERN.test(value)) {
+      ElMessage.warning('邮箱格式不正确，或直接留空保存来解绑。')
+      return
+    }
+  } else if (!value) {
+    ElMessage.warning(field === 'username' ? '请输入用户名。' : '称呼不能为空。')
     return
   }
-  if (editor.field === 'username' && !USERNAME_PATTERN.test(value)) {
+  if (field === 'username' && !USERNAME_PATTERN.test(value)) {
     ElMessage.warning('用户名需要 2 到 20 个字符，可用中文、字母、数字、下划线和连字符。')
     return
   }
   editor.saving = true
-  const result = await updateAccountProfile({ [editor.field]: value })
+  const result = await updateAccountProfile({ [field]: value })
   editor.saving = false
   if (!result.success) {
     ElMessage.error(result.error || '保存失败，请稍后重试。')
@@ -44,7 +65,11 @@ async function saveEditor() {
   }
   store.setUser(result.data.user)
   editor.open = false
-  ElMessage.success(editor.field === 'username' ? '用户名已设置，之后可以用它登录。' : '称呼已更新。')
+  if (field === 'email') {
+    ElMessage.success(result.data.user.email ? '邮箱已保存。' : '邮箱已解绑。')
+    return
+  }
+  ElMessage.success(field === 'username' ? '用户名已设置，之后可以用它登录。' : '称呼已更新。')
 }
 
 // 改密码：旧密码由服务端校验，这里只挡明显不合规的输入。
@@ -71,6 +96,13 @@ async function savePassword() {
   password.current = ''
   password.next = ''
   password.confirm = ''
+  // 服务端已把会话版本 +1 并清了 Cookie，这里同步清掉本地登录态，
+  // 再回到登录页——改密码的账号必须用新密码重新登录，这台设备也不例外。
+  if (result.data?.reauthRequired) {
+    await store.clearUser()
+    router.push({ path: '/auth', query: { notice: 'password-changed', redirect: '/account' } })
+    return
+  }
   ElMessage.success('密码已更新，下次登录请用新密码。')
 }
 
@@ -109,7 +141,13 @@ async function logout() {
             <el-button link type="primary" @click="openEditor('displayName')">修改</el-button>
           </span>
         </div>
-        <div class="account-row"><span class="account-label">邮箱</span><strong>{{ store.user?.email || '未绑定' }}</strong></div>
+        <div class="account-row">
+          <span class="account-label">邮箱</span>
+          <span class="account-value">
+            <strong>{{ store.user?.email || '未绑定' }}</strong>
+            <el-button link type="primary" @click="openEditor('email')">{{ store.user?.email ? '修改' : '绑定' }}</el-button>
+          </span>
+        </div>
         <div class="account-row"><span class="account-label">注册日期</span><strong>{{ createdAt }}</strong></div>
         <div class="account-actions">
           <el-button plain size="large" @click="password.open = true">修改密码</el-button>
@@ -122,9 +160,9 @@ async function logout() {
       </section>
     </div>
 
-    <el-dialog v-model="editor.open" :title="editor.field === 'username' ? '设置用户名' : '修改称呼'" width="420px">
-      <p class="dialog-hint">{{ editor.field === 'username' ? '用户名用于登录，设置后不能再改，想清楚了再保存。' : '称呼只影响页面上显示的名字，随时可以再改。' }}</p>
-      <el-input v-model="editor.value" size="large" :maxlength="editor.field === 'username' ? 20 : 40" show-word-limit @keyup.enter="saveEditor" />
+    <el-dialog v-model="editor.open" :title="editorTitle" width="420px">
+      <p class="dialog-hint">{{ editorHint }}</p>
+      <el-input v-model="editor.value" size="large" :maxlength="editorMaxlength" show-word-limit :placeholder="editor.field === 'email' ? '留空保存即解绑' : ''" @keyup.enter="saveEditor" />
       <template #footer>
         <el-button @click="editor.open = false">取消</el-button>
         <el-button type="primary" :loading="editor.saving" @click="saveEditor">保存</el-button>
@@ -132,7 +170,7 @@ async function logout() {
     </el-dialog>
 
     <el-dialog v-model="password.open" title="修改密码" width="440px">
-      <p class="dialog-hint">需要先验证当前密码；改完其他设备上的登录不会被踢下线。</p>
+      <p class="dialog-hint">需要先验证当前密码。改完后所有设备（包括这一台）都会退出登录，请用新密码重新登录。</p>
       <el-input v-model="password.current" type="password" show-password size="large" placeholder="当前密码" autocomplete="current-password" style="margin-bottom:12px" />
       <el-input v-model="password.next" type="password" show-password size="large" placeholder="新密码（8-128 位）" autocomplete="new-password" style="margin-bottom:12px" />
       <el-input v-model="password.confirm" type="password" show-password size="large" placeholder="再输一次新密码" autocomplete="new-password" @keyup.enter="savePassword" />
