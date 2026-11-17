@@ -299,7 +299,7 @@ onMounted(() => {
 .lab-hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
 .lab-status-card{align-self:stretch;padding:20px;border:1px solid color-mix(in srgb,var(--border) 80%,transparent);border-radius:20px;background:color-mix(in srgb,var(--surface) 86%,transparent);display:flex;flex-direction:column;gap:11px}
 .status-row{display:flex;align-items:center;gap:8px;font-size:calc(12.5px*var(--fs-scale));color:var(--text)}
-.status-row code{margin-left:auto;max-width:58%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted);font-size:calc(11px*var(--fs-scale))}
+.status-row code{margin-left:auto;max-width:58%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted);font-size:calc(11.5px*var(--fs-scale));/* 模型名不是代码：等宽字体会把 deepseek-flash 拉成散字 */font-family:inherit;letter-spacing:0}
 .status-dot{width:8px;height:8px;border-radius:50%;background:var(--border);flex:none}
 .status-dot.on{background:var(--success);box-shadow:0 0 0 4px rgba(95,145,121,.12)}
 .status-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:auto;padding-top:14px;border-top:1px dashed var(--border)}

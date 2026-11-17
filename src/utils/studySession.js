@@ -1,3 +1,4 @@
+// @ts-check
 // 学习会话：从学习计划进入做题/背诵/错题时自动开始计时，离开学习窗口时记录专注时长。
 // 只存最小字段（startedAt + 任务信息），已学时长按 startedAt 实时推算，避免每秒写 localStorage。
 const KEY = 'ai-teach-study-session'

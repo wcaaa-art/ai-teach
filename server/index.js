@@ -245,19 +245,27 @@ app.get('/api/ai/rag-search', (req, res) => {
           const answerAt = preview.search(/【答\s*案】/)
           if (answerAt > 60) preview = preview.slice(0, answerAt)
           preview = preview.replace(/^\d{1,2}[.、．]\s*/, '').slice(0, 220)
+          const garbled = Boolean(item.lowQuality) || looksGarbled(preview)
           return {
             citation: item.citation || formatCitation(),
             subject: item.subject,
             year: item.year,
             exam: item.exam,
             score: Math.round(Number(item.score) || 0),
-            snippet: preview.length >= 20 ? preview : '',
-            garbled: looksGarbled(preview)
+            quality: item.quality ?? 1,
+            // 公式被抽坏的片段不再上屏：给出处和"符号缺失"标记，正文交给前端的占位文案，
+            // 免得评委看到 "y y y" 这种残句以为系统在乱编。
+            snippet: garbled || preview.length < 20 ? '' : preview,
+            garbled
           }
         })
         .filter(item => item.citation)
       const relevant = mapped.filter(item => !item.snippet || ragPreviewMatchesKeyword(item.snippet, keyword))
-      passages = (relevant.length ? relevant : mapped).slice(0, 3)
+      const pool = relevant.length ? relevant : mapped
+      // 公式符号抽取完整的片段优先展示；全都不完整时只留一条并打上 garbled 标记，
+      // 而不是拿三条读不懂的残句凑数。
+      const readable = pool.filter(item => !item.garbled)
+      passages = (readable.length ? readable : pool.slice(0, 1)).slice(0, 3)
     } catch {
       passages = []
     }

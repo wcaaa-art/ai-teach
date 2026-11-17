@@ -1,3 +1,4 @@
+// @ts-check
 // AppShell 通知中心的纯计算：今日待办计划、待巩固错题、长期未重做错题，方便直接单测。
 import { correctStreak } from './mistakes.js'
 
