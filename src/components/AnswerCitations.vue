@@ -65,13 +65,13 @@ const items = computed(() => {
 .answer-citations{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin:2px 0 8px}
 .citation-label{display:inline-flex;align-items:center;gap:5px;color:var(--muted);font-size:calc(11px*var(--fs-scale));white-space:nowrap}
 .citation-dot{width:5px;height:5px;border-radius:50%;background:var(--primary);flex:none}
-.citation-chip{max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:2px 8px;border:1px solid color-mix(in srgb,var(--primary) 24%,transparent);border-radius:999px;background:var(--primary-soft);color:#3f6b65;font-family:inherit;font-size:calc(10.5px*var(--fs-scale));line-height:1.7;cursor:pointer;transition:border-color .15s ease,color .15s ease}
-.citation-chip:hover,.citation-chip:focus-visible{border-color:color-mix(in srgb,var(--primary) 58%,transparent);color:#2f5b56;outline:none}
+.citation-chip{max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:2px 8px;border:1px solid color-mix(in srgb,var(--primary) 24%,transparent);border-radius:999px;background:var(--primary-soft);color:var(--primary);font-family:inherit;font-size:calc(10.5px*var(--fs-scale));line-height:1.7;cursor:pointer;transition:border-color .15s ease,color .15s ease}
+.citation-chip:hover,.citation-chip:focus-visible{border-color:color-mix(in srgb,var(--primary) 58%,transparent);color:color-mix(in srgb,var(--primary) 78%,var(--text));outline:none}
 /* 弹层被 teleport 到 body，scoped 样式够不到，统一走 popper-class 全局选择器。 */
 :global(.citation-popper.citation-popper){padding:10px 12px}
 :global(.citation-pop-title){margin:0 0 2px;color:var(--text);font-size:calc(12px*var(--fs-scale));font-weight:600;line-height:1.5}
 :global(.citation-pop-detail){margin:0 0 6px;color:var(--muted);font-size:calc(10.5px*var(--fs-scale))}
 :global(.citation-pop-snippet){margin:0;max-height:180px;overflow:auto;padding:6px 8px;border-radius:6px;background:var(--surface-soft);color:var(--text);font-size:calc(11px*var(--fs-scale));line-height:1.65;white-space:pre-wrap;word-break:break-word}
-:global(.citation-pop-note){margin:6px 0 0;color:#b26a2f;font-size:calc(10.5px*var(--fs-scale))}
+:global(.citation-pop-note){margin:6px 0 0;color:var(--warning);font-size:calc(10.5px*var(--fs-scale))}
 @media(max-width:600px){.citation-chip{max-width:100%}}
 </style>

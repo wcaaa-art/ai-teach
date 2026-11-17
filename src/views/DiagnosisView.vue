@@ -1308,12 +1308,13 @@ onBeforeUnmount(() => cancelAnimationFrame(countFrame))
 .scale-track::before{content:'';position:absolute;left:2px;right:2px;top:50%;height:1px;background-image:repeating-linear-gradient(90deg,currentColor 0 3px,transparent 3px 6px);color:var(--border);opacity:.2}
 .scale-row.untested .scale-track::before{opacity:.1}
 .scale-dot{position:relative;z-index:1;justify-self:center;width:5px;height:5px;border:1px solid var(--border);border-radius:50%;background:var(--surface,#fff)}
-.scale-dot.weak{background:#c08a63;border-color:#c08a63}
-.scale-dot.medium{background:#86ab9f;border-color:#86ab9f}
-.scale-dot.solid{background:#4d817a;border-color:#4d817a}
-.scale-dot.zero{background:#cbd9d4;border-color:#cbd9d4}
+/* 掌握度四档接到全局语义色：弱=琥珀、中=浅主色、扎实=主色、零=弱边界，深色模式自动跟随。 */
+.scale-dot.weak{background:var(--accent);border-color:var(--accent)}
+.scale-dot.medium{background:color-mix(in srgb,var(--primary) 52%,var(--surface));border-color:color-mix(in srgb,var(--primary) 52%,var(--surface))}
+.scale-dot.solid{background:var(--primary);border-color:var(--primary)}
+.scale-dot.zero{background:var(--border);border-color:var(--border)}
 .scale-dot.untested{width:6px;height:6px;border-style:dashed;background:transparent}
-.scale-dot.current{width:10px;height:10px;box-shadow:0 0 0 3px rgba(77,129,122,.18)}
+.scale-dot.current{width:10px;height:10px;box-shadow:0 0 0 3px color-mix(in srgb,var(--primary) 22%,transparent)}
 .scale-state{justify-self:end;font-size:calc(12px*var(--fs-scale));color:var(--faint,var(--muted));white-space:nowrap}
 .scale-state.untested{color:var(--muted)}
 .scale-more{margin:0;font-size:calc(12px*var(--fs-scale));line-height:1.6;color:var(--muted)}

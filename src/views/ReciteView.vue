@@ -1142,7 +1142,8 @@ function backToPlans() {
 </template>
 
 <style scoped>
-.recite-page{--recite-deep:#2f5c57;--recite-mint:#e8f1ed;--recite-line:#e5ede9;--recite-soft:#f6faf8;--recite-ink:#22322f;--recite-muted:#5f736e;padding:22px 32px 40px;max-width:1180px;margin:0 auto;color:var(--recite-ink)}
+/* 局部色板接到全局 token；深色 cover 仍在下方生效，这里只负责浅色。 */
+.recite-page{--recite-deep:var(--primary-deep);--recite-mint:var(--primary-soft);--recite-line:var(--border);--recite-soft:var(--surface-soft);--recite-ink:var(--text);--recite-muted:var(--muted);padding:22px 32px 40px;max-width:1180px;margin:0 auto;color:var(--recite-ink)}
 .recite-top{display:flex;align-items:flex-start;gap:16px;margin-bottom:18px}
 .recite-back{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border:1px solid var(--recite-line);border-radius:999px;background:#fff;color:var(--recite-muted);font-size:12.5px;font-weight:600;cursor:pointer;transition:border-color .18s ease,color .18s ease}
 .recite-back:hover{border-color:var(--recite-deep);color:var(--recite-deep)}

@@ -459,7 +459,8 @@ async function completePlan(plan) {
 }
 // === 本周进度与专注分布：都用本地真实记录，不编造进度 ===
 const focusSessions = ref([])
-const FOCUS_COLORS = ['#2f5c57', '#6b9c92', '#a7c8bf', '#c09a70', '#cbd9d3']
+// 时间分布条形色接到全局语义色板：主色深浅阶梯 + 琥珀强调，不再是一组旧青绿。
+const FOCUS_COLORS = ['#0e7b6b', '#4ca99a', '#8fc9bd', '#d9853f', '#cfe4de']
 const weekFocus = computed(() => {
   const cutoff = startOfDay(now.value) - 6 * DAY_MS
   const map = new Map()
@@ -980,7 +981,6 @@ watch(() => route.query.focusTask, value => { if (value) focusTaskFromQuery() })
               <!-- 已完成与待做分开：待做全部排完，才进入这一段。 -->
               <li v-if="isDoneHead(item)" class="plan-section-head">
                 <span class="plan-section-label">已完成</span>
-                <span class="plan-section-meta">{{ listDoneTotal }} 项</span>
                 <button type="button" class="plan-section-toggle" @click="doneCollapsed = true">收起</button>
               </li>
               <li
@@ -1045,7 +1045,6 @@ watch(() => route.query.focusTask, value => { if (value) focusTaskFromQuery() })
             <!-- 收起后仍然留一行入口，否则已完成的任务看起来像凭空消失了。 -->
             <li v-if="doneCollapsed && listDoneTotal" class="plan-section-head">
               <span class="plan-section-label">已完成</span>
-              <span class="plan-section-meta">{{ listDoneTotal }} 项</span>
               <button type="button" class="plan-section-toggle" @click="doneCollapsed = false">展开</button>
             </li>
           </ol>
@@ -1149,8 +1148,10 @@ watch(() => route.query.focusTask, value => { if (value) focusTaskFromQuery() })
 
 <style scoped>
 /* 学习计划页：按设计稿的青绿纸感重排，颜色只在本页覆盖，不污染全局主题。 */
-.plan-page{padding-bottom:32px;--plan-deep:#2f5c57;--plan-deep-2:#254842;--plan-cta-text:#fff;--plan-mint:#e8f1ed;--plan-mint-strong:#cbded9;--plan-ink:#22322f;--plan-muted:#5f736e;--plan-faint:#9baca5;--plan-done:#cfdcd6;--plan-line:#e5ede9;--plan-soft:#f6faf8;--plan-card:#fff;--plan-cream:#f2f0e8;--plan-warn:#a8744a;color:var(--plan-ink)}
-:global(:root[data-theme='dark'] .plan-page){--plan-deep:#7fb5ab;--plan-deep-2:#9cc8bf;--plan-cta-text:#10231f;--plan-mint:#24423c;--plan-mint-strong:#35605c;--plan-ink:#e6f0ec;--plan-muted:#a3b8b2;--plan-faint:#7f938e;--plan-done:#3f5f57;--plan-line:#2f4741;--plan-soft:#172724;--plan-card:#1b2d29;--plan-cream:#2f2b22;--plan-warn:#d3ab7f}
+/* 局部色板全部派生自全局 token：改主色时这一页跟着变，深色模式也自动生效，
+   不再抄两份硬编码色值（旧版浅色/深色各写一套，早就和新色板脱节）。 */
+.plan-page{padding-bottom:32px;--plan-deep:var(--primary-deep);--plan-deep-2:color-mix(in srgb,var(--primary-deep) 84%,#000);--plan-cta-text:#fff;--plan-mint:var(--primary-soft);--plan-mint-strong:color-mix(in srgb,var(--primary) 30%,var(--surface));--plan-ink:var(--text);--plan-muted:var(--muted);--plan-faint:color-mix(in srgb,var(--muted) 72%,var(--surface));--plan-done:var(--border);--plan-line:var(--border);--plan-soft:var(--surface-soft);--plan-card:var(--surface);--plan-cream:var(--accent-soft);--plan-warn:var(--accent-deep);color:var(--plan-ink)}
+:global(:root[data-theme='dark'] .plan-page){--plan-cta-text:#0b1a18;--plan-deep-2:color-mix(in srgb,var(--primary-deep) 78%,#000);--plan-mint-strong:color-mix(in srgb,var(--primary) 34%,var(--surface))}
 .plan-hero{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;margin:4px 0 22px}
 .hero-title{margin:10px 0 0;font-size:clamp(25px,3vw,33px);line-height:1.3;font-weight:600;letter-spacing:-.02em;color:var(--plan-ink)}
 .hero-sub{margin:10px 0 0;font-size:calc(13px*var(--fs-scale));line-height:1.6;color:var(--plan-muted)}
@@ -1204,7 +1205,6 @@ watch(() => route.query.focusTask, value => { if (value) focusTaskFromQuery() })
    粘在列表底部，滚动时也始终看得见还有多少条已完成，不会被卡片边缘裁掉半行。 */
 .plan-section-head{position:sticky;bottom:0;z-index:2;display:flex;align-items:center;gap:8px;margin:12px 0 0;padding:14px 0 8px;border-top:1px solid var(--plan-line);background:var(--plan-card);list-style:none}
 .plan-section-label{font-size:calc(12px*var(--fs-scale));font-weight:700;letter-spacing:.01em;color:var(--plan-muted)}
-.plan-section-meta{font-size:calc(10.5px*var(--fs-scale));font-weight:600;color:var(--plan-faint);font-variant-numeric:tabular-nums}
 .plan-section-toggle{margin-left:auto;padding:0;border:0;background:transparent;color:var(--plan-deep);font-size:calc(11.5px*var(--fs-scale));font-weight:600;cursor:pointer}
 .plan-section-toggle:hover{text-decoration:underline}
 .plan-section-toggle:focus-visible{outline:2px solid var(--plan-deep);outline-offset:2px;border-radius:4px}

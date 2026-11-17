@@ -9,10 +9,16 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-v4-32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-v4.png" />
     <title>Ai学习小伙伴</title>
-    <!-- 首帧前同步主题，避免深色用户先看到一帧浅色再跳变（设置以 IndexedDB 为准，这里只读镜像） -->
+    <!-- 首帧前同步主题与护眼滤镜：IndexedDB 是异步的，这里只读 store 写下的 localStorage 镜像，
+         避免深色/护眼用户先看到一帧原色再跳变。 -->
     <script>
       try {
         if (localStorage.getItem('ai-teach-theme') === 'dark') document.documentElement.dataset.theme = 'dark'
+        const eye = JSON.parse(localStorage.getItem('ai-teach-eyecare') || 'null')
+        if (eye && eye.enabled) {
+          document.documentElement.dataset.eye = 'on'
+          document.documentElement.style.setProperty('--eye-strength', String((Number(eye.strength) || 0) / 100))
+        }
       } catch (error) {}
     </script>
   </head>

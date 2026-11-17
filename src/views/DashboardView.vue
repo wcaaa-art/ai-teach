@@ -14,6 +14,18 @@ const router = useRouter()
 const route = useRoute()
 const store = useAppStore()
 
+// 图表色统一到全局色板：ECharts 画在 canvas 上读不到 CSS 变量，这里和 styles.css 用同一组色值。
+// 青绿=完成/专注，靛蓝=科目对比，琥珀=考试/峰值，珊瑚=风险——不再让所有系列共用一支旧青绿。
+const CHART = {
+  primary: '#0e7b6b',
+  primaryLight: '#86c5b9',
+  primaryFaint: '#cfe9e2',
+  blue: '#3d6ed4',
+  accent: '#d9853f',
+  danger: '#d4554a',
+  area: 'rgba(14,123,107,.15)'
+}
+
 const range = ref(30)
 const sessions = ref([])
 const feedbacks = ref([])
@@ -95,8 +107,8 @@ const quizTrendOption = computed(() => {
     series: [{
       type: 'line', smooth: true, showSymbol: true, symbolSize: 7,
       data: list.map(item => Math.round((Number(item.accuracy) || 0) * 100)),
-      lineStyle: { color: '#4d817a', width: 2.5 }, itemStyle: { color: '#4d817a' },
-      areaStyle: { color: 'rgba(77,141,142,.14)' }
+      lineStyle: { color: CHART.primary, width: 2.5 }, itemStyle: { color: CHART.primary },
+      areaStyle: { color: CHART.area }
     }]
   }
 })
@@ -111,7 +123,7 @@ const subjectOption = computed(() => ({
   yAxis: { type: 'category', data: subjectRows.value.map(row => row.subject) },
   series: [{
     type: 'bar', barWidth: 18, data: subjectRows.value.map(row => row.accuracy),
-    itemStyle: { color: '#9cbfb7', borderRadius: [0, 8, 8, 0] },
+    itemStyle: { color: CHART.blue, borderRadius: [0, 8, 8, 0] },
     label: { show: true, position: 'right', formatter: '{c}%' }
   }]
 }))
@@ -126,7 +138,7 @@ const wrongChapterOption = computed(() => ({
   yAxis: { type: 'category', inverse: true, data: wrongChapterRows.value.map(row => row.shortName), axisLabel: { fontSize: 12 } },
   series: [{
     type: 'bar', barWidth: 15, data: wrongChapterRows.value.map(row => row.count),
-    itemStyle: { color: '#b96b63', borderRadius: [0, 8, 8, 0] },
+    itemStyle: { color: CHART.danger, borderRadius: [0, 8, 8, 0] },
     label: { show: true, position: 'right' }
   }]
 }))
@@ -142,7 +154,7 @@ const examOption = computed(() => ({
   series: [{
     type: 'line', smooth: true, symbolSize: 8,
     data: examSessions.value.map(row => Math.round(row.score / row.full * 100)),
-    lineStyle: { color: '#c09a70', width: 2.5 }, itemStyle: { color: '#c09a70' }
+    lineStyle: { color: CHART.accent, width: 2.5 }, itemStyle: { color: CHART.accent }
   }]
 }))
 
@@ -365,13 +377,13 @@ const focusOption = computed(() => ({
   series: [{ type: 'line', smooth: true, data: dayLabels.value.map(label => filteredSessions.value
     .filter(item => sameDay(item.createdAt, label))
     .reduce((sum, item) => sum + Math.round((item.actualSeconds || 0) / 60), 0)),
-  areaStyle: { color: 'rgba(77,141,142,.15)' }, lineStyle: { color: '#4d817a' }, itemStyle: { color: '#4d817a' } }]
+  areaStyle: { color: CHART.area }, lineStyle: { color: CHART.primary }, itemStyle: { color: CHART.primary } }]
 }))
 
 const completionOption = computed(() => ({
   tooltip: { trigger: 'axis' }, grid: { left: 45, right: 20, top: 25, bottom: 25 },
   xAxis: { type: 'category', data: dayLabels.value, axisLabel: { interval: range.value > 14 ? 'auto' : 0 } }, yAxis: { type: 'value', max: 100, axisLabel: { formatter: '{value}%' } },
-  series: [{ type: 'bar', barWidth: 22, data: dayLabels.value.map(label => { const daySessions = filteredSessions.value.filter(item => sameDay(item.createdAt, label)); return daySessions.length ? Math.round(daySessions.filter(item => item.completed).length / daySessions.length * 100) : 0 }), itemStyle: { color: '#9cbfb7' }, label: { show: range.value <= 14, position: 'top', formatter: '{c}%' } }]
+  series: [{ type: 'bar', barWidth: 22, data: dayLabels.value.map(label => { const daySessions = filteredSessions.value.filter(item => sameDay(item.createdAt, label)); return daySessions.length ? Math.round(daySessions.filter(item => item.completed).length / daySessions.length * 100) : 0 }), itemStyle: { color: CHART.primaryLight }, label: { show: range.value <= 14, position: 'top', formatter: '{c}%' } }]
 }))
 
 const hourOption = computed(() => ({
@@ -384,7 +396,7 @@ const hourOption = computed(() => ({
   yAxis: { type: 'value', name: '分钟' },
   series: [{
     type: 'bar', barWidth: '58%', data: hours.value,
-    itemStyle: { color: params => (hours.value[params.dataIndex] > 0 && params.dataIndex === peakHour.value ? '#c09a70' : '#9cbfb7'), borderRadius: [5, 5, 0, 0] }
+    itemStyle: { color: params => (hours.value[params.dataIndex] > 0 && params.dataIndex === peakHour.value ? CHART.accent : CHART.primaryLight), borderRadius: [5, 5, 0, 0] }
   }]
 }))
 
@@ -398,7 +410,7 @@ const breakdownOption = computed(() => {
     grid: { left: 82, right: 34, top: 12, bottom: 24 },
     xAxis: { type: 'value', minInterval: 1 },
     yAxis: { type: 'category', inverse: true, data: rows.map(row => row.label) },
-    series: [{ type: 'bar', barWidth: 15, data: rows.map(row => row.count), itemStyle: { color: '#c09a70', borderRadius: [0, 8, 8, 0] }, label: { show: true, position: 'right' } }]
+    series: [{ type: 'bar', barWidth: 15, data: rows.map(row => row.count), itemStyle: { color: CHART.accent, borderRadius: [0, 8, 8, 0] }, label: { show: true, position: 'right' } }]
   }
 })
 
@@ -426,7 +438,8 @@ const knowledgeOption = computed(() => {
       const data = params.data || []
       return `<b>${data[3] || data[0]}</b><br/>掌握等级：${data[2]}/3<br/>学习顺序：第 ${data[1]} 项`
     } },
-    visualMap: { show: false, dimension: 2, min: 0, max: 3, inRange: { color: ['#dbe6e2', '#a7c8bf', '#6b9c92', '#c09a70'] } },
+    // 掌握度从浅到深：淡灰绿 → 主色 → 深主色 → 琥珀，四档一眼可分，不再是同一支青绿渐变。
+    visualMap: { show: false, dimension: 2, min: 0, max: 3, inRange: { color: [CHART.primaryFaint, '#86c5b9', CHART.primary, CHART.accent] } },
     // 关闭 grid3D 自带的 axisPointer：它会在悬停/拖拽时额外冒出一个数值标签，和自绘 tooltip 抢位置。
     grid3D: { left: '6%', top: '4%', width: '88%', height: '84%', axisPointer: { show: false }, viewControl: { projection: 'perspective', autoRotate: false, distance: 235, alpha: 16, beta: 24 }, boxWidth: 200, boxDepth: 82, boxHeight: 106, light: { main: { intensity: 1.1 }, ambient: { intensity: 0.55 } } },
     // 三维轴名在窄容器里会被画布裁掉，统一收到图下方的说明文字里，画面内只保留刻度。
@@ -555,16 +568,16 @@ onMounted(async () => {
 .section-divider{display:flex;align-items:center;gap:12px;margin:30px 0 16px;color:var(--muted);font-size:calc(12px*var(--fs-scale));font-weight:700;letter-spacing:.08em}
 .section-divider:after{content:'';flex:1;height:1px;background:var(--border)}
 .weekly-report{margin-bottom:18px;background:linear-gradient(135deg,var(--surface),var(--primary-soft));scroll-margin-top:104px;transition:box-shadow .25s ease}
-.weekly-report.is-focused{box-shadow:0 0 0 3px rgba(77,141,142,.32),var(--shadow)}
+.weekly-report.is-focused{box-shadow:0 0 0 3px color-mix(in srgb,var(--primary) 32%,transparent),var(--shadow)}
 .weekly-head{align-items:flex-start}
 .weekly-sub{margin:5px 0 0;color:var(--muted);font-size:calc(12px*var(--fs-scale))}
 .weekly-actions{display:flex;align-items:center;gap:10px;flex:none}
 .report-source{padding:3px 9px;border-radius:999px;background:var(--primary-soft);color:var(--primary);font-size:calc(11px*var(--fs-scale));font-weight:700}
-.report-source.mock{background:rgba(230,161,109,.18);color:#b4743c}
+.report-source.mock{background:var(--accent-soft);color:var(--accent-deep)}
 /* 数字一致性核对标记：通过是绿的，有出入转成警示色 */
-.report-check{padding:3px 9px;border-radius:999px;border:1px solid #CDE3D8;background:#EDF5F0;color:#3E8E6E;font-size:calc(11px*var(--fs-scale));font-weight:600;white-space:nowrap}
-.report-check.warn{border-color:#F0C9A8;background:#FDF1E6;color:#b4743c}
-.weekly-mismatch{margin:10px 0 0;padding:9px 12px;border-radius:10px;border:1px solid #F0C9A8;background:#FDF1E6;color:#8d5a2b;font-size:calc(12px*var(--fs-scale));line-height:1.7}
+.report-check{padding:3px 9px;border-radius:999px;border:1px solid color-mix(in srgb,var(--success) 30%,var(--border));background:color-mix(in srgb,var(--success) 12%,var(--surface));color:var(--success);font-size:calc(11px*var(--fs-scale));font-weight:600;white-space:nowrap}
+.report-check.warn{border-color:color-mix(in srgb,var(--accent) 38%,var(--border));background:var(--accent-soft);color:var(--accent-deep)}
+.weekly-mismatch{margin:10px 0 0;padding:9px 12px;border-radius:10px;border:1px solid color-mix(in srgb,var(--accent) 38%,var(--border));background:var(--accent-soft);color:var(--accent-deep);font-size:calc(12px*var(--fs-scale));line-height:1.7}
 .weekly-headline{margin:0 0 8px;font-size:calc(18px*var(--fs-scale))}
 .weekly-summary{margin:0;font-size:calc(13px*var(--fs-scale));line-height:1.75}
 .weekly-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
@@ -572,8 +585,8 @@ onMounted(async () => {
 .weekly-block h5{margin:0 0 8px;font-size:calc(12px*var(--fs-scale));letter-spacing:.04em;color:var(--muted)}
 .weekly-block ul{margin:0;padding-left:16px;display:grid;gap:6px;font-size:calc(12.5px*var(--fs-scale));line-height:1.6}
 .weekly-block.good{border-left:3px solid var(--primary)}
-.weekly-block.risk{border-left:3px solid #b96b63}
-.weekly-block.action{border-left:3px solid #c09a70}
+.weekly-block.risk{border-left:3px solid var(--danger)}
+.weekly-block.action{border-left:3px solid var(--accent)}
 .weekly-foot{display:flex;justify-content:space-between;gap:12px;margin-top:14px;color:var(--muted);font-size:calc(11px*var(--fs-scale));flex-wrap:wrap}
 @media(max-width:800px){.outcome-kpis,.focus-kpis{grid-template-columns:1fr 1fr}.weekly-columns{grid-template-columns:1fr}.weekly-head{flex-direction:column;gap:10px}/* 专注 KPI 是奇数张，手机端最后一张铺满整行，避免右下留空。*/.focus-kpis .stat-card:last-child{grid-column:span 2}}
 </style>

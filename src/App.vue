@@ -13,7 +13,8 @@ const ready = ref(false)
 const contentKey = computed(() => store.user?.id || 'local')
 
 function applyTheme() {
-  document.documentElement.dataset.theme = store.settings.darkMode ? 'dark' : 'light'
+  // 主题与护眼滤镜由 store 统一落地，避免首帧、异步恢复、用户切换三条路径各写一遍。
+  store.applyVisualSettings()
 }
 
 onMounted(async () => {
@@ -32,7 +33,7 @@ onMounted(async () => {
     ready.value = true
   }
 })
-watch(() => store.settings.darkMode, applyTheme)
+watch(() => [store.settings.darkMode, store.settings.eyeCareEnabled, store.settings.eyeCareStrength], applyTheme)
 </script>
 
 <template>

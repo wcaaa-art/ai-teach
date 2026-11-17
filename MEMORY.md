@@ -940,3 +940,57 @@
 - 顺手修掉 `server/index.js` 能力清单里重复写两遍的 `rerank` 键（当时 lint 唯一 error）。
 - 公开前的敏感信息扫描结论：无真实密钥入库，`.env` 与 `server/data/` 均未跟踪；MEMORY.md 里只有本机路径 `C:/Users/豪` 与 Gitee 地址，属公开可见信息，未做脱敏。
 
+## AI 答疑页改版：双栏工作台（2026-11-17）
+
+- 结构：`TutorView` 从「大 hero 渐变卡 + 单列 880 流式」改成左侧 264px 会话栏 + 右侧对话主区。会话栏按 今天/昨天/最近 7 天/更早 分组（`groupLabel` + `groupedConversations`），删掉原来的 `el-select` 历史会话下拉与 hero 卡；≤1240px 隐藏左栏，改由会话头「记录」按钮开 `el-drawer`，抽屉复用同一套 `.rail-item` 样式（ElDrawer 未 append-to-body，scoped 样式能生效）。
+- 对齐：会话头 / 对话流 / 输入框统一 `max-width:860px;margin:0 auto`。改前三者左边缘差 116px（hero 满宽、消息居中、输入框各自居中），是"不精致"的主要来源。
+- 消息：用户气泡改主色浅渐变 + 右下小圆角；AI 回答包进 `.ai-card` 白卡（头部 AI 学伴 + 模式标签 + 时间，底部操作栏带分隔线），替代原来的裸文本；空状态换成 4 张能力卡（拍照讲题 / 完整讲一遍 / 带我想 / 查真题）+ 快捷问法 chips，首屏信息密度不再空。
+- 排版：`renderAnswer` 新增「整行加粗 → h4」分支——模型习惯用 `**步骤1：…**` 代替小标题，不升级就出不来层级；h3 左侧竖线、h4 前置主色圆点，两级层次。
+- 输入：模式切换从底部工具栏移到会话头 segmented（底部只留图标 + 快捷键提示）；textarea 改 `autosize{minRows:1,maxRows:6}`；新增拖拽上传，`onDrop` 与选图共用 `acceptImageFile`，校验口径只写一处。
+- 顺手修：`AnswerCitations` 的 `#3f6b65 / #2f5b56 / #b26a2f` 硬编码色换 `var(--primary) / var(--warning)`——原色在深色主题下几乎不可读。
+- 坑：`npm run build` 在本环境会被 safe-delete 拦截（vite 清空 `dist/assets` 78 个文件超批量删除阈值），改用 `npx vite build --outDir .tmp-test/build-check` 验证，`dist` 未动。
+- 截图手段：本机没有 playwright/browser-use，用 `.tmp-test/shot.mjs`（自签 `ai_teach_session` Cookie + CDP over Node 内置 WebSocket 驱动 headless Chrome），支持 `--eval/--eval2/--wait/--full`，可直接复用于后续走查。
+- 验证：`npm test` 370 通过、eslint 0 error、build 13.50s；1600×1000 / 1440×900 / 1100 抽屉 / 430 移动端 / 深色模式五组截图走查，三区对齐、无溢出、控制台 0 error。
+- 修（21:30 用户截图反馈「右边滚动条有遮挡」）：根因是 `.conversation` 与 `.message` 同为 860px，滚动容器和卡片等宽 → 滚动条正好压在卡片圆角边上。改 `.conversation{max-width:944px}` + `.message{max-width:min(860px,calc(100% - 44px))}`，宽屏靠上限居中、窄屏靠 calc 兜底，实测卡片右边缘到滚动条 42px。**不要再用「mask 让内容渐隐」来掩盖这个问题**，那是症状不是原因。
+- 顺带修排版：`renderAnswer` 支持 `>` 引用块（模型写口诀「拆两头，凑中间」时会输出裸 `>`），连续引用行合并成一个 blockquote，样式为浅主色底 + 左侧 3px 竖线。坑：循环末尾只 `flushList()` 会丢掉"回答以引用结尾"的那块内容，必须 `flushQuote()` 一起收口（已用 setupState 直接跑函数验证：两行合并、列表后接引用、结尾引用三种情况都正常）。
+- 顶部裁切质感：`.conversation` 的 mask 改为「5px 纯透明 + 27px 渐入」，配合 padding `30px/26px`（内边距大于渐隐区），滚到中间时半行字能溶掉，滚到顶/底时首尾消息又不会被自己吃掉。
+
+## 全局配色重构 + 专注空间改版（2026-11-17）
+
+用户反馈：「整个项目都是一个色调，像开了护眼模式？」「专注空间页能优化吗？」——两个诉求一起处理。
+
+### 配色：从「单色护眼」改成「中性底 + 一主四语义」
+- 根因：`styles.css` 底色是 `#f2f7f5`（淡青绿）+ 全站都取同一支低饱和青绿 `#4d817a`，连阴影、光晕、渐变都是绿的 → 整页像护眼模式。
+- 新 token：底色 `#f4f6f9`（中性冷白）、主色 `#0e7b6b`（翡翠绿，饱和提上来）、`--primary-deep`、`--accent` 琥珀/`--blue` 靛蓝/`--violet` 紫/`--danger` 珊瑚。语义约定：青绿=专注完成、靛蓝=计划时间、琥珀=注意力提醒、紫=记忆资料、珊瑚=错题风险。
+- 光晕从单色改三色（左上青绿/右上靛蓝/右下琥珀），底色才有空间感；Element Plus 整套主色阶、success/warning/danger 色阶同步，否则默认蓝和硬编码旧绿会打架。深色主题 token 一并重写（底 `#0f1719`、主 `#3cb69f`）。
+- **关键原则：颜色只小面积用**（图标底、标签、细线、图表系列）。大面积上一堆色会吵。
+- 落地范围：导航栏 icon 按语义分色（每项一个色）、首页科目卡从「同色五个明度」恢复六色相；看板 ECharts 所有系列色（原来全青绿/土黄）统一到 `CHART` 常量；诊断量表四档圆点接全局 token；计划/练习/背诵三页各自的局部色板（`--plan-deep` 等）全部改成 `var(--...)` 引用，浅深同步，不再抄两份硬编码。
+
+### 专注空间改版
+- 布局：铺满视口高（`.focus-page` flex column + `.focus-inner/.focus-layout` flex:1），左右双卡 + 顶部今日三连统计（分钟/次数/连续，三个不同色相）。
+- 待机圆盘补刻度、时长按钮改浅底选中态；右卡空态从「一行还没有记录 + 大片空白」改成节奏预览条 + 三色图例 + 三步说明 + 隐私说明块 + 「先用15分钟试一轮」。
+- 空态卡被左卡拉高后的竖向空隙：给每块 `margin-top:auto` 让 flex 平分空隙（`.last-card.is-empty > * + *`），别只把空隙堆在一处——会出现「一段内容 + 一个大空洞」。
+- 隐私块文案配锁形图标（不是摄像头），语义是「不上传」；接蓝 token。
+- **移动端坑**：标题 `.focus-head-main` 是 `flex:1;min-width:0`，basis=0 时会被右侧统计挤成「一列一个字」。≤640px 改 `flex:1 0 100%` 让标题独占一行，统计和按钮排第二行。圆盘下说明文字 `max-width:122px` 避免断在「结/束」中间。
+
+### 验证
+- `node --test` 370 通过（直接跑；`npm test` 本环境曾 SIGTERM 超时，非代码问题）、eslint 0 error、build 13.79s（用新目录 `.tmp-test/build3`，避免 safe-delete 拦清空旧目录）。
+- 截图走查：专注页 1600/1440/430/深色、首页浅+深、看板、诊断、计划浅+深、答疑、错题——配色一致、无溢出、深色无浅底刺眼块。
+- 改动文件共 12 个（含前一轮答疑页），均在 `preview/all` 分支工作区，**未提交**。
+- 遗留：eslint 3 个 warning（`planTitle`/`exitFocus`/`toggleFullscreen` 未使用）是既有死代码，按外科手术原则没删。
+
+### 护眼模式：从固定配色改成用户可选滤镜
+- 需求原话「设置护眼模式可调节」——不把护眼色写死，让用户自己开关并调强度。
+- 数据：`store.settings` 加 `eyeCareEnabled` / `eyeCareStrength`（0~100，默认 40）。原来分散的 `mirrorTheme()` 合并成 `applyVisualSettings()`，一处同时写 `data-theme`、`data-eye`、`--eye-strength` 与 localStorage 镜像（`ai-teach-theme` / `ai-teach-eyecare`）；调用点收敛为 hydrate、updateSettings、App.vue 的 applyTheme（watch 三个字段）。
+- 首帧防闪：`index.html` 内联脚本读 localStorage 镜像，首帧前就定好主题和滤镜。
+- 滤镜层：`styles.css` 的 `body::after` 全屏 fixed + `pointer-events:none` + z-index 9999，所有页面零改动。浅色 `#ffd08a` + multiply，深色 `#ffc27a` + soft-light（系数 0.3，避免把深色糊成一片）；强度映射 `opacity = strength/100 * 0.62`（浅）/`*0.3`（深）。
+- UI：设置页独立护眼卡（开关 + 滑杆 + 三档预设 25/45/70 + 所见即所得预览色块）；AppShell 桌面侧栏和移动顶栏各放一个眼睛快捷按钮，方便路演现场一键演示。
+- **踩坑**：快捷按钮 CSS 误追加进 `@media(min-width:801px)` 块内，桌面正常、移动端退化成原生 button（眼睛变黑色实心块、按钮被撑到 48×70）。排查靠 CDP 量测 `getBoundingClientRect()` + `getComputedStyle(path).fill/stroke`。教训：这个项目的 SFC 样式被压成少数超长行，追加样式前必须先确认 `@media` 边界。
+- 验证：370 测试绿、build 13.46s；设置页开关前后、三档、深色叠加、移动端截图走查；深色滤镜实测 opacity 0.21 / soft-light。
+
+### 顶部导航响应式：绝不出横向滚动条
+- 用户反馈 1184px 下导航出滚动条、末项被裁。根因：1181–1500px 档只压间距不换标签，8 个完整名称需 729px、实际只有 538px。
+- 现方案：nav 每项同时渲染 `label` 与 `short`（两字），由媒体查询切换；1181–1700px 品牌只留 logo + 显示 short；≥1701px 恢复完整名称；≤1180px 只留图标；nav 容器 `overflow:hidden`。
+- **排查手法**：headless 截图不渲染滚动条，靠 CDP 量 `nav.scrollWidth` / `clientWidth` / 末项 `getBoundingClientRect().right` 与容器右边界之差，才能发现「被裁但看不出来」的问题。
+- 实测 1184/1281/1440/1500/1600/1701/1920 全档无溢出，430px tabbar 不受影响。
+

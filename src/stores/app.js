@@ -12,6 +12,10 @@ export const useAppStore = defineStore('app', () => {
     soundEnabled: true,
     ttsEnabled: true,
     darkMode: false,
+    // 护眼模式：在现有配色上叠一层暖色滤镜。enabled 控制开关，strength 是 0~100 的强度百分比。
+    // 强度单独存，用户关掉再打开时仍保留上次调好的档位。
+    eyeCareEnabled: false,
+    eyeCareStrength: 40,
     lowPerformance: false,
     // 主页「从一个好奇开始」展示的科目，用户可自由增减，只保存在本机设置；默认只放语数英
     favoriteSubjects: ['语文', '数学', '英语'],
@@ -28,10 +32,22 @@ export const useAppStore = defineStore('app', () => {
   let authRequest = null
   const isDark = computed(() => settings.value.darkMode)
 
-// 主题镜像：IndexedDB 是异步的，首屏拿到设置前会闪一下浅色；
-// 把结果同步写一份到 localStorage，index.html 的内联脚本就能在首帧前把主题定下来。
-function mirrorTheme() {
-  try { localStorage.setItem('ai-teach-theme', settings.value.darkMode ? 'dark' : 'light') } catch (error) { /* 隐私模式下写不进去，忽略 */ }
+// 视觉设置镜像：IndexedDB 是异步的，首屏拿到设置前会闪一下浅色（或没有护眼滤镜）。
+// 把主题和护眼档位同步写一份到 localStorage，index.html 的内联脚本就能在首帧前把两者都定下来。
+// 所有写入口（hydrate / updateSettings / App.vue）都走这里，避免出现三种状态各写各的。
+function applyVisualSettings() {
+  const root = document.documentElement
+  const dark = Boolean(settings.value.darkMode)
+  const eyeOn = Boolean(settings.value.eyeCareEnabled)
+  const strength = Math.max(0, Math.min(100, Number(settings.value.eyeCareStrength) || 0))
+  root.dataset.theme = dark ? 'dark' : 'light'
+  root.dataset.eye = eyeOn ? 'on' : 'off'
+  // 滤镜层用这个变量控制暖色浓度；0~100 映射到 0~1，具体衰减写在 styles.css 里。
+  root.style.setProperty('--eye-strength', String(strength / 100))
+  try {
+    localStorage.setItem('ai-teach-theme', dark ? 'dark' : 'light')
+    localStorage.setItem('ai-teach-eyecare', JSON.stringify({ enabled: eyeOn, strength }))
+  } catch (error) { /* 隐私模式下写不进去，忽略 */ }
 }
 
   async function hydrate() {
@@ -39,7 +55,7 @@ function mirrorTheme() {
     try {
       const persisted = await getSettings()
       if (persisted) settings.value = { ...settings.value, ...persisted }
-      mirrorTheme()
+      applyVisualSettings()
     } catch (error) {
       console.warn('本机设置读取失败，将使用默认设置。', error)
     } finally {
@@ -51,8 +67,7 @@ function mirrorTheme() {
     settings.value = { ...settings.value, ...patch }
     // 展开成普通对象再写库：Vue 响应式 Proxy 无法被 IndexedDB 结构化克隆
     try { await saveSettings({ ...settings.value }) } catch (error) { console.warn('本机设置暂时无法持久化。', error) }
-    document.documentElement.dataset.theme = settings.value.darkMode ? 'dark' : 'light'
-    mirrorTheme()
+    applyVisualSettings()
   }
 
   // 登录态通过 HttpOnly Cookie 在服务端维持，这里只缓存当前用户并去重并发查询。
@@ -91,5 +106,5 @@ function mirrorTheme() {
   function setPlans(value) { plans.value = value }
   function setProfile(value) { profile.value = value }
 
-  return { plans, profile, settings, isDark, hydrated, user, authChecked, hydrate, ensureAuth, setUser, clearUser, updateSettings, setPlans, setProfile }
+  return { plans, profile, settings, isDark, hydrated, user, authChecked, hydrate, ensureAuth, setUser, clearUser, updateSettings, applyVisualSettings, setPlans, setProfile }
 })

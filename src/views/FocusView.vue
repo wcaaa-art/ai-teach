@@ -90,6 +90,11 @@ let attentionSince = 0
 const clampMinutes = value => { const number = Number(value); return Number.isFinite(number) && number > 0 ? Math.min(240, Math.max(5, Math.round(number))) : null }
 const totalMinutes = computed(() => { const value = durationMode.value === 'custom' ? clampMinutes(customMinutes.value) ?? 25 : Number(durationMode.value); return Math.min(240, Math.max(5, value)) })
 const duration = () => totalMinutes.value * 60
+// 待机圆盘下的「预计几点结束」：比重复一遍时长有用，学生能直接判断这一轮能不能塞进当下。
+const endTimeLabel = computed(() => {
+  const end = new Date(Date.now() + totalMinutes.value * 60000)
+  return `${String(end.getHours()).padStart(2, '0')}:${String(end.getMinutes()).padStart(2, '0')}`
+})
 const planTitle = computed(() => formatMathText(freeMode.value ? (freeTaskName.value.trim() || '自由专注') : (selectedPlan.value?.name || '准备开始')))
 const suggestionMinutes = computed(() => clampMinutes(focusSuggestion.value?.recommendedMinutes))
 const suggestionPercent = computed(() => { const accuracy = Number(focusSuggestion.value?.accuracy); return Number.isFinite(accuracy) ? Math.round(accuracy * 100) : null })
@@ -213,6 +218,12 @@ function applyPlanDuration(plan) {
   else { durationMode.value = 'custom'; customMinutes.value = minutes }
 }
 function choosePreset(minute) { if (running.value) return; durationMode.value = minute; applyDuration() }
+// 空态的一键试跑：切成 15 分钟再直接开始，省掉选任务和选时长的两步。
+function quickStart() {
+  if (running.value) return
+  choosePreset(15)
+  start()
+}
 // 自定义：点一下在旁边弹出小滚轮浮层，再点收起（等同取消）。
 function chooseCustom() {
   if (running.value) return
@@ -964,6 +975,13 @@ onBeforeUnmount(() => {
           <h1 class="focus-title">{{ headline }}</h1>
           <p class="focus-sub">{{ subhead }}</p>
         </div>
+        <!-- 待机时把今日三项数据搬到标题右侧：原本它们只在「专注中」出现，
+             待机页右侧空一大片却看不见自己今天到底学了多久。 -->
+        <div v-if="view === 'idle'" class="head-stats">
+          <div class="head-stat is-time"><strong>{{ todayMinutesLive }}</strong><span>今日分钟</span></div>
+          <div class="head-stat is-count"><strong>{{ todaySessionCount }}</strong><span>今天次数</span></div>
+          <div class="head-stat is-streak"><strong>{{ streakDays }}</strong><span>连续天数</span></div>
+        </div>
         <div class="focus-actions">
           <button v-if="view === 'idle'" class="focus-bar-btn history-entry" type="button" @click="openHistory">
             <svg class="bar-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><circle cx="8" cy="8" r="6" /><path d="M8 4.5V8l2.4 1.6" /></svg>专注回顾
@@ -993,11 +1011,13 @@ onBeforeUnmount(() => {
 
           <div class="dial dial-idle">
             <svg class="dial-svg" viewBox="0 0 200 200" aria-hidden="true">
+              <!-- 外圈 12 个刻度：让「一个圆盘」有仪表感，也暗示这是按分钟走的计时器。 -->
+              <circle class="dial-ticks" cx="100" cy="100" r="88" stroke-dasharray="2 44.08" />
               <circle class="dial-track" cx="100" cy="100" r="80" />
             </svg>
             <div class="dial-face">
               <strong class="dial-time">{{ formatClock(totalMinutes * 60) }}</strong>
-              <small>还没开始</small>
+              <small>还没开始 · 预计 {{ endTimeLabel }} 结束</small>
             </div>
           </div>
 
@@ -1063,7 +1083,7 @@ onBeforeUnmount(() => {
                 <el-switch :model-value="cameraOn" @change="toggleCamera" />
               </div>
             </div>
-            <div class="focus-card last-card">
+            <div class="focus-card last-card" :class="{ 'is-empty': !lastSessionCard }">
               <template v-if="lastSessionCard">
                 <div class="last-head"><strong>上次专注</strong><span>{{ lastSessionCard.label }}</span></div>
                 <div class="last-time"><strong>{{ lastSessionCard.time }}</strong><small>/ {{ lastSessionCard.caption }}</small></div>
@@ -1084,12 +1104,43 @@ onBeforeUnmount(() => {
                   </div>
                 </div>
                 <p class="last-note">{{ idleObservation }}</p>
+                <p class="idle-footnote">画面只在专注期间开启，结束自动关闭，不录制也不上传。</p>
               </template>
               <template v-else>
-                <div class="last-head"><strong>上次专注</strong></div>
-                <p class="last-empty">还没有记录，第一轮专注结束后这里会出现你的节奏。</p>
+                <div class="last-head"><strong>专注节奏</strong><span>还没有记录</span></div>
+                <!-- 空态不再是一行「还没有记录」加大片空白：先把这张卡未来会长什么样画出来，
+                     既填掉了竖向空白，也说明了绿色/琥珀/灰色各自代表什么。 -->
+                <div class="rhythm-preview" aria-hidden="true">
+                  <span class="seg-focus" style="width:38%"></span>
+                  <span class="seg-distracted" style="width:8%"></span>
+                  <span class="seg-focus" style="width:24%"></span>
+                  <span class="seg-away" style="width:8%"></span>
+                  <span class="seg-focus" style="width:22%"></span>
+                </div>
+                <div class="rhythm-legend">
+                  <span><i class="dot dot-focus"></i>在学</span>
+                  <span><i class="dot dot-distracted"></i>走神</span>
+                  <span><i class="dot dot-away"></i>离开</span>
+                </div>
+                <ol class="rhythm-steps">
+                  <li><em>01</em><span>选一件事，定好时长</span></li>
+                  <li><em>02</em><span>学习画面帮你盯住走神和离座</span></li>
+                  <li><em>03</em><span>结束后这里出现你的时间轴和下轮建议</span></li>
+                </ol>
+                <!-- 隐私说明放在这里而不是压在卡底的小灰字里：第一次用的人最想知道摄像头会不会录。
+                     图标用锁而不是摄像头：这一块的语义是「不上传」，锁比镜头更贴题。 -->
+                <div class="rhythm-note">
+                  <svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.2" y="7" width="9.6" height="6.4" rx="1.8" /><path d="M5.6 7V5.6a2.4 2.4 0 0 1 4.8 0V7" /></svg>
+                  <div>
+                    <strong>画面只在本轮用，不上传</strong>
+                    <small>识别在浏览器本地完成，结束即关闭；关掉开关就只计时。</small>
+                  </div>
+                </div>
+                <!-- 空态给一个最短路径：不想选任务也能立刻跑一轮 15 分钟。 -->
+                <button class="rhythm-start" type="button" @click="quickStart">
+                  <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5.5 3.5 12 8l-6.5 4.5z" /></svg>先用 15 分钟试一轮
+                </button>
               </template>
-              <p class="idle-footnote">画面只在专注期间开启，结束自动关闭，不录制也不上传。</p>
             </div>
           </template>
 
@@ -1210,76 +1261,91 @@ onBeforeUnmount(() => {
 </template>
 <style scoped>
 .focus-page{
-  --paper:#ffffff;
-  --line:#e5ede9;
-  --divider:#eef4f1;
-  --ink:#22322f;
-  --ink-soft:#5f736e;
-  --ink-faint:#8fa19b;
-  --ink-ghost:#b7c4bf;
-  --brand:#4d817a;
-  --brand-soft:#e7f1ed;
-  --brand-mid:#6d9a90;
-  --brand-line:#b7cdc6;
-  --wander:#c09a70;
-  --away:#D9DED8;
-  --unknown:#E6EAE3;
-  --beige:#f4f0e7;
-  --beige-ink:#6B5A45;
-  --el-color-primary:#4d817a;
-  --el-color-primary-light-3:#80a7a1;
-  --el-color-primary-light-5:#a6c1bd;
-  --el-color-primary-light-7:#cbdcd8;
-  --el-color-primary-light-8:#dbe8e4;
-  --el-color-primary-light-9:#edf3f1;
-  --el-switch-on-color:#4d817a;
-  /* 顶部导航恢复显示后，专注页不再独占整屏：扣掉 sticky 导航的 80px，避免多出一条滚动。 */
+  /* 本地色板全部从全局 token 派生，不再写死一支青绿：
+     ①改主色时这一页跟着变，②深色模式不用再单独抄一份色值，③color-mix 让「弱化」层级自动成立。 */
+  --paper:var(--surface);
+  --line:var(--border);
+  --divider:color-mix(in srgb,var(--border) 72%,transparent);
+  --ink:var(--text);
+  --ink-soft:var(--muted);
+  --ink-faint:color-mix(in srgb,var(--muted) 82%,var(--surface));
+  --ink-ghost:color-mix(in srgb,var(--muted) 60%,var(--surface));
+  --brand:var(--primary);
+  --brand-soft:var(--primary-soft);
+  --brand-mid:color-mix(in srgb,var(--primary) 74%,var(--muted));
+  --brand-line:color-mix(in srgb,var(--primary) 34%,var(--border));
+  /* 走神用琥珀、离开用中性灰：两种「没在学」的原因靠色相区分，不看文字也能分辨。 */
+  --wander:var(--accent);
+  --away:color-mix(in srgb,var(--muted) 26%,var(--surface));
+  --unknown:color-mix(in srgb,var(--muted) 16%,var(--surface));
+  --plan:var(--blue);
+  --plan-soft:var(--blue-soft);
+  --el-color-primary:var(--primary);
+  --el-switch-on-color:var(--primary);
+  /* 顶部导航是 sticky 80px，页面自己再占满剩余高度，卡片铺到底，下方不留一条空白。 */
   min-height:calc(100vh - 80px);max-width:none;width:100%;margin:0;
-  padding:0;
-  background:var(--bg);
+  padding:0;display:flex;flex-direction:column;
+  background:transparent;
   color:var(--ink);
 }
-.focus-inner{max-width:1120px;margin:0 auto;padding:6px 22px 0}
+.focus-inner{flex:1;min-width:0;display:flex;flex-direction:column;max-width:1120px;margin:0 auto;padding:6px 22px 18px}
 .focus-label{font-size:calc(11.5px*var(--fs-scale));font-weight:600;letter-spacing:.14em;color:var(--ink-faint);margin-right:2px}
 .focus-bar-btn{display:inline-flex;align-items:center;gap:5px;padding:5px 10px;border:1px solid var(--border);border-radius:8px;background:var(--paper);color:var(--ink-soft);font-family:inherit;font-size:calc(11.5px*var(--fs-scale));line-height:1.4;cursor:pointer;transition:color .2s,border-color .2s,background .2s}
 .focus-bar-btn .bar-icon{width:13px;height:13px;flex:none;opacity:.7;transition:opacity .2s}
 .focus-bar-btn:hover{color:var(--brand);border-color:var(--brand-line);background:var(--surface-soft)}
 .focus-bar-btn:hover .bar-icon{opacity:1}
-.focus-head{display:flex;align-items:flex-start;gap:18px;margin:8px 0 18px}
+.focus-head{display:flex;align-items:center;gap:18px;margin:6px 0 16px;flex:none}
 .focus-head-main{flex:1;min-width:0}
-.focus-actions{flex:none;margin-left:auto;display:flex;align-items:center;gap:8px;padding-top:2px}
+.focus-actions{flex:none;display:flex;align-items:center;gap:8px}
+/* 今日三项：数字用三个不同色相（绿=专注时长、蓝=次数、琥珀=连续），
+   一眼能分出三件事，而不是三团一样的青绿数字。 */
+.head-stats{flex:none;display:flex;align-items:center;padding:6px 2px;border:1px solid var(--border);border-radius:14px;background:var(--paper)}
+.head-stat{min-width:74px;padding:0 14px;text-align:center}
+.head-stat+.head-stat{border-left:1px solid var(--divider)}
+.head-stat strong{display:block;font-family:Georgia,'Times New Roman',serif;font-size:calc(19px*var(--fs-scale));font-weight:400;line-height:1.1;letter-spacing:-.01em}
+.head-stat span{display:block;margin-top:3px;font-size:calc(10.5px*var(--fs-scale));color:var(--ink-ghost);white-space:nowrap}
+.head-stat.is-time strong{color:var(--brand)}
+.head-stat.is-count strong{color:var(--plan)}
+.head-stat.is-streak strong{color:var(--wander)}
 /* 「专注回顾」带一个连续天数徽章，让右上角入口有信息量而不是孤零零三个字。 */
 .focus-bar-btn.history-entry .history-badge{display:inline-flex;align-items:center;margin-left:4px;padding:1px 8px;border-radius:999px;background:var(--brand-soft);color:var(--brand);font-size:calc(10.5px*var(--fs-scale));font-weight:600;line-height:1.5}
 .focus-title{margin:0;font-size:calc(23px*var(--fs-scale));font-weight:500;line-height:1.35;letter-spacing:-.01em}
 .focus-sub{margin:8px 0 0;font-size:calc(12px*var(--fs-scale));color:var(--ink-soft);line-height:1.6}
-.focus-layout{display:flex;gap:14px;align-items:flex-start}
+.focus-layout{flex:1;min-height:0;display:flex;gap:14px;align-items:stretch}
 .focus-layout.is-running{align-items:stretch}
-.focus-card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 18px 15px;min-width:0}
+.focus-card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 18px 15px;min-width:0;box-shadow:0 1px 2px rgba(20,38,50,.03)}
+/* 左卡撑满剩余高度，圆盘才能垂直居中；不写死高度，窗口变高时卡片跟着长。 */
 .idle-card{flex:1;display:flex;flex-direction:column}
 .running-card{flex:1;display:flex;flex-direction:column}
-.focus-side{width:320px;flex:none;display:flex;flex-direction:column;gap:12px;min-width:0}
+.focus-side{width:340px;flex:none;display:flex;flex-direction:column;gap:12px;min-width:0}
 .focus-caption{display:block;font-size:calc(11.5px*var(--fs-scale));color:var(--ink-faint);letter-spacing:.02em}
 /* 走神干预倒计时：橙色警示条 + 轻微呼吸感，提醒但不惊吓。 */
-.intervene-hint{margin:10px 0 0;padding:9px 12px;border:1px solid #F0C9A8;border-radius:10px;background:#FDF1E6;color:#8d5a2b;font-size:calc(12px*var(--fs-scale));line-height:1.6;text-align:center;animation:intervene-breathe 1.9s ease-in-out infinite}
+.intervene-hint{margin:10px 0 0;padding:9px 12px;border:1px solid color-mix(in srgb,var(--wander) 34%,transparent);border-radius:10px;background:var(--accent-soft);color:var(--accent-deep);font-size:calc(12px*var(--fs-scale));line-height:1.6;text-align:center;animation:intervene-breathe 1.9s ease-in-out infinite}
 @keyframes intervene-breathe{0%,100%{opacity:1}50%{opacity:.7}}
 /* 合并后的任务下拉：整行铺满，代替原来的科目胶囊 + 选任务两行。 */
 .task-pick{margin-top:12px;max-width:100%}
 .task-pick :deep(.el-select){width:100%}
 .free-line{margin-top:12px;max-width:100%}
 .dial{position:relative;display:grid;place-items:center;align-self:center}
-.dial-idle{width:164px;height:164px;margin-top:14px}
-.dial-running{width:196px;height:196px;margin-top:auto;margin-bottom:12px}
+/* 待机圆盘垂直居中在剩余空间里：卡片随窗口变高时，圆盘永远在中轴上。 */
+.dial-idle{width:164px;height:164px;margin:auto 0}
+.dial-running{width:196px;height:196px;margin:auto 0 12px}
 .dial-svg{position:absolute;inset:0;width:100%;height:100%}
-.dial-track{fill:none;stroke:var(--divider);stroke-width:5}
-.dial-progress{fill:none;stroke:var(--brand);stroke-width:5;stroke-linecap:round;transform:rotate(-90deg);transform-origin:100px 100px;transition:stroke-dashoffset .4s linear}
+/* 待机时圆环也要看得见：原来用 --divider（近乎白）描边，25:00 像浮在空气里。 */
+.dial-track{fill:none;stroke:color-mix(in srgb,var(--brand) 16%,transparent);stroke-width:5}
+.dial-ticks{fill:none;stroke:color-mix(in srgb,var(--brand) 30%,transparent);stroke-width:2;stroke-linecap:round}
+.dial-progress{fill:none;stroke:var(--brand);stroke-width:5;stroke-linecap:round;transform:rotate(-90deg);transform-origin:100px 100px;transition:stroke-dashoffset .4s linear;filter:drop-shadow(0 0 6px color-mix(in srgb,var(--brand) 26%,transparent))}
 .dial.is-away .dial-progress{opacity:.4}
 .dial-face{position:relative;display:flex;flex-direction:column;align-items:center;gap:8px}
 .dial-face small{font-size:calc(11.5px*var(--fs-scale));color:var(--ink-faint);line-height:1.4}
-.dial-time{font-family:Georgia,'Times New Roman',serif;font-size:calc(34px*var(--fs-scale));font-weight:400;line-height:1;color:#A9B5AC;letter-spacing:-.01em}
+.dial-time{font-family:Georgia,'Times New Roman',serif;font-size:calc(34px*var(--fs-scale));font-weight:400;line-height:1;color:var(--ink);letter-spacing:-.01em;font-variant-numeric:tabular-nums}
 .dial-running .dial-face :deep(.plain-clock){font-family:Georgia,'Times New Roman',serif;font-size:calc(38px*var(--fs-scale));font-weight:400;line-height:1;color:var(--ink);letter-spacing:-.02em}
 .duration-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:12px}
-.duration-chip{padding:9px 6px;border:1px solid transparent;border-radius:10px;background:#F4F6F2;color:var(--ink-soft);font-family:inherit;font-size:calc(12px*var(--fs-scale));line-height:1.4;white-space:nowrap;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
-.duration-chip.active{background:var(--paper);border-color:var(--brand);color:var(--ink);font-weight:600}
+/* 时长档位：未选中是中性纸面，选中是主色浅底 + 主色字 + 一圈很淡的主色外环。
+   原来选中的那块反而最白最亮，未选中的四块是灰底，视觉重量是反的。 */
+.duration-chip{padding:9px 6px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);color:var(--ink-soft);font-family:inherit;font-size:calc(12px*var(--fs-scale));line-height:1.4;white-space:nowrap;cursor:pointer;transition:background .2s,color .2s,border-color .2s,box-shadow .2s}
+.duration-chip:hover{border-color:var(--brand-line);color:var(--ink)}
+.duration-chip.active{background:var(--brand-soft);border-color:color-mix(in srgb,var(--brand) 52%,transparent);color:var(--brand);font-weight:600;box-shadow:0 0 0 3px color-mix(in srgb,var(--brand) 9%,transparent)}
 /* 自定义：胶囊旁的小滚轮浮层 */
 .custom-wrap{position:relative;display:flex}
 .custom-wrap .duration-chip{flex:1;width:100%}
@@ -1291,8 +1357,9 @@ onBeforeUnmount(() => {
 .custom-pop-fade-enter-active,.custom-pop-fade-leave-active{transition:opacity .16s,transform .16s}
 .custom-pop-fade-enter-from,.custom-pop-fade-leave-to{opacity:0;transform:translateY(-4px)}
 .focus-hint{margin:10px 0 0;font-size:calc(11px*var(--fs-scale));color:var(--ink-ghost);line-height:1.6;text-align:center}
-.focus-primary{display:block;width:100%;margin-top:14px;padding:11px 18px;border:0;border-radius:999px;background:var(--brand);color:#F7FAF7;font-family:inherit;font-size:calc(13px*var(--fs-scale));font-weight:500;line-height:1.4;cursor:pointer;transition:background .2s}
-.focus-primary:hover{background:#25493C}
+.focus-primary{display:block;width:100%;margin-top:14px;padding:11px 18px;border:0;border-radius:999px;background:var(--brand-gradient);color:#fff;font-family:inherit;font-size:calc(13px*var(--fs-scale));font-weight:600;line-height:1.4;cursor:pointer;box-shadow:0 10px 24px color-mix(in srgb,var(--brand) 24%,transparent);transition:filter .2s,box-shadow .2s,transform .2s}
+.focus-primary:hover{filter:brightness(1.07);box-shadow:0 14px 30px color-mix(in srgb,var(--brand) 32%,transparent)}
+.focus-primary:active{transform:translateY(1px)}
 .primary-arrow{display:inline-block;margin-left:9px;transition:transform .2s}
 .focus-primary:hover .primary-arrow{transform:translateX(3px)}
 .focus-primary-inline{width:auto;margin-top:0;padding:10px 28px;font-size:calc(12.5px*var(--fs-scale))}
@@ -1302,6 +1369,18 @@ onBeforeUnmount(() => {
 .live-footnote{display:flex;align-items:center;justify-content:center;gap:7px;margin:16px 0 0;font-size:calc(11px*var(--fs-scale));color:var(--ink-ghost);line-height:1.5;text-align:center}
 .footnote-cam{width:15px;height:12px;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linejoin:round}
 .idle-footnote{margin:auto 0 0;padding-top:16px;font-size:calc(11px*var(--fs-scale));color:var(--ink-ghost);line-height:1.5}
+/* 空态的隐私说明：和脚注同一套排版，但带一块浅底，作为独立信息块而不是卡底补白。 */
+.rhythm-note{display:flex;align-items:flex-start;gap:9px;margin:auto 0 0;padding:11px 12px;border:1px solid color-mix(in srgb,var(--blue) 18%,var(--border));border-radius:11px;background:color-mix(in srgb,var(--blue-soft) 62%,var(--surface))}
+.rhythm-note svg{width:14px;height:14px;flex:none;margin-top:1px;fill:none;stroke:var(--blue);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.rhythm-note div{min-width:0}
+.rhythm-note strong{display:block;font-size:calc(11.5px*var(--fs-scale));color:color-mix(in srgb,var(--blue-deep) 82%,var(--text))}
+.rhythm-note small{display:block;margin-top:2px;font-size:calc(10.5px*var(--fs-scale));color:var(--ink-soft);line-height:1.5}
+.rhythm-start{margin-top:10px}
+/* 空态卡会被左卡拉到很高，若只把空隙全留给「说明块和隐私块之间」，就会出现一段内容和一大块空洞。
+   这里给每块之间都留 auto 外边距，flex 会把剩余高度平均切开，读起来是均匀的呼吸感而不是缺内容。 */
+.last-card.is-empty > * + *{margin-top:auto}
+/* 三步列表本身带 margin-bottom:auto，会多吸一份空隙，让说明块上方比别处空一截；这里收掉。 */
+.last-card.is-empty .rhythm-steps{margin-bottom:0}
 /* 主按钮 + 提前结束上下堆叠、整体居中，和上方圆环对齐在同一中轴线上。 */
 .run-actions{display:flex;flex-direction:column;align-items:center;gap:5px}
 .run-actions .focus-text{position:static;transform:none;padding:2px 6px}
@@ -1316,7 +1395,7 @@ onBeforeUnmount(() => {
 .last-card{display:flex;flex:1;flex-direction:column}
 .camera-switch{display:flex;align-items:center;gap:10px}
 .side-divider{height:1px;margin:14px 0;background:var(--divider)}
-.camera-glyph{width:19px;height:15px;flex:none;fill:none;stroke:#A9B8AC;stroke-width:1.7;stroke-linejoin:round}
+.camera-glyph{width:19px;height:15px;flex:none;fill:none;stroke:color-mix(in srgb,var(--brand) 52%,var(--muted));stroke-width:1.7;stroke-linejoin:round}
 .camera-switch-text{flex:1;min-width:0}
 .camera-switch-text strong{display:block;font-size:calc(12.5px*var(--fs-scale));font-weight:500}
 .camera-switch-text small{display:block;margin-top:3px;font-size:calc(11px*var(--fs-scale));color:var(--ink-ghost);line-height:1.5}
@@ -1330,6 +1409,18 @@ onBeforeUnmount(() => {
 .mini-bar span{display:block;height:100%}
 .mini-legend{display:flex;justify-content:space-between;gap:6px;margin-top:8px;font-size:calc(11px*var(--fs-scale));color:var(--ink-faint)}
 .last-empty{margin:12px 0 0;font-size:calc(11.5px*var(--fs-scale));color:var(--ink-ghost);line-height:1.7}
+/* 空态的「节奏预览」：用一条淡化的分段条示意结束后的时间轴长什么样，
+   三段色相与真实数据一致（绿=在学 / 琥珀=走神 / 灰=离开）。 */
+.rhythm-preview{display:flex;height:10px;margin-top:18px;border-radius:5px;overflow:hidden;background:var(--divider)}
+.rhythm-preview span{display:block;height:100%;opacity:.42}
+.rhythm-legend{display:flex;gap:14px;margin-top:10px;font-size:calc(11px*var(--fs-scale));color:var(--ink-faint)}
+.rhythm-legend span{display:inline-flex;align-items:center}
+.rhythm-steps{margin:18px 0 auto;padding:16px 0 0;list-style:none;display:grid;gap:9px;border-top:1px solid var(--divider)}
+.rhythm-steps li{display:flex;gap:10px;font-size:calc(11.5px*var(--fs-scale));color:var(--ink-soft);line-height:1.6}
+.rhythm-steps em{flex:none;font-style:normal;font-family:Georgia,'Times New Roman',serif;font-size:calc(11px*var(--fs-scale));color:var(--brand-line);padding-top:1px}
+.rhythm-start{display:inline-flex;align-items:center;justify-content:center;gap:7px;width:100%;padding:9px 14px;border:1px solid var(--brand-line);border-radius:999px;background:var(--brand-soft);color:var(--brand);font-family:inherit;font-size:calc(12px*var(--fs-scale));font-weight:600;line-height:1.4;cursor:pointer;transition:border-color .2s,background .2s}
+.rhythm-start:hover{border-color:var(--brand);background:color-mix(in srgb,var(--brand) 14%,var(--surface))}
+.rhythm-start svg{width:13px;height:13px;fill:currentColor;stroke:none}
 .last-empty-inline{margin:8px 0 0;font-size:calc(11px*var(--fs-scale));color:var(--ink-ghost);line-height:1.5}
 .recent-block{margin-top:14px;padding-top:12px;border-top:1px solid var(--divider)}
 .recent-head{display:flex;justify-content:space-between;font-size:calc(10.5px*var(--fs-scale));color:var(--ink-ghost)}
@@ -1337,7 +1428,7 @@ onBeforeUnmount(() => {
 .recent-row{display:flex;align-items:center;gap:8px;margin-top:8px}
 .recent-label{width:34px;flex:none;font-size:calc(10.5px*var(--fs-scale));color:var(--ink-ghost)}
 .recent-track{flex:1;height:5px;border-radius:3px;background:var(--divider);overflow:hidden}
-.recent-track i{display:block;height:100%;border-radius:3px;background:#D9E6DD}
+.recent-track i{display:block;height:100%;border-radius:3px;background:color-mix(in srgb,var(--brand) 22%,transparent)}
 .recent-track i.latest{background:var(--brand-mid)}
 .recent-value{width:36px;flex:none;text-align:right;font-family:Georgia,'Times New Roman',serif;font-size:calc(10.5px*var(--fs-scale));color:var(--ink-faint)}
 .last-note{margin:14px 0 0;padding-top:11px;border-top:1px solid var(--divider);font-size:calc(11px*var(--fs-scale));color:var(--brand-mid);line-height:1.7}
@@ -1347,16 +1438,17 @@ onBeforeUnmount(() => {
 .live-flag{display:inline-flex;align-items:center;gap:5px;font-size:calc(11px*var(--fs-scale));color:var(--ink-ghost)}
 .live-flag i{width:5px;height:5px;border-radius:50%;background:var(--ink-ghost)}
 .live-flag.on{color:var(--brand-mid)}
-.live-flag.on i{background:#4E9C6E;box-shadow:0 0 0 3px rgba(78,156,110,.14)}
-.video-frame{position:relative;margin-top:10px;border-radius:10px;overflow:hidden;background:#2B352F;line-height:0}
+.live-flag.on i{background:var(--success);box-shadow:0 0 0 3px color-mix(in srgb,var(--success) 16%,transparent);animation:livePulse 1.8s ease-in-out infinite}
+@keyframes livePulse{0%,100%{opacity:1}50%{opacity:.45}}
+.video-frame{position:relative;margin-top:10px;border-radius:10px;overflow:hidden;background:#1a2226;line-height:0}
 .video-frame :deep(.camera-monitor){background:transparent;border:0;padding:0;box-shadow:none}
-.video-pill{position:absolute;left:9px;top:9px;display:inline-flex;align-items:center;gap:5px;padding:4px 9px;border-radius:999px;background:#F2F8F3;color:var(--brand);font-size:calc(11px*var(--fs-scale));font-weight:500;line-height:1.2}
+.video-pill{position:absolute;left:9px;top:9px;display:inline-flex;align-items:center;gap:5px;padding:4px 9px;border-radius:999px;background:var(--surface);color:var(--brand);font-size:calc(11px*var(--fs-scale));font-weight:500;line-height:1.2}
 .video-pill i{width:5px;height:5px;border-radius:50%;background:var(--brand)}
-.video-pill.is-warn{background:#FBF6EE;color:#B5763F}
-.video-pill.is-warn i{background:#C99A63}
-.video-pill.is-away{background:#FBEFE7;color:#B5763F}
-.video-pill.is-away i{background:#C99A63}
-.video-pill.is-off{background:#F1F4EF;color:var(--ink-faint)}
+.video-pill.is-warn{background:var(--surface);color:var(--accent-deep)}
+.video-pill.is-warn i{background:var(--wander)}
+.video-pill.is-away{background:var(--surface);color:var(--accent-deep)}
+.video-pill.is-away i{background:var(--wander)}
+.video-pill.is-off{background:var(--surface);color:var(--ink-faint)}
 .video-pill.is-off i{background:var(--ink-ghost)}
 .video-stamp{position:absolute;right:10px;bottom:8px;font-family:Georgia,'Times New Roman',serif;font-size:calc(11px*var(--fs-scale));color:#F2F8F3;opacity:.66;line-height:1}
 .live-note{margin:auto 0 0;padding-top:12px;border-top:1px solid var(--divider);font-size:calc(11.5px*var(--fs-scale));color:var(--brand-mid);line-height:1.7}
@@ -1366,7 +1458,7 @@ onBeforeUnmount(() => {
 .dot{display:inline-block;width:7px;height:7px;margin-right:6px;border-radius:50%}
 .dot-focus{background:var(--brand)}
 .dot-distracted{background:var(--wander)}
-.dot-away{background:#C6D0C8}
+.dot-away{background:color-mix(in srgb,var(--muted) 55%,var(--surface))}
 .seg-focus{background:var(--brand)}
 .seg-distracted{background:var(--wander)}
 .seg-away{background:var(--away)}
@@ -1383,7 +1475,7 @@ onBeforeUnmount(() => {
 .timeline.is-flat{margin-top:24px}
 .timeline-track{display:flex;height:10px;border-radius:5px;overflow:hidden;background:var(--divider)}
 .timeline-track span{display:block;height:100%}
-.timeline-mark{position:absolute;bottom:100%;margin-bottom:7px;transform:translateX(-50%);padding:2px 7px;border-radius:4px;background:var(--beige);color:#B5763F;font-size:calc(10.5px*var(--fs-scale));line-height:1.5;white-space:nowrap}
+.timeline-mark{position:absolute;bottom:100%;margin-bottom:7px;transform:translateX(-50%);padding:2px 7px;border-radius:4px;background:var(--accent-soft);color:var(--accent-deep);font-size:calc(10.5px*var(--fs-scale));line-height:1.5;white-space:nowrap}
 .timeline-mark:nth-of-type(even){bottom:calc(100% + 25px)}
 .timeline-mark.is-start{transform:none}
 .timeline-mark.is-end{transform:translateX(-100%)}
@@ -1396,9 +1488,9 @@ onBeforeUnmount(() => {
 .tip-row:last-child{margin-bottom:0}
 .tip-row em{flex:none;color:var(--brand-line);font-style:normal;font-family:Georgia,'Times New Roman',serif}
 .summary-side{width:320px;flex:none;display:flex;flex-direction:column;gap:9px}
-.quote-card{padding:14px 15px;border-radius:16px;background:var(--beige);flex:1}
-.quote-label{margin-bottom:7px;font-size:calc(11px*var(--fs-scale));color:#B09A7E}
-.quote-text{margin:0;font-size:calc(11.5px*var(--fs-scale));color:var(--beige-ink);line-height:1.85}
+.quote-card{padding:14px 15px;border-radius:16px;background:color-mix(in srgb,var(--accent-soft) 70%,var(--surface));flex:1}
+.quote-label{margin-bottom:7px;font-size:calc(11px*var(--fs-scale));color:color-mix(in srgb,var(--accent-deep) 72%,var(--surface))}
+.quote-text{margin:0;font-size:calc(11.5px*var(--fs-scale));color:color-mix(in srgb,var(--accent-deep) 82%,var(--text));line-height:1.85}
 /* 右栏用 flex 撑满整个 bottom 高度，休息按钮是最后一个元素，底边正好压在左卡底线上。 */
 .summary-side .rest-cta{margin-top:auto}
 .summary-links{display:flex;justify-content:center;gap:16px;margin:1px 0}
@@ -1414,23 +1506,27 @@ onBeforeUnmount(() => {
 .is-cursor-idle{cursor:none}
 /* 桌面端：两栏铺满，1440×900 下内容高度约 800px */
 @media (min-width:1021px){
-  .focus-inner{max-width:1440px;padding:2px 32px 0}
+  .focus-inner{max-width:1440px;padding:2px 32px 20px}
   .focus-label{font-size:calc(12px*var(--fs-scale))}
   .focus-bar-btn{padding:7px 14px;font-size:calc(12.5px*var(--fs-scale))}
-  .focus-head{margin:8px 0 14px}
+  .focus-head{margin:4px 0 16px;gap:22px}
   .focus-actions{gap:10px}
+  .head-stat{min-width:92px;padding:2px 20px}
+  .head-stat strong{font-size:calc(24px*var(--fs-scale))}
+  .head-stat span{font-size:calc(11.5px*var(--fs-scale))}
   .focus-bar-btn.history-entry .history-badge{font-size:calc(11px*var(--fs-scale))}
   .focus-title{font-size:calc(30px*var(--fs-scale));font-weight:600}
   .focus-sub{margin-top:8px;font-size:calc(14px*var(--fs-scale))}
-  .focus-layout{display:grid;grid-template-columns:minmax(0,46fr) minmax(0,54fr);gap:28px;align-items:stretch}
+  /* 左卡是主角：计时盘拿 1fr，右卡固定区间只放摄像头与节奏，宽度不再压过左卡。 */
+  .focus-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(340px,376px);gap:24px;align-items:stretch}
   .focus-card{padding:24px 30px 22px;border-radius:20px}
-  .focus-side{width:auto;gap:16px}
+  .focus-side{width:auto;gap:14px}
   .focus-caption{font-size:calc(13.5px*var(--fs-scale))}
   .intervene-hint{margin-top:12px;padding:10px 12px;font-size:calc(13px*var(--fs-scale))}
   .task-pick{margin-top:16px}
   .free-line{max-width:100%;margin-top:14px}
-  .dial-idle{width:300px;height:300px;margin-top:14px}
-  .dial-running{width:300px;height:300px;margin-top:auto;margin-bottom:14px}
+  .dial-idle{width:300px;height:300px;margin:auto 0}
+  .dial-running{width:300px;height:300px;margin:auto 0 14px}
   .dial-face{gap:14px}
   .dial-face small{font-size:calc(13px*var(--fs-scale))}
   .dial-time{font-size:calc(62px*var(--fs-scale))}
@@ -1463,6 +1559,11 @@ onBeforeUnmount(() => {
   .mini-bar{height:12px;border-radius:6px;margin-top:16px}
   .mini-legend{margin-top:10px;font-size:calc(12.5px*var(--fs-scale))}
   .last-empty-inline{font-size:calc(12.5px*var(--fs-scale))}
+  .rhythm-preview{height:12px;border-radius:6px;margin-top:22px}
+  .rhythm-legend{margin-top:12px;font-size:calc(12px*var(--fs-scale))}
+  .rhythm-steps{padding-top:18px;gap:11px}
+  .rhythm-steps li{font-size:calc(12.5px*var(--fs-scale))}
+  .rhythm-steps em{font-size:calc(12px*var(--fs-scale))}
   .recent-block{margin-top:22px;padding-top:16px}
   .recent-head{font-size:calc(11.5px*var(--fs-scale))}
   .recent-row{margin-top:11px}
@@ -1519,9 +1620,17 @@ onBeforeUnmount(() => {
 @media (max-width:640px){
   .focus-inner{padding:12px 13px 0}
   .focus-page{padding-bottom:96px}
-  .focus-head{flex-wrap:wrap;gap:8px;margin-bottom:13px}
+  /* 标题带 flex-basis:0 时会被右侧三连统计挤到只剩几十像素宽，变成「一列一个字」。
+     这里让标题独占一行，统计和「专注回顾」在第二行平分，手机上才读得下去。 */
+  .focus-head{flex-wrap:wrap;align-items:flex-start;gap:10px;margin-bottom:13px}
+  .focus-head-main{flex:1 0 100%}
+  .head-stats{flex:1;min-width:0}
+  .head-stat{min-width:0;flex:1;padding:0 6px}
+  .focus-actions{flex:none}
   .focus-title{font-size:calc(20px*var(--fs-scale))}
   .focus-card{padding:14px 14px 13px}
+  /* 圆盘只有 148px，「还没开始 · 预计 23:20 结束」会顶到边并断在「结/束」中间。 */
+  .dial-face small{max-width:122px;text-align:center;line-height:1.45}
   .dial-idle{width:148px;height:148px}
   .dial-running{width:172px;height:172px}
   .dial-running .dial-face :deep(.plain-clock){font-size:calc(32px*var(--fs-scale))}
@@ -1536,8 +1645,9 @@ onBeforeUnmount(() => {
   .dial-progress,.focus-bar-btn,.duration-chip,.focus-primary,.rest-pop-enter-active,.rest-pop-leave-active{transition:none}
 }
 
-/* 深色模式：页面本地色板跟随全局 token，避免浅纸卡在深底上发白。 */
-:global(:root[data-theme='dark'] .focus-page){--paper:#1b2d29;--line:#2f4741;--divider:#2a423c;--ink:#e6f0ec;--ink-soft:#a3b8b2;--ink-faint:#8fa39e;--ink-ghost:#6e827d;--brand:#7fb5ab;--brand-soft:#24423c;--brand-mid:#6d9a90;--brand-line:#3f615b;--wander:#d3ab7f;--away:#3a4c47;--unknown:#334742;--beige:#2c2a22;--beige-ink:#d9c8ae;--el-color-primary:#7fb5ab;--el-color-primary-light-3:#6c9d94;--el-color-primary-light-5:#58857d;--el-color-primary-light-7:#3f615b;--el-color-primary-light-8:#35534d;--el-color-primary-light-9:#2a443f;--el-switch-on-color:#7fb5ab}
-:global(:root[data-theme='dark'] .focus-page .duration-chip){background:#213732;color:var(--ink-soft)}
-:global(:root[data-theme='dark'] .focus-page .duration-chip.active){background:var(--paper);border-color:var(--brand);color:var(--ink)}
+/* 深色模式不再单独抄一份色值：本地色板全部由全局 token 用 color-mix 派生，
+   深浅两套自动成立。这里只保留一条——深底上的时长档位需要比浅色模式更实的底色，
+   否则 --surface-soft 和卡片融在一起，四块按钮会看不见边界。 */
+:global(:root[data-theme='dark'] .focus-page .duration-chip){background:color-mix(in srgb,var(--surface) 72%,#000 8%);border-color:var(--border)}
+:global(:root[data-theme='dark'] .focus-page .focus-card){box-shadow:none}
 </style>

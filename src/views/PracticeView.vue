@@ -474,7 +474,8 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.practice-page{--pq-deep:#2f5c57;--pq-mint:#e8f1ed;--pq-line:#e5ede9;--pq-soft:#f6faf8;--pq-ink:#22322f;--pq-muted:#5f736e;padding:22px 32px 40px;max-width:760px;margin:0 auto;color:var(--pq-ink)}
+/* 局部色板接到全局 token，深色模式自动跟随，不再是独立的旧青绿纸张色。 */
+.practice-page{--pq-deep:var(--primary-deep);--pq-mint:var(--primary-soft);--pq-line:var(--border);--pq-soft:var(--surface-soft);--pq-ink:var(--text);--pq-muted:var(--muted);padding:22px 32px 40px;max-width:760px;margin:0 auto;color:var(--pq-ink)}
 .practice-top{display:flex;align-items:center;gap:16px;margin-bottom:18px}
 .practice-back{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border:1px solid var(--pq-line);border-radius:999px;background:#fff;color:var(--pq-muted);font-size:12.5px;font-weight:600;cursor:pointer}
 .practice-title-wrap{flex:1;min-width:0}
