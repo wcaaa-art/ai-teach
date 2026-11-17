@@ -898,3 +898,14 @@
 - 基线提交 `2a43fa3` / tag `baseline-20261117`；本轮只做 A1（LLM 重试）、A2（首屏看门狗+骨架）、A3（默认关 sourcemap），提交 `a2863c0` / tag `scope-a`。
 - 测试 294 → 300（新增 `server/retry.test.js` 6 条）。
 - 超出范围的 A4/B1/B3/C1 已回退：B1/B3 在分支 `backup/batches-ab`，A4 在 tag `batch-a`。
+
+## GitHub 协作基线（2026-11-17）
+
+- 主仓库 `https://github.com/wcaaa-art/ai-teach`（**Public**），账号 `wcaaa-art`；Gitee 仍作国内备份，两边历史独立。
+- CLI：`gh` 2.104.0，路径 `C:\Program Files\GitHub CLI\gh.exe`（winget 装，当前 shell 的 PATH 未刷新，调用时写全路径）。token scope 为 `repo / workflow / gist / read:org`；**推 `.github/workflows/*` 必须带 `workflow` scope**，否则 push 被 OAuth 拒（`refusing to allow an OAuth App to create or update workflow`），补授权用 `gh auth refresh -s workflow`。
+- 免费版**私有**仓库调分支保护/规则集一律 403（`Upgrade to GitHub Pro or make this repository public`），所以仓库转为 Public；再次转私有会掉保护。
+- main 保护：必须走 PR、至少 1 人 review、CI check 名 `check` 必须绿、禁 force push 与删除；`enforce_admins=false`，管理员保留绕过能力，避免单人时无法合并（GitHub 不允许自审通过）。
+- CI：`.github/workflows/ci.yml`，Node 22 + `npm ci` + `lint` + `test` + `typecheck`，首次推送即跑绿；本机是 Node 20.11.1 / npm 10.2.4，两边都过。
+- 协作入口：`.github/pull_request_template.md`、`.github/ISSUE_TEMPLATE/{bug_report,feature_request}.yml`、`CONTRIBUTING.md`。
+- 顺手修掉 `server/index.js` 能力清单里重复写两遍的 `rerank` 键（当时 lint 唯一 error）。
+- 公开前的敏感信息扫描结论：无真实密钥入库，`.env` 与 `server/data/` 均未跟踪；MEMORY.md 里只有本机路径 `C:/Users/豪` 与 Gitee 地址，属公开可见信息，未做脱敏。
