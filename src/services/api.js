@@ -40,9 +40,12 @@ async function request(path, body, options = {}) {
 }
 
 export const registerAccount = (payload) => request('/auth/register', payload)
+// 登录标识同时接受用户名和邮箱，所以字段名叫 account 而不是 email。
 export const loginAccount = (payload) => request('/auth/login', payload)
 export const fetchCurrentUser = () => request('/auth/me', undefined, { method: 'GET', bodyType: 'none', timeoutMs: 10000 })
 export const logoutAccount = () => request('/auth/logout', undefined, { method: 'POST', bodyType: 'none', timeoutMs: 10000 })
+export const updateAccountProfile = (payload) => request('/auth/profile', payload, { method: 'PATCH', timeoutMs: 15000 })
+export const changeAccountPassword = (payload) => request('/auth/password', payload, { timeoutMs: 15000 })
 export const diagnose = (payload) => request('/agent/diagnose', payload, { timeoutMs: 75000 })
 export const iteratePlan = (payload) => request('/agent/iterate', payload, { timeoutMs: 75000 })
 export const askTutor = (payload) => request('/agent/tutor', payload)
