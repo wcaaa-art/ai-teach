@@ -77,6 +77,10 @@ const mapStatus = computed(() => stats.value.todayFocusMinutes > 0 ? '● 进行
 const aiHint = computed(() => stats.value.nextPlanName
   ? `AI 已把「${stats.value.nextPlanName}」拆成今天能走的一小步`
   : '做一次轻量摸底，AI 就能为你的第一张地图标好起点')
+// 建议卡的按钮跟着建议内容走（指向今天的计划），和「今日一问 → AI 答疑」区分开，避免两个入口都跳答疑。
+const insightAction = computed(() => stats.value.nextPlanName
+  ? { label: '看计划', to: '/plans' }
+  : { label: '去生成', to: '/diagnosis' })
 
 // 悬浮卡上的三个数字：数据读回来后从 0 滚到真实值，避免一上来就是干巴巴的静态数字。
 const displayStats = ref({ streak: 0, today: 0, total: 0 })
@@ -170,7 +174,7 @@ onBeforeUnmount(() => cancelAnimationFrame(statFrame))
         <div class="hero-insight" role="note">
           <span class="insight-mark">✦</span>
           <span class="insight-body"><strong>AI 学伴建议</strong><span>{{ aiHint }}</span></span>
-          <button class="insight-next" @click="router.push('/tutor')" title="问问 AI 学伴">去问问 <span>→</span></button>
+          <button class="insight-next" @click="router.push(insightAction.to)" :title="insightAction.label">{{ insightAction.label }} <span>→</span></button>
         </div>
         <button class="hero-lime-jar" @click="router.push('/dashboard')" title="去学习看板查看青柠罐">
           <span class="jar-mini-limes">

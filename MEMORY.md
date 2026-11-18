@@ -1002,3 +1002,4 @@
 - 青柠罐核心：`limeJar` computed 读全量 sessions，不读 filteredSessions；count=floor(minutes/25)、toNext=25-(minutes%25)。
 - 验证：eslint 0 error、build 通过；看板 1440/430 截图走查无溢出，首页图标正常渲染。
 - 补（09:23 用户反馈"青柠罐在哪找不到"）：根因是第二期精简把「学习看板」从主导航移除了（AppShell 注释写"学习看板进主页"但实际没补入口），唯一入口是通知铃铛里周一才出现的周报提示——平时从界面进不去 /dashboard，青柠罐自然看不到。修复不动画布导航布局，改在首页 hero 左列 AI 学伴建议卡下方新增 `.hero-lime-jar` 入口卡：显示累计青柠（totalLimes=floor(totalFocusMinutes/25)）+ "再专注 X 分钟下一颗" + 点击查看直达 /dashboard。这样奖励在落地页就能看见，看板完整版也有入口。实测 1440/430 无溢出，build 通过。
+- 补（09:30 用户"去问问与先问一个问题都跳答疑，重复了"）：确认两处均 router.push('/tutor')。去重的做法是让它们功能互补而非删一个——「今日一问」的"先问一个问题"语义就是提问，保留跳答疑；「AI 学伴建议」卡的按钮原本词不达意（文案讲学习计划却跳答疑），改成跟建议内容走：`insightAction` computed，有计划→"看计划"跳 /plans，无计划→"去生成"跳 /diagnosis。实测当前无计划态显示"去生成"，与"先问一个问题"已区分。eslint 0、build 通过。
