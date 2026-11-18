@@ -6,9 +6,9 @@
     "id": "初三-生物-1",
     "name": "生物圈中的人"
   },
-  "generatedAt": "2026-11-14T12:18:13.719Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.817Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdg6kz",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：唾液中含有唾液淀粉酶，淀粉在口腔中开始被分解为麦芽糖；胃液中含有胃蛋白酶，鸡蛋和牛奶富含的蛋白质在胃中开始被初步消化，符合消化道的结构与功能相适应。\nB. 错误：口腔中只有唾液淀粉酶，没有蛋白酶，蛋白质不能在口腔中开始被消化，牛奶中的蛋白质需到胃中才开始被初步分解。\nC. 错误：小肠确实是消化和吸收的主要场所，是蛋白质被彻底分解为氨基酸的场所，但蛋白质“开始”被化学性消化的部位是胃，不是小肠，本项前半句与事实冲突。\nD. 错误：淀粉的化学性消化在口腔开始、主要在小肠内完成，最终产物葡萄糖主要在小肠被吸收；大肠基本无消化功能，只吸收少量水、无机盐和维生素。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "人体消化和吸收营养物质的主要器官是（　　）",
+      "options": [
+        "小肠",
+        "胃",
+        "大肠",
+        "食道"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：小肠。按人体消化、呼吸与循环系统的功能判断，本题正确答案是「小肠」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "人体气体交换的主要器官是（　　）",
+      "options": [
+        "气管",
+        "鼻腔",
+        "咽",
+        "肺"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：肺。按人体消化、呼吸与循环系统的功能判断，本题正确答案是「肺」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "血液循环的动力器官是（　　）",
+      "options": [
+        "静脉",
+        "毛细血管",
+        "心脏",
+        "动脉"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：心脏。按人体消化、呼吸与循环系统的功能判断，本题正确答案是「心脏」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "红细胞中运输氧气的物质是（　　）",
+      "options": [
+        "血小板",
+        "血红蛋白",
+        "血浆蛋白",
+        "白细胞"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：血红蛋白。按人体消化、呼吸与循环系统的功能判断，本题正确答案是「血红蛋白」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "体循环的起点是（　　）",
+      "options": [
+        "左心室",
+        "右心室",
+        "左心房",
+        "右心房"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：左心室。按人体消化、呼吸与循环系统的功能判断，本题正确答案是「左心室」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "肺循环的起点是（　　）",
+      "options": [
+        "左心室",
+        "右心房",
+        "左心房",
+        "右心室"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：右心室。按人体消化、呼吸与循环系统的功能判断，本题正确答案是「右心室」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "经过肺循环后，血液成分的变化是（　　）",
+      "options": [
+        "含氧量减少",
+        "养料增多",
+        "由静脉血变为动脉血",
+        "由动脉血变为静脉血"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：由静脉血变为动脉血。按人体消化、呼吸与循环系统的功能判断，本题正确答案是「由静脉血变为动脉血」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "经过体循环后，血液成分的变化是（　　）",
+      "options": [
+        "二氧化碳减少",
+        "由动脉血变为静脉血",
+        "由静脉血变为动脉血",
+        "含氧量增多"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：由动脉血变为静脉血。按人体消化、呼吸与循环系统的功能判断，本题正确答案是「由动脉血变为静脉血」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "人体内物质运输的载体是（　　）",
+      "options": [
+        "血液",
+        "消化液",
+        "淋巴液",
+        "组织液"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：血液。按人体消化、呼吸与循环系统的功能判断，本题正确答案是「血液」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "食物中的蛋白质最终被分解成（　　）后才能被吸收",
+      "options": [
+        "葡萄糖",
+        "甘油",
+        "脂肪酸",
+        "氨基酸"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：氨基酸。按人体消化、呼吸与循环系统的功能判断，本题正确答案是「氨基酸」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "尿液形成的主要器官是（　　）",
+      "options": [
+        "膀胱",
+        "尿道",
+        "肾脏",
+        "输尿管"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：肾脏。按排泄、神经调节与免疫过程判断，本题正确答案是「肾脏」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "原尿中不含有的成分是（　　）",
+      "options": [
+        "无机盐",
+        "大分子蛋白质和血细胞",
+        "葡萄糖",
+        "尿素"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：大分子蛋白质和血细胞。按排泄、神经调节与免疫过程判断，本题正确答案是「大分子蛋白质和血细胞」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "健康人尿液中一般不含（　　）",
+      "options": [
+        "葡萄糖",
+        "尿素",
+        "水",
+        "无机盐"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：葡萄糖。按排泄、神经调节与免疫过程判断，本题正确答案是「葡萄糖」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "视觉形成的部位是（　　）",
+      "options": [
+        "视网膜",
+        "晶状体",
+        "视神经",
+        "大脑皮层的视觉中枢"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：大脑皮层的视觉中枢。按排泄、神经调节与免疫过程判断，本题正确答案是「大脑皮层的视觉中枢」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "听觉感受器位于（　　）",
+      "options": [
+        "听小骨",
+        "外耳道",
+        "耳蜗",
+        "鼓膜"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：耳蜗。按排泄、神经调节与免疫过程判断，本题正确答案是「耳蜗」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "完成反射的结构基础是（　　）",
+      "options": [
+        "脊髓",
+        "反射弧",
+        "神经元",
+        "大脑皮层"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：反射弧。按排泄、神经调节与免疫过程判断，本题正确答案是「反射弧」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "幼年时甲状腺激素分泌不足会患（　　）",
+      "options": [
+        "呆小症",
+        "侏儒症",
+        "巨人症",
+        "甲亢"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：呆小症。按排泄、神经调节与免疫过程判断，本题正确答案是「呆小症」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "胰岛素分泌不足会导致（　　）",
+      "options": [
+        "侏儒症",
+        "呆小症",
+        "夜盲症",
+        "糖尿病"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：糖尿病。按排泄、神经调节与免疫过程判断，本题正确答案是「糖尿病」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "人体抵御病原体的第一道防线是（　　）",
+      "options": [
+        "吞噬细胞",
+        "免疫器官和免疫细胞",
+        "皮肤和黏膜",
+        "体液中的杀菌物质"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：皮肤和黏膜。按排泄、神经调节与免疫过程判断，本题正确答案是「皮肤和黏膜」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "接种疫苗属于（　　）",
+      "options": [
+        "第二道防线",
+        "特异性免疫",
+        "非特异性免疫",
+        "第一道防线"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：特异性免疫。按排泄、神经调节与免疫过程判断，本题正确答案是「特异性免疫」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "人体各系统能够协调配合，主要依靠（　　）",
+      "options": [
+        "神经系统和内分泌系统的调节",
+        "只有消化系统",
+        "只有呼吸系统",
+        "只有运动系统"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：神经系统和内分泌系统的调节。按人体各系统协调配合与健康生活知识判断，本题正确答案是「神经系统和内分泌系统的调节」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "人在剧烈运动时心跳加快、呼吸加深，这说明（　　）",
+      "options": [
+        "运动系统独立工作",
+        "呼吸系统不受神经调节",
+        "心脏可以脱离人体工作",
+        "人体各系统相互配合，共同完成生命活动"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：人体各系统相互配合，共同完成生命活动。按人体各系统协调配合与健康生活知识判断，本题正确答案是「人体各系统相互配合，共同完成生命活动」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "无偿献血时，健康成年人一次献血量一般为（　　）",
+      "options": [
+        "1000～1200毫升",
+        "1500毫升以上",
+        "200～400毫升",
+        "800～1000毫升"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：200～400毫升。按人体各系统协调配合与健康生活知识判断，本题正确答案是「200～400毫升」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "安全用药应做到（　　）",
+      "options": [
+        "常用抗生素预防疾病",
+        "按说明书或遵医嘱用药，不滥用药物",
+        "症状减轻就立即停药",
+        "随意加大剂量"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：按说明书或遵医嘱用药，不滥用药物。按人体各系统协调配合与健康生活知识判断，本题正确答案是「按说明书或遵医嘱用药，不滥用药物」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "遇到有人突然晕倒、呼吸心跳停止，应立即（　　）",
+      "options": [
+        "拨打急救电话并进行心肺复苏",
+        "给病人喂水",
+        "随意搬动病人",
+        "等待病人自行恢复"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：拨打急救电话并进行心肺复苏。按人体各系统协调配合与健康生活知识判断，本题正确答案是「拨打急救电话并进行心肺复苏」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "保持心血管健康的做法是（　　）",
+      "options": [
+        "长期高脂饮食",
+        "长期熬夜",
+        "大量吸烟",
+        "合理膳食、适量运动、戒烟限酒"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：合理膳食、适量运动、戒烟限酒。按人体各系统协调配合与健康生活知识判断，本题正确答案是「合理膳食、适量运动、戒烟限酒」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "预防近视眼的正确做法是（　　）",
+      "options": [
+        "长时间近距离看手机",
+        "躺着看书",
+        "读写姿势端正，注意用眼卫生，定期检查视力",
+        "在强光直射下看书"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：读写姿势端正，注意用眼卫生，定期检查视力。按人体各系统协调配合与健康生活知识判断，本题正确答案是「读写姿势端正，注意用眼卫生，定期检查视力」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "人体生命活动的主要调节方式是（　　）",
+      "options": [
+        "免疫调节",
+        "神经调节",
+        "激素调节",
+        "体液调节"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：神经调节。按人体各系统协调配合与健康生活知识判断，本题正确答案是「神经调节」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "人的体温能保持相对稳定，主要依靠（　　）",
+      "options": [
+        "神经调节和体液调节共同作用",
+        "只依靠皮肤",
+        "只依靠骨骼肌",
+        "只依靠汗腺"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：神经调节和体液调节共同作用。按人体各系统协调配合与健康生活知识判断，本题正确答案是「神经调节和体液调节共同作用」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-生物-1",
+      "chapterName": "生物圈中的人",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "健康的生活方式不包括（　　）",
+      "options": [
+        "合理膳食",
+        "规律作息",
+        "适量运动",
+        "长期熬夜上网"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：长期熬夜上网。按人体各系统协调配合与健康生活知识判断，本题正确答案是「长期熬夜上网」。",
+      "difficulty": 2
     }
   ]
 }

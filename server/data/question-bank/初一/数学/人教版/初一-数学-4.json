@@ -6,9 +6,9 @@
     "id": "初一-数学-4",
     "name": "几何图形初步"
   },
-  "generatedAt": "2026-11-13T02:42:51.844Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.128Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedgaep",
@@ -179,6 +179,516 @@
       "correctIndex": 2,
       "explanation": "A. 错误：五棱柱有2个底面和5个侧面，共7个面，不是5个面。\nB. 错误：五棱柱有5条侧棱，上、下底面各有5条棱，共15条棱，不是10条。\nC. 正确：五棱柱的上、下底面各有5个顶点，且对应顶点不重合，共10个顶点。\nD. 错误：五棱柱的侧面数与底面边数相同，为5个侧面，不是7个。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一个角为 35°，它的余角是（ ）",
+      "options": [
+        "55",
+        "145",
+        "35",
+        "125"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：55。两个角互余，和为 90°：90° - 35° = 55°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一个角为 48°，它的余角是（ ）",
+      "options": [
+        "132",
+        "48",
+        "138",
+        "42"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：42。两个角互余，和为 90°：90° - 48° = 42°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一个角为 62°，它的余角是（ ）",
+      "options": [
+        "62",
+        "152",
+        "28",
+        "118"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：28。两个角互余，和为 90°：90° - 62° = 28°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一个角为 71°，它的余角是（ ）",
+      "options": [
+        "161",
+        "19",
+        "109",
+        "71"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：19。两个角互余，和为 90°：90° - 71° = 19°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一个角为 18°，它的余角是（ ）",
+      "options": [
+        "72",
+        "162",
+        "18",
+        "108"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：72。两个角互余，和为 90°：90° - 18° = 72°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一个角为 56°，它的余角是（ ）",
+      "options": [
+        "124",
+        "56",
+        "146",
+        "34"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：34。两个角互余，和为 90°：90° - 56° = 34°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一个角为 83°，它的余角是（ ）",
+      "options": [
+        "83",
+        "173",
+        "7",
+        "97"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：7。两个角互余，和为 90°：90° - 83° = 7°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一个角为 27°，它的余角是（ ）",
+      "options": [
+        "117",
+        "63",
+        "153",
+        "27"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：63。两个角互余，和为 90°：90° - 27° = 63°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一个角为 44°，它的余角是（ ）",
+      "options": [
+        "46",
+        "136",
+        "44",
+        "134"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：46。两个角互余，和为 90°：90° - 44° = 46°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一个角为 69°，它的余角是（ ）",
+      "options": [
+        "111",
+        "69",
+        "159",
+        "21"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：21。两个角互余，和为 90°：90° - 69° = 21°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一个角为 112°，它的补角是（ ）",
+      "options": [
+        "112",
+        "292",
+        "68",
+        "-22"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：68。两个角互补，和为 180°：180° - 112° = 68°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一个角为 95°，它的补角是（ ）",
+      "options": [
+        "275",
+        "85",
+        "-5",
+        "95"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：85。两个角互补，和为 180°：180° - 95° = 85°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一个角为 134°，它的补角是（ ）",
+      "options": [
+        "46",
+        "-44",
+        "134",
+        "314"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：46。两个角互补，和为 180°：180° - 134° = 46°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一个角为 78°，它的补角是（ ）",
+      "options": [
+        "12",
+        "78",
+        "258",
+        "102"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：102。两个角互补，和为 180°：180° - 78° = 102°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一个角为 156°，它的补角是（ ）",
+      "options": [
+        "156",
+        "336",
+        "24",
+        "-66"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：24。两个角互补，和为 180°：180° - 156° = 24°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一个角为 103°，它的补角是（ ）",
+      "options": [
+        "283",
+        "77",
+        "-13",
+        "103"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：77。两个角互补，和为 180°：180° - 103° = 77°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一个角为 67°，它的补角是（ ）",
+      "options": [
+        "113",
+        "23",
+        "67",
+        "247"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：113。两个角互补，和为 180°：180° - 67° = 113°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一个角为 141°，它的补角是（ ）",
+      "options": [
+        "-51",
+        "141",
+        "321",
+        "39"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：39。两个角互补，和为 180°：180° - 141° = 39°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一个角为 89°，它的补角是（ ）",
+      "options": [
+        "89",
+        "269",
+        "91",
+        "1"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：91。两个角互补，和为 180°：180° - 89° = 91°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一个角为 124°，它的补角是（ ）",
+      "options": [
+        "304",
+        "56",
+        "-34",
+        "124"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：56。两个角互补，和为 180°：180° - 124° = 56°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "method",
+      "stem": "点 C 在线段 AB 上，AB = 8 cm，M、N 分别是 AC、BC 的中点，则 MN 的长为（ ）",
+      "options": [
+        "4",
+        "8",
+        "2",
+        "16"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：4。MN = AC/2 + BC/2 = (AC + BC)/2 = AB/2 = 8 ÷ 2 = 4 cm。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "method",
+      "stem": "点 C 在线段 AB 上，AB = 10 cm，M、N 分别是 AC、BC 的中点，则 MN 的长为（ ）",
+      "options": [
+        "10",
+        "2.5",
+        "20",
+        "5"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：5。MN = AC/2 + BC/2 = (AC + BC)/2 = AB/2 = 10 ÷ 2 = 5 cm。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "method",
+      "stem": "点 C 在线段 AB 上，AB = 12 cm，M、N 分别是 AC、BC 的中点，则 MN 的长为（ ）",
+      "options": [
+        "3",
+        "24",
+        "6",
+        "12"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：6。MN = AC/2 + BC/2 = (AC + BC)/2 = AB/2 = 12 ÷ 2 = 6 cm。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "method",
+      "stem": "点 C 在线段 AB 上，AB = 14 cm，M、N 分别是 AC、BC 的中点，则 MN 的长为（ ）",
+      "options": [
+        "28",
+        "7",
+        "14",
+        "3.5"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：7。MN = AC/2 + BC/2 = (AC + BC)/2 = AB/2 = 14 ÷ 2 = 7 cm。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "method",
+      "stem": "点 C 在线段 AB 上，AB = 16 cm，M、N 分别是 AC、BC 的中点，则 MN 的长为（ ）",
+      "options": [
+        "8",
+        "16",
+        "4",
+        "32"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：8。MN = AC/2 + BC/2 = (AC + BC)/2 = AB/2 = 16 ÷ 2 = 8 cm。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "method",
+      "stem": "点 C 在线段 AB 上，AB = 18 cm，M、N 分别是 AC、BC 的中点，则 MN 的长为（ ）",
+      "options": [
+        "18",
+        "4.5",
+        "36",
+        "9"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：9。MN = AC/2 + BC/2 = (AC + BC)/2 = AB/2 = 18 ÷ 2 = 9 cm。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "method",
+      "stem": "点 C 在线段 AB 上，AB = 20 cm，M、N 分别是 AC、BC 的中点，则 MN 的长为（ ）",
+      "options": [
+        "5",
+        "40",
+        "10",
+        "20"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：10。MN = AC/2 + BC/2 = (AC + BC)/2 = AB/2 = 20 ÷ 2 = 10 cm。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "method",
+      "stem": "点 C 在线段 AB 上，AB = 22 cm，M、N 分别是 AC、BC 的中点，则 MN 的长为（ ）",
+      "options": [
+        "44",
+        "11",
+        "22",
+        "5.5"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：11。MN = AC/2 + BC/2 = (AC + BC)/2 = AB/2 = 22 ÷ 2 = 11 cm。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "method",
+      "stem": "点 C 在线段 AB 上，AB = 24 cm，M、N 分别是 AC、BC 的中点，则 MN 的长为（ ）",
+      "options": [
+        "12",
+        "24",
+        "6",
+        "48"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：12。MN = AC/2 + BC/2 = (AC + BC)/2 = AB/2 = 24 ÷ 2 = 12 cm。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-数学-4",
+      "chapterName": "几何图形初步",
+      "type": "single",
+      "dimension": "method",
+      "stem": "点 C 在线段 AB 上，AB = 26 cm，M、N 分别是 AC、BC 的中点，则 MN 的长为（ ）",
+      "options": [
+        "26",
+        "6.5",
+        "52",
+        "13"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：13。MN = AC/2 + BC/2 = (AC + BC)/2 = AB/2 = 26 ÷ 2 = 13 cm。",
+      "difficulty": 2
     }
   ]
 }

@@ -23,7 +23,7 @@ const open = ref(false)
 .feedback-toggle:hover{transform:translateY(-1px);box-shadow:0 14px 30px rgba(0,0,0,.22)}
 /* 桌面端改成贴左边缘的竖排小签：正文从 36px 起，30px 宽的签子落在留白里，一行字都不遮。
    签子上已经竖着写了「意见反馈」，所以不做悬停展开——展开会改变自身尺寸，指针停在边缘时
-   会反复进出触发抖动。 */
+   会反复进出触发抖动， */
 @media(min-width:801px){
   .feedback-entry{left:0;bottom:120px}
   .feedback-toggle{display:inline-flex;align-items:center;justify-content:center;width:30px;height:auto;padding:14px 0;border-left:0;border-radius:0 12px 12px 0;writing-mode:vertical-rl;letter-spacing:.14em;font-size:calc(12px*var(--fs-scale));box-shadow:0 8px 20px rgba(0,0,0,.12)}

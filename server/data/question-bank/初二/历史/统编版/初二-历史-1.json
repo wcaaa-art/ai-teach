@@ -6,9 +6,9 @@
     "id": "初二-历史-1",
     "name": "辽宋夏金元时期"
   },
-  "generatedAt": "2026-11-14T12:15:28.792Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.081Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdcnbp",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：《营造法式》是北宋政府颁行的建筑技术规范，对设计、用料和施工作出统一要求，有利于建筑经验的总结和技术的标准化。\nB. 错误：海外贸易繁荣主要与造船航海技术进步、政府鼓励海外贸易及相关港口管理有关，并非《营造法式》规范建筑技术的主要作用。\nC. 错误：科举考试程序在隋唐时期已逐步确立和发展，与北宋颁行建筑规范《营造法式》没有直接对应关系。\nD. 错误：加强北方边疆军事防御主要依靠军事部署、城防建设等措施，不能把颁行建筑施工规范作为其主要目的。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "北宋建立的时间是（ ）",
+      "options": [
+        "960年",
+        "618年",
+        "907年",
+        "1127年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：960年。按北宋建立与宋辽夏关系的史实判断，本题正确答案是「960年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "北宋的建立者是（ ）",
+      "options": [
+        "赵构",
+        "朱元璋",
+        "李世民",
+        "赵匡胤"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：赵匡胤。按北宋建立与宋辽夏关系的史实判断，本题正确答案是「赵匡胤」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "北宋的都城是（ ）",
+      "options": [
+        "长安",
+        "大都",
+        "东京",
+        "临安"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：东京。按北宋建立与宋辽夏关系的史实判断，本题正确答案是「东京」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "宋辽订立的盟约是（ ）",
+      "options": [
+        "马关条约",
+        "澶渊之盟",
+        "绍兴和议",
+        "城下之盟"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：澶渊之盟。按北宋建立与宋辽夏关系的史实判断，本题正确答案是「澶渊之盟」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "澶渊之盟的影响是（ ）",
+      "options": [
+        "宋辽保持长期相对和平",
+        "宋辽战争不断",
+        "北宋灭亡",
+        "辽朝统一全国"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：宋辽保持长期相对和平。按北宋建立与宋辽夏关系的史实判断，本题正确答案是「宋辽保持长期相对和平」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "西夏的建立者是（ ）",
+      "options": [
+        "阿骨打",
+        "忽必烈",
+        "铁木真",
+        "元昊"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：元昊。按北宋建立与宋辽夏关系的史实判断，本题正确答案是「元昊」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "北宋实行重文轻武政策的目的是（ ）",
+      "options": [
+        "推广科举",
+        "加强地方分权",
+        "防止武将专权",
+        "发展海外贸易"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：防止武将专权。按北宋建立与宋辽夏关系的史实判断，本题正确答案是「防止武将专权」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "王安石变法发生在（ ）",
+      "options": [
+        "宋高宗时期",
+        "宋神宗时期",
+        "宋太祖时期",
+        "宋徽宗时期"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：宋神宗时期。按北宋建立与宋辽夏关系的史实判断，本题正确答案是「宋神宗时期」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "北宋灭亡的标志是（ ）",
+      "options": [
+        "1127年靖康之变",
+        "1141年绍兴和议",
+        "1005年澶渊之盟",
+        "1279年崖山之战"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1127年靖康之变。按北宋建立与宋辽夏关系的史实判断，本题正确答案是「1127年靖康之变」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "南宋建立的时间是（ ）",
+      "options": [
+        "960年",
+        "1005年",
+        "1271年",
+        "1127年"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1127年。按北宋建立与宋辽夏关系的史实判断，本题正确答案是「1127年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "岳飞抗金取得的著名胜利是（ ）",
+      "options": [
+        "淝水大捷",
+        "台儿庄大捷",
+        "郾城大捷",
+        "澶渊大捷"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：郾城大捷。按南宋、金与宋代经济发展的史实判断，本题正确答案是「郾城大捷」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "宋金议和发生在（ ）",
+      "options": [
+        "1279年",
+        "1141年",
+        "1005年",
+        "1127年"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1141年。按南宋、金与宋代经济发展的史实判断，本题正确答案是「1141年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "南宋与金的分界线是（ ）",
+      "options": [
+        "淮水至大散关",
+        "长江至黄河",
+        "鸭绿江至嘉峪关",
+        "珠江至南岭"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：淮水至大散关。按南宋、金与宋代经济发展的史实判断，本题正确答案是「淮水至大散关」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "金朝的建立者是（ ）",
+      "options": [
+        "元昊",
+        "铁木真",
+        "忽必烈",
+        "完颜阿骨打"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：完颜阿骨打。按南宋、金与宋代经济发展的史实判断，本题正确答案是「完颜阿骨打」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "金朝建立时所属的民族是（ ）",
+      "options": [
+        "契丹族",
+        "蒙古族",
+        "女真族",
+        "党项族"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：女真族。按南宋、金与宋代经济发展的史实判断，本题正确答案是「女真族」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "宋代经济重心南移最终完成于（ ）",
+      "options": [
+        "元朝时期",
+        "南宋时期",
+        "唐朝中期",
+        "北宋时期"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：南宋时期。按南宋、金与宋代经济发展的史实判断，本题正确答案是「南宋时期」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "宋代著名的瓷都是（ ）",
+      "options": [
+        "景德镇",
+        "洛阳",
+        "长安",
+        "扬州"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：景德镇。按南宋、金与宋代经济发展的史实判断，本题正确答案是「景德镇」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "宋代管理海外贸易的机构是（ ）",
+      "options": [
+        "宣政院",
+        "理藩院",
+        "户部",
+        "市舶司"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：市舶司。按南宋、金与宋代经济发展的史实判断，本题正确答案是「市舶司」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "宋代商业繁荣，出现了世界上最早的纸币（ ）",
+      "options": [
+        "开元通宝",
+        "五铢钱",
+        "交子",
+        "会子"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：交子。按南宋、金与宋代经济发展的史实判断，本题正确答案是「交子」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "南宋都城临安是今天的（ ）",
+      "options": [
+        "北京",
+        "杭州",
+        "南京",
+        "开封"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：杭州。按南宋、金与宋代经济发展的史实判断，本题正确答案是「杭州」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "元朝建立的时间是（ ）",
+      "options": [
+        "1271年",
+        "1206年",
+        "1279年",
+        "1368年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1271年。按元朝统一与宋元科技文化的史实判断，本题正确答案是「1271年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "元朝的建立者是（ ）",
+      "options": [
+        "铁木真",
+        "窝阔台",
+        "朱元璋",
+        "忽必烈"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：忽必烈。按元朝统一与宋元科技文化的史实判断，本题正确答案是「忽必烈」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "元朝统一全国的时间是（ ）",
+      "options": [
+        "1206年",
+        "1368年",
+        "1279年",
+        "1271年"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1279年。按元朝统一与宋元科技文化的史实判断，本题正确答案是「1279年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "元朝在地方推行的行政制度是（ ）",
+      "options": [
+        "三省六部制",
+        "行省制度",
+        "分封制",
+        "郡县制"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：行省制度。按元朝统一与宋元科技文化的史实判断，本题正确答案是「行省制度」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "元朝管理西藏地区的机构是（ ）",
+      "options": [
+        "宣政院",
+        "市舶司",
+        "理藩院",
+        "中书省"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：宣政院。按元朝统一与宋元科技文化的史实判断，本题正确答案是「宣政院」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "元朝管理澎湖和琉球的机构是（ ）",
+      "options": [
+        "宣政院",
+        "市舶司",
+        "台湾府",
+        "澎湖巡检司"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：澎湖巡检司。按元朝统一与宋元科技文化的史实判断，本题正确答案是「澎湖巡检司」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "元朝时期形成的新民族是（ ）",
+      "options": [
+        "满族",
+        "女真族",
+        "回族",
+        "蒙古族"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：回族。按元朝统一与宋元科技文化的史实判断，本题正确答案是「回族」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "北宋时期发明活字印刷术的是（ ）",
+      "options": [
+        "宋应星",
+        "毕昇",
+        "蔡伦",
+        "沈括"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：毕昇。按元朝统一与宋元科技文化的史实判断，本题正确答案是「毕昇」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "指南针开始应用于航海是在（ ）",
+      "options": [
+        "北宋",
+        "唐朝",
+        "南宋",
+        "元朝"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：北宋。按元朝统一与宋元科技文化的史实判断，本题正确答案是「北宋」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-历史-1",
+      "chapterName": "辽宋夏金元时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "北宋时期编写《资治通鉴》的是（ ）",
+      "options": [
+        "司马迁",
+        "班固",
+        "欧阳修",
+        "司马光"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：司马光。按元朝统一与宋元科技文化的史实判断，本题正确答案是「司马光」。",
+      "difficulty": 2
     }
   ]
 }

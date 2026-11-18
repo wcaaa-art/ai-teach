@@ -6,9 +6,9 @@
     "id": "初二-物理-2",
     "name": "声现象"
   },
-  "generatedAt": "2026-11-13T02:44:57.959Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.200Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedj156",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：用大小不同的力敲击同一音叉，改变的是声音的响度，音调由振动频率决定，不会因此改变。\nB. 正确：不同发声体的材料和结构不同，发出声音的音色不同，因此可依据音色分辨钢琴和小提琴。\nC. 错误：物体振动得越快，频率越高，改变的是音调；响度与振幅、距离等因素有关。\nD. 错误：声音的传播需要介质，真空不能传声，因此不存在“在真空中传播速度比在空气中大”的说法。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "声音在 15℃ 的空气中传播 0.5 s，通过的路程是（ ）m",
+      "options": [
+        "170",
+        "85",
+        "340",
+        "510"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：170。声速约 340 m/s，s = vt = 340 × 0.5 = 170 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "声音在 15℃ 的空气中传播 1 s，通过的路程是（ ）m",
+      "options": [
+        "170",
+        "680",
+        "341",
+        "340"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：340。声速约 340 m/s，s = vt = 340 × 1 = 340 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "声音在 15℃ 的空气中传播 1.5 s，通过的路程是（ ）m",
+      "options": [
+        "1020",
+        "850",
+        "510",
+        "255"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：510。声速约 340 m/s，s = vt = 340 × 1.5 = 510 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "声音在 15℃ 的空气中传播 2 s，通过的路程是（ ）m",
+      "options": [
+        "1020",
+        "680",
+        "340",
+        "1360"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：680。声速约 340 m/s，s = vt = 340 × 2 = 680 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "声音在 15℃ 的空气中传播 2.5 s，通过的路程是（ ）m",
+      "options": [
+        "850",
+        "425",
+        "1700",
+        "1190"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：850。声速约 340 m/s，s = vt = 340 × 2.5 = 850 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "声音在 15℃ 的空气中传播 3 s，通过的路程是（ ）m",
+      "options": [
+        "510",
+        "2040",
+        "1360",
+        "1020"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1020。声速约 340 m/s，s = vt = 340 × 3 = 1020 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "声音在 15℃ 的空气中传播 3.5 s，通过的路程是（ ）m",
+      "options": [
+        "2380",
+        "1530",
+        "1190",
+        "595"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1190。声速约 340 m/s，s = vt = 340 × 3.5 = 1190 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "声音在 15℃ 的空气中传播 4 s，通过的路程是（ ）m",
+      "options": [
+        "1700",
+        "1360",
+        "680",
+        "2720"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1360。声速约 340 m/s，s = vt = 340 × 4 = 1360 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "声音在 15℃ 的空气中传播 4.5 s，通过的路程是（ ）m",
+      "options": [
+        "1530",
+        "765",
+        "3060",
+        "1870"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1530。声速约 340 m/s，s = vt = 340 × 4.5 = 1530 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "声音在 15℃ 的空气中传播 5 s，通过的路程是（ ）m",
+      "options": [
+        "850",
+        "3400",
+        "2040",
+        "1700"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1700。声速约 340 m/s，s = vt = 340 × 5 = 1700 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "对着山崖喊话，经过 1 s 听到回声，人距山崖约（ ）m",
+      "options": [
+        "0",
+        "171",
+        "170",
+        "340"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：170。回声是声音往返一次，单程距离 = vt/2 = 340 × 1 ÷ 2 = 170 m。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "对着山崖喊话，经过 2 s 听到回声，人距山崖约（ ）m",
+      "options": [
+        "170",
+        "340",
+        "680",
+        "510"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：340。回声是声音往返一次，单程距离 = vt/2 = 340 × 2 ÷ 2 = 340 m。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "对着山崖喊话，经过 3 s 听到回声，人距山崖约（ ）m",
+      "options": [
+        "510",
+        "1020",
+        "680",
+        "340"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：510。回声是声音往返一次，单程距离 = vt/2 = 340 × 3 ÷ 2 = 510 m。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "对着山崖喊话，经过 4 s 听到回声，人距山崖约（ ）m",
+      "options": [
+        "1360",
+        "850",
+        "510",
+        "680"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：680。回声是声音往返一次，单程距离 = vt/2 = 340 × 4 ÷ 2 = 680 m。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "对着山崖喊话，经过 5 s 听到回声，人距山崖约（ ）m",
+      "options": [
+        "1020",
+        "680",
+        "850",
+        "1700"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：850。回声是声音往返一次，单程距离 = vt/2 = 340 × 5 ÷ 2 = 850 m。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "对着山崖喊话，经过 6 s 听到回声，人距山崖约（ ）m",
+      "options": [
+        "850",
+        "1020",
+        "2040",
+        "1190"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1020。回声是声音往返一次，单程距离 = vt/2 = 340 × 6 ÷ 2 = 1020 m。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "对着山崖喊话，经过 7 s 听到回声，人距山崖约（ ）m",
+      "options": [
+        "1190",
+        "2380",
+        "1360",
+        "1020"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1190。回声是声音往返一次，单程距离 = vt/2 = 340 × 7 ÷ 2 = 1190 m。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "对着山崖喊话，经过 8 s 听到回声，人距山崖约（ ）m",
+      "options": [
+        "2720",
+        "1530",
+        "1190",
+        "1360"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1360。回声是声音往返一次，单程距离 = vt/2 = 340 × 8 ÷ 2 = 1360 m。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "对着山崖喊话，经过 9 s 听到回声，人距山崖约（ ）m",
+      "options": [
+        "1700",
+        "1360",
+        "1530",
+        "3060"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1530。回声是声音往返一次，单程距离 = vt/2 = 340 × 9 ÷ 2 = 1530 m。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "对着山崖喊话，经过 10 s 听到回声，人距山崖约（ ）m",
+      "options": [
+        "1530",
+        "1700",
+        "3400",
+        "1870"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1700。回声是声音往返一次，单程距离 = vt/2 = 340 × 10 ÷ 2 = 1700 m。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "method",
+      "stem": "看到闪电后经过 2 s 听到雷声，打雷处距人约（ ）m（光速极大，传播时间忽略不计）",
+      "options": [
+        "680",
+        "340",
+        "1020",
+        "681"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：680。声音传播时间就是 2 s，距离 = 340 × 2 = 680 m。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "method",
+      "stem": "看到闪电后经过 3 s 听到雷声，打雷处距人约（ ）m（光速极大，传播时间忽略不计）",
+      "options": [
+        "510",
+        "1360",
+        "340",
+        "1020"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1020。声音传播时间就是 3 s，距离 = 340 × 3 = 1020 m。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "method",
+      "stem": "看到闪电后经过 4 s 听到雷声，打雷处距人约（ ）m（光速极大，传播时间忽略不计）",
+      "options": [
+        "1700",
+        "340",
+        "1360",
+        "680"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1360。声音传播时间就是 4 s，距离 = 340 × 4 = 1360 m。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "method",
+      "stem": "看到闪电后经过 5 s 听到雷声，打雷处距人约（ ）m（光速极大，传播时间忽略不计）",
+      "options": [
+        "340",
+        "1700",
+        "850",
+        "2040"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1700。声音传播时间就是 5 s，距离 = 340 × 5 = 1700 m。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "method",
+      "stem": "看到闪电后经过 1 s 听到雷声，打雷处距人约（ ）m（光速极大，传播时间忽略不计）",
+      "options": [
+        "340",
+        "170",
+        "680",
+        "341"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：340。声音传播时间就是 1 s，距离 = 340 × 1 = 340 m。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "method",
+      "stem": "看到闪电后经过 6 s 听到雷声，打雷处距人约（ ）m（光速极大，传播时间忽略不计）",
+      "options": [
+        "1020",
+        "2380",
+        "340",
+        "2040"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：2040。声音传播时间就是 6 s，距离 = 340 × 6 = 2040 m。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "method",
+      "stem": "看到闪电后经过 7 s 听到雷声，打雷处距人约（ ）m（光速极大，传播时间忽略不计）",
+      "options": [
+        "2720",
+        "340",
+        "2380",
+        "1190"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：2380。声音传播时间就是 7 s，距离 = 340 × 7 = 2380 m。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "method",
+      "stem": "看到闪电后经过 8 s 听到雷声，打雷处距人约（ ）m（光速极大，传播时间忽略不计）",
+      "options": [
+        "340",
+        "2720",
+        "1360",
+        "3060"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：2720。声音传播时间就是 8 s，距离 = 340 × 8 = 2720 m。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "method",
+      "stem": "看到闪电后经过 9 s 听到雷声，打雷处距人约（ ）m（光速极大，传播时间忽略不计）",
+      "options": [
+        "3060",
+        "1530",
+        "3400",
+        "340"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：3060。声音传播时间就是 9 s，距离 = 340 × 9 = 3060 m。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-物理-2",
+      "chapterName": "声现象",
+      "type": "single",
+      "dimension": "method",
+      "stem": "看到闪电后经过 10 s 听到雷声，打雷处距人约（ ）m（光速极大，传播时间忽略不计）",
+      "options": [
+        "1700",
+        "3740",
+        "340",
+        "3400"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：3400。声音传播时间就是 10 s，距离 = 340 × 10 = 3400 m。",
+      "difficulty": 2
     }
   ]
 }

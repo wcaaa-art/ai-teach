@@ -75,7 +75,7 @@ export function buildWeeklyPlanTasks({ report, subject = '', weekKey = '', seque
     reviewTime,
     knowledgeTags: ['周报行动'],
     sequenceOrder: sequenceStart + index,
-    reason: '来自本周 AI 周报的行动建议。',
+    reason: '来自本周 AI 周报的行动建议',
     source: 'weekly-report',
     status: 'active',
     createdAt: now + index

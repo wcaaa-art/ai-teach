@@ -6,9 +6,9 @@
     "id": "初三-历史-3",
     "name": "中华人民共和国成立与发展"
   },
-  "generatedAt": "2026-11-14T12:17:38.132Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.105Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdff4h",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：开国大典发生在1949年10月1日；抗美援朝战争开始于1950年10月；全国大部分地区土地改革完成于1952年底；第一个五年计划开始于1953年，因此顺序为①②③④。\nB. 错误：该选项把第一个五年计划开始排在土地改革完成之前，但第一个五年计划开始于1953年，晚于1952年底土地改革基本完成。\nC. 错误：该选项把抗美援朝战争开始排在开国大典之前，但抗美援朝战争开始于1950年，晚于1949年开国大典。\nD. 错误：该选项把全国大部分地区土地改革完成排在抗美援朝战争开始之前，但土地改革完成于1952年底，晚于1950年抗美援朝战争开始。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "中华人民共和国成立的时间是（ ）",
+      "options": [
+        "1949年10月1日",
+        "1945年10月1日",
+        "1949年9月21日",
+        "1950年10月1日"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1949年10月1日。按新中国政治制度的史实判断，本题正确答案是「1949年10月1日」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国第一部社会主义类型的宪法颁布于（ ）",
+      "options": [
+        "1949年",
+        "1956年",
+        "1978年",
+        "1954年"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1954年。按新中国政治制度的史实判断，本题正确答案是「1954年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "1954年宪法规定我国的根本政治制度是（ ）",
+      "options": [
+        "民族区域自治制度",
+        "基层群众自治制度",
+        "人民代表大会制度",
+        "政治协商制度"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：人民代表大会制度。按新中国政治制度的史实判断，本题正确答案是「人民代表大会制度」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "中国人民政治协商会议的性质是（ ）",
+      "options": [
+        "国家司法机关",
+        "爱国统一战线组织",
+        "国家权力机关",
+        "最高行政机关"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：爱国统一战线组织。按新中国政治制度的史实判断，本题正确答案是「爱国统一战线组织」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国在少数民族聚居地区实行（ ）",
+      "options": [
+        "民族区域自治制度",
+        "人民代表大会制度",
+        "政治协商制度",
+        "一国两制"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：民族区域自治制度。按新中国政治制度的史实判断，本题正确答案是「民族区域自治制度」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国处理民族关系的基本原则是（ ）",
+      "options": [
+        "民族同化",
+        "民族分离",
+        "民族自治优先",
+        "民族平等、民族团结、各民族共同繁荣"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：民族平等、民族团结、各民族共同繁荣。按新中国政治制度的史实判断，本题正确答案是「民族平等、民族团结、各民族共同繁荣」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“一国两制”构想提出于（ ）",
+      "options": [
+        "20世纪60年代",
+        "20世纪90年代",
+        "20世纪80年代",
+        "20世纪50年代"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：20世纪80年代。按新中国政治制度的史实判断，本题正确答案是「20世纪80年代」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "香港回归祖国的时间是（ ）",
+      "options": [
+        "2000年1月1日",
+        "1997年7月1日",
+        "1997年10月1日",
+        "1999年12月20日"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1997年7月1日。按新中国政治制度的史实判断，本题正确答案是「1997年7月1日」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "澳门回归祖国的时间是（ ）",
+      "options": [
+        "1999年12月20日",
+        "1997年7月1日",
+        "1998年12月20日",
+        "2000年12月20日"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1999年12月20日。按新中国政治制度的史实判断，本题正确答案是「1999年12月20日」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国最高国家权力机关是（ ）",
+      "options": [
+        "国务院",
+        "最高人民法院",
+        "中国人民政治协商会议",
+        "全国人民代表大会"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：全国人民代表大会。按新中国政治制度的史实判断，本题正确答案是「全国人民代表大会」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "第一个五年计划的时间是（ ）",
+      "options": [
+        "1956—1960年",
+        "1978—1982年",
+        "1953—1957年",
+        "1949—1953年"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1953—1957年。按新中国经济建设的史实判断，本题正确答案是「1953—1957年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "第一个五年计划期间建成的武汉长江大桥通车于（ ）",
+      "options": [
+        "1960年",
+        "1957年",
+        "1949年",
+        "1953年"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1957年。按新中国经济建设的史实判断，本题正确答案是「1957年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国社会主义制度基本建立的标志是（ ）",
+      "options": [
+        "三大改造基本完成",
+        "中华人民共和国成立",
+        "第一个五年计划完成",
+        "改革开放开始"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：三大改造基本完成。按新中国经济建设的史实判断，本题正确答案是「三大改造基本完成」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "大跃进和人民公社化运动开始于（ ）",
+      "options": [
+        "1953年",
+        "1956年",
+        "1966年",
+        "1958年"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1958年。按新中国经济建设的史实判断，本题正确答案是「1958年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国农村经济体制改革的主要形式是（ ）",
+      "options": [
+        "农业生产合作社",
+        "土地改革",
+        "家庭联产承包责任制",
+        "人民公社"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：家庭联产承包责任制。按新中国经济建设的史实判断，本题正确答案是「家庭联产承包责任制」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "家庭联产承包责任制最早实行于（ ）",
+      "options": [
+        "河南南街村",
+        "安徽凤阳小岗村",
+        "广东深圳",
+        "江苏华西村"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：安徽凤阳小岗村。按新中国经济建设的史实判断，本题正确答案是「安徽凤阳小岗村」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国1980年设立的经济特区是（ ）",
+      "options": [
+        "深圳、珠海、汕头、厦门",
+        "深圳、广州、上海、天津",
+        "深圳、珠海、海南、厦门",
+        "上海、青岛、大连、宁波"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：深圳、珠海、汕头、厦门。按新中国经济建设的史实判断，本题正确答案是「深圳、珠海、汕头、厦门」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "明确提出建立社会主义市场经济体制目标的会议是（ ）",
+      "options": [
+        "中共十一届三中全会",
+        "中共十二大",
+        "中共十五大",
+        "中共十四大"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：中共十四大。按新中国经济建设的史实判断，本题正确答案是「中共十四大」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "中国加入世界贸易组织的时间是（ ）",
+      "options": [
+        "1999年",
+        "2008年",
+        "2001年",
+        "1997年"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：2001年。按新中国经济建设的史实判断，本题正确答案是「2001年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国改革开放和社会主义现代化建设的总设计师是（ ）",
+      "options": [
+        "陈云",
+        "邓小平",
+        "毛泽东",
+        "周恩来"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：邓小平。按新中国经济建设的史实判断，本题正确答案是「邓小平」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国第一颗原子弹爆炸成功于（ ）",
+      "options": [
+        "1964年",
+        "1949年",
+        "1966年",
+        "1970年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1964年。按新中国科技与外交成就的史实判断，本题正确答案是「1964年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "被誉为“两弹元勋”的科学家是（ ）",
+      "options": [
+        "钱学森",
+        "袁隆平",
+        "屠呦呦",
+        "邓稼先"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：邓稼先。按新中国科技与外交成就的史实判断，本题正确答案是「邓稼先」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国第一颗人造地球卫星“东方红一号”发射成功于（ ）",
+      "options": [
+        "1966年",
+        "1978年",
+        "1970年",
+        "1964年"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1970年。按新中国科技与外交成就的史实判断，本题正确答案是「1970年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "袁隆平的主要贡献是（ ）",
+      "options": [
+        "研制载人飞船",
+        "培育出杂交水稻",
+        "研制原子弹",
+        "发现青蒿素"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：培育出杂交水稻。按新中国科技与外交成就的史实判断，本题正确答案是「培育出杂交水稻」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "屠呦呦的主要贡献是（ ）",
+      "options": [
+        "发现青蒿素",
+        "培育杂交水稻",
+        "研制两弹",
+        "完成太空行走"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：发现青蒿素。按新中国科技与外交成就的史实判断，本题正确答案是「发现青蒿素」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国政府提出和平共处五项原则是在（ ）",
+      "options": [
+        "1949年",
+        "1955年",
+        "1971年",
+        "1953年"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1953年。按新中国科技与外交成就的史实判断，本题正确答案是「1953年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "万隆会议上周恩来提出的方针是（ ）",
+      "options": [
+        "“另起炉灶”",
+        "“打扫干净屋子再请客”",
+        "“求同存异”",
+        "“一边倒”"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：“求同存异”。按新中国科技与外交成就的史实判断，本题正确答案是「“求同存异”」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "中国恢复在联合国合法席位的时间是（ ）",
+      "options": [
+        "1972年",
+        "1971年",
+        "1949年",
+        "1955年"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1971年。按新中国科技与外交成就的史实判断，本题正确答案是「1971年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "中美正式建立外交关系的时间是（ ）",
+      "options": [
+        "1979年",
+        "1971年",
+        "1972年",
+        "1978年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1979年。按新中国科技与外交成就的史实判断，本题正确答案是「1979年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-历史-3",
+      "chapterName": "中华人民共和国成立与发展",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "2001年中国在上海主办的重要国际会议是（ ）",
+      "options": [
+        "联合国大会",
+        "万隆会议",
+        "不结盟运动会议",
+        "亚太经合组织（APEC）领导人非正式会议"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：亚太经合组织（APEC）领导人非正式会议。按新中国科技与外交成就的史实判断，本题正确答案是「亚太经合组织（APEC）领导人非正式会议」。",
+      "difficulty": 2
     }
   ]
 }

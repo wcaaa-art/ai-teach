@@ -6,9 +6,9 @@
     "id": "初三-地理-5",
     "name": "地理图表分析"
   },
-  "generatedAt": "2026-11-14T12:18:15.237Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.061Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdg7r6",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：最冷月（1月）平均气温为5℃，高于0℃但低于15℃，说明位于亚热带；7月高温多雨、1月温和少雨，雨热同期，符合亚热带季风气候的特征。\nB. 错误：地中海气候夏季炎热干燥、冬季温和多雨，若为该气候，7月降水量应明显偏少，与图中7月降水约180毫米相矛盾。\nC. 错误：温带海洋性气候全年温和湿润，各月降水分配较均匀，且夏季气温一般不会达到28℃；图中7月降水集中、气温较高，不符合该气候特征。\nD. 错误：热带季风气候全年高温，最冷月平均气温通常也在15℃以上，而图中1月平均气温仅约5℃，与该气候特征不符。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "表示各地降水量季节变化的图表是（ ）",
+      "options": [
+        "降水量柱状图",
+        "人口折线图",
+        "地形剖面图",
+        "政区图"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：降水量柱状图。按地理图表类型与坐标轴含义判断，本题正确答案是「降水量柱状图」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "表示气温年变化的图表是（ ）",
+      "options": [
+        "等高线图",
+        "降水柱状图",
+        "人口饼图",
+        "气温曲线图"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：气温曲线图。按地理图表类型与坐标轴含义判断，本题正确答案是「气温曲线图」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "表示人口构成比例的图表是（ ）",
+      "options": [
+        "地形剖面图",
+        "气温曲线图",
+        "饼状图",
+        "等高线图"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：饼状图。按地理图表类型与坐标轴含义判断，本题正确答案是「饼状图」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "表示地形起伏的图表是（ ）",
+      "options": [
+        "气候直方图",
+        "地形剖面图",
+        "饼状图",
+        "人口折线图"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：地形剖面图。按地理图表类型与坐标轴含义判断，本题正确答案是「地形剖面图」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "表示地理事物空间分布的图表是（ ）",
+      "options": [
+        "地图",
+        "饼状图",
+        "折线图",
+        "柱状图"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：地图。按地理图表类型与坐标轴含义判断，本题正确答案是「地图」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "气温曲线和降水量柱状图通常组合在一起，用于判断（ ）",
+      "options": [
+        "人口密度",
+        "地形类型",
+        "河流长度",
+        "气候特征"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：气候特征。按地理图表类型与坐标轴含义判断，本题正确答案是「气候特征」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "人口自然增长率统计图通常反映（ ）",
+      "options": [
+        "海拔与气温的关系",
+        "河流与降水的关系",
+        "出生率与死亡率的关系",
+        "气温与降水的关系"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：出生率与死亡率的关系。按地理图表类型与坐标轴含义判断，本题正确答案是「出生率与死亡率的关系」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在地理统计图中，横轴通常表示（ ）",
+      "options": [
+        "图例",
+        "时间或类别",
+        "数值大小",
+        "颜色"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：时间或类别。按地理图表类型与坐标轴含义判断，本题正确答案是「时间或类别」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在地理统计图中，纵轴通常表示（ ）",
+      "options": [
+        "数值大小",
+        "时间",
+        "地点",
+        "图例"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：数值大小。按地理图表类型与坐标轴含义判断，本题正确答案是「数值大小」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "读图时，首先应关注（ ）",
+      "options": [
+        "图例颜色",
+        "数据来源",
+        "图表边框",
+        "图名和单位"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：图名和单位。按地理图表类型与坐标轴含义判断，本题正确答案是「图名和单位」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某地全年高温，降水集中在5—10月，该地最可能属于（ ）",
+      "options": [
+        "极地气候",
+        "地中海气候",
+        "热带季风气候",
+        "温带海洋性气候"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：热带季风气候。按气候数据与人口曲线的判读结论判断，本题正确答案是「热带季风气候」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某地夏季炎热干燥、冬季温和多雨，该地最可能位于（ ）",
+      "options": [
+        "南极大陆",
+        "地中海沿岸",
+        "赤道附近",
+        "北极圈内"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：地中海沿岸。按气候数据与人口曲线的判读结论判断，本题正确答案是「地中海沿岸」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "气温年较差是指（ ）",
+      "options": [
+        "最热月平均气温与最冷月平均气温之差",
+        "最高气温与最低气温之差",
+        "年平均气温",
+        "降水量之差"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：最热月平均气温与最冷月平均气温之差。按气候数据与人口曲线的判读结论判断，本题正确答案是「最热月平均气温与最冷月平均气温之差」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某地最冷月平均气温为-10℃，最热月平均气温为22℃，该地最可能属于（ ）",
+      "options": [
+        "热带雨林气候",
+        "热带沙漠气候",
+        "地中海气候",
+        "温带大陆性气候"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：温带大陆性气候。按气候数据与人口曲线的判读结论判断，本题正确答案是「温带大陆性气候」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "从世界人口增长曲线看，第二次世界大战后人口增长（ ）",
+      "options": [
+        "停止",
+        "下降",
+        "加快",
+        "减慢"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：加快。按气候数据与人口曲线的判读结论判断，本题正确答案是「加快」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "从我国人口增长曲线看，20世纪70年代以后人口增长速度（ ）",
+      "options": [
+        "归零",
+        "放缓",
+        "加快",
+        "不变"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：放缓。按气候数据与人口曲线的判读结论判断，本题正确答案是「放缓」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某地降水集中在冬季、夏季干燥，该地气候类型最可能是（ ）",
+      "options": [
+        "地中海气候",
+        "温带季风气候",
+        "热带雨林气候",
+        "温带海洋性气候"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：地中海气候。按气候数据与人口曲线的判读结论判断，本题正确答案是「地中海气候」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某地各月降水量都较多且季节分配均匀，最可能属于（ ）",
+      "options": [
+        "地中海气候",
+        "热带季风气候",
+        "温带大陆性气候",
+        "温带海洋性气候"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：温带海洋性气候。按气候数据与人口曲线的判读结论判断，本题正确答案是「温带海洋性气候」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "从气温曲线图看，北半球陆地最热月通常出现在（ ）",
+      "options": [
+        "4月",
+        "10月",
+        "7月",
+        "1月"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：7月。按气候数据与人口曲线的判读结论判断，本题正确答案是「7月」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "从气温曲线图看，南半球陆地最热月通常出现在（ ）",
+      "options": [
+        "10月",
+        "1月",
+        "7月",
+        "4月"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1月。按气候数据与人口曲线的判读结论判断，本题正确答案是「1月」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "若甲地海拔为500米、乙地海拔为200米，则两地的相对高度是（ ）",
+      "options": [
+        "300米",
+        "700米",
+        "200米",
+        "500米"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：300米。按比例尺、海拔与气候数据的计算结果判断，本题正确答案是「300米」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在比例尺为1:200000的地图上，量得两地距离为3厘米，实地距离是（ ）",
+      "options": [
+        "60千米",
+        "600千米",
+        "0.6千米",
+        "6千米"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：6千米。按比例尺、海拔与气候数据的计算结果判断，本题正确答案是「6千米」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "某地图上1厘米代表实地距离5千米，该图比例尺写成数字式是（ ）",
+      "options": [
+        "1:5000000",
+        "1:5000",
+        "1:500000",
+        "1:50000"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1:500000。按比例尺、海拔与气候数据的计算结果判断，本题正确答案是「1:500000」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "某地海拔1500米，气温为12℃，若只考虑海拔影响，海拔500米处的气温约为（ ）",
+      "options": [
+        "24℃",
+        "18℃",
+        "6℃",
+        "12℃"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：18℃。按比例尺、海拔与气候数据的计算结果判断，本题正确答案是「18℃」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "某山山麓气温为28℃，山顶气温为16℃，两地的相对高度约为（ ）",
+      "options": [
+        "2000米",
+        "1000米",
+        "500米",
+        "3000米"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：2000米。按比例尺、海拔与气候数据的计算结果判断，本题正确答案是「2000米」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "某地年降水量约800毫米，最冷月气温在0℃以下，最热月气温在25℃左右，降水集中在夏季，该地最可能属于（ ）",
+      "options": [
+        "亚热带季风气候",
+        "热带季风气候",
+        "地中海气候",
+        "温带季风气候"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：温带季风气候。按比例尺、海拔与气候数据的计算结果判断，本题正确答案是「温带季风气候」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "某地最冷月气温为15℃、最热月气温为28℃，年降水量约1500毫米，该地最可能属于（ ）",
+      "options": [
+        "温带大陆性气候",
+        "地中海气候",
+        "亚热带季风气候",
+        "温带季风气候"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：亚热带季风气候。按比例尺、海拔与气候数据的计算结果判断，本题正确答案是「亚热带季风气候」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "从某地气温曲线看，1月气温最低、7月气温最高，且最冷月气温在0℃以上，该地位于（ ）",
+      "options": [
+        "南半球寒带",
+        "北半球亚热带",
+        "南半球亚热带",
+        "北半球寒带"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：北半球亚热带。按比例尺、海拔与气候数据的计算结果判断，本题正确答案是「北半球亚热带」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在等高线地形图上，甲处等高线向海拔高处凸出，乙处等高线向海拔低处凸出，则甲、乙分别是（ ）",
+      "options": [
+        "山谷、山脊",
+        "山脊、山谷",
+        "山顶、鞍部",
+        "陡崖、盆地"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：山谷、山脊。按比例尺、海拔与气候数据的计算结果判断，本题正确答案是「山谷、山脊」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-地理-5",
+      "chapterName": "地理图表分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "某校地理小组测得一日最高气温为28℃、最低气温为16℃，该地气温日较差为（ ）",
+      "options": [
+        "44℃",
+        "6℃",
+        "28℃",
+        "12℃"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：12℃。按比例尺、海拔与气候数据的计算结果判断，本题正确答案是「12℃」。",
+      "difficulty": 2
     }
   ]
 }

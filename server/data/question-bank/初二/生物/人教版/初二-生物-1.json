@@ -6,9 +6,9 @@
     "id": "初二-生物-1",
     "name": "生物圈中的绿色植物"
   },
-  "generatedAt": "2026-11-14T12:16:14.845Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.801Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgddf9o",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 2,
       "explanation": "A. 错误：绿萝在光照下进行光合作用消耗二氧化碳，呼吸作用则释放二氧化碳；箱内二氧化碳浓度降低主要说明光合作用消耗量大于呼吸作用释放量，不能仅归因于呼吸作用。\nB. 错误：氧气浓度升高来自光合作用释放氧气；蒸腾作用散失的是水蒸气，不产生氧气。\nC. 正确：盆土已被密封，箱内壁水珠主要来自绿萝蒸腾作用散失的水蒸气凝结；蒸腾作用能提高空气湿度、促进降水，体现绿色植物参与生物圈水循环。\nD. 错误：呼吸作用在有光和无光条件下都能进行，箱内氧气增加只能说明光照下光合作用释放氧气的速率大于呼吸作用消耗氧气的速率，不能说明绿萝不进行呼吸作用。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "绿色植物通过光合作用，能维持生物圈中的（　　）",
+      "options": [
+        "碳—氧平衡",
+        "水平衡",
+        "氮平衡",
+        "温度平衡"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：碳—氧平衡。按光合作用、呼吸作用和蒸腾作用的基本原理判断，本题正确答案是「碳—氧平衡」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "光合作用的原料是（　　）",
+      "options": [
+        "氧气和有机物",
+        "水和无机盐",
+        "二氧化碳和氧气",
+        "二氧化碳和水"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：二氧化碳和水。按光合作用、呼吸作用和蒸腾作用的基本原理判断，本题正确答案是「二氧化碳和水」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "光合作用释放的氧气主要来自（　　）",
+      "options": [
+        "有机物",
+        "空气",
+        "水",
+        "二氧化碳"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：水。按光合作用、呼吸作用和蒸腾作用的基本原理判断，本题正确答案是「水」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "呼吸作用对生物圈的重要作用是（　　）",
+      "options": [
+        "增加空气湿度",
+        "分解有机物，为生命活动提供能量",
+        "制造有机物",
+        "释放氧气"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：分解有机物，为生命活动提供能量。按光合作用、呼吸作用和蒸腾作用的基本原理判断，本题正确答案是「分解有机物，为生命活动提供能量」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "蒸腾作用对植物自身的重要作用是（　　）",
+      "options": [
+        "促进水分和无机盐的运输，降低叶片温度",
+        "制造有机物",
+        "储存能量",
+        "吸收二氧化碳"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：促进水分和无机盐的运输，降低叶片温度。按光合作用、呼吸作用和蒸腾作用的基本原理判断，本题正确答案是「促进水分和无机盐的运输，降低叶片温度」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "植物进行光合作用的时间是（　　）",
+      "options": [
+        "只在白天进行呼吸作用",
+        "只在夜晚",
+        "任何时间都不需要光",
+        "有光时"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：有光时。按光合作用、呼吸作用和蒸腾作用的基本原理判断，本题正确答案是「有光时」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "植物呼吸作用进行的时间是（　　）",
+      "options": [
+        "只在夜晚",
+        "只在无光时",
+        "白天和夜晚都进行",
+        "只在白天"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：白天和夜晚都进行。按光合作用、呼吸作用和蒸腾作用的基本原理判断，本题正确答案是「白天和夜晚都进行」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "农业生产中“合理密植”的主要目的是（　　）",
+      "options": [
+        "节省肥料",
+        "充分利用光照，提高光合作用效率",
+        "减少呼吸作用",
+        "增加蒸腾作用"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：充分利用光照，提高光合作用效率。按光合作用、呼吸作用和蒸腾作用的基本原理判断，本题正确答案是「充分利用光照，提高光合作用效率」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "温室种植时适当增加二氧化碳浓度，可以（　　）",
+      "options": [
+        "提高光合作用速率，增加产量",
+        "抑制光合作用",
+        "促进呼吸作用消耗有机物",
+        "减少水分吸收"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：提高光合作用速率，增加产量。按光合作用、呼吸作用和蒸腾作用的基本原理判断，本题正确答案是「提高光合作用速率，增加产量」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "大面积植树造林能调节气候，主要与植物的（　　）有关",
+      "options": [
+        "呼吸作用",
+        "吸收作用",
+        "光合作用的暗反应",
+        "蒸腾作用"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：蒸腾作用。按光合作用、呼吸作用和蒸腾作用的基本原理判断，本题正确答案是「蒸腾作用」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "根吸收水分的主要部位是（　　）",
+      "options": [
+        "分生区",
+        "伸长区",
+        "成熟区（根毛区）",
+        "根冠"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：成熟区（根毛区）。按植物体内水分和无机盐的吸收、运输判断，本题正确答案是「成熟区（根毛区）」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "植物体内运输水和无机盐的通道是（　　）",
+      "options": [
+        "形成层",
+        "导管",
+        "筛管",
+        "气孔"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：导管。按植物体内水分和无机盐的吸收、运输判断，本题正确答案是「导管」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "植物体内运输有机物的通道是（　　）",
+      "options": [
+        "筛管",
+        "导管",
+        "根毛",
+        "气孔"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：筛管。按植物体内水分和无机盐的吸收、运输判断，本题正确答案是「筛管」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "水和无机盐在植物体内的运输方向是（　　）",
+      "options": [
+        "自上而下",
+        "双向运输",
+        "只在叶片内运输",
+        "自下而上"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：自下而上。按植物体内水分和无机盐的吸收、运输判断，本题正确答案是「自下而上」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "叶片制造的有机物在植物体内的运输方向主要是（　　）",
+      "options": [
+        "只在叶脉中横向运输",
+        "不运输",
+        "自上而下运输到其他器官",
+        "自下而上运输到叶片"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：自上而下运输到其他器官。按植物体内水分和无机盐的吸收、运输判断，本题正确答案是「自上而下运输到其他器官」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "植物生长需要量最多的无机盐是（　　）",
+      "options": [
+        "含钠、镁、氯的无机盐",
+        "含氮、磷、钾的无机盐",
+        "含铁、钙、锌的无机盐",
+        "含碘、硒、铜的无机盐"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：含氮、磷、钾的无机盐。按植物体内水分和无机盐的吸收、运输判断，本题正确答案是「含氮、磷、钾的无机盐」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "植物缺氮时，通常表现为（　　）",
+      "options": [
+        "植株矮小，叶片发黄",
+        "叶片边缘焦枯",
+        "叶片呈暗绿色并出现紫色",
+        "果实提前成熟"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：植株矮小，叶片发黄。按植物体内水分和无机盐的吸收、运输判断，本题正确答案是「植株矮小，叶片发黄」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "无土栽培能成功，说明植物生长需要的是（　　）",
+      "options": [
+        "土壤中的有机物",
+        "土壤中的微生物",
+        "土壤颗粒本身",
+        "水、无机盐和阳光等条件，不一定需要土壤"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：水、无机盐和阳光等条件，不一定需要土壤。按植物体内水分和无机盐的吸收、运输判断，本题正确答案是「水、无机盐和阳光等条件，不一定需要土壤」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "蒸腾作用产生的拉力，有助于（　　）",
+      "options": [
+        "二氧化碳进入叶片",
+        "氧气排出叶片",
+        "水和无机盐在植物体内向上运输",
+        "有机物向下运输"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：水和无机盐在植物体内向上运输。按植物体内水分和无机盐的吸收、运输判断，本题正确答案是「水和无机盐在植物体内向上运输」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "移栽植物时剪去部分枝叶，主要是为了（　　）",
+      "options": [
+        "减少无机盐吸收",
+        "降低蒸腾作用，减少水分散失",
+        "降低光合作用",
+        "促进呼吸作用"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：降低蒸腾作用，减少水分散失。按植物体内水分和无机盐的吸收、运输判断，本题正确答案是「降低蒸腾作用，减少水分散失」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "一朵花中最重要的结构是（　　）",
+      "options": [
+        "雄蕊和雌蕊",
+        "花瓣和萼片",
+        "花柄和花托",
+        "花冠和蜜腺"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：雄蕊和雌蕊。按花的结构、传粉受精与果实形成判断，本题正确答案是「雄蕊和雌蕊」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "花粉从花药落到柱头上的过程叫（　　）",
+      "options": [
+        "受精",
+        "开花",
+        "结果",
+        "传粉"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：传粉。按花的结构、传粉受精与果实形成判断，本题正确答案是「传粉」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "精子与卵细胞结合形成受精卵的过程叫（　　）",
+      "options": [
+        "萌发",
+        "分化",
+        "受精",
+        "传粉"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：受精。按花的结构、传粉受精与果实形成判断，本题正确答案是「受精」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "受精后，子房发育成（　　）",
+      "options": [
+        "胚",
+        "果实",
+        "种子",
+        "果皮"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：果实。按花的结构、传粉受精与果实形成判断，本题正确答案是「果实」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "受精后，胚珠发育成（　　）",
+      "options": [
+        "种子",
+        "果实",
+        "果皮",
+        "胚乳"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：种子。按花的结构、传粉受精与果实形成判断，本题正确答案是「种子」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "受精后，子房壁发育成（　　）",
+      "options": [
+        "种子",
+        "胚",
+        "种皮",
+        "果皮"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：果皮。按花的结构、传粉受精与果实形成判断，本题正确答案是「果皮」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "受精卵发育成（　　）",
+      "options": [
+        "种子",
+        "胚乳",
+        "胚",
+        "果皮"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：胚。按花的结构、传粉受精与果实形成判断，本题正确答案是「胚」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "玉米果穗上出现缺粒现象，主要原因是（　　）",
+      "options": [
+        "肥料过多",
+        "传粉不足",
+        "光照过强",
+        "水分过多"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：传粉不足。按花的结构、传粉受精与果实形成判断，本题正确答案是「传粉不足」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "农业生产中通过人工辅助授粉可以（　　）",
+      "options": [
+        "弥补自然传粉不足，提高结实率",
+        "减少虫害",
+        "促进根系生长",
+        "延长花期"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：弥补自然传粉不足，提高结实率。按花的结构、传粉受精与果实形成判断，本题正确答案是「弥补自然传粉不足，提高结实率」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-生物-1",
+      "chapterName": "生物圈中的绿色植物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "种子萌发时，所需要的营养物质来自（　　）",
+      "options": [
+        "胚芽",
+        "胚根",
+        "种皮",
+        "子叶或胚乳"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：子叶或胚乳。按花的结构、传粉受精与果实形成判断，本题正确答案是「子叶或胚乳」。",
       "difficulty": 2
     }
   ]

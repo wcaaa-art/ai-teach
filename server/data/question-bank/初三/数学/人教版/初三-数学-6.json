@@ -6,9 +6,9 @@
     "id": "初三-数学-6",
     "name": "锐角三角函数"
   },
-  "generatedAt": "2026-11-13T02:46:48.953Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.192Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedlhmf",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：\\frac{3}{5} 对应的是 \\frac{AC}{AB}=\\frac{6}{10}，即 cosA，不是 sinA。\nB. 正确：由勾股定理得 AB=\\sqrt{AC^2+BC^2}=\\sqrt{6^2+8^2}=10；在 Rt△ABC 中，sinA=\\frac{对边}{斜边}=\\frac{BC}{AB}=\\frac{8}{10}=\\frac{4}{5}。\nC. 错误：\\frac{3}{4} 对应的是 \\frac{AC}{BC}，即 tanB，不是 sinA。\nD. 错误：\\frac{4}{3} 对应的是 \\frac{BC}{AC}，即 tanA，不是 sinA。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在 Rt△ABC 中，∠C = 90°，BC = 3，AC = 4，AB = 5，则 sin A =（ ）",
+      "options": [
+        "3/5",
+        "4/5",
+        "3/4",
+        "5/3"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：3/5。sin A = 对边/斜边 = 3/5。",
+      "difficulty": 2
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在 Rt△ABC 中，∠C = 90°，BC = 5，AC = 12，AB = 13，则 cos A =（ ）",
+      "options": [
+        "5/13",
+        "12/5",
+        "13/12",
+        "12/13"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：12/13。cos A = 邻边/斜边 = 12/13。",
+      "difficulty": 2
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在 Rt△ABC 中，∠C = 90°，BC = 8，AC = 15，AB = 17，则 tan A =（ ）",
+      "options": [
+        "8/17",
+        "15/17",
+        "8/15",
+        "15/8"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：8/15。tan A = 对边/邻边 = 8/15。",
+      "difficulty": 2
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在 Rt△ABC 中，∠C = 90°，BC = 7，AC = 24，AB = 25，则 sin A =（ ）",
+      "options": [
+        "25/7",
+        "7/25",
+        "24/25",
+        "7/24"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：7/25。sin A = 对边/斜边 = 7/25。",
+      "difficulty": 2
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在 Rt△ABC 中，∠C = 90°，BC = 9，AC = 40，AB = 41，则 cos A =（ ）",
+      "options": [
+        "40/41",
+        "9/41",
+        "40/9",
+        "41/40"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：40/41。cos A = 邻边/斜边 = 40/41。",
+      "difficulty": 2
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在 Rt△ABC 中，∠C = 90°，BC = 6，AC = 8，AB = 10，则 tan A =（ ）",
+      "options": [
+        "4/3",
+        "3/5",
+        "4/5",
+        "3/4"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：3/4。tan A = 对边/邻边 = 3/4。",
+      "difficulty": 2
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在 Rt△ABC 中，∠C = 90°，BC = 9，AC = 12，AB = 15，则 sin A =（ ）",
+      "options": [
+        "3/4",
+        "5/3",
+        "3/5",
+        "4/5"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：3/5。sin A = 对边/斜边 = 3/5。",
+      "difficulty": 2
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在 Rt△ABC 中，∠C = 90°，BC = 12，AC = 16，AB = 20，则 cos A =（ ）",
+      "options": [
+        "5/4",
+        "4/5",
+        "3/5",
+        "4/3"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：4/5。cos A = 邻边/斜边 = 4/5。",
+      "difficulty": 2
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在 Rt△ABC 中，∠C = 90°，BC = 20，AC = 21，AB = 29，则 tan A =（ ）",
+      "options": [
+        "20/21",
+        "21/20",
+        "20/29",
+        "21/29"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：20/21。tan A = 对边/邻边 = 20/21。",
+      "difficulty": 2
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在 Rt△ABC 中，∠C = 90°，BC = 15，AC = 20，AB = 25，则 sin A =（ ）",
+      "options": [
+        "4/5",
+        "3/4",
+        "5/3",
+        "3/5"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：3/5。sin A = 对边/斜边 = 3/5。",
+      "difficulty": 2
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "sin 30° 的值是（ ）",
+      "options": [
+        "1",
+        "√2/2",
+        "1/2",
+        "√3/2"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1/2。特殊角的三角函数值：sin 30° = 1/2。",
+      "difficulty": 1
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "cos 60° 的值是（ ）",
+      "options": [
+        "1",
+        "1/2",
+        "√3/2",
+        "√2/2"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1/2。特殊角的三角函数值：cos 60° = 1/2。",
+      "difficulty": 1
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "tan 45° 的值是（ ）",
+      "options": [
+        "1",
+        "√2/2",
+        "√3/3",
+        "1/2"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1。特殊角的三角函数值：tan 45° = 1。",
+      "difficulty": 1
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "sin 45° 的值是（ ）",
+      "options": [
+        "1/2",
+        "√3/2",
+        "1",
+        "√2/2"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：√2/2。特殊角的三角函数值：sin 45° = √2/2。",
+      "difficulty": 1
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "cos 30° 的值是（ ）",
+      "options": [
+        "√2/2",
+        "√3",
+        "√3/2",
+        "1/2"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：√3/2。特殊角的三角函数值：cos 30° = √3/2。",
+      "difficulty": 1
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "tan 60° 的值是（ ）",
+      "options": [
+        "√2",
+        "√3",
+        "√3/3",
+        "1"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：√3。特殊角的三角函数值：tan 60° = √3。",
+      "difficulty": 1
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "sin 60° 的值是（ ）",
+      "options": [
+        "√3/2",
+        "1/2",
+        "√2/2",
+        "√3/3"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：√3/2。特殊角的三角函数值：sin 60° = √3/2。",
+      "difficulty": 1
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "cos 45° 的值是（ ）",
+      "options": [
+        "1/2",
+        "√3/2",
+        "√2",
+        "√2/2"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：√2/2。特殊角的三角函数值：cos 45° = √2/2。",
+      "difficulty": 1
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "tan 30° 的值是（ ）",
+      "options": [
+        "1/3",
+        "1/2",
+        "√3/3",
+        "√3"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：√3/3。特殊角的三角函数值：tan 30° = √3/3。",
+      "difficulty": 1
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "sin 90° 的值是（ ）",
+      "options": [
+        "0",
+        "1",
+        "1/2",
+        "√2/2"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1。特殊角的三角函数值：sin 90° = 1。",
+      "difficulty": 1
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在 Rt△ABC 中，∠C = 90°，sin A = 3/5，则 cos A =（ ）",
+      "options": [
+        "4/5",
+        "3/5",
+        "5/4",
+        "4/3"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：4/5。sin A = 对边/斜边 = 3/5，cos A = 邻边/斜边 = 4/5。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在 Rt△ABC 中，∠C = 90°，sin A = 5/13，则 cos A =（ ）",
+      "options": [
+        "5/13",
+        "13/12",
+        "12/5",
+        "12/13"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：12/13。sin A = 对边/斜边 = 5/13，cos A = 邻边/斜边 = 12/13。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在 Rt△ABC 中，∠C = 90°，sin A = 8/17，则 cos A =（ ）",
+      "options": [
+        "17/15",
+        "15/8",
+        "15/17",
+        "8/17"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：15/17。sin A = 对边/斜边 = 8/17，cos A = 邻边/斜边 = 15/17。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在 Rt△ABC 中，∠C = 90°，sin A = 7/25，则 cos A =（ ）",
+      "options": [
+        "24/7",
+        "24/25",
+        "7/25",
+        "25/24"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：24/25。sin A = 对边/斜边 = 7/25，cos A = 邻边/斜边 = 24/25。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在 Rt△ABC 中，∠C = 90°，sin A = 9/41，则 cos A =（ ）",
+      "options": [
+        "40/41",
+        "9/41",
+        "41/40",
+        "40/9"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：40/41。sin A = 对边/斜边 = 9/41，cos A = 邻边/斜边 = 40/41。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在 Rt△ABC 中，∠C = 90°，sin A = 20/29，则 cos A =（ ）",
+      "options": [
+        "21/29",
+        "20/29",
+        "29/21",
+        "21/20"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：21/29。sin A = 对边/斜边 = 20/29，cos A = 邻边/斜边 = 21/29。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在 Rt△ABC 中，∠C = 90°，AB = 5，sin A = 3/5，则 cos A =（ ）",
+      "options": [
+        "4/5",
+        "3/5",
+        "5/4",
+        "4/3"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：4/5。sin A = 对边/斜边 = 3/5，cos A = 邻边/斜边 = 4/5。",
+      "difficulty": 2
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在 Rt△ABC 中，∠C = 90°，AB = 13，sin A = 5/13，则 cos A =（ ）",
+      "options": [
+        "5/13",
+        "13/12",
+        "12/5",
+        "12/13"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：12/13。sin A = 对边/斜边 = 5/13，cos A = 邻边/斜边 = 12/13。",
+      "difficulty": 2
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在 Rt△ABC 中，∠C = 90°，AB = 17，sin A = 8/17，则 cos A =（ ）",
+      "options": [
+        "17/15",
+        "15/8",
+        "15/17",
+        "8/17"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：15/17。sin A = 对边/斜边 = 8/17，cos A = 邻边/斜边 = 15/17。",
+      "difficulty": 2
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-数学-6",
+      "chapterName": "锐角三角函数",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在 Rt△ABC 中，∠C = 90°，AB = 25，sin A = 7/25，则 cos A =（ ）",
+      "options": [
+        "24/7",
+        "24/25",
+        "7/25",
+        "25/24"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：24/25。sin A = 对边/斜边 = 7/25，cos A = 邻边/斜边 = 24/25。",
+      "difficulty": 2
     }
   ]
 }

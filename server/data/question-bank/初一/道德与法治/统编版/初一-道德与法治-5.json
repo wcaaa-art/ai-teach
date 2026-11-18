@@ -6,9 +6,9 @@
     "id": "初一-道德与法治-5",
     "name": "法律与规则入门"
   },
-  "generatedAt": "2026-11-14T12:14:20.807Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.981Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdb6v7",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 1,
       "explanation": "A. 错误：班级公约虽不是法律，但作为班级共同规则对成员有约束力，依靠自觉和集体监督维护，不能说不具有任何约束力。\nB. 正确：班级公约由班级成员共同参与制定，体现集体意志，是维护班级秩序的重要规则，成员应共同遵守。\nC. 错误：法律具有国家强制力，但校规、班级公约等社会规则也有一定约束力；认为只有法律有约束力不符合规则的多样性。\nD. 错误：规则不是一成不变的，班级公约可根据实际情况经民主程序修改完善，不能理解为永远不能修改。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "社会规则包括（　　）",
+      "options": [
+        "道德、纪律、法律等",
+        "只有法律",
+        "只有道德",
+        "只有纪律"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：道德、纪律、法律等。按规则与法律的基本特征判断，本题正确答案是「道德、纪律、法律等」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "法律是一种特殊的行为规范，其特殊性在于（　　）",
+      "options": [
+        "靠社会舆论维持",
+        "靠个人自觉维持",
+        "靠家庭传统维持",
+        "由国家制定或认可，靠国家强制力保证实施"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：由国家制定或认可，靠国家强制力保证实施。按规则与法律的基本特征判断，本题正确答案是「由国家制定或认可，靠国家强制力保证实施」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "法律对全体社会成员具有（　　）",
+      "options": [
+        "没有约束力",
+        "只对成年人有约束力",
+        "普遍约束力",
+        "部分约束力"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：普遍约束力。按规则与法律的基本特征判断，本题正确答案是「普遍约束力」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "法律的作用主要表现在（　　）",
+      "options": [
+        "教育作用和惩罚作用",
+        "规范作用和保护作用",
+        "惩罚作用和报复作用",
+        "管理作用和监督作用"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：规范作用和保护作用。按规则与法律的基本特征判断，本题正确答案是「规范作用和保护作用」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "法律面前人人平等，意味着（　　）",
+      "options": [
+        "任何人都没有超越法律的特权",
+        "官员可以不受法律约束",
+        "未成年人不受法律约束",
+        "富人可以有特权"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：任何人都没有超越法律的特权。按规则与法律的基本特征判断，本题正确答案是「任何人都没有超越法律的特权」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "违法行为是指（　　）",
+      "options": [
+        "所有不道德的行为",
+        "所有违反纪律的行为",
+        "所有错误的想法",
+        "不履行法律规定的义务或作出法律禁止的行为"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：不履行法律规定的义务或作出法律禁止的行为。按规则与法律的基本特征判断，本题正确答案是「不履行法律规定的义务或作出法律禁止的行为」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一般违法行为与犯罪的区别主要在于（　　）",
+      "options": [
+        "是否被老师发现",
+        "是否年满18周岁",
+        "对社会危害程度不同",
+        "是否违反道德"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：对社会危害程度不同。按规则与法律的基本特征判断，本题正确答案是「对社会危害程度不同」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "犯罪的基本特征不包括（　　）",
+      "options": [
+        "应受刑罚处罚性",
+        "一般违法性",
+        "严重社会危害性",
+        "刑事违法性"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：一般违法性。按规则与法律的基本特征判断，本题正确答案是「一般违法性」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列属于犯罪行为的是（　　）",
+      "options": [
+        "抢劫他人财物",
+        "闯红灯",
+        "上课迟到",
+        "考试作弊"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：抢劫他人财物。按规则与法律的基本特征判断，本题正确答案是「抢劫他人财物」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "法律与道德的关系是（　　）",
+      "options": [
+        "二者完全对立",
+        "二者互不相干",
+        "道德可以代替法律",
+        "二者相互配合、相互促进"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：二者相互配合、相互促进。按规则与法律的基本特征判断，本题正确答案是「二者相互配合、相互促进」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "未成年人是指（　　）",
+      "options": [
+        "未满14周岁的公民",
+        "未满20周岁的公民",
+        "未满18周岁的公民",
+        "未满16周岁的公民"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：未满18周岁的公民。按未成年人保护法的相关规定判断，本题正确答案是「未满18周岁的公民」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国专门保护未成年人的法律是（　　）",
+      "options": [
+        "刑法",
+        "未成年人保护法",
+        "宪法",
+        "民法典"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：未成年人保护法。按未成年人保护法的相关规定判断，本题正确答案是「未成年人保护法」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "未成年人保护法规定的保护包括（　　）",
+      "options": [
+        "家庭保护、学校保护、社会保护、网络保护、政府保护、司法保护",
+        "家庭保护和学校保护",
+        "社会保护和司法保护",
+        "只有学校保护"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：家庭保护、学校保护、社会保护、网络保护、政府保护、司法保护。按未成年人保护法的相关规定判断，本题正确答案是「家庭保护、学校保护、社会保护、网络保护、政府保护、司法保护」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "父母或者其他监护人应当（　　）",
+      "options": [
+        "让未成年人辍学打工",
+        "放任未成年人夜不归宿",
+        "对未成年人实施家庭暴力",
+        "依法履行监护职责和抚养义务"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：依法履行监护职责和抚养义务。按未成年人保护法的相关规定判断，本题正确答案是「依法履行监护职责和抚养义务」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "学校应当（　　）",
+      "options": [
+        "对学生实施体罚",
+        "歧视学习困难的学生",
+        "保障未成年学生受教育的权利，关心爱护学生",
+        "随意开除学生"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：保障未成年学生受教育的权利，关心爱护学生。按未成年人保护法的相关规定判断，本题正确答案是「保障未成年学生受教育的权利，关心爱护学生」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "营业性网吧（　　）",
+      "options": [
+        "只允许周末进入",
+        "不得允许未成年人进入",
+        "可以随意接纳未成年人",
+        "只要家长同意就可以"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：不得允许未成年人进入。按未成年人保护法的相关规定判断，本题正确答案是「不得允许未成年人进入」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "网络保护要求（　　）",
+      "options": [
+        "网络产品和服务提供者不得向未成年人提供诱导沉迷的产品",
+        "未成年人可以随意充值打赏",
+        "网络平台不需要审核内容",
+        "未成年人可以随意泄露个人信息"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：网络产品和服务提供者不得向未成年人提供诱导沉迷的产品。按未成年人保护法的相关规定判断，本题正确答案是「网络产品和服务提供者不得向未成年人提供诱导沉迷的产品」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "司法保护要求（　　）",
+      "options": [
+        "公开未成年人的犯罪记录",
+        "对未成年人从重处罚",
+        "不保护未成年人的合法权益",
+        "对违法犯罪的未成年人实行教育、感化、挽救的方针"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：对违法犯罪的未成年人实行教育、感化、挽救的方针。按未成年人保护法的相关规定判断，本题正确答案是「对违法犯罪的未成年人实行教育、感化、挽救的方针」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "未成年人受到侵害时，应该（　　）",
+      "options": [
+        "以暴制暴",
+        "自认倒霉",
+        "及时向家长、老师或有关部门求助",
+        "忍气吞声"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：及时向家长、老师或有关部门求助。按未成年人保护法的相关规定判断，本题正确答案是「及时向家长、老师或有关部门求助」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "预防未成年人犯罪，需要（　　）",
+      "options": [
+        "只靠司法机关",
+        "家庭、学校、社会共同参与",
+        "只靠家庭",
+        "只靠学校"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：家庭、学校、社会共同参与。按未成年人保护法的相关规定判断，本题正确答案是「家庭、学校、社会共同参与」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "依法办事，要求我们（　　）",
+      "options": [
+        "遵守法律法规，依法行使权利、履行义务",
+        "只享受权利不履行义务",
+        "遇到问题用暴力解决",
+        "无视法律"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：遵守法律法规，依法行使权利、履行义务。按依法办事与依法维权判断，本题正确答案是「遵守法律法规，依法行使权利、履行义务」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "公民的合法权益受到侵害时，应该（　　）",
+      "options": [
+        "以牙还牙",
+        "忍气吞声",
+        "采取非法手段报复",
+        "依法维权，通过合法途径解决"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：依法维权，通过合法途径解决。按依法办事与依法维权判断，本题正确答案是「依法维权，通过合法途径解决」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列属于合法维权方式的是（　　）",
+      "options": [
+        "损坏对方财物",
+        "在网上造谣诽谤",
+        "与侵权方协商，向有关部门投诉",
+        "殴打侵权人"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：与侵权方协商，向有关部门投诉。按依法办事与依法维权判断，本题正确答案是「与侵权方协商，向有关部门投诉」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "诉讼是（　　）",
+      "options": [
+        "不需要证据的方式",
+        "解决纠纷最正规、最权威的手段",
+        "唯一的维权方式",
+        "最不常用的方式"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：解决纠纷最正规、最权威的手段。按依法办事与依法维权判断，本题正确答案是「解决纠纷最正规、最权威的手段」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "当合法权益受到侵害需要打官司时，经济困难可以申请（　　）",
+      "options": [
+        "法律援助",
+        "社会救助",
+        "商业保险",
+        "困难补助"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：法律援助。按依法办事与依法维权判断，本题正确答案是「法律援助」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "同违法犯罪作斗争，应该（　　）",
+      "options": [
+        "盲目硬拼",
+        "视而不见",
+        "包庇罪犯",
+        "见义智为，注意保护自己"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：见义智为，注意保护自己。按依法办事与依法维权判断，本题正确答案是「见义智为，注意保护自己」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "看到有人实施违法犯罪时，最恰当的做法是（　　）",
+      "options": [
+        "假装没看见",
+        "加入其中",
+        "及时报警，记住歹徒特征",
+        "直接冲上去搏斗"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：及时报警，记住歹徒特征。按依法办事与依法维权判断，本题正确答案是「及时报警，记住歹徒特征」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "青少年要增强法治意识，应该（　　）",
+      "options": [
+        "只在考试时学法律",
+        "学法、懂法、守法、用法",
+        "只学法律条文不实践",
+        "认为法律与自己无关"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：学法、懂法、守法、用法。按依法办事与依法维权判断，本题正确答案是「学法、懂法、守法、用法」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列行为属于依法行使权利的是（　　）",
+      "options": [
+        "在行使自己权利时不损害他人合法权益",
+        "在公共场所大声喧哗",
+        "随意占用公共通道",
+        "在网上侵犯他人隐私"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：在行使自己权利时不损害他人合法权益。按依法办事与依法维权判断，本题正确答案是「在行使自己权利时不损害他人合法权益」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-道德与法治-5",
+      "chapterName": "法律与规则入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "规则与自由的关系是（　　）",
+      "options": [
+        "规则限制自由，二者对立",
+        "自由不需要规则",
+        "规则可有可无",
+        "规则划定了自由的边界，也保障了自由的实现"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：规则划定了自由的边界，也保障了自由的实现。按依法办事与依法维权判断，本题正确答案是「规则划定了自由的边界，也保障了自由的实现」。",
       "difficulty": 2
     }
   ]

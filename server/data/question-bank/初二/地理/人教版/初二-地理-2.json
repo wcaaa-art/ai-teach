@@ -6,9 +6,9 @@
     "id": "初二-地理-2",
     "name": "中国人口与民族"
   },
-  "generatedAt": "2026-11-14T12:15:59.735Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.035Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdd38f",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 1,
       "explanation": "A. 错误：0—14岁人口比重下降，说明少儿人口相对减少，中小学学位需求不会持续扩大。\nB. 正确：60岁及以上人口比重由13%升至21%，表明人口老龄化程度加深，养老服务需求会明显上升。\nC. 错误：少儿和老年人口比重变化会挤压劳动年龄人口比重，劳动年龄人口比重不会迅速上升。\nD. 错误：0—14岁人口比重下降通常与出生率下降有关，不能推出人口出生率显著回升。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国人口地理分界线是（ ）",
+      "options": [
+        "黑河—腾冲线",
+        "秦岭—淮河线",
+        "大兴安岭—太行山线",
+        "昆仑山—祁连山线"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：黑河—腾冲线。按我国人口分布与人口国情判断，本题正确答案是「黑河—腾冲线」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国人口分布的特点是（ ）",
+      "options": [
+        "西多东少",
+        "南多北少",
+        "均匀分布",
+        "东多西少"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：东多西少。按我国人口分布与人口国情判断，本题正确答案是「东多西少」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国人口密度最小的地区是（ ）",
+      "options": [
+        "长江中下游平原",
+        "四川盆地",
+        "青藏高原",
+        "华北平原"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：青藏高原。按我国人口分布与人口国情判断，本题正确答案是「青藏高原」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国人口最多的省级行政区是（ ）",
+      "options": [
+        "四川省",
+        "广东省",
+        "河南省",
+        "山东省"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：广东省。按我国人口分布与人口国情判断，本题正确答案是「广东省」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国为解决人口增长过快问题，曾经实行的基本国策是（ ）",
+      "options": [
+        "计划生育",
+        "对外开放",
+        "科教兴国",
+        "乡村振兴"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：计划生育。按我国人口分布与人口国情判断，本题正确答案是「计划生育」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "当前我国人口发展面临的主要问题是（ ）",
+      "options": [
+        "人口增长过快",
+        "劳动力严重不足",
+        "人口分布均匀",
+        "人口老龄化加剧"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：人口老龄化加剧。按我国人口分布与人口国情判断，本题正确答案是「人口老龄化加剧」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国人口增长的有利条件是（ ）",
+      "options": [
+        "人口增长过快",
+        "人口分布均匀",
+        "劳动力资源丰富",
+        "人口老龄化严重"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：劳动力资源丰富。按我国人口分布与人口国情判断，本题正确答案是「劳动力资源丰富」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "近年来我国城镇人口比重不断（ ）",
+      "options": [
+        "归零",
+        "上升",
+        "下降",
+        "不变"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：上升。按我国人口分布与人口国情判断，本题正确答案是「上升」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国人口最多的民族是（ ）",
+      "options": [
+        "汉族",
+        "壮族",
+        "回族",
+        "满族"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：汉族。按我国人口分布与人口国情判断，本题正确答案是「汉族」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国少数民族中人口最多的是（ ）",
+      "options": [
+        "回族",
+        "满族",
+        "维吾尔族",
+        "壮族"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：壮族。按我国人口分布与人口国情判断，本题正确答案是「壮族」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国共有（ ）个民族",
+      "options": [
+        "54",
+        "60",
+        "56",
+        "55"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：56。按我国民族分布与民族风情判断，本题正确答案是「56」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国民族分布的特点是（ ）",
+      "options": [
+        "全部集中在东部",
+        "大散居、小聚居、交错杂居",
+        "整齐聚居、互不往来",
+        "全部集中在西部"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：大散居、小聚居、交错杂居。按我国民族分布与民族风情判断，本题正确答案是「大散居、小聚居、交错杂居」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国少数民族主要分布在（ ）",
+      "options": [
+        "西南、西北和东北地区",
+        "东南沿海",
+        "长江中下游平原",
+        "华北平原"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：西南、西北和东北地区。按我国民族分布与民族风情判断，本题正确答案是「西南、西北和东北地区」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国实行民族区域自治的省级行政区共有（ ）",
+      "options": [
+        "4个",
+        "3个",
+        "6个",
+        "5个"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：5个。按我国民族分布与民族风情判断，本题正确答案是「5个」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "壮族主要分布的省级行政区是（ ）",
+      "options": [
+        "新疆维吾尔自治区",
+        "西藏自治区",
+        "广西壮族自治区",
+        "宁夏回族自治区"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：广西壮族自治区。按我国民族分布与民族风情判断，本题正确答案是「广西壮族自治区」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "回族主要分布的省级行政区是（ ）",
+      "options": [
+        "西藏自治区",
+        "宁夏回族自治区",
+        "广西壮族自治区",
+        "内蒙古自治区"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：宁夏回族自治区。按我国民族分布与民族风情判断，本题正确答案是「宁夏回族自治区」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "维吾尔族主要分布的省级行政区是（ ）",
+      "options": [
+        "新疆维吾尔自治区",
+        "宁夏回族自治区",
+        "西藏自治区",
+        "广西壮族自治区"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：新疆维吾尔自治区。按我国民族分布与民族风情判断，本题正确答案是「新疆维吾尔自治区」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "藏族的传统节日是（ ）",
+      "options": [
+        "泼水节",
+        "那达慕大会",
+        "火把节",
+        "雪顿节"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：雪顿节。按我国民族分布与民族风情判断，本题正确答案是「雪顿节」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "傣族的传统节日是（ ）",
+      "options": [
+        "那达慕大会",
+        "火把节",
+        "泼水节",
+        "雪顿节"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：泼水节。按我国民族分布与民族风情判断，本题正确答案是「泼水节」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "蒙古族的传统群众性集会活动是（ ）",
+      "options": [
+        "三月街",
+        "那达慕大会",
+        "泼水节",
+        "雪顿节"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：那达慕大会。按我国民族分布与民族风情判断，本题正确答案是「那达慕大会」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国人口政策的基本内容是（ ）",
+      "options": [
+        "控制人口数量、提高人口素质",
+        "鼓励无限制生育",
+        "只提高人口数量",
+        "只控制城市人口"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：控制人口数量、提高人口素质。按人口政策与人口分布成因判断，本题正确答案是「控制人口数量、提高人口素质」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国实施三孩生育政策的主要目的是（ ）",
+      "options": [
+        "减少人口总数",
+        "限制城镇化",
+        "取消人口管理",
+        "优化人口结构、应对人口老龄化"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：优化人口结构、应对人口老龄化。按人口政策与人口分布成因判断，本题正确答案是「优化人口结构、应对人口老龄化」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国人口东多西少的主要自然原因是（ ）",
+      "options": [
+        "东部高原广布",
+        "西部降水丰沛",
+        "东部地形平坦、气候适宜",
+        "西部地形平坦、气候湿润"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：东部地形平坦、气候适宜。按人口政策与人口分布成因判断，本题正确答案是「东部地形平坦、气候适宜」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国人口东多西少的社会经济原因是（ ）",
+      "options": [
+        "西部交通便利",
+        "东部经济发达、交通便利",
+        "西部经济发达",
+        "东部资源贫乏"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：东部经济发达、交通便利。按人口政策与人口分布成因判断，本题正确答案是「东部经济发达、交通便利」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国人口密度约为每平方千米（ ）",
+      "options": [
+        "140多人",
+        "10多人",
+        "500多人",
+        "1000多人"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：140多人。按人口政策与人口分布成因判断，本题正确答案是「140多人」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "黑河—腾冲线以东地区（ ）",
+      "options": [
+        "人口稀疏",
+        "无人居住",
+        "人口均匀分布",
+        "人口稠密"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：人口稠密。按人口政策与人口分布成因判断，本题正确答案是「人口稠密」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国少数民族种类最多的省级行政区是（ ）",
+      "options": [
+        "新疆维吾尔自治区",
+        "贵州省",
+        "云南省",
+        "广西壮族自治区"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：云南省。按人口政策与人口分布成因判断，本题正确答案是「云南省」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国著名的侨乡是（ ）",
+      "options": [
+        "辽宁、吉林",
+        "广东、福建",
+        "河北、山东",
+        "陕西、甘肃"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：广东、福建。按人口政策与人口分布成因判断，本题正确答案是「广东、福建」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国人口密度较大的地形区是（ ）",
+      "options": [
+        "长江中下游平原",
+        "青藏高原",
+        "塔里木盆地",
+        "内蒙古高原"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：长江中下游平原。按人口政策与人口分布成因判断，本题正确答案是「长江中下游平原」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-地理-2",
+      "chapterName": "中国人口与民族",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "当前我国人口工作应重点（ ）",
+      "options": [
+        "单纯增加人口数量",
+        "停止人口流动",
+        "限制教育发展",
+        "提高人口素质"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：提高人口素质。按人口政策与人口分布成因判断，本题正确答案是「提高人口素质」。",
       "difficulty": 2
     }
   ]

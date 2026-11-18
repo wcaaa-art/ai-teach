@@ -304,7 +304,7 @@ test('摸底逐题返回的重复 id 会被重发为唯一值', () => {
 
 test('人教版数学章节标注教材单元且不影响章节 id', () => {
   const renjiao = listCurriculumChapters('初一', '数学', '人教版').chapters
-  assert.equal(renjiao[0].unitLabel, '七上 第1章')
+  assert.equal(renjiao[0].unitLabel, '第1章')
   assert.ok(renjiao.every(chapter => chapter.id.startsWith('初一-数学-')))
   const beishida = listCurriculumChapters('初一', '数学', '北师大版').chapters
   assert.ok(beishida.every(chapter => !chapter.unitLabel))

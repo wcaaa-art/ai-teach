@@ -4,16 +4,16 @@
   "edition": "统编版",
   "chapter": {
     "id": "初一-语文-3",
-    "name": "七上：古诗文入门"
+    "name": "古诗文入门"
   },
-  "generatedAt": "2026-11-14T12:12:36.112Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.864Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgd8y2z",
       "chapterId": "初一-语文-3",
-      "chapterName": "七上：古诗文入门",
+      "chapterName": "古诗文入门",
       "type": "single",
       "dimension": "concept",
       "stem": "《次北固山下》诗题中的“次”是什么意思？",
@@ -30,10 +30,10 @@
     {
       "id": "diag-2-mwgd8y2z",
       "chapterId": "初一-语文-3",
-      "chapterName": "七上：古诗文入门",
+      "chapterName": "古诗文入门",
       "type": "single",
       "dimension": "basic-application",
-      "stem": "统编版七上《世说新语·咏雪》中，谢道韫以“未若柳絮因风起”比拟白雪纷飞。下列对该句的翻译最恰当的一项是",
+      "stem": "统编版《世说新语·咏雪》中，谢道韫以“未若柳絮因风起”比拟白雪纷飞。下列对该句的翻译最恰当的一项是",
       "options": [
         "不如比作柳絮乘风飞舞。",
         "比不上柳絮因为风的原因而飞起。",
@@ -47,7 +47,7 @@
     {
       "id": "diag-3-mwgd8y2z",
       "chapterId": "初一-语文-3",
-      "chapterName": "七上：古诗文入门",
+      "chapterName": "古诗文入门",
       "type": "single",
       "dimension": "transfer",
       "stem": "阅读下面诗句：“林静不闻鸟，忽传溪水声。斜阳穿叶下，照见石苔明。”这首诗主要运用了什么手法来表现山林的幽静？",
@@ -64,10 +64,10 @@
     {
       "id": "diag-4-mwgd8y2z",
       "chapterId": "初一-语文-3",
-      "chapterName": "七上：古诗文入门",
+      "chapterName": "古诗文入门",
       "type": "single",
       "dimension": "error-analysis",
-      "stem": "学习了七上第一单元的古诗文后，同学们交流阅读体会。下列关于这四篇作品的说法，不正确的一项是（　　）",
+      "stem": "学习了第一单元的古诗文后，同学们交流阅读体会。下列关于这四篇作品的说法，不正确的一项是（　　）",
       "options": [
         "《观沧海》中「水何澹澹，山岛竦峙」是诗人登上碣石山所见之景，「澹澹」形容水波荡漾的样子",
         "《闻王昌龄左迁龙标遥有此寄》中「我寄愁心与明月，随君直到夜郎西」，诗人把明月当作能传情的使者，托它带去对友人的牵挂",
@@ -81,7 +81,7 @@
     {
       "id": "diag-5-mwgd8y2z",
       "chapterId": "初一-语文-3",
-      "chapterName": "七上：古诗文入门",
+      "chapterName": "古诗文入门",
       "type": "single",
       "dimension": "concept",
       "stem": "下列关于古代诗歌体裁常识的表述，正确的一项是（　　）",
@@ -98,7 +98,7 @@
     {
       "id": "diag-6-mwgd8y2z",
       "chapterId": "初一-语文-3",
-      "chapterName": "七上：古诗文入门",
+      "chapterName": "古诗文入门",
       "type": "single",
       "dimension": "basic-application",
       "stem": "学习《陈太丘与友期行》时，小语整理了几个加点词的解释，其中正确的一项是（　　）",
@@ -115,7 +115,7 @@
     {
       "id": "diag-7-mwgd8y2z",
       "chapterId": "初一-语文-3",
-      "chapterName": "七上：古诗文入门",
+      "chapterName": "古诗文入门",
       "type": "single",
       "dimension": "transfer",
       "stem": "班级要为即将转学到外地的同学写一张赠别卡，想表达“虽相隔两地，仍愿牵挂与陪伴随你远行”的意思。下列诗句中最适合选用的一项是（ ）",
@@ -132,10 +132,10 @@
     {
       "id": "diag-8-mwgd8y2z",
       "chapterId": "初一-语文-3",
-      "chapterName": "七上：古诗文入门",
+      "chapterName": "古诗文入门",
       "type": "single",
       "dimension": "error-analysis",
-      "stem": "下面是四位同学对七上古诗文名句的书写和理解，其中正确的一项是（　　）",
+      "stem": "下面是四位同学对古诗文名句的书写和理解，其中正确的一项是（　　）",
       "options": [
         "“海日生残夜，江春入旧年”中的“生”若写成“升”，只是字形不同，不影响诗意表达。",
         "《天净沙·秋思》中“小桥流水人家”描绘他人安宁温暖的家，与“枯藤老树昏鸦”的萧瑟形成对照，以乐景反衬游子的羁旅愁思。",
@@ -149,7 +149,7 @@
     {
       "id": "diag-9-mwgd8y2z",
       "chapterId": "初一-语文-3",
-      "chapterName": "七上：古诗文入门",
+      "chapterName": "古诗文入门",
       "type": "single",
       "dimension": "concept",
       "stem": "学习《闻王昌龄左迁龙标遥有此寄》时，小语对“左迁”一词产生疑问。下列对“左迁”的解释正确的一项是",
@@ -166,7 +166,7 @@
     {
       "id": "diag-10-mwgd8y2z",
       "chapterId": "初一-语文-3",
-      "chapterName": "七上：古诗文入门",
+      "chapterName": "古诗文入门",
       "type": "single",
       "dimension": "basic-application",
       "stem": "学习《世说新语》二则后，小语整理了文中重点词语。下列对句中「」内词语的解释，不正确的一项是",
@@ -179,6 +179,516 @@
       "correctIndex": 3,
       "explanation": "A. 正确：《咏雪》中“谢太傅寒雪日内集”写谢安在雪天召集家人，\"内集\"即家庭聚会，把家里人聚集在一起，符合语境。\nB. 正确：“撒盐空中差可拟”是兄子胡儿以盐喻雪，“拟”意为相比、比拟，与“差可”（大体可以）搭配通顺。\nC. 正确：“太丘舍去，去后乃至”中“乃”表示时间上的承接，意为“才”，即陈太丘离开之后友人才到。\nD. 不正确：题干要求选出解释有误的一项。“元方入门不顾”写元方头也不回地走进家门，“顾”在此处是“回头看”的意思，而非“照顾”；若解作“照顾”，则与“入门”这一动作无法衔接。故答案选D。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "近体诗主要包括（　　）",
+      "options": [
+        "律诗和绝句",
+        "古体诗和词",
+        "词和曲",
+        "散文和骈文"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：律诗和绝句。按古诗体裁与鉴赏常识判断，本题正确答案是「律诗和绝句」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一首律诗通常有（　　）",
+      "options": [
+        "两联四句",
+        "三联六句",
+        "五联十句",
+        "四联八句"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：四联八句。按古诗体裁与鉴赏常识判断，本题正确答案是「四联八句」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "词又叫（　　）",
+      "options": [
+        "古体诗",
+        "散曲",
+        "长短句",
+        "近体诗"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：长短句。按古诗体裁与鉴赏常识判断，本题正确答案是「长短句」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "曲是盛行于（　　）的一种诗歌形式",
+      "options": [
+        "明代",
+        "元代",
+        "唐代",
+        "宋代"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：元代。按古诗体裁与鉴赏常识判断，本题正确答案是「元代」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "诗歌中的“意象”是指（　　）",
+      "options": [
+        "寄托了诗人情感的物象",
+        "诗歌的标题",
+        "诗歌的韵脚",
+        "诗歌的篇幅"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：寄托了诗人情感的物象。按古诗体裁与鉴赏常识判断，本题正确答案是「寄托了诗人情感的物象」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“意境”是指（　　）",
+      "options": [
+        "诗歌的字数",
+        "诗歌的体裁",
+        "诗歌的作者",
+        "情与景交融形成的艺术境界"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：情与景交融形成的艺术境界。按古诗体裁与鉴赏常识判断，本题正确答案是「情与景交融形成的艺术境界」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“借景抒情”是指（　　）",
+      "options": [
+        "叙述完整故事",
+        "介绍人物经历",
+        "通过景物描写抒发情感",
+        "直接说明道理"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：通过景物描写抒发情感。按古诗体裁与鉴赏常识判断，本题正确答案是「通过景物描写抒发情感」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“动静结合”是指（　　）",
+      "options": [
+        "动静完全分开",
+        "动态描写与静态描写相互映衬",
+        "只写动态",
+        "只写静态"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：动态描写与静态描写相互映衬。按古诗体裁与鉴赏常识判断，本题正确答案是「动态描写与静态描写相互映衬」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“虚实结合”是指（　　）",
+      "options": [
+        "眼前实景与想象、回忆之景相结合",
+        "只写真实景物",
+        "只写想象内容",
+        "景物与人物分离"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：眼前实景与想象、回忆之景相结合。按古诗体裁与鉴赏常识判断，本题正确答案是「眼前实景与想象、回忆之景相结合」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "古诗中“杨花”常用来象征（　　）",
+      "options": [
+        "富贵荣华",
+        "坚贞不屈",
+        "团圆美满",
+        "飘零离散"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：飘零离散。按古诗体裁与鉴赏常识判断，本题正确答案是「飘零离散」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“日月之行，若出其中；星汉灿烂，若出其里”出自（　　）",
+      "options": [
+        "李白《闻王昌龄左迁龙标遥有此寄》",
+        "马致远《天净沙·秋思》",
+        "曹操《观沧海》",
+        "王湾《次北固山下》"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：曹操《观沧海》。按古代诗歌的名句与主旨判断，本题正确答案是「曹操《观沧海》」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“海日生残夜，江春入旧年”出自（　　）",
+      "options": [
+        "马致远《天净沙·秋思》",
+        "王湾《次北固山下》",
+        "曹操《观沧海》",
+        "李白《闻王昌龄左迁龙标遥有此寄》"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：王湾《次北固山下》。按古代诗歌的名句与主旨判断，本题正确答案是「王湾《次北固山下》」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“枯藤老树昏鸦，小桥流水人家，古道西风瘦马”出自（　　）",
+      "options": [
+        "马致远《天净沙·秋思》",
+        "曹操《观沧海》",
+        "王湾《次北固山下》",
+        "李白《闻王昌龄左迁龙标遥有此寄》"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：马致远《天净沙·秋思》。按古代诗歌的名句与主旨判断，本题正确答案是「马致远《天净沙·秋思》」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“我寄愁心与明月，随君直到夜郎西”出自（　　）",
+      "options": [
+        "曹操《观沧海》",
+        "王湾《次北固山下》",
+        "马致远《天净沙·秋思》",
+        "李白《闻王昌龄左迁龙标遥有此寄》"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：李白《闻王昌龄左迁龙标遥有此寄》。按古代诗歌的名句与主旨判断，本题正确答案是「李白《闻王昌龄左迁龙标遥有此寄》」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《天净沙·秋思》被誉为（　　）",
+      "options": [
+        "古今第一长诗",
+        "诗史",
+        "秋思之祖",
+        "七言绝句之冠"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：秋思之祖。按古代诗歌的名句与主旨判断，本题正确答案是「秋思之祖」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《观沧海》主要表现了诗人（　　）",
+      "options": [
+        "悼亡之痛",
+        "博大的胸襟和统一天下的抱负",
+        "羁旅愁思",
+        "隐逸情怀"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：博大的胸襟和统一天下的抱负。按古代诗歌的名句与主旨判断，本题正确答案是「博大的胸襟和统一天下的抱负」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《次北固山下》主要表达了（　　）",
+      "options": [
+        "思乡之情",
+        "建功立业的豪情",
+        "归隐山林的愿望",
+        "对友人的送别"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：思乡之情。按古代诗歌的名句与主旨判断，本题正确答案是「思乡之情」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《闻王昌龄左迁龙标遥有此寄》表达了（　　）",
+      "options": [
+        "对故乡的思念",
+        "对功名的追求",
+        "对自然的热爱",
+        "对友人的同情与思念"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：对友人的同情与思念。按古代诗歌的名句与主旨判断，本题正确答案是「对友人的同情与思念」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "马致远是（　　）代散曲家",
+      "options": [
+        "宋",
+        "明",
+        "元",
+        "唐"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：元。按古代诗歌的名句与主旨判断，本题正确答案是「元」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "曹操是（　　）时期的政治家、军事家、诗人",
+      "options": [
+        "南宋",
+        "东汉末年",
+        "初唐",
+        "盛唐"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：东汉末年。按古代诗歌的名句与主旨判断，本题正确答案是「东汉末年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "通假字是指（　　）",
+      "options": [
+        "古代汉语中音同或音近而借用的字",
+        "字形完全相同的字",
+        "现代汉语中的新字",
+        "意思相反的字"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：古代汉语中音同或音近而借用的字。按文言基础知识与翻译方法判断，本题正确答案是「古代汉语中音同或音近而借用的字」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "古今异义是指（　　）",
+      "options": [
+        "古代没有的词",
+        "现代新造的词",
+        "字形变化的词",
+        "同一个词在古代和现代意义不同"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：同一个词在古代和现代意义不同。按文言基础知识与翻译方法判断，本题正确答案是「同一个词在古代和现代意义不同」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "一词多义是指（　　）",
+      "options": [
+        "两个词意思相同",
+        "词性完全相同",
+        "同一个词在不同语境中有不同意义",
+        "一个字只有一种意思"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：同一个词在不同语境中有不同意义。按文言基础知识与翻译方法判断，本题正确答案是「同一个词在不同语境中有不同意义」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "词类活用是指（　　）",
+      "options": [
+        "只用于现代汉语",
+        "某些词在特定语境中临时改变词性",
+        "词的意义固定不变",
+        "词性永远不变"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：某些词在特定语境中临时改变词性。按文言基础知识与翻译方法判断，本题正确答案是「某些词在特定语境中临时改变词性」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "文言文翻译应遵循的原则是（　　）",
+      "options": [
+        "直译为主，意译为辅",
+        "只意译",
+        "随意发挥",
+        "只译大意"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：直译为主，意译为辅。按文言基础知识与翻译方法判断，本题正确答案是「直译为主，意译为辅」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“之”作代词时，通常用来（　　）",
+      "options": [
+        "表示判断",
+        "表示被动",
+        "连接两个句子",
+        "代指人或事物"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：代指人或事物。按文言基础知识与翻译方法判断，本题正确答案是「代指人或事物」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“其”作代词时，通常表示（　　）",
+      "options": [
+        "于是",
+        "并且",
+        "他（她、它）的或那、那个",
+        "因为"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：他（她、它）的或那、那个。按文言基础知识与翻译方法判断，本题正确答案是「他（她、它）的或那、那个」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "文言判断句的常见标志是（　　）",
+      "options": [
+        "“得无……乎”",
+        "“……者，……也”",
+        "“不亦……乎”",
+        "“为……所……”"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：“……者，……也”。按文言基础知识与翻译方法判断，本题正确答案是「“……者，……也”」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "省略句是指（　　）",
+      "options": [
+        "句子中省略了某些成分",
+        "句子成分完整",
+        "句子没有主语",
+        "句子不能翻译"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：句子中省略了某些成分。按文言基础知识与翻译方法判断，本题正确答案是「句子中省略了某些成分」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-语文-3",
+      "chapterName": "古诗文入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《咏雪》《陈太丘与友期行》选自（　　）",
+      "options": [
+        "《论语》",
+        "《孟子》",
+        "《史记》",
+        "《世说新语》"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：《世说新语》。按文言基础知识与翻译方法判断，本题正确答案是「《世说新语》」。",
+      "difficulty": 2
     }
   ]
 }

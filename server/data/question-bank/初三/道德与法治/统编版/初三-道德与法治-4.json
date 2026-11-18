@@ -6,9 +6,9 @@
     "id": "初三-道德与法治-4",
     "name": "社会责任与担当"
   },
-  "generatedAt": "2026-11-14T12:18:39.115Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.010Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdgq6g",
@@ -179,6 +179,516 @@
       "correctIndex": 2,
       "explanation": "A. 错误：承担责任往往伴随着付出，不能以获取表扬或回报为目的；题干中同学主动参与、耐心说明，体现的是自觉担当而非求取表扬。\nB. 错误：责任的来源包括道德规范、法律要求、公民身份、职业要求等，学生参加志愿服务并非职业要求，不能把责任来源单一化。\nC. 正确：主动报名、分工协作、耐心劝导，说明同学们自觉承担社会责任，关爱他人、服务社会，并在奉献社会中实现自身价值。\nD. 错误：未成年人同样要承担力所能及的社会责任；题干中的中学生参与志愿服务正是未成年人承担社会责任的体现。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "责任是指（　　）",
+      "options": [
+        "一个人分内应做的事以及因没有做好分内之事而应承担的后果",
+        "只指法律义务",
+        "只指道德要求",
+        "只指工作任务"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：一个人分内应做的事以及因没有做好分内之事而应承担的后果。按责任的含义与来源判断，本题正确答案是「一个人分内应做的事以及因没有做好分内之事而应承担的后果」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "责任的来源包括（　　）",
+      "options": [
+        "只有法律规定",
+        "只有道德规范",
+        "只有职业要求",
+        "对他人的承诺、职业要求、道德规范、法律规定等"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：对他人的承诺、职业要求、道德规范、法律规定等。按责任的含义与来源判断，本题正确答案是「对他人的承诺、职业要求、道德规范、法律规定等」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在社会生活中，不同的角色意味着（　　）",
+      "options": [
+        "没有责任",
+        "只有权利",
+        "不同的责任",
+        "相同的责任"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：不同的责任。按责任的含义与来源判断，本题正确答案是「不同的责任」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "作为子女，我们应承担的责任是（　　）",
+      "options": [
+        "要求父母满足一切",
+        "孝敬父母，分担家务",
+        "只顾学习",
+        "不关心家庭"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：孝敬父母，分担家务。按责任的含义与来源判断，本题正确答案是「孝敬父母，分担家务」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "作为学生，我们应承担的责任是（　　）",
+      "options": [
+        "努力学习，遵守校规校纪",
+        "随意旷课",
+        "抄袭作业",
+        "破坏公物"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：努力学习，遵守校规校纪。按责任的含义与来源判断，本题正确答案是「努力学习，遵守校规校纪」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "承担责任往往伴随着（　　）",
+      "options": [
+        "只有回报",
+        "只有代价",
+        "既无代价也无回报",
+        "付出代价，也可能获得回报"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：付出代价，也可能获得回报。按责任的含义与来源判断，本题正确答案是「付出代价，也可能获得回报」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "承担责任的回报包括（　　）",
+      "options": [
+        "只有金钱",
+        "没有任何回报",
+        "获得他人的尊重和赞许、增长才干等",
+        "只有物质奖励"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：获得他人的尊重和赞许、增长才干等。按责任的含义与来源判断，本题正确答案是「获得他人的尊重和赞许、增长才干等」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "做负责任的人，应该（　　）",
+      "options": [
+        "只做有回报的事",
+        "自觉承担责任，不言代价与回报",
+        "逃避责任",
+        "推卸责任"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：自觉承担责任，不言代价与回报。按责任的含义与来源判断，本题正确答案是「自觉承担责任，不言代价与回报」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列行为体现责任感的是（　　）",
+      "options": [
+        "认真完成值日工作",
+        "逃避值日",
+        "把任务推给他人",
+        "敷衍了事"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：认真完成值日工作。按责任的含义与来源判断，本题正确答案是「认真完成值日工作」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“天下兴亡，匹夫有责”强调（　　）",
+      "options": [
+        "只有领导有责任",
+        "责任与个人无关",
+        "责任只是口号",
+        "每个人都要承担社会责任"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：每个人都要承担社会责任。按责任的含义与来源判断，本题正确答案是「每个人都要承担社会责任」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "亲社会行为是指（　　）",
+      "options": [
+        "损害他人利益的行为",
+        "与社会无关的行为",
+        "有利于他人和社会的行为",
+        "只利于自己的行为"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：有利于他人和社会的行为。按服务社会与关爱他人的要求判断，本题正确答案是「有利于他人和社会的行为」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "培养亲社会行为，应该（　　）",
+      "options": [
+        "漠视社会",
+        "主动了解社会、关心社会发展、积极参与社会实践",
+        "闭门造车",
+        "只顾个人利益"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：主动了解社会、关心社会发展、积极参与社会实践。按服务社会与关爱他人的要求判断，本题正确答案是「主动了解社会、关心社会发展、积极参与社会实践」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "参加志愿服务活动（　　）",
+      "options": [
+        "有利于服务社会、提升自身价值",
+        "浪费学习时间",
+        "没有任何意义",
+        "只是为了获得表扬"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：有利于服务社会、提升自身价值。按服务社会与关爱他人的要求判断，本题正确答案是「有利于服务社会、提升自身价值」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "关爱他人，应该（　　）",
+      "options": [
+        "只关爱自己",
+        "关爱他人时伤害其自尊",
+        "要求回报",
+        "心怀善意，尽己所能，讲究策略"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：心怀善意，尽己所能，讲究策略。按服务社会与关爱他人的要求判断，本题正确答案是「心怀善意，尽己所能，讲究策略」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "服务社会的意义包括（　　）",
+      "options": [
+        "只会增加负担",
+        "与个人成长无关",
+        "体现人生价值，促进自身全面发展",
+        "只会耽误学习"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：体现人生价值，促进自身全面发展。按服务社会与关爱他人的要求判断，本题正确答案是「体现人生价值，促进自身全面发展」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列属于公益活动的是（　　）",
+      "options": [
+        "随意丢弃垃圾",
+        "参加社区环保宣传",
+        "沉迷网络游戏",
+        "在公共场所喧哗"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：参加社区环保宣传。按服务社会与关爱他人的要求判断，本题正确答案是「参加社区环保宣传」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "当他人遇到困难时，我们应该（　　）",
+      "options": [
+        "主动关心，尽力提供帮助",
+        "视而不见",
+        "嘲笑对方",
+        "幸灾乐祸"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：主动关心，尽力提供帮助。按服务社会与关爱他人的要求判断，本题正确答案是「主动关心，尽力提供帮助」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "参与社会实践有利于（　　）",
+      "options": [
+        "脱离社会",
+        "忽视学习",
+        "只顾个人",
+        "增强社会责任感，提高实践能力"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：增强社会责任感，提高实践能力。按服务社会与关爱他人的要求判断，本题正确答案是「增强社会责任感，提高实践能力」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“赠人玫瑰，手有余香”说明（　　）",
+      "options": [
+        "不应帮助他人",
+        "帮助他人只为回报",
+        "帮助他人也能让自己获得精神满足",
+        "帮助他人会吃亏"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：帮助他人也能让自己获得精神满足。按服务社会与关爱他人的要求判断，本题正确答案是「帮助他人也能让自己获得精神满足」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "青少年服务社会，可以从（　　）做起",
+      "options": [
+        "只有捐款",
+        "身边小事",
+        "等到成年以后",
+        "只有大事"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：身边小事。按服务社会与关爱他人的要求判断，本题正确答案是「身边小事」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "实现中华民族伟大复兴是（　　）",
+      "options": [
+        "中华民族近代以来最伟大的梦想",
+        "已经实现的目标",
+        "少数人的梦想",
+        "与青少年无关的梦想"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：中华民族近代以来最伟大的梦想。按中国梦、劳动精神与青年担当判断，本题正确答案是「中华民族近代以来最伟大的梦想」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "中国梦的基本内涵是（　　）",
+      "options": [
+        "个人发财",
+        "称霸世界",
+        "只发展经济",
+        "国家富强、民族振兴、人民幸福"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：国家富强、民族振兴、人民幸福。按中国梦、劳动精神与青年担当判断，本题正确答案是「国家富强、民族振兴、人民幸福」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "实现中国梦必须（　　）",
+      "options": [
+        "依赖外部援助",
+        "放弃自主发展",
+        "走中国道路、弘扬中国精神、凝聚中国力量",
+        "照搬外国模式"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：走中国道路、弘扬中国精神、凝聚中国力量。按中国梦、劳动精神与青年担当判断，本题正确答案是「走中国道路、弘扬中国精神、凝聚中国力量」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "个人梦与中国梦的关系是（　　）",
+      "options": [
+        "中国梦与个人无关",
+        "个人梦与国家民族梦想紧密相连",
+        "二者完全无关",
+        "个人梦高于中国梦"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：个人梦与国家民族梦想紧密相连。按中国梦、劳动精神与青年担当判断，本题正确答案是「个人梦与国家民族梦想紧密相连」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "劳动的意义在于（　　）",
+      "options": [
+        "劳动创造价值，创造美好生活",
+        "劳动只是谋生手段",
+        "劳动没有价值",
+        "只有脑力劳动有价值"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：劳动创造价值，创造美好生活。按中国梦、劳动精神与青年担当判断，本题正确答案是「劳动创造价值，创造美好生活」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "实干精神要求我们（　　）",
+      "options": [
+        "空谈理想",
+        "投机取巧",
+        "坐等成功",
+        "脚踏实地，埋头苦干"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：脚踏实地，埋头苦干。按中国梦、劳动精神与青年担当判断，本题正确答案是「脚踏实地，埋头苦干」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "青少年担当时代责任，应该（　　）",
+      "options": [
+        "逃避社会责任",
+        "不愿付出努力",
+        "树立远大理想，努力学习，勇于实践",
+        "只顾个人享受"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：树立远大理想，努力学习，勇于实践。按中国梦、劳动精神与青年担当判断，本题正确答案是「树立远大理想，努力学习，勇于实践」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "中华民族精神的核心是（　　）",
+      "options": [
+        "团结统一",
+        "爱国主义",
+        "改革创新",
+        "艰苦奋斗"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：爱国主义。按中国梦、劳动精神与青年担当判断，本题正确答案是「爱国主义」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "社会主义核心价值观在国家层面的价值目标是（　　）",
+      "options": [
+        "富强、民主、文明、和谐",
+        "自由、平等、公正、法治",
+        "爱国、敬业、诚信、友善",
+        "和平、发展、合作、共赢"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：富强、民主、文明、和谐。按中国梦、劳动精神与青年担当判断，本题正确答案是「富强、民主、文明、和谐」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-道德与法治-4",
+      "chapterName": "社会责任与担当",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "践行社会主义核心价值观，应该（　　）",
+      "options": [
+        "只停留在口头上",
+        "认为与自己无关",
+        "只在特定场合践行",
+        "从日常小事做起，做到知行合一"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：从日常小事做起，做到知行合一。按中国梦、劳动精神与青年担当判断，本题正确答案是「从日常小事做起，做到知行合一」。",
+      "difficulty": 2
     }
   ]
 }

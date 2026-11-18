@@ -6,9 +6,9 @@
     "id": "初二-道德与法治-3",
     "name": "社会生活与规则"
   },
-  "generatedAt": "2026-11-14T12:16:36.026Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.991Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgde37b",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 1,
       "explanation": "A. 错误：社会规则保障社会秩序的实现，也划定了自由的边界。把车停在盲道上，妨碍视障人士通行，是把个人“方便”凌驾于公共规则和他人权益之上，并非真正的自由。\nB. 正确：一方面自己按规定停入指定区域，是自觉遵守规则、将规则内化于心的表现；另一方面建议企业标注禁停区域、设置电子围栏，是在实践中发现规则不完善之处并积极提出改进建议，体现了遵守规则与完善规则的统一。\nC. 错误：推倒共享单车属于损坏公共财物的不文明行为，既不能解决乱停放问题，又扰乱了公共秩序，不是维护规则的正确方式。\nD. 错误：遵守社会规则、维护公共秩序是每个社会成员的责任。认为停车管理与自己无关、对乱停放置之不理，是缺乏规则意识和公共责任感的表现。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "社会秩序包括（　　）",
+      "options": [
+        "社会管理秩序、生产秩序、交通秩序、公共场所秩序等",
+        "只有交通秩序",
+        "只有生产秩序",
+        "只有公共场所秩序"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：社会管理秩序、生产秩序、交通秩序、公共场所秩序等。按社会秩序、规则与自由的关系判断，本题正确答案是「社会管理秩序、生产秩序、交通秩序、公共场所秩序等」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "社会规则的作用是（　　）",
+      "options": [
+        "限制人的一切自由",
+        "取消社会秩序",
+        "只约束少数人",
+        "维护社会秩序，保障社会正常运行"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：维护社会秩序，保障社会正常运行。按社会秩序、规则与自由的关系判断，本题正确答案是「维护社会秩序，保障社会正常运行」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "规则与自由的关系是（　　）",
+      "options": [
+        "自由不需要规则",
+        "规则只会限制自由",
+        "规则划定自由边界，也保障自由实现",
+        "规则与自由完全对立"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：规则划定自由边界，也保障自由实现。按社会秩序、规则与自由的关系判断，本题正确答案是「规则划定自由边界，也保障自由实现」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "遵守社会规则需要（　　）",
+      "options": [
+        "既不需要他律也不需要自律",
+        "他律和自律",
+        "只靠他律",
+        "只靠自律"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：他律和自律。按社会秩序、规则与自由的关系判断，本题正确答案是「他律和自律」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "自律是指（　　）",
+      "options": [
+        "自我约束，自觉遵守规则",
+        "依靠他人监督",
+        "被动服从",
+        "随心所欲"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：自我约束，自觉遵守规则。按社会秩序、规则与自由的关系判断，本题正确答案是「自我约束，自觉遵守规则」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列行为属于自觉遵守规则的是（　　）",
+      "options": [
+        "插队",
+        "闯红灯",
+        "随地吐痰",
+        "在公共场所排队等候"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：在公共场所排队等候。按社会秩序、规则与自由的关系判断，本题正确答案是「在公共场所排队等候」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "对违反规则的行为，我们应该（　　）",
+      "options": [
+        "效仿",
+        "大声争吵",
+        "善意提醒、劝阻，必要时向有关部门反映",
+        "视而不见"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：善意提醒、劝阻，必要时向有关部门反映。按社会秩序、规则与自由的关系判断，本题正确答案是「善意提醒、劝阻，必要时向有关部门反映」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "社会规则需要（　　）",
+      "options": [
+        "只靠少数人",
+        "全体社会成员共同遵守和维护",
+        "只靠执法人员",
+        "只靠成年人"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：全体社会成员共同遵守和维护。按社会秩序、规则与自由的关系判断，本题正确答案是「全体社会成员共同遵守和维护」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“没有规矩，不成方圆”说明（　　）",
+      "options": [
+        "社会生活需要规则来维护秩序",
+        "规则限制人的发展",
+        "规则可有可无",
+        "规则只适用于学校"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：社会生活需要规则来维护秩序。按社会秩序、规则与自由的关系判断，本题正确答案是「社会生活需要规则来维护秩序」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "改进社会规则，应该（　　）",
+      "options": [
+        "随意破坏规则",
+        "消极抵制",
+        "无视规则",
+        "积极参与，通过合法途径提出建议"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：积极参与，通过合法途径提出建议。按社会秩序、规则与自由的关系判断，本题正确答案是「积极参与，通过合法途径提出建议」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "尊重他人，应该（　　）",
+      "options": [
+        "只尊重成绩好的人",
+        "根据外貌区别对待",
+        "尊重他人的人格、权利和劳动",
+        "只尊重地位高的人"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：尊重他人的人格、权利和劳动。按尊重、文明礼仪与诚信的要求判断，本题正确答案是「尊重他人的人格、权利和劳动」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "平等待人要求我们（　　）",
+      "options": [
+        "按家庭背景区别对待",
+        "不因家庭、成绩、外貌等歧视他人",
+        "只与条件好的人交往",
+        "看不起成绩差的同学"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：不因家庭、成绩、外貌等歧视他人。按尊重、文明礼仪与诚信的要求判断，本题正确答案是「不因家庭、成绩、外貌等歧视他人」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "换位思考是指（　　）",
+      "options": [
+        "设身处地为他人着想，理解他人感受",
+        "只考虑自己",
+        "把自己的想法强加于人",
+        "要求他人服从自己"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：设身处地为他人着想，理解他人感受。按尊重、文明礼仪与诚信的要求判断，本题正确答案是「设身处地为他人着想，理解他人感受」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "文明有礼主要表现在（　　）",
+      "options": [
+        "说话粗鲁",
+        "随意插队",
+        "嘲笑他人",
+        "态度谦和、用语文明、举止端庄"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：态度谦和、用语文明、举止端庄。按尊重、文明礼仪与诚信的要求判断，本题正确答案是「态度谦和、用语文明、举止端庄」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列行为体现文明有礼的是（　　）",
+      "options": [
+        "在公共场所大声喧哗",
+        "随意打断他人说话",
+        "见到老师主动问好",
+        "给同学起外号"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：见到老师主动问好。按尊重、文明礼仪与诚信的要求判断，本题正确答案是「见到老师主动问好」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "诚信的含义是（　　）",
+      "options": [
+        "善于变通",
+        "诚实守信",
+        "只说好话",
+        "从不拒绝他人"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：诚实守信。按尊重、文明礼仪与诚信的要求判断，本题正确答案是「诚实守信」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "诚信的重要性在于（　　）",
+      "options": [
+        "是中华民族传统美德，也是社会主义核心价值观的重要内容",
+        "只是个人小事",
+        "只与商业有关",
+        "只适用于成年人"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：是中华民族传统美德，也是社会主义核心价值观的重要内容。按尊重、文明礼仪与诚信的要求判断，本题正确答案是「是中华民族传统美德，也是社会主义核心价值观的重要内容」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "践行诚信，应该（　　）",
+      "options": [
+        "为讲诚信泄露他人隐私",
+        "只在大事上讲诚信",
+        "允许谎言损害公共利益",
+        "树立诚信意识，运用诚信智慧，珍惜诚信记录"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：树立诚信意识，运用诚信智慧，珍惜诚信记录。按尊重、文明礼仪与诚信的要求判断，本题正确答案是「树立诚信意识，运用诚信智慧，珍惜诚信记录」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列行为体现诚信的是（　　）",
+      "options": [
+        "借东西不还",
+        "说谎欺骗他人",
+        "考试不作弊，答应他人的事努力做到",
+        "抄袭作业"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：考试不作弊，答应他人的事努力做到。按尊重、文明礼仪与诚信的要求判断，本题正确答案是「考试不作弊，答应他人的事努力做到」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“人而无信，不知其可也”强调（　　）",
+      "options": [
+        "诚信会让人吃亏",
+        "诚信是立身之本",
+        "诚信可有可无",
+        "诚信只对商人重要"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：诚信是立身之本。按尊重、文明礼仪与诚信的要求判断，本题正确答案是「诚信是立身之本」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "网络对生活的积极影响包括（　　）",
+      "options": [
+        "丰富日常生活、推动社会进步",
+        "只会让人沉迷",
+        "只会传播谣言",
+        "没有任何积极作用"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：丰富日常生活、推动社会进步。按网络生活的特点与理性参与要求判断，本题正确答案是「丰富日常生活、推动社会进步」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "网络的消极影响包括（　　）",
+      "options": [
+        "完全不影响生活",
+        "只有积极作用",
+        "让人更自律",
+        "沉迷网络、信息良莠不齐、个人隐私易受侵犯"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：沉迷网络、信息良莠不齐、个人隐私易受侵犯。按网络生活的特点与理性参与要求判断，本题正确答案是「沉迷网络、信息良莠不齐、个人隐私易受侵犯」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "理性参与网络生活，应该（　　）",
+      "options": [
+        "轻信所有网络信息",
+        "随意转发未经证实的消息",
+        "提高媒介素养，学会信息节食",
+        "沉迷网络无法自拔"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：提高媒介素养，学会信息节食。按网络生活的特点与理性参与要求判断，本题正确答案是「提高媒介素养，学会信息节食」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "网络生活的基本准则包括（　　）",
+      "options": [
+        "可以网络暴力",
+        "恪守道德、遵守法律",
+        "可以随意造谣",
+        "可以侵犯他人隐私"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：恪守道德、遵守法律。按网络生活的特点与理性参与要求判断，本题正确答案是「恪守道德、遵守法律」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在网络上传播正能量，应该（　　）",
+      "options": [
+        "传播积极健康的内容，弘扬社会正气",
+        "传播谣言",
+        "进行网络暴力",
+        "散布低俗内容"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：传播积极健康的内容，弘扬社会正气。按网络生活的特点与理性参与要求判断，本题正确答案是「传播积极健康的内容，弘扬社会正气」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "保护个人信息，应该（　　）",
+      "options": [
+        "把信息发给陌生网友",
+        "公开银行卡密码",
+        "随意点击不明链接",
+        "不随意透露身份证号、家庭住址、银行卡号等"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：不随意透露身份证号、家庭住址、银行卡号等。按网络生活的特点与理性参与要求判断，本题正确答案是「不随意透露身份证号、家庭住址、银行卡号等」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "遇到网络诈骗时，应该（　　）",
+      "options": [
+        "轻信对方",
+        "自认倒霉",
+        "保留证据，及时报警",
+        "继续转账"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：保留证据，及时报警。按网络生活的特点与理性参与要求判断，本题正确答案是「保留证据，及时报警」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "网络交友应该（　　）",
+      "options": [
+        "轻信对方身份",
+        "慎重对待，增强自我保护意识",
+        "随意透露隐私",
+        "立即单独见面"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：慎重对待，增强自我保护意识。按网络生活的特点与理性参与要求判断，本题正确答案是「慎重对待，增强自我保护意识」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“网络不是法外之地”说明（　　）",
+      "options": [
+        "在网络上也要遵守法律",
+        "网络可以随意发言",
+        "网络不受法律约束",
+        "网络言论没有责任"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：在网络上也要遵守法律。按网络生活的特点与理性参与要求判断，本题正确答案是「在网络上也要遵守法律」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-道德与法治-3",
+      "chapterName": "社会生活与规则",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "合理利用网络，应该（　　）",
+      "options": [
+        "只用于娱乐",
+        "沉迷网络游戏",
+        "浏览不良信息",
+        "利用网络学习知识、增长才干"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：利用网络学习知识、增长才干。按网络生活的特点与理性参与要求判断，本题正确答案是「利用网络学习知识、增长才干」。",
       "difficulty": 2
     }
   ]

@@ -6,9 +6,9 @@
     "id": "初一-道德与法治-3",
     "name": "师长情谊"
   },
-  "generatedAt": "2026-11-14T12:14:18.365Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.974Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdb4zd",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 0,
       "explanation": "A. 正确：小林主动找老师交流，礼貌说明思路并请教点评，体现了对老师的尊重和主动沟通，有助于增进理解、建立良好的师生关系。\nB. 错误：老师也可能存在疏漏，学生可以在尊重老师的前提下合理表达不同想法；题干中小林提出自己的思路并未被老师否定，反而得到肯定。\nC. 错误：与老师交往应做到尊重、理解和沟通，而不是保持距离、拒绝表达见解；小林主动交流并获得指导，正说明表达见解有助于解决问题。\nD. 错误：当面指出老师错误要注意场合和方式，良好师生关系也不是靠“指出错误”来换取尊重；题干中小林是说明自己的思路并请老师点评，并非当面指责老师。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "教师承担着（　　）的使命",
+      "options": [
+        "教书育人",
+        "只传授知识",
+        "只管理学生",
+        "只批改作业"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：教书育人。按师生交往与教师职业特点判断，本题正确答案是「教书育人」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "新时代的教师应该是（　　）",
+      "options": [
+        "知识的唯一来源",
+        "学生的管理者",
+        "只负责考试评分",
+        "学生学习的引导者和发展的促进者"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：学生学习的引导者和发展的促进者。按师生交往与教师职业特点判断，本题正确答案是「学生学习的引导者和发展的促进者」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "教学相长是指（　　）",
+      "options": [
+        "学生只能被动接受",
+        "老师不需要向学生学习",
+        "教与学相互促进，师生共同成长",
+        "老师教、学生学，互不影响"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：教与学相互促进，师生共同成长。按师生交往与教师职业特点判断，本题正确答案是「教与学相互促进，师生共同成长」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "尊重老师，应该（　　）",
+      "options": [
+        "背后议论老师",
+        "尊重老师的人格和劳动，主动沟通",
+        "只在课堂上尊重",
+        "只在教师节尊重"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：尊重老师的人格和劳动，主动沟通。按师生交往与教师职业特点判断，本题正确答案是「尊重老师的人格和劳动，主动沟通」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "面对老师的表扬，正确的态度是（　　）",
+      "options": [
+        "不骄傲，继续努力",
+        "得意忘形",
+        "怀疑老师别有用心",
+        "不再努力"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：不骄傲，继续努力。按师生交往与教师职业特点判断，本题正确答案是「不骄傲，继续努力」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "面对老师的批评，正确的态度是（　　）",
+      "options": [
+        "顶撞老师",
+        "怀恨在心",
+        "从此不学这门课",
+        "理解老师的良苦用心，反思并改正"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：理解老师的良苦用心，反思并改正。按师生交往与教师职业特点判断，本题正确答案是「理解老师的良苦用心，反思并改正」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "与老师发生误解时，应该（　　）",
+      "options": [
+        "到处抱怨",
+        "放弃这门学科",
+        "主动沟通，说明情况，消除误会",
+        "与老师冷战"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：主动沟通，说明情况，消除误会。按师生交往与教师职业特点判断，本题正确答案是「主动沟通，说明情况，消除误会」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "新型师生关系应该是（　　）",
+      "options": [
+        "学生说了算",
+        "民主、平等、相互尊重、教学相长",
+        "师道尊严、绝对服从",
+        "互不干涉"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：民主、平等、相互尊重、教学相长。按师生交往与教师职业特点判断，本题正确答案是「民主、平等、相互尊重、教学相长」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "老师是我们成长的（　　）",
+      "options": [
+        "引路人",
+        "唯一决定者",
+        "竞争对手",
+        "旁观者"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：引路人。按师生交往与教师职业特点判断，本题正确答案是「引路人」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列做法有利于建立良好师生关系的是（　　）",
+      "options": [
+        "上课故意捣乱",
+        "给老师起外号",
+        "拒绝完成作业",
+        "主动与老师交流学习和生活中的困惑"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：主动与老师交流学习和生活中的困惑。按师生交往与教师职业特点判断，本题正确答案是「主动与老师交流学习和生活中的困惑」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "家庭是由（　　）组成的亲属生活组织",
+      "options": [
+        "同学关系",
+        "邻里关系",
+        "婚姻关系、血缘关系或收养关系",
+        "朋友关系"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：婚姻关系、血缘关系或收养关系。按亲情与家庭的相关知识判断，本题正确答案是「婚姻关系、血缘关系或收养关系」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "孝亲敬长是（　　）",
+      "options": [
+        "可做可不做",
+        "中华民族的传统美德，也是公民的法定义务",
+        "只是道德要求",
+        "只是法律规定"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：中华民族的传统美德，也是公民的法定义务。按亲情与家庭的相关知识判断，本题正确答案是「中华民族的传统美德，也是公民的法定义务」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列做法体现孝亲敬长的是（　　）",
+      "options": [
+        "体谅父母，主动分担家务",
+        "对父母发脾气",
+        "只在物质上满足父母",
+        "把父母的话当耳旁风"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：体谅父母，主动分担家务。按亲情与家庭的相关知识判断，本题正确答案是「体谅父母，主动分担家务」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "亲子冲突产生的原因主要有（　　）",
+      "options": [
+        "父母不爱子女",
+        "子女不孝",
+        "家庭没有亲情",
+        "代际差异、沟通不畅、青春期独立意识增强等"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：代际差异、沟通不畅、青春期独立意识增强等。按亲情与家庭的相关知识判断，本题正确答案是「代际差异、沟通不畅、青春期独立意识增强等」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "化解亲子冲突，应该（　　）",
+      "options": [
+        "冷战",
+        "与父母对抗",
+        "主动沟通，换位思考，理解父母",
+        "离家出走"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：主动沟通，换位思考，理解父母。按亲情与家庭的相关知识判断，本题正确答案是「主动沟通，换位思考，理解父母」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "良好的家风（　　）",
+      "options": [
+        "没有任何作用",
+        "有利于家庭成员健康成长和社会和谐",
+        "只与长辈有关",
+        "只影响家庭经济"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：有利于家庭成员健康成长和社会和谐。按亲情与家庭的相关知识判断，本题正确答案是「有利于家庭成员健康成长和社会和谐」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "与父母沟通的有效方法包括（　　）",
+      "options": [
+        "注意态度、选择时机、坦诚表达",
+        "大声争吵",
+        "沉默不语",
+        "摔门而去"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：注意态度、选择时机、坦诚表达。按亲情与家庭的相关知识判断，本题正确答案是「注意态度、选择时机、坦诚表达」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "父母对子女的抚养教育是（　　）",
+      "options": [
+        "可以随意放弃",
+        "只靠道德约束",
+        "只在子女年幼时存在",
+        "法律规定的义务"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：法律规定的义务。按亲情与家庭的相关知识判断，本题正确答案是「法律规定的义务」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "感恩父母，应该（　　）",
+      "options": [
+        "认为父母付出是理所当然",
+        "只要求父母满足自己",
+        "理解父母的付出，用实际行动回报",
+        "只在母亲节表达"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：理解父母的付出，用实际行动回报。按亲情与家庭的相关知识判断，本题正确答案是「理解父母的付出，用实际行动回报」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "构建和谐家庭，需要（　　）",
+      "options": [
+        "各过各的",
+        "家庭成员相互理解、相互尊重、共同分担",
+        "只靠父母努力",
+        "只靠子女努力"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：家庭成员相互理解、相互尊重、共同分担。按亲情与家庭的相关知识判断，本题正确答案是「家庭成员相互理解、相互尊重、共同分担」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "老师既是我们的师长，也是我们的（　　）",
+      "options": [
+        "朋友",
+        "上级",
+        "对手",
+        "管理者"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：朋友。按尊敬师长、关爱家庭的实践判断，本题正确答案是「朋友」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "正确对待老师的教育，应该（　　）",
+      "options": [
+        "全盘否定",
+        "表面接受背后不改",
+        "只接受表扬",
+        "虚心接受，有则改之，无则加勉"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：虚心接受，有则改之，无则加勉。按尊敬师长、关爱家庭的实践判断，本题正确答案是「虚心接受，有则改之，无则加勉」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "当我们与老师意见不同时，应该（　　）",
+      "options": [
+        "沉默对抗",
+        "放弃思考",
+        "在尊重老师的前提下，理性表达自己的看法",
+        "直接顶撞"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：在尊重老师的前提下，理性表达自己的看法。按尊敬师长、关爱家庭的实践判断，本题正确答案是「在尊重老师的前提下，理性表达自己的看法」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列属于尊重老师劳动的是（　　）",
+      "options": [
+        "随意缺课",
+        "认真听讲，按时完成作业",
+        "上课睡觉",
+        "抄袭作业"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：认真听讲，按时完成作业。按尊敬师长、关爱家庭的实践判断，本题正确答案是「认真听讲，按时完成作业」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "家庭成员之间应该（　　）",
+      "options": [
+        "互相关爱、互相尊重、互相支持",
+        "互相指责",
+        "互不关心",
+        "只讲权利不讲义务"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：互相关爱、互相尊重、互相支持。按尊敬师长、关爱家庭的实践判断，本题正确答案是「互相关爱、互相尊重、互相支持」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "作为子女，我们应该（　　）",
+      "options": [
+        "把所有家务推给父母",
+        "认为做家务是父母的事",
+        "只有在要求奖励时才做家务",
+        "主动承担力所能及的家务"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：主动承担力所能及的家务。按尊敬师长、关爱家庭的实践判断，本题正确答案是「主动承担力所能及的家务」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "与父母发生矛盾时，下列做法正确的是（　　）",
+      "options": [
+        "离家出走",
+        "不理父母",
+        "先冷静下来，再与父母沟通",
+        "当场大吵大闹"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：先冷静下来，再与父母沟通。按尊敬师长、关爱家庭的实践判断，本题正确答案是「先冷静下来，再与父母沟通」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“谁言寸草心，报得三春晖”表达的是（　　）",
+      "options": [
+        "对家乡的怀念",
+        "对父母养育之恩的感激",
+        "对老师的尊敬",
+        "对朋友的思念"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：对父母养育之恩的感激。按尊敬师长、关爱家庭的实践判断，本题正确答案是「对父母养育之恩的感激」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "良好的师生关系有助于（　　）",
+      "options": [
+        "学生健康成长和学业进步",
+        "学生完全依赖老师",
+        "老师放弃教育责任",
+        "学生不再独立思考"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：学生健康成长和学业进步。按尊敬师长、关爱家庭的实践判断，本题正确答案是「学生健康成长和学业进步」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-道德与法治-3",
+      "chapterName": "师长情谊",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "传承良好家风，我们应该（　　）",
+      "options": [
+        "只关注物质继承",
+        "认为家风与自己无关",
+        "摒弃所有家庭传统",
+        "继承优良家风，践行家庭美德"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：继承优良家风，践行家庭美德。按尊敬师长、关爱家庭的实践判断，本题正确答案是「继承优良家风，践行家庭美德」。",
       "difficulty": 2
     }
   ]

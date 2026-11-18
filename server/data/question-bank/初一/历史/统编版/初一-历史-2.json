@@ -6,9 +6,9 @@
     "id": "初一-历史-2",
     "name": "夏商周与春秋战国"
   },
-  "generatedAt": "2026-11-14T12:13:15.305Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.068Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgd9sbq",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：分封制下，周王是全国土地和人民的最高主宰，诸侯要服从周王命令，承担镇守疆土、随从作战、缴纳贡赋、朝觐述职等义务。\nB. 错误：诸侯虽可在封国内再分封卿大夫，但必须服从周王、履行义务，题干前提是“受封诸侯对周王承担义务”，“不再听命于周王”与分封制的隶属关系直接冲突。\nC. 错误：祭祀天地是周王的特权，诸侯不能代替周王主持祭祀天地；“推举贤能”也不是分封制规定的诸侯义务。\nD. 错误：西周土地实行井田制，土地归国家所有，由贵族占有、平民集体耕作，并不存在把土地平均分配给全体平民的做法。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "春秋时期第一个称霸的诸侯是（ ）",
+      "options": [
+        "齐桓公",
+        "晋文公",
+        "楚庄王",
+        "秦穆公"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：齐桓公。按春秋争霸与战国变法的基本史实判断，本题正确答案是「齐桓公」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "齐桓公任用的改革家是（ ）",
+      "options": [
+        "商鞅",
+        "李斯",
+        "王安石",
+        "管仲"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：管仲。按春秋争霸与战国变法的基本史实判断，本题正确答案是「管仲」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "齐桓公称霸时打出的旗号是（ ）",
+      "options": [
+        "自强求富",
+        "民主与科学",
+        "尊王攘夷",
+        "扶清灭洋"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：尊王攘夷。按春秋争霸与战国变法的基本史实判断，本题正确答案是「尊王攘夷」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "晋文公成为霸主的关键战役是（ ）",
+      "options": [
+        "巨鹿之战",
+        "城濮之战",
+        "牧野之战",
+        "长平之战"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：城濮之战。按春秋争霸与战国变法的基本史实判断，本题正确答案是「城濮之战」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "春秋时期诸侯争霸的实质是（ ）",
+      "options": [
+        "争夺土地、人口和支配权",
+        "推广儒学",
+        "发展海外贸易",
+        "建立科举制"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：争夺土地、人口和支配权。按春秋争霸与战国变法的基本史实判断，本题正确答案是「争夺土地、人口和支配权」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "春秋时期社会生产力水平提高的重要标志是（ ）",
+      "options": [
+        "青铜器普及",
+        "造纸术发明",
+        "蒸汽机使用",
+        "铁制农具和牛耕的使用"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：铁制农具和牛耕的使用。按春秋争霸与战国变法的基本史实判断，本题正确答案是「铁制农具和牛耕的使用」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "春秋时期，王室衰微、诸侯势力崛起，出现了（ ）",
+      "options": [
+        "三国鼎立局面",
+        "藩镇割据局面",
+        "诸侯争霸局面",
+        "大一统局面"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：诸侯争霸局面。按春秋争霸与战国变法的基本史实判断，本题正确答案是「诸侯争霸局面」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "战国七雄中不包括（ ）",
+      "options": [
+        "燕",
+        "宋",
+        "齐",
+        "楚"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：宋。按春秋争霸与战国变法的基本史实判断，本题正确答案是「宋」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "战国时期各国变法中最著名的是（ ）",
+      "options": [
+        "商鞅变法",
+        "王安石变法",
+        "戊戌变法",
+        "明治维新"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：商鞅变法。按春秋争霸与战国变法的基本史实判断，本题正确答案是「商鞅变法」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "商鞅变法开始于（ ）",
+      "options": [
+        "公元前221年",
+        "公元前2070年",
+        "公元1840年",
+        "公元前356年"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：公元前356年。按春秋争霸与战国变法的基本史实判断，本题正确答案是「公元前356年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "支持商鞅变法的秦国国君是（ ）",
+      "options": [
+        "秦穆公",
+        "秦二世",
+        "秦孝公",
+        "秦始皇"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：秦孝公。按商鞅变法的措施与都江堰的作用判断，本题正确答案是「秦孝公」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "商鞅变法中，加强中央集权的措施是（ ）",
+      "options": [
+        "统一度量衡",
+        "建立县制",
+        "奖励耕织",
+        "奖励军功"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：建立县制。按商鞅变法的措施与都江堰的作用判断，本题正确答案是「建立县制」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "商鞅变法中，促进农业生产的措施是（ ）",
+      "options": [
+        "奖励耕织，生产粮食布帛多的人可免除徭役",
+        "奖励军功",
+        "建立县制",
+        "统一文字"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：奖励耕织，生产粮食布帛多的人可免除徭役。按商鞅变法的措施与都江堰的作用判断，本题正确答案是「奖励耕织，生产粮食布帛多的人可免除徭役」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "商鞅变法中，提高军队战斗力的措施是（ ）",
+      "options": [
+        "奖励耕织",
+        "建立县制",
+        "统一货币",
+        "奖励军功"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：奖励军功。按商鞅变法的措施与都江堰的作用判断，本题正确答案是「奖励军功」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "商鞅变法的作用是（ ）",
+      "options": [
+        "建立统一王朝",
+        "废除君主制度",
+        "秦国国力大为增强，成为最强盛的诸侯国",
+        "结束战国分裂"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：秦国国力大为增强，成为最强盛的诸侯国。按商鞅变法的措施与都江堰的作用判断，本题正确答案是「秦国国力大为增强，成为最强盛的诸侯国」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "战国时期主持修建都江堰的是（ ）",
+      "options": [
+        "郑国",
+        "李冰",
+        "商鞅",
+        "大禹"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：李冰。按商鞅变法的措施与都江堰的作用判断，本题正确答案是「李冰」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "都江堰的主要功能是（ ）",
+      "options": [
+        "防洪、灌溉、水运",
+        "发电、养殖",
+        "军事防御",
+        "城市供水"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：防洪、灌溉、水运。按商鞅变法的措施与都江堰的作用判断，本题正确答案是「防洪、灌溉、水运」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "都江堰使成都平原成为（ ）",
+      "options": [
+        "「鱼米之乡」",
+        "「塞上江南」",
+        "「北大仓」",
+        "「天府之国」"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：「天府之国」。按商鞅变法的措施与都江堰的作用判断，本题正确答案是「「天府之国」」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "商鞅变法在土地制度上的措施是（ ）",
+      "options": [
+        "平均分配土地",
+        "禁止土地买卖",
+        "废除井田制，允许土地自由买卖",
+        "实行土地公有制"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：废除井田制，允许土地自由买卖。按商鞅变法的措施与都江堰的作用判断，本题正确答案是「废除井田制，允许土地自由买卖」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "商鞅变法后，秦国逐步确立的社会制度是（ ）",
+      "options": [
+        "社会主义制度",
+        "封建制度",
+        "奴隶制度",
+        "资本主义制度"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：封建制度。按商鞅变法的措施与都江堰的作用判断，本题正确答案是「封建制度」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "儒家学派的创始人是（ ）",
+      "options": [
+        "孔子",
+        "老子",
+        "墨子",
+        "韩非"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：孔子。按诸子百家的代表人物与主张判断，本题正确答案是「孔子」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "孔子的核心思想是（ ）",
+      "options": [
+        "「法」",
+        "「兼爱」",
+        "「无为」",
+        "「仁」"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：「仁」。按诸子百家的代表人物与主张判断，本题正确答案是「「仁」」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "孔子在教育上主张（ ）",
+      "options": [
+        "罢黜百家",
+        "八股取士",
+        "有教无类",
+        "焚书坑儒"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：有教无类。按诸子百家的代表人物与主张判断，本题正确答案是「有教无类」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "记录孔子及其弟子言行的著作是（ ）",
+      "options": [
+        "《墨子》",
+        "《论语》",
+        "《道德经》",
+        "《韩非子》"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：《论语》。按诸子百家的代表人物与主张判断，本题正确答案是「《论语》」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "道家学派的创始人是（ ）",
+      "options": [
+        "老子",
+        "孔子",
+        "孟子",
+        "庄子"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：老子。按诸子百家的代表人物与主张判断，本题正确答案是「老子」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "老子主张的治国理念是（ ）",
+      "options": [
+        "以法治国",
+        "以德治国",
+        "兼爱非攻",
+        "无为而治"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：无为而治。按诸子百家的代表人物与主张判断，本题正确答案是「无为而治」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "主张「兼爱」「非攻」的思想家是（ ）",
+      "options": [
+        "韩非",
+        "庄子",
+        "墨子",
+        "孔子"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：墨子。按诸子百家的代表人物与主张判断，本题正确答案是「墨子」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "主张以法治国、建立中央集权专制统治的思想家是（ ）",
+      "options": [
+        "墨子",
+        "韩非",
+        "孟子",
+        "荀子"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：韩非。按诸子百家的代表人物与主张判断，本题正确答案是「韩非」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "战国时期儒家学派的代表人物是（ ）",
+      "options": [
+        "孟子、荀子",
+        "老子、庄子",
+        "墨子、韩非",
+        "孔子、老子"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：孟子、荀子。按诸子百家的代表人物与主张判断，本题正确答案是「孟子、荀子」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-历史-2",
+      "chapterName": "夏商周与春秋战国",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "「百家争鸣」局面出现在（ ）",
+      "options": [
+        "秦汉时期",
+        "隋唐时期",
+        "明清时期",
+        "春秋战国时期"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：春秋战国时期。按诸子百家的代表人物与主张判断，本题正确答案是「春秋战国时期」。",
+      "difficulty": 2
     }
   ]
 }

@@ -6,9 +6,9 @@
     "id": "初三-英语-3",
     "name": "情态动词与时态复习"
   },
-  "generatedAt": "2026-11-14T12:17:21.156Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.956Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdf20x",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：mustn't 表示“禁止、不允许”，用于回答 Must I...? 的否定答语时会造成“你不准交”的语义，与后句“下周一给我也可以”相冲突。\nB. 正确：以 Must I...? 提问时，否定答语用 needn't 或 don't have to，表示“不必”，与后句“下周一交也可以”逻辑一致。\nC. 错误：can't 表示“不能、不可能”，强调能力或推测上的否定，不能表达“没有必要”这一含义。\nD. 错误：shouldn't 表示“不应该”，是建议性的否定，不能用来回答 Must I...? 表示“不必”。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The light is on in his room. He ______ be at home.",
+      "options": [
+        "must",
+        "can't",
+        "needn't",
+        "shouldn't"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：must。must 表示肯定推测，can't 表示否定推测，might 表示可能性较小的推测；本题应为 must。",
+      "difficulty": 2
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The book ______ be Tom's. His name is on it.",
+      "options": [
+        "can't",
+        "needn't",
+        "shouldn't",
+        "must"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：must。must 表示肯定推测，can't 表示否定推测，might 表示可能性较小的推测；本题应为 must。",
+      "difficulty": 2
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "She ______ be at school now. I saw her at the cinema just now.",
+      "options": [
+        "needn't",
+        "shouldn't",
+        "can't",
+        "must"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：can't。must 表示肯定推测，can't 表示否定推测，might 表示可能性较小的推测；本题应为 can't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The bag ______ be Lily's. It has her name on it.",
+      "options": [
+        "shouldn't",
+        "must",
+        "can't",
+        "needn't"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：must。must 表示肯定推测，can't 表示否定推测，might 表示可能性较小的推测；本题应为 must。",
+      "difficulty": 2
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "He ______ come tomorrow, but I'm not sure.",
+      "options": [
+        "might",
+        "must",
+        "can't",
+        "shouldn't"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：might。must 表示肯定推测，can't 表示否定推测，might 表示可能性较小的推测；本题应为 might。",
+      "difficulty": 2
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The answer ______ be right. There is a mistake in it.",
+      "options": [
+        "must",
+        "needn't",
+        "shouldn't",
+        "can't"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：can't。must 表示肯定推测，can't 表示否定推测，might 表示可能性较小的推测；本题应为 can't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The boy ______ be hungry. He has just eaten two bowls of noodles.",
+      "options": [
+        "needn't",
+        "shouldn't",
+        "can't",
+        "must"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：can't。must 表示肯定推测，can't 表示否定推测，might 表示可能性较小的推测；本题应为 can't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The story ______ be true. Everyone says it happened.",
+      "options": [
+        "shouldn't",
+        "must",
+        "can't",
+        "needn't"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：must。must 表示肯定推测，can't 表示否定推测，might 表示可能性较小的推测；本题应为 must。",
+      "difficulty": 2
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The dictionary ______ be mine. My name is on the cover.",
+      "options": [
+        "must",
+        "can't",
+        "needn't",
+        "shouldn't"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：must。must 表示肯定推测，can't 表示否定推测，might 表示可能性较小的推测；本题应为 must。",
+      "difficulty": 2
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "It ______ rain this afternoon, so take an umbrella.",
+      "options": [
+        "must",
+        "can't",
+        "shouldn't",
+        "might"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：might。must 表示肯定推测，can't 表示否定推测，might 表示可能性较小的推测；本题应为 might。",
+      "difficulty": 2
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "method",
+      "stem": "Look! The children ______ (play) football.",
+      "options": [
+        "played",
+        "will play",
+        "are playing",
+        "play"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：are playing。先看时间状语（now / yesterday / since / tomorrow / at this time yesterday）判断时态；本题应为 are playing。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "method",
+      "stem": "I ______ (visit) my uncle yesterday.",
+      "options": [
+        "will visit",
+        "visited",
+        "visit",
+        "have visited"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：visited。先看时间状语（now / yesterday / since / tomorrow / at this time yesterday）判断时态；本题应为 visited。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "method",
+      "stem": "She ______ (live) here since 2018.",
+      "options": [
+        "has lived",
+        "lived",
+        "lives",
+        "was living"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：has lived。先看时间状语（now / yesterday / since / tomorrow / at this time yesterday）判断时态；本题应为 has lived。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "method",
+      "stem": "We ______ (have) a picnic tomorrow.",
+      "options": [
+        "had",
+        "have had",
+        "has",
+        "will have"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：will have。先看时间状语（now / yesterday / since / tomorrow / at this time yesterday）判断时态；本题应为 will have。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "method",
+      "stem": "He ______ (read) a book at this time yesterday.",
+      "options": [
+        "is reading",
+        "has read",
+        "was reading",
+        "read"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：was reading。先看时间状语（now / yesterday / since / tomorrow / at this time yesterday）判断时态；本题应为 was reading。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "method",
+      "stem": "My father ______ (work) in this factory for ten years.",
+      "options": [
+        "was working",
+        "has worked",
+        "worked",
+        "works"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：has worked。先看时间状语（now / yesterday / since / tomorrow / at this time yesterday）判断时态；本题应为 has worked。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "method",
+      "stem": "They ______ (go) to the zoo last Sunday.",
+      "options": [
+        "went",
+        "go",
+        "have gone",
+        "will go"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：went。先看时间状语（now / yesterday / since / tomorrow / at this time yesterday）判断时态；本题应为 went。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "method",
+      "stem": "Listen! Someone ______ (sing) in the next room.",
+      "options": [
+        "sings",
+        "sang",
+        "will sing",
+        "is singing"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：is singing。先看时间状语（now / yesterday / since / tomorrow / at this time yesterday）判断时态；本题应为 is singing。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "method",
+      "stem": "I ______ (know) him since we were children.",
+      "options": [
+        "know",
+        "was knowing",
+        "have known",
+        "knew"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：have known。先看时间状语（now / yesterday / since / tomorrow / at this time yesterday）判断时态；本题应为 have known。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "method",
+      "stem": "She ______ (finish) her homework already.",
+      "options": [
+        "was finishing",
+        "has finished",
+        "finished",
+        "finishes"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：has finished。先看时间状语（now / yesterday / since / tomorrow / at this time yesterday）判断时态；本题应为 has finished。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Which modal verb means \"it is possible but not certain\"? 哪个词表示「可能但不一定」？（ ）",
+      "options": [
+        "might",
+        "must",
+        "can",
+        "need"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：might。按情态动词的含义（可能性、必要性、禁止、建议）和简答规则判断；本题应为 might。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Which modal verb means \"it is not necessary\"? 哪个词表示「不必要」？（ ）",
+      "options": [
+        "mustn't",
+        "can't",
+        "shouldn't",
+        "needn't"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：needn't。按情态动词的含义（可能性、必要性、禁止、建议）和简答规则判断；本题应为 needn't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Which modal verb means \"it is not allowed\"? 哪个词表示「不允许」？（ ）",
+      "options": [
+        "shouldn't",
+        "wouldn't",
+        "mustn't",
+        "needn't"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：mustn't。按情态动词的含义（可能性、必要性、禁止、建议）和简答规则判断；本题应为 mustn't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Which modal verb is used to give advice? 哪个词常用来提建议？（ ）",
+      "options": [
+        "will",
+        "should",
+        "can",
+        "may"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：should。按情态动词的含义（可能性、必要性、禁止、建议）和简答规则判断；本题应为 should。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "— Must I finish the work now?\n— No, you ______.",
+      "options": [
+        "needn't",
+        "mustn't",
+        "can't",
+        "won't"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：needn't。按情态动词的含义（可能性、必要性、禁止、建议）和简答规则判断；本题应为 needn't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "— Can I use your dictionary?\n— Yes, ______.",
+      "options": [
+        "you must",
+        "you needn't",
+        "you can't",
+        "you can"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：you can。按情态动词的含义（可能性、必要性、禁止、建议）和简答规则判断；本题应为 you can。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "You ______ smoke here. It's a hospital.",
+      "options": [
+        "may",
+        "could",
+        "mustn't",
+        "needn't"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：mustn't。按情态动词的含义（可能性、必要性、禁止、建议）和简答规则判断；本题应为 mustn't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "You ______ take an umbrella. It's going to rain.",
+      "options": [
+        "can't",
+        "should",
+        "needn't",
+        "mustn't"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：should。按情态动词的含义（可能性、必要性、禁止、建议）和简答规则判断；本题应为 should。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "We ______ hurry. There is plenty of time.",
+      "options": [
+        "needn't",
+        "mustn't",
+        "can't",
+        "won't"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：needn't。按情态动词的含义（可能性、必要性、禁止、建议）和简答规则判断；本题应为 needn't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-英语-3",
+      "chapterName": "情态动词与时态复习",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "— Could you help me?\n— ______",
+      "options": [
+        "You're welcome.",
+        "That's right.",
+        "Never mind.",
+        "Sure."
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Sure.。按情态动词的含义（可能性、必要性、禁止、建议）和简答规则判断；本题应为 Sure.。",
+      "difficulty": 2
     }
   ]
 }

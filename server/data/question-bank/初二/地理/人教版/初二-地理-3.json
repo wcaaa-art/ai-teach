@@ -6,9 +6,9 @@
     "id": "初二-地理-3",
     "name": "中国地形与气候"
   },
-  "generatedAt": "2026-11-14T12:15:58.496Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.038Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdd312",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 0,
       "explanation": "A. 正确：青藏高原平均海拔在4000米以上，气温随海拔升高而降低（大约每升高100米降低0.6 ℃），所以虽然纬度与长江中下游地区相近，夏季气温却明显偏低，这直接体现了地形（海拔）对气温的影响。\nB. 错误：这是海陆位置和夏季风共同作用的结果。东南沿海距海近，受夏季风影响强，降水多；西北内陆距海远，夏季风难以到达，降水少；这一现象不是由地形直接造成的。\nC. 错误：这反映的是纬度位置对气温的影响。纬度越高，获得的太阳辐射越少，气温越低，与地形无关。\nD. 错误：这反映的是季风气候下降水的季节分配特点：夏季风带来大量水汽，冬季风寒冷干燥；这种降水季节差异主要受季风影响，不是地形直接造成的。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国地势的特征是（ ）",
+      "options": [
+        "西高东低，呈阶梯状分布",
+        "东高西低，呈阶梯状分布",
+        "南高北低",
+        "四周高、中间低"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：西高东低，呈阶梯状分布。按我国地势、地形区与山脉分布判断，本题正确答案是「西高东低，呈阶梯状分布」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国地势第一级阶梯的主要地形区是（ ）",
+      "options": [
+        "内蒙古高原",
+        "东北平原",
+        "四川盆地",
+        "青藏高原"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：青藏高原。按我国地势、地形区与山脉分布判断，本题正确答案是「青藏高原」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国地势第二级阶梯的主要地形类型是（ ）",
+      "options": [
+        "平原和山地",
+        "丘陵和山地",
+        "高原和盆地",
+        "平原和丘陵"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：高原和盆地。按我国地势、地形区与山脉分布判断，本题正确答案是「高原和盆地」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国地势第三级阶梯的主要地形类型是（ ）",
+      "options": [
+        "盆地和山地",
+        "平原和丘陵",
+        "高原和盆地",
+        "高原和山地"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：平原和丘陵。按我国地势、地形区与山脉分布判断，本题正确答案是「平原和丘陵」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国最大的平原是（ ）",
+      "options": [
+        "东北平原",
+        "华北平原",
+        "长江中下游平原",
+        "珠江三角洲"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：东北平原。按我国地势、地形区与山脉分布判断，本题正确答案是「东北平原」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国最大的盆地是（ ）",
+      "options": [
+        "准噶尔盆地",
+        "四川盆地",
+        "柴达木盆地",
+        "塔里木盆地"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：塔里木盆地。按我国地势、地形区与山脉分布判断，本题正确答案是「塔里木盆地」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国最大的高原是（ ）",
+      "options": [
+        "黄土高原",
+        "云贵高原",
+        "青藏高原",
+        "内蒙古高原"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：青藏高原。按我国地势、地形区与山脉分布判断，本题正确答案是「青藏高原」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国最大的丘陵是（ ）",
+      "options": [
+        "黄土丘陵",
+        "东南丘陵",
+        "山东丘陵",
+        "辽东丘陵"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：东南丘陵。按我国地势、地形区与山脉分布判断，本题正确答案是「东南丘陵」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国地形的主要特征是（ ）",
+      "options": [
+        "地形复杂多样，山区面积广大",
+        "地形单一，平原为主",
+        "以盆地为主",
+        "以高原为主"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：地形复杂多样，山区面积广大。按我国地势、地形区与山脉分布判断，本题正确答案是「地形复杂多样，山区面积广大」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列属于东西走向的山脉是（ ）",
+      "options": [
+        "大兴安岭—太行山",
+        "横断山脉",
+        "祁连山",
+        "天山—阴山"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：天山—阴山。按我国地势、地形区与山脉分布判断，本题正确答案是「天山—阴山」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国冬季气温分布的特点是（ ）",
+      "options": [
+        "普遍高温",
+        "西高东低",
+        "南北温差大",
+        "南北温差小"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：南北温差大。按我国气温、降水与季风特征判断，本题正确答案是「南北温差大」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国夏季气温分布的特点是（ ）",
+      "options": [
+        "东部普遍低温",
+        "除青藏高原等地外普遍高温",
+        "南北温差很大",
+        "普遍低温"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：除青藏高原等地外普遍高温。按我国气温、降水与季风特征判断，本题正确答案是「除青藏高原等地外普遍高温」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国冬季最冷的地方是（ ）",
+      "options": [
+        "漠河",
+        "吐鲁番",
+        "青藏高原",
+        "哈尔滨"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：漠河。按我国气温、降水与季风特征判断，本题正确答案是「漠河」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国夏季最热的地方是（ ）",
+      "options": [
+        "漠河",
+        "广州",
+        "重庆",
+        "吐鲁番"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：吐鲁番。按我国气温、降水与季风特征判断，本题正确答案是「吐鲁番」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国降水空间分布的特点是（ ）",
+      "options": [
+        "从北向南递减",
+        "全国均匀",
+        "从东南沿海向西北内陆递减",
+        "从西北内陆向东南沿海递减"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：从东南沿海向西北内陆递减。按我国气温、降水与季风特征判断，本题正确答案是「从东南沿海向西北内陆递减」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国降水最多的地方是（ ）",
+      "options": [
+        "广州",
+        "台湾火烧寮",
+        "吐鲁番托克逊",
+        "漠河"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：台湾火烧寮。按我国气温、降水与季风特征判断，本题正确答案是「台湾火烧寮」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国降水最少的地方是（ ）",
+      "options": [
+        "吐鲁番托克逊",
+        "台湾火烧寮",
+        "广州",
+        "武汉"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：吐鲁番托克逊。按我国气温、降水与季风特征判断，本题正确答案是「吐鲁番托克逊」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国夏季盛行（ ）",
+      "options": [
+        "偏北风",
+        "偏东风",
+        "偏西风",
+        "偏南风"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：偏南风。按我国气温、降水与季风特征判断，本题正确答案是「偏南风」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国冬季盛行（ ）",
+      "options": [
+        "偏东风",
+        "偏西风",
+        "偏北风",
+        "偏南风"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：偏北风。按我国气温、降水与季风特征判断，本题正确答案是「偏北风」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "秦岭—淮河一线大致是（ ）",
+      "options": [
+        "200毫米年等降水量线",
+        "800毫米年等降水量线",
+        "400毫米年等降水量线",
+        "1600毫米年等降水量线"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：800毫米年等降水量线。按我国气温、降水与季风特征判断，本题正确答案是「800毫米年等降水量线」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国温度带划分的主要依据是（ ）",
+      "options": [
+        "活动积温",
+        "年降水量",
+        "地形高度",
+        "纬度位置"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：活动积温。按温度带、干湿地区与气候特征判断，本题正确答案是「活动积温」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "秦岭—淮河一线以南主要属于（ ）",
+      "options": [
+        "中温带",
+        "暖温带",
+        "寒温带",
+        "亚热带"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：亚热带。按温度带、干湿地区与气候特征判断，本题正确答案是「亚热带」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国东北地区主要属于（ ）",
+      "options": [
+        "亚热带",
+        "高原气候区",
+        "中温带",
+        "热带"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：中温带。按温度带、干湿地区与气候特征判断，本题正确答案是「中温带」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国海南省主要属于（ ）",
+      "options": [
+        "中温带",
+        "热带",
+        "亚热带",
+        "暖温带"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：热带。按温度带、干湿地区与气候特征判断，本题正确答案是「热带」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国干湿地区划分的主要依据是（ ）",
+      "options": [
+        "降水量与蒸发量的对比关系",
+        "气温高低",
+        "地形起伏",
+        "河流长短"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：降水量与蒸发量的对比关系。按温度带、干湿地区与气候特征判断，本题正确答案是「降水量与蒸发量的对比关系」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "秦岭—淮河一线以北的干湿地区主要是（ ）",
+      "options": [
+        "湿润区",
+        "半干旱区",
+        "干旱区",
+        "半湿润区"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：半湿润区。按温度带、干湿地区与气候特征判断，本题正确答案是「半湿润区」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国西北内陆地区主要属于（ ）",
+      "options": [
+        "半湿润区",
+        "热带",
+        "干旱区",
+        "湿润区"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：干旱区。按温度带、干湿地区与气候特征判断，本题正确答案是「干旱区」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "秦岭—淮河一线大致与（ ）一致",
+      "options": [
+        "0℃年等温线",
+        "1月0℃等温线",
+        "7月0℃等温线",
+        "1月10℃等温线"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1月0℃等温线。按温度带、干湿地区与气候特征判断，本题正确答案是「1月0℃等温线」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "秦岭—淮河一线以南的河流（ ）",
+      "options": [
+        "冬季一般不结冰",
+        "冬季普遍结冰",
+        "全部断流",
+        "含沙量极大"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：冬季一般不结冰。按温度带、干湿地区与气候特征判断，本题正确答案是「冬季一般不结冰」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-地理-3",
+      "chapterName": "中国地形与气候",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国气候的主要特征是（ ）",
+      "options": [
+        "气候单一、全年高温",
+        "海洋性气候为主",
+        "沙漠气候为主",
+        "气候复杂多样、季风气候显著"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：气候复杂多样、季风气候显著。按温度带、干湿地区与气候特征判断，本题正确答案是「气候复杂多样、季风气候显著」。",
       "difficulty": 2
     }
   ]

@@ -6,9 +6,9 @@
     "id": "初三-地理-1",
     "name": "中国区域地理综合"
   },
-  "generatedAt": "2026-11-14T12:17:48.192Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.048Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdfmvw",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：哈尔滨位于我国东北地区，纬度较高，冬季漫长寒冷，冰雪资源丰富，冰雕雪雕景观与当地气候特征相符。\nB. 错误：北京位于我国华北地区，属于温带季风气候，不是亚热带；水稻一年两熟主要符合我国南方亚热带、热带地区的热量条件。\nC. 错误：广州位于我国南方地区，属于亚热带季风气候，冬季温和，河流一般不结冰，与“冬季普遍结冰”冲突。\nD. 错误：哈尔滨、北京、广州分别位于东北地区、华北地区和南方地区，并非都位于西北地区，农业生产也不都以畜牧业为主。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国四大地理区域中，面积最大的是（ ）",
+      "options": [
+        "西北地区",
+        "北方地区",
+        "南方地区",
+        "青藏地区"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：西北地区。按我国主要区域与城市群的地理特征判断，本题正确答案是「西北地区」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国四大地理区域中，以水田农业为主的是（ ）",
+      "options": [
+        "北方地区",
+        "西北地区",
+        "青藏地区",
+        "南方地区"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：南方地区。按我国主要区域与城市群的地理特征判断，本题正确答案是「南方地区」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国最大的商品粮基地之一位于（ ）",
+      "options": [
+        "塔里木盆地",
+        "内蒙古高原",
+        "东北平原",
+        "青藏高原"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：东北平原。按我国主要区域与城市群的地理特征判断，本题正确答案是「东北平原」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国最大的综合性工业基地是（ ）",
+      "options": [
+        "珠江三角洲工业基地",
+        "长江三角洲工业基地",
+        "辽中南工业基地",
+        "京津唐工业基地"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：长江三角洲工业基地。按我国主要区域与城市群的地理特征判断，本题正确答案是「长江三角洲工业基地」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国以重工业为主的工业基地是（ ）",
+      "options": [
+        "辽中南工业基地",
+        "长江三角洲工业基地",
+        "珠江三角洲工业基地",
+        "京津唐工业基地"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：辽中南工业基地。按我国主要区域与城市群的地理特征判断，本题正确答案是「辽中南工业基地」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国最大的城市群位于（ ）",
+      "options": [
+        "珠江三角洲",
+        "京津冀",
+        "成渝地区",
+        "长江三角洲"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：长江三角洲。按我国主要区域与城市群的地理特征判断，本题正确答案是「长江三角洲」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国对外开放的前沿阵地是（ ）",
+      "options": [
+        "青藏高原",
+        "黄土高原",
+        "珠江三角洲",
+        "塔里木盆地"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：珠江三角洲。按我国主要区域与城市群的地理特征判断，本题正确答案是「珠江三角洲」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "台湾省的主要少数民族是（ ）",
+      "options": [
+        "藏族",
+        "高山族",
+        "壮族",
+        "回族"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：高山族。按我国主要区域与城市群的地理特征判断，本题正确答案是「高山族」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "香港的主导产业是（ ）",
+      "options": [
+        "国际贸易、金融、航运等服务业",
+        "重工业",
+        "采矿业",
+        "农业"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：国际贸易、金融、航运等服务业。按我国主要区域与城市群的地理特征判断，本题正确答案是「国际贸易、金融、航运等服务业」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "澳门的主要经济支柱是（ ）",
+      "options": [
+        "重工业",
+        "高新技术产业",
+        "农业",
+        "博彩旅游业"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：博彩旅游业。按我国主要区域与城市群的地理特征判断，本题正确答案是「博彩旅游业」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "西气东输工程的起点位于（ ）",
+      "options": [
+        "柴达木盆地",
+        "准噶尔盆地",
+        "新疆塔里木盆地",
+        "四川盆地"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：新疆塔里木盆地。按区域联系与重大工程的地理意义判断，本题正确答案是「新疆塔里木盆地」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "西电东送工程的主要目的是（ ）",
+      "options": [
+        "减少东部电力",
+        "缓解东部地区能源紧张",
+        "缓解西部地区能源紧张",
+        "增加西部人口"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：缓解东部地区能源紧张。按区域联系与重大工程的地理意义判断，本题正确答案是「缓解东部地区能源紧张」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "南水北调东线工程主要利用（ ）",
+      "options": [
+        "京杭运河输水",
+        "黄河输水",
+        "长江上游输水",
+        "珠江输水"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：京杭运河输水。按区域联系与重大工程的地理意义判断，本题正确答案是「京杭运河输水」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国跨流域调水工程中，规模最大的是（ ）",
+      "options": [
+        "引黄济青",
+        "引滦入津",
+        "引大入秦",
+        "南水北调"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：南水北调。按区域联系与重大工程的地理意义判断，本题正确答案是「南水北调」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国实施西部大开发战略的主要目的是（ ）",
+      "options": [
+        "限制西部发展",
+        "减少西部人口",
+        "缩小东西部发展差距",
+        "扩大东西部差距"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：缩小东西部发展差距。按区域联系与重大工程的地理意义判断，本题正确答案是「缩小东西部发展差距」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "长江三角洲地区经济发展的有利条件是（ ）",
+      "options": [
+        "地形崎岖、市场狭小",
+        "位置优越、交通便利、市场广阔",
+        "资源贫乏、交通不便",
+        "气候干旱、人口稀少"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：位置优越、交通便利、市场广阔。按区域联系与重大工程的地理意义判断，本题正确答案是「位置优越、交通便利、市场广阔」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "京津冀协同发展的核心是（ ）",
+      "options": [
+        "疏解北京非首都功能",
+        "扩大北京城市规模",
+        "限制天津发展",
+        "停止河北建设"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：疏解北京非首都功能。按区域联系与重大工程的地理意义判断，本题正确答案是「疏解北京非首都功能」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "粤港澳大湾区建设的有利条件是（ ）",
+      "options": [
+        "地理位置偏远",
+        "产业完全相同",
+        "交通闭塞",
+        "区位优势明显、经济互补性强"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：区位优势明显、经济互补性强。按区域联系与重大工程的地理意义判断，本题正确答案是「区位优势明显、经济互补性强」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列商品粮基地中，位于南方地区的是（ ）",
+      "options": [
+        "三江平原",
+        "河套平原",
+        "成都平原",
+        "松嫩平原"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：成都平原。按区域联系与重大工程的地理意义判断，本题正确答案是「成都平原」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国区域协调发展的目标是（ ）",
+      "options": [
+        "只发展西部",
+        "促进区域优势互补、共同发展",
+        "让所有地区发展水平完全相同",
+        "只发展东部"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：促进区域优势互补、共同发展。按区域联系与重大工程的地理意义判断，本题正确答案是「促进区域优势互补、共同发展」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "黄土高原水土流失严重的人为原因是（ ）",
+      "options": [
+        "过度开垦、破坏植被",
+        "土质疏松",
+        "降水集中",
+        "地形起伏大"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：过度开垦、破坏植被。按区域生态环境问题与治理措施判断，本题正确答案是「过度开垦、破坏植被」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "治理黄土高原水土流失的主要措施是（ ）",
+      "options": [
+        "大规模开垦",
+        "大量放牧",
+        "修建高楼",
+        "植树种草、退耕还林还草"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：植树种草、退耕还林还草。按区域生态环境问题与治理措施判断，本题正确答案是「植树种草、退耕还林还草」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国北方地区水资源短缺，农业上应采取的措施是（ ）",
+      "options": [
+        "扩大水稻种植",
+        "大量抽取深层地下水",
+        "发展节水农业",
+        "大水漫灌"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：发展节水农业。按区域生态环境问题与治理措施判断，本题正确答案是「发展节水农业」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "长江中下游地区洪涝灾害频繁的主要原因是（ ）",
+      "options": [
+        "人口稀少、开发不足",
+        "降水集中、地势低平、围湖造田",
+        "降水稀少、地势高峻",
+        "气候干旱、河道稀少"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：降水集中、地势低平、围湖造田。按区域生态环境问题与治理措施判断，本题正确答案是「降水集中、地势低平、围湖造田」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "洞庭湖面积缩小带来的主要影响是（ ）",
+      "options": [
+        "调蓄洪水能力下降",
+        "降水明显增加",
+        "气温显著降低",
+        "土壤更加肥沃"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：调蓄洪水能力下降。按区域生态环境问题与治理措施判断，本题正确答案是「调蓄洪水能力下降」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国北方地区冬季雾霾多发，治理措施包括（ ）",
+      "options": [
+        "增加燃煤",
+        "焚烧秸秆",
+        "扩大重工业",
+        "减少燃煤、发展清洁能源"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：减少燃煤、发展清洁能源。按区域生态环境问题与治理措施判断，本题正确答案是「减少燃煤、发展清洁能源」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国西南地区多发滑坡、泥石流的主要原因是（ ）",
+      "options": [
+        "气候干旱、沙源丰富",
+        "人口稠密、建筑密集",
+        "地形崎岖、降水集中、植被破坏",
+        "地形平坦、降水稀少"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：地形崎岖、降水集中、植被破坏。按区域生态环境问题与治理措施判断，本题正确答案是「地形崎岖、降水集中、植被破坏」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国沿海地区台风灾害多发的季节是（ ）",
+      "options": [
+        "冬季",
+        "夏秋季",
+        "冬春季",
+        "春季"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：夏秋季。按区域生态环境问题与治理措施判断，本题正确答案是「夏秋季」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "华北平原地下水超采会带来（ ）",
+      "options": [
+        "地面沉降",
+        "地面上升",
+        "降水增多",
+        "河流增多"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：地面沉降。按区域生态环境问题与治理措施判断，本题正确答案是「地面沉降」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-地理-1",
+      "chapterName": "中国区域地理综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国西北地区防治荒漠化的合理措施是（ ）",
+      "options": [
+        "过度放牧",
+        "盲目开垦",
+        "大量抽取地下水",
+        "退耕还林还草、合理放牧"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：退耕还林还草、合理放牧。按区域生态环境问题与治理措施判断，本题正确答案是「退耕还林还草、合理放牧」。",
+      "difficulty": 2
     }
   ]
 }

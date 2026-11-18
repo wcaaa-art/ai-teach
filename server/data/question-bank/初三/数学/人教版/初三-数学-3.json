@@ -6,9 +6,9 @@
     "id": "初三-数学-3",
     "name": "旋转与圆"
   },
-  "generatedAt": "2026-11-13T02:46:27.076Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.183Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedknbn",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：旋转是全等变换，保持图形的形状和大小不变，因此圆⊙O'的半径等于⊙O的半径。\nB. 错误：只有当旋转角为180°时，圆心O'才与O关于点P中心对称；旋转角不是180°时不成立。\nC. 错误：因为P在⊙O外，所以PO>r；旋转保持点P到圆心的距离不变，得PO'=PO>r，因此点P不在⊙O'上。\nD. 错误：两圆不一定相切。例如取PO=3，⊙O半径为1，旋转角为60°，则OO'=2×3×sin30°=3，圆心距3大于两圆半径和2，两圆外离；再取PO=1.5，旋转角为60°，则OO'=2×1.5×sin30°=1.5，圆心距1.5小于半径和2且大于半径差0，两圆相交。两种情况都不相切，所以相切不是必然结论。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "把点 P(3, 2) 绕原点旋转 180° 后得到的点的坐标是（ ）",
+      "options": [
+        "(-3, -2)",
+        "(3, -2)",
+        "(-3, 2)",
+        "(2, 3)"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：(-3, -2)。绕原点旋转 180°，横、纵坐标都变为原来的相反数，所以是 (-3, -2)。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "把点 P(-4, 5) 绕原点旋转 180° 后得到的点的坐标是（ ）",
+      "options": [
+        "(-4, -5)",
+        "(4, 5)",
+        "(5, -4)",
+        "(4, -5)"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：(4, -5)。绕原点旋转 180°，横、纵坐标都变为原来的相反数，所以是 (4, -5)。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "把点 P(6, -1) 绕原点旋转 180° 后得到的点的坐标是（ ）",
+      "options": [
+        "(-6, -1)",
+        "(-1, 6)",
+        "(-6, 1)",
+        "(6, 1)"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：(-6, 1)。绕原点旋转 180°，横、纵坐标都变为原来的相反数，所以是 (-6, 1)。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "把点 P(-2, -7) 绕原点旋转 180° 后得到的点的坐标是（ ）",
+      "options": [
+        "(-7, -2)",
+        "(2, 7)",
+        "(-2, 7)",
+        "(2, -7)"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：(2, 7)。绕原点旋转 180°，横、纵坐标都变为原来的相反数，所以是 (2, 7)。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "把点 P(5, 4) 绕原点旋转 180° 后得到的点的坐标是（ ）",
+      "options": [
+        "(-5, -4)",
+        "(5, -4)",
+        "(-5, 4)",
+        "(4, 5)"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：(-5, -4)。绕原点旋转 180°，横、纵坐标都变为原来的相反数，所以是 (-5, -4)。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "把点 P(-6, 3) 绕原点旋转 180° 后得到的点的坐标是（ ）",
+      "options": [
+        "(-6, -3)",
+        "(6, 3)",
+        "(3, -6)",
+        "(6, -3)"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：(6, -3)。绕原点旋转 180°，横、纵坐标都变为原来的相反数，所以是 (6, -3)。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "把点 P(7, -2) 绕原点旋转 180° 后得到的点的坐标是（ ）",
+      "options": [
+        "(-7, -2)",
+        "(-2, 7)",
+        "(-7, 2)",
+        "(7, 2)"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：(-7, 2)。绕原点旋转 180°，横、纵坐标都变为原来的相反数，所以是 (-7, 2)。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "把点 P(-3, -5) 绕原点旋转 180° 后得到的点的坐标是（ ）",
+      "options": [
+        "(-5, -3)",
+        "(3, 5)",
+        "(-3, 5)",
+        "(3, -5)"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：(3, 5)。绕原点旋转 180°，横、纵坐标都变为原来的相反数，所以是 (3, 5)。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "把点 P(8, 1) 绕原点旋转 180° 后得到的点的坐标是（ ）",
+      "options": [
+        "(-8, -1)",
+        "(8, -1)",
+        "(-8, 1)",
+        "(1, 8)"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：(-8, -1)。绕原点旋转 180°，横、纵坐标都变为原来的相反数，所以是 (-8, -1)。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "把点 P(-5, 6) 绕原点旋转 180° 后得到的点的坐标是（ ）",
+      "options": [
+        "(-5, -6)",
+        "(5, 6)",
+        "(6, -5)",
+        "(5, -6)"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：(5, -6)。绕原点旋转 180°，横、纵坐标都变为原来的相反数，所以是 (5, -6)。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "圆心角为 60°，半径为 6 的弧长是（ ）",
+      "options": [
+        "2π/2",
+        "4π",
+        "2π",
+        "3π"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：2π。弧长 l = nπr/180 = 60π × 6 ÷ 180 = 2π。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "圆心角为 90°，半径为 6 的弧长是（ ）",
+      "options": [
+        "6π",
+        "3π",
+        "4π",
+        "3π/2"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：3π。弧长 l = nπr/180 = 90π × 6 ÷ 180 = 3π。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "圆心角为 120°，半径为 6 的弧长是（ ）",
+      "options": [
+        "4π",
+        "5π",
+        "4π/2",
+        "8π"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：4π。弧长 l = nπr/180 = 120π × 6 ÷ 180 = 4π。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "圆心角为 30°，半径为 12 的弧长是（ ）",
+      "options": [
+        "3π",
+        "2π/2",
+        "4π",
+        "2π"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：2π。弧长 l = nπr/180 = 30π × 12 ÷ 180 = 2π。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "圆心角为 45°，半径为 8 的弧长是（ ）",
+      "options": [
+        "2π/2",
+        "4π",
+        "2π",
+        "3π"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：2π。弧长 l = nπr/180 = 45π × 8 ÷ 180 = 2π。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "圆心角为 72°，半径为 5 的弧长是（ ）",
+      "options": [
+        "4π",
+        "2π",
+        "3π",
+        "2π/2"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：2π。弧长 l = nπr/180 = 72π × 5 ÷ 180 = 2π。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "圆心角为 36°，半径为 10 的弧长是（ ）",
+      "options": [
+        "2π",
+        "3π",
+        "2π/2",
+        "4π"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：2π。弧长 l = nπr/180 = 36π × 10 ÷ 180 = 2π。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "圆心角为 150°，半径为 6 的弧长是（ ）",
+      "options": [
+        "6π",
+        "5π/2",
+        "10π",
+        "5π"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：5π。弧长 l = nπr/180 = 150π × 6 ÷ 180 = 5π。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "圆心角为 270°，半径为 4 的弧长是（ ）",
+      "options": [
+        "6π/2",
+        "12π",
+        "6π",
+        "7π"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：6π。弧长 l = nπr/180 = 270π × 4 ÷ 180 = 6π。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "圆心角为 90°，半径为 8 的弧长是（ ）",
+      "options": [
+        "8π",
+        "4π",
+        "5π",
+        "4π/2"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：4π。弧长 l = nπr/180 = 90π × 8 ÷ 180 = 4π。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "method",
+      "stem": "圆心角为 90°，半径为 4 的扇形面积是（ ）",
+      "options": [
+        "4π",
+        "5π",
+        "8π",
+        "2π"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：4π。扇形面积 S = nπr²/360 = 90π × 16 ÷ 360 = 4π。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "method",
+      "stem": "圆心角为 120°，半径为 3 的扇形面积是（ ）",
+      "options": [
+        "4π",
+        "6π",
+        "1.5π",
+        "3π"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：3π。扇形面积 S = nπr²/360 = 120π × 9 ÷ 360 = 3π。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "method",
+      "stem": "圆心角为 60°，半径为 6 的扇形面积是（ ）",
+      "options": [
+        "12π",
+        "3π",
+        "6π",
+        "7π"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：6π。扇形面积 S = nπr²/360 = 60π × 36 ÷ 360 = 6π。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "method",
+      "stem": "圆心角为 45°，半径为 4 的扇形面积是（ ）",
+      "options": [
+        "1π",
+        "2π",
+        "3π",
+        "4π"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：2π。扇形面积 S = nπr²/360 = 45π × 16 ÷ 360 = 2π。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "method",
+      "stem": "圆心角为 30°，半径为 6 的扇形面积是（ ）",
+      "options": [
+        "3π",
+        "4π",
+        "6π",
+        "1.5π"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：3π。扇形面积 S = nπr²/360 = 30π × 36 ÷ 360 = 3π。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "method",
+      "stem": "圆心角为 72°，半径为 5 的扇形面积是（ ）",
+      "options": [
+        "6π",
+        "10π",
+        "2.5π",
+        "5π"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：5π。扇形面积 S = nπr²/360 = 72π × 25 ÷ 360 = 5π。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "method",
+      "stem": "圆心角为 90°，半径为 6 的扇形面积是（ ）",
+      "options": [
+        "18π",
+        "4.5π",
+        "9π",
+        "10π"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：9π。扇形面积 S = nπr²/360 = 90π × 36 ÷ 360 = 9π。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "method",
+      "stem": "圆心角为 120°，半径为 6 的扇形面积是（ ）",
+      "options": [
+        "6π",
+        "12π",
+        "13π",
+        "24π"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：12π。扇形面积 S = nπr²/360 = 120π × 36 ÷ 360 = 12π。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "method",
+      "stem": "圆心角为 180°，半径为 4 的扇形面积是（ ）",
+      "options": [
+        "8π",
+        "9π",
+        "16π",
+        "4π"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：8π。扇形面积 S = nπr²/360 = 180π × 16 ÷ 360 = 8π。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-数学-3",
+      "chapterName": "旋转与圆",
+      "type": "single",
+      "dimension": "method",
+      "stem": "圆心角为 36°，半径为 10 的扇形面积是（ ）",
+      "options": [
+        "11π",
+        "20π",
+        "5π",
+        "10π"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：10π。扇形面积 S = nπr²/360 = 36π × 100 ÷ 360 = 10π。",
+      "difficulty": 2
     }
   ]
 }

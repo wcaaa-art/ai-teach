@@ -6,9 +6,9 @@
     "id": "初二-生物-3",
     "name": "动物的运动与行为"
   },
-  "generatedAt": "2026-11-14T12:16:25.064Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.807Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgddqv8",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：木棒可代表骨，但铰链是可活动的连接结构，应代表关节，不能代表骨。\nB. 正确：运动系统主要由骨、关节和骨骼肌组成；铰链使两木棒能绕连接处活动，相当于关节，橡皮筋收缩产生拉力，相当于骨骼肌。\nC. 错误：铰链代表关节而不是骨，橡皮筋能收缩提供动力，代表骨骼肌而不是骨。\nD. 错误：铰链是骨与骨之间可活动的连接，应代表关节；橡皮筋收缩产生动力，应代表骨骼肌。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "哺乳动物的运动系统由（　　）组成",
+      "options": [
+        "骨、关节和肌肉",
+        "骨、皮肤和肌肉",
+        "骨骼、神经和血液",
+        "关节、韧带和皮肤"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：骨、关节和肌肉。按运动系统的组成与骨、关节、肌肉的配合判断，本题正确答案是「骨、关节和肌肉」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "骨骼肌包括（　　）两部分",
+      "options": [
+        "骨和关节",
+        "肌腹和骨",
+        "肌腱和韧带",
+        "肌腱和肌腹"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：肌腱和肌腹。按运动系统的组成与骨、关节、肌肉的配合判断，本题正确答案是「肌腱和肌腹」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "骨骼肌两端的肌腱通常附着在（　　）",
+      "options": [
+        "关节面上",
+        "皮肤上",
+        "不同的骨上",
+        "同一块骨的两端"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：不同的骨上。按运动系统的组成与骨、关节、肌肉的配合判断，本题正确答案是「不同的骨上」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "关节中能减少骨与骨之间摩擦的结构是（　　）",
+      "options": [
+        "韧带",
+        "关节软骨",
+        "关节囊",
+        "关节腔"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：关节软骨。按运动系统的组成与骨、关节、肌肉的配合判断，本题正确答案是「关节软骨」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "关节腔内含有（　　），能润滑关节",
+      "options": [
+        "滑液",
+        "血液",
+        "空气",
+        "消化液"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：滑液。按运动系统的组成与骨、关节、肌肉的配合判断，本题正确答案是「滑液」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "屈肘时，肱二头肌和肱三头肌的状态是（　　）",
+      "options": [
+        "肱二头肌舒张，肱三头肌收缩",
+        "两者都收缩",
+        "两者都舒张",
+        "肱二头肌收缩，肱三头肌舒张"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：肱二头肌收缩，肱三头肌舒张。按运动系统的组成与骨、关节、肌肉的配合判断，本题正确答案是「肱二头肌收缩，肱三头肌舒张」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "伸肘时，肱二头肌和肱三头肌的状态是（　　）",
+      "options": [
+        "两者都收缩",
+        "两者都舒张",
+        "肱三头肌收缩，肱二头肌舒张",
+        "肱二头肌收缩，肱三头肌舒张"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：肱三头肌收缩，肱二头肌舒张。按运动系统的组成与骨、关节、肌肉的配合判断，本题正确答案是「肱三头肌收缩，肱二头肌舒张」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "运动过程中，骨、关节、骨骼肌分别起（　　）作用",
+      "options": [
+        "杠杆、动力、支点",
+        "杠杆、支点、动力",
+        "支点、杠杆、动力",
+        "动力、支点、杠杆"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：杠杆、支点、动力。按运动系统的组成与骨、关节、肌肉的配合判断，本题正确答案是「杠杆、支点、动力」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "关节头从关节窝中滑脱出来的现象叫（　　）",
+      "options": [
+        "脱臼",
+        "骨折",
+        "肌肉拉伤",
+        "关节炎"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：脱臼。按运动系统的组成与骨、关节、肌肉的配合判断，本题正确答案是「脱臼」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "运动不仅依靠运动系统，还需要（　　）的调节和配合",
+      "options": [
+        "只需循环系统",
+        "只需呼吸系统",
+        "只需内分泌系统",
+        "神经系统以及消化、呼吸、循环等系统"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：神经系统以及消化、呼吸、循环等系统。按运动系统的组成与骨、关节、肌肉的配合判断，本题正确答案是「神经系统以及消化、呼吸、循环等系统」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "动物生来就有的、由遗传物质决定的行为叫（　　）",
+      "options": [
+        "社会行为",
+        "防御行为",
+        "先天性行为",
+        "学习行为"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：先天性行为。按先天性行为与学习行为的区别判断，本题正确答案是「先天性行为」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在遗传因素基础上，通过生活经验和学习获得的行为叫（　　）",
+      "options": [
+        "非条件反射",
+        "学习行为",
+        "先天性行为",
+        "本能行为"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：学习行为。按先天性行为与学习行为的区别判断，本题正确答案是「学习行为」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列属于先天性行为的是（　　）",
+      "options": [
+        "蜘蛛结网",
+        "老马识途",
+        "鹦鹉学舌",
+        "小狗算数"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：蜘蛛结网。按先天性行为与学习行为的区别判断，本题正确答案是「蜘蛛结网」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列属于学习行为的是（　　）",
+      "options": [
+        "蜜蜂采蜜",
+        "鸟类迁徙",
+        "蜘蛛结网",
+        "海豚表演顶球"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：海豚表演顶球。按先天性行为与学习行为的区别判断，本题正确答案是「海豚表演顶球」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列动物行为中，生来就有的先天性行为是（　　）",
+      "options": [
+        "黑猩猩钓取白蚁",
+        "小狗听到铃声分泌唾液",
+        "鸟类孵卵育雏",
+        "鹦鹉学舌"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：鸟类孵卵育雏。按先天性行为与学习行为的区别判断，本题正确答案是「鸟类孵卵育雏」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列行为中，通过生活经验和学习获得的是（　　）",
+      "options": [
+        "候鸟迁徙",
+        "黑猩猩用树枝钓取白蚁",
+        "婴儿吮奶",
+        "蜘蛛结网"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：黑猩猩用树枝钓取白蚁。按先天性行为与学习行为的区别判断，本题正确答案是「黑猩猩用树枝钓取白蚁」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "动物越高等，学习能力（　　）",
+      "options": [
+        "越强",
+        "越弱",
+        "完全相同",
+        "与低级动物无关"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：越强。按先天性行为与学习行为的区别判断，本题正确答案是「越强」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "学习行为对动物生存的意义是（　　）",
+      "options": [
+        "使动物不再需要先天行为",
+        "使动物完全摆脱遗传控制",
+        "使动物不需要学习",
+        "使动物更好地适应复杂多变的环境"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：使动物更好地适应复杂多变的环境。按先天性行为与学习行为的区别判断，本题正确答案是「使动物更好地适应复杂多变的环境」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "动物建立学习行为的基础是（　　）",
+      "options": [
+        "防御行为",
+        "繁殖行为",
+        "先天性行为",
+        "社会行为"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：先天性行为。按先天性行为与学习行为的区别判断，本题正确答案是「先天性行为」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“尝试与错误”是动物形成（　　）的常见方式",
+      "options": [
+        "非条件反射",
+        "学习行为",
+        "先天性行为",
+        "本能行为"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：学习行为。按先天性行为与学习行为的区别判断，本题正确答案是「学习行为」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "社会行为的重要特征是（　　）",
+      "options": [
+        "群体内部形成一定的组织，成员之间有明确分工",
+        "群体中个体大小相同",
+        "所有个体都独立生活",
+        "群体中没有等级"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：群体内部形成一定的组织，成员之间有明确分工。按社会行为特征与动物信息交流判断，本题正确答案是「群体内部形成一定的组织，成员之间有明确分工」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列动物具有社会行为的是（　　）",
+      "options": [
+        "蝗虫",
+        "青蛙",
+        "鲫鱼",
+        "蜜蜂"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：蜜蜂。按社会行为特征与动物信息交流判断，本题正确答案是「蜜蜂」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "蚂蚁群体中，负责觅食、筑巢的主要是（　　）",
+      "options": [
+        "雄蚁",
+        "兵蚁",
+        "工蚁",
+        "蚁后"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：工蚁。按社会行为特征与动物信息交流判断，本题正确答案是「工蚁」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "蜜蜂通过“舞蹈”向同伴传递的信息是（　　）",
+      "options": [
+        "巢穴的温度",
+        "蜜源的方位和距离",
+        "天敌的数量",
+        "蜂王的年龄"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：蜜源的方位和距离。按社会行为特征与动物信息交流判断，本题正确答案是「蜜源的方位和距离」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "蚂蚁主要依靠（　　）进行信息交流",
+      "options": [
+        "气味（信息素）",
+        "声音",
+        "光线",
+        "磁场"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：气味（信息素）。按社会行为特征与动物信息交流判断，本题正确答案是「气味（信息素）」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "动物信息交流的意义在于（　　）",
+      "options": [
+        "使动物个体完全独立",
+        "减少动物数量",
+        "改变动物的遗传物质",
+        "有利于群体觅食、御敌和繁殖"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：有利于群体觅食、御敌和繁殖。按社会行为特征与动物信息交流判断，本题正确答案是「有利于群体觅食、御敌和繁殖」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "蝙蝠利用回声定位导航，人类据此发明了（　　）",
+      "options": [
+        "望远镜",
+        "超声波碎石机",
+        "雷达",
+        "显微镜"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：雷达。按社会行为特征与动物信息交流判断，本题正确答案是「雷达」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "动物在生物圈中的作用不包括（　　）",
+      "options": [
+        "帮助植物传播种子",
+        "进行光合作用制造有机物",
+        "促进物质循环",
+        "帮助植物传粉"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：进行光合作用制造有机物。按社会行为特征与动物信息交流判断，本题正确答案是「进行光合作用制造有机物」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "大量捕杀某种野生动物，最可能导致（　　）",
+      "options": [
+        "该地区生态平衡受到破坏",
+        "该地区植物全部死亡",
+        "该地区气候立即改变",
+        "其他动物全部灭绝"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：该地区生态平衡受到破坏。按社会行为特征与动物信息交流判断，本题正确答案是「该地区生态平衡受到破坏」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-生物-3",
+      "chapterName": "动物的运动与行为",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "用性引诱剂诱杀农业害虫，利用的是（　　）",
+      "options": [
+        "昆虫的呼吸作用",
+        "植物的光合作用",
+        "鸟类的捕食行为",
+        "昆虫的信息交流（性外激素）"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：昆虫的信息交流（性外激素）。按社会行为特征与动物信息交流判断，本题正确答案是「昆虫的信息交流（性外激素）」。",
+      "difficulty": 2
     }
   ]
 }

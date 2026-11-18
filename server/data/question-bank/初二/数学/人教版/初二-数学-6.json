@@ -6,9 +6,9 @@
     "id": "初二-数学-6",
     "name": "勾股定理"
   },
-  "generatedAt": "2026-11-13T02:44:34.318Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.165Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedilqj",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：梯子、墙面和地面构成直角三角形，梯长为斜边，水平距离 5 m 为一条直角边。设高度为 h，由勾股定理得 h^2+5^2=13^2，所以 h^2=169-25=144，h=12（取正值），即高度为 12 m。\nB. 错误：8 m 来自直接用 13-5=8，这是把斜边与直角边直接相减；勾股定理要求先平方再求差，不能这样计算。\nC. 错误：18 m 来自 13+5=18，斜边不可能等于两条直角边长度之和，且本题中 13 m 是斜边，不是另一条直角边。\nD. 错误：√194 m 来自计算 √(13^2+5^2)，这是把 13 m 和 5 m 都当成了直角边；但梯子长为斜边，5 m 才是直角边，因此不符合题意。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "直角三角形两条直角边长分别为 3 和 4，斜边长是（ ）",
+      "options": [
+        "5",
+        "7",
+        "4",
+        "6"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：5。由勾股定理，斜边 = √(3² + 4²) = √25 = 5。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "直角三角形两条直角边长分别为 5 和 12，斜边长是（ ）",
+      "options": [
+        "17",
+        "12",
+        "14",
+        "13"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：13。由勾股定理，斜边 = √(5² + 12²) = √169 = 13。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "直角三角形两条直角边长分别为 6 和 8，斜边长是（ ）",
+      "options": [
+        "9",
+        "11",
+        "10",
+        "14"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：10。由勾股定理，斜边 = √(6² + 8²) = √100 = 10。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "直角三角形两条直角边长分别为 8 和 15，斜边长是（ ）",
+      "options": [
+        "18",
+        "17",
+        "23",
+        "16"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：17。由勾股定理，斜边 = √(8² + 15²) = √289 = 17。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "直角三角形两条直角边长分别为 7 和 24，斜边长是（ ）",
+      "options": [
+        "25",
+        "31",
+        "24",
+        "26"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：25。由勾股定理，斜边 = √(7² + 24²) = √625 = 25。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "直角三角形两条直角边长分别为 9 和 12，斜边长是（ ）",
+      "options": [
+        "21",
+        "14",
+        "16",
+        "15"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：15。由勾股定理，斜边 = √(9² + 12²) = √225 = 15。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "直角三角形两条直角边长分别为 12 和 16，斜边长是（ ）",
+      "options": [
+        "19",
+        "21",
+        "20",
+        "28"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：20。由勾股定理，斜边 = √(12² + 16²) = √400 = 20。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "直角三角形两条直角边长分别为 20 和 21，斜边长是（ ）",
+      "options": [
+        "30",
+        "29",
+        "41",
+        "28"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：29。由勾股定理，斜边 = √(20² + 21²) = √841 = 29。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "直角三角形两条直角边长分别为 9 和 40，斜边长是（ ）",
+      "options": [
+        "41",
+        "49",
+        "40",
+        "42"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：41。由勾股定理，斜边 = √(9² + 40²) = √1681 = 41。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "直角三角形两条直角边长分别为 15 和 20，斜边长是（ ）",
+      "options": [
+        "35",
+        "24",
+        "26",
+        "25"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：25。由勾股定理，斜边 = √(15² + 20²) = √625 = 25。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "直角三角形的斜边长为 5，一条直角边长为 3，另一条直角边长是（ ）",
+      "options": [
+        "7",
+        "5",
+        "4",
+        "2"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：4。由勾股定理，另一边 = √(5² - 3²) = √16 = 4。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "直角三角形的斜边长为 13，一条直角边长为 5，另一条直角边长是（ ）",
+      "options": [
+        "13",
+        "12",
+        "8",
+        "17"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：12。由勾股定理，另一边 = √(13² - 5²) = √144 = 12。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "直角三角形的斜边长为 10，一条直角边长为 6，另一条直角边长是（ ）",
+      "options": [
+        "8",
+        "4",
+        "14",
+        "9"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：8。由勾股定理，另一边 = √(10² - 6²) = √64 = 8。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "直角三角形的斜边长为 17，一条直角边长为 8，另一条直角边长是（ ）",
+      "options": [
+        "9",
+        "23",
+        "16",
+        "15"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：15。由勾股定理，另一边 = √(17² - 8²) = √225 = 15。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "直角三角形的斜边长为 25，一条直角边长为 7，另一条直角边长是（ ）",
+      "options": [
+        "31",
+        "25",
+        "24",
+        "18"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：24。由勾股定理，另一边 = √(25² - 7²) = √576 = 24。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "直角三角形的斜边长为 15，一条直角边长为 9，另一条直角边长是（ ）",
+      "options": [
+        "13",
+        "12",
+        "6",
+        "21"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：12。由勾股定理，另一边 = √(15² - 9²) = √144 = 12。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "直角三角形的斜边长为 20，一条直角边长为 12，另一条直角边长是（ ）",
+      "options": [
+        "16",
+        "8",
+        "28",
+        "17"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：16。由勾股定理，另一边 = √(20² - 12²) = √256 = 16。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "直角三角形的斜边长为 29，一条直角边长为 20，另一条直角边长是（ ）",
+      "options": [
+        "9",
+        "41",
+        "22",
+        "21"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：21。由勾股定理，另一边 = √(29² - 20²) = √441 = 21。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "直角三角形的斜边长为 41，一条直角边长为 9，另一条直角边长是（ ）",
+      "options": [
+        "49",
+        "41",
+        "40",
+        "32"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：40。由勾股定理，另一边 = √(41² - 9²) = √1600 = 40。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "直角三角形的斜边长为 25，一条直角边长为 15，另一条直角边长是（ ）",
+      "options": [
+        "21",
+        "20",
+        "10",
+        "35"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：20。由勾股定理，另一边 = √(25² - 15²) = √400 = 20。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "method",
+      "stem": "下列三组线段中，能组成直角三角形的是（ ）",
+      "options": [
+        "3，4，5",
+        "3，4，6",
+        "3，5，5",
+        "4，4，5"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：3，4，5。3² + 4² = 25 = 5²，符合勾股定理的逆定理，所以能组成直角三角形。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "长度分别为 3、4、5 的三条线段，下列判断正确的是（ ）",
+      "options": [
+        "能组成直角三角形",
+        "不能组成直角三角形",
+        "一定能组成等腰三角形",
+        "一定能组成等边三角形"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：能组成直角三角形。3² + 4² = 25 = 5²，满足勾股定理的逆定理，能组成直角三角形。",
+      "difficulty": 2
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "长度分别为 5、12、13 的三条线段，下列判断正确的是（ ）",
+      "options": [
+        "不能组成直角三角形",
+        "一定能组成等腰三角形",
+        "一定能组成等边三角形",
+        "能组成直角三角形"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：能组成直角三角形。5² + 12² = 169 = 13²，满足勾股定理的逆定理，能组成直角三角形。",
+      "difficulty": 2
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "长度分别为 6、8、10 的三条线段，下列判断正确的是（ ）",
+      "options": [
+        "一定能组成等腰三角形",
+        "一定能组成等边三角形",
+        "能组成直角三角形",
+        "不能组成直角三角形"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：能组成直角三角形。6² + 8² = 100 = 10²，满足勾股定理的逆定理，能组成直角三角形。",
+      "difficulty": 2
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "长度分别为 8、15、17 的三条线段，下列判断正确的是（ ）",
+      "options": [
+        "一定能组成等边三角形",
+        "能组成直角三角形",
+        "不能组成直角三角形",
+        "一定能组成等腰三角形"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：能组成直角三角形。8² + 15² = 289 = 17²，满足勾股定理的逆定理，能组成直角三角形。",
+      "difficulty": 2
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "长度分别为 7、24、25 的三条线段，下列判断正确的是（ ）",
+      "options": [
+        "能组成直角三角形",
+        "不能组成直角三角形",
+        "一定能组成等腰三角形",
+        "一定能组成等边三角形"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：能组成直角三角形。7² + 24² = 625 = 25²，满足勾股定理的逆定理，能组成直角三角形。",
+      "difficulty": 2
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "长度分别为 3、4、6 的三条线段，下列判断正确的是（ ）",
+      "options": [
+        "能组成直角三角形",
+        "一定能组成等腰三角形",
+        "一定能组成等边三角形",
+        "不能组成直角三角形"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：不能组成直角三角形。3² + 4² = 25 ≠ 36 = 6²，不满足勾股定理的逆定理，不能组成直角三角形。",
+      "difficulty": 2
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "长度分别为 5、12、14 的三条线段，下列判断正确的是（ ）",
+      "options": [
+        "一定能组成等腰三角形",
+        "一定能组成等边三角形",
+        "不能组成直角三角形",
+        "能组成直角三角形"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：不能组成直角三角形。5² + 12² = 169 ≠ 196 = 14²，不满足勾股定理的逆定理，不能组成直角三角形。",
+      "difficulty": 2
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "长度分别为 6、8、9 的三条线段，下列判断正确的是（ ）",
+      "options": [
+        "一定能组成等边三角形",
+        "不能组成直角三角形",
+        "能组成直角三角形",
+        "一定能组成等腰三角形"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：不能组成直角三角形。6² + 8² = 100 ≠ 81 = 9²，不满足勾股定理的逆定理，不能组成直角三角形。",
+      "difficulty": 2
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-数学-6",
+      "chapterName": "勾股定理",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "长度分别为 8、15、16 的三条线段，下列判断正确的是（ ）",
+      "options": [
+        "不能组成直角三角形",
+        "能组成直角三角形",
+        "一定能组成等腰三角形",
+        "一定能组成等边三角形"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：不能组成直角三角形。8² + 15² = 289 ≠ 256 = 16²，不满足勾股定理的逆定理，不能组成直角三角形。",
+      "difficulty": 2
     }
   ]
 }

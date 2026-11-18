@@ -30,7 +30,7 @@ function reload() {
   <div v-else class="error-boundary" role="alert">
     <div class="eb-icon" aria-hidden="true">⚠</div>
     <h2 class="eb-title">这个页面出了点问题</h2>
-    <p class="eb-desc">当前页面渲染时遇到了意外错误，你的学习数据仍然安全，换个页面或刷新即可继续。</p>
+    <p class="eb-desc">当前页面渲染时遇到了意外错误，你的学习数据仍然安全，换个页面或刷新即可继续</p>
     <div class="eb-actions">
       <button class="eb-retry" type="button" @click="retry">重试</button>
       <button class="eb-refresh" type="button" @click="reload">刷新页面</button>

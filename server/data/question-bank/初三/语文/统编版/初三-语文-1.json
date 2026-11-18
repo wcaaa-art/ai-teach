@@ -4,16 +4,16 @@
   "edition": "统编版",
   "chapter": {
     "id": "初三-语文-1",
-    "name": "九上：议论文阅读与论证"
+    "name": "议论文阅读与论证"
   },
-  "generatedAt": "2026-11-14T12:16:49.422Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.893Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdedjc",
       "chapterId": "初三-语文-1",
-      "chapterName": "九上：议论文阅读与论证",
+      "chapterName": "议论文阅读与论证",
       "type": "single",
       "dimension": "concept",
       "stem": "下列关于议论文中心论点判断的表述，正确的一项是",
@@ -30,7 +30,7 @@
     {
       "id": "diag-2-mwgdedjc",
       "chapterId": "初三-语文-1",
-      "chapterName": "九上：议论文阅读与论证",
+      "chapterName": "议论文阅读与论证",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读下面语段，指出其中心论点。语段：读书不是装点门面的饰物，而是照亮前路的灯。一个人若只把书当作谈资，遇到实际问题仍会束手无策；唯有把书中道理化为行动，知识才能真正产生力量。下列作为该语段中心论点最恰当的一项是？",
@@ -47,7 +47,7 @@
     {
       "id": "diag-3-mwgdedjc",
       "chapterId": "初三-语文-1",
-      "chapterName": "九上：议论文阅读与论证",
+      "chapterName": "议论文阅读与论证",
       "type": "single",
       "dimension": "transfer",
       "stem": "阅读下面一段议论性文字，完成题目。\n有人担心，短视频会让人失去深度阅读的耐心。其实，问题不在媒介长短，而在我们是否愿意为自己设置“停下来想一想”的环节。读一篇长文时，若只是滑动屏幕、追逐结论，长文也会被读成碎片；看一段短视频时，若能暂停、追问、查证，短片也可能成为思考的入口。因此，与其把耐心下降归咎于某种媒介，不如练习在每一次接收信息时主动停留、辨别和连接。真正的深度，不是由阅读时长自动带来的，而是由思考的密度决定的。\n下列对这段文字论证的分析，正确的一项是（ ）",
@@ -64,7 +64,7 @@
     {
       "id": "diag-4-mwgdedjc",
       "chapterId": "初三-语文-1",
-      "chapterName": "九上：议论文阅读与论证",
+      "chapterName": "议论文阅读与论证",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "阅读下面语段，完成题目。\n①坚持不是盲目重复，而是朝着明确目标持续用力。②王羲之临池学书，池水尽墨，正因他以精进书艺为目标，日复一日地练习，才把寻常的坚持沉淀为非凡的造诣。③反之，若只机械抄写而不思考方向，再多的重复也难有长进。④可见，目标如同航标，让坚持有方向，也让重复产生意义。\n下列对语段论证的分析，正确的一项是（　　）",
@@ -81,7 +81,7 @@
     {
       "id": "diag-5-mwgdedjc",
       "chapterId": "初三-语文-1",
-      "chapterName": "九上：议论文阅读与论证",
+      "chapterName": "议论文阅读与论证",
       "type": "single",
       "dimension": "concept",
       "stem": "下列关于议论文中论点、论据与论证三者关系的表述，正确的一项是（　　）",
@@ -98,7 +98,7 @@
     {
       "id": "diag-6-mwgdedjc",
       "chapterId": "初三-语文-1",
-      "chapterName": "九上：议论文阅读与论证",
+      "chapterName": "议论文阅读与论证",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读下面的议论性语段，完成题目。\n读书需要“笨功夫”。清代学者章学诚年轻时读书贪多求快，日记里堆满摘抄却理不出头绪；后来他改变做法，每读一书必先立提纲，再逐条追问，终于写成《文史通义》。可见，读书若只求数量，所得不过是散落的珠子；肯下笨功夫把珠子一颗颗串起来，知识才会真正变成自己的。\n下列对这段文字论证的分析，正确的一项是（　　）",
@@ -115,7 +115,7 @@
     {
       "id": "diag-7-mwgdedjc",
       "chapterId": "初三-语文-1",
-      "chapterName": "九上：议论文阅读与论证",
+      "chapterName": "议论文阅读与论证",
       "type": "single",
       "dimension": "transfer",
       "stem": "阅读下面一段议论性文字，完成题目。\n“有人认为，读书贵在速度，读得越多越有收获。其实不然。读书若只追求数量，如同赶路只顾里程而不看风景，往往收获寥寥。苏轼读《汉书》反复抄写、分主题研读，每读一遍都有新得；钱钟书读书做笔记，一本书常读数月。可见，读书的质量不取决于翻过多少页，而取决于是否沉入思考。与其匆匆浏览十本，不如精读一本。”\n若为这段文字补充一个论据，下列材料中最恰当的一项是（ ）",
@@ -132,7 +132,7 @@
     {
       "id": "diag-8-mwgdedjc",
       "chapterId": "初三-语文-1",
-      "chapterName": "九上：议论文阅读与论证",
+      "chapterName": "议论文阅读与论证",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "阅读下面语段，完成题目。\n读书贵在涵泳。有人以“读得多”为荣，却往往浮光掠影，所得甚浅；相反，若能对经典片段反复咀嚼，体会其语气、脉络与言外之意，反而更容易把书中的养分化为自己的见识。可见，读书的价值不在数量，而在是否沉入文本、深入思考。\n下列对这段文字论证的分析，不正确的一项是（ ）",
@@ -149,7 +149,7 @@
     {
       "id": "diag-9-mwgdedjc",
       "chapterId": "初三-语文-1",
-      "chapterName": "九上：议论文阅读与论证",
+      "chapterName": "议论文阅读与论证",
       "type": "single",
       "dimension": "concept",
       "stem": "下列关于议论文文体知识的表述，正确的一项是（　　）",
@@ -166,7 +166,7 @@
     {
       "id": "diag-10-mwgdedjc",
       "chapterId": "初三-语文-1",
-      "chapterName": "九上：议论文阅读与论证",
+      "chapterName": "议论文阅读与论证",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读下面一段议论文字，完成题目。\n读书贵在质疑。宋代学者陆九渊说：“为学患无疑，疑则有进。”带着问题读书，能把书本知识转化为自己的思考；一味接受，则可能成为知识的搬运工。\n下列对这段文字的理解，正确的一项是（ ）",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：这段文字的论点是开头提出的“读书贵在质疑”，“陆九渊是宋代著名学者”只是引用名言时出现的背景信息，并非作者要证明的观点。\nB. 正确：引用陆九渊“为学患无疑，疑则有进”的话，属于道理论据，直接支撑“读书贵在质疑”这一中心论点。\nC. 错误：“知识的搬运工”是把一味接受、缺乏思考的人比作搬运工，属于比喻论证（或比喻说法），不是举出具体事例来证明观点。\nD. 错误：文段最后将“带着问题读书”与“一味接受”进行对比，既有正面阐述也有反面提醒，并非只从反面总结，也不是没有正反对比。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "议论文的中心论点是（　　）",
+      "options": [
+        "作者对论述问题的主要见解和主张",
+        "文章的主要材料",
+        "文章的论证方法",
+        "文章的结构方式"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：作者对论述问题的主要见解和主张。按议论文论点与论据的知识判断，本题正确答案是「作者对论述问题的主要见解和主张」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "分论点是（　　）",
+      "options": [
+        "与中心论点无关的观点",
+        "文章的事实材料",
+        "文章的结论",
+        "围绕中心论点展开的从属观点"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：围绕中心论点展开的从属观点。按议论文论点与论据的知识判断，本题正确答案是「围绕中心论点展开的从属观点」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "事实论据包括（　　）",
+      "options": [
+        "作者的想象",
+        "文章的标题",
+        "具体事例、史实、统计数据等",
+        "名言警句、科学原理"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：具体事例、史实、统计数据等。按议论文论点与论据的知识判断，本题正确答案是「具体事例、史实、统计数据等」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "道理论据包括（　　）",
+      "options": [
+        "统计数据",
+        "名言警句、科学原理、定理等",
+        "历史事件",
+        "具体事例"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：名言警句、科学原理、定理等。按议论文论点与论据的知识判断，本题正确答案是「名言警句、科学原理、定理等」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "论据与论点的关系是（　　）",
+      "options": [
+        "论据必须能证明论点",
+        "论据与论点无关",
+        "论点必须证明论据",
+        "二者可以相互矛盾"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：论据必须能证明论点。按议论文论点与论据的知识判断，本题正确答案是「论据必须能证明论点」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "判断论据是否恰当，主要看（　　）",
+      "options": [
+        "论据是否新奇",
+        "论据是否简短",
+        "论据是否来自名人",
+        "论据是否真实、典型，能否证明论点"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：论据是否真实、典型，能否证明论点。按议论文论点与论据的知识判断，本题正确答案是「论据是否真实、典型，能否证明论点」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "补写论据时，应该（　　）",
+      "options": [
+        "选择与论点无关的材料",
+        "只写名言",
+        "选择真实、典型、能证明论点的材料",
+        "随意编造"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：选择真实、典型、能证明论点的材料。按议论文论点与论据的知识判断，本题正确答案是「选择真实、典型、能证明论点的材料」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "中心论点通常出现在（　　）",
+      "options": [
+        "只能在注释",
+        "标题、开头、结尾或文中关键处",
+        "只能在标题",
+        "只能在结尾"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：标题、开头、结尾或文中关键处。按议论文论点与论据的知识判断，本题正确答案是「标题、开头、结尾或文中关键处」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "概括中心论点，应该（　　）",
+      "options": [
+        "统观全文，抓住作者的主要观点",
+        "只看第一句",
+        "只看最后一个字",
+        "只凭标题猜测"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：统观全文，抓住作者的主要观点。按议论文论点与论据的知识判断，本题正确答案是「统观全文，抓住作者的主要观点」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“论点要鲜明”是指（　　）",
+      "options": [
+        "语言华丽",
+        "篇幅很长",
+        "材料很多",
+        "观点明确，赞成什么反对什么清清楚楚"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：观点明确，赞成什么反对什么清清楚楚。按议论文论点与论据的知识判断，本题正确答案是「观点明确，赞成什么反对什么清清楚楚」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“袁隆平几十年如一日研究杂交水稻，终于取得成功”运用的论证方法是（　　）",
+      "options": [
+        "对比论证",
+        "比喻论证",
+        "举例论证",
+        "道理论证"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：举例论证。按论证方法与论证结构判断，本题正确答案是「举例论证」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“古人说：‘锲而不舍，金石可镂。’”运用的论证方法是（　　）",
+      "options": [
+        "比喻论证",
+        "道理论证",
+        "举例论证",
+        "对比论证"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：道理论证。按论证方法与论证结构判断，本题正确答案是「道理论证」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“有的人勤奋刻苦，有的人虚度光阴”运用的论证方法是（　　）",
+      "options": [
+        "对比论证",
+        "举例论证",
+        "道理论证",
+        "比喻论证"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：对比论证。按论证方法与论证结构判断，本题正确答案是「对比论证」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“知识就像灯塔，照亮前行的道路”运用的论证方法是（　　）",
+      "options": [
+        "举例论证",
+        "道理论证",
+        "对比论证",
+        "比喻论证"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：比喻论证。按论证方法与论证结构判断，本题正确答案是「比喻论证」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "举例论证的作用是（　　）",
+      "options": [
+        "使结构复杂",
+        "使情节曲折",
+        "使论证具体、有说服力",
+        "使语言含蓄"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：使论证具体、有说服力。按论证方法与论证结构判断，本题正确答案是「使论证具体、有说服力」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "对比论证的作用是（　　）",
+      "options": [
+        "设置悬念",
+        "突出论点，使论证更鲜明",
+        "增加文章字数",
+        "使语言委婉"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：突出论点，使论证更鲜明。按论证方法与论证结构判断，本题正确答案是「突出论点，使论证更鲜明」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "比喻论证的作用是（　　）",
+      "options": [
+        "使论证通俗易懂、形象生动",
+        "使论证更严密",
+        "使文章更简洁",
+        "使结构更复杂"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：使论证通俗易懂、形象生动。按论证方法与论证结构判断，本题正确答案是「使论证通俗易懂、形象生动」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "立论是指（　　）",
+      "options": [
+        "反驳对方观点",
+        "只叙述事实",
+        "只抒发情感",
+        "直接提出并证明自己的观点"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：直接提出并证明自己的观点。按论证方法与论证结构判断，本题正确答案是「直接提出并证明自己的观点」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "驳论是指（　　）",
+      "options": [
+        "只列举材料",
+        "只描写人物",
+        "反驳错误观点，树立自己的观点",
+        "只提出观点"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：反驳错误观点，树立自己的观点。按论证方法与论证结构判断，本题正确答案是「反驳错误观点，树立自己的观点」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "议论文常见的论证结构是（　　）",
+      "options": [
+        "总—分—总—分",
+        "提出问题—分析问题—解决问题",
+        "起因—经过—结果",
+        "时间—空间—逻辑"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：提出问题—分析问题—解决问题。按论证方法与论证结构判断，本题正确答案是「提出问题—分析问题—解决问题」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "分析论证思路，应该（　　）",
+      "options": [
+        "理清作者怎样提出观点、分析论证并得出结论",
+        "只看文章标题",
+        "只数段落",
+        "只找论据"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：理清作者怎样提出观点、分析论证并得出结论。按论证思路、语言与观点评价判断，本题正确答案是「理清作者怎样提出观点、分析论证并得出结论」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "议论文开头引用名言的作用可能是（　　）",
+      "options": [
+        "增加文章字数",
+        "塑造人物",
+        "交代背景",
+        "引出论题或论点，增强说服力"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：引出论题或论点，增强说服力。按论证思路、语言与观点评价判断，本题正确答案是「引出论题或论点，增强说服力」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "议论文结尾的作用通常是（　　）",
+      "options": [
+        "引出新情节",
+        "描写人物",
+        "总结全文，深化论点",
+        "设置悬念"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：总结全文，深化论点。按论证思路、语言与观点评价判断，本题正确答案是「总结全文，深化论点」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "议论文语言的基本特点是（　　）",
+      "options": [
+        "幽默、讽刺",
+        "准确、严密、有逻辑性",
+        "含蓄、朦胧",
+        "华丽、夸张"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：准确、严密、有逻辑性。按论证思路、语言与观点评价判断，本题正确答案是「准确、严密、有逻辑性」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“首先”“其次”“最后”等词语的作用是（　　）",
+      "options": [
+        "使论证层次清晰",
+        "增加文学色彩",
+        "抒发情感",
+        "设置悬念"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：使论证层次清晰。按论证思路、语言与观点评价判断，本题正确答案是「使论证层次清晰」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "评价作者观点，应该（　　）",
+      "options": [
+        "全盘接受",
+        "全盘否定",
+        "不作思考",
+        "辩证分析，既看到合理之处也看到局限"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：辩证分析，既看到合理之处也看到局限。按论证思路、语言与观点评价判断，本题正确答案是「辩证分析，既看到合理之处也看到局限」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "联系实际谈看法，应该（　　）",
+      "options": [
+        "只写个人感受",
+        "否定作者观点",
+        "紧扣文章观点，结合具体事例",
+        "脱离文章随意发挥"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：紧扣文章观点，结合具体事例。按论证思路、语言与观点评价判断，本题正确答案是「紧扣文章观点，结合具体事例」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "判断论证是否充分，主要看（　　）",
+      "options": [
+        "作者是否有名",
+        "论据是否典型充足、论证是否严密",
+        "文章是否够长",
+        "语言是否华丽"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：论据是否典型充足、论证是否严密。按论证思路、语言与观点评价判断，本题正确答案是「论据是否典型充足、论证是否严密」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "补充一个反面论据，应该（　　）",
+      "options": [
+        "选择能证明相反观点的事实或道理",
+        "选择与论点相同的材料",
+        "随意编造",
+        "只写名言"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：选择能证明相反观点的事实或道理。按论证思路、语言与观点评价判断，本题正确答案是「选择能证明相反观点的事实或道理」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-语文-1",
+      "chapterName": "议论文阅读与论证",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“由此可见”在议论文中通常用来（　　）",
+      "options": [
+        "提出论据",
+        "描写人物",
+        "设置悬念",
+        "引出结论"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：引出结论。按论证思路、语言与观点评价判断，本题正确答案是「引出结论」。",
+      "difficulty": 2
     }
   ]
 }

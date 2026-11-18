@@ -6,9 +6,9 @@
     "id": "初三-历史-5",
     "name": "世界现代史"
   },
-  "generatedAt": "2026-11-14T12:17:51.978Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.112Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdfpt1",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 2,
       "explanation": "A. 错误：新政是在维护资本主义制度的前提下加强国家对经济的干预，生产资料私有制并未改变，也没有建立计划经济体制，各企业仍自主经营。\nB. 错误：资本主义社会的基本矛盾是生产社会化与生产资料私人占有之间的矛盾，新政只能缓解危机的破坏，不能从根本上消除这一矛盾，此后美国仍多次发生经济危机。\nC. 正确：《全国工业复兴法》是罗斯福新政调整工业的中心措施，通过行业规章约束盲目竞争、限制生产规模与价格、规定工资和工时，以减少生产过剩、缓和劳资冲突，从而缓和经济危机。\nD. 错误：对外侵略扩张转嫁危机是当时德、日法西斯势力走上侵略道路的做法，而美国新政是立足国内的国家干预改革，并未以对外扩张作为摆脱危机的手段。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "第一次世界大战爆发于（ ）",
+      "options": [
+        "1914年",
+        "1917年",
+        "1918年",
+        "1939年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1914年。按第一次世界大战与十月革命的史实判断，本题正确答案是「1914年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "第一次世界大战的导火线是（ ）",
+      "options": [
+        "珍珠港事件",
+        "慕尼黑阴谋",
+        "九一八事变",
+        "萨拉热窝事件"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：萨拉热窝事件。按第一次世界大战与十月革命的史实判断，本题正确答案是「萨拉热窝事件」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "第一次世界大战的交战双方是（ ）",
+      "options": [
+        "北约与华约",
+        "美国与苏联",
+        "同盟国与协约国",
+        "轴心国与反法西斯同盟"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：同盟国与协约国。按第一次世界大战与十月革命的史实判断，本题正确答案是「同盟国与协约国」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "第一次世界大战结束于（ ）",
+      "options": [
+        "1919年",
+        "1918年",
+        "1914年",
+        "1917年"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1918年。按第一次世界大战与十月革命的史实判断，本题正确答案是「1918年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "第一次世界大战的性质是（ ）",
+      "options": [
+        "帝国主义战争",
+        "民族解放战争",
+        "反法西斯战争",
+        "国内革命战争"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：帝国主义战争。按第一次世界大战与十月革命的史实判断，本题正确答案是「帝国主义战争」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "十月革命爆发于（ ）",
+      "options": [
+        "1905年",
+        "1918年",
+        "1921年",
+        "1917年"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1917年。按第一次世界大战与十月革命的史实判断，本题正确答案是「1917年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "十月革命爆发的地点是（ ）",
+      "options": [
+        "柏林",
+        "巴黎",
+        "彼得格勒",
+        "莫斯科"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：彼得格勒。按第一次世界大战与十月革命的史实判断，本题正确答案是「彼得格勒」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "十月革命的领导者是（ ）",
+      "options": [
+        "恩格斯",
+        "列宁",
+        "斯大林",
+        "马克思"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：列宁。按第一次世界大战与十月革命的史实判断，本题正确答案是「列宁」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "世界上第一个社会主义国家是（ ）",
+      "options": [
+        "苏俄",
+        "苏联",
+        "中国",
+        "法国"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：苏俄。按第一次世界大战与十月革命的史实判断，本题正确答案是「苏俄」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "十月革命的历史意义是（ ）",
+      "options": [
+        "结束第一次世界大战",
+        "推翻沙皇专制统治",
+        "建立资产阶级政权",
+        "建立世界上第一个无产阶级专政的国家"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：建立世界上第一个无产阶级专政的国家。按第一次世界大战与十月革命的史实判断，本题正确答案是「建立世界上第一个无产阶级专政的国家」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "第二次世界大战全面爆发的标志是（ ）",
+      "options": [
+        "1937年七七事变",
+        "1941年珍珠港事件",
+        "1939年德国突袭波兰",
+        "1931年九一八事变"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1939年德国突袭波兰。按第二次世界大战的史实判断，本题正确答案是「1939年德国突袭波兰」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "德国突袭波兰的时间是（ ）",
+      "options": [
+        "1941年12月7日",
+        "1939年9月1日",
+        "1937年7月7日",
+        "1941年6月22日"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1939年9月1日。按第二次世界大战的史实判断，本题正确答案是「1939年9月1日」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "苏德战争爆发的标志是（ ）",
+      "options": [
+        "1941年6月德国进攻苏联",
+        "1939年9月德国突袭波兰",
+        "1941年12月日本偷袭珍珠港",
+        "1940年德国进攻法国"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1941年6月德国进攻苏联。按第二次世界大战的史实判断，本题正确答案是「1941年6月德国进攻苏联」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "太平洋战争爆发的标志是（ ）",
+      "options": [
+        "1939年德国突袭波兰",
+        "1941年6月苏德战争爆发",
+        "1942年中途岛海战",
+        "1941年12月日本偷袭珍珠港"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1941年12月日本偷袭珍珠港。按第二次世界大战的史实判断，本题正确答案是「1941年12月日本偷袭珍珠港」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "世界反法西斯同盟正式形成的标志是（ ）",
+      "options": [
+        "1945年雅尔塔会议召开",
+        "1945年联合国成立",
+        "1942年《联合国家宣言》签署",
+        "1941年《大西洋宪章》发表"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1942年《联合国家宣言》签署。按第二次世界大战的史实判断，本题正确答案是「1942年《联合国家宣言》签署」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "第二次世界大战的转折点是（ ）",
+      "options": [
+        "柏林战役",
+        "斯大林格勒战役",
+        "诺曼底登陆",
+        "中途岛海战"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：斯大林格勒战役。按第二次世界大战的史实判断，本题正确答案是「斯大林格勒战役」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "诺曼底登陆发生在（ ）",
+      "options": [
+        "1944年",
+        "1942年",
+        "1943年",
+        "1945年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1944年。按第二次世界大战的史实判断，本题正确答案是「1944年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "雅尔塔会议召开于（ ）",
+      "options": [
+        "1942年",
+        "1943年",
+        "1944年",
+        "1945年"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1945年。按第二次世界大战的史实判断，本题正确答案是「1945年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "德国正式签署投降书的时间是（ ）",
+      "options": [
+        "1945年9月2日",
+        "1944年6月6日",
+        "1945年5月8日",
+        "1945年8月15日"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1945年5月8日。按第二次世界大战的史实判断，本题正确答案是「1945年5月8日」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "第二次世界大战结束的标志是（ ）",
+      "options": [
+        "1945年10月24日联合国成立",
+        "1945年9月2日日本正式签署投降书",
+        "1945年5月8日德国正式投降",
+        "1945年8月15日日本宣布无条件投降"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1945年9月2日日本正式签署投降书。按第二次世界大战的史实判断，本题正确答案是「1945年9月2日日本正式签署投降书」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "冷战开始的标志是（ ）",
+      "options": [
+        "1947年杜鲁门主义出台",
+        "1949年北约成立",
+        "1955年华约成立",
+        "1991年苏联解体"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1947年杜鲁门主义出台。按冷战格局与经济全球化的史实判断，本题正确答案是「1947年杜鲁门主义出台」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "马歇尔计划的实质是（ ）",
+      "options": [
+        "援助苏联恢复经济",
+        "建立军事政治同盟",
+        "对日本实行单独占领",
+        "美国援助西欧复兴经济、控制西欧"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：美国援助西欧复兴经济、控制西欧。按冷战格局与经济全球化的史实判断，本题正确答案是「美国援助西欧复兴经济、控制西欧」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "北大西洋公约组织成立的时间是（ ）",
+      "options": [
+        "1947年",
+        "1955年",
+        "1949年",
+        "1945年"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1949年。按冷战格局与经济全球化的史实判断，本题正确答案是「1949年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "华沙条约组织成立的时间是（ ）",
+      "options": [
+        "1961年",
+        "1955年",
+        "1947年",
+        "1949年"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1955年。按冷战格局与经济全球化的史实判断，本题正确答案是「1955年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "冷战结束的标志是（ ）",
+      "options": [
+        "1991年苏联解体",
+        "1989年东欧剧变",
+        "1990年两德统一",
+        "1993年欧洲联盟成立"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1991年苏联解体。按冷战格局与经济全球化的史实判断，本题正确答案是「1991年苏联解体」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "欧洲共同体成立的时间是（ ）",
+      "options": [
+        "1951年",
+        "1958年",
+        "1993年",
+        "1967年"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1967年。按冷战格局与经济全球化的史实判断，本题正确答案是「1967年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "欧洲联盟成立的时间是（ ）",
+      "options": [
+        "1989年",
+        "2002年",
+        "1993年",
+        "1967年"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1993年。按冷战格局与经济全球化的史实判断，本题正确答案是「1993年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "世界贸易组织成立的时间是（ ）",
+      "options": [
+        "2001年",
+        "1995年",
+        "1945年",
+        "1947年"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1995年。按冷战格局与经济全球化的史实判断，本题正确答案是「1995年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列现象中，不属于经济全球化表现的是（ ）",
+      "options": [
+        "各国设置贸易壁垒、限制国际贸易",
+        "国际投资不断增长",
+        "跨国公司数量增多",
+        "生产分工国际化"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：各国设置贸易壁垒、限制国际贸易。按冷战格局与经济全球化的史实判断，本题正确答案是「各国设置贸易壁垒、限制国际贸易」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-历史-5",
+      "chapterName": "世界现代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "当今世界政治格局的发展趋势是（ ）",
+      "options": [
+        "单极化",
+        "两极格局",
+        "阵营对抗",
+        "多极化"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：多极化。按冷战格局与经济全球化的史实判断，本题正确答案是「多极化」。",
       "difficulty": 2
     }
   ]

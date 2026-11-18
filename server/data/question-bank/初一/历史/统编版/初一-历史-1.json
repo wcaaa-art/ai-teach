@@ -6,9 +6,9 @@
     "id": "初一-历史-1",
     "name": "中华文明起源与早期国家"
   },
-  "generatedAt": "2026-11-14T12:13:13.505Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.064Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgd9qxq",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：大型城址和水利系统需要组织大量人力，高等级墓葬中的玉器反映墓主人拥有较高身份，说明当时已出现社会分化和公共权力。\nB. 错误：良渚古城属于新石器时代晚期遗址，旧石器时代以打制石器和采集渔猎为主要特征，与题干中的城址、水利系统不符。\nC. 错误：科举选官制度创立于隋朝，良渚古城所处时代远早于隋朝，不可能实行科举选官。\nD. 错误：铁犁牛耕出现并推广于春秋战国时期，良渚古城时期尚未普遍使用铁犁牛耕。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国境内目前已确认的最早的古人类是（ ）",
+      "options": [
+        "元谋人",
+        "北京人",
+        "山顶洞人",
+        "半坡人"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：元谋人。按教材史实判断，本题正确答案是「元谋人」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "北京人生活在距今约（ ）",
+      "options": [
+        "170万年",
+        "3万年",
+        "7000年",
+        "70万—20万年"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：70万—20万年。按教材史实判断，本题正确答案是「70万—20万年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "北京人制作石器的主要方法是（ ）",
+      "options": [
+        "烧制",
+        "铸造",
+        "打制",
+        "磨制"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：打制。按教材史实判断，本题正确答案是「打制」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "北京人已经会使用（ ）",
+      "options": [
+        "牛耕",
+        "天然火",
+        "人工取火",
+        "铁器"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：天然火。按教材史实判断，本题正确答案是「天然火」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "山顶洞人已经掌握（ ）",
+      "options": [
+        "人工取火",
+        "造纸术",
+        "青铜铸造",
+        "铁器冶炼"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：人工取火。按教材史实判断，本题正确答案是「人工取火」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国长江流域原始居民主要种植的农作物是（ ）",
+      "options": [
+        "粟",
+        "小麦",
+        "玉米",
+        "水稻"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：水稻。按教材史实判断，本题正确答案是「水稻」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国黄河流域半坡居民主要种植的农作物是（ ）",
+      "options": [
+        "棉花",
+        "玉米",
+        "粟",
+        "水稻"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：粟。按教材史实判断，本题正确答案是「粟」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "半坡居民居住的房屋主要是（ ）",
+      "options": [
+        "宫殿",
+        "半地穴式圆形房屋",
+        "干栏式建筑",
+        "四合院"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：半地穴式圆形房屋。按教材史实判断，本题正确答案是「半地穴式圆形房屋」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "河姆渡居民居住的房屋主要是（ ）",
+      "options": [
+        "干栏式建筑",
+        "半地穴式圆形房屋",
+        "四合院",
+        "土楼"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：干栏式建筑。按教材史实判断，本题正确答案是「干栏式建筑」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "河姆渡遗址位于（ ）",
+      "options": [
+        "陕西西安",
+        "北京周口店",
+        "云南元谋",
+        "浙江余姚"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：浙江余姚。按教材史实判断，本题正确答案是「浙江余姚」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "被后人尊崇为中华民族「人文初祖」的是（ ）",
+      "options": [
+        "尧",
+        "舜",
+        "黄帝",
+        "炎帝"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：黄帝。结合早期国家的建立与更替判断，本题正确答案是「黄帝」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "炎黄部落联盟打败蚩尤的战役是（ ）",
+      "options": [
+        "巨鹿之战",
+        "涿鹿之战",
+        "牧野之战",
+        "城濮之战"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：涿鹿之战。结合早期国家的建立与更替判断，本题正确答案是「涿鹿之战」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "尧、舜、禹时期推举首领的制度被称为（ ）",
+      "options": [
+        "禅让制",
+        "世袭制",
+        "分封制",
+        "郡县制"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：禅让制。结合早期国家的建立与更替判断，本题正确答案是「禅让制」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "大禹治水成功主要采用的方法是（ ）",
+      "options": [
+        "堵塞",
+        "祭祀",
+        "迁移",
+        "疏导"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：疏导。结合早期国家的建立与更替判断，本题正确答案是「疏导」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国历史上第一个王朝是（ ）",
+      "options": [
+        "西周",
+        "秦朝",
+        "夏朝",
+        "商朝"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：夏朝。结合早期国家的建立与更替判断，本题正确答案是「夏朝」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "夏朝的建立者是（ ）",
+      "options": [
+        "桀",
+        "禹",
+        "启",
+        "汤"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：禹。结合早期国家的建立与更替判断，本题正确答案是「禹」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "夏朝最后一个王是（ ）",
+      "options": [
+        "桀",
+        "纣",
+        "周幽王",
+        "周厉王"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：桀。结合早期国家的建立与更替判断，本题正确答案是「桀」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "商朝的建立者是（ ）",
+      "options": [
+        "禹",
+        "周武王",
+        "盘庚",
+        "汤"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：汤。结合早期国家的建立与更替判断，本题正确答案是「汤」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "商朝后期将都城迁到（ ）",
+      "options": [
+        "镐京",
+        "洛邑",
+        "殷",
+        "阳城"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：殷。结合早期国家的建立与更替判断，本题正确答案是「殷」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "周武王打败商纣王的战役是（ ）",
+      "options": [
+        "长平之战",
+        "牧野之战",
+        "涿鹿之战",
+        "城濮之战"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：牧野之战。结合早期国家的建立与更替判断，本题正确答案是「牧野之战」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "method",
+      "stem": "西周的建立者是（ ）",
+      "options": [
+        "周武王",
+        "周文王",
+        "周厉王",
+        "周幽王"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：周武王。按西周制度与青铜文明的基本史实判断，本题正确答案是「周武王」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "method",
+      "stem": "西周为稳定统治实行的政治制度是（ ）",
+      "options": [
+        "郡县制",
+        "禅让制",
+        "行省制",
+        "分封制"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：分封制。按西周制度与青铜文明的基本史实判断，本题正确答案是「分封制」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "method",
+      "stem": "西周分封制的主要目的是（ ）",
+      "options": [
+        "推广科举",
+        "加强海外贸易",
+        "稳定周初政治形势，巩固疆土",
+        "发展商业"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：稳定周初政治形势，巩固疆土。按西周制度与青铜文明的基本史实判断，本题正确答案是「稳定周初政治形势，巩固疆土」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "method",
+      "stem": "西周分封制下，受封诸侯必须向周王（ ）",
+      "options": [
+        "自由征兵、自立为王",
+        "进纳贡物、服从调兵",
+        "缴纳赋税、参加科举",
+        "提供工匠、修建运河"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：进纳贡物、服从调兵。按西周制度与青铜文明的基本史实判断，本题正确答案是「进纳贡物、服从调兵」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "method",
+      "stem": "迄今世界上出土最重的青铜器是（ ）",
+      "options": [
+        "司母戊鼎",
+        "四羊方尊",
+        "三星堆青铜面具",
+        "毛公鼎"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：司母戊鼎。按西周制度与青铜文明的基本史实判断，本题正确答案是「司母戊鼎」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "method",
+      "stem": "司母戊鼎出土于（ ）",
+      "options": [
+        "陕西西安",
+        "四川广汉",
+        "北京周口店",
+        "河南安阳"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：河南安阳。按西周制度与青铜文明的基本史实判断，本题正确答案是「河南安阳」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "method",
+      "stem": "商周时期刻在龟甲和兽骨上的文字被称为（ ）",
+      "options": [
+        "隶书",
+        "金文",
+        "甲骨文",
+        "小篆"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：甲骨文。按西周制度与青铜文明的基本史实判断，本题正确答案是「甲骨文」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "method",
+      "stem": "甲骨文最主要的造字方法是（ ）",
+      "options": [
+        "假借",
+        "象形",
+        "会意",
+        "形声"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：象形。按西周制度与青铜文明的基本史实判断，本题正确答案是「象形」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "method",
+      "stem": "我国有文字可考的历史从（ ）开始",
+      "options": [
+        "商朝",
+        "夏朝",
+        "西周",
+        "秦朝"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：商朝。按西周制度与青铜文明的基本史实判断，本题正确答案是「商朝」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-历史-1",
+      "chapterName": "中华文明起源与早期国家",
+      "type": "single",
+      "dimension": "method",
+      "stem": "西周时期青铜器的代表作品是（ ）",
+      "options": [
+        "司母戊鼎",
+        "四羊方尊",
+        "三星堆青铜面具",
+        "毛公鼎"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：毛公鼎。按西周制度与青铜文明的基本史实判断，本题正确答案是「毛公鼎」。",
+      "difficulty": 2
     }
   ]
 }

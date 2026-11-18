@@ -2,6 +2,16 @@
 
 面向初中学生的 AI Agent 自适应学习规划与多模态专注平台。项目通过“学段/年级/科目/专题选择 → 可选专题摸底 → 个性化计划 → 番茄专注 → 视觉/页面状态采集 → 学习反馈 → 下一轮计划迭代”形成持续闭环。计划按学科文件夹归类，专题之间自动插入桥接复习；看板提供可旋转的三维掌握图。默认使用浏览器本地 IndexedDB，摄像头默认关闭；只有学生主动点击并同意后才启动本地检测。
 
+## 团队信息
+
+| 姓名 | 分工 |
+| --- | --- |
+| 李嘉鑫 | 开发、写文档、录制视频讲解 |
+| 何天豪 | 开发、修改文档 |
+
+- 学校：广东东软学院
+- 联系方式：939900528@qq.com
+
 ## 适用范围与卷型口径
 
 课程目录按“学段 → 年级 → 科目”组织，**科目随年级开设**（人教版/部编版课程方案）：
@@ -76,6 +86,19 @@ npm run dev
 
 打开 `http://localhost:5173`。Node.js 20 LTS 可运行；若使用较新的依赖环境，建议 Node.js 22 LTS。密钥文件位于项目根目录 `.env`，字段名为 `DEEPSEEK_API_KEY`；如果你把密钥填在 `.env.example`，请先执行 `Copy-Item .env.example .env`。即使不配置密钥，课程专题、自评摸底、专注计时、IndexedDB、演示模式和看板仍可使用本地降级；配置后会启用 DeepSeek 专题摸底题、计划优化和图片答疑。摄像头仅限 `localhost` 或 HTTPS 安全上下文，并需要浏览器授权；检测用 MediaPipe Face Landmarker 全程本地推理，不上传视频帧。类型检查用 `npm run typecheck`，覆盖标注了 `// @ts-check` 的核心模块（`src/services`、`src/utils`、`src/db`、`server/tools.js`）。
 
+### 环境变量
+
+| 变量 | 必填 | 说明 |
+| --- | --- | --- |
+| `DEEPSEEK_API_KEY` | AI 功能必填 | 不填时出题、计划、答疑自动降级为本地题库/规则 |
+| `LLM_BASE_URL` | 否 | 默认 `https://api.deepseek.com` |
+| `LLM_MODEL_NAME` | 否 | 默认 `deepseek-flash` |
+| `PORT` | 否 | 后端端口，默认 `3001` |
+| `CLIENT_ORIGINS` | 生产必填 | 允许访问 API 的前端来源，多个用逗号分隔 |
+| `VITE_API_BASE_URL` | 否 | 前端请求前缀，默认 `/api`；前后端分域部署时填后端完整地址 |
+| `AUTH_SESSION_SECRET` | 生产建议 | 至少 32 个字符；留空会自动生成到 `server/data/session-secret` |
+| `RAG_HYBRID` / `RAG_EXPAND` / `RAG_RERANK` / `SAFETY_SCREEN` | 否 | 检索与安全开关，默认值见 `.env.example` |
+
 ### 启动要点（前后端两个服务）
 
 | 服务 | 命令 | 地址 | 说明 |
@@ -94,7 +117,7 @@ npm run dev
 ## 质量自检命令
 
 ```powershell
-npm test          # 单元测试（283 条）：检索、混合召回、提示词契约、周报数字校验、MCP 集成
+npm test          # 单元测试（375 条）：检索、混合召回、提示词契约、周报数字校验、MCP 集成
 npm run typecheck # 类型检查：覆盖标注了 // @ts-check 的核心模块
 npm run rag:eval  # RAG 检索效果评测：23 条用例的学科命中率与关键词命中率
 npm run rag:compare # 双路对比：稀疏 BM25 vs BM25+稠密 RRF 融合，并给出是否该启用的结论

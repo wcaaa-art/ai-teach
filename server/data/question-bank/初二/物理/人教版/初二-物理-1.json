@@ -6,9 +6,9 @@
     "id": "初二-物理-1",
     "name": "机械运动"
   },
-  "generatedAt": "2026-11-13T02:44:46.934Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.197Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedivh0",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：平均速度等于总路程除以总时间。设全程为 2s，则前一半用时 \\frac{s}{4}，后一半用时 \\frac{s}{6}，总时间为 \\frac{s}{4}+\\frac{s}{6}=\\frac{5s}{12}，全程平均速度为 \\frac{2s}{5s/12}=\\frac{24}{5}=4.8 m/s。\nB. 错误：5.0 m/s 是把 4 m/s 和 6 m/s 直接取算术平均，只有在两段运动时间相等时才可能成立，而本题两段路程相等、所用时间不相等。\nC. 错误：5.2 m/s 既不符合总路程除以总时间的计算结果，也不能由题给条件推出。\nD. 错误：10 m/s 是把两段速度直接相加，平均速度不是速度数值的简单相加。",
       "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "物体做匀速直线运动，20 s 内通过的路程是 100 m，它的速度是（ ）m/s",
+      "options": [
+        "5",
+        "2000",
+        "6",
+        "4"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：5。v = s/t = 100 ÷ 20 = 5 m/s。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "物体做匀速直线运动，3 s 内通过的路程是 240 m，它的速度是（ ）m/s",
+      "options": [
+        "720",
+        "81",
+        "79",
+        "80"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：80。v = s/t = 240 ÷ 3 = 80 m/s。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "物体做匀速直线运动，5 s 内通过的路程是 450 m，它的速度是（ ）m/s",
+      "options": [
+        "91",
+        "89",
+        "90",
+        "2250"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：90。v = s/t = 450 ÷ 5 = 90 m/s。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "物体做匀速直线运动，4 s 内通过的路程是 360 m，它的速度是（ ）m/s",
+      "options": [
+        "89",
+        "90",
+        "1440",
+        "91"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：90。v = s/t = 360 ÷ 4 = 90 m/s。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "物体做匀速直线运动，8 s 内通过的路程是 600 m，它的速度是（ ）m/s",
+      "options": [
+        "75",
+        "4800",
+        "76",
+        "74"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：75。v = s/t = 600 ÷ 8 = 75 m/s。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "物体做匀速直线运动，3 s 内通过的路程是 150 m，它的速度是（ ）m/s",
+      "options": [
+        "450",
+        "51",
+        "49",
+        "50"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：50。v = s/t = 150 ÷ 3 = 50 m/s。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "物体做匀速直线运动，9 s 内通过的路程是 720 m，它的速度是（ ）m/s",
+      "options": [
+        "81",
+        "79",
+        "80",
+        "6480"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：80。v = s/t = 720 ÷ 9 = 80 m/s。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "物体做匀速直线运动，2 s 内通过的路程是 90 m，它的速度是（ ）m/s",
+      "options": [
+        "44",
+        "45",
+        "180",
+        "46"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：45。v = s/t = 90 ÷ 2 = 45 m/s。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "物体做匀速直线运动，10 s 内通过的路程是 500 m，它的速度是（ ）m/s",
+      "options": [
+        "50",
+        "5000",
+        "51",
+        "49"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：50。v = s/t = 500 ÷ 10 = 50 m/s。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "物体做匀速直线运动，4 s 内通过的路程是 120 m，它的速度是（ ）m/s",
+      "options": [
+        "480",
+        "31",
+        "29",
+        "30"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：30。v = s/t = 120 ÷ 4 = 30 m/s。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "小明跑步的总路程是 300 m，总用时 6 s，他全程的平均速度是（ ）m/s",
+      "options": [
+        "48",
+        "42.857143",
+        "50",
+        "52"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：50。平均速度 = 总路程 ÷ 总时间 = 300 ÷ 6 = 50 m/s。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "小明跑步的总路程是 480 m，总用时 8 s，他全程的平均速度是（ ）m/s",
+      "options": [
+        "53.333333",
+        "60",
+        "62",
+        "58"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：60。平均速度 = 总路程 ÷ 总时间 = 480 ÷ 8 = 60 m/s。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "小明跑步的总路程是 150 m，总用时 5 s，他全程的平均速度是（ ）m/s",
+      "options": [
+        "30",
+        "32",
+        "28",
+        "25"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：30。平均速度 = 总路程 ÷ 总时间 = 150 ÷ 5 = 30 m/s。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "小明跑步的总路程是 720 m，总用时 9 s，他全程的平均速度是（ ）m/s",
+      "options": [
+        "82",
+        "78",
+        "72",
+        "80"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：80。平均速度 = 总路程 ÷ 总时间 = 720 ÷ 9 = 80 m/s。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "小明跑步的总路程是 240 m，总用时 4 s，他全程的平均速度是（ ）m/s",
+      "options": [
+        "58",
+        "48",
+        "60",
+        "62"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：60。平均速度 = 总路程 ÷ 总时间 = 240 ÷ 4 = 60 m/s。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "小明跑步的总路程是 600 m，总用时 10 s，他全程的平均速度是（ ）m/s",
+      "options": [
+        "54.545455",
+        "60",
+        "62",
+        "58"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：60。平均速度 = 总路程 ÷ 总时间 = 600 ÷ 10 = 60 m/s。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "小明跑步的总路程是 180 m，总用时 3 s，他全程的平均速度是（ ）m/s",
+      "options": [
+        "60",
+        "62",
+        "58",
+        "45"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：60。平均速度 = 总路程 ÷ 总时间 = 180 ÷ 3 = 60 m/s。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "小明跑步的总路程是 360 m，总用时 6 s，他全程的平均速度是（ ）m/s",
+      "options": [
+        "62",
+        "58",
+        "51.428571",
+        "60"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：60。平均速度 = 总路程 ÷ 总时间 = 360 ÷ 6 = 60 m/s。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "小明跑步的总路程是 540 m，总用时 9 s，他全程的平均速度是（ ）m/s",
+      "options": [
+        "58",
+        "54",
+        "60",
+        "62"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：60。平均速度 = 总路程 ÷ 总时间 = 540 ÷ 9 = 60 m/s。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "小明跑步的总路程是 450 m，总用时 5 s，他全程的平均速度是（ ）m/s",
+      "options": [
+        "75",
+        "90",
+        "92",
+        "88"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：90。平均速度 = 总路程 ÷ 总时间 = 450 ÷ 5 = 90 m/s。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "5 m/s 合（ ）km/h",
+      "options": [
+        "18",
+        "1.388889",
+        "50",
+        "9"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：18。1 m/s = 3.6 km/h，所以 5 × 3.6 = 18 km/h。",
+      "difficulty": 1
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "10 m/s 合（ ）km/h",
+      "options": [
+        "2.777778",
+        "100",
+        "18",
+        "36"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：36。1 m/s = 3.6 km/h，所以 10 × 3.6 = 36 km/h。",
+      "difficulty": 1
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "20 m/s 合（ ）km/h",
+      "options": [
+        "200",
+        "36",
+        "72",
+        "5.555556"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：72。1 m/s = 3.6 km/h，所以 20 × 3.6 = 72 km/h。",
+      "difficulty": 1
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "15 m/s 合（ ）km/h",
+      "options": [
+        "27",
+        "54",
+        "4.166667",
+        "150"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：54。1 m/s = 3.6 km/h，所以 15 × 3.6 = 54 km/h。",
+      "difficulty": 1
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "25 m/s 合（ ）km/h",
+      "options": [
+        "90",
+        "6.944444",
+        "250",
+        "45"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：90。1 m/s = 3.6 km/h，所以 25 × 3.6 = 90 km/h。",
+      "difficulty": 1
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "30 m/s 合（ ）km/h",
+      "options": [
+        "8.333333",
+        "300",
+        "54",
+        "108"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：108。1 m/s = 3.6 km/h，所以 30 × 3.6 = 108 km/h。",
+      "difficulty": 1
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "40 m/s 合（ ）km/h",
+      "options": [
+        "400",
+        "72",
+        "144",
+        "11.111111"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：144。1 m/s = 3.6 km/h，所以 40 × 3.6 = 144 km/h。",
+      "difficulty": 1
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "50 m/s 合（ ）km/h",
+      "options": [
+        "90",
+        "180",
+        "13.888889",
+        "500"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：180。1 m/s = 3.6 km/h，所以 50 × 3.6 = 180 km/h。",
+      "difficulty": 1
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "60 m/s 合（ ）km/h",
+      "options": [
+        "216",
+        "16.666667",
+        "600",
+        "108"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：216。1 m/s = 3.6 km/h，所以 60 × 3.6 = 216 km/h。",
+      "difficulty": 1
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-物理-1",
+      "chapterName": "机械运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "80 m/s 合（ ）km/h",
+      "options": [
+        "22.222222",
+        "800",
+        "144",
+        "288"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：288。1 m/s = 3.6 km/h，所以 80 × 3.6 = 288 km/h。",
+      "difficulty": 1
     }
   ]
 }

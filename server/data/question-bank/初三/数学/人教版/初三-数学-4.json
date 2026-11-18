@@ -6,9 +6,9 @@
     "id": "初三-数学-4",
     "name": "圆的性质与证明"
   },
-  "generatedAt": "2026-11-13T02:46:32.309Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.186Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedl05l",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：任意三角形都有唯一的外接圆，但外心是三条边的垂直平分线的交点，不是三条中线的交点；三条中线的交点是重心。\nB. 正确：直角三角形的斜边所对圆周角为90°，因此斜边就是外接圆的直径，外心为斜边中点，半径等于斜边的一半。\nC. 错误：钝角三角形的外心在三角形外部，不在三角形内部。\nD. 错误：外心到三角形三个顶点的距离相等；到三角形三条边距离相等的是内心。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一条弧所对的圆心角是 80°，它所对的圆周角是（ ）",
+      "options": [
+        "40°",
+        "80°",
+        "160°",
+        "50°"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：40°。同弧所对的圆周角等于圆心角的一半：80° ÷ 2 = 40°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一条弧所对的圆心角是 120°，它所对的圆周角是（ ）",
+      "options": [
+        "120°",
+        "240°",
+        "70°",
+        "60°"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：60°。同弧所对的圆周角等于圆心角的一半：120° ÷ 2 = 60°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一条弧所对的圆心角是 60°，它所对的圆周角是（ ）",
+      "options": [
+        "120°",
+        "40°",
+        "30°",
+        "60°"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：30°。同弧所对的圆周角等于圆心角的一半：60° ÷ 2 = 30°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一条弧所对的圆心角是 140°，它所对的圆周角是（ ）",
+      "options": [
+        "80°",
+        "70°",
+        "140°",
+        "280°"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：70°。同弧所对的圆周角等于圆心角的一半：140° ÷ 2 = 70°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一条弧所对的圆心角是 100°，它所对的圆周角是（ ）",
+      "options": [
+        "50°",
+        "100°",
+        "200°",
+        "60°"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：50°。同弧所对的圆周角等于圆心角的一半：100° ÷ 2 = 50°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一条弧所对的圆心角是 160°，它所对的圆周角是（ ）",
+      "options": [
+        "160°",
+        "320°",
+        "90°",
+        "80°"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：80°。同弧所对的圆周角等于圆心角的一半：160° ÷ 2 = 80°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一条弧所对的圆心角是 72°，它所对的圆周角是（ ）",
+      "options": [
+        "144°",
+        "46°",
+        "36°",
+        "72°"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：36°。同弧所对的圆周角等于圆心角的一半：72° ÷ 2 = 36°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一条弧所对的圆心角是 96°，它所对的圆周角是（ ）",
+      "options": [
+        "58°",
+        "48°",
+        "96°",
+        "192°"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：48°。同弧所对的圆周角等于圆心角的一半：96° ÷ 2 = 48°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一条弧所对的圆心角是 64°，它所对的圆周角是（ ）",
+      "options": [
+        "32°",
+        "64°",
+        "128°",
+        "42°"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：32°。同弧所对的圆周角等于圆心角的一半：64° ÷ 2 = 32°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一条弧所对的圆心角是 150°，它所对的圆周角是（ ）",
+      "options": [
+        "150°",
+        "300°",
+        "85°",
+        "75°"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：75°。同弧所对的圆周角等于圆心角的一半：150° ÷ 2 = 75°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "⊙O 的半径为 5，圆心到弦 AB 的距离为 4，则弦 AB 的长是（ ）",
+      "options": [
+        "7",
+        "5",
+        "6",
+        "3"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：6。由垂径定理，半弦长 = √(5² - 4²) = 3，所以弦长 = 2 × 3 = 6。",
+      "difficulty": 3
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "⊙O 的半径为 13，圆心到弦 AB 的距离为 12，则弦 AB 的长是（ ）",
+      "options": [
+        "9",
+        "10",
+        "5",
+        "11"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：10。由垂径定理，半弦长 = √(13² - 12²) = 5，所以弦长 = 2 × 5 = 10。",
+      "difficulty": 3
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "⊙O 的半径为 10，圆心到弦 AB 的距离为 8，则弦 AB 的长是（ ）",
+      "options": [
+        "12",
+        "6",
+        "13",
+        "11"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：12。由垂径定理，半弦长 = √(10² - 8²) = 6，所以弦长 = 2 × 6 = 12。",
+      "difficulty": 3
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "⊙O 的半径为 17，圆心到弦 AB 的距离为 15，则弦 AB 的长是（ ）",
+      "options": [
+        "8",
+        "17",
+        "15",
+        "16"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：16。由垂径定理，半弦长 = √(17² - 15²) = 8，所以弦长 = 2 × 8 = 16。",
+      "difficulty": 3
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "⊙O 的半径为 25，圆心到弦 AB 的距离为 24，则弦 AB 的长是（ ）",
+      "options": [
+        "15",
+        "13",
+        "14",
+        "7"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：14。由垂径定理，半弦长 = √(25² - 24²) = 7，所以弦长 = 2 × 7 = 14。",
+      "difficulty": 3
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "⊙O 的半径为 15，圆心到弦 AB 的距离为 12，则弦 AB 的长是（ ）",
+      "options": [
+        "17",
+        "18",
+        "9",
+        "19"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：18。由垂径定理，半弦长 = √(15² - 12²) = 9，所以弦长 = 2 × 9 = 18。",
+      "difficulty": 3
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "⊙O 的半径为 20，圆心到弦 AB 的距离为 16，则弦 AB 的长是（ ）",
+      "options": [
+        "24",
+        "12",
+        "25",
+        "23"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：24。由垂径定理，半弦长 = √(20² - 16²) = 12，所以弦长 = 2 × 12 = 24。",
+      "difficulty": 3
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "⊙O 的半径为 29，圆心到弦 AB 的距离为 21，则弦 AB 的长是（ ）",
+      "options": [
+        "20",
+        "41",
+        "39",
+        "40"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：40。由垂径定理，半弦长 = √(29² - 21²) = 20，所以弦长 = 2 × 20 = 40。",
+      "difficulty": 3
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "⊙O 的半径为 41，圆心到弦 AB 的距离为 40，则弦 AB 的长是（ ）",
+      "options": [
+        "19",
+        "17",
+        "18",
+        "9"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：18。由垂径定理，半弦长 = √(41² - 40²) = 9，所以弦长 = 2 × 9 = 18。",
+      "difficulty": 3
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "⊙O 的半径为 25，圆心到弦 AB 的距离为 20，则弦 AB 的长是（ ）",
+      "options": [
+        "29",
+        "30",
+        "15",
+        "31"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：30。由垂径定理，半弦长 = √(25² - 20²) = 15，所以弦长 = 2 × 15 = 30。",
+      "difficulty": 3
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "四边形 ABCD 内接于 ⊙O，∠A = 40°，则 ∠C 的度数是（ ）",
+      "options": [
+        "140°",
+        "40°",
+        "320°",
+        "90°"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：140°。圆内接四边形对角互补：∠C = 180° - 40° = 140°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "四边形 ABCD 内接于 ⊙O，∠A = 75°，则 ∠C 的度数是（ ）",
+      "options": [
+        "75°",
+        "285°",
+        "90°",
+        "105°"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：105°。圆内接四边形对角互补：∠C = 180° - 75° = 105°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "四边形 ABCD 内接于 ⊙O，∠A = 110°，则 ∠C 的度数是（ ）",
+      "options": [
+        "250°",
+        "90°",
+        "70°",
+        "110°"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：70°。圆内接四边形对角互补：∠C = 180° - 110° = 70°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "四边形 ABCD 内接于 ⊙O，∠A = 125°，则 ∠C 的度数是（ ）",
+      "options": [
+        "90°",
+        "55°",
+        "125°",
+        "235°"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：55°。圆内接四边形对角互补：∠C = 180° - 125° = 55°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "四边形 ABCD 内接于 ⊙O，∠A = 65°，则 ∠C 的度数是（ ）",
+      "options": [
+        "115°",
+        "65°",
+        "295°",
+        "90°"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：115°。圆内接四边形对角互补：∠C = 180° - 65° = 115°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "四边形 ABCD 内接于 ⊙O，∠A = 95°，则 ∠C 的度数是（ ）",
+      "options": [
+        "95°",
+        "265°",
+        "90°",
+        "85°"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：85°。圆内接四边形对角互补：∠C = 180° - 95° = 85°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "四边形 ABCD 内接于 ⊙O，∠A = 80°，则 ∠C 的度数是（ ）",
+      "options": [
+        "280°",
+        "90°",
+        "100°",
+        "80°"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：100°。圆内接四边形对角互补：∠C = 180° - 80° = 100°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "四边形 ABCD 内接于 ⊙O，∠A = 105°，则 ∠C 的度数是（ ）",
+      "options": [
+        "90°",
+        "75°",
+        "105°",
+        "255°"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：75°。圆内接四边形对角互补：∠C = 180° - 105° = 75°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "四边形 ABCD 内接于 ⊙O，∠A = 55°，则 ∠C 的度数是（ ）",
+      "options": [
+        "125°",
+        "55°",
+        "305°",
+        "90°"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：125°。圆内接四边形对角互补：∠C = 180° - 55° = 125°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-数学-4",
+      "chapterName": "圆的性质与证明",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "四边形 ABCD 内接于 ⊙O，∠A = 140°，则 ∠C 的度数是（ ）",
+      "options": [
+        "140°",
+        "220°",
+        "90°",
+        "40°"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：40°。圆内接四边形对角互补：∠C = 180° - 140° = 40°。",
+      "difficulty": 2
     }
   ]
 }

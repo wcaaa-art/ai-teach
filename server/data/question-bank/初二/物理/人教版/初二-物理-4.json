@@ -6,9 +6,9 @@
     "id": "初二-物理-4",
     "name": "透镜及其应用"
   },
-  "generatedAt": "2026-11-13T02:45:08.587Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.205Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedjc6g",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 1,
       "explanation": "A. 错误：由题意物距 u=30 cm、像距 v=20 cm，成实像时 u>v，对应 f<20 cm<2f，即 10 cm<f<20 cm，焦距一定小于 20 cm，不可能大于 20 cm。\nB. 正确：u=30 cm 大于 v=20 cm，且成清晰实像，说明 u>2f、f<v<2f，所成的是倒立、缩小的实像，这正是照相机的成像原理。\nC. 错误：投影仪成的是倒立、放大的实像，要求 f<u<2f 且 v>2f，与本题 u>v 的实际情况矛盾。\nD. 错误：由 10 cm<f<20 cm 可知，当 u=15 cm 时物距可能小于焦距，此时成虚像，光屏上无法承接；即使 u 仍在焦距与二倍焦距之间，像距也会改变，需重新调整光屏位置才能得到清晰像，不能说“仍能得到”。",
+      "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "凸透镜的焦距为 10 cm，物体位于距透镜 15 cm 处，像距是（ ）cm",
+      "options": [
+        "30",
+        "5",
+        "25",
+        "10"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：30。由 1/f = 1/u + 1/v 得 v = fu/(u - f) = 10 × 15 ÷ (15 - 10) = 30 cm。",
+      "difficulty": 3
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "凸透镜的焦距为 10 cm，物体位于距透镜 20 cm 处，像距是（ ）cm",
+      "options": [
+        "10",
+        "30",
+        "21",
+        "20"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：20。由 1/f = 1/u + 1/v 得 v = fu/(u - f) = 10 × 20 ÷ (20 - 10) = 20 cm。",
+      "difficulty": 3
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "凸透镜的焦距为 10 cm，物体位于距透镜 30 cm 处，像距是（ ）cm",
+      "options": [
+        "40",
+        "10",
+        "15",
+        "20"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：15。由 1/f = 1/u + 1/v 得 v = fu/(u - f) = 10 × 30 ÷ (30 - 10) = 15 cm。",
+      "difficulty": 3
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "凸透镜的焦距为 12 cm，物体位于距透镜 24 cm 处，像距是（ ）cm",
+      "options": [
+        "25",
+        "24",
+        "12",
+        "36"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：24。由 1/f = 1/u + 1/v 得 v = fu/(u - f) = 12 × 24 ÷ (24 - 12) = 24 cm。",
+      "difficulty": 3
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "凸透镜的焦距为 6 cm，物体位于距透镜 8 cm 处，像距是（ ）cm",
+      "options": [
+        "24",
+        "2",
+        "14",
+        "6"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：24。由 1/f = 1/u + 1/v 得 v = fu/(u - f) = 6 × 8 ÷ (8 - 6) = 24 cm。",
+      "difficulty": 3
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "凸透镜的焦距为 5 cm，物体位于距透镜 10 cm 处，像距是（ ）cm",
+      "options": [
+        "5",
+        "15",
+        "11",
+        "10"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：10。由 1/f = 1/u + 1/v 得 v = fu/(u - f) = 5 × 10 ÷ (10 - 5) = 10 cm。",
+      "difficulty": 3
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "凸透镜的焦距为 15 cm，物体位于距透镜 20 cm 处，像距是（ ）cm",
+      "options": [
+        "35",
+        "15",
+        "60",
+        "5"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：60。由 1/f = 1/u + 1/v 得 v = fu/(u - f) = 15 × 20 ÷ (20 - 15) = 60 cm。",
+      "difficulty": 3
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "凸透镜的焦距为 8 cm，物体位于距透镜 12 cm 处，像距是（ ）cm",
+      "options": [
+        "8",
+        "24",
+        "4",
+        "20"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：24。由 1/f = 1/u + 1/v 得 v = fu/(u - f) = 8 × 12 ÷ (12 - 8) = 24 cm。",
+      "difficulty": 3
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "凸透镜的焦距为 6 cm，物体位于距透镜 9 cm 处，像距是（ ）cm",
+      "options": [
+        "18",
+        "3",
+        "15",
+        "6"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：18。由 1/f = 1/u + 1/v 得 v = fu/(u - f) = 6 × 9 ÷ (9 - 6) = 18 cm。",
+      "difficulty": 3
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "凸透镜的焦距为 4 cm，物体位于距透镜 6 cm 处，像距是（ ）cm",
+      "options": [
+        "2",
+        "10",
+        "4",
+        "12"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：12。由 1/f = 1/u + 1/v 得 v = fu/(u - f) = 4 × 6 ÷ (6 - 4) = 12 cm。",
+      "difficulty": 3
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "凸透镜的焦距为 10 cm，物体距透镜 25 cm，所成像的性质是（ ）",
+      "options": [
+        "倒立、放大的实像",
+        "正立、放大的虚像",
+        "倒立、缩小的实像",
+        "倒立、等大的实像"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：倒立、缩小的实像。25 cm 与 2f = 20 cm、f = 10 cm 比较：倒立、缩小的实像。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "凸透镜的焦距为 10 cm，物体距透镜 15 cm，所成像的性质是（ ）",
+      "options": [
+        "正立、放大的虚像",
+        "倒立、放大的实像",
+        "倒立、缩小的实像",
+        "倒立、等大的实像"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：倒立、放大的实像。15 cm 与 2f = 20 cm、f = 10 cm 比较：倒立、放大的实像。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "凸透镜的焦距为 10 cm，物体距透镜 5 cm，所成像的性质是（ ）",
+      "options": [
+        "正立、放大的虚像",
+        "倒立、缩小的实像",
+        "倒立、等大的实像",
+        "倒立、放大的实像"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：正立、放大的虚像。5 cm 与 2f = 20 cm、f = 10 cm 比较：正立、放大的虚像。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "凸透镜的焦距为 10 cm，物体距透镜 20 cm，所成像的性质是（ ）",
+      "options": [
+        "倒立、缩小的实像",
+        "倒立、放大的实像",
+        "正立、放大的虚像",
+        "倒立、等大的实像"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：倒立、等大的实像。20 cm 与 2f = 20 cm、f = 10 cm 比较：倒立、等大的实像。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "凸透镜的焦距为 12 cm，物体距透镜 30 cm，所成像的性质是（ ）",
+      "options": [
+        "倒立、放大的实像",
+        "正立、放大的虚像",
+        "倒立、缩小的实像",
+        "倒立、等大的实像"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：倒立、缩小的实像。30 cm 与 2f = 24 cm、f = 12 cm 比较：倒立、缩小的实像。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "凸透镜的焦距为 12 cm，物体距透镜 18 cm，所成像的性质是（ ）",
+      "options": [
+        "正立、放大的虚像",
+        "倒立、放大的实像",
+        "倒立、缩小的实像",
+        "倒立、等大的实像"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：倒立、放大的实像。18 cm 与 2f = 24 cm、f = 12 cm 比较：倒立、放大的实像。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "凸透镜的焦距为 12 cm，物体距透镜 6 cm，所成像的性质是（ ）",
+      "options": [
+        "正立、放大的虚像",
+        "倒立、缩小的实像",
+        "倒立、等大的实像",
+        "倒立、放大的实像"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：正立、放大的虚像。6 cm 与 2f = 24 cm、f = 12 cm 比较：正立、放大的虚像。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "凸透镜的焦距为 12 cm，物体距透镜 24 cm，所成像的性质是（ ）",
+      "options": [
+        "倒立、缩小的实像",
+        "倒立、放大的实像",
+        "正立、放大的虚像",
+        "倒立、等大的实像"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：倒立、等大的实像。24 cm 与 2f = 24 cm、f = 12 cm 比较：倒立、等大的实像。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "凸透镜的焦距为 8 cm，物体距透镜 20 cm，所成像的性质是（ ）",
+      "options": [
+        "倒立、放大的实像",
+        "正立、放大的虚像",
+        "倒立、缩小的实像",
+        "倒立、等大的实像"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：倒立、缩小的实像。20 cm 与 2f = 16 cm、f = 8 cm 比较：倒立、缩小的实像。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "凸透镜的焦距为 8 cm，物体距透镜 12 cm，所成像的性质是（ ）",
+      "options": [
+        "正立、放大的虚像",
+        "倒立、放大的实像",
+        "倒立、缩小的实像",
+        "倒立、等大的实像"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：倒立、放大的实像。12 cm 与 2f = 16 cm、f = 8 cm 比较：倒立、放大的实像。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "把凸透镜正对太阳光，在距透镜 8 cm 的白纸上得到最小、最亮的光斑，该透镜的焦距是（ ）cm",
+      "options": [
+        "8",
+        "16",
+        "4",
+        "13"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：8。最小最亮的光斑就是焦点，焦点到光心的距离即焦距，为 8 cm。",
+      "difficulty": 1
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "把凸透镜正对太阳光，在距透镜 10 cm 的白纸上得到最小、最亮的光斑，该透镜的焦距是（ ）cm",
+      "options": [
+        "20",
+        "5",
+        "15",
+        "10"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：10。最小最亮的光斑就是焦点，焦点到光心的距离即焦距，为 10 cm。",
+      "difficulty": 1
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "把凸透镜正对太阳光，在距透镜 12 cm 的白纸上得到最小、最亮的光斑，该透镜的焦距是（ ）cm",
+      "options": [
+        "6",
+        "17",
+        "12",
+        "24"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：12。最小最亮的光斑就是焦点，焦点到光心的距离即焦距，为 12 cm。",
+      "difficulty": 1
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "把凸透镜正对太阳光，在距透镜 15 cm 的白纸上得到最小、最亮的光斑，该透镜的焦距是（ ）cm",
+      "options": [
+        "20",
+        "15",
+        "30",
+        "7.5"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：15。最小最亮的光斑就是焦点，焦点到光心的距离即焦距，为 15 cm。",
+      "difficulty": 1
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "把凸透镜正对太阳光，在距透镜 20 cm 的白纸上得到最小、最亮的光斑，该透镜的焦距是（ ）cm",
+      "options": [
+        "20",
+        "40",
+        "10",
+        "25"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：20。最小最亮的光斑就是焦点，焦点到光心的距离即焦距，为 20 cm。",
+      "difficulty": 1
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "把凸透镜正对太阳光，在距透镜 25 cm 的白纸上得到最小、最亮的光斑，该透镜的焦距是（ ）cm",
+      "options": [
+        "50",
+        "12.5",
+        "30",
+        "25"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：25。最小最亮的光斑就是焦点，焦点到光心的距离即焦距，为 25 cm。",
+      "difficulty": 1
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "把凸透镜正对太阳光，在距透镜 30 cm 的白纸上得到最小、最亮的光斑，该透镜的焦距是（ ）cm",
+      "options": [
+        "15",
+        "35",
+        "30",
+        "60"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：30。最小最亮的光斑就是焦点，焦点到光心的距离即焦距，为 30 cm。",
+      "difficulty": 1
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "把凸透镜正对太阳光，在距透镜 40 cm 的白纸上得到最小、最亮的光斑，该透镜的焦距是（ ）cm",
+      "options": [
+        "45",
+        "40",
+        "80",
+        "20"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：40。最小最亮的光斑就是焦点，焦点到光心的距离即焦距，为 40 cm。",
+      "difficulty": 1
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "把凸透镜正对太阳光，在距透镜 5 cm 的白纸上得到最小、最亮的光斑，该透镜的焦距是（ ）cm",
+      "options": [
+        "5",
+        "10",
+        "2.5",
+        "6"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：5。最小最亮的光斑就是焦点，焦点到光心的距离即焦距，为 5 cm。",
+      "difficulty": 1
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-物理-4",
+      "chapterName": "透镜及其应用",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "把凸透镜正对太阳光，在距透镜 18 cm 的白纸上得到最小、最亮的光斑，该透镜的焦距是（ ）cm",
+      "options": [
+        "36",
+        "9",
+        "23",
+        "18"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：18。最小最亮的光斑就是焦点，焦点到光心的距离即焦距，为 18 cm。",
       "difficulty": 1
     }
   ]

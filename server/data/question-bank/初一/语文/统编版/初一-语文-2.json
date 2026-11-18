@@ -4,16 +4,16 @@
   "edition": "统编版",
   "chapter": {
     "id": "初一-语文-2",
-    "name": "七上：叙事与人物描写"
+    "name": "叙事与人物描写"
   },
-  "generatedAt": "2026-11-14T12:12:34.332Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.861Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgd8wpk",
       "chapterId": "初一-语文-2",
-      "chapterName": "七上：叙事与人物描写",
+      "chapterName": "叙事与人物描写",
       "type": "single",
       "dimension": "concept",
       "stem": "下列句子中，主要运用动作描写来表现人物特点的一项是（ ）",
@@ -30,7 +30,7 @@
     {
       "id": "diag-2-mwgd8wpk",
       "chapterId": "初一-语文-2",
-      "chapterName": "七上：叙事与人物描写",
+      "chapterName": "叙事与人物描写",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读句子：“她把书包往桌上一放，抿着嘴，眼睛盯着窗外，手指不停地卷着衣角。”下列对该句人物描写方法的判断，最准确的一项是（ ）",
@@ -47,7 +47,7 @@
     {
       "id": "diag-3-mwgd8wpk",
       "chapterId": "初一-语文-2",
-      "chapterName": "七上：叙事与人物描写",
+      "chapterName": "叙事与人物描写",
       "type": "single",
       "dimension": "transfer",
       "stem": "阅读下面片段，完成题目。\n他把那半块馒头掰成两半，又掰成四半，最后排成一列，像在数什么。半晌，他把最小的那一角放进嘴里，其余用纸包好，塞回口袋。\n对这段文字中人物描写及其作用的分析，最恰当的一项是（　　）",
@@ -64,7 +64,7 @@
     {
       "id": "diag-4-mwgd8wpk",
       "chapterId": "初一-语文-2",
-      "chapterName": "七上：叙事与人物描写",
+      "chapterName": "叙事与人物描写",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "阅读下面语段，完成题目。\n奶奶把针线筐往膝上一搁，眯着眼穿针。线头舔了又舔，还是不肯钻进针眼。她抬头见我站着，便说：“看什么？还不去写作业。”可等我转身，她又轻轻喊：“把灯挪近些，别费眼睛。”\n下列对语段人物描写的分析，不正确的一项是（　　）",
@@ -81,7 +81,7 @@
     {
       "id": "diag-5-mwgd8wpk",
       "chapterId": "初一-语文-2",
-      "chapterName": "七上：叙事与人物描写",
+      "chapterName": "叙事与人物描写",
       "type": "single",
       "dimension": "concept",
       "stem": "阅读下面的句子，回答问题。\n\n他猛地站起来，几步跨到门口，一把拉开门闩，头也不回地冲了出去。\n\n这句话主要运用了哪种人物描写方法？",
@@ -98,7 +98,7 @@
     {
       "id": "diag-6-mwgd8wpk",
       "chapterId": "初一-语文-2",
-      "chapterName": "七上：叙事与人物描写",
+      "chapterName": "叙事与人物描写",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读下面的语句，完成题目。\n他把那张揉皱的试卷摊在桌上，用手指一点点抹平折角，又把错题抄到本子上，笔尖压得很重，纸背都透出了墨痕。\n对这句话人物描写方法及其作用的分析，最恰当的一项是（　　）",
@@ -115,7 +115,7 @@
     {
       "id": "diag-7-mwgd8wpk",
       "chapterId": "初一-语文-2",
-      "chapterName": "七上：叙事与人物描写",
+      "chapterName": "叙事与人物描写",
       "type": "single",
       "dimension": "transfer",
       "stem": "班级微写作中，小语要写“同桌在考试失利后仍主动帮助同学”的片段，要求用人物描写表现其“先难过却仍体贴别人”的复杂心理。下列最符合要求的一项是（ ）",
@@ -132,7 +132,7 @@
     {
       "id": "diag-8-mwgd8wpk",
       "chapterId": "初一-语文-2",
-      "chapterName": "七上：叙事与人物描写",
+      "chapterName": "叙事与人物描写",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "阅读下面的语段，完成题目。\n\n王师傅把刨子往木料上一按，眯起左眼瞄了瞄，又用拇指弹了弹墨线，才不紧不慢地说：“再等一袋烟的工夫。”说着，他从口袋里摸出半截铅笔，在木料端头画了个歪歪的“十”字。\n\n对这段文字所用描写方法及其表达作用的分析，不正确的一项是（　　）",
@@ -149,7 +149,7 @@
     {
       "id": "diag-9-mwgd8wpk",
       "chapterId": "初一-语文-2",
-      "chapterName": "七上：叙事与人物描写",
+      "chapterName": "叙事与人物描写",
       "type": "single",
       "dimension": "concept",
       "stem": "阅读下列句子，其中主要运用了动作描写的一项是（ ）",
@@ -166,7 +166,7 @@
     {
       "id": "diag-10-mwgd8wpk",
       "chapterId": "初一-语文-2",
-      "chapterName": "七上：叙事与人物描写",
+      "chapterName": "叙事与人物描写",
       "type": "single",
       "dimension": "basic-application",
       "stem": "下面这句话主要运用了哪一种人物描写方法？\n“她踮起脚尖，把围巾一圈一圈地绕在母亲脖子上，又用手轻轻按了按，这才放心地退后一步。”",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：句中既没有刻画人物的容貌、体态，也没有写衣着、神情，找不到外貌描写的具体内容。\nB. 正确：句中连用“踮”“绕”“按”“退”等一连串动词，细致写出人物给母亲围围巾的过程，属于动作描写。\nC. 错误：全句没有出现人物说的话，也没有引号内的对话内容，不能判为语言描写。\nD. 错误：句中只写人物外在的动作和“放心”这一神态化表现，并未直接描写她心里的想法，因此不是心理描写。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "记叙文的六要素是（　　）",
+      "options": [
+        "时间、地点、人物、起因、经过、结果",
+        "论点、论据、论证",
+        "说明对象、说明方法、说明顺序",
+        "意象、意境、情感"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：时间、地点、人物、起因、经过、结果。按记叙文要素与记叙顺序判断，本题正确答案是「时间、地点、人物、起因、经过、结果」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列不属于记叙顺序的是（　　）",
+      "options": [
+        "顺叙",
+        "倒叙",
+        "插叙",
+        "由总到分"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：由总到分。按记叙文要素与记叙顺序判断，本题正确答案是「由总到分」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "顺叙是指（　　）",
+      "options": [
+        "插入相关回忆",
+        "按空间位置转换",
+        "按照事情发生、发展的先后顺序来写",
+        "先写结果再写原因"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：按照事情发生、发展的先后顺序来写。按记叙文要素与记叙顺序判断，本题正确答案是「按照事情发生、发展的先后顺序来写」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "倒叙是指（　　）",
+      "options": [
+        "按地点转换叙述",
+        "先写后发生的事或结果，再写起因和经过",
+        "按时间先后叙述",
+        "插入另一件事"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：先写后发生的事或结果，再写起因和经过。按记叙文要素与记叙顺序判断，本题正确答案是「先写后发生的事或结果，再写起因和经过」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "插叙的作用通常是（　　）",
+      "options": [
+        "补充交代背景，丰富人物形象和内容",
+        "代替主要情节",
+        "打乱全文结构",
+        "减少文章信息"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：补充交代背景，丰富人物形象和内容。按记叙文要素与记叙顺序判断，本题正确答案是「补充交代背景，丰富人物形象和内容」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "第一人称叙述的优点是（　　）",
+      "options": [
+        "便于写所有人物的心理",
+        "使叙述更客观",
+        "扩大叙述范围",
+        "增强真实感和亲切感"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：增强真实感和亲切感。按记叙文要素与记叙顺序判断，本题正确答案是「增强真实感和亲切感」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "记叙文安排详略的主要依据是（　　）",
+      "options": [
+        "事情发生的先后",
+        "人物数量的多少",
+        "文章的中心思想",
+        "字数的多少"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：文章的中心思想。按记叙文要素与记叙顺序判断，本题正确答案是「文章的中心思想」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "概括一件事通常可以用（　　）",
+      "options": [
+        "只写环境",
+        "谁＋做了什么＋结果怎样",
+        "只写时间地点",
+        "只写人物外貌"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：谁＋做了什么＋结果怎样。按记叙文要素与记叙顺序判断，本题正确答案是「谁＋做了什么＋结果怎样」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "记叙文的线索是（　　）",
+      "options": [
+        "贯穿全文、串联材料的脉络",
+        "文章的中心句",
+        "文章的标题",
+        "作者的情感"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：贯穿全文、串联材料的脉络。按记叙文要素与记叙顺序判断，本题正确答案是「贯穿全文、串联材料的脉络」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "记叙文的中心思想通常通过（　　）表现出来",
+      "options": [
+        "数据统计",
+        "概念解释",
+        "产品说明",
+        "叙事写人"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：叙事写人。按记叙文要素与记叙顺序判断，本题正确答案是「叙事写人」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列不属于人物描写方法的是（　　）",
+      "options": [
+        "语言描写",
+        "动作描写",
+        "列数字",
+        "外貌描写"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：列数字。按人物描写方法与形象分析判断，本题正确答案是「列数字」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“他高高的个子，瘦瘦的脸庞，一双眼睛炯炯有神”属于（　　）",
+      "options": [
+        "心理描写",
+        "外貌描写",
+        "语言描写",
+        "动作描写"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：外貌描写。按人物描写方法与形象分析判断，本题正确答案是「外貌描写」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“他大声喊道：‘快跑！’”属于（　　）",
+      "options": [
+        "语言描写",
+        "外貌描写",
+        "心理描写",
+        "神态描写"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：语言描写。按人物描写方法与形象分析判断，本题正确答案是「语言描写」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“他猛地站起来，一把抓起书包冲出了教室”属于（　　）",
+      "options": [
+        "外貌描写",
+        "语言描写",
+        "心理描写",
+        "动作描写"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：动作描写。按人物描写方法与形象分析判断，本题正确答案是「动作描写」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“他心里像揣了一只兔子，怦怦直跳”属于（　　）",
+      "options": [
+        "动作描写",
+        "神态描写",
+        "心理描写",
+        "外貌描写"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：心理描写。按人物描写方法与形象分析判断，本题正确答案是「心理描写」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“她眉头紧锁，脸色苍白”属于（　　）",
+      "options": [
+        "心理描写",
+        "神态描写",
+        "语言描写",
+        "动作描写"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：神态描写。按人物描写方法与形象分析判断，本题正确答案是「神态描写」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "细节描写的作用是（　　）",
+      "options": [
+        "使人物形象更鲜明、更真实",
+        "使文章篇幅更长",
+        "代替情节发展",
+        "说明事物特征"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：使人物形象更鲜明、更真实。按人物描写方法与形象分析判断，本题正确答案是「使人物形象更鲜明、更真实」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "侧面描写是指（　　）",
+      "options": [
+        "直接描写人物的外貌",
+        "直接写人物的语言",
+        "直接写人物的动作",
+        "通过他人的反应或环境来表现人物"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：通过他人的反应或环境来表现人物。按人物描写方法与形象分析判断，本题正确答案是「通过他人的反应或环境来表现人物」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "环境描写可以用来（　　）",
+      "options": [
+        "说明写作目的",
+        "交代文章体裁",
+        "烘托人物心情，渲染气氛",
+        "代替人物描写"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：烘托人物心情，渲染气氛。按人物描写方法与形象分析判断，本题正确答案是「烘托人物心情，渲染气氛」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "分析人物形象，应该结合（　　）",
+      "options": [
+        "发表的时间",
+        "人物的描写、所做事件和相关环境",
+        "文章的字数",
+        "作者的年龄"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：人物的描写、所做事件和相关环境。按人物描写方法与形象分析判断，本题正确答案是「人物的描写、所做事件和相关环境」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "倒叙的作用通常是（　　）",
+      "options": [
+        "造成悬念，吸引读者，突出结果",
+        "使文章平淡无奇",
+        "使情节杂乱",
+        "减少文章内容"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：造成悬念，吸引读者，突出结果。按叙事技巧与结构作用判断，本题正确答案是「造成悬念，吸引读者，突出结果」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "插叙与倒叙的区别在于（　　）",
+      "options": [
+        "二者完全相同",
+        "插叙先写结局",
+        "倒叙插入回忆",
+        "插叙插入的是与主线相关的片段，倒叙是把结局提前"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：插叙插入的是与主线相关的片段，倒叙是把结局提前。按叙事技巧与结构作用判断，本题正确答案是「插叙插入的是与主线相关的片段，倒叙是把结局提前」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "设置悬念的作用是（　　）",
+      "options": [
+        "减少情节内容",
+        "交代人物身份",
+        "激发读者阅读兴趣",
+        "使文章结构松散"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：激发读者阅读兴趣。按叙事技巧与结构作用判断，本题正确答案是「激发读者阅读兴趣」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "首尾呼应的作用是（　　）",
+      "options": [
+        "改变文章体裁",
+        "使文章结构完整、主题突出",
+        "增加文章字数",
+        "使情节复杂"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：使文章结构完整、主题突出。按叙事技巧与结构作用判断，本题正确答案是「使文章结构完整、主题突出」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "伏笔的作用是（　　）",
+      "options": [
+        "为后文情节作铺垫，使发展合理",
+        "直接揭示结局",
+        "代替中心思想",
+        "增加无关内容"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：为后文情节作铺垫，使发展合理。按叙事技巧与结构作用判断，本题正确答案是「为后文情节作铺垫，使发展合理」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "过渡段的主要作用是（　　）",
+      "options": [
+        "总结全文",
+        "设置悬念",
+        "描写人物",
+        "连接上下文，使文章结构严谨"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：连接上下文，使文章结构严谨。按叙事技巧与结构作用判断，本题正确答案是「连接上下文，使文章结构严谨」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "记叙文标题的作用可能是（　　）",
+      "options": [
+        "说明作者身份",
+        "交代写作时间",
+        "概括内容、点明线索或揭示中心",
+        "决定文章字数"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：概括内容、点明线索或揭示中心。按叙事技巧与结构作用判断，本题正确答案是「概括内容、点明线索或揭示中心」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "记叙文中景物描写的作用不包括（　　）",
+      "options": [
+        "推动情节",
+        "论证中心论点",
+        "渲染气氛",
+        "烘托人物"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：论证中心论点。按叙事技巧与结构作用判断，本题正确答案是「论证中心论点」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“以小见大”是指（　　）",
+      "options": [
+        "通过小事反映深刻的主题",
+        "只写大事",
+        "用长文章写小事",
+        "忽略细节"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：通过小事反映深刻的主题。按叙事技巧与结构作用判断，本题正确答案是「通过小事反映深刻的主题」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-语文-2",
+      "chapterName": "叙事与人物描写",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "对比手法在记叙文中的作用是（　　）",
+      "options": [
+        "使文章更单调",
+        "减少人物描写",
+        "代替情节发展",
+        "突出人物或事物的特点，增强表达效果"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：突出人物或事物的特点，增强表达效果。按叙事技巧与结构作用判断，本题正确答案是「突出人物或事物的特点，增强表达效果」。",
+      "difficulty": 2
     }
   ]
 }

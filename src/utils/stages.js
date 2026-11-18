@@ -67,15 +67,15 @@ export function applyQuizStageResult({ plans = [], result = {} } = {}) {
       if (!['concept', 'example'].includes(stageOf(plan))) continue
       updated.set(plan.id, { ...plan, status: 'archived' })
     }
-    if (updated.size) message = `正确率 ${percent}%，已自动归档「概念」「例题」，直接进入「迁移」。`
+    if (updated.size) message = `正确率 ${percent}%，已自动归档「概念」「例题」，直接进入「迁移」`
   } else if (accuracy < QUIZ_FALLBACK_ACCURACY) {
     const archived = matched.filter(plan => plan.status === 'archived').sort((left, right) => orderOf(left) - orderOf(right))
     const target = archived.find(plan => stageOf(plan) === 'example') || archived.find(plan => stageOf(plan) === 'concept')
     if (target) {
       updated.set(target.id, { ...target, status: 'active' })
       message = stageOf(target) === 'example'
-        ? `正确率 ${percent}%，已重新打开「例题」任务，练稳再进迁移。`
-        : `正确率 ${percent}%，没有可重练的例题，已回到「概念」重建基础。`
+        ? `正确率 ${percent}%，已重新打开「例题」任务，练稳再进迁移`
+        : `正确率 ${percent}%，没有可重练的例题，已回到「概念」重建基础`
     }
   }
   return {

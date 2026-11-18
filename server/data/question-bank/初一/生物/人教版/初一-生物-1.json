@@ -6,9 +6,9 @@
     "id": "初一-生物-1",
     "name": "生物与环境"
   },
-  "generatedAt": "2026-11-14T12:13:50.173Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.781Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdaj8a",
@@ -179,6 +179,516 @@
       "correctIndex": 2,
       "explanation": "A. 错误：阳光、温度、水等属于非生物因素，不是生物因素。\nB. 错误：背阴处月季矮小主要与光照不足有关，也可能受温度、湿度等多种因素共同影响，不能说是只受温度影响。\nC. 正确：生物的生活受阳光、温度、水分等非生物因素影响，向阳处和背阴处光照条件不同，月季生长状况也会不同。\nD. 错误：月季与杂草之间主要存在竞争关系，但“只存在竞争关系”过于绝对，生物之间还可能有其他联系。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "生态因素分为（　　）",
+      "options": [
+        "非生物因素和生物因素",
+        "生产者和消费者",
+        "阳光和温度",
+        "动物和植物"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：非生物因素和生物因素。按生态因素的分类与作用判断，本题正确答案是「非生物因素和生物因素」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列属于非生物因素的是（　　）",
+      "options": [
+        "杂草",
+        "蚜虫",
+        "细菌",
+        "阳光"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：阳光。按生态因素的分类与作用判断，本题正确答案是「阳光」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列属于生物因素的是（　　）",
+      "options": [
+        "温度",
+        "土壤",
+        "捕食青菜的菜青虫",
+        "阳光"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：捕食青菜的菜青虫。按生态因素的分类与作用判断，本题正确答案是「捕食青菜的菜青虫」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“人间四月芳菲尽，山寺桃花始盛开”主要说明（　　）",
+      "options": [
+        "生物之间的捕食关系",
+        "温度对生物的影响",
+        "光照对生物的影响",
+        "水分对生物的影响"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：温度对生物的影响。按生态因素的分类与作用判断，本题正确答案是「温度对生物的影响」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "沙漠中的仙人掌叶退化成刺，主要是为了适应（　　）",
+      "options": [
+        "干旱环境",
+        "寒冷环境",
+        "缺氧环境",
+        "强风环境"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：干旱环境。按生态因素的分类与作用判断，本题正确答案是「干旱环境」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "生态因素是指（　　）",
+      "options": [
+        "环境中所有的生物",
+        "环境中所有的非生物",
+        "生物体内所有的物质",
+        "环境中影响生物生活和分布的因素"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：环境中影响生物生活和分布的因素。按生态因素的分类与作用判断，本题正确答案是「环境中影响生物生活和分布的因素」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "同种生物个体之间的关系包括（　　）",
+      "options": [
+        "只有竞争",
+        "只有捕食",
+        "互助和竞争",
+        "只有互助"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：互助和竞争。按生态因素的分类与作用判断，本题正确答案是「互助和竞争」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "鱼离开水会死亡，这说明（　　）",
+      "options": [
+        "生物与环境互不影响",
+        "生物的生活依赖一定的环境",
+        "生物能影响环境",
+        "环境依赖生物"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：生物的生活依赖一定的环境。按生态因素的分类与作用判断，本题正确答案是「生物的生活依赖一定的环境」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "池塘中藻类大量繁殖导致水质变差，说明（　　）",
+      "options": [
+        "生物能影响环境",
+        "环境影响生物",
+        "生物适应环境",
+        "环境适应生物"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：生物能影响环境。按生态因素的分类与作用判断，本题正确答案是「生物能影响环境」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "青蛙冬眠、候鸟迁徙所体现的是（　　）",
+      "options": [
+        "生物对环境的影响",
+        "生物改变环境",
+        "环境适应生物",
+        "生物对环境的适应"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：生物对环境的适应。按生态因素的分类与作用判断，本题正确答案是「生物对环境的适应」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列食物链书写正确的是（　　）",
+      "options": [
+        "兔→鹰→草",
+        "草←兔←鹰",
+        "草→兔→鹰",
+        "阳光→草→兔→鹰"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：草→兔→鹰。按食物链的书写规则与生态系统成分判断，本题正确答案是「草→兔→鹰」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "食物链的起点必须是（　　）",
+      "options": [
+        "非生物部分",
+        "生产者",
+        "消费者",
+        "分解者"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：生产者。按食物链的书写规则与生态系统成分判断，本题正确答案是「生产者」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一个生态系统中，生产者主要是指（　　）",
+      "options": [
+        "绿色植物",
+        "草食动物",
+        "肉食动物",
+        "细菌和真菌"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：绿色植物。按食物链的书写规则与生态系统成分判断，本题正确答案是「绿色植物」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "细菌和真菌在生态系统中主要属于（　　）",
+      "options": [
+        "生产者",
+        "消费者",
+        "非生物部分",
+        "分解者"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：分解者。按食物链的书写规则与生态系统成分判断，本题正确答案是「分解者」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "生态系统中能量的最终来源是（　　）",
+      "options": [
+        "动物体内的有机物",
+        "土壤中的无机盐",
+        "太阳能",
+        "植物体内的有机物"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：太阳能。按食物链的书写规则与生态系统成分判断，本题正确答案是「太阳能」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一条食物链中，有毒物质积累最多的通常是（　　）",
+      "options": [
+        "分解者",
+        "营养级最高的生物",
+        "生产者",
+        "初级消费者"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：营养级最高的生物。按食物链的书写规则与生态系统成分判断，本题正确答案是「营养级最高的生物」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“大鱼吃小鱼，小鱼吃虾米”中，虾米属于（　　）",
+      "options": [
+        "初级消费者",
+        "生产者",
+        "次级消费者",
+        "分解者"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：初级消费者。按食物链的书写规则与生态系统成分判断，本题正确答案是「初级消费者」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一个完整的生态系统应包括（　　）",
+      "options": [
+        "生产者、消费者和分解者",
+        "所有的动物和植物",
+        "阳光、空气和水",
+        "生物部分和非生物部分"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：生物部分和非生物部分。按食物链的书写规则与生态系统成分判断，本题正确答案是「生物部分和非生物部分」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "食物网中某种生物大量减少，最直接的影响是（　　）",
+      "options": [
+        "所有生物数量都增加",
+        "该生态系统立刻变成森林",
+        "以它为食的生物数量可能下降",
+        "该生态系统的非生物部分消失"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：以它为食的生物数量可能下降。按食物链的书写规则与生态系统成分判断，本题正确答案是「以它为食的生物数量可能下降」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列不能构成生态系统的是（　　）",
+      "options": [
+        "一个池塘",
+        "一个装有金鱼的鱼缸里的全部金鱼",
+        "一片森林",
+        "一块农田"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：一个装有金鱼的鱼缸里的全部金鱼。按食物链的书写规则与生态系统成分判断，本题正确答案是「一个装有金鱼的鱼缸里的全部金鱼」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "蚯蚓在土壤中活动使土壤疏松，体现的是（　　）",
+      "options": [
+        "生物影响环境",
+        "环境影响生物",
+        "生物适应环境",
+        "环境适应生物"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：生物影响环境。按生物间关系与实验探究原则判断，本题正确答案是「生物影响环境」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "竹节虫的体形和体色与竹枝相似，这属于（　　）",
+      "options": [
+        "生物对环境的影响",
+        "环境对生物的改造",
+        "生物之间的竞争",
+        "生物对环境的适应"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：生物对环境的适应。按生物间关系与实验探究原则判断，本题正确答案是「生物对环境的适应」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "探究“光对鼠妇分布的影响”时，实验的变量是（　　）",
+      "options": [
+        "湿度",
+        "鼠妇数量",
+        "光",
+        "温度"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：光。按生物间关系与实验探究原则判断，本题正确答案是「光」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "探究实验中设置对照组的目的是（　　）",
+      "options": [
+        "减少实验材料的用量",
+        "排除无关因素的干扰，便于比较",
+        "增加实验的难度",
+        "让实验结果更好看"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：排除无关因素的干扰，便于比较。按生物间关系与实验探究原则判断，本题正确答案是「排除无关因素的干扰，便于比较」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "探究实验设置重复组的目的是（　　）",
+      "options": [
+        "减少偶然误差，提高结果可靠性",
+        "增加实验时间",
+        "使变量增多",
+        "让结论更绝对"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：减少偶然误差，提高结果可靠性。按生物间关系与实验探究原则判断，本题正确答案是「减少偶然误差，提高结果可靠性」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "骆驼刺根系非常发达，这有利于（　　）",
+      "options": [
+        "吸收更多的阳光",
+        "防止被动物取食",
+        "在低温环境中保温",
+        "吸收深处的水分，适应干旱环境"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：吸收深处的水分，适应干旱环境。按生物间关系与实验探究原则判断，本题正确答案是「吸收深处的水分，适应干旱环境」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "瓢虫捕食蚜虫，二者之间的关系是（　　）",
+      "options": [
+        "共生",
+        "寄生",
+        "捕食",
+        "竞争"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：捕食。按生物间关系与实验探究原则判断，本题正确答案是「捕食」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "水稻与稗草在同一块田中争夺阳光、水分和养料，二者关系是（　　）",
+      "options": [
+        "寄生",
+        "竞争",
+        "捕食",
+        "共生"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：竞争。按生物间关系与实验探究原则判断，本题正确答案是「竞争」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "根瘤菌为豆科植物提供含氮物质，豆科植物为根瘤菌提供有机物，二者关系是（　　）",
+      "options": [
+        "共生",
+        "竞争",
+        "捕食",
+        "寄生"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：共生。按生物间关系与实验探究原则判断，本题正确答案是「共生」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-生物-1",
+      "chapterName": "生物与环境",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "蛔虫生活在人的小肠内获取营养，二者之间的关系是（　　）",
+      "options": [
+        "共生",
+        "竞争",
+        "捕食",
+        "寄生"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：寄生。按生物间关系与实验探究原则判断，本题正确答案是「寄生」。",
+      "difficulty": 2
     }
   ]
 }

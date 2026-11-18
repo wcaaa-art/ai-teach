@@ -6,9 +6,9 @@
     "id": "初二-生物-2",
     "name": "人体生命活动"
   },
-  "generatedAt": "2026-11-14T12:16:13.963Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.804Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgddm6i",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 1,
       "explanation": "A. 错误：肾小球和肾小囊内壁具有滤过作用，葡萄糖属于小分子物质，可以进入原尿，因此不是被完全阻止。\nB. 正确：原尿流经肾小管时，肾小管具有重吸收作用，能将原尿中的葡萄糖全部重吸收回血液，所以正常人尿液中一般不含葡萄糖。\nC. 错误：膀胱的主要功能是暂时储存尿液，并不具有把葡萄糖分解为无机物后排出体外的功能。\nD. 错误：输尿管的功能是将肾脏形成的尿液输送到膀胱，不能把尿液中的葡萄糖重新运输回血液。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "血液由（　　）组成",
+      "options": [
+        "血浆和血细胞",
+        "红细胞和白细胞",
+        "血清和红细胞",
+        "血浆和血小板"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：血浆和血细胞。按血液成分与血液循环判断，本题正确答案是「血浆和血细胞」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "运输氧气的主要是（　　）",
+      "options": [
+        "白细胞",
+        "血小板",
+        "血浆",
+        "红细胞"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：红细胞。按血液成分与血液循环判断，本题正确答案是「红细胞」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "吞噬病菌、对人体起防御作用的是（　　）",
+      "options": [
+        "血小板",
+        "血浆",
+        "白细胞",
+        "红细胞"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：白细胞。按血液成分与血液循环判断，本题正确答案是「白细胞」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "有止血和加速凝血作用的是（　　）",
+      "options": [
+        "血浆",
+        "血小板",
+        "红细胞",
+        "白细胞"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：血小板。按血液成分与血液循环判断，本题正确答案是「血小板」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "红细胞中运输氧气的物质是（　　）",
+      "options": [
+        "血红蛋白",
+        "血浆蛋白",
+        "白细胞",
+        "血小板"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：血红蛋白。按血液成分与血液循环判断，本题正确答案是「血红蛋白」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "心脏的四个腔中，壁最厚的是（　　）",
+      "options": [
+        "右心室",
+        "左心房",
+        "右心房",
+        "左心室"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：左心室。按血液成分与血液循环判断，本题正确答案是「左心室」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "动脉血与静脉血的主要区别是（　　）",
+      "options": [
+        "静脉血含氧丰富",
+        "两者成分完全相同",
+        "动脉血含氧丰富、颜色鲜红",
+        "动脉血含二氧化碳多"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：动脉血含氧丰富、颜色鲜红。按血液成分与血液循环判断，本题正确答案是「动脉血含氧丰富、颜色鲜红」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "体循环的起点是（　　）",
+      "options": [
+        "右心房",
+        "左心室",
+        "右心室",
+        "左心房"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：左心室。按血液成分与血液循环判断，本题正确答案是「左心室」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "肺循环的起点是（　　）",
+      "options": [
+        "右心室",
+        "左心室",
+        "左心房",
+        "右心房"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：右心室。按血液成分与血液循环判断，本题正确答案是「右心室」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "安全输血应以（　　）为原则",
+      "options": [
+        "输任意血型",
+        "只输血浆",
+        "只输血小板",
+        "输同型血"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：输同型血。按血液成分与血液循环判断，本题正确答案是「输同型血」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "消化食物和吸收营养物质的主要器官是（　　）",
+      "options": [
+        "大肠",
+        "食道",
+        "小肠",
+        "胃"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：小肠。按消化、呼吸和排泄过程判断，本题正确答案是「小肠」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "蛋白质在消化道内最终被分解成（　　）",
+      "options": [
+        "麦芽糖",
+        "氨基酸",
+        "葡萄糖",
+        "甘油和脂肪酸"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：氨基酸。按消化、呼吸和排泄过程判断，本题正确答案是「氨基酸」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "脂肪在消化道内最终被分解成（　　）",
+      "options": [
+        "甘油和脂肪酸",
+        "氨基酸",
+        "葡萄糖",
+        "维生素"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：甘油和脂肪酸。按消化、呼吸和排泄过程判断，本题正确答案是「甘油和脂肪酸」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "肺泡与血液之间的气体交换是通过（　　）实现的",
+      "options": [
+        "呼吸运动",
+        "血液循环",
+        "消化作用",
+        "气体扩散作用"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：气体扩散作用。按消化、呼吸和排泄过程判断，本题正确答案是「气体扩散作用」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "泌尿系统的主要器官是（　　）",
+      "options": [
+        "膀胱",
+        "尿道",
+        "肾脏",
+        "输尿管"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：肾脏。按消化、呼吸和排泄过程判断，本题正确答案是「肾脏」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "肾脏结构和功能的基本单位是（　　）",
+      "options": [
+        "肾小管",
+        "肾单位",
+        "肾小球",
+        "肾小囊"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：肾单位。按消化、呼吸和排泄过程判断，本题正确答案是「肾单位」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "原尿的形成主要经过（　　）",
+      "options": [
+        "肾小球的滤过作用",
+        "肾小管的重吸收作用",
+        "膀胱的储存作用",
+        "输尿管的运输作用"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：肾小球的滤过作用。按消化、呼吸和排泄过程判断，本题正确答案是「肾小球的滤过作用」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "尿液与原尿相比，主要不含（　　）",
+      "options": [
+        "尿素",
+        "无机盐",
+        "水",
+        "葡萄糖"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：葡萄糖。按消化、呼吸和排泄过程判断，本题正确答案是「葡萄糖」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "肾小管的主要作用是（　　）",
+      "options": [
+        "储存尿液",
+        "排出尿液",
+        "重吸收原尿中对人体有用的物质",
+        "滤过血液形成原尿"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：重吸收原尿中对人体有用的物质。按消化、呼吸和排泄过程判断，本题正确答案是「重吸收原尿中对人体有用的物质」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "人体排泄的途径不包括（　　）",
+      "options": [
+        "呼气排出二氧化碳",
+        "排出粪便",
+        "排尿",
+        "排汗"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：排出粪便。按消化、呼吸和排泄过程判断，本题正确答案是「排出粪便」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "反射弧中，接受刺激并产生神经冲动的结构是（　　）",
+      "options": [
+        "感受器",
+        "效应器",
+        "神经中枢",
+        "传出神经"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：感受器。按神经调节、激素调节与免疫知识判断，本题正确答案是「感受器」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "反射弧中，完成相应动作的结构是（　　）",
+      "options": [
+        "感受器",
+        "传入神经",
+        "神经中枢",
+        "效应器"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：效应器。按神经调节、激素调节与免疫知识判断，本题正确答案是「效应器」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "人体的第三道防线主要由（　　）组成",
+      "options": [
+        "杀菌物质和吞噬细胞",
+        "呼吸道和消化道",
+        "免疫器官和免疫细胞",
+        "皮肤和黏膜"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：免疫器官和免疫细胞。按神经调节、激素调节与免疫知识判断，本题正确答案是「免疫器官和免疫细胞」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "接种疫苗后，人体内会产生（　　）",
+      "options": [
+        "消化酶",
+        "相应的抗体",
+        "大量红细胞",
+        "大量血小板"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：相应的抗体。按神经调节、激素调节与免疫知识判断，本题正确答案是「相应的抗体」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "皮肤和黏膜对病原体的防御属于（　　）",
+      "options": [
+        "非特异性免疫",
+        "特异性免疫",
+        "计划免疫",
+        "免疫排斥"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：非特异性免疫。按神经调节、激素调节与免疫知识判断，本题正确答案是「非特异性免疫」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "预防传染病时，对患者进行隔离治疗属于（　　）",
+      "options": [
+        "切断传播途径",
+        "保护易感人群",
+        "增强免疫力",
+        "控制传染源"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：控制传染源。按神经调节、激素调节与免疫知识判断，本题正确答案是「控制传染源」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "勤洗手、戴口罩属于（　　）",
+      "options": [
+        "保护易感人群",
+        "消灭病原体",
+        "切断传播途径",
+        "控制传染源"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：切断传播途径。按神经调节、激素调节与免疫知识判断，本题正确答案是「切断传播途径」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "给健康人接种疫苗属于（　　）",
+      "options": [
+        "治疗疾病",
+        "保护易感人群",
+        "控制传染源",
+        "切断传播途径"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：保护易感人群。按神经调节、激素调节与免疫知识判断，本题正确答案是「保护易感人群」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "幼年时生长激素分泌不足会导致（　　）",
+      "options": [
+        "侏儒症",
+        "巨人症",
+        "呆小症",
+        "糖尿病"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：侏儒症。按神经调节、激素调节与免疫知识判断，本题正确答案是「侏儒症」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-生物-2",
+      "chapterName": "人体生命活动",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "胰岛素分泌不足时，血糖浓度会（　　）",
+      "options": [
+        "降低",
+        "保持不变",
+        "先降低后升高",
+        "升高"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：升高。按神经调节、激素调节与免疫知识判断，本题正确答案是「升高」。",
       "difficulty": 2
     }
   ]

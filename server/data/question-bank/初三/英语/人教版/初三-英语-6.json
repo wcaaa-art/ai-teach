@@ -6,9 +6,9 @@
     "id": "初三-英语-6",
     "name": "中考写作结构"
   },
-  "generatedAt": "2026-11-14T12:17:30.440Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.965Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdf96t",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 0,
       "explanation": "A. 正确：中考英语建议类短文通常采用“总—分—总”结构，开头点题，主体分条展开建议，结尾总结或号召，层次清楚。\nB. 错误：列生词和抄写课文不能形成围绕主题的完整篇章，结尾缺少总结，不符合写作结构要求。\nC. 错误：开头写无关周末经历会偏离“How to Keep Healthy”主题，主体建议突兀，结构不连贯。\nD. 错误：全篇问句且无具体建议和结论，不能完成“向同学提出建议”的交际任务。",
+      "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Every student should have a healthy lifestyle. 这句话在段落中的作用是（ ）",
+      "options": [
+        "主题句",
+        "支持句",
+        "结尾句",
+        "过渡句"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：主题句。主题句概括段落中心，支持句提供细节，结尾句收束全段；本题属于「主题句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "For example, we can run for half an hour every day. 这句话在段落中的作用是（ ）",
+      "options": [
+        "主题句",
+        "结尾句",
+        "标题",
+        "支持句"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：支持句。主题句概括段落中心，支持句提供细节，结尾句收束全段；本题属于「支持句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "In a word, a healthy lifestyle makes us happier. 这句话在段落中的作用是（ ）",
+      "options": [
+        "支持句",
+        "过渡句",
+        "结尾句",
+        "主题句"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：结尾句。主题句概括段落中心，支持句提供细节，结尾句收束全段；本题属于「结尾句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Reading is important for middle school students. 这句话在段落中的作用是（ ）",
+      "options": [
+        "标题",
+        "主题句",
+        "支持句",
+        "结尾句"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：主题句。主题句概括段落中心，支持句提供细节，结尾句收束全段；本题属于「主题句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "First, we should save water in our daily life. 这句话在段落中的作用是（ ）",
+      "options": [
+        "支持句",
+        "主题句",
+        "结尾句",
+        "标题"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：支持句。主题句概括段落中心，支持句提供细节，结尾句收束全段；本题属于「支持句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "In conclusion, we should protect the environment together. 这句话在段落中的作用是（ ）",
+      "options": [
+        "主题句",
+        "支持句",
+        "过渡句",
+        "结尾句"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：结尾句。主题句概括段落中心，支持句提供细节，结尾句收束全段；本题属于「结尾句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Different people have different ways to relax. 这句话在段落中的作用是（ ）",
+      "options": [
+        "结尾句",
+        "标题",
+        "主题句",
+        "支持句"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：主题句。主题句概括段落中心，支持句提供细节，结尾句收束全段；本题属于「主题句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "For instance, some students listen to music after class. 这句话在段落中的作用是（ ）",
+      "options": [
+        "标题",
+        "支持句",
+        "主题句",
+        "结尾句"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：支持句。主题句概括段落中心，支持句提供细节，结尾句收束全段；本题属于「支持句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "All in all, it was an unforgettable trip. 这句话在段落中的作用是（ ）",
+      "options": [
+        "结尾句",
+        "主题句",
+        "支持句",
+        "过渡句"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：结尾句。主题句概括段落中心，支持句提供细节，结尾句收束全段；本题属于「结尾句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Volunteering helps us learn more about the world. 这句话在段落中的作用是（ ）",
+      "options": [
+        "支持句",
+        "结尾句",
+        "过渡句",
+        "主题句"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：主题句。主题句概括段落中心，支持句提供细节，结尾句收束全段；本题属于「主题句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "method",
+      "stem": "First, ... Second, ... ______, ...",
+      "options": [
+        "Because",
+        "Although",
+        "Finally",
+        "However"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：Finally。按连接词表达的逻辑关系判断，本题应为 Finally。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "method",
+      "stem": "______, we can see that protecting the environment is important.（总结）",
+      "options": [
+        "Besides",
+        "In a word",
+        "First",
+        "For example"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：In a word。按连接词表达的逻辑关系判断，本题应为 In a word。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "method",
+      "stem": "表示递进关系的连接词是（ ）",
+      "options": [
+        "besides",
+        "however",
+        "therefore",
+        "otherwise"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：besides。按连接词表达的逻辑关系判断，本题应为 besides。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "method",
+      "stem": "表示转折关系的连接词是（ ）",
+      "options": [
+        "besides",
+        "therefore",
+        "so that",
+        "however"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：however。按连接词表达的逻辑关系判断，本题应为 however。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "method",
+      "stem": "表示因果关系的连接词是（ ）",
+      "options": [
+        "besides",
+        "for example",
+        "therefore",
+        "although"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：therefore。按连接词表达的逻辑关系判断，本题应为 therefore。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "method",
+      "stem": "表示举例关系的连接词是（ ）",
+      "options": [
+        "otherwise",
+        "for example",
+        "however",
+        "therefore"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：for example。按连接词表达的逻辑关系判断，本题应为 for example。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "method",
+      "stem": "表示总结关系的连接词是（ ）",
+      "options": [
+        "in a word",
+        "first",
+        "besides",
+        "however"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：in a word。按连接词表达的逻辑关系判断，本题应为 in a word。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "method",
+      "stem": "表示目的关系的连接词是（ ）",
+      "options": [
+        "although",
+        "however",
+        "besides",
+        "so that"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：so that。按连接词表达的逻辑关系判断，本题应为 so that。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "method",
+      "stem": "表示并列关系的连接词是（ ）",
+      "options": [
+        "because",
+        "if",
+        "and",
+        "but"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：and。按连接词表达的逻辑关系判断，本题应为 and。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "method",
+      "stem": "表示选择关系的连接词是（ ）",
+      "options": [
+        "so",
+        "or",
+        "and",
+        "but"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：or。按连接词表达的逻辑关系判断，本题应为 or。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "中考英语作文一般建议分为（ ）",
+      "options": [
+        "3 段左右",
+        "1 段",
+        "6 段以上",
+        "越多越好"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：3 段左右。按中考英语书面表达规范判断，本题应为「3 段左右」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "每段第一句通常写（ ）",
+      "options": [
+        "细节",
+        "例子",
+        "结尾",
+        "主题句"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：主题句。按中考英语书面表达规范判断，本题应为「主题句」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "作文中的例子应该（ ）",
+      "options": [
+        "越长越好",
+        "重复主题句",
+        "支持观点",
+        "与主题无关"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：支持观点。按中考英语书面表达规范判断，本题应为「支持观点」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "作文字数不足时，最有效的做法是（ ）",
+      "options": [
+        "加大字号",
+        "补充具体细节和例子",
+        "重复同一句话",
+        "写无关内容"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：补充具体细节和例子。按中考英语书面表达规范判断，本题应为「补充具体细节和例子」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "作文写完后应该（ ）",
+      "options": [
+        "检查时态、拼写和标点",
+        "直接交卷",
+        "重新抄一遍",
+        "删除所有连接词"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：检查时态、拼写和标点。按中考英语书面表达规范判断，本题应为「检查时态、拼写和标点」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "英文书信中，称呼后面通常用（ ）",
+      "options": [
+        "句号",
+        "问号",
+        "感叹号",
+        "逗号"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：逗号。按中考英语书面表达规范判断，本题应为「逗号」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "英文作文标题通常（ ）",
+      "options": [
+        "全部大写",
+        "用中文写",
+        "实词首字母大写",
+        "全部小写"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：实词首字母大写。按中考英语书面表达规范判断，本题应为「实词首字母大写」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "记叙文通常使用的主要时态是（ ）",
+      "options": [
+        "现在完成时",
+        "一般过去时",
+        "一般现在时",
+        "一般将来时"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：一般过去时。按中考英语书面表达规范判断，本题应为「一般过去时」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "说明文和议论文通常使用的主要时态是（ ）",
+      "options": [
+        "一般现在时",
+        "一般过去时",
+        "过去进行时",
+        "过去完成时"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：一般现在时。按中考英语书面表达规范判断，本题应为「一般现在时」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-英语-6",
+      "chapterName": "中考写作结构",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "写自己的经历时，通常使用（ ）",
+      "options": [
+        "第二人称",
+        "第三人称",
+        "不用人称",
+        "第一人称"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：第一人称。按中考英语书面表达规范判断，本题应为「第一人称」。",
       "difficulty": 1
     }
   ]

@@ -6,9 +6,9 @@
     "id": "初三-历史-2",
     "name": "中华民族抗争与探索"
   },
-  "generatedAt": "2026-11-14T12:17:40.045Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.102Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdfglk",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 0,
       "explanation": "A. 正确：太平天国运动是近代农民阶级发动的大规模反抗斗争，体现了农民阶级寻求救亡图存道路的探索。\nB. 错误：洋务运动是地主阶级洋务派以“自强”“求富”为口号开展的自救运动，不是资产阶级维新派推动政治制度变革。\nC. 错误：戊戌变法是资产阶级维新派推动的变法运动，不是地主阶级洋务派开展的自强求富运动。\nD. 错误：辛亥革命是资产阶级革命派领导的民主革命，不是无产阶级领导的民主革命。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "中国共产党成立于（ ）",
+      "options": [
+        "1921年",
+        "1919年",
+        "1927年",
+        "1949年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1921年。按中国共产党领导革命道路探索的史实判断，本题正确答案是「1921年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "中共一大召开的城市是（ ）",
+      "options": [
+        "北京",
+        "广州",
+        "武汉",
+        "上海"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：上海。按中国共产党领导革命道路探索的史实判断，本题正确答案是「上海」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "第一次国共合作正式建立的标志是（ ）",
+      "options": [
+        "1927年南昌起义爆发",
+        "1936年西安事变发生",
+        "1924年国民党一大召开",
+        "1921年中共一大召开"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1924年国民党一大召开。按中国共产党领导革命道路探索的史实判断，本题正确答案是「1924年国民党一大召开」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "南昌起义爆发于（ ）",
+      "options": [
+        "1935年1月",
+        "1927年8月1日",
+        "1921年7月",
+        "1924年1月"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1927年8月1日。按中国共产党领导革命道路探索的史实判断，本题正确答案是「1927年8月1日」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "南昌起义的历史意义是（ ）",
+      "options": [
+        "打响武装反抗国民党反动统治的第一枪",
+        "建立农村革命根据地",
+        "开始红军长征",
+        "建立中华人民共和国"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：打响武装反抗国民党反动统治的第一枪。按中国共产党领导革命道路探索的史实判断，本题正确答案是「打响武装反抗国民党反动统治的第一枪」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "创建井冈山革命根据地的主要领导人是（ ）",
+      "options": [
+        "周恩来",
+        "刘少奇",
+        "陈独秀",
+        "毛泽东"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：毛泽东。按中国共产党领导革命道路探索的史实判断，本题正确答案是「毛泽东」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "红军长征开始于（ ）",
+      "options": [
+        "1931年",
+        "1936年",
+        "1934年",
+        "1927年"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1934年。按中国共产党领导革命道路探索的史实判断，本题正确答案是「1934年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "遵义会议召开于（ ）",
+      "options": [
+        "1937年",
+        "1935年",
+        "1934年",
+        "1936年"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1935年。按中国共产党领导革命道路探索的史实判断，本题正确答案是「1935年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "遵义会议的历史意义是（ ）",
+      "options": [
+        "确立了以毛泽东为核心的党中央的正确领导",
+        "宣告中国共产党成立",
+        "建立抗日民族统一战线",
+        "宣告长征胜利结束"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：确立了以毛泽东为核心的党中央的正确领导。按中国共产党领导革命道路探索的史实判断，本题正确答案是「确立了以毛泽东为核心的党中央的正确领导」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "红军长征胜利结束的标志是（ ）",
+      "options": [
+        "1935年遵义会议召开",
+        "1934年中央红军开始长征",
+        "1937年抗日战争爆发",
+        "1936年三大主力红军会师"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1936年三大主力红军会师。按中国共产党领导革命道路探索的史实判断，本题正确答案是「1936年三大主力红军会师」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "重庆谈判发生的时间是（ ）",
+      "options": [
+        "1949年",
+        "1937年",
+        "1945年",
+        "1946年"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1945年。按人民解放战争的史实判断，本题正确答案是「1945年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "全面内战爆发的标志是（ ）",
+      "options": [
+        "1949年渡江战役",
+        "1946年国民党军队进攻中原解放区",
+        "1945年重庆谈判开始",
+        "1947年转战陕北"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1946年国民党军队进攻中原解放区。按人民解放战争的史实判断，本题正确答案是「1946年国民党军队进攻中原解放区」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "人民解放军转入战略进攻的标志是（ ）",
+      "options": [
+        "1947年刘邓大军挺进大别山",
+        "1946年中原突围",
+        "1948年三大战役开始",
+        "1949年渡江战役"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1947年刘邓大军挺进大别山。按人民解放战争的史实判断，本题正确答案是「1947年刘邓大军挺进大别山」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "三大战役指的是（ ）",
+      "options": [
+        "百团大战、台儿庄战役、武汉会战",
+        "北伐战争、南昌起义、秋收起义",
+        "渡江战役、太原战役、兰州战役",
+        "辽沈、淮海、平津战役"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：辽沈、淮海、平津战役。按人民解放战争的史实判断，本题正确答案是「辽沈、淮海、平津战役」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "辽沈战役中人民解放军首先攻占的重镇是（ ）",
+      "options": [
+        "北平",
+        "南京",
+        "锦州",
+        "徐州"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：锦州。按人民解放战争的史实判断，本题正确答案是「锦州」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "淮海战役的中心是（ ）",
+      "options": [
+        "南京",
+        "徐州",
+        "锦州",
+        "北平"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：徐州。按人民解放战争的史实判断，本题正确答案是「徐州」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "平津战役中北平和平解放发生在（ ）",
+      "options": [
+        "1949年",
+        "1947年",
+        "1948年",
+        "1950年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1949年。按人民解放战争的史实判断，本题正确答案是「1949年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "渡江战役中解放南京的时间是（ ）",
+      "options": [
+        "1948年9月",
+        "1949年1月",
+        "1949年10月",
+        "1949年4月"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1949年4月。按人民解放战争的史实判断，本题正确答案是「1949年4月」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "国民党政权在大陆统治结束的标志是（ ）",
+      "options": [
+        "锦州解放",
+        "中华人民共和国成立",
+        "南京解放",
+        "北平和平解放"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：南京解放。按人民解放战争的史实判断，本题正确答案是「南京解放」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "人民解放战争取得胜利的根本原因是（ ）",
+      "options": [
+        "军队人数占优",
+        "人民群众的广泛支持",
+        "美国的大量援助",
+        "武器装备占优"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：人民群众的广泛支持。按人民解放战争的史实判断，本题正确答案是「人民群众的广泛支持」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "中国人民政治协商会议第一届全体会议通过的文件是（ ）",
+      "options": [
+        "《共同纲领》",
+        "《中华人民共和国宪法》",
+        "《中华民国临时约法》",
+        "《中华人民共和国土地改革法》"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：《共同纲领》。按民族独立与复兴历程的史实判断，本题正确答案是「《共同纲领》」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "标志着中国新民主主义革命取得基本胜利的事件是（ ）",
+      "options": [
+        "抗日战争胜利",
+        "南京解放",
+        "三大改造完成",
+        "中华人民共和国成立"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：中华人民共和国成立。按民族独立与复兴历程的史实判断，本题正确答案是「中华人民共和国成立」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "抗美援朝战争开始于（ ）",
+      "options": [
+        "1951年",
+        "1953年",
+        "1950年",
+        "1949年"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1950年。按民族独立与复兴历程的史实判断，本题正确答案是「1950年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "上甘岭战役发生在（ ）",
+      "options": [
+        "甲午中日战争期间",
+        "抗美援朝战争期间",
+        "抗日战争期间",
+        "解放战争期间"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：抗美援朝战争期间。按民族独立与复兴历程的史实判断，本题正确答案是「抗美援朝战争期间」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在抗美援朝战争中用胸膛堵住敌人枪口的英雄是（ ）",
+      "options": [
+        "黄继光",
+        "邱少云",
+        "雷锋",
+        "王进喜"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：黄继光。按民族独立与复兴历程的史实判断，本题正确答案是「黄继光」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "土地改革完成的历史意义是（ ）",
+      "options": [
+        "建立社会主义制度",
+        "完成三大改造",
+        "实现农业合作化",
+        "摧毁封建土地制度，农民成为土地的主人"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：摧毁封建土地制度，农民成为土地的主人。按民族独立与复兴历程的史实判断，本题正确答案是「摧毁封建土地制度，农民成为土地的主人」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "三大改造基本完成的时间是（ ）",
+      "options": [
+        "1954年底",
+        "1958年底",
+        "1956年底",
+        "1952年底"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1956年底。按民族独立与复兴历程的史实判断，本题正确答案是「1956年底」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "作出改革开放伟大决策的会议是（ ）",
+      "options": [
+        "中共十四大",
+        "中共十一届三中全会",
+        "中共八大",
+        "中共十二大"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：中共十一届三中全会。按民族独立与复兴历程的史实判断，本题正确答案是「中共十一届三中全会」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列城市中，不属于1980年设立的经济特区的是（ ）",
+      "options": [
+        "上海",
+        "深圳",
+        "珠海",
+        "厦门"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：上海。按民族独立与复兴历程的史实判断，本题正确答案是「上海」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-历史-2",
+      "chapterName": "中华民族抗争与探索",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "邓小平理论被确立为党的指导思想的会议是（ ）",
+      "options": [
+        "中共十二大",
+        "中共十三大",
+        "中共十四大",
+        "中共十五大"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：中共十五大。按民族独立与复兴历程的史实判断，本题正确答案是「中共十五大」。",
       "difficulty": 2
     }
   ]

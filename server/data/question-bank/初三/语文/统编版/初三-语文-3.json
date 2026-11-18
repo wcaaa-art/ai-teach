@@ -4,19 +4,19 @@
   "edition": "统编版",
   "chapter": {
     "id": "初三-语文-3",
-    "name": "九上：古诗文专题"
+    "name": "古诗文专题"
   },
-  "generatedAt": "2026-11-14T12:16:54.496Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.898Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdehgd",
       "chapterId": "初三-语文-3",
-      "chapterName": "九上：古诗文专题",
+      "chapterName": "古诗文专题",
       "type": "single",
       "dimension": "concept",
-      "stem": "下列关于九上古诗文中“用典”手法的理解，正确的一项是（　　）",
+      "stem": "下列关于古诗文中“用典”手法的理解，正确的一项是（　　）",
       "options": [
         "刘禹锡《酬乐天扬州初逢席上见赠》中“怀旧空吟闻笛赋，到乡翻似烂柯人”借用“闻笛赋”“烂柯人”两个典故，表达对岁月流逝、人事变迁的感慨。",
         "李白《行路难（其一）》中“闲来垂钓碧溪上，忽复乘舟梦日边”是在描写眼前实景，表现诗人闲适自在的心情。",
@@ -30,7 +30,7 @@
     {
       "id": "diag-2-mwgdehgd",
       "chapterId": "初三-语文-3",
-      "chapterName": "九上：古诗文专题",
+      "chapterName": "古诗文专题",
       "type": "single",
       "dimension": "basic-application",
       "stem": "班级举行“逆境与成长”主题演讲，同学们准备引用本学期所学古诗文名句来表情达意。下列引用不恰当的一项是（  ）",
@@ -47,7 +47,7 @@
     {
       "id": "diag-3-mwgdehgd",
       "chapterId": "初三-语文-3",
-      "chapterName": "九上：古诗文专题",
+      "chapterName": "古诗文专题",
       "type": "single",
       "dimension": "transfer",
       "stem": "在“九年级上册古诗文联读”活动中，小语要用一组诗句印证“古人常借自然景物表达超越个人得失的旷达胸襟”。下列最恰当的一项是（　　）",
@@ -64,10 +64,10 @@
     {
       "id": "diag-4-mwgdehgd",
       "chapterId": "初三-语文-3",
-      "chapterName": "九上：古诗文专题",
+      "chapterName": "古诗文专题",
       "type": "single",
       "dimension": "error-analysis",
-      "stem": "复习九上古诗文时，小粤整理了几条“默写与理解”笔记。下列表述完全正确的一项是（　　）",
+      "stem": "复习古诗文时，小粤整理了几条“默写与理解”笔记。下列表述完全正确的一项是（　　）",
       "options": [
         "“长风破浪会有时，直挂云帆济苍海”写出诗人坚信理想终会实现，其中“苍海”应写作“沧海”。",
         "“沉舟侧畔千帆过，病树前头万木春”以“沉舟”“病树”自比，主要抒发对世事变迁的伤感，其中“畔”不能写作“伴”。",
@@ -81,10 +81,10 @@
     {
       "id": "diag-5-mwgdehgd",
       "chapterId": "初三-语文-3",
-      "chapterName": "九上：古诗文专题",
+      "chapterName": "古诗文专题",
       "type": "single",
       "dimension": "concept",
-      "stem": "下列对九上古诗文相关内容的理解，正确的一项是",
+      "stem": "下列对古诗文相关内容的理解，正确的一项是",
       "options": [
         "《岳阳楼记》以“记”为名，重在叙述重修岳阳楼的经过，议论成分很少",
         "《醉翁亭记》中“醉翁之意不在酒”的“意”指情趣，全文以“乐”字贯穿，寄寓与民同乐的情怀",
@@ -98,10 +98,10 @@
     {
       "id": "diag-6-mwgdehgd",
       "chapterId": "初三-语文-3",
-      "chapterName": "九上：古诗文专题",
+      "chapterName": "古诗文专题",
       "type": "single",
       "dimension": "basic-application",
-      "stem": "下列关于九上古诗文名句的表述，正确的一项是（ ）",
+      "stem": "下列关于古诗文名句的表述，正确的一项是（ ）",
       "options": [
         "《行路难（其一）》中“长风破浪会有时，直挂云帆济沧海”表现诗人面对挫折仍坚信理想终能实现。",
         "《岳阳楼记》中“先天下之忧而忧，后天下之乐而乐”表达作者与民同乐、寄情山水的闲适情怀。",
@@ -115,10 +115,10 @@
     {
       "id": "diag-7-mwgdehgd",
       "chapterId": "初三-语文-3",
-      "chapterName": "九上：古诗文专题",
+      "chapterName": "古诗文专题",
       "type": "single",
       "dimension": "transfer",
-      "stem": "班级开展“九上古诗文中的忧与乐”专题研读，下列对相关诗文名句的理解，正确的一项是（ ）",
+      "stem": "班级开展“古诗文中的忧与乐”专题研读，下列对相关诗文名句的理解，正确的一项是（ ）",
       "options": [
         "《岳阳楼记》中“先天下之忧而忧，后天下之乐而乐”，范仲淹以“忧”“乐”对举，表明士大夫应把个人得失放在天下之前，与“不以物喜，不以己悲”互为印证。",
         "《醉翁亭记》中“醉翁之意不在酒，在乎山水之间也”，欧阳修借“醉”字自嘲，意在表明自己因贬官而消极避世，只能在山水之乐中忘却政治理想。",
@@ -132,10 +132,10 @@
     {
       "id": "diag-8-mwgdehgd",
       "chapterId": "初三-语文-3",
-      "chapterName": "九上：古诗文专题",
+      "chapterName": "古诗文专题",
       "type": "single",
       "dimension": "error-analysis",
-      "stem": "下列对九上文言名句的理解，不正确的一项是（　　）",
+      "stem": "下列对文言名句的理解，不正确的一项是（　　）",
       "options": [
         "《岳阳楼记》“浩浩汤汤，横无际涯”中的“汤汤”读作 shāng shāng，形容水势浩大、水流广阔的样子。",
         "《醉翁亭记》“树林阴翳，鸣声上下”中的“翳”意为“遮蔽”，写出傍晚林中枝叶茂密、鸟声起伏的景象。",
@@ -149,10 +149,10 @@
     {
       "id": "diag-9-mwgdehgd",
       "chapterId": "初三-语文-3",
-      "chapterName": "九上：古诗文专题",
+      "chapterName": "古诗文专题",
       "type": "single",
       "dimension": "concept",
-      "stem": "下列关于九上古诗文文体常识的表述，正确的一项是（　　）",
+      "stem": "下列关于古诗文文体常识的表述，正确的一项是（　　）",
       "options": [
         "《水调歌头·明月几时有》中“水调歌头”是题目，“明月几时有”是词牌名。",
         "《行路难（其一）》中“行路难”是乐府古题，李白沿用旧题创作，诗体带有歌行特点。",
@@ -166,7 +166,7 @@
     {
       "id": "diag-10-mwgdehgd",
       "chapterId": "初三-语文-3",
-      "chapterName": "九上：古诗文专题",
+      "chapterName": "古诗文专题",
       "type": "single",
       "dimension": "basic-application",
       "stem": "下列古诗文名句默写与统编版教材原文完全一致的一项是（　　）",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：苏轼《水调歌头·明月几时有》中“但愿人长久，千里共婵娟”默写与教材原文一致。\nB. 错误：杜甫《月夜忆舍弟》原文为“月是故乡明”，选项中误作“故园明”，与原文不符。\nC. 错误：刘长卿《长沙过贾谊宅》原文为“寒林空见日斜时”，选项中误作“日西时”，与原文不符。\nD. 错误：温庭筠《商山早行》原文为“人迹板桥霜”，选项中误作“小桥霜”，与原文不符。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“长风破浪会有时，直挂云帆济沧海”出自（　　）",
+      "options": [
+        "李白《行路难》",
+        "刘禹锡《酬乐天扬州初逢席上见赠》",
+        "苏轼《水调歌头》",
+        "杜甫《月夜忆舍弟》"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：李白《行路难》。按古代诗歌的名句与作者判断，本题正确答案是「李白《行路难》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“沉舟侧畔千帆过，病树前头万木春”出自（　　）",
+      "options": [
+        "李白《行路难》",
+        "苏轼《水调歌头》",
+        "李商隐《无题》",
+        "刘禹锡《酬乐天扬州初逢席上见赠》"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：刘禹锡《酬乐天扬州初逢席上见赠》。按古代诗歌的名句与作者判断，本题正确答案是「刘禹锡《酬乐天扬州初逢席上见赠》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“但愿人长久，千里共婵娟”出自（　　）",
+      "options": [
+        "杜甫《月夜忆舍弟》",
+        "刘长卿《长沙过贾谊宅》",
+        "苏轼《水调歌头》",
+        "李白《行路难》"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：苏轼《水调歌头》。按古代诗歌的名句与作者判断，本题正确答案是「苏轼《水调歌头》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“露从今夜白，月是故乡明”出自（　　）",
+      "options": [
+        "温庭筠《商山早行》",
+        "杜甫《月夜忆舍弟》",
+        "苏轼《水调歌头》",
+        "李白《行路难》"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：杜甫《月夜忆舍弟》。按古代诗歌的名句与作者判断，本题正确答案是「杜甫《月夜忆舍弟》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“秋草独寻人去后，寒林空见日斜时”出自（　　）",
+      "options": [
+        "刘长卿《长沙过贾谊宅》",
+        "杜甫《月夜忆舍弟》",
+        "韩愈《左迁至蓝关示侄孙湘》",
+        "许浑《咸阳城东楼》"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：刘长卿《长沙过贾谊宅》。按古代诗歌的名句与作者判断，本题正确答案是「刘长卿《长沙过贾谊宅》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“云横秦岭家何在？雪拥蓝关马不前”出自（　　）",
+      "options": [
+        "刘长卿《长沙过贾谊宅》",
+        "温庭筠《商山早行》",
+        "李商隐《无题》",
+        "韩愈《左迁至蓝关示侄孙湘》"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：韩愈《左迁至蓝关示侄孙湘》。按古代诗歌的名句与作者判断，本题正确答案是「韩愈《左迁至蓝关示侄孙湘》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“鸡声茅店月，人迹板桥霜”出自（　　）",
+      "options": [
+        "杜甫《月夜忆舍弟》",
+        "刘禹锡《酬乐天扬州初逢席上见赠》",
+        "温庭筠《商山早行》",
+        "许浑《咸阳城东楼》"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：温庭筠《商山早行》。按古代诗歌的名句与作者判断，本题正确答案是「温庭筠《商山早行》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“溪云初起日沉阁，山雨欲来风满楼”出自（　　）",
+      "options": [
+        "韩愈《左迁至蓝关示侄孙湘》",
+        "许浑《咸阳城东楼》",
+        "温庭筠《商山早行》",
+        "李商隐《无题》"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：许浑《咸阳城东楼》。按古代诗歌的名句与作者判断，本题正确答案是「许浑《咸阳城东楼》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“春蚕到死丝方尽，蜡炬成灰泪始干”出自（　　）",
+      "options": [
+        "李商隐《无题》",
+        "温庭筠《商山早行》",
+        "许浑《咸阳城东楼》",
+        "苏轼《水调歌头》"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：李商隐《无题》。按古代诗歌的名句与作者判断，本题正确答案是「李商隐《无题》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“欲为圣明除弊事，肯将衰朽惜残年”出自（　　）",
+      "options": [
+        "李商隐《无题》",
+        "刘长卿《长沙过贾谊宅》",
+        "杜甫《月夜忆舍弟》",
+        "韩愈《左迁至蓝关示侄孙湘》"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：韩愈《左迁至蓝关示侄孙湘》。按古代诗歌的名句与作者判断，本题正确答案是「韩愈《左迁至蓝关示侄孙湘》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《岳阳楼记》的作者是（　　）",
+      "options": [
+        "张岱",
+        "宋濂",
+        "范仲淹",
+        "欧阳修"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：范仲淹。按文言文的实词、翻译与主旨判断，本题正确答案是「范仲淹」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《醉翁亭记》的作者是（　　）",
+      "options": [
+        "孟子",
+        "欧阳修",
+        "范仲淹",
+        "张岱"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：欧阳修。按文言文的实词、翻译与主旨判断，本题正确答案是「欧阳修」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《湖心亭看雪》的作者是（　　）",
+      "options": [
+        "张岱",
+        "范仲淹",
+        "欧阳修",
+        "宋濂"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：张岱。按文言文的实词、翻译与主旨判断，本题正确答案是「张岱」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《岳阳楼记》中“不以物喜”的下一句是（　　）",
+      "options": [
+        "不以外物悲",
+        "不以己喜",
+        "先忧后乐",
+        "不以己悲"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：不以己悲。按文言文的实词、翻译与主旨判断，本题正确答案是「不以己悲」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“先天下之忧而忧，后天下之乐而乐”出自（　　）",
+      "options": [
+        "《湖心亭看雪》",
+        "《送东阳马生序》",
+        "《岳阳楼记》",
+        "《醉翁亭记》"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：《岳阳楼记》。按文言文的实词、翻译与主旨判断，本题正确答案是「《岳阳楼记》」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“醉翁之意不在酒，在乎山水之间也”出自（　　）",
+      "options": [
+        "《鱼我所欲也》",
+        "《醉翁亭记》",
+        "《岳阳楼记》",
+        "《湖心亭看雪》"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：《醉翁亭记》。按文言文的实词、翻译与主旨判断，本题正确答案是「《醉翁亭记》」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“雾凇沆砀，天与云与山与水，上下一白”出自（　　）",
+      "options": [
+        "《湖心亭看雪》",
+        "《岳阳楼记》",
+        "《醉翁亭记》",
+        "《陋室铭》"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：《湖心亭看雪》。按文言文的实词、翻译与主旨判断，本题正确答案是「《湖心亭看雪》」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《湖心亭看雪》中“湖中人鸟声俱绝”的“绝”意思是（　　）",
+      "options": [
+        "断绝",
+        "停止",
+        "极点",
+        "消失"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：消失。按文言文的实词、翻译与主旨判断，本题正确答案是「消失」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《岳阳楼记》中“连月不开”的“开”意思是（　　）",
+      "options": [
+        "开始",
+        "开阔",
+        "放晴",
+        "打开"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：放晴。按文言文的实词、翻译与主旨判断，本题正确答案是「放晴」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《醉翁亭记》中“云归而岩穴暝”的“暝”意思是（　　）",
+      "options": [
+        "闭眼",
+        "昏暗",
+        "明亮",
+        "傍晚"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：昏暗。按文言文的实词、翻译与主旨判断，本题正确答案是「昏暗」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“长风破浪会有时，直挂云帆济沧海”表现了诗人（　　）",
+      "options": [
+        "乐观自信、追求理想的豪情",
+        "消极避世的情怀",
+        "对故乡的思念",
+        "对友人的不舍"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：乐观自信、追求理想的豪情。按古诗文鉴赏与主旨理解判断，本题正确答案是「乐观自信、追求理想的豪情」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“沉舟侧畔千帆过，病树前头万木春”蕴含的哲理是（　　）",
+      "options": [
+        "人生苦短应及时行乐",
+        "归隐山林才是出路",
+        "个人力量无法改变社会",
+        "新事物必将取代旧事物"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：新事物必将取代旧事物。按古诗文鉴赏与主旨理解判断，本题正确答案是「新事物必将取代旧事物」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“但愿人长久，千里共婵娟”表达的情感是（　　）",
+      "options": [
+        "对战争的赞美",
+        "对富贵的羡慕",
+        "对亲人的美好祝愿",
+        "对功名的渴望"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：对亲人的美好祝愿。按古诗文鉴赏与主旨理解判断，本题正确答案是「对亲人的美好祝愿」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《岳阳楼记》表达的政治抱负是（　　）",
+      "options": [
+        "及时行乐",
+        "先忧后乐，以天下为己任",
+        "归隐山林",
+        "追求个人富贵"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：先忧后乐，以天下为己任。按古诗文鉴赏与主旨理解判断，本题正确答案是「先忧后乐，以天下为己任」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《醉翁亭记》表达的情趣是（　　）",
+      "options": [
+        "寄情山水、与民同乐",
+        "忧国忧民、悲愤交加",
+        "追求功名",
+        "隐居避世"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：寄情山水、与民同乐。按古诗文鉴赏与主旨理解判断，本题正确答案是「寄情山水、与民同乐」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《湖心亭看雪》主要表现了作者（　　）",
+      "options": [
+        "对繁华都市的向往",
+        "对功名的追求",
+        "对战争的恐惧",
+        "孤高自赏、超然物外的心境"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：孤高自赏、超然物外的心境。按古诗文鉴赏与主旨理解判断，本题正确答案是「孤高自赏、超然物外的心境」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《送东阳马生序》主要勉励后学（　　）",
+      "options": [
+        "贪图享受",
+        "放弃学业",
+        "勤奋刻苦、专心求学",
+        "追求功名利禄"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：勤奋刻苦、专心求学。按古诗文鉴赏与主旨理解判断，本题正确答案是「勤奋刻苦、专心求学」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《岳阳楼记》中“微斯人，吾谁与归”表达的情感是（　　）",
+      "options": [
+        "对战争的恐惧",
+        "对古仁人的仰慕和自勉",
+        "对功名的渴望",
+        "对富贵的羡慕"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：对古仁人的仰慕和自勉。按古诗文鉴赏与主旨理解判断，本题正确答案是「对古仁人的仰慕和自勉」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《醉翁亭记》中“太守之乐其乐”的“乐”意思是（　　）",
+      "options": [
+        "以……为乐",
+        "快乐",
+        "音乐",
+        "乐趣"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：以……为乐。按古诗文鉴赏与主旨理解判断，本题正确答案是「以……为乐」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-语文-3",
+      "chapterName": "古诗文专题",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "古诗鉴赏中分析“用典”的作用，主要是（　　）",
+      "options": [
+        "增加诗歌字数",
+        "使语言更通俗",
+        "减少情感表达",
+        "借古讽今或丰富诗歌内涵"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：借古讽今或丰富诗歌内涵。按古诗文鉴赏与主旨理解判断，本题正确答案是「借古讽今或丰富诗歌内涵」。",
+      "difficulty": 2
     }
   ]
 }

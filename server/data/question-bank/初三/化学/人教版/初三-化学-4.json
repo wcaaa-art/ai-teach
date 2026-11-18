@@ -6,9 +6,9 @@
     "id": "初三-化学-4",
     "name": "水与溶液"
   },
-  "generatedAt": "2026-11-13T02:48:44.979Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.845Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwednpad",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 2,
       "explanation": "A. 错误：甲在40 ℃时是饱和溶液，降温到20 ℃后溶解度由50 g降为30 g，会析出甲晶体；有晶体与溶液共存时，溶液仍为该温度下的饱和溶液，不是不饱和溶液。\nB. 错误：设40 ℃时甲、乙饱和溶液质量均为m，则析出甲的质量为m×(\\frac{50}{100+50}-\\frac{30}{100+30})，析出乙的质量为m×(\\frac{30}{100+30}-\\frac{15}{100+15})，前者略大于后者，因此“析出甲的质量小于乙”错误。\nC. 正确：降温到20 ℃后，甲、乙均有晶体析出，所得溶液均为20 ℃时的饱和溶液。20 ℃时甲饱和溶液的溶质质量分数为\\frac{30}{100+30}×100%≈23.1%，乙饱和溶液的溶质质量分数为\\frac{15}{100+15}×100%≈13.0%，所以甲溶液的溶质质量分数大于乙溶液。\nD. 错误：20 ℃时甲、乙的溶解度不同，分别为30 g和15 g，因此二者饱和溶液的溶质质量分数不相等。",
+      "difficulty": 3
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "电解水时，若生成氢气的体积为 10 mL，则生成氧气的体积约为（ ）",
+      "options": [
+        "5 mL",
+        "20 mL",
+        "2.5 mL",
+        "15 mL"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：5 mL。电解水生成氢气与氧气的体积比约为 2:1，氧气体积 = 10 ÷ 2 = 5 mL。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "电解水时，若生成氢气的体积为 20 mL，则生成氧气的体积约为（ ）",
+      "options": [
+        "40 mL",
+        "5 mL",
+        "25 mL",
+        "10 mL"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：10 mL。电解水生成氢气与氧气的体积比约为 2:1，氧气体积 = 20 ÷ 2 = 10 mL。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "电解水时，若生成氢气的体积为 30 mL，则生成氧气的体积约为（ ）",
+      "options": [
+        "7.5 mL",
+        "35 mL",
+        "15 mL",
+        "60 mL"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：15 mL。电解水生成氢气与氧气的体积比约为 2:1，氧气体积 = 30 ÷ 2 = 15 mL。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "电解水时，若生成氢气的体积为 40 mL，则生成氧气的体积约为（ ）",
+      "options": [
+        "45 mL",
+        "20 mL",
+        "80 mL",
+        "10 mL"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：20 mL。电解水生成氢气与氧气的体积比约为 2:1，氧气体积 = 40 ÷ 2 = 20 mL。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "电解水时，若生成氢气的体积为 50 mL，则生成氧气的体积约为（ ）",
+      "options": [
+        "25 mL",
+        "100 mL",
+        "12.5 mL",
+        "55 mL"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：25 mL。电解水生成氢气与氧气的体积比约为 2:1，氧气体积 = 50 ÷ 2 = 25 mL。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "电解水时，若生成氢气的体积为 60 mL，则生成氧气的体积约为（ ）",
+      "options": [
+        "120 mL",
+        "15 mL",
+        "65 mL",
+        "30 mL"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：30 mL。电解水生成氢气与氧气的体积比约为 2:1，氧气体积 = 60 ÷ 2 = 30 mL。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "电解水时，若生成氢气的体积为 100 mL，则生成氧气的体积约为（ ）",
+      "options": [
+        "25 mL",
+        "105 mL",
+        "50 mL",
+        "200 mL"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：50 mL。电解水生成氢气与氧气的体积比约为 2:1，氧气体积 = 100 ÷ 2 = 50 mL。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "电解水时，若生成氢气的体积为 200 mL，则生成氧气的体积约为（ ）",
+      "options": [
+        "205 mL",
+        "100 mL",
+        "400 mL",
+        "50 mL"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：100 mL。电解水生成氢气与氧气的体积比约为 2:1，氧气体积 = 200 ÷ 2 = 100 mL。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "电解水时，若生成氢气的体积为 8 mL，则生成氧气的体积约为（ ）",
+      "options": [
+        "4 mL",
+        "16 mL",
+        "2 mL",
+        "13 mL"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：4 mL。电解水生成氢气与氧气的体积比约为 2:1，氧气体积 = 8 ÷ 2 = 4 mL。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "电解水时，若生成氢气的体积为 12 mL，则生成氧气的体积约为（ ）",
+      "options": [
+        "24 mL",
+        "3 mL",
+        "17 mL",
+        "6 mL"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：6 mL。电解水生成氢气与氧气的体积比约为 2:1，氧气体积 = 12 ÷ 2 = 6 mL。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "把 10 g 食盐完全溶解在 90 g 水中，所得溶液的溶质质量分数是（ ）",
+      "options": [
+        "20%",
+        "90%",
+        "10%",
+        "15%"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：10%。溶质质量分数 = 溶质质量 ÷ 溶液质量 × 100% = 10 ÷ (10 + 90) × 100% = 10%。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "把 20 g 食盐完全溶解在 80 g 水中，所得溶液的溶质质量分数是（ ）",
+      "options": [
+        "80%",
+        "20%",
+        "25%",
+        "30%"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：20%。溶质质量分数 = 溶质质量 ÷ 溶液质量 × 100% = 20 ÷ (20 + 80) × 100% = 20%。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "把 15 g 食盐完全溶解在 85 g 水中，所得溶液的溶质质量分数是（ ）",
+      "options": [
+        "15%",
+        "20%",
+        "25%",
+        "85%"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：15%。溶质质量分数 = 溶质质量 ÷ 溶液质量 × 100% = 15 ÷ (15 + 85) × 100% = 15%。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "把 5 g 食盐完全溶解在 95 g 水中，所得溶液的溶质质量分数是（ ）",
+      "options": [
+        "10%",
+        "15%",
+        "95%",
+        "5%"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：5%。溶质质量分数 = 溶质质量 ÷ 溶液质量 × 100% = 5 ÷ (5 + 95) × 100% = 5%。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "把 25 g 食盐完全溶解在 75 g 水中，所得溶液的溶质质量分数是（ ）",
+      "options": [
+        "35%",
+        "75%",
+        "25%",
+        "30%"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：25%。溶质质量分数 = 溶质质量 ÷ 溶液质量 × 100% = 25 ÷ (25 + 75) × 100% = 25%。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "把 30 g 食盐完全溶解在 120 g 水中，所得溶液的溶质质量分数是（ ）",
+      "options": [
+        "80%",
+        "20%",
+        "25%",
+        "30%"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：20%。溶质质量分数 = 溶质质量 ÷ 溶液质量 × 100% = 30 ÷ (30 + 120) × 100% = 20%。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "把 50 g 食盐完全溶解在 150 g 水中，所得溶液的溶质质量分数是（ ）",
+      "options": [
+        "25%",
+        "30%",
+        "35%",
+        "75%"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：25%。溶质质量分数 = 溶质质量 ÷ 溶液质量 × 100% = 50 ÷ (50 + 150) × 100% = 25%。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "把 8 g 食盐完全溶解在 32 g 水中，所得溶液的溶质质量分数是（ ）",
+      "options": [
+        "25%",
+        "30%",
+        "80%",
+        "20%"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：20%。溶质质量分数 = 溶质质量 ÷ 溶液质量 × 100% = 8 ÷ (8 + 32) × 100% = 20%。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "把 12 g 食盐完全溶解在 108 g 水中，所得溶液的溶质质量分数是（ ）",
+      "options": [
+        "20%",
+        "90%",
+        "10%",
+        "15%"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：10%。溶质质量分数 = 溶质质量 ÷ 溶液质量 × 100% = 12 ÷ (12 + 108) × 100% = 10%。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "把 40 g 食盐完全溶解在 160 g 水中，所得溶液的溶质质量分数是（ ）",
+      "options": [
+        "80%",
+        "20%",
+        "25%",
+        "30%"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：20%。溶质质量分数 = 溶质质量 ÷ 溶液质量 × 100% = 40 ÷ (40 + 160) × 100% = 20%。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "method",
+      "stem": "将 100 g 质量分数为 20% 的溶液稀释成质量分数为 10% 的溶液，需要加入水的质量是（ ）",
+      "options": [
+        "100 g",
+        "200 g",
+        "50 g",
+        "150 g"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：100 g。稀释前后溶质质量不变：100 × 20% = (100 + x) × 10%，解得 x = 100 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "method",
+      "stem": "将 200 g 质量分数为 10% 的溶液稀释成质量分数为 5% 的溶液，需要加入水的质量是（ ）",
+      "options": [
+        "400 g",
+        "100 g",
+        "250 g",
+        "200 g"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：200 g。稀释前后溶质质量不变：200 × 10% = (200 + x) × 5%，解得 x = 200 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "method",
+      "stem": "将 100 g 质量分数为 30% 的溶液稀释成质量分数为 10% 的溶液，需要加入水的质量是（ ）",
+      "options": [
+        "100 g",
+        "250 g",
+        "200 g",
+        "400 g"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：200 g。稀释前后溶质质量不变：100 × 30% = (100 + x) × 10%，解得 x = 200 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "method",
+      "stem": "将 50 g 质量分数为 20% 的溶液稀释成质量分数为 5% 的溶液，需要加入水的质量是（ ）",
+      "options": [
+        "200 g",
+        "150 g",
+        "300 g",
+        "75 g"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：150 g。稀释前后溶质质量不变：50 × 20% = (50 + x) × 5%，解得 x = 150 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "method",
+      "stem": "将 200 g 质量分数为 20% 的溶液稀释成质量分数为 10% 的溶液，需要加入水的质量是（ ）",
+      "options": [
+        "200 g",
+        "400 g",
+        "100 g",
+        "250 g"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：200 g。稀释前后溶质质量不变：200 × 20% = (200 + x) × 10%，解得 x = 200 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "method",
+      "stem": "将 100 g 质量分数为 10% 的溶液稀释成质量分数为 2% 的溶液，需要加入水的质量是（ ）",
+      "options": [
+        "800 g",
+        "200 g",
+        "450 g",
+        "400 g"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：400 g。稀释前后溶质质量不变：100 × 10% = (100 + x) × 2%，解得 x = 400 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "method",
+      "stem": "将 150 g 质量分数为 20% 的溶液稀释成质量分数为 10% 的溶液，需要加入水的质量是（ ）",
+      "options": [
+        "75 g",
+        "200 g",
+        "150 g",
+        "300 g"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：150 g。稀释前后溶质质量不变：150 × 20% = (150 + x) × 10%，解得 x = 150 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "method",
+      "stem": "将 80 g 质量分数为 25% 的溶液稀释成质量分数为 10% 的溶液，需要加入水的质量是（ ）",
+      "options": [
+        "170 g",
+        "120 g",
+        "240 g",
+        "60 g"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：120 g。稀释前后溶质质量不变：80 × 25% = (80 + x) × 10%，解得 x = 120 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "method",
+      "stem": "将 60 g 质量分数为 30% 的溶液稀释成质量分数为 15% 的溶液，需要加入水的质量是（ ）",
+      "options": [
+        "60 g",
+        "120 g",
+        "30 g",
+        "110 g"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：60 g。稀释前后溶质质量不变：60 × 30% = (60 + x) × 15%，解得 x = 60 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-化学-4",
+      "chapterName": "水与溶液",
+      "type": "single",
+      "dimension": "method",
+      "stem": "将 300 g 质量分数为 10% 的溶液稀释成质量分数为 5% 的溶液，需要加入水的质量是（ ）",
+      "options": [
+        "600 g",
+        "150 g",
+        "350 g",
+        "300 g"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：300 g。稀释前后溶质质量不变：300 × 10% = (300 + x) × 5%，解得 x = 300 g。",
       "difficulty": 3
     }
   ]

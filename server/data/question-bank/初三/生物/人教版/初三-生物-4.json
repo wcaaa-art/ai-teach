@@ -6,9 +6,9 @@
     "id": "初三-生物-4",
     "name": "生态系统与环境保护"
   },
-  "generatedAt": "2026-11-14T12:18:22.501Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.828Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdgdcy",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：就地保护是把包含保护对象在内的一定面积的陆地或水体划分出来，进行保护和管理；建立自然保护区属于就地保护，是保护生物多样性最为有效的措施。\nB. 错误：迁地保护是把濒危物种迁出原地，移入动物园、植物园、水族馆等场所进行保护，与题干中在原栖息地建立保护区不符。\nC. 错误：建立精子库、种子库等基因库属于保存物种遗传资源的措施，题干没有涉及遗传资源的离体保存。\nD. 错误：引入外来物种可能造成生物入侵，威胁本地生物多样性，不属于保护生物多样性的正确措施，也与题干情境不符。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "生态系统由（　　）组成",
+      "options": [
+        "生物部分和非生物部分",
+        "生产者和消费者",
+        "植物和动物",
+        "阳光和空气"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：生物部分和非生物部分。按生态系统的组成与能量流动判断，本题正确答案是「生物部分和非生物部分」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "生态系统中的生产者主要是（　　）",
+      "options": [
+        "草食动物",
+        "肉食动物",
+        "细菌和真菌",
+        "绿色植物"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：绿色植物。按生态系统的组成与能量流动判断，本题正确答案是「绿色植物」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "生态系统中的分解者主要是（　　）",
+      "options": [
+        "草食动物",
+        "肉食动物",
+        "细菌和真菌",
+        "绿色植物"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：细菌和真菌。按生态系统的组成与能量流动判断，本题正确答案是「细菌和真菌」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "食物链的起点是（　　）",
+      "options": [
+        "非生物部分",
+        "生产者",
+        "消费者",
+        "分解者"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：生产者。按生态系统的组成与能量流动判断，本题正确答案是「生产者」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "生态系统中能量流动的特点是（　　）",
+      "options": [
+        "单向流动、逐级递减",
+        "循环流动、逐级递增",
+        "双向流动、逐级递减",
+        "单向流动、逐级递增"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：单向流动、逐级递减。按生态系统的组成与能量流动判断，本题正确答案是「单向流动、逐级递减」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "生态系统中能量的最终来源是（　　）",
+      "options": [
+        "植物体内的化学能",
+        "动物体内的化学能",
+        "土壤中的能量",
+        "太阳能"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：太阳能。按生态系统的组成与能量流动判断，本题正确答案是「太阳能」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "食物链中，营养级越高，获得的能量（　　）",
+      "options": [
+        "不变",
+        "先增多后减少",
+        "越少",
+        "越多"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：越少。按生态系统的组成与能量流动判断，本题正确答案是「越少」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一条食物链中，有毒物质积累最多的通常是（　　）",
+      "options": [
+        "分解者",
+        "营养级最高的生物",
+        "生产者",
+        "初级消费者"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：营养级最高的生物。按生态系统的组成与能量流动判断，本题正确答案是「营养级最高的生物」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "生态系统中物质循环的特点是（　　）",
+      "options": [
+        "循环往复、全球性",
+        "单向流动、逐渐消失",
+        "只在局部进行",
+        "只在水循环中进行"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：循环往复、全球性。按生态系统的组成与能量流动判断，本题正确答案是「循环往复、全球性」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列属于生态系统的是（　　）",
+      "options": [
+        "池塘中的所有鱼",
+        "池塘中的所有水草",
+        "池塘中的水和空气",
+        "一个池塘"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：一个池塘。按生态系统的组成与能量流动判断，本题正确答案是「一个池塘」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "生态系统具有一定的自动调节能力，这种能力是（　　）",
+      "options": [
+        "完全没有的",
+        "固定不变的",
+        "有一定限度的",
+        "无限的"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：有一定限度的。按生态平衡与生态破坏因素判断，本题正确答案是「有一定限度的」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列生态系统中，自动调节能力最强的是（　　）",
+      "options": [
+        "农田",
+        "热带雨林",
+        "荒漠",
+        "草原"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：热带雨林。按生态平衡与生态破坏因素判断，本题正确答案是「热带雨林」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "生态系统自动调节能力的大小主要取决于（　　）",
+      "options": [
+        "生物种类和营养结构的复杂程度",
+        "非生物因素的数量",
+        "生物个体的大小",
+        "生态系统的面积大小"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：生物种类和营养结构的复杂程度。按生态平衡与生态破坏因素判断，本题正确答案是「生物种类和营养结构的复杂程度」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "外来物种入侵可能导致（　　）",
+      "options": [
+        "生态系统更加稳定",
+        "本地物种数量增加",
+        "没有影响",
+        "本地物种受排挤，生态平衡遭到破坏"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：本地物种受排挤，生态平衡遭到破坏。按生态平衡与生态破坏因素判断，本题正确答案是「本地物种受排挤，生态平衡遭到破坏」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "水体富营养化会导致（　　）",
+      "options": [
+        "水质变好",
+        "水生植物减少",
+        "藻类大量繁殖，水质恶化",
+        "鱼类大量增加"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：藻类大量繁殖，水质恶化。按生态平衡与生态破坏因素判断，本题正确答案是「藻类大量繁殖，水质恶化」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "温室效应加剧的主要原因是（　　）",
+      "options": [
+        "森林面积增加",
+        "大气中二氧化碳等温室气体增多",
+        "臭氧层空洞",
+        "酸雨增多"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：大气中二氧化碳等温室气体增多。按生态平衡与生态破坏因素判断，本题正确答案是「大气中二氧化碳等温室气体增多」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "形成酸雨的主要污染物是（　　）",
+      "options": [
+        "二氧化硫等酸性气体",
+        "二氧化碳",
+        "甲烷",
+        "氮气"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：二氧化硫等酸性气体。按生态平衡与生态破坏因素判断，本题正确答案是「二氧化硫等酸性气体」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "大量砍伐森林会导致（　　）",
+      "options": [
+        "降水明显增多",
+        "土壤肥力提高",
+        "气候更加稳定",
+        "水土流失、生物多样性下降"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：水土流失、生物多样性下降。按生态平衡与生态破坏因素判断，本题正确答案是「水土流失、生物多样性下降」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "农田中长期使用农药，可能导致（　　）",
+      "options": [
+        "农药效果越来越好",
+        "农产品更安全",
+        "害虫抗药性增强，天敌被大量杀死",
+        "害虫全部灭绝"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：害虫抗药性增强，天敌被大量杀死。按生态平衡与生态破坏因素判断，本题正确答案是「害虫抗药性增强，天敌被大量杀死」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“赤潮”发生的主要原因是（　　）",
+      "options": [
+        "海洋生物过少",
+        "海水中氮、磷等营养物质过多",
+        "海水温度过低",
+        "海水盐度过高"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：海水中氮、磷等营养物质过多。按生态平衡与生态破坏因素判断，本题正确答案是「海水中氮、磷等营养物质过多」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "保护生态环境的根本措施是（　　）",
+      "options": [
+        "保护生物的栖息环境，保护生态系统多样性",
+        "大量引进外来物种",
+        "把野生动物全部圈养",
+        "禁止一切生产活动"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：保护生物的栖息环境，保护生态系统多样性。按环境保护与可持续发展措施判断，本题正确答案是「保护生物的栖息环境，保护生态系统多样性」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国实行退耕还林还草，主要目的是（　　）",
+      "options": [
+        "扩大耕地面积",
+        "增加粮食产量",
+        "减少森林面积",
+        "恢复植被，改善生态环境"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：恢复植被，改善生态环境。按环境保护与可持续发展措施判断，本题正确答案是「恢复植被，改善生态环境」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "垃圾分类回收的意义是（　　）",
+      "options": [
+        "方便焚烧",
+        "增加填埋量",
+        "减少污染，节约资源",
+        "增加垃圾总量"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：减少污染，节约资源。按环境保护与可持续发展措施判断，本题正确答案是「减少污染，节约资源」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "低碳生活方式包括（　　）",
+      "options": [
+        "随意焚烧垃圾",
+        "节约用电、绿色出行、减少浪费",
+        "大量使用一次性用品",
+        "长期开空调不关"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：节约用电、绿色出行、减少浪费。按环境保护与可持续发展措施判断，本题正确答案是「节约用电、绿色出行、减少浪费」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "使用生物防治方法控制害虫的优点是（　　）",
+      "options": [
+        "减少农药污染，有利于保护生态平衡",
+        "见效一定比农药快",
+        "能杀死所有昆虫",
+        "不需要天敌"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：减少农药污染，有利于保护生态平衡。按环境保护与可持续发展措施判断，本题正确答案是「减少农药污染，有利于保护生态平衡」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "可持续发展的含义是（　　）",
+      "options": [
+        "只发展经济不顾环境",
+        "停止一切资源开发",
+        "只保护环境不发展经济",
+        "既满足当代人的需求，又不损害后代人满足其需求的能力"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：既满足当代人的需求，又不损害后代人满足其需求的能力。按环境保护与可持续发展措施判断，本题正确答案是「既满足当代人的需求，又不损害后代人满足其需求的能力」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "植树造林对环境的有利作用不包括（　　）",
+      "options": [
+        "保持水土",
+        "调节气候",
+        "增加大气中二氧化碳含量",
+        "防风固沙"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：增加大气中二氧化碳含量。按环境保护与可持续发展措施判断，本题正确答案是「增加大气中二氧化碳含量」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "保护生物多样性最有效的措施是（　　）",
+      "options": [
+        "把动物全部圈养",
+        "建立自然保护区",
+        "大量采集标本",
+        "引进外来物种"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：建立自然保护区。按环境保护与可持续发展措施判断，本题正确答案是「建立自然保护区」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "处理生活污水时，达标排放的目的是（　　）",
+      "options": [
+        "防止水体污染，保护水生生态系统",
+        "增加水中营养物质",
+        "提高水的温度",
+        "增加水的盐度"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：防止水体污染，保护水生生态系统。按环境保护与可持续发展措施判断，本题正确答案是「防止水体污染，保护水生生态系统」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-生物-4",
+      "chapterName": "生态系统与环境保护",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“绿水青山就是金山银山”体现的理念是（　　）",
+      "options": [
+        "先污染后治理",
+        "只保护不发展",
+        "只发展不保护",
+        "经济发展与生态环境保护相协调"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：经济发展与生态环境保护相协调。按环境保护与可持续发展措施判断，本题正确答案是「经济发展与生态环境保护相协调」。",
+      "difficulty": 2
     }
   ]
 }

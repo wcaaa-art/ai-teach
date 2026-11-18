@@ -6,9 +6,9 @@
     "id": "初三-道德与法治-2",
     "name": "法治国家与法治生活"
   },
-  "generatedAt": "2026-11-14T12:18:31.316Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.003Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdgk5v",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：市场监管局属于行政机关，实行“首违不罚”并公开裁量基准，是在法定条件和范围内规范行使行政裁量权，体现了依法行政和法治政府建设的要求。\nB. 错误：“首违不罚”有法定条件和适用范围，并非行政机关可以随意免除法律责任；对情节严重的违法行为仍应依法处理。\nC. 错误：公民监督权是监督行政机关依法履职的权利，不能代替行政机关执法，二者性质不同。\nD. 错误：政务公开是法治政府建设的重要内容，但法治政府建设还包括依法行政、科学民主决策、接受监督等多方面要求，不能简化为只需公开信息。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "法治是治国理政的（　　）",
+      "options": [
+        "基本方式",
+        "唯一方式",
+        "临时手段",
+        "可有可无的方式"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：基本方式。按全面依法治国的要求判断，本题正确答案是「基本方式」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "全面依法治国的总目标是（　　）",
+      "options": [
+        "扩大行政机关权力",
+        "减少法律数量",
+        "取消司法监督",
+        "建设中国特色社会主义法治体系，建设社会主义法治国家"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：建设中国特色社会主义法治体系，建设社会主义法治国家。按全面依法治国的要求判断，本题正确答案是「建设中国特色社会主义法治体系，建设社会主义法治国家」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "全面依法治国要求（　　）",
+      "options": [
+        "只重视执法",
+        "只重视司法",
+        "科学立法、严格执法、公正司法、全民守法",
+        "只重视立法"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：科学立法、严格执法、公正司法、全民守法。按全面依法治国的要求判断，本题正确答案是「科学立法、严格执法、公正司法、全民守法」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "法律与道德的关系是（　　）",
+      "options": [
+        "道德可以代替法律",
+        "二者相辅相成、相互促进",
+        "二者完全对立",
+        "二者互不相干"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：二者相辅相成、相互促进。按全面依法治国的要求判断，本题正确答案是「二者相辅相成、相互促进」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "坚持依法治国和以德治国相结合，要求（　　）",
+      "options": [
+        "发挥法律的规范作用和道德的教化作用",
+        "只靠法律",
+        "只靠道德",
+        "二者相互排斥"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：发挥法律的规范作用和道德的教化作用。按全面依法治国的要求判断，本题正确答案是「发挥法律的规范作用和道德的教化作用」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "法律面前人人平等，意味着（　　）",
+      "options": [
+        "官员可以例外",
+        "富人可以有特权",
+        "未成年人不受法律约束",
+        "任何组织和个人都没有超越宪法法律的特权"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：任何组织和个人都没有超越宪法法律的特权。按全面依法治国的要求判断，本题正确答案是「任何组织和个人都没有超越宪法法律的特权」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "法治与人治的根本区别在于（　　）",
+      "options": [
+        "是否有法院",
+        "是否有警察",
+        "法治强调法律至上，人治强调个人意志",
+        "是否有法律条文"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：法治强调法律至上，人治强调个人意志。按全面依法治国的要求判断，本题正确答案是「法治强调法律至上，人治强调个人意志」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "全民守法要求公民（　　）",
+      "options": [
+        "遇到问题用暴力解决",
+        "自觉遵守法律，依法行使权利、履行义务",
+        "只享受权利",
+        "只履行义务"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：自觉遵守法律，依法行使权利、履行义务。按全面依法治国的要求判断，本题正确答案是「自觉遵守法律，依法行使权利、履行义务」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "建设法治政府，要求政府（　　）",
+      "options": [
+        "依法行政，做到法定职责必须为、法无授权不可为",
+        "随意扩大权力",
+        "以权代法",
+        "不受监督"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：依法行政，做到法定职责必须为、法无授权不可为。按全面依法治国的要求判断，本题正确答案是「依法行政，做到法定职责必须为、法无授权不可为」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "法治社会的基础是（　　）",
+      "options": [
+        "法律条文数量多",
+        "法院数量多",
+        "执法人员多",
+        "全社会信仰法治、遵守法律"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：全社会信仰法治、遵守法律。按全面依法治国的要求判断，本题正确答案是「全社会信仰法治、遵守法律」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "依法行政的核心是（　　）",
+      "options": [
+        "减少政府的职能",
+        "取消政府监督",
+        "规范政府的行政权",
+        "扩大政府的权力"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：规范政府的行政权。按依法行政与司法公正的要求判断，本题正确答案是「规范政府的行政权」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "政府的宗旨是（　　）",
+      "options": [
+        "维护部门利益",
+        "为人民服务",
+        "管理人民",
+        "追求经济利益"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：为人民服务。按依法行政与司法公正的要求判断，本题正确答案是「为人民服务」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "政府依法行政，应该（　　）",
+      "options": [
+        "坚持政务公开，接受人民监督",
+        "暗箱操作",
+        "滥用职权",
+        "以权谋私"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：坚持政务公开，接受人民监督。按依法行政与司法公正的要求判断，本题正确答案是「坚持政务公开，接受人民监督」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "司法公正要求（　　）",
+      "options": [
+        "以权压法",
+        "徇私枉法",
+        "按舆论判案",
+        "以事实为根据，以法律为准绳"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：以事实为根据，以法律为准绳。按依法行政与司法公正的要求判断，本题正确答案是「以事实为根据，以法律为准绳」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "人民法院依法独立行使（　　）",
+      "options": [
+        "行政权",
+        "监察权",
+        "审判权",
+        "检察权"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：审判权。按依法行政与司法公正的要求判断，本题正确答案是「审判权」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "人民检察院依法独立行使（　　）",
+      "options": [
+        "立法权",
+        "检察权",
+        "审判权",
+        "行政权"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：检察权。按依法行政与司法公正的要求判断，本题正确答案是「检察权」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "公民对国家机关及其工作人员进行监督，应该（　　）",
+      "options": [
+        "依法、如实反映情况",
+        "捏造事实诬告",
+        "在网络上造谣",
+        "聚众闹事"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：依法、如实反映情况。按依法行政与司法公正的要求判断，本题正确答案是「依法、如实反映情况」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "政府工作人员不作为、乱作为，应该（　　）",
+      "options": [
+        "不受追究",
+        "只受道德谴责",
+        "可以调离了事",
+        "依法承担相应责任"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：依法承担相应责任。按依法行政与司法公正的要求判断，本题正确答案是「依法承担相应责任」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "司法是维护社会公平正义的（　　）",
+      "options": [
+        "可有可无的环节",
+        "第一道防线",
+        "最后一道防线",
+        "唯一手段"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：最后一道防线。按依法行政与司法公正的要求判断，本题正确答案是「最后一道防线」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“法无授权不可为”主要是对（　　）的要求",
+      "options": [
+        "社会组织",
+        "政府及其工作人员",
+        "普通公民",
+        "企业"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：政府及其工作人员。按依法行政与司法公正的要求判断，本题正确答案是「政府及其工作人员」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "公民依法办事，应该（　　）",
+      "options": [
+        "遵守法律法规，依法行使权利、履行义务",
+        "只行使权利",
+        "只履行义务",
+        "无视法律"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：遵守法律法规，依法行使权利、履行义务。按依法办事与依法维权判断，本题正确答案是「遵守法律法规，依法行使权利、履行义务」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "公民的合法权益受到侵害时，可以通过（　　）解决",
+      "options": [
+        "暴力报复",
+        "非法拘禁",
+        "网络造谣",
+        "协商、调解、仲裁、诉讼等途径"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：协商、调解、仲裁、诉讼等途径。按依法办事与依法维权判断，本题正确答案是「协商、调解、仲裁、诉讼等途径」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "诉讼一般分为（　　）",
+      "options": [
+        "行政诉讼和刑事诉讼",
+        "只有民事诉讼",
+        "民事诉讼、行政诉讼、刑事诉讼",
+        "民事诉讼和刑事诉讼"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：民事诉讼、行政诉讼、刑事诉讼。按依法办事与依法维权判断，本题正确答案是「民事诉讼、行政诉讼、刑事诉讼」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列属于行政诉讼的是（　　）",
+      "options": [
+        "因离婚提起诉讼",
+        "公民认为行政机关的行政行为侵犯其合法权益而提起诉讼",
+        "因合同纠纷提起诉讼",
+        "因犯罪被提起公诉"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：公民认为行政机关的行政行为侵犯其合法权益而提起诉讼。按依法办事与依法维权判断，本题正确答案是「公民认为行政机关的行政行为侵犯其合法权益而提起诉讼」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "法律援助的意义是（　　）",
+      "options": [
+        "保障经济困难公民获得必要的法律服务",
+        "代替法院审判",
+        "免除所有法律责任",
+        "让违法者逃避处罚"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：保障经济困难公民获得必要的法律服务。按依法办事与依法维权判断，本题正确答案是「保障经济困难公民获得必要的法律服务」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "青少年增强法治意识，应该（　　）",
+      "options": [
+        "认为法律与自己无关",
+        "只在考试时学法律",
+        "遇到问题用暴力解决",
+        "学法、知法、守法、用法"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：学法、知法、守法、用法。按依法办事与依法维权判断，本题正确答案是「学法、知法、守法、用法」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列行为属于依法行使权利的是（　　）",
+      "options": [
+        "随意占用公共通道",
+        "侵犯他人隐私",
+        "在行使权利时不损害他人合法权益",
+        "在公共场所大声喧哗"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：在行使权利时不损害他人合法权益。按依法办事与依法维权判断，本题正确答案是「在行使权利时不损害他人合法权益」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "规则与自由的关系是（　　）",
+      "options": [
+        "规则只会限制自由",
+        "规则划定自由边界，也保障自由实现",
+        "二者完全对立",
+        "自由不需要规则"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：规则划定自由边界，也保障自由实现。按依法办事与依法维权判断，本题正确答案是「规则划定自由边界，也保障自由实现」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "法治意识包括（　　）",
+      "options": [
+        "规则意识、权利意识、义务意识、程序意识等",
+        "只有权利意识",
+        "只有义务意识",
+        "只有规则意识"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：规则意识、权利意识、义务意识、程序意识等。按依法办事与依法维权判断，本题正确答案是「规则意识、权利意识、义务意识、程序意识等」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-道德与法治-2",
+      "chapterName": "法治国家与法治生活",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "遇到法律纠纷需要咨询时，可以（　　）",
+      "options": [
+        "自行暴力解决",
+        "听信网络谣言",
+        "放弃维权",
+        "向法律援助机构或专业律师求助"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：向法律援助机构或专业律师求助。按依法办事与依法维权判断，本题正确答案是「向法律援助机构或专业律师求助」。",
+      "difficulty": 2
     }
   ]
 }

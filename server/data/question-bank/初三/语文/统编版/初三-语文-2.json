@@ -4,16 +4,16 @@
   "edition": "统编版",
   "chapter": {
     "id": "初三-语文-2",
-    "name": "九上：小说与人物"
+    "name": "小说与人物"
   },
-  "generatedAt": "2026-11-14T12:16:50.204Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.895Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdee55",
       "chapterId": "初三-语文-2",
-      "chapterName": "九上：小说与人物",
+      "chapterName": "小说与人物",
       "type": "single",
       "dimension": "concept",
       "stem": "阅读小说时，要把握人物形象。下列关于小说人物形象理解与分析的说法，正确的一项是（　　）",
@@ -30,7 +30,7 @@
     {
       "id": "diag-2-mwgdee55",
       "chapterId": "初三-语文-2",
-      "chapterName": "九上：小说与人物",
+      "chapterName": "小说与人物",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读下面小说片段，对人物描写方法及其作用分析最恰当的一项是：\n他把那枚磨得发亮的铜钱在指间捻了又捻，忽然抬头笑道：“谁说我不识数？这账，我闭着眼也算得清。”话没说完，却把算盘珠子拨得七零八落。",
@@ -47,7 +47,7 @@
     {
       "id": "diag-3-mwgdee55",
       "chapterId": "初三-语文-2",
-      "chapterName": "九上：小说与人物",
+      "chapterName": "小说与人物",
       "type": "single",
       "dimension": "transfer",
       "stem": "班级读书会围绕“小说中的人物”展开讨论。有同学整理了下面一段读书笔记：\n“他站在柜台前，手指在算盘上拨得飞快，嘴里却反复念叨：这月又亏了。看见伙计端来一碗茶，他先瞪了一眼，又把茶碗往自己面前挪了挪，才低声说：喝吧。”\n若要从这段描写判断人物形象，下列分析最恰当的一项是（ ）",
@@ -64,10 +64,10 @@
     {
       "id": "diag-4-mwgdee55",
       "chapterId": "初三-语文-2",
-      "chapterName": "九上：小说与人物",
+      "chapterName": "小说与人物",
       "type": "single",
       "dimension": "error-analysis",
-      "stem": "班级读书会上，四位同学交流对九上小说人物形象的理解，其中表述不恰当的一项是（  ）",
+      "stem": "班级读书会上，四位同学交流对小说人物形象的理解，其中表述不恰当的一项是（  ）",
       "options": [
         "《故乡》中少年闰土与中年闰土的巨大变化，折射出封建等级观念和艰难生活对普通农民的压抑与摧残",
         "《我的叔叔于勒》中菲利普夫妇对于勒称呼、态度的反复变化，与其家庭经济处境相关，深刻揭示了金钱关系对亲情的扭曲",
@@ -81,7 +81,7 @@
     {
       "id": "diag-5-mwgdee55",
       "chapterId": "初三-语文-2",
-      "chapterName": "九上：小说与人物",
+      "chapterName": "小说与人物",
       "type": "single",
       "dimension": "concept",
       "stem": "阅读下面这段描写，对其中塑造人物形象的方法及其作用分析正确的一项是（　　）\n\n他站在柜台后，把秤杆挑得高高的，眼睛却盯着顾客的衣兜；找零时，手指在铜板上多按了两下，才慢慢松开。",
@@ -98,7 +98,7 @@
     {
       "id": "diag-6-mwgdee55",
       "chapterId": "初三-语文-2",
-      "chapterName": "九上：小说与人物",
+      "chapterName": "小说与人物",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读下面的语句，对人物描写方法及其作用分析最恰当的一项是：\n他把铜钱一枚枚捻开，又叠回去，指腹在柜台边沿磨了磨，目光始终没离开那包药。",
@@ -115,7 +115,7 @@
     {
       "id": "diag-7-mwgdee55",
       "chapterId": "初三-语文-2",
-      "chapterName": "九上：小说与人物",
+      "chapterName": "小说与人物",
       "type": "single",
       "dimension": "transfer",
       "stem": "阅读下面原创小说片段，完成题目。\n老陈在巷口修鞋三十年。近来巷子改造，摊子要挪走。最后一天收摊前，他把每双鞋都擦得比交来时更亮，还把邻居小赵落下的一只旧童鞋用红线缝好，放在窗台上。小赵说：“这鞋早不要了。”老陈笑笑：“鞋不要，脚还要走路呢。”\n对老陈这一人物形象的理解，最恰当的一项是（ ）",
@@ -132,7 +132,7 @@
     {
       "id": "diag-8-mwgdee55",
       "chapterId": "初三-语文-2",
-      "chapterName": "九上：小说与人物",
+      "chapterName": "小说与人物",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "下列关于《故乡》人物形象及写法的理解，不正确的一项是（　　）",
@@ -149,10 +149,10 @@
     {
       "id": "diag-9-mwgdee55",
       "chapterId": "初三-语文-2",
-      "chapterName": "九上：小说与人物",
+      "chapterName": "小说与人物",
       "type": "single",
       "dimension": "concept",
-      "stem": "阅读九上小说单元后，同学们围绕“如何把握小说人物形象”展开讨论。下列发言正确的一项是（　　）",
+      "stem": "阅读小说单元后，同学们围绕“如何把握小说人物形象”展开讨论。下列发言正确的一项是（　　）",
       "options": [
         "只要记住人物的身份和最终结局，就能准确概括人物形象，不必关注具体的描写方法。",
         "把握人物形象，应结合人物的语言、动作、神态、心理等描写，并联系情节发展和环境描写进行综合分析。",
@@ -166,7 +166,7 @@
     {
       "id": "diag-10-mwgdee55",
       "chapterId": "初三-语文-2",
-      "chapterName": "九上：小说与人物",
+      "chapterName": "小说与人物",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读下面这段文字，回答问题。\n老陈把秤杆擦了又擦，秤砣在手里掂了又掂，才把那一小袋米放到秤盘上。他眯着眼，把秤星看了半天，忽然又把米倒回袋里，抓了两把添上，这才低声说：“拿去吧。”\n对这段文字中人物描写方法的分析，最准确的一项是（　　）",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：这段文字主要运用动作描写，用“擦”“掂”“看”“倒”“抓”等具体动作，细致写出老陈称米时的反复与认真，又主动添米，表现他做买卖厚道、为顾客着想的性格。\nB. 错误：文中没有“他想”“心里盘算”一类直接展示内心活动的语句，老陈的谨慎是通过动作间接表现出来的，因此“以心理描写为主”判断不准确。\nC. 错误：文中没有对老陈容貌、衣着、体态等外貌特征进行刻画；“眯着眼”是看秤时的动作神态细节，主要服务于表现他称米认真，不能据此推断“年老体衰”。\nD. 错误：老陈只说了“拿去吧”一句，语言描写所占比重很小，不能说是“以语言描写为主”；而且这一句配合添米的动作，表现的是厚道爽快，并非“沉默寡言、不善交流”。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "小说的三要素是（　　）",
+      "options": [
+        "人物、情节、环境",
+        "论点、论据、论证",
+        "时间、地点、人物",
+        "对象、方法、顺序"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：人物、情节、环境。按小说三要素与情节结构判断，本题正确答案是「人物、情节、环境」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "小说情节一般包括（　　）",
+      "options": [
+        "起因、经过、结果",
+        "总、分、总",
+        "时间、空间、逻辑",
+        "开端、发展、高潮、结局"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：开端、发展、高潮、结局。按小说三要素与情节结构判断，本题正确答案是「开端、发展、高潮、结局」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "小说中塑造人物的核心是（　　）",
+      "options": [
+        "论证中心论点",
+        "介绍科学知识",
+        "刻画人物形象，表现人物性格",
+        "说明事物特征"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：刻画人物形象，表现人物性格。按小说三要素与情节结构判断，本题正确答案是「刻画人物形象，表现人物性格」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "小说的环境包括（　　）",
+      "options": [
+        "只有人物环境",
+        "自然环境和社会环境",
+        "只有自然环境",
+        "只有社会环境"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：自然环境和社会环境。按小说三要素与情节结构判断，本题正确答案是「自然环境和社会环境」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "小说的线索可以是（　　）",
+      "options": [
+        "人物、事件、物品、情感等",
+        "只能是时间",
+        "只能是地点",
+        "只能是人物"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：人物、事件、物品、情感等。按小说三要素与情节结构判断，本题正确答案是「人物、事件、物品、情感等」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "小说的叙述视角常见的有（　　）",
+      "options": [
+        "第一人称和第二人称",
+        "第二人称和第三人称",
+        "只有第一人称",
+        "第一人称和第三人称"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：第一人称和第三人称。按小说三要素与情节结构判断，本题正确答案是「第一人称和第三人称」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "小说中的“我”（　　）",
+      "options": [
+        "一定不是人物",
+        "与情节无关",
+        "可能是叙述者，不一定是作者本人",
+        "一定是作者本人"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：可能是叙述者，不一定是作者本人。按小说三要素与情节结构判断，本题正确答案是「可能是叙述者，不一定是作者本人」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "小说按篇幅可分为（　　）",
+      "options": [
+        "古诗、词、曲",
+        "长篇、中篇、短篇、微型小说",
+        "记叙文、说明文、议论文",
+        "散文、诗歌、戏剧"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：长篇、中篇、短篇、微型小说。按小说三要素与情节结构判断，本题正确答案是「长篇、中篇、短篇、微型小说」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "小说的主题通常通过（　　）表现",
+      "options": [
+        "人物形象和故事情节",
+        "数据统计",
+        "概念解释",
+        "产品说明"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：人物形象和故事情节。按小说三要素与情节结构判断，本题正确答案是「人物形象和故事情节」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "阅读小说，梳理情节应该（　　）",
+      "options": [
+        "只看开头",
+        "只看结尾",
+        "只数段落",
+        "按开端、发展、高潮、结局概括"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：按开端、发展、高潮、结局概括。按小说三要素与情节结构判断，本题正确答案是「按开端、发展、高潮、结局概括」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“他身材高大，青白脸色，皱纹间时常夹些伤痕”属于（　　）",
+      "options": [
+        "动作描写",
+        "心理描写",
+        "外貌描写",
+        "语言描写"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：外貌描写。按人物描写方法与人物形象分析判断，本题正确答案是「外貌描写」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“他不屑置辩地说：‘窃书不能算偷……’”属于（　　）",
+      "options": [
+        "环境描写",
+        "语言描写",
+        "外貌描写",
+        "动作描写"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：语言描写。按人物描写方法与人物形象分析判断，本题正确答案是「语言描写」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“他排出九文大钱”属于（　　）",
+      "options": [
+        "动作描写",
+        "语言描写",
+        "心理描写",
+        "神态描写"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：动作描写。按人物描写方法与人物形象分析判断，本题正确答案是「动作描写」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“他心里盘算着怎样才能蒙混过关”属于（　　）",
+      "options": [
+        "外貌描写",
+        "动作描写",
+        "语言描写",
+        "心理描写"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：心理描写。按人物描写方法与人物形象分析判断，本题正确答案是「心理描写」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“他脸上现出鄙夷的神色”属于（　　）",
+      "options": [
+        "动作描写",
+        "心理描写",
+        "神态描写",
+        "语言描写"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：神态描写。按人物描写方法与人物形象分析判断，本题正确答案是「神态描写」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "小说中细节描写的作用是（　　）",
+      "options": [
+        "说明事物特征",
+        "使人物形象更鲜明、更真实",
+        "增加文章篇幅",
+        "代替情节发展"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：使人物形象更鲜明、更真实。按人物描写方法与人物形象分析判断，本题正确答案是「使人物形象更鲜明、更真实」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "侧面描写是指（　　）",
+      "options": [
+        "通过他人的反应或环境来表现人物",
+        "直接描写人物外貌",
+        "直接写人物语言",
+        "直接写人物动作"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：通过他人的反应或环境来表现人物。按人物描写方法与人物形象分析判断，本题正确答案是「通过他人的反应或环境来表现人物」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "分析人物形象，应该结合（　　）",
+      "options": [
+        "文章的字数",
+        "作者的年龄",
+        "发表的时间",
+        "人物的描写、所做事件和相关环境"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：人物的描写、所做事件和相关环境。按人物描写方法与人物形象分析判断，本题正确答案是「人物的描写、所做事件和相关环境」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "次要人物的作用可能是（　　）",
+      "options": [
+        "与主题无关",
+        "只增加字数",
+        "衬托主要人物，推动情节发展",
+        "替代主要人物"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：衬托主要人物，推动情节发展。按人物描写方法与人物形象分析判断，本题正确答案是「衬托主要人物，推动情节发展」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "小说中对比手法的作用是（　　）",
+      "options": [
+        "代替环境描写",
+        "突出人物性格，增强艺术效果",
+        "使人物形象模糊",
+        "减少情节内容"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：突出人物性格，增强艺术效果。按人物描写方法与人物形象分析判断，本题正确答案是「突出人物性格，增强艺术效果」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "小说中自然环境描写的作用不包括（　　）",
+      "options": [
+        "论证中心论点",
+        "渲染气氛",
+        "烘托人物心情",
+        "推动情节发展"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：论证中心论点。按环境描写、主题与小说技巧判断，本题正确答案是「论证中心论点」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "小说中社会环境描写的主要作用是（　　）",
+      "options": [
+        "描写天气变化",
+        "说明地理位置",
+        "介绍自然风光",
+        "交代时代背景，揭示人物命运的社会根源"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：交代时代背景，揭示人物命运的社会根源。按环境描写、主题与小说技巧判断，本题正确答案是「交代时代背景，揭示人物命运的社会根源」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "小说标题的作用可能是（　　）",
+      "options": [
+        "说明作者身份",
+        "交代写作时间",
+        "概括情节、点明线索或揭示主题",
+        "决定文章字数"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：概括情节、点明线索或揭示主题。按环境描写、主题与小说技巧判断，本题正确答案是「概括情节、点明线索或揭示主题」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "小说中的伏笔是指（　　）",
+      "options": [
+        "增加无关内容",
+        "前文为后文情节所作的暗示和铺垫",
+        "直接揭示结局",
+        "代替中心思想"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：前文为后文情节所作的暗示和铺垫。按环境描写、主题与小说技巧判断，本题正确答案是「前文为后文情节所作的暗示和铺垫」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "小说中的照应是指（　　）",
+      "options": [
+        "前后内容相互呼应，使结构严谨",
+        "前后内容矛盾",
+        "重复相同内容",
+        "删除重要情节"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：前后内容相互呼应，使结构严谨。按环境描写、主题与小说技巧判断，本题正确答案是「前后内容相互呼应，使结构严谨」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "讽刺手法常用于（　　）",
+      "options": [
+        "赞美自然环境",
+        "介绍科学知识",
+        "论证中心论点",
+        "批判社会现实和人性弱点"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：批判社会现实和人性弱点。按环境描写、主题与小说技巧判断，本题正确答案是「批判社会现实和人性弱点」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "小说主题的概括，应该（　　）",
+      "options": [
+        "只看结尾",
+        "只凭个人感受",
+        "结合人物、情节和环境综合分析",
+        "只看标题"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：结合人物、情节和环境综合分析。按环境描写、主题与小说技巧判断，本题正确答案是「结合人物、情节和环境综合分析」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "小说中“以喜写悲”是指（　　）",
+      "options": [
+        "与情感无关",
+        "用欢乐的场景反衬悲伤的情感",
+        "用悲伤写悲伤",
+        "只写欢乐"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：用欢乐的场景反衬悲伤的情感。按环境描写、主题与小说技巧判断，本题正确答案是「用欢乐的场景反衬悲伤的情感」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "分析小说情节的作用，可以从（　　）入手",
+      "options": [
+        "推动情节、塑造人物、表现主题",
+        "字数、标点、段落",
+        "作者生平、籍贯",
+        "纸张、版本"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：推动情节、塑造人物、表现主题。按环境描写、主题与小说技巧判断，本题正确答案是「推动情节、塑造人物、表现主题」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-语文-2",
+      "chapterName": "小说与人物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "评价小说人物，应该（　　）",
+      "options": [
+        "用现代标准简单否定",
+        "只看优点",
+        "只看缺点",
+        "放在特定时代背景下全面分析"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：放在特定时代背景下全面分析。按环境描写、主题与小说技巧判断，本题正确答案是「放在特定时代背景下全面分析」。",
+      "difficulty": 2
     }
   ]
 }

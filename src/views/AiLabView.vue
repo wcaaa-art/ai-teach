@@ -10,27 +10,27 @@ const router = useRouter()
 
 // 后端不可用时也要能演示：保留一份与 server/mcp-capabilities.js 对齐的最小能力清单。
 const FALLBACK_AGENT = [
-  { name: 'rag_knowledge_query', label: '检索课标知识库', description: '混合检索课标知识点与中考真题解析，返回可引用片段。', parameters: ['subject', 'grade', 'keyword'] },
-  { name: 'calc_review_interval', label: '计算复习间隔', description: '按艾宾浩斯遗忘曲线给出下一次复习时间。', parameters: ['last_study_time', 'mastery_level'] },
-  { name: 'get_recent_focus_record', label: '读取近期专注记录', description: '读取总时长、任务完成率、分心与离岗记录。', parameters: ['days'] },
-  { name: 'visual_monitor_get_status', label: '读取视觉监督状态', description: '读取前端推送的在岗/离岗状态，不接收图像。', parameters: ['is_present', 'continuous_away_seconds'] }
+  { name: 'rag_knowledge_query', label: '检索课标知识库', description: '混合检索课标知识点与中考真题解析，返回可引用片段', parameters: ['subject', 'grade', 'keyword'] },
+  { name: 'calc_review_interval', label: '计算复习间隔', description: '按艾宾浩斯遗忘曲线给出下一次复习时间', parameters: ['last_study_time', 'mastery_level'] },
+  { name: 'get_recent_focus_record', label: '读取近期专注记录', description: '读取总时长、任务完成率、分心与离岗记录', parameters: ['days'] },
+  { name: 'visual_monitor_get_status', label: '读取视觉监督状态', description: '读取前端推送的在岗/离岗状态，不接收图像', parameters: ['is_present', 'continuous_away_seconds'] }
 ]
 const FALLBACK_MCP = {
   command: 'npm run mcp',
   tools: [
-    { name: 'search_curriculum', description: '检索初中课程标准知识点，支持跨年级与术语别名。' },
-    { name: 'calc_review_interval', description: '按艾宾浩斯曲线计算下一次复习时间。' },
-    { name: 'list_curriculum_chapters', description: '列出指定年级与科目的课程专题目录。' }
+    { name: 'search_curriculum', description: '检索初中课程标准知识点，支持跨年级与术语别名' },
+    { name: 'calc_review_interval', description: '按艾宾浩斯曲线计算下一次复习时间' },
+    { name: 'list_curriculum_chapters', description: '列出指定年级与科目的课程专题目录' }
   ],
   resources: [
-    { uri: 'ai-teach://curriculum/subjects', name: '初中课程标准学科目录', description: '按年级列出开设科目与教材版本。' },
-    { uri: 'ai-teach://curriculum/chapters/{grade}/{subject}', name: '课标专题目录', description: '指定年级与科目的专题列表。' },
-    { uri: 'ai-teach://exam/passages/{subject}', name: '中考真题片段库', description: '按学科读取带出处的真题片段。' }
+    { uri: 'ai-teach://curriculum/subjects', name: '初中课程标准学科目录', description: '按年级列出开设科目与教材版本' },
+    { uri: 'ai-teach://curriculum/chapters/{grade}/{subject}', name: '课标专题目录', description: '指定年级与科目的专题列表' },
+    { uri: 'ai-teach://exam/passages/{subject}', name: '中考真题片段库', description: '按学科读取带出处的真题片段' }
   ],
   prompts: [
-    { name: 'explain_mistake', title: '错题归因与补强', description: '按项目口径分析错题，给出知识点、错因与补强动作。' },
-    { name: 'plan_next_week', title: '下一周学习计划编排', description: '按四阶段编排任务，保留未掌握的前置知识。' },
-    { name: 'tutor_guide', title: '初中生答疑（只引导）', description: '拆解题意、回顾知识点、给相似例子，不给完整答案。' }
+    { name: 'explain_mistake', title: '错题归因与补强', description: '按项目口径分析错题，给出知识点、错因与补强动作' },
+    { name: 'plan_next_week', title: '下一周学习计划编排', description: '按四阶段编排任务，保留未掌握的前置知识' },
+    { name: 'tutor_guide', title: '初中生答疑（只引导）', description: '拆解题意、回顾知识点、给相似例子，不给完整答案' }
   ]
 }
 
@@ -43,19 +43,19 @@ const capabilities = ref({
 })
 
 const workflow = [
-  { step: '01', title: '学情诊断', desc: '专题摸底 + 自评，形成掌握度雷达与长短板。' },
-  { step: '02', title: '计划编排', desc: '概念→例题→迁移→复盘，自动插入桥接复习。' },
-  { step: '03', title: '专注执行', desc: '番茄钟 + 本地视觉状态机，分心才温和提醒。' },
-  { step: '04', title: '错题归因', desc: '按知识点回溯错因，生成可执行的补强任务。' },
-  { step: '05', title: '周报迭代', desc: '聚合近 7 天数据，下一轮计划自动重排。' }
+  { step: '01', title: '学情分析', desc: '专题摸底 + 自评，出掌握表、错题分布与补强路线' },
+  { step: '02', title: '计划编排', desc: '概念→例题→迁移→复盘，自动插入桥接复习' },
+  { step: '03', title: '专注执行', desc: '番茄钟 + 本地视觉状态机，分心才温和提醒' },
+  { step: '04', title: '错题归因', desc: '按知识点回溯错因，生成可执行的补强任务' },
+  { step: '05', title: '周报迭代', desc: '聚合近 7 天数据，下一轮计划自动重排' }
 ]
 
 const modalities = [
-  { tag: '文本', title: '对话与讲题', desc: 'SSE 流式输出，引导 / 讲解双模式。' },
-  { tag: '图像', title: '拍照答疑', desc: '图片只在本次请求发送，答复要点留在会话里，可继续追问。' },
-  { tag: '语音', title: '语音输入与朗读', desc: '浏览器识别 + 本地 TTS，背诵窗用 whisper-tiny。' },
-  { tag: '视觉', title: '专注状态检测', desc: 'MediaPipe 本机推理，视频帧不上传。' },
-  { tag: '视频', title: 'B 站补强', desc: '按章节检索，风控时回退到搜索入口。' }
+  { tag: '文本', title: '对话与讲题', desc: 'SSE 流式输出，引导 / 讲解双模式' },
+  { tag: '图像', title: '拍照答疑', desc: '图片只在本次请求发送，答复要点留在会话里，可继续追问' },
+  { tag: '语音', title: '语音输入与朗读', desc: '浏览器识别 + 本地 TTS，背诵窗用 whisper-tiny' },
+  { tag: '视觉', title: '专注状态检测', desc: 'MediaPipe 本机推理，视频帧不上传' },
+  { tag: '视频', title: 'B 站补强', desc: '按章节检索，风控时回退到搜索入口' }
 ]
 
 // 护栏清单直接读服务端真实规则与计数：不再写死文案，评委看到的就是这一刻的实际配置。
@@ -67,17 +67,17 @@ const safety = computed(() => {
   return [
     {
       title: rules.enabled ? `输入侧意图筛查 · 已拦截 ${stats.inputBlocked || 0} 次` : '输入侧意图筛查 · 未启用',
-      desc: `${categories || 7} 类危险对象 × ${rules.intentVerbs || 0} 个可操作意图同时命中才拒绝；课标、实验、禁毒普法语境放行，避免误杀正常教学内容。`
+      desc: `${categories || 7} 类危险对象 × ${rules.intentVerbs || 0} 个可操作意图同时命中才拒绝；课标、实验、禁毒普法语境放行，避免误杀正常教学内容`
     },
     {
       title: `输出侧危险做法过滤 · ${rules.outputRules || 3} 条规则`,
-      desc: '命中即可执行的危险步骤，一律替换为固定话术，不把配方与步骤交给学生。'
+      desc: '命中即可执行的危险步骤，一律替换为固定话术，不把配方与步骤交给学生'
     },
-    { title: '引导模式护栏', desc: '拦截「答案：」「正确选项是」等直接答案，只给下一步思路。' },
-    { title: '结构化输出校验', desc: 'JSON 解析 + 字段归一化，残缺结果不进入本地库。' },
+    { title: '引导模式护栏', desc: '拦截「答案：」「正确选项是」等直接答案，只给下一步思路' },
+    { title: '结构化输出校验', desc: 'JSON 解析 + 字段归一化，残缺结果不进入本地库' },
     {
       title: `全链路本地兜底 · 重试 ${llm.retries || 0} 次 / 失败 ${llm.failures || 0} 次`,
-      desc: '模型限流、超时或密钥失效时自动退避重试，仍失败则回落到本地题库与规则。'
+      desc: '模型限流、超时或密钥失效时自动退避重试，仍失败则回落到本地题库与规则'
     }
   ]
 })
@@ -92,7 +92,7 @@ const qualityNote = computed(() => {
   if (!quality) return ''
   const math = quality.bySubject?.['数学']
   const mathText = math ? `，其中数学 ${math.lowQuality}/${math.total}` : ''
-  return `公式抽取丢失的片段不进「检索依据」：全库 ${quality.lowQuality}/${quality.totalChunks} 条被判低质${mathText}。`
+  return `公式抽取丢失的片段不进「检索依据」：全库 ${quality.lowQuality}/${quality.totalChunks} 条被判低质${mathText}`
 })
 
 const quickQueries = ['二次函数顶点式', '欧姆定律电流与电压', '化学方程式配平', '文言文实词']
@@ -131,7 +131,7 @@ async function runRag(query = ragQuery.value) {
   const response = await searchRagPassages({ q: text })
   ragLoading.value = false
   if (!response.success) {
-    ragError.value = response.error || '检索暂时不可用，请确认后端已启动。'
+    ragError.value = response.error || '检索暂时不可用，请确认后端已启动'
     return
   }
   ragResult.value = response.data || null
@@ -142,7 +142,7 @@ async function copyMcpConfig() {
     await navigator.clipboard.writeText(mcpConfig.value)
     ElMessage.success('MCP 配置已复制')
   } catch {
-    ElMessage.info('当前浏览器不允许自动复制，可手动选中配置文本。')
+    ElMessage.info('当前浏览器不允许自动复制，可手动选中配置文本')
   }
 }
 
@@ -176,8 +176,8 @@ onMounted(() => {
     <section class="lab-hero">
       <div class="lab-hero-copy">
         <span class="eyebrow">能力地图</span>
-        <h2>AI 不是外挂，<br>是学习闭环的一部分。</h2>
-        <p>从诊断、计划、专注到反馈，每个环节都有可解释的模型能力、可追溯的真题依据，以及模型不可用时的本地兜底。</p>
+        <h2>AI 不是外挂，<br>是学习闭环的一部分</h2>
+        <p>从分析、计划、专注到反馈，每个环节都有可解释的模型能力、可追溯的真题依据，以及模型不可用时的本地兜底</p>
         <div class="lab-hero-actions">
           <el-button type="primary" round @click="router.push('/tutor')">去问 AI <span class="arrow">→</span></el-button>
           <el-button round plain @click="router.push('/dashboard')">看学习看板</el-button>
@@ -226,11 +226,11 @@ onMounted(() => {
           </div>
           <div class="rag-meta">
             <span v-if="ragResult">命中 {{ ragResult.topics?.length || 0 }} 个知识点 · {{ ragResult.passages?.length || 0 }} 条真题 · {{ ragResult.tookMs }} ms</span>
-            <span v-else>输入关键词后，检索结果会出现在右侧。</span>
+            <span v-else>输入关键词后，检索结果会出现在右侧</span>
           </div>
           <p v-if="qualityNote" class="rag-quality">{{ qualityNote }}</p>
           <p v-if="qualityNote" class="rag-quality">{{ qualityNote }}</p>
-          <p class="rag-privacy">索引是离线构建的本地 JSON，检索过程不把题目发到外网。</p>
+          <p class="rag-privacy">索引是离线构建的本地 JSON，检索过程不把题目发到外网</p>
         </div>
 
         <div class="rag-results" aria-live="polite">
@@ -250,7 +250,7 @@ onMounted(() => {
                 <span class="passage-score">相关度 {{ passage.score }}</span>
               </div>
               <p v-if="passage.snippet" class="passage-snippet">{{ passage.snippet }}</p>
-              <p v-else class="passage-snippet muted">这一题在原卷里用公式或图片排版，文本版暂不展开。</p>
+              <p v-else class="passage-snippet muted">这一题在原卷里用公式或图片排版，文本版暂不展开</p>
               <div class="passage-meta">
                 <span>{{ passage.subject }} · {{ passage.year }} 年 · {{ passage.exam }}</span>
                 <span v-if="passage.garbled" class="passage-flag">原卷符号有缺失</span>
@@ -258,12 +258,12 @@ onMounted(() => {
             </article>
             <div v-if="!ragResult.passages?.length" class="rag-empty">
               <strong>没有命中真题片段</strong>
-              <p>换一个更具体的知识点试试，比如「二次函数顶点式」。</p>
+              <p>换一个更具体的知识点试试，比如「二次函数顶点式」</p>
             </div>
           </template>
           <div v-else class="rag-empty">
             <strong>准备检索</strong>
-            <p>点左侧的示例关键词，看看 RAG 会带出哪些课标知识点和中考真题。</p>
+            <p>点左侧的示例关键词，看看 RAG 会带出哪些课标知识点和中考真题</p>
           </div>
         </div>
       </div>
@@ -386,8 +386,8 @@ onMounted(() => {
     </section>
 
     <section class="lab-footer">
-      <div><span class="eyebrow">本地优先</span><h3>能力可以很强，数据不必离开本机。</h3></div>
-      <p>学习记录存在浏览器 IndexedDB；摄像头帧、语音识别与检索索引都在本地处理。模型只接收本次请求所需的最小上下文。</p>
+      <div><span class="eyebrow">本地优先</span><h3>能力可以很强，数据不必离开本机</h3></div>
+      <p>学习记录存在浏览器 IndexedDB；摄像头帧、语音识别与检索索引都在本地处理，模型只接收本次请求所需的最小上下文</p>
     </section>
   </div>
 </template>

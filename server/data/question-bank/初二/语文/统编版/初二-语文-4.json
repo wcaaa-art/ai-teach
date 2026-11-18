@@ -4,16 +4,16 @@
   "edition": "统编版",
   "chapter": {
     "id": "初二-语文-4",
-    "name": "八下：散文阅读"
+    "name": "散文阅读"
   },
-  "generatedAt": "2026-11-14T12:14:47.566Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.884Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdbnt0",
       "chapterId": "初二-语文-4",
-      "chapterName": "八下：散文阅读",
+      "chapterName": "散文阅读",
       "type": "single",
       "dimension": "concept",
       "stem": "阅读散文时，我们常说要抓住“形散神不散”这一特点。下列关于散文中“形”与“神”关系的理解，最准确的一项是：",
@@ -30,7 +30,7 @@
     {
       "id": "diag-2-mwgdbnt0",
       "chapterId": "初二-语文-4",
-      "chapterName": "八下：散文阅读",
+      "chapterName": "散文阅读",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读下面这段散文片段，完成题目。\n\n老屋的院墙外有一棵枣树。春天，它开出一树细碎的花，风一过，香气就顺着墙根溜进院子，落在母亲晾晒的棉被上。夏天，叶子密得遮住半个屋顶，午后我常搬条小凳坐在树影里，看光斑在地上挪动。秋天，枣子熟了，母亲拿竹竿轻轻一敲，红亮的枣便滚了一地。如今老屋早已拆了，枣树也不在了，可每到夏夜，我仍觉得能听见那树影里沙沙的响——那是风穿过叶子的声音，也是我童年最安静的背景。\n\n下列对这段文字的理解和分析，正确的一项是（　）",
@@ -47,7 +47,7 @@
     {
       "id": "diag-3-mwgdbnt0",
       "chapterId": "初二-语文-4",
-      "chapterName": "八下：散文阅读",
+      "chapterName": "散文阅读",
       "type": "single",
       "dimension": "transfer",
       "stem": "阅读下面的原创散文片段，完成题目。\n父亲总在黄昏修那把旧藤椅。藤条断了一根，他就从后院剪一截青藤，削得和旧藤一样细。我蹲在旁边数他手上的裂口，数着数着就乱了。他并不抬头，只说：「椅子修好了，你奶奶回来就能坐。」奶奶已经走了三年。院里的桂花开了又落，父亲仍把藤椅摆在檐下。有一回风大，藤椅倒在地上，他扶起来，用袖子擦了擦坐面，像擦一件刚洗过的白衬衫。\n下列对这段文字的理解和赏析，最恰当的一项是",
@@ -64,7 +64,7 @@
     {
       "id": "diag-4-mwgdbnt0",
       "chapterId": "初二-语文-4",
-      "chapterName": "八下：散文阅读",
+      "chapterName": "散文阅读",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "阅读下面句子，回答问题。\n“母亲把晒干的豆角一串串挂在檐下，风一吹，豆角轻轻碰响，像一串旧风铃，把整个夏天摇得很慢。”\n四位同学对这句话作了批注，其中不恰当的一项是（　　）",
@@ -81,7 +81,7 @@
     {
       "id": "diag-5-mwgdbnt0",
       "chapterId": "初二-语文-4",
-      "chapterName": "八下：散文阅读",
+      "chapterName": "散文阅读",
       "type": "single",
       "dimension": "concept",
       "stem": "阅读散文时，下列对“形散神聚”的理解最准确的一项是（ ）",
@@ -98,7 +98,7 @@
     {
       "id": "diag-6-mwgdbnt0",
       "chapterId": "初二-语文-4",
-      "chapterName": "八下：散文阅读",
+      "chapterName": "散文阅读",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读下面的散文片段，完成题目。\n老屋的窗是木格的，糊过纸，后来换了玻璃。雨夜，雨点落在瓦上，起初是零星的几粒，像有人在屋顶试探着走动；渐渐地，雨声密了，沙沙沙，像谁在瓦上细细翻动旧书页。我躺在床上，听见檐水一滴一滴落进石阶下的水窝，觉得整座老屋都安静地醒着。\n对文中“雨声密了，沙沙沙，像谁在瓦上细细翻动旧书页”一句的赏析，最恰当的一项是（　　）",
@@ -115,7 +115,7 @@
     {
       "id": "diag-7-mwgdbnt0",
       "chapterId": "初二-语文-4",
-      "chapterName": "八下：散文阅读",
+      "chapterName": "散文阅读",
       "type": "single",
       "dimension": "transfer",
       "stem": "阅读下面原创散文片段，完成题目。\n外婆的院子里有一架旧葡萄藤。夏天，藤叶把阳光筛成细碎的光斑，落在外婆的蓝布围裙上。她总说：“别嫌它结得少，藤老了，根还惦记着土呢。”后来院子改造，葡萄藤被移走。新铺的地砖平整光亮，可我总觉得，夏天少了一块会晃动的绿荫。\n下列对文本写法与情感的理解，最恰当的一项是（　　）",
@@ -132,7 +132,7 @@
     {
       "id": "diag-8-mwgdbnt0",
       "chapterId": "初二-语文-4",
-      "chapterName": "八下：散文阅读",
+      "chapterName": "散文阅读",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "阅读下面这段文字，选出对文段理解与分析不正确的一项。\n老屋的院墙外有一棵石榴树。每年五月，花一开，祖母就搬出小竹椅坐在树下，说趁太阳好，晒晒。后来我离家读书，石榴熟时，母亲总把最大的一颗留在冰箱里。等我回去，石榴皮已有些干皱，剥开，籽还是红的。",
@@ -149,7 +149,7 @@
     {
       "id": "diag-10-mwgdbnt0",
       "chapterId": "初二-语文-4",
-      "chapterName": "八下：散文阅读",
+      "chapterName": "散文阅读",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读片段，回答问题。\n老屋的院墙根下，有一株桂花树。每到秋天，风一吹，细碎的花便落在青石板上，像撒了一层淡黄的星子。祖母总在这个时候搬出竹筛，轻轻摇动树枝，让花落在筛里。她不说一句话，可那动作比说话还轻。\n文中「那动作比说话还轻」主要表现了什么？",
@@ -166,7 +166,7 @@
     {
       "id": "diag-1-mwgdbrik",
       "chapterId": "初二-语文-4",
-      "chapterName": "八下：散文阅读",
+      "chapterName": "散文阅读",
       "type": "single",
       "dimension": "concept",
       "stem": "阅读散文时，关注“线索”有助于把握文章结构。下列关于散文线索的理解，最准确的一项是（　　）",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：散文的线索并不限于人物行踪，也可以是物件、情感、时间、地点等；散文也不一定按空间顺序展开。\nB. 正确：线索是串联文章材料的脉络，常见的有以物件为线、以情感为线、以时间为线等，它能体现散文“形散神聚”的特点。\nC. 错误：散文虽然“形散”，但材料仍围绕中心组织，线索正是常见的组织方式，并非小说和说明文独有。\nD. 错误：线索应统摄全文，但不要求字面出现在每个段落；判断是否跑题要看材料与中心的关系，而不能只看线索是否每段出现。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "散文按内容大致可以分为（　　）",
+      "options": [
+        "叙事散文、抒情散文、哲理散文",
+        "写人散文、写景散文、说明散文",
+        "记叙文、议论文、说明文",
+        "古诗、词、曲"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：叙事散文、抒情散文、哲理散文。按散文的类型、特点与阅读方法判断，本题正确答案是「叙事散文、抒情散文、哲理散文」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "散文“形散神聚”中的“形散”是指（　　）",
+      "options": [
+        "结构混乱",
+        "主题不明",
+        "语言松散",
+        "选材自由、写法灵活"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：选材自由、写法灵活。按散文的类型、特点与阅读方法判断，本题正确答案是「选材自由、写法灵活」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "散文“神聚”中的“神”是指（　　）",
+      "options": [
+        "文章的语言",
+        "文章的标题",
+        "贯穿全文的中心思想和情感",
+        "文章的结构"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：贯穿全文的中心思想和情感。按散文的类型、特点与阅读方法判断，本题正确答案是「贯穿全文的中心思想和情感」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "阅读散文，把握情感的主要方法是（　　）",
+      "options": [
+        "只读标题",
+        "抓住关键语句，体会作者的情感",
+        "统计文章字数",
+        "只看作者简介"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：抓住关键语句，体会作者的情感。按散文的类型、特点与阅读方法判断，本题正确答案是「抓住关键语句，体会作者的情感」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "散文的线索可以是（　　）",
+      "options": [
+        "人物、事件、景物、情感等",
+        "只能是时间",
+        "只能是地点",
+        "只能是人物"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：人物、事件、景物、情感等。按散文的类型、特点与阅读方法判断，本题正确答案是「人物、事件、景物、情感等」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "叙事散文以（　　）为主",
+      "options": [
+        "说明事物特征",
+        "论证观点",
+        "介绍科学知识",
+        "记叙人物和事件"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：记叙人物和事件。按散文的类型、特点与阅读方法判断，本题正确答案是「记叙人物和事件」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "抒情散文以（　　）为主",
+      "options": [
+        "说明事物原理",
+        "论证中心论点",
+        "抒发作者的情感",
+        "叙述完整故事"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：抒发作者的情感。按散文的类型、特点与阅读方法判断，本题正确答案是「抒发作者的情感」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "哲理散文往往通过（　　）表达人生感悟",
+      "options": [
+        "产品介绍",
+        "对生活现象的描写和思考",
+        "数据统计",
+        "概念解释"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：对生活现象的描写和思考。按散文的类型、特点与阅读方法判断，本题正确答案是「对生活现象的描写和思考」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "散文的语言通常（　　）",
+      "options": [
+        "优美、凝练、富有感染力",
+        "枯燥、刻板",
+        "全部是说明性语言",
+        "只求准确不求文采"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：优美、凝练、富有感染力。按散文的类型、特点与阅读方法判断，本题正确答案是「优美、凝练、富有感染力」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "阅读散文时，理清思路应该（　　）",
+      "options": [
+        "只看开头一段",
+        "只看结尾一段",
+        "只数段落数量",
+        "分析段落层次和材料组织方式"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：分析段落层次和材料组织方式。按散文的类型、特点与阅读方法判断，本题正确答案是「分析段落层次和材料组织方式」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“借景抒情”是指（　　）",
+      "options": [
+        "通过对话推进情节",
+        "用数据论证观点",
+        "借助景物描写抒发情感",
+        "直接说明事物特征"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：借助景物描写抒发情感。按散文常见表现手法及其作用判断，本题正确答案是「借助景物描写抒发情感」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“托物言志”是指（　　）",
+      "options": [
+        "叙述事件起因",
+        "借助具体事物表达志向和情感",
+        "描写人物外貌",
+        "介绍事物制作过程"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：借助具体事物表达志向和情感。按散文常见表现手法及其作用判断，本题正确答案是「借助具体事物表达志向和情感」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“欲扬先抑”是指（　　）",
+      "options": [
+        "先贬低后褒扬，使情感表达更强烈",
+        "先褒扬后贬低",
+        "一直褒扬",
+        "一直贬低"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：先贬低后褒扬，使情感表达更强烈。按散文常见表现手法及其作用判断，本题正确答案是「先贬低后褒扬，使情感表达更强烈」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“象征”手法是指（　　）",
+      "options": [
+        "直接说明事物",
+        "列举大量数据",
+        "按时间顺序叙述",
+        "用具体事物表现某种抽象意义"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：用具体事物表现某种抽象意义。按散文常见表现手法及其作用判断，本题正确答案是「用具体事物表现某种抽象意义」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“对比”手法在散文中的作用是（　　）",
+      "options": [
+        "减少文章内容",
+        "代替中心思想",
+        "突出事物特点，强化情感表达",
+        "使文章更单调"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：突出事物特点，强化情感表达。按散文常见表现手法及其作用判断，本题正确答案是「突出事物特点，强化情感表达」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“衬托”手法是指（　　）",
+      "options": [
+        "按空间顺序说明",
+        "用相似或相反的事物来突出主要对象",
+        "直接描写主要对象",
+        "删除次要内容"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：用相似或相反的事物来突出主要对象。按散文常见表现手法及其作用判断，本题正确答案是「用相似或相反的事物来突出主要对象」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "散文中景物描写的作用不包括（　　）",
+      "options": [
+        "论证中心论点",
+        "渲染气氛",
+        "烘托情感",
+        "推动情节"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：论证中心论点。按散文常见表现手法及其作用判断，本题正确答案是「论证中心论点」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "散文中的细节描写的作用是（　　）",
+      "options": [
+        "增加文章字数",
+        "代替主要情节",
+        "说明事物特征",
+        "使内容更真实、情感更细腻"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：使内容更真实、情感更细腻。按散文常见表现手法及其作用判断，本题正确答案是「使内容更真实、情感更细腻」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "散文中议论的作用通常是（　　）",
+      "options": [
+        "介绍写作背景",
+        "说明事物特征",
+        "点明主旨、升华情感",
+        "增加故事情节"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：点明主旨、升华情感。按散文常见表现手法及其作用判断，本题正确答案是「点明主旨、升华情感」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "散文中反复出现某一语句的作用是（　　）",
+      "options": [
+        "代替中心思想",
+        "强调情感，增强感染力，使结构完整",
+        "增加字数",
+        "使文章杂乱"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：强调情感，增强感染力，使结构完整。按散文常见表现手法及其作用判断，本题正确答案是「强调情感，增强感染力，使结构完整」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "理解散文标题的含义，应该（　　）",
+      "options": [
+        "结合全文内容分析其表层义和深层义",
+        "只看字面意思",
+        "只看作者名字",
+        "只看文章长度"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：结合全文内容分析其表层义和深层义。按散文内容理解与主旨概括判断，本题正确答案是「结合全文内容分析其表层义和深层义」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "理解散文中重要句子的含义，应该（　　）",
+      "options": [
+        "只看句子字面",
+        "脱离文本随意理解",
+        "只分析修辞",
+        "联系上下文和文章主旨分析"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：联系上下文和文章主旨分析。按散文内容理解与主旨概括判断，本题正确答案是「联系上下文和文章主旨分析」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "散文中某一段的作用，可以从（　　）分析",
+      "options": [
+        "作者、出处和年代",
+        "字体、字号和行距",
+        "内容、结构和表达效果",
+        "字数、标点和段落序号"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：内容、结构和表达效果。按散文内容理解与主旨概括判断，本题正确答案是「内容、结构和表达效果」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "概括散文主旨，常用的格式是（　　）",
+      "options": [
+        "虽然……但是……",
+        "通过……表达了……",
+        "因为……所以……",
+        "首先……其次……"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：通过……表达了……。按散文内容理解与主旨概括判断，本题正确答案是「通过……表达了……」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "散文中“我”的情感变化，通常通过（　　）体现",
+      "options": [
+        "关键语句和事件的发展",
+        "文章的字数",
+        "作者的年龄",
+        "标点符号的数量"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：关键语句和事件的发展。按散文内容理解与主旨概括判断，本题正确答案是「关键语句和事件的发展」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "阅读散文联系生活实际，应该（　　）",
+      "options": [
+        "脱离文本随意发挥",
+        "用生活经历代替文本",
+        "否定作者情感",
+        "在理解文本的基础上谈感受"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：在理解文本的基础上谈感受。按散文内容理解与主旨概括判断，本题正确答案是「在理解文本的基础上谈感受」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "散文中引用古诗文的作用是（　　）",
+      "options": [
+        "使结构松散",
+        "代替作者情感",
+        "丰富文章内容，增强文化底蕴",
+        "增加文章字数"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：丰富文章内容，增强文化底蕴。按散文内容理解与主旨概括判断，本题正确答案是「丰富文章内容，增强文化底蕴」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "分析散文中的人物形象，应该（　　）",
+      "options": [
+        "只凭主观印象",
+        "结合人物的言行、事件和环境",
+        "只看外貌描写",
+        "只看作者评价"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：结合人物的言行、事件和环境。按散文内容理解与主旨概括判断，本题正确答案是「结合人物的言行、事件和环境」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "散文结尾的作用可能是（　　）",
+      "options": [
+        "总结全文、深化主题、升华情感",
+        "设置悬念",
+        "引出新情节",
+        "交代人物身份"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：总结全文、深化主题、升华情感。按散文内容理解与主旨概括判断，本题正确答案是「总结全文、深化主题、升华情感」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-语文-4",
+      "chapterName": "散文阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "评价散文的写作特色，应该（　　）",
+      "options": [
+        "只写几个术语",
+        "不看文本",
+        "只谈作者名气",
+        "结合具体语句分析其表达效果"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：结合具体语句分析其表达效果。按散文内容理解与主旨概括判断，本题正确答案是「结合具体语句分析其表达效果」。",
+      "difficulty": 2
     }
   ]
 }

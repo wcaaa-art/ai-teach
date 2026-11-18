@@ -101,33 +101,33 @@ export function peakWindow(hours) {
 }
 
 const distractionTips = {
-  '页面切走': '开始专注前先关掉无关标签页和消息提醒。',
-  '视觉离岗': '把水杯和资料提前备好，减少中途离开。',
-  '犯困': '把最难的任务安排在精神最好的时段，必要时先休息 10 分钟。',
-  '扭头分心': '把手机放到视线外，桌面只留当前任务。',
-  '多人入镜': '尽量在安静、独立的空间专注。',
-  '低头': '把屏幕垫高到视线平齐，减少低头和趴桌。'
+  '页面切走': '开始专注前先关掉无关标签页和消息提醒',
+  '视觉离岗': '把水杯和资料提前备好，减少中途离开',
+  '犯困': '把最难的任务安排在精神最好的时段，必要时先休息 10 分钟',
+  '扭头分心': '把手机放到视线外，桌面只留当前任务',
+  '多人入镜': '尽量在安静、独立的空间专注',
+  '低头': '把屏幕垫高到视线平齐，减少低头和趴桌'
 }
 
 // 习惯建议最多三条：高效时段 → 主要分心来源 → 周趋势或连续天数。
 export function habitAdvice({ sessions, distractions, visualLogs, hours, streak, week }) {
-  if (!sessions.length) return ['还没有专注记录，先完成一次 25 分钟专注，习惯数据会从第一次开始积累。']
+  if (!sessions.length) return ['还没有专注记录，先完成一次 25 分钟专注，习惯数据会从第一次开始积累']
   const list = []
   const peak = peakWindow(hours)
   if (peak.minutes >= 20) {
-    list.push(`你在 ${peak.start}:00–${peak.end}:00 的专注时长最高，把最重要的任务放在这个时段。`)
+    list.push(`你在 ${peak.start}:00–${peak.end}:00 的专注时长最高，把最重要的任务放在这个时段`)
   }
   const topDistraction = distractionBreakdown(distractions, visualLogs).find(item => item.count > 0)
   if (topDistraction && topDistraction.count >= 2) {
-    list.push(`分心主要来自「${topDistraction.label}」（${topDistraction.count} 次），${distractionTips[topDistraction.label] || '先减少这类干扰再延长专注。'}`)
+    list.push(`分心主要来自「${topDistraction.label}」（${topDistraction.count} 次），${distractionTips[topDistraction.label] || '先减少这类干扰再延长专注'}`)
   }
   if (week?.minutesDeltaPercent !== null && week?.minutesDeltaPercent <= -20) {
-    list.push(`本周专注比上周少 ${Math.abs(week.minutesDeltaPercent)}%，今天先补一个 25 分钟的小任务。`)
+    list.push(`本周专注比上周少 ${Math.abs(week.minutesDeltaPercent)}%，今天先补一个 25 分钟的小任务`)
   } else if (week?.minutesDeltaPercent !== null && week?.minutesDeltaPercent >= 30) {
-    list.push(`本周专注比上周多 ${week.minutesDeltaPercent}%，节奏在变好，注意别透支。`)
+    list.push(`本周专注比上周多 ${week.minutesDeltaPercent}%，节奏在变好，注意别透支`)
   } else if (streak >= 3) {
-    list.push(`已经连续 ${streak} 天有专注记录，保持每天至少一次短专注。`)
+    list.push(`已经连续 ${streak} 天有专注记录，保持每天至少一次短专注`)
   }
-  if (!list.length) list.push('专注节奏比较平稳，继续保持每天固定时段学习。')
+  if (!list.length) list.push('专注节奏比较平稳，继续保持每天固定时段学习')
   return list.slice(0, 3)
 }

@@ -6,9 +6,9 @@
     "id": "初二-物理-5",
     "name": "质量与密度"
   },
-  "generatedAt": "2026-11-13T02:45:28.148Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.208Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedjr9s",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 0,
       "explanation": "A. 正确：金属块体积等于水面上升那部分水的体积，即 V=40 mL-20 mL=20 mL=20 cm^3；由密度公式 ρ=\\frac{m}{V}=\\frac{54 g}{20 cm^3}=2.7 g/cm^3。又因为 1 g/cm^3=1×10^3 kg/m^3，所以 2.7 g/cm^3=2.7×10^3 kg/m^3。\nB. 错误：密度数值 2.7 g/cm^3 算对了，但单位换算方向弄反了。1 g/cm^3 表示 1 cm^3 含 1 g，即 10^(-6) m^3 含 10^(-3) kg，故 1 g/cm^3=10^3 kg/m^3，应乘 10^3 而不是乘 10^(-3)。\nC. 错误：这是把金属块体积误当成量筒的总体积 40 cm^3 算出的结果（\\frac{54 g}{40 cm^3}=1.35 g/cm^3）。金属块浸没时排开水的体积是两次读数之差 20 cm^3，不是 40 cm^3，因此该结果与实验数据不符。\nD. 错误：这是把体积误算成 10 cm^3 得到的结果，例如只取了水面升高的“一半”或读数时未减去起始体积所致；由 40 mL-20 mL=20 cm^3 可知体积应为 20 cm^3，故 5.4 g/cm^3 无依据。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "某物体的质量是 54 g，体积是 20 cm³，它的密度是（ ）g/cm³",
+      "options": [
+        "2.7",
+        "0.37037",
+        "3.2",
+        "2.2"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：2.7。ρ = m/V = 54 ÷ 20 = 2.7 g/cm³。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "某物体的质量是 78 g，体积是 10 cm³，它的密度是（ ）g/cm³",
+      "options": [
+        "0.128205",
+        "8.3",
+        "7.3",
+        "7.8"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：7.8。ρ = m/V = 78 ÷ 10 = 7.8 g/cm³。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "某物体的质量是 120 g，体积是 15 cm³，它的密度是（ ）g/cm³",
+      "options": [
+        "8.5",
+        "7.5",
+        "8",
+        "0.125"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：8。ρ = m/V = 120 ÷ 15 = 8 g/cm³。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "某物体的质量是 200 g，体积是 25 cm³，它的密度是（ ）g/cm³",
+      "options": [
+        "7.5",
+        "8",
+        "0.125",
+        "8.5"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：8。ρ = m/V = 200 ÷ 25 = 8 g/cm³。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "某物体的质量是 90 g，体积是 30 cm³，它的密度是（ ）g/cm³",
+      "options": [
+        "3",
+        "0.333333",
+        "3.5",
+        "2.5"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：3。ρ = m/V = 90 ÷ 30 = 3 g/cm³。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "某物体的质量是 150 g，体积是 50 cm³，它的密度是（ ）g/cm³",
+      "options": [
+        "0.333333",
+        "3.5",
+        "2.5",
+        "3"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：3。ρ = m/V = 150 ÷ 50 = 3 g/cm³。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "某物体的质量是 270 g，体积是 30 cm³，它的密度是（ ）g/cm³",
+      "options": [
+        "9.5",
+        "8.5",
+        "9",
+        "0.111111"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：9。ρ = m/V = 270 ÷ 30 = 9 g/cm³。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "某物体的质量是 360 g，体积是 40 cm³，它的密度是（ ）g/cm³",
+      "options": [
+        "8.5",
+        "9",
+        "0.111111",
+        "9.5"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：9。ρ = m/V = 360 ÷ 40 = 9 g/cm³。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "某物体的质量是 450 g，体积是 50 cm³，它的密度是（ ）g/cm³",
+      "options": [
+        "9",
+        "0.111111",
+        "9.5",
+        "8.5"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：9。ρ = m/V = 450 ÷ 50 = 9 g/cm³。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "某物体的质量是 640 g，体积是 80 cm³，它的密度是（ ）g/cm³",
+      "options": [
+        "0.125",
+        "8.5",
+        "7.5",
+        "8"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：8。ρ = m/V = 640 ÷ 80 = 8 g/cm³。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某金属的密度是 7.8 g/cm³，体积为 10 cm³ 的该金属质量是（ ）g",
+      "options": [
+        "39",
+        "156",
+        "78",
+        "17.8"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：78。m = ρV = 7.8 × 10 = 78 g。",
+      "difficulty": 1
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某金属的密度是 8.9 g/cm³，体积为 20 cm³ 的该金属质量是（ ）g",
+      "options": [
+        "356",
+        "178",
+        "28.9",
+        "89"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：178。m = ρV = 8.9 × 20 = 178 g。",
+      "difficulty": 1
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某金属的密度是 2.7 g/cm³，体积为 100 cm³ 的该金属质量是（ ）g",
+      "options": [
+        "270",
+        "102.7",
+        "135",
+        "540"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：270。m = ρV = 2.7 × 100 = 270 g。",
+      "difficulty": 1
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某金属的密度是 1 g/cm³，体积为 500 cm³ 的该金属质量是（ ）g",
+      "options": [
+        "501",
+        "250",
+        "1000",
+        "500"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：500。m = ρV = 1 × 500 = 500 g。",
+      "difficulty": 1
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某金属的密度是 11.3 g/cm³，体积为 10 cm³ 的该金属质量是（ ）g",
+      "options": [
+        "56.5",
+        "226",
+        "113",
+        "21.3"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：113。m = ρV = 11.3 × 10 = 113 g。",
+      "difficulty": 1
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某金属的密度是 7.8 g/cm³，体积为 50 cm³ 的该金属质量是（ ）g",
+      "options": [
+        "780",
+        "390",
+        "57.8",
+        "195"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：390。m = ρV = 7.8 × 50 = 390 g。",
+      "difficulty": 1
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某金属的密度是 8.9 g/cm³，体积为 10 cm³ 的该金属质量是（ ）g",
+      "options": [
+        "89",
+        "18.9",
+        "44.5",
+        "178"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：89。m = ρV = 8.9 × 10 = 89 g。",
+      "difficulty": 1
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某金属的密度是 2.7 g/cm³，体积为 200 cm³ 的该金属质量是（ ）g",
+      "options": [
+        "202.7",
+        "270",
+        "1080",
+        "540"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：540。m = ρV = 2.7 × 200 = 540 g。",
+      "difficulty": 1
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某金属的密度是 1 g/cm³，体积为 250 cm³ 的该金属质量是（ ）g",
+      "options": [
+        "125",
+        "500",
+        "250",
+        "251"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：250。m = ρV = 1 × 250 = 250 g。",
+      "difficulty": 1
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某金属的密度是 11.3 g/cm³，体积为 20 cm³ 的该金属质量是（ ）g",
+      "options": [
+        "452",
+        "226",
+        "31.3",
+        "113"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：226。m = ρV = 11.3 × 20 = 226 g。",
+      "difficulty": 1
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某液体的质量是 78 g，密度是 7.8 g/cm³，它的体积是（ ）cm³",
+      "options": [
+        "10",
+        "608.4",
+        "20",
+        "0"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：10。V = m/ρ = 78 ÷ 7.8 = 10 cm³。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某液体的质量是 89 g，密度是 8.9 g/cm³，它的体积是（ ）cm³",
+      "options": [
+        "792.1",
+        "20",
+        "0",
+        "10"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：10。V = m/ρ = 89 ÷ 8.9 = 10 cm³。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某液体的质量是 270 g，密度是 2.7 g/cm³，它的体积是（ ）cm³",
+      "options": [
+        "110",
+        "90",
+        "100",
+        "729"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：100。V = m/ρ = 270 ÷ 2.7 = 100 cm³。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某液体的质量是 500 g，密度是 1 g/cm³，它的体积是（ ）cm³",
+      "options": [
+        "501",
+        "500",
+        "510",
+        "490"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：500。V = m/ρ = 500 ÷ 1 = 500 cm³。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某液体的质量是 113 g，密度是 11.3 g/cm³，它的体积是（ ）cm³",
+      "options": [
+        "10",
+        "1276.9",
+        "20",
+        "0"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：10。V = m/ρ = 113 ÷ 11.3 = 10 cm³。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某液体的质量是 390 g，密度是 7.8 g/cm³，它的体积是（ ）cm³",
+      "options": [
+        "3042",
+        "60",
+        "40",
+        "50"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：50。V = m/ρ = 390 ÷ 7.8 = 50 cm³。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某液体的质量是 178 g，密度是 8.9 g/cm³，它的体积是（ ）cm³",
+      "options": [
+        "30",
+        "10",
+        "20",
+        "1584.2"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：20。V = m/ρ = 178 ÷ 8.9 = 20 cm³。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某液体的质量是 540 g，密度是 2.7 g/cm³，它的体积是（ ）cm³",
+      "options": [
+        "190",
+        "200",
+        "1458",
+        "210"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：200。V = m/ρ = 540 ÷ 2.7 = 200 cm³。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某液体的质量是 250 g，密度是 1 g/cm³，它的体积是（ ）cm³",
+      "options": [
+        "250",
+        "260",
+        "240",
+        "251"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：250。V = m/ρ = 250 ÷ 1 = 250 cm³。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-物理-5",
+      "chapterName": "质量与密度",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某液体的质量是 226 g，密度是 11.3 g/cm³，它的体积是（ ）cm³",
+      "options": [
+        "2553.8",
+        "30",
+        "10",
+        "20"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：20。V = m/ρ = 226 ÷ 11.3 = 20 cm³。",
       "difficulty": 2
     }
   ]

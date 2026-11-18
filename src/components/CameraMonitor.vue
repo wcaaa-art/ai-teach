@@ -94,7 +94,7 @@ async function startMonitoring(){
   const requestId = ++initializationId
   if (props.lowPerformance) {
     enabled.value = false
-    state.value.message = '设置中的低配模式已关闭视觉推理，仅保留页面切标签检测。请到“设置 → 性能与连接”关闭低配模式后再试。'
+    state.value.message = '设置中的低配模式已关闭视觉推理，仅保留页面切标签检测，请到“设置 → 性能与连接”关闭低配模式后再试'
     emit('model-error', state.value.message)
     return
   }
@@ -106,7 +106,7 @@ async function startMonitoring(){
     }
   }, 45000)
   try {
-    if (!window.isSecureContext || !navigator.mediaDevices?.getUserMedia) throw new Error('当前浏览器环境不支持摄像头：请使用 localhost 或 HTTPS，并确认浏览器支持 MediaDevices。')
+    if (!window.isSecureContext || !navigator.mediaDevices?.getUserMedia) throw new Error('当前浏览器环境不支持摄像头：请使用 localhost 或 HTTPS，并确认浏览器支持 MediaDevices')
     stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user', width: { ideal: 640 }, height: { ideal: 480 } }, audio: false })
     if (requestId !== initializationId || !enabled.value) { stream.getTracks().forEach(track => track.stop()); stream = null; return }
     if (!video.value) { stream.getTracks().forEach(track => track.stop()); stream = null; return }
@@ -141,9 +141,9 @@ async function startMonitoring(){
     startLoop()
   } catch (error) {
     if (requestId === initializationId) {
-      const permissionMessage = error.name === 'NotAllowedError' ? '浏览器拒绝了摄像头权限，可在地址栏重新允许。'
-        : error.name === 'NotFoundError' ? '没有找到可用摄像头，请检查设备连接。'
-        : error.message || '摄像头或模型暂时不可用。'
+      const permissionMessage = error.name === 'NotAllowedError' ? '浏览器拒绝了摄像头权限，可在地址栏重新允许'
+        : error.name === 'NotFoundError' ? '没有找到可用摄像头，请检查设备连接'
+        : error.message || '摄像头或模型暂时不可用'
       if (stream) {
         active.value = true
         state.value = { ...state.value, cameraReady: true, modelReady: false, supervisionEnabled: false, message: `摄像头已连接，但视觉模型不可用：${permissionMessage}` }
@@ -389,11 +389,11 @@ defineExpose({ requestEnable, disable, stopMonitoring, state })
       <button type="button" @click="requestEnable">开启学习画面</button>
       <small>只在本机识别走神和离开</small>
     </div>
-    <p v-if="!bare && active && previewCollapsed" class="preview-collapsed-note">预览已收起，检测仍在运行。</p>
+    <p v-if="!bare && active && previewCollapsed" class="preview-collapsed-note">预览已收起，检测仍在运行</p>
     <p v-if="!bare && state.supervisionEnabled" class="vision-line">睁眼 {{ eyePercent }}% · 左右 {{ state.yaw }}° · 俯仰 {{ state.pitch }}° · 人脸 {{ state.faceCount }}</p>
-    <p v-if="!bare" class="privacy-note">图像帧只在浏览器本地处理，不上传云端、不写入磁盘、不截图保存、不识别身份。本地检测在岗、头部朝向、闭眼和多人；分心、犯困、多人只做温和提示，不会暂停计时。</p>
+    <p v-if="!bare" class="privacy-note">图像帧只在浏览器本地处理，不上传云端、不写入磁盘、不截图保存、不识别身份，本地检测在岗、头部朝向、闭眼和多人；分心、犯困、多人只做温和提示，不会暂停计时</p>
     <el-dialog v-model="consentVisible" title="开启前请阅读隐私说明" width="460px" append-to-body>
-      <div class="camera-consent">开启后，浏览器会请求摄像头权限。所有图像帧仅在本机推理（MediaPipe Face Landmarker，Apache 2.0），检测是否在岗、头部朝向、闭眼和多人，不上传云端、不识别身份、不写入磁盘或截图保存。离开专注页、关闭开关或页面卸载时，摄像头会立即停止。</div>
+      <div class="camera-consent">开启后，浏览器会请求摄像头权限，所有图像帧仅在本机推理（MediaPipe Face Landmarker，Apache 2.0），检测是否在岗、头部朝向、闭眼和多人，不上传云端、不识别身份、不写入磁盘或截图保存，离开专注页、关闭开关或页面卸载时，摄像头会立即停止</div>
       <template #footer><el-button @click="consentVisible=false">暂不开启</el-button><el-button type="primary" @click="acceptConsent">我已阅读并同意</el-button></template>
     </el-dialog>
   </div>

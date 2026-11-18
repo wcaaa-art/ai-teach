@@ -6,9 +6,9 @@
     "id": "初一-英语-1",
     "name": "日常交际与自我介绍"
   },
-  "generatedAt": "2026-11-14T12:12:45.509Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.911Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgd95c0",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：自我介绍时用“My name is ...”说明自己的姓名，符合日常交际情境。\nB. 错误：“Your name is Wang Lin.”是在说对方的姓名，不是介绍自己。\nC. 错误：“He is Wang Lin.”用he指代男性第三人称，不能用来介绍自己。\nD. 错误：“She is Wang Lin.”用she指代女性第三人称，不能用来介绍自己。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "— How are you?\n— ______",
+      "options": [
+        "Fine, thank you.",
+        "I'm twelve.",
+        "It's Monday.",
+        "Yes, I do."
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：Fine, thank you.。根据问句判断交际场景，只有「Fine, thank you.」是针对该问句的恰当回答。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "— What's your name?\n— ______",
+      "options": [
+        "I'm thirteen.",
+        "I'm from China.",
+        "I'm in Class Two.",
+        "My name is Li Hua."
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：My name is Li Hua.。根据问句判断交际场景，只有「My name is Li Hua.」是针对该问句的恰当回答。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "— How old are you?\n— ______",
+      "options": [
+        "I'm from Canada.",
+        "It's sunny today.",
+        "I'm thirteen years old.",
+        "My name is Tom."
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：I'm thirteen years old.。根据问句判断交际场景，只有「I'm thirteen years old.」是针对该问句的恰当回答。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "— Where are you from?\n— ______",
+      "options": [
+        "My name is Lily.",
+        "I'm from China.",
+        "I'm twelve.",
+        "I'm in Class One."
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：I'm from China.。根据问句判断交际场景，只有「I'm from China.」是针对该问句的恰当回答。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "— What class are you in?\n— ______",
+      "options": [
+        "I'm in Class Two, Grade Seven.",
+        "I'm from England.",
+        "I'm thirteen.",
+        "It's Monday."
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：I'm in Class Two, Grade Seven.。根据问句判断交际场景，只有「I'm in Class Two, Grade Seven.」是针对该问句的恰当回答。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "— Nice to meet you.\n— ______",
+      "options": [
+        "I'm fine.",
+        "Thank you.",
+        "See you.",
+        "Nice to meet you, too."
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Nice to meet you, too.。根据问句判断交际场景，只有「Nice to meet you, too.」是针对该问句的恰当回答。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "— Good morning, Miss Li.\n— ______",
+      "options": [
+        "Good night, Tom.",
+        "Thank you.",
+        "Good morning, Tom.",
+        "Good afternoon, Tom."
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：Good morning, Tom.。根据问句判断交际场景，只有「Good morning, Tom.」是针对该问句的恰当回答。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "— How do you spell your name?\n— ______",
+      "options": [
+        "Li Hua is my name.",
+        "L-I-H-U-A.",
+        "My name is Li Hua.",
+        "I'm Li Hua."
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：L-I-H-U-A.。根据问句判断交际场景，只有「L-I-H-U-A.」是针对该问句的恰当回答。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "— What's your favourite subject?\n— ______",
+      "options": [
+        "My favourite subject is English.",
+        "I'm in Class Three.",
+        "I'm from Beijing.",
+        "I'm thirteen."
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：My favourite subject is English.。根据问句判断交际场景，只有「My favourite subject is English.」是针对该问句的恰当回答。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "— Thank you very much.\n— ______",
+      "options": [
+        "That's right.",
+        "I'm fine.",
+        "See you.",
+        "You're welcome."
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：You're welcome.。根据问句判断交际场景，只有「You're welcome.」是针对该问句的恰当回答。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "— I'm sorry I'm late.\n— ______",
+      "options": [
+        "Nice to meet you.",
+        "Thank you.",
+        "That's all right.",
+        "You're welcome."
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：That's all right.。先看对方说的是什么，再选对应的应答语；本题应选「That's all right.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "— Goodbye! Have a nice day!\n— ______",
+      "options": [
+        "That's right.",
+        "Thank you. You too.",
+        "I'm fine.",
+        "You're welcome."
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：Thank you. You too.。先看对方说的是什么，再选对应的应答语；本题应选「Thank you. You too.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "— May I use your pen?\n— ______",
+      "options": [
+        "Sure, here you are.",
+        "Yes, I am.",
+        "No, thanks.",
+        "That's right."
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：Sure, here you are.。先看对方说的是什么，再选对应的应答语；本题应选「Sure, here you are.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "— Would you like some tea?\n— ______",
+      "options": [
+        "Yes, I do.",
+        "No, I don't.",
+        "You're welcome.",
+        "Yes, please."
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Yes, please.。先看对方说的是什么，再选对应的应答语；本题应选「Yes, please.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "— Can you help me with my English?\n— ______",
+      "options": [
+        "That's right.",
+        "I'm fine.",
+        "Of course.",
+        "You're welcome."
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：Of course.。先看对方说的是什么，再选对应的应答语；本题应选「Of course.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "— How's it going?\n— ______",
+      "options": [
+        "That's right.",
+        "Pretty good.",
+        "I'm thirteen.",
+        "It's Monday."
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：Pretty good.。先看对方说的是什么，再选对应的应答语；本题应选「Pretty good.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "— Happy birthday!\n— ______",
+      "options": [
+        "Thank you.",
+        "You're welcome.",
+        "See you.",
+        "I'm fine."
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：Thank you.。先看对方说的是什么，再选对应的应答语；本题应选「Thank you.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "— Let's go to the library.\n— ______",
+      "options": [
+        "You're welcome.",
+        "I'm sorry.",
+        "Thank you.",
+        "Good idea."
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Good idea.。先看对方说的是什么，再选对应的应答语；本题应选「Good idea.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "— Thanks for your help.\n— ______",
+      "options": [
+        "I'm fine.",
+        "See you.",
+        "My pleasure.",
+        "That's right."
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：My pleasure.。先看对方说的是什么，再选对应的应答语；本题应选「My pleasure.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "— Would you like to go with us?\n— ______",
+      "options": [
+        "That's all right.",
+        "I'd love to.",
+        "I'm fine.",
+        "You're welcome."
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：I'd love to.。先看对方说的是什么，再选对应的应答语；本题应选「I'd love to.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "— Hello! May I speak to Tom?\n— ______",
+      "options": [
+        "This is Tom speaking.",
+        "I'm Tom.",
+        "Who are you?",
+        "Yes, I am Tom."
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：This is Tom speaking.。按对话发生的地点与目的作答，本题的恰当回应是「This is Tom speaking.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "— How much is this T-shirt?\n— ______",
+      "options": [
+        "It's on the desk.",
+        "It's blue.",
+        "It's mine.",
+        "It's fifty yuan."
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：It's fifty yuan.。按对话发生的地点与目的作答，本题的恰当回应是「It's fifty yuan.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "— Excuse me, how can I get to the zoo?\n— ______",
+      "options": [
+        "I like the zoo.",
+        "The zoo is free.",
+        "Go along this street and turn left.",
+        "It's very big."
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：Go along this street and turn left.。按对话发生的地点与目的作答，本题的恰当回应是「Go along this street and turn left.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "— What would you like to eat?\n— ______",
+      "options": [
+        "No, thanks.",
+        "I'd like some noodles.",
+        "I like noodles.",
+        "Yes, I do."
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：I'd like some noodles.。按对话发生的地点与目的作答，本题的恰当回应是「I'd like some noodles.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "— What time does the class start?\n— ______",
+      "options": [
+        "At eight o'clock.",
+        "On Monday.",
+        "In the classroom.",
+        "For two hours."
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：At eight o'clock.。按对话发生的地点与目的作答，本题的恰当回应是「At eight o'clock.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "— What's the weather like today?\n— ______",
+      "options": [
+        "It's Monday.",
+        "It's eight.",
+        "I'm fine.",
+        "It's sunny."
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：It's sunny.。按对话发生的地点与目的作答，本题的恰当回应是「It's sunny.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "— What's the matter with you?\n— ______",
+      "options": [
+        "I'm thirteen.",
+        "I like sports.",
+        "I have a headache.",
+        "I'm a student."
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：I have a headache.。按对话发生的地点与目的作答，本题的恰当回应是「I have a headache.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "— How long can I keep the book?\n— ______",
+      "options": [
+        "Yes, you can.",
+        "For two weeks.",
+        "Two books.",
+        "In the library."
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：For two weeks.。按对话发生的地点与目的作答，本题的恰当回应是「For two weeks.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "— Can I take a message?\n— ______",
+      "options": [
+        "Yes. Please tell him to call me back.",
+        "No, I'm busy.",
+        "You're welcome.",
+        "I'm Tom."
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：Yes. Please tell him to call me back.。按对话发生的地点与目的作答，本题的恰当回应是「Yes. Please tell him to call me back.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-英语-1",
+      "chapterName": "日常交际与自我介绍",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "— Could you please open the window?\n— ______",
+      "options": [
+        "You're welcome.",
+        "That's right.",
+        "I'm sorry.",
+        "Sure, I'll do it right away."
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Sure, I'll do it right away.。按对话发生的地点与目的作答，本题的恰当回应是「Sure, I'll do it right away.」。",
+      "difficulty": 2
     }
   ]
 }

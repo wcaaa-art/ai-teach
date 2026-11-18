@@ -6,9 +6,9 @@
     "id": "初一-数学-2",
     "name": "整式加减"
   },
-  "generatedAt": "2026-11-13T02:42:28.259Z",
-  "source": "deepseek-with-local-fill",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.122Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedfwgv",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 0,
       "explanation": "A. 正确：先按分配律去括号，得 6a^2-3ab-2a^2+6ab；再合并同类项，a^2 项为 6a^2-2a^2=4a^2，ab 项为 -3ab+6ab=3ab，所以结果是 4a^2+3ab。\nB. 错误：去括号时 -2(-3ab) 应得 +6ab，而不是 -6ab；若把 ab 项算成 -3ab-6ab 才会得到 -9ab，与分配律不符。\nC. 错误：合并 a^2 项时 6a^2-2a^2=4a^2，不是 8a^2；把减法误当成加法会得到 8a^2，与题干中的减号冲突。\nD. 错误：合并 ab 项时 -3ab+6ab=+3ab，不是 -3ab；漏掉 -2 与 -3ab 相乘产生的正号会导致此项错误。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "计算 3a + 2a - 1a 的结果是（ ）",
+      "options": [
+        "4a",
+        "4a²",
+        "6a",
+        "2a"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：4a。同类项系数相加减：3 + 2 - 1 = 4，字母部分不变，得 4a。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "计算 5a + -3a - 1a 的结果是（ ）",
+      "options": [
+        "1a²",
+        "3a",
+        "9a",
+        "1a"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1a。同类项系数相加减：5 + -3 - 1 = 1，字母部分不变，得 1a。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "计算 -4a + 7a - 2a 的结果是（ ）",
+      "options": [
+        "5a",
+        "-9a",
+        "1a",
+        "1a²"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1a。同类项系数相加减：-4 + 7 - 2 = 1，字母部分不变，得 1a。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "计算 6a + -2a - -1a 的结果是（ ）",
+      "options": [
+        "7a",
+        "5a",
+        "5a²",
+        "3a"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：5a。同类项系数相加减：6 + -2 - -1 = 5，字母部分不变，得 5a。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "计算 8a + -5a - 4a 的结果是（ ）",
+      "options": [
+        "-1a",
+        "-1a²",
+        "7a",
+        "17a"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：-1a。同类项系数相加减：8 + -5 - 4 = -1，字母部分不变，得 -1a。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "计算 -3a + -6a - 2a 的结果是（ ）",
+      "options": [
+        "-11a²",
+        "-7a",
+        "5a",
+        "-11a"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：-11a。同类项系数相加减：-3 + -6 - 2 = -11，字母部分不变，得 -11a。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "计算 9a + 4a - -5a 的结果是（ ）",
+      "options": [
+        "8a",
+        "0a",
+        "18a",
+        "18a²"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：18a。同类项系数相加减：9 + 4 - -5 = 18，字母部分不变，得 18a。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "计算 2a + -8a - 6a 的结果是（ ）",
+      "options": [
+        "16a",
+        "-12a",
+        "-12a²",
+        "0a"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：-12a。同类项系数相加减：2 + -8 - 6 = -12，字母部分不变，得 -12a。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "计算 -7a + 9a - -3a 的结果是（ ）",
+      "options": [
+        "5a",
+        "5a²",
+        "-1a",
+        "-19a"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：5a。同类项系数相加减：-7 + 9 - -3 = 5，字母部分不变，得 5a。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "计算 11a + -4a - -3a 的结果是（ ）",
+      "options": [
+        "10a²",
+        "4a",
+        "12a",
+        "10a"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：10a。同类项系数相加减：11 + -4 - -3 = 10，字母部分不变，得 10a。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "当 x = -2 时，代数式 2x² - 3x + 1 的值是（ ）",
+      "options": [
+        "13",
+        "16",
+        "15",
+        "3"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：15。代入得 2×(-2)² - 3×(-2) + 1 = 15。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "当 x = 1 时，代数式 3x² - 2x + 4 的值是（ ）",
+      "options": [
+        "6",
+        "5",
+        "9",
+        "-3"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：5。代入得 3×(1)² - 2×(1) + 4 = 5。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "当 x = -1 时，代数式 4x² + 5x - 2 的值是（ ）",
+      "options": [
+        "-3",
+        "-11",
+        "7",
+        "1"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：-3。代入得 4×(-1)² + 5×(-1) - 2 = -3。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "当 x = 2 时，代数式 1x² - 6x + 3 的值是（ ）",
+      "options": [
+        "-7",
+        "19",
+        "-11",
+        "-5"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：-5。代入得 1×(2)² - 6×(2) + 3 = -5。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "当 x = -3 时，代数式 2x² + 4x - 1 的值是（ ）",
+      "options": [
+        "29",
+        "7",
+        "5",
+        "-19"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：5。代入得 2×(-3)² + 4×(-3) - 1 = 5。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "当 x = 0 时，代数式 5x² - 3x + 2 的值是（ ）",
+      "options": [
+        "1",
+        "2",
+        "-2",
+        "3"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：2。代入得 5×(0)² - 3×(0) + 2 = 2。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "当 x = 3 时，代数式 2x² - 1x - 5 的值是（ ）",
+      "options": [
+        "10",
+        "-2",
+        "16",
+        "20"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：10。代入得 2×(3)² - 1×(3) - 5 = 10。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "当 x = -2 时，代数式 3x² + 2x + 6 的值是（ ）",
+      "options": [
+        "-4",
+        "22",
+        "2",
+        "14"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：14。代入得 3×(-2)² + 2×(-2) + 6 = 14。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "当 x = 1 时，代数式 4x² - 5x + 1 的值是（ ）",
+      "options": [
+        "-2",
+        "1",
+        "0",
+        "10"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：0。代入得 4×(1)² - 5×(1) + 1 = 0。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "当 x = -1 时，代数式 2x² + 7x - 3 的值是（ ）",
+      "options": [
+        "-2",
+        "-8",
+        "-12",
+        "6"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：-8。代入得 2×(-1)² + 7×(-1) - 3 = -8。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "method",
+      "stem": "化简 5 - (3 + -2) 的结果是（ ）",
+      "options": [
+        "4",
+        "0",
+        "6",
+        "10"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：4。去括号时括号前是负号，括号内各项都变号：5 - 3 - -2 = 4。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "method",
+      "stem": "化简 7 - (-4 + 6) 的结果是（ ）",
+      "options": [
+        "17",
+        "9",
+        "-3",
+        "5"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：5。去括号时括号前是负号，括号内各项都变号：7 - -4 - 6 = 5。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "method",
+      "stem": "化简 9 - (2 + 8) 的结果是（ ）",
+      "options": [
+        "19",
+        "3",
+        "-1",
+        "15"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：-1。去括号时括号前是负号，括号内各项都变号：9 - 2 - 8 = -1。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "method",
+      "stem": "化简 6 - (-5 + -3) 的结果是（ ）",
+      "options": [
+        "4",
+        "14",
+        "8",
+        "-2"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：14。去括号时括号前是负号，括号内各项都变号：6 - -5 - -3 = 14。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "method",
+      "stem": "化简 8 - (4 + -7) 的结果是（ ）",
+      "options": [
+        "11",
+        "-3",
+        "5",
+        "19"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：11。去括号时括号前是负号，括号内各项都变号：8 - 4 - -7 = 11。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "method",
+      "stem": "化简 12 - (-6 + 5) 的结果是（ ）",
+      "options": [
+        "23",
+        "11",
+        "1",
+        "13"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：13。去括号时括号前是负号，括号内各项都变号：12 - -6 - 5 = 13。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "method",
+      "stem": "化简 10 - (3 + 9) 的结果是（ ）",
+      "options": [
+        "22",
+        "4",
+        "-2",
+        "16"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：-2。去括号时括号前是负号，括号内各项都变号：10 - 3 - 9 = -2。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "method",
+      "stem": "化简 4 - (-8 + -2) 的结果是（ ）",
+      "options": [
+        "-2",
+        "14",
+        "10",
+        "-6"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：14。去括号时括号前是负号，括号内各项都变号：4 - -8 - -2 = 14。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "method",
+      "stem": "化简 15 - (7 + -6) 的结果是（ ）",
+      "options": [
+        "14",
+        "2",
+        "16",
+        "28"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：14。去括号时括号前是负号，括号内各项都变号：15 - 7 - -6 = 14。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-数学-2",
+      "chapterName": "整式加减",
+      "type": "single",
+      "dimension": "method",
+      "stem": "化简 11 - (-2 + 4) 的结果是（ ）",
+      "options": [
+        "17",
+        "13",
+        "5",
+        "9"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：9。去括号时括号前是负号，括号内各项都变号：11 - -2 - 4 = 9。",
       "difficulty": 2
     }
   ]

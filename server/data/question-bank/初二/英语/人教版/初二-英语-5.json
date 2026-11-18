@@ -6,9 +6,9 @@
     "id": "初二-英语-5",
     "name": "阅读理解策略"
   },
-  "generatedAt": "2026-11-14T12:15:16.657Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.942Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdcdyh",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：文章围绕二班举办旧书义卖、为校图书馆筹款展开，首尾都强调活动及帮助他人的意义，因此主旨是班级为校图书馆筹款的活动。\nB. 错误：文中学生是“带来旧书并低价出售”，不是从商店买新书；筹款用于买新书，也不是学生购买新书。\nC. 错误：海报是学生制作来帮助义卖，文中未说图书馆需要旧海报，该选项把细节张冠李戴。\nD. 错误：老师的话强调义卖不只是钱，还在于学会分享和帮助他人，并非讲授“赚钱”的课。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Many students like to study in the library because it is quiet. They can focus on their work there. 这段话主要讲的是（ ）",
+      "options": [
+        "Studying in the library.",
+        "Playing in the library.",
+        "Borrowing books.",
+        "Cleaning the library."
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：Studying in the library.。主旨题抓首句和关键词，本段主要讲「Studying in the library.」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Bamboo grows very fast. In some places, it can grow one meter in a day. 这段话主要讲的是（ ）",
+      "options": [
+        "Bamboo is hard to find.",
+        "Bamboo is a kind of tree.",
+        "Bamboo has many leaves.",
+        "Bamboo grows fast."
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Bamboo grows fast.。主旨题抓首句和关键词，本段主要讲「Bamboo grows fast.」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The Spring Festival is an important festival in China. Families get together and have a big dinner. 这段话主要讲的是（ ）",
+      "options": [
+        "Children's Day.",
+        "National Day.",
+        "The Spring Festival.",
+        "The Mid-Autumn Festival."
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：The Spring Festival.。主旨题抓首句和关键词，本段主要讲「The Spring Festival.」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Washing hands before meals can keep us healthy. It helps us stay away from germs. 这段话主要讲的是（ ）",
+      "options": [
+        "Sleeping early.",
+        "Washing hands for health.",
+        "Eating more fruit.",
+        "Doing exercise."
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：Washing hands for health.。主旨题抓首句和关键词，本段主要讲「Washing hands for health.」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "More and more people go to work by bike. Riding a bike is good for health and the environment. 这段话主要讲的是（ ）",
+      "options": [
+        "Riding bikes to work.",
+        "Driving cars to work.",
+        "Walking to school.",
+        "Taking the bus."
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：Riding bikes to work.。主旨题抓首句和关键词，本段主要讲「Riding bikes to work.」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The school sports meeting will be held next Friday. Students can take part in running, jumping and ball games. 这段话主要讲的是（ ）",
+      "options": [
+        "The school library.",
+        "The art festival.",
+        "The English club.",
+        "The school sports meeting."
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：The school sports meeting.。主旨题抓首句和关键词，本段主要讲「The school sports meeting.」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Reading is a good hobby. It can open our eyes and make us think. 这段话主要讲的是（ ）",
+      "options": [
+        "Reading takes time.",
+        "Reading is expensive.",
+        "Reading is a good hobby.",
+        "Reading is difficult."
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：Reading is a good hobby.。主旨题抓首句和关键词，本段主要讲「Reading is a good hobby.」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The old man gets up early every morning and waters the flowers in his garden. 这段话主要讲的是（ ）",
+      "options": [
+        "A big park.",
+        "An old man's morning.",
+        "A young man's job.",
+        "A flower shop."
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：An old man's morning.。主旨题抓首句和关键词，本段主要讲「An old man's morning.」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "English is used in many countries. It is important for us to learn it well. 这段话主要讲的是（ ）",
+      "options": [
+        "Learning English is important.",
+        "English is easy.",
+        "English is a subject.",
+        "English has many words."
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：Learning English is important.。主旨题抓首句和关键词，本段主要讲「Learning English is important.」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The weather in Kunming is warm all year round. Many people call it the Spring City. 这段话主要讲的是（ ）",
+      "options": [
+        "Kunming's food.",
+        "Kunming's history.",
+        "Kunming's people.",
+        "Kunming's weather."
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Kunming's weather.。主旨题抓首句和关键词，本段主要讲「Kunming's weather.」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "method",
+      "stem": "Tom looked at his watch and ran to the bus stop. 由此可以推断（ ）",
+      "options": [
+        "Tom was hungry.",
+        "Tom was lost.",
+        "Tom was in a hurry.",
+        "Tom was tired."
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：Tom was in a hurry.。根据文中细节推断未直接写出的结论，本题可以推断「Tom was in a hurry.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "method",
+      "stem": "Lily didn't eat breakfast this morning. Now she feels very hungry. 由此可以推断（ ）",
+      "options": [
+        "Lily is angry.",
+        "Lily is hungry.",
+        "Lily is full.",
+        "Lily is ill."
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：Lily is hungry.。根据文中细节推断未直接写出的结论，本题可以推断「Lily is hungry.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "method",
+      "stem": "The ground is wet. People are carrying umbrellas. 由此可以推断（ ）",
+      "options": [
+        "It is raining.",
+        "It is snowing.",
+        "It is sunny.",
+        "It is windy."
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：It is raining.。根据文中细节推断未直接写出的结论，本题可以推断「It is raining.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "method",
+      "stem": "Mike's eyes are red and he keeps yawning. 由此可以推断（ ）",
+      "options": [
+        "Mike is excited.",
+        "Mike is hungry.",
+        "Mike is angry.",
+        "Mike is tired."
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Mike is tired.。根据文中细节推断未直接写出的结论，本题可以推断「Mike is tired.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "method",
+      "stem": "The children are wearing heavy coats and scarves. 由此可以推断（ ）",
+      "options": [
+        "It is rainy.",
+        "It is windy.",
+        "It is cold.",
+        "It is hot."
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：It is cold.。根据文中细节推断未直接写出的结论，本题可以推断「It is cold.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "method",
+      "stem": "Amy got a gift from her mother. She jumped and smiled. 由此可以推断（ ）",
+      "options": [
+        "Amy was tired.",
+        "Amy was happy.",
+        "Amy was sad.",
+        "Amy was afraid."
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：Amy was happy.。根据文中细节推断未直接写出的结论，本题可以推断「Amy was happy.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "method",
+      "stem": "The teacher looked at the noisy classroom and said nothing, but her face turned red. 由此可以推断（ ）",
+      "options": [
+        "The teacher was angry.",
+        "The teacher was happy.",
+        "The teacher was ill.",
+        "The teacher was sleepy."
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：The teacher was angry.。根据文中细节推断未直接写出的结论，本题可以推断「The teacher was angry.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "method",
+      "stem": "Peter is looking out of the window all the time and counting the minutes. 由此可以推断（ ）",
+      "options": [
+        "Peter likes the class.",
+        "Peter is good at maths.",
+        "Peter is hungry.",
+        "Peter wants the class to end."
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Peter wants the class to end.。根据文中细节推断未直接写出的结论，本题可以推断「Peter wants the class to end.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "method",
+      "stem": "The shop has a sign that says Closed on the door, and the lights are off. 由此可以推断（ ）",
+      "options": [
+        "The shop is new.",
+        "The shop is big.",
+        "The shop is not open.",
+        "The shop is busy."
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：The shop is not open.。根据文中细节推断未直接写出的结论，本题可以推断「The shop is not open.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "method",
+      "stem": "Jack ate three bowls of noodles and still asked for more. 由此可以推断（ ）",
+      "options": [
+        "Jack was angry.",
+        "Jack was very hungry.",
+        "Jack was full.",
+        "Jack was ill."
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：Jack was very hungry.。根据文中细节推断未直接写出的结论，本题可以推断「Jack was very hungry.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "however 表示的逻辑关系是（ ）",
+      "options": [
+        "转折",
+        "因果",
+        "并列",
+        "条件"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：转折。连接词决定句间逻辑，本题表示「转折」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "therefore 表示的逻辑关系是（ ）",
+      "options": [
+        "转折",
+        "让步",
+        "条件",
+        "结果"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：结果。连接词决定句间逻辑，本题表示「结果」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "although 表示的逻辑关系是（ ）",
+      "options": [
+        "结果",
+        "并列",
+        "让步",
+        "原因"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：让步。连接词决定句间逻辑，本题表示「让步」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "because 表示的逻辑关系是（ ）",
+      "options": [
+        "转折",
+        "原因",
+        "结果",
+        "目的"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：原因。连接词决定句间逻辑，本题表示「原因」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "besides 表示的逻辑关系是（ ）",
+      "options": [
+        "递进",
+        "转折",
+        "原因",
+        "条件"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：递进。连接词决定句间逻辑，本题表示「递进」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "instead 表示的逻辑关系是（ ）",
+      "options": [
+        "递进",
+        "原因",
+        "目的",
+        "替代"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：替代。连接词决定句间逻辑，本题表示「替代」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "otherwise 表示的逻辑关系是（ ）",
+      "options": [
+        "原因",
+        "让步",
+        "否则",
+        "递进"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：否则。连接词决定句间逻辑，本题表示「否则」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "in order to 表示的逻辑关系是（ ）",
+      "options": [
+        "转折",
+        "目的",
+        "原因",
+        "结果"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：目的。连接词决定句间逻辑，本题表示「目的」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "for example 表示的逻辑关系是（ ）",
+      "options": [
+        "举例",
+        "因果",
+        "转折",
+        "让步"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：举例。连接词决定句间逻辑，本题表示「举例」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-英语-5",
+      "chapterName": "阅读理解策略",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "so that 表示的逻辑关系是（ ）",
+      "options": [
+        "原因",
+        "转折",
+        "条件",
+        "目的"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：目的。连接词决定句间逻辑，本题表示「目的」。",
+      "difficulty": 2
     }
   ]
 }

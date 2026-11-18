@@ -4,6 +4,11 @@ import { defineStore } from 'pinia'
 import { getSettings, saveSettings, setDataOwner } from '../db/index.js'
 import { fetchCurrentUser } from '../services/api.js'
 
+// 主页「从一个好奇开始」的默认科目，数组顺序就是卡片顺序。
+const DEFAULT_FAVORITE_SUBJECTS = ['语文', '数学', '英语', '政治', '历史']
+// 旧版默认列表，只用于把已持久化的旧默认值迁移到新顺序。
+const LEGACY_FAVORITE_SUBJECTS = ['数学', '物理', '化学', '语文', '英语']
+
 export const useAppStore = defineStore('app', () => {
   const plans = ref([])
   const profile = ref(null)
@@ -14,7 +19,7 @@ export const useAppStore = defineStore('app', () => {
     darkMode: false,
     lowPerformance: false,
     // 主页「从一个好奇开始」展示的科目，用户可自由增减，只保存在本机设置
-    favoriteSubjects: ['数学', '物理', '化学', '语文', '英语'],
+    favoriteSubjects: [...DEFAULT_FAVORITE_SUBJECTS],
     // 上一次在专注页选择的时长（分钟）；null 表示用户从未选过，由计划值兜底
     focusMinutes: null,
     // 上一次专注页的任务选择：plan 走计划任务，free 是计划外自定义专注
@@ -39,6 +44,15 @@ function mirrorTheme() {
     try {
       const persisted = await getSettings()
       if (persisted) settings.value = { ...settings.value, ...persisted }
+      // 旧默认的五科（顺序可能不同）与混乱顺序的新默认，统一回新默认顺序；
+      // 用户自己增删过科目的列表保持原样。
+      const favorites = settings.value.favoriteSubjects
+      const legacyKey = [...LEGACY_FAVORITE_SUBJECTS].sort().join('|')
+      const defaultKey = [...DEFAULT_FAVORITE_SUBJECTS].sort().join('|')
+      const favoriteKey = Array.isArray(favorites) ? [...favorites].sort().join('|') : ''
+      if (favoriteKey === legacyKey || favoriteKey === defaultKey) {
+        await updateSettings({ favoriteSubjects: [...DEFAULT_FAVORITE_SUBJECTS] })
+      }
       mirrorTheme()
     } catch (error) {
       console.warn('本机设置读取失败，将使用默认设置。', error)

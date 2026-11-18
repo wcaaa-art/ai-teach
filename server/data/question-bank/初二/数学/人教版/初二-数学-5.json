@@ -6,9 +6,9 @@
     "id": "初二-数学-5",
     "name": "二次根式"
   },
-  "generatedAt": "2026-11-13T02:44:16.695Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.162Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedhyhh",
@@ -179,6 +179,516 @@
       "correctIndex": 2,
       "explanation": "A. 错误：当 x=-1 时，\\sqrt{(-1)^2}=1，而 x=-1，两者不相等，所以结果不一定等于 x。\nB. 错误：当 x=1 时，\\sqrt{1^2}=1，而 -x=-1，两者不相等，所以结果不一定等于 -x。\nC. 正确：根据二次根式性质 \\sqrt{a^2}=|a|，将 a 换成 x，得 \\sqrt{x^2}=|x|，它表示 x^2 的算术平方根，结果非负。\nD. 错误：例如 x=2 时，\\sqrt{2^2}=2，而 x^2=4，两者不相等，所以结果不等于 x^2。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "化简 √(12) 的结果是（ ）",
+      "options": [
+        "2√3",
+        "4√3",
+        "3√2",
+        "6"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：2√3。√(2² × 3) = 2√3：平方因子 2² 可以开方移到根号外。",
+      "difficulty": 2
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "化简 √(45) 的结果是（ ）",
+      "options": [
+        "9√5",
+        "5√3",
+        "15",
+        "3√5"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：3√5。√(3² × 5) = 3√5：平方因子 3² 可以开方移到根号外。",
+      "difficulty": 2
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "化简 √(32) 的结果是（ ）",
+      "options": [
+        "2√4",
+        "8",
+        "4√2",
+        "16√2"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：4√2。√(4² × 2) = 4√2：平方因子 4² 可以开方移到根号外。",
+      "difficulty": 2
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "化简 √(150) 的结果是（ ）",
+      "options": [
+        "30",
+        "5√6",
+        "25√6",
+        "6√5"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：5√6。√(5² × 6) = 5√6：平方因子 5² 可以开方移到根号外。",
+      "difficulty": 2
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "化简 √(72) 的结果是（ ）",
+      "options": [
+        "6√2",
+        "36√2",
+        "2√6",
+        "12"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：6√2。√(6² × 2) = 6√2：平方因子 6² 可以开方移到根号外。",
+      "difficulty": 2
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "化简 √(147) 的结果是（ ）",
+      "options": [
+        "49√3",
+        "3√7",
+        "21",
+        "7√3"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：7√3。√(7² × 3) = 7√3：平方因子 7² 可以开方移到根号外。",
+      "difficulty": 2
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "化简 √(63) 的结果是（ ）",
+      "options": [
+        "7√3",
+        "21",
+        "3√7",
+        "9√7"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：3√7。√(3² × 7) = 3√7：平方因子 3² 可以开方移到根号外。",
+      "difficulty": 2
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "化简 √(20) 的结果是（ ）",
+      "options": [
+        "10",
+        "2√5",
+        "4√5",
+        "5√2"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：2√5。√(2² × 5) = 2√5：平方因子 2² 可以开方移到根号外。",
+      "difficulty": 2
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "化简 √(48) 的结果是（ ）",
+      "options": [
+        "4√3",
+        "16√3",
+        "3√4",
+        "12"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：4√3。√(4² × 3) = 4√3：平方因子 4² 可以开方移到根号外。",
+      "difficulty": 2
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "化简 √(50) 的结果是（ ）",
+      "options": [
+        "25√2",
+        "2√5",
+        "10",
+        "5√2"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：5√2。√(5² × 2) = 5√2：平方因子 5² 可以开方移到根号外。",
+      "difficulty": 2
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "计算 √2 · √8 的结果是（ ）",
+      "options": [
+        "10",
+        "6",
+        "4",
+        "16"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：4。√a · √b = √(ab)：√2 · √8 = √16 = 4。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "计算 √3 · √12 的结果是（ ）",
+      "options": [
+        "9",
+        "6",
+        "36",
+        "15"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：6。√a · √b = √(ab)：√3 · √12 = √36 = 6。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "计算 √5 · √20 的结果是（ ）",
+      "options": [
+        "10",
+        "100",
+        "25",
+        "15"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：10。√a · √b = √(ab)：√5 · √20 = √100 = 10。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "计算 √2 · √18 的结果是（ ）",
+      "options": [
+        "36",
+        "20",
+        "16",
+        "6"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：6。√a · √b = √(ab)：√2 · √18 = √36 = 6。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "计算 √3 · √27 的结果是（ ）",
+      "options": [
+        "30",
+        "24",
+        "9",
+        "81"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：9。√a · √b = √(ab)：√3 · √27 = √81 = 9。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "计算 √4 · √9 的结果是（ ）",
+      "options": [
+        "5",
+        "6",
+        "36",
+        "13"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：6。√a · √b = √(ab)：√4 · √9 = √36 = 6。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "计算 √5 · √45 的结果是（ ）",
+      "options": [
+        "15",
+        "225",
+        "50",
+        "40"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：15。√a · √b = √(ab)：√5 · √45 = √225 = 15。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "计算 √6 · √24 的结果是（ ）",
+      "options": [
+        "144",
+        "30",
+        "18",
+        "12"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：12。√a · √b = √(ab)：√6 · √24 = √144 = 12。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "计算 √2 · √32 的结果是（ ）",
+      "options": [
+        "34",
+        "30",
+        "8",
+        "64"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：8。√a · √b = √(ab)：√2 · √32 = √64 = 8。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "计算 √3 · √48 的结果是（ ）",
+      "options": [
+        "45",
+        "12",
+        "144",
+        "51"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：12。√a · √b = √(ab)：√3 · √48 = √144 = 12。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "化简 1/√2 的结果是（ ）",
+      "options": [
+        "√2/2",
+        "√2",
+        "2",
+        "1/2"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：√2/2。分子分母同乘 √2：1/√2 = √2/(√2 × √2) = √2/2。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "化简 1/√3 的结果是（ ）",
+      "options": [
+        "√3",
+        "3",
+        "1/3",
+        "√3/3"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：√3/3。分子分母同乘 √3：1/√3 = √3/(√3 × √3) = √3/3。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "化简 1/√5 的结果是（ ）",
+      "options": [
+        "5",
+        "1/5",
+        "√5/5",
+        "√5"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：√5/5。分子分母同乘 √5：1/√5 = √5/(√5 × √5) = √5/5。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "化简 1/√6 的结果是（ ）",
+      "options": [
+        "1/6",
+        "√6/6",
+        "√6",
+        "6"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：√6/6。分子分母同乘 √6：1/√6 = √6/(√6 × √6) = √6/6。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "化简 1/√7 的结果是（ ）",
+      "options": [
+        "√7/7",
+        "√7",
+        "7",
+        "1/7"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：√7/7。分子分母同乘 √7：1/√7 = √7/(√7 × √7) = √7/7。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "化简 1/√8 的结果是（ ）",
+      "options": [
+        "√8",
+        "8",
+        "1/8",
+        "√8/8"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：√8/8。分子分母同乘 √8：1/√8 = √8/(√8 × √8) = √8/8。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "化简 1/√10 的结果是（ ）",
+      "options": [
+        "10",
+        "1/10",
+        "√10/10",
+        "√10"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：√10/10。分子分母同乘 √10：1/√10 = √10/(√10 × √10) = √10/10。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "化简 1/√11 的结果是（ ）",
+      "options": [
+        "1/11",
+        "√11/11",
+        "√11",
+        "11"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：√11/11。分子分母同乘 √11：1/√11 = √11/(√11 × √11) = √11/11。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "化简 1/√12 的结果是（ ）",
+      "options": [
+        "√12/12",
+        "√12",
+        "12",
+        "1/12"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：√12/12。分子分母同乘 √12：1/√12 = √12/(√12 × √12) = √12/12。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-数学-5",
+      "chapterName": "二次根式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "化简 1/√13 的结果是（ ）",
+      "options": [
+        "√13",
+        "13",
+        "1/13",
+        "√13/13"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：√13/13。分子分母同乘 √13：1/√13 = √13/(√13 × √13) = √13/13。",
+      "difficulty": 2
     }
   ]
 }

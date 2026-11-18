@@ -6,9 +6,9 @@
     "id": "初一-数学-3",
     "name": "一元一次方程"
   },
-  "generatedAt": "2026-11-13T02:42:45.001Z",
-  "source": "deepseek-with-local-fill",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.125Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedg9dy",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：设每本笔记本的价格为x元。买8本后还剩12元，说明班费为8x+12元；买12本还差8元，说明班费为12x-8元，因此8x+12=12x-8。\nB. 错误：买8本后还剩12元，班费应为8x+12，而不是8x-12；买12本还差8元，班费应为12x-8，而不是12x+8。\nC. 错误：等号右边表示买12本后还多8元，但题干是买12本还差8元，所以应为12x-8。\nD. 错误：等号左边表示买8本还差12元，与题干“买8本还剩12元”矛盾，所以应为8x+12。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解方程 3x + 7 = 22，x =（ ）",
+      "options": [
+        "5",
+        "6",
+        "4",
+        "-5"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：5。移项得 3x = 22 - 7 = 15，两边同除以 3，得 x = 5。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解方程 5x - 4 = 16，x =（ ）",
+      "options": [
+        "5",
+        "3",
+        "-4",
+        "4"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：4。移项得 5x = 16 + 4 = 20，两边同除以 5，得 x = 4。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解方程 2x + 9 = 25，x =（ ）",
+      "options": [
+        "7",
+        "-8",
+        "8",
+        "9"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：8。移项得 2x = 25 - 9 = 16，两边同除以 2，得 x = 8。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解方程 4x - 3 = 21，x =（ ）",
+      "options": [
+        "-6",
+        "6",
+        "7",
+        "5"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：6。移项得 4x = 21 + 3 = 24，两边同除以 4，得 x = 6。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解方程 6x + 5 = 35，x =（ ）",
+      "options": [
+        "5",
+        "6",
+        "4",
+        "-5"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：5。移项得 6x = 35 - 5 = 30，两边同除以 6，得 x = 5。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解方程 7x - 8 = 20，x =（ ）",
+      "options": [
+        "5",
+        "3",
+        "-4",
+        "4"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：4。移项得 7x = 20 + 8 = 28，两边同除以 7，得 x = 4。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解方程 8x + 3 = 43，x =（ ）",
+      "options": [
+        "4",
+        "-5",
+        "5",
+        "6"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：5。移项得 8x = 43 - 3 = 40，两边同除以 8，得 x = 5。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解方程 9x - 6 = 30，x =（ ）",
+      "options": [
+        "-4",
+        "4",
+        "5",
+        "3"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：4。移项得 9x = 30 + 6 = 36，两边同除以 9，得 x = 4。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解方程 5x + 11 = 46，x =（ ）",
+      "options": [
+        "7",
+        "8",
+        "6",
+        "-7"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：7。移项得 5x = 46 - 11 = 35，两边同除以 5，得 x = 7。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解方程 3x - 12 = 9，x =（ ）",
+      "options": [
+        "8",
+        "6",
+        "-7",
+        "7"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：7。移项得 3x = 9 + 12 = 21，两边同除以 3，得 x = 7。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "解方程 2(x + 3) = 14，x =（ ）",
+      "options": [
+        "3",
+        "10",
+        "4",
+        "5"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：4。两边同除以 2 得 x + 3 = 7，再移项得 x = 4。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "解方程 3(x - 2) = 15，x =（ ）",
+      "options": [
+        "3",
+        "7",
+        "8",
+        "6"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：7。两边同除以 3 得 x - 2 = 5，再移项得 x = 7。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "解方程 4(x + 5) = 36，x =（ ）",
+      "options": [
+        "4",
+        "5",
+        "3",
+        "14"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：4。两边同除以 4 得 x + 5 = 9，再移项得 x = 4。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "解方程 5(x - 1) = 20，x =（ ）",
+      "options": [
+        "6",
+        "4",
+        "3",
+        "5"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：5。两边同除以 5 得 x - 1 = 4，再移项得 x = 5。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "解方程 6(x + 2) = 48，x =（ ）",
+      "options": [
+        "5",
+        "10",
+        "6",
+        "7"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：6。两边同除以 6 得 x + 2 = 8，再移项得 x = 6。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "解方程 7(x - 3) = 28，x =（ ）",
+      "options": [
+        "1",
+        "7",
+        "8",
+        "6"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：7。两边同除以 7 得 x - 3 = 4，再移项得 x = 7。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "解方程 8(x + 4) = 72，x =（ ）",
+      "options": [
+        "5",
+        "6",
+        "4",
+        "13"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：5。两边同除以 8 得 x + 4 = 9，再移项得 x = 5。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "解方程 3(x + 6) = 27，x =（ ）",
+      "options": [
+        "4",
+        "2",
+        "15",
+        "3"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：3。两边同除以 3 得 x + 6 = 9，再移项得 x = 3。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "解方程 9(x - 5) = 36，x =（ ）",
+      "options": [
+        "8",
+        "-1",
+        "9",
+        "10"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：9。两边同除以 9 得 x - 5 = 4，再移项得 x = 9。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "解方程 4(x - 7) = 12，x =（ ）",
+      "options": [
+        "-4",
+        "10",
+        "11",
+        "9"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：10。两边同除以 4 得 x - 7 = 3，再移项得 x = 10。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "甲、乙两地相距 180 千米。汽车以 60 千米/时的速度从甲地到乙地，返回时速度改为 90 千米/时，返回用时多少小时？",
+      "options": [
+        "2",
+        "3",
+        "16200",
+        "1.2"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：2。路程 ÷ 速度 = 时间：180 ÷ 90 = 2 小时。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "甲、乙两地相距 160 千米。汽车以 80 千米/时的速度从甲地到乙地，返回时速度改为 40 千米/时，返回用时多少小时？",
+      "options": [
+        "2",
+        "6400",
+        "1.333333",
+        "4"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：4。路程 ÷ 速度 = 时间：160 ÷ 40 = 4 小时。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "甲、乙两地相距 180 千米。汽车以 45 千米/时的速度从甲地到乙地，返回时速度改为 60 千米/时，返回用时多少小时？",
+      "options": [
+        "10800",
+        "1.714286",
+        "3",
+        "4"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：3。路程 ÷ 速度 = 时间：180 ÷ 60 = 3 小时。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "甲、乙两地相距 225 千米。汽车以 75 千米/时的速度从甲地到乙地，返回时速度改为 45 千米/时，返回用时多少小时？",
+      "options": [
+        "1.875",
+        "5",
+        "3",
+        "10125"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：5。路程 ÷ 速度 = 时间：225 ÷ 45 = 5 小时。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "甲、乙两地相距 200 千米。汽车以 100 千米/时的速度从甲地到乙地，返回时速度改为 80 千米/时，返回用时多少小时？",
+      "options": [
+        "2.5",
+        "2",
+        "16000",
+        "1.111111"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：2.5。路程 ÷ 速度 = 时间：200 ÷ 80 = 2.5 小时。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "甲、乙两地相距 360 千米。汽车以 90 千米/时的速度从甲地到乙地，返回时速度改为 120 千米/时，返回用时多少小时？",
+      "options": [
+        "4",
+        "43200",
+        "1.714286",
+        "3"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：3。路程 ÷ 速度 = 时间：360 ÷ 120 = 3 小时。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "甲、乙两地相距 150 千米。汽车以 50 千米/时的速度从甲地到乙地，返回时速度改为 60 千米/时，返回用时多少小时？",
+      "options": [
+        "9000",
+        "1.363636",
+        "2.5",
+        "3"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：2.5。路程 ÷ 速度 = 时间：150 ÷ 60 = 2.5 小时。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "甲、乙两地相距 240 千米。汽车以 120 千米/时的速度从甲地到乙地，返回时速度改为 100 千米/时，返回用时多少小时？",
+      "options": [
+        "1.090909",
+        "2.4",
+        "2",
+        "24000"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：2.4。路程 ÷ 速度 = 时间：240 ÷ 100 = 2.4 小时。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "甲、乙两地相距 350 千米。汽车以 70 千米/时的速度从甲地到乙地，返回时速度改为 50 千米/时，返回用时多少小时？",
+      "options": [
+        "7",
+        "5",
+        "17500",
+        "2.916667"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：7。路程 ÷ 速度 = 时间：350 ÷ 50 = 7 小时。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-数学-3",
+      "chapterName": "一元一次方程",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "甲、乙两地相距 170 千米。汽车以 85 千米/时的速度从甲地到乙地，返回时速度改为 70 千米/时，返回用时多少小时？",
+      "options": [
+        "2",
+        "11900",
+        "1.096774",
+        "2.428571"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：2.428571。路程 ÷ 速度 = 时间：170 ÷ 70 = 2.4285714285714284 小时。",
+      "difficulty": 2
     }
   ]
 }

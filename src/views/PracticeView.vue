@@ -83,7 +83,7 @@ function chosenOptionIndexes(question) {
 }
 
 function explanationRows(question) {
-  const text = String(question.explanation || '').trim() || '这道题暂未提供解析。'
+  const text = String(question.explanation || '').trim() || '这道题暂未提供解析'
   return text.split(/\n+/).map(line => line.trim()).filter(Boolean).map(line => {
     const match = line.match(/^([A-H])[.、:：)]\s*(.*)$/)
     if (!match) return { label: '', text: line, verdict: '' }
@@ -117,7 +117,7 @@ async function load() {
     knowledgeTags: found.knowledgeTags || []
   })
   if (!result?.success || !result.data?.questions?.length) {
-    errorMessage.value = result?.data?.message || '本地题库没找到这道练习的题目，换一个计划试试。'
+    errorMessage.value = result?.data?.message || '本地题库没找到这道练习的题目，换一个计划试试'
     loading.value = false
     return
   }
@@ -180,10 +180,10 @@ async function onPhotoChange(event) {
   event.target.value = ''
   const id = photoTarget.value
   if (!file || !id) return
-  if (!file.type.startsWith('image/')) { ElMessage.info('请选择图片文件。'); return }
+  if (!file.type.startsWith('image/')) { ElMessage.info('请选择图片文件'); return }
   photoFiles.set(id, file)
   answerImages[id] = { dataUrl: await compressImage(file), name: file.name }
-  ElMessage.success('已添加手写稿，可点「识别成文字」自动填入，也可以只保留照片。')
+  ElMessage.success('已添加手写稿，可点「识别成文字」自动填入，也可以只保留照片')
 }
 
 async function recognizePhoto(question) {
@@ -196,19 +196,19 @@ async function recognizePhoto(question) {
       photoFiles.set(question.id, file)
     } catch { /* 转 File 失败时按没有原始照片处理 */ }
   }
-  if (!file) { ElMessage.info('没有可识别的手写稿，请重新上传。'); return }
+  if (!file) { ElMessage.info('没有可识别的手写稿，请重新上传'); return }
   ocrLoading[question.id] = true
   try {
     const response = await extractQuestion(file)
     if (!response.success) {
-      ElMessage.warning(`识别失败：${response.error || '未知原因'}，可以手动输入或只保留照片。`)
+      ElMessage.warning(`识别失败：${response.error || '未知原因'}，可以手动输入或只保留照片`)
       return
     }
     const text = String(response.data?.text || '').trim()
-    if (!text) { ElMessage.info('没有识别到文字，可以手动输入或只保留照片。'); return }
+    if (!text) { ElMessage.info('没有识别到文字，可以手动输入或只保留照片'); return }
     const current = String(answers[question.id] ?? '').trim()
     answers[question.id] = current ? `${current}\n${text}` : text
-    ElMessage.success('已识别并填入，手写内容可能有误，请核对后再提交。')
+    ElMessage.success('已识别并填入，手写内容可能有误，请核对后再提交')
   } finally {
     ocrLoading[question.id] = false
   }
@@ -224,7 +224,7 @@ async function submit() {
     return !String(value ?? '').trim() && !hasPhoto
   })
   if (unanswered.length) {
-    ElMessage.warning(`还有 ${unanswered.length} 题没做，做完再交。`)
+    ElMessage.warning(`还有 ${unanswered.length} 题没做，做完再交`)
     return
   }
   submitting.value = true

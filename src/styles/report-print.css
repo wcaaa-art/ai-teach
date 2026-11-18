@@ -1,0 +1,88 @@
+/* ==========================================================
+   摸底报告打印：同一份 DOM，换成纸面表达
+   屏幕靠刻度与颜色，纸面靠表格与文字，黑白打印不失真
+   ========================================================== */
+
+.print-only { display: none; }
+
+@media print {
+  @page { size: A4; margin: 14mm 12mm 16mm; }
+
+  html, body { background: #fff; }
+  body { font-size: 10.5pt; line-height: 1.55; color: #22322f; }
+
+  /* 交互与外壳一律不打印 */
+  .side-nav, .topbar, .mobile-tabbar, .feedback-entry, .live-focus-pill,
+  .vb-actions, .chip, .fold-cue, .lnk, .page-foot, .planned-flag, .report-back,
+  .sec-head .btn, .eyebrow, .report-eyebrow, .basis-note, .review-fix,
+  dialog, .el-overlay, .el-dialog { display: none !important; }
+  /* 补强路线不打印：它是屏幕上的操作入口，纸面上没有可点的 chip。 */
+  #roadSec { display: none !important; }
+
+  /* 桌面端把滚动锁在 .main-content 里，打印必须放开，否则只出第一屏 */
+  .app-shell { height: auto !important; overflow: visible !important; }
+  .main-content { overflow: visible !important; height: auto !important; }
+  .page { max-width: none !important; padding: 0 !important; }
+
+  .report-page { display: block !important; }
+  .print-only { display: block !important; }
+
+  /* 页眉：纸离开浏览器就不认人，必须自解释 */
+  .print-header {
+    display: flex; align-items: flex-end; justify-content: space-between; gap: 16px;
+    padding-bottom: 7px; margin-bottom: 10px; border-bottom: 1.5px solid #2f5a54;
+  }
+  .print-header .ph-title { font-size: 13pt; font-weight: 600; }
+  .print-header .ph-meta { font-size: 8.5pt; color: #5f736e; text-align: right; line-height: 1.5; }
+
+  /* 卡片去投影改细边框，主报告块不跨页断开 */
+  .report-page .sec, .report-page .verdict-bar {
+    box-shadow: none !important; background: #fff !important;
+    border: 1px solid #cfdcd7 !important; border-radius: 10px;
+    margin-bottom: 9px; padding: 9px 12px;
+    break-inside: avoid;
+  }
+  .verdict-bar { display: flex; gap: 14px; align-items: center; }
+  .vb-num { font-size: 20pt; }
+  .report-page .sec-head { padding: 8px 12px; }
+  .report-page .review-toggle { padding: 8px 12px; }
+  .report-page .review-body { padding: 8px 12px 12px; }
+
+  /* 刻度线换成文字：纸面不认颜色 */
+  .scale { display: none !important; }
+  .mt-val { display: inline !important; font-size: 10pt; font-weight: 600; margin-left: 0; }
+  .mt td { height: auto; padding: 5px 8px; font-size: 10pt; }
+  .mt th { font-size: 8.5pt; padding: 5px 8px; }
+  .mt-desc { display: table-cell !important; }
+  .mt-status { display: table-cell !important; }
+
+  /* 解析是否打印由导出选项决定；勾选后展开并按紧凑版式排。 */
+  .report-page:not(.print-with-review) .review { display: none !important; }
+  .report-page.print-with-review .review-body { display: block !important; }
+  .report-page.print-with-review .review { break-inside: auto; }
+  .report-page.print-with-review .answer-review { gap: 5px; }
+  .report-page.print-with-review .review-card {
+    padding: 6px 8px; margin: 0; border-radius: 6px;
+    border-left-width: 3px; break-inside: avoid;
+  }
+  .report-page.print-with-review .review-card h4 { font-size: 9.5pt; margin: 4px 0; }
+  .report-page.print-with-review .review-line,
+  .report-page.print-with-review .review-explanation { font-size: 8.5pt; margin: 2px 0; }
+  .report-page.print-with-review .explanation-list { gap: 2px; }
+  .report-page.print-with-review .explanation-list li {
+    font-size: 8.5pt; line-height: 1.45; padding: 1px 4px; border-radius: 4px;
+  }
+  .rv { break-inside: avoid; }
+
+  /* 路线：四步横排，窄纸自动两列 */
+  .road { display: grid !important; grid-template-columns: repeat(4, 1fr) !important; gap: 8px; padding: 10px 12px 12px; }
+  .step { break-inside: avoid; padding: 7px 8px; font-size: 9pt; background: #fff !important; border: 1px solid #dbe4e1; }
+  .step-k { font-size: 9.5pt; }
+  .step-n { font-size: 9pt; }
+
+  /* 强调色降饱和，黑白打印仍有层次 */
+  .st[data-tone="weak"] { border: 1px solid #b99577; color: #6f5233; background: none; }
+  .st[data-tone="mid"] { border: 1px solid #8fae9f; color: #4a6b60; background: none; }
+  .st[data-tone="good"] { border: 1px solid #86a69b; color: #37544e; background: none; }
+  .st[data-tone="none"] { color: #9aaba6; }
+}

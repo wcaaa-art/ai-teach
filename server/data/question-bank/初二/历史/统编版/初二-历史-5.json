@@ -6,9 +6,9 @@
     "id": "初二-历史-5",
     "name": "中国现代史概览"
   },
-  "generatedAt": "2026-11-14T12:15:42.045Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.094Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdctfj",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：完成反帝反封建任务、实现民族独立和人民解放，是中国近代史的重要主题，不是中国现代史的主题概括。\nB. 正确：中国现代史是中国共产党领导中国人民进行社会主义革命、建设和改革开放，并朝着实现国家富强和人民幸福、实现中华民族伟大复兴不断前进的历史。\nC. 错误：推翻君主专制制度、建立资产阶级共和国主要对应辛亥革命，属于近代史内容，不能概括整个中国现代史。\nD. 错误：反对殖民侵略、争取国家主权和领土完整主要反映近代中国人民反侵略斗争，不能准确概括中国现代史的发展主题。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "开国大典举行的时间是（ ）",
+      "options": [
+        "1949年10月1日",
+        "1945年8月15日",
+        "1949年9月21日",
+        "1950年10月1日"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1949年10月1日。按新中国成立与巩固政权的史实判断，本题正确答案是「1949年10月1日」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "新中国成立的历史意义是（ ）",
+      "options": [
+        "结束封建社会",
+        "进入社会主义社会",
+        "实现现代化",
+        "开辟中国历史新纪元"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：开辟中国历史新纪元。按新中国成立与巩固政权的史实判断，本题正确答案是「开辟中国历史新纪元」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "西藏和平解放的时间是（ ）",
+      "options": [
+        "1950年",
+        "1953年",
+        "1951年",
+        "1949年"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1951年。按新中国成立与巩固政权的史实判断，本题正确答案是「1951年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "抗美援朝战争发生在（ ）",
+      "options": [
+        "1953—1957年",
+        "1950—1953年",
+        "1946—1949年",
+        "1950—1952年"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1950—1953年。按新中国成立与巩固政权的史实判断，本题正确答案是「1950—1953年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "抗美援朝战争中涌现的英雄人物是（ ）",
+      "options": [
+        "黄继光、邱少云",
+        "雷锋、焦裕禄",
+        "王进喜、邓稼先",
+        "杨利伟、翟志刚"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：黄继光、邱少云。按新中国成立与巩固政权的史实判断，本题正确答案是「黄继光、邱少云」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "土地改革开始于（ ）",
+      "options": [
+        "1949年",
+        "1953年",
+        "1956年",
+        "1950年"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1950年。按新中国成立与巩固政权的史实判断，本题正确答案是「1950年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "指导土地改革的法律文件是（ ）",
+      "options": [
+        "《共同纲领》",
+        "《中国土地法大纲》",
+        "《中华人民共和国土地改革法》",
+        "《中华人民共和国宪法》"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：《中华人民共和国土地改革法》。按新中国成立与巩固政权的史实判断，本题正确答案是「《中华人民共和国土地改革法》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "土地改革的历史意义是（ ）",
+      "options": [
+        "实现农业现代化",
+        "彻底摧毁封建土地制度",
+        "建立社会主义制度",
+        "完成三大改造"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：彻底摧毁封建土地制度。按新中国成立与巩固政权的史实判断，本题正确答案是「彻底摧毁封建土地制度」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "第一个五年计划的时间是（ ）",
+      "options": [
+        "1953—1957年",
+        "1949—1952年",
+        "1956—1960年",
+        "1978—1982年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1953—1957年。按新中国成立与巩固政权的史实判断，本题正确答案是「1953—1957年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "第一个五年计划的重点任务是（ ）",
+      "options": [
+        "发展轻工业",
+        "发展农业",
+        "发展第三产业",
+        "集中主要力量发展重工业"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：集中主要力量发展重工业。按新中国成立与巩固政权的史实判断，本题正确答案是「集中主要力量发展重工业」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "三大改造的时间是（ ）",
+      "options": [
+        "1956—1960年",
+        "1978—1982年",
+        "1953—1956年",
+        "1949—1952年"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1953—1956年。按社会主义建设探索的史实判断，本题正确答案是「1953—1956年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "三大改造完成的历史意义是（ ）",
+      "options": [
+        "实现现代化",
+        "社会主义基本制度在我国建立",
+        "新中国成立",
+        "进入改革开放"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：社会主义基本制度在我国建立。按社会主义建设探索的史实判断，本题正确答案是「社会主义基本制度在我国建立」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "中共八大召开于（ ）",
+      "options": [
+        "1956年",
+        "1949年",
+        "1958年",
+        "1978年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1956年。按社会主义建设探索的史实判断，本题正确答案是「1956年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "大跃进和人民公社化运动开始于（ ）",
+      "options": [
+        "1953年",
+        "1956年",
+        "1966年",
+        "1958年"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1958年。按社会主义建设探索的史实判断，本题正确答案是「1958年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "文化大革命的时间是（ ）",
+      "options": [
+        "1966—1969年",
+        "1978—1988年",
+        "1966—1976年",
+        "1958—1960年"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1966—1976年。按社会主义建设探索的史实判断，本题正确答案是「1966—1976年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国第一颗原子弹爆炸成功是在（ ）",
+      "options": [
+        "1970年",
+        "1964年",
+        "1949年",
+        "1966年"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1964年。按社会主义建设探索的史实判断，本题正确答案是「1964年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国第一颗人造地球卫星「东方红一号」发射成功是在（ ）",
+      "options": [
+        "1970年",
+        "1964年",
+        "1966年",
+        "1978年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1970年。按社会主义建设探索的史实判断，本题正确答案是「1970年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "被誉为「两弹元勋」的科学家是（ ）",
+      "options": [
+        "钱学森",
+        "袁隆平",
+        "屠呦呦",
+        "邓稼先"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：邓稼先。按社会主义建设探索的史实判断，本题正确答案是「邓稼先」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "被誉为「杂交水稻之父」的科学家是（ ）",
+      "options": [
+        "钱学森",
+        "屠呦呦",
+        "袁隆平",
+        "邓稼先"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：袁隆平。按社会主义建设探索的史实判断，本题正确答案是「袁隆平」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "发现青蒿素的科学家是（ ）",
+      "options": [
+        "钱学森",
+        "屠呦呦",
+        "袁隆平",
+        "邓稼先"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：屠呦呦。按社会主义建设探索的史实判断，本题正确答案是「屠呦呦」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "作出改革开放伟大决策的会议是（ ）",
+      "options": [
+        "中共十一届三中全会",
+        "中共八大",
+        "中共十四大",
+        "中共十九大"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：中共十一届三中全会。按改革开放与新时代的史实判断，本题正确答案是「中共十一届三中全会」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "家庭联产承包责任制最早实行于（ ）",
+      "options": [
+        "广东深圳",
+        "江苏华西村",
+        "浙江义乌",
+        "安徽凤阳小岗村"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：安徽凤阳小岗村。按改革开放与新时代的史实判断，本题正确答案是「安徽凤阳小岗村」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "深圳经济特区建立于（ ）",
+      "options": [
+        "1984年",
+        "1990年",
+        "1980年",
+        "1978年"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1980年。按改革开放与新时代的史实判断，本题正确答案是「1980年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "上海浦东开发开放开始于（ ）",
+      "options": [
+        "1992年",
+        "1990年",
+        "1980年",
+        "1984年"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1990年。按改革开放与新时代的史实判断，本题正确答案是「1990年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "邓小平南方谈话发生在（ ）",
+      "options": [
+        "1992年",
+        "1978年",
+        "1984年",
+        "1990年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1992年。按改革开放与新时代的史实判断，本题正确答案是「1992年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "提出建立社会主义市场经济体制目标的会议是（ ）",
+      "options": [
+        "中共十一届三中全会",
+        "中共十二大",
+        "中共十五大",
+        "中共十四大"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：中共十四大。按改革开放与新时代的史实判断，本题正确答案是「中共十四大」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "香港回归祖国的时间是（ ）",
+      "options": [
+        "1999年12月20日",
+        "2000年1月1日",
+        "1997年7月1日",
+        "1997年10月1日"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1997年7月1日。按改革开放与新时代的史实判断，本题正确答案是「1997年7月1日」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "澳门回归祖国的时间是（ ）",
+      "options": [
+        "2001年12月11日",
+        "1999年12月20日",
+        "1997年7月1日",
+        "1999年1月1日"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1999年12月20日。按改革开放与新时代的史实判断，本题正确答案是「1999年12月20日」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "中国加入世界贸易组织的时间是（ ）",
+      "options": [
+        "2001年",
+        "1997年",
+        "1999年",
+        "2008年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：2001年。按改革开放与新时代的史实判断，本题正确答案是「2001年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-历史-5",
+      "chapterName": "中国现代史概览",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "中国特色社会主义进入新时代的标志是（ ）",
+      "options": [
+        "中共十一届三中全会",
+        "中共十四大",
+        "中共十八大",
+        "中共十九大"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：中共十九大。按改革开放与新时代的史实判断，本题正确答案是「中共十九大」。",
+      "difficulty": 2
     }
   ]
 }

@@ -6,9 +6,9 @@
     "id": "初三-物理-2",
     "name": "功与机械能"
   },
-  "generatedAt": "2026-11-13T02:47:22.835Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.222Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedm4i5",
@@ -179,6 +179,516 @@
       "correctIndex": 3,
       "explanation": "A. 错误：杠铃受到人的举力，但在力的方向上没有移动距离，因此举力不做功。\nB. 错误：人对水桶的提力竖直向上，水桶沿水平方向移动，位移方向与力的方向垂直，因此提力不做功。\nC. 错误：人虽然对汽车施加了推力，但汽车没有移动距离，因此推力不做功。\nD. 正确：人对书包施加竖直向上的力，书包在竖直方向上发生了位移，满足做功的两个必要因素，因此人对书包做了功。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "用 50 N 的水平推力使物体沿力的方向移动 10 m，推力做的功是（ ）",
+      "options": [
+        "500 J",
+        "1000 J",
+        "250 J",
+        "600 J"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：500 J。W = Fs = 50 N × 10 m = 500 J。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "用 100 N 的水平推力使物体沿力的方向移动 5 m，推力做的功是（ ）",
+      "options": [
+        "1000 J",
+        "250 J",
+        "600 J",
+        "500 J"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：500 J。W = Fs = 100 N × 5 m = 500 J。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "用 200 N 的水平推力使物体沿力的方向移动 2 m，推力做的功是（ ）",
+      "options": [
+        "200 J",
+        "500 J",
+        "400 J",
+        "800 J"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：400 J。W = Fs = 200 N × 2 m = 400 J。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "用 20 N 的水平推力使物体沿力的方向移动 20 m，推力做的功是（ ）",
+      "options": [
+        "500 J",
+        "400 J",
+        "800 J",
+        "200 J"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：400 J。W = Fs = 20 N × 20 m = 400 J。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "用 150 N 的水平推力使物体沿力的方向移动 4 m，推力做的功是（ ）",
+      "options": [
+        "600 J",
+        "1200 J",
+        "300 J",
+        "700 J"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：600 J。W = Fs = 150 N × 4 m = 600 J。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "用 300 N 的水平推力使物体沿力的方向移动 3 m，推力做的功是（ ）",
+      "options": [
+        "1800 J",
+        "450 J",
+        "1000 J",
+        "900 J"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：900 J。W = Fs = 300 N × 3 m = 900 J。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "用 80 N 的水平推力使物体沿力的方向移动 10 m，推力做的功是（ ）",
+      "options": [
+        "400 J",
+        "900 J",
+        "800 J",
+        "1600 J"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：800 J。W = Fs = 80 N × 10 m = 800 J。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "用 60 N 的水平推力使物体沿力的方向移动 15 m，推力做的功是（ ）",
+      "options": [
+        "1000 J",
+        "900 J",
+        "1800 J",
+        "450 J"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：900 J。W = Fs = 60 N × 15 m = 900 J。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "用 400 N 的水平推力使物体沿力的方向移动 5 m，推力做的功是（ ）",
+      "options": [
+        "2000 J",
+        "4000 J",
+        "1000 J",
+        "2100 J"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：2000 J。W = Fs = 400 N × 5 m = 2000 J。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "用 25 N 的水平推力使物体沿力的方向移动 8 m，推力做的功是（ ）",
+      "options": [
+        "400 J",
+        "100 J",
+        "300 J",
+        "200 J"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：200 J。W = Fs = 25 N × 8 m = 200 J。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某机器在 5 s 内做功 600 J，它的功率是（ ）",
+      "options": [
+        "60 W",
+        "170 W",
+        "120 W",
+        "240 W"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：120 W。P = W/t = 600 J ÷ 5 s = 120 W。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某机器在 4 s 内做功 1000 J，它的功率是（ ）",
+      "options": [
+        "300 W",
+        "250 W",
+        "500 W",
+        "125 W"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：250 W。P = W/t = 1000 J ÷ 4 s = 250 W。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某机器在 6 s 内做功 1500 J，它的功率是（ ）",
+      "options": [
+        "250 W",
+        "500 W",
+        "125 W",
+        "300 W"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：250 W。P = W/t = 1500 J ÷ 6 s = 250 W。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某机器在 8 s 内做功 2400 J，它的功率是（ ）",
+      "options": [
+        "600 W",
+        "150 W",
+        "350 W",
+        "300 W"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：300 W。P = W/t = 2400 J ÷ 8 s = 300 W。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某机器在 10 s 内做功 3200 J，它的功率是（ ）",
+      "options": [
+        "160 W",
+        "370 W",
+        "320 W",
+        "640 W"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：320 W。P = W/t = 3200 J ÷ 10 s = 320 W。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某机器在 3 s 内做功 450 J，它的功率是（ ）",
+      "options": [
+        "200 W",
+        "150 W",
+        "300 W",
+        "75 W"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：150 W。P = W/t = 450 J ÷ 3 s = 150 W。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某机器在 5 s 内做功 750 J，它的功率是（ ）",
+      "options": [
+        "150 W",
+        "300 W",
+        "75 W",
+        "200 W"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：150 W。P = W/t = 750 J ÷ 5 s = 150 W。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某机器在 4 s 内做功 900 J，它的功率是（ ）",
+      "options": [
+        "450 W",
+        "112.5 W",
+        "275 W",
+        "225 W"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：225 W。P = W/t = 900 J ÷ 4 s = 225 W。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某机器在 6 s 内做功 1200 J，它的功率是（ ）",
+      "options": [
+        "100 W",
+        "250 W",
+        "200 W",
+        "400 W"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：200 W。P = W/t = 1200 J ÷ 6 s = 200 W。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某机器在 8 s 内做功 1800 J，它的功率是（ ）",
+      "options": [
+        "275 W",
+        "225 W",
+        "450 W",
+        "112.5 W"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：225 W。P = W/t = 1800 J ÷ 8 s = 225 W。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "滚摆下降过程中，它的重力势能（ ）",
+      "options": [
+        "转化为动能",
+        "转化为重力势能",
+        "保持不变",
+        "转化为弹性势能"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：转化为动能。高度降低、速度增大，重力势能转化为动能。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "滚摆上升过程中，它的动能（ ）",
+      "options": [
+        "转化为动能",
+        "保持不变",
+        "转化为内能",
+        "转化为重力势能"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：转化为重力势能。速度减小、高度增大，动能转化为重力势能。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "单摆由最高点向最低点摆动时，速度逐渐变大，这一过程是（ ）",
+      "options": [
+        "机械能总量增大",
+        "弹性势能转化为动能",
+        "重力势能转化为动能",
+        "动能转化为重力势能"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：重力势能转化为动能。高度降低、速度增大，重力势能转化为动能。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "卫星从远地点向近地点运动时，它的（ ）",
+      "options": [
+        "重力势能和动能都减小",
+        "重力势能减小、动能增大",
+        "重力势能增大、动能减小",
+        "重力势能和动能都增大"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：重力势能减小、动能增大。远地点到近地点高度降低、速度增大。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "物体自由下落过程中（不计空气阻力），它的机械能（ ）",
+      "options": [
+        "保持不变",
+        "不断增大",
+        "不断减小",
+        "先增大后减小"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：保持不变。只有重力做功，动能与势能相互转化，机械能守恒。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "跳伞运动员匀速下降过程中，他的机械能（ ）",
+      "options": [
+        "增大",
+        "不变",
+        "先减小后增大",
+        "减小"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：减小。速度不变动能不变，高度降低重力势能减小，机械能减小。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "汽车加速升坡过程中，它的机械能（ ）",
+      "options": [
+        "不变",
+        "无法判断",
+        "增大",
+        "减小"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：增大。速度和高度都增大，动能和重力势能都增大。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "弯曲的弓把箭射出去时，弓的弹性势能主要转化为箭的（ ）",
+      "options": [
+        "化学能",
+        "动能",
+        "重力势能",
+        "内能"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：动能。弓恢复形变对箭做功，弹性势能转化为箭的动能。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "小球从斜面顶端滚下并压缩弹簧，弹簧被压缩的过程中（ ）",
+      "options": [
+        "动能转化为弹性势能",
+        "弹性势能转化为动能",
+        "重力势能转化为动能",
+        "机械能总量增大"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：动能转化为弹性势能。弹簧形变增大，小球动能转化为弹簧的弹性势能。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-物理-2",
+      "chapterName": "功与机械能",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在只有动能和势能相互转化时，物体的机械能总量（ ）",
+      "options": [
+        "不断变化",
+        "一定增大",
+        "一定减小",
+        "保持不变"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：保持不变。没有其他形式能量参与转化时，机械能守恒。",
+      "difficulty": 2
     }
   ]
 }

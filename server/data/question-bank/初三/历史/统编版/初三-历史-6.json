@@ -6,9 +6,9 @@
     "id": "初三-历史-6",
     "name": "历史材料分析"
   },
-  "generatedAt": "2026-11-14T12:17:52.474Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.115Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdfq6v",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：材料中“创办报刊”“翻译外国报纸”“报刊传播扩展”等信息，直接说明甲午战后近代报刊业有所发展。\nB. 错误：科举制度彻底废除是在1905年，材料所述甲午战后尚未废除，且材料没有涉及科举制。\nC. 错误：民主共和观念广泛传播主要是在辛亥革命前后，材料只反映报刊业发展，不能说明其已经普及。\nD. 错误：材料讲的是报刊和舆论传播，没有涉及新式军队建立的情况。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "第一手史料是指（ ）",
+      "options": [
+        "直接反映历史事件、与事件同时代的原始材料",
+        "后人研究整理的著作",
+        "历史题材小说",
+        "历史题材影视作品"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：直接反映历史事件、与事件同时代的原始材料。按史料分类与史料价值判断，本题正确答案是「直接反映历史事件、与事件同时代的原始材料」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列属于第一手史料的是（ ）",
+      "options": [
+        "《三国演义》",
+        "现行历史教科书",
+        "历史题材电视剧",
+        "出土的商代青铜器"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：出土的商代青铜器。按史料分类与史料价值判断，本题正确答案是「出土的商代青铜器」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列属于第二手史料的是（ ）",
+      "options": [
+        "居延汉简",
+        "敦煌文书",
+        "现代学者撰写的《中国通史》",
+        "甲骨文"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：现代学者撰写的《中国通史》。按史料分类与史料价值判断，本题正确答案是「现代学者撰写的《中国通史》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列各项中，不属于实物史料的是（ ）",
+      "options": [
+        "古代钱币",
+        "历史小说",
+        "青铜器",
+        "甲骨文"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：历史小说。按史料分类与史料价值判断，本题正确答案是「历史小说」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列属于文献史料的是（ ）",
+      "options": [
+        "《史记》",
+        "长城",
+        "兵马俑",
+        "司母戊鼎"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：《史记》。按史料分类与史料价值判断，本题正确答案是「《史记》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "口述史料的特点是（ ）",
+      "options": [
+        "完全客观、不会有误差",
+        "一定晚于事件上千年",
+        "只包括官方文书",
+        "由历史亲历者或目击者口述回忆"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：由历史亲历者或目击者口述回忆。按史料分类与史料价值判断，本题正确答案是「由历史亲历者或目击者口述回忆」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "研究古代历史最可靠的史料通常是（ ）",
+      "options": [
+        "历史题材影视剧",
+        "民间神话传说",
+        "考古发掘的实物与同时期文献",
+        "网络论坛文章"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：考古发掘的实物与同时期文献。按史料分类与史料价值判断，本题正确答案是「考古发掘的实物与同时期文献」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "多则史料相互印证的主要作用是（ ）",
+      "options": [
+        "取代考古发掘",
+        "提高历史结论的可靠性",
+        "保证结论绝对正确",
+        "单纯增加材料数量"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：提高历史结论的可靠性。按史料分类与史料价值判断，本题正确答案是「提高历史结论的可靠性」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "使用史料时应遵循的基本原则是（ ）",
+      "options": [
+        "辨别真伪、论从史出",
+        "孤证即可定论",
+        "以传说为唯一依据",
+        "以影视剧为唯一依据"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：辨别真伪、论从史出。按史料分类与史料价值判断，本题正确答案是「辨别真伪、论从史出」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列属于图像史料的是（ ）",
+      "options": [
+        "《史记》",
+        "甲骨文",
+        "青铜器铭文",
+        "《清明上河图》"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：《清明上河图》。按史料分类与史料价值判断，本题正确答案是「《清明上河图》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "公元1840年属于（ ）",
+      "options": [
+        "19世纪50年代",
+        "20世纪40年代",
+        "19世纪40年代",
+        "18世纪40年代"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：19世纪40年代。按年代换算与图表阅读的方法判断，本题正确答案是「19世纪40年代」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "公元前221年属于（ ）",
+      "options": [
+        "公元3世纪",
+        "公元前3世纪",
+        "公元前2世纪",
+        "公元前1世纪"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：公元前3世纪。按年代换算与图表阅读的方法判断，本题正确答案是「公元前3世纪」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "中国近代史的时间范围是（ ）",
+      "options": [
+        "1840—1949年",
+        "1840—1911年",
+        "1911—1949年",
+        "1840—1919年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1840—1949年。按年代换算与图表阅读的方法判断，本题正确答案是「1840—1949年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在历史时间轴上排列事件，应依据（ ）",
+      "options": [
+        "事件重要性的大小",
+        "事件发生地点的远近",
+        "事件名称字数的多少",
+        "事件发生时间的先后"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：事件发生时间的先后。按年代换算与图表阅读的方法判断，本题正确答案是「事件发生时间的先后」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "阅读朝代年代尺时，判断朝代更替顺序应依据（ ）",
+      "options": [
+        "都城规模的大小",
+        "疆域面积的广狭",
+        "政权建立与灭亡的时间",
+        "皇帝在位时的年龄"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：政权建立与灭亡的时间。按年代换算与图表阅读的方法判断，本题正确答案是「政权建立与灭亡的时间」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "从《南京条约》《马关条约》《辛丑条约》的内容看，列强侵华的大致趋势是（ ）",
+      "options": [
+        "始终限于军事侵略",
+        "从沿海深入内地、侵略程度不断加深",
+        "从内地转向沿海、侵略逐步减弱",
+        "只要求通商、不再索取赔款"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：从沿海深入内地、侵略程度不断加深。按年代换算与图表阅读的方法判断，本题正确答案是「从沿海深入内地、侵略程度不断加深」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "1840—1949年中国社会的基本性质是（ ）",
+      "options": [
+        "半殖民地半封建社会",
+        "封建社会",
+        "资本主义社会",
+        "社会主义社会"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：半殖民地半封建社会。按年代换算与图表阅读的方法判断，本题正确答案是「半殖民地半封建社会」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列事件按时间先后排序，正确的是（ ）",
+      "options": [
+        "甲午中日战争→鸦片战争→五四运动→辛亥革命",
+        "辛亥革命→鸦片战争→甲午中日战争→五四运动",
+        "五四运动→辛亥革命→甲午中日战争→鸦片战争",
+        "鸦片战争→甲午中日战争→辛亥革命→五四运动"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：鸦片战争→甲午中日战争→辛亥革命→五四运动。按年代换算与图表阅读的方法判断，本题正确答案是「鸦片战争→甲午中日战争→辛亥革命→五四运动」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "新航路开辟的历史地图主要说明（ ）",
+      "options": [
+        "亚洲始终是世界中心",
+        "非洲与外界完全隔绝",
+        "世界各地区之间的联系日益紧密",
+        "欧洲与美洲从未往来"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：世界各地区之间的联系日益紧密。按年代换算与图表阅读的方法判断，本题正确答案是「世界各地区之间的联系日益紧密」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "分析统计图表时，首先应当（ ）",
+      "options": [
+        "只记住图例的颜色",
+        "看清标题、时间范围和数据单位",
+        "只看数值最高的一项",
+        "不必关注数据来源"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：看清标题、时间范围和数据单位。按年代换算与图表阅读的方法判断，本题正确答案是「看清标题、时间范围和数据单位」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "材料：“鸦片战争后，中国逐渐沦为半殖民地半封建社会。”该材料说明鸦片战争是（ ）",
+      "options": [
+        "中国近代史的开端",
+        "中国现代史的开端",
+        "社会主义革命的开端",
+        "抗日战争的起点"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：中国近代史的开端。从材料出发、论从史出，本题正确答案是「中国近代史的开端」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "材料：“1895年，清政府被迫签订《马关条约》，割让台湾全岛及所有附属各岛屿、澎湖列岛。”该材料最能说明（ ）",
+      "options": [
+        "中国收回了台湾",
+        "日本放弃了侵略",
+        "中国实现了富强",
+        "中国的领土主权遭到进一步破坏"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：中国的领土主权遭到进一步破坏。从材料出发、论从史出，本题正确答案是「中国的领土主权遭到进一步破坏」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "材料：“19世纪60—90年代，洋务派创办了一批近代军事工业和民用企业。”据此判断洋务运动（ ）",
+      "options": [
+        "完成了政治制度变革",
+        "建立了社会主义制度",
+        "开启了中国近代化的进程",
+        "实现了中国富强"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：开启了中国近代化的进程。从材料出发、论从史出，本题正确答案是「开启了中国近代化的进程」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "材料：“1912年1月1日，中华民国临时政府在南京成立，孙中山就任临时大总统。”该材料反映的是（ ）",
+      "options": [
+        "洋务运动的重要成果",
+        "辛亥革命的重要成果",
+        "戊戌变法的重要成果",
+        "五四运动的重要成果"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：辛亥革命的重要成果。从材料出发、论从史出，本题正确答案是「辛亥革命的重要成果」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "材料：“1919年5月4日，北京学生高呼‘外争主权，内除国贼’游行示威。”该材料反映的事件是（ ）",
+      "options": [
+        "五四运动",
+        "辛亥革命",
+        "戊戌变法",
+        "新中国成立"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：五四运动。从材料出发、论从史出，本题正确答案是「五四运动」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "材料：“1938年，台儿庄战役中，中国军队歼灭日军一万余人。”该材料可用于研究（ ）",
+      "options": [
+        "鸦片战争",
+        "甲午中日战争",
+        "人民解放战争",
+        "抗日战争正面战场的作战"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：抗日战争正面战场的作战。从材料出发、论从史出，本题正确答案是「抗日战争正面战场的作战」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "材料：“1978年，安徽凤阳小岗村18户农民签订‘大包干’契约。”该材料反映的是（ ）",
+      "options": [
+        "人民公社化运动",
+        "土地改革",
+        "农村经济体制改革",
+        "城市国有企业改革"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：农村经济体制改革。从材料出发、论从史出，本题正确答案是「农村经济体制改革」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "材料：“1992年，邓小平南方谈话强调，发展才是硬道理。”该材料的历史作用是（ ）",
+      "options": [
+        "建立经济特区",
+        "进一步解放人们思想，推动改革开放",
+        "宣告改革开放开始",
+        "完成三大改造"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：进一步解放人们思想，推动改革开放。从材料出发、论从史出，本题正确答案是「进一步解放人们思想，推动改革开放」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "材料：“1947年，杜鲁门在国会演说中宣称要‘遏制’共产主义。”该材料标志着（ ）",
+      "options": [
+        "冷战开始",
+        "第二次世界大战结束",
+        "华约成立",
+        "欧洲联盟成立"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：冷战开始。从材料出发、论从史出，本题正确答案是「冷战开始」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-历史-6",
+      "chapterName": "历史材料分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "材料：“1942年，26个国家在华盛顿签署《联合国家宣言》。”该材料说明（ ）",
+      "options": [
+        "第一次世界大战爆发",
+        "冷战正式开始",
+        "联合国正式成立",
+        "世界反法西斯同盟正式形成"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：世界反法西斯同盟正式形成。从材料出发、论从史出，本题正确答案是「世界反法西斯同盟正式形成」。",
+      "difficulty": 2
     }
   ]
 }

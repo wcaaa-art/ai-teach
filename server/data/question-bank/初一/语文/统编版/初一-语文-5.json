@@ -4,16 +4,16 @@
   "edition": "统编版",
   "chapter": {
     "id": "初一-语文-5",
-    "name": "七下：说明文初步"
+    "name": "说明文初步"
   },
-  "generatedAt": "2026-11-14T12:12:47.454Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.870Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgd91rx",
       "chapterId": "初一-语文-5",
-      "chapterName": "七下：说明文初步",
+      "chapterName": "说明文初步",
       "type": "single",
       "dimension": "concept",
       "stem": "下列关于说明文基本知识的表述，正确的一项是（　　）",
@@ -30,7 +30,7 @@
     {
       "id": "diag-2-mwgd91rx",
       "chapterId": "初一-语文-5",
-      "chapterName": "七下：说明文初步",
+      "chapterName": "说明文初步",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读句子：“这座石桥桥身全长约48米，由7个拱形桥孔组成。”这句话主要运用了哪种说明方法？",
@@ -47,7 +47,7 @@
     {
       "id": "diag-3-mwgd91rx",
       "chapterId": "初一-语文-5",
-      "chapterName": "七下：说明文初步",
+      "chapterName": "说明文初步",
       "type": "single",
       "dimension": "transfer",
       "stem": "阅读下面这段文字，对其说明方法和说明顺序分析正确的一项是（  ）\n\n夏日午后，沥青路面温度常可达60℃以上，而同一路段有行道树遮阴的路面往往低10℃左右。这是因为树冠挡住阳光，减少路面吸热；树叶蒸腾水分又会带走周围热量。可见，行道树不只是城市景观，还能在一定程度上缓解高温。",
@@ -64,7 +64,7 @@
     {
       "id": "diag-5-mwgd91rx",
       "chapterId": "初一-语文-5",
-      "chapterName": "七下：说明文初步",
+      "chapterName": "说明文初步",
       "type": "single",
       "dimension": "concept",
       "stem": "学习说明文，首先要弄清它的基本特点。下列关于说明文知识的表述，正确的一项是（　　）",
@@ -81,7 +81,7 @@
     {
       "id": "diag-6-mwgd91rx",
       "chapterId": "初一-语文-5",
-      "chapterName": "七下：说明文初步",
+      "chapterName": "说明文初步",
       "type": "single",
       "dimension": "basic-application",
       "stem": "“鲸的舌头重约3吨，相当于一辆小型卡车的重量。”这句话主要运用了哪两种说明方法？",
@@ -98,7 +98,7 @@
     {
       "id": "diag-7-mwgd91rx",
       "chapterId": "初一-语文-5",
-      "chapterName": "七下：说明文初步",
+      "chapterName": "说明文初步",
       "type": "single",
       "dimension": "transfer",
       "stem": "阅读下面语段，完成题目：\n湿地与森林、海洋并称为全球三大生态系统。它能蓄水防洪、净化水质，还能为许多动植物提供栖息地。有人把湿地比作“地球之肾”，形象地说明了它在调节水循环和降解污染物方面的重要作用。\n下列对语段说明方法及作用分析正确的一项是：",
@@ -115,7 +115,7 @@
     {
       "id": "diag-8-mwgd91rx",
       "chapterId": "初一-语文-5",
-      "chapterName": "七下：说明文初步",
+      "chapterName": "说明文初步",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "学习了几篇说明文后，四位同学围绕“说明文的语言与文体特点”交流看法。下列表述正确的一项是（　　）",
@@ -132,7 +132,7 @@
     {
       "id": "diag-9-mwgd91rx",
       "chapterId": "初一-语文-5",
-      "chapterName": "七下：说明文初步",
+      "chapterName": "说明文初步",
       "type": "single",
       "dimension": "concept",
       "stem": "下列关于说明文的说法，正确的一项是（　　）",
@@ -149,7 +149,7 @@
     {
       "id": "diag-10-mwgd91rx",
       "chapterId": "初一-语文-5",
-      "chapterName": "七下：说明文初步",
+      "chapterName": "说明文初步",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读句子：“这座新建的图书馆高约24米，相当于八层楼那么高。”这句话主要运用了哪两种说明方法？其作用是什么？",
@@ -166,7 +166,7 @@
     {
       "id": "diag-1-mwgd96u4",
       "chapterId": "初一-语文-5",
-      "chapterName": "七下：说明文初步",
+      "chapterName": "说明文初步",
       "type": "single",
       "dimension": "concept",
       "stem": "判断一篇作品是否属于说明文，最关键的依据是（　　）",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：举例子、列数字只是说明文中常见的说明方法，不能作为判断文体的最关键依据；其他文体也可能局部使用这些方法。\nB. 正确：说明文以说明为主要表达方式，重在客观介绍事物、阐明事理，这是判断说明文文体的核心依据。\nC. 错误：强烈情感常见于记叙文、抒情类文章；说明文一般以客观说明为主，情感是否强烈不是判断文体的标准。\nD. 错误：生动描写和完整人物故事更接近记叙类文章的特点，不能作为说明文的文体标志。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "说明文是以（　　）为主要表达方式的文章",
+      "options": [
+        "说明",
+        "记叙",
+        "描写",
+        "抒情"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：说明。按说明文的对象、顺序与结构判断，本题正确答案是「说明」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "说明对象是指（　　）",
+      "options": [
+        "文章的作者",
+        "文章的标题",
+        "文章的语言",
+        "文章要介绍或解释的事物或事理"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：文章要介绍或解释的事物或事理。按说明文的对象、顺序与结构判断，本题正确答案是「文章要介绍或解释的事物或事理」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "说明文的中心通常是指（　　）",
+      "options": [
+        "文章的结构",
+        "文章的作者",
+        "说明对象的主要特征或事理",
+        "文章的字数"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：说明对象的主要特征或事理。按说明文的对象、顺序与结构判断，本题正确答案是「说明对象的主要特征或事理」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列不属于说明顺序的是（　　）",
+      "options": [
+        "逻辑顺序",
+        "倒叙",
+        "时间顺序",
+        "空间顺序"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：倒叙。按说明文的对象、顺序与结构判断，本题正确答案是「倒叙」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "时间顺序是指（　　）",
+      "options": [
+        "按事物发展变化的时间先后说明",
+        "按空间位置说明",
+        "按事理逻辑说明",
+        "按人物出场说明"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：按事物发展变化的时间先后说明。按说明文的对象、顺序与结构判断，本题正确答案是「按事物发展变化的时间先后说明」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "空间顺序是指（　　）",
+      "options": [
+        "按时间先后说明",
+        "按因果关系说明",
+        "按总分关系说明",
+        "按事物的空间位置或方位说明"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：按事物的空间位置或方位说明。按说明文的对象、顺序与结构判断，本题正确答案是「按事物的空间位置或方位说明」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "逻辑顺序是指（　　）",
+      "options": [
+        "按空间位置说明",
+        "按人物活动说明",
+        "按事理的内在逻辑关系说明",
+        "按时间先后说明"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：按事理的内在逻辑关系说明。按说明文的对象、顺序与结构判断，本题正确答案是「按事理的内在逻辑关系说明」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "说明文按内容可分为（　　）",
+      "options": [
+        "议论文和散文",
+        "事物说明文和事理说明文",
+        "写人记叙文和写事记叙文",
+        "抒情散文和叙事散文"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：事物说明文和事理说明文。按说明文的对象、顺序与结构判断，本题正确答案是「事物说明文和事理说明文」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "说明文语言的基本特点是（　　）",
+      "options": [
+        "准确、简明",
+        "含蓄、朦胧",
+        "华丽、夸张",
+        "幽默、讽刺"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：准确、简明。按说明文的对象、顺序与结构判断，本题正确答案是「准确、简明」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "说明文常见的结构形式是（　　）",
+      "options": [
+        "起承转合",
+        "悬念式",
+        "双线并行",
+        "总分式、并列式、递进式"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：总分式、并列式、递进式。按说明文的对象、顺序与结构判断，本题正确答案是「总分式、并列式、递进式」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“这座桥全长约五十米”运用的说明方法是（　　）",
+      "options": [
+        "作比较",
+        "分类别",
+        "列数字",
+        "打比方"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：列数字。按说明方法及其作用判断，本题正确答案是「列数字」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“地球的半径约为月球的四倍”运用的说明方法是（　　）",
+      "options": [
+        "摹状貌",
+        "作比较",
+        "举例子",
+        "下定义"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：作比较。按说明方法及其作用判断，本题正确答案是「作比较」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“太阳像一个大火球”运用的说明方法是（　　）",
+      "options": [
+        "打比方",
+        "列数字",
+        "分类别",
+        "作诠释"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：打比方。按说明方法及其作用判断，本题正确答案是「打比方」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“例如，鲸可以分为须鲸和齿鲸两大类”运用的说明方法是（　　）",
+      "options": [
+        "下定义",
+        "作比较",
+        "画图表",
+        "举例子"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：举例子。按说明方法及其作用判断，本题正确答案是「举例子」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“人是能制造工具并使用工具进行劳动的动物”运用的说明方法是（　　）",
+      "options": [
+        "打比方",
+        "引用",
+        "下定义",
+        "举例子"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：下定义。按说明方法及其作用判断，本题正确答案是「下定义」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“图书馆的书按文学、科学、历史等分类摆放”运用的说明方法是（　　）",
+      "options": [
+        "摹状貌",
+        "分类别",
+        "列数字",
+        "作比较"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：分类别。按说明方法及其作用判断，本题正确答案是「分类别」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "列数字的主要作用是（　　）",
+      "options": [
+        "使说明准确、具体",
+        "使说明生动形象",
+        "使说明条理清晰",
+        "使说明富有情感"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：使说明准确、具体。按说明方法及其作用判断，本题正确答案是「使说明准确、具体」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "打比方的主要作用是（　　）",
+      "options": [
+        "使说明准确严密",
+        "使说明简洁",
+        "使说明有说服力",
+        "使说明形象生动、通俗易懂"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：使说明形象生动、通俗易懂。按说明方法及其作用判断，本题正确答案是「使说明形象生动、通俗易懂」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "作比较的主要作用是（　　）",
+      "options": [
+        "设置悬念",
+        "抒发情感",
+        "突出说明对象的特征",
+        "增加文章字数"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：突出说明对象的特征。按说明方法及其作用判断，本题正确答案是「突出说明对象的特征」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "举例子的主要作用是（　　）",
+      "options": [
+        "使情节更曲折",
+        "使说明更具体、更有说服力",
+        "使语言更含蓄",
+        "使结构更复杂"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：使说明更具体、更有说服力。按说明方法及其作用判断，本题正确答案是「使说明更具体、更有说服力」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "说明文语言讲究准确性，主要体现在（　　）",
+      "options": [
+        "用词恰当，表述符合客观实际",
+        "多用形容词",
+        "多用比喻句",
+        "多用感叹句"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：用词恰当，表述符合客观实际。按说明文语言的准确性与结构作用判断，本题正确答案是「用词恰当，表述符合客观实际」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“大约”“可能”“左右”等词语在说明文中的作用是（　　）",
+      "options": [
+        "使表达更生动",
+        "使文章更含蓄",
+        "增强抒情性",
+        "表示估计和限制，体现语言的准确性"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：表示估计和限制，体现语言的准确性。按说明文语言的准确性与结构作用判断，本题正确答案是「表示估计和限制，体现语言的准确性」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "平实说明的语言特点是（　　）",
+      "options": [
+        "含蓄、朦胧",
+        "幽默、讽刺",
+        "朴实、简明、准确",
+        "华丽、夸张"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：朴实、简明、准确。按说明文语言的准确性与结构作用判断，本题正确答案是「朴实、简明、准确」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "生动说明的语言特点是（　　）",
+      "options": [
+        "严肃刻板",
+        "形象、生动、富有文采",
+        "朴实无华",
+        "简洁明了"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：形象、生动、富有文采。按说明文语言的准确性与结构作用判断，本题正确答案是「形象、生动、富有文采」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“总—分—总”结构的优点是（　　）",
+      "options": [
+        "条理清晰，首尾呼应",
+        "情节曲折",
+        "语言含蓄",
+        "人物鲜明"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：条理清晰，首尾呼应。按说明文语言的准确性与结构作用判断，本题正确答案是「条理清晰，首尾呼应」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "段首中心句的作用是（　　）",
+      "options": [
+        "设置悬念",
+        "抒发情感",
+        "交代背景",
+        "概括本段主要内容，统领全段"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：概括本段主要内容，统领全段。按说明文语言的准确性与结构作用判断，本题正确答案是「概括本段主要内容，统领全段」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "过渡句在说明文中的作用是（　　）",
+      "options": [
+        "描写人物",
+        "论证观点",
+        "连接上下文，使说明层次清晰",
+        "总结全文"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：连接上下文，使说明层次清晰。按说明文语言的准确性与结构作用判断，本题正确答案是「连接上下文，使说明层次清晰」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "说明文标题的作用可能是（　　）",
+      "options": [
+        "设置人物冲突",
+        "点明说明对象或特征，吸引读者",
+        "交代作者经历",
+        "抒发作者情感"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：点明说明对象或特征，吸引读者。按说明文语言的准确性与结构作用判断，本题正确答案是「点明说明对象或特征，吸引读者」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "说明文开头的作用通常是（　　）",
+      "options": [
+        "引出说明对象，激发阅读兴趣",
+        "总结全文",
+        "深化主题",
+        "塑造人物"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：引出说明对象，激发阅读兴趣。按说明文语言的准确性与结构作用判断，本题正确答案是「引出说明对象，激发阅读兴趣」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-语文-5",
+      "chapterName": "说明文初步",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "说明文结尾的作用通常是（　　）",
+      "options": [
+        "设置悬念",
+        "引出新情节",
+        "抒发情感",
+        "总结全文，强调说明对象的特点"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：总结全文，强调说明对象的特点。按说明文语言的准确性与结构作用判断，本题正确答案是「总结全文，强调说明对象的特点」。",
+      "difficulty": 2
     }
   ]
 }

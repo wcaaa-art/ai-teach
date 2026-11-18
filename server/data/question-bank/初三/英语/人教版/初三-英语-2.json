@@ -6,9 +6,9 @@
     "id": "初三-英语-2",
     "name": "被动语态综合"
   },
-  "generatedAt": "2026-11-14T12:17:14.968Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.953Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdex92",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：will open 是主动语态，主语 The new library 是“被开放”的对象，不能主动发出 open 的动作。\nB. 正确：next month 表示将来，library 与 open 之间是被动关系，因此用一般将来时的被动语态 will be opened。\nC. 错误：is opened 是一般现在时被动语态，与时间状语 next month 表示的将来时间冲突。\nD. 错误：has been opened 是现在完成时被动语态，表示已经开放，与 next month 冲突。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The bridge ______ (build) in 1990.",
+      "options": [
+        "was built",
+        "built",
+        "was building",
+        "is built"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：was built。一般过去时被动语态结构为 was/were + 过去分词；本题应为 was built。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The homework ______ (finish) by Tom last night.",
+      "options": [
+        "finished",
+        "was finishing",
+        "is finished",
+        "was finished"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：was finished。一般过去时被动语态结构为 was/were + 过去分词；本题应为 was finished。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "These photos ______ (take) in Beijing last year.",
+      "options": [
+        "were taking",
+        "are taken",
+        "were taken",
+        "took"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：were taken。一般过去时被动语态结构为 was/were + 过去分词；本题应为 were taken。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The window ______ (break) by the boy yesterday.",
+      "options": [
+        "is broken",
+        "was broken",
+        "broke",
+        "was breaking"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：was broken。一般过去时被动语态结构为 was/were + 过去分词；本题应为 was broken。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The trees ______ (plant) by the students last spring.",
+      "options": [
+        "were planted",
+        "planted",
+        "were planting",
+        "are planted"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：were planted。一般过去时被动语态结构为 was/were + 过去分词；本题应为 were planted。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The song ______ (sing) by a famous singer last night.",
+      "options": [
+        "sang",
+        "was singing",
+        "is sung",
+        "was sung"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：was sung。一般过去时被动语态结构为 was/were + 过去分词；本题应为 was sung。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The meeting ______ (hold) last Friday.",
+      "options": [
+        "was holding",
+        "is held",
+        "was held",
+        "held"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：was held。一般过去时被动语态结构为 was/were + 过去分词；本题应为 was held。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The eggs ______ (eat) by the children this morning.",
+      "options": [
+        "are eaten",
+        "were eaten",
+        "ate",
+        "were eating"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：were eaten。一般过去时被动语态结构为 was/were + 过去分词；本题应为 were eaten。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The letter ______ (write) by my grandfather in 1980.",
+      "options": [
+        "was written",
+        "wrote",
+        "was writing",
+        "is written"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：was written。一般过去时被动语态结构为 was/were + 过去分词；本题应为 was written。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The cars ______ (make) in China last year.",
+      "options": [
+        "made",
+        "were making",
+        "are made",
+        "were made"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：were made。一般过去时被动语态结构为 was/were + 过去分词；本题应为 were made。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The meeting ______ (hold) tomorrow.",
+      "options": [
+        "will be hold",
+        "is held",
+        "will be held",
+        "will hold"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：will be held。一般将来时被动语态结构为 will be + 过去分词；本题应为 will be held。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The new library ______ (build) next year.",
+      "options": [
+        "is built",
+        "will be built",
+        "will build",
+        "will be build"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：will be built。一般将来时被动语态结构为 will be + 过去分词；本题应为 will be built。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The results ______ (announce) tomorrow morning.",
+      "options": [
+        "will be announced",
+        "will announce",
+        "will be announce",
+        "are announced"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：will be announced。一般将来时被动语态结构为 will be + 过去分词；本题应为 will be announced。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "More trees ______ (plant) next spring.",
+      "options": [
+        "will plant",
+        "will be plant",
+        "are planted",
+        "will be planted"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：will be planted。一般将来时被动语态结构为 will be + 过去分词；本题应为 will be planted。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The sports meeting ______ (hold) next week.",
+      "options": [
+        "will be hold",
+        "is held",
+        "will be held",
+        "will hold"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：will be held。一般将来时被动语态结构为 will be + 过去分词；本题应为 will be held。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The work ______ (finish) in two days.",
+      "options": [
+        "is finished",
+        "will be finished",
+        "will finish",
+        "will be finish"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：will be finished。一般将来时被动语态结构为 will be + 过去分词；本题应为 will be finished。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The new hospital ______ (open) next month.",
+      "options": [
+        "will be opened",
+        "will open",
+        "will be open",
+        "is opened"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：will be opened。一般将来时被动语态结构为 will be + 过去分词；本题应为 will be opened。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The problem ______ (solve) at the meeting.",
+      "options": [
+        "will solve",
+        "will be solve",
+        "is solved",
+        "will be solved"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：will be solved。一般将来时被动语态结构为 will be + 过去分词；本题应为 will be solved。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The tickets ______ (sell) online next week.",
+      "options": [
+        "will be sell",
+        "are sold",
+        "will be sold",
+        "will sell"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：will be sold。一般将来时被动语态结构为 will be + 过去分词；本题应为 will be sold。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "A new road ______ (build) here next year.",
+      "options": [
+        "is built",
+        "will be built",
+        "will build",
+        "will be build"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：will be built。一般将来时被动语态结构为 will be + 过去分词；本题应为 will be built。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "The work ______ (finish) already.",
+      "options": [
+        "has been finished",
+        "has finished",
+        "is finished",
+        "was finished"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：has been finished。现在完成时被动语态结构为 has/have been + 过去分词；本题应为 has been finished。",
+      "difficulty": 3
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "The room ______ (clean) already.",
+      "options": [
+        "has cleaned",
+        "is cleaned",
+        "was cleaned",
+        "has been cleaned"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：has been cleaned。现在完成时被动语态结构为 has/have been + 过去分词；本题应为 has been cleaned。",
+      "difficulty": 3
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "The homework ______ (check) by the teacher.",
+      "options": [
+        "is checked",
+        "was checked",
+        "has been checked",
+        "has checked"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：has been checked。现在完成时被动语态结构为 has/have been + 过去分词；本题应为 has been checked。",
+      "difficulty": 3
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Many trees ______ (plant) since 2010.",
+      "options": [
+        "were planted",
+        "have been planted",
+        "have planted",
+        "are planted"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：have been planted。现在完成时被动语态结构为 has/have been + 过去分词；本题应为 have been planted。",
+      "difficulty": 3
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "The book ______ (translate) into many languages.",
+      "options": [
+        "has been translated",
+        "has translated",
+        "is translated",
+        "was translated"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：has been translated。现在完成时被动语态结构为 has/have been + 过去分词；本题应为 has been translated。",
+      "difficulty": 3
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "The bridge ______ (repair) already.",
+      "options": [
+        "has repaired",
+        "is repaired",
+        "was repaired",
+        "has been repaired"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：has been repaired。现在完成时被动语态结构为 has/have been + 过去分词；本题应为 has been repaired。",
+      "difficulty": 3
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "The tickets ______ (sell) out.",
+      "options": [
+        "are sold",
+        "were sold",
+        "have been sold",
+        "have sold"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：have been sold。现在完成时被动语态结构为 has/have been + 过去分词；本题应为 have been sold。",
+      "difficulty": 3
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "The letter ______ (send) to him.",
+      "options": [
+        "was sent",
+        "has been sent",
+        "has sent",
+        "is sent"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：has been sent。现在完成时被动语态结构为 has/have been + 过去分词；本题应为 has been sent。",
+      "difficulty": 3
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "The new rules ______ (make) by the school.",
+      "options": [
+        "have been made",
+        "have made",
+        "are made",
+        "were made"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：have been made。现在完成时被动语态结构为 has/have been + 过去分词；本题应为 have been made。",
+      "difficulty": 3
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-英语-2",
+      "chapterName": "被动语态综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "The car ______ (wash) three times this week.",
+      "options": [
+        "has washed",
+        "is washed",
+        "was washed",
+        "has been washed"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：has been washed。现在完成时被动语态结构为 has/have been + 过去分词；本题应为 has been washed。",
+      "difficulty": 3
     }
   ]
 }

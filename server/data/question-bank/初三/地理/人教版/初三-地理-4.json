@@ -6,9 +6,9 @@
     "id": "初三-地理-4",
     "name": "地图判读与地理实践"
   },
-  "generatedAt": "2026-11-14T12:18:05.846Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.058Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdg0ic",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：相对高度等于两点海拔之差，即400米-250米=150米；比例尺1:25000表示图上1厘米代表实地25000厘米，即250米，图上2厘米对应实地500米。\nB. 错误：相对高度计算正确，但图上2厘米对应的实地距离应为2×250米=500米，不是250米；250米只是图上1厘米代表的实地距离。\nC. 错误：250米是a点的海拔，不是a、b两点的相对高度；相对高度应为400米-250米=150米，实地水平距离500米正确。\nD. 错误：400米是b点的海拔，不能直接作为相对高度；实地水平距离也不是750米，而应为500米。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "比例尺的表示形式有（ ）",
+      "options": [
+        "数字式、线段式、文字式",
+        "数字式、颜色式、符号式",
+        "线段式、颜色式、注记式",
+        "文字式、图例式、方向式"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：数字式、线段式、文字式。按地图比例尺、方向与等高线的基础知识判断，本题正确答案是「数字式、线段式、文字式」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "图幅相同的情况下，比例尺越大，表示的内容越（ ）",
+      "options": [
+        "简略",
+        "相同",
+        "无法判断",
+        "详细"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：详细。按地图比例尺、方向与等高线的基础知识判断，本题正确答案是「详细」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "比例尺1:50000属于（ ）",
+      "options": [
+        "中比例尺",
+        "微小比例尺",
+        "大比例尺",
+        "小比例尺"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：大比例尺。按地图比例尺、方向与等高线的基础知识判断，本题正确答案是「大比例尺」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列不属于地图方向判断方法的是（ ）",
+      "options": [
+        "经纬网定向法",
+        "按颜色判断",
+        "一般定向法",
+        "指向标定向法"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：按颜色判断。按地图比例尺、方向与等高线的基础知识判断，本题正确答案是「按颜色判断」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "海拔是指（ ）",
+      "options": [
+        "某地高出海平面的垂直距离",
+        "某地高出另一地的垂直距离",
+        "两点间的水平距离",
+        "地图上的直线距离"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：某地高出海平面的垂直距离。按地图比例尺、方向与等高线的基础知识判断，本题正确答案是「某地高出海平面的垂直距离」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "相对高度是指（ ）",
+      "options": [
+        "某地高出海平面的距离",
+        "地图上的水平距离",
+        "两条等高线之间的距离",
+        "两点海拔之差"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：两点海拔之差。按地图比例尺、方向与等高线的基础知识判断，本题正确答案是「两点海拔之差」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "等高线地形图上，等高线越稀疏，坡度越（ ）",
+      "options": [
+        "相同",
+        "无法判断",
+        "缓",
+        "陡"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：缓。按地图比例尺、方向与等高线的基础知识判断，本题正确答案是「缓」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在等高线地形图上，两座山峰之间的低地是（ ）",
+      "options": [
+        "陡崖",
+        "鞍部",
+        "山脊",
+        "山谷"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：鞍部。按地图比例尺、方向与等高线的基础知识判断，本题正确答案是「鞍部」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "山峰的等高线特征是（ ）",
+      "options": [
+        "等高线闭合，数值从中心向四周降低",
+        "等高线闭合，数值从中心向四周升高",
+        "等高线向高处凸出",
+        "等高线重合"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：等高线闭合，数值从中心向四周降低。按地图比例尺、方向与等高线的基础知识判断，本题正确答案是「等高线闭合，数值从中心向四周降低」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "盆地等高线的特征是（ ）",
+      "options": [
+        "等高线闭合，数值从中心向四周降低",
+        "等高线向低处凸出",
+        "等高线重合",
+        "等高线闭合，数值从中心向四周升高"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：等高线闭合，数值从中心向四周升高。按地图比例尺、方向与等高线的基础知识判断，本题正确答案是「等高线闭合，数值从中心向四周升高」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在分层设色地形图上，绿色一般表示（ ）",
+      "options": [
+        "山地",
+        "海洋",
+        "平原",
+        "高原"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：平原。按地图应用与地理实践活动的方法判断，本题正确答案是「平原」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在分层设色地形图上，蓝色一般表示（ ）",
+      "options": [
+        "山地",
+        "海洋",
+        "平原",
+        "高原"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：海洋。按地图应用与地理实践活动的方法判断，本题正确答案是「海洋」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在分层设色地形图上，黄色、褐色一般表示（ ）",
+      "options": [
+        "高原、山地",
+        "平原",
+        "海洋",
+        "冰川"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：高原、山地。按地图应用与地理实践活动的方法判断，本题正确答案是「高原、山地」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "绘制校园平面图时，首先要确定（ ）",
+      "options": [
+        "天气状况",
+        "人口数量",
+        "历史年代",
+        "比例尺和方向"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：比例尺和方向。按地图应用与地理实践活动的方法判断，本题正确答案是「比例尺和方向」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "地理野外考察中，判断方向可借助（ ）",
+      "options": [
+        "雨量器",
+        "天平",
+        "指南针",
+        "温度计"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：指南针。按地图应用与地理实践活动的方法判断，本题正确答案是「指南针」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "测量气温应使用（ ）",
+      "options": [
+        "指南针",
+        "温度计",
+        "雨量器",
+        "风向标"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：温度计。按地图应用与地理实践活动的方法判断，本题正确答案是「温度计」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "测量降水量应使用（ ）",
+      "options": [
+        "雨量器",
+        "温度计",
+        "风力计",
+        "气压计"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：雨量器。按地图应用与地理实践活动的方法判断，本题正确答案是「雨量器」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "观测风向应使用（ ）",
+      "options": [
+        "温度计",
+        "雨量器",
+        "天平",
+        "风向标"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：风向标。按地图应用与地理实践活动的方法判断，本题正确答案是「风向标」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在野外迷失方向时，下列做法不可取的是（ ）",
+      "options": [
+        "观察太阳方位",
+        "寻找河流下游的居民点",
+        "盲目沿一个方向快速奔跑",
+        "使用指南针定向"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：盲目沿一个方向快速奔跑。按地图应用与地理实践活动的方法判断，本题正确答案是「盲目沿一个方向快速奔跑」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "地理实践活动中，收集资料的主要途径包括（ ）",
+      "options": [
+        "只凭猜测",
+        "实地观测、查阅文献、网络查询",
+        "凭空想象",
+        "随意编造"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：实地观测、查阅文献、网络查询。按地图应用与地理实践活动的方法判断，本题正确答案是「实地观测、查阅文献、网络查询」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "阅读气温曲线和降水量柱状图，可以判断（ ）",
+      "options": [
+        "气候类型",
+        "国家面积",
+        "人口数量",
+        "地形高度"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：气候类型。按统计图表与地形图的判读方法判断，本题正确答案是「气候类型」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "气温曲线图中，曲线向上凸表示气温（ ）",
+      "options": [
+        "降低",
+        "不变",
+        "为零",
+        "升高"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：升高。按统计图表与地形图的判读方法判断，本题正确答案是「升高」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "降水量柱状图中，柱子越高表示降水量（ ）",
+      "options": [
+        "不变",
+        "为负",
+        "越多",
+        "越少"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：越多。按统计图表与地形图的判读方法判断，本题正确答案是「越多」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "某地各月气温都在20℃以上，降水集中在夏季，该地最可能属于（ ）",
+      "options": [
+        "极地气候",
+        "热带季风气候",
+        "温带季风气候",
+        "地中海气候"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：热带季风气候。按统计图表与地形图的判读方法判断，本题正确答案是「热带季风气候」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "某地1月气温最高、7月气温最低，说明该地位于（ ）",
+      "options": [
+        "南半球",
+        "北半球",
+        "赤道",
+        "北极圈"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：南半球。按统计图表与地形图的判读方法判断，本题正确答案是「南半球」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "某地最冷月气温在0℃以上、15℃以下，最热月气温在25℃左右，降水集中在夏季，该地最可能属于（ ）",
+      "options": [
+        "温带季风气候",
+        "热带雨林气候",
+        "极地气候",
+        "亚热带季风气候"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：亚热带季风气候。按统计图表与地形图的判读方法判断，本题正确答案是「亚热带季风气候」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "从人口折线图中可以读出（ ）",
+      "options": [
+        "河流长度",
+        "气温变化",
+        "人口数量的变化趋势",
+        "地形高低"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：人口数量的变化趋势。按统计图表与地形图的判读方法判断，本题正确答案是「人口数量的变化趋势」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "阅读统计图表时，判断数据变化趋势应关注（ ）",
+      "options": [
+        "图例的位置",
+        "数值随时间的变化",
+        "图表的颜色",
+        "标题的字数"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：数值随时间的变化。按统计图表与地形图的判读方法判断，本题正确答案是「数值随时间的变化」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在等高线地形图上选择登山路线，坡度较缓的是（ ）",
+      "options": [
+        "等高线稀疏处",
+        "等高线密集处",
+        "等高线重合处",
+        "没有等高线处"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：等高线稀疏处。按统计图表与地形图的判读方法判断，本题正确答案是「等高线稀疏处」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-地理-4",
+      "chapterName": "地图判读与地理实践",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在等高线地形图上，可能形成河流的部位是（ ）",
+      "options": [
+        "山脊",
+        "山顶",
+        "鞍部",
+        "山谷"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：山谷。按统计图表与地形图的判读方法判断，本题正确答案是「山谷」。",
+      "difficulty": 2
     }
   ]
 }

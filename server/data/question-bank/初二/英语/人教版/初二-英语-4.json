@@ -6,9 +6,9 @@
     "id": "初二-英语-4",
     "name": "宾语从句入门"
   },
-  "generatedAt": "2026-11-14T12:15:18.317Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.939Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdcaqb",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：作主语的从句叫主语从句，例如 That he is right is clear 中 That he is right 作主语，不是宾语从句。\nB. 正确：宾语从句是句子作宾语，常放在及物动词或介词后，例如 I know that he is right 中 that he is right 作 know 的宾语。\nC. 错误：作定语的是定语从句，例如 The book that I bought is new 中 that I bought 修饰 book，不是宾语从句。\nD. 错误：作状语的是状语从句，例如 When he came, we left 中 When he came 表示时间，不是宾语从句。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Could you tell me ______?",
+      "options": [
+        "where he lives",
+        "where does he live",
+        "where he live",
+        "where did he live"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：where he lives。宾语从句必须用陈述语序（连接词 + 主语 + 谓语），本题应为 where he lives。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "I don't know ______.",
+      "options": [
+        "what is he doing",
+        "what does he do",
+        "what he doing",
+        "what he is doing"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：what he is doing。宾语从句必须用陈述语序（连接词 + 主语 + 谓语），本题应为 what he is doing。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Can you tell me ______?",
+      "options": [
+        "when the train leave",
+        "when is the train leave",
+        "when the train leaves",
+        "when does the train leave"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：when the train leaves。宾语从句必须用陈述语序（连接词 + 主语 + 谓语），本题应为 when the train leaves。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "She asked me ______.",
+      "options": [
+        "why were I late",
+        "why I was late",
+        "why was I late",
+        "why I am late"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：why I was late。宾语从句必须用陈述语序（连接词 + 主语 + 谓语），本题应为 why I was late。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Do you know ______?",
+      "options": [
+        "who he is",
+        "who is he",
+        "who does he",
+        "who he does"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：who he is。宾语从句必须用陈述语序（连接词 + 主语 + 谓语），本题应为 who he is。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "I wonder ______.",
+      "options": [
+        "how old is he",
+        "how old he",
+        "what old he is",
+        "how old he is"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：how old he is。宾语从句必须用陈述语序（连接词 + 主语 + 谓语），本题应为 how old he is。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Please tell me ______.",
+      "options": [
+        "which bus I should took",
+        "which bus do I should take",
+        "which bus I should take",
+        "which bus should I take"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：which bus I should take。宾语从句必须用陈述语序（连接词 + 主语 + 谓语），本题应为 which bus I should take。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "He didn't tell me ______.",
+      "options": [
+        "where he going",
+        "where he was going",
+        "where was he going",
+        "where did he going"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：where he was going。宾语从句必须用陈述语序（连接词 + 主语 + 谓语），本题应为 where he was going。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "I want to know ______.",
+      "options": [
+        "if she likes music",
+        "if she like music",
+        "does she like music",
+        "if does she like music"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：if she likes music。宾语从句必须用陈述语序（连接词 + 主语 + 谓语），本题应为 if she likes music。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Let me know ______.",
+      "options": [
+        "when will you come",
+        "when you come will",
+        "when do you will come",
+        "when you will come"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：when you will come。宾语从句必须用陈述语序（连接词 + 主语 + 谓语），本题应为 when you will come。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "I don't know ______ or not he will come tomorrow.",
+      "options": [
+        "what",
+        "which",
+        "whether",
+        "that"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：whether。陈述事实用 that，表示「是否」用 if/whether；本题应为 whether。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "She said ______ she was busy.",
+      "options": [
+        "what",
+        "that",
+        "if",
+        "whether"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：that。陈述事实用 that，表示「是否」用 if/whether；本题应为 that。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "I wonder ______ it will rain.",
+      "options": [
+        "if",
+        "that",
+        "what",
+        "which"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：if。陈述事实用 that，表示「是否」用 if/whether；本题应为 if。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "He asked me ______ I had finished my homework.",
+      "options": [
+        "that",
+        "what",
+        "who",
+        "whether"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：whether。陈述事实用 that，表示「是否」用 if/whether；本题应为 whether。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "We know ______ the earth moves around the sun.",
+      "options": [
+        "whether",
+        "what",
+        "that",
+        "if"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：that。陈述事实用 that，表示「是否」用 if/whether；本题应为 that。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "I don't care ______ he comes or not.",
+      "options": [
+        "which",
+        "whether",
+        "that",
+        "what"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：whether。陈述事实用 that，表示「是否」用 if/whether；本题应为 whether。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "She told me ______ she would help me.",
+      "options": [
+        "that",
+        "if",
+        "whether",
+        "what"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：that。陈述事实用 that，表示「是否」用 if/whether；本题应为 that。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "Do you know ______ she is at home?",
+      "options": [
+        "that",
+        "what",
+        "which",
+        "if"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：if。陈述事实用 that，表示「是否」用 if/whether；本题应为 if。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "He didn't tell me ______ he would come or not.",
+      "options": [
+        "what",
+        "which",
+        "whether",
+        "that"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：whether。陈述事实用 that，表示「是否」用 if/whether；本题应为 whether。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "I believe ______ he is honest.",
+      "options": [
+        "what",
+        "that",
+        "if",
+        "whether"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：that。陈述事实用 that，表示「是否」用 if/whether；本题应为 that。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "She said (that) she ______ busy then.",
+      "options": [
+        "was",
+        "is",
+        "will be",
+        "has been"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：was。主句是过去时，宾语从句通常用相应的过去时态；本题应为 was。",
+      "difficulty": 3
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "He told me he ______ to Beijing the year before.",
+      "options": [
+        "has been",
+        "was",
+        "will be",
+        "had been"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：had been。主句是过去时，宾语从句通常用相应的过去时态；本题应为 had been。",
+      "difficulty": 3
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "I knew (that) he ______ in the library.",
+      "options": [
+        "will be",
+        "has been",
+        "was",
+        "is"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：was。主句是过去时，宾语从句通常用相应的过去时态；本题应为 was。",
+      "difficulty": 3
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "She asked if I ______ free that afternoon.",
+      "options": [
+        "have been",
+        "was",
+        "am",
+        "will be"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：was。主句是过去时，宾语从句通常用相应的过去时态；本题应为 was。",
+      "difficulty": 3
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "They said they ______ the film the next day.",
+      "options": [
+        "would see",
+        "will see",
+        "saw",
+        "have seen"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：would see。主句是过去时，宾语从句通常用相应的过去时态；本题应为 would see。",
+      "difficulty": 3
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "He said he ______ his homework already.",
+      "options": [
+        "has finished",
+        "will finish",
+        "finishes",
+        "had finished"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：had finished。主句是过去时，宾语从句通常用相应的过去时态；本题应为 had finished。",
+      "difficulty": 3
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "She said she ______ a doctor in the future.",
+      "options": [
+        "was",
+        "has been",
+        "would be",
+        "is"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：would be。主句是过去时，宾语从句通常用相应的过去时态；本题应为 would be。",
+      "difficulty": 3
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "He told me that he ______ ill for two days.",
+      "options": [
+        "is",
+        "had been",
+        "has been",
+        "was"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：had been。主句是过去时，宾语从句通常用相应的过去时态；本题应为 had been。",
+      "difficulty": 3
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "I didn't know when she ______ back.",
+      "options": [
+        "would come",
+        "will come",
+        "comes",
+        "has come"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：would come。主句是过去时，宾语从句通常用相应的过去时态；本题应为 would come。",
+      "difficulty": 3
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-英语-4",
+      "chapterName": "宾语从句入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "They said they ______ us the next week.",
+      "options": [
+        "will visit",
+        "visited",
+        "have visited",
+        "would visit"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：would visit。主句是过去时，宾语从句通常用相应的过去时态；本题应为 would visit。",
+      "difficulty": 3
     }
   ]
 }

@@ -104,7 +104,7 @@ const suggestionSource = computed(() => {
 const suggestionText = computed(() => {
   const suggested = suggestionMinutes.value
   if (!suggested) return ''
-  return `最近一次${suggestionSource.value}${suggestionPercent.value !== null ? `正确率 ${suggestionPercent.value}%` : ''}，建议 ${suggested} 分钟，倒计时已按建议准备。`
+  return `最近一次${suggestionSource.value}${suggestionPercent.value !== null ? `正确率 ${suggestionPercent.value}%` : ''}，建议 ${suggested} 分钟，倒计时已按建议准备`
 })
 const planDefaultMinutes = computed(() => freeMode.value ? 25 : clampMinutes(selectedPlan.value?.estimatedMinutes) || 25)
 // 圆环：r=80，周长固定，进度按已过时间占比。
@@ -322,14 +322,14 @@ const attentionPill = computed(() => {
   return { label: '在学习', tone: 'on' }
 })
 const liveNote = computed(() => {
-  if (!cameraOn.value) return '学习画面未开启，这一轮只记录总时长；打开后能看到走神和离开。'
+  if (!cameraOn.value) return '学习画面未开启，这一轮只记录总时长；打开后能看到走神和离开'
   const status = visualStatus.value
-  if (status.isPresent === false) return '暂时没检测到你在座位前，计时已暂停，回来的时间不算专注。'
-  if (status.attentionState && status.attentionState !== 'focused') return `检测到${status.attentionLabel || '注意力波动'}，抬头看一眼计时，把注意力拉回来。`
+  if (status.isPresent === false) return '暂时没检测到你在座位前，计时已暂停，回来的时间不算专注'
+  if (status.attentionState && status.attentionState !== 'focused') return `检测到${status.attentionLabel || '注意力波动'}，抬头看一眼计时，把注意力拉回来`
   const totals = liveStats.value
-  if (totals.away >= 30) return `中间离开 ${shortDuration(totals.away)} 自动暂停了，那段时间不算你的专注时间。`
-  if (totals.distracted >= 60) return `已经记录 ${shortDuration(totals.distracted)} 走神，回来后能继续累计。`
-  return '在学状态正常，专注时间会实时累计。'
+  if (totals.away >= 30) return `中间离开 ${shortDuration(totals.away)} 自动暂停了，那段时间不算你的专注时间`
+  if (totals.distracted >= 60) return `已经记录 ${shortDuration(totals.distracted)} 走神，回来后能继续累计`
+  return '在学状态正常，专注时间会实时累计'
 })
 const remainingText = computed(() => {
   const value = Math.max(0, Number(remaining.value) || 0)
@@ -367,7 +367,7 @@ async function removeHistoryRecord(record) {
   if (!record?.id) return
   await deleteFocusSession(record.id)
   await loadSessions()
-  ElMessage.success('这条专注记录已删除。')
+  ElMessage.success('这条专注记录已删除')
 }
 const clockLabel = computed(() => timeLabel(nowTick.value))
 
@@ -449,38 +449,38 @@ const summaryTitle = computed(() => {
   return `这 ${meta.minutes} 分钟，先记下来了`
 })
 const summarySubhead = computed(() => summaryMeta.value?.sampled
-  ? '摄像头已自动关闭。下面是这一节课发生了什么。'
-  : '这次没有开启学习画面，只记录了总时长。')
+  ? '摄像头已自动关闭，下面是这一节课发生了什么'
+  : '这次没有开启学习画面，只记录了总时长')
 const summaryTips = computed(() => {
   const meta = summaryMeta.value
   if (!meta) return []
   const tips = []
   const timeline = timelineView.value
   if (!meta.sampled || !timeline) {
-    tips.push('这次没有开启学习画面，下一次打开就能看到走神和离开的具体时段。')
-    tips.push(`这一轮完整记下了 ${meta.minutes} 分钟，先把节奏稳住，再考虑加时长。`)
-    tips.push('觉得哪里不顺，可以写反馈告诉 AI，下一轮计划会跟着调整。')
+    tips.push('这次没有开启学习画面，下一次打开就能看到走神和离开的具体时段')
+    tips.push(`这一轮完整记下了 ${meta.minutes} 分钟，先把节奏稳住，再考虑加时长`)
+    tips.push('觉得哪里不顺，可以写反馈告诉 AI，下一轮计划会跟着调整')
     return tips
   }
   const firstMark = timeline.segments.find(item => item.type === 'distracted' && item.seconds >= 30)
-  if (firstMark) tips.push(`第 ${Math.max(1, Math.round(firstMark.start / 60))} 分钟左右开始走神，下次到那个点先抬头看一眼计时。`)
-  else tips.push('这一轮没有检测到走神，节奏保持得很好。')
-  if (meta.away >= 30) tips.push(`中途离开 ${shortDuration(meta.away)}，那段时间没有计入专注；下次开始前先把要用的东西拿齐。`)
-  else tips.push('没有离开记录，起身休息留到计时结束再做。')
-  if (meta.diff === null) tips.push('这是你的第一次记录，下一次有对比就能看出变化。')
-  else if (meta.diff > 0) tips.push(`在学时间比上一次多了 ${meta.diff} 分钟，这个增量比多做题更难得。`)
-  else if (meta.diff < 0) tips.push(`在学时间比上一次少了 ${-meta.diff} 分钟，下一次先把最容易分心的东西收起来。`)
-  else tips.push('在学时间和上一次持平，下一次试着把走神压到 1 分钟以内。')
+  if (firstMark) tips.push(`第 ${Math.max(1, Math.round(firstMark.start / 60))} 分钟左右开始走神，下次到那个点先抬头看一眼计时`)
+  else tips.push('这一轮没有检测到走神，节奏保持得很好')
+  if (meta.away >= 30) tips.push(`中途离开 ${shortDuration(meta.away)}，那段时间没有计入专注；下次开始前先把要用的东西拿齐`)
+  else tips.push('没有离开记录，起身休息留到计时结束再做')
+  if (meta.diff === null) tips.push('这是你的第一次记录，下一次有对比就能看出变化')
+  else if (meta.diff > 0) tips.push(`在学时间比上一次多了 ${meta.diff} 分钟，这个增量比多做题更难得`)
+  else if (meta.diff < 0) tips.push(`在学时间比上一次少了 ${-meta.diff} 分钟，下一次先把最容易分心的东西收起来`)
+  else tips.push('在学时间和上一次持平，下一次试着把走神压到 1 分钟以内')
   return tips
 })
 const quote = computed(() => {
   const meta = summaryMeta.value
   if (!meta) return ''
-  if (!meta.sampled) return '先把每一次坐下来记清楚，改变会从这张记录里长出来。'
-  if (meta.focus / Math.max(1, meta.actual) >= 0.9) return '这一轮几乎没有分神，完整地把时间交给了一件事。'
-  if (meta.away >= 60) return '中途离开不算失败，回来接着做完才算。'
-  if (meta.diff !== null && meta.diff > 0) return '进步不是靠每天多学一小时，是靠这种几分钟攒出来的。'
-  return '专注不是一直不分神，是每次分神都能更快回来。'
+  if (!meta.sampled) return '先把每一次坐下来记清楚，改变会从这张记录里长出来'
+  if (meta.focus / Math.max(1, meta.actual) >= 0.9) return '这一轮几乎没有分神，完整地把时间交给了一件事'
+  if (meta.away >= 60) return '中途离开不算失败，回来接着做完才算'
+  if (meta.diff !== null && meta.diff > 0) return '进步不是靠每天多学一小时，是靠这种几分钟攒出来的'
+  return '专注不是一直不分神，是每次分神都能更快回来'
 })
 
 // === 待机右栏：上次专注 ===
@@ -542,7 +542,7 @@ const trendText = computed(() => {
 })
 const idleObservation = computed(() => {
   const session = sessions.value[0]
-  if (!session) return '还没有记录，第一轮专注结束后这里会出现你的节奏。'
+  if (!session) return '还没有记录，第一轮专注结束后这里会出现你的节奏'
   if (session.sampled && Array.isArray(session.timeline)) {
     let cursor = 0
     const marks = []
@@ -550,11 +550,11 @@ const idleObservation = computed(() => {
       if (segment.type === 'distracted' && Number(segment.seconds) >= 60) marks.push(Math.max(1, Math.round(cursor / 60)))
       cursor += Number(segment.seconds) || 0
     }
-    if (marks.length >= 2) return `两次走神在第 ${marks[0]} 分钟和第 ${marks[1]} 分钟，这次留意一下第 ${marks[0]} 分钟。`
-    if (marks.length === 1) return `上一次在第 ${marks[0]} 分钟走神，这次留意一下那个点。`
-    return '上一次没有明显走神，这一轮可以试试同样的节奏。'
+    if (marks.length >= 2) return `两次走神在第 ${marks[0]} 分钟和第 ${marks[1]} 分钟，这次留意一下第 ${marks[0]} 分钟`
+    if (marks.length === 1) return `上一次在第 ${marks[0]} 分钟走神，这次留意一下那个点`
+    return '上一次没有明显走神，这一轮可以试试同样的节奏'
   }
-  return '这次没有画面数据，下一次打开学习画面就能看到走神时段。'
+  return '这次没有画面数据，下一次打开学习画面就能看到走神时段'
 })
 
 const headline = computed(() => {
@@ -565,9 +565,9 @@ const headline = computed(() => {
 const subhead = computed(() => {
   if (view.value === 'summary') return summarySubhead.value
   if (view.value === 'focus') return `第 ${todaySessionCount.value + 1} 次专注 · ${cameraOn.value ? '离开座位会自动暂停，不用手动记' : '学习画面未开启，只记录总时长'}`
-  if (todaySeconds.value >= 60) return `今天已经专注 ${Math.round(todaySeconds.value / 60)} 分钟，再补一轮就更稳了。`
-  if (todaySeconds.value > 0) return '今天专注还不到 1 分钟，先补满一轮。'
-  return '今天还没开始，先做一轮看看。'
+  if (todaySeconds.value >= 60) return `今天已经专注 ${Math.round(todaySeconds.value / 60)} 分钟，再补一轮就更稳了`
+  if (todaySeconds.value > 0) return '今天专注还不到 1 分钟，先补满一轮'
+  return '今天还没开始，先做一轮看看'
 })
 
 // === 跨页面专注快照 ===
@@ -610,7 +610,7 @@ function start() {
   resting.value = false
   lastLiveWrite = Date.now()
   persistLive({ running: true, startedAt: Date.now(), baseRemaining: remaining.value })
-  if (!resuming) ElMessage.success('专注开始，先完成眼前这一小步。')
+  if (!resuming) ElMessage.success('专注开始，先完成眼前这一小步')
 }
 function pause(message = '') {
   if (!startedAt.value) return
@@ -660,7 +660,7 @@ function resetClock() {
   clearLiveFocus()
 }
 async function finishSession(completed) {
-  if (!startedAt.value) { ElMessage.info('本次专注还没有开始。'); return }
+  if (!startedAt.value) { ElMessage.info('本次专注还没有开始'); return }
   const session = buildSession(completed)
   await saveFocusSession(session)
   pendingSession.value = session
@@ -673,7 +673,7 @@ async function finishSession(completed) {
   await loadSessions()
 }
 async function endFocus() {
-  if (!startedAt.value) { ElMessage.info('本次专注还没有开始。'); return }
+  if (!startedAt.value) { ElMessage.info('本次专注还没有开始'); return }
   await finishSession(elapsedSeconds() >= duration() * 0.8)
 }
 async function onTimerComplete() {
@@ -700,7 +700,7 @@ function finishRest() {
   pendingSession.value = null
   resetClock()
   view.value = 'idle'
-  ElMessage.success('休息结束，准备好就开始下一轮。')
+  ElMessage.success('休息结束，准备好就开始下一轮')
 }
 function skipRest() { finishRest() }
 function startAgain() {
@@ -727,7 +727,7 @@ function exitFocus() { router.push('/plans') }
 
 function openFeedback() { feedbackVisible.value = true }
 async function submitFeedback() {
-  if (freeMode.value) { feedbackVisible.value = false; ElMessage.info('自由专注只记录时长，不参与学习计划迭代。'); return }
+  if (freeMode.value) { feedbackVisible.value = false; ElMessage.info('自由专注只记录时长，不参与学习计划迭代'); return }
   const session = pendingSession.value || (startedAt.value ? buildSession(elapsedSeconds() >= duration() * 0.8) : null)
   if (session) { await saveFocusSession(session); pendingSession.value = session }
   await saveFeedback({ id: makeId('feedback'), sessionId: session?.id || null, planId: selectedPlan.value?.id, completion: feedback.completion, mastery: feedback.mastery, note: feedback.note, createdAt: Date.now() })
@@ -748,8 +748,8 @@ async function submitFeedback() {
   feedbackVisible.value = false
   pendingSession.value = null
   if (view.value !== 'summary') resetClock()
-  if (result.success) ElNotification({ title: '反馈已吸收，学习计划已更新', message: `${result.data?.explanation || '已根据本次反馈调整任务优先级与复习间隔。'} 新的优先级、时长和复习时间可在「学习计划」查看。`, type: 'success', duration: 6000 })
-  else ElMessage.success('反馈已保存，已按本地规则更新下一轮计划（可在「学习计划」查看）。')
+  if (result.success) ElNotification({ title: '反馈已吸收，学习计划已更新', message: `${result.data?.explanation || '已根据本次反馈调整任务优先级与复习间隔'} 新的优先级、时长和复习时间可在「学习计划」查看`, type: 'success', duration: 6000 })
+  else ElMessage.success('反馈已保存，已按本地规则更新下一轮计划（可在「学习计划」查看）')
 }
 
 // === 摄像头与页面状态 ===
@@ -766,7 +766,7 @@ async function onVisibility() {
   pageHidden.value = document.visibilityState === 'hidden'
   if (document.visibilityState === 'hidden' && startedAt.value && !feedbackVisible.value) {
     const wasRunning = running.value
-    pause('检测到页面切走，计时已暂停。')
+    pause('检测到页面切走，计时已暂停')
     distractionCount.value += 1
     await saveDistraction({ id: makeId('dist'), type: 'tab-hidden', createdAt: Date.now(), wasRunning, planId: selectedPlan.value?.id })
   }
@@ -835,7 +835,7 @@ async function onVisualAlert(event) {
     saveVisualLog({ id: makeId('visual'), status: 'away', source: 'vision', continuousAwaySeconds: event?.continuousAwaySeconds || 10, createdAt: Date.now(), planId: selectedPlan.value?.id })
   ])
   if (store.settings.soundEnabled && !event?.soundPlayed) playGentleSound()
-  try { await ElMessageBox.alert('我们暂时没有检测到你在屏幕前，计时已经暂停。回来后点击继续即可。', '温和提醒', { confirmButtonText: '我回来了' }) } catch {}
+  try { await ElMessageBox.alert('我们暂时没有检测到你在屏幕前，计时已经暂停，回来后点击继续即可', '温和提醒', { confirmButtonText: '我回来了' }) } catch {}
 }
 function falsePositive(log) {
   saveVisualLog({ id: makeId('visual'), ...log, status: 'false-positive', planId: selectedPlan.value?.id })
@@ -847,7 +847,7 @@ function onAttentionNotice(notice) {
   saveVisualLog({ id: makeId('visual'), status: notice.type, source: 'vision', message: notice.message, createdAt: Date.now(), planId: selectedPlan.value?.id })
   ElMessage.warning(notice.message || '注意一下视线和坐姿，继续专注吧')
 }
-function onModelError(message) { ElMessage.warning(message || '视觉模型暂时不可用，计时不受影响。') }
+function onModelError(message) { ElMessage.warning(message || '视觉模型暂时不可用，计时不受影响') }
 
 // 回到专注页时恢复上次的计时上下文；离开期间已经走完的，补记一条完成记录并进入回顾。
 async function restoreLiveSnapshot() {
@@ -891,7 +891,7 @@ async function restoreLiveSnapshot() {
     camera.value?.disable?.()
     view.value = 'summary'
     await loadSessions()
-    ElMessage.success('离开期间这轮专注已经完成，记录已保存。')
+    ElMessage.success('离开期间这轮专注已经完成，记录已保存')
     return
   }
   remaining.value = left
@@ -1020,7 +1020,6 @@ onBeforeUnmount(() => {
           <p v-if="suggestionText" class="focus-hint">{{ suggestionText }}</p>
 
           <button class="focus-primary" type="button" @click="start">开始专注<span class="primary-arrow" aria-hidden="true">→</span></button>
-          <p class="focus-footnote">{{ cameraOn ? '学习画面已开启，走神和离开会自动记录。' : '摄像头未开启，只会计时。' }}</p>
         </section>
 
         <!-- 专注中 -->
@@ -1039,7 +1038,7 @@ onBeforeUnmount(() => {
             </div>
           </div>
           <div class="run-actions">
-            <button class="focus-primary focus-primary-inline" type="button" @click="running ? pause('已暂停，准备好再继续。') : start()">{{ running ? '暂停' : '继续' }}</button>
+            <button class="focus-primary focus-primary-inline" type="button" @click="running ? pause('已暂停，准备好再继续') : start()">{{ running ? '暂停' : '继续' }}</button>
             <button class="focus-text" type="button" @click="endFocus">提前结束</button>
           </div>
           <div class="run-stats">
@@ -1074,7 +1073,7 @@ onBeforeUnmount(() => {
                 <div v-if="lastSessionCard.sampled" class="mini-legend">
                   <span v-for="item in lastSessionCard.legend" :key="item.label">{{ item.label }} {{ item.text }}</span>
                 </div>
-                <p v-else class="last-empty-inline">这次没有学习画面数据，只记录了总时长。</p>
+                <p v-else class="last-empty-inline">这次没有学习画面数据，只记录了总时长</p>
                 <div class="recent-block">
                   <div class="recent-head"><span>最近 3 次</span><span>{{ trendText }}</span></div>
                   <div v-for="item in recentSessions" :key="item.id" class="recent-row">
@@ -1087,9 +1086,8 @@ onBeforeUnmount(() => {
               </template>
               <template v-else>
                 <div class="last-head"><strong>上次专注</strong></div>
-                <p class="last-empty">还没有记录，第一轮专注结束后这里会出现你的节奏。</p>
+                <p class="last-empty">还没有记录，第一轮专注结束后这里会出现你的节奏</p>
               </template>
-              <p class="idle-footnote">画面只在专注期间开启，结束自动关闭，不录制也不上传。</p>
             </div>
           </template>
 
@@ -1123,10 +1121,10 @@ onBeforeUnmount(() => {
               <span><i class="dot dot-away"></i>离开 {{ shortDuration(liveStats.away) }}</span>
             </div>
             <p class="live-note">{{ liveNote }}</p>
-            <!-- 脚注放进卡里，右卡才能和左卡底边对齐；待机页的 idle-footnote 也是这么放的。 -->
+            <!-- 脚注放进卡里，右卡才能和左卡底边对齐。 -->
             <p class="live-footnote">
               <svg class="footnote-cam" viewBox="0 0 24 18" aria-hidden="true"><rect x="1.5" y="3.5" width="14" height="11" rx="2.5" /><path d="M15.5 8l6-3.5v9L15.5 10" /></svg>
-              画面只在本次专注内用来识别状态，不录制、不保存、不上传。
+              画面只在本次专注内用来识别状态，不录制、不保存、不上传
             </p>
           </div>
         </aside>
@@ -1158,7 +1156,7 @@ onBeforeUnmount(() => {
             <div class="timeline-axis">
               <span v-for="(minute, index) in axisLabels" :key="minute">{{ minute }}<template v-if="index === axisLabels.length - 1"> 分钟</template></span>
             </div>
-            <p v-if="!summaryMeta?.sampled" class="timeline-empty">没开学习画面，这条轴只有总时长；下次打开会标出走神出现在第几分钟。</p>
+            <p v-if="!summaryMeta?.sampled" class="timeline-empty">没开学习画面，这条轴只有总时长；下次打开会标出走神出现在第几分钟</p>
           </div>
         </section>
 
@@ -1174,11 +1172,11 @@ onBeforeUnmount(() => {
               <div class="quote-label">给你的一句话</div>
               <p class="quote-text">{{ quote }}</p>
             </div>
+            <button class="focus-primary rest-cta" type="button" @click="startRest">休息 10 分钟</button>
             <div class="summary-links">
               <button type="button" @click="openFeedback">写反馈</button>
               <button type="button" @click="startAgain">再来一次</button>
             </div>
-            <button class="focus-primary rest-cta" type="button" @click="startRest">休息 10 分钟</button>
           </aside>
         </div>
       </div>
@@ -1200,7 +1198,7 @@ onBeforeUnmount(() => {
         <el-form-item label="知识点掌握等级"><el-rate v-model="feedback.mastery" :max="3" clearable :texts="['刚接触', '有点会了', '基本掌握']" show-text /></el-form-item>
         <el-form-item label="给下一轮 Agent 的备注"><el-input v-model="feedback.note" type="textarea" :rows="3" placeholder="哪里顺利？哪里还想再练？" /></el-form-item>
       </el-form>
-      <p class="feedback-hint">提交后会更新学习计划里的优先级、预计时长和复习时间，可在「学习计划」页查看。</p>
+      <p class="feedback-hint">提交后会更新学习计划里的优先级、预计时长和复习时间，可在「学习计划」页查看</p>
       <template #footer><el-button @click="feedbackVisible = false">取消</el-button><el-button type="primary" @click="submitFeedback">提交并更新计划</el-button></template>
     </el-dialog>
 
@@ -1235,7 +1233,8 @@ onBeforeUnmount(() => {
   --el-switch-on-color:#4d817a;
   /* 顶部导航恢复显示后，专注页不再独占整屏：扣掉 sticky 导航的 80px，避免多出一条滚动。 */
   min-height:calc(100vh - 80px);max-width:none;width:100%;margin:0;
-  padding:0;
+  /* 顶部留白与其它页一致：18 + .focus-inner 6 + .focus-head 8 = 32px，和 AI 答疑首块对齐。 */
+  padding:18px 0 0;
   background:var(--bg);
   color:var(--ink);
 }
@@ -1298,10 +1297,8 @@ onBeforeUnmount(() => {
 .focus-primary-inline{width:auto;margin-top:0;padding:10px 28px;font-size:calc(12.5px*var(--fs-scale))}
 .focus-text{border:0;background:none;color:var(--ink-faint);font-family:inherit;font-size:calc(11.5px*var(--fs-scale));line-height:1.4;padding:6px;cursor:pointer}
 .focus-text:hover{color:var(--ink-soft)}
-.focus-footnote{margin:10px 0 0;font-size:calc(11px*var(--fs-scale));color:var(--ink-ghost);text-align:center;line-height:1.5}
 .live-footnote{display:flex;align-items:center;justify-content:center;gap:7px;margin:16px 0 0;font-size:calc(11px*var(--fs-scale));color:var(--ink-ghost);line-height:1.5;text-align:center}
 .footnote-cam{width:15px;height:12px;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linejoin:round}
-.idle-footnote{margin:auto 0 0;padding-top:16px;font-size:calc(11px*var(--fs-scale));color:var(--ink-ghost);line-height:1.5}
 /* 主按钮 + 提前结束上下堆叠、整体居中，和上方圆环对齐在同一中轴线上。 */
 .run-actions{display:flex;flex-direction:column;align-items:center;gap:5px}
 .run-actions .focus-text{position:static;transform:none;padding:2px 6px}
@@ -1399,7 +1396,7 @@ onBeforeUnmount(() => {
 .quote-card{padding:14px 15px;border-radius:16px;background:var(--beige);flex:1}
 .quote-label{margin-bottom:7px;font-size:calc(11px*var(--fs-scale));color:#B09A7E}
 .quote-text{margin:0;font-size:calc(11.5px*var(--fs-scale));color:var(--beige-ink);line-height:1.85}
-/* 右栏用 flex 撑满整个 bottom 高度，休息按钮是最后一个元素，底边正好压在左卡底线上。 */
+/* 右栏用 flex 撑满整个 bottom 高度；休息按钮借 margin-top:auto 压到底部，写反馈/再来一次放在它下面。 */
 .summary-side .rest-cta{margin-top:auto}
 .summary-links{display:flex;justify-content:center;gap:16px;margin:1px 0}
 .summary-links button{border:0;background:none;padding:3px 0;color:var(--ink-faint);font-family:inherit;font-size:calc(11.5px*var(--fs-scale));cursor:pointer}
@@ -1440,11 +1437,10 @@ onBeforeUnmount(() => {
   .focus-hint{margin-top:16px;font-size:calc(12px*var(--fs-scale))}
   .focus-primary{margin-top:24px;padding:17px 22px;font-size:calc(15.5px*var(--fs-scale))}
   .focus-primary-inline{padding:14px 46px;font-size:calc(14px*var(--fs-scale))}
-  .focus-footnote{margin-top:16px;font-size:calc(12px*var(--fs-scale))}
   .run-actions{gap:8px}
   /* 「继续」和「提前结束」上下堆叠、同一垂直中线：
      上面 `.focus-primary{margin-top:24px}` 会漏到内联按钮上（同权重、后声明），
-     结果是内联按钮在垂直堆叠里被往下推了半个 24px —— 必须先归零。 */
+     结果是内联按钮在垂直堆叠里被往下推了半个 24px —— 必须先归零， */
   .run-actions .focus-primary-inline{margin-top:0;font-size:calc(14px*var(--fs-scale))}
   .run-actions .focus-text{padding:3px 6px;font-size:calc(13px*var(--fs-scale));line-height:1.4}
   .run-stats{padding-top:22px}
@@ -1470,7 +1466,6 @@ onBeforeUnmount(() => {
   .recent-track{height:7px}
   .side-divider{margin:18px 0}
   .last-note{margin-top:18px;padding-top:16px;font-size:calc(12.5px*var(--fs-scale));line-height:1.8}
-  .idle-footnote{font-size:calc(12px*var(--fs-scale))}
   .live-footnote{margin-top:16px;font-size:calc(12px*var(--fs-scale))}
   .footnote-cam{width:17px;height:13px}
   .live-card{flex:1;padding:26px 28px}
@@ -1514,7 +1509,7 @@ onBeforeUnmount(() => {
 }
 @media (max-width:800px){
   /* 手机端顶部没有导航条、底部是固定标签栏：整页仍按整屏算高，避免底色断层。 */
-  .focus-page{min-height:100vh}
+  .focus-page{min-height:100vh;padding-top:6px}
 }
 @media (max-width:640px){
   .focus-inner{padding:12px 13px 0}

@@ -6,9 +6,9 @@
     "id": "初一-地理-3",
     "name": "天气与气候"
   },
-  "generatedAt": "2026-11-14T12:13:43.119Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.022Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgda6aw",
@@ -179,6 +179,516 @@
       "correctIndex": 2,
       "explanation": "A. 错误：南方地区大面积种植水稻主要与当地长期湿热的气候条件有关，属于气候影响。\nB. 错误：西北地区以畜牧业为主主要受当地长期干旱、半干旱气候条件影响，属于气候影响。\nC. 正确：暴雨是短时间内发生的天气现象，学校因暴雨临时停课是对具体天气变化的应对，主要受天气影响。\nD. 错误：东北地区房屋墙体较厚主要是为了适应当地长期寒冷的气候特点，属于气候影响。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列描述中，属于天气的是（ ）",
+      "options": [
+        "今天晴转多云",
+        "终年高温多雨",
+        "冬季寒冷干燥",
+        "全年温和湿润"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：今天晴转多云。按天气、气候与气温变化的基本知识判断，本题正确答案是「今天晴转多云」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列描述中，属于气候的是（ ）",
+      "options": [
+        "今天大风降温",
+        "明天有雨",
+        "昨夜有雾",
+        "昆明四季如春"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：昆明四季如春。按天气、气候与气温变化的基本知识判断，本题正确答案是「昆明四季如春」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一天中，气温最高值一般出现在（ ）",
+      "options": [
+        "日出前后",
+        "午夜0时",
+        "午后2时左右",
+        "正午12时"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：午后2时左右。按天气、气候与气温变化的基本知识判断，本题正确答案是「午后2时左右」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一天中，气温最低值一般出现在（ ）",
+      "options": [
+        "傍晚",
+        "日出前后",
+        "午后2时",
+        "正午12时"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：日出前后。按天气、气候与气温变化的基本知识判断，本题正确答案是「日出前后」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "北半球陆地月平均气温最高值一般出现在（ ）",
+      "options": [
+        "7月",
+        "1月",
+        "4月",
+        "10月"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：7月。按天气、气候与气温变化的基本知识判断，本题正确答案是「7月」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "北半球陆地月平均气温最低值一般出现在（ ）",
+      "options": [
+        "7月",
+        "4月",
+        "10月",
+        "1月"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1月。按天气、气候与气温变化的基本知识判断，本题正确答案是「1月」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "南半球陆地月平均气温最高值一般出现在（ ）",
+      "options": [
+        "4月",
+        "10月",
+        "1月",
+        "7月"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1月。按天气、气候与气温变化的基本知识判断，本题正确答案是「1月」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "气温随海拔升高而（ ）",
+      "options": [
+        "先升后降",
+        "降低",
+        "升高",
+        "不变"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：降低。按天气、气候与气温变化的基本知识判断，本题正确答案是「降低」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "海拔每升高100米，气温约下降（ ）",
+      "options": [
+        "0.6℃",
+        "0.06℃",
+        "6℃",
+        "1℃"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：0.6℃。按天气、气候与气温变化的基本知识判断，本题正确答案是「0.6℃」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "世界气温分布的一般规律是（ ）",
+      "options": [
+        "从低纬向高纬逐渐升高",
+        "从沿海向内陆降低",
+        "从两极向赤道降低",
+        "从低纬向高纬逐渐降低"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：从低纬向高纬逐渐降低。按天气、气候与气温变化的基本知识判断，本题正确答案是「从低纬向高纬逐渐降低」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "世界降水分布的一般规律是（ ）",
+      "options": [
+        "所有地区降水均匀",
+        "内陆降水普遍多于沿海",
+        "赤道地区降水多，两极地区降水少",
+        "赤道地区降水少，两极地区降水多"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：赤道地区降水多，两极地区降水少。按降水分布与气候类型的特征判断，本题正确答案是「赤道地区降水多，两极地区降水少」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在南北回归线附近，大陆东岸降水（ ）",
+      "options": [
+        "与西岸相同",
+        "较多",
+        "较少",
+        "没有降水"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：较多。按降水分布与气候类型的特征判断，本题正确答案是「较多」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在南北回归线附近，大陆西岸降水（ ）",
+      "options": [
+        "较少",
+        "较多",
+        "极多",
+        "与东岸相同"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：较少。按降水分布与气候类型的特征判断，本题正确答案是「较少」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "中纬度地区，沿海地区降水一般（ ）",
+      "options": [
+        "少于内陆地区",
+        "与内陆相同",
+        "没有降水",
+        "多于内陆地区"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：多于内陆地区。按降水分布与气候类型的特征判断，本题正确答案是「多于内陆地区」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "全年高温多雨的气候类型是（ ）",
+      "options": [
+        "温带季风气候",
+        "极地气候",
+        "热带雨林气候",
+        "热带沙漠气候"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：热带雨林气候。按降水分布与气候类型的特征判断，本题正确答案是「热带雨林气候」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "全年高温少雨的气候类型是（ ）",
+      "options": [
+        "温带海洋性气候",
+        "热带沙漠气候",
+        "热带雨林气候",
+        "地中海气候"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：热带沙漠气候。按降水分布与气候类型的特征判断，本题正确答案是「热带沙漠气候」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "夏季炎热干燥、冬季温和多雨的气候是（ ）",
+      "options": [
+        "地中海气候",
+        "温带季风气候",
+        "热带草原气候",
+        "温带海洋性气候"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：地中海气候。按降水分布与气候类型的特征判断，本题正确答案是「地中海气候」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "全年温和湿润的气候是（ ）",
+      "options": [
+        "温带大陆性气候",
+        "地中海气候",
+        "热带季风气候",
+        "温带海洋性气候"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：温带海洋性气候。按降水分布与气候类型的特征判断，本题正确答案是「温带海洋性气候」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "夏季高温多雨、冬季寒冷干燥的气候是（ ）",
+      "options": [
+        "温带海洋性气候",
+        "热带雨林气候",
+        "温带季风气候",
+        "地中海气候"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：温带季风气候。按降水分布与气候类型的特征判断，本题正确答案是「温带季风气候」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "影响气候的主要因素包括（ ）",
+      "options": [
+        "只有洋流",
+        "纬度位置、海陆位置和地形",
+        "只有纬度位置",
+        "只有人类活动"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：纬度位置、海陆位置和地形。按降水分布与气候类型的特征判断，本题正确答案是「纬度位置、海陆位置和地形」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "空气质量指数越大，表示空气质量（ ）",
+      "options": [
+        "越差",
+        "越好",
+        "不变",
+        "与指数无关"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：越差。按天气符号与气候对生产生活的影响判断，本题正确答案是「越差」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在卫星云图上，绿色通常表示（ ）",
+      "options": [
+        "海洋",
+        "云雨区",
+        "晴天",
+        "陆地"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：陆地。按天气符号与气候对生产生活的影响判断，本题正确答案是「陆地」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在卫星云图上，白色通常表示（ ）",
+      "options": [
+        "海洋",
+        "沙漠",
+        "云区",
+        "陆地"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：云区。按天气符号与气候对生产生活的影响判断，本题正确答案是「云区」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在卫星云图上，蓝色通常表示（ ）",
+      "options": [
+        "冰川",
+        "海洋",
+        "陆地",
+        "云区"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：海洋。按天气符号与气候对生产生活的影响判断，本题正确答案是「海洋」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国东部地区夏季盛行（ ）",
+      "options": [
+        "东南季风",
+        "西北季风",
+        "东北季风",
+        "西南季风"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：东南季风。按天气符号与气候对生产生活的影响判断，本题正确答案是「东南季风」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国东部地区冬季盛行（ ）",
+      "options": [
+        "东南季风",
+        "西南季风",
+        "东北季风",
+        "西北季风"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：西北季风。按天气符号与气候对生产生活的影响判断，本题正确答案是「西北季风」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "台风主要影响我国的（ ）",
+      "options": [
+        "青藏高原",
+        "东北平原",
+        "东南沿海地区",
+        "西北内陆地区"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：东南沿海地区。按天气符号与气候对生产生活的影响判断，本题正确答案是「东南沿海地区」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "寒潮过境时，常出现的天气是（ ）",
+      "options": [
+        "持续干旱",
+        "大风、雨雪、降温",
+        "持续高温",
+        "阴雨连绵、闷热"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：大风、雨雪、降温。按天气符号与气候对生产生活的影响判断，本题正确答案是「大风、雨雪、降温」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "干旱、半干旱地区最突出的自然环境特征是（ ）",
+      "options": [
+        "降水稀少",
+        "高温多雨",
+        "四季如春",
+        "河网密布"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：降水稀少。按天气符号与气候对生产生活的影响判断，本题正确答案是「降水稀少」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-地理-3",
+      "chapterName": "天气与气候",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列人类活动中，有利于改善空气质量的是（ ）",
+      "options": [
+        "焚烧秸秆",
+        "燃放烟花爆竹",
+        "大量使用煤炭",
+        "植树造林"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：植树造林。按天气符号与气候对生产生活的影响判断，本题正确答案是「植树造林」。",
+      "difficulty": 2
     }
   ]
 }

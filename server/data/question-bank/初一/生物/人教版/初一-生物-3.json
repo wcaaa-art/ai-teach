@@ -6,9 +6,9 @@
     "id": "初一-生物-3",
     "name": "绿色植物"
   },
-  "generatedAt": "2026-11-14T12:13:56.289Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.790Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdany6",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 0,
       "explanation": "A. 正确：夜间没有光照或光照很弱时，植物光合作用不能正常进行，而呼吸作用仍在进行，会消耗氧气、释放二氧化碳；卧室密闭且绿植过多时，可能使氧气减少、二氧化碳增多。\nB. 错误：光合作用需要光，夜间植物不能只进行光合作用，也不会持续增加氧气。\nC. 错误：蒸腾作用强弱受气孔开闭、温度、湿度等影响，夜间并非完全停止，且“不会影响卧室空气”的说法过于绝对。\nD. 错误：吸收二氧化碳、释放氧气主要是光合作用的表现，夜间光合作用很弱或不能进行，不能据此明显改善睡眠环境。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "种子的胚包括（　　）",
+      "options": [
+        "胚芽、胚轴、胚根和子叶",
+        "胚芽、胚轴和种皮",
+        "胚乳、胚根和种皮",
+        "子叶、胚乳和种皮"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：胚芽、胚轴、胚根和子叶。按种子的结构与萌发条件判断，本题正确答案是「胚芽、胚轴、胚根和子叶」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "玉米种子中储存营养物质的主要结构是（　　）",
+      "options": [
+        "子叶",
+        "胚芽",
+        "种皮",
+        "胚乳"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：胚乳。按种子的结构与萌发条件判断，本题正确答案是「胚乳」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "菜豆种子中储存营养物质的主要结构是（　　）",
+      "options": [
+        "胚轴",
+        "种皮",
+        "子叶",
+        "胚乳"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：子叶。按种子的结构与萌发条件判断，本题正确答案是「子叶」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "种子萌发时，最先突破种皮的是（　　）",
+      "options": [
+        "子叶",
+        "胚根",
+        "胚芽",
+        "胚轴"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：胚根。按种子的结构与萌发条件判断，本题正确答案是「胚根」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "种子萌发后，胚芽发育成（　　）",
+      "options": [
+        "茎和叶",
+        "根",
+        "根和茎",
+        "果实"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：茎和叶。按种子的结构与萌发条件判断，本题正确答案是「茎和叶」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "种子萌发后，胚根发育成（　　）",
+      "options": [
+        "茎",
+        "叶",
+        "花",
+        "根"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：根。按种子的结构与萌发条件判断，本题正确答案是「根」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "种子萌发需要的外界条件是（　　）",
+      "options": [
+        "高温、强光和大量水分",
+        "土壤、阳光和空气",
+        "适宜的温度、一定的水分和充足的空气",
+        "阳光、土壤和肥料"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：适宜的温度、一定的水分和充足的空气。按种子的结构与萌发条件判断，本题正确答案是「适宜的温度、一定的水分和充足的空气」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "种子萌发的自身条件是（　　）",
+      "options": [
+        "种皮足够坚硬",
+        "胚是完整的、活的，且种子度过休眠期",
+        "种子体积足够大",
+        "种子颜色足够深"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：胚是完整的、活的，且种子度过休眠期。按种子的结构与萌发条件判断，本题正确答案是「胚是完整的、活的，且种子度过休眠期」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "根吸收水分和无机盐的主要部位是（　　）",
+      "options": [
+        "成熟区",
+        "根冠",
+        "分生区",
+        "伸长区"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：成熟区。按种子的结构与萌发条件判断，本题正确答案是「成熟区」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "移栽植物时带土坨的主要目的是（　　）",
+      "options": [
+        "便于搬运",
+        "提供更多肥料",
+        "防止植物倒伏",
+        "保护幼根和根毛"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：保护幼根和根毛。按种子的结构与萌发条件判断，本题正确答案是「保护幼根和根毛」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "光合作用的场所是（　　）",
+      "options": [
+        "细胞核",
+        "液泡",
+        "叶绿体",
+        "线粒体"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：叶绿体。按光合作用的原料、条件、场所和产物判断，本题正确答案是「叶绿体」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "光合作用的原料是（　　）",
+      "options": [
+        "二氧化碳和有机物",
+        "二氧化碳和水",
+        "氧气和水",
+        "有机物和氧气"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：二氧化碳和水。按光合作用的原料、条件、场所和产物判断，本题正确答案是「二氧化碳和水」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "光合作用的条件是（　　）",
+      "options": [
+        "光",
+        "氧气",
+        "二氧化碳",
+        "有机物"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：光。按光合作用的原料、条件、场所和产物判断，本题正确答案是「光」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "光合作用的产物是（　　）",
+      "options": [
+        "有机物和二氧化碳",
+        "水和氧气",
+        "二氧化碳和水",
+        "有机物和氧气"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：有机物和氧气。按光合作用的原料、条件、场所和产物判断，本题正确答案是「有机物和氧气」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "光合作用的表达式可以写成（　　）",
+      "options": [
+        "二氧化碳+氧气→有机物+水",
+        "水+有机物→二氧化碳+氧气",
+        "二氧化碳+水→有机物（储存能量）+氧气",
+        "有机物+氧气→二氧化碳+水+能量"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：二氧化碳+水→有机物（储存能量）+氧气。按光合作用的原料、条件、场所和产物判断，本题正确答案是「二氧化碳+水→有机物（储存能量）+氧气」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“绿叶在光下制造有机物”实验中，将叶片放在酒精中隔水加热的目的是（　　）",
+      "options": [
+        "让叶片变软",
+        "溶解叶绿素，便于观察",
+        "杀死叶片细胞",
+        "增加叶片中的淀粉"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：溶解叶绿素，便于观察。按光合作用的原料、条件、场所和产物判断，本题正确答案是「溶解叶绿素，便于观察」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“绿叶在光下制造有机物”实验中，暗处理的目的是（　　）",
+      "options": [
+        "耗尽叶片中原有的淀粉",
+        "让叶片积累更多淀粉",
+        "除去叶片中的叶绿素",
+        "使叶片失去水分"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：耗尽叶片中原有的淀粉。按光合作用的原料、条件、场所和产物判断，本题正确答案是「耗尽叶片中原有的淀粉」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "验证光合作用产生氧气时，常用（　　）收集气体",
+      "options": [
+        "向上排空气法",
+        "向下排空气法",
+        "直接闻气味",
+        "排水法"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：排水法。按光合作用的原料、条件、场所和产物判断，本题正确答案是「排水法」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "光合作用释放的氧气主要来自（　　）",
+      "options": [
+        "有机物",
+        "无机盐",
+        "水",
+        "二氧化碳"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：水。按光合作用的原料、条件、场所和产物判断，本题正确答案是「水」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "绿色植物通过光合作用维持了生物圈中的（　　）",
+      "options": [
+        "无机盐平衡",
+        "碳—氧平衡",
+        "水平衡",
+        "温度平衡"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：碳—氧平衡。按光合作用的原料、条件、场所和产物判断，本题正确答案是「碳—氧平衡」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "呼吸作用的主要场所是（　　）",
+      "options": [
+        "线粒体",
+        "叶绿体",
+        "细胞核",
+        "液泡"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：线粒体。按呼吸作用与蒸腾作用判断，本题正确答案是「线粒体」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "呼吸作用的原料是（　　）",
+      "options": [
+        "二氧化碳和水",
+        "有机物和二氧化碳",
+        "水和无机盐",
+        "有机物和氧气"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：有机物和氧气。按呼吸作用与蒸腾作用判断，本题正确答案是「有机物和氧气」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "呼吸作用的产物是（　　）",
+      "options": [
+        "氧气和有机物",
+        "水和无机盐",
+        "二氧化碳和水",
+        "有机物和氧气"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：二氧化碳和水。按呼吸作用与蒸腾作用判断，本题正确答案是「二氧化碳和水」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "植物在白天和夜晚都能进行的生理活动是（　　）",
+      "options": [
+        "只在夜间进行光合作用",
+        "呼吸作用",
+        "光合作用",
+        "只在白天进行蒸腾作用"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：呼吸作用。按呼吸作用与蒸腾作用判断，本题正确答案是「呼吸作用」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "储藏粮食时，低温、干燥、低氧的目的是（　　）",
+      "options": [
+        "抑制呼吸作用，减少有机物消耗",
+        "促进呼吸作用",
+        "促进光合作用",
+        "增强蒸腾作用"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：抑制呼吸作用，减少有机物消耗。按呼吸作用与蒸腾作用判断，本题正确答案是「抑制呼吸作用，减少有机物消耗」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "给农作物松土的主要目的是（　　）",
+      "options": [
+        "促进光合作用制造更多有机物",
+        "减少水分吸收",
+        "防止杂草生长",
+        "促进根部的呼吸作用"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：促进根部的呼吸作用。按呼吸作用与蒸腾作用判断，本题正确答案是「促进根部的呼吸作用」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "植物体内水分以水蒸气形式散失到体外的过程叫（　　）",
+      "options": [
+        "光合作用",
+        "吸收作用",
+        "蒸腾作用",
+        "呼吸作用"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：蒸腾作用。按呼吸作用与蒸腾作用判断，本题正确答案是「蒸腾作用」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "植物蒸腾作用散失水分的“门户”是（　　）",
+      "options": [
+        "筛管",
+        "气孔",
+        "根毛",
+        "导管"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：气孔。按呼吸作用与蒸腾作用判断，本题正确答案是「气孔」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "气孔的开闭由（　　）控制",
+      "options": [
+        "保卫细胞",
+        "表皮细胞",
+        "叶肉细胞",
+        "导管细胞"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：保卫细胞。按呼吸作用与蒸腾作用判断，本题正确答案是「保卫细胞」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-生物-3",
+      "chapterName": "绿色植物",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "移栽植物时遮阴、去掉部分叶片，主要是为了（　　）",
+      "options": [
+        "增强光合作用",
+        "促进呼吸作用",
+        "增加无机盐吸收",
+        "降低蒸腾作用，减少水分散失"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：降低蒸腾作用，减少水分散失。按呼吸作用与蒸腾作用判断，本题正确答案是「降低蒸腾作用，减少水分散失」。",
       "difficulty": 2
     }
   ]

@@ -4,16 +4,16 @@
   "edition": "统编版",
   "chapter": {
     "id": "初三-语文-5",
-    "name": "九下：文言文比较阅读"
+    "name": "文言文比较阅读"
   },
-  "generatedAt": "2026-11-14T12:17:04.988Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.905Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdepjs",
       "chapterId": "初三-语文-5",
-      "chapterName": "九下：文言文比较阅读",
+      "chapterName": "文言文比较阅读",
       "type": "single",
       "dimension": "concept",
       "stem": "阅读下面两则短文，完成题目。\n【甲】善牧者，视马之饥饱而节其食，不使过焉；察马之劳逸而调其步，不使竭焉。\n【乙】御马者，非鞭之利也，惟其道之得也。道得，则马不待策而自行；道失，则虽策之而益乱。\n下列对两文中“食”“策”及两文比较的理解，正确的一项是（  ）",
@@ -30,7 +30,7 @@
     {
       "id": "diag-2-mwgdepjs",
       "chapterId": "初三-语文-5",
-      "chapterName": "九下：文言文比较阅读",
+      "chapterName": "文言文比较阅读",
       "type": "single",
       "dimension": "basic-application",
       "stem": "比较下列两组文言语句中“之”的意义和用法，判断正确的一项是：甲：予尝求古仁人之心（《岳阳楼记》）；乙：小大之狱，虽不能察，必以情（《曹刿论战》）",
@@ -47,7 +47,7 @@
     {
       "id": "diag-3-mwgdepjs",
       "chapterId": "初三-语文-5",
-      "chapterName": "九下：文言文比较阅读",
+      "chapterName": "文言文比较阅读",
       "type": "single",
       "dimension": "transfer",
       "stem": "阅读下面两则短文，完成题目。\n甲：有马于此，力足致远。驭者日饲以常秣，策以常道。及驱之峻坂，力尽而踬。驭者曰：“天下无良马。”\n乙：用人者不察其长，而责其短；不量其能，而强其所难。犹操钝斧伐坚木，木不折而斧先敝，乃曰：“木不可伐。”\n甲乙两文共同揭示了什么道理？",
@@ -64,7 +64,7 @@
     {
       "id": "diag-4-mwgdepjs",
       "chapterId": "初三-语文-5",
-      "chapterName": "九下：文言文比较阅读",
+      "chapterName": "文言文比较阅读",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "下列对《马说》与《爱莲说》的比较分析，不正确的一项是（　　）",
@@ -81,7 +81,7 @@
     {
       "id": "diag-5-mwgdepjs",
       "chapterId": "初三-语文-5",
-      "chapterName": "九下：文言文比较阅读",
+      "chapterName": "文言文比较阅读",
       "type": "single",
       "dimension": "concept",
       "stem": "比较阅读《马说》和《送东阳马生序》，下列理解正确的一项是（　　）",
@@ -98,7 +98,7 @@
     {
       "id": "diag-6-mwgdepjs",
       "chapterId": "初三-语文-5",
-      "chapterName": "九下：文言文比较阅读",
+      "chapterName": "文言文比较阅读",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读下面两个句子，比较句中“以”的意义和用法，判断分析正确的一项。甲：小大之狱，虽不能察，必以情。乙：臣之妻私臣，臣之妾畏臣，臣之客欲有求于臣，皆以美于徐公。",
@@ -115,7 +115,7 @@
     {
       "id": "diag-7-mwgdepjs",
       "chapterId": "初三-语文-5",
-      "chapterName": "九下：文言文比较阅读",
+      "chapterName": "文言文比较阅读",
       "type": "single",
       "dimension": "transfer",
       "stem": "阅读下面两则短文，比较二者在学习上的侧重点，选出分析最恰当的一项。\n【甲】王生好学而不得法。每读经，务记其辞，而不求其义。师问之，茫然不能对。师曰：“学贵得于心，徒诵何益？”生乃改之，日省所读，质疑问难，学遂进。\n【乙】李生家贫，无书可读，尝借于邻家，手自笔录。天大寒，砚冰坚，手指不可屈伸，弗之怠。录毕，走送之，不敢稍逾约。以是人多以书假之，遂遍观群书。",
@@ -132,7 +132,7 @@
     {
       "id": "diag-8-mwgdepjs",
       "chapterId": "初三-语文-5",
-      "chapterName": "九下：文言文比较阅读",
+      "chapterName": "文言文比较阅读",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "比较阅读下列甲乙两则短文，对重点词的理解正确的一项是（　　）\n甲：有良驹伏枥，饲者不知其能致远，日以常秣食之。\n乙：御者持鞭临驹，叹曰：“世岂无良驹哉？”\n（“食”“鞭”“其”“驹”为重点辨析词）",
@@ -149,10 +149,10 @@
     {
       "id": "diag-9-mwgdepjs",
       "chapterId": "初三-语文-5",
-      "chapterName": "九下：文言文比较阅读",
+      "chapterName": "文言文比较阅读",
       "type": "single",
       "dimension": "concept",
-      "stem": "在九下文言文比较阅读中，若将《鱼我所欲也》与《送东阳马生序》对读，下列对“比较点”的表述最恰当的一项是（　　）",
+      "stem": "在文言文比较阅读中，若将《鱼我所欲也》与《送东阳马生序》对读，下列对“比较点”的表述最恰当的一项是（　　）",
       "options": [
         "比较两文作者生活年代的先后，以确定两文在文学史上的排名",
         "比较两文的议论、劝勉方式及价值取向，辨析“舍生取义”与“勤学成才”的异同",
@@ -166,7 +166,7 @@
     {
       "id": "diag-10-mwgdepjs",
       "chapterId": "初三-语文-5",
-      "chapterName": "九下：文言文比较阅读",
+      "chapterName": "文言文比较阅读",
       "type": "single",
       "dimension": "basic-application",
       "stem": "比较阅读《曹刿论战》与《邹忌讽齐王纳谏》，下列对两文中括号内词语的理解和分析，正确的一项是（ ）",
@@ -179,6 +179,516 @@
       "correctIndex": 2,
       "explanation": "A. 错误：“鄙”在“肉食者鄙”中指目光短浅、见识浅陋；“蔽”在“王之蔽甚矣”中指被蒙蔽，不能都解释为“见识短浅”。\nB. 错误：“又何间焉”的“间”读jiàn，意为参与；“时时而间进”的“间”读jiàn，意为间或、偶然，二者意义不同。\nC. 正确：“鼓”本为名词，在“公将鼓之”中作动词，意为击鼓进军；“闻”在“闻寡人之耳者”中为使动用法，意为使……听到，二者均属词类活用。\nD. 错误：“从”在“战则请从”中是动词，意为跟随；“朝”在“皆朝于齐”中是动词，意为朝见，二者都不是介词。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“小惠未遍，民弗从也”中“遍”的意思是（　　）",
+      "options": [
+        "遍及，普遍",
+        "一遍",
+        "到处",
+        "遍数"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：遍及，普遍。按文言实词、虚词的含义与用法判断，本题正确答案是「遍及，普遍」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“牺牲玉帛，弗敢加也”中“牺牲”的古义是（　　）",
+      "options": [
+        "舍弃生命",
+        "放弃利益",
+        "付出代价",
+        "祭祀用的猪牛羊等"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：祭祀用的猪牛羊等。按文言实词、虚词的含义与用法判断，本题正确答案是「祭祀用的猪牛羊等」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“肉食者鄙，未能远谋”中“鄙”的意思是（　　）",
+      "options": [
+        "鄙视",
+        "边远",
+        "目光短浅",
+        "卑鄙"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：目光短浅。按文言实词、虚词的含义与用法判断，本题正确答案是「目光短浅」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“一鼓作气，再而衰，三而竭”中“再”的意思是（　　）",
+      "options": [
+        "重复",
+        "第二次",
+        "再一次",
+        "又"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：第二次。按文言实词、虚词的含义与用法判断，本题正确答案是「第二次」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“邹忌修八尺有余”中“修”的意思是（　　）",
+      "options": [
+        "长，这里指身高",
+        "修理",
+        "修养",
+        "修建"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：长，这里指身高。按文言实词、虚词的含义与用法判断，本题正确答案是「长，这里指身高」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“吾妻之美我者，私我也”中“私”的意思是（　　）",
+      "options": [
+        "私心",
+        "私下",
+        "私人",
+        "偏爱"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：偏爱。按文言实词、虚词的含义与用法判断，本题正确答案是「偏爱」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“王之蔽甚矣”中“蔽”的意思是（　　）",
+      "options": [
+        "隐蔽",
+        "掩护",
+        "蒙蔽，这里指受蒙蔽",
+        "遮蔽"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：蒙蔽，这里指受蒙蔽。按文言实词、虚词的含义与用法判断，本题正确答案是「蒙蔽，这里指受蒙蔽」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“先帝不以臣卑鄙”中“卑鄙”的古义是（　　）",
+      "options": [
+        "生活贫困",
+        "身份低微、见识短浅",
+        "品行恶劣",
+        "地位低下"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：身份低微、见识短浅。按文言实词、虚词的含义与用法判断，本题正确答案是「身份低微、见识短浅」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“由是感激”中“感激”的古义是（　　）",
+      "options": [
+        "感奋激发",
+        "感谢",
+        "感动",
+        "激动"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：感奋激发。按文言实词、虚词的含义与用法判断，本题正确答案是「感奋激发」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“陟罚臧否，不宜异同”中“异同”的意思是（　　）",
+      "options": [
+        "相同和不同",
+        "差异和相同",
+        "同异之争",
+        "不同"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：不同。按文言实词、虚词的含义与用法判断，本题正确答案是「不同」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“何以战？”属于（　　）",
+      "options": [
+        "被动句",
+        "省略句",
+        "宾语前置句",
+        "判断句"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：宾语前置句。按文言句式、翻译与比较阅读方法判断，本题正确答案是「宾语前置句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“夫战，勇气也”属于（　　）",
+      "options": [
+        "省略句",
+        "判断句",
+        "被动句",
+        "倒装句"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：判断句。按文言句式、翻译与比较阅读方法判断，本题正确答案是「判断句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“忌不自信”属于（　　）",
+      "options": [
+        "宾语前置句",
+        "判断句",
+        "被动句",
+        "定语后置句"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：宾语前置句。按文言句式、翻译与比较阅读方法判断，本题正确答案是「宾语前置句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“此所谓战胜于朝廷”属于（　　）",
+      "options": [
+        "被动句",
+        "省略句",
+        "疑问句",
+        "判断句"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：判断句。按文言句式、翻译与比较阅读方法判断，本题正确答案是「判断句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“受制于人”属于（　　）",
+      "options": [
+        "省略句",
+        "宾语前置句",
+        "被动句",
+        "判断句"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：被动句。按文言句式、翻译与比较阅读方法判断，本题正确答案是「被动句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“咨臣以当世之事”属于（　　）",
+      "options": [
+        "判断句",
+        "状语后置句",
+        "宾语前置句",
+        "定语后置句"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：状语后置句。按文言句式、翻译与比较阅读方法判断，本题正确答案是「状语后置句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“苟全性命于乱世”属于（　　）",
+      "options": [
+        "状语后置句",
+        "宾语前置句",
+        "被动句",
+        "判断句"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：状语后置句。按文言句式、翻译与比较阅读方法判断，本题正确答案是「状语后置句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“可以一战”中“可以”的古义是（　　）",
+      "options": [
+        "能够",
+        "许可",
+        "可能",
+        "可以凭借"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：可以凭借。按文言句式、翻译与比较阅读方法判断，本题正确答案是「可以凭借」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "比较阅读文言文，首先应该（　　）",
+      "options": [
+        "只数字数",
+        "只比标点",
+        "读懂两文的内容和主旨",
+        "只看作者"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：读懂两文的内容和主旨。按文言句式、翻译与比较阅读方法判断，本题正确答案是「读懂两文的内容和主旨」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "比较两文的写作手法，应该（　　）",
+      "options": [
+        "凭主观印象",
+        "结合具体语句分析异同",
+        "只写术语",
+        "不看文本"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：结合具体语句分析异同。按文言句式、翻译与比较阅读方法判断，本题正确答案是「结合具体语句分析异同」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《曹刿论战》主要表现了曹刿的（　　）",
+      "options": [
+        "远见卓识和军事才能",
+        "贪生怕死",
+        "阿谀奉承",
+        "优柔寡断"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：远见卓识和军事才能。按文言文主旨、人物与手法比较判断，本题正确答案是「远见卓识和军事才能」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《曹刿论战》中鲁国以弱胜强的主要原因是（　　）",
+      "options": [
+        "兵力强大",
+        "武器先进",
+        "地形有利",
+        "取信于民，把握战机"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：取信于民，把握战机。按文言文主旨、人物与手法比较判断，本题正确答案是「取信于民，把握战机」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《邹忌讽齐王纳谏》中邹忌进谏的方式是（　　）",
+      "options": [
+        "武力威胁",
+        "消极回避",
+        "以自身经历设喻，委婉讽谏",
+        "直言犯上"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：以自身经历设喻，委婉讽谏。按文言文主旨、人物与手法比较判断，本题正确答案是「以自身经历设喻，委婉讽谏」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《邹忌讽齐王纳谏》主要说明（　　）",
+      "options": [
+        "自然规律的重要性",
+        "广开言路、虚心纳谏的重要性",
+        "军事谋略的重要性",
+        "家庭和睦的重要性"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：广开言路、虚心纳谏的重要性。按文言文主旨、人物与手法比较判断，本题正确答案是「广开言路、虚心纳谏的重要性」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《出师表》主要表达了诸葛亮（　　）",
+      "options": [
+        "报先帝、忠陛下，鞠躬尽瘁的赤诚",
+        "归隐山林的愿望",
+        "追求富贵的心理",
+        "对战争的恐惧"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：报先帝、忠陛下，鞠躬尽瘁的赤诚。按文言文主旨、人物与手法比较判断，本题正确答案是「报先帝、忠陛下，鞠躬尽瘁的赤诚」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《送东阳马生序》主要运用的表现手法是（　　）",
+      "options": [
+        "象征",
+        "讽刺",
+        "夸张",
+        "对比"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：对比。按文言文主旨、人物与手法比较判断，本题正确答案是「对比」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《鱼我所欲也》与《唐雎不辱使命》的共同点是（　　）",
+      "options": [
+        "都说明科学道理",
+        "都叙述商业活动",
+        "都表现了舍生取义、不畏强暴的精神",
+        "都描写自然风光"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：都表现了舍生取义、不畏强暴的精神。按文言文主旨、人物与手法比较判断，本题正确答案是「都表现了舍生取义、不畏强暴的精神」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "比较两文人物形象，应该（　　）",
+      "options": [
+        "只凭印象",
+        "结合人物的言行和所处环境分析",
+        "只看外貌",
+        "只看官职"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：结合人物的言行和所处环境分析。按文言文主旨、人物与手法比较判断，本题正确答案是「结合人物的言行和所处环境分析」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "比较两文主旨，应该（　　）",
+      "options": [
+        "抓住各自的核心观点和写作目的",
+        "只看标题",
+        "只看开头",
+        "只数段落"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：抓住各自的核心观点和写作目的。按文言文主旨、人物与手法比较判断，本题正确答案是「抓住各自的核心观点和写作目的」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-语文-5",
+      "chapterName": "文言文比较阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "文言文比较阅读的常见角度不包括（　　）",
+      "options": [
+        "比较内容主旨",
+        "比较人物形象",
+        "比较写作手法",
+        "比较纸张的厚薄"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：比较纸张的厚薄。按文言文主旨、人物与手法比较判断，本题正确答案是「比较纸张的厚薄」。",
+      "difficulty": 2
     }
   ]
 }

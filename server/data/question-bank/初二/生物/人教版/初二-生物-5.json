@@ -6,9 +6,9 @@
     "id": "初二-生物-5",
     "name": "生物的生殖与遗传"
   },
-  "generatedAt": "2026-11-14T12:16:27.102Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.814Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgddwbh",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 1,
       "explanation": "A. 错误：精子与卵细胞相遇并结合的场所是输卵管，受精卵形成后才被输送进入子宫，因此“在子宫内结合”与受精过程实际发生的位置冲突。\nB. 正确：胎盘是胎儿与母体进行物质交换的器官，脐带连接胎儿与胎盘，胎儿借此从母体获得营养物质和氧气，并把二氧化碳等废物排出。\nC. 错误：男性产生精子并分泌雄性激素的主要生殖器官是睾丸，附睾只是储存和输送精子的场所，不具有分泌雄性激素的主要功能。\nD. 错误：受精卵形成后立即开始细胞分裂，逐渐发育成胚泡并植入子宫内膜，并不存在“休眠八周再分裂”的过程。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "有性生殖是指（　　）",
+      "options": [
+        "由两性生殖细胞结合形成受精卵，再由受精卵发育成新个体",
+        "由母体直接产生新个体",
+        "由营养器官发育成新个体",
+        "由孢子直接发育成新个体"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：由两性生殖细胞结合形成受精卵，再由受精卵发育成新个体。按有性生殖与无性生殖的区别判断，本题正确答案是「由两性生殖细胞结合形成受精卵，再由受精卵发育成新个体」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列属于无性生殖的是（　　）",
+      "options": [
+        "用种子播种",
+        "水稻杂交育种",
+        "青蛙产卵繁殖",
+        "嫁接"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：嫁接。按有性生殖与无性生殖的区别判断，本题正确答案是「嫁接」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "嫁接成活的关键是（　　）",
+      "options": [
+        "嫁接后大量浇水",
+        "嫁接后立即施肥",
+        "接穗与砧木的形成层紧密结合",
+        "接穗和砧木大小完全相同"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：接穗与砧木的形成层紧密结合。按有性生殖与无性生殖的区别判断，本题正确答案是「接穗与砧木的形成层紧密结合」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "扦插、压条属于（　　）",
+      "options": [
+        "分裂生殖",
+        "无性生殖",
+        "有性生殖",
+        "孢子生殖"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：无性生殖。按有性生殖与无性生殖的区别判断，本题正确答案是「无性生殖」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "植物组织培养利用的原理是（　　）",
+      "options": [
+        "细胞的全能性",
+        "基因突变",
+        "自然选择",
+        "细胞不能分化"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：细胞的全能性。按有性生殖与无性生殖的区别判断，本题正确答案是「细胞的全能性」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "克隆羊“多莉”的诞生属于（　　）",
+      "options": [
+        "有性生殖",
+        "体外受精",
+        "自然繁殖",
+        "无性生殖"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：无性生殖。按有性生殖与无性生殖的区别判断，本题正确答案是「无性生殖」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "用种子繁殖后代属于（　　）",
+      "options": [
+        "营养繁殖",
+        "组织培养",
+        "有性生殖",
+        "无性生殖"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：有性生殖。按有性生殖与无性生殖的区别判断，本题正确答案是「有性生殖」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "无性生殖的优点主要是（　　）",
+      "options": [
+        "一定比有性生殖更适应环境",
+        "繁殖速度快，能保持母体的优良性状",
+        "后代变异丰富",
+        "能产生更多新品种"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：繁殖速度快，能保持母体的优良性状。按有性生殖与无性生殖的区别判断，本题正确答案是「繁殖速度快，能保持母体的优良性状」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“无心插柳柳成荫”所描述的方式是（　　）",
+      "options": [
+        "扦插",
+        "嫁接",
+        "压条",
+        "播种"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：扦插。按有性生殖与无性生殖的区别判断，本题正确答案是「扦插」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "有性生殖的后代具有（　　）",
+      "options": [
+        "只具有母体的遗传特性",
+        "只具有父体的遗传特性",
+        "与双亲完全相同的遗传物质",
+        "双亲的遗传特性，变异较丰富"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：双亲的遗传特性，变异较丰富。按有性生殖与无性生殖的区别判断，本题正确答案是「双亲的遗传特性，变异较丰富」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "家蚕的发育过程属于（　　）",
+      "options": [
+        "直接发育",
+        "无变态发育",
+        "完全变态发育",
+        "不完全变态发育"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：完全变态发育。按动物的生殖与发育过程判断，本题正确答案是「完全变态发育」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "蝗虫的发育过程属于（　　）",
+      "options": [
+        "胎生",
+        "不完全变态发育",
+        "完全变态发育",
+        "变态发育中的蛹期"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：不完全变态发育。按动物的生殖与发育过程判断，本题正确答案是「不完全变态发育」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "完全变态发育的昆虫经历的几个时期依次是（　　）",
+      "options": [
+        "卵→幼虫→蛹→成虫",
+        "卵→若虫→成虫",
+        "卵→蛹→幼虫→成虫",
+        "幼虫→卵→蛹→成虫"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：卵→幼虫→蛹→成虫。按动物的生殖与发育过程判断，本题正确答案是「卵→幼虫→蛹→成虫」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "青蛙的生殖和发育特点是（　　）",
+      "options": [
+        "体内受精，直接发育",
+        "体外受精，直接发育",
+        "体内受精，胎生",
+        "体外受精，变态发育"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：体外受精，变态发育。按动物的生殖与发育过程判断，本题正确答案是「体外受精，变态发育」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "青蛙的发育过程依次是（　　）",
+      "options": [
+        "蝌蚪→受精卵→幼蛙→成蛙",
+        "受精卵→成蛙",
+        "受精卵→蝌蚪→幼蛙→成蛙",
+        "受精卵→幼蛙→蝌蚪→成蛙"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：受精卵→蝌蚪→幼蛙→成蛙。按动物的生殖与发育过程判断，本题正确答案是「受精卵→蝌蚪→幼蛙→成蛙」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "鸟类生殖发育过程中，能提高后代成活率的行为是（　　）",
+      "options": [
+        "不孵卵",
+        "孵卵和育雏",
+        "产卵数量多",
+        "不筑巢"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：孵卵和育雏。按动物的生殖与发育过程判断，本题正确答案是「孵卵和育雏」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "鸟卵中，将来发育成雏鸟的结构是（　　）",
+      "options": [
+        "胚盘",
+        "卵黄",
+        "卵白",
+        "气室"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：胚盘。按动物的生殖与发育过程判断，本题正确答案是「胚盘」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "鸟卵中为胚胎发育提供主要营养的是（　　）",
+      "options": [
+        "卵白",
+        "卵壳",
+        "气室",
+        "卵黄"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：卵黄。按动物的生殖与发育过程判断，本题正确答案是「卵黄」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "鸟卵的气室的主要作用是（　　）",
+      "options": [
+        "保护卵黄",
+        "储存水分",
+        "为胚胎发育提供氧气",
+        "提供营养"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：为胚胎发育提供氧气。按动物的生殖与发育过程判断，本题正确答案是「为胚胎发育提供氧气」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "哺乳动物生殖发育的最主要特点是（　　）",
+      "options": [
+        "变态发育",
+        "胎生、哺乳",
+        "卵生、孵化",
+        "体外受精"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：胎生、哺乳。按动物的生殖与发育过程判断，本题正确答案是「胎生、哺乳」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "染色体主要存在于（　　）",
+      "options": [
+        "细胞核中",
+        "细胞膜上",
+        "细胞质中",
+        "液泡中"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：细胞核中。按基因、染色体与性别决定的知识判断，本题正确答案是「细胞核中」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "DNA主要存在于（　　）",
+      "options": [
+        "细胞膜上",
+        "细胞壁中",
+        "液泡中",
+        "染色体上"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：染色体上。按基因、染色体与性别决定的知识判断，本题正确答案是「染色体上」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "基因是（　　）",
+      "options": [
+        "整个染色体",
+        "细胞核",
+        "DNA上具有遗传效应的片段",
+        "蛋白质分子"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：DNA上具有遗传效应的片段。按基因、染色体与性别决定的知识判断，本题正确答案是「DNA上具有遗传效应的片段」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "基因控制生物的（　　）",
+      "options": [
+        "年龄",
+        "性状",
+        "细胞数量",
+        "生活环境"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：性状。按基因、染色体与性别决定的知识判断，本题正确答案是「性状」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "体细胞中，基因通常（　　）存在",
+      "options": [
+        "成对",
+        "单个",
+        "三个一组",
+        "随机数量"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：成对。按基因、染色体与性别决定的知识判断，本题正确答案是「成对」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "显性基因通常用（　　）表示",
+      "options": [
+        "小写字母",
+        "数字",
+        "符号“—”",
+        "大写字母"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：大写字母。按基因、染色体与性别决定的知识判断，本题正确答案是「大写字母」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "基因组成Aa的个体，表现出来的性状是（　　）",
+      "options": [
+        "两者都不表现",
+        "无法判断",
+        "显性性状",
+        "隐性性状"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：显性性状。按基因、染色体与性别决定的知识判断，本题正确答案是「显性性状」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "基因组成aa的个体，表现出来的性状是（　　）",
+      "options": [
+        "无法判断",
+        "隐性性状",
+        "显性性状",
+        "中间性状"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：隐性性状。按基因、染色体与性别决定的知识判断，本题正确答案是「隐性性状」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "人的性别决定方式是（　　）",
+      "options": [
+        "XY型",
+        "ZW型",
+        "XO型",
+        "与环境有关"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：XY型。按基因、染色体与性别决定的知识判断，本题正确答案是「XY型」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-生物-5",
+      "chapterName": "生物的生殖与遗传",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "一对夫妇生男生女的机会大致是（　　）",
+      "options": [
+        "男孩100%",
+        "女孩100%",
+        "男孩75%",
+        "各占50%"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：各占50%。按基因、染色体与性别决定的知识判断，本题正确答案是「各占50%」。",
       "difficulty": 2
     }
   ]

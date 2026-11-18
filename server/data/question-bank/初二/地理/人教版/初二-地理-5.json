@@ -6,9 +6,9 @@
     "id": "初二-地理-5",
     "name": "中国区域地理"
   },
-  "generatedAt": "2026-11-14T12:16:07.072Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.044Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgddgv3",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 0,
       "explanation": "A. 正确：西北地区深居内陆，距海遥远，加上周围山脉对海洋水汽的阻挡，降水稀少，因此干旱成为该区最突出的自然特征。\nB. 错误：青藏地区“高寒”的主导因素是地势高（平均海拔4000米以上），而不是纬度高；青藏地区与长江中下游地区纬度相近，太阳辐射反而较强。\nC. 错误：北方地区的主体位于暖温带、中温带，热量条件主要由纬度位置决定，与“地形以丘陵为主、海拔较低”无因果关系；北方地区的地形以平原和高原为主。\nD. 错误：南方地区属于亚热带、热带季风气候，热量充足、降水丰沛，因此以水田农业为主；“热量不足”与南方地区实际相反，蒸发微弱也不符合南方地区特征。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国四大地理区域是（ ）",
+      "options": [
+        "北方地区、南方地区、西北地区、青藏地区",
+        "东部地区、西部地区、南方地区、北方地区",
+        "东北地区、华北地区、华南地区、西南地区",
+        "平原地区、高原地区、山地地区、盆地地区"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：北方地区、南方地区、西北地区、青藏地区。按我国四大地理区域的划分与特征判断，本题正确答案是「北方地区、南方地区、西北地区、青藏地区」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "划分我国四大地理区域的主要依据是（ ）",
+      "options": [
+        "人口数量",
+        "民族分布",
+        "行政区划",
+        "地理位置、自然和人文地理特点"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：地理位置、自然和人文地理特点。按我国四大地理区域的划分与特征判断，本题正确答案是「地理位置、自然和人文地理特点」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "北方地区与南方地区的分界线是（ ）",
+      "options": [
+        "昆仑山—祁连山",
+        "黑河—腾冲线",
+        "秦岭—淮河一线",
+        "大兴安岭—太行山"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：秦岭—淮河一线。按我国四大地理区域的划分与特征判断，本题正确答案是「秦岭—淮河一线」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "西北地区与北方地区的分界线大致是（ ）",
+      "options": [
+        "200毫米年等降水量线",
+        "400毫米年等降水量线",
+        "800毫米年等降水量线",
+        "1600毫米年等降水量线"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：400毫米年等降水量线。按我国四大地理区域的划分与特征判断，本题正确答案是「400毫米年等降水量线」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "青藏地区与其他三大地理区域的分界线是（ ）",
+      "options": [
+        "昆仑山—祁连山—横断山",
+        "秦岭—淮河",
+        "大兴安岭—太行山",
+        "天山—阴山"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：昆仑山—祁连山—横断山。按我国四大地理区域的划分与特征判断，本题正确答案是「昆仑山—祁连山—横断山」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "北方地区的主要气候类型是（ ）",
+      "options": [
+        "亚热带季风气候",
+        "热带季风气候",
+        "温带大陆性气候",
+        "温带季风气候"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：温带季风气候。按我国四大地理区域的划分与特征判断，本题正确答案是「温带季风气候」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "南方地区的主要气候类型是（ ）",
+      "options": [
+        "温带大陆性气候",
+        "高原山地气候",
+        "亚热带季风气候",
+        "温带季风气候"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：亚热带季风气候。按我国四大地理区域的划分与特征判断，本题正确答案是「亚热带季风气候」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "西北地区的主要自然特征是（ ）",
+      "options": [
+        "洪涝",
+        "干旱",
+        "湿热",
+        "高寒"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：干旱。按我国四大地理区域的划分与特征判断，本题正确答案是「干旱」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "青藏地区的主要自然特征是（ ）",
+      "options": [
+        "高寒",
+        "干旱",
+        "湿热",
+        "温暖"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：高寒。按我国四大地理区域的划分与特征判断，本题正确答案是「高寒」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "北方地区的耕地类型主要是（ ）",
+      "options": [
+        "水田",
+        "梯田",
+        "桑基鱼塘",
+        "旱地"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：旱地。按我国四大地理区域的划分与特征判断，本题正确答案是「旱地」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "北方地区的主要粮食作物是（ ）",
+      "options": [
+        "青稞、小麦",
+        "橡胶、水稻",
+        "小麦、玉米",
+        "水稻、甘蔗"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：小麦、玉米。按北方与南方地区的农业与区域特征判断，本题正确答案是「小麦、玉米」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "南方地区的主要粮食作物是（ ）",
+      "options": [
+        "青稞",
+        "水稻",
+        "小麦",
+        "玉米"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：水稻。按北方与南方地区的农业与区域特征判断，本题正确答案是「水稻」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "北方地区的糖料作物是（ ）",
+      "options": [
+        "甜菜",
+        "甘蔗",
+        "花生",
+        "油菜"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：甜菜。按北方与南方地区的农业与区域特征判断，本题正确答案是「甜菜」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "南方地区的糖料作物是（ ）",
+      "options": [
+        "甜菜",
+        "花生",
+        "大豆",
+        "甘蔗"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：甘蔗。按北方与南方地区的农业与区域特征判断，本题正确答案是「甘蔗」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "北方地区的油料作物是（ ）",
+      "options": [
+        "芝麻",
+        "甘蔗",
+        "花生、大豆",
+        "油菜"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：花生、大豆。按北方与南方地区的农业与区域特征判断，本题正确答案是「花生、大豆」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "南方地区的油料作物是（ ）",
+      "options": [
+        "甜菜",
+        "油菜",
+        "花生",
+        "大豆"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：油菜。按北方与南方地区的农业与区域特征判断，本题正确答案是「油菜」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "华北平原春旱严重的主要自然原因是（ ）",
+      "options": [
+        "春季降水少、气温回升快、蒸发旺盛",
+        "春季降水多",
+        "冬季气温低",
+        "地形低洼"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：春季降水少、气温回升快、蒸发旺盛。按北方与南方地区的农业与区域特征判断，本题正确答案是「春季降水少、气温回升快、蒸发旺盛」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "东北平原发展农业的有利条件是（ ）",
+      "options": [
+        "热量充足、降水丰沛",
+        "地形崎岖、排水良好",
+        "气候干旱、光照强烈",
+        "土壤肥沃、耕地广阔"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：土壤肥沃、耕地广阔。按北方与南方地区的农业与区域特征判断，本题正确答案是「土壤肥沃、耕地广阔」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "长江中下游平原被称为（ ）",
+      "options": [
+        "“塞上江南”",
+        "“北大仓”",
+        "“鱼米之乡”",
+        "“天府之国”"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：“鱼米之乡”。按北方与南方地区的农业与区域特征判断，本题正确答案是「“鱼米之乡”」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "珠江三角洲的特色农业是（ ）",
+      "options": [
+        "坝子农业",
+        "基塘农业",
+        "绿洲农业",
+        "河谷农业"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：基塘农业。按北方与南方地区的农业与区域特征判断，本题正确答案是「基塘农业」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "西北地区气候干旱的主要原因是（ ）",
+      "options": [
+        "深居内陆、距海遥远，山脉阻挡水汽",
+        "纬度低、气温高",
+        "海拔高、气温低",
+        "濒临海洋、水汽充足"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：深居内陆、距海遥远，山脉阻挡水汽。按西北与青藏地区的环境与开发特点判断，本题正确答案是「深居内陆、距海遥远，山脉阻挡水汽」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "西北地区的河流多为（ ）",
+      "options": [
+        "外流河",
+        "人工河",
+        "地下暗河",
+        "内流河"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：内流河。按西北与青藏地区的环境与开发特点判断，本题正确答案是「内流河」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "西北地区最突出的生态环境问题是（ ）",
+      "options": [
+        "洪涝灾害",
+        "台风",
+        "土地荒漠化",
+        "水土流失"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：土地荒漠化。按西北与青藏地区的环境与开发特点判断，本题正确答案是「土地荒漠化」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "塔里木盆地的绿洲主要分布在（ ）",
+      "options": [
+        "沙漠腹地",
+        "盆地边缘的山麓地带和河流沿岸",
+        "盆地中心",
+        "高山山顶"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：盆地边缘的山麓地带和河流沿岸。按西北与青藏地区的环境与开发特点判断，本题正确答案是「盆地边缘的山麓地带和河流沿岸」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "西气东输工程的主要作用是（ ）",
+      "options": [
+        "把新疆的天然气输往东部地区",
+        "把东部天然气输往西部",
+        "把煤炭输往西部",
+        "把水输往西部"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：把新疆的天然气输往东部地区。按西北与青藏地区的环境与开发特点判断，本题正确答案是「把新疆的天然气输往东部地区」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "青藏高原被称为“世界屋脊”，其平均海拔在（ ）",
+      "options": [
+        "1000米以上",
+        "2000米以上",
+        "6000米以上",
+        "4000米以上"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：4000米以上。按西北与青藏地区的环境与开发特点判断，本题正确答案是「4000米以上」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "青藏地区的农业主要分布在（ ）",
+      "options": [
+        "高山雪线以上",
+        "盆地中心",
+        "河谷地区",
+        "沙漠地区"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：河谷地区。按西北与青藏地区的环境与开发特点判断，本题正确答案是「河谷地区」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "青藏地区种植的主要粮食作物是（ ）",
+      "options": [
+        "橡胶",
+        "青稞",
+        "水稻",
+        "甘蔗"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：青稞。按西北与青藏地区的环境与开发特点判断，本题正确答案是「青稞」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "青藏铁路建设和运营中需要克服的主要困难是（ ）",
+      "options": [
+        "高寒缺氧、冻土广布",
+        "高温多雨",
+        "台风频繁",
+        "沙漠广布"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：高寒缺氧、冻土广布。按西北与青藏地区的环境与开发特点判断，本题正确答案是「高寒缺氧、冻土广布」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-地理-5",
+      "chapterName": "中国区域地理",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "三江源地区被称为（ ）",
+      "options": [
+        "“鱼米之乡”",
+        "“北大仓”",
+        "“塞上江南”",
+        "“中华水塔”"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：“中华水塔”。按西北与青藏地区的环境与开发特点判断，本题正确答案是「“中华水塔”」。",
       "difficulty": 2
     }
   ]

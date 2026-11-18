@@ -6,9 +6,9 @@
     "id": "初三-英语-1",
     "name": "宾语从句与定语从句"
   },
-  "generatedAt": "2026-11-14T12:17:08.654Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.950Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdesdm",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：宾语从句应使用陈述句语序，where will we go 中 will 位于主语 we 之前，语序不当。\nB. 正确：tell me 后接宾语从句，应用陈述句语序 where we will go；tomorrow 表示将来，因此用 will go。\nC. 错误：where we go 虽为陈述语序，但 tomorrow 表明动作发生在将来，不能用一般现在时 go。\nD. 错误：where did we go 使用疑问语序和一般过去时，既不符合宾语从句的陈述语序，也与 tomorrow 的将来时间冲突。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Can you tell me ______?",
+      "options": [
+        "where the museum is",
+        "where is the museum",
+        "where the museum was",
+        "where does the museum"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：where the museum is。宾语从句用陈述语序，不能用疑问句语序；本题应为 where the museum is。",
+      "difficulty": 2
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "I wonder ______.",
+      "options": [
+        "why was he absent",
+        "why he did absent",
+        "why he absent",
+        "why he was absent"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：why he was absent。宾语从句用陈述语序，不能用疑问句语序；本题应为 why he was absent。",
+      "difficulty": 2
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Please tell me ______.",
+      "options": [
+        "how I can got to the station",
+        "how do I can get to the station",
+        "how I can get to the station",
+        "how can I get to the station"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：how I can get to the station。宾语从句用陈述语序，不能用疑问句语序；本题应为 how I can get to the station。",
+      "difficulty": 2
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "She asked me ______.",
+      "options": [
+        "what do I want to eat",
+        "what I wanted to eat",
+        "what did I want to eat",
+        "what I wanted eat"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：what I wanted to eat。宾语从句用陈述语序，不能用疑问句语序；本题应为 what I wanted to eat。",
+      "difficulty": 2
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Do you know ______?",
+      "options": [
+        "when he will come back",
+        "when will he come back",
+        "when he will comes back",
+        "when does he come back"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：when he will come back。宾语从句用陈述语序，不能用疑问句语序；本题应为 when he will come back。",
+      "difficulty": 2
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "I don't know ______.",
+      "options": [
+        "whether has he finished the work",
+        "whether he has finish the work",
+        "if has he finished the work",
+        "whether he has finished the work"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：whether he has finished the work。宾语从句用陈述语序，不能用疑问句语序；本题应为 whether he has finished the work。",
+      "difficulty": 2
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "He asked ______.",
+      "options": [
+        "where I was live",
+        "where I living",
+        "where I lived",
+        "where did I live"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：where I lived。宾语从句用陈述语序，不能用疑问句语序；本题应为 where I lived。",
+      "difficulty": 2
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "I want to know ______.",
+      "options": [
+        "how long it takes to get there",
+        "how long does it take to get there",
+        "how long it take to get there",
+        "how long is it take to get there"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：how long it takes to get there。宾语从句用陈述语序，不能用疑问句语序；本题应为 how long it takes to get there。",
+      "difficulty": 2
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Nobody knows ______.",
+      "options": [
+        "who did broke the window",
+        "whom broke the window",
+        "who the window broke",
+        "who broke the window"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：who broke the window。宾语从句用陈述语序，不能用疑问句语序；本题应为 who broke the window。",
+      "difficulty": 2
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The man ______ is talking to Mr. Li is my father.",
+      "options": [
+        "whose",
+        "whom",
+        "who",
+        "which"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：who。先行词是人用 who/whom，是物用 which，表示所属关系用 whose；本题应为 who。",
+      "difficulty": 2
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The book ______ I bought yesterday is very interesting.",
+      "options": [
+        "whom",
+        "which",
+        "who",
+        "whose"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：which。先行词是人用 who/whom，是物用 which，表示所属关系用 whose；本题应为 which。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The girl ______ hair is long is my sister.",
+      "options": [
+        "whose",
+        "who",
+        "which",
+        "whom"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：whose。先行词是人用 who/whom，是物用 which，表示所属关系用 whose；本题应为 whose。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "This is the house ______ we lived in last year.",
+      "options": [
+        "who",
+        "whose",
+        "whom",
+        "which"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：which。先行词是人用 who/whom，是物用 which，表示所属关系用 whose；本题应为 which。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The boy ______ we met at the gate is Tom's brother.",
+      "options": [
+        "whose",
+        "what",
+        "whom",
+        "which"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：whom。先行词是人用 who/whom，是物用 which，表示所属关系用 whose；本题应为 whom。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "I like the film ______ we saw last night.",
+      "options": [
+        "whom",
+        "that",
+        "who",
+        "whose"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：that。先行词是人用 who/whom，是物用 which，表示所属关系用 whose；本题应为 that。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The doctor ______ helped me is very kind.",
+      "options": [
+        "who",
+        "which",
+        "whose",
+        "whom"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：who。先行词是人用 who/whom，是物用 which，表示所属关系用 whose；本题应为 who。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The tree ______ leaves are green is an old one.",
+      "options": [
+        "who",
+        "which",
+        "whom",
+        "whose"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：whose。先行词是人用 who/whom，是物用 which，表示所属关系用 whose；本题应为 whose。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The pen ______ he is using is mine.",
+      "options": [
+        "whose",
+        "whom",
+        "which",
+        "who"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：which。先行词是人用 who/whom，是物用 which，表示所属关系用 whose；本题应为 which。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The students ______ are playing football are from Class Two.",
+      "options": [
+        "whom",
+        "who",
+        "which",
+        "whose"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：who。先行词是人用 who/whom，是物用 which，表示所属关系用 whose；本题应为 who。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "This is the place ______ we stayed last year.",
+      "options": [
+        "where",
+        "which",
+        "that",
+        "who"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：where。先行词是地点用 where、时间用 when、原因用 why；先行词被最高级、序数词或 the very 修饰时多用 that；本题应为 where。",
+      "difficulty": 3
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "I still remember the day ______ we first met.",
+      "options": [
+        "which",
+        "who",
+        "whose",
+        "when"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：when。先行词是地点用 where、时间用 when、原因用 why；先行词被最高级、序数词或 the very 修饰时多用 that；本题应为 when。",
+      "difficulty": 3
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "This is the reason ______ he was late.",
+      "options": [
+        "who",
+        "whose",
+        "why",
+        "which"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：why。先行词是地点用 where、时间用 when、原因用 why；先行词被最高级、序数词或 the very 修饰时多用 that；本题应为 why。",
+      "difficulty": 3
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "The house ______ we live is very old.",
+      "options": [
+        "who",
+        "where",
+        "which",
+        "that"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：where。先行词是地点用 where、时间用 when、原因用 why；先行词被最高级、序数词或 the very 修饰时多用 that；本题应为 where。",
+      "difficulty": 3
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "I like the way ______ he speaks.",
+      "options": [
+        "that",
+        "which",
+        "who",
+        "what"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：that。先行词是地点用 where、时间用 when、原因用 why；先行词被最高级、序数词或 the very 修饰时多用 that；本题应为 that。",
+      "difficulty": 3
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "This is the best film ______ I have ever seen.",
+      "options": [
+        "which",
+        "who",
+        "whose",
+        "that"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：that。先行词是地点用 where、时间用 when、原因用 why；先行词被最高级、序数词或 the very 修饰时多用 that；本题应为 that。",
+      "difficulty": 3
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "The first thing ______ we should do is to call him.",
+      "options": [
+        "who",
+        "whose",
+        "that",
+        "which"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：that。先行词是地点用 where、时间用 when、原因用 why；先行词被最高级、序数词或 the very 修饰时多用 that；本题应为 that。",
+      "difficulty": 3
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "This is the very book ______ I want.",
+      "options": [
+        "whose",
+        "that",
+        "which",
+        "who"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：that。先行词是地点用 where、时间用 when、原因用 why；先行词被最高级、序数词或 the very 修饰时多用 that；本题应为 that。",
+      "difficulty": 3
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "All ______ we need is a good plan.",
+      "options": [
+        "that",
+        "which",
+        "who",
+        "whose"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：that。先行词是地点用 where、时间用 when、原因用 why；先行词被最高级、序数词或 the very 修饰时多用 that；本题应为 that。",
+      "difficulty": 3
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "There is nothing ______ can stop him.",
+      "options": [
+        "which",
+        "who",
+        "whose",
+        "that"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：that。先行词是地点用 where、时间用 when、原因用 why；先行词被最高级、序数词或 the very 修饰时多用 that；本题应为 that。",
+      "difficulty": 3
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-英语-1",
+      "chapterName": "宾语从句与定语从句",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Could you tell me ______?",
+      "options": [
+        "what time is the train arrive",
+        "what time the train arrives",
+        "what time does the train arrive",
+        "what time the train arrive"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：what time the train arrives。宾语从句用陈述语序，不能用疑问句语序；本题应为 what time the train arrives。",
+      "difficulty": 2
     }
   ]
 }

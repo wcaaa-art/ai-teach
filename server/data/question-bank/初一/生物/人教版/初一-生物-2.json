@@ -6,9 +6,9 @@
     "id": "初一-生物-2",
     "name": "生物体的结构层次"
   },
-  "generatedAt": "2026-11-14T12:14:00.974Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.786Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdak5w",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 1,
       "explanation": "A. 错误：上皮组织主要具有保护、分泌等功能，不能接受刺激并产生疼痛感；出血与血液有关，血液属于结缔组织，但第一空对应错误。\nB. 正确：神经组织能够接受刺激、产生并传导兴奋，疼痛感与神经组织直接相关；血液属于结缔组织，因此出血与结缔组织直接相关。\nC. 错误：肌肉组织主要具有收缩和舒张功能，不直接产生疼痛感；出血与血液有关，而血液不属于神经组织。\nD. 错误：结缔组织具有支持、连接、保护、营养等功能，不直接产生疼痛感；上皮组织主要起保护、分泌作用，不是出血直接对应的组织。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "显微镜的放大倍数是（　　）",
+      "options": [
+        "目镜放大倍数与物镜放大倍数的乘积",
+        "目镜与物镜放大倍数之和",
+        "目镜放大倍数",
+        "物镜放大倍数"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：目镜放大倍数与物镜放大倍数的乘积。按显微镜的结构与操作规范判断，本题正确答案是「目镜放大倍数与物镜放大倍数的乘积」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "目镜为10×、物镜为40×时，物像放大的倍数是（　　）",
+      "options": [
+        "50倍",
+        "100倍",
+        "200倍",
+        "400倍"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：400倍。按显微镜的结构与操作规范判断，本题正确答案是「400倍」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "显微镜下观察到的物像是（　　）",
+      "options": [
+        "放大的正像",
+        "缩小的正像",
+        "倒像",
+        "正像"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：倒像。按显微镜的结构与操作规范判断，本题正确答案是「倒像」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "物像偏在视野左上方，要把它移到视野中央，应（　　）",
+      "options": [
+        "转动物镜",
+        "把玻片向左上方移动",
+        "把玻片向右下方移动",
+        "把玻片向左下方移动"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：把玻片向左上方移动。按显微镜的结构与操作规范判断，本题正确答案是「把玻片向左上方移动」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "从低倍镜换成高倍镜后，视野会（　　）",
+      "options": [
+        "变暗，细胞数目变少",
+        "变亮，细胞数目变多",
+        "变亮，细胞数目变少",
+        "变暗，细胞数目变多"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：变暗，细胞数目变少。按显微镜的结构与操作规范判断，本题正确答案是「变暗，细胞数目变少」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "制作洋葱鳞片叶内表皮细胞临时装片时，在载玻片中央滴加（　　）",
+      "options": [
+        "生理盐水",
+        "碘液",
+        "酒精",
+        "清水"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：清水。按显微镜的结构与操作规范判断，本题正确答案是「清水」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "制作人口腔上皮细胞临时装片时，在载玻片中央滴加（　　）",
+      "options": [
+        "碘液",
+        "酒精",
+        "生理盐水",
+        "清水"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：生理盐水。按显微镜的结构与操作规范判断，本题正确答案是「生理盐水」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "为观察细胞核，临时装片常用（　　）染色",
+      "options": [
+        "酒精",
+        "碘液",
+        "清水",
+        "生理盐水"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：碘液。按显微镜的结构与操作规范判断，本题正确答案是「碘液」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "盖盖玻片时，正确操作是（　　）",
+      "options": [
+        "让盖玻片一侧先接触水滴，再缓缓放下",
+        "把盖玻片直接平放在水滴上",
+        "从中间快速压下",
+        "先染色再盖盖玻片"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：让盖玻片一侧先接触水滴，再缓缓放下。按显微镜的结构与操作规范判断，本题正确答案是「让盖玻片一侧先接触水滴，再缓缓放下」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "使用显微镜观察时，应先用（　　）",
+      "options": [
+        "高倍物镜",
+        "油镜",
+        "任意物镜均可",
+        "低倍物镜"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：低倍物镜。按显微镜的结构与操作规范判断，本题正确答案是「低倍物镜」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "植物细胞特有而动物细胞没有的结构是（　　）",
+      "options": [
+        "细胞质",
+        "细胞核",
+        "细胞壁",
+        "细胞膜"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：细胞壁。按动植物细胞的结构与功能判断，本题正确答案是「细胞壁」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "控制物质进出细胞的结构是（　　）",
+      "options": [
+        "液泡",
+        "细胞膜",
+        "细胞壁",
+        "细胞核"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：细胞膜。按动植物细胞的结构与功能判断，本题正确答案是「细胞膜」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "细胞中储存遗传信息的结构是（　　）",
+      "options": [
+        "细胞核",
+        "细胞质",
+        "细胞膜",
+        "线粒体"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：细胞核。按动植物细胞的结构与功能判断，本题正确答案是「细胞核」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "绿色植物进行光合作用的场所是（　　）",
+      "options": [
+        "线粒体",
+        "液泡",
+        "细胞核",
+        "叶绿体"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：叶绿体。按动植物细胞的结构与功能判断，本题正确答案是「叶绿体」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "细胞进行呼吸作用、释放能量的主要场所是（　　）",
+      "options": [
+        "液泡",
+        "细胞壁",
+        "线粒体",
+        "叶绿体"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：线粒体。按动植物细胞的结构与功能判断，本题正确答案是「线粒体」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "西瓜汁液中的糖分主要存在于（　　）",
+      "options": [
+        "细胞壁",
+        "液泡",
+        "细胞核",
+        "叶绿体"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：液泡。按动植物细胞的结构与功能判断，本题正确答案是「液泡」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "起支持和保护细胞作用的结构是（　　）",
+      "options": [
+        "细胞壁",
+        "细胞膜",
+        "液泡",
+        "线粒体"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：细胞壁。按动植物细胞的结构与功能判断，本题正确答案是「细胞壁」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "动物细胞和植物细胞都具有的结构是（　　）",
+      "options": [
+        "细胞壁、液泡和叶绿体",
+        "细胞壁、细胞膜和液泡",
+        "叶绿体、线粒体和细胞壁",
+        "细胞膜、细胞质和细胞核"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：细胞膜、细胞质和细胞核。按动植物细胞的结构与功能判断，本题正确答案是「细胞膜、细胞质和细胞核」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "细胞分裂时，最先分裂的是（　　）",
+      "options": [
+        "细胞壁",
+        "细胞质",
+        "细胞核",
+        "细胞膜"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：细胞核。按动植物细胞的结构与功能判断，本题正确答案是「细胞核」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "能决定细胞形态和功能差异的物质主要位于（　　）",
+      "options": [
+        "细胞膜上",
+        "细胞核内的遗传物质",
+        "细胞壁",
+        "液泡中"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：细胞核内的遗传物质。按动植物细胞的结构与功能判断，本题正确答案是「细胞核内的遗传物质」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "细胞分裂使细胞（　　）",
+      "options": [
+        "数目增多",
+        "体积增大",
+        "种类增多",
+        "功能增强"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：数目增多。按细胞分裂、分化与结构层次判断，本题正确答案是「数目增多」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "细胞分化的结果是（　　）",
+      "options": [
+        "细胞数目增多",
+        "细胞体积增大",
+        "细胞数目减少",
+        "形成不同的组织"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：形成不同的组织。按细胞分裂、分化与结构层次判断，本题正确答案是「形成不同的组织」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "细胞生长是指（　　）",
+      "options": [
+        "细胞形成不同组织",
+        "细胞核分裂",
+        "细胞体积由小变大",
+        "细胞数目增多"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：细胞体积由小变大。按细胞分裂、分化与结构层次判断，本题正确答案是「细胞体积由小变大」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "动物的基本组织不包括（　　）",
+      "options": [
+        "神经组织",
+        "保护组织",
+        "上皮组织",
+        "结缔组织"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：保护组织。按细胞分裂、分化与结构层次判断，本题正确答案是「保护组织」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "植物体中没有的结构层次是（　　）",
+      "options": [
+        "系统",
+        "组织",
+        "器官",
+        "细胞"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：系统。按细胞分裂、分化与结构层次判断，本题正确答案是「系统」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "动物体的结构层次由小到大依次是（　　）",
+      "options": [
+        "细胞→器官→组织→系统→动物体",
+        "组织→细胞→器官→动物体",
+        "细胞→组织→系统→器官→动物体",
+        "细胞→组织→器官→系统→动物体"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：细胞→组织→器官→系统→动物体。按细胞分裂、分化与结构层次判断，本题正确答案是「细胞→组织→器官→系统→动物体」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "根尖中细胞分裂能力最强的部位是（　　）",
+      "options": [
+        "伸长区",
+        "成熟区",
+        "分生区",
+        "根冠"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：分生区。按细胞分裂、分化与结构层次判断，本题正确答案是「分生区」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "血液属于（　　）",
+      "options": [
+        "神经组织",
+        "结缔组织",
+        "上皮组织",
+        "肌肉组织"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：结缔组织。按细胞分裂、分化与结构层次判断，本题正确答案是「结缔组织」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "心脏由多种组织构成，从结构层次上看属于（　　）",
+      "options": [
+        "器官",
+        "组织",
+        "系统",
+        "细胞"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：器官。按细胞分裂、分化与结构层次判断，本题正确答案是「器官」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-生物-2",
+      "chapterName": "生物体的结构层次",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "细胞分裂过程中染色体的变化，保证了（　　）",
+      "options": [
+        "新细胞体积更大",
+        "新细胞功能更多",
+        "新细胞形态不同",
+        "新细胞与原细胞遗传物质相同"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：新细胞与原细胞遗传物质相同。按细胞分裂、分化与结构层次判断，本题正确答案是「新细胞与原细胞遗传物质相同」。",
       "difficulty": 2
     }
   ]

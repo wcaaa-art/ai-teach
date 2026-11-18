@@ -140,15 +140,15 @@ watch(elapsedSeconds, async () => {
   const remaining = total - elapsedSeconds.value
   if (remaining <= 600 && remaining > 60 && !warnedTenMinutes) {
     warnedTenMinutes = true
-    ElMessage.warning('整卷还剩 10 分钟，先把会做的题写完。')
+    ElMessage.warning('整卷还剩 10 分钟，先把会做的题写完')
   }
   if (remaining <= 60 && remaining > 0 && !warnedOneMinute) {
     warnedOneMinute = true
-    ElMessage.error('还剩 1 分钟，即将自动交卷。')
+    ElMessage.error('还剩 1 分钟，即将自动交卷')
   }
   if (remaining > 0) return
   autoSubmitted = true
-  ElMessage.warning(`${PAPER_SPEC.durationMinutes} 分钟已到，已自动交卷。`)
+  ElMessage.warning(`${PAPER_SPEC.durationMinutes} 分钟已到，已自动交卷`)
   await submitQuiz(true)
 })
 
@@ -227,7 +227,7 @@ async function loadChapters() {
   catalogLoading.value = true
   const response = await getCurriculumChapters(grade.value, subject.value, edition.value)
   chapters.value = response.success ? (response.data?.chapters || []) : []
-  if (!response.success) errorMessage.value = '课程专题暂时无法加载，请确认后端服务已启动。'
+  if (!response.success) errorMessage.value = '课程专题暂时无法加载，请确认后端服务已启动'
   catalogLoading.value = false
   // 综合整卷不使用手动选章，章节加载完成后自动覆盖本年级本科目全部专题。
   if (isPaper.value && !restoring) selectedIds.value = chapters.value.map(chapter => chapter.id)
@@ -266,7 +266,7 @@ function toggleChapter(chapter) {
   if (selectedIds.value.includes(chapter.id)) {
     selectedIds.value = selectedIds.value.filter(id => id !== chapter.id)
   } else if (selectedIds.value.length >= 6) {
-    ElMessage.info('周测最多选 6 个专题，已选满。')
+    ElMessage.info('周测最多选 6 个专题，已选满')
   } else {
     selectedIds.value = [...selectedIds.value, chapter.id]
   }
@@ -335,9 +335,9 @@ watch(
 
 async function startQuiz() {
   if (!canStart.value) {
-    if (mode.value === 'weekly' && weeklyRecord.value) ElMessage.info(`本周周测已完成，下周一（${weeklyNextDate.value}）可以再做。`)
-    else if (isPaper.value) ElMessage.info('综合整卷需要先加载本年级本科目的专题目录。')
-    else ElMessage.info(mode.value === 'weekly' ? '周测请选择至少两个专题。' : '请选择一个章节。')
+    if (mode.value === 'weekly' && weeklyRecord.value) ElMessage.info(`本周周测已完成，下周一（${weeklyNextDate.value}）可以再做`)
+    else if (isPaper.value) ElMessage.info('综合整卷需要先加载本年级本科目的专题目录')
+    else ElMessage.info(mode.value === 'weekly' ? '周测请选择至少两个专题' : '请选择一个章节')
     return
   }
   if (hasDraft.value) {
@@ -354,7 +354,7 @@ async function startQuiz() {
     const response = await generateQuizQuestions(await quizPayload())
     const list = response.data?.questions || []
     if (!response.success || !list.length) {
-      errorMessage.value = response.error || '题目生成失败，请稍后再试。'
+      errorMessage.value = response.error || '题目生成失败，请稍后再试'
       return
     }
     questions.value = list
@@ -394,7 +394,7 @@ async function startQuiz() {
     hasDraft.value = false
     draftMeta.value = null
     await refreshRecentCount()
-    ElMessage.success(response.source === 'local-fallback' ? '已使用本地兜底题库出题（AI 暂不可用）。' : '题目已生成，开始答题吧。')
+    ElMessage.success(response.source === 'local-fallback' ? '已使用本地兜底题库出题（AI 暂不可用）' : '题目已生成，开始答题吧')
   } finally {
     generating.value = false
   }
@@ -428,7 +428,7 @@ function isOptionCorrect(question, index) {
 
 // 解析按行拆开：以选项字母开头的行标注正确/错误，让「为什么对、为什么错」一目了然。
 function explanationRows(question) {
-  const text = String(question.explanation || '').trim() || '这道题暂未提供解析。'
+  const text = String(question.explanation || '').trim() || '这道题暂未提供解析'
   return text.split(/\n+/).map(line => line.trim()).filter(Boolean).map(line => {
     const match = line.match(/^([A-H])[.、:：)]\s*(.*)$/)
     if (!match) return { label: '', text: line, verdict: '' }
@@ -592,7 +592,7 @@ async function submitQuiz(force = false) {
     hasDraft.value = false
     draftMeta.value = null
   } catch (error) {
-    ElMessage.error('交卷失败，请再点一次「交卷」。')
+    ElMessage.error('交卷失败，请再点一次「交卷」')
     // 自动交卷失败时不再恢复计时，避免每秒重试刷提示；手动交卷失败则继续计时。
     if (page.value === 'quiz' && !force) startTimer()
   } finally {
@@ -688,7 +688,7 @@ function nextQuiz() {
   }
   if (mode.value === 'weekly') {
     mode.value = 'daily'
-    ElMessage.info('本周周测已完成，已切换到日常测试；下周可再做周测。')
+    ElMessage.info('本周周测已完成，已切换到日常测试；下周可再做周测')
   }
   autoSubmitted = false
   resetPaperWarnings()
@@ -739,7 +739,7 @@ async function saveDraft() {
 async function exitQuiz() {
   if (mode.value === 'scan') {
     try {
-      await ElMessageBox.confirm('退出后本次练习进度不会保存，之后可以从「试卷识别」的试卷库重新开始。', '退出练习？', {
+      await ElMessageBox.confirm('退出后本次练习进度不会保存，之后可以从「试卷识别」的试卷库重新开始', '退出练习？', {
         confirmButtonText: '退出', cancelButtonText: '继续答题', type: 'warning'
       })
     } catch { return }
@@ -750,7 +750,7 @@ async function exitQuiz() {
     return
   }
   try {
-    await ElMessageBox.confirm(isPaper.value ? '退出后本次作答会保存在本机，整卷计时暂停，下次进入可以接着答。' : '退出后本次作答会保存在本机，下次进入可以接着答。', '保存并退出？', {
+    await ElMessageBox.confirm(isPaper.value ? '退出后本次作答会保存在本机，整卷计时暂停，下次进入可以接着答' : '退出后本次作答会保存在本机，下次进入可以接着答', '保存并退出？', {
       confirmButtonText: '保存并退出', cancelButtonText: '继续答题', type: 'warning'
     })
   } catch { return }
@@ -760,7 +760,7 @@ async function exitQuiz() {
   stopTimer()
   floatOpen.value = false
   page.value = 'select'
-  ElMessage.success('作答进度已保存，可从顶部横幅继续。')
+  ElMessage.success('作答进度已保存，可从顶部横幅继续')
 }
 
 async function resumeDraft() {
@@ -802,7 +802,7 @@ async function resumeDraft() {
     resultSummary.value = null
     suggestion.value = null
   } catch (error) {
-    ElMessage.warning('恢复测试失败，请重新选择章节出题。')
+    ElMessage.warning('恢复测试失败，请重新选择章节出题')
     return
   } finally {
     restoring = false
@@ -813,25 +813,25 @@ async function resumeDraft() {
   page.value = 'quiz'
   if (expiredPaper) {
     autoSubmitted = true
-    ElMessage.warning('这份整卷已超过 90 分钟，已按保存的答案自动交卷。')
+    ElMessage.warning('这份整卷已超过 90 分钟，已按保存的答案自动交卷')
     await submitQuiz(true)
     return
   }
   autoSubmitted = false
   startTimer()
-  ElMessage.success('已恢复上次的作答进度。')
+  ElMessage.success('已恢复上次的作答进度')
 }
 
 async function discardDraft() {
   try {
-    await ElMessageBox.confirm('放弃后这份作答记录会被删除，无法恢复。', '放弃未完成的测试？', {
+    await ElMessageBox.confirm('放弃后这份作答记录会被删除，无法恢复', '放弃未完成的测试？', {
       confirmButtonText: '放弃', cancelButtonText: '保留', type: 'warning'
     })
   } catch { return }
   await clearQuizDraft()
   hasDraft.value = false
   draftMeta.value = null
-  ElMessage.info('已放弃未完成的测试。')
+  ElMessage.info('已放弃未完成的测试')
 }
 
 // 切到后台/关标签页时兜底保存，浏览器不保证异步写完，但多数刷新场景能保住进度。
@@ -845,7 +845,7 @@ async function initScannedPaper(id) {
   try {
     const paper = await loadScannedPaper(id)
     if (!paper || !Array.isArray(paper.questions) || !paper.questions.length) {
-      ElMessage.warning('没有找到这份扫描试卷，可能已被删除，请重新识别。')
+      ElMessage.warning('没有找到这份扫描试卷，可能已被删除，请重新识别')
       router.replace('/paper-scan')
       return
     }
@@ -878,7 +878,7 @@ async function initScannedPaper(id) {
     // 等 grade/subject/mode 的 watch 在 restoring 保护下跑完，再放开，避免清空刚恢复的科目。
     await nextTick()
   } catch {
-    ElMessage.error('扫描试卷读取失败，请重新打开。')
+    ElMessage.error('扫描试卷读取失败，请重新打开')
     router.replace('/paper-scan')
   } finally {
     restoring = false
@@ -919,7 +919,7 @@ onMounted(async () => {
       draftMeta.value = { ...draft, total: draft.questions.length }
     }
   } catch (error) {
-    errorMessage.value = '课程目录暂时无法加载，请确认 API 服务已经启动。'
+    errorMessage.value = '课程目录暂时无法加载，请确认 API 服务已经启动'
   } finally {
     ready.value = true
   }
@@ -944,7 +944,7 @@ onBeforeUnmount(() => {
       <div>
         <span class="eyebrow">{{ mode === 'scan' ? '扫描试卷' : '章节测试' }}</span>
         <h2 class="page-title">{{ mode === 'scan' ? scanPaperTitle : isPaper ? '综合整卷：按中考卷型完整模拟' : mode === 'weekly' ? '周测：跨章节综合检验' : '日常测试：学什么就考什么' }}</h2>
-        <p class="page-subtitle">{{ mode === 'scan' ? `${grade} ${subject} · 共 ${questions.length} 题，按识别结果练习；答案不确定的题交卷后对照参考自评。` : isPaper ? '覆盖本年级本科目全部专题，25 题按选择、填空、解答组卷；数学/英语 120 分、其他科目 100 分，建议 90 分钟内完成。' : '按所选章节出题，题型对齐全国中考常见卷型；近 7 天出过的题干会自动避开。' }}</p>
+        <p class="page-subtitle">{{ mode === 'scan' ? `${grade} ${subject} · 共 ${questions.length} 题，按识别结果练习；答案不确定的题交卷后对照参考自评` : isPaper ? '覆盖本年级本科目全部专题，25 题按选择、填空、解答组卷；数学/英语 120 分、其他科目 100 分，建议 90 分钟内完成' : '按所选章节出题，题型对齐全国中考常见卷型；近 7 天出过的题干会自动避开' }}</p>
       </div>
       <el-tag v-if="edition" type="info" effect="plain">{{ subject }} · {{ edition }}</el-tag>
     </div>
@@ -959,7 +959,7 @@ onBeforeUnmount(() => {
           已完成 {{ draftMeta.answeredCount || 0 }}/{{ draftMeta.total }} 题 · 已用 {{ formatDuration(draftMeta.elapsedSeconds || 0) }}
           <template v-if="draftExpired"> · 已超过 {{ PAPER_SPEC.durationMinutes }} 分钟</template>
         </p>
-        <p v-if="draftExpired" class="muted">继续后将按已保存答案自动交卷，不再进入答题页。</p>
+        <p v-if="draftExpired" class="muted">继续后将按已保存答案自动交卷，不再进入答题页</p>
       </div>
       <div class="draft-actions">
         <el-button type="primary" @click="resumeDraft">{{ draftExpired ? '查看并交卷' : '继续答题' }}</el-button>
@@ -975,10 +975,10 @@ onBeforeUnmount(() => {
 
       <el-alert
         v-if="mode === 'weekly' && weeklyRecord"
-        :title="`本周周测已完成（${weeklyRecord.score}/${weeklyRecord.maxScore} 分），下周一（${weeklyNextDate}）可以再做。`"
+        :title="`本周周测已完成（${weeklyRecord.score}/${weeklyRecord.maxScore} 分），下周一（${weeklyNextDate}）可以再做`"
         type="info" :closable="false" show-icon class="weekly-alert" />
 
-      <div class="step-heading"><span class="step-number">01</span><div><h3>选择出题范围</h3><p class="muted">年级、科目与诊断页一致；只出所选章节的内容</p></div></div>
+      <div class="step-heading"><span class="step-number">01</span><div><h3>选择出题范围</h3><p class="muted">年级、科目与分析页一致；只出所选章节的内容</p></div></div>
       <div class="selection-grid">
         <el-form-item label="当前年级"><el-select v-model="grade" placeholder="请选择年级" :loading="catalogLoading"><el-option v-for="item in gradeOptions" :key="item" :label="item" :value="item" /></el-select></el-form-item>
         <el-form-item label="主要科目"><el-select v-model="subject" placeholder="选择年级后选择科目" :loading="catalogLoading"><el-option v-for="item in subjectOptions" :key="item" :label="item" :value="item" /></el-select></el-form-item>
@@ -996,7 +996,7 @@ onBeforeUnmount(() => {
           <span class="chapter-check">{{ selectedIds.includes(chapter.id) ? '✓' : '+' }}</span>
         </button>
       </div>
-      <div v-else class="empty">没有找到这个组合的章节目录。</div>
+      <div v-else class="empty">没有找到这个组合的章节目录</div>
 
       <div class="step-heading chapter-heading"><span class="step-number">03</span><div><h3>题量与卷型</h3><p class="muted">{{ paperSpecLabel }}</p></div></div>
       <div v-if="isPaper" class="paper-spec-grid">
@@ -1008,7 +1008,7 @@ onBeforeUnmount(() => {
         <el-form-item :label="`题目数量（${modeLimits.min}–${modeLimits.max} 题）`">
           <el-input-number v-model="questionCount" :min="modeLimits.min" :max="modeLimits.max" />
         </el-form-item>
-        <p class="muted recent-tip">近 7 天同科目已出过 {{ recentCount }} 道题，本次生成会自动避开这些题干。</p>
+        <p class="muted recent-tip">近 7 天同科目已出过 {{ recentCount }} 道题，本次生成会自动避开这些题干</p>
       </div>
 
       <div class="actions quiz-start-actions">
@@ -1055,7 +1055,7 @@ onBeforeUnmount(() => {
               <span class="symbol-label">{{ group.label }}</span>
               <button v-for="symbol in group.items" :key="symbol" type="button" class="symbol-key" @mousedown.prevent="insertSymbol(question, symbol)">{{ symbol }}</button>
             </div>
-            <p class="symbol-hint">求和这样写：∑ᵢ₌₁ⁿ aᵢ（先点 ∑，再用上下标拼）；根号写 √，分式写 1/2。</p>
+            <p class="symbol-hint">求和这样写：∑ᵢ₌₁ⁿ aᵢ（先点 ∑，再用上下标拼）；根号写 √，分式写 1/2</p>
           </div>
           <div class="photo-row">
             <el-button size="small" @click="pickPhoto(question)">{{ answerImages[question.id] ? '重新上传手写稿' : '拍照 / 上传手写稿' }}</el-button>
@@ -1077,10 +1077,10 @@ onBeforeUnmount(() => {
 
     <section v-else class="result-layout">
       <div class="result-topbar">
-        <el-button size="small" plain @click="$router.push(mode === 'scan' ? '/paper-scan' : '/diagnosis')">← {{ mode === 'scan' ? '返回试卷识别' : '返回学情诊断' }}</el-button>
+        <el-button size="small" plain @click="$router.push(mode === 'scan' ? '/paper-scan' : '/diagnosis')">← {{ mode === 'scan' ? '返回试卷识别' : '返回学情分析' }}</el-button>
         <div class="result-topbar-meta">
           <span class="wrong-pill" :class="{ good: !wrongCount }">{{ wrongCount ? `${wrongCount} 道错题已收录` : '本次没有错题' }}</span>
-          <span class="muted">错题会自动存入错题库，可在学情诊断里回看</span>
+          <span class="muted">错题会自动存入错题库，可在学情分析里回看</span>
         </div>
       </div>
       <div class="surface surface-pad result-header">
@@ -1104,8 +1104,8 @@ onBeforeUnmount(() => {
             <span class="muted">{{ Math.round(section.rate * 100) }}%{{ section.pending ? ' · 含未自评解答题' : '' }}</span>
           </div>
         </div>
-        <p v-if="resultSummary && !resultSummary.complete" class="muted">还有 {{ resultSummary.subjectiveCount - resultSummary.subjectiveGraded }} 道解答题未自评，完成后得分和正确率会自动更新。</p>
-        <p v-else class="muted">整卷已判分完毕。</p>
+        <p v-if="resultSummary && !resultSummary.complete" class="muted">还有 {{ resultSummary.subjectiveCount - resultSummary.subjectiveGraded }} 道解答题未自评，完成后得分和正确率会自动更新</p>
+        <p v-else class="muted">整卷已判分完毕</p>
       </div>
 
       <div v-if="suggestion" class="surface surface-pad suggestion-card">
@@ -1113,7 +1113,7 @@ onBeforeUnmount(() => {
           <span class="eyebrow">专注建议</span>
           <h3>建议下次专注 {{ suggestion.recommendedMinutes }} 分钟</h3>
           <p class="muted">{{ suggestion.reason }}</p>
-          <p class="suggestion-note">建议已写入本地 IndexedDB（focusSuggestions.current），专注页读取 recommendedMinutes 即可展示，不会强行修改你的计划。</p>
+          <p class="suggestion-note">建议已写入本地 IndexedDB（focusSuggestions.current），专注页读取 recommendedMinutes 即可展示，不会强行修改你的计划</p>
         </div>
         <el-button type="primary" @click="$router.push('/focus')">去专注空间</el-button>
       </div>
@@ -1177,7 +1177,7 @@ onBeforeUnmount(() => {
         </div>
         <p class="quiz-float-meta">已完成 {{ answeredCount }}/{{ questions.length }} 题<br />已用 {{ formatDuration(elapsedSeconds) }}</p>
         <el-button type="danger" size="small" class="quiz-float-exit" @click="exitQuiz">{{ mode === 'scan' ? '退出练习' : '保存并退出' }}</el-button>
-        <p class="quiz-float-note">{{ mode === 'scan' ? '扫描试卷练习不保存进度，可回试卷库重新开始。' : '退出后进度保存在本机，下次进入可继续答题。' }}</p>
+        <p class="quiz-float-note">{{ mode === 'scan' ? '扫描试卷练习不保存进度，可回试卷库重新开始' : '退出后进度保存在本机，下次进入可继续答题' }}</p>
       </div>
       <button v-else type="button" class="quiz-float-toggle" @click="floatOpen = true">退出测试</button>
     </div>

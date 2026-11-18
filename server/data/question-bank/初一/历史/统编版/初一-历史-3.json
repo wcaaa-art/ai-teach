@@ -6,9 +6,9 @@
     "id": "初一-历史-3",
     "name": "秦汉统一多民族国家"
   },
-  "generatedAt": "2026-11-14T12:13:20.143Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.071Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgd9w24",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：分封制是西周实行的地方管理制度，秦朝吸取分封易导致割据的教训，并未在全国推行分封制。\nB. 正确：秦朝在地方废除分封制，实行郡县制，郡县长官由朝廷直接任免，有利于加强中央集权、巩固国家统一。\nC. 错误：行省制是元朝开始实行的地方行政制度，不是秦朝的地方制度。\nD. 错误：三省六部制是隋唐时期的重要中央官制，不属于秦朝在地方推行的制度。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "秦灭六国、完成统一的时间是（ ）",
+      "options": [
+        "公元前221年",
+        "公元前356年",
+        "公元前202年",
+        "公元220年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：公元前221年。按秦朝统一与制度建设的史实判断，本题正确答案是「公元前221年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "秦朝的建立者是（ ）",
+      "options": [
+        "秦孝公",
+        "刘邦",
+        "项羽",
+        "秦始皇"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：秦始皇。按秦朝统一与制度建设的史实判断，本题正确答案是「秦始皇」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "秦朝的都城是（ ）",
+      "options": [
+        "长安",
+        "开封",
+        "咸阳",
+        "洛阳"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：咸阳。按秦朝统一与制度建设的史实判断，本题正确答案是「咸阳」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "秦朝在中央确立的政治制度是（ ）",
+      "options": [
+        "行省制",
+        "皇帝制度",
+        "禅让制",
+        "分封制"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：皇帝制度。按秦朝统一与制度建设的史实判断，本题正确答案是「皇帝制度」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "秦朝在地方推行的行政制度是（ ）",
+      "options": [
+        "郡县制",
+        "分封制",
+        "行省制",
+        "三省六部制"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：郡县制。按秦朝统一与制度建设的史实判断，本题正确答案是「郡县制」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "秦朝统一使用的标准文字是（ ）",
+      "options": [
+        "甲骨文",
+        "隶书",
+        "楷书",
+        "小篆"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：小篆。按秦朝统一与制度建设的史实判断，本题正确答案是「小篆」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "秦朝统一使用的货币是（ ）",
+      "options": [
+        "铲币",
+        "五铢钱",
+        "圆形方孔半两钱",
+        "刀币"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：圆形方孔半两钱。按秦朝统一与制度建设的史实判断，本题正确答案是「圆形方孔半两钱」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "秦朝为加强思想控制采取的措施是（ ）",
+      "options": [
+        "文字狱",
+        "焚书坑儒",
+        "罢黜百家",
+        "八股取士"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：焚书坑儒。按秦朝统一与制度建设的史实判断，本题正确答案是「焚书坑儒」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "秦长城西起（ ）",
+      "options": [
+        "临洮",
+        "辽东",
+        "嘉峪关",
+        "鸭绿江"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：临洮。按秦朝统一与制度建设的史实判断，本题正确答案是「临洮」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "秦长城东到（ ）",
+      "options": [
+        "临洮",
+        "嘉峪关",
+        "山海关",
+        "辽东"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：辽东。按秦朝统一与制度建设的史实判断，本题正确答案是「辽东」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "秦末农民起义爆发的时间是（ ）",
+      "options": [
+        "公元前202年",
+        "公元184年",
+        "公元前209年",
+        "公元前221年"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：公元前209年。按秦末起义与西汉前期的史实判断，本题正确答案是「公元前209年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "大泽乡起义的领导人是（ ）",
+      "options": [
+        "黄巢",
+        "陈胜、吴广",
+        "刘邦、项羽",
+        "张角"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：陈胜、吴广。按秦末起义与西汉前期的史实判断，本题正确答案是「陈胜、吴广」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "「王侯将相宁有种乎」这句话出自（ ）",
+      "options": [
+        "陈胜",
+        "吴广",
+        "刘邦",
+        "项羽"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：陈胜。按秦末起义与西汉前期的史实判断，本题正确答案是「陈胜」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "西汉建立的时间是（ ）",
+      "options": [
+        "公元前221年",
+        "公元前209年",
+        "公元25年",
+        "公元前202年"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：公元前202年。按秦末起义与西汉前期的史实判断，本题正确答案是「公元前202年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "西汉初年，为恢复经济实行的政策是（ ）",
+      "options": [
+        "闭关锁国",
+        "大跃进",
+        "休养生息",
+        "重农抑商"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：休养生息。按秦末起义与西汉前期的史实判断，本题正确答案是「休养生息」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "文帝、景帝时期出现的盛世局面是（ ）",
+      "options": [
+        "康乾盛世",
+        "文景之治",
+        "贞观之治",
+        "开元盛世"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：文景之治。按秦末起义与西汉前期的史实判断，本题正确答案是「文景之治」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "汉武帝为削弱诸侯王势力颁布的措施是（ ）",
+      "options": [
+        "「推恩令」",
+        "「摊丁入亩」",
+        "「一条鞭法」",
+        "「均田制」"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：「推恩令」。按秦末起义与西汉前期的史实判断，本题正确答案是「「推恩令」」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "汉武帝在思想上采取的措施是（ ）",
+      "options": [
+        "焚书坑儒",
+        "百家争鸣",
+        "八股取士",
+        "罢黜百家，尊崇儒术"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：罢黜百家，尊崇儒术。按秦末起义与西汉前期的史实判断，本题正确答案是「罢黜百家，尊崇儒术」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "汉武帝派往西域的使者是（ ）",
+      "options": [
+        "玄奘",
+        "郑和",
+        "张骞",
+        "班超"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：张骞。按秦末起义与西汉前期的史实判断，本题正确答案是「张骞」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "张骞通西域为开通哪条商路奠定基础（ ）",
+      "options": [
+        "海上丝绸之路",
+        "丝绸之路",
+        "茶马古道",
+        "京杭大运河"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：丝绸之路。按秦末起义与西汉前期的史实判断，本题正确答案是「丝绸之路」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "东汉的建立者是（ ）",
+      "options": [
+        "刘秀",
+        "刘邦",
+        "刘备",
+        "刘彻"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：刘秀。按东汉兴衰与秦汉科技文化的史实判断，本题正确答案是「刘秀」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "东汉建立的时间是（ ）",
+      "options": [
+        "公元前202年",
+        "公元220年",
+        "公元618年",
+        "公元25年"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：公元25年。按东汉兴衰与秦汉科技文化的史实判断，本题正确答案是「公元25年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "东汉中后期政治上的突出问题是（ ）",
+      "options": [
+        "藩镇割据",
+        "农民起义不断",
+        "外戚宦官交替专权",
+        "诸侯争霸"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：外戚宦官交替专权。按东汉兴衰与秦汉科技文化的史实判断，本题正确答案是「外戚宦官交替专权」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "东汉末年黄巾起义的领导人是（ ）",
+      "options": [
+        "黄巢",
+        "张角",
+        "陈胜",
+        "吴广"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：张角。按东汉兴衰与秦汉科技文化的史实判断，本题正确答案是「张角」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "改进造纸术的是（ ）",
+      "options": [
+        "蔡伦",
+        "毕昇",
+        "张衡",
+        "华佗"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：蔡伦。按东汉兴衰与秦汉科技文化的史实判断，本题正确答案是「蔡伦」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "蔡伦改进后的纸被称为（ ）",
+      "options": [
+        "宣纸",
+        "竹纸",
+        "麻纸",
+        "蔡侯纸"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：蔡侯纸。按东汉兴衰与秦汉科技文化的史实判断，本题正确答案是「蔡侯纸」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "东汉时期发明「麻沸散」的医学家是（ ）",
+      "options": [
+        "扁鹊",
+        "李时珍",
+        "华佗",
+        "张仲景"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：华佗。按东汉兴衰与秦汉科技文化的史实判断，本题正确答案是「华佗」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "东汉时期写成《伤寒杂病论》的医学家是（ ）",
+      "options": [
+        "孙思邈",
+        "张仲景",
+        "华佗",
+        "扁鹊"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：张仲景。按东汉兴衰与秦汉科技文化的史实判断，本题正确答案是「张仲景」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "西汉时期编写《史记》的是（ ）",
+      "options": [
+        "司马迁",
+        "司马光",
+        "班固",
+        "左丘明"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：司马迁。按东汉兴衰与秦汉科技文化的史实判断，本题正确答案是「司马迁」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-历史-3",
+      "chapterName": "秦汉统一多民族国家",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《史记》是我国第一部（ ）",
+      "options": [
+        "编年体通史",
+        "国别体史书",
+        "断代史",
+        "纪传体通史"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：纪传体通史。按东汉兴衰与秦汉科技文化的史实判断，本题正确答案是「纪传体通史」。",
+      "difficulty": 2
     }
   ]
 }

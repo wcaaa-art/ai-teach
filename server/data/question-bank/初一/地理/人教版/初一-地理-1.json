@@ -6,9 +6,9 @@
     "id": "初一-地理-1",
     "name": "地球与地图"
   },
-  "generatedAt": "2026-11-14T12:13:27.919Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.016Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgda223",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：比例尺=图上距离÷实地距离，实地距离=图上距离÷比例尺=3厘米×100000=300000厘米=3千米。\nB. 错误：把300000厘米换算成千米时多扩大了10倍，应为3千米而不是30千米。\nC. 错误：300000厘米换算为3000米，不是300米，单位换算时少除了10。\nD. 错误：30米与计算结果3000米相差100倍，混淆了厘米与米的换算关系。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "地球的平均半径约为（ ）",
+      "options": [
+        "6371千米",
+        "6378千米",
+        "4万千米",
+        "12742千米"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：6371千米。按地球与地球仪的基础知识判断，本题正确答案是「6371千米」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "地球赤道周长约为（ ）",
+      "options": [
+        "6371千米",
+        "8万千米",
+        "2万千米",
+        "4万千米"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：4万千米。按地球与地球仪的基础知识判断，本题正确答案是「4万千米」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "地球表面积约为（ ）",
+      "options": [
+        "1.5亿平方千米",
+        "4万平方千米",
+        "5.1亿平方千米",
+        "3.6亿平方千米"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：5.1亿平方千米。按地球与地球仪的基础知识判断，本题正确答案是「5.1亿平方千米」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "地球仪上最长的纬线是（ ）",
+      "options": [
+        "南极圈",
+        "赤道",
+        "本初子午线",
+        "北回归线"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：赤道。按地球与地球仪的基础知识判断，本题正确答案是「赤道」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "本初子午线是（ ）",
+      "options": [
+        "0°经线",
+        "0°纬线",
+        "180°经线",
+        "90°经线"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：0°经线。按地球与地球仪的基础知识判断，本题正确答案是「0°经线」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "划分东西半球的分界线是（ ）",
+      "options": [
+        "0°和180°组成的经线圈",
+        "赤道",
+        "本初子午线",
+        "20°W和160°E组成的经线圈"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：20°W和160°E组成的经线圈。按地球与地球仪的基础知识判断，本题正确答案是「20°W和160°E组成的经线圈」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "划分南北半球的分界线是（ ）",
+      "options": [
+        "北回归线",
+        "20°W经线",
+        "赤道",
+        "本初子午线"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：赤道。按地球与地球仪的基础知识判断，本题正确答案是「赤道」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "地球自转的方向是（ ）",
+      "options": [
+        "自北向南",
+        "自西向东",
+        "自东向西",
+        "自南向北"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：自西向东。按地球与地球仪的基础知识判断，本题正确答案是「自西向东」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "地球公转一周的时间约为（ ）",
+      "options": [
+        "一年",
+        "一天",
+        "一个月",
+        "一小时"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：一年。按地球与地球仪的基础知识判断，本题正确答案是「一年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "地球自转产生的地理现象是（ ）",
+      "options": [
+        "四季变化",
+        "五带划分",
+        "极昼极夜",
+        "昼夜交替"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：昼夜交替。按地球与地球仪的基础知识判断，本题正确答案是「昼夜交替」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "地图的三要素是（ ）",
+      "options": [
+        "比例尺、等高线、颜色",
+        "图名、图例、注记",
+        "比例尺、方向、图例",
+        "经线、纬线、方向"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：比例尺、方向、图例。按地图三要素与等高线的判读方法判断，本题正确答案是「比例尺、方向、图例」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "比例尺1:100000表示图上1厘米代表实地距离（ ）",
+      "options": [
+        "10米",
+        "1千米",
+        "10千米",
+        "100千米"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1千米。按地图三要素与等高线的判读方法判断，本题正确答案是「1千米」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "图幅相同的情况下，比例尺越大，表示的范围（ ）",
+      "options": [
+        "越小",
+        "越大",
+        "不变",
+        "无法判断"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：越小。按地图三要素与等高线的判读方法判断，本题正确答案是「越小」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在经纬网地图上，经线指示（ ）",
+      "options": [
+        "东西方向",
+        "东北方向",
+        "东南方向",
+        "南北方向"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：南北方向。按地图三要素与等高线的判读方法判断，本题正确答案是「南北方向」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在经纬网地图上，纬线指示（ ）",
+      "options": [
+        "西北方向",
+        "垂直方向",
+        "东西方向",
+        "南北方向"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：东西方向。按地图三要素与等高线的判读方法判断，本题正确答案是「东西方向」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "有指向标的地图，指向标的箭头通常指向（ ）",
+      "options": [
+        "西方",
+        "北方",
+        "南方",
+        "东方"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：北方。按地图三要素与等高线的判读方法判断，本题正确答案是「北方」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "等高线密集的地方，坡度（ ）",
+      "options": [
+        "陡",
+        "缓",
+        "平坦",
+        "无法判断"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：陡。按地图三要素与等高线的判读方法判断，本题正确答案是「陡」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "等高线向海拔高处凸出的部位是（ ）",
+      "options": [
+        "山脊",
+        "山顶",
+        "鞍部",
+        "山谷"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：山谷。按地图三要素与等高线的判读方法判断，本题正确答案是「山谷」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "等高线向海拔低处凸出的部位是（ ）",
+      "options": [
+        "陡崖",
+        "盆地",
+        "山脊",
+        "山谷"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：山脊。按地图三要素与等高线的判读方法判断，本题正确答案是「山脊」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "等高线重合的部位是（ ）",
+      "options": [
+        "鞍部",
+        "陡崖",
+        "山脊",
+        "山谷"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：陡崖。按地图三要素与等高线的判读方法判断，本题正确答案是「陡崖」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "北纬用字母（ ）表示",
+      "options": [
+        "N",
+        "S",
+        "E",
+        "W"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：N。按经纬度与地球运动的实际应用判断，本题正确答案是「N」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "东经用字母（ ）表示",
+      "options": [
+        "W",
+        "N",
+        "S",
+        "E"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：E。按经纬度与地球运动的实际应用判断，本题正确答案是「E」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "某地位于北纬40°、东经116°，该地属于（ ）",
+      "options": [
+        "北半球、西半球",
+        "南半球、西半球",
+        "北半球、东半球",
+        "南半球、东半球"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：北半球、东半球。按经纬度与地球运动的实际应用判断，本题正确答案是「北半球、东半球」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "热带的纬度范围是（ ）",
+      "options": [
+        "23.5°N—66.5°N",
+        "23.5°N—23.5°S",
+        "66.5°N—66.5°S",
+        "0°—66.5°N"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：23.5°N—23.5°S。按经纬度与地球运动的实际应用判断，本题正确答案是「23.5°N—23.5°S」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "北温带的纬度范围是（ ）",
+      "options": [
+        "23.5°N—66.5°N",
+        "0°—23.5°N",
+        "66.5°N—90°N",
+        "23.5°S—66.5°S"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：23.5°N—66.5°N。按经纬度与地球运动的实际应用判断，本题正确答案是「23.5°N—66.5°N」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "有极昼极夜现象的温度带是（ ）",
+      "options": [
+        "热带",
+        "温带",
+        "亚热带",
+        "寒带"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：寒带。按经纬度与地球运动的实际应用判断，本题正确答案是「寒带」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "太阳直射点在南北回归线之间来回移动，主要是由于（ ）",
+      "options": [
+        "地球形状",
+        "海陆分布",
+        "地球公转",
+        "地球自转"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：地球公转。按经纬度与地球运动的实际应用判断，本题正确答案是「地球公转」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "北半球夏至日，太阳直射（ ）",
+      "options": [
+        "北极圈",
+        "北回归线",
+        "南回归线",
+        "赤道"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：北回归线。按经纬度与地球运动的实际应用判断，本题正确答案是「北回归线」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "冬至日，太阳直射（ ）",
+      "options": [
+        "南回归线",
+        "北回归线",
+        "赤道",
+        "南极圈"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：南回归线。按经纬度与地球运动的实际应用判断，本题正确答案是「南回归线」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-地理-1",
+      "chapterName": "地球与地图",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "春分日和秋分日，太阳直射（ ）",
+      "options": [
+        "北回归线",
+        "南回归线",
+        "极圈",
+        "赤道"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：赤道。按经纬度与地球运动的实际应用判断，本题正确答案是「赤道」。",
+      "difficulty": 2
     }
   ]
 }

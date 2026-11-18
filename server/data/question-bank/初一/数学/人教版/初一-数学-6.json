@@ -6,9 +6,9 @@
     "id": "初一-数学-6",
     "name": "实数与平方根"
   },
-  "generatedAt": "2026-11-13T02:43:07.425Z",
-  "source": "deepseek-with-local-fill",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.135Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedgqov",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 2,
       "explanation": "A. 错误：因为 2^2=4，3^2=9，而 20>9，所以边长大于3，不在2和3之间。\nB. 错误：因为 3^2=9，4^2=16，而 20>16，所以边长大于4，不在3和4之间。\nC. 正确：正方形边长为 \\sqrt{20}，又因为 4^2=16<20<25=5^2，所以 4<\\sqrt{20}<5，即边长在4和5之间。\nD. 错误：因为 5^2=25，而 20<25，所以边长小于5，不在5和6之间。",
+      "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "9 的算术平方根是（ ）",
+      "options": [
+        "3",
+        "-3",
+        "4.5",
+        "6"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：3。算术平方根取非负值：3² = 9，所以算术平方根为 3。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "16 的算术平方根是（ ）",
+      "options": [
+        "-4",
+        "8",
+        "5",
+        "4"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：4。算术平方根取非负值：4² = 16，所以算术平方根为 4。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "25 的算术平方根是（ ）",
+      "options": [
+        "12.5",
+        "10",
+        "5",
+        "-5"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：5。算术平方根取非负值：5² = 25，所以算术平方根为 5。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "36 的算术平方根是（ ）",
+      "options": [
+        "12",
+        "6",
+        "-6",
+        "18"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：6。算术平方根取非负值：6² = 36，所以算术平方根为 6。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "49 的算术平方根是（ ）",
+      "options": [
+        "7",
+        "-7",
+        "24.5",
+        "14"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：7。算术平方根取非负值：7² = 49，所以算术平方根为 7。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "64 的算术平方根是（ ）",
+      "options": [
+        "-8",
+        "32",
+        "16",
+        "8"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：8。算术平方根取非负值：8² = 64，所以算术平方根为 8。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "81 的算术平方根是（ ）",
+      "options": [
+        "40.5",
+        "18",
+        "9",
+        "-9"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：9。算术平方根取非负值：9² = 81，所以算术平方根为 9。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "100 的算术平方根是（ ）",
+      "options": [
+        "20",
+        "10",
+        "-10",
+        "50"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：10。算术平方根取非负值：10² = 100，所以算术平方根为 10。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "121 的算术平方根是（ ）",
+      "options": [
+        "11",
+        "-11",
+        "60.5",
+        "22"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：11。算术平方根取非负值：11² = 121，所以算术平方根为 11。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "144 的算术平方根是（ ）",
+      "options": [
+        "-12",
+        "72",
+        "24",
+        "12"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：12。算术平方根取非负值：12² = 144，所以算术平方根为 12。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "8 的立方根是（ ）",
+      "options": [
+        "2.666667",
+        "4",
+        "2",
+        "3"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：2。2³ = 8，所以立方根为 2。",
+      "difficulty": 1
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "27 的立方根是（ ）",
+      "options": [
+        "4",
+        "3",
+        "4.5",
+        "9"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：3。3³ = 27，所以立方根为 3。",
+      "difficulty": 1
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "64 的立方根是（ ）",
+      "options": [
+        "4",
+        "6",
+        "21.333333",
+        "16"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：4。4³ = 64，所以立方根为 4。",
+      "difficulty": 1
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "125 的立方根是（ ）",
+      "options": [
+        "7.5",
+        "41.666667",
+        "25",
+        "5"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：5。5³ = 125，所以立方根为 5。",
+      "difficulty": 1
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "216 的立方根是（ ）",
+      "options": [
+        "72",
+        "36",
+        "6",
+        "9"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：6。6³ = 216，所以立方根为 6。",
+      "difficulty": 1
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "343 的立方根是（ ）",
+      "options": [
+        "49",
+        "7",
+        "10.5",
+        "114.333333"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：7。7³ = 343，所以立方根为 7。",
+      "difficulty": 1
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "512 的立方根是（ ）",
+      "options": [
+        "8",
+        "12",
+        "170.666667",
+        "64"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：8。8³ = 512，所以立方根为 8。",
+      "difficulty": 1
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "729 的立方根是（ ）",
+      "options": [
+        "13.5",
+        "243",
+        "81",
+        "9"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：9。9³ = 729，所以立方根为 9。",
+      "difficulty": 1
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "1000 的立方根是（ ）",
+      "options": [
+        "333.333333",
+        "100",
+        "10",
+        "15"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：10。10³ = 1000，所以立方根为 10。",
+      "difficulty": 1
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "1728 的立方根是（ ）",
+      "options": [
+        "144",
+        "12",
+        "18",
+        "576"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：12。12³ = 1728，所以立方根为 12。",
+      "difficulty": 1
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "method",
+      "stem": "估算 √7，它的值（ ）",
+      "options": [
+        "在 2 和 3 之间",
+        "小于 2",
+        "大于 3",
+        "等于 2"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：在 2 和 3 之间。2² = 4，3² = 9，而 4 < 7 < 9，所以 √7 在 2 和 3 之间。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "method",
+      "stem": "估算 √13，它的值（ ）",
+      "options": [
+        "小于 3",
+        "大于 4",
+        "等于 3",
+        "在 3 和 4 之间"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：在 3 和 4 之间。3² = 9，4² = 16，而 9 < 13 < 16，所以 √13 在 3 和 4 之间。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "method",
+      "stem": "估算 √20，它的值（ ）",
+      "options": [
+        "大于 5",
+        "等于 4",
+        "在 4 和 5 之间",
+        "小于 4"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：在 4 和 5 之间。4² = 16，5² = 25，而 16 < 20 < 25，所以 √20 在 4 和 5 之间。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "method",
+      "stem": "估算 √30，它的值（ ）",
+      "options": [
+        "等于 5",
+        "在 5 和 6 之间",
+        "小于 5",
+        "大于 6"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：在 5 和 6 之间。5² = 25，6² = 36，而 25 < 30 < 36，所以 √30 在 5 和 6 之间。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "method",
+      "stem": "估算 √44，它的值（ ）",
+      "options": [
+        "在 6 和 7 之间",
+        "小于 6",
+        "大于 7",
+        "等于 6"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：在 6 和 7 之间。6² = 36，7² = 49，而 36 < 44 < 49，所以 √44 在 6 和 7 之间。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "method",
+      "stem": "估算 √55，它的值（ ）",
+      "options": [
+        "小于 7",
+        "大于 8",
+        "等于 7",
+        "在 7 和 8 之间"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：在 7 和 8 之间。7² = 49，8² = 64，而 49 < 55 < 64，所以 √55 在 7 和 8 之间。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "method",
+      "stem": "估算 √70，它的值（ ）",
+      "options": [
+        "大于 9",
+        "等于 8",
+        "在 8 和 9 之间",
+        "小于 8"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：在 8 和 9 之间。8² = 64，9² = 81，而 64 < 70 < 81，所以 √70 在 8 和 9 之间。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "method",
+      "stem": "估算 √85，它的值（ ）",
+      "options": [
+        "等于 9",
+        "在 9 和 10 之间",
+        "小于 9",
+        "大于 10"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：在 9 和 10 之间。9² = 81，10² = 100，而 81 < 85 < 100，所以 √85 在 9 和 10 之间。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "method",
+      "stem": "估算 √99，它的值（ ）",
+      "options": [
+        "在 9 和 10 之间",
+        "小于 9",
+        "大于 10",
+        "等于 9"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：在 9 和 10 之间。9² = 81，10² = 100，而 81 < 99 < 100，所以 √99 在 9 和 10 之间。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-数学-6",
+      "chapterName": "实数与平方根",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "√2 属于（ ）",
+      "options": [
+        "分数",
+        "有理数",
+        "无理数",
+        "整数"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：无理数。√2 不能写成两个整数之比，是无限不循环小数，因此是无理数。",
       "difficulty": 1
     }
   ]

@@ -92,7 +92,7 @@ onMounted(loadBatch)
       <div class="video-frame">
         <iframe v-if="playingVideo" :src="embedUrl(playingVideo.bvid)" title="B 站视频播放" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0" scrolling="no"></iframe>
       </div>
-      <p class="video-player-note">少数视频不允许站外播放；打不开时可<a v-if="playingVideo" :href="playingVideo.url" target="_blank" rel="noopener noreferrer">在 B 站打开</a>。</p>
+      <p class="video-player-note">少数视频不允许站外播放；打不开时可<a v-if="playingVideo" :href="playingVideo.url" target="_blank" rel="noopener noreferrer">在 B 站打开</a></p>
     </el-dialog>
   </div>
 </template>

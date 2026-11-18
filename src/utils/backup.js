@@ -19,20 +19,20 @@ export function createBackup({ owner = 'local', stores = {}, exportedAt = Date.n
 
 // 只校验结构，不校验业务字段：旧版本记录缺字段时由各页面自己的兼容逻辑处理。
 export function validateBackup(payload) {
-  if (!payload || typeof payload !== 'object') return { ok: false, error: '文件内容不是有效的备份数据。' }
-  if (payload.app !== BACKUP_APP) return { ok: false, error: '这不是本应用导出的备份文件。' }
-  if (!Number.isFinite(Number(payload.version))) return { ok: false, error: '备份文件缺少版本号。' }
-  if (Number(payload.version) > BACKUP_VERSION) return { ok: false, error: '备份来自更新版本的应用，请先升级后再导入。' }
-  if (!payload.stores || typeof payload.stores !== 'object') return { ok: false, error: '备份文件里没有学习数据。' }
+  if (!payload || typeof payload !== 'object') return { ok: false, error: '文件内容不是有效的备份数据' }
+  if (payload.app !== BACKUP_APP) return { ok: false, error: '这不是本应用导出的备份文件' }
+  if (!Number.isFinite(Number(payload.version))) return { ok: false, error: '备份文件缺少版本号' }
+  if (Number(payload.version) > BACKUP_VERSION) return { ok: false, error: '备份来自更新版本的应用，请先升级后再导入' }
+  if (!payload.stores || typeof payload.stores !== 'object') return { ok: false, error: '备份文件里没有学习数据' }
   const counts = {}
   let total = 0
   for (const name of BACKUP_STORES) {
     const list = payload.stores[name]
     if (list === undefined) continue
-    if (!Array.isArray(list)) return { ok: false, error: `备份中的「${name}」数据格式不正确。` }
+    if (!Array.isArray(list)) return { ok: false, error: `备份中的「${name}」数据格式不正确` }
     counts[name] = list.length
     total += list.length
   }
-  if (!total) return { ok: false, error: '备份里没有可导入的学习记录。' }
+  if (!total) return { ok: false, error: '备份里没有可导入的学习记录' }
   return { ok: true, counts, total }
 }

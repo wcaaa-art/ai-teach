@@ -6,9 +6,9 @@
     "id": "初一-地理-4",
     "name": "居民与聚落"
   },
-  "generatedAt": "2026-11-14T12:13:42.325Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.025Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgda9du",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "人口密度表示单位面积土地上居住的人口数，计算公式为：人口密度=\\frac{人口数}{面积}。\nA. 错误：200万÷5万=40，不是4；该选项在计算时少算了一个0。\nB. 正确：200万人÷5万平方千米=40人/平方千米，符合人口密度的定义和计算。\nC. 错误：400人/平方千米是把结果多算了一个0，与200万÷5万的实际结果不符。\nD. 错误：0.4人/平方千米是计算时把分子、分母关系弄反或小数点位置错误，不符合人口密度公式。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "世界上人口最多的大洲是（ ）",
+      "options": [
+        "亚洲",
+        "非洲",
+        "欧洲",
+        "南美洲"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：亚洲。按世界人口分布与人口问题的知识判断，本题正确答案是「亚洲」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "人口自然增长率等于（ ）",
+      "options": [
+        "出生率加上死亡率",
+        "死亡率减去出生率",
+        "出生人口除以总人口",
+        "出生率减去死亡率"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：出生率减去死亡率。按世界人口分布与人口问题的知识判断，本题正确答案是「出生率减去死亡率」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "人口密度是指（ ）",
+      "options": [
+        "城市人口数量",
+        "出生人口数量",
+        "每平方千米内的人口数",
+        "一个国家的人口总数"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：每平方千米内的人口数。按世界人口分布与人口问题的知识判断，本题正确答案是「每平方千米内的人口数」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "世界人口稠密区主要分布在（ ）",
+      "options": [
+        "高山高原地区",
+        "中低纬度近海平原地区",
+        "高纬度寒冷地区",
+        "沙漠地区"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：中低纬度近海平原地区。按世界人口分布与人口问题的知识判断，本题正确答案是「中低纬度近海平原地区」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列地区中，人口稠密的是（ ）",
+      "options": [
+        "亚洲东部",
+        "撒哈拉沙漠",
+        "亚马孙雨林",
+        "南极洲"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：亚洲东部。按世界人口分布与人口问题的知识判断，本题正确答案是「亚洲东部」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列地区中，人口稀疏的是（ ）",
+      "options": [
+        "欧洲西部",
+        "亚洲南部",
+        "北美洲东部",
+        "撒哈拉沙漠"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：撒哈拉沙漠。按世界人口分布与人口问题的知识判断，本题正确答案是「撒哈拉沙漠」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "人口增长过快可能带来的问题是（ ）",
+      "options": [
+        "人口老龄化",
+        "国防兵源不足",
+        "就业困难、资源紧张",
+        "劳动力短缺"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：就业困难、资源紧张。按世界人口分布与人口问题的知识判断，本题正确答案是「就业困难、资源紧张」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "人口增长过慢可能带来的问题是（ ）",
+      "options": [
+        "交通拥堵",
+        "人口老龄化",
+        "资源短缺",
+        "就业困难"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：人口老龄化。按世界人口分布与人口问题的知识判断，本题正确答案是「人口老龄化」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "亚洲面临的主要人口问题是（ ）",
+      "options": [
+        "人口增长过快",
+        "人口老龄化最严重",
+        "人口负增长",
+        "劳动力严重不足"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：人口增长过快。按世界人口分布与人口问题的知识判断，本题正确答案是「人口增长过快」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "欧洲人口增长缓慢，很多国家出现（ ）",
+      "options": [
+        "人口爆炸",
+        "劳动力过剩",
+        "出生率过高",
+        "人口老龄化"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：人口老龄化。按世界人口分布与人口问题的知识判断，本题正确答案是「人口老龄化」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "世界三大人种是（ ）",
+      "options": [
+        "白种人、黑种人、混血种人",
+        "黄种人、黑种人、印第安人",
+        "白种人、黄种人、黑种人",
+        "白种人、黄种人、棕种人"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：白种人、黄种人、黑种人。按人种、语言与宗教的分布知识判断，本题正确答案是「白种人、黄种人、黑种人」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "非洲中部和南部主要分布的人种是（ ）",
+      "options": [
+        "混血种人",
+        "黑种人",
+        "白种人",
+        "黄种人"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：黑种人。按人种、语言与宗教的分布知识判断，本题正确答案是「黑种人」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "欧洲、北美洲主要分布的人种是（ ）",
+      "options": [
+        "白种人",
+        "黑种人",
+        "黄种人",
+        "棕种人"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：白种人。按人种、语言与宗教的分布知识判断，本题正确答案是「白种人」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "亚洲东部主要分布的人种是（ ）",
+      "options": [
+        "白种人",
+        "黑种人",
+        "混血种人",
+        "黄种人"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：黄种人。按人种、语言与宗教的分布知识判断，本题正确答案是「黄种人」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "世界上使用人数最多的语言是（ ）",
+      "options": [
+        "西班牙语",
+        "阿拉伯语",
+        "汉语",
+        "英语"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：汉语。按人种、语言与宗教的分布知识判断，本题正确答案是「汉语」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "世界上使用最广泛的语言是（ ）",
+      "options": [
+        "俄语",
+        "英语",
+        "汉语",
+        "法语"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：英语。按人种、语言与宗教的分布知识判断，本题正确答案是「英语」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "世界上信仰人数最多的宗教是（ ）",
+      "options": [
+        "基督教",
+        "伊斯兰教",
+        "佛教",
+        "印度教"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：基督教。按人种、语言与宗教的分布知识判断，本题正确答案是「基督教」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "伊斯兰教的发源地是（ ）",
+      "options": [
+        "欧洲西部",
+        "南亚",
+        "东亚",
+        "阿拉伯半岛"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：阿拉伯半岛。按人种、语言与宗教的分布知识判断，本题正确答案是「阿拉伯半岛」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "佛教创始于（ ）",
+      "options": [
+        "欧洲",
+        "北美洲",
+        "古印度",
+        "阿拉伯半岛"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：古印度。按人种、语言与宗教的分布知识判断，本题正确答案是「古印度」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "清真寺是（ ）的活动场所",
+      "options": [
+        "犹太教",
+        "伊斯兰教",
+        "基督教",
+        "佛教"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：伊斯兰教。按人种、语言与宗教的分布知识判断，本题正确答案是「伊斯兰教」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "聚落分为（ ）",
+      "options": [
+        "城市和乡村",
+        "工业区和农业区",
+        "山区和平原",
+        "内陆和沿海"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：城市和乡村。按聚落的形成、形态与保护知识判断，本题正确答案是「城市和乡村」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "乡村聚落的主要产业是（ ）",
+      "options": [
+        "工业",
+        "服务业",
+        "高新技术产业",
+        "农业"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：农业。按聚落的形成、形态与保护知识判断，本题正确答案是「农业」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "城市聚落的人口（ ）",
+      "options": [
+        "为零",
+        "与乡村相同",
+        "密集",
+        "稀疏"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：密集。按聚落的形成、形态与保护知识判断，本题正确答案是「密集」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "聚落形成和发展的有利条件包括（ ）",
+      "options": [
+        "水源短缺、灾害频发",
+        "水源充足、地形平坦、交通便利",
+        "气候恶劣、地形崎岖",
+        "资源贫乏、交通不便"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：水源充足、地形平坦、交通便利。按聚落的形成、形态与保护知识判断，本题正确答案是「水源充足、地形平坦、交通便利」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列聚落中，属于乡村聚落的是（ ）",
+      "options": [
+        "渔村",
+        "省会城市",
+        "工业城市",
+        "港口城市"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：渔村。按聚落的形成、形态与保护知识判断，本题正确答案是「渔村」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "传统聚落的主要价值在于（ ）",
+      "options": [
+        "没有任何价值",
+        "只适合拆除",
+        "只用于商业开发",
+        "反映当地历史文化与自然环境"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：反映当地历史文化与自然环境。按聚落的形成、形态与保护知识判断，本题正确答案是「反映当地历史文化与自然环境」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "保护传统聚落的合理做法是（ ）",
+      "options": [
+        "随意改建",
+        "迁出所有居民任其荒废",
+        "修旧如旧、合理利用",
+        "全部拆除重建"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：修旧如旧、合理利用。按聚落的形成、形态与保护知识判断，本题正确答案是「修旧如旧、合理利用」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "黄土高原上的传统民居是（ ）",
+      "options": [
+        "高脚屋",
+        "窑洞",
+        "竹楼",
+        "冰屋"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：窑洞。按聚落的形成、形态与保护知识判断，本题正确答案是「窑洞」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "东南亚湿热地区常见的民居是（ ）",
+      "options": [
+        "高脚屋",
+        "冰屋",
+        "窑洞",
+        "四合院"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：高脚屋。按聚落的形成、形态与保护知识判断，本题正确答案是「高脚屋」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-地理-4",
+      "chapterName": "居民与聚落",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "北极地区因纽特人的传统民居是（ ）",
+      "options": [
+        "竹楼",
+        "窑洞",
+        "土楼",
+        "冰屋"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：冰屋。按聚落的形成、形态与保护知识判断，本题正确答案是「冰屋」。",
+      "difficulty": 2
     }
   ]
 }

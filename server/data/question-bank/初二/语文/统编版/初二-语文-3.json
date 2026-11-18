@@ -4,16 +4,16 @@
   "edition": "统编版",
   "chapter": {
     "id": "初二-语文-3",
-    "name": "八上：古诗文积累"
+    "name": "古诗文积累"
   },
-  "generatedAt": "2026-11-14T12:14:32.652Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.881Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdbg08",
       "chapterId": "初二-语文-3",
-      "chapterName": "八上：古诗文积累",
+      "chapterName": "古诗文积累",
       "type": "single",
       "dimension": "concept",
       "stem": "下列对八年级上册古诗文相关知识的表述，正确的一项是（　　）",
@@ -30,7 +30,7 @@
     {
       "id": "diag-2-mwgdbg08",
       "chapterId": "初二-语文-3",
-      "chapterName": "八上：古诗文积累",
+      "chapterName": "古诗文积累",
       "type": "single",
       "dimension": "basic-application",
       "stem": "班级举行“志在千里”主题演讲，主持人想引用一句古诗文，表达“人虽年老，仍应保持奋发进取的雄心壮志”这一层意思。下列最恰当的一项是（　　）",
@@ -47,10 +47,10 @@
     {
       "id": "diag-3-mwgdbg08",
       "chapterId": "初二-语文-3",
-      "chapterName": "八上：古诗文积累",
+      "chapterName": "古诗文积累",
       "type": "single",
       "dimension": "transfer",
-      "stem": "班级举办“诗心照古今”主题展板，需要为“即使年华老去、遭遇挫折，仍要保持远大志向和不消沉的精神”这一栏目选择最恰当的一句八上古诗文名句。下列选项中最符合要求的一项是",
+      "stem": "班级举办“诗心照古今”主题展板，需要为“即使年华老去、遭遇挫折，仍要保持远大志向和不消沉的精神”这一栏目选择最恰当的一句古诗文名句。下列选项中最符合要求的一项是",
       "options": [
         "老骥伏枥，志在千里；烈士暮年，壮心不已（曹操《龟虽寿》）",
         "相顾无相识，长歌怀采薇（王绩《野望》）",
@@ -64,7 +64,7 @@
     {
       "id": "diag-4-mwgdbg08",
       "chapterId": "初二-语文-3",
-      "chapterName": "八上：古诗文积累",
+      "chapterName": "古诗文积累",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "下列古诗文默写有误的一项是（　　）",
@@ -81,10 +81,10 @@
     {
       "id": "diag-5-mwgdbg08",
       "chapterId": "初二-语文-3",
-      "chapterName": "八上：古诗文积累",
+      "chapterName": "古诗文积累",
       "type": "single",
       "dimension": "concept",
-      "stem": "下列关于八上古诗文名句的理解，正确的一项是（　　）",
+      "stem": "下列关于古诗文名句的理解，正确的一项是（　　）",
       "options": [
         "“两岸石壁，五色交辉”中的“交辉”写出石壁在日光映照下色彩交相辉映，景象绚丽。",
         "“素湍绿潭，回清倒影”中的“素湍”“回清”都是静态描写，表现三峡水面的宁静。",
@@ -98,7 +98,7 @@
     {
       "id": "diag-6-mwgdbg08",
       "chapterId": "初二-语文-3",
-      "chapterName": "八上：古诗文积累",
+      "chapterName": "古诗文积累",
       "type": "single",
       "dimension": "basic-application",
       "stem": "班级制作“富春江山水”明信片，需要选一句直接表现江水清澈、游鱼细石历历可见的原文，最恰当的一项是（　　）",
@@ -115,7 +115,7 @@
     {
       "id": "diag-7-mwgdbg08",
       "chapterId": "初二-语文-3",
-      "chapterName": "八上：古诗文积累",
+      "chapterName": "古诗文积累",
       "type": "single",
       "dimension": "transfer",
       "stem": "班级布置“古诗文中的山水意境”展板，其中一块展板的主题为“以声衬静”。下列诗句中最适合放入该展板的一项是（ ）",
@@ -132,10 +132,10 @@
     {
       "id": "diag-8-mwgdbg08",
       "chapterId": "初二-语文-3",
-      "chapterName": "八上：古诗文积累",
+      "chapterName": "古诗文积累",
       "type": "single",
       "dimension": "error-analysis",
-      "stem": "下列关于八上古诗文的默写，完全正确的一项是（　　）",
+      "stem": "下列关于古诗文的默写，完全正确的一项是（　　）",
       "options": [
         "经纶世务者，窥谷忘返。（吴均《与朱元思书》）",
         "晓雾将歇，猿鸟乱鸣；夕日欲颓，沉鳞竞跃。（陶弘景《答谢中书书》）",
@@ -149,10 +149,10 @@
     {
       "id": "diag-9-mwgdbg08",
       "chapterId": "初二-语文-3",
-      "chapterName": "八上：古诗文积累",
+      "chapterName": "古诗文积累",
       "type": "single",
       "dimension": "concept",
-      "stem": "下列对八上教材古诗文名句的理解，不正确的一项是（　　）",
+      "stem": "下列对教材古诗文名句的理解，不正确的一项是（　　）",
       "options": [
         "“两岸连山，略无阙处”从正面写三峡两岸山势连绵，突出其高峻。",
         "“急湍甚箭，猛浪若奔”运用夸张和比喻，写出富春江水流湍急。",
@@ -166,7 +166,7 @@
     {
       "id": "diag-10-mwgdbg08",
       "chapterId": "初二-语文-3",
-      "chapterName": "八上：古诗文积累",
+      "chapterName": "古诗文积累",
       "type": "single",
       "dimension": "basic-application",
       "stem": "某同学在游记中写道：“傍晚长江水面平静得像一面镜子，倒映着天光；远处云气升腾变幻，望去如同海市蜃楼。”老师建议他引用李白《渡荆门送别》中意境最贴近的一联来印证。下列诗句最恰当的一项是",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：“山随平野尽，江入大荒流”写的是船出荆门后群山渐消、江水汇入辽阔原野的开阔之势，落点在“山尽”“江流”，并未写水面平静如镜、云气如海市蜃楼，与题干情境不符。\nB. 正确：“月下飞天镜”以镜喻江中月影，正切合“水面平静得像一面镜子，倒映着天光”；“云生结海楼”写云气升腾幻化成海市蜃楼，正合“云气升腾变幻”之意，且出自李白《渡荆门送别》。\nC. 错误：“仍怜故乡水，万里送行舟”以拟人手法直抒对故乡的依恋，属于抒情句，没有描写“平静如镜”“云霞倒映”的景象，与题干要求不吻合。\nD. 错误：“大漠孤烟直，长河落日圆”出自王维《使至塞上》，并非李白《渡荆门送别》，且所写为塞外大漠孤烟、长河落日的景象，与长江傍晚云霞倒映的情境不符。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“大漠孤烟直，长河落日圆”出自（　　）",
+      "options": [
+        "王维《使至塞上》",
+        "李白《渡荆门送别》",
+        "崔颢《黄鹤楼》",
+        "白居易《钱塘湖春行》"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：王维《使至塞上》。按古代诗歌的名句、作者与主旨判断，本题正确答案是「王维《使至塞上》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“山随平野尽，江入大荒流”出自（　　）",
+      "options": [
+        "王维《使至塞上》",
+        "崔颢《黄鹤楼》",
+        "杜甫《春望》",
+        "李白《渡荆门送别》"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：李白《渡荆门送别》。按古代诗歌的名句、作者与主旨判断，本题正确答案是「李白《渡荆门送别》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“晴川历历汉阳树，芳草萋萋鹦鹉洲”出自（　　）",
+      "options": [
+        "李白《渡荆门送别》",
+        "陶渊明《饮酒》",
+        "崔颢《黄鹤楼》",
+        "王维《使至塞上》"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：崔颢《黄鹤楼》。按古代诗歌的名句、作者与主旨判断，本题正确答案是「崔颢《黄鹤楼》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“几处早莺争暖树，谁家新燕啄春泥”出自（　　）",
+      "options": [
+        "杜牧《赤壁》",
+        "白居易《钱塘湖春行》",
+        "杜甫《春望》",
+        "李贺《雁门太守行》"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：白居易《钱塘湖春行》。按古代诗歌的名句、作者与主旨判断，本题正确答案是「白居易《钱塘湖春行》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“采菊东篱下，悠然见南山”出自（　　）",
+      "options": [
+        "陶渊明《饮酒》",
+        "王维《使至塞上》",
+        "杜甫《春望》",
+        "李清照《渔家傲》"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：陶渊明《饮酒》。按古代诗歌的名句、作者与主旨判断，本题正确答案是「陶渊明《饮酒》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“烽火连三月，家书抵万金”出自（　　）",
+      "options": [
+        "杜牧《赤壁》",
+        "李贺《雁门太守行》",
+        "白居易《钱塘湖春行》",
+        "杜甫《春望》"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：杜甫《春望》。按古代诗歌的名句、作者与主旨判断，本题正确答案是「杜甫《春望》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“黑云压城城欲摧，甲光向日金鳞开”出自（　　）",
+      "options": [
+        "杜牧《赤壁》",
+        "李清照《渔家傲》",
+        "李贺《雁门太守行》",
+        "杜甫《春望》"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：李贺《雁门太守行》。按古代诗歌的名句、作者与主旨判断，本题正确答案是「李贺《雁门太守行》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“东风不与周郎便，铜雀春深锁二乔”出自（　　）",
+      "options": [
+        "王维《使至塞上》",
+        "杜牧《赤壁》",
+        "李贺《雁门太守行》",
+        "杜甫《春望》"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：杜牧《赤壁》。按古代诗歌的名句、作者与主旨判断，本题正确答案是「杜牧《赤壁》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“九万里风鹏正举”出自（　　）",
+      "options": [
+        "李清照《渔家傲》",
+        "陶渊明《饮酒》",
+        "白居易《钱塘湖春行》",
+        "崔颢《黄鹤楼》"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：李清照《渔家傲》。按古代诗歌的名句、作者与主旨判断，本题正确答案是「李清照《渔家傲》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“感时花溅泪，恨别鸟惊心”出自（　　）",
+      "options": [
+        "王维《使至塞上》",
+        "杜牧《赤壁》",
+        "李白《渡荆门送别》",
+        "杜甫《春望》"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：杜甫《春望》。按古代诗歌的名句、作者与主旨判断，本题正确答案是「杜甫《春望》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《三峡》的作者是（　　）",
+      "options": [
+        "苏轼",
+        "吴均",
+        "郦道元",
+        "陶弘景"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：郦道元。按文言文的实词、翻译与内容判断，本题正确答案是「郦道元」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《答谢中书书》的作者是（　　）",
+      "options": [
+        "吴均",
+        "陶弘景",
+        "郦道元",
+        "苏轼"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：陶弘景。按文言文的实词、翻译与内容判断，本题正确答案是「陶弘景」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《记承天寺夜游》的作者是（　　）",
+      "options": [
+        "苏轼",
+        "陶弘景",
+        "郦道元",
+        "吴均"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：苏轼。按文言文的实词、翻译与内容判断，本题正确答案是「苏轼」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《与朱元思书》的作者是（　　）",
+      "options": [
+        "郦道元",
+        "陶弘景",
+        "苏轼",
+        "吴均"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：吴均。按文言文的实词、翻译与内容判断，本题正确答案是「吴均」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“自非亭午夜分，不见曦月”中“曦”的意思是（　　）",
+      "options": [
+        "星星",
+        "云雾",
+        "日光，这里指太阳",
+        "月亮"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：日光，这里指太阳。按文言文的实词、翻译与内容判断，本题正确答案是「日光，这里指太阳」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“虽乘奔御风，不以疾也”中“奔”的意思是（　　）",
+      "options": [
+        "逃亡",
+        "飞奔的马",
+        "奔跑",
+        "奔向"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：飞奔的马。按文言文的实词、翻译与内容判断，本题正确答案是「飞奔的马」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“清荣峻茂，良多趣味”中“良”的意思是（　　）",
+      "options": [
+        "甚，很",
+        "善良",
+        "良好",
+        "优良"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：甚，很。按文言文的实词、翻译与内容判断，本题正确答案是「甚，很」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“念无与为乐者”中“念”的意思是（　　）",
+      "options": [
+        "思念",
+        "念叨",
+        "怀念",
+        "考虑，想到"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：考虑，想到。按文言文的实词、翻译与内容判断，本题正确答案是「考虑，想到」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“但少闲人如吾两人者耳”中“但”的意思是（　　）",
+      "options": [
+        "不但",
+        "但凡",
+        "只是",
+        "但是"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：只是。按文言文的实词、翻译与内容判断，本题正确答案是「只是」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《三峡》中描写夏水迅疾的句子是（　　）",
+      "options": [
+        "空谷传响，哀转久绝",
+        "虽乘奔御风，不以疾也",
+        "素湍绿潭，回清倒影",
+        "清荣峻茂，良多趣味"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：虽乘奔御风，不以疾也。按文言文的实词、翻译与内容判断，本题正确答案是「虽乘奔御风，不以疾也」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“大漠孤烟直，长河落日圆”描绘的画面特点是（　　）",
+      "options": [
+        "雄浑壮阔",
+        "清新婉约",
+        "凄凉冷清",
+        "幽静闲适"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：雄浑壮阔。按古诗鉴赏与文言文理解方法判断，本题正确答案是「雄浑壮阔」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“山随平野尽，江入大荒流”主要表现了（　　）",
+      "options": [
+        "凄凉悲伤的情感",
+        "闲适恬淡的情趣",
+        "缠绵悱恻的相思",
+        "壮阔开阔的意境"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：壮阔开阔的意境。按古诗鉴赏与文言文理解方法判断，本题正确答案是「壮阔开阔的意境」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“感时花溅泪，恨别鸟惊心”运用的主要手法是（　　）",
+      "options": [
+        "对比论证",
+        "列数字",
+        "借景抒情",
+        "托物言志"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：借景抒情。按古诗鉴赏与文言文理解方法判断，本题正确答案是「借景抒情」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《春望》表达的主要情感是（　　）",
+      "options": [
+        "登高望远的喜悦",
+        "忧国伤时、思念亲人",
+        "归隐田园的愿望",
+        "建功立业的豪情"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：忧国伤时、思念亲人。按古诗鉴赏与文言文理解方法判断，本题正确答案是「忧国伤时、思念亲人」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《饮酒（其五）》表达的主要情感是（　　）",
+      "options": [
+        "归隐田园、悠然自得",
+        "忧国忧民",
+        "建功立业",
+        "离别愁绪"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：归隐田园、悠然自得。按古诗鉴赏与文言文理解方法判断，本题正确答案是「归隐田园、悠然自得」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《赤壁》中“东风不与周郎便，铜雀春深锁二乔”主要运用了（　　）",
+      "options": [
+        "列数字",
+        "下定义",
+        "分类别",
+        "以小见大的手法"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：以小见大的手法。按古诗鉴赏与文言文理解方法判断，本题正确答案是「以小见大的手法」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《记承天寺夜游》中“闲人”一词包含的情感是（　　）",
+      "options": [
+        "对富贵的羡慕",
+        "对战争的恐惧",
+        "贬谪的悲凉与自我排遣的旷达",
+        "对功名的渴望"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：贬谪的悲凉与自我排遣的旷达。按古诗鉴赏与文言文理解方法判断，本题正确答案是「贬谪的悲凉与自我排遣的旷达」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《三峡》描写秋景的句子营造的氛围是（　　）",
+      "options": [
+        "恬静闲适",
+        "凄凉肃穆",
+        "热闹欢快",
+        "温暖明媚"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：凄凉肃穆。按古诗鉴赏与文言文理解方法判断，本题正确答案是「凄凉肃穆」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "阅读文言文，理解作者情感应该（　　）",
+      "options": [
+        "结合写作背景和文中关键语句",
+        "只看文章字数",
+        "只看作者籍贯",
+        "只凭主观猜测"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：结合写作背景和文中关键语句。按古诗鉴赏与文言文理解方法判断，本题正确答案是「结合写作背景和文中关键语句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-语文-3",
+      "chapterName": "古诗文积累",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "古诗鉴赏中分析“炼字”，主要是分析（　　）",
+      "options": [
+        "诗歌的押韵",
+        "诗歌的篇幅",
+        "诗人的生平",
+        "关键词语的表达效果"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：关键词语的表达效果。按古诗鉴赏与文言文理解方法判断，本题正确答案是「关键词语的表达效果」。",
+      "difficulty": 2
     }
   ]
 }

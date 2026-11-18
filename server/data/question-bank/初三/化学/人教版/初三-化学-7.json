@@ -6,9 +6,9 @@
     "id": "初三-化学-7",
     "name": "化学计算综合"
   },
-  "generatedAt": "2026-11-13T02:49:01.772Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.855Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedoc3t",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：1.6 g 是把生成氧气的物质的量误算为 0.05 mol，与高锰酸钾 0.2 mol 按方程式应生成 0.1 mol 氧气不符。\nB. 正确：M(KMnO4)=39+55+16×4=158 g/mol，n(KMnO4)=31.6/158=0.2 mol；由 2KMnO4～O2 得 n(O2)=0.1 mol，m(O2)=0.1×32=3.2 g。\nC. 错误：6.4 g 相当于把 n(O2) 算成 0.2 mol，误认为高锰酸钾与氧气按 1:1 生成，忽略了方程式前的系数 2。\nD. 错误：32 g 是 1 mol O2 的质量，本题只生成 0.1 mol O2，直接取摩尔质量作答案不符合计算所得物质的量。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Ca-40、C-12、O-16。10 g 碳酸钙高温分解，生成二氧化碳的质量是（ ）",
+      "options": [
+        "4.4 g",
+        "8.8 g",
+        "2.2 g",
+        "5.4 g"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：4.4 g。CaCO₃ →(高温) CaO + CO₂↑，100 份 CaCO₃ 生成 44 份 CO₂，所以 CO₂ 质量 = 10 × 44/100 = 4.4 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Ca-40、C-12、O-16。20 g 碳酸钙高温分解，生成二氧化碳的质量是（ ）",
+      "options": [
+        "17.6 g",
+        "4.4 g",
+        "9.8 g",
+        "8.8 g"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：8.8 g。CaCO₃ →(高温) CaO + CO₂↑，100 份 CaCO₃ 生成 44 份 CO₂，所以 CO₂ 质量 = 20 × 44/100 = 8.8 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Ca-40、C-12、O-16。50 g 碳酸钙高温分解，生成二氧化碳的质量是（ ）",
+      "options": [
+        "11 g",
+        "23 g",
+        "22 g",
+        "44 g"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：22 g。CaCO₃ →(高温) CaO + CO₂↑，100 份 CaCO₃ 生成 44 份 CO₂，所以 CO₂ 质量 = 50 × 44/100 = 22 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Ca-40、C-12、O-16。100 g 碳酸钙高温分解，生成二氧化碳的质量是（ ）",
+      "options": [
+        "45 g",
+        "44 g",
+        "88 g",
+        "22 g"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：44 g。CaCO₃ →(高温) CaO + CO₂↑，100 份 CaCO₃ 生成 44 份 CO₂，所以 CO₂ 质量 = 100 × 44/100 = 44 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Ca-40、C-12、O-16。25 g 碳酸钙高温分解，生成二氧化碳的质量是（ ）",
+      "options": [
+        "11 g",
+        "22 g",
+        "5.5 g",
+        "12 g"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：11 g。CaCO₃ →(高温) CaO + CO₂↑，100 份 CaCO₃ 生成 44 份 CO₂，所以 CO₂ 质量 = 25 × 44/100 = 11 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Ca-40、C-12、O-16。5 g 碳酸钙高温分解，生成二氧化碳的质量是（ ）",
+      "options": [
+        "4.4 g",
+        "1.1 g",
+        "3.2 g",
+        "2.2 g"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：2.2 g。CaCO₃ →(高温) CaO + CO₂↑，100 份 CaCO₃ 生成 44 份 CO₂，所以 CO₂ 质量 = 5 × 44/100 = 2.2 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Ca-40、C-12、O-16。15 g 碳酸钙高温分解，生成二氧化碳的质量是（ ）",
+      "options": [
+        "3.3 g",
+        "7.6 g",
+        "6.6 g",
+        "13.2 g"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：6.6 g。CaCO₃ →(高温) CaO + CO₂↑，100 份 CaCO₃ 生成 44 份 CO₂，所以 CO₂ 质量 = 15 × 44/100 = 6.6 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Ca-40、C-12、O-16。40 g 碳酸钙高温分解，生成二氧化碳的质量是（ ）",
+      "options": [
+        "18.6 g",
+        "17.6 g",
+        "35.2 g",
+        "8.8 g"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：17.6 g。CaCO₃ →(高温) CaO + CO₂↑，100 份 CaCO₃ 生成 44 份 CO₂，所以 CO₂ 质量 = 40 × 44/100 = 17.6 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Ca-40、C-12、O-16。80 g 碳酸钙高温分解，生成二氧化碳的质量是（ ）",
+      "options": [
+        "35.2 g",
+        "70.4 g",
+        "17.6 g",
+        "36.2 g"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：35.2 g。CaCO₃ →(高温) CaO + CO₂↑，100 份 CaCO₃ 生成 44 份 CO₂，所以 CO₂ 质量 = 80 × 44/100 = 35.2 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Ca-40、C-12、O-16。200 g 碳酸钙高温分解，生成二氧化碳的质量是（ ）",
+      "options": [
+        "176 g",
+        "44 g",
+        "89 g",
+        "88 g"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：88 g。CaCO₃ →(高温) CaO + CO₂↑，100 份 CaCO₃ 生成 44 份 CO₂，所以 CO₂ 质量 = 200 × 44/100 = 88 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某石灰石样品 100 g，其中碳酸钙的质量分数为 80%，样品中碳酸钙的质量是（ ）",
+      "options": [
+        "90 g",
+        "70 g",
+        "80 g",
+        "160 g"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：80 g。碳酸钙质量 = 样品质量 × 质量分数 = 100 × 80% = 80 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某石灰石样品 200 g，其中碳酸钙的质量分数为 75%，样品中碳酸钙的质量是（ ）",
+      "options": [
+        "140 g",
+        "150 g",
+        "300 g",
+        "160 g"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：150 g。碳酸钙质量 = 样品质量 × 质量分数 = 200 × 75% = 150 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某石灰石样品 50 g，其中碳酸钙的质量分数为 90%，样品中碳酸钙的质量是（ ）",
+      "options": [
+        "45 g",
+        "90 g",
+        "55 g",
+        "35 g"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：45 g。碳酸钙质量 = 样品质量 × 质量分数 = 50 × 90% = 45 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某石灰石样品 400 g，其中碳酸钙的质量分数为 80%，样品中碳酸钙的质量是（ ）",
+      "options": [
+        "640 g",
+        "330 g",
+        "310 g",
+        "320 g"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：320 g。碳酸钙质量 = 样品质量 × 质量分数 = 400 × 80% = 320 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某石灰石样品 25 g，其中碳酸钙的质量分数为 80%，样品中碳酸钙的质量是（ ）",
+      "options": [
+        "30 g",
+        "10 g",
+        "20 g",
+        "40 g"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：20 g。碳酸钙质量 = 样品质量 × 质量分数 = 25 × 80% = 20 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某石灰石样品 160 g，其中碳酸钙的质量分数为 75%，样品中碳酸钙的质量是（ ）",
+      "options": [
+        "110 g",
+        "120 g",
+        "240 g",
+        "130 g"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：120 g。碳酸钙质量 = 样品质量 × 质量分数 = 160 × 75% = 120 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某石灰石样品 300 g，其中碳酸钙的质量分数为 90%，样品中碳酸钙的质量是（ ）",
+      "options": [
+        "270 g",
+        "540 g",
+        "280 g",
+        "260 g"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：270 g。碳酸钙质量 = 样品质量 × 质量分数 = 300 × 90% = 270 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某石灰石样品 80 g，其中碳酸钙的质量分数为 50%，样品中碳酸钙的质量是（ ）",
+      "options": [
+        "80 g",
+        "50 g",
+        "30 g",
+        "40 g"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：40 g。碳酸钙质量 = 样品质量 × 质量分数 = 80 × 50% = 40 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某石灰石样品 120 g，其中碳酸钙的质量分数为 85%，样品中碳酸钙的质量是（ ）",
+      "options": [
+        "112 g",
+        "92 g",
+        "102 g",
+        "204 g"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：102 g。碳酸钙质量 = 样品质量 × 质量分数 = 120 × 85% = 102 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某石灰石样品 250 g，其中碳酸钙的质量分数为 92%，样品中碳酸钙的质量是（ ）",
+      "options": [
+        "220 g",
+        "230 g",
+        "460 g",
+        "240 g"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：230 g。碳酸钙质量 = 样品质量 × 质量分数 = 250 × 92% = 230 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知 CaCO₃ 中钙元素的质量分数为 40%，100 g 碳酸钙中含钙元素的质量是（ ）",
+      "options": [
+        "40 g",
+        "60 g",
+        "80 g",
+        "20 g"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：40 g。钙元素质量 = 碳酸钙质量 × 钙元素质量分数 = 100 × 40% = 40 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知 CaCO₃ 中钙元素的质量分数为 40%，50 g 碳酸钙中含钙元素的质量是（ ）",
+      "options": [
+        "30 g",
+        "40 g",
+        "10 g",
+        "20 g"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：20 g。钙元素质量 = 碳酸钙质量 × 钙元素质量分数 = 50 × 40% = 20 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知 CaCO₃ 中钙元素的质量分数为 40%，200 g 碳酸钙中含钙元素的质量是（ ）",
+      "options": [
+        "160 g",
+        "40 g",
+        "80 g",
+        "120 g"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：80 g。钙元素质量 = 碳酸钙质量 × 钙元素质量分数 = 200 × 40% = 80 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知 CaCO₃ 中钙元素的质量分数为 40%，250 g 碳酸钙中含钙元素的质量是（ ）",
+      "options": [
+        "50 g",
+        "100 g",
+        "150 g",
+        "200 g"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：100 g。钙元素质量 = 碳酸钙质量 × 钙元素质量分数 = 250 × 40% = 100 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知 CaCO₃ 中钙元素的质量分数为 40%，20 g 碳酸钙中含钙元素的质量是（ ）",
+      "options": [
+        "8 g",
+        "12 g",
+        "16 g",
+        "4 g"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：8 g。钙元素质量 = 碳酸钙质量 × 钙元素质量分数 = 20 × 40% = 8 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知 CaCO₃ 中钙元素的质量分数为 40%，500 g 碳酸钙中含钙元素的质量是（ ）",
+      "options": [
+        "300 g",
+        "400 g",
+        "100 g",
+        "200 g"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：200 g。钙元素质量 = 碳酸钙质量 × 钙元素质量分数 = 500 × 40% = 200 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知 CaCO₃ 中钙元素的质量分数为 40%，40 g 碳酸钙中含钙元素的质量是（ ）",
+      "options": [
+        "32 g",
+        "8 g",
+        "16 g",
+        "24 g"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：16 g。钙元素质量 = 碳酸钙质量 × 钙元素质量分数 = 40 × 40% = 16 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知 CaCO₃ 中钙元素的质量分数为 40%，150 g 碳酸钙中含钙元素的质量是（ ）",
+      "options": [
+        "30 g",
+        "60 g",
+        "90 g",
+        "120 g"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：60 g。钙元素质量 = 碳酸钙质量 × 钙元素质量分数 = 150 × 40% = 60 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知 CaCO₃ 中钙元素的质量分数为 40%，80 g 碳酸钙中含钙元素的质量是（ ）",
+      "options": [
+        "32 g",
+        "48 g",
+        "64 g",
+        "16 g"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：32 g。钙元素质量 = 碳酸钙质量 × 钙元素质量分数 = 80 × 40% = 32 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-化学-7",
+      "chapterName": "化学计算综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知 CaCO₃ 中钙元素的质量分数为 40%，300 g 碳酸钙中含钙元素的质量是（ ）",
+      "options": [
+        "180 g",
+        "240 g",
+        "60 g",
+        "120 g"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：120 g。钙元素质量 = 碳酸钙质量 × 钙元素质量分数 = 300 × 40% = 120 g。",
+      "difficulty": 2
     }
   ]
 }

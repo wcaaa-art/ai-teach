@@ -6,9 +6,9 @@
     "id": "初三-物理-1",
     "name": "浮力与压强综合"
   },
-  "generatedAt": "2026-11-13T02:47:26.239Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.218Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedm1h6",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：根据压力差法，浮力等于液体对物体下表面向上的压力减去上表面向下的压力，F_{浮}=15 N-6 N=9 N；浮力方向竖直向上。\nB. 错误：把下表面和上表面受到的压力相加成21 N，浮力不是两压力的合力大小，且方向判断也不对。\nC. 错误：大小虽为9 N，但浮力方向应竖直向上，不是竖直向下。\nD. 错误：只取了下表面压力15 N，遗漏了上表面6 N的向下压力。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "体积为 0.002 m³ 的物体浸没在密度为 1000 kg/m³ 的液体中，受到的浮力是（g 取 10 N/kg）（ ）",
+      "options": [
+        "20 N",
+        "40 N",
+        "10 N",
+        "30 N"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：20 N。F浮 = ρ液gV排 = 1000 × 10 × 0.002 = 20 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "体积为 0.005 m³ 的物体浸没在密度为 1000 kg/m³ 的液体中，受到的浮力是（g 取 10 N/kg）（ ）",
+      "options": [
+        "100 N",
+        "25 N",
+        "75 N",
+        "50 N"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：50 N。F浮 = ρ液gV排 = 1000 × 10 × 0.005 = 50 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "体积为 0.01 m³ 的物体浸没在密度为 1000 kg/m³ 的液体中，受到的浮力是（g 取 10 N/kg）（ ）",
+      "options": [
+        "50 N",
+        "150 N",
+        "100 N",
+        "200 N"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：100 N。F浮 = ρ液gV排 = 1000 × 10 × 0.01 = 100 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "体积为 0.002 m³ 的物体浸没在密度为 800 kg/m³ 的液体中，受到的浮力是（g 取 10 N/kg）（ ）",
+      "options": [
+        "24 N",
+        "16 N",
+        "32 N",
+        "8 N"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：16 N。F浮 = ρ液gV排 = 800 × 10 × 0.002 = 16 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "体积为 0.005 m³ 的物体浸没在密度为 800 kg/m³ 的液体中，受到的浮力是（g 取 10 N/kg）（ ）",
+      "options": [
+        "40 N",
+        "80 N",
+        "20 N",
+        "60 N"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：40 N。F浮 = ρ液gV排 = 800 × 10 × 0.005 = 40 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "体积为 0.001 m³ 的物体浸没在密度为 1030 kg/m³ 的液体中，受到的浮力是（g 取 10 N/kg）（ ）",
+      "options": [
+        "20.6 N",
+        "5.15 N",
+        "15.45 N",
+        "10.3 N"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：10.3 N。F浮 = ρ液gV排 = 1030 × 10 × 0.001 = 10.3 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "体积为 0.0005 m³ 的物体浸没在密度为 1000 kg/m³ 的液体中，受到的浮力是（g 取 10 N/kg）（ ）",
+      "options": [
+        "2.5 N",
+        "7.5 N",
+        "5 N",
+        "10 N"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：5 N。F浮 = ρ液gV排 = 1000 × 10 × 0.0005 = 5 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "体积为 0.01 m³ 的物体浸没在密度为 800 kg/m³ 的液体中，受到的浮力是（g 取 10 N/kg）（ ）",
+      "options": [
+        "120 N",
+        "80 N",
+        "160 N",
+        "40 N"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：80 N。F浮 = ρ液gV排 = 800 × 10 × 0.01 = 80 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "体积为 0.002 m³ 的物体浸没在密度为 1030 kg/m³ 的液体中，受到的浮力是（g 取 10 N/kg）（ ）",
+      "options": [
+        "20.6 N",
+        "41.2 N",
+        "10.3 N",
+        "30.9 N"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：20.6 N。F浮 = ρ液gV排 = 1030 × 10 × 0.002 = 20.6 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "体积为 0.003 m³ 的物体浸没在密度为 1000 kg/m³ 的液体中，受到的浮力是（g 取 10 N/kg）（ ）",
+      "options": [
+        "60 N",
+        "15 N",
+        "45 N",
+        "30 N"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：30 N。F浮 = ρ液gV排 = 1000 × 10 × 0.003 = 30 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "密度为 1000 kg/m³ 的液体中，深度 0.2 m 处的压强是（g 取 10 N/kg）（ ）",
+      "options": [
+        "1000 Pa",
+        "3000 Pa",
+        "2000 Pa",
+        "4000 Pa"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：2000 Pa。p = ρgh = 1000 × 10 × 0.2 = 2000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "密度为 1000 kg/m³ 的液体中，深度 0.5 m 处的压强是（g 取 10 N/kg）（ ）",
+      "options": [
+        "6000 Pa",
+        "5000 Pa",
+        "10000 Pa",
+        "2500 Pa"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：5000 Pa。p = ρgh = 1000 × 10 × 0.5 = 5000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "密度为 1000 kg/m³ 的液体中，深度 1 m 处的压强是（g 取 10 N/kg）（ ）",
+      "options": [
+        "10000 Pa",
+        "20000 Pa",
+        "5000 Pa",
+        "11000 Pa"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：10000 Pa。p = ρgh = 1000 × 10 × 1 = 10000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "密度为 1000 kg/m³ 的液体中，深度 1.5 m 处的压强是（g 取 10 N/kg）（ ）",
+      "options": [
+        "30000 Pa",
+        "7500 Pa",
+        "16000 Pa",
+        "15000 Pa"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：15000 Pa。p = ρgh = 1000 × 10 × 1.5 = 15000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "密度为 800 kg/m³ 的液体中，深度 0.5 m 处的压强是（g 取 10 N/kg）（ ）",
+      "options": [
+        "2000 Pa",
+        "5000 Pa",
+        "4000 Pa",
+        "8000 Pa"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：4000 Pa。p = ρgh = 800 × 10 × 0.5 = 4000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "密度为 800 kg/m³ 的液体中，深度 1 m 处的压强是（g 取 10 N/kg）（ ）",
+      "options": [
+        "9000 Pa",
+        "8000 Pa",
+        "16000 Pa",
+        "4000 Pa"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：8000 Pa。p = ρgh = 800 × 10 × 1 = 8000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "密度为 1030 kg/m³ 的液体中，深度 0.5 m 处的压强是（g 取 10 N/kg）（ ）",
+      "options": [
+        "5150 Pa",
+        "10300 Pa",
+        "2575 Pa",
+        "6150 Pa"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：5150 Pa。p = ρgh = 1030 × 10 × 0.5 = 5150 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "密度为 1000 kg/m³ 的液体中，深度 2 m 处的压强是（g 取 10 N/kg）（ ）",
+      "options": [
+        "40000 Pa",
+        "10000 Pa",
+        "21000 Pa",
+        "20000 Pa"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：20000 Pa。p = ρgh = 1000 × 10 × 2 = 20000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "密度为 800 kg/m³ 的液体中，深度 2 m 处的压强是（g 取 10 N/kg）（ ）",
+      "options": [
+        "8000 Pa",
+        "17000 Pa",
+        "16000 Pa",
+        "32000 Pa"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：16000 Pa。p = ρgh = 800 × 10 × 2 = 16000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "密度为 1030 kg/m³ 的液体中，深度 1 m 处的压强是（g 取 10 N/kg）（ ）",
+      "options": [
+        "11300 Pa",
+        "10300 Pa",
+        "20600 Pa",
+        "5150 Pa"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：10300 Pa。p = ρgh = 1030 × 10 × 1 = 10300 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "method",
+      "stem": "质量为 20 kg 的物体放在面积为 0.02 m² 的水平桌面上，它对桌面的压强是（g 取 10 N/kg）（ ）",
+      "options": [
+        "10000 Pa",
+        "1000 Pa",
+        "20000 Pa",
+        "5000 Pa"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：10000 Pa。压力等于重力 F = mg = 200 N，p = F/S = 200 ÷ 0.02 = 10000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "method",
+      "stem": "质量为 40 kg 的物体放在面积为 0.05 m² 的水平桌面上，它对桌面的压强是（g 取 10 N/kg）（ ）",
+      "options": [
+        "800 Pa",
+        "16000 Pa",
+        "4000 Pa",
+        "8000 Pa"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：8000 Pa。压力等于重力 F = mg = 400 N，p = F/S = 400 ÷ 0.05 = 8000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "method",
+      "stem": "质量为 60 kg 的物体放在面积为 0.03 m² 的水平桌面上，它对桌面的压强是（g 取 10 N/kg）（ ）",
+      "options": [
+        "40000 Pa",
+        "10000 Pa",
+        "20000 Pa",
+        "2000 Pa"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：20000 Pa。压力等于重力 F = mg = 600 N，p = F/S = 600 ÷ 0.03 = 20000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "method",
+      "stem": "质量为 10 kg 的物体放在面积为 0.01 m² 的水平桌面上，它对桌面的压强是（g 取 10 N/kg）（ ）",
+      "options": [
+        "5000 Pa",
+        "10000 Pa",
+        "1000 Pa",
+        "20000 Pa"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：10000 Pa。压力等于重力 F = mg = 100 N，p = F/S = 100 ÷ 0.01 = 10000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "method",
+      "stem": "质量为 30 kg 的物体放在面积为 0.06 m² 的水平桌面上，它对桌面的压强是（g 取 10 N/kg）（ ）",
+      "options": [
+        "5000 Pa",
+        "500 Pa",
+        "10000 Pa",
+        "2500 Pa"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：5000 Pa。压力等于重力 F = mg = 300 N，p = F/S = 300 ÷ 0.06 = 5000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "method",
+      "stem": "质量为 50 kg 的物体放在面积为 0.02 m² 的水平桌面上，它对桌面的压强是（g 取 10 N/kg）（ ）",
+      "options": [
+        "2500 Pa",
+        "50000 Pa",
+        "12500 Pa",
+        "25000 Pa"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：25000 Pa。压力等于重力 F = mg = 500 N，p = F/S = 500 ÷ 0.02 = 25000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "method",
+      "stem": "质量为 80 kg 的物体放在面积为 0.04 m² 的水平桌面上，它对桌面的压强是（g 取 10 N/kg）（ ）",
+      "options": [
+        "40000 Pa",
+        "10000 Pa",
+        "20000 Pa",
+        "2000 Pa"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：20000 Pa。压力等于重力 F = mg = 800 N，p = F/S = 800 ÷ 0.04 = 20000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "method",
+      "stem": "质量为 5 kg 的物体放在面积为 0.005 m² 的水平桌面上，它对桌面的压强是（g 取 10 N/kg）（ ）",
+      "options": [
+        "5000 Pa",
+        "10000 Pa",
+        "1000 Pa",
+        "20000 Pa"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：10000 Pa。压力等于重力 F = mg = 50 N，p = F/S = 50 ÷ 0.005 = 10000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "method",
+      "stem": "质量为 12 kg 的物体放在面积为 0.04 m² 的水平桌面上，它对桌面的压强是（g 取 10 N/kg）（ ）",
+      "options": [
+        "3000 Pa",
+        "300 Pa",
+        "6000 Pa",
+        "1500 Pa"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：3000 Pa。压力等于重力 F = mg = 120 N，p = F/S = 120 ÷ 0.04 = 3000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-物理-1",
+      "chapterName": "浮力与压强综合",
+      "type": "single",
+      "dimension": "method",
+      "stem": "质量为 90 kg 的物体放在面积为 0.09 m² 的水平桌面上，它对桌面的压强是（g 取 10 N/kg）（ ）",
+      "options": [
+        "1000 Pa",
+        "20000 Pa",
+        "5000 Pa",
+        "10000 Pa"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：10000 Pa。压力等于重力 F = mg = 900 N，p = F/S = 900 ÷ 0.09 = 10000 Pa。",
+      "difficulty": 2
     }
   ]
 }

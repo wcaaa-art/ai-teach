@@ -6,9 +6,9 @@
     "id": "初一-数学-5",
     "name": "相交线与平行线"
   },
-  "generatedAt": "2026-11-13T02:43:31.319Z",
-  "source": "deepseek-with-local-fill",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.132Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedgptm",
@@ -179,6 +179,516 @@
       ],
       "correctIndex": 1,
       "explanation": "两直线平行时同旁内角互补，180° − 65° = 115°。"
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "两条直线相交，其中一个角为 40°，与它相邻的邻补角是（ ）",
+      "options": [
+        "140",
+        "40",
+        "50",
+        "220"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：140。邻补角互补：180° - 40° = 140°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "两条直线相交，其中一个角为 55°，与它相邻的邻补角是（ ）",
+      "options": [
+        "55",
+        "35",
+        "235",
+        "125"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：125。邻补角互补：180° - 55° = 125°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "两条直线相交，其中一个角为 72°，与它相邻的邻补角是（ ）",
+      "options": [
+        "18",
+        "252",
+        "108",
+        "72"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：108。邻补角互补：180° - 72° = 108°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "两条直线相交，其中一个角为 28°，与它相邻的邻补角是（ ）",
+      "options": [
+        "208",
+        "152",
+        "28",
+        "62"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：152。邻补角互补：180° - 28° = 152°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "两条直线相交，其中一个角为 63°，与它相邻的邻补角是（ ）",
+      "options": [
+        "117",
+        "63",
+        "27",
+        "243"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：117。邻补角互补：180° - 63° = 117°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "两条直线相交，其中一个角为 35°，与它相邻的邻补角是（ ）",
+      "options": [
+        "35",
+        "55",
+        "215",
+        "145"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：145。邻补角互补：180° - 35° = 145°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "两条直线相交，其中一个角为 81°，与它相邻的邻补角是（ ）",
+      "options": [
+        "9",
+        "261",
+        "99",
+        "81"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：99。邻补角互补：180° - 81° = 99°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "两条直线相交，其中一个角为 49°，与它相邻的邻补角是（ ）",
+      "options": [
+        "229",
+        "131",
+        "49",
+        "41"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：131。邻补角互补：180° - 49° = 131°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "两条直线相交，其中一个角为 26°，与它相邻的邻补角是（ ）",
+      "options": [
+        "154",
+        "26",
+        "64",
+        "206"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：154。邻补角互补：180° - 26° = 154°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "两条直线相交，其中一个角为 74°，与它相邻的邻补角是（ ）",
+      "options": [
+        "74",
+        "16",
+        "254",
+        "106"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：106。邻补角互补：180° - 74° = 106°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "直线 a ∥ b，一条截线与它们相交。若其中一个同旁内角为 65°，则另一个同旁内角为（ ）",
+      "options": [
+        "125",
+        "105",
+        "115",
+        "65"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：115。两直线平行，同旁内角互补：180° - 65° = 115°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "直线 a ∥ b，一条截线与它们相交。若其中一个同旁内角为 48°，则另一个同旁内角为（ ）",
+      "options": [
+        "122",
+        "132",
+        "48",
+        "142"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：132。两直线平行，同旁内角互补：180° - 48° = 132°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "直线 a ∥ b，一条截线与它们相交。若其中一个同旁内角为 112°，则另一个同旁内角为（ ）",
+      "options": [
+        "68",
+        "112",
+        "78",
+        "58"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：68。两直线平行，同旁内角互补：180° - 112° = 68°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "直线 a ∥ b，一条截线与它们相交。若其中一个同旁内角为 75°，则另一个同旁内角为（ ）",
+      "options": [
+        "75",
+        "115",
+        "95",
+        "105"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：105。两直线平行，同旁内角互补：180° - 75° = 105°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "直线 a ∥ b，一条截线与它们相交。若其中一个同旁内角为 37°，则另一个同旁内角为（ ）",
+      "options": [
+        "153",
+        "133",
+        "143",
+        "37"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：143。两直线平行，同旁内角互补：180° - 37° = 143°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "直线 a ∥ b，一条截线与它们相交。若其中一个同旁内角为 124°，则另一个同旁内角为（ ）",
+      "options": [
+        "46",
+        "56",
+        "124",
+        "66"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：56。两直线平行，同旁内角互补：180° - 124° = 56°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "直线 a ∥ b，一条截线与它们相交。若其中一个同旁内角为 58°，则另一个同旁内角为（ ）",
+      "options": [
+        "122",
+        "58",
+        "132",
+        "112"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：122。两直线平行，同旁内角互补：180° - 58° = 122°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "直线 a ∥ b，一条截线与它们相交。若其中一个同旁内角为 96°，则另一个同旁内角为（ ）",
+      "options": [
+        "96",
+        "94",
+        "74",
+        "84"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：84。两直线平行，同旁内角互补：180° - 96° = 84°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "直线 a ∥ b，一条截线与它们相交。若其中一个同旁内角为 143°，则另一个同旁内角为（ ）",
+      "options": [
+        "47",
+        "27",
+        "37",
+        "143"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：37。两直线平行，同旁内角互补：180° - 143° = 37°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "直线 a ∥ b，一条截线与它们相交。若其中一个同旁内角为 82°，则另一个同旁内角为（ ）",
+      "options": [
+        "88",
+        "98",
+        "82",
+        "108"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：98。两直线平行，同旁内角互补：180° - 82° = 98°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "两条平行线之间有一条折线，折线在两条平行线处的内角分别为 70° 和 150°，则折线的拐角是（ ）",
+      "options": [
+        "220",
+        "80",
+        "110",
+        "140"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：220。过拐点作平行线，拐角被分成两个内错角，分别等于 70° 和 150°，所以拐角为 70° + 150° = 220°。",
+      "difficulty": 3
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "两条平行线之间有一条折线，折线在两条平行线处的内角分别为 110° 和 140°，则折线的拐角是（ ）",
+      "options": [
+        "30",
+        "70",
+        "110",
+        "250"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：250。过拐点作平行线，拐角被分成两个内错角，分别等于 110° 和 140°，所以拐角为 110° + 140° = 250°。",
+      "difficulty": 3
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "两条平行线之间有一条折线，折线在两条平行线处的内角分别为 85° 和 95°，则折线的拐角是（ ）",
+      "options": [
+        "95",
+        "181",
+        "180",
+        "10"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：180。过拐点作平行线，拐角被分成两个内错角，分别等于 85° 和 95°，所以拐角为 85° + 95° = 180°。",
+      "difficulty": 3
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "两条平行线之间有一条折线，折线在两条平行线处的内角分别为 125° 和 115°，则折线的拐角是（ ）",
+      "options": [
+        "120",
+        "240",
+        "10",
+        "55"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：240。过拐点作平行线，拐角被分成两个内错角，分别等于 125° 和 115°，所以拐角为 125° + 115° = 240°。",
+      "difficulty": 3
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "两条平行线之间有一条折线，折线在两条平行线处的内角分别为 60° 和 120°，则折线的拐角是（ ）",
+      "options": [
+        "180",
+        "60",
+        "120",
+        "181"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：180。过拐点作平行线，拐角被分成两个内错角，分别等于 60° 和 120°，所以拐角为 60° + 120° = 180°。",
+      "difficulty": 3
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "两条平行线之间有一条折线，折线在两条平行线处的内角分别为 100° 和 80°，则折线的拐角是（ ）",
+      "options": [
+        "20",
+        "80",
+        "181",
+        "180"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：180。过拐点作平行线，拐角被分成两个内错角，分别等于 100° 和 80°，所以拐角为 100° + 80° = 180°。",
+      "difficulty": 3
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "两条平行线之间有一条折线，折线在两条平行线处的内角分别为 135° 和 45°，则折线的拐角是（ ）",
+      "options": [
+        "45",
+        "181",
+        "180",
+        "90"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：180。过拐点作平行线，拐角被分成两个内错角，分别等于 135° 和 45°，所以拐角为 135° + 45° = 180°。",
+      "difficulty": 3
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "两条平行线之间有一条折线，折线在两条平行线处的内角分别为 45° 和 135°，则折线的拐角是（ ）",
+      "options": [
+        "181",
+        "180",
+        "90",
+        "135"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：180。过拐点作平行线，拐角被分成两个内错角，分别等于 45° 和 135°，所以拐角为 45° + 135° = 180°。",
+      "difficulty": 3
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "两条平行线之间有一条折线，折线在两条平行线处的内角分别为 150° 和 30°，则折线的拐角是（ ）",
+      "options": [
+        "180",
+        "120",
+        "30",
+        "181"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：180。过拐点作平行线，拐角被分成两个内错角，分别等于 150° 和 30°，所以拐角为 150° + 30° = 180°。",
+      "difficulty": 3
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-数学-5",
+      "chapterName": "相交线与平行线",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "两条平行线之间有一条折线，折线在两条平行线处的内角分别为 75° 和 105°，则折线的拐角是（ ）",
+      "options": [
+        "30",
+        "105",
+        "181",
+        "180"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：180。过拐点作平行线，拐角被分成两个内错角，分别等于 75° 和 105°，所以拐角为 75° + 105° = 180°。",
+      "difficulty": 3
     }
   ]
 }

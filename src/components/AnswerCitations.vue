@@ -55,7 +55,7 @@ const items = computed(() => {
         <p class="citation-pop-title">{{ item.title }}</p>
         <p class="citation-pop-detail">{{ item.detail }}</p>
         <p v-if="item.snippet" class="citation-pop-snippet">{{ item.snippet }}</p>
-        <p v-if="item.lowQuality" class="citation-pop-note">该片段公式抽取不完整，仅作出处参考。</p>
+        <p v-if="item.lowQuality" class="citation-pop-note">该片段公式抽取不完整，仅作出处参考</p>
       </div>
     </el-popover>
   </div>

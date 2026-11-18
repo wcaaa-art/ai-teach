@@ -65,27 +65,27 @@ export function examAverageRate(sessions) {
 export function learningSuggestions({ results, mistakes, examSessions, accuracy }) {
   const list = []
   if (!results.length && !examSessions.length) {
-    list.push('这个时间窗内还没有测试或考试记录，先完成一次章节测试，学习效果才有数据可看。')
+    list.push('这个时间窗内还没有测试或考试记录，先完成一次章节测试，学习效果才有数据可看')
   }
   const weakest = subjectAccuracyRows(results)[0]
   if (weakest && weakest.questions >= 3 && weakest.accuracy < 75) {
-    list.push(`${weakest.subject}章节测试平均正确率 ${weakest.accuracy}%，建议先回到概念和例题，再做一次同章测试。`)
+    list.push(`${weakest.subject}章节测试平均正确率 ${weakest.accuracy}%，建议先回到概念和例题，再做一次同章测试`)
   }
   const topWrong = wrongChapterRows(mistakes, 1)[0]
   if (topWrong && topWrong.count >= 2) {
-    list.push(`错题集中在「${topWrong.name}」（${topWrong.count} 道），优先安排一次 25 分钟错题复盘。`)
+    list.push(`错题集中在「${topWrong.name}」（${topWrong.count} 道），优先安排一次 25 分钟错题复盘`)
   }
   if (examSessions.length >= 2) {
     const latest = examSessions[examSessions.length - 1]
     const previous = examSessions[examSessions.length - 2]
     const latestRate = Math.round(latest.score / latest.full * 100)
     const previousRate = Math.round(previous.score / previous.full * 100)
-    if (latestRate - previousRate >= 5) list.push(`最近一次「${latest.name}」得分率 ${latestRate}%，比上次高 ${latestRate - previousRate} 个百分点，保持当前节奏。`)
-    else if (previousRate - latestRate >= 5) list.push(`最近一次「${latest.name}」得分率比上次低 ${previousRate - latestRate} 个百分点，建议对照错题定位失分章节。`)
+    if (latestRate - previousRate >= 5) list.push(`最近一次「${latest.name}」得分率 ${latestRate}%，比上次高 ${latestRate - previousRate} 个百分点，保持当前节奏`)
+    else if (previousRate - latestRate >= 5) list.push(`最近一次「${latest.name}」得分率比上次低 ${previousRate - latestRate} 个百分点，建议对照错题定位失分章节`)
   }
   if (!list.length) {
-    if (accuracy >= 80) list.push(`最近测试平均正确率 ${accuracy}%，基础较稳，可以把时间转向迁移题和错题复盘。`)
-    else list.push('继续积累测试与考试记录，看板会随数据给出更具体的下一步。')
+    if (accuracy >= 80) list.push(`最近测试平均正确率 ${accuracy}%，基础较稳，可以把时间转向迁移题和错题复盘`)
+    else list.push('继续积累测试与考试记录，看板会随数据给出更具体的下一步')
   }
   return list.slice(0, 3)
 }

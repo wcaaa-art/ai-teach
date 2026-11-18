@@ -20,7 +20,7 @@ function shortDuration(seconds) {
 <template>
   <el-dialog :model-value="modelValue" title="专注回顾" width="600px" :close-on-click-modal="true" @update:model-value="emit('update:modelValue', $event)">
     <div v-if="!records.length" class="history-empty">
-      还没有专注记录，完成第一轮专注后这里会出现你的节奏。
+      还没有专注记录，完成第一轮专注后这里会出现你的节奏
     </div>
     <div v-else class="history-list">
       <div v-for="record in records" :key="record.id" class="history-row">

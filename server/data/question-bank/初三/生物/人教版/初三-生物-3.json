@@ -6,9 +6,9 @@
     "id": "初三-生物-3",
     "name": "生物的进化"
   },
-  "generatedAt": "2026-11-14T12:18:22.379Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.825Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdgd9l",
@@ -179,6 +179,516 @@
       "correctIndex": 2,
       "explanation": "A. 错误：越古老的地层中，化石所代表的生物通常结构越简单、分类地位越低等，而不是越复杂。\nB. 错误：同种生物在不同地层中形成的化石可能因年代和环境不同而存在差异，不能认为完全相同。\nC. 正确：化石保存了不同年代生物的形态结构信息，通过比较不同地层中的化石，可以了解生物形态结构随时间发生的变化。\nD. 错误：植物、无脊椎动物等类群的化石同样可以作为生物进化的证据，并非只有脊椎动物化石才有价值。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "研究生物进化最直接、最重要的证据是（　　）",
+      "options": [
+        "化石",
+        "比较解剖学证据",
+        "胚胎学证据",
+        "分子生物学证据"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：化石。按生物进化的证据判断，本题正确答案是「化石」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "化石是指（　　）",
+      "options": [
+        "现代生物的标本",
+        "人工制造的模型",
+        "岩石中的矿物晶体",
+        "保存在地层中的古代生物的遗体、遗物或生活痕迹"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：保存在地层中的古代生物的遗体、遗物或生活痕迹。按生物进化的证据判断，本题正确答案是「保存在地层中的古代生物的遗体、遗物或生活痕迹」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "越古老的地层中，化石生物一般（　　）",
+      "options": [
+        "与现代生物完全相同",
+        "都是陆生生物",
+        "越简单、越低等",
+        "越复杂、越高等"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：越简单、越低等。按生物进化的证据判断，本题正确答案是「越简单、越低等」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "越晚近的地层中，化石生物一般（　　）",
+      "options": [
+        "数量越少",
+        "越复杂、越高等",
+        "越简单、越低等",
+        "都是水生生物"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：越复杂、越高等。按生物进化的证据判断，本题正确答案是「越复杂、越高等」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "始祖鸟化石既有爬行动物特征，又有鸟类特征，说明（　　）",
+      "options": [
+        "鸟类可能是由爬行动物进化而来的",
+        "鸟类由两栖动物进化而来",
+        "爬行动物由鸟类进化而来",
+        "鸟类和爬行动物没有亲缘关系"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：鸟类可能是由爬行动物进化而来的。按生物进化的证据判断，本题正确答案是「鸟类可能是由爬行动物进化而来的」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "比较不同生物的胚胎发育，发现早期胚胎相似，这属于（　　）",
+      "options": [
+        "化石证据",
+        "分子生物学证据",
+        "古生物学证据",
+        "胚胎学证据"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：胚胎学证据。按生物进化的证据判断，本题正确答案是「胚胎学证据」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "通过比较不同生物的DNA和蛋白质，可以为进化提供（　　）",
+      "options": [
+        "胚胎学证据",
+        "形态学证据",
+        "分子生物学证据",
+        "化石证据"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：分子生物学证据。按生物进化的证据判断，本题正确答案是「分子生物学证据」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "生物进化的总体趋势是（　　）",
+      "options": [
+        "由多细胞到单细胞",
+        "由简单到复杂、由低等到高等、由水生到陆生",
+        "由复杂到简单、由高等到低等",
+        "由陆生到水生"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：由简单到复杂、由低等到高等、由水生到陆生。按生物进化的证据判断，本题正确答案是「由简单到复杂、由低等到高等、由水生到陆生」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列生物类群中，结构最简单的是（　　）",
+      "options": [
+        "单细胞藻类",
+        "蕨类植物",
+        "裸子植物",
+        "被子植物"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：单细胞藻类。按生物进化的证据判断，本题正确答案是「单细胞藻类」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "脊椎动物进化的顺序大致是（　　）",
+      "options": [
+        "鸟类→鱼类→两栖类→哺乳类",
+        "哺乳类→爬行类→鱼类→两栖类",
+        "两栖类→鱼类→鸟类→爬行类",
+        "鱼类→两栖类→爬行类→鸟类和哺乳类"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：鱼类→两栖类→爬行类→鸟类和哺乳类。按生物进化的证据判断，本题正确答案是「鱼类→两栖类→爬行类→鸟类和哺乳类」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "自然选择学说的提出者是（　　）",
+      "options": [
+        "林奈",
+        "沃森",
+        "达尔文",
+        "孟德尔"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：达尔文。按自然选择学说判断，本题正确答案是「达尔文」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "自然选择学说认为，生物进化的基础是（　　）",
+      "options": [
+        "生物的过度繁殖",
+        "生物的遗传和变异",
+        "环境的变化",
+        "人类的选择"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：生物的遗传和变异。按自然选择学说判断，本题正确答案是「生物的遗传和变异」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "自然选择学说中，生物生存斗争的原因是（　　）",
+      "options": [
+        "生物过度繁殖与有限的生活条件之间的矛盾",
+        "生物不能繁殖",
+        "环境永远不变",
+        "生物之间没有差异"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：生物过度繁殖与有限的生活条件之间的矛盾。按自然选择学说判断，本题正确答案是「生物过度繁殖与有限的生活条件之间的矛盾」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在自然选择中，适者生存是指（　　）",
+      "options": [
+        "所有个体都能生存",
+        "个体大小决定生存",
+        "人类决定哪种生物生存",
+        "具有有利变异的个体容易生存并繁殖后代"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：具有有利变异的个体容易生存并繁殖后代。按自然选择学说判断，本题正确答案是「具有有利变异的个体容易生存并繁殖后代」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "长颈鹿长颈的形成，按自然选择学说解释是（　　）",
+      "options": [
+        "环境使脖子不断变长",
+        "人工选择的结果",
+        "颈长的个体能获得更多食物，生存并繁殖后代",
+        "为了吃到高处树叶而主动伸长脖子"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：颈长的个体能获得更多食物，生存并繁殖后代。按自然选择学说判断，本题正确答案是「颈长的个体能获得更多食物，生存并繁殖后代」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "细菌抗药性的形成是（　　）",
+      "options": [
+        "细菌为了生存而学习",
+        "自然选择的结果",
+        "细菌主动产生抗药性",
+        "药物使细菌定向变异"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：自然选择的结果。按自然选择学说判断，本题正确答案是「自然选择的结果」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "自然选择的方向由（　　）决定",
+      "options": [
+        "环境条件",
+        "生物的主观愿望",
+        "遗传物质",
+        "人类的喜好"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：环境条件。按自然选择学说判断，本题正确答案是「环境条件」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "变异是（　　）的，自然选择是（　　）的",
+      "options": [
+        "定向；不定向",
+        "不定向；不定向",
+        "定向；定向",
+        "不定向；定向"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：不定向；定向。按自然选择学说判断，本题正确答案是「不定向；定向」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "保护色的形成过程是（　　）",
+      "options": [
+        "环境直接改变遗传物质",
+        "人工选择的结果",
+        "自然选择的结果",
+        "生物主动改变体色"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：自然选择的结果。按自然选择学说判断，本题正确答案是「自然选择的结果」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "人工选择与自然选择的共同点是（　　）",
+      "options": [
+        "都不需要遗传变异",
+        "都是以生物的变异为基础进行选择",
+        "都由自然环境决定",
+        "都能产生新物种"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：都是以生物的变异为基础进行选择。按自然选择学说判断，本题正确答案是「都是以生物的变异为基础进行选择」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "人类和现代类人猿的共同祖先是（　　）",
+      "options": [
+        "森林古猿",
+        "北京猿人",
+        "南方古猿",
+        "智人"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：森林古猿。按人类起源与进化历程判断，本题正确答案是「森林古猿」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "人类进化过程中，具有决定意义的一步是（　　）",
+      "options": [
+        "脑容量增大",
+        "制造工具",
+        "语言的产生",
+        "直立行走"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：直立行走。按人类起源与进化历程判断，本题正确答案是「直立行走」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "人类进化过程中，促进脑发育和语言产生的重要活动是（　　）",
+      "options": [
+        "长期爬行",
+        "减少食物摄入",
+        "制造和使用工具、集体劳动",
+        "单独生活"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：制造和使用工具、集体劳动。按人类起源与进化历程判断，本题正确答案是「制造和使用工具、集体劳动」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "人类进化的大致历程是（　　）",
+      "options": [
+        "直立人→智人→南方古猿→能人",
+        "南方古猿→能人→直立人→智人",
+        "智人→直立人→能人→南方古猿",
+        "能人→南方古猿→智人→直立人"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：南方古猿→能人→直立人→智人。按人类起源与进化历程判断，本题正确答案是「南方古猿→能人→直立人→智人」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "北京猿人属于（　　）",
+      "options": [
+        "直立人",
+        "南方古猿",
+        "能人",
+        "智人"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：直立人。按人类起源与进化历程判断，本题正确答案是「直立人」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "人类与现代类人猿的重要区别是（　　）",
+      "options": [
+        "人类没有尾巴",
+        "类人猿不会使用工具",
+        "人类不属于哺乳动物",
+        "人类能直立行走并制造和使用工具"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：人类能直立行走并制造和使用工具。按人类起源与进化历程判断，本题正确答案是「人类能直立行走并制造和使用工具」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "人类起源和发展的证据主要来自（　　）",
+      "options": [
+        "历史文献",
+        "现代动物行为",
+        "化石",
+        "神话传说"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：化石。按人类起源与进化历程判断，本题正确答案是「化石」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "人类进化过程中，脑容量变化的总趋势是（　　）",
+      "options": [
+        "先减小后不变",
+        "逐渐增大",
+        "逐渐减小",
+        "保持不变"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：逐渐增大。按人类起源与进化历程判断，本题正确答案是「逐渐增大」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "语言的形成对人类进化的意义是（　　）",
+      "options": [
+        "有利于个体间交流经验、合作劳动",
+        "使人类不再需要工具",
+        "使人类脑容量减小",
+        "使人类不能直立行走"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：有利于个体间交流经验、合作劳动。按人类起源与进化历程判断，本题正确答案是「有利于个体间交流经验、合作劳动」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-生物-3",
+      "chapterName": "生物的进化",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "现代类人猿和人类的共同特征是（　　）",
+      "options": [
+        "都能直立行走",
+        "都能制造工具",
+        "都没有体毛",
+        "都属于哺乳动物，具有相似的早期胚胎发育过程"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：都属于哺乳动物，具有相似的早期胚胎发育过程。按人类起源与进化历程判断，本题正确答案是「都属于哺乳动物，具有相似的早期胚胎发育过程」。",
+      "difficulty": 2
     }
   ]
 }

@@ -6,9 +6,9 @@
     "id": "初三-数学-7",
     "name": "概率与统计综合"
   },
-  "generatedAt": "2026-11-13T02:47:05.314Z",
-  "source": "deepseek-with-local-fill",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.195Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedlu8v",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：0.30=\\frac{12}{40}，只统计了4≤t<6这一组的人数，漏掉了6≤t<8的8人。\nB. 正确：阅读时间不少于4小时包括4≤t<6和6≤t<8两组，共12+8=20人，频率为\\frac{20}{40}=0.50，因此用频率估计概率为0.50。\nC. 错误：0.65=\\frac{14+12}{40}，把2≤t<4这一组也计入了“不少于4小时”，但该组不满足t≥4，与题意冲突。\nD. 错误：0.80=\\frac{6+14+12}{40}，计算的是t<6的累计人数所占比例，并不是阅读时间不少于4小时的概率。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一个不透明的袋子里有 2 个红球和 3 个白球，除颜色外都相同，随机摸出一个球是红球的概率是（ ）",
+      "options": [
+        "2/5",
+        "3/5",
+        "2/3",
+        "5/2"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：2/5。概率 = 红球数 ÷ 球的总数 = 2/5。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一个不透明的袋子里有 3 个红球和 5 个白球，除颜色外都相同，随机摸出一个球是红球的概率是（ ）",
+      "options": [
+        "5/8",
+        "3/5",
+        "8/3",
+        "3/8"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：3/8。概率 = 红球数 ÷ 球的总数 = 3/8。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一个不透明的袋子里有 1 个红球和 4 个白球，除颜色外都相同，随机摸出一个球是红球的概率是（ ）",
+      "options": [
+        "1/4",
+        "5/1",
+        "1/5",
+        "4/5"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1/5。概率 = 红球数 ÷ 球的总数 = 1/5。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一个不透明的袋子里有 5 个红球和 10 个白球，除颜色外都相同，随机摸出一个球是红球的概率是（ ）",
+      "options": [
+        "15/5",
+        "5/15",
+        "10/15",
+        "5/10"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：5/15。概率 = 红球数 ÷ 球的总数 = 5/15。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一个不透明的袋子里有 3 个红球和 7 个白球，除颜色外都相同，随机摸出一个球是红球的概率是（ ）",
+      "options": [
+        "3/10",
+        "7/10",
+        "3/7",
+        "10/3"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：3/10。概率 = 红球数 ÷ 球的总数 = 3/10。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一个不透明的袋子里有 2 个红球和 7 个白球，除颜色外都相同，随机摸出一个球是红球的概率是（ ）",
+      "options": [
+        "7/9",
+        "2/7",
+        "9/2",
+        "2/9"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：2/9。概率 = 红球数 ÷ 球的总数 = 2/9。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一个不透明的袋子里有 6 个红球和 9 个白球，除颜色外都相同，随机摸出一个球是红球的概率是（ ）",
+      "options": [
+        "6/9",
+        "15/6",
+        "6/15",
+        "9/15"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：6/15。概率 = 红球数 ÷ 球的总数 = 6/15。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一个不透明的袋子里有 4 个红球和 12 个白球，除颜色外都相同，随机摸出一个球是红球的概率是（ ）",
+      "options": [
+        "16/4",
+        "4/16",
+        "12/16",
+        "4/12"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：4/16。概率 = 红球数 ÷ 球的总数 = 4/16。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一个不透明的袋子里有 5 个红球和 15 个白球，除颜色外都相同，随机摸出一个球是红球的概率是（ ）",
+      "options": [
+        "5/20",
+        "15/20",
+        "5/15",
+        "20/5"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：5/20。概率 = 红球数 ÷ 球的总数 = 5/20。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一个不透明的袋子里有 4 个红球和 6 个白球，除颜色外都相同，随机摸出一个球是红球的概率是（ ）",
+      "options": [
+        "6/10",
+        "4/6",
+        "10/4",
+        "4/10"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：4/10。概率 = 红球数 ÷ 球的总数 = 4/10。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某种子在相同条件下做发芽试验，共种下 40 粒，有 10 粒发芽，这次试验中发芽的频率是（ ）",
+      "options": [
+        "10/30",
+        "40/10",
+        "10/40",
+        "30/40"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：10/40。频率 = 发芽数 ÷ 试验总数 = 10/40。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某种子在相同条件下做发芽试验，共种下 50 粒，有 15 粒发芽，这次试验中发芽的频率是（ ）",
+      "options": [
+        "50/15",
+        "15/50",
+        "35/50",
+        "15/35"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：15/50。频率 = 发芽数 ÷ 试验总数 = 15/50。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某种子在相同条件下做发芽试验，共种下 80 粒，有 20 粒发芽，这次试验中发芽的频率是（ ）",
+      "options": [
+        "20/80",
+        "60/80",
+        "20/60",
+        "80/20"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：20/80。频率 = 发芽数 ÷ 试验总数 = 20/80。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某种子在相同条件下做发芽试验，共种下 60 粒，有 9 粒发芽，这次试验中发芽的频率是（ ）",
+      "options": [
+        "51/60",
+        "9/51",
+        "60/9",
+        "9/60"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：9/60。频率 = 发芽数 ÷ 试验总数 = 9/60。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某种子在相同条件下做发芽试验，共种下 100 粒，有 35 粒发芽，这次试验中发芽的频率是（ ）",
+      "options": [
+        "35/65",
+        "100/35",
+        "35/100",
+        "65/100"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：35/100。频率 = 发芽数 ÷ 试验总数 = 35/100。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某种子在相同条件下做发芽试验，共种下 200 粒，有 50 粒发芽，这次试验中发芽的频率是（ ）",
+      "options": [
+        "200/50",
+        "50/200",
+        "150/200",
+        "50/150"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：50/200。频率 = 发芽数 ÷ 试验总数 = 50/200。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某种子在相同条件下做发芽试验，共种下 120 粒，有 30 粒发芽，这次试验中发芽的频率是（ ）",
+      "options": [
+        "30/120",
+        "90/120",
+        "30/90",
+        "120/30"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：30/120。频率 = 发芽数 ÷ 试验总数 = 30/120。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某种子在相同条件下做发芽试验，共种下 150 粒，有 45 粒发芽，这次试验中发芽的频率是（ ）",
+      "options": [
+        "105/150",
+        "45/105",
+        "150/45",
+        "45/150"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：45/150。频率 = 发芽数 ÷ 试验总数 = 45/150。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某种子在相同条件下做发芽试验，共种下 400 粒，有 100 粒发芽，这次试验中发芽的频率是（ ）",
+      "options": [
+        "100/300",
+        "400/100",
+        "100/400",
+        "300/400"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：100/400。频率 = 发芽数 ÷ 试验总数 = 100/400。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某种子在相同条件下做发芽试验，共种下 250 粒，有 75 粒发芽，这次试验中发芽的频率是（ ）",
+      "options": [
+        "250/75",
+        "75/250",
+        "175/250",
+        "75/175"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：75/250。频率 = 发芽数 ÷ 试验总数 = 75/250。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "掷一枚质地均匀的骰子，出现的点数是偶数的概率是（ ）",
+      "options": [
+        "3/6",
+        "4/6",
+        "3/5",
+        "3/7"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：3/6。骰子 6 个结果等可能，符合条件的有 3 个，概率为 3/6。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "掷一枚质地均匀的骰子，出现的点数大于 4的概率是（ ）",
+      "options": [
+        "3/6",
+        "2/5",
+        "2/7",
+        "2/6"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：2/6。骰子 6 个结果等可能，符合条件的有 2 个，概率为 2/6。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "掷一枚质地均匀的骰子，出现的点数小于 3的概率是（ ）",
+      "options": [
+        "2/5",
+        "2/7",
+        "2/6",
+        "3/6"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：2/6。骰子 6 个结果等可能，符合条件的有 2 个，概率为 2/6。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "掷一枚质地均匀的骰子，出现的点数是 3 的倍数的概率是（ ）",
+      "options": [
+        "2/7",
+        "2/6",
+        "3/6",
+        "2/5"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：2/6。骰子 6 个结果等可能，符合条件的有 2 个，概率为 2/6。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "掷一枚质地均匀的骰子，出现的点数是 6的概率是（ ）",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/5",
+        "1/7"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1/6。骰子 6 个结果等可能，符合条件的有 1 个，概率为 1/6。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "掷一枚质地均匀的骰子，出现的点数是奇数的概率是（ ）",
+      "options": [
+        "4/6",
+        "3/5",
+        "3/7",
+        "3/6"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：3/6。骰子 6 个结果等可能，符合条件的有 3 个，概率为 3/6。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "掷一枚质地均匀的骰子，出现的点数不大于 2的概率是（ ）",
+      "options": [
+        "2/5",
+        "2/7",
+        "2/6",
+        "3/6"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：2/6。骰子 6 个结果等可能，符合条件的有 2 个，概率为 2/6。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "掷一枚质地均匀的骰子，出现的点数大于 1的概率是（ ）",
+      "options": [
+        "5/7",
+        "5/6",
+        "6/6",
+        "5/5"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：5/6。骰子 6 个结果等可能，符合条件的有 5 个，概率为 5/6。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "掷一枚质地均匀的骰子，出现的点数是 1 或 2的概率是（ ）",
+      "options": [
+        "2/6",
+        "3/6",
+        "2/5",
+        "2/7"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：2/6。骰子 6 个结果等可能，符合条件的有 2 个，概率为 2/6。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-数学-7",
+      "chapterName": "概率与统计综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "掷一枚质地均匀的骰子，出现的点数不小于 5的概率是（ ）",
+      "options": [
+        "3/6",
+        "2/5",
+        "2/7",
+        "2/6"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：2/6。骰子 6 个结果等可能，符合条件的有 2 个，概率为 2/6。",
+      "difficulty": 2
     }
   ]
 }

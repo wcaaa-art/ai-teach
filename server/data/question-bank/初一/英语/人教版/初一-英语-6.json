@@ -6,9 +6,9 @@
     "id": "初一-英语-6",
     "name": "阅读策略与语篇理解"
   },
-  "generatedAt": "2026-11-14T12:13:08.499Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.927Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgd9n2l",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：文中说 Lucy takes a science book，并没有说她每周五都买一本新的科学书。\nB. 正确：短文介绍 Class 3 每周五的 Book Swap，并用 Lucy 的话说明她觉得这个活动很好。\nC. 错误：文中只说明学生可以带一本书回家，没有说必须读完盒子里的所有书。\nD. 错误：Lucy 把旧故事书放进盒子用于交换，不是丢在学校。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Tom was very hungry after the long walk, so he ate three bowls of rice. 句中 hungry 的意思是（ ）",
+      "options": [
+        "饿的",
+        "口渴的",
+        "疲倦的",
+        "生病的"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：饿的。根据上下文提供的原因、结果或解释线索推断词义；本题应为「饿的」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The bottle is empty. There is no water in it. 句中 empty 的意思是（ ）",
+      "options": [
+        "满的",
+        "干净的",
+        "破的",
+        "空的"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：空的。根据上下文提供的原因、结果或解释线索推断词义；本题应为「空的」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "It is raining hard, so please take an umbrella with you. 句中 umbrella 的意思是（ ）",
+      "options": [
+        "帽子",
+        "书包",
+        "雨伞",
+        "雨衣"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：雨伞。根据上下文提供的原因、结果或解释线索推断词义；本题应为「雨伞」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "My grandpa is over eighty, but he is still strong and can carry heavy things. 句中 strong 的意思是（ ）",
+      "options": [
+        "安静的",
+        "强壮的",
+        "瘦弱的",
+        "年轻的"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：强壮的。根据上下文提供的原因、结果或解释线索推断词义；本题应为「强壮的」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The students are quiet in the library. Nobody is talking. 句中 quiet 的意思是（ ）",
+      "options": [
+        "安静的",
+        "吵闹的",
+        "兴奋的",
+        "紧张的"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：安静的。根据上下文提供的原因、结果或解释线索推断词义；本题应为「安静的」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Lily got a new bike on her birthday. She was very happy and smiled all day. 句中 happy 的意思是（ ）",
+      "options": [
+        "难过的",
+        "生气的",
+        "害怕的",
+        "开心的"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：开心的。根据上下文提供的原因、结果或解释线索推断词义；本题应为「开心的」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The train leaves at 8:00, so we must arrive at the station before 7:40. 句中 arrive 的意思是（ ）",
+      "options": [
+        "出发",
+        "经过",
+        "到达",
+        "离开"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：到达。根据上下文提供的原因、结果或解释线索推断词义；本题应为「到达」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "It is very cold outside. Please put on your coat. 句中 cold 的意思是（ ）",
+      "options": [
+        "凉爽的",
+        "寒冷的",
+        "炎热的",
+        "温暖的"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：寒冷的。根据上下文提供的原因、结果或解释线索推断词义；本题应为「寒冷的」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The little boy is afraid of the big dog and hides behind his mother. 句中 afraid 的意思是（ ）",
+      "options": [
+        "害怕的",
+        "喜欢的",
+        "讨厌的",
+        "好奇的"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：害怕的。根据上下文提供的原因、结果或解释线索推断词义；本题应为「害怕的」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The cake is delicious. Everyone wants to eat more. 句中 delicious 的意思是（ ）",
+      "options": [
+        "难吃的",
+        "昂贵的",
+        "便宜的",
+        "美味的"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：美味的。根据上下文提供的原因、结果或解释线索推断词义；本题应为「美味的」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "method",
+      "stem": "Lucy and Lily are twins. They are in the same class. 句中 They 指代的是（ ）",
+      "options": [
+        "their teacher",
+        "the twins' mother",
+        "Lucy and Lily",
+        "Lucy's sister"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：Lucy and Lily。代词指代前文出现过的人或物，结合上下句判断；本题指代「Lucy and Lily」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "method",
+      "stem": "I have a cat. It is white and black. 句中 It 指代的是（ ）",
+      "options": [
+        "the house",
+        "the cat",
+        "the dog",
+        "the colour"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：the cat。代词指代前文出现过的人或物，结合上下句判断；本题指代「the cat」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "method",
+      "stem": "Tom bought a book and gave it to his sister. 句中 it 指代的是（ ）",
+      "options": [
+        "the book",
+        "his sister",
+        "Tom",
+        "the shop"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：the book。代词指代前文出现过的人或物，结合上下句判断；本题指代「the book」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "method",
+      "stem": "Mr. Li is our English teacher. He is very kind. 句中 He 指代的是（ ）",
+      "options": [
+        "our English book",
+        "the student",
+        "Tom",
+        "Mr. Li"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Mr. Li。代词指代前文出现过的人或物，结合上下句判断；本题指代「Mr. Li」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "method",
+      "stem": "The children are playing football. Their parents are watching them. 句中 them 指代的是（ ）",
+      "options": [
+        "the teachers",
+        "the balls",
+        "the children",
+        "the parents"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：the children。代词指代前文出现过的人或物，结合上下句判断；本题指代「the children」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "method",
+      "stem": "Mary lost her pen, but she found it under the desk. 句中 it 指代的是（ ）",
+      "options": [
+        "the classroom",
+        "her pen",
+        "the desk",
+        "Mary"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：her pen。代词指代前文出现过的人或物，结合上下句判断；本题指代「her pen」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "method",
+      "stem": "My brother and I like swimming. We go swimming every Sunday. 句中 We 指代的是（ ）",
+      "options": [
+        "my brother and I",
+        "my parents",
+        "my brother",
+        "my friends"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：my brother and I。代词指代前文出现过的人或物，结合上下句判断；本题指代「my brother and I」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "method",
+      "stem": "The girls are singing. Their teacher is playing the piano for them. 句中 them 指代的是（ ）",
+      "options": [
+        "the teachers",
+        "the songs",
+        "the parents",
+        "the girls"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：the girls。代词指代前文出现过的人或物，结合上下句判断；本题指代「the girls」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "method",
+      "stem": "Peter has a new bike. He rides it to school every day. 句中 it 指代的是（ ）",
+      "options": [
+        "the school",
+        "his bag",
+        "his new bike",
+        "Peter"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：his new bike。代词指代前文出现过的人或物，结合上下句判断；本题指代「his new bike」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "method",
+      "stem": "The book is very interesting. I read it twice. 句中 it 指代的是（ ）",
+      "options": [
+        "the library",
+        "the book",
+        "the story",
+        "the writer"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：the book。代词指代前文出现过的人或物，结合上下句判断；本题指代「the book」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Dogs are our good friends. They can help people in many ways, such as guarding the house and guiding the blind. 这段话主要讲的是（ ）",
+      "options": [
+        "Dogs are helpful to people.",
+        "Dogs are afraid of people.",
+        "Dogs like to play with cats.",
+        "Dogs are hard to keep."
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：Dogs are helpful to people.。主旨题看首句和反复出现的关键信息，本段主要讲「Dogs are helpful to people.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Every morning, Li Ming gets up at six, runs for half an hour, and then reads English. 这段话主要讲的是（ ）",
+      "options": [
+        "Li Ming's favourite food.",
+        "Li Ming's school.",
+        "Li Ming's friends.",
+        "Li Ming's morning routine."
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Li Ming's morning routine.。主旨题看首句和反复出现的关键信息，本段主要讲「Li Ming's morning routine.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "The library is a quiet place. People can borrow books and read there. 这段话主要讲的是（ ）",
+      "options": [
+        "The bookstore.",
+        "The classroom.",
+        "The library.",
+        "The playground."
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：The library.。主旨题看首句和反复出现的关键信息，本段主要讲「The library.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Spring is warm and flowers come out. Many people like flying kites in spring. 这段话主要讲的是（ ）",
+      "options": [
+        "Winter.",
+        "Spring.",
+        "Summer.",
+        "Autumn."
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：Spring.。主旨题看首句和反复出现的关键信息，本段主要讲「Spring.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "My school is big and beautiful. There are many trees and a big playground in it. 这段话主要讲的是（ ）",
+      "options": [
+        "My school.",
+        "My home.",
+        "My garden.",
+        "My classroom."
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：My school.。主旨题看首句和反复出现的关键信息，本段主要讲「My school.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Water is important to us. We should save water in our daily life. 这段话主要讲的是（ ）",
+      "options": [
+        "Drinking milk.",
+        "Planting trees.",
+        "Saving money.",
+        "Saving water."
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Saving water.。主旨题看首句和反复出现的关键信息，本段主要讲「Saving water.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "The panda is a lovely animal. It lives in China and eats bamboo. 这段话主要讲的是（ ）",
+      "options": [
+        "The monkey.",
+        "The elephant.",
+        "The panda.",
+        "The tiger."
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：The panda.。主旨题看首句和反复出现的关键信息，本段主要讲「The panda.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Tom likes sports. He plays basketball after school every day. 这段话主要讲的是（ ）",
+      "options": [
+        "Tom's homework.",
+        "Tom's hobby.",
+        "Tom's school.",
+        "Tom's family."
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：Tom's hobby.。主旨题看首句和反复出现的关键信息，本段主要讲「Tom's hobby.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "The shop sells school things like pens, books and rulers. 这段话主要讲的是（ ）",
+      "options": [
+        "A shop for school things.",
+        "A shop for clothes.",
+        "A shop for food.",
+        "A shop for toys."
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：A shop for school things.。主旨题看首句和反复出现的关键信息，本段主要讲「A shop for school things.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-英语-6",
+      "chapterName": "阅读策略与语篇理解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "It is Sunday. The children are helping their mother do housework at home. 这段话主要讲的是（ ）",
+      "options": [
+        "Playing in the park.",
+        "Doing homework.",
+        "Watching TV.",
+        "Helping with housework."
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Helping with housework.。主旨题看首句和反复出现的关键信息，本段主要讲「Helping with housework.」。",
+      "difficulty": 2
     }
   ]
 }

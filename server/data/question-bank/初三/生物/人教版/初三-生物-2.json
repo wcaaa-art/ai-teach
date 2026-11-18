@@ -6,9 +6,9 @@
     "id": "初三-生物-2",
     "name": "生物的遗传与变异"
   },
-  "generatedAt": "2026-11-14T12:18:15.537Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.821Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdg7zi",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 1,
       "explanation": "B. 正确：黑毛为隐性性状，基因组成只能是 bb，它只能提供含 b 的生殖细胞；若亲代白毛兔为 BB，则后代全为 Bb，全部表现为白毛，不可能出现黑毛兔。后代中出现了黑毛兔（bb），说明亲代白毛兔必定提供了一个 b 基因，因此它的基因组成一定是 Bb，Bb×bb 后代约为 1 白（Bb）∶1 黑（bb），与题干相符。\nA. 错误：若亲代白毛兔为 BB，与 bb 交配后代基因组成全为 Bb，全部表现白毛，与“后代出现黑毛兔”直接矛盾。\nC. 错误：黑毛亲代 bb 只能提供含 b 的生殖细胞，所以后代白毛兔的基因组成只能是 Bb，不可能是 BB。\nD. 错误：亲代白毛兔基因组成为 Bb，成对基因 B 与 b 分别进入不同的生殖细胞，因此它产生的生殖细胞有两种，分别含 B 和含 b，并非只含 b。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "染色体主要存在于（　　）",
+      "options": [
+        "细胞核中",
+        "细胞膜上",
+        "细胞质中",
+        "液泡中"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：细胞核中。按基因、DNA、染色体与性状的关系判断，本题正确答案是「细胞核中」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "DNA主要存在于（　　）",
+      "options": [
+        "细胞膜上",
+        "细胞壁中",
+        "液泡中",
+        "染色体上"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：染色体上。按基因、DNA、染色体与性状的关系判断，本题正确答案是「染色体上」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "基因是（　　）",
+      "options": [
+        "整个染色体",
+        "细胞核",
+        "DNA上具有遗传效应的片段",
+        "蛋白质分子"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：DNA上具有遗传效应的片段。按基因、DNA、染色体与性状的关系判断，本题正确答案是「DNA上具有遗传效应的片段」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "基因控制生物的（　　）",
+      "options": [
+        "年龄",
+        "性状",
+        "细胞数量",
+        "生活环境"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：性状。按基因、DNA、染色体与性状的关系判断，本题正确答案是「性状」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "体细胞中，基因通常（　　）存在",
+      "options": [
+        "成对",
+        "单个",
+        "三个一组",
+        "随机数量"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：成对。按基因、DNA、染色体与性状的关系判断，本题正确答案是「成对」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "相对性状是指（　　）",
+      "options": [
+        "不同种生物的同一性状",
+        "同种生物的不同性状",
+        "不同种生物的不同性状",
+        "同种生物同一性状的不同表现形式"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：同种生物同一性状的不同表现形式。按基因、DNA、染色体与性状的关系判断，本题正确答案是「同种生物同一性状的不同表现形式」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "显性基因通常用（　　）表示",
+      "options": [
+        "数字",
+        "圆圈",
+        "大写字母",
+        "小写字母"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：大写字母。按基因、DNA、染色体与性状的关系判断，本题正确答案是「大写字母」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "基因组成Aa的个体，表现出来的性状是（　　）",
+      "options": [
+        "无法判断",
+        "显性性状",
+        "隐性性状",
+        "两者都不表现"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：显性性状。按基因、DNA、染色体与性状的关系判断，本题正确答案是「显性性状」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "基因组成aa的个体，表现出来的性状是（　　）",
+      "options": [
+        "隐性性状",
+        "显性性状",
+        "中间性状",
+        "无法判断"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：隐性性状。按基因、DNA、染色体与性状的关系判断，本题正确答案是「隐性性状」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "亲代基因组成分别为AA和aa时，子代的基因组成是（　　）",
+      "options": [
+        "AA",
+        "aa",
+        "AA或aa",
+        "Aa"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Aa。按基因、DNA、染色体与性状的关系判断，本题正确答案是「Aa」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "人的性别决定方式是（　　）",
+      "options": [
+        "XO型",
+        "与环境有关",
+        "XY型",
+        "ZW型"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：XY型。按性别决定与遗传病知识判断，本题正确答案是「XY型」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "正常男性的性染色体组成是（　　）",
+      "options": [
+        "XO",
+        "XY",
+        "XX",
+        "YY"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：XY。按性别决定与遗传病知识判断，本题正确答案是「XY」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "正常女性的性染色体组成是（　　）",
+      "options": [
+        "XX",
+        "XY",
+        "YY",
+        "XO"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：XX。按性别决定与遗传病知识判断，本题正确答案是「XX」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "生男生女主要取决于（　　）",
+      "options": [
+        "母亲卵细胞的类型",
+        "母亲的身体状况",
+        "家庭饮食习惯",
+        "与卵细胞结合的精子类型"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：与卵细胞结合的精子类型。按性别决定与遗传病知识判断，本题正确答案是「与卵细胞结合的精子类型」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一对夫妇生男生女的机会大致是（　　）",
+      "options": [
+        "女孩100%",
+        "男孩75%",
+        "各占50%",
+        "男孩100%"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：各占50%。按性别决定与遗传病知识判断，本题正确答案是「各占50%」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "近亲结婚会提高（　　）",
+      "options": [
+        "近视的发病率",
+        "隐性遗传病的发病率",
+        "显性遗传病的发病率",
+        "传染病的发病率"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：隐性遗传病的发病率。按性别决定与遗传病知识判断，本题正确答案是「隐性遗传病的发病率」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国婚姻法规定禁止近亲结婚，主要原因是（　　）",
+      "options": [
+        "近亲之间携带相同隐性致病基因的可能性大",
+        "近亲之间不能生育",
+        "近亲结婚后代一定患病",
+        "近亲结婚后代都是畸形"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：近亲之间携带相同隐性致病基因的可能性大。按性别决定与遗传病知识判断，本题正确答案是「近亲之间携带相同隐性致病基因的可能性大」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "白化病一般属于（　　）",
+      "options": [
+        "显性遗传病",
+        "传染病",
+        "营养缺乏病",
+        "隐性遗传病"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：隐性遗传病。按性别决定与遗传病知识判断，本题正确答案是「隐性遗传病」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "遗传咨询和产前诊断的主要目的是（　　）",
+      "options": [
+        "改变胎儿性别",
+        "提高婴儿身高",
+        "降低遗传病患儿的出生率",
+        "提高人口数量"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：降低遗传病患儿的出生率。按性别决定与遗传病知识判断，本题正确答案是「降低遗传病患儿的出生率」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列属于遗传病的是（　　）",
+      "options": [
+        "坏血病",
+        "色盲",
+        "近视（用眼不当引起）",
+        "流感"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：色盲。按性别决定与遗传病知识判断，本题正确答案是「色盲」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "可遗传的变异是由（　　）引起的",
+      "options": [
+        "遗传物质改变",
+        "环境因素",
+        "生活习惯",
+        "饮食结构"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：遗传物质改变。按变异的类型与育种方法判断，本题正确答案是「遗传物质改变」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列属于不可遗传变异的是（　　）",
+      "options": [
+        "杂交培育的高产水稻",
+        "太空育种获得的变异",
+        "基因突变产生的白化个体",
+        "经常晒太阳皮肤变黑"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：经常晒太阳皮肤变黑。按变异的类型与育种方法判断，本题正确答案是「经常晒太阳皮肤变黑」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列属于可遗传变异的是（　　）",
+      "options": [
+        "运动员长期训练使肌肉发达",
+        "修剪使树冠呈球形",
+        "一对双眼皮夫妇生出单眼皮孩子",
+        "水肥充足使小麦穗大粒多"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：一对双眼皮夫妇生出单眼皮孩子。按变异的类型与育种方法判断，本题正确答案是「一对双眼皮夫妇生出单眼皮孩子」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "按照对生物生存是否有利，变异可分为（　　）",
+      "options": [
+        "自然变异和人工变异",
+        "有利变异和不利变异",
+        "可遗传变异和不可遗传变异",
+        "显性变异和隐性变异"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：有利变异和不利变异。按变异的类型与育种方法判断，本题正确答案是「有利变异和不利变异」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "杂交育种能够培育新品种，原理是（　　）",
+      "options": [
+        "通过杂交使不同个体的优良基因组合在一起",
+        "改变生物的染色体数目",
+        "只改变环境条件",
+        "使生物不产生变异"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：通过杂交使不同个体的优良基因组合在一起。按变异的类型与育种方法判断，本题正确答案是「通过杂交使不同个体的优良基因组合在一起」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "太空育种主要是利用太空环境诱发（　　）",
+      "options": [
+        "自然选择",
+        "基因重组",
+        "染色体数目减半",
+        "基因突变"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：基因突变。按变异的类型与育种方法判断，本题正确答案是「基因突变」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "转基因技术是指（　　）",
+      "options": [
+        "把两种生物杂交",
+        "用射线照射生物",
+        "把一种生物的基因转移到另一种生物体内",
+        "改变生物的生活环境"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：把一种生物的基因转移到另一种生物体内。按变异的类型与育种方法判断，本题正确答案是「把一种生物的基因转移到另一种生物体内」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "人工选择育种与自然选择的主要区别是（　　）",
+      "options": [
+        "二者完全相同",
+        "人工选择由人类根据需要进行选择",
+        "人工选择不需要变异",
+        "自然选择由人类控制"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：人工选择由人类根据需要进行选择。按变异的类型与育种方法判断，本题正确答案是「人工选择由人类根据需要进行选择」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "变异在生物进化中的意义是（　　）",
+      "options": [
+        "为生物进化提供原材料",
+        "使生物不再进化",
+        "使生物完全相同",
+        "只产生不利性状"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：为生物进化提供原材料。按变异的类型与育种方法判断，本题正确答案是「为生物进化提供原材料」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-生物-2",
+      "chapterName": "生物的遗传与变异",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“一母生九子，九子各不同”主要说明（　　）",
+      "options": [
+        "生物不能遗传",
+        "环境决定一切",
+        "生物没有遗传物质",
+        "生物普遍存在变异现象"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：生物普遍存在变异现象。按变异的类型与育种方法判断，本题正确答案是「生物普遍存在变异现象」。",
       "difficulty": 2
     }
   ]

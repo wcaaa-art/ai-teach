@@ -55,10 +55,10 @@ export function useAnswerPhotos(answers) {
     event.target.value = ''
     const id = photoTarget.value
     if (!file || !id) return
-    if (!file.type.startsWith('image/')) { ElMessage.info('请选择图片文件。'); return }
+    if (!file.type.startsWith('image/')) { ElMessage.info('请选择图片文件'); return }
     photoFiles.set(id, file)
     answerImages[id] = { dataUrl: await compressImage(file), name: file.name }
-    ElMessage.success('已添加手写稿，可点「识别成文字」自动填入，也可以只保留照片。')
+    ElMessage.success('已添加手写稿，可点「识别成文字」自动填入，也可以只保留照片')
   }
 
   async function recognizePhoto(question) {
@@ -72,19 +72,19 @@ export function useAnswerPhotos(answers) {
         photoFiles.set(question.id, file)
       } catch { /* 转 File 失败时按没有原始照片处理 */ }
     }
-    if (!file) { ElMessage.info('这份草稿只有照片预览，无法重新识别；请重新选择照片或手动输入。'); return }
+    if (!file) { ElMessage.info('这份草稿只有照片预览，无法重新识别；请重新选择照片或手动输入'); return }
     ocrLoading[question.id] = true
     try {
       const response = await extractQuestion(file)
       if (!response.success) {
-        ElMessage.warning(`识别失败：${response.error || '未知原因'}，可以手动输入或只保留照片。`)
+        ElMessage.warning(`识别失败：${response.error || '未知原因'}，可以手动输入或只保留照片`)
         return
       }
       const text = String(response.data?.text || '').trim()
-      if (!text) { ElMessage.info('没有识别到文字，可以手动输入或只保留照片。'); return }
+      if (!text) { ElMessage.info('没有识别到文字，可以手动输入或只保留照片'); return }
       const current = String(answers[question.id] ?? '').trim()
       answers[question.id] = current ? `${current}\n${text}` : text
-      ElMessage.success('已识别并填入，手写内容可能有误，请核对后再交卷。')
+      ElMessage.success('已识别并填入，手写内容可能有误，请核对后再交卷')
     } finally {
       ocrLoading[question.id] = false
     }

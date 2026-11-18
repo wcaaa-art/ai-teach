@@ -6,9 +6,9 @@
     "id": "初三-化学-2",
     "name": "化学方程式"
   },
-  "generatedAt": "2026-11-13T02:48:22.464Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.838Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwednhry",
@@ -179,6 +179,516 @@
       "correctIndex": 2,
       "explanation": "A. 错误：CO 结合氧生成 CO_2，碳元素化合价由 +2 升高到 +4，CO 被氧化，发生氧化反应；Fe_2O_3 失去氧，发生还原反应。\nB. 错误：反应物中氧原子总数为 3+3=6，生成物中氧原子总数为 3×2=6，并非均为 3；且方程式是否配平要看各元素原子个数是否守恒，不能由氧原子个数直接判断不需要配平。\nC. 正确：Fe_2O_3 的相对分子质量为 56×2+16×3=160，2Fe 的相对质量为 56×2=112，由化学方程式可知 160 份质量的 Fe_2O_3 完全反应可生成 112 份质量的 Fe。\nD. 错误：置换反应是一种单质与一种化合物反应生成另一种单质和另一种化合物的反应；该反应的反应物是两种化合物，不符合置换反应的定义。",
       "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "配平化学方程式：____H₂ + ____O₂ →(点燃) ____H₂O，各物质前的化学计量数依次是（ ）",
+      "options": [
+        "2、1、2",
+        "1、1、1",
+        "2、2、2",
+        "1、2、1"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：2、1、2。左边 H 4 个、O 2 个，右边需 2 个 H₂O，系数为 2、1、2。",
+      "difficulty": 2
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "配平化学方程式：____C + ____O₂ →(点燃) ____CO₂，各物质前的化学计量数依次是（ ）",
+      "options": [
+        "2、1、2",
+        "1、2、1",
+        "2、2、1",
+        "1、1、1"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1、1、1。碳、氧原子个数已相等，系数为 1、1、1。",
+      "difficulty": 2
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "配平化学方程式：____P + ____O₂ →(点燃) ____P₂O₅，各物质前的化学计量数依次是（ ）",
+      "options": [
+        "4、3、2",
+        "2、5、4",
+        "4、5、2",
+        "2、3、1"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：4、5、2。生成 2 个 P₂O₅ 需 4 个 P、10 个 O，系数为 4、5、2。",
+      "difficulty": 2
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "配平化学方程式：____Fe + ____O₂ →(点燃) ____Fe₃O₄，各物质前的化学计量数依次是（ ）",
+      "options": [
+        "1、2、1",
+        "3、2、1",
+        "2、3、1",
+        "3、4、1"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：3、2、1。Fe₃O₄ 中有 3 个 Fe、4 个 O，系数为 3、2、1。",
+      "difficulty": 2
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "配平化学方程式：____CH₄ + ____O₂ →(点燃) ____CO₂ + ____H₂O，各物质前的化学计量数依次是（ ）",
+      "options": [
+        "1、2、1、2",
+        "1、1、1、1",
+        "2、2、2、2",
+        "1、2、2、1"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1、2、1、2。1 个 CH₄ 含 C 1、H 4，需 O₂ 2 个，生成 CO₂ 1 个、H₂O 2 个。",
+      "difficulty": 2
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "配平化学方程式：____H₂O₂ →(MnO₂) ____H₂O + ____O₂，各物质前的化学计量数依次是（ ）",
+      "options": [
+        "1、1、1",
+        "2、1、2",
+        "1、2、1",
+        "2、2、1"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：2、2、1。2 个 H₂O₂ 分解生成 2 个 H₂O 和 1 个 O₂。",
+      "difficulty": 2
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "配平化学方程式：____KClO₃ →(MnO₂、加热) ____KCl + ____O₂，各物质前的化学计量数依次是（ ）",
+      "options": [
+        "2、2、1",
+        "2、3、2",
+        "2、2、3",
+        "1、1、2"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：2、2、3。2 个 KClO₃ 生成 2 个 KCl 和 3 个 O₂。",
+      "difficulty": 2
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "配平化学方程式：____Al + ____O₂ →(点燃) ____Al₂O₃，各物质前的化学计量数依次是（ ）",
+      "options": [
+        "3、4、2",
+        "4、3、2",
+        "2、3、1",
+        "4、2、2"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：4、3、2。2 个 Al₂O₃ 需 4 个 Al、6 个 O，系数为 4、3、2。",
+      "difficulty": 2
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "配平化学方程式：____CO + ____O₂ →(点燃) ____CO₂，各物质前的化学计量数依次是（ ）",
+      "options": [
+        "2、1、2",
+        "1、1、1",
+        "1、2、1",
+        "2、2、1"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：2、1、2。2 个 CO 与 1 个 O₂ 生成 2 个 CO₂。",
+      "difficulty": 2
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "配平化学方程式：____Mg + ____O₂ →(点燃) ____MgO，各物质前的化学计量数依次是（ ）",
+      "options": [
+        "1、1、1",
+        "2、2、1",
+        "1、2、1",
+        "2、1、2"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：2、1、2。2 个 Mg 与 1 个 O₂ 生成 2 个 MgO。",
+      "difficulty": 2
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "甲、乙在一定条件下恰好完全反应生成丙和丁。已知参加反应的甲为 5 g、乙为 10 g，生成丁 3 g，则生成丙的质量是（ ）",
+      "options": [
+        "10 g",
+        "18 g",
+        "12 g",
+        "14 g"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：12 g。由质量守恒定律，反应物总质量等于生成物总质量：丙的质量 = 5 + 10 - 3 = 12 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "甲、乙在一定条件下恰好完全反应生成丙和丁。已知参加反应的甲为 8 g、乙为 12 g，生成丁 5 g，则生成丙的质量是（ ）",
+      "options": [
+        "25 g",
+        "15 g",
+        "17 g",
+        "13 g"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：15 g。由质量守恒定律，反应物总质量等于生成物总质量：丙的质量 = 8 + 12 - 5 = 15 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "甲、乙在一定条件下恰好完全反应生成丙和丁。已知参加反应的甲为 20 g、乙为 30 g，生成丁 10 g，则生成丙的质量是（ ）",
+      "options": [
+        "40 g",
+        "42 g",
+        "38 g",
+        "60 g"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：40 g。由质量守恒定律，反应物总质量等于生成物总质量：丙的质量 = 20 + 30 - 10 = 40 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "甲、乙在一定条件下恰好完全反应生成丙和丁。已知参加反应的甲为 6 g、乙为 9 g，生成丁 4 g，则生成丙的质量是（ ）",
+      "options": [
+        "13 g",
+        "9 g",
+        "19 g",
+        "11 g"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：11 g。由质量守恒定律，反应物总质量等于生成物总质量：丙的质量 = 6 + 9 - 4 = 11 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "甲、乙在一定条件下恰好完全反应生成丙和丁。已知参加反应的甲为 12 g、乙为 8 g，生成丁 5 g，则生成丙的质量是（ ）",
+      "options": [
+        "13 g",
+        "25 g",
+        "15 g",
+        "17 g"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：15 g。由质量守恒定律，反应物总质量等于生成物总质量：丙的质量 = 12 + 8 - 5 = 15 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "甲、乙在一定条件下恰好完全反应生成丙和丁。已知参加反应的甲为 15 g、乙为 25 g，生成丁 7 g，则生成丙的质量是（ ）",
+      "options": [
+        "47 g",
+        "33 g",
+        "35 g",
+        "31 g"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：33 g。由质量守恒定律，反应物总质量等于生成物总质量：丙的质量 = 15 + 25 - 7 = 33 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "甲、乙在一定条件下恰好完全反应生成丙和丁。已知参加反应的甲为 4 g、乙为 16 g，生成丁 6 g，则生成丙的质量是（ ）",
+      "options": [
+        "14 g",
+        "16 g",
+        "12 g",
+        "26 g"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：14 g。由质量守恒定律，反应物总质量等于生成物总质量：丙的质量 = 4 + 16 - 6 = 14 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "甲、乙在一定条件下恰好完全反应生成丙和丁。已知参加反应的甲为 18 g、乙为 2 g，生成丁 8 g，则生成丙的质量是（ ）",
+      "options": [
+        "14 g",
+        "10 g",
+        "28 g",
+        "12 g"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：12 g。由质量守恒定律，反应物总质量等于生成物总质量：丙的质量 = 18 + 2 - 8 = 12 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "甲、乙在一定条件下恰好完全反应生成丙和丁。已知参加反应的甲为 7 g、乙为 13 g，生成丁 9 g，则生成丙的质量是（ ）",
+      "options": [
+        "9 g",
+        "29 g",
+        "11 g",
+        "13 g"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：11 g。由质量守恒定律，反应物总质量等于生成物总质量：丙的质量 = 7 + 13 - 9 = 11 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "甲、乙在一定条件下恰好完全反应生成丙和丁。已知参加反应的甲为 25 g、乙为 5 g，生成丁 10 g，则生成丙的质量是（ ）",
+      "options": [
+        "40 g",
+        "20 g",
+        "22 g",
+        "18 g"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：20 g。由质量守恒定律，反应物总质量等于生成物总质量：丙的质量 = 25 + 5 - 10 = 20 g。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "化学反应前后，一定不变的是（ ）",
+      "options": [
+        "原子的种类和数目",
+        "分子的种类",
+        "分子的数目",
+        "物质的种类"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：原子的种类和数目。化学反应中原子重新组合，原子的种类和数目不变。",
+      "difficulty": 1
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "化学反应前后，一定发生改变的是（ ）",
+      "options": [
+        "原子的种类",
+        "原子的数目",
+        "元素种类",
+        "分子的种类"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：分子的种类。旧分子分裂、新分子生成，分子种类一定改变。",
+      "difficulty": 1
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "化学反应前后，可能发生改变的是（ ）",
+      "options": [
+        "原子的数目",
+        "元素的质量",
+        "分子的数目",
+        "原子的种类"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：分子的数目。分子数目可能改变，也可能不变。",
+      "difficulty": 1
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "化学反应的实质是（ ）",
+      "options": [
+        "元素种类发生改变",
+        "分子分成原子，原子重新组合成新分子",
+        "分子直接合并成新分子",
+        "原子分成更小的粒子"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：分子分成原子，原子重新组合成新分子。化学变化中分子可分、原子不可分。",
+      "difficulty": 1
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "镁条在空气中燃烧后，生成物的质量比原来镁条大，原因是（ ）",
+      "options": [
+        "镁与空气中的氧气发生了反应",
+        "镁条吸收了热量",
+        "镁条体积变大",
+        "生成了新的镁原子"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：镁与空气中的氧气发生了反应。生成物中增加了氧元素的质量。",
+      "difficulty": 1
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "蜡烛燃烧后质量减小，原因是（ ）",
+      "options": [
+        "蜡烛燃烧不遵守质量守恒定律",
+        "蜡烛中的碳原子消失了",
+        "蜡烛吸收了空气中的氧气",
+        "生成的二氧化碳和水蒸气逸散到空气中"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：生成的二氧化碳和水蒸气逸散到空气中。反应生成的二氧化碳和水蒸气进入空气，未称量到。",
+      "difficulty": 1
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "质量守恒定律适用于（ ）",
+      "options": [
+        "只有燃烧反应",
+        "只有化合反应",
+        "所有的化学变化",
+        "所有的物理变化"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：所有的化学变化。质量守恒定律是化学反应的基本规律。",
+      "difficulty": 1
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "配平化学方程式的主要依据是（ ）",
+      "options": [
+        "物质的溶解性",
+        "质量守恒定律",
+        "反应条件",
+        "物质的颜色"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：质量守恒定律。配平使反应前后各种原子的数目相等，依据是质量守恒定律。",
+      "difficulty": 1
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "化学反应前后，元素的种类（ ）",
+      "options": [
+        "不变",
+        "增多",
+        "减少",
+        "无法确定"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：不变。原子种类不变，所以元素种类也不变。",
+      "difficulty": 1
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-化学-2",
+      "chapterName": "化学方程式",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "化学反应前后，物质的质量总和不变，这是因为（ ）",
+      "options": [
+        "分子的种类和数目都不变",
+        "物质的体积不变",
+        "反应前后温度不变",
+        "原子的种类、数目和质量都不变"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：原子的种类、数目和质量都不变。原子三不变是质量守恒的微观原因。",
+      "difficulty": 1
     }
   ]
 }

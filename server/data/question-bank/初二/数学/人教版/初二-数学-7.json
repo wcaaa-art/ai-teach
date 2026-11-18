@@ -6,9 +6,9 @@
     "id": "初二-数学-7",
     "name": "平行四边形"
   },
-  "generatedAt": "2026-11-13T02:44:26.841Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.168Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedifyv",
@@ -179,6 +179,516 @@
       "correctIndex": 2,
       "explanation": "A. 错误：若相邻边也为 6 cm，则平行四边形两组对边分别相等，周长应为 2×(6+6)=24 cm，与题干的 32 cm 冲突。\nB. 错误：若相邻边为 8 cm，则周长为 2×(6+8)=28 cm，不等于 32 cm。\nC. 正确：平行四边形对边相等，设与 6 cm 相邻的边长为 x cm，则 2(6+x)=32，解得 x=10，所以相邻边长为 10 cm。\nD. 错误：若相邻边为 12 cm，则周长为 2×(6+12)=36 cm，不等于 32 cm。",
       "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在平行四边形 ABCD 中，∠A = 50°，则与它相邻的 ∠B 的度数是（ ）",
+      "options": [
+        "130°",
+        "50°",
+        "310°",
+        "90°"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：130°。平行四边形相邻两角互补：∠B = 180° - 50° = 130°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在平行四边形 ABCD 中，∠A = 65°，则与它相邻的 ∠B 的度数是（ ）",
+      "options": [
+        "65°",
+        "295°",
+        "90°",
+        "115°"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：115°。平行四边形相邻两角互补：∠B = 180° - 65° = 115°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在平行四边形 ABCD 中，∠A = 72°，则与它相邻的 ∠B 的度数是（ ）",
+      "options": [
+        "288°",
+        "90°",
+        "108°",
+        "72°"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：108°。平行四边形相邻两角互补：∠B = 180° - 72° = 108°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在平行四边形 ABCD 中，∠A = 110°，则与它相邻的 ∠B 的度数是（ ）",
+      "options": [
+        "90°",
+        "70°",
+        "110°",
+        "250°"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：70°。平行四边形相邻两角互补：∠B = 180° - 110° = 70°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在平行四边形 ABCD 中，∠A = 135°，则与它相邻的 ∠B 的度数是（ ）",
+      "options": [
+        "45°",
+        "135°",
+        "225°",
+        "90°"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：45°。平行四边形相邻两角互补：∠B = 180° - 135° = 45°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在平行四边形 ABCD 中，∠A = 45°，则与它相邻的 ∠B 的度数是（ ）",
+      "options": [
+        "45°",
+        "315°",
+        "90°",
+        "135°"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：135°。平行四边形相邻两角互补：∠B = 180° - 45° = 135°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在平行四边形 ABCD 中，∠A = 80°，则与它相邻的 ∠B 的度数是（ ）",
+      "options": [
+        "280°",
+        "90°",
+        "100°",
+        "80°"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：100°。平行四边形相邻两角互补：∠B = 180° - 80° = 100°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在平行四边形 ABCD 中，∠A = 95°，则与它相邻的 ∠B 的度数是（ ）",
+      "options": [
+        "90°",
+        "85°",
+        "95°",
+        "265°"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：85°。平行四边形相邻两角互补：∠B = 180° - 95° = 85°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在平行四边形 ABCD 中，∠A = 120°，则与它相邻的 ∠B 的度数是（ ）",
+      "options": [
+        "60°",
+        "120°",
+        "240°",
+        "90°"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：60°。平行四边形相邻两角互补：∠B = 180° - 120° = 60°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在平行四边形 ABCD 中，∠A = 58°，则与它相邻的 ∠B 的度数是（ ）",
+      "options": [
+        "58°",
+        "302°",
+        "90°",
+        "122°"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：122°。平行四边形相邻两角互补：∠B = 180° - 58° = 122°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "平行四边形的一条边长为 6，周长为 32，则与它相邻的另一条边长是（ ）",
+      "options": [
+        "9",
+        "26",
+        "10",
+        "11"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：10。平行四边形周长 = 2 × (相邻两边之和)，所以另一边 = 32 ÷ 2 - 6 = 10。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "平行四边形的一条边长为 8，周长为 40，则与它相邻的另一条边长是（ ）",
+      "options": [
+        "32",
+        "12",
+        "13",
+        "11"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：12。平行四边形周长 = 2 × (相邻两边之和)，所以另一边 = 40 ÷ 2 - 8 = 12。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "平行四边形的一条边长为 5，周长为 36，则与它相邻的另一条边长是（ ）",
+      "options": [
+        "13",
+        "14",
+        "12",
+        "31"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：13。平行四边形周长 = 2 × (相邻两边之和)，所以另一边 = 36 ÷ 2 - 5 = 13。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "平行四边形的一条边长为 9，周长为 48，则与它相邻的另一条边长是（ ）",
+      "options": [
+        "16",
+        "14",
+        "39",
+        "15"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：15。平行四边形周长 = 2 × (相邻两边之和)，所以另一边 = 48 ÷ 2 - 9 = 15。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "平行四边形的一条边长为 7，周长为 36，则与它相邻的另一条边长是（ ）",
+      "options": [
+        "10",
+        "29",
+        "11",
+        "12"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：11。平行四边形周长 = 2 × (相邻两边之和)，所以另一边 = 36 ÷ 2 - 7 = 11。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "平行四边形的一条边长为 10，周长为 48，则与它相邻的另一条边长是（ ）",
+      "options": [
+        "38",
+        "14",
+        "15",
+        "13"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：14。平行四边形周长 = 2 × (相邻两边之和)，所以另一边 = 48 ÷ 2 - 10 = 14。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "平行四边形的一条边长为 4，周长为 40，则与它相邻的另一条边长是（ ）",
+      "options": [
+        "16",
+        "17",
+        "15",
+        "36"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：16。平行四边形周长 = 2 × (相邻两边之和)，所以另一边 = 40 ÷ 2 - 4 = 16。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "平行四边形的一条边长为 12，周长为 60，则与它相邻的另一条边长是（ ）",
+      "options": [
+        "19",
+        "17",
+        "48",
+        "18"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：18。平行四边形周长 = 2 × (相邻两边之和)，所以另一边 = 60 ÷ 2 - 12 = 18。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "平行四边形的一条边长为 3，周长为 20，则与它相邻的另一条边长是（ ）",
+      "options": [
+        "6",
+        "17",
+        "7",
+        "8"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：7。平行四边形周长 = 2 × (相邻两边之和)，所以另一边 = 20 ÷ 2 - 3 = 7。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "平行四边形的一条边长为 11，周长为 60，则与它相邻的另一条边长是（ ）",
+      "options": [
+        "49",
+        "19",
+        "20",
+        "18"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：19。平行四边形周长 = 2 × (相邻两边之和)，所以另一边 = 60 ÷ 2 - 11 = 19。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在平行四边形 ABCD 中，∠A : ∠B = 1 : 2，则 ∠A 的度数是（ ）",
+      "options": [
+        "60°",
+        "70°",
+        "120°",
+        "30°"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：60°。相邻两角互补，共 3 份对应 180°，∠A = 180° × 1/3 = 60°。",
+      "difficulty": 3
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在平行四边形 ABCD 中，∠A : ∠B = 1 : 5，则 ∠A 的度数是（ ）",
+      "options": [
+        "40°",
+        "150°",
+        "15°",
+        "30°"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：30°。相邻两角互补，共 6 份对应 180°，∠A = 180° × 1/6 = 30°。",
+      "difficulty": 3
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在平行四边形 ABCD 中，∠A : ∠B = 2 : 3，则 ∠A 的度数是（ ）",
+      "options": [
+        "108°",
+        "36°",
+        "72°",
+        "82°"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：72°。相邻两角互补，共 5 份对应 180°，∠A = 180° × 2/5 = 72°。",
+      "difficulty": 3
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在平行四边形 ABCD 中，∠A : ∠B = 1 : 3，则 ∠A 的度数是（ ）",
+      "options": [
+        "22.5°",
+        "45°",
+        "55°",
+        "135°"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：45°。相邻两角互补，共 4 份对应 180°，∠A = 180° × 1/4 = 45°。",
+      "difficulty": 3
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在平行四边形 ABCD 中，∠A : ∠B = 2 : 7，则 ∠A 的度数是（ ）",
+      "options": [
+        "40°",
+        "50°",
+        "140°",
+        "20°"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：40°。相邻两角互补，共 9 份对应 180°，∠A = 180° × 2/9 = 40°。",
+      "difficulty": 3
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在平行四边形 ABCD 中，∠A : ∠B = 4 : 5，则 ∠A 的度数是（ ）",
+      "options": [
+        "90°",
+        "100°",
+        "40°",
+        "80°"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：80°。相邻两角互补，共 9 份对应 180°，∠A = 180° × 4/9 = 80°。",
+      "difficulty": 3
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在平行四边形 ABCD 中，∠A : ∠B = 1 : 8，则 ∠A 的度数是（ ）",
+      "options": [
+        "160°",
+        "10°",
+        "20°",
+        "30°"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：20°。相邻两角互补，共 9 份对应 180°，∠A = 180° × 1/9 = 20°。",
+      "difficulty": 3
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在平行四边形 ABCD 中，∠A : ∠B = 5 : 7，则 ∠A 的度数是（ ）",
+      "options": [
+        "37.5°",
+        "75°",
+        "85°",
+        "105°"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：75°。相邻两角互补，共 12 份对应 180°，∠A = 180° × 5/12 = 75°。",
+      "difficulty": 3
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在平行四边形 ABCD 中，∠A : ∠B = 3 : 7，则 ∠A 的度数是（ ）",
+      "options": [
+        "54°",
+        "64°",
+        "126°",
+        "27°"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：54°。相邻两角互补，共 10 份对应 180°，∠A = 180° × 3/10 = 54°。",
+      "difficulty": 3
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-数学-7",
+      "chapterName": "平行四边形",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在平行四边形 ABCD 中，∠A : ∠B = 7 : 11，则 ∠A 的度数是（ ）",
+      "options": [
+        "80°",
+        "110°",
+        "35°",
+        "70°"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：70°。相邻两角互补，共 18 份对应 180°，∠A = 180° × 7/18 = 70°。",
+      "difficulty": 3
     }
   ]
 }

@@ -6,9 +6,9 @@
     "id": "初三-化学-1",
     "name": "物质构成与化学用语"
   },
-  "generatedAt": "2026-11-13T02:48:13.822Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.835Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwednb3x",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：2Na^+中数字“2”写在离子符号前，表示两个钠离子，不表示一个离子所带电荷数。\nB. 正确：Mg^{2+}中右上角数字“2”表示一个镁离子带两个单位正电荷。\nC. 错误：2H_2O中数字“2”写在化学式前，表示两个水分子。\nD. 错误：O_2中右下角数字“2”表示一个氧分子由两个氧原子构成。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知相对原子质量 H-1、O-16，H₂O 的相对分子质量是（ ）",
+      "options": [
+        "18",
+        "20",
+        "16",
+        "36"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：18。把化学式中各原子的相对原子质量相加，H₂O 的相对分子质量为 18。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知相对原子质量 C-12、O-16，CO₂ 的相对分子质量是（ ）",
+      "options": [
+        "46",
+        "42",
+        "88",
+        "44"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：44。把化学式中各原子的相对原子质量相加，CO₂ 的相对分子质量为 44。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知相对原子质量 Na-23、Cl-35.5，NaCl 的相对分子质量是（ ）",
+      "options": [
+        "56.5",
+        "117",
+        "58.5",
+        "60.5"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：58.5。把化学式中各原子的相对原子质量相加，NaCl 的相对分子质量为 58.5。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知相对原子质量 Ca-40、C-12、O-16，CaCO₃ 的相对分子质量是（ ）",
+      "options": [
+        "200",
+        "100",
+        "102",
+        "98"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：100。把化学式中各原子的相对原子质量相加，CaCO₃ 的相对分子质量为 100。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知相对原子质量 H-1、S-32、O-16，H₂SO₄ 的相对分子质量是（ ）",
+      "options": [
+        "98",
+        "100",
+        "96",
+        "196"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：98。把化学式中各原子的相对原子质量相加，H₂SO₄ 的相对分子质量为 98。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知相对原子质量 Na-23、O-16、H-1，NaOH 的相对分子质量是（ ）",
+      "options": [
+        "42",
+        "38",
+        "80",
+        "40"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：40。把化学式中各原子的相对原子质量相加，NaOH 的相对分子质量为 40。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知相对原子质量 N-14、H-1、O-16，NH₄NO₃ 的相对分子质量是（ ）",
+      "options": [
+        "78",
+        "160",
+        "80",
+        "82"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：80。把化学式中各原子的相对原子质量相加，NH₄NO₃ 的相对分子质量为 80。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知相对原子质量 Ca-40、O-16、H-1，Ca(OH)₂ 的相对分子质量是（ ）",
+      "options": [
+        "148",
+        "74",
+        "76",
+        "72"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：74。把化学式中各原子的相对原子质量相加，Ca(OH)₂ 的相对分子质量为 74。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知相对原子质量 K-39、Mn-55、O-16，KMnO₄ 的相对分子质量是（ ）",
+      "options": [
+        "158",
+        "160",
+        "156",
+        "316"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：158。把化学式中各原子的相对原子质量相加，KMnO₄ 的相对分子质量为 158。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知相对原子质量 C-12、H-1，CH₄ 的相对分子质量是（ ）",
+      "options": [
+        "18",
+        "14",
+        "32",
+        "16"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：16。把化学式中各原子的相对原子质量相加，CH₄ 的相对分子质量为 16。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 H-1、O-16，H₂O 中 H、O 元素的质量比是（ ）",
+      "options": [
+        "1:16",
+        "8:1",
+        "1:8",
+        "2:1"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1:8。各元素质量等于相对原子质量乘原子个数，化简后为 1:8，即 1:8。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 C-12、O-16，CO₂ 中 C、O 元素的质量比是（ ）",
+      "options": [
+        "8:3",
+        "3:8",
+        "1:2",
+        "12:16"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：3:8。各元素质量等于相对原子质量乘原子个数，化简后为 3:8，即 3:8。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Ca-40、C-12、O-16，CaCO₃ 中 Ca、C、O 元素的质量比是（ ）",
+      "options": [
+        "10:3:12",
+        "1:1:3",
+        "10:12:3",
+        "3:10:12"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：10:3:12。各元素质量等于相对原子质量乘原子个数，化简后为 10:3:12，即 10:3:12。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 H-1、S-32、O-16，H₂SO₄ 中 H、S、O 元素的质量比是（ ）",
+      "options": [
+        "1:32:16",
+        "2:1:4",
+        "32:16:1",
+        "1:16:32"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1:16:32。各元素质量等于相对原子质量乘原子个数，化简后为 1:16:32，即 1:16:32。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 N-14、H-1、O-16，NH₄NO₃ 中 N、H、O 元素的质量比是（ ）",
+      "options": [
+        "1:4:3",
+        "14:4:16",
+        "7:1:12",
+        "7:12:1"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：7:1:12。各元素质量等于相对原子质量乘原子个数，化简后为 7:1:12，即 7:1:12。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 C-12、H-1，CH₄ 中 C、H 元素的质量比是（ ）",
+      "options": [
+        "4:12",
+        "3:1",
+        "1:4",
+        "1:3"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：3:1。各元素质量等于相对原子质量乘原子个数，化简后为 3:1，即 3:1。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Na-23、O-16、H-1，NaOH 中 Na、O、H 元素的质量比是（ ）",
+      "options": [
+        "23:16:1",
+        "1:16:23",
+        "23:1:16",
+        "40:16:1"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：23:16:1。各元素质量等于相对原子质量乘原子个数，化简后为 23:16:1，即 23:16:1。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Ca-40、O-16、H-1，Ca(OH)₂ 中 Ca、O、H 元素的质量比是（ ）",
+      "options": [
+        "20:1:16",
+        "40:16:2",
+        "2:16:1",
+        "20:16:1"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：20:16:1。各元素质量等于相对原子质量乘原子个数，化简后为 20:16:1，即 20:16:1。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Al-27、O-16，Al₂O₃ 中 Al、O 元素的质量比是（ ）",
+      "options": [
+        "2:3",
+        "8:9",
+        "9:8",
+        "27:16"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：9:8。各元素质量等于相对原子质量乘原子个数，化简后为 9:8，即 9:8。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Fe-56、O-16，Fe₂O₃ 中 Fe、O 元素的质量比是（ ）",
+      "options": [
+        "3:7",
+        "7:3",
+        "56:16",
+        "2:3"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：7:3。各元素质量等于相对原子质量乘原子个数，化简后为 7:3，即 7:3。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知 钠元素的化合价为 +1，氯元素的化合价为 -1，则氯化钠的化学式是（ ）",
+      "options": [
+        "NaCl",
+        "NaCl₂",
+        "Na₂Cl",
+        "NaCl₃"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：NaCl。根据化合物中各元素正负化合价代数和为零，氯化钠的化学式为 NaCl。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知 钙元素的化合价为 +2，氯元素的化合价为 -1，则氯化钙的化学式是（ ）",
+      "options": [
+        "CaCl",
+        "Ca₂Cl",
+        "CaCl₃",
+        "CaCl₂"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：CaCl₂。根据化合物中各元素正负化合价代数和为零，氯化钙的化学式为 CaCl₂。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知 铝元素的化合价为 +3，氧元素的化合价为 -2，则氧化铝的化学式是（ ）",
+      "options": [
+        "Al₂O",
+        "AlO₃",
+        "Al₂O₃",
+        "AlO"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：Al₂O₃。根据化合物中各元素正负化合价代数和为零，氧化铝的化学式为 Al₂O₃。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知 铁元素的化合价为 +3，氯元素的化合价为 -1，则氯化铁的化学式是（ ）",
+      "options": [
+        "Fe₂Cl₃",
+        "FeCl₃",
+        "FeCl",
+        "FeCl₂"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：FeCl₃。根据化合物中各元素正负化合价代数和为零，氯化铁的化学式为 FeCl₃。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知 铁元素的化合价为 +2，氧元素的化合价为 -2，则氧化亚铁的化学式是（ ）",
+      "options": [
+        "FeO",
+        "Fe₂O",
+        "FeO₂",
+        "Fe₂O₃"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：FeO。根据化合物中各元素正负化合价代数和为零，氧化亚铁的化学式为 FeO。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知 铁元素的化合价为 +3，氧元素的化合价为 -2，则氧化铁的化学式是（ ）",
+      "options": [
+        "FeO",
+        "Fe₃O₂",
+        "Fe₂O",
+        "Fe₂O₃"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Fe₂O₃。根据化合物中各元素正负化合价代数和为零，氧化铁的化学式为 Fe₂O₃。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知 铜元素的化合价为 +2，氧元素的化合价为 -2，则氧化铜的化学式是（ ）",
+      "options": [
+        "CuO₂",
+        "Cu₂O₃",
+        "CuO",
+        "Cu₂O"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：CuO。根据化合物中各元素正负化合价代数和为零，氧化铜的化学式为 CuO。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知 镁元素的化合价为 +2，氧元素的化合价为 -2，则氧化镁的化学式是（ ）",
+      "options": [
+        "Mg₂O₃",
+        "MgO",
+        "Mg₂O",
+        "MgO₂"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：MgO。根据化合物中各元素正负化合价代数和为零，氧化镁的化学式为 MgO。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知 硫元素的化合价为 +4，氧元素的化合价为 -2，则二氧化硫的化学式是（ ）",
+      "options": [
+        "SO₂",
+        "SO",
+        "SO₃",
+        "S₂O"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：SO₂。根据化合物中各元素正负化合价代数和为零，二氧化硫的化学式为 SO₂。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-化学-1",
+      "chapterName": "物质构成与化学用语",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知 锌元素的化合价为 +2，氧元素的化合价为 -2，则氧化锌的化学式是（ ）",
+      "options": [
+        "Zn₂O",
+        "ZnO₂",
+        "Zn₂O₃",
+        "ZnO"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：ZnO。根据化合物中各元素正负化合价代数和为零，氧化锌的化学式为 ZnO。",
+      "difficulty": 2
     }
   ]
 }

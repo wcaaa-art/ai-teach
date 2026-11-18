@@ -6,9 +6,9 @@
     "id": "初一-道德与法治-2",
     "name": "友谊与交往"
   },
-  "generatedAt": "2026-11-14T12:14:13.134Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.971Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdb0y3",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：建立友谊需要开放自己、主动交往。参加集体活动并真诚交流，有利于增进了解、获得友谊，符合友谊与交往的基本要求。\nB. 错误：友谊不应以成绩高低作为交往标准，这种功利化选择不利于建立平等、真诚的友谊。\nC. 错误：友谊需要真诚和相互尊重，隐藏真实想法、一味随声附和会失去自我，也不利于形成真正的友谊。\nD. 错误：友谊不能没有原则。面对朋友的不合理要求，应明辨是非并予以拒绝，而不是为了维持友谊而一概答应。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "友谊是一种（　　）",
+      "options": [
+        "亲密的关系",
+        "利益交换关系",
+        "从属关系",
+        "竞争关系"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：亲密的关系。按友谊的特质与交友原则判断，本题正确答案是「亲密的关系」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "友谊是（　　）",
+      "options": [
+        "单方面的付出",
+        "一方对另一方的控制",
+        "建立在利益之上",
+        "平等的、双向的"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：平等的、双向的。按友谊的特质与交友原则判断，本题正确答案是「平等的、双向的」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "友谊是一种心灵的相遇，说明友谊（　　）",
+      "options": [
+        "只与学习成绩有关",
+        "只与家庭背景有关",
+        "超越物质条件和学习成绩",
+        "只与物质条件有关"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：超越物质条件和学习成绩。按友谊的特质与交友原则判断，本题正确答案是「超越物质条件和学习成绩」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "友谊不是一成不变的，我们应该（　　）",
+      "options": [
+        "不再结交朋友",
+        "接受友谊的改变，学会处理友谊中的问题",
+        "强求友谊永远不变",
+        "因为友谊变化就否定过去"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：接受友谊的改变，学会处理友谊中的问题。按友谊的特质与交友原则判断，本题正确答案是「接受友谊的改变，学会处理友谊中的问题」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "朋友之间竞争（　　）",
+      "options": [
+        "不必然伤害友谊，关键是对待竞争的态度",
+        "一定会伤害友谊",
+        "与友谊无关",
+        "只能带来敌意"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：不必然伤害友谊，关键是对待竞争的态度。按友谊的特质与交友原则判断，本题正确答案是「不必然伤害友谊，关键是对待竞争的态度」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "友谊不能没有原则，意味着（　　）",
+      "options": [
+        "朋友做什么都要支持",
+        "朋友之间不需要原则",
+        "要无条件帮助朋友隐瞒错误",
+        "朋友犯错时要及时规劝，不能一味袒护"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：朋友犯错时要及时规劝，不能一味袒护。按友谊的特质与交友原则判断，本题正确答案是「朋友犯错时要及时规劝，不能一味袒护」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "建立友谊，需要（　　）",
+      "options": [
+        "只与成绩好的人交往",
+        "隐藏真实的自己",
+        "开放自己，主动交往，持续行动",
+        "等待别人主动"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：开放自己，主动交往，持续行动。按友谊的特质与交友原则判断，本题正确答案是「开放自己，主动交往，持续行动」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "呵护友谊，需要（　　）",
+      "options": [
+        "只考虑自己的感受",
+        "用心关怀对方，尊重对方，正确处理冲突",
+        "控制对方的生活",
+        "要求对方完全服从"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：用心关怀对方，尊重对方，正确处理冲突。按友谊的特质与交友原则判断，本题正确答案是「用心关怀对方，尊重对方，正确处理冲突」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "朋友之间发生冲突时，正确的做法是（　　）",
+      "options": [
+        "冷静沟通，换位思考，寻求解决办法",
+        "立即绝交",
+        "冷战到底",
+        "到处说对方坏话"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：冷静沟通，换位思考，寻求解决办法。按友谊的特质与交友原则判断，本题正确答案是「冷静沟通，换位思考，寻求解决办法」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“投我以木桃，报之以琼瑶”体现了友谊的（　　）",
+      "options": [
+        "单向性",
+        "竞争性",
+        "功利性",
+        "双向性"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：双向性。按友谊的特质与交友原则判断，本题正确答案是「双向性」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "网上交友的特点是（　　）",
+      "options": [
+        "面对面交流",
+        "没有风险",
+        "虚拟性、间接性、隐蔽性",
+        "完全真实可靠"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：虚拟性、间接性、隐蔽性。按网络交往与异性交往的规范判断，本题正确答案是「虚拟性、间接性、隐蔽性」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "网上交友时，应该（　　）",
+      "options": [
+        "单独与网友见面",
+        "提高警惕，保护个人隐私",
+        "随意透露家庭住址",
+        "轻信陌生网友"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：提高警惕，保护个人隐私。按网络交往与异性交往的规范判断，本题正确答案是「提高警惕，保护个人隐私」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "将网友转化为现实中的朋友，应该（　　）",
+      "options": [
+        "慎重对待，增强自我保护意识",
+        "立即单独见面",
+        "告诉对方所有个人信息",
+        "不需要任何防范"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：慎重对待，增强自我保护意识。按网络交往与异性交往的规范判断，本题正确答案是「慎重对待，增强自我保护意识」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在网络上受到侵害时，应该（　　）",
+      "options": [
+        "忍气吞声",
+        "以牙还牙",
+        "继续与对方交往",
+        "保留证据，及时向家长、老师或公安机关求助"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：保留证据，及时向家长、老师或公安机关求助。按网络交往与异性交往的规范判断，本题正确答案是「保留证据，及时向家长、老师或公安机关求助」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "异性同学之间正常交往（　　）",
+      "options": [
+        "是不允许的",
+        "只适合高年级学生",
+        "有利于相互学习、优势互补",
+        "一定会影响学习"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：有利于相互学习、优势互补。按网络交往与异性交往的规范判断，本题正确答案是「有利于相互学习、优势互补」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "与异性交往应做到（　　）",
+      "options": [
+        "随意开玩笑",
+        "自然、适度，尊重对方",
+        "过分亲密",
+        "刻意回避"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：自然、适度，尊重对方。按网络交往与异性交往的规范判断，本题正确答案是「自然、适度，尊重对方」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "尊重他人，首先要（　　）",
+      "options": [
+        "尊重他人的人格和权利",
+        "尊重他人的家庭背景",
+        "尊重他人的外貌",
+        "尊重他人的成绩"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：尊重他人的人格和权利。按网络交往与异性交往的规范判断，本题正确答案是「尊重他人的人格和权利」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "平等待人要求我们（　　）",
+      "options": [
+        "只与条件好的人交往",
+        "看不起成绩差的同学",
+        "根据外貌区别对待",
+        "不因家庭、成绩、外貌等歧视他人"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：不因家庭、成绩、外貌等歧视他人。按网络交往与异性交往的规范判断，本题正确答案是「不因家庭、成绩、外貌等歧视他人」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "换位思考就是（　　）",
+      "options": [
+        "要求他人服从自己",
+        "把自己的想法强加于人",
+        "设身处地为他人着想，理解他人的感受",
+        "只考虑自己的利益"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：设身处地为他人着想，理解他人的感受。按网络交往与异性交往的规范判断，本题正确答案是「设身处地为他人着想，理解他人的感受」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "竞争与合作的关系是（　　）",
+      "options": [
+        "竞争与合作完全对立",
+        "竞争中合作，合作中竞争，实现共同进步",
+        "只能竞争不能合作",
+        "只能合作不能竞争"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：竞争中合作，合作中竞争，实现共同进步。按网络交往与异性交往的规范判断，本题正确答案是「竞争中合作，合作中竞争，实现共同进步」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在集体中，个人利益与集体利益发生矛盾时，应该（　　）",
+      "options": [
+        "把集体利益放在首位，同时尊重个人正当利益",
+        "只顾个人利益",
+        "完全放弃个人利益",
+        "无视集体规则"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：把集体利益放在首位，同时尊重个人正当利益。按集体生活与交往实践判断，本题正确答案是「把集体利益放在首位，同时尊重个人正当利益」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "建设美好集体，需要（　　）",
+      "options": [
+        "只靠班干部",
+        "只靠老师",
+        "只靠少数人",
+        "每个成员共同参与、各尽其能"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：每个成员共同参与、各尽其能。按集体生活与交往实践判断，本题正确答案是「每个成员共同参与、各尽其能」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在集体中，我们应该（　　）",
+      "options": [
+        "排斥他人",
+        "拉帮结派",
+        "学会关爱他人、互相帮助",
+        "只关注自己的事"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：学会关爱他人、互相帮助。按集体生活与交往实践判断，本题正确答案是「学会关爱他人、互相帮助」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "处理同学之间的矛盾，应该（　　）",
+      "options": [
+        "扩大矛盾",
+        "主动沟通，相互理解，宽容待人",
+        "斤斤计较",
+        "报复对方"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：主动沟通，相互理解，宽容待人。按集体生活与交往实践判断，本题正确答案是「主动沟通，相互理解，宽容待人」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "真正的友谊应该（　　）",
+      "options": [
+        "相互尊重、相互支持、共同进步",
+        "相互利用",
+        "要求对方无条件服从",
+        "只在顺境中来往"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：相互尊重、相互支持、共同进步。按集体生活与交往实践判断，本题正确答案是「相互尊重、相互支持、共同进步」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "当朋友提出不合理要求时，应该（　　）",
+      "options": [
+        "无条件答应",
+        "直接翻脸",
+        "表面答应背后不做",
+        "坚持原则，委婉拒绝并说明理由"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：坚持原则，委婉拒绝并说明理由。按集体生活与交往实践判断，本题正确答案是「坚持原则，委婉拒绝并说明理由」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列做法有利于建立良好人际关系的是（　　）",
+      "options": [
+        "随意打断他人",
+        "背后议论他人",
+        "真诚待人，学会倾听",
+        "只谈论自己"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：真诚待人，学会倾听。按集体生活与交往实践判断，本题正确答案是「真诚待人，学会倾听」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "文明有礼表现在（　　）",
+      "options": [
+        "嘲笑他人",
+        "态度谦和、用语文明、举止端庄",
+        "说话粗鲁",
+        "随意插队"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：态度谦和、用语文明、举止端庄。按集体生活与交往实践判断，本题正确答案是「态度谦和、用语文明、举止端庄」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "诚信是（　　）",
+      "options": [
+        "中华民族的传统美德，也是社会主义核心价值观的重要内容",
+        "可有可无的品质",
+        "只适用于成年人",
+        "只与商业活动有关"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：中华民族的传统美德，也是社会主义核心价值观的重要内容。按集体生活与交往实践判断，本题正确答案是「中华民族的传统美德，也是社会主义核心价值观的重要内容」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-道德与法治-2",
+      "chapterName": "友谊与交往",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "践行诚信，应该（　　）",
+      "options": [
+        "为讲诚信泄露他人隐私",
+        "只在大事上讲诚信",
+        "允许善意的谎言损害公共利益",
+        "树立诚信意识，运用诚信智慧，珍惜个人诚信记录"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：树立诚信意识，运用诚信智慧，珍惜个人诚信记录。按集体生活与交往实践判断，本题正确答案是「树立诚信意识，运用诚信智慧，珍惜个人诚信记录」。",
+      "difficulty": 2
     }
   ]
 }

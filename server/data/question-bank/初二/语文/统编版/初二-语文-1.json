@@ -4,19 +4,19 @@
   "edition": "统编版",
   "chapter": {
     "id": "初二-语文-1",
-    "name": "八上：新闻与传记阅读"
+    "name": "新闻与传记阅读"
   },
-  "generatedAt": "2026-11-14T12:14:36.997Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.875Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdbf6j",
       "chapterId": "初二-语文-1",
-      "chapterName": "八上：新闻与传记阅读",
+      "chapterName": "新闻与传记阅读",
       "type": "single",
       "dimension": "concept",
-      "stem": "学习八上“新闻与传记阅读”单元后，同学们对相关文体知识进行梳理。下列表述正确的一项是（ ）",
+      "stem": "学习“新闻与传记阅读”单元后，同学们对相关文体知识进行梳理。下列表述正确的一项是（ ）",
       "options": [
         "新闻特写可以适当虚构细节，以增强作品的感染力",
         "消息通常由标题、导语、主体、背景、结语等部分组成，导语一般概括新闻中最重要的事实",
@@ -30,7 +30,7 @@
     {
       "id": "diag-3-mwgdbf6j",
       "chapterId": "初二-语文-1",
-      "chapterName": "八上：新闻与传记阅读",
+      "chapterName": "新闻与传记阅读",
       "type": "single",
       "dimension": "transfer",
       "stem": "阅读下面两则材料，回答问题。\n材料一：10月12日，某中学“校园读书节”开幕。开幕式上，学校发布“年度阅读榜单”，并为借阅量最高的十名学生颁发“阅读之星”证书。据图书馆统计，过去一学年学生人均借阅18.6册，比上一学年增加3.2册。校长表示，读书节不追求热闹，而要让学生真正读进去、讲出来。\n材料二：叶圣陶年轻时在小学任教，常把学生带到窗前观察景物，再让他们把看到的写下来。他批改作文，从不只打分数，而是在学生本子上写下商量的意见：“这句可否改得短些？”“这里换个说法，是否更清楚？”后来，他编教材、办刊物，仍保持这种“商量”的习惯。\n两则材料在“用事实说话”上的共同点是（　　）",
@@ -47,7 +47,7 @@
     {
       "id": "diag-4-mwgdbf6j",
       "chapterId": "初二-语文-1",
-      "chapterName": "八上：新闻与传记阅读",
+      "chapterName": "新闻与传记阅读",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "下列对新闻与传记相关知识的辨析，正确的一项是（ ）",
@@ -64,7 +64,7 @@
     {
       "id": "diag-5-mwgdbf6j",
       "chapterId": "初二-语文-1",
-      "chapterName": "八上：新闻与传记阅读",
+      "chapterName": "新闻与传记阅读",
       "type": "single",
       "dimension": "concept",
       "stem": "下列关于新闻与传记阅读的表述，正确的一项是（ ）",
@@ -81,7 +81,7 @@
     {
       "id": "diag-6-mwgdbf6j",
       "chapterId": "初二-语文-1",
-      "chapterName": "八上：新闻与传记阅读",
+      "chapterName": "新闻与传记阅读",
       "type": "single",
       "dimension": "basic-application",
       "stem": "学校公众号拟推送一则消息，初稿开头写道：“9月18日，我校举行‘非遗进校园’活动，邀请剪纸艺人张师傅现场教学，200余名师生参与。”从新闻写作的角度看，对这句话分析正确的一项是（ ）",
@@ -98,7 +98,7 @@
     {
       "id": "diag-7-mwgdbf6j",
       "chapterId": "初二-语文-1",
-      "chapterName": "八上：新闻与传记阅读",
+      "chapterName": "新闻与传记阅读",
       "type": "single",
       "dimension": "transfer",
       "stem": "学校文学社要编一期“新闻与传记比较阅读”专刊。编辑收集到两段文字：甲段是消息《我国首条跨海高铁全线铺轨贯通》节选，简明报道时间、地点和事件；乙段是传记《苏东坡传》节选，叙述苏轼被贬黄州后开垦东坡、与农夫交往，并穿插作者对其心境的评述。以下编辑意见最恰当的一项是",
@@ -115,7 +115,7 @@
     {
       "id": "diag-8-mwgdbf6j",
       "chapterId": "初二-语文-1",
-      "chapterName": "八上：新闻与传记阅读",
+      "chapterName": "新闻与传记阅读",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "下面是四位同学关于“新闻与传记阅读”的发言，其中对文体特点理解错误的一项是（ ）",
@@ -132,7 +132,7 @@
     {
       "id": "diag-9-mwgdbf6j",
       "chapterId": "初二-语文-1",
-      "chapterName": "八上：新闻与传记阅读",
+      "chapterName": "新闻与传记阅读",
       "type": "single",
       "dimension": "concept",
       "stem": "下列关于新闻（消息、通讯）与传记文体知识的表述，正确的一项是（　　）",
@@ -149,7 +149,7 @@
     {
       "id": "diag-10-mwgdbf6j",
       "chapterId": "初二-语文-1",
-      "chapterName": "八上：新闻与传记阅读",
+      "chapterName": "新闻与传记阅读",
       "type": "single",
       "dimension": "basic-application",
       "stem": "学校文学社要制作“感动校园人物”专栏，下列拟写的导语中，消息（新闻）写作规范运用最恰当的一项是：",
@@ -166,7 +166,7 @@
     {
       "id": "diag-1-mwgdbjcz",
       "chapterId": "初二-语文-1",
-      "chapterName": "八上：新闻与传记阅读",
+      "chapterName": "新闻与传记阅读",
       "type": "single",
       "dimension": "concept",
       "stem": "某班在整理“新闻与传记阅读”笔记时，对下列课文或文体的判断展开讨论。其中正确的一项是（ ）",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：消息常由标题、导语、主体、背景、结语等部分构成，导语要用简明文字概括新闻的核心事实，这是新闻文体常识。\nB. 错误：通讯与消息并不完全相同，通讯往往比消息更详细，可以运用描写、议论、抒情等表达方式，并非只能客观陈述事实。\nC. 错误：传记的基本要求是真实，不能为了可读性虚构传主经历；文学性表达不能违背传主生平事实。\nD. 错误：新闻既要讲时效性，也必须坚持真实性，未经核实的细节不能直接报道。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "新闻的六要素通常概括为（　　）",
+      "options": [
+        "时间、地点、人物、事件的起因、经过、结果",
+        "论点、论据、论证、结构、语言、情感",
+        "对象、特征、方法、顺序、结构、语言",
+        "意象、意境、手法、情感、语言、风格"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：时间、地点、人物、事件的起因、经过、结果。按新闻的要素、结构与特点判断，本题正确答案是「时间、地点、人物、事件的起因、经过、结果」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一则消息通常由（　　）组成",
+      "options": [
+        "开头、中间、结尾",
+        "论点、论据、结论",
+        "起因、经过、结果",
+        "标题、导语、主体、背景、结语"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：标题、导语、主体、背景、结语。按新闻的要素、结构与特点判断，本题正确答案是「标题、导语、主体、背景、结语」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "新闻导语的主要作用是（　　）",
+      "options": [
+        "发表作者的评论",
+        "介绍背景知识",
+        "用简明的话概括新闻的主要内容",
+        "详细叙述事件经过"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：用简明的话概括新闻的主要内容。按新闻的要素、结构与特点判断，本题正确答案是「用简明的话概括新闻的主要内容」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "新闻标题的主要作用是（　　）",
+      "options": [
+        "说明写作目的",
+        "概括新闻主要内容，吸引读者",
+        "交代作者身份",
+        "抒发作者情感"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：概括新闻主要内容，吸引读者。按新闻的要素、结构与特点判断，本题正确答案是「概括新闻主要内容，吸引读者」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "消息的主要特点是（　　）",
+      "options": [
+        "真实性、时效性、简明性",
+        "虚构性、文学性、抒情性",
+        "论证性、逻辑性、严密性",
+        "说明性、知识性、客观性"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：真实性、时效性、简明性。按新闻的要素、结构与特点判断，本题正确答案是「真实性、时效性、简明性」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "通讯与消息的主要区别是（　　）",
+      "options": [
+        "通讯不需要真实",
+        "消息篇幅更长",
+        "通讯只写人物",
+        "通讯内容更详细，表达方式更多样"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：通讯内容更详细，表达方式更多样。按新闻的要素、结构与特点判断，本题正确答案是「通讯内容更详细，表达方式更多样」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "新闻必须坚持真实性原则，意味着（　　）",
+      "options": [
+        "可以夸大事实",
+        "可以凭想象写作",
+        "报道的内容必须符合客观事实",
+        "可以适当虚构细节"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：报道的内容必须符合客观事实。按新闻的要素、结构与特点判断，本题正确答案是「报道的内容必须符合客观事实」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "新闻采访中，提问应该（　　）",
+      "options": [
+        "诱导对方说谎",
+        "围绕主题，具体明确，有针对性",
+        "随意提问",
+        "只问无关问题"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：围绕主题，具体明确，有针对性。按新闻的要素、结构与特点判断，本题正确答案是「围绕主题，具体明确，有针对性」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "新闻评论主要是（　　）",
+      "options": [
+        "对新闻事件进行分析和评价",
+        "客观叙述事件经过",
+        "虚构故事情节",
+        "介绍科学知识"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：对新闻事件进行分析和评价。按新闻的要素、结构与特点判断，本题正确答案是「对新闻事件进行分析和评价」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "新闻特写主要着眼于（　　）",
+      "options": [
+        "概括事件全过程",
+        "发表长篇议论",
+        "介绍人物生平",
+        "放大新闻事件中的某个片段或细节"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：放大新闻事件中的某个片段或细节。按新闻的要素、结构与特点判断，本题正确答案是「放大新闻事件中的某个片段或细节」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "传记的主要特点是（　　）",
+      "options": [
+        "说明性和知识性",
+        "论证性和逻辑性",
+        "真实性和文学性",
+        "虚构性和娱乐性"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：真实性和文学性。按传记的特点与阅读方法判断，本题正确答案是「真实性和文学性」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "自传是指（　　）",
+      "options": [
+        "介绍科学知识的文章",
+        "作者叙述自己生平经历的作品",
+        "作者为他人写的传记",
+        "虚构的人物故事"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：作者叙述自己生平经历的作品。按传记的特点与阅读方法判断，本题正确答案是「作者叙述自己生平经历的作品」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "他传是指（　　）",
+      "options": [
+        "作者为他人写的传记",
+        "作者写自己的生平",
+        "虚构的小说",
+        "新闻报道"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：作者为他人写的传记。按传记的特点与阅读方法判断，本题正确答案是「作者为他人写的传记」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "传记选材的基本原则是（　　）",
+      "options": [
+        "选取所有生活细节",
+        "只选有趣的传闻",
+        "随意编造材料",
+        "选取能体现人物性格和成就的典型材料"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：选取能体现人物性格和成就的典型材料。按传记的特点与阅读方法判断，本题正确答案是「选取能体现人物性格和成就的典型材料」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "传记中的细节描写的作用是（　　）",
+      "options": [
+        "代替主要事件",
+        "说明写作背景",
+        "使人物形象更真实、更丰满",
+        "增加虚构成分"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：使人物形象更真实、更丰满。按传记的特点与阅读方法判断，本题正确答案是「使人物形象更真实、更丰满」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "阅读传记时，分析人物形象应该（　　）",
+      "options": [
+        "只凭主观印象",
+        "结合人物的经历、言行和时代背景",
+        "只看作者评价",
+        "只看外貌描写"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：结合人物的经历、言行和时代背景。按传记的特点与阅读方法判断，本题正确答案是「结合人物的经历、言行和时代背景」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "传记与小说的主要区别是（　　）",
+      "options": [
+        "传记必须真实，小说可以虚构",
+        "传记篇幅更长",
+        "小说必须真实",
+        "传记不需要人物"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：传记必须真实，小说可以虚构。按传记的特点与阅读方法判断，本题正确答案是「传记必须真实，小说可以虚构」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "阅读传记的方法不包括（　　）",
+      "options": [
+        "梳理人物生平经历",
+        "分析人物性格品质",
+        "体会人物的精神",
+        "把传记当作虚构小说随意改编"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：把传记当作虚构小说随意改编。按传记的特点与阅读方法判断，本题正确答案是「把传记当作虚构小说随意改编」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "传记的语言通常（　　）",
+      "options": [
+        "完全虚构夸张",
+        "只使用说明方法",
+        "真实准确，同时具有一定的文学性",
+        "全部是议论"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：真实准确，同时具有一定的文学性。按传记的特点与阅读方法判断，本题正确答案是「真实准确，同时具有一定的文学性」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "传记写作必须尊重事实，这意味着（　　）",
+      "options": [
+        "可以隐瞒所有缺点",
+        "主要事件和人物经历必须真实可靠",
+        "可以随意编造情节",
+        "可以夸大人物功绩"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：主要事件和人物经历必须真实可靠。按传记的特点与阅读方法判断，本题正确答案是「主要事件和人物经历必须真实可靠」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "拟写新闻标题，应该（　　）",
+      "options": [
+        "简明概括新闻的核心内容",
+        "写得越长越好",
+        "只写时间地点",
+        "加入大量评论"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：简明概括新闻的核心内容。按新闻与传记的综合阅读、写作方法判断，本题正确答案是「简明概括新闻的核心内容」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "概括新闻主要内容，应该重点看（　　）",
+      "options": [
+        "背景和结语",
+        "作者的简介",
+        "标点符号",
+        "导语和主体中的关键信息"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：导语和主体中的关键信息。按新闻与传记的综合阅读、写作方法判断，本题正确答案是「导语和主体中的关键信息」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "新闻中交代背景的作用是（　　）",
+      "options": [
+        "代替主体内容",
+        "抒发作者情感",
+        "帮助读者理解新闻事件的意义",
+        "增加文章篇幅"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：帮助读者理解新闻事件的意义。按新闻与传记的综合阅读、写作方法判断，本题正确答案是「帮助读者理解新闻事件的意义」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "阅读新闻时，判断信息可信度应该（　　）",
+      "options": [
+        "只看转发量",
+        "看信息来源是否权威、事实是否准确",
+        "只看标题是否吸引人",
+        "只看评论多少"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：看信息来源是否权威、事实是否准确。按新闻与传记的综合阅读、写作方法判断，本题正确答案是「看信息来源是否权威、事实是否准确」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "新闻与传记的共同点是（　　）",
+      "options": [
+        "都强调真实性",
+        "都允许虚构",
+        "都以议论为主",
+        "都只写人物"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：都强调真实性。按新闻与传记的综合阅读、写作方法判断，本题正确答案是「都强调真实性」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "从人物传记中，我们可以学习人物的（　　）",
+      "options": [
+        "外貌特征",
+        "家庭住址",
+        "生活习惯细节",
+        "精神品质和人生经验"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：精神品质和人生经验。按新闻与传记的综合阅读、写作方法判断，本题正确答案是「精神品质和人生经验」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "评价传记中的人物，应该（　　）",
+      "options": [
+        "只看缺点",
+        "凭个人好恶",
+        "全面客观，结合时代背景",
+        "只看优点"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：全面客观，结合时代背景。按新闻与传记的综合阅读、写作方法判断，本题正确答案是「全面客观，结合时代背景」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "新闻写作中，引用的材料应该（　　）",
+      "options": [
+        "不必核实",
+        "真实可靠，来源清楚",
+        "随意编造",
+        "只凭听说"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：真实可靠，来源清楚。按新闻与传记的综合阅读、写作方法判断，本题正确答案是「真实可靠，来源清楚」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "阅读新闻后联系现实，可以（　　）",
+      "options": [
+        "加深对事件意义的理解",
+        "改变新闻事实",
+        "代替新闻写作",
+        "忽略新闻内容"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：加深对事件意义的理解。按新闻与传记的综合阅读、写作方法判断，本题正确答案是「加深对事件意义的理解」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-语文-1",
+      "chapterName": "新闻与传记阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "写人物传记片段，应该（　　）",
+      "options": [
+        "罗列所有琐事",
+        "虚构主要经历",
+        "只写人物外貌",
+        "选取典型事例，突出人物特点"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：选取典型事例，突出人物特点。按新闻与传记的综合阅读、写作方法判断，本题正确答案是「选取典型事例，突出人物特点」。",
+      "difficulty": 2
     }
   ]
 }

@@ -6,9 +6,9 @@
     "id": "初二-物理-7",
     "name": "压强与浮力"
   },
-  "generatedAt": "2026-11-13T02:45:55.360Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.214Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedk55r",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：液体压强确实随深度增加而增大，但若罐受到向下的压力变大，应更有利于把罐压下，不能解释手感到越来越费力，与题干冲突。\nB. 正确：根据阿基米德原理，浸在液体中的物体所受浮力等于它排开液体所受的重力；罐逐渐浸入水中时，排开水的体积增大，浮力增大，浮力方向竖直向上，所以手需要施加更大的向下压力。\nC. 错误：罐的质量不变，重力不随浸入深度改变，选项所述与重力概念冲突。\nD. 错误：在一般水槽范围内，水的密度可认为不变，不会随深度增加而明显增大；浮力增大的原因是排开水的体积增大。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "物体对水平地面的压力是 100 N，受力面积是 0.5 m²，地面受到的压强是（ ）Pa",
+      "options": [
+        "200",
+        "50",
+        "300",
+        "100"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：200。p = F/S = 100 ÷ 0.5 = 200 Pa。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "物体对水平地面的压力是 200 N，受力面积是 0.4 m²，地面受到的压强是（ ）Pa",
+      "options": [
+        "80",
+        "600",
+        "400",
+        "500"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：500。p = F/S = 200 ÷ 0.4 = 500 Pa。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "物体对水平地面的压力是 300 N，受力面积是 0.6 m²，地面受到的压强是（ ）Pa",
+      "options": [
+        "600",
+        "400",
+        "500",
+        "180"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：500。p = F/S = 300 ÷ 0.6 = 500 Pa。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "物体对水平地面的压力是 400 N，受力面积是 0.8 m²，地面受到的压强是（ ）Pa",
+      "options": [
+        "400",
+        "500",
+        "320",
+        "600"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：500。p = F/S = 400 ÷ 0.8 = 500 Pa。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "物体对水平地面的压力是 50 N，受力面积是 0.2 m²，地面受到的压强是（ ）Pa",
+      "options": [
+        "250",
+        "10",
+        "350",
+        "150"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：250。p = F/S = 50 ÷ 0.2 = 250 Pa。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "物体对水平地面的压力是 600 N，受力面积是 1.2 m²，地面受到的压强是（ ）Pa",
+      "options": [
+        "720",
+        "600",
+        "400",
+        "500"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：500。p = F/S = 600 ÷ 1.2 = 500 Pa。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "物体对水平地面的压力是 150 N，受力面积是 0.3 m²，地面受到的压强是（ ）Pa",
+      "options": [
+        "600",
+        "400",
+        "500",
+        "45"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：500。p = F/S = 150 ÷ 0.3 = 500 Pa。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "物体对水平地面的压力是 90 N，受力面积是 0.15 m²，地面受到的压强是（ ）Pa",
+      "options": [
+        "500",
+        "600",
+        "13.5",
+        "700"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：600。p = F/S = 90 ÷ 0.15 = 600 Pa。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "物体对水平地面的压力是 250 N，受力面积是 0.5 m²，地面受到的压强是（ ）Pa",
+      "options": [
+        "500",
+        "125",
+        "600",
+        "400"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：500。p = F/S = 250 ÷ 0.5 = 500 Pa。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "物体对水平地面的压力是 800 N，受力面积是 2 m²，地面受到的压强是（ ）Pa",
+      "options": [
+        "1600",
+        "500",
+        "300",
+        "400"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：400。p = F/S = 800 ÷ 2 = 400 Pa。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "水深 0.1 m 处的压强是（ ）Pa（ρ水 = 1.0×10³ kg/m³，g 取 10 N/kg）",
+      "options": [
+        "2000",
+        "1001",
+        "1000",
+        "500"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1000。p = ρgh = 1000 × 10 × 0.1 = 1000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "水深 0.2 m 处的压强是（ ）Pa（ρ水 = 1.0×10³ kg/m³，g 取 10 N/kg）",
+      "options": [
+        "3000",
+        "2000",
+        "1000",
+        "4000"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：2000。p = ρgh = 1000 × 10 × 0.2 = 2000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "水深 0.5 m 处的压强是（ ）Pa（ρ水 = 1.0×10³ kg/m³，g 取 10 N/kg）",
+      "options": [
+        "5000",
+        "2500",
+        "10000",
+        "6000"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：5000。p = ρgh = 1000 × 10 × 0.5 = 5000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "水深 1 m 处的压强是（ ）Pa（ρ水 = 1.0×10³ kg/m³，g 取 10 N/kg）",
+      "options": [
+        "5000",
+        "20000",
+        "11000",
+        "10000"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：10000。p = ρgh = 1000 × 10 × 1 = 10000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "水深 1.5 m 处的压强是（ ）Pa（ρ水 = 1.0×10³ kg/m³，g 取 10 N/kg）",
+      "options": [
+        "30000",
+        "16000",
+        "15000",
+        "7500"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：15000。p = ρgh = 1000 × 10 × 1.5 = 15000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "水深 2 m 处的压强是（ ）Pa（ρ水 = 1.0×10³ kg/m³，g 取 10 N/kg）",
+      "options": [
+        "21000",
+        "20000",
+        "10000",
+        "40000"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：20000。p = ρgh = 1000 × 10 × 2 = 20000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "水深 2.5 m 处的压强是（ ）Pa（ρ水 = 1.0×10³ kg/m³，g 取 10 N/kg）",
+      "options": [
+        "25000",
+        "12500",
+        "50000",
+        "26000"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：25000。p = ρgh = 1000 × 10 × 2.5 = 25000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "水深 3 m 处的压强是（ ）Pa（ρ水 = 1.0×10³ kg/m³，g 取 10 N/kg）",
+      "options": [
+        "15000",
+        "60000",
+        "31000",
+        "30000"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：30000。p = ρgh = 1000 × 10 × 3 = 30000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "水深 4 m 处的压强是（ ）Pa（ρ水 = 1.0×10³ kg/m³，g 取 10 N/kg）",
+      "options": [
+        "80000",
+        "41000",
+        "40000",
+        "20000"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：40000。p = ρgh = 1000 × 10 × 4 = 40000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "水深 5 m 处的压强是（ ）Pa（ρ水 = 1.0×10³ kg/m³，g 取 10 N/kg）",
+      "options": [
+        "51000",
+        "50000",
+        "25000",
+        "100000"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：50000。p = ρgh = 1000 × 10 × 5 = 50000 Pa。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "物体浸没在水中，排开水的体积是 0.001 m³，它受到的浮力是（ ）N（ρ水 = 1.0×10³ kg/m³，g 取 10 N/kg）",
+      "options": [
+        "10",
+        "5",
+        "20",
+        "11"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：10。F浮 = ρ水gV排 = 1000 × 10 × 0.001 = 10 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "物体浸没在水中，排开水的体积是 0.002 m³，它受到的浮力是（ ）N（ρ水 = 1.0×10³ kg/m³，g 取 10 N/kg）",
+      "options": [
+        "10",
+        "40",
+        "30",
+        "20"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：20。F浮 = ρ水gV排 = 1000 × 10 × 0.002 = 20 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "物体浸没在水中，排开水的体积是 0.005 m³，它受到的浮力是（ ）N（ρ水 = 1.0×10³ kg/m³，g 取 10 N/kg）",
+      "options": [
+        "100",
+        "60",
+        "50",
+        "25"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：50。F浮 = ρ水gV排 = 1000 × 10 × 0.005 = 50 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "物体浸没在水中，排开水的体积是 0.01 m³，它受到的浮力是（ ）N（ρ水 = 1.0×10³ kg/m³，g 取 10 N/kg）",
+      "options": [
+        "110",
+        "100",
+        "50",
+        "200"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：100。F浮 = ρ水gV排 = 1000 × 10 × 0.01 = 100 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "物体浸没在水中，排开水的体积是 0.0005 m³，它受到的浮力是（ ）N（ρ水 = 1.0×10³ kg/m³，g 取 10 N/kg）",
+      "options": [
+        "5",
+        "2.5",
+        "10",
+        "15"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：5。F浮 = ρ水gV排 = 1000 × 10 × 0.0005 = 5 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "物体浸没在水中，排开水的体积是 0.003 m³，它受到的浮力是（ ）N（ρ水 = 1.0×10³ kg/m³，g 取 10 N/kg）",
+      "options": [
+        "15",
+        "60",
+        "40",
+        "30"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：30。F浮 = ρ水gV排 = 1000 × 10 × 0.003 = 30 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "物体浸没在水中，排开水的体积是 0.004 m³，它受到的浮力是（ ）N（ρ水 = 1.0×10³ kg/m³，g 取 10 N/kg）",
+      "options": [
+        "80",
+        "50",
+        "40",
+        "20"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：40。F浮 = ρ水gV排 = 1000 × 10 × 0.004 = 40 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "物体浸没在水中，排开水的体积是 0.008 m³，它受到的浮力是（ ）N（ρ水 = 1.0×10³ kg/m³，g 取 10 N/kg）",
+      "options": [
+        "90",
+        "80",
+        "40",
+        "160"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：80。F浮 = ρ水gV排 = 1000 × 10 × 0.008 = 80 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "物体浸没在水中，排开水的体积是 0.0015 m³，它受到的浮力是（ ）N（ρ水 = 1.0×10³ kg/m³，g 取 10 N/kg）",
+      "options": [
+        "15",
+        "7.5",
+        "30",
+        "25"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：15。F浮 = ρ水gV排 = 1000 × 10 × 0.0015 = 15 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-物理-7",
+      "chapterName": "压强与浮力",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "物体浸没在水中，排开水的体积是 0.02 m³，它受到的浮力是（ ）N（ρ水 = 1.0×10³ kg/m³，g 取 10 N/kg）",
+      "options": [
+        "100",
+        "400",
+        "210",
+        "200"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：200。F浮 = ρ水gV排 = 1000 × 10 × 0.02 = 200 N。",
+      "difficulty": 2
     }
   ]
 }

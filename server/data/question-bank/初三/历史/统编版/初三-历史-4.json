@@ -6,9 +6,9 @@
     "id": "初三-历史-4",
     "name": "世界近代史"
   },
-  "generatedAt": "2026-11-14T12:17:40.865Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.108Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdfh8e",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：《权利法案》规定未经议会同意国王不得征税，这与“不受限制的征税权”直接冲突。\nB. 正确：《权利法案》以法律形式限制王权，保障议会权力，为英国君主立宪制奠定基础。\nC. 错误：英国此后仍保留君主，确立的是君主立宪制，并未废除君主制度。\nD. 错误：1689年并未规定全体成年男性享有选举权，普选权是后来议会改革逐步实现的。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "文艺复兴最早兴起于（ ）",
+      "options": [
+        "意大利",
+        "英国",
+        "法国",
+        "德意志"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：意大利。按文艺复兴与新航路开辟的史实判断，本题正确答案是「意大利」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "文艺复兴的核心思想是（ ）",
+      "options": [
+        "理性主义",
+        "神权主义",
+        "禁欲主义",
+        "人文主义"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：人文主义。按文艺复兴与新航路开辟的史实判断，本题正确答案是「人文主义」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "《神曲》的作者是（ ）",
+      "options": [
+        "达·芬奇",
+        "哥白尼",
+        "但丁",
+        "莎士比亚"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：但丁。按文艺复兴与新航路开辟的史实判断，本题正确答案是「但丁」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "《蒙娜丽莎》的作者是（ ）",
+      "options": [
+        "米开朗琪罗",
+        "达·芬奇",
+        "但丁",
+        "莎士比亚"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：达·芬奇。按文艺复兴与新航路开辟的史实判断，本题正确答案是「达·芬奇」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "《哈姆雷特》的作者是（ ）",
+      "options": [
+        "莎士比亚",
+        "但丁",
+        "达·芬奇",
+        "拉斐尔"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：莎士比亚。按文艺复兴与新航路开辟的史实判断，本题正确答案是「莎士比亚」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "哥伦布到达美洲的时间是（ ）",
+      "options": [
+        "1487年",
+        "1497年",
+        "1519年",
+        "1492年"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1492年。按文艺复兴与新航路开辟的史实判断，本题正确答案是「1492年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "首次完成环球航行的船队领导者是（ ）",
+      "options": [
+        "达·伽马",
+        "迪亚士",
+        "麦哲伦",
+        "哥伦布"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：麦哲伦。按文艺复兴与新航路开辟的史实判断，本题正确答案是「麦哲伦」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "开辟绕过好望角到达印度航路的是（ ）",
+      "options": [
+        "麦哲伦",
+        "达·伽马",
+        "迪亚士",
+        "哥伦布"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：达·伽马。按文艺复兴与新航路开辟的史实判断，本题正确答案是「达·伽马」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "新航路开辟的重要影响是（ ）",
+      "options": [
+        "世界开始连为一个整体",
+        "世界市场最终形成",
+        "工业革命开始",
+        "冷战正式开始"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：世界开始连为一个整体。按文艺复兴与新航路开辟的史实判断，本题正确答案是「世界开始连为一个整体」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "文艺复兴的实质是（ ）",
+      "options": [
+        "宗教改革运动",
+        "农民起义",
+        "工业革命",
+        "资产阶级思想文化运动"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：资产阶级思想文化运动。按文艺复兴与新航路开辟的史实判断，本题正确答案是「资产阶级思想文化运动」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "英国资产阶级革命开始于（ ）",
+      "options": [
+        "1689年",
+        "1776年",
+        "1640年",
+        "1688年"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1640年。按资产阶级革命与工业革命的史实判断，本题正确答案是「1640年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "英国《权利法案》颁布于（ ）",
+      "options": [
+        "1787年",
+        "1689年",
+        "1640年",
+        "1688年"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1689年。按资产阶级革命与工业革命的史实判断，本题正确答案是「1689年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "英国《权利法案》确立的政治制度是（ ）",
+      "options": [
+        "君主立宪制",
+        "民主共和制",
+        "君主专制",
+        "联邦制"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：君主立宪制。按资产阶级革命与工业革命的史实判断，本题正确答案是「君主立宪制」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "美国独立战争开始于（ ）",
+      "options": [
+        "1776年",
+        "1787年",
+        "1789年",
+        "1775年"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1775年。按资产阶级革命与工业革命的史实判断，本题正确答案是「1775年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《独立宣言》发表的时间是（ ）",
+      "options": [
+        "1787年9月",
+        "1789年7月",
+        "1776年7月4日",
+        "1775年4月"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1776年7月4日。按资产阶级革命与工业革命的史实判断，本题正确答案是「1776年7月4日」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "美国1787年宪法确立的政治体制是（ ）",
+      "options": [
+        "中央集权制",
+        "联邦制、三权分立",
+        "君主立宪制",
+        "君主专制"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：联邦制、三权分立。按资产阶级革命与工业革命的史实判断，本题正确答案是「联邦制、三权分立」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "法国大革命开始的标志是（ ）",
+      "options": [
+        "1789年攻占巴士底狱",
+        "1776年《独立宣言》发表",
+        "1689年《权利法案》颁布",
+        "1804年拿破仑称帝"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1789年攻占巴士底狱。按资产阶级革命与工业革命的史实判断，本题正确答案是「1789年攻占巴士底狱」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "拿破仑建立法兰西第一帝国的时间是（ ）",
+      "options": [
+        "1789年",
+        "1799年",
+        "1815年",
+        "1804年"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1804年。按资产阶级革命与工业革命的史实判断，本题正确答案是「1804年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "工业革命最早开始于（ ）",
+      "options": [
+        "美国",
+        "德意志",
+        "英国",
+        "法国"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：英国。按资产阶级革命与工业革命的史实判断，本题正确答案是「英国」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "工业革命开始的标志是（ ）",
+      "options": [
+        "富尔顿发明汽船",
+        "哈格里夫斯发明珍妮机",
+        "瓦特改良蒸汽机",
+        "史蒂芬孙发明火车"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：哈格里夫斯发明珍妮机。按资产阶级革命与工业革命的史实判断，本题正确答案是「哈格里夫斯发明珍妮机」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《共产党宣言》发表的时间是（ ）",
+      "options": [
+        "1848年",
+        "1789年",
+        "1871年",
+        "1917年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1848年。按国际共产主义运动与殖民地民族解放运动的史实判断，本题正确答案是「1848年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《共产党宣言》的作者是（ ）",
+      "options": [
+        "列宁、斯大林",
+        "卢梭、伏尔泰",
+        "亚当·斯密、大卫·李嘉图",
+        "马克思、恩格斯"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：马克思、恩格斯。按国际共产主义运动与殖民地民族解放运动的史实判断，本题正确答案是「马克思、恩格斯」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "马克思主义诞生的标志是（ ）",
+      "options": [
+        "十月革命胜利",
+        "第一国际成立",
+        "《共产党宣言》的发表",
+        "巴黎公社成立"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：《共产党宣言》的发表。按国际共产主义运动与殖民地民族解放运动的史实判断，本题正确答案是「《共产党宣言》的发表」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "巴黎公社成立的时间是（ ）",
+      "options": [
+        "1917年",
+        "1871年",
+        "1848年",
+        "1864年"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1871年。按国际共产主义运动与殖民地民族解放运动的史实判断，本题正确答案是「1871年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "巴黎公社的性质是（ ）",
+      "options": [
+        "世界上第一个无产阶级政权",
+        "资产阶级政权",
+        "封建王朝",
+        "殖民政权"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：世界上第一个无产阶级政权。按国际共产主义运动与殖民地民族解放运动的史实判断，本题正确答案是「世界上第一个无产阶级政权」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "领导南美洲北部独立运动的是（ ）",
+      "options": [
+        "圣马丁",
+        "章西女王",
+        "伊达尔戈",
+        "玻利瓦尔"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：玻利瓦尔。按国际共产主义运动与殖民地民族解放运动的史实判断，本题正确答案是「玻利瓦尔」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "印度民族大起义中牺牲的女英雄是（ ）",
+      "options": [
+        "伊达尔戈",
+        "华盛顿",
+        "章西女王",
+        "玻利瓦尔"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：章西女王。按国际共产主义运动与殖民地民族解放运动的史实判断，本题正确答案是「章西女王」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "印度民族大起义发生在（ ）",
+      "options": [
+        "20世纪初期",
+        "19世纪中期",
+        "18世纪中期",
+        "19世纪末期"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：19世纪中期。按国际共产主义运动与殖民地民族解放运动的史实判断，本题正确答案是「19世纪中期」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "日本明治维新开始于（ ）",
+      "options": [
+        "1868年",
+        "1853年",
+        "1861年",
+        "1889年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1868年。按国际共产主义运动与殖民地民族解放运动的史实判断，本题正确答案是「1868年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-历史-4",
+      "chapterName": "世界近代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "俄国1861年改革废除的制度是（ ）",
+      "options": [
+        "奴隶制",
+        "封建君主制",
+        "种植园制",
+        "农奴制"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：农奴制。按国际共产主义运动与殖民地民族解放运动的史实判断，本题正确答案是「农奴制」。",
+      "difficulty": 2
     }
   ]
 }

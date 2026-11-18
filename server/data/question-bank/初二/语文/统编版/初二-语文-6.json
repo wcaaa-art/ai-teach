@@ -4,16 +4,16 @@
   "edition": "统编版",
   "chapter": {
     "id": "初二-语文-6",
-    "name": "八下：文言文理解"
+    "name": "文言文理解"
   },
-  "generatedAt": "2026-11-14T12:15:00.649Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.890Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdc1ly",
       "chapterId": "初二-语文-6",
-      "chapterName": "八下：文言文理解",
+      "chapterName": "文言文理解",
       "type": "single",
       "dimension": "concept",
       "stem": "下列对《马说》中“策之不以其道”的“策”字理解正确的一项是（　　）",
@@ -30,7 +30,7 @@
     {
       "id": "diag-2-mwgdc1ly",
       "chapterId": "初二-语文-6",
-      "chapterName": "八下：文言文理解",
+      "chapterName": "文言文理解",
       "type": "single",
       "dimension": "basic-application",
       "stem": "下列句中括号内词语解释不正确的一项是（　　）",
@@ -47,7 +47,7 @@
     {
       "id": "diag-3-mwgdc1ly",
       "chapterId": "初二-语文-6",
-      "chapterName": "八下：文言文理解",
+      "chapterName": "文言文理解",
       "type": "single",
       "dimension": "transfer",
       "stem": "下列句子中引号内词的用法，与《马说》中“策之不以其道”的“策”不同的一项是（　　）",
@@ -64,10 +64,10 @@
     {
       "id": "diag-4-mwgdc1ly",
       "chapterId": "初二-语文-6",
-      "chapterName": "八下：文言文理解",
+      "chapterName": "文言文理解",
       "type": "single",
       "dimension": "error-analysis",
-      "stem": "下列对八下文言文词句的理解，不正确的一项是（ ）",
+      "stem": "下列对文言文词句的理解，不正确的一项是（ ）",
       "options": [
         "“渔人甚异之”中的“异”是形容词的意动用法，意为“对……感到惊异”。",
         "“便要还家”中的“要”同“邀”，意为“邀请”。",
@@ -81,10 +81,10 @@
     {
       "id": "diag-5-mwgdc1ly",
       "chapterId": "初二-语文-6",
-      "chapterName": "八下：文言文理解",
+      "chapterName": "文言文理解",
       "type": "single",
       "dimension": "concept",
-      "stem": "下列关于八下文言文中词语的理解，不正确的一项是（　　）",
+      "stem": "下列关于文言文中词语的理解，不正确的一项是（　　）",
       "options": [
         "“便要还家”（《桃花源记》）中的“要”是通假字，同“邀”，意为“邀请”。",
         "“斗折蛇行”（《小石潭记》）中的“斗”“蛇”是名词作状语，分别意为“像北斗星那样”“像蛇那样”。",
@@ -98,7 +98,7 @@
     {
       "id": "diag-6-mwgdc1ly",
       "chapterId": "初二-语文-6",
-      "chapterName": "八下：文言文理解",
+      "chapterName": "文言文理解",
       "type": "single",
       "dimension": "basic-application",
       "stem": "下列对《马说》中词句的理解，不正确的一项是（ ）",
@@ -115,7 +115,7 @@
     {
       "id": "diag-7-mwgdc1ly",
       "chapterId": "初二-语文-6",
-      "chapterName": "八下：文言文理解",
+      "chapterName": "文言文理解",
       "type": "single",
       "dimension": "transfer",
       "stem": "阅读下面文言句子，回答问题：“斫而为琴，弦而鼓之。”句中“弦而鼓之”的“弦”“鼓”应如何理解？",
@@ -132,7 +132,7 @@
     {
       "id": "diag-8-mwgdc1ly",
       "chapterId": "初二-语文-6",
-      "chapterName": "八下：文言文理解",
+      "chapterName": "文言文理解",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "阅读《马说》中的句子，下列对“食马者不知其能千里而食也”中“食”字的理解，不正确的一项是（　　）",
@@ -149,10 +149,10 @@
     {
       "id": "diag-9-mwgdc1ly",
       "chapterId": "初二-语文-6",
-      "chapterName": "八下：文言文理解",
+      "chapterName": "文言文理解",
       "type": "single",
       "dimension": "concept",
-      "stem": "下列对八下文言文中【】内词语的解释，正确的一项是",
+      "stem": "下列对文言文中【】内词语的解释，正确的一项是",
       "options": [
         "《桃花源记》「便要还家」中的【要】，意思是“要求”。",
         "《小石潭记》「斗折蛇行」中的【蛇】，是名词作状语，意思是“像蛇那样”。",
@@ -166,7 +166,7 @@
     {
       "id": "diag-10-mwgdc1ly",
       "chapterId": "初二-语文-6",
-      "chapterName": "八下：文言文理解",
+      "chapterName": "文言文理解",
       "type": "single",
       "dimension": "basic-application",
       "stem": "“其岸势犬牙差互”中“犬牙”的用法和意思是？",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：“犬牙”本是名词，在句中修饰“差互”，表示“像狗的牙齿一样”，属于名词作状语。\nB. 错误：“犬牙”在句中没有“咬”的动作义，若解作动词，就与“岸势”这一陈述对象不搭配。\nC. 错误：“犬牙”不是形容词，也没有转指“狗的牙齿”这一名词性对象；句意强调岸势像犬牙那样交错。\nD. 错误：使动用法应表示“使……怎样”，但“犬牙差互”是直接描写岸势形态，并没有“使牙齿交错”的意思。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“芳草鲜美，落英缤纷”中“鲜美”的意思是（　　）",
+      "options": [
+        "新鲜美好",
+        "味道鲜美",
+        "颜色鲜艳",
+        "食物可口"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：新鲜美好。按文言文的实词含义判断，本题正确答案是「新鲜美好」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“阡陌交通，鸡犬相闻”中“交通”的意思是（　　）",
+      "options": [
+        "运输事业",
+        "来往车辆",
+        "交流沟通",
+        "交错相通"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：交错相通。按文言文的实词含义判断，本题正确答案是「交错相通」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“率妻子邑人来此绝境”中“绝境”的意思是（　　）",
+      "options": [
+        "极其危险的处境",
+        "荒无人烟的地方",
+        "与世隔绝的地方",
+        "没有出路的境地"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：与世隔绝的地方。按文言文的实词含义判断，本题正确答案是「与世隔绝的地方」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“乃不知有汉，无论魏晋”中“无论”的意思是（　　）",
+      "options": [
+        "没有讨论",
+        "不要说，更不必说",
+        "不管怎样",
+        "无论如何"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：不要说，更不必说。按文言文的实词含义判断，本题正确答案是「不要说，更不必说」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“水尤清冽”中“尤”的意思是（　　）",
+      "options": [
+        "格外",
+        "尤其",
+        "怨恨",
+        "突出"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：格外。按文言文的实词含义判断，本题正确答案是「格外」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“潭中鱼可百许头”中“可”的意思是（　　）",
+      "options": [
+        "可以",
+        "能够",
+        "可能",
+        "大约"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：大约。按文言文的实词含义判断，本题正确答案是「大约」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“斗折蛇行”中“斗”的意思是（　　）",
+      "options": [
+        "量器",
+        "突然",
+        "像北斗星那样",
+        "争斗"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：像北斗星那样。按文言文的实词含义判断，本题正确答案是「像北斗星那样」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“凄神寒骨，悄怆幽邃”中“凄”的意思是（　　）",
+      "options": [
+        "寒冷",
+        "使……凄凉",
+        "凄凉",
+        "悲伤"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：使……凄凉。按文言文的实词含义判断，本题正确答案是「使……凄凉」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“尝贻余核舟一”中“贻”的意思是（　　）",
+      "options": [
+        "赠送",
+        "买卖",
+        "遗留",
+        "借用"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：赠送。按文言文的实词含义判断，本题正确答案是「赠送」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“罔不因势象形”中“罔不”的意思是（　　）",
+      "options": [
+        "不曾",
+        "不能",
+        "不要",
+        "无不、全都"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：无不、全都。按文言文的实词含义判断，本题正确答案是「无不、全都」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“忘路之远近”中“之”的用法是（　　）",
+      "options": [
+        "主谓之间取消独立性",
+        "宾语前置标志",
+        "结构助词，的",
+        "代词，指桃花"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：结构助词，的。按文言文的虚词、句式与翻译判断，本题正确答案是「结构助词，的」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“渔人甚异之”中“之”的用法是（　　）",
+      "options": [
+        "动词，往",
+        "代词，指眼前的景象",
+        "结构助词，的",
+        "主谓之间取消独立性"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：代词，指眼前的景象。按文言文的虚词、句式与翻译判断，本题正确答案是「代词，指眼前的景象」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“不足为外人道也”中“为”的意思是（　　）",
+      "options": [
+        "对、向",
+        "为了",
+        "因为",
+        "成为"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：对、向。按文言文的虚词、句式与翻译判断，本题正确答案是「对、向」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“以其境过清，不可久居”中“以”的意思是（　　）",
+      "options": [
+        "用来",
+        "凭借",
+        "认为",
+        "因为"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：因为。按文言文的虚词、句式与翻译判断，本题正确答案是「因为」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“全石以为底”属于（　　）",
+      "options": [
+        "被动句",
+        "省略句",
+        "倒装句（宾语前置）",
+        "判断句"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：倒装句（宾语前置）。按文言文的虚词、句式与翻译判断，本题正确答案是「倒装句（宾语前置）」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“此人一一为具言所闻”属于（　　）",
+      "options": [
+        "感叹句",
+        "省略句",
+        "判断句",
+        "被动句"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：省略句。按文言文的虚词、句式与翻译判断，本题正确答案是「省略句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“马之千里者”属于（　　）",
+      "options": [
+        "定语后置句",
+        "宾语前置句",
+        "判断句",
+        "被动句"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：定语后置句。按文言文的虚词、句式与翻译判断，本题正确答案是「定语后置句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“其真无马邪？其真不知马也”中两个“其”的意思分别是（　　）",
+      "options": [
+        "他的；那个",
+        "其中；其实",
+        "将要；已经",
+        "难道；恐怕、大概"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：难道；恐怕、大概。按文言文的虚词、句式与翻译判断，本题正确答案是「难道；恐怕、大概」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“策之不以其道”中“策”的意思是（　　）",
+      "options": [
+        "策略",
+        "计策",
+        "用马鞭驱赶",
+        "鞭子"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：用马鞭驱赶。按文言文的虚词、句式与翻译判断，本题正确答案是「用马鞭驱赶」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“食马者不知其能千里而食也”中“食”的意思是（　　）",
+      "options": [
+        "供养",
+        "喂养",
+        "吃",
+        "食物"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：喂养。按文言文的虚词、句式与翻译判断，本题正确答案是「喂养」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《桃花源记》描绘的是一个（　　）",
+      "options": [
+        "没有战乱、和平安宁的理想社会",
+        "繁华喧闹的都市",
+        "等级森严的王朝",
+        "充满战争的世界"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：没有战乱、和平安宁的理想社会。按文言文内容理解、主旨与比较判断，本题正确答案是「没有战乱、和平安宁的理想社会」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《桃花源记》表达的作者情感是（　　）",
+      "options": [
+        "对功名的追求",
+        "对富贵的羡慕",
+        "对战争的赞美",
+        "对理想社会的向往和对现实的不满"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：对理想社会的向往和对现实的不满。按文言文内容理解、主旨与比较判断，本题正确答案是「对理想社会的向往和对现实的不满」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《小石潭记》的写作顺序主要是（　　）",
+      "options": [
+        "逻辑顺序",
+        "倒叙顺序",
+        "游览顺序（空间顺序）",
+        "时间顺序"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：游览顺序（空间顺序）。按文言文内容理解、主旨与比较判断，本题正确答案是「游览顺序（空间顺序）」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《小石潭记》表达的情感变化是（　　）",
+      "options": [
+        "始终悲伤",
+        "由乐到凄",
+        "由悲到喜",
+        "始终愉悦"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：由乐到凄。按文言文内容理解、主旨与比较判断，本题正确答案是「由乐到凄」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《核舟记》主要说明的是（　　）",
+      "options": [
+        "核舟的精巧结构和雕刻者的高超技艺",
+        "核舟的来历",
+        "雕刻者的生平",
+        "核舟的价格"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：核舟的精巧结构和雕刻者的高超技艺。按文言文内容理解、主旨与比较判断，本题正确答案是「核舟的精巧结构和雕刻者的高超技艺」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《马说》以千里马不遇伯乐，比喻（　　）",
+      "options": [
+        "人才过剩",
+        "伯乐难寻",
+        "马匹珍贵",
+        "人才不被赏识重用"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：人才不被赏识重用。按文言文内容理解、主旨与比较判断，本题正确答案是「人才不被赏识重用」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《马说》表达的主旨是（　　）",
+      "options": [
+        "人才不需要培养",
+        "统治者应限制人才",
+        "统治者应善于识别和重用人才",
+        "千里马应自己寻找伯乐"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：统治者应善于识别和重用人才。按文言文内容理解、主旨与比较判断，本题正确答案是「统治者应善于识别和重用人才」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《大道之行也》描绘的是（　　）",
+      "options": [
+        "战争年代的景象",
+        "大同社会的美好图景",
+        "小康社会的现实",
+        "封建社会的等级"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：大同社会的美好图景。按文言文内容理解、主旨与比较判断，本题正确答案是「大同社会的美好图景」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《虽有嘉肴》阐述的道理是（　　）",
+      "options": [
+        "教学相长",
+        "尊师重道",
+        "因材施教",
+        "温故知新"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：教学相长。按文言文内容理解、主旨与比较判断，本题正确答案是「教学相长」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-语文-6",
+      "chapterName": "文言文理解",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "比较阅读文言文，应该从（　　）等方面入手",
+      "options": [
+        "字数、标点、字体",
+        "作者籍贯、生卒年",
+        "纸张、版本、价格",
+        "内容、主旨、手法、情感"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：内容、主旨、手法、情感。按文言文内容理解、主旨与比较判断，本题正确答案是「内容、主旨、手法、情感」。",
+      "difficulty": 2
     }
   ]
 }

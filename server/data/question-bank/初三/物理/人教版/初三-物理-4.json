@@ -6,9 +6,9 @@
     "id": "初三-物理-4",
     "name": "电流与电路"
   },
-  "generatedAt": "2026-11-13T02:47:46.460Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.229Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedmkpi",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 0,
       "explanation": "A. 正确：开关断开后电路不再闭合，电流无法形成闭合回路，属于断路，因此没有持续电流。\nB. 错误：用导线直接连接电源两极会造成电源短路，不是正常通路，电流过大还可能损坏电源。\nC. 错误：灯丝断开后电路某处断开，整个电路成为断路，而不是通路。\nD. 错误：短路时电路电阻很小，电流会很大，并非几乎没有电流。",
+      "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "串联电路中通过灯泡 L1 的电流为 0.2 A，则通过灯泡 L2 的电流为（ ）",
+      "options": [
+        "0.2 A",
+        "0.4 A",
+        "0.1 A",
+        "0.30000000000000004 A"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：0.2 A。串联电路中电流处处相等，所以通过 L2 的电流也是 0.2 A。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "串联电路中通过灯泡 L1 的电流为 0.3 A，则通过灯泡 L2 的电流为（ ）",
+      "options": [
+        "0.6 A",
+        "0.15 A",
+        "0.4 A",
+        "0.3 A"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：0.3 A。串联电路中电流处处相等，所以通过 L2 的电流也是 0.3 A。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "串联电路中通过灯泡 L1 的电流为 0.4 A，则通过灯泡 L2 的电流为（ ）",
+      "options": [
+        "0.2 A",
+        "0.5 A",
+        "0.4 A",
+        "0.8 A"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：0.4 A。串联电路中电流处处相等，所以通过 L2 的电流也是 0.4 A。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "串联电路中通过灯泡 L1 的电流为 0.5 A，则通过灯泡 L2 的电流为（ ）",
+      "options": [
+        "0.6 A",
+        "0.5 A",
+        "1 A",
+        "0.25 A"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：0.5 A。串联电路中电流处处相等，所以通过 L2 的电流也是 0.5 A。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "串联电路中通过灯泡 L1 的电流为 0.6 A，则通过灯泡 L2 的电流为（ ）",
+      "options": [
+        "0.6 A",
+        "1.2 A",
+        "0.3 A",
+        "0.7 A"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：0.6 A。串联电路中电流处处相等，所以通过 L2 的电流也是 0.6 A。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "串联电路中通过灯泡 L1 的电流为 0.25 A，则通过灯泡 L2 的电流为（ ）",
+      "options": [
+        "0.5 A",
+        "0.125 A",
+        "0.35 A",
+        "0.25 A"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：0.25 A。串联电路中电流处处相等，所以通过 L2 的电流也是 0.25 A。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "串联电路中通过灯泡 L1 的电流为 0.15 A，则通过灯泡 L2 的电流为（ ）",
+      "options": [
+        "0.075 A",
+        "0.25 A",
+        "0.15 A",
+        "0.3 A"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：0.15 A。串联电路中电流处处相等，所以通过 L2 的电流也是 0.15 A。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "串联电路中通过灯泡 L1 的电流为 0.8 A，则通过灯泡 L2 的电流为（ ）",
+      "options": [
+        "0.9 A",
+        "0.8 A",
+        "1.6 A",
+        "0.4 A"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：0.8 A。串联电路中电流处处相等，所以通过 L2 的电流也是 0.8 A。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "串联电路中通过灯泡 L1 的电流为 1.2 A，则通过灯泡 L2 的电流为（ ）",
+      "options": [
+        "1.2 A",
+        "2.4 A",
+        "0.6 A",
+        "1.3 A"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1.2 A。串联电路中电流处处相等，所以通过 L2 的电流也是 1.2 A。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "串联电路中通过灯泡 L1 的电流为 0.45 A，则通过灯泡 L2 的电流为（ ）",
+      "options": [
+        "0.9 A",
+        "0.225 A",
+        "0.55 A",
+        "0.45 A"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：0.45 A。串联电路中电流处处相等，所以通过 L2 的电流也是 0.45 A。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "并联电路两端的电源电压为 3 V，则每个支路两端的电压为（ ）",
+      "options": [
+        "1.5 V",
+        "4 V",
+        "3 V",
+        "6 V"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：3 V。并联电路中各支路两端电压相等，且等于电源电压 3 V。",
+      "difficulty": 1
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "并联电路两端的电源电压为 4.5 V，则每个支路两端的电压为（ ）",
+      "options": [
+        "5.5 V",
+        "4.5 V",
+        "9 V",
+        "2.25 V"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：4.5 V。并联电路中各支路两端电压相等，且等于电源电压 4.5 V。",
+      "difficulty": 1
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "并联电路两端的电源电压为 6 V，则每个支路两端的电压为（ ）",
+      "options": [
+        "6 V",
+        "12 V",
+        "3 V",
+        "7 V"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：6 V。并联电路中各支路两端电压相等，且等于电源电压 6 V。",
+      "difficulty": 1
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "并联电路两端的电源电压为 9 V，则每个支路两端的电压为（ ）",
+      "options": [
+        "18 V",
+        "4.5 V",
+        "10 V",
+        "9 V"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：9 V。并联电路中各支路两端电压相等，且等于电源电压 9 V。",
+      "difficulty": 1
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "并联电路两端的电源电压为 12 V，则每个支路两端的电压为（ ）",
+      "options": [
+        "6 V",
+        "13 V",
+        "12 V",
+        "24 V"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：12 V。并联电路中各支路两端电压相等，且等于电源电压 12 V。",
+      "difficulty": 1
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "并联电路两端的电源电压为 2 V，则每个支路两端的电压为（ ）",
+      "options": [
+        "3 V",
+        "2 V",
+        "4 V",
+        "1 V"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：2 V。并联电路中各支路两端电压相等，且等于电源电压 2 V。",
+      "difficulty": 1
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "并联电路两端的电源电压为 5 V，则每个支路两端的电压为（ ）",
+      "options": [
+        "5 V",
+        "10 V",
+        "2.5 V",
+        "6 V"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：5 V。并联电路中各支路两端电压相等，且等于电源电压 5 V。",
+      "difficulty": 1
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "并联电路两端的电源电压为 7.5 V，则每个支路两端的电压为（ ）",
+      "options": [
+        "15 V",
+        "3.75 V",
+        "8.5 V",
+        "7.5 V"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：7.5 V。并联电路中各支路两端电压相等，且等于电源电压 7.5 V。",
+      "difficulty": 1
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "并联电路两端的电源电压为 1.5 V，则每个支路两端的电压为（ ）",
+      "options": [
+        "0.75 V",
+        "2.5 V",
+        "1.5 V",
+        "3 V"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1.5 V。并联电路中各支路两端电压相等，且等于电源电压 1.5 V。",
+      "difficulty": 1
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "并联电路两端的电源电压为 10 V，则每个支路两端的电压为（ ）",
+      "options": [
+        "11 V",
+        "10 V",
+        "20 V",
+        "5 V"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：10 V。并联电路中各支路两端电压相等，且等于电源电压 10 V。",
+      "difficulty": 1
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "两个电阻 R1 = 5 Ω、R2 = 10 Ω 串联接入电路，总电阻是（ ）",
+      "options": [
+        "15 Ω",
+        "30 Ω",
+        "7.5 Ω",
+        "20 Ω"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：15 Ω。串联电路总电阻等于各分电阻之和：R = 5 + 10 = 15 Ω。",
+      "difficulty": 1
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "两个电阻 R1 = 10 Ω、R2 = 20 Ω 串联接入电路，总电阻是（ ）",
+      "options": [
+        "60 Ω",
+        "15 Ω",
+        "35 Ω",
+        "30 Ω"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：30 Ω。串联电路总电阻等于各分电阻之和：R = 10 + 20 = 30 Ω。",
+      "difficulty": 1
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "两个电阻 R1 = 4 Ω、R2 = 6 Ω 串联接入电路，总电阻是（ ）",
+      "options": [
+        "5 Ω",
+        "15 Ω",
+        "10 Ω",
+        "20 Ω"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：10 Ω。串联电路总电阻等于各分电阻之和：R = 4 + 6 = 10 Ω。",
+      "difficulty": 1
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "两个电阻 R1 = 8 Ω、R2 = 12 Ω 串联接入电路，总电阻是（ ）",
+      "options": [
+        "25 Ω",
+        "20 Ω",
+        "40 Ω",
+        "10 Ω"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：20 Ω。串联电路总电阻等于各分电阻之和：R = 8 + 12 = 20 Ω。",
+      "difficulty": 1
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "两个电阻 R1 = 15 Ω、R2 = 25 Ω 串联接入电路，总电阻是（ ）",
+      "options": [
+        "40 Ω",
+        "80 Ω",
+        "20 Ω",
+        "45 Ω"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：40 Ω。串联电路总电阻等于各分电阻之和：R = 15 + 25 = 40 Ω。",
+      "difficulty": 1
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "两个电阻 R1 = 3 Ω、R2 = 7 Ω 串联接入电路，总电阻是（ ）",
+      "options": [
+        "20 Ω",
+        "5 Ω",
+        "15 Ω",
+        "10 Ω"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：10 Ω。串联电路总电阻等于各分电阻之和：R = 3 + 7 = 10 Ω。",
+      "difficulty": 1
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "两个电阻 R1 = 20 Ω、R2 = 30 Ω 串联接入电路，总电阻是（ ）",
+      "options": [
+        "25 Ω",
+        "55 Ω",
+        "50 Ω",
+        "100 Ω"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：50 Ω。串联电路总电阻等于各分电阻之和：R = 20 + 30 = 50 Ω。",
+      "difficulty": 1
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "两个电阻 R1 = 6 Ω、R2 = 14 Ω 串联接入电路，总电阻是（ ）",
+      "options": [
+        "25 Ω",
+        "20 Ω",
+        "40 Ω",
+        "10 Ω"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：20 Ω。串联电路总电阻等于各分电阻之和：R = 6 + 14 = 20 Ω。",
+      "difficulty": 1
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "两个电阻 R1 = 12 Ω、R2 = 18 Ω 串联接入电路，总电阻是（ ）",
+      "options": [
+        "30 Ω",
+        "60 Ω",
+        "15 Ω",
+        "35 Ω"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：30 Ω。串联电路总电阻等于各分电阻之和：R = 12 + 18 = 30 Ω。",
+      "difficulty": 1
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-物理-4",
+      "chapterName": "电流与电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "两个电阻 R1 = 25 Ω、R2 = 5 Ω 串联接入电路，总电阻是（ ）",
+      "options": [
+        "60 Ω",
+        "15 Ω",
+        "35 Ω",
+        "30 Ω"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：30 Ω。串联电路总电阻等于各分电阻之和：R = 25 + 5 = 30 Ω。",
       "difficulty": 1
     }
   ]

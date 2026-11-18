@@ -6,9 +6,9 @@
     "id": "初二-数学-1",
     "name": "三角形与全等"
   },
-  "generatedAt": "2026-11-13T02:39:44.767Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.150Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedbyvb",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 0,
       "explanation": "A. 正确：由作图可知OC=OD，PC=PD，且OP=OP，三边分别对应相等，所以△OCP≌△ODP的依据是SSS。\nB. 错误：SAS需要两边及其夹角分别相等，而∠COP与∠DOP正是要说明相等的角，不能直接作为已知条件使用。\nC. 错误：ASA需要两角及其夹边分别相等，当前由作图直接得到的是三组边相等，没有两角相等的现成条件。\nD. 错误：AAS需要两角及其中一角的对边分别相等，同样缺少可直接使用的两角相等条件。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在 △ABC 中，∠A = 50°，∠B = 60°，则 ∠C 的度数是（ ）",
+      "options": [
+        "70°",
+        "80°",
+        "60°",
+        "110°"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：70°。三角形内角和为 180°，∠C = 180° - 50° - 60° = 70°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在 △ABC 中，∠A = 45°，∠B = 75°，则 ∠C 的度数是（ ）",
+      "options": [
+        "70°",
+        "50°",
+        "120°",
+        "60°"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：60°。三角形内角和为 180°，∠C = 180° - 45° - 75° = 60°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在 △ABC 中，∠A = 30°，∠B = 80°，则 ∠C 的度数是（ ）",
+      "options": [
+        "60°",
+        "110°",
+        "70°",
+        "80°"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：70°。三角形内角和为 180°，∠C = 180° - 30° - 80° = 70°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在 △ABC 中，∠A = 65°，∠B = 55°，则 ∠C 的度数是（ ）",
+      "options": [
+        "120°",
+        "60°",
+        "70°",
+        "50°"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：60°。三角形内角和为 180°，∠C = 180° - 65° - 55° = 60°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在 △ABC 中，∠A = 70°，∠B = 40°，则 ∠C 的度数是（ ）",
+      "options": [
+        "70°",
+        "80°",
+        "60°",
+        "110°"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：70°。三角形内角和为 180°，∠C = 180° - 70° - 40° = 70°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在 △ABC 中，∠A = 35°，∠B = 95°，则 ∠C 的度数是（ ）",
+      "options": [
+        "60°",
+        "40°",
+        "130°",
+        "50°"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：50°。三角形内角和为 180°，∠C = 180° - 35° - 95° = 50°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在 △ABC 中，∠A = 80°，∠B = 60°，则 ∠C 的度数是（ ）",
+      "options": [
+        "30°",
+        "140°",
+        "40°",
+        "50°"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：40°。三角形内角和为 180°，∠C = 180° - 80° - 60° = 40°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在 △ABC 中，∠A = 25°，∠B = 105°，则 ∠C 的度数是（ ）",
+      "options": [
+        "130°",
+        "50°",
+        "60°",
+        "40°"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：50°。三角形内角和为 180°，∠C = 180° - 25° - 105° = 50°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在 △ABC 中，∠A = 90°，∠B = 30°，则 ∠C 的度数是（ ）",
+      "options": [
+        "60°",
+        "70°",
+        "50°",
+        "120°"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：60°。三角形内角和为 180°，∠C = 180° - 90° - 30° = 60°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在 △ABC 中，∠A = 55°，∠B = 65°，则 ∠C 的度数是（ ）",
+      "options": [
+        "70°",
+        "50°",
+        "120°",
+        "60°"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：60°。三角形内角和为 180°，∠C = 180° - 55° - 65° = 60°。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "△ABC ≌ △DEF，AB = 5，BC = 7，AC = 6，则 DE 的长是（ ）",
+      "options": [
+        "4",
+        "7",
+        "5",
+        "6"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：5。全等三角形对应边相等（AB 与 DE 是对应边），所以 DE = 5。",
+      "difficulty": 1
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "△ABC ≌ △DEF，AB = 8，BC = 6，AC = 10，则 EF 的长是（ ）",
+      "options": [
+        "8",
+        "6",
+        "7",
+        "5"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：6。全等三角形对应边相等（BC 与 EF 是对应边），所以 EF = 6。",
+      "difficulty": 1
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "△ABC ≌ △DEF，AB = 9，BC = 12，AC = 15，则 DF 的长是（ ）",
+      "options": [
+        "15",
+        "16",
+        "14",
+        "17"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：15。全等三角形对应边相等（AC 与 DF 是对应边），所以 DF = 15。",
+      "difficulty": 1
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "△ABC ≌ △DEF，AB = 4，BC = 5，AC = 3，则 DE 的长是（ ）",
+      "options": [
+        "5",
+        "3",
+        "6",
+        "4"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：4。全等三角形对应边相等（AB 与 DE 是对应边），所以 DE = 4。",
+      "difficulty": 1
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "△ABC ≌ △DEF，AB = 12，BC = 5，AC = 13，则 EF 的长是（ ）",
+      "options": [
+        "4",
+        "7",
+        "5",
+        "6"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：5。全等三角形对应边相等（BC 与 EF 是对应边），所以 EF = 5。",
+      "difficulty": 1
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "△ABC ≌ △DEF，AB = 7，BC = 24，AC = 25，则 DF 的长是（ ）",
+      "options": [
+        "27",
+        "25",
+        "26",
+        "24"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：25。全等三角形对应边相等（AC 与 DF 是对应边），所以 DF = 25。",
+      "difficulty": 1
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "△ABC ≌ △DEF，AB = 10，BC = 8，AC = 6，则 DE 的长是（ ）",
+      "options": [
+        "10",
+        "11",
+        "9",
+        "12"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：10。全等三角形对应边相等（AB 与 DE 是对应边），所以 DE = 10。",
+      "difficulty": 1
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "△ABC ≌ △DEF，AB = 15，BC = 9，AC = 12，则 EF 的长是（ ）",
+      "options": [
+        "10",
+        "8",
+        "11",
+        "9"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：9。全等三角形对应边相等（BC 与 EF 是对应边），所以 EF = 9。",
+      "difficulty": 1
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "△ABC ≌ △DEF，AB = 20，BC = 16，AC = 12，则 DF 的长是（ ）",
+      "options": [
+        "11",
+        "14",
+        "12",
+        "13"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：12。全等三角形对应边相等（AC 与 DF 是对应边），所以 DF = 12。",
+      "difficulty": 1
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "△ABC ≌ △DEF，AB = 6，BC = 8，AC = 10，则 DE 的长是（ ）",
+      "options": [
+        "8",
+        "6",
+        "7",
+        "5"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：6。全等三角形对应边相等（AB 与 DE 是对应边），所以 DE = 6。",
+      "difficulty": 1
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "method",
+      "stem": "一个三角形的两边长分别为 5 和 3，第三边长 x 的取值范围是（ ）",
+      "options": [
+        "2 < x < 8",
+        "2 ≤ x ≤ 8",
+        "2 < x < 7",
+        "3 < x < 8"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：2 < x < 8。三角形任意两边之差小于第三边、任意两边之和大于第三边：2 < x < 8。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "method",
+      "stem": "一个三角形的两边长分别为 7 和 4，第三边长 x 的取值范围是（ ）",
+      "options": [
+        "3 ≤ x ≤ 11",
+        "3 < x < 10",
+        "4 < x < 11",
+        "3 < x < 11"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：3 < x < 11。三角形任意两边之差小于第三边、任意两边之和大于第三边：3 < x < 11。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "method",
+      "stem": "一个三角形的两边长分别为 9 和 2，第三边长 x 的取值范围是（ ）",
+      "options": [
+        "7 < x < 10",
+        "8 < x < 11",
+        "7 < x < 11",
+        "7 ≤ x ≤ 11"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：7 < x < 11。三角形任意两边之差小于第三边、任意两边之和大于第三边：7 < x < 11。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "method",
+      "stem": "一个三角形的两边长分别为 10 和 6，第三边长 x 的取值范围是（ ）",
+      "options": [
+        "5 < x < 16",
+        "4 < x < 16",
+        "4 ≤ x ≤ 16",
+        "4 < x < 15"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：4 < x < 16。三角形任意两边之差小于第三边、任意两边之和大于第三边：4 < x < 16。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "method",
+      "stem": "一个三角形的两边长分别为 12 和 5，第三边长 x 的取值范围是（ ）",
+      "options": [
+        "7 < x < 17",
+        "7 ≤ x ≤ 17",
+        "7 < x < 16",
+        "8 < x < 17"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：7 < x < 17。三角形任意两边之差小于第三边、任意两边之和大于第三边：7 < x < 17。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "method",
+      "stem": "一个三角形的两边长分别为 8 和 3，第三边长 x 的取值范围是（ ）",
+      "options": [
+        "5 ≤ x ≤ 11",
+        "5 < x < 10",
+        "6 < x < 11",
+        "5 < x < 11"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：5 < x < 11。三角形任意两边之差小于第三边、任意两边之和大于第三边：5 < x < 11。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "method",
+      "stem": "一个三角形的两边长分别为 15 和 7，第三边长 x 的取值范围是（ ）",
+      "options": [
+        "8 < x < 21",
+        "9 < x < 22",
+        "8 < x < 22",
+        "8 ≤ x ≤ 22"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：8 < x < 22。三角形任意两边之差小于第三边、任意两边之和大于第三边：8 < x < 22。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "method",
+      "stem": "一个三角形的两边长分别为 11 和 4，第三边长 x 的取值范围是（ ）",
+      "options": [
+        "8 < x < 15",
+        "7 < x < 15",
+        "7 ≤ x ≤ 15",
+        "7 < x < 14"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：7 < x < 15。三角形任意两边之差小于第三边、任意两边之和大于第三边：7 < x < 15。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "method",
+      "stem": "一个三角形的两边长分别为 13 和 6，第三边长 x 的取值范围是（ ）",
+      "options": [
+        "7 < x < 19",
+        "7 ≤ x ≤ 19",
+        "7 < x < 18",
+        "8 < x < 19"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：7 < x < 19。三角形任意两边之差小于第三边、任意两边之和大于第三边：7 < x < 19。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-数学-1",
+      "chapterName": "三角形与全等",
+      "type": "single",
+      "dimension": "method",
+      "stem": "一个三角形的两边长分别为 20 和 9，第三边长 x 的取值范围是（ ）",
+      "options": [
+        "11 ≤ x ≤ 29",
+        "11 < x < 28",
+        "12 < x < 29",
+        "11 < x < 29"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：11 < x < 29。三角形任意两边之差小于第三边、任意两边之和大于第三边：11 < x < 29。",
       "difficulty": 2
     }
   ]

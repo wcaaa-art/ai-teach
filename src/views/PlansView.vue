@@ -6,6 +6,7 @@ import { deletePlan, getDataOwner, loadAssessments, loadFocusSessions, loadPlans
 import { clearTaskReminder, scheduleTaskReminder } from '../services/reminders.js'
 import { replacePlanTask } from '../services/api.js'
 import { formatMathText } from '../utils/formatMath.js'
+import { stripBookPrefix } from '../utils/chapterNames.js'
 import { detectPlanTask, planTaskBadge } from '../utils/planRoute.js'
 import { startStudy } from '../utils/studySession.js'
 import { carriedWeeksOf, MAX_CARRY_WEEKS, shiftWeeklyTasks, staleWeeklyTasks, weekKeyOf } from '../utils/weeklyReportPlans.js'
@@ -135,17 +136,14 @@ const weekTotal = computed(() => weekCompleted.value + weekActive.value.length)
 const weekRemaining = computed(() => Math.max(0, weekTotal.value - weekCompleted.value))
 const weekPercent = computed(() => (weekTotal.value ? Math.round(weekCompleted.value / weekTotal.value * 100) : 0))
 const weekNote = computed(() => {
-  if (!weekTotal.value) return '这周还没有任务，先排一项。'
-  if (!weekRemaining.value) return '这周的计划都完成了，不用加码。'
+  if (!weekTotal.value) return '这周还没有任务，先排一项'
+  if (!weekRemaining.value) return '这周的计划都完成了，不用加码'
   return `还差 ${weekRemaining.value} 项，每天 ${Math.ceil(weekRemaining.value / Math.max(1, daysLeft.value))} 项刚好`
 })
 // === 今日计划列表：已完成在上，待做在下，中间是当前时间 ===
-// 已完成只放出最近两条，更早的记录不占列表空间；未完成全部保留，超出内容框高度时在框内滚动。
-// 往上滑能回看今天做完的计划；20 条够覆盖一天，再多也没人翻。
-const DONE_PREVIEW = 20
-const visibleDonePlans = computed(() => listDonePlans.value.slice(-DONE_PREVIEW))
+// 已完成全部展开，顶部统计和日期分组共用同一份数据，数字不会再对不上。
 const listItems = computed(() => {
-  const done = visibleDonePlans.value.map(plan => ({ key: plan.id, plan, done: true }))
+  const done = listDonePlans.value.map(plan => ({ key: plan.id, plan, done: true }))
   const pending = listPendingPlans.value.map(plan => ({
     key: plan.id,
     plan,
@@ -362,12 +360,14 @@ const planList = ref(null)
 // 原生滚动条隐藏但保留滚动能力，刻度只负责「看得见位置」和「点一下跳过去」。
 const railH = ref(0)
 const railIndex = ref(0)
-// 紧凑排法：刻度之间固定 12px，计划多了再按比例压，最多铺满列表高度。
+// 紧凑排法：刻度之间固定 12px；计划多了压缩间距，但整条刻度最多占列表高度的 62%（上限 360px），避免铺满整列。
 const RAIL_PITCH = 12
+const RAIL_MAX_HEIGHT = 360
+const railTrackH = computed(() => Math.min(RAIL_MAX_HEIGHT, Math.max(120, railH.value * 0.62)))
 const railPitch = computed(() => {
   const total = listItems.value.length
   if (total <= 1) return RAIL_PITCH
-  const available = Math.max(24, railH.value - 4)
+  const available = Math.max(24, railTrackH.value - 4)
   return Math.min(RAIL_PITCH, available / (total - 1))
 })
 // 整列在列表可视高度里垂直居中：上下留白对称，不贴着顶上排。
@@ -477,16 +477,16 @@ const missingSubjects = computed(() => assessmentSubjects.value
   .slice(0, 2))
 const insight = computed(() => {
   const past = weekDays.value.filter(day => !day.isFuture)
-  if (!weekCompleted.value) return '这周还没有完成记录。先做 15 分钟，比重新排一遍计划更有用。'
+  if (!weekCompleted.value) return '这周还没开始也没关系，挑一件最小的做 15 分钟——动起来比排计划更有用'
   const low = past.reduce((min, day) => (day.count < min.count ? day : min), past[0])
   const high = Math.max(...past.map(day => day.count))
   if (low.count < high && low.count <= 1) {
     const label = low.isToday ? '今天' : `周${low.label}`
     return low.count === 0
-      ? `${label}还没有完成记录。今天不用补，先把最重要的一项做完。`
-      : `${label}只完成 1 项。今天不用补，先把最重要的一项做完。`
+      ? `${label}还没有记录，不用补，今天先挑最重要的一项做完，就算赢`
+      : `${label}完成了 1 项，已经开头了，今天不用补，把最重要的一项做完就好`
   }
-  return `这周已完成 ${weekCompleted.value} 项，节奏是稳的。保持现在的量，不用加码。`
+  return `这周已完成 ${weekCompleted.value} 项，这个节奏刚刚好，保持住就赢了`
 })
 
 // 昨天没做完的任务：今天早上新建的不算，之前建的或已到期的都算。
@@ -498,15 +498,15 @@ function isCarriedFromYesterday(plan) {
 }
 
 function planTitle(plan) {
-  const name = String(plan.name || '')
+  const name = stripBookPrefix(plan.name || '')
   return name.startsWith(`${plan.subject} ·`) ? name : `${plan.subject} · ${name}`
 }
 
 function planMeta(plan) {
   const parts = [`${Number(plan.estimatedMinutes) || 25} 分钟`]
-  const detail = plan.chapterName || plan.knowledgeTags?.[0]
+  const detail = stripBookPrefix(plan.chapterName || plan.knowledgeTags?.[0] || '')
   if (detail) parts.push(detail)
-  if (plan.reason && plan.reason !== detail) parts.push(plan.reason)
+  if (plan.reason && plan.reason !== detail) parts.push(stripBookPrefix(plan.reason))
   return parts.join(' · ')
 }
 
@@ -569,14 +569,14 @@ function openEdit(plan) {
     ...plan,
     reviewAt: localDateTime(plan.reviewTime),
     startAt: localDateTime(plan.startAt),
-    knowledgeTagsText: (plan.knowledgeTags || []).join('，')
+    knowledgeTagsText: (plan.knowledgeTags || []).join('')
   }
   editVisible.value = true
 }
 
 async function submitEdit() {
   if (!editing.value?.name?.trim() || !editing.value?.subject) {
-    ElMessage.info('请先填写任务名称和科目。')
+    ElMessage.info('请先填写任务名称和科目')
     return
   }
   const updatedPlan = {
@@ -593,7 +593,7 @@ async function submitEdit() {
   plans.value = await loadPlans()
   store.setPlans(plans.value)
   editVisible.value = false
-  ElMessage.success('计划已更新。')
+  ElMessage.success('计划已更新')
 }
 
 // === 手动新建计划：自己定内容、时长和开始时间，不依赖诊断重新生成 ===
@@ -622,12 +622,12 @@ function openCreatePlan(dayKey) {
 async function submitCreatePlan() {
   const draft = draftPlan.value
   if (!draft?.name?.trim() || !draft.subject) {
-    ElMessage.info('请先填写计划名称和科目。')
+    ElMessage.info('请先填写计划名称和科目')
     return
   }
   const startAt = draft.startAt ? new Date(draft.startAt).getTime() : Date.now()
   if (!Number.isFinite(startAt)) {
-    ElMessage.info('开始时间格式不对，请重新选择。')
+    ElMessage.info('开始时间格式不对，请重新选择')
     return
   }
   const sameSubject = plans.value.filter(plan => plan.subject === draft.subject)
@@ -656,7 +656,7 @@ async function submitCreatePlan() {
   const dayGap = Math.round((startOfDay(startAt) - startOfDay(now.value)) / DAY_MS)
   subjectFilter.value = 'all'
   await focusPlanRow(plan.id)
-  ElMessage.success(dayGap > 0 ? `计划已创建，${formatDate(startAt)}开始。` : '计划已创建，已排进今天的计划。')
+  ElMessage.success(dayGap > 0 ? `计划已创建，${formatDate(startAt)}开始` : '计划已创建，已排进今天的计划')
 }
 
 // 行内「⋯」菜单：所有管理动作都从这一条任务上直接触发。
@@ -698,28 +698,28 @@ async function movePlan(plan, step) {
   for (const [order, item] of list.entries()) await savePlan({ ...item, sequenceOrder: order + 1 })
   plans.value = await loadPlans()
   store.setPlans(plans.value)
-  ElMessage.success(step < 0 ? '已往前挪一位。' : '已往后挪一位。')
+  ElMessage.success(step < 0 ? '已往前挪一位' : '已往后挪一位')
 }
 
 async function setReminder(plan) {
   if (!('Notification' in window)) {
-    ElMessage.info('当前浏览器不支持通知提醒。')
+    ElMessage.info('当前浏览器不支持通知提醒')
     return
   }
   try {
     const { value } = await ElMessageBox.prompt('输入提醒时间（本地时间，24 小时制）', '为任务设置提醒', {
       inputValue: localDateTime(Date.now() + 3600000),
       inputPattern: /^\d{4}-\d\d-\d\dT\d\d:\d\d$/,
-      inputErrorMessage: '请选择有效的日期和时间。'
+      inputErrorMessage: '请选择有效的日期和时间'
     })
     const reminderAt = new Date(value).getTime()
     if (!Number.isFinite(reminderAt) || reminderAt <= Date.now()) {
-      ElMessage.info('提醒时间需要晚于现在。')
+      ElMessage.info('提醒时间需要晚于现在')
       return
     }
     const permission = await Notification.requestPermission()
     if (permission !== 'granted') {
-      ElMessage.info('浏览器通知权限未开启。')
+      ElMessage.info('浏览器通知权限未开启')
       return
     }
     const updatedPlan = { ...plan, remindAt: reminderAt }
@@ -727,7 +727,7 @@ async function setReminder(plan) {
     plans.value = await loadPlans()
     store.setPlans(plans.value)
     scheduleTaskReminder(updatedPlan)
-    ElMessage.success('提醒已保存；请保持浏览器运行以便按时提醒。')
+    ElMessage.success('提醒已保存；请保持浏览器运行以便按时提醒')
   } catch {
     // 用户取消提醒时间输入时不修改原计划。
   }
@@ -750,7 +750,7 @@ async function removePlan(plan) {
     await deletePlan(plan.id)
     plans.value = await loadPlans()
     store.setPlans(plans.value)
-    ElMessage.success('计划已删除。')
+    ElMessage.success('计划已删除')
   } catch {
     // 用户取消确认时保留计划与提醒。
   }
@@ -787,8 +787,8 @@ async function promptStaleWeeklyTasks() {
   try {
     await ElMessageBox.confirm(
       shiftable.length
-        ? `上周还有 ${stale.length} 条周报任务没有完成。${overLimit ? `其中 ${overLimit} 条已顺延 ${MAX_CARRY_WEEKS} 次，建议拆小或放弃，不会继续顺延。` : ''}要把 ${shiftable.length} 条顺延到本周，还是全部清空？`
-        : `上周还有 ${stale.length} 条周报任务没有完成，且都已顺延 ${MAX_CARRY_WEEKS} 次。建议拆小或放弃，不再继续顺延。要直接清空吗？`,
+        ? `上周还有 ${stale.length} 条周报任务没有完成，${overLimit ? `其中 ${overLimit} 条已顺延 ${MAX_CARRY_WEEKS} 次，建议拆小或放弃，不会继续顺延` : ''}要把 ${shiftable.length} 条顺延到本周，还是全部清空？`
+        : `上周还有 ${stale.length} 条周报任务没有完成，且都已顺延 ${MAX_CARRY_WEEKS} 次，建议拆小或放弃，不再继续顺延，要直接清空吗？`,
       '上周周报任务',
       shiftable.length
         ? { confirmButtonText: `顺延 ${shiftable.length} 条`, cancelButtonText: '全部清空', distinguishCancelAndClose: true, type: 'info' }
@@ -808,13 +808,13 @@ async function promptStaleWeeklyTasks() {
     await removeTasks(shiftable)
     markStalePromptHandled()
     ElMessage.success(overLimit
-      ? `已顺延 ${shiftable.length} 条；${overLimit} 条达到上限，建议拆小或清空。`
-      : `已把 ${shiftable.length} 条周报任务顺延到本周。`)
+      ? `已顺延 ${shiftable.length} 条；${overLimit} 条达到上限，建议拆小或清空`
+      : `已把 ${shiftable.length} 条周报任务顺延到本周`)
     return
   }
   await removeTasks(stale)
   markStalePromptHandled()
-  ElMessage.success(`已清空 ${stale.length} 条过期周报任务。`)
+  ElMessage.success(`已清空 ${stale.length} 条过期周报任务`)
 }
 
 const replacing = ref('')
@@ -824,7 +824,7 @@ async function toggleLock(plan) {
   await savePlan(next)
   plans.value = await loadPlans()
   store.setPlans(plans.value)
-  ElMessage.success(next.locked ? '已锁定，重新诊断时保留这个任务。' : '已解锁，下次重新诊断可被新计划替换。')
+  ElMessage.success(next.locked ? '已锁定，重新分析时保留这个任务' : '已解锁，下次重新分析可被新计划替换')
 }
 
 // 点击立即生效的本地变体，AI 文案回来后再覆盖，避免为了换个任务名等半分钟。
@@ -833,7 +833,7 @@ function localVariant(plan) {
   const tag = String(plan.knowledgeTags?.[0] || plan.name || '知识点').slice(0, 12)
   const pool = LOCAL_VARIANTS.filter(item => !String(plan.name || '').includes(item))
   const variant = (pool.length ? pool : LOCAL_VARIANTS)[0]
-  return { ...plan, name: `${tag} · ${variant}`, reason: '换个任务形式，保持练习的新鲜感。', aiPending: true }
+  return { ...plan, name: `${tag} · ${variant}`, reason: '换个任务形式，保持练习的新鲜感', aiPending: true }
 }
 
 async function replaceTask(plan) {
@@ -849,7 +849,7 @@ async function replaceTask(plan) {
       await savePlan({ ...response.data.plan, id: plan.id, sequenceOrder: plan.sequenceOrder, locked: plan.locked, aiPending: false })
       plans.value = await loadPlans()
       store.setPlans(plans.value)
-      ElMessage.success('已换成新的任务形式，知识点保持不变。')
+      ElMessage.success('已换成新的任务形式，知识点保持不变')
     }
   } finally {
     replacing.value = ''
@@ -914,7 +914,6 @@ watch(() => route.query.focusTask, value => { if (value) focusTaskFromQuery() })
       <div class="hero-copy">
         <span class="eyebrow">学习计划</span>
         <h2 class="hero-title">{{ heroTitle }}</h2>
-        <p class="hero-sub">新建计划可以选开始时间，到那天自动排进今天</p>
       </div>
       <div class="hero-actions">
         <button type="button" class="hero-ghost" @click="openCreatePlan()">新建计划</button>
@@ -1080,11 +1079,11 @@ watch(() => route.query.focusTask, value => { if (value) focusTaskFromQuery() })
               <div v-for="row in weekFocus.rows" :key="row.name" class="split-row"><span>{{ row.name }}</span><b>{{ (row.minutes / 60).toFixed(1) }}h</b></div>
             </div>
           </template>
-          <p v-else class="side-empty">还没有专注记录，开始第一项后这里会显示时间分布。</p>
+          <p v-else class="side-empty">还没有专注记录，开始第一项后这里会显示时间分布</p>
           <p v-if="missingSubjects.length" class="side-warn">{{ missingSubjects.join('、') }}这周还没排</p>
         </section>
         <section class="truth-card">
-          <h3>一句话实话</h3>
+          <h3>这周的你</h3>
           <p>{{ insight }}</p>
         </section>
       </aside>
@@ -1124,9 +1123,8 @@ watch(() => route.query.focusTask, value => { if (value) focusTaskFromQuery() })
 /* 学习计划页：按设计稿的青绿纸感重排，颜色只在本页覆盖，不污染全局主题。 */
 .plan-page{padding-bottom:32px;--plan-deep:#2f5c57;--plan-deep-2:#254842;--plan-cta-text:#fff;--plan-mint:#e8f1ed;--plan-mint-strong:#cbded9;--plan-ink:#22322f;--plan-muted:#5f736e;--plan-faint:#9baca5;--plan-done:#cfdcd6;--plan-line:#e5ede9;--plan-soft:#f6faf8;--plan-card:#fff;--plan-cream:#f2f0e8;--plan-warn:#a8744a;color:var(--plan-ink)}
 :global(:root[data-theme='dark'] .plan-page){--plan-deep:#7fb5ab;--plan-deep-2:#9cc8bf;--plan-cta-text:#10231f;--plan-mint:#24423c;--plan-mint-strong:#35605c;--plan-ink:#e6f0ec;--plan-muted:#a3b8b2;--plan-faint:#7f938e;--plan-done:#3f5f57;--plan-line:#2f4741;--plan-soft:#172724;--plan-card:#1b2d29;--plan-cream:#2f2b22;--plan-warn:#d3ab7f}
-.plan-hero{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;margin:4px 0 22px}
+.plan-hero{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;margin:0 0 22px}
 .hero-title{margin:10px 0 0;font-size:clamp(25px,3vw,33px);line-height:1.3;font-weight:600;letter-spacing:-.02em;color:var(--plan-ink)}
-.hero-sub{margin:10px 0 0;font-size:calc(13px*var(--fs-scale));line-height:1.6;color:var(--plan-muted)}
 .hero-actions{display:flex;align-items:center;gap:10px;flex:none;padding-top:4px}
 .hero-ghost{min-height:44px;padding:0 20px;border:1px solid var(--plan-line);border-radius:999px;background:var(--plan-card);color:var(--plan-deep);font-family:inherit;font-size:calc(14px*var(--fs-scale));font-weight:700;cursor:pointer;transition:background .18s ease,border-color .18s ease,transform .18s ease}
 .hero-ghost:hover{border-color:var(--plan-deep);background:var(--plan-soft);transform:translateY(-1px)}
@@ -1218,8 +1216,8 @@ watch(() => route.query.focusTask, value => { if (value) focusTaskFromQuery() })
 .plan-row.is-done .plan-tick svg{opacity:1;transform:scale(1)}
 .plan-main{grid-column:3;min-width:0;padding-left:13px}
 .plan-title{display:flex;align-items:center;gap:8px;min-width:0;margin:0}
-.plan-title strong{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:calc(15px*var(--fs-scale));font-weight:650;line-height:21px;letter-spacing:-.005em;color:var(--plan-ink)}
-.plan-row.is-done .plan-title strong{color:var(--plan-faint);font-weight:600}
+.plan-title strong{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:calc(15px*var(--fs-scale));font-weight:800;line-height:21px;letter-spacing:-.005em;color:var(--plan-ink);-webkit-text-stroke:.28px currentColor}
+.plan-row.is-done .plan-title strong{color:var(--plan-faint);font-weight:500}
 .plan-chip{flex:none;padding:1px 6px;border-radius:6px;background:var(--plan-mint);color:var(--plan-deep);font-size:calc(10.5px*var(--fs-scale));font-weight:700;line-height:16px;white-space:nowrap}
 .plan-chip.move{background:var(--plan-cream);color:var(--plan-warn)}
 /* 背诵类任务的标记：不填色，避免和优先级、顺延标签抢注意力。 */
@@ -1230,7 +1228,7 @@ watch(() => route.query.focusTask, value => { if (value) focusTaskFromQuery() })
 /* 整行都能点进专注：悬停时从左往右铺一层极淡的青绿，提示这一条可以直接进去做。 */
 .plan-row.is-clickable{cursor:pointer}
 .plan-row.is-clickable:hover{background:linear-gradient(90deg,color-mix(in srgb,var(--plan-mint) 62%,transparent),transparent 68%)}
-.plan-row.is-clickable:hover .plan-title strong{color:var(--plan-deep)}
+.plan-row.is-clickable:hover .plan-title strong{color:var(--plan-deep);font-weight:900;-webkit-text-stroke:.45px currentColor}
 /* 一个指甲盖大的右箭头：悬停才浮出来，说明这行能直接点进去。 */
 .plan-enter{flex:none;width:7px;height:7px;margin-right:2px;border-right:1.6px solid var(--plan-deep);border-bottom:1.6px solid var(--plan-deep);transform:rotate(-45deg);opacity:0;transition:opacity .16s ease}
 .plan-row.is-clickable:hover .plan-enter{opacity:.55}
@@ -1275,6 +1273,8 @@ watch(() => route.query.focusTask, value => { if (value) focusTaskFromQuery() })
 :deep(sub){font-size:.7em;line-height:0;vertical-align:sub}
 /* 从通知点进来、或刚新建完时给目标任务一圈高亮，2.8 秒后自动淡出。 */
 .plan-row.is-highlighted{box-shadow:inset 0 0 0 2px var(--plan-deep);animation:planGlow 1.4s ease-in-out 2}
+/* 选中态要一眼看出来：比未完成再深一档、字重更重。 */
+.plan-row.is-highlighted .plan-title strong{color:var(--plan-deep);font-weight:900;-webkit-text-stroke:.45px currentColor}
 @keyframes planGlow{50%{box-shadow:inset 0 0 0 2px var(--plan-deep),0 0 0 6px rgba(47,93,80,.16)}}
 @media (prefers-reduced-motion: reduce){.plan-row.is-highlighted{animation:none}}
 </style>

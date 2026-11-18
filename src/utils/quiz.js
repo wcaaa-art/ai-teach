@@ -140,10 +140,10 @@ export function recommendFocusMinutes({ accuracy = 0, averageSecondsPerQuestion 
   const accuracyText = `正确率 ${Math.round(accuracy * 100)}%`
   const speedText = averageSecondsPerQuestion ? `平均每题 ${Math.round(averageSecondsPerQuestion)} 秒` : '本次用时较短'
   const reason = recommendedMinutes === 45
-    ? `${accuracyText}，${speedText}，且错题涉及多个专题。建议用 45 分钟先补概念与错因，再做变式。`
+    ? `${accuracyText}，${speedText}，且错题涉及多个专题，建议用 45 分钟先补概念与错因，再做变式`
     : recommendedMinutes === 40
-      ? `${accuracyText}，${speedText}。建议用 40 分钟完成一轮专项练习并留出复盘时间。`
-      : `${accuracyText}，${speedText}。掌握较稳，用 25 分钟做短时巩固即可。`
+      ? `${accuracyText}，${speedText}，建议用 40 分钟完成一轮专项练习并留出复盘时间`
+      : `${accuracyText}，${speedText}，掌握较稳，用 25 分钟做短时巩固即可`
   return { recommendedMinutes, reason }
 }
 

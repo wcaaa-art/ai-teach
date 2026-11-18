@@ -6,9 +6,9 @@
     "id": "初三-数学-1",
     "name": "一元二次方程"
   },
-  "generatedAt": "2026-11-13T02:45:35.514Z",
-  "source": "deepseek-with-local-fill",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.177Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedjwyf",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：由一元二次方程根与系数的关系，两根之和等于 -\\frac{b}{a} = 5，已知一根为 2，则另一根为 5 - 2 = 3，也可将 x = 2 代入得 4 - 10 + m = 0，m = 6，再解 x^2 - 5x + 6 = 0 得 x = 2 或 x = 3，另一根确为 3。\nB. 错误：两根之积为 m = 6 为正，说明两根同号，另一根不可能为负数，且 2 + (-3) = -1 ≠ 5，与两根之和为 5 矛盾。\nC. 错误：若另一根为 7，则两根之和为 9 ≠ 5，与两根之和等于 5 冲突。\nD. 错误：若另一根为 -7，两根之和为 -5 ≠ 5，且两根之积为 -14 ≠ m = 6，两处均矛盾。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "方程 x² - 5x + 6 = 0 的两根之和是（ ）",
+      "options": [
+        "5",
+        "6",
+        "-5",
+        "-1"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：5。由根与系数的关系，x₁ + x₂ = -b/a = 5，两根分别为 2 和 3。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "方程 x² - 6x + 5 = 0 的两根之积是（ ）",
+      "options": [
+        "6",
+        "-5",
+        "7",
+        "5"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：5。由根与系数的关系，x₁x₂ = c/a = 5，两根分别为 1 和 5。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "方程 x² - 10x + 24 = 0 的两根之和是（ ）",
+      "options": [
+        "-10",
+        "-2",
+        "10",
+        "24"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：10。由根与系数的关系，x₁ + x₂ = -b/a = 10，两根分别为 4 和 6。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "方程 x² - 10x + 21 = 0 的两根之积是（ ）",
+      "options": [
+        "11",
+        "21",
+        "10",
+        "-21"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：21。由根与系数的关系，x₁x₂ = c/a = 21，两根分别为 3 和 7。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "方程 x² - 11x + 18 = 0 的两根之和是（ ）",
+      "options": [
+        "11",
+        "18",
+        "-11",
+        "-7"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：11。由根与系数的关系，x₁ + x₂ = -b/a = 11，两根分别为 2 和 9。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "方程 x² - 13x + 40 = 0 的两根之积是（ ）",
+      "options": [
+        "13",
+        "-40",
+        "14",
+        "40"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：40。由根与系数的关系，x₁x₂ = c/a = 40，两根分别为 5 和 8。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "方程 x² - 14x + 40 = 0 的两根之和是（ ）",
+      "options": [
+        "-14",
+        "-6",
+        "14",
+        "40"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：14。由根与系数的关系，x₁ + x₂ = -b/a = 14，两根分别为 4 和 10。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "方程 x² - 13x + 42 = 0 的两根之积是（ ）",
+      "options": [
+        "14",
+        "42",
+        "13",
+        "-42"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：42。由根与系数的关系，x₁x₂ = c/a = 42，两根分别为 6 和 7。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "方程 x² - 14x + 33 = 0 的两根之和是（ ）",
+      "options": [
+        "14",
+        "33",
+        "-14",
+        "-8"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：14。由根与系数的关系，x₁ + x₂ = -b/a = 14，两根分别为 3 和 11。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "方程 x² - 17x + 72 = 0 的两根之积是（ ）",
+      "options": [
+        "17",
+        "-72",
+        "18",
+        "72"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：72。由根与系数的关系，x₁x₂ = c/a = 72，两根分别为 8 和 9。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一元二次方程 x² - 4x + 3 = 0 的根的情况是（ ）",
+      "options": [
+        "没有实数根",
+        "只有一个实数根",
+        "两个不相等的实数根",
+        "两个相等的实数根"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：两个不相等的实数根。判别式 Δ = b² - 4ac = (-4)² - 4 × 1 × (3) = 4 > 0，所以有两个不相等的实数根。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一元二次方程 x² + 2x + 1 = 0 的根的情况是（ ）",
+      "options": [
+        "只有一个实数根",
+        "两个相等的实数根",
+        "两个不相等的实数根",
+        "没有实数根"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：两个相等的实数根。判别式 Δ = b² - 4ac = (2)² - 4 × 1 × (1) = 0 = 0，所以有两个相等的实数根。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一元二次方程 x² + 4 = 0 的根的情况是（ ）",
+      "options": [
+        "没有实数根",
+        "两个不相等的实数根",
+        "两个相等的实数根",
+        "只有一个实数根"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：没有实数根。判别式 Δ = b² - 4ac = (0)² - 4 × 1 × (4) = -16 < 0，所以没有实数根。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一元二次方程 x² - 6x + 8 = 0 的根的情况是（ ）",
+      "options": [
+        "两个相等的实数根",
+        "没有实数根",
+        "只有一个实数根",
+        "两个不相等的实数根"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：两个不相等的实数根。判别式 Δ = b² - 4ac = (-6)² - 4 × 1 × (8) = 4 > 0，所以有两个不相等的实数根。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一元二次方程 x² + 4x + 4 = 0 的根的情况是（ ）",
+      "options": [
+        "没有实数根",
+        "只有一个实数根",
+        "两个相等的实数根",
+        "两个不相等的实数根"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：两个相等的实数根。判别式 Δ = b² - 4ac = (4)² - 4 × 1 × (4) = 0 = 0，所以有两个相等的实数根。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一元二次方程 x² + 2x + 5 = 0 的根的情况是（ ）",
+      "options": [
+        "只有一个实数根",
+        "没有实数根",
+        "两个不相等的实数根",
+        "两个相等的实数根"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：没有实数根。判别式 Δ = b² - 4ac = (2)² - 4 × 1 × (5) = -16 < 0，所以没有实数根。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一元二次方程 2x² - 4x + 2 = 0 的根的情况是（ ）",
+      "options": [
+        "两个相等的实数根",
+        "两个不相等的实数根",
+        "没有实数根",
+        "只有一个实数根"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：两个相等的实数根。判别式 Δ = b² - 4ac = (-4)² - 4 × 2 × (2) = 0 = 0，所以有两个相等的实数根。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一元二次方程 x² - 2x - 3 = 0 的根的情况是（ ）",
+      "options": [
+        "两个相等的实数根",
+        "没有实数根",
+        "只有一个实数根",
+        "两个不相等的实数根"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：两个不相等的实数根。判别式 Δ = b² - 4ac = (-2)² - 4 × 1 × (-3) = 16 > 0，所以有两个不相等的实数根。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一元二次方程 3x² + 6x + 3 = 0 的根的情况是（ ）",
+      "options": [
+        "没有实数根",
+        "只有一个实数根",
+        "两个相等的实数根",
+        "两个不相等的实数根"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：两个相等的实数根。判别式 Δ = b² - 4ac = (6)² - 4 × 3 × (3) = 0 = 0，所以有两个相等的实数根。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一元二次方程 x² + 9 = 0 的根的情况是（ ）",
+      "options": [
+        "只有一个实数根",
+        "没有实数根",
+        "两个不相等的实数根",
+        "两个相等的实数根"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：没有实数根。判别式 Δ = b² - 4ac = (0)² - 4 × 1 × (9) = -36 < 0，所以没有实数根。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知方程 x² - 5x + 6 = 0 的一个根是 2，则另一个根是（ ）",
+      "options": [
+        "3",
+        "2",
+        "5",
+        "6"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：3。两根之和为 5，另一个根 = 5 - 2 = 3。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知方程 x² - 6x + 5 = 0 的一个根是 1，则另一个根是（ ）",
+      "options": [
+        "1",
+        "6",
+        "4",
+        "5"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：5。两根之和为 6，另一个根 = 6 - 1 = 5。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知方程 x² - 10x + 24 = 0 的一个根是 4，则另一个根是（ ）",
+      "options": [
+        "10",
+        "24",
+        "6",
+        "4"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：6。两根之和为 10，另一个根 = 10 - 4 = 6。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知方程 x² - 10x + 21 = 0 的一个根是 3，则另一个根是（ ）",
+      "options": [
+        "21",
+        "7",
+        "3",
+        "10"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：7。两根之和为 10，另一个根 = 10 - 3 = 7。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知方程 x² - 11x + 18 = 0 的一个根是 2，则另一个根是（ ）",
+      "options": [
+        "9",
+        "2",
+        "11",
+        "18"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：9。两根之和为 11，另一个根 = 11 - 2 = 9。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知方程 x² - 13x + 40 = 0 的一个根是 5，则另一个根是（ ）",
+      "options": [
+        "5",
+        "13",
+        "40",
+        "8"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：8。两根之和为 13，另一个根 = 13 - 5 = 8。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知方程 x² - 14x + 40 = 0 的一个根是 4，则另一个根是（ ）",
+      "options": [
+        "14",
+        "40",
+        "10",
+        "4"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：10。两根之和为 14，另一个根 = 14 - 4 = 10。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知方程 x² - 13x + 42 = 0 的一个根是 6，则另一个根是（ ）",
+      "options": [
+        "42",
+        "7",
+        "6",
+        "13"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：7。两根之和为 13，另一个根 = 13 - 6 = 7。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知方程 x² - 14x + 33 = 0 的一个根是 3，则另一个根是（ ）",
+      "options": [
+        "11",
+        "3",
+        "14",
+        "33"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：11。两根之和为 14，另一个根 = 14 - 3 = 11。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-数学-1",
+      "chapterName": "一元二次方程",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知方程 x² - 17x + 72 = 0 的一个根是 8，则另一个根是（ ）",
+      "options": [
+        "8",
+        "17",
+        "72",
+        "9"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：9。两根之和为 17，另一个根 = 17 - 8 = 9。",
+      "difficulty": 2
     }
   ]
 }

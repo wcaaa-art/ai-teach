@@ -20,7 +20,7 @@ export function remainingVideoSwaps(used = 0) {
   return Math.max(0, VIDEO_SWAP_LIMIT - (Number(used) || 0))
 }
 
-export const VIDEO_SWAP_LIMIT_TEXT = '已经换了 5 次，这个章节暂时没有更合适的讲解。建议直接去 B 站用关键词搜索，或先换个专题补基础。'
+export const VIDEO_SWAP_LIMIT_TEXT = '已经换了 5 次，这个章节暂时没有更合适的讲解，建议直接去 B 站用关键词搜索，或先换个专题补基础'
 
 // 播放量按中文习惯缩写：1273484 → 127.3万，1.2亿 → 1.2亿。
 export function formatPlayCount(value) {

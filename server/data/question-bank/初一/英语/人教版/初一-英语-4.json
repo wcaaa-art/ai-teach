@@ -6,9 +6,9 @@
     "id": "初一-英语-4",
     "name": "There be 句型"
   },
-  "generatedAt": "2026-11-14T12:13:11.792Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.921Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgd9hlg",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：water 是不可数名词，否定句中用 There isn't any water；tomatoes 是可数名词复数，肯定句中用 There are some tomatoes，前后搭配一致。\nB. 错误：water 不可数，不能用 aren't 作 There be 的谓语；tomatoes 为复数，后半也不能用 is。\nC. 错误：前半 There isn't any water 正确，但后半 some tomatoes 是复数，应与 are 搭配，不能用 is。\nD. 错误：water 不可数，前半不能用 aren't；后半 there are some tomatoes 虽正确，但整体仍错。",
       "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "There ______ a book on the desk.",
+      "options": [
+        "is",
+        "are",
+        "be",
+        "have"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：is。There be 句型遵循就近原则：be 动词与最靠近的名词在数上保持一致；本题应为 is。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "There ______ two apples in the basket.",
+      "options": [
+        "is",
+        "be",
+        "has",
+        "are"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：are。There be 句型遵循就近原则：be 动词与最靠近的名词在数上保持一致；本题应为 are。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "There ______ some milk in the glass.",
+      "options": [
+        "be",
+        "have",
+        "is",
+        "are"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：is。There be 句型遵循就近原则：be 动词与最靠近的名词在数上保持一致；本题应为 is。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "There ______ many students in the classroom.",
+      "options": [
+        "has",
+        "are",
+        "is",
+        "be"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：are。There be 句型遵循就近原则：be 动词与最靠近的名词在数上保持一致；本题应为 are。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "There ______ two books and a pen on the desk.",
+      "options": [
+        "is",
+        "be",
+        "has",
+        "are"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：are。There be 句型遵循就近原则：be 动词与最靠近的名词在数上保持一致；本题应为 are。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "There ______ some water in the bottle.",
+      "options": [
+        "be",
+        "have",
+        "is",
+        "are"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：is。There be 句型遵循就近原则：be 动词与最靠近的名词在数上保持一致；本题应为 is。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "There ______ a lot of trees in the park.",
+      "options": [
+        "has",
+        "are",
+        "is",
+        "be"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：are。There be 句型遵循就近原则：be 动词与最靠近的名词在数上保持一致；本题应为 are。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "There ______ an English book and a dictionary in my bag.",
+      "options": [
+        "is",
+        "are",
+        "be",
+        "have"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：is。There be 句型遵循就近原则：be 动词与最靠近的名词在数上保持一致；本题应为 is。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "There ______ some boys playing football on the playground.",
+      "options": [
+        "is",
+        "be",
+        "has",
+        "are"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：are。There be 句型遵循就近原则：be 动词与最靠近的名词在数上保持一致；本题应为 are。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "method",
+      "stem": "There are ______ apples on the table.",
+      "options": [
+        "a",
+        "much",
+        "some",
+        "any"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：some。肯定句和表示邀请、请求的疑问句用 some，否定句和一般疑问句用 any；本题应为 some。",
+      "difficulty": 2
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "method",
+      "stem": "There isn't ______ milk in the fridge.",
+      "options": [
+        "many",
+        "any",
+        "some",
+        "a"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：any。肯定句和表示邀请、请求的疑问句用 some，否定句和一般疑问句用 any；本题应为 any。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "method",
+      "stem": "Are there ______ birds in the tree?",
+      "options": [
+        "any",
+        "some",
+        "a",
+        "much"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：any。肯定句和表示邀请、请求的疑问句用 some，否定句和一般疑问句用 any；本题应为 any。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "method",
+      "stem": "There is ______ bread on the plate.",
+      "options": [
+        "any",
+        "many",
+        "a",
+        "some"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：some。肯定句和表示邀请、请求的疑问句用 some，否定句和一般疑问句用 any；本题应为 some。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "method",
+      "stem": "There aren't ______ students in the classroom now.",
+      "options": [
+        "much",
+        "a",
+        "any",
+        "some"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：any。肯定句和表示邀请、请求的疑问句用 some，否定句和一般疑问句用 any；本题应为 any。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "method",
+      "stem": "Would you like ______ tea?",
+      "options": [
+        "a",
+        "some",
+        "any",
+        "many"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：some。肯定句和表示邀请、请求的疑问句用 some，否定句和一般疑问句用 any；本题应为 some。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "method",
+      "stem": "Is there ______ water in the bottle?",
+      "options": [
+        "any",
+        "some",
+        "many",
+        "a"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：any。肯定句和表示邀请、请求的疑问句用 some，否定句和一般疑问句用 any；本题应为 any。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "method",
+      "stem": "There are ______ flowers in the garden.",
+      "options": [
+        "any",
+        "a",
+        "much",
+        "some"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：some。肯定句和表示邀请、请求的疑问句用 some，否定句和一般疑问句用 any；本题应为 some。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "method",
+      "stem": "There isn't ______ juice in the glass.",
+      "options": [
+        "many",
+        "a",
+        "any",
+        "some"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：any。肯定句和表示邀请、请求的疑问句用 some，否定句和一般疑问句用 any；本题应为 any。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "method",
+      "stem": "There is ______ cheese on the plate.",
+      "options": [
+        "a",
+        "some",
+        "any",
+        "many"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：some。肯定句和表示邀请、请求的疑问句用 some，否定句和一般疑问句用 any；本题应为 some。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "把「There is a park near here.」改为否定句：There ______ a park near here.",
+      "options": [
+        "isn't",
+        "aren't",
+        "not",
+        "is"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：isn't。改写 There be 句型的否定句时在 be 后加 not，疑问句把 be 提前，简答仍用 there be；本题应为 isn't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "把「There are some books on the desk.」改为否定句：There ______ any books on the desk.",
+      "options": [
+        "isn't",
+        "not",
+        "are",
+        "aren't"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：aren't。改写 There be 句型的否定句时在 be 后加 not，疑问句把 be 提前，简答仍用 there be；本题应为 aren't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "把「There is a library in our school.」改为一般疑问句：______ there a library in our school?",
+      "options": [
+        "Do",
+        "Does",
+        "Is",
+        "Are"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：Is。改写 There be 句型的否定句时在 be 后加 not，疑问句把 be 提前，简答仍用 there be；本题应为 Is。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "把「There are two maps on the wall.」改为一般疑问句：______ there two maps on the wall?",
+      "options": [
+        "Does",
+        "Are",
+        "Is",
+        "Do"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：Are。改写 There be 句型的否定句时在 be 后加 not，疑问句把 be 提前，简答仍用 there be；本题应为 Are。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "— Is there a zoo near here?\n— Yes, ______.",
+      "options": [
+        "there is",
+        "it is",
+        "there are",
+        "they are"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：there is。改写 There be 句型的否定句时在 be 后加 not，疑问句把 be 提前，简答仍用 there be；本题应为 there is。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "— Are there any shops on this street?\n— No, ______.",
+      "options": [
+        "there isn't",
+        "they aren't",
+        "it isn't",
+        "there aren't"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：there aren't。改写 There be 句型的否定句时在 be 后加 not，疑问句把 be 提前，简答仍用 there be；本题应为 there aren't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "— Is there any water in the cup?\n— No, ______.",
+      "options": [
+        "it isn't",
+        "they aren't",
+        "there isn't",
+        "there aren't"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：there isn't。改写 There be 句型的否定句时在 be 后加 not，疑问句把 be 提前，简答仍用 there be；本题应为 there isn't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "— Are there two birds in the tree?\n— Yes, ______.",
+      "options": [
+        "it is",
+        "there are",
+        "there is",
+        "they are"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：there are。改写 There be 句型的否定句时在 be 后加 not，疑问句把 be 提前，简答仍用 there be；本题应为 there are。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "把「There are some apples in the basket.」改为否定句：There ______ any apples in the basket.",
+      "options": [
+        "aren't",
+        "isn't",
+        "not",
+        "are"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：aren't。改写 There be 句型的否定句时在 be 后加 not，疑问句把 be 提前，简答仍用 there be；本题应为 aren't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "把「There is some milk in the glass.」改为否定句：There ______ any milk in the glass.",
+      "options": [
+        "aren't",
+        "not",
+        "is",
+        "isn't"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：isn't。改写 There be 句型的否定句时在 be 后加 not，疑问句把 be 提前，简答仍用 there be；本题应为 isn't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-英语-4",
+      "chapterName": "There be 句型",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "There ______ a computer and two lamps in my room.",
+      "options": [
+        "is",
+        "are",
+        "be",
+        "have"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：is。There be 句型遵循就近原则：be 动词与最靠近的名词在数上保持一致；本题应为 is。",
+      "difficulty": 1
     }
   ]
 }

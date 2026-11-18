@@ -6,9 +6,9 @@
     "id": "初一-英语-5",
     "name": "一般过去时入门"
   },
-  "generatedAt": "2026-11-14T12:13:05.212Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.923Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgd9kjd",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：finishes 是一般现在时第三人称单数形式，与时间状语 Yesterday 表示过去时间相冲突。\nB. 正确：finished 是 finish 的一般过去式，表示昨天晚饭前完成的动作，符合一般过去时的基本用法。\nC. 错误：finish 是动词原形，不能直接表示过去发生的动作；若用于一般现在时，主语 Lucy 为第三人称单数，也应用 finishes。\nD. 错误：is finishing 是现在进行时，表示现在正在进行的动作，与 Yesterday 不搭配。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "I ______ (visit) my grandparents last weekend.",
+      "options": [
+        "visited",
+        "visit",
+        "visiting",
+        "visits"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：visited。一般过去时表示过去发生的动作，规则动词加 -ed（注意双写和变 y 为 i）；本题应为 visited。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "They ______ (play) football yesterday afternoon.",
+      "options": [
+        "play",
+        "playing",
+        "plays",
+        "played"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：played。一般过去时表示过去发生的动作，规则动词加 -ed（注意双写和变 y 为 i）；本题应为 played。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "She ______ (study) English last night.",
+      "options": [
+        "studying",
+        "studies",
+        "studied",
+        "study"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：studied。一般过去时表示过去发生的动作，规则动词加 -ed（注意双写和变 y 为 i）；本题应为 studied。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The bus ______ (stop) here ten minutes ago.",
+      "options": [
+        "stops",
+        "stopped",
+        "stop",
+        "stopping"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：stopped。一般过去时表示过去发生的动作，规则动词加 -ed（注意双写和变 y 为 i）；本题应为 stopped。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "We ______ (clean) the classroom last Friday.",
+      "options": [
+        "cleaned",
+        "clean",
+        "cleaning",
+        "cleans"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：cleaned。一般过去时表示过去发生的动作，规则动词加 -ed（注意双写和变 y 为 i）；本题应为 cleaned。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Tom ______ (watch) a movie last Sunday.",
+      "options": [
+        "watch",
+        "watching",
+        "watches",
+        "watched"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：watched。一般过去时表示过去发生的动作，规则动词加 -ed（注意双写和变 y 为 i）；本题应为 watched。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "My mother ______ (cook) noodles for me yesterday.",
+      "options": [
+        "cooking",
+        "cooks",
+        "cooked",
+        "cook"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：cooked。一般过去时表示过去发生的动作，规则动词加 -ed（注意双写和变 y 为 i）；本题应为 cooked。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "He ______ (help) me with my homework last night.",
+      "options": [
+        "helps",
+        "helped",
+        "help",
+        "helping"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：helped。一般过去时表示过去发生的动作，规则动词加 -ed（注意双写和变 y 为 i）；本题应为 helped。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "They ______ (dance) at the party last night.",
+      "options": [
+        "danced",
+        "dance",
+        "dancing",
+        "dances"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：danced。一般过去时表示过去发生的动作，规则动词加 -ed（注意双写和变 y 为 i）；本题应为 danced。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The children ______ (carry) water for the old man yesterday.",
+      "options": [
+        "carry",
+        "carrying",
+        "carries",
+        "carried"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：carried。一般过去时表示过去发生的动作，规则动词加 -ed（注意双写和变 y 为 i）；本题应为 carried。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "I ______ (go) to the zoo with my parents yesterday.",
+      "options": [
+        "going",
+        "goes",
+        "went",
+        "go"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：went。不规则动词的过去式需要单独记忆，本题正确形式是 went。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "She ______ (see) a film with her friends last night.",
+      "options": [
+        "seen",
+        "saw",
+        "see",
+        "seeing"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：saw。不规则动词的过去式需要单独记忆，本题正确形式是 saw。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "We ______ (eat) noodles for lunch yesterday.",
+      "options": [
+        "ate",
+        "eat",
+        "eaten",
+        "eating"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：ate。不规则动词的过去式需要单独记忆，本题正确形式是 ate。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "He ______ (buy) a new bike last week.",
+      "options": [
+        "buy",
+        "buying",
+        "buys",
+        "bought"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：bought。不规则动词的过去式需要单独记忆，本题正确形式是 bought。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "They ______ (take) photos in the park last Sunday.",
+      "options": [
+        "taken",
+        "taking",
+        "took",
+        "take"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：took。不规则动词的过去式需要单独记忆，本题正确形式是 took。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "My father ______ (have) a meeting yesterday.",
+      "options": [
+        "having",
+        "had",
+        "have",
+        "has"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：had。不规则动词的过去式需要单独记忆，本题正确形式是 had。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "She ______ (do) her homework last night.",
+      "options": [
+        "did",
+        "do",
+        "does",
+        "done"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：did。不规则动词的过去式需要单独记忆，本题正确形式是 did。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "Lily ______ (come) to school late yesterday.",
+      "options": [
+        "come",
+        "coming",
+        "comes",
+        "came"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：came。不规则动词的过去式需要单独记忆，本题正确形式是 came。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "He ______ (make) a model plane last week.",
+      "options": [
+        "making",
+        "maked",
+        "made",
+        "make"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：made。不规则动词的过去式需要单独记忆，本题正确形式是 made。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "My uncle ______ (give) me a book yesterday.",
+      "options": [
+        "giving",
+        "gave",
+        "give",
+        "given"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：gave。不规则动词的过去式需要单独记忆，本题正确形式是 gave。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "Tom ______ go to the zoo yesterday.",
+      "options": [
+        "didn't",
+        "doesn't",
+        "don't",
+        "wasn't"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：didn't。一般过去时的否定句用 didn't + 动词原形，疑问句用 Did 开头，简答也用 did；本题应为 didn't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "— ______ you watch TV last night?\n— Yes, I did.",
+      "options": [
+        "Do",
+        "Does",
+        "Are",
+        "Did"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Did。一般过去时的否定句用 didn't + 动词原形，疑问句用 Did 开头，简答也用 did；本题应为 Did。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "— Did she visit her grandma last Sunday?\n— No, she ______.",
+      "options": [
+        "don't",
+        "isn't",
+        "didn't",
+        "doesn't"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：didn't。一般过去时的否定句用 didn't + 动词原形，疑问句用 Did 开头，简答也用 did；本题应为 didn't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "We ______ have a party last week.",
+      "options": [
+        "weren't",
+        "didn't",
+        "doesn't",
+        "don't"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：didn't。一般过去时的否定句用 didn't + 动词原形，疑问句用 Did 开头，简答也用 did；本题应为 didn't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "His sister ______ do her homework last night.",
+      "options": [
+        "didn't",
+        "doesn't",
+        "don't",
+        "isn't"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：didn't。一般过去时的否定句用 didn't + 动词原形，疑问句用 Did 开头，简答也用 did；本题应为 didn't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "— ______ he play football yesterday?\n— Yes, he did.",
+      "options": [
+        "Do",
+        "Does",
+        "Is",
+        "Did"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Did。一般过去时的否定句用 didn't + 动词原形，疑问句用 Did 开头，简答也用 did；本题应为 Did。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "— Did they finish the work?\n— Yes, they ______.",
+      "options": [
+        "does",
+        "are",
+        "did",
+        "do"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：did。一般过去时的否定句用 didn't + 动词原形，疑问句用 Did 开头，简答也用 did；本题应为 did。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "My mother ______ cook dinner yesterday.",
+      "options": [
+        "wasn't",
+        "didn't",
+        "doesn't",
+        "don't"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：didn't。一般过去时的否定句用 didn't + 动词原形，疑问句用 Did 开头，简答也用 did；本题应为 didn't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "— ______ your father go to Beijing last week?\n— No, he didn't.",
+      "options": [
+        "Did",
+        "Do",
+        "Does",
+        "Is"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：Did。一般过去时的否定句用 didn't + 动词原形，疑问句用 Did 开头，简答也用 did；本题应为 Did。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-英语-5",
+      "chapterName": "一般过去时入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "I ______ see him at school yesterday.",
+      "options": [
+        "doesn't",
+        "don't",
+        "wasn't",
+        "didn't"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：didn't。一般过去时的否定句用 didn't + 动词原形，疑问句用 Did 开头，简答也用 did；本题应为 didn't。",
+      "difficulty": 2
     }
   ]
 }

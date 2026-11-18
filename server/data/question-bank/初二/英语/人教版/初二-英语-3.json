@@ -6,9 +6,9 @@
     "id": "初二-英语-3",
     "name": "情态动词与被动语态"
   },
-  "generatedAt": "2026-11-14T12:15:18.103Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.936Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdcf2s",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：mustn't take 是主动语态，主语 the books 不能主动执行 take out 的动作，且与“书被带出”的被动关系冲突。\nB. 正确：mustn't 表示“禁止”，the books 与 take out 之间是被动关系，情态动词后接 be + 过去分词，故用 mustn't be taken out。\nC. 错误：needn't take 表示“不需要拿”，且为主动语态；题干规则是“禁止带出”，不是“不需要拿”。\nD. 错误：needn't be taken 表示“不需要被带出”，语气是“没必要”，与图书馆规则“禁止带出”的 mustn't 不符。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Which word means \"it is necessary to do something\"? 哪个词表示「必须做某事」？（ ）",
+      "options": [
+        "must",
+        "can",
+        "may",
+        "might"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：must。按情态动词的含义（必须、许可、能力、建议）判断，本题应为 must。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "— ______ I use your pen?\n— Sure, here you are.",
+      "options": [
+        "Must",
+        "Should",
+        "Need",
+        "May"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：May。按情态动词的含义（必须、许可、能力、建议）判断，本题应为 May。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "You ______ be careful when you cross the road.",
+      "options": [
+        "may",
+        "needn't",
+        "must",
+        "can"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：must。按情态动词的含义（必须、许可、能力、建议）判断，本题应为 must。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "— Can you swim?\n— Yes, I ______.",
+      "options": [
+        "need",
+        "can",
+        "may",
+        "must"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：can。按情态动词的含义（必须、许可、能力、建议）判断，本题应为 can。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "You ______ not play football in the street. It's dangerous.",
+      "options": [
+        "must",
+        "can",
+        "may",
+        "need"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：must。按情态动词的含义（必须、许可、能力、建议）判断，本题应为 must。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "______ you like to go with me?",
+      "options": [
+        "Must",
+        "Should",
+        "Need",
+        "Would"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Would。按情态动词的含义（必须、许可、能力、建议）判断，本题应为 Would。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "It ______ rain tomorrow. Take an umbrella.",
+      "options": [
+        "need",
+        "can't",
+        "may",
+        "must"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：may。按情态动词的含义（必须、许可、能力、建议）判断，本题应为 may。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "You ______ worry about it. Everything will be fine.",
+      "options": [
+        "couldn't",
+        "needn't",
+        "mustn't",
+        "can't"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：needn't。按情态动词的含义（必须、许可、能力、建议）判断，本题应为 needn't。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "— Must I finish it now?\n— No, you ______.",
+      "options": [
+        "needn't",
+        "mustn't",
+        "can't",
+        "won't"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：needn't。按情态动词的含义（必须、许可、能力、建议）判断，本题应为 needn't。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "We ______ keep quiet in the library.",
+      "options": [
+        "may",
+        "need",
+        "could",
+        "should"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：should。按情态动词的含义（必须、许可、能力、建议）判断，本题应为 should。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "method",
+      "stem": "You must ______ (finish) your homework first.",
+      "options": [
+        "to finish",
+        "finished",
+        "finish",
+        "finishing"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：finish。情态动词后必须接动词原形，本题应为 finish。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "method",
+      "stem": "She can ______ (swim) very well.",
+      "options": [
+        "to swim",
+        "swim",
+        "swims",
+        "swimming"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：swim。情态动词后必须接动词原形，本题应为 swim。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "method",
+      "stem": "May I ______ (use) your phone?",
+      "options": [
+        "use",
+        "to use",
+        "using",
+        "used"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：use。情态动词后必须接动词原形，本题应为 use。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "method",
+      "stem": "We should ______ (help) each other.",
+      "options": [
+        "helps",
+        "helping",
+        "to help",
+        "help"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：help。情态动词后必须接动词原形，本题应为 help。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "method",
+      "stem": "You needn't ______ (worry) about the test.",
+      "options": [
+        "worrying",
+        "to worry",
+        "worry",
+        "worried"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：worry。情态动词后必须接动词原形，本题应为 worry。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "method",
+      "stem": "He must ______ (go) to bed before ten.",
+      "options": [
+        "went",
+        "go",
+        "goes",
+        "going"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：go。情态动词后必须接动词原形，本题应为 go。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "method",
+      "stem": "They can ______ (play) chess after school.",
+      "options": [
+        "play",
+        "plays",
+        "playing",
+        "played"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：play。情态动词后必须接动词原形，本题应为 play。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "method",
+      "stem": "You shouldn't ______ (eat) too much junk food.",
+      "options": [
+        "eats",
+        "eating",
+        "ate",
+        "eat"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：eat。情态动词后必须接动词原形，本题应为 eat。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "method",
+      "stem": "We must ______ (keep) the classroom clean.",
+      "options": [
+        "keeping",
+        "kept",
+        "keep",
+        "keeps"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：keep。情态动词后必须接动词原形，本题应为 keep。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "method",
+      "stem": "Can you ______ (speak) English?",
+      "options": [
+        "spoke",
+        "speak",
+        "speaks",
+        "speaking"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：speak。情态动词后必须接动词原形，本题应为 speak。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "English ______ (speak) in many countries.",
+      "options": [
+        "is spoken",
+        "speaks",
+        "is speaking",
+        "spoke"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：is spoken。一般现在时被动语态结构为 am/is/are + 过去分词；本题应为 is spoken。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The classroom ______ (clean) every day.",
+      "options": [
+        "cleans",
+        "is cleaning",
+        "cleaned",
+        "is cleaned"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：is cleaned。一般现在时被动语态结构为 am/is/are + 过去分词；本题应为 is cleaned。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "Rice ______ (grow) in the south of China.",
+      "options": [
+        "is growing",
+        "grew",
+        "is grown",
+        "grows"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：is grown。一般现在时被动语态结构为 am/is/are + 过去分词；本题应为 is grown。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "Football ______ (play) all over the world.",
+      "options": [
+        "played",
+        "is played",
+        "plays",
+        "is playing"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：is played。一般现在时被动语态结构为 am/is/are + 过去分词；本题应为 is played。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "Many trees ______ (plant) in our school every year.",
+      "options": [
+        "are planted",
+        "is planted",
+        "plant",
+        "planted"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：are planted。一般现在时被动语态结构为 am/is/are + 过去分词；本题应为 are planted。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The books ______ (keep) in the library.",
+      "options": [
+        "is kept",
+        "keep",
+        "kept",
+        "are kept"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：are kept。一般现在时被动语态结构为 am/is/are + 过去分词；本题应为 are kept。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "Chinese food ______ (enjoy) by people all over the world.",
+      "options": [
+        "is enjoying",
+        "enjoyed",
+        "is enjoyed",
+        "enjoys"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：is enjoyed。一般现在时被动语态结构为 am/is/are + 过去分词；本题应为 is enjoyed。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The windows ______ (clean) by Tom every week.",
+      "options": [
+        "cleaned",
+        "are cleaned",
+        "is cleaned",
+        "clean"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：are cleaned。一般现在时被动语态结构为 am/is/are + 过去分词；本题应为 are cleaned。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The homework ______ (check) by the teacher every day.",
+      "options": [
+        "is checked",
+        "checks",
+        "is checking",
+        "checked"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：is checked。一般现在时被动语态结构为 am/is/are + 过去分词；本题应为 is checked。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-英语-3",
+      "chapterName": "情态动词与被动语态",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "Letters ______ (send) by email today.",
+      "options": [
+        "is sent",
+        "send",
+        "sent",
+        "are sent"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：are sent。一般现在时被动语态结构为 am/is/are + 过去分词；本题应为 are sent。",
+      "difficulty": 2
     }
   ]
 }

@@ -6,9 +6,9 @@
     "id": "初三-生物-5",
     "name": "实验探究与图表分析"
   },
-  "generatedAt": "2026-11-14T12:18:28.677Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.831Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdgi4g",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 0,
       "explanation": "A. 正确：本实验探究光照对鼠妇分布的影响，遮光侧与不遮光侧形成以光照为变量的对照，其他条件相同，遵循单一变量原则。\nB. 错误：若纸盒两侧都遮光，就没有光照差异，无法形成对照，不能检验光照对鼠妇分布的影响。\nC. 错误：只统计1只鼠妇样本过少，偶然性大；统计20只鼠妇的分布更能反映真实情况。\nD. 错误：重复3次可减少偶然误差，使结论更可靠；只做1次实验容易受偶然因素影响。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "显微镜的放大倍数是（　　）",
+      "options": [
+        "目镜放大倍数与物镜放大倍数的乘积",
+        "目镜与物镜放大倍数之和",
+        "目镜放大倍数",
+        "物镜放大倍数"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：目镜放大倍数与物镜放大倍数的乘积。按显微镜操作与临时装片制作规范判断，本题正确答案是「目镜放大倍数与物镜放大倍数的乘积」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "目镜为10×、物镜为40×时，物像放大的倍数是（　　）",
+      "options": [
+        "50倍",
+        "100倍",
+        "200倍",
+        "400倍"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：400倍。按显微镜操作与临时装片制作规范判断，本题正确答案是「400倍」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "显微镜下观察到的物像是（　　）",
+      "options": [
+        "放大的正像",
+        "缩小的正像",
+        "倒像",
+        "正像"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：倒像。按显微镜操作与临时装片制作规范判断，本题正确答案是「倒像」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "物像偏在视野左上方，要把它移到视野中央，应（　　）",
+      "options": [
+        "转动物镜",
+        "把玻片向左上方移动",
+        "把玻片向右下方移动",
+        "把玻片向左下方移动"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：把玻片向左上方移动。按显微镜操作与临时装片制作规范判断，本题正确答案是「把玻片向左上方移动」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "从低倍镜换成高倍镜后，视野会（　　）",
+      "options": [
+        "变暗，细胞数目变少",
+        "变亮，细胞数目变多",
+        "变亮，细胞数目变少",
+        "变暗，细胞数目变多"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：变暗，细胞数目变少。按显微镜操作与临时装片制作规范判断，本题正确答案是「变暗，细胞数目变少」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "视野中有气泡时，气泡的形态特点是（　　）",
+      "options": [
+        "边缘模糊的绿色结构",
+        "有细胞核的方形结构",
+        "排列整齐的细胞",
+        "边缘较黑、内部白亮的圆形"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：边缘较黑、内部白亮的圆形。按显微镜操作与临时装片制作规范判断，本题正确答案是「边缘较黑、内部白亮的圆形」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "制作洋葱鳞片叶内表皮细胞临时装片时，滴加清水的作用是（　　）",
+      "options": [
+        "染色",
+        "溶解细胞壁",
+        "保持细胞正常形态",
+        "杀死细胞"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：保持细胞正常形态。按显微镜操作与临时装片制作规范判断，本题正确答案是「保持细胞正常形态」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "制作人口腔上皮细胞临时装片时，滴加生理盐水的目的是（　　）",
+      "options": [
+        "便于染色",
+        "维持细胞正常形态",
+        "杀死细胞",
+        "使细胞膨大"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：维持细胞正常形态。按显微镜操作与临时装片制作规范判断，本题正确答案是「维持细胞正常形态」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "显微镜下染色最深的结构通常是（　　）",
+      "options": [
+        "细胞核",
+        "细胞壁",
+        "细胞膜",
+        "液泡"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：细胞核。按显微镜操作与临时装片制作规范判断，本题正确答案是「细胞核」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "使用显微镜时，先转动粗准焦螺旋使镜筒下降，此时眼睛应注视（　　）",
+      "options": [
+        "目镜",
+        "反光镜",
+        "载物台",
+        "物镜"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：物镜。按显微镜操作与临时装片制作规范判断，本题正确答案是「物镜」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "对照实验应遵循的原则是（　　）",
+      "options": [
+        "不需要设置对照组",
+        "变量越多越好",
+        "只有一个变量不同，其他条件都相同",
+        "所有条件都不同"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：只有一个变量不同，其他条件都相同。按对照实验的设计原则判断，本题正确答案是「只有一个变量不同，其他条件都相同」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "探究“光对鼠妇分布的影响”时，实验的变量是（　　）",
+      "options": [
+        "鼠妇数量",
+        "光",
+        "温度",
+        "湿度"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：光。按对照实验的设计原则判断，本题正确答案是「光」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "探究“种子萌发需要一定的水分”时，应设置的对照是（　　）",
+      "options": [
+        "适量的水与无水",
+        "光照与黑暗",
+        "低温与常温",
+        "有空气与无空气"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：适量的水与无水。按对照实验的设计原则判断，本题正确答案是「适量的水与无水」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "探究实验中设置重复组的目的是（　　）",
+      "options": [
+        "增加实验时间",
+        "使变量增多",
+        "让结论更绝对",
+        "减少偶然误差，提高结果可靠性"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：减少偶然误差，提高结果可靠性。按对照实验的设计原则判断，本题正确答案是「减少偶然误差，提高结果可靠性」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "实验假设的提出应基于（　　）",
+      "options": [
+        "实验结论",
+        "他人评价",
+        "已有的知识和生活经验",
+        "随意猜测"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：已有的知识和生活经验。按对照实验的设计原则判断，本题正确答案是「已有的知识和生活经验」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“绿叶在光下制造有机物”实验中，暗处理的目的是（　　）",
+      "options": [
+        "使叶片失去水分",
+        "耗尽叶片中原有的淀粉",
+        "让叶片积累更多淀粉",
+        "除去叶片中的叶绿素"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：耗尽叶片中原有的淀粉。按对照实验的设计原则判断，本题正确答案是「耗尽叶片中原有的淀粉」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“绿叶在光下制造有机物”实验中，遮光部分和照光部分形成对照，变量是（　　）",
+      "options": [
+        "光",
+        "温度",
+        "二氧化碳",
+        "水分"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：光。按对照实验的设计原则判断，本题正确答案是「光」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "验证光合作用产生淀粉，常用的试剂是（　　）",
+      "options": [
+        "澄清石灰水",
+        "生理盐水",
+        "酒精",
+        "碘液"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：碘液。按对照实验的设计原则判断，本题正确答案是「碘液」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "验证呼吸作用产生二氧化碳，常用的试剂是（　　）",
+      "options": [
+        "生理盐水",
+        "酒精",
+        "澄清石灰水",
+        "碘液"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：澄清石灰水。按对照实验的设计原则判断，本题正确答案是「澄清石灰水」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "实验数据与假设不符时，正确的做法是（　　）",
+      "options": [
+        "删除不符的数据",
+        "重复实验，分析原因，尊重事实",
+        "修改数据使其符合假设",
+        "直接放弃实验"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：重复实验，分析原因，尊重事实。按对照实验的设计原则判断，本题正确答案是「重复实验，分析原因，尊重事实」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在“光合作用强度随光照强度变化”的曲线中，光照过强时光合作用强度可能下降，原因是（　　）",
+      "options": [
+        "气孔关闭，二氧化碳供应不足",
+        "叶绿体被完全破坏",
+        "呼吸作用停止",
+        "植物不再吸收水分"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：气孔关闭，二氧化碳供应不足。按图表与数据信息的分析判断，本题正确答案是「气孔关闭，二氧化碳供应不足」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "温室中二氧化碳浓度突然降低时，光合作用强度会（　　）",
+      "options": [
+        "随之升高",
+        "不受影响",
+        "立即停止",
+        "随之降低"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：随之降低。按图表与数据信息的分析判断，本题正确答案是「随之降低」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "分析表格数据时，应重点关注（　　）",
+      "options": [
+        "数据的排列顺序",
+        "记录人的字迹",
+        "变量之间的对应关系和变化趋势",
+        "表格的边框样式"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：变量之间的对应关系和变化趋势。按图表与数据信息的分析判断，本题正确答案是「变量之间的对应关系和变化趋势」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在一组实验数据中，出现个别明显偏离的数据，应（　　）",
+      "options": [
+        "全部数据作废",
+        "分析原因，必要时重新测量",
+        "直接作为结论依据",
+        "随意改成其他数值"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：分析原因，必要时重新测量。按图表与数据信息的分析判断，本题正确答案是「分析原因，必要时重新测量」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "食物链中能量逐级递减，因此营养级越高，生物个体数量一般（　　）",
+      "options": [
+        "越少",
+        "越多",
+        "不变",
+        "先增多后减少"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：越少。按图表与数据信息的分析判断，本题正确答案是「越少」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "某生态系统中生产者数量大量减少，最先受影响的是（　　）",
+      "options": [
+        "顶级消费者",
+        "分解者",
+        "非生物部分",
+        "以生产者为食的初级消费者"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：以生产者为食的初级消费者。按图表与数据信息的分析判断，本题正确答案是「以生产者为食的初级消费者」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "由“春暖花开”可推测，影响植物开花的主要非生物因素之一是（　　）",
+      "options": [
+        "空气含氧量",
+        "海拔",
+        "温度",
+        "土壤酸碱度"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：温度。按图表与数据信息的分析判断，本题正确答案是「温度」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "某地引进天敌防治害虫后，害虫数量先降后升并趋于稳定，说明（　　）",
+      "options": [
+        "生态系统没有调节能力",
+        "生态系统具有一定的自动调节能力",
+        "害虫不能被控制",
+        "天敌没有作用"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：生态系统具有一定的自动调节能力。按图表与数据信息的分析判断，本题正确答案是「生态系统具有一定的自动调节能力」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "对比不同环境中同种植物的叶面积，可用来分析（　　）",
+      "options": [
+        "环境因素对生物性状的影响",
+        "植物的遗传物质一定改变",
+        "植物已经变成不同物种",
+        "植物不能适应环境"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：环境因素对生物性状的影响。按图表与数据信息的分析判断，本题正确答案是「环境因素对生物性状的影响」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-生物-5",
+      "chapterName": "实验探究与图表分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "实验结论的得出应以（　　）为依据",
+      "options": [
+        "个人主观想象",
+        "他人观点",
+        "实验假设本身",
+        "实验现象和数据"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：实验现象和数据。按图表与数据信息的分析判断，本题正确答案是「实验现象和数据」。",
       "difficulty": 2
     }
   ]

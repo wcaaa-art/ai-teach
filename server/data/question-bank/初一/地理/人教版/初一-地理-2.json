@@ -6,9 +6,9 @@
     "id": "初一-地理-2",
     "name": "陆地与海洋"
   },
-  "generatedAt": "2026-11-14T12:13:39.657Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.019Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgda6dt",
@@ -179,6 +179,516 @@
       "correctIndex": 2,
       "explanation": "A. 错误：太平洋主要位于亚洲、大洋洲、南极洲与南北美洲之间，其西侧并不直接濒临非洲。\nB. 错误：大西洋位于欧洲、非洲、南北美洲和南极洲之间，东侧不濒临大洋洲。\nC. 正确：印度洋北临亚洲，西临非洲，东临大洋洲，南临南极洲，符合题干描述的位置关系。\nD. 错误：北冰洋位于亚洲、欧洲和北美洲北部之间，不濒临非洲和大洋洲。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "世界上面积最大的大洲是（ ）",
+      "options": [
+        "亚洲",
+        "非洲",
+        "北美洲",
+        "南极洲"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：亚洲。按大洲与大洋的分布知识判断，本题正确答案是「亚洲」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "世界上面积最小的大洲是（ ）",
+      "options": [
+        "南极洲",
+        "欧洲",
+        "南美洲",
+        "大洋洲"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：大洋洲。按大洲与大洋的分布知识判断，本题正确答案是「大洋洲」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "世界上面积最大的大洋是（ ）",
+      "options": [
+        "印度洋",
+        "北冰洋",
+        "太平洋",
+        "大西洋"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：太平洋。按大洲与大洋的分布知识判断，本题正确答案是「太平洋」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "世界上面积最小的大洋是（ ）",
+      "options": [
+        "太平洋",
+        "北冰洋",
+        "印度洋",
+        "大西洋"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：北冰洋。按大洲与大洋的分布知识判断，本题正确答案是「北冰洋」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "亚洲与非洲的分界线是（ ）",
+      "options": [
+        "苏伊士运河",
+        "巴拿马运河",
+        "白令海峡",
+        "乌拉尔山脉"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：苏伊士运河。按大洲与大洋的分布知识判断，本题正确答案是「苏伊士运河」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "南美洲与北美洲的分界线是（ ）",
+      "options": [
+        "苏伊士运河",
+        "白令海峡",
+        "直布罗陀海峡",
+        "巴拿马运河"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：巴拿马运河。按大洲与大洋的分布知识判断，本题正确答案是「巴拿马运河」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "亚洲与欧洲的分界线是（ ）",
+      "options": [
+        "巴拿马运河",
+        "白令海峡",
+        "乌拉尔山脉—乌拉尔河—里海—大高加索山脉—黑海—土耳其海峡",
+        "苏伊士运河—红海"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：乌拉尔山脉—乌拉尔河—里海—大高加索山脉—黑海—土耳其海峡。按大洲与大洋的分布知识判断，本题正确答案是「乌拉尔山脉—乌拉尔河—里海—大高加索山脉—黑海—土耳其海峡」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "全部位于北半球的大洋是（ ）",
+      "options": [
+        "印度洋",
+        "北冰洋",
+        "太平洋",
+        "大西洋"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：北冰洋。按大洲与大洋的分布知识判断，本题正确答案是「北冰洋」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "赤道穿过的大洲有（ ）",
+      "options": [
+        "非洲、南美洲等",
+        "欧洲、北美洲",
+        "南极洲、欧洲",
+        "大洋洲、南极洲"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：非洲、南美洲等。按大洲与大洋的分布知识判断，本题正确答案是「非洲、南美洲等」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "世界上跨经度最广的大洲是（ ）",
+      "options": [
+        "亚洲",
+        "非洲",
+        "北美洲",
+        "南极洲"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：南极洲。按大洲与大洋的分布知识判断，本题正确答案是「南极洲」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在喜马拉雅山脉发现海洋生物化石，说明（ ）",
+      "options": [
+        "人类活动造成海陆变迁",
+        "海平面持续下降",
+        "地壳运动可以引起海陆变迁",
+        "气候变暖导致海陆变迁"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：地壳运动可以引起海陆变迁。按海陆变迁与板块构造学说的知识判断，本题正确答案是「地壳运动可以引起海陆变迁」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "板块构造学说认为，全球大致划分为（ ）",
+      "options": [
+        "三大板块",
+        "六大板块",
+        "四大板块",
+        "八大板块"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：六大板块。按海陆变迁与板块构造学说的知识判断，本题正确答案是「六大板块」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "板块内部的地壳比较（ ）",
+      "options": [
+        "稳定",
+        "活跃",
+        "多火山地震",
+        "不断张裂"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：稳定。按海陆变迁与板块构造学说的知识判断，本题正确答案是「稳定」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "板块与板块交界地带，地壳比较（ ）",
+      "options": [
+        "稳定",
+        "静止",
+        "坚硬",
+        "活跃"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：活跃。按海陆变迁与板块构造学说的知识判断，本题正确答案是「活跃」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "世界上火山、地震主要分布在（ ）",
+      "options": [
+        "大洋中部",
+        "平原地区",
+        "板块交界地带",
+        "板块内部"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：板块交界地带。按海陆变迁与板块构造学说的知识判断，本题正确答案是「板块交界地带」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "红海不断扩张的原因是（ ）",
+      "options": [
+        "冰川作用",
+        "板块张裂",
+        "板块碰撞",
+        "河流侵蚀"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：板块张裂。按海陆变迁与板块构造学说的知识判断，本题正确答案是「板块张裂」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "地中海不断缩小，主要是因为（ ）",
+      "options": [
+        "板块碰撞挤压",
+        "板块张裂",
+        "海浪侵蚀",
+        "人类填海"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：板块碰撞挤压。按海陆变迁与板块构造学说的知识判断，本题正确答案是「板块碰撞挤压」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "世界上最高的山峰是（ ）",
+      "options": [
+        "乞力马扎罗山",
+        "阿空加瓜山",
+        "麦金利山",
+        "珠穆朗玛峰"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：珠穆朗玛峰。按海陆变迁与板块构造学说的知识判断，本题正确答案是「珠穆朗玛峰」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "世界上最深的海沟是（ ）",
+      "options": [
+        "日本海沟",
+        "秘鲁海沟",
+        "马里亚纳海沟",
+        "汤加海沟"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：马里亚纳海沟。按海陆变迁与板块构造学说的知识判断，本题正确答案是「马里亚纳海沟」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "大陆漂移假说的提出者是（ ）",
+      "options": [
+        "达尔文",
+        "魏格纳",
+        "哥伦布",
+        "麦哲伦"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：魏格纳。按海陆变迁与板块构造学说的知识判断，本题正确答案是「魏格纳」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "世界上面积最大的平原是（ ）",
+      "options": [
+        "亚马孙平原",
+        "东欧平原",
+        "西西伯利亚平原",
+        "东北平原"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：亚马孙平原。按世界地形与河湖之最判断，本题正确答案是「亚马孙平原」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "世界上面积最大的高原是（ ）",
+      "options": [
+        "青藏高原",
+        "黄土高原",
+        "云贵高原",
+        "巴西高原"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：巴西高原。按世界地形与河湖之最判断，本题正确答案是「巴西高原」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "世界上最高的高原是（ ）",
+      "options": [
+        "蒙古高原",
+        "东非高原",
+        "青藏高原",
+        "巴西高原"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：青藏高原。按世界地形与河湖之最判断，本题正确答案是「青藏高原」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "世界上最长的山脉是（ ）",
+      "options": [
+        "阿尔卑斯山脉",
+        "安第斯山脉",
+        "喜马拉雅山脉",
+        "落基山脉"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：安第斯山脉。按世界地形与河湖之最判断，本题正确答案是「安第斯山脉」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "世界上面积最大的盆地是（ ）",
+      "options": [
+        "刚果盆地",
+        "塔里木盆地",
+        "四川盆地",
+        "准噶尔盆地"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：刚果盆地。按世界地形与河湖之最判断，本题正确答案是「刚果盆地」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "世界上最大的沙漠是（ ）",
+      "options": [
+        "塔克拉玛干沙漠",
+        "戈壁沙漠",
+        "阿拉伯沙漠",
+        "撒哈拉沙漠"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：撒哈拉沙漠。按世界地形与河湖之最判断，本题正确答案是「撒哈拉沙漠」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "世界上最长的河流是（ ）",
+      "options": [
+        "长江",
+        "密西西比河",
+        "尼罗河",
+        "亚马孙河"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：尼罗河。按世界地形与河湖之最判断，本题正确答案是「尼罗河」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "世界上流量最大的河流是（ ）",
+      "options": [
+        "刚果河",
+        "亚马孙河",
+        "尼罗河",
+        "长江"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：亚马孙河。按世界地形与河湖之最判断，本题正确答案是「亚马孙河」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "世界上最深、蓄水量最大的淡水湖是（ ）",
+      "options": [
+        "贝加尔湖",
+        "苏必利尔湖",
+        "里海",
+        "坦噶尼喀湖"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：贝加尔湖。按世界地形与河湖之最判断，本题正确答案是「贝加尔湖」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-地理-2",
+      "chapterName": "陆地与海洋",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "世界上面积最大的岛屿是（ ）",
+      "options": [
+        "马达加斯加岛",
+        "台湾岛",
+        "加里曼丹岛",
+        "格陵兰岛"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：格陵兰岛。按世界地形与河湖之最判断，本题正确答案是「格陵兰岛」。",
+      "difficulty": 2
     }
   ]
 }

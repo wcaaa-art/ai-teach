@@ -6,9 +6,9 @@
     "id": "初一-生物-5",
     "name": "人体生命活动调节"
   },
-  "generatedAt": "2026-11-14T12:14:11.775Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.798Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdaw6q",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：内分泌腺没有导管，分泌的激素直接进入腺体内的毛细血管，随血液循环运输到全身，作用于相应的靶器官或靶细胞。\nB. 错误：激素由内分泌腺分泌后直接进入血液，不通过导管进入消化道；通过导管排出分泌物的是外分泌腺，如唾液腺。\nC. 错误：激素在体内的含量很少，作用却十分重要，但不为生命活动直接提供能量；直接供能的主要是糖类等有机物。\nD. 错误：人体的生命活动调节是神经调节和激素调节共同完成的，激素调节也受神经调节的影响，二者相互联系。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "神经系统由（　　）组成",
+      "options": [
+        "脑、脊髓和它们发出的神经",
+        "脑和心脏",
+        "脊髓和肌肉",
+        "大脑和腺体"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：脑、脊髓和它们发出的神经。按神经系统的组成与反射弧结构判断，本题正确答案是「脑、脊髓和它们发出的神经」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "神经系统结构和功能的基本单位是（　　）",
+      "options": [
+        "神经中枢",
+        "反射弧",
+        "神经末梢",
+        "神经元"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：神经元。按神经系统的组成与反射弧结构判断，本题正确答案是「神经元」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "中枢神经系统包括（　　）",
+      "options": [
+        "脊髓和脊神经",
+        "脑神经和脊神经",
+        "脑和脊髓",
+        "脑和脑神经"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：脑和脊髓。按神经系统的组成与反射弧结构判断，本题正确答案是「脑和脊髓」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "人体通过神经系统对刺激作出的规律性反应叫（　　）",
+      "options": [
+        "适应",
+        "反射",
+        "反应",
+        "应激性"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：反射。按神经系统的组成与反射弧结构判断，本题正确答案是「反射」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "完成反射的结构基础是（　　）",
+      "options": [
+        "反射弧",
+        "神经元",
+        "大脑皮层",
+        "脊髓"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：反射弧。按神经系统的组成与反射弧结构判断，本题正确答案是「反射弧」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "反射弧的正确组成顺序是（　　）",
+      "options": [
+        "感受器→传出神经→神经中枢→传入神经→效应器",
+        "效应器→传出神经→神经中枢→传入神经→感受器",
+        "感受器→神经中枢→传入神经→传出神经→效应器",
+        "感受器→传入神经→神经中枢→传出神经→效应器"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：感受器→传入神经→神经中枢→传出神经→效应器。按神经系统的组成与反射弧结构判断，本题正确答案是「感受器→传入神经→神经中枢→传出神经→效应器」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "膝跳反射的神经中枢位于（　　）",
+      "options": [
+        "脑干",
+        "小脑",
+        "脊髓",
+        "大脑皮层"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：脊髓。按神经系统的组成与反射弧结构判断，本题正确答案是「脊髓」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“望梅止渴”属于（　　）",
+      "options": [
+        "无意识反应",
+        "复杂反射",
+        "简单反射",
+        "非条件反射"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：复杂反射。按神经系统的组成与反射弧结构判断，本题正确答案是「复杂反射」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "人体排尿反射的神经中枢位于脊髓，但成人能有意识地控制排尿，说明（　　）",
+      "options": [
+        "脊髓受大脑皮层控制",
+        "脊髓没有神经中枢",
+        "排尿反射不属于反射",
+        "大脑皮层不属于神经系统"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：脊髓受大脑皮层控制。按神经系统的组成与反射弧结构判断，本题正确答案是「脊髓受大脑皮层控制」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "脑干的主要功能是（　　）",
+      "options": [
+        "协调运动、维持平衡",
+        "形成视觉",
+        "储存长期记忆",
+        "调节心跳、呼吸等基本生命活动"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：调节心跳、呼吸等基本生命活动。按神经系统的组成与反射弧结构判断，本题正确答案是「调节心跳、呼吸等基本生命活动」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "眼球中相当于凸透镜的结构是（　　）",
+      "options": [
+        "视网膜",
+        "虹膜",
+        "晶状体",
+        "角膜"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：晶状体。按眼和耳的视觉、听觉形成过程判断，本题正确答案是「晶状体」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "眼球中形成物像的部位是（　　）",
+      "options": [
+        "视神经",
+        "视网膜",
+        "晶状体",
+        "角膜"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：视网膜。按眼和耳的视觉、听觉形成过程判断，本题正确答案是「视网膜」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "视觉最终形成的部位是（　　）",
+      "options": [
+        "大脑皮层的视觉中枢",
+        "视网膜",
+        "视神经",
+        "晶状体"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：大脑皮层的视觉中枢。按眼和耳的视觉、听觉形成过程判断，本题正确答案是「大脑皮层的视觉中枢」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "近视眼成像落在视网膜（　　）",
+      "options": [
+        "后方",
+        "上",
+        "下方",
+        "前方"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：前方。按眼和耳的视觉、听觉形成过程判断，本题正确答案是「前方」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "近视眼应佩戴（　　）矫正",
+      "options": [
+        "平面镜",
+        "三棱镜",
+        "凹透镜",
+        "凸透镜"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：凹透镜。按眼和耳的视觉、听觉形成过程判断，本题正确答案是「凹透镜」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "由暗处进入明亮处，瞳孔会（　　）",
+      "options": [
+        "先变大后变小",
+        "变小",
+        "变大",
+        "不变"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：变小。按眼和耳的视觉、听觉形成过程判断，本题正确答案是「变小」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "耳中能将声波转化为振动的结构是（　　）",
+      "options": [
+        "鼓膜",
+        "耳廓",
+        "耳蜗",
+        "听小骨"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：鼓膜。按眼和耳的视觉、听觉形成过程判断，本题正确答案是「鼓膜」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "耳中具有听觉感受器的结构是（　　）",
+      "options": [
+        "鼓膜",
+        "听小骨",
+        "外耳道",
+        "耳蜗"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：耳蜗。按眼和耳的视觉、听觉形成过程判断，本题正确答案是「耳蜗」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "听觉最终形成的部位是（　　）",
+      "options": [
+        "鼓膜",
+        "听神经",
+        "大脑皮层的听觉中枢",
+        "耳蜗"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：大脑皮层的听觉中枢。按眼和耳的视觉、听觉形成过程判断，本题正确答案是「大脑皮层的听觉中枢」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "晕车、晕船主要与内耳的（　　）有关",
+      "options": [
+        "咽鼓管",
+        "前庭和半规管",
+        "耳蜗",
+        "鼓膜"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：前庭和半规管。按眼和耳的视觉、听觉形成过程判断，本题正确答案是「前庭和半规管」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "幼年时生长激素分泌不足会患（　　）",
+      "options": [
+        "侏儒症",
+        "巨人症",
+        "呆小症",
+        "甲亢"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：侏儒症。按激素的作用与调节特点判断，本题正确答案是「侏儒症」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "幼年时生长激素分泌过多会患（　　）",
+      "options": [
+        "侏儒症",
+        "呆小症",
+        "糖尿病",
+        "巨人症"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：巨人症。按激素的作用与调节特点判断，本题正确答案是「巨人症」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "幼年时甲状腺激素分泌不足会患（　　）",
+      "options": [
+        "巨人症",
+        "甲亢",
+        "呆小症",
+        "侏儒症"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：呆小症。按激素的作用与调节特点判断，本题正确答案是「呆小症」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "成年人甲状腺激素分泌过多会患（　　）",
+      "options": [
+        "糖尿病",
+        "甲亢",
+        "呆小症",
+        "侏儒症"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：甲亢。按激素的作用与调节特点判断，本题正确答案是「甲亢」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "胰岛素的主要功能是（　　）",
+      "options": [
+        "调节糖类代谢，降低血糖浓度",
+        "促进身高增长",
+        "促进性器官发育",
+        "提高神经兴奋性"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：调节糖类代谢，降低血糖浓度。按激素的作用与调节特点判断，本题正确答案是「调节糖类代谢，降低血糖浓度」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "胰岛素分泌不足会引起（　　）",
+      "options": [
+        "侏儒症",
+        "呆小症",
+        "坏血病",
+        "糖尿病"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：糖尿病。按激素的作用与调节特点判断，本题正确答案是「糖尿病」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "糖尿病患者治疗时，胰岛素只能注射不能口服，原因是（　　）",
+      "options": [
+        "口服太苦",
+        "口服会升高血糖",
+        "胰岛素是蛋白质，口服会被消化分解",
+        "注射吸收更慢"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：胰岛素是蛋白质，口服会被消化分解。按激素的作用与调节特点判断，本题正确答案是「胰岛素是蛋白质，口服会被消化分解」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "人体在紧张、害怕时心跳加快、血压升高，主要与（　　）分泌增多有关",
+      "options": [
+        "甲状腺激素",
+        "肾上腺素",
+        "胰岛素",
+        "生长激素"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：肾上腺素。按激素的作用与调节特点判断，本题正确答案是「肾上腺素」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "激素调节的特点是（　　）",
+      "options": [
+        "含量少，作用大",
+        "含量多，作用小",
+        "只能由神经调节",
+        "只对成年人起作用"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：含量少，作用大。按激素的作用与调节特点判断，本题正确答案是「含量少，作用大」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-生物-5",
+      "chapterName": "人体生命活动调节",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "人体生命活动主要受神经调节，同时也受激素调节，二者关系是（　　）",
+      "options": [
+        "互不影响",
+        "只有激素起作用",
+        "只有神经起作用",
+        "相互配合、共同调节"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：相互配合、共同调节。按激素的作用与调节特点判断，本题正确答案是「相互配合、共同调节」。",
+      "difficulty": 2
     }
   ]
 }

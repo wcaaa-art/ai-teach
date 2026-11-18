@@ -6,9 +6,9 @@
     "id": "初一-英语-3",
     "name": "名词与代词"
   },
-  "generatedAt": "2026-11-14T12:12:57.485Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.918Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgd9ekp",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：two 后应接可数名词复数，boy 是单数形式，与 two 冲突。\nB. 正确：boy 的复数形式是 boys，two boys 表示“两个男孩”，符合句意和语法。\nC. 错误：boy 以元音字母加 y 结尾，变复数直接加 -s，不能写成 boies。\nD. 错误：boyes 不是 boy 的正确复数拼写，不能随意加 -es。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "There are three ______ (box) on the desk.",
+      "options": [
+        "boxes",
+        "boxs",
+        "boxies",
+        "box"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：boxes。根据名词复数变化规则，本题正确形式是 boxes。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Two ______ (child) are playing under the tree.",
+      "options": [
+        "childs",
+        "childrens",
+        "childes",
+        "children"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：children。根据名词复数变化规则，本题正确形式是 children。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "I need two ______ (knife) to cut fruit.",
+      "options": [
+        "knifves",
+        "knife",
+        "knives",
+        "knifes"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：knives。根据名词复数变化规则，本题正确形式是 knives。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Look at the two ______ (photo) on the wall.",
+      "options": [
+        "photoies",
+        "photos",
+        "photoes",
+        "photo"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：photos。根据名词复数变化规则，本题正确形式是 photos。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "There are many ______ (tomato) in the basket.",
+      "options": [
+        "tomatoes",
+        "tomatos",
+        "tomato",
+        "tomatoies"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：tomatoes。根据名词复数变化规则，本题正确形式是 tomatoes。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Five ______ (sheep) are eating grass.",
+      "options": [
+        "sheeps",
+        "sheepes",
+        "sheepies",
+        "sheep"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：sheep。根据名词复数变化规则，本题正确形式是 sheep。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The two ______ (woman) are doctors.",
+      "options": [
+        "womens",
+        "woman",
+        "women",
+        "womans"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：women。根据名词复数变化规则，本题正确形式是 women。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "My grandpa has many ______ (story) to tell.",
+      "options": [
+        "story",
+        "stories",
+        "storys",
+        "storyes"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：stories。根据名词复数变化规则，本题正确形式是 stories。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "A cat has four ______ (foot).",
+      "options": [
+        "feet",
+        "foots",
+        "feets",
+        "footes"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：feet。根据名词复数变化规则，本题正确形式是 feet。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The ______ (mouse) are afraid of the cat.",
+      "options": [
+        "mouses",
+        "mices",
+        "mouse",
+        "mice"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：mice。根据名词复数变化规则，本题正确形式是 mice。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "method",
+      "stem": "This is ______ (Tom) schoolbag.",
+      "options": [
+        "Toms'",
+        "Tom",
+        "Tom's",
+        "Toms"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：Tom's。名词所有格表示所属关系，本题应填 Tom's。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "method",
+      "stem": "______ (Lucy) mother is an English teacher.",
+      "options": [
+        "Lucy",
+        "Lucy's",
+        "Lucys",
+        "Lucys'"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：Lucy's。名词所有格表示所属关系，本题应填 Lucy's。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "method",
+      "stem": "The ______ (children) books are on the shelf.",
+      "options": [
+        "children's",
+        "childrens",
+        "childrens'",
+        "children"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：children's。名词所有格表示所属关系，本题应填 children's。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "method",
+      "stem": "The two ______ (man) coats are black.",
+      "options": [
+        "mans",
+        "mens",
+        "men",
+        "men's"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：men's。名词所有格表示所属关系，本题应填 men's。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "method",
+      "stem": "This is ______ (Mr. Li) car.",
+      "options": [
+        "Mr. Lis'",
+        "Mr. Li",
+        "Mr. Li's",
+        "Mr. Lis"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：Mr. Li's。名词所有格表示所属关系，本题应填 Mr. Li's。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "method",
+      "stem": "The ______ (women) room is on the second floor.",
+      "options": [
+        "women",
+        "women's",
+        "womans",
+        "womens"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：women's。名词所有格表示所属关系，本题应填 women's。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "method",
+      "stem": "It is about ten ______ (minute) walk from here.",
+      "options": [
+        "minutes'",
+        "minutes",
+        "minute's",
+        "minute"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：minutes'。名词所有格表示所属关系，本题应填 minutes'。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "method",
+      "stem": "This is ______ (my father) bike.",
+      "options": [
+        "my fathers",
+        "my fathers'",
+        "my father",
+        "my father's"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：my father's。名词所有格表示所属关系，本题应填 my father's。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "method",
+      "stem": "______ (Amy and Lily) bedroom is big and bright.",
+      "options": [
+        "Amy's and Lily",
+        "Amy and Lilys",
+        "Amy and Lily's",
+        "Amy and Lily"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：Amy and Lily's。名词所有格表示所属关系，本题应填 Amy and Lily's。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "method",
+      "stem": "______ (Peter) bike is new.",
+      "options": [
+        "Peter",
+        "Peter's",
+        "Peters",
+        "Peters'"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：Peter's。名词所有格表示所属关系，本题应填 Peter's。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "______ are my good friends.",
+      "options": [
+        "They",
+        "Them",
+        "Their",
+        "Theirs"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：They。按代词在句中的成分选择：作主语用主格，作宾语用宾格，表示所属用物主代词；本题应为 They。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "This is my sister. ______ is a nurse.",
+      "options": [
+        "Her",
+        "Hers",
+        "Herself",
+        "She"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：She。按代词在句中的成分选择：作主语用主格，作宾语用宾格，表示所属用物主代词；本题应为 She。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "Please give ______ the book.",
+      "options": [
+        "my",
+        "mine",
+        "me",
+        "I"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：me。按代词在句中的成分选择：作主语用主格，作宾语用宾格，表示所属用物主代词；本题应为 me。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "We often play with ______.",
+      "options": [
+        "himself",
+        "him",
+        "he",
+        "his"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：him。按代词在句中的成分选择：作主语用主格，作宾语用宾格，表示所属用物主代词；本题应为 him。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "______ is my English teacher.",
+      "options": [
+        "He",
+        "Him",
+        "His",
+        "Himself"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：He。按代词在句中的成分选择：作主语用主格，作宾语用宾格，表示所属用物主代词；本题应为 He。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "Can you help ______?",
+      "options": [
+        "we",
+        "our",
+        "ours",
+        "us"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：us。按代词在句中的成分选择：作主语用主格，作宾语用宾格，表示所属用物主代词；本题应为 us。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The pens are ______.",
+      "options": [
+        "them",
+        "their",
+        "theirs",
+        "they"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：theirs。按代词在句中的成分选择：作主语用主格，作宾语用宾格，表示所属用物主代词；本题应为 theirs。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "This is ______ book.",
+      "options": [
+        "herself",
+        "her",
+        "she",
+        "hers"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：her。按代词在句中的成分选择：作主语用主格，作宾语用宾格，表示所属用物主代词；本题应为 her。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "______ am a middle school student.",
+      "options": [
+        "I",
+        "Me",
+        "My",
+        "Mine"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：I。按代词在句中的成分选择：作主语用主格，作宾语用宾格，表示所属用物主代词；本题应为 I。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-英语-3",
+      "chapterName": "名词与代词",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The cat is licking ______ paw.",
+      "options": [
+        "it",
+        "itself",
+        "it's",
+        "its"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：its。按代词在句中的成分选择：作主语用主格，作宾语用宾格，表示所属用物主代词；本题应为 its。",
+      "difficulty": 2
     }
   ]
 }

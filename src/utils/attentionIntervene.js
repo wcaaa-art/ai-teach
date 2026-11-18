@@ -104,5 +104,5 @@ export function interventionMessage(info = {}) {
   const label = info.label || DISTRACTED_STATES[info.state]?.label || '走神'
   const hint = info.hint || DISTRACTED_STATES[info.state]?.hint || '注意力有点飘'
   if (info.remaining > 0) return `${label}中 · ${info.remaining} 秒后自动暂停计时，先把注意力拉回来`
-  return `检测到${label}（${hint}），计时已暂停。回来后点继续，我们接着做。`
+  return `检测到${label}（${hint}），计时已暂停，回来后点继续，我们接着做`
 }

@@ -4,16 +4,16 @@
   "edition": "统编版",
   "chapter": {
     "id": "初三-语文-4",
-    "name": "九下：文学作品鉴赏"
+    "name": "文学作品鉴赏"
   },
-  "generatedAt": "2026-11-14T12:17:01.577Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.902Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdemx3",
       "chapterId": "初三-语文-4",
-      "chapterName": "九下：文学作品鉴赏",
+      "chapterName": "文学作品鉴赏",
       "type": "single",
       "dimension": "concept",
       "stem": "下列关于文学作品鉴赏术语的理解，正确的一项是（　　）",
@@ -30,7 +30,7 @@
     {
       "id": "diag-2-mwgdemx3",
       "chapterId": "初三-语文-4",
-      "chapterName": "九下：文学作品鉴赏",
+      "chapterName": "文学作品鉴赏",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读句子：“山间的雾像一条未醒的河，慢慢漫过石阶，把清晨的鸟鸣也浸得湿漉漉的。”下列对该句的赏析最恰当的一项是（　　）",
@@ -47,7 +47,7 @@
     {
       "id": "diag-3-mwgdemx3",
       "chapterId": "初三-语文-4",
-      "chapterName": "九下：文学作品鉴赏",
+      "chapterName": "文学作品鉴赏",
       "type": "single",
       "dimension": "transfer",
       "stem": "阅读下面原创微型小说片段，完成题目。\n\n> 他一边用袖子细细擦着门旁“为民服务”的铜牌，一边头也不抬地把前来办事的老人往门外推，嘴里还说着：“今天系统坏了，改天再来。”\n\n下列对这句话表达效果的赏析，最恰当的一项是（　　）",
@@ -64,7 +64,7 @@
     {
       "id": "diag-4-mwgdemx3",
       "chapterId": "初三-语文-4",
-      "chapterName": "九下：文学作品鉴赏",
+      "chapterName": "文学作品鉴赏",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "阅读下面的句子，对其赏析不正确的一项是（ ）\n父亲把烟袋在鞋底上磕了磕，火星子溅到夜色里，又很快灭了。",
@@ -81,7 +81,7 @@
     {
       "id": "diag-5-mwgdemx3",
       "chapterId": "初三-语文-4",
-      "chapterName": "九下：文学作品鉴赏",
+      "chapterName": "文学作品鉴赏",
       "type": "single",
       "dimension": "concept",
       "stem": "下列对文学作品鉴赏术语的理解，正确的一项是（　　）",
@@ -98,7 +98,7 @@
     {
       "id": "diag-6-mwgdemx3",
       "chapterId": "初三-语文-4",
-      "chapterName": "九下：文学作品鉴赏",
+      "chapterName": "文学作品鉴赏",
       "type": "single",
       "dimension": "basic-application",
       "stem": "对下列文学作品中语句的赏析，正确的一项是（　　）",
@@ -115,7 +115,7 @@
     {
       "id": "diag-7-mwgdemx3",
       "chapterId": "初三-语文-4",
-      "chapterName": "九下：文学作品鉴赏",
+      "chapterName": "文学作品鉴赏",
       "type": "single",
       "dimension": "transfer",
       "stem": "阅读下面这首小诗，完成题目。\n山行遇雨\n半岭松风送雨来，石桥流水洗苍苔。\n行人莫叹春衫湿，一树山花自在开。\n下列对这首诗的赏析，不恰当的一项是（ ）",
@@ -132,7 +132,7 @@
     {
       "id": "diag-8-mwgdemx3",
       "chapterId": "初三-语文-4",
-      "chapterName": "九下：文学作品鉴赏",
+      "chapterName": "文学作品鉴赏",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "阅读下面的语句，对其修辞手法及表达效果的赏析，不正确的一项是（ ）\n山泉从石缝里挤出来，叮叮咚咚地一路小跑，把一弯月光撞得摇摇晃晃。",
@@ -149,7 +149,7 @@
     {
       "id": "diag-9-mwgdemx3",
       "chapterId": "初三-语文-4",
-      "chapterName": "九下：文学作品鉴赏",
+      "chapterName": "文学作品鉴赏",
       "type": "single",
       "dimension": "concept",
       "stem": "下列关于文学作品鉴赏概念的表述，正确的一项是（　　）",
@@ -166,7 +166,7 @@
     {
       "id": "diag-10-mwgdemx3",
       "chapterId": "初三-语文-4",
-      "chapterName": "九下：文学作品鉴赏",
+      "chapterName": "文学作品鉴赏",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读下面的语段，完成题目。\n老船夫将竹篙往岸石上轻轻一点，渡船便箭一般射了出去，水面上只留下一道细细的白线。\n对这句话的赏析，最恰当的一项是（　　）",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：句子把离岸的渡船比作离弦的“箭”，是比喻；“射”字见出速度之快、动作之利落，而船之所以能如此，正因老船夫手中竹篙轻轻一点即见功力，故属对人物技艺的侧面烘托。\nB. 错误：“点”是竹篙触石的具体动作，写的是篙而非人，属于动作描写中的用词准确，并未把竹篙当作人来写，句中也没有竹篙“有意志”的表达，拟人判断不成立。\nC. 错误：“细细的白线”写的是船行激起的水痕，是眼前实景的如实描摹，虽有形象感但并未故意扩大或缩小事物特征，不构成夸张；“说明江水极浅”在句中无任何依据。\nD. 错误：该句是描写性语句，靠动作和画面呈现人物，没有直接发表看法、抒发情感，议论抒情为主的判断与句子的表达方式相冲突。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“会挽雕弓如满月，西北望，射天狼”出自（　　）",
+      "options": [
+        "苏轼《江城子·密州出猎》",
+        "辛弃疾《破阵子·为陈同甫赋壮词以寄之》",
+        "范仲淹《渔家傲·秋思》",
+        "文天祥《过零丁洋》"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：苏轼《江城子·密州出猎》。按古诗词的名句与作者判断，本题正确答案是「苏轼《江城子·密州出猎》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“了却君王天下事，赢得生前身后名”出自（　　）",
+      "options": [
+        "苏轼《江城子·密州出猎》",
+        "范仲淹《渔家傲·秋思》",
+        "张养浩《山坡羊·潼关怀古》",
+        "辛弃疾《破阵子·为陈同甫赋壮词以寄之》"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：辛弃疾《破阵子·为陈同甫赋壮词以寄之》。按古诗词的名句与作者判断，本题正确答案是「辛弃疾《破阵子·为陈同甫赋壮词以寄之》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“身不得，男儿列，心却比，男儿烈”出自（　　）",
+      "options": [
+        "辛弃疾《南乡子·登京口北固亭有怀》",
+        "文天祥《过零丁洋》",
+        "秋瑾《满江红》",
+        "李清照《渔家傲》"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：秋瑾《满江红》。按古诗词的名句与作者判断，本题正确答案是「秋瑾《满江红》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“忽如一夜春风来，千树万树梨花开”出自（　　）",
+      "options": [
+        "文天祥《过零丁洋》",
+        "岑参《白雪歌送武判官归京》",
+        "苏轼《江城子·密州出猎》",
+        "辛弃疾《破阵子》"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：岑参《白雪歌送武判官归京》。按古诗词的名句与作者判断，本题正确答案是「岑参《白雪歌送武判官归京》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“人生自古谁无死？留取丹心照汗青”出自（　　）",
+      "options": [
+        "文天祥《过零丁洋》",
+        "辛弃疾《南乡子》",
+        "张养浩《山坡羊·潼关怀古》",
+        "秋瑾《满江红》"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：文天祥《过零丁洋》。按古诗词的名句与作者判断，本题正确答案是「文天祥《过零丁洋》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“兴，百姓苦；亡，百姓苦”出自（　　）",
+      "options": [
+        "文天祥《过零丁洋》",
+        "辛弃疾《南乡子》",
+        "范仲淹《渔家傲·秋思》",
+        "张养浩《山坡羊·潼关怀古》"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：张养浩《山坡羊·潼关怀古》。按古诗词的名句与作者判断，本题正确答案是「张养浩《山坡羊·潼关怀古》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“何处望神州？满眼风光北固楼”出自（　　）",
+      "options": [
+        "张养浩《山坡羊·潼关怀古》",
+        "文天祥《过零丁洋》",
+        "辛弃疾《南乡子·登京口北固亭有怀》",
+        "苏轼《江城子·密州出猎》"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：辛弃疾《南乡子·登京口北固亭有怀》。按古诗词的名句与作者判断，本题正确答案是「辛弃疾《南乡子·登京口北固亭有怀》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“浊酒一杯家万里，燕然未勒归无计”出自（　　）",
+      "options": [
+        "岑参《白雪歌送武判官归京》",
+        "范仲淹《渔家傲·秋思》",
+        "辛弃疾《破阵子》",
+        "苏轼《江城子》"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：范仲淹《渔家傲·秋思》。按古诗词的名句与作者判断，本题正确答案是「范仲淹《渔家傲·秋思》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "《孔乙己》的作者是（　　）",
+      "options": [
+        "鲁迅",
+        "契诃夫",
+        "高尔基",
+        "郭沫若"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：鲁迅。按古诗词的名句与作者判断，本题正确答案是「鲁迅」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "《变色龙》的作者是（　　）",
+      "options": [
+        "鲁迅",
+        "高尔基",
+        "阿城",
+        "契诃夫"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：契诃夫。按古诗词的名句与作者判断，本题正确答案是「契诃夫」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《孔乙己》中孔乙己的形象特点是（　　）",
+      "options": [
+        "勤劳善良、乐观向上",
+        "阴险狡诈、仗势欺人",
+        "迂腐麻木、自命清高又穷困潦倒",
+        "机智勇敢、反抗压迫"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：迂腐麻木、自命清高又穷困潦倒。按小说、戏剧的人物与主题分析判断，本题正确答案是「迂腐麻木、自命清高又穷困潦倒」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《孔乙己》主要揭露的是（　　）",
+      "options": [
+        "商业的竞争",
+        "封建科举制度对读书人的毒害",
+        "战争的残酷",
+        "自然的威力"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：封建科举制度对读书人的毒害。按小说、戏剧的人物与主题分析判断，本题正确答案是「封建科举制度对读书人的毒害」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《变色龙》中奥楚蔑洛夫的特点是（　　）",
+      "options": [
+        "见风使舵、趋炎附势",
+        "刚正不阿、执法如山",
+        "勤劳朴实、善良正直",
+        "机智勇敢、不畏强权"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：见风使舵、趋炎附势。按小说、戏剧的人物与主题分析判断，本题正确答案是「见风使舵、趋炎附势」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《变色龙》主要讽刺的是（　　）",
+      "options": [
+        "自然环境的恶化",
+        "科学技术的落后",
+        "家庭关系的冷漠",
+        "沙皇专制统治下的官僚丑态"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：沙皇专制统治下的官僚丑态。按小说、戏剧的人物与主题分析判断，本题正确答案是「沙皇专制统治下的官僚丑态」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《溜索》主要表现了（　　）",
+      "options": [
+        "战争的残酷",
+        "科举制度的腐朽",
+        "马帮汉子的勇敢与坚韧",
+        "都市生活的繁华"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：马帮汉子的勇敢与坚韧。按小说、戏剧的人物与主题分析判断，本题正确答案是「马帮汉子的勇敢与坚韧」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《蒲柳人家》主要描绘了（　　）",
+      "options": [
+        "海上冒险",
+        "京东农村的风土人情和人物群像",
+        "城市白领的生活",
+        "宫廷斗争"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：京东农村的风土人情和人物群像。按小说、戏剧的人物与主题分析判断，本题正确答案是「京东农村的风土人情和人物群像」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《屈原》是（　　）创作的戏剧",
+      "options": [
+        "郭沫若",
+        "老舍",
+        "曹禺",
+        "鲁迅"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：郭沫若。按小说、戏剧的人物与主题分析判断，本题正确答案是「郭沫若」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《枣儿》主要表现的是（　　）",
+      "options": [
+        "商业竞争",
+        "战争场面",
+        "科学实验",
+        "留守老人和儿童的亲情与期盼"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：留守老人和儿童的亲情与期盼。按小说、戏剧的人物与主题分析判断，本题正确答案是「留守老人和儿童的亲情与期盼」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "戏剧文学的核心是（　　）",
+      "options": [
+        "数据说明",
+        "议论说理",
+        "戏剧冲突",
+        "景物描写"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：戏剧冲突。按小说、戏剧的人物与主题分析判断，本题正确答案是「戏剧冲突」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "分析小说人物形象，应该（　　）",
+      "options": [
+        "只凭印象",
+        "结合描写、情节、环境综合分析",
+        "只看外貌",
+        "只看对话"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：结合描写、情节、环境综合分析。按小说、戏剧的人物与主题分析判断，本题正确答案是「结合描写、情节、环境综合分析」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《海燕》中“海燕”象征（　　）",
+      "options": [
+        "英勇无畏的革命者",
+        "胆小的企鹅",
+        "凶恶的敌人",
+        "普通的渔民"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：英勇无畏的革命者。按文学作品鉴赏方法与主题理解判断，本题正确答案是「英勇无畏的革命者」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《海燕》主要运用的表现手法是（　　）",
+      "options": [
+        "列数字",
+        "下定义",
+        "分类别",
+        "象征"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：象征。按文学作品鉴赏方法与主题理解判断，本题正确答案是「象征」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“忽如一夜春风来，千树万树梨花开”描绘的是（　　）",
+      "options": [
+        "秋日枫林",
+        "夏日荷塘",
+        "边塞雪景",
+        "江南春色"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：边塞雪景。按文学作品鉴赏方法与主题理解判断，本题正确答案是「边塞雪景」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“人生自古谁无死？留取丹心照汗青”表现了（　　）",
+      "options": [
+        "追求富贵",
+        "舍生取义的民族气节",
+        "贪生怕死",
+        "归隐田园"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：舍生取义的民族气节。按文学作品鉴赏方法与主题理解判断，本题正确答案是「舍生取义的民族气节」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“兴，百姓苦；亡，百姓苦”表达的情感是（　　）",
+      "options": [
+        "对百姓疾苦的深切同情",
+        "对功名的渴望",
+        "对战争的赞美",
+        "对自然的赞美"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：对百姓疾苦的深切同情。按文学作品鉴赏方法与主题理解判断，本题正确答案是「对百姓疾苦的深切同情」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "赏析诗歌，应该（　　）",
+      "options": [
+        "只看作者名字",
+        "只数诗句",
+        "只看押韵",
+        "结合意象、手法、语言和情感分析"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：结合意象、手法、语言和情感分析。按文学作品鉴赏方法与主题理解判断，本题正确答案是「结合意象、手法、语言和情感分析」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "文学作品中的象征手法是指（　　）",
+      "options": [
+        "列举数据",
+        "按时间叙述",
+        "用具体事物表现某种抽象意义",
+        "直接说明事物特征"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：用具体事物表现某种抽象意义。按文学作品鉴赏方法与主题理解判断，本题正确答案是「用具体事物表现某种抽象意义」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "小说中的讽刺手法常通过（　　）实现",
+      "options": [
+        "分类别",
+        "夸张、对比、反语等",
+        "列数字",
+        "下定义"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：夸张、对比、反语等。按文学作品鉴赏方法与主题理解判断，本题正确答案是「夸张、对比、反语等」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "理解文学作品主题，应该（　　）",
+      "options": [
+        "结合时代背景和作品内容综合分析",
+        "脱离文本随意发挥",
+        "只看标题",
+        "只看作者生平"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：结合时代背景和作品内容综合分析。按文学作品鉴赏方法与主题理解判断，本题正确答案是「结合时代背景和作品内容综合分析」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-语文-4",
+      "chapterName": "文学作品鉴赏",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "评价文学作品，应该（　　）",
+      "options": [
+        "只说好或坏",
+        "不看文本",
+        "只凭名气",
+        "有理有据，结合具体内容分析"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：有理有据，结合具体内容分析。按文学作品鉴赏方法与主题理解判断，本题正确答案是「有理有据，结合具体内容分析」。",
+      "difficulty": 2
     }
   ]
 }

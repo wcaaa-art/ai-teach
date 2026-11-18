@@ -6,9 +6,9 @@
     "id": "初一-历史-5",
     "name": "隋唐时期"
   },
-  "generatedAt": "2026-11-14T12:13:21.376Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.077Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgd9x0d",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：科举制以考试选拔人才，打破了魏晋以来世家大族对仕途的垄断，扩大了官吏选拔范围，使有才学的人有机会参政。\nB. 错误：科举制恰恰冲击了世家大族垄断高官的局面，而不是保证其世代垄断。\nC. 错误：科举制主要解决选官途径问题，不能等同于地方官员都由中央直接任免。\nD. 错误：三省六部制是唐朝重要的中央官制，科举制并没有废除它。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "隋朝建立的时间是（ ）",
+      "options": [
+        "581年",
+        "589年",
+        "618年",
+        "605年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：581年。按隋朝建立、统一与大运河的史实判断，本题正确答案是「581年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "隋朝的建立者是（ ）",
+      "options": [
+        "杨广",
+        "李渊",
+        "李世民",
+        "杨坚"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：杨坚。按隋朝建立、统一与大运河的史实判断，本题正确答案是「杨坚」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "隋朝统一全国的时间是（ ）",
+      "options": [
+        "605年",
+        "618年",
+        "589年",
+        "581年"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：589年。按隋朝建立、统一与大运河的史实判断，本题正确答案是「589年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "隋朝大运河的中心是（ ）",
+      "options": [
+        "余杭",
+        "洛阳",
+        "长安",
+        "涿郡"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：洛阳。按隋朝建立、统一与大运河的史实判断，本题正确答案是「洛阳」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "隋朝大运河的最北端是（ ）",
+      "options": [
+        "涿郡",
+        "洛阳",
+        "余杭",
+        "江都"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：涿郡。按隋朝建立、统一与大运河的史实判断，本题正确答案是「涿郡」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "隋朝大运河的最南端是（ ）",
+      "options": [
+        "涿郡",
+        "洛阳",
+        "江都",
+        "余杭"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：余杭。按隋朝建立、统一与大运河的史实判断，本题正确答案是「余杭」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "科举制正式确立的标志是（ ）",
+      "options": [
+        "唐太宗增加考试科目",
+        "武则天创立殿试",
+        "隋炀帝设立进士科",
+        "汉武帝设立太学"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：隋炀帝设立进士科。按隋朝建立、统一与大运河的史实判断，本题正确答案是「隋炀帝设立进士科」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "隋朝灭亡的时间是（ ）",
+      "options": [
+        "755年",
+        "618年",
+        "581年",
+        "589年"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：618年。按隋朝建立、统一与大运河的史实判断，本题正确答案是「618年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "隋炀帝的暴政主要表现在（ ）",
+      "options": [
+        "滥用民力，穷奢极欲",
+        "轻徭薄赋",
+        "虚心纳谏",
+        "发展科举"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：滥用民力，穷奢极欲。按隋朝建立、统一与大运河的史实判断，本题正确答案是「滥用民力，穷奢极欲」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "隋朝统一的历史意义是（ ）",
+      "options": [
+        "建立君主立宪",
+        "完成近代化",
+        "结束封建制度",
+        "结束长期分裂，顺应统一趋势"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：结束长期分裂，顺应统一趋势。按隋朝建立、统一与大运河的史实判断，本题正确答案是「结束长期分裂，顺应统一趋势」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "唐朝建立的时间是（ ）",
+      "options": [
+        "589年",
+        "755年",
+        "618年",
+        "581年"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：618年。按唐朝盛世局面的史实判断，本题正确答案是「618年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "唐朝的建立者是（ ）",
+      "options": [
+        "杨坚",
+        "李渊",
+        "李世民",
+        "李隆基"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：李渊。按唐朝盛世局面的史实判断，本题正确答案是「李渊」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "唐太宗统治时期出现的盛世局面是（ ）",
+      "options": [
+        "贞观之治",
+        "开元盛世",
+        "文景之治",
+        "康乾盛世"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：贞观之治。按唐朝盛世局面的史实判断，本题正确答案是「贞观之治」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "唐太宗时期著名的谏臣是（ ）",
+      "options": [
+        "房玄龄",
+        "杜如晦",
+        "姚崇",
+        "魏征"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：魏征。按唐朝盛世局面的史实判断，本题正确答案是「魏征」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "武则天统治时期被誉为（ ）",
+      "options": [
+        "「开元盛世」",
+        "「文景之治」",
+        "「政启开元，治宏贞观」",
+        "「贞观之治」"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：「政启开元，治宏贞观」。按唐朝盛世局面的史实判断，本题正确答案是「「政启开元，治宏贞观」」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "唐玄宗前期出现的盛世局面是（ ）",
+      "options": [
+        "光武中兴",
+        "开元盛世",
+        "贞观之治",
+        "文景之治"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：开元盛世。按唐朝盛世局面的史实判断，本题正确答案是「开元盛世」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "唐朝农业灌溉工具的代表是（ ）",
+      "options": [
+        "筒车",
+        "翻车",
+        "曲辕犁",
+        "水排"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：筒车。按唐朝盛世局面的史实判断，本题正确答案是「筒车」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "唐朝耕地工具的代表是（ ）",
+      "options": [
+        "筒车",
+        "翻车",
+        "耧车",
+        "曲辕犁"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：曲辕犁。按唐朝盛世局面的史实判断，本题正确答案是「曲辕犁」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "唐朝的都城是（ ）",
+      "options": [
+        "开封",
+        "临安",
+        "长安",
+        "洛阳"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：长安。按唐朝盛世局面的史实判断，本题正确答案是「长安」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "安史之乱发生在（ ）",
+      "options": [
+        "960—979年",
+        "755—763年",
+        "618—626年",
+        "713—741年"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：755—763年。按唐朝盛世局面的史实判断，本题正确答案是「755—763年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "唐太宗时期入藏和亲的是（ ）",
+      "options": [
+        "文成公主",
+        "王昭君",
+        "金城公主",
+        "太平公主"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：文成公主。按唐朝民族关系与文学艺术的史实判断，本题正确答案是「文成公主」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "唐朝册封南诏首领为（ ）",
+      "options": [
+        "怀仁可汗",
+        "渤海郡王",
+        "天可汗",
+        "云南王"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：云南王。按唐朝民族关系与文学艺术的史实判断，本题正确答案是「云南王」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "唐玄宗册封回纥首领为（ ）",
+      "options": [
+        "渤海郡王",
+        "天可汗",
+        "怀仁可汗",
+        "云南王"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：怀仁可汗。按唐朝民族关系与文学艺术的史实判断，本题正确答案是「怀仁可汗」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "被称为「诗仙」的唐朝诗人是（ ）",
+      "options": [
+        "王维",
+        "李白",
+        "杜甫",
+        "白居易"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：李白。按唐朝民族关系与文学艺术的史实判断，本题正确答案是「李白」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "被称为「诗圣」的唐朝诗人是（ ）",
+      "options": [
+        "杜甫",
+        "李白",
+        "白居易",
+        "孟浩然"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：杜甫。按唐朝民族关系与文学艺术的史实判断，本题正确答案是「杜甫」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "唐朝诗人白居易的诗歌特点是（ ）",
+      "options": [
+        "艰深晦涩",
+        "豪放飘逸",
+        "沉郁顿挫",
+        "通俗易懂"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：通俗易懂。按唐朝民族关系与文学艺术的史实判断，本题正确答案是「通俗易懂」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "唐朝书法家颜真卿的书法特点是（ ）",
+      "options": [
+        "飘若浮云，矫若惊龙",
+        "瘦硬挺拔，骨力遒劲",
+        "端正劲美，雄浑敦厚",
+        "方折峻丽，笔力险劲"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：端正劲美，雄浑敦厚。按唐朝民族关系与文学艺术的史实判断，本题正确答案是「端正劲美，雄浑敦厚」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "唐朝画家阎立本的代表作是（ ）",
+      "options": [
+        "《清明上河图》",
+        "《步辇图》",
+        "《送子天王图》",
+        "《洛神赋图》"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：《步辇图》。按唐朝民族关系与文学艺术的史实判断，本题正确答案是「《步辇图》」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "唐朝画家吴道子的代表作是（ ）",
+      "options": [
+        "《送子天王图》",
+        "《步辇图》",
+        "《女史箴图》",
+        "《兰亭集序》"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：《送子天王图》。按唐朝民族关系与文学艺术的史实判断，本题正确答案是「《送子天王图》」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-历史-5",
+      "chapterName": "隋唐时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "敦煌莫高窟位于（ ）",
+      "options": [
+        "河南洛阳",
+        "山西大同",
+        "陕西西安",
+        "甘肃敦煌"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：甘肃敦煌。按唐朝民族关系与文学艺术的史实判断，本题正确答案是「甘肃敦煌」。",
+      "difficulty": 2
     }
   ]
 }

@@ -6,9 +6,9 @@
     "id": "初二-生物-4",
     "name": "生物多样性"
   },
-  "generatedAt": "2026-11-14T12:16:28.521Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.810Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgddrko",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 1,
       "explanation": "A. 错误：物种多样性指一定区域内生物种类的丰富程度，强调不同物种之间的差异，而题干强调的是同一物种不同品种之间的差异。\nB. 正确：遗传多样性又称基因多样性，指同种生物不同个体或品种之间基因组成的差异；水稻不同品种间抗病能力的差异可为育种提供基因资源。\nC. 错误：生态系统多样性指不同生态系统的类型、结构和功能等方面的差异，不是同一物种不同品种间的基因差异。\nD. 错误：生物数量多样性不是生物多样性的三个层次之一，生物数量多少也不能准确说明品种间抗病能力差异。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "生物分类的基本单位是（　　）",
+      "options": [
+        "种",
+        "界",
+        "门",
+        "属"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：种。按生物分类单位与分类依据判断，本题正确答案是「种」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "生物分类单位由大到小依次是（　　）",
+      "options": [
+        "界、纲、门、目、科、属、种",
+        "种、属、科、目、纲、门、界",
+        "门、界、纲、目、科、属、种",
+        "界、门、纲、目、科、属、种"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：界、门、纲、目、科、属、种。按生物分类单位与分类依据判断，本题正确答案是「界、门、纲、目、科、属、种」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "同种生物的共同特征（　　）",
+      "options": [
+        "与其他等级相同",
+        "无法比较",
+        "最多",
+        "最少"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：最多。按生物分类单位与分类依据判断，本题正确答案是「最多」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "分类单位越大，包含的生物种类（　　）",
+      "options": [
+        "越少，共同特征越少",
+        "越多，共同特征越少",
+        "越少，共同特征越多",
+        "越多，共同特征越多"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：越多，共同特征越少。按生物分类单位与分类依据判断，本题正确答案是「越多，共同特征越少」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "生物分类的主要依据是（　　）",
+      "options": [
+        "形态结构、生理功能等特征",
+        "生活环境",
+        "个体大小",
+        "经济价值"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：形态结构、生理功能等特征。按生物分类单位与分类依据判断，本题正确答案是「形态结构、生理功能等特征」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "双名法由（　　）创立",
+      "options": [
+        "达尔文",
+        "孟德尔",
+        "沃森",
+        "林奈"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：林奈。按生物分类单位与分类依据判断，本题正确答案是「林奈」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "双名法中，学名的组成是（　　）",
+      "options": [
+        "种加词加属名",
+        "界名加种加词",
+        "属名加种加词",
+        "科名加属名"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：属名加种加词。按生物分类单位与分类依据判断，本题正确答案是「属名加种加词」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "脊椎动物包括（　　）",
+      "options": [
+        "腔肠类、扁形类、环节类、节肢类",
+        "鱼类、两栖类、爬行类、鸟类、哺乳类",
+        "鱼类、昆虫类、鸟类、哺乳类",
+        "鱼类、两栖类、节肢类、哺乳类"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：鱼类、两栖类、爬行类、鸟类、哺乳类。按生物分类单位与分类依据判断，本题正确答案是「鱼类、两栖类、爬行类、鸟类、哺乳类」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "恒温动物是（　　）",
+      "options": [
+        "鸟类和哺乳类",
+        "鱼类和两栖类",
+        "爬行类和鸟类",
+        "鱼类和哺乳类"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：鸟类和哺乳类。按生物分类单位与分类依据判断，本题正确答案是「鸟类和哺乳类」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "动物界中种类最多、数量最大、分布最广的类群是（　　）",
+      "options": [
+        "软体动物",
+        "鱼类",
+        "哺乳动物",
+        "节肢动物"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：节肢动物。按生物分类单位与分类依据判断，本题正确答案是「节肢动物」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "鱼类终身生活在水中，用（　　）呼吸",
+      "options": [
+        "皮肤",
+        "气管",
+        "鳃",
+        "肺"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：鳃。按各类群生物的形态结构与生活环境判断，本题正确答案是「鳃」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "两栖动物的幼体用鳃呼吸，成体主要用（　　）呼吸",
+      "options": [
+        "气囊",
+        "肺，皮肤辅助",
+        "鳃",
+        "气管"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：肺，皮肤辅助。按各类群生物的形态结构与生活环境判断，本题正确答案是「肺，皮肤辅助」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "爬行动物适应陆地生活的重要特征是（　　）",
+      "options": [
+        "用肺呼吸，卵外有坚韧的卵壳",
+        "用鳃呼吸",
+        "皮肤裸露",
+        "在水中产卵"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：用肺呼吸，卵外有坚韧的卵壳。按各类群生物的形态结构与生活环境判断，本题正确答案是「用肺呼吸，卵外有坚韧的卵壳」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "鸟类特有的呼吸方式是（　　）",
+      "options": [
+        "皮肤呼吸",
+        "鳃呼吸",
+        "气管呼吸",
+        "双重呼吸"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：双重呼吸。按各类群生物的形态结构与生活环境判断，本题正确答案是「双重呼吸」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "鸟类进行双重呼吸时，辅助肺呼吸的结构是（　　）",
+      "options": [
+        "支气管",
+        "嗉囊",
+        "气囊",
+        "气管"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：气囊。按各类群生物的形态结构与生活环境判断，本题正确答案是「气囊」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "哺乳动物最重要的特征是（　　）",
+      "options": [
+        "体外受精",
+        "胎生、哺乳",
+        "卵生、孵卵",
+        "用鳃呼吸"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：胎生、哺乳。按各类群生物的形态结构与生活环境判断，本题正确答案是「胎生、哺乳」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "苔藓植物常被用来监测空气污染，是因为（　　）",
+      "options": [
+        "叶片很薄，对有毒气体敏感",
+        "根系特别发达",
+        "能吸收大量水分",
+        "生长速度极快"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：叶片很薄，对有毒气体敏感。按各类群生物的形态结构与生活环境判断，本题正确答案是「叶片很薄，对有毒气体敏感」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "蕨类植物比苔藓植物高大，主要原因是（　　）",
+      "options": [
+        "有真正的花和果实",
+        "用种子繁殖",
+        "叶片面积更大",
+        "体内有输导组织和机械组织"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：体内有输导组织和机械组织。按各类群生物的形态结构与生活环境判断，本题正确答案是「体内有输导组织和机械组织」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "裸子植物与被子植物的主要区别是（　　）",
+      "options": [
+        "裸子植物没有根",
+        "裸子植物不能进行光合作用",
+        "裸子植物的种子外面没有果皮包被",
+        "裸子植物没有种子"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：裸子植物的种子外面没有果皮包被。按各类群生物的形态结构与生活环境判断，本题正确答案是「裸子植物的种子外面没有果皮包被」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "昆虫的身体一般分为（　　）",
+      "options": [
+        "头胸部和腹部两部分",
+        "头、胸、腹三部分",
+        "头、躯干两部分",
+        "头、胸、腹、尾四部分"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：头、胸、腹三部分。按各类群生物的形态结构与生活环境判断，本题正确答案是「头、胸、腹三部分」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "生物多样性包括（　　）",
+      "options": [
+        "基因多样性、物种多样性和生态系统多样性",
+        "物种多样性、数量多样性和分布多样性",
+        "基因多样性、数量多样性和环境多样性",
+        "个体多样性、种群多样性和群落多样性"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：基因多样性、物种多样性和生态系统多样性。按生物多样性的层次与保护措施判断，本题正确答案是「基因多样性、物种多样性和生态系统多样性」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "生物多样性中最根本的层次是（　　）",
+      "options": [
+        "物种多样性",
+        "生态系统多样性",
+        "个体多样性",
+        "基因多样性"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：基因多样性。按生物多样性的层次与保护措施判断，本题正确答案是「基因多样性」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国被称为“裸子植物的故乡”，这体现了（　　）",
+      "options": [
+        "生态系统多样性",
+        "数量多样性",
+        "物种多样性",
+        "基因多样性"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：物种多样性。按生物多样性的层次与保护措施判断，本题正确答案是「物种多样性」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "保护生物多样性最有效的措施是（　　）",
+      "options": [
+        "大量引进外来物种",
+        "建立自然保护区，实行就地保护",
+        "把所有动物迁入动物园",
+        "禁止一切开发利用"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：建立自然保护区，实行就地保护。按生物多样性的层次与保护措施判断，本题正确答案是「建立自然保护区，实行就地保护」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "建立动物园、植物园属于（　　）",
+      "options": [
+        "迁地保护",
+        "就地保护",
+        "法制管理",
+        "自然恢复"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：迁地保护。按生物多样性的层次与保护措施判断，本题正确答案是「迁地保护」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "建立濒危物种的种质库（精子库、种子库）属于（　　）",
+      "options": [
+        "就地保护",
+        "生态修复",
+        "外来物种引入",
+        "迁地保护"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：迁地保护。按生物多样性的层次与保护措施判断，本题正确答案是「迁地保护」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "生物多样性面临威胁的主要原因是（　　）",
+      "options": [
+        "植物光合作用过强",
+        "地球温度过低",
+        "栖息地的破坏和丧失",
+        "动物繁殖过快"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：栖息地的破坏和丧失。按生物多样性的层次与保护措施判断，本题正确答案是「栖息地的破坏和丧失」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "外来物种入侵可能造成（　　）",
+      "options": [
+        "没有影响",
+        "本地物种受排挤，生物多样性下降",
+        "本地物种数量一定增加",
+        "生态系统更加稳定"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：本地物种受排挤，生物多样性下降。按生物多样性的层次与保护措施判断，本题正确答案是「本地物种受排挤，生物多样性下降」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "保护生物多样性并不意味着（　　）",
+      "options": [
+        "禁止对生物资源进行任何形式的利用",
+        "保护栖息地",
+        "保护濒危物种",
+        "合理利用生物资源"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：禁止对生物资源进行任何形式的利用。按生物多样性的层次与保护措施判断，本题正确答案是「禁止对生物资源进行任何形式的利用」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-生物-4",
+      "chapterName": "生物多样性",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“一个物种灭绝，往往会影响其他物种的生存”，这说明（　　）",
+      "options": [
+        "物种之间没有联系",
+        "灭绝只影响该物种",
+        "生态系统可以随意破坏",
+        "生物之间相互依存，生态系统具有整体性"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：生物之间相互依存，生态系统具有整体性。按生物多样性的层次与保护措施判断，本题正确答案是「生物之间相互依存，生态系统具有整体性」。",
       "difficulty": 2
     }
   ]

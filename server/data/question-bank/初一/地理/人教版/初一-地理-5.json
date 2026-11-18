@@ -6,9 +6,9 @@
     "id": "初一-地理-5",
     "name": "亚洲与地区地理"
   },
-  "generatedAt": "2026-11-14T12:13:59.944Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.029Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdakn5",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 1,
       "explanation": "A. 错误：西亚以热带沙漠气候和温带大陆性气候为主，降水稀少，不具备大面积种植水稻所需的水热条件。\nB. 正确：南亚以热带季风气候为主，雨热同期，耕地面积较广，水稻和小麦是主要粮食作物，符合因地制宜原则。\nC. 错误：北亚气候寒冷，主要为亚寒带针叶林气候和温带大陆性气候，不是温带海洋性气候，也不适宜柑橘、油橄榄生长。\nD. 错误：中亚深居内陆，以温带大陆性气候为主，并非温带海洋性气候，降水少，乳畜业高度发达的说法与当地自然条件不符。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "亚洲东临（ ）",
+      "options": [
+        "太平洋",
+        "大西洋",
+        "印度洋",
+        "北冰洋"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：太平洋。按亚洲的位置、地形与气候知识判断，本题正确答案是「太平洋」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "亚洲南临（ ）",
+      "options": [
+        "太平洋",
+        "大西洋",
+        "北冰洋",
+        "印度洋"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：印度洋。按亚洲的位置、地形与气候知识判断，本题正确答案是「印度洋」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "亚洲北临（ ）",
+      "options": [
+        "印度洋",
+        "大西洋",
+        "北冰洋",
+        "太平洋"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：北冰洋。按亚洲的位置、地形与气候知识判断，本题正确答案是「北冰洋」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "亚洲的地势特征是（ ）",
+      "options": [
+        "西高东低",
+        "中部高、四周低",
+        "东高西低",
+        "南高北低"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：中部高、四周低。按亚洲的位置、地形与气候知识判断，本题正确答案是「中部高、四周低」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "受地势影响，亚洲河流大多（ ）",
+      "options": [
+        "发源于中部高原山地，呈放射状流向周边海洋",
+        "自东向西流",
+        "自南向北流",
+        "全部注入大西洋"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：发源于中部高原山地，呈放射状流向周边海洋。按亚洲的位置、地形与气候知识判断，本题正确答案是「发源于中部高原山地，呈放射状流向周边海洋」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "亚洲面积最大的半岛是（ ）",
+      "options": [
+        "印度半岛",
+        "中南半岛",
+        "朝鲜半岛",
+        "阿拉伯半岛"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：阿拉伯半岛。按亚洲的位置、地形与气候知识判断，本题正确答案是「阿拉伯半岛」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "亚洲分布最广的气候类型是（ ）",
+      "options": [
+        "地中海气候",
+        "温带海洋性气候",
+        "温带大陆性气候",
+        "热带雨林气候"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：温带大陆性气候。按亚洲的位置、地形与气候知识判断，本题正确答案是「温带大陆性气候」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "亚洲东部和南部季风气候显著，主要原因是（ ）",
+      "options": [
+        "洋流影响小",
+        "海陆热力性质差异大",
+        "纬度位置低",
+        "地形以平原为主"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：海陆热力性质差异大。按亚洲的位置、地形与气候知识判断，本题正确答案是「海陆热力性质差异大」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "亚洲第一长河是（ ）",
+      "options": [
+        "长江",
+        "黄河",
+        "湄公河",
+        "恒河"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：长江。按亚洲的位置、地形与气候知识判断，本题正确答案是「长江」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "世界最高峰珠穆朗玛峰位于（ ）",
+      "options": [
+        "非洲",
+        "南美洲",
+        "欧洲",
+        "亚洲"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：亚洲。按亚洲的位置、地形与气候知识判断，本题正确答案是「亚洲」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "日本位于亚洲的（ ）",
+      "options": [
+        "南亚",
+        "西亚",
+        "东亚",
+        "东南亚"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：东亚。按亚洲各分区的自然与经济特征判断，本题正确答案是「东亚」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "日本多火山地震的原因是（ ）",
+      "options": [
+        "气候湿润",
+        "位于板块交界处",
+        "位于板块内部",
+        "地形平坦"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：位于板块交界处。按亚洲各分区的自然与经济特征判断，本题正确答案是「位于板块交界处」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "日本的工业主要集中在（ ）",
+      "options": [
+        "太平洋沿岸和濑户内海沿岸",
+        "日本海沿岸",
+        "北海道内陆",
+        "中部山区"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：太平洋沿岸和濑户内海沿岸。按亚洲各分区的自然与经济特征判断，本题正确答案是「太平洋沿岸和濑户内海沿岸」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "东南亚位于（ ）",
+      "options": [
+        "亚洲与欧洲之间",
+        "大西洋与太平洋之间",
+        "非洲与亚洲之间",
+        "亚洲与大洋洲、太平洋与印度洋之间的“十字路口”"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：亚洲与大洋洲、太平洋与印度洋之间的“十字路口”。按亚洲各分区的自然与经济特征判断，本题正确答案是「亚洲与大洋洲、太平洋与印度洋之间的“十字路口”」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "马六甲海峡位于（ ）",
+      "options": [
+        "朝鲜半岛与日本之间",
+        "阿拉伯半岛与非洲之间",
+        "马来半岛与苏门答腊岛之间",
+        "印度半岛与斯里兰卡之间"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：马来半岛与苏门答腊岛之间。按亚洲各分区的自然与经济特征判断，本题正确答案是「马来半岛与苏门答腊岛之间」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "东南亚的主要气候类型是（ ）",
+      "options": [
+        "温带海洋性气候",
+        "热带雨林气候和热带季风气候",
+        "温带季风气候和地中海气候",
+        "极地气候"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：热带雨林气候和热带季风气候。按亚洲各分区的自然与经济特征判断，本题正确答案是「热带雨林气候和热带季风气候」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "印度主要的气候类型是（ ）",
+      "options": [
+        "热带季风气候",
+        "温带季风气候",
+        "地中海气候",
+        "热带沙漠气候"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：热带季风气候。按亚洲各分区的自然与经济特征判断，本题正确答案是「热带季风气候」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "印度受季风影响，降水主要集中在（ ）",
+      "options": [
+        "冬季",
+        "春季",
+        "秋季",
+        "夏季"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：夏季。按亚洲各分区的自然与经济特征判断，本题正确答案是「夏季」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "西亚最丰富的矿产资源是（ ）",
+      "options": [
+        "铁矿",
+        "森林资源",
+        "石油",
+        "煤炭"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：石油。按亚洲各分区的自然与经济特征判断，本题正确答案是「石油」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "西亚地区的居民主要信仰（ ）",
+      "options": [
+        "印度教",
+        "伊斯兰教",
+        "基督教",
+        "佛教"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：伊斯兰教。按亚洲各分区的自然与经济特征判断，本题正确答案是「伊斯兰教」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "欧洲西部的气候以（ ）为主",
+      "options": [
+        "温带海洋性气候",
+        "热带雨林气候",
+        "热带沙漠气候",
+        "极地气候"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：温带海洋性气候。按欧洲、美洲与非洲的区域特征判断，本题正确答案是「温带海洋性气候」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "欧洲西部的地形以（ ）为主",
+      "options": [
+        "高原",
+        "山地",
+        "盆地",
+        "平原"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：平原。按欧洲、美洲与非洲的区域特征判断，本题正确答案是「平原」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "欧洲西部的农业以（ ）为主",
+      "options": [
+        "林业",
+        "渔业",
+        "畜牧业",
+        "种植业"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：畜牧业。按欧洲、美洲与非洲的区域特征判断，本题正确答案是「畜牧业」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列著名景点中，位于欧洲西部的是（ ）",
+      "options": [
+        "长城",
+        "埃菲尔铁塔",
+        "金字塔",
+        "泰姬陵"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：埃菲尔铁塔。按欧洲、美洲与非洲的区域特征判断，本题正确答案是「埃菲尔铁塔」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "北美洲的地势特征是（ ）",
+      "options": [
+        "东西高、中间低",
+        "东低西高",
+        "南高北低",
+        "中间高、四周低"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：东西高、中间低。按欧洲、美洲与非洲的区域特征判断，本题正确答案是「东西高、中间低」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "北美洲分布最广的气候类型是（ ）",
+      "options": [
+        "热带雨林气候",
+        "地中海气候",
+        "温带海洋性气候",
+        "温带大陆性气候"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：温带大陆性气候。按欧洲、美洲与非洲的区域特征判断，本题正确答案是「温带大陆性气候」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "南美洲面积最大的国家是（ ）",
+      "options": [
+        "秘鲁",
+        "智利",
+        "巴西",
+        "阿根廷"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：巴西。按欧洲、美洲与非洲的区域特征判断，本题正确答案是「巴西」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "亚马孙河流域分布着世界上面积最大的（ ）",
+      "options": [
+        "亚寒带针叶林",
+        "热带雨林",
+        "温带草原",
+        "沙漠"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：热带雨林。按欧洲、美洲与非洲的区域特征判断，本题正确答案是「热带雨林」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "非洲的地形以（ ）为主",
+      "options": [
+        "高原",
+        "平原",
+        "山地",
+        "盆地"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：高原。按欧洲、美洲与非洲的区域特征判断，本题正确答案是「高原」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-地理-5",
+      "chapterName": "亚洲与地区地理",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "撒哈拉以南非洲经济的主要特点是（ ）",
+      "options": [
+        "以高新技术产业为主",
+        "以精密制造业为主",
+        "以金融服务业为主",
+        "以出口初级产品为主"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：以出口初级产品为主。按欧洲、美洲与非洲的区域特征判断，本题正确答案是「以出口初级产品为主」。",
       "difficulty": 2
     }
   ]

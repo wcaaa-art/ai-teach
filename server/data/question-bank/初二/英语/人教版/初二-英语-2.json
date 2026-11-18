@@ -6,9 +6,9 @@
     "id": "初二-英语-2",
     "name": "现在完成时入门"
   },
-  "generatedAt": "2026-11-14T12:15:06.682Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.933Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdc69j",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 0,
       "explanation": "A. 正确：第一空所在句是一般疑问句，询问“是否已经完成”，yet常用于疑问句句末；第二空所在句是肯定回答，表示“已经完成”，already常用于肯定句中。\nB. 错误：第一空为疑问句，通常不用already；第二空为肯定句，表示“已经”应用already，不能用yet。\nC. 错误：第一空用yet正确，但第二空是肯定句，表示“已经”完成应使用already，yet多用于否定句或疑问句。\nD. 错误：第一空在疑问句中用already不符合常规用法；虽然第二空用already可以，但第一空已使用不当，故整体不正确。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "I have ______ (finish) my homework.",
+      "options": [
+        "finished",
+        "finish",
+        "finishing",
+        "finishes"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：finished。现在完成时结构为 have/has + 过去分词，本题正确形式是 finished。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "She has ______ (see) the film twice.",
+      "options": [
+        "see",
+        "saw",
+        "seeing",
+        "seen"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：seen。现在完成时结构为 have/has + 过去分词，本题正确形式是 seen。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "We have ______ (be) to Beijing before.",
+      "options": [
+        "being",
+        "was",
+        "been",
+        "be"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：been。现在完成时结构为 have/has + 过去分词，本题正确形式是 been。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "He has ______ (eat) breakfast already.",
+      "options": [
+        "eating",
+        "eaten",
+        "eat",
+        "ate"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：eaten。现在完成时结构为 have/has + 过去分词，本题正确形式是 eaten。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "They have ______ (live) here for ten years.",
+      "options": [
+        "lived",
+        "live",
+        "living",
+        "lives"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：lived。现在完成时结构为 have/has + 过去分词，本题正确形式是 lived。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Tom has ______ (do) his homework.",
+      "options": [
+        "do",
+        "did",
+        "doing",
+        "done"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：done。现在完成时结构为 have/has + 过去分词，本题正确形式是 done。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "My mother has ______ (buy) a new coat.",
+      "options": [
+        "buying",
+        "buys",
+        "bought",
+        "buy"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：bought。现在完成时结构为 have/has + 过去分词，本题正确形式是 bought。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "I have ______ (write) a letter to my friend.",
+      "options": [
+        "writing",
+        "written",
+        "write",
+        "wrote"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：written。现在完成时结构为 have/has + 过去分词，本题正确形式是 written。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "She has ______ (take) many photos.",
+      "options": [
+        "taken",
+        "take",
+        "took",
+        "taking"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：taken。现在完成时结构为 have/has + 过去分词，本题正确形式是 taken。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "We have ______ (study) English for five years.",
+      "options": [
+        "study",
+        "studying",
+        "studies",
+        "studied"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：studied。现在完成时结构为 have/has + 过去分词，本题正确形式是 studied。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "I have lived here ______ 2015.",
+      "options": [
+        "from",
+        "at",
+        "since",
+        "for"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：since。since 后接时间点，for 后接时间段；本题应填 since。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "She has worked in the hospital ______ ten years.",
+      "options": [
+        "at",
+        "for",
+        "since",
+        "from"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：for。since 后接时间点，for 后接时间段；本题应填 for。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "We have known each other ______ we were children.",
+      "options": [
+        "since",
+        "for",
+        "from",
+        "at"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：since。since 后接时间点，for 后接时间段；本题应填 since。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "He has been ill ______ three days.",
+      "options": [
+        "since",
+        "from",
+        "at",
+        "for"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：for。since 后接时间点，for 后接时间段；本题应填 for。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "They have been friends ______ last year.",
+      "options": [
+        "from",
+        "at",
+        "since",
+        "for"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：since。since 后接时间点，for 后接时间段；本题应填 since。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "My father has worked in the factory ______ 20 years.",
+      "options": [
+        "at",
+        "for",
+        "since",
+        "from"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：for。since 后接时间点，for 后接时间段；本题应填 for。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "I have learned English ______ I was ten.",
+      "options": [
+        "since",
+        "for",
+        "from",
+        "at"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：since。since 后接时间点，for 后接时间段；本题应填 since。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "She has had this bike ______ two years.",
+      "options": [
+        "since",
+        "from",
+        "at",
+        "for"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：for。since 后接时间点，for 后接时间段；本题应填 for。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "We have been here ______ half an hour.",
+      "options": [
+        "from",
+        "at",
+        "for",
+        "since"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：for。since 后接时间点，for 后接时间段；本题应填 for。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "method",
+      "stem": "He has lived in Shanghai ______ he was born.",
+      "options": [
+        "at",
+        "since",
+        "for",
+        "from"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：since。since 后接时间点，for 后接时间段；本题应填 since。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "I have ______ finished my homework.",
+      "options": [
+        "already",
+        "yet",
+        "ever",
+        "never"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：already。already 用于肯定句，yet 用于否定句和疑问句，ever 表示「曾经」，never 表示「从未」；本题应为 already。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "Have you ______ been to the Great Wall?",
+      "options": [
+        "already",
+        "never",
+        "yet",
+        "ever"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：ever。already 用于肯定句，yet 用于否定句和疑问句，ever 表示「曾经」，never 表示「从未」；本题应为 ever。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "He has ______ seen the film, so he doesn't want to see it again.",
+      "options": [
+        "ever",
+        "never",
+        "already",
+        "yet"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：already。already 用于肯定句，yet 用于否定句和疑问句，ever 表示「曾经」，never 表示「从未」；本题应为 already。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "She hasn't finished her work ______.",
+      "options": [
+        "never",
+        "yet",
+        "already",
+        "ever"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：yet。already 用于肯定句，yet 用于否定句和疑问句，ever 表示「曾经」，never 表示「从未」；本题应为 yet。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "I have ______ eaten such delicious food.",
+      "options": [
+        "never",
+        "already",
+        "ever",
+        "yet"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：never。already 用于肯定句，yet 用于否定句和疑问句，ever 表示「曾经」，never 表示「从未」；本题应为 never。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "Have you finished your homework ______?",
+      "options": [
+        "already",
+        "ever",
+        "never",
+        "yet"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：yet。already 用于肯定句，yet 用于否定句和疑问句，ever 表示「曾经」，never 表示「从未」；本题应为 yet。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "They have ______ left. They are not here now.",
+      "options": [
+        "ever",
+        "never",
+        "already",
+        "yet"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：already。already 用于肯定句，yet 用于否定句和疑问句，ever 表示「曾经」，never 表示「从未」；本题应为 already。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "My sister has ______ been to Australia, so she knows little about it.",
+      "options": [
+        "yet",
+        "never",
+        "already",
+        "ever"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：never。already 用于肯定句，yet 用于否定句和疑问句，ever 表示「曾经」，never 表示「从未」；本题应为 never。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "— Have you ever read this book?\n— Yes, I have ______ read it twice.",
+      "options": [
+        "already",
+        "yet",
+        "ever",
+        "never"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：already。already 用于肯定句，yet 用于否定句和疑问句，ever 表示「曾经」，never 表示「从未」；本题应为 already。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-英语-2",
+      "chapterName": "现在完成时入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "He hasn't come back ______.",
+      "options": [
+        "already",
+        "ever",
+        "never",
+        "yet"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：yet。already 用于肯定句，yet 用于否定句和疑问句，ever 表示「曾经」，never 表示「从未」；本题应为 yet。",
       "difficulty": 2
     }
   ]

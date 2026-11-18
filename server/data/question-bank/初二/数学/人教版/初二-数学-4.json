@@ -6,9 +6,9 @@
     "id": "初二-数学-4",
     "name": "分式"
   },
-  "generatedAt": "2026-11-13T02:44:13.064Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.159Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedhzwt",
@@ -179,6 +179,516 @@
       "correctIndex": 3,
       "explanation": "A. 错误：分式的分子、分母都加上同一个整式，分式的值不一定不变。例如 \\frac{1}{2} 的分子、分母都加1，得到 \\frac{2}{3}，而 \\frac{1}{2}\\ne\\frac{2}{3}。\nB. 错误：分式的分子、分母都乘以同一个整式时，必须保证这个整式不为0。例如 \\frac{1}{2} 的分子、分母都乘以0，会得到 \\frac{0}{0}，没有意义，不能保持分式的值不变。\nC. 错误：分式的分子、分母都除以同一个整式时，也必须保证这个整式不为0。若除以0，运算没有意义；若整式取0，同样不能保证分式有意义且值不变。\nD. 正确：这是分式的基本性质：分式的分子与分母都乘以（或除以）同一个不等于0的整式，分式的值不变。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "分式 1/(x - 3) 有意义的条件是（ ）",
+      "options": [
+        "x ≠ 3",
+        "x = 3",
+        "x > 3",
+        "x ≠ -3"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：x ≠ 3。分母不能为 0：x - 3 ≠ 0，所以 x ≠ 3。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "分式 1/(x + 2) 有意义的条件是（ ）",
+      "options": [
+        "x = -2",
+        "x > -2",
+        "x ≠ 2",
+        "x ≠ -2"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：x ≠ -2。分母不能为 0：x + 2 ≠ 0，所以 x ≠ -2。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "分式 1/(x - 5) 有意义的条件是（ ）",
+      "options": [
+        "x > 5",
+        "x ≠ -5",
+        "x ≠ 5",
+        "x = 5"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：x ≠ 5。分母不能为 0：x - 5 ≠ 0，所以 x ≠ 5。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "分式 1/(x - 10) 有意义的条件是（ ）",
+      "options": [
+        "x ≠ -10",
+        "x ≠ 10",
+        "x = 10",
+        "x > 10"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：x ≠ 10。分母不能为 0：x - 10 ≠ 0，所以 x ≠ 10。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "分式 1/(x - 7) 有意义的条件是（ ）",
+      "options": [
+        "x ≠ 7",
+        "x = 7",
+        "x > 7",
+        "x ≠ -7"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：x ≠ 7。分母不能为 0：x - 7 ≠ 0，所以 x ≠ 7。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "分式 1/(x + 4) 有意义的条件是（ ）",
+      "options": [
+        "x = -4",
+        "x > -4",
+        "x ≠ 4",
+        "x ≠ -4"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：x ≠ -4。分母不能为 0：x + 4 ≠ 0，所以 x ≠ -4。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "分式 1/(x - 9) 有意义的条件是（ ）",
+      "options": [
+        "x > 9",
+        "x ≠ -9",
+        "x ≠ 9",
+        "x = 9"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：x ≠ 9。分母不能为 0：x - 9 ≠ 0，所以 x ≠ 9。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "分式 1/(x - 2) 有意义的条件是（ ）",
+      "options": [
+        "x ≠ -2",
+        "x ≠ 2",
+        "x = 2",
+        "x > 2"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：x ≠ 2。分母不能为 0：x - 2 ≠ 0，所以 x ≠ 2。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "分式 1/(x + 6) 有意义的条件是（ ）",
+      "options": [
+        "x ≠ -6",
+        "x = -6",
+        "x > -6",
+        "x ≠ 6"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：x ≠ -6。分母不能为 0：x + 6 ≠ 0，所以 x ≠ -6。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "分式 1/(x - 8) 有意义的条件是（ ）",
+      "options": [
+        "x = 8",
+        "x > 8",
+        "x ≠ -8",
+        "x ≠ 8"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：x ≠ 8。分母不能为 0：x - 8 ≠ 0，所以 x ≠ 8。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "化简 (x² - 4)/(x - 2)（x ≠ 2），结果是（ ）",
+      "options": [
+        "2 - x",
+        "x² + 2",
+        "x + 2",
+        "x - 2"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：x + 2。分子用平方差公式：x² - 4 = (x - 2)(x + 2)，约去 x - 2 得 x + 2。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "化简 (x² - 9)/(x - 3)（x ≠ 3），结果是（ ）",
+      "options": [
+        "x² + 3",
+        "x + 3",
+        "x - 3",
+        "3 - x"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：x + 3。分子用平方差公式：x² - 9 = (x - 3)(x + 3)，约去 x - 3 得 x + 3。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "化简 (x² - 16)/(x - 4)（x ≠ 4），结果是（ ）",
+      "options": [
+        "x + 4",
+        "x - 4",
+        "4 - x",
+        "x² + 4"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：x + 4。分子用平方差公式：x² - 16 = (x - 4)(x + 4)，约去 x - 4 得 x + 4。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "化简 (x² - 25)/(x - 5)（x ≠ 5），结果是（ ）",
+      "options": [
+        "x - 5",
+        "5 - x",
+        "x² + 5",
+        "x + 5"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：x + 5。分子用平方差公式：x² - 25 = (x - 5)(x + 5)，约去 x - 5 得 x + 5。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "化简 (x² - 36)/(x - 6)（x ≠ 6），结果是（ ）",
+      "options": [
+        "6 - x",
+        "x² + 6",
+        "x + 6",
+        "x - 6"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：x + 6。分子用平方差公式：x² - 36 = (x - 6)(x + 6)，约去 x - 6 得 x + 6。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "化简 (x² - 49)/(x - 7)（x ≠ 7），结果是（ ）",
+      "options": [
+        "x² + 7",
+        "x + 7",
+        "x - 7",
+        "7 - x"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：x + 7。分子用平方差公式：x² - 49 = (x - 7)(x + 7)，约去 x - 7 得 x + 7。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "化简 (x² - 64)/(x - 8)（x ≠ 8），结果是（ ）",
+      "options": [
+        "x + 8",
+        "x - 8",
+        "8 - x",
+        "x² + 8"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：x + 8。分子用平方差公式：x² - 64 = (x - 8)(x + 8)，约去 x - 8 得 x + 8。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "化简 (x² - 81)/(x - 9)（x ≠ 9），结果是（ ）",
+      "options": [
+        "x - 9",
+        "9 - x",
+        "x² + 9",
+        "x + 9"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：x + 9。分子用平方差公式：x² - 81 = (x - 9)(x + 9)，约去 x - 9 得 x + 9。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "化简 (x² - 100)/(x - 10)（x ≠ 10），结果是（ ）",
+      "options": [
+        "10 - x",
+        "x² + 10",
+        "x + 10",
+        "x - 10"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：x + 10。分子用平方差公式：x² - 100 = (x - 10)(x + 10)，约去 x - 10 得 x + 10。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "化简 (x² - 121)/(x - 11)（x ≠ 11），结果是（ ）",
+      "options": [
+        "x² + 11",
+        "x + 11",
+        "x - 11",
+        "11 - x"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：x + 11。分子用平方差公式：x² - 121 = (x - 11)(x + 11)，约去 x - 11 得 x + 11。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "计算 1/2 + 1/3 的结果是（ ）",
+      "options": [
+        "(5)/6",
+        "2/(5)",
+        "6/5",
+        "1/5"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：(5)/6。通分得 3/6 + 2/6 = (5)/6。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "计算 1/3 + 1/4 的结果是（ ）",
+      "options": [
+        "2/(7)",
+        "12/7",
+        "1/7",
+        "(7)/12"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：(7)/12。通分得 4/12 + 3/12 = (7)/12。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "计算 1/2 + 1/5 的结果是（ ）",
+      "options": [
+        "10/7",
+        "1/7",
+        "(7)/10",
+        "2/(7)"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：(7)/10。通分得 5/10 + 2/10 = (7)/10。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "计算 1/4 + 1/5 的结果是（ ）",
+      "options": [
+        "1/9",
+        "(9)/20",
+        "2/(9)",
+        "20/9"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：(9)/20。通分得 5/20 + 4/20 = (9)/20。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "计算 1/3 + 1/7 的结果是（ ）",
+      "options": [
+        "(10)/21",
+        "2/(10)",
+        "21/10",
+        "1/10"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：(10)/21。通分得 7/21 + 3/21 = (10)/21。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "计算 1/5 + 1/6 的结果是（ ）",
+      "options": [
+        "2/(11)",
+        "30/11",
+        "1/11",
+        "(11)/30"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：(11)/30。通分得 6/30 + 5/30 = (11)/30。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "计算 1/2 + 1/9 的结果是（ ）",
+      "options": [
+        "18/11",
+        "1/11",
+        "(11)/18",
+        "2/(11)"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：(11)/18。通分得 9/18 + 2/18 = (11)/18。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "计算 1/4 + 1/7 的结果是（ ）",
+      "options": [
+        "1/11",
+        "(11)/28",
+        "2/(11)",
+        "28/11"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：(11)/28。通分得 7/28 + 4/28 = (11)/28。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "计算 1/6 + 1/7 的结果是（ ）",
+      "options": [
+        "(13)/42",
+        "2/(13)",
+        "42/13",
+        "1/13"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：(13)/42。通分得 7/42 + 6/42 = (13)/42。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-数学-4",
+      "chapterName": "分式",
+      "type": "single",
+      "dimension": "method",
+      "stem": "计算 1/3 + 1/8 的结果是（ ）",
+      "options": [
+        "2/(11)",
+        "24/11",
+        "1/11",
+        "(11)/24"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：(11)/24。通分得 8/24 + 3/24 = (11)/24。",
+      "difficulty": 2
     }
   ]
 }

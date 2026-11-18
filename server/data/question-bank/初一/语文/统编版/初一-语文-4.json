@@ -4,16 +4,16 @@
   "edition": "统编版",
   "chapter": {
     "id": "初一-语文-4",
-    "name": "七下：精读与略读"
+    "name": "精读与略读"
   },
-  "generatedAt": "2026-11-14T12:12:32.734Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.866Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgd8vgq",
       "chapterId": "初一-语文-4",
-      "chapterName": "七下：精读与略读",
+      "chapterName": "精读与略读",
       "type": "single",
       "dimension": "concept",
       "stem": "下列关于精读与略读的理解，正确的一项是（ ）",
@@ -30,7 +30,7 @@
     {
       "id": "diag-2-mwgd8vgq",
       "chapterId": "初一-语文-4",
-      "chapterName": "七下：精读与略读",
+      "chapterName": "精读与略读",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读《阿长与〈山海经〉》时，为了深入理解“阿长”这一人物形象，下列做法最恰当的一项是（　　）",
@@ -47,7 +47,7 @@
     {
       "id": "diag-3-mwgd8vgq",
       "chapterId": "初一-语文-4",
-      "chapterName": "七下：精读与略读",
+      "chapterName": "精读与略读",
       "type": "single",
       "dimension": "transfer",
       "stem": "学校读书节要求小语在一周内完成两项任务：①为《西游记》整本书制作回目内容索引，快速把握主要情节；②选择“三打白骨精”片段，分析孙悟空与唐僧对话中的性格冲突。下列阅读方法安排最恰当的一项是：",
@@ -64,7 +64,7 @@
     {
       "id": "diag-4-mwgd8vgq",
       "chapterId": "初一-语文-4",
-      "chapterName": "七下：精读与略读",
+      "chapterName": "精读与略读",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "关于精读与略读，下列认识有误的一项是（    ）",
@@ -81,7 +81,7 @@
     {
       "id": "diag-5-mwgd8vgq",
       "chapterId": "初一-语文-4",
-      "chapterName": "七下：精读与略读",
+      "chapterName": "精读与略读",
       "type": "single",
       "dimension": "concept",
       "stem": "下列关于精读与略读的理解，最恰当的一项是（　　）",
@@ -98,7 +98,7 @@
     {
       "id": "diag-6-mwgd8vgq",
       "chapterId": "初一-语文-4",
-      "chapterName": "七下：精读与略读",
+      "chapterName": "精读与略读",
       "type": "single",
       "dimension": "basic-application",
       "stem": "班级准备制作《骆驼祥子》人物卡片，小文既要分析祥子的性格变化，又想快速了解全书情节梗概。下列阅读安排最恰当的是：",
@@ -115,7 +115,7 @@
     {
       "id": "diag-7-mwgd8vgq",
       "chapterId": "初一-语文-4",
-      "chapterName": "七下：精读与略读",
+      "chapterName": "精读与略读",
       "type": "single",
       "dimension": "transfer",
       "stem": "学校读书节要制作“《骆驼祥子》人物卡片”，要求两周内读完小说，并重点分析祥子三次买车卖车经历及人物变化；其他章节只需了解情节梗概。下列阅读安排最恰当的是（ ）",
@@ -132,7 +132,7 @@
     {
       "id": "diag-8-mwgd8vgq",
       "chapterId": "初一-语文-4",
-      "chapterName": "七下：精读与略读",
+      "chapterName": "精读与略读",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "下列对“精读”与“略读”的理解，正确的一项是（　　）",
@@ -149,7 +149,7 @@
     {
       "id": "diag-9-mwgd8vgq",
       "chapterId": "初一-语文-4",
-      "chapterName": "七下：精读与略读",
+      "chapterName": "精读与略读",
       "type": "single",
       "dimension": "concept",
       "stem": "关于精读与略读，下列说法正确的一项是（　　）",
@@ -166,7 +166,7 @@
     {
       "id": "diag-10-mwgd8vgq",
       "chapterId": "初一-语文-4",
-      "chapterName": "七下：精读与略读",
+      "chapterName": "精读与略读",
       "type": "single",
       "dimension": "basic-application",
       "stem": "班级开展名著导读活动，小语需要在一节课内了解《海底两万里》的主要人物和大致情节，以便填写阅读卡片。下列做法最恰当的是（ ）",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：逐字逐句精读全书耗时较多，不适合在一节课内快速了解主要人物和大致情节的阅读目的。\nB. 正确：略读是一种快速把握读物的阅读方法，浏览目录、序言和章节首尾有助于迅速获取全书框架、主要人物和情节梗概。\nC. 错误：只读感兴趣章节会造成信息不完整，难以形成对主要人物和整体情节的准确认识。\nD. 错误：抄录同学笔记不能替代自己的阅读实践，也不符合根据阅读目的选择阅读方法的要求。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "精读是指（　　）",
+      "options": [
+        "细致深入地阅读，反复品味思考",
+        "快速浏览了解大意",
+        "只看标题和插图",
+        "随意翻阅"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：细致深入地阅读，反复品味思考。按精读的要求与方法判断，本题正确答案是「细致深入地阅读，反复品味思考」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "精读时常用的方法是（　　）",
+      "options": [
+        "只看目录",
+        "跳读全文",
+        "只读开头",
+        "圈点批注"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：圈点批注。按精读的要求与方法判断，本题正确答案是「圈点批注」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "圈点批注是指（　　）",
+      "options": [
+        "只标记生字",
+        "只看注释",
+        "在文中圈画重点并写下理解和疑问",
+        "把文章抄一遍"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：在文中圈画重点并写下理解和疑问。按精读的要求与方法判断，本题正确答案是「在文中圈画重点并写下理解和疑问」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "精读中“质疑”是指（　　）",
+      "options": [
+        "不做任何思考",
+        "对文章内容提出疑问并思考",
+        "完全接受作者观点",
+        "否定一切内容"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：对文章内容提出疑问并思考。按精读的要求与方法判断，本题正确答案是「对文章内容提出疑问并思考」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "品味语言，要关注（　　）",
+      "options": [
+        "关键词句的含义和表达效果",
+        "文章的字数",
+        "纸张的颜色",
+        "作者的年龄"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：关键词句的含义和表达效果。按精读的要求与方法判断，本题正确答案是「关键词句的含义和表达效果」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "把握文章主旨，需要（　　）",
+      "options": [
+        "只看开头一段",
+        "只看标题",
+        "只看结尾一句",
+        "结合全文内容分析作者的情感态度"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：结合全文内容分析作者的情感态度。按精读的要求与方法判断，本题正确答案是「结合全文内容分析作者的情感态度」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "分析文章结构，主要是理清（　　）",
+      "options": [
+        "标点种类",
+        "插图位置",
+        "段落层次和行文思路",
+        "生字数量"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：段落层次和行文思路。按精读的要求与方法判断，本题正确答案是「段落层次和行文思路」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "精读与略读的主要区别在于（　　）",
+      "options": [
+        "阅读的姿势不同",
+        "阅读的精细程度和目的不同",
+        "阅读的时间不同",
+        "阅读的地点不同"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：阅读的精细程度和目的不同。按精读的要求与方法判断，本题正确答案是「阅读的精细程度和目的不同」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "精读时联系上下文，有助于（　　）",
+      "options": [
+        "准确理解词句的含义",
+        "增加阅读速度",
+        "减少阅读内容",
+        "忽略文章主旨"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：准确理解词句的含义。按精读的要求与方法判断，本题正确答案是「准确理解词句的含义」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "写批注可以从（　　）等角度入手",
+      "options": [
+        "只写生字读音",
+        "只写段落序号",
+        "只抄写原文",
+        "内容理解、语言赏析、疑问感受"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：内容理解、语言赏析、疑问感受。按精读的要求与方法判断，本题正确答案是「内容理解、语言赏析、疑问感受」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "略读的主要目的是（　　）",
+      "options": [
+        "背诵全文",
+        "研究每个标点",
+        "快速了解文章大意，获取所需信息",
+        "逐字逐句分析"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：快速了解文章大意，获取所需信息。按略读、浏览与信息提取的方法判断，本题正确答案是「快速了解文章大意，获取所需信息」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "略读时应该重点关注（　　）",
+      "options": [
+        "每个标点",
+        "标题、开头、结尾和关键句",
+        "每一个生字",
+        "所有注释"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：标题、开头、结尾和关键句。按略读、浏览与信息提取的方法判断，本题正确答案是「标题、开头、结尾和关键句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "跳读是指（　　）",
+      "options": [
+        "有选择地跳过部分内容，只读需要的部分",
+        "从头到尾细读",
+        "只读目录",
+        "把文章抄写一遍"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：有选择地跳过部分内容，只读需要的部分。按略读、浏览与信息提取的方法判断，本题正确答案是「有选择地跳过部分内容，只读需要的部分」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "提取信息时，应该（　　）",
+      "options": [
+        "把所有内容都记下来",
+        "只凭主观想象",
+        "忽略文章内容",
+        "根据阅读目的筛选关键内容"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：根据阅读目的筛选关键内容。按略读、浏览与信息提取的方法判断，本题正确答案是「根据阅读目的筛选关键内容」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "浏览文章时，最先看的通常是（　　）",
+      "options": [
+        "页脚",
+        "作者简介的每个字",
+        "标题",
+        "最后一个标点"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：标题。按略读、浏览与信息提取的方法判断，本题正确答案是「标题」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "选择精读还是略读，主要取决于（　　）",
+      "options": [
+        "阅读的时间",
+        "阅读的目的和材料的价值",
+        "文章的长度",
+        "纸张的厚薄"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：阅读的目的和材料的价值。按略读、浏览与信息提取的方法判断，本题正确答案是「阅读的目的和材料的价值」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "略读并不意味着（　　）",
+      "options": [
+        "可以完全不理解文章内容",
+        "快速浏览",
+        "抓取关键信息",
+        "有选择地阅读"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：可以完全不理解文章内容。按略读、浏览与信息提取的方法判断，本题正确答案是「可以完全不理解文章内容」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "提高阅读速度的方法不包括（　　）",
+      "options": [
+        "扩大视幅",
+        "减少回视",
+        "抓住关键句",
+        "逐字默读并回读每一句"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：逐字默读并回读每一句。按略读、浏览与信息提取的方法判断，本题正确答案是「逐字默读并回读每一句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "扫读主要用于（　　）",
+      "options": [
+        "分析人物形象",
+        "背诵名句",
+        "快速查找特定信息",
+        "品味语言"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：快速查找特定信息。按略读、浏览与信息提取的方法判断，本题正确答案是「快速查找特定信息」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "略读后概括文章大意，应该（　　）",
+      "options": [
+        "只写标题",
+        "抓住主要内容，语言简明",
+        "复述每个细节",
+        "加入大量想象"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：抓住主要内容，语言简明。按略读、浏览与信息提取的方法判断，本题正确答案是「抓住主要内容，语言简明」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "阅读中“预测”是指（　　）",
+      "options": [
+        "根据已有信息推测后文内容",
+        "直接看结局",
+        "随意猜测",
+        "跳过全文"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：根据已有信息推测后文内容。按阅读策略的综合运用判断，本题正确答案是「根据已有信息推测后文内容」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "阅读时提出问题，有助于（　　）",
+      "options": [
+        "加快阅读速度",
+        "减少阅读内容",
+        "代替文本分析",
+        "深入理解文章，培养思考能力"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：深入理解文章，培养思考能力。按阅读策略的综合运用判断，本题正确答案是「深入理解文章，培养思考能力」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“推断”是指（　　）",
+      "options": [
+        "照抄原文",
+        "忽略上下文",
+        "根据文中信息作出合理判断",
+        "凭空想象"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：根据文中信息作出合理判断。按阅读策略的综合运用判断，本题正确答案是「根据文中信息作出合理判断」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "概括文章内容，应该（　　）",
+      "options": [
+        "抄写原文",
+        "抓住主要人物和事件，语言简洁",
+        "罗列所有细节",
+        "只写感受"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：抓住主要人物和事件，语言简洁。按阅读策略的综合运用判断，本题正确答案是「抓住主要人物和事件，语言简洁」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "复述文章时，应该（　　）",
+      "options": [
+        "保留主要情节，用自己的话表达",
+        "逐字背诵",
+        "随意删改主旨",
+        "只复述标题"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：保留主要情节，用自己的话表达。按阅读策略的综合运用判断，本题正确答案是「保留主要情节，用自己的话表达」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "阅读时把文章内容与自己的生活经验联系起来，这叫（　　）",
+      "options": [
+        "预测",
+        "跳读",
+        "扫读",
+        "连接"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：连接。按阅读策略的综合运用判断，本题正确答案是「连接」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "制定阅读计划，应该（　　）",
+      "options": [
+        "只读喜欢的书",
+        "不考虑时间",
+        "结合自身情况，合理安排时间和内容",
+        "随意安排"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：结合自身情况，合理安排时间和内容。按阅读策略的综合运用判断，本题正确答案是「结合自身情况，合理安排时间和内容」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "写读书笔记的好处是（　　）",
+      "options": [
+        "减少思考",
+        "加深理解，积累知识和感悟",
+        "增加阅读负担",
+        "代替阅读"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：加深理解，积累知识和感悟。按阅读策略的综合运用判断，本题正确答案是「加深理解，积累知识和感悟」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "阅读遇到生字词时，可以（　　）",
+      "options": [
+        "查字典或结合上下文推测",
+        "直接跳过不理会",
+        "随意猜测读音",
+        "停止阅读"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：查字典或结合上下文推测。按阅读策略的综合运用判断，本题正确答案是「查字典或结合上下文推测」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-语文-4",
+      "chapterName": "精读与略读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "培养阅读兴趣，可以（　　）",
+      "options": [
+        "只看漫画",
+        "只读课本",
+        "强迫自己读不感兴趣的书",
+        "选择适合自己的好书，坚持阅读"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：选择适合自己的好书，坚持阅读。按阅读策略的综合运用判断，本题正确答案是「选择适合自己的好书，坚持阅读」。",
+      "difficulty": 2
     }
   ]
 }

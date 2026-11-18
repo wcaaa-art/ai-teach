@@ -6,9 +6,9 @@
     "id": "初三-化学-6",
     "name": "化学实验与探究"
   },
-  "generatedAt": "2026-11-13T02:48:58.157Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.851Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedo9bf",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 1,
       "explanation": "A. 错误：过氧化氢溶液是液体，二氧化锰是固体，反应在常温下进行，应选固液常温型发生装置；二氧化锰是催化剂，不是选择固体加热型的依据。\nB. 正确：氧气不易溶于水，且不与水反应，因此可用排水法收集，并能收集到较纯净的氧气。\nC. 错误：用向上排空气法收集时，导管口伸入集气瓶底部是为了排尽瓶内空气，使收集到的气体更纯；氧气是无色气体，不能通过观察颜色判断收集情况。\nD. 错误：用过氧化氢溶液和二氧化锰制取氧气不需要酒精灯；若用加热法制取氧气，实验结束时应先移出导管，再熄灭酒精灯，以防止水倒吸使试管炸裂。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "给试管中的液体加热时，液体体积不应超过试管容积的（ ）",
+      "options": [
+        "1/3",
+        "1/2",
+        "2/3",
+        "3/4"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1/3。加热时液体过多容易沸腾溅出，体积不超过试管容积的 1/3。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "使用酒精灯加热时，应使用火焰的（ ）",
+      "options": [
+        "内焰",
+        "焰心",
+        "任意部位",
+        "外焰"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：外焰。外焰温度最高，应使用外焰加热。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "熄灭酒精灯的正确方法是（ ）",
+      "options": [
+        "用水浇灭",
+        "用湿抹布擦灭",
+        "用灯帽盖灭",
+        "用嘴吹灭"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：用灯帽盖灭。用嘴吹可能导致火焰进入灯内，应用灯帽盖灭。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "用量筒量取液体时，读数视线应与（ ）相平",
+      "options": [
+        "液面任意位置",
+        "凹液面的最低处",
+        "凹液面的最高处",
+        "量筒口"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：凹液面的最低处。视线与凹液面最低处相平，读数才准确。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "取用粉末状固体药品时，应使用（ ）",
+      "options": [
+        "药匙或纸槽",
+        "镊子",
+        "胶头滴管",
+        "玻璃棒"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：药匙或纸槽。粉末状固体用药匙或纸槽送入试管。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "使用胶头滴管滴加液体时，滴管应（ ）",
+      "options": [
+        "伸入试管内壁",
+        "接触试管内液体",
+        "平放在桌面上",
+        "垂直悬空在试管口上方"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：垂直悬空在试管口上方。滴管不能伸入试管或接触内壁，防止污染。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "向试管中倾倒液体时，试剂瓶的标签应（ ）",
+      "options": [
+        "朝向外侧",
+        "随意朝向",
+        "朝向手心",
+        "朝向自己"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：朝向手心。标签朝向手心，防止残液流下腐蚀标签。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "用托盘天平称量药品时，应遵循（ ）",
+      "options": [
+        "药品直接放在托盘上",
+        "左物右码",
+        "左码右物",
+        "左右随意"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：左物右码。左盘放物品，右盘放砝码。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "给试管加热时，试管夹应（ ）",
+      "options": [
+        "从试管底部往上套",
+        "从试管口往下套",
+        "夹在试管中部",
+        "夹住试管口"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：从试管底部往上套。试管夹从底部往上套，夹在试管中上部。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "给试管加热时，试管口应（ ）",
+      "options": [
+        "对着自己",
+        "对着同桌",
+        "朝下",
+        "不对着人"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：不对着人。防止液体沸腾溅出伤人。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "过滤操作中，玻璃棒的作用是（ ）",
+      "options": [
+        "防止液体飞溅",
+        "增大过滤速度",
+        "引流",
+        "搅拌加快溶解"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：引流。过滤时玻璃棒用于引流，防止液体溅出。",
+      "difficulty": 1
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "过滤操作要做到“一贴、二低、三靠”，其中“一贴”是指（ ）",
+      "options": [
+        "液面紧贴滤纸边缘",
+        "滤纸紧贴漏斗内壁",
+        "漏斗紧贴烧杯内壁",
+        "玻璃棒紧贴滤纸"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：滤纸紧贴漏斗内壁。滤纸紧贴漏斗内壁，防止气泡影响过滤速度。",
+      "difficulty": 1
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "过滤时，漏斗下端管口应（ ）",
+      "options": [
+        "紧靠烧杯内壁",
+        "悬在烧杯中央",
+        "伸入滤液中",
+        "对准玻璃棒"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：紧靠烧杯内壁。漏斗下端紧靠烧杯内壁，防止滤液飞溅。",
+      "difficulty": 1
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "蒸发食盐水时，玻璃棒的作用是（ ）",
+      "options": [
+        "引流",
+        "加快水分蒸发",
+        "过滤杂质",
+        "搅拌，防止局部过热造成液滴飞溅"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：搅拌，防止局部过热造成液滴飞溅。蒸发时用玻璃棒不断搅拌，使液体受热均匀。",
+      "difficulty": 1
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "蒸发操作中，当出现较多固体时，应（ ）",
+      "options": [
+        "立即加入冷水",
+        "用玻璃棒刮出固体",
+        "停止加热，利用余热蒸干",
+        "继续加热至完全干燥"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：停止加热，利用余热蒸干。出现较多固体时停止加热，防止固体飞溅。",
+      "difficulty": 1
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "过滤操作不能分离的是（ ）",
+      "options": [
+        "沉淀和溶液",
+        "可溶性固体和液体",
+        "不溶性固体和液体",
+        "泥沙和水"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：可溶性固体和液体。过滤只能分离不溶性固体与液体。",
+      "difficulty": 1
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "过滤时，液面应（ ）",
+      "options": [
+        "低于滤纸边缘",
+        "高于滤纸边缘",
+        "与滤纸边缘相平",
+        "高于漏斗口"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：低于滤纸边缘。液面低于滤纸边缘，防止液体从滤纸与漏斗间流下。",
+      "difficulty": 1
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "降低水的硬度，家庭中常用的方法是（ ）",
+      "options": [
+        "过滤",
+        "静置",
+        "加入食盐",
+        "煮沸"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：煮沸。煮沸能使可溶性钙镁化合物转化为沉淀，降低硬度。",
+      "difficulty": 1
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列净化水的方法中，净化程度最高的是（ ）",
+      "options": [
+        "吸附",
+        "沉淀",
+        "蒸馏",
+        "过滤"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：蒸馏。蒸馏可得到几乎纯净的水，净化程度最高。",
+      "difficulty": 1
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "蒸馏水属于（ ）",
+      "options": [
+        "乳浊液",
+        "纯净物",
+        "混合物",
+        "悬浊液"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：纯净物。蒸馏水只含水一种物质，属于纯净物。",
+      "difficulty": 1
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "实验室用高锰酸钾制取氧气，应选择的发生装置是（ ）",
+      "options": [
+        "固体加热型装置",
+        "固体与液体常温型装置",
+        "电解装置",
+        "过滤装置"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：固体加热型装置。高锰酸钾制氧气需要加热固体，选用固体加热型装置。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "实验室用过氧化氢溶液制取氧气，应选择的发生装置是（ ）",
+      "options": [
+        "固体加热型装置",
+        "电解装置",
+        "蒸馏装置",
+        "固体与液体常温型装置"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：固体与液体常温型装置。过氧化氢与二氧化锰常温反应，选用固液常温型装置。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "实验室制取二氧化碳的反应物是（ ）",
+      "options": [
+        "碳酸钠和稀盐酸",
+        "石灰石和浓硫酸",
+        "大理石和稀盐酸",
+        "大理石和稀硫酸"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：大理石和稀盐酸。实验室用大理石（或石灰石）与稀盐酸反应制取二氧化碳。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "收集二氧化碳应使用（ ）",
+      "options": [
+        "向下排空气法或排水法",
+        "向上排空气法",
+        "向下排空气法",
+        "排水法"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：向上排空气法。二氧化碳密度比空气大且能溶于水，用向上排空气法收集。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "实验室制取二氧化碳时，不能用稀硫酸代替稀盐酸，因为（ ）",
+      "options": [
+        "生成的硫酸钙微溶，覆盖在石灰石表面阻止反应",
+        "稀硫酸不与碳酸钙反应",
+        "稀硫酸会生成有害气体",
+        "稀硫酸浓度太低"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：生成的硫酸钙微溶，覆盖在石灰石表面阻止反应。硫酸钙微溶，附着在石灰石表面使反应难以继续。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "用长颈漏斗组装气体发生装置时，长颈漏斗下端应（ ）",
+      "options": [
+        "悬在液面上方",
+        "插入集气瓶",
+        "与导管相平",
+        "伸入液面以下"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：伸入液面以下。下端伸入液面以下形成液封，防止气体从漏斗逸出。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "实验室制取气体前，首先应（ ）",
+      "options": [
+        "加热试管",
+        "收集气体",
+        "检查装置的气密性",
+        "装入药品"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：检查装置的气密性。先检查气密性，防止装置漏气影响收集。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "收集氢气可以采用向下排空气法，依据是氢气（ ）",
+      "options": [
+        "能与空气反应",
+        "密度比空气小",
+        "密度比空气大",
+        "易溶于水"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：密度比空气小。密度比空气小的气体用向下排空气法收集。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "用排水法收集氧气完毕后，应先（ ）",
+      "options": [
+        "把导管移出水面",
+        "熄灭酒精灯",
+        "拆下集气瓶",
+        "关闭弹簧夹"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：把导管移出水面。先撤导管后熄灭酒精灯，防止水倒吸。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-化学-6",
+      "chapterName": "化学实验与探究",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "检验二氧化碳是否收集满的方法是（ ）",
+      "options": [
+        "把燃着的木条伸入瓶底",
+        "向瓶中倒入澄清石灰水",
+        "闻气体的气味",
+        "把燃着的木条放在集气瓶口"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：把燃着的木条放在集气瓶口。木条在瓶口熄灭说明二氧化碳已收集满。",
       "difficulty": 2
     }
   ]

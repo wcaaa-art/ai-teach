@@ -8,7 +8,7 @@ import { mcpPrompts, mcpResources, mcpTools } from './mcp-capabilities.js'
 import { RAG_EVAL_CASES, RAG_NEGATIVE_CASES } from './rag/rag-eval-cases.js'
 import { LEARNING_SYSTEM_PROMPT, PLAN_REPLACE_PROMPT, PLAN_SEQUENCE_PROMPT, TOOL_AGENT_PROMPT, WEEKLY_REPORT_PROMPT, tutorSystemPrompt } from './prompts.js'
 import { buildAdaptivePlan, buildDiagnosticBlueprint, buildFallbackDiagnosticQuestions, listCurriculumChapters, listCurriculumSubjects, orderCurriculumPlans, searchCurriculum, stampDiagnosticQuestionIds } from './curriculum.js'
-import { PAPER_SPECS, buildFallbackQuizQuestions, buildQuizBlueprint, generateQuiz, mapWithLimit } from './quiz.js'
+import { PAPER_SPECS, buildFallbackQuizQuestions, buildQuizBlueprint, generateQuiz } from './quiz.js'
 import { PAPER_PARSE_SYSTEM_PROMPT, fallbackPaperQuestions, normalizePaperQuestions } from './paper-scan.js'
 import { PAPER_DIAGNOSIS_PROMPT, fallbackPaperDiagnosis, normalizePaperDiagnosis } from './paper-diagnosis.js'
 import { MISTAKE_ANALYSIS_PROMPT, fallbackMistakeAnalysis, normalizeMistakeAnalysis } from './mistake-analysis.js'
@@ -331,9 +331,6 @@ app.get('/api/videos/recommend', async (req, res) => {
   }
 })
 
-// 摸底与题库脚本共用同一套直连模型出题实现，避免提示词和校验口径分叉。
-import { requestDiagnosticQuestion } from './direct-generation.js'
-
 // 摸底请求参数先归一化：预生成和正式开始必须用同一套参数，才能命中同一份题库缓存。
 function normalizeAssessmentRequest(body = {}) {
   const chapters = Array.isArray(body.chapters) ? body.chapters.slice(0, 8) : []
@@ -361,30 +358,15 @@ async function buildAssessmentResult({ grade, subject, chapters, questionCount, 
     chapterName: item.chapterName,
     dimension: item.dimensions?.[index % (item.dimensions.length || 1)] || 'concept'
   })))
-  // 先抽离线题库：命中的题位不再请求模型，题库没覆盖到的位置才走模型。
+  // 只从离线题库抽题；题库未命中的题位一律用本地模板补，运行时不再请求模型。
   const bankQuestions = bypassBank ? slots.map(() => null) : pickBankQuestions({
     grade, subject, edition, slots,
     excludeStems: excludeQuestions.map(question => question.stem)
   })
-  const missingSlots = []
-  const missingIndexes = []
-  slots.forEach((slot, index) => {
-    if (!bankQuestions[index]) {
-      missingSlots.push(slot)
-      missingIndexes.push(index)
-    }
-  })
-  const answers = missingSlots.length
-    ? await mapWithLimit(missingSlots, Math.min(missingSlots.length, 10), slot => requestDiagnosticQuestion(slot, {
-      grade, subject, edition, attempt, excludeQuestions
-    }))
-    : []
-  const modelAnswers = new Map(missingIndexes.map((slotIndex, answerIndex) => [slotIndex, answers[answerIndex]]))
 
   const stemKey = stem => String(stem || '').replace(/\s+/g, '').trim()
   const excludedStems = new Set(excludeQuestions.map(question => stemKey(question.stem)).filter(Boolean))
   const questions = []
-  let modelCount = 0
   let bankCount = 0
   slots.forEach((slot, index) => {
     if (bankQuestions[index]) {
@@ -396,15 +378,7 @@ async function buildAssessmentResult({ grade, subject, chapters, questionCount, 
       }
       return
     }
-    const candidate = modelAnswers.get(index)
-    const candidateKey = stemKey(candidate?.stem)
-    if (candidate && candidateKey && !excludedStems.has(candidateKey)) {
-      excludedStems.add(candidateKey)
-      questions.push(candidate)
-      modelCount += 1
-      return
-    }
-    // 该题位没有可用模型题时用本地题库补一题，保持专题顺序与配额。
+    // 该题位没有可用题库题时用本地模板补一题，保持专题顺序与配额。
     const chapter = chapters.find(item => item.id === slot.chapterId) || { id: slot.chapterId, name: slot.chapterName }
     const local = buildFallbackDiagnosticQuestions({
       grade, subject, chapters: [chapter], questionCount: 1, attempt,
@@ -417,12 +391,11 @@ async function buildAssessmentResult({ grade, subject, chapters, questionCount, 
     questions.push({ ...local, id: `${local.id}-${index}` })
   })
 
-  if (!questions.length) return { data: fallback, source: fallback.source, reason: 'no-usable-model-question' }
-  // 模型逐题返回的 id 都是 q1，必须按题位重发唯一 id，否则十道题共享一个答案键。
+  if (!questions.length) return { data: fallback, source: fallback.source, reason: 'no-usable-bank-question' }
+  // 题库与模板的 id 需要按题位重发，避免同一套卷出现重复答案键。
   const stampedQuestions = stampDiagnosticQuestionIds(questions)
-  const source = !missingSlots.length ? 'question-bank'
-    : !modelCount ? 'local-fallback'
-      : modelCount >= missingSlots.length ? 'deepseek' : 'deepseek-with-local-fill'
+  const source = bankCount === slots.length ? 'question-bank'
+    : bankCount ? 'question-bank-with-template' : 'local-fallback'
   return { data: { questions: stampedQuestions, blueprint, edition }, source }
 }
 

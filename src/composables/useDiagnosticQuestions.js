@@ -43,20 +43,20 @@ export function useDiagnosticQuestions({ page, profile, chapters, selectedChapte
 
   // 正式拉题：成功返回题目与来源；失败给出提示并返回 null，由页面决定是否留在弹窗。
   async function fetchQuestions() {
-    if (!profile.grade || !profile.subject) { ElMessage.info('请先选择当前年级和主要科目。'); return null }
-    if (!selectedChapterIds.value.length) { ElMessage.info('请至少选择一个学习专题。'); return null }
+    if (!profile.grade || !profile.subject) { ElMessage.info('请先选择当前年级和主要科目'); return null }
+    if (!selectedChapterIds.value.length) { ElMessage.info('请至少选择一个学习专题'); return null }
     assessmentLoading.value = true
     try {
       // 选范围时可能已经预生成好，这里按同一参数请求即可直接命中缓存。
       const response = await generateDiagnosticQuestions(buildPayload())
-      if (!response.success) { ElMessage.warning('摸底题暂时无法生成，仍可选择从零基础规划。'); return null }
+      if (!response.success) { ElMessage.warning('摸底题暂时无法生成，仍可选择从零基础规划'); return null }
       const questions = response.data?.questions || []
-      if (!questions.length) { ElMessage.warning('暂时没有生成摸底题，请稍后重试或从零基础规划。'); return null }
+      if (!questions.length) { ElMessage.warning('暂时没有生成摸底题，请稍后重试或从零基础规划'); return null }
       return { questions, source: response.source || 'agent' }
     } catch (error) {
       // 网络或超时异常时必须解除 loading，否则「开始摸底」按钮会永久禁用。
       console.warn('摸底题生成请求失败。', error)
-      ElMessage.warning('摸底题暂时无法生成，仍可选择从零基础规划。')
+      ElMessage.warning('摸底题暂时无法生成，仍可选择从零基础规划')
       return null
     } finally {
       assessmentLoading.value = false

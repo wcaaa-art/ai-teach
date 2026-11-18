@@ -18,7 +18,7 @@ watch(() => props.modelValue, value => {
 
 async function submit() {
   const content = form.value.content.trim()
-  if (!content) { ElMessage.warning('先写点内容再提交。'); return }
+  if (!content) { ElMessage.warning('先写点内容再提交'); return }
   saving.value = true
   try {
     // 与专注页反馈共用 feedbacks 表；额外记录页面和分类，便于统一回看。
@@ -28,7 +28,7 @@ async function submit() {
       completion: null, mastery: null, createdAt: Date.now()
     })
     emit('update:modelValue', false)
-    ElMessage.success('已收到，感谢反馈。')
+    ElMessage.success('已收到，感谢反馈')
   } finally { saving.value = false }
 }
 </script>

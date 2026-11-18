@@ -9,6 +9,7 @@ import QuestionOptions from '../components/QuestionOptions.vue'
 import SourceBadge from '../components/SourceBadge.vue'
 import StudyTimer from '../components/StudyTimer.vue'
 import { formatMathText } from '../utils/formatMath.js'
+import { stripBookPrefix } from '../utils/chapterNames.js'
 import { AUTO_FIX_STREAK, correctStreak } from '../utils/mistakes.js'
 import { hotKnowledgePoints, SLIP_LABELS, wrongTimesOf } from '../utils/mistakeSignals.js'
 import { isStaleMistake } from '../utils/notices.js'
@@ -35,7 +36,15 @@ async function load() {
 // 只在 dev 生效，生产构建里这段会被常量折叠掉。
 async function applyDemoParam() {
   const mode = new URLSearchParams(location.search).get('demo')
-  if (mode !== 'mistakes' && mode !== 'clear') return
+  if (mode !== 'mistakes' && mode !== 'clear') {
+    // 旧版演示数据把选项存成了 ['A','B','C','D']，库里不会自动更新；检测到就静默重播一次。
+    if (hasStaleDemoOptions(mistakes.value)) {
+      const demo = await import('../utils/demoMistakes.js')
+      await demo.seedDemoMistakes()
+      await load()
+    }
+    return
+  }
   const demo = await import('../utils/demoMistakes.js')
   if (mode === 'clear') await demo.clearDemoMistakes()
   else await demo.seedDemoMistakes()
@@ -67,7 +76,7 @@ async function openUpload() {
   uploadProfile.subject = profile?.subject || ''
   uploadProfile.edition = profile?.edition || ''
   if (!uploadProfile.grade || !uploadProfile.subject) {
-    ElMessage.warning('请先在「学情诊断」里选好年级和科目，再来上传错题。')
+    ElMessage.warning('请先在「学情分析」里选好年级和科目，再来上传错题')
     return
   }
   uploadVisible.value = true
@@ -75,7 +84,7 @@ async function openUpload() {
   const response = await getCurriculumChapters(uploadProfile.grade, uploadProfile.subject, uploadProfile.edition)
   uploadLoading.value = false
   uploadChapters.value = response.success ? response.data?.chapters || [] : []
-  if (!uploadChapters.value.length) ElMessage.warning('章节列表暂时没加载出来，请稍后重试。')
+  if (!uploadChapters.value.length) ElMessage.warning('章节列表暂时没加载出来，请稍后重试')
 }
 function onUploadSaved() {
   uploadVisible.value = false
@@ -127,7 +136,11 @@ const listRows = computed(() => [...filtered.value].sort((left, right) =>
 const redoQueueItems = computed(() => listRows.value.filter(item => !item.fixedAt))
 // 题目可能没有 AI 知识点标签，退回章节名，保证每道题都能归到一个点。
 function pointName(item) {
-  return item.knowledgeTags?.[0] || item.chapterName || '未归因知识点'
+  return stripBookPrefix(item.knowledgeTags?.[0] || item.chapterName || '未归因知识点')
+}
+// 历史错题里可能存着带「八上：」前缀的章节名，展示时统一裁掉。
+function chapterText(value) {
+  return stripBookPrefix(value || '')
 }
 // 错次 = 首次收录算 1 次，之后每次重做/再次测试答错再 +1；重做答对不计入。
 function wrongCount(item) {
@@ -176,7 +189,7 @@ async function markFixed(item) {
   if (!item || item.fixedAt) return
   await saveMistake({ ...item, fixedAt: Date.now() })
   await load()
-  ElMessage.success('已标记为消灭，之后可以在「已消灭」里回看。')
+  ElMessage.success('已标记为消灭，之后可以在「已消灭」里回看')
 }
 
 function onMistakeKeydown(event) {
@@ -261,12 +274,6 @@ const heroTitle = computed(() => {
   if (statusFilter.value === 'all') return `一共 ${scopedTotal.value} 道错题`
   return `还有 ${scopedTotal.value} 道没消灭`
 })
-const heroSubtitle = computed(() => {
-  if (statusFilter.value === 'fixed') return '按学科回看已经消灭的题，确认是真的会了'
-  if (statusFilter.value === 'stale') return '这些题超过 7 天没复习，先挑出来过一遍'
-  if (statusFilter.value === 'all') return '先选一科，再按状态和错误次数过一遍'
-  return '先选一科，再按错误次数一道一道过'
-})
 const cardTitle = computed(() => `${subject.value || '全部学科'} · ${listRows.value.length} 道${statusLabels[statusFilter.value] || '错题'}`)
 
 // 知识点分布跟随当前状态、学科、年级、来源，保证面板数量和列表一致；搜索不改变概览。
@@ -332,30 +339,23 @@ const pointArcs = computed(() => {
   })
 })
 const dominantPoint = computed(() => pointRows.value[0] || null)
-const pointSummary = computed(() => {
-  const top = dominantPoint.value
-  if (!top) return ''
-  return pointTotal.value >= 2 && top.count * 2 >= pointTotal.value
-    ? '一半的错都在这个点'
-    : `最集中的是「${top.name}」`
-})
 const insightText = computed(() => {
   // 归纳只描述还要重做的题，已消灭 / 全部视图不显示，避免把旧题当成待办。
   if (statusFilter.value !== 'open' && statusFilter.value !== 'stale') return ''
   const top = dominantPoint.value
   const total = pointTotal.value
   if (!top || !total) return ''
-  if (total === 1) return '只有 1 道待消灭，直接复习一遍就能收掉。'
-  if (top.count * 2 >= total) return `这 ${total} 道里有 ${top.count} 道集中在「${top.name}」，先把这一类过一遍，比从头刷更划算。`
-  return `这 ${total} 道分布在 ${pointRows.value.length} 个知识点上，按错次从高到低过，别平均用力。`
+  if (total === 1) return '只剩 1 道待消灭，复习一遍就能收掉——这一轮你几乎清完了'
+  if (top.count * 2 >= total) return `这 ${total} 道里有 ${top.count} 道集中在「${top.name}」，说明短板只剩这一块，把它过一遍，提分最快`
+  return `这 ${total} 道摊在 ${pointRows.value.length} 个知识点上，每清一道就少一个卡点，按错次从高到低过，会越来越顺`
 })
 const emptyText = computed(() => {
-  if (!mistakes.value.length) return '错题库还是空的。点右上角「上传错题照片」，把第一道错题存进来。'
-  if (keyword.value || activePoint.value || grade.value || source.value) return '当前筛选下没有错题，换个条件或清除「只看」再试。'
-  if (statusFilter.value === 'fixed') return '还没有已消灭的错题。同一道题连续答对两次后会自动出现在这里。'
-  if (statusFilter.value === 'stale') return '没有超过 7 天没复习的错题，保持现在的节奏就好。'
-  if (statusFilter.value === 'all') return '错题库还是空的。'
-  return '当前范围下没有待消灭的错题，换个学科看看。'
+  if (!mistakes.value.length) return '错题库还是空的，点右上角「上传错题照片」，把第一道错题存进来'
+  if (keyword.value || activePoint.value || grade.value || source.value) return '当前筛选下没有错题，换个条件或清除「只看」再试'
+  if (statusFilter.value === 'fixed') return '还没有已消灭的错题，同一道题连续答对两次后会自动出现在这里'
+  if (statusFilter.value === 'stale') return '没有超过 7 天没复习的错题，保持现在的节奏就好'
+  if (statusFilter.value === 'all') return '错题库还是空的'
+  return '当前范围下没有待消灭的错题，换个学科看看'
 })
 
 function filterPoint(name) {
@@ -393,13 +393,13 @@ function toggleExplain(id) { explainOpen[id] = !explainOpen[id] }
 
 async function remove(item) {
   try {
-    await ElMessageBox.confirm('从错题库彻底删除这道题？已消灭记录也会一起删除。', '删除错题', {
+    await ElMessageBox.confirm('从错题库彻底删除这道题？已消灭记录也会一起删除', '删除错题', {
       confirmButtonText: '删除', cancelButtonText: '取消', type: 'warning'
     })
   } catch { return }
   await deleteMistake(item.id)
   await load()
-  ElMessage.success('已删除。')
+  ElMessage.success('已删除')
 }
 
 // === 错题重做：选题即判分，填空/解答题自评；结果写入 redoHistory，周报按周汇总 ===
@@ -423,8 +423,17 @@ const redoProgress = computed(() => redoQueue.value.length
 // 错题记录里的选项：真实测验存的是 single，演示/旧数据可能是 choice，上传错题没有选项。
 const LETTERS = 'ABCD'
 const CHOICE_TYPES = new Set(['single', 'choice', 'multiple'])
+// 选项是 ['A','B','C','D'] 这种字母占位说明是旧数据缺了选项文本，不能当真实选项渲染。
+function isPlaceholderOptions(options) {
+  const items = Array.isArray(options) ? options.map(option => String(option ?? '').trim()) : []
+  return items.length >= 2 && items.every((text, index) => text.toUpperCase() === LETTERS[index])
+}
+function hasStaleDemoOptions(list) {
+  return list.some(item => String(item?.id || '').startsWith('demo-mistake-') && isPlaceholderOptions(item.options))
+}
 function mistakeOptions(item) {
-  return Array.isArray(item?.options) ? item.options.filter(option => String(option ?? '').trim()) : []
+  const all = Array.isArray(item?.options) ? item.options.filter(option => String(option ?? '').trim()) : []
+  return isPlaceholderOptions(all) ? [] : all
 }
 function isChoiceMistake(item) {
   return mistakeOptions(item).length >= 2 && (!item?.type || CHOICE_TYPES.has(item.type))
@@ -644,11 +653,7 @@ function onRedoKeydown(event) {
                 </button>
               </div>
             </div>
-            <p v-else class="point-empty">这个范围还没有错题。</p>
-            <div v-if="dominantPoint" class="point-panel-foot">
-              <span>{{ pointSummary }}</span>
-              <button type="button" @click="filterPoint(dominantPoint.name)">只看这 {{ dominantPoint.count }} 道</button>
-            </div>
+            <p v-else class="point-empty">这个范围还没有错题</p>
           </div>
         </section>
       </aside>
@@ -662,7 +667,6 @@ function onRedoKeydown(event) {
         <header class="mistake-hero">
           <div>
             <h1>{{ heroTitle }}</h1>
-            <p>{{ heroSubtitle }}</p>
           </div>
           <div class="today-fixed">
             <span>今日已消灭</span>
@@ -699,7 +703,6 @@ function onRedoKeydown(event) {
           <span>只看：{{ activePoint }}</span>
           <button type="button" @click="activePoint = ''">清除</button>
         </div>
-        <p class="key-hint">电脑端：/ 搜索 · 1 全部 / 2 待消灭 / 3 已消灭 · ↑↓ 选择 · M 标记已消灭 · Enter 复习</p>
 
         <section v-loading="loading" class="subject-card surface">
           <div class="subject-card-head">
@@ -725,7 +728,7 @@ function onRedoKeydown(event) {
               <div class="row-grid" @click="focusRow(item)">
                 <button type="button" class="row-main-button" :aria-expanded="Boolean(expanded[item.id])" @keydown.enter.prevent @keydown.space.prevent="focusRow(item)">
                   <span class="row-title" v-html="formatMathText(item.stem || item.text || pointName(item))"></span>
-                  <span class="row-sub">{{ pointName(item) }}<template v-if="item.chapterName && item.chapterName !== pointName(item)"> · {{ item.chapterName }}</template> · {{ dateText(item.createdAt) }}</span>
+                  <span class="row-sub">{{ pointName(item) }}<template v-if="chapterText(item.chapterName) && chapterText(item.chapterName) !== pointName(item)"> · {{ chapterText(item.chapterName) }}</template> · {{ dateText(item.createdAt) }}</span>
                   <span v-if="!item.fixedAt && (item.slip || wrongCount(item) >= 2 || isHotPoint(item))" class="row-flags">
                     <em v-if="item.slip" class="row-flag slip">{{ SLIP_LABELS[item.slip] }}</em>
                     <em v-if="wrongCount(item) >= 2" class="row-flag hot">易错题</em>
@@ -739,7 +742,7 @@ function onRedoKeydown(event) {
               <div v-if="expanded[item.id]" class="row-detail">
                 <div class="detail-meta">
                   <el-tag effect="plain">{{ item.grade }} · {{ item.subject }}</el-tag>
-                  <el-tag size="small" type="info" effect="plain">{{ item.chapterName || '未归因章节' }}</el-tag>
+                  <el-tag size="small" type="info" effect="plain">{{ chapterText(item.chapterName) || '未归因章节' }}</el-tag>
                   <el-tag size="small" :type="item.source === 'quiz' ? 'warning' : item.source === 'assessment' ? 'success' : 'info'" effect="plain">{{ sourceLabel(item) }}</el-tag>
                   <el-tag v-if="item.fixedAt" size="small" type="success" effect="plain">已消灭 · {{ dateText(item.fixedAt) }}</el-tag>
                   <el-tag v-else-if="correctStreak(item.redoHistory)" size="small" type="success" effect="plain">连续答对 {{ correctStreak(item.redoHistory) }}/{{ AUTO_FIX_STREAK }}</el-tag>
@@ -750,7 +753,7 @@ function onRedoKeydown(event) {
                 </div>
                 <div v-if="item.knowledgeTags && item.knowledgeTags.length" class="knowledge-tags">
                   <span class="summary-label">知识点</span>
-                  <el-tag v-for="tag in item.knowledgeTags" :key="tag" size="small" effect="plain">{{ tag }}</el-tag>
+                  <el-tag v-for="tag in item.knowledgeTags" :key="tag" size="small" effect="plain">{{ stripBookPrefix(tag) }}</el-tag>
                 </div>
                 <div v-if="item.errorCause" class="ai-analysis">
                   <p><strong>错因分析：</strong><SourceBadge :source="item.analysisSource" />{{ item.errorCause }}</p>
@@ -780,7 +783,7 @@ function onRedoKeydown(event) {
           </div>
 
           <div v-else-if="!loading" class="mistake-empty">
-            <p>{{ hasFilters ? '当前筛选条件下没有错题。' : emptyText }}</p>
+            <p>{{ hasFilters ? '当前筛选条件下没有错题' : emptyText }}</p>
             <div class="empty-actions">
               <el-button v-if="hasFilters" type="primary" @click="clearFilters">清除筛选，看全部</el-button>
               <el-button :type="hasFilters ? 'default' : 'primary'" @click="openUpload">上传错题照片</el-button>
@@ -790,7 +793,7 @@ function onRedoKeydown(event) {
 
         <aside v-if="insightText" class="insight-callout">
           <div>
-            <strong>看出来了</strong>
+            <strong>每道都算数</strong>
             <p>{{ insightText }}</p>
           </div>
           <button v-if="subject" type="button" class="insight-link" @click="showInsight">看归纳</button>
@@ -808,7 +811,7 @@ function onRedoKeydown(event) {
           <div class="redo-progress-bar"><i :style="{ width: `${redoProgress}%` }"></i></div>
         </div>
         <p class="redo-meta">
-          {{ redoItem.grade }} · {{ redoItem.subject }} · {{ redoItem.chapterName || '未归因章节' }}
+          {{ redoItem.grade }} · {{ redoItem.subject }} · {{ chapterText(redoItem.chapterName) || '未归因章节' }}
           <template v-if="redoQueue.length"> · 错次 ×{{ wrongCount(redoItem) }}</template>
           <span v-if="redoIsChoice && !redoResult" class="redo-keyhint"> · 按数字键快选</span>
         </p>
@@ -827,21 +830,21 @@ function onRedoKeydown(event) {
           </button>
         </div>
         <div v-else class="redo-self">
-          <p>这道题不在这里自动判分。先在纸上做完，再如实自评。</p>
+          <p>这道题不在这里自动判分，先在纸上做完，再如实自评</p>
           <div class="redo-self-actions">
             <el-button type="success" plain :disabled="Boolean(redoResult)" @click="judgeRedo(true)">我做对了</el-button>
             <el-button type="danger" plain :disabled="Boolean(redoResult)" @click="judgeRedo(false)">还是不会</el-button>
           </div>
         </div>
         <div v-if="redoResult" class="redo-feedback" :class="redoResult">
-          <strong v-if="redoResult === 'correct' && redoFixedNow">连续 {{ AUTO_FIX_STREAK }} 次答对，这道题已自动消灭。</strong>
-          <strong v-else-if="redoResult === 'correct' && redoItem.fixedAt">答对了，这道题之前已经消灭过。</strong>
-          <strong v-else-if="redoResult === 'correct'">答对了，已连续答对 {{ redoStreak }} 次；再答对 {{ redoRemaining }} 次就会自动消灭。</strong>
-          <strong v-else>这次还没对，连续答对记录已重置，看完解析再安排一次复习。</strong>
+          <strong v-if="redoResult === 'correct' && redoFixedNow">连续 {{ AUTO_FIX_STREAK }} 次答对，这道题已自动消灭</strong>
+          <strong v-else-if="redoResult === 'correct' && redoItem.fixedAt">答对了，这道题之前已经消灭过</strong>
+          <strong v-else-if="redoResult === 'correct'">答对了，已连续答对 {{ redoStreak }} 次；再答对 {{ redoRemaining }} 次就会自动消灭</strong>
+          <strong v-else>这次还没对，连续答对记录已重置，看完解析再安排一次复习</strong>
           <p v-if="redoItem.correctAnswer">正确答案：<span v-html="formatMathText(redoItem.correctAnswer)"></span></p>
           <p v-if="redoItem.explanation" v-html="formatMathText(redoItem.explanation)"></p>
           <p v-if="!redoHasNext && redoQueue.length" class="redo-session-done">
-            这一组 {{ redoQueue.length }} 道都过完了，答对 {{ redoSessionCorrect }} 道。
+            这一组 {{ redoQueue.length }} 道都过完了，答对 {{ redoSessionCorrect }} 道
           </p>
         </div>
       </template>
@@ -871,8 +874,6 @@ function onRedoKeydown(event) {
 
 <style scoped>
 .mistakes-page{--mistake-deep:#2f6f5e;--mistake-button:#2f6f5e;--mistake-button-hover:#275f50;--mistake-line:#e2eeeb;--mistake-soft:#f4faf8;--mistake-warm:#fbf6ea;--mistake-warm-line:#e5c583;--mistake-warm-text:#96712f}
-/* 错题库是「左栏 + 内容」的双列，顶部不用留那么多；整块往前提一档，左栏也更好贴住视口。 */
-@media(min-width:801px){.mistakes-page{padding-top:20px}}
 :root[data-theme='dark'] .mistakes-page{--mistake-deep:#6fb6b3;--mistake-button:#3e7172;--mistake-button-hover:#356363;--mistake-line:#37535b;--mistake-soft:#1d3037;--mistake-warm:rgba(238,167,123,.10);--mistake-warm-line:rgba(238,167,123,.5);--mistake-warm-text:#e2b37f}
 .mistake-shell{display:grid;grid-template-columns:190px minmax(0,1fr);gap:38px;align-items:start}
 .subject-rail{position:sticky;top:12px}
@@ -894,7 +895,6 @@ function onRedoKeydown(event) {
 .upload-button.el-button:hover,.upload-button.el-button:focus{border-color:var(--mistake-button-hover);background:var(--mistake-button-hover)}
 .mistake-hero{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:22px}
 .mistake-hero h1{margin:0 0 8px;font-size:calc(31px*var(--fs-scale));line-height:1.3;letter-spacing:-.012em;font-weight:600}
-.mistake-hero p{margin:0;font-size:calc(14px*var(--fs-scale));line-height:1.7;color:var(--muted)}
 .today-fixed{flex:none;display:grid;gap:2px;text-align:right}
 .today-fixed span{font-size:calc(12px*var(--fs-scale));color:var(--muted)}
 .today-fixed strong{font-size:calc(26px*var(--fs-scale));line-height:1.1;font-weight:700;color:var(--mistake-deep);font-variant-numeric:tabular-nums}
@@ -910,7 +910,6 @@ function onRedoKeydown(event) {
 .filter-controls .mistake-search{width:200px}
 .active-point{display:flex;align-items:center;gap:10px;margin:0 0 10px;font-size:calc(12px*var(--fs-scale));color:var(--mistake-deep)}
 .active-point button{padding:0;border:0;background:none;color:var(--mistake-deep);font-size:calc(12px*var(--fs-scale));text-decoration:underline;text-underline-offset:3px;cursor:pointer}
-.key-hint{margin:0 0 14px;font-size:calc(12px*var(--fs-scale));color:var(--muted)}
 .subject-card{padding:0 24px 6px;border-radius:22px;overflow:visible}
 .subject-card-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0 14px}
 .subject-card-title h3{margin:0 0 4px;font-size:calc(17px*var(--fs-scale))}
@@ -998,7 +997,6 @@ function onRedoKeydown(event) {
 .point-rail .point-pie-center strong{font-size:calc(21px*var(--fs-scale))}
 .point-rail .point-legend{width:100%;max-height:134px}
 .point-rail .point-legend-item{padding:5px 2px;gap:6px}
-.point-rail .point-panel-foot{flex-direction:column;align-items:flex-start;gap:5px;padding-top:9px}
 .point-panel-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;font-size:calc(14px*var(--fs-scale))}
 .point-panel-head span{font-size:calc(12px*var(--fs-scale));color:var(--muted)}
 .point-chart{display:grid;grid-template-columns:116px minmax(0,1fr);align-items:center;gap:14px}
@@ -1009,8 +1007,8 @@ function onRedoKeydown(event) {
 .point-pie-center span{margin-top:3px;font-size:calc(10px*var(--fs-scale));letter-spacing:.08em;color:var(--muted)}
 .point-legend{display:grid;gap:1px;min-width:0}
 /* 知识点一多，图例在自身区域内滚动查看：左栏高度固定，页面不会被拉成长条。
-   滚动才出现细滚动条和底部渐隐；滚到底撤掉渐隐，最后一行不会被蒙住。
-   注意别加 scrollbar-width：Chrome 一旦读到它就会改用系统滚动条，把这里写的 4px 覆盖掉。 */
+   滚动才出现细滚动条和底部渐隐；滚到底撤掉渐隐，最后一行不会被蒙住，
+   注意别加 scrollbar-width：Chrome 一旦读到它就会改用系统滚动条，把这里写的 4px 覆盖掉， */
 .point-legend.is-scroll{overflow-y:auto}
 .point-legend.is-scroll::-webkit-scrollbar{width:5px}
 .point-legend.is-scroll::-webkit-scrollbar-thumb{background:#CDD8D1;border-radius:999px}
@@ -1025,8 +1023,6 @@ function onRedoKeydown(event) {
 /* 知识点名字太长就换行展示，最多两行，不再用省略号截断；圆点、名称、数量三者垂直居中。 */
 .point-legend-name{display:-webkit-box;overflow:hidden;-webkit-line-clamp:2;-webkit-box-orient:vertical;line-height:1.45;word-break:break-word}
 .point-legend-count{font-size:calc(11px*var(--fs-scale));color:var(--muted);font-variant-numeric:tabular-nums}
-.point-panel-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:10px;border-top:1px solid var(--border);font-size:calc(12px*var(--fs-scale));color:var(--muted)}
-.point-panel-foot button{padding:0;border:0;background:none;color:var(--primary);font-size:calc(12px*var(--fs-scale));font-weight:600;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
 .point-empty{margin:0;font-size:calc(12px*var(--fs-scale));color:var(--muted)}
 @media(max-width:900px){
   .mistake-shell{grid-template-columns:1fr;gap:14px}
@@ -1042,7 +1038,6 @@ function onRedoKeydown(event) {
   .upload-button.el-button{height:36px;padding:0 16px;font-size:calc(13px*var(--fs-scale))}
   .mistake-hero{align-items:flex-start;gap:14px;margin-bottom:18px}
   .mistake-hero h1{font-size:calc(26px*var(--fs-scale))}
-  .mistake-hero p{font-size:calc(13px*var(--fs-scale))}
   .today-fixed strong{font-size:calc(22px*var(--fs-scale))}
   .filter-bar{gap:10px;padding:8px 0 10px}
   .status-tabs{width:100%;gap:14px;overflow-x:auto}
@@ -1050,7 +1045,6 @@ function onRedoKeydown(event) {
   .filter-controls{width:100%;margin-left:0}
   .filter-controls .mistake-search{display:block;flex:1 0 100%;width:100%}
   .filter-controls .el-select{flex:1;width:auto;min-width:0}
-  .key-hint{display:none}
   .subject-card{padding:0 14px 4px;border-radius:18px}
   .subject-card-head{flex-direction:column;align-items:stretch;gap:10px;padding:16px 0 12px}
   .start-button.el-button{width:100%;height:38px}

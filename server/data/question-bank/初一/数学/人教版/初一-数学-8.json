@@ -6,9 +6,9 @@
     "id": "初一-数学-8",
     "name": "二元一次方程组"
   },
-  "generatedAt": "2026-11-13T02:43:28.925Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.141Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedh7a2",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 0,
       "explanation": "A. 正确：设甲种笔记本 x 本、乙种笔记本 y 本，由“共购买30本”得 x+y=30，由“甲每本15元、乙每本10元，共花380元”得 15x+10y=380；把 y=30-x 代入得 15x+10(30-x)=380，即 5x=80，解得 x=16，进而 y=14，符合题意。\nB. 错误：方程组列得正确，但解出的 x、y 对应关系颠倒了；将 x=14，y=16 代入 15x+10y 得 210+160=370，不等于380，与总花费条件冲突。\nC. 错误：第二个方程中“乙种笔记本每本10元”应使总价增加 10y，而 15x-10y=380 表示从甲种笔记本的费用中减去乙种笔记本的费用，与“两种笔记本费用之和为380元”的实际关系不符。\nD. 错误：把甲、乙两种笔记本的单价对应反了；10x+15y=380 表示甲每本10元、乙每本15元，与题干“甲每本15元、乙每本10元”矛盾。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解方程组：x + y = 9，x - y = 3，则（ ）",
+      "options": [
+        "x = 6, y = 3",
+        "x = 3, y = 6",
+        "x = 7, y = 2",
+        "x = 5, y = 4"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：x = 6, y = 3。两式相加得 2x = 12，x = 6；代回得 y = 3。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解方程组：x + y = 12，x - y = 4，则（ ）",
+      "options": [
+        "x = 4, y = 8",
+        "x = 9, y = 3",
+        "x = 7, y = 5",
+        "x = 8, y = 4"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：x = 8, y = 4。两式相加得 2x = 16，x = 8；代回得 y = 4。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解方程组：x + y = 15，x - y = 5，则（ ）",
+      "options": [
+        "x = 11, y = 4",
+        "x = 9, y = 6",
+        "x = 10, y = 5",
+        "x = 5, y = 10"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：x = 10, y = 5。两式相加得 2x = 20，x = 10；代回得 y = 5。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解方程组：x + y = 8，x - y = 2，则（ ）",
+      "options": [
+        "x = 4, y = 4",
+        "x = 5, y = 3",
+        "x = 3, y = 5",
+        "x = 6, y = 2"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：x = 5, y = 3。两式相加得 2x = 10，x = 5；代回得 y = 3。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解方程组：x + y = 14，x - y = 6，则（ ）",
+      "options": [
+        "x = 10, y = 4",
+        "x = 4, y = 10",
+        "x = 11, y = 3",
+        "x = 9, y = 5"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：x = 10, y = 4。两式相加得 2x = 20，x = 10；代回得 y = 4。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解方程组：x + y = 11，x - y = 7，则（ ）",
+      "options": [
+        "x = 2, y = 9",
+        "x = 10, y = 1",
+        "x = 8, y = 3",
+        "x = 9, y = 2"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：x = 9, y = 2。两式相加得 2x = 18，x = 9；代回得 y = 2。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解方程组：x + y = 20，x - y = 8，则（ ）",
+      "options": [
+        "x = 15, y = 5",
+        "x = 13, y = 7",
+        "x = 14, y = 6",
+        "x = 6, y = 14"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：x = 14, y = 6。两式相加得 2x = 28，x = 14；代回得 y = 6。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解方程组：x + y = 18，x - y = 4，则（ ）",
+      "options": [
+        "x = 10, y = 8",
+        "x = 11, y = 7",
+        "x = 7, y = 11",
+        "x = 12, y = 6"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：x = 11, y = 7。两式相加得 2x = 22，x = 11；代回得 y = 7。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解方程组：x + y = 25，x - y = 9，则（ ）",
+      "options": [
+        "x = 17, y = 8",
+        "x = 8, y = 17",
+        "x = 18, y = 7",
+        "x = 16, y = 9"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：x = 17, y = 8。两式相加得 2x = 34，x = 17；代回得 y = 8。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解方程组：x + y = 16，x - y = 10，则（ ）",
+      "options": [
+        "x = 3, y = 13",
+        "x = 14, y = 2",
+        "x = 12, y = 4",
+        "x = 13, y = 3"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：x = 13, y = 3。两式相加得 2x = 26，x = 13；代回得 y = 3。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知 2x + y = 11，x + y = 7，则 x 的值是（ ）",
+      "options": [
+        "18",
+        "-3",
+        "4",
+        "7"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：4。两式相减消去 y：(2x + y) - (x + y) = 11 - 7，得 x = 4。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知 2x + y = 13，x + y = 8，则 x 的值是（ ）",
+      "options": [
+        "-3",
+        "5",
+        "8",
+        "21"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：5。两式相减消去 y：(2x + y) - (x + y) = 13 - 8，得 x = 5。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知 2x + y = 17，x + y = 10，则 x 的值是（ ）",
+      "options": [
+        "7",
+        "10",
+        "27",
+        "-3"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：7。两式相减消去 y：(2x + y) - (x + y) = 17 - 10，得 x = 7。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知 2x + y = 9，x + y = 5，则 x 的值是（ ）",
+      "options": [
+        "5",
+        "14",
+        "-1",
+        "4"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：4。两式相减消去 y：(2x + y) - (x + y) = 9 - 5，得 x = 4。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知 2x + y = 21，x + y = 12，则 x 的值是（ ）",
+      "options": [
+        "33",
+        "-3",
+        "9",
+        "12"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：9。两式相减消去 y：(2x + y) - (x + y) = 21 - 12，得 x = 9。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知 2x + y = 15，x + y = 9，则 x 的值是（ ）",
+      "options": [
+        "-3",
+        "6",
+        "9",
+        "24"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：6。两式相减消去 y：(2x + y) - (x + y) = 15 - 9，得 x = 6。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知 2x + y = 19，x + y = 11，则 x 的值是（ ）",
+      "options": [
+        "8",
+        "11",
+        "30",
+        "-3"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：8。两式相减消去 y：(2x + y) - (x + y) = 19 - 11，得 x = 8。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知 2x + y = 23，x + y = 14，则 x 的值是（ ）",
+      "options": [
+        "14",
+        "37",
+        "-5",
+        "9"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：9。两式相减消去 y：(2x + y) - (x + y) = 23 - 14，得 x = 9。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知 2x + y = 25，x + y = 15，则 x 的值是（ ）",
+      "options": [
+        "40",
+        "-5",
+        "10",
+        "15"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：10。两式相减消去 y：(2x + y) - (x + y) = 25 - 15，得 x = 10。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "已知 2x + y = 27，x + y = 16，则 x 的值是（ ）",
+      "options": [
+        "-5",
+        "11",
+        "16",
+        "43"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：11。两式相减消去 y：(2x + y) - (x + y) = 27 - 16，得 x = 11。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "学校买 3 支笔和 2 本笔记本共 24 元，已知每本笔记本 3 元，每支笔（ ）元",
+      "options": [
+        "6",
+        "7",
+        "5",
+        "8"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：6。笔记本共 6 元，笔共 18 元，18 ÷ 3 = 6 元。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "学校买 4 支笔和 3 本笔记本共 29 元，已知每本笔记本 3 元，每支笔（ ）元",
+      "options": [
+        "6",
+        "4",
+        "7.25",
+        "5"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：5。笔记本共 9 元，笔共 20 元，20 ÷ 4 = 5 元。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "学校买 5 支笔和 2 本笔记本共 26 元，已知每本笔记本 3 元，每支笔（ ）元",
+      "options": [
+        "3",
+        "5.2",
+        "4",
+        "5"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：4。笔记本共 6 元，笔共 20 元，20 ÷ 5 = 4 元。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "学校买 2 支笔和 6 本笔记本共 34 元，已知每本笔记本 3 元，每支笔（ ）元",
+      "options": [
+        "17",
+        "8",
+        "9",
+        "7"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：8。笔记本共 18 元，笔共 16 元，16 ÷ 2 = 8 元。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "学校买 7 支笔和 1 本笔记本共 17 元，已知每本笔记本 3 元，每支笔（ ）元",
+      "options": [
+        "2",
+        "3",
+        "1",
+        "2.428571"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：2。笔记本共 3 元，笔共 14 元，14 ÷ 7 = 2 元。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "学校买 3 支笔和 5 本笔记本共 36 元，已知每本笔记本 3 元，每支笔（ ）元",
+      "options": [
+        "8",
+        "6",
+        "12",
+        "7"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：7。笔记本共 15 元，笔共 21 元，21 ÷ 3 = 7 元。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "学校买 6 支笔和 4 本笔记本共 48 元，已知每本笔记本 3 元，每支笔（ ）元",
+      "options": [
+        "5",
+        "8",
+        "6",
+        "7"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：6。笔记本共 12 元，笔共 36 元，36 ÷ 6 = 6 元。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "学校买 8 支笔和 3 本笔记本共 49 元，已知每本笔记本 3 元，每支笔（ ）元",
+      "options": [
+        "6.125",
+        "5",
+        "6",
+        "4"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：5。笔记本共 9 元，笔共 40 元，40 ÷ 8 = 5 元。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "学校买 4 支笔和 7 本笔记本共 33 元，已知每本笔记本 3 元，每支笔（ ）元",
+      "options": [
+        "3",
+        "4",
+        "2",
+        "8.25"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：3。笔记本共 21 元，笔共 12 元，12 ÷ 4 = 3 元。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-数学-8",
+      "chapterName": "二元一次方程组",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "学校买 5 支笔和 6 本笔记本共 63 元，已知每本笔记本 3 元，每支笔（ ）元",
+      "options": [
+        "10",
+        "8",
+        "12.6",
+        "9"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：9。笔记本共 18 元，笔共 45 元，45 ÷ 5 = 9 元。",
       "difficulty": 2
     }
   ]

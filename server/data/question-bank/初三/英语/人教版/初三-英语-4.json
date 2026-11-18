@@ -6,9 +6,9 @@
     "id": "初三-英语-4",
     "name": "完形填空策略"
   },
-  "generatedAt": "2026-11-14T12:17:25.874Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.959Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdf5ny",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：make a big difference 是固定搭配，意为“产生很大影响或带来很大改变”，与上文“三个月后我的词汇量增加了许多”这一积极结果完全吻合，是本空的语境线索答案。\nB. 错误：make a mistake 意为“犯错误”，文中作者是在说明小习惯带来的正面变化，若填 mistake 则与“词汇量增长”的肯定语气直接冲突。\nC. 错误：make a decision 意为“做决定”，空格处需要表示“影响、改变”的名词，填 decision 后句子意为“小习惯对我们的学习做出大决定”，语义不通。\nD. 错误：make a promise 意为“许诺、答应”，与上下文讨论学习习惯效果的话题无关，也不能与 to our study 搭配。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Finally, he ______ a decision to study harder.",
+      "options": [
+        "made",
+        "did",
+        "took",
+        "got"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：made。按固定搭配判断，本题应填 made。",
+      "difficulty": 2
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Many students ______ part in the sports meeting.",
+      "options": [
+        "joined",
+        "attended",
+        "made",
+        "took"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：took。按固定搭配判断，本题应填 took。",
+      "difficulty": 2
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "We should ______ attention to our spelling.",
+      "options": [
+        "make",
+        "give",
+        "pay",
+        "take"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：pay。按固定搭配判断，本题应填 pay。",
+      "difficulty": 2
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "She is good ______ playing the piano.",
+      "options": [
+        "for",
+        "at",
+        "in",
+        "on"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：at。按固定搭配判断，本题应填 at。",
+      "difficulty": 2
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "I'm looking forward to ______ from you.",
+      "options": [
+        "hearing",
+        "hear",
+        "heard",
+        "hears"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：hearing。按固定搭配判断，本题应填 hearing。",
+      "difficulty": 2
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "He is interested ______ science.",
+      "options": [
+        "at",
+        "on",
+        "for",
+        "in"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：in。按固定搭配判断，本题应填 in。",
+      "difficulty": 2
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "She spends two hours ______ her homework every day.",
+      "options": [
+        "at",
+        "for",
+        "on",
+        "in"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：on。按固定搭配判断，本题应填 on。",
+      "difficulty": 2
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Can you help me ______ my English?",
+      "options": [
+        "at",
+        "with",
+        "in",
+        "on"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：with。按固定搭配判断，本题应填 with。",
+      "difficulty": 2
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "We are proud ______ our country.",
+      "options": [
+        "of",
+        "in",
+        "at",
+        "on"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：of。按固定搭配判断，本题应填 of。",
+      "difficulty": 2
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Tom gets on well ______ his classmates.",
+      "options": [
+        "to",
+        "for",
+        "at",
+        "with"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：with。按固定搭配判断，本题应填 with。",
+      "difficulty": 2
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "It was raining hard. The students ______ at the bus stop, waiting for the bus.",
+      "options": [
+        "cooked",
+        "slept",
+        "stood",
+        "sang"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：stood。根据上下文语境选词，只有 stood 符合句意。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The little girl was lost. She looked around and began to ______.",
+      "options": [
+        "sing",
+        "cry",
+        "laugh",
+        "smile"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：cry。根据上下文语境选词，只有 cry 符合句意。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The soup is too ______. Let it cool down first.",
+      "options": [
+        "hot",
+        "cold",
+        "sweet",
+        "sour"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：hot。根据上下文语境选词，只有 hot 符合句意。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "He didn't study hard, so he ______ the exam.",
+      "options": [
+        "passed",
+        "took",
+        "liked",
+        "failed"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：failed。根据上下文语境选词，只有 failed 符合句意。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The old man lives ______, but he never feels lonely.",
+      "options": [
+        "loudly",
+        "angrily",
+        "alone",
+        "together"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：alone。根据上下文语境选词，只有 alone 符合句意。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "My alarm clock didn't ring, so I was ______ for school.",
+      "options": [
+        "sorry",
+        "late",
+        "early",
+        "ready"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：late。根据上下文语境选词，只有 late 符合句意。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "Please ______ the door when you leave.",
+      "options": [
+        "close",
+        "open",
+        "break",
+        "paint"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：close。根据上下文语境选词，只有 close 符合句意。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The baby is sleeping. Please speak ______.",
+      "options": [
+        "loudly",
+        "quickly",
+        "angrily",
+        "quietly"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：quietly。根据上下文语境选词，只有 quietly 符合句意。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "It's very ______ today. Put on your coat.",
+      "options": [
+        "sunny",
+        "warm",
+        "cold",
+        "hot"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：cold。根据上下文语境选词，只有 cold 符合句意。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "He ______ his keys, so he couldn't open the door.",
+      "options": [
+        "washed",
+        "lost",
+        "found",
+        "bought"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：lost。根据上下文语境选词，只有 lost 符合句意。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "method",
+      "stem": "He was ill. ______, he still went to school.",
+      "options": [
+        "However",
+        "Therefore",
+        "Because",
+        "So"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：However。分析前后句逻辑关系，本题应填 However。",
+      "difficulty": 3
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "method",
+      "stem": "It was very late, ______ we decided to go home.",
+      "options": [
+        "but",
+        "although",
+        "because",
+        "so"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：so。分析前后句逻辑关系，本题应填 so。",
+      "difficulty": 3
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "method",
+      "stem": "______ it was raining, they went out.",
+      "options": [
+        "So",
+        "Therefore",
+        "Although",
+        "Because"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：Although。分析前后句逻辑关系，本题应填 Although。",
+      "difficulty": 3
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "method",
+      "stem": "She walked quickly ______ she wouldn't be late.",
+      "options": [
+        "however",
+        "so that",
+        "although",
+        "because"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：so that。分析前后句逻辑关系，本题应填 so that。",
+      "difficulty": 3
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "method",
+      "stem": "I like both music ______ sports.",
+      "options": [
+        "and",
+        "but",
+        "or",
+        "so"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：and。分析前后句逻辑关系，本题应填 and。",
+      "difficulty": 3
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "method",
+      "stem": "He is old, ______ he is still strong.",
+      "options": [
+        "and",
+        "so",
+        "because",
+        "but"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：but。分析前后句逻辑关系，本题应填 but。",
+      "difficulty": 3
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "method",
+      "stem": "______ you work hard, you will succeed.",
+      "options": [
+        "Because",
+        "But",
+        "If",
+        "Although"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：If。分析前后句逻辑关系，本题应填 If。",
+      "difficulty": 3
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "method",
+      "stem": "You can come ______ you like.",
+      "options": [
+        "so",
+        "whenever",
+        "because",
+        "although"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：whenever。分析前后句逻辑关系，本题应填 whenever。",
+      "difficulty": 3
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "method",
+      "stem": "It was raining, ______ we stayed at home.",
+      "options": [
+        "so",
+        "but",
+        "although",
+        "or"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：so。分析前后句逻辑关系，本题应填 so。",
+      "difficulty": 3
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-英语-4",
+      "chapterName": "完形填空策略",
+      "type": "single",
+      "dimension": "method",
+      "stem": "______ he was tired, he kept working.",
+      "options": [
+        "Because",
+        "So",
+        "If",
+        "Though"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Though。分析前后句逻辑关系，本题应填 Though。",
+      "difficulty": 3
     }
   ]
 }

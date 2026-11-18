@@ -6,9 +6,9 @@
     "id": "初一-英语-2",
     "name": "一般现在时"
   },
-  "generatedAt": "2026-11-14T12:12:54.136Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.915Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgd9bzp",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：usually 表示经常性动作，句子用一般现在时；主语 My brother 是第三人称单数，动词 go 要变为 goes。\nB. 错误：go 是动词原形，不能与第三人称单数主语 My brother 搭配。\nC. 错误：going 是现在分词或动名词，不能单独在此处作谓语。\nD. 错误：went 是一般过去时，与 usually 表示的经常性动作及一般现在时语境不符。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "My sister ______ (go) to school by bike every day.",
+      "options": [
+        "goes",
+        "go",
+        "going",
+        "went"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：goes。一般现在时中主语是第三人称单数时，动词要用第三人称单数形式；本题应为 goes。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Tom ______ (watch) TV after dinner every evening.",
+      "options": [
+        "watch",
+        "watching",
+        "watched",
+        "watches"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：watches。一般现在时中主语是第三人称单数时，动词要用第三人称单数形式；本题应为 watches。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Lily ______ (study) English hard every day.",
+      "options": [
+        "studying",
+        "studied",
+        "studies",
+        "study"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：studies。一般现在时中主语是第三人称单数时，动词要用第三人称单数形式；本题应为 studies。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "My brother ______ (have) a new bike.",
+      "options": [
+        "had",
+        "has",
+        "have",
+        "having"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：has。一般现在时中主语是第三人称单数时，动词要用第三人称单数形式；本题应为 has。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Jack ______ (do) his homework at home every night.",
+      "options": [
+        "does",
+        "do",
+        "doing",
+        "did"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：does。一般现在时中主语是第三人称单数时，动词要用第三人称单数形式；本题应为 does。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The bird ______ (fly) high in the sky.",
+      "options": [
+        "fly",
+        "flying",
+        "flew",
+        "flies"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：flies。一般现在时中主语是第三人称单数时，动词要用第三人称单数形式；本题应为 flies。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Miss Li ______ (teach) us English.",
+      "options": [
+        "teaching",
+        "taught",
+        "teaches",
+        "teach"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：teaches。一般现在时中主语是第三人称单数时，动词要用第三人称单数形式；本题应为 teaches。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "My mother ______ (wash) the dishes after meals.",
+      "options": [
+        "washed",
+        "washes",
+        "wash",
+        "washing"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：washes。一般现在时中主语是第三人称单数时，动词要用第三人称单数形式；本题应为 washes。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "He ______ (carry) a heavy bag every day.",
+      "options": [
+        "carries",
+        "carry",
+        "carrying",
+        "carried"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：carries。一般现在时中主语是第三人称单数时，动词要用第三人称单数形式；本题应为 carries。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Lucy ______ (play) the piano on Sundays.",
+      "options": [
+        "play",
+        "playing",
+        "played",
+        "plays"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：plays。一般现在时中主语是第三人称单数时，动词要用第三人称单数形式；本题应为 plays。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "Tom ______ like ice cream.",
+      "options": [
+        "isn't",
+        "not",
+        "doesn't",
+        "don't"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：doesn't。主语是第三人称单数时用 doesn't，其余人称用 don't，后接动词原形；本题应为 doesn't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "They ______ go to school on Sundays.",
+      "options": [
+        "not",
+        "don't",
+        "doesn't",
+        "aren't"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：don't。主语是第三人称单数时用 doesn't，其余人称用 don't，后接动词原形；本题应为 don't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "My father ______ watch TV in the morning.",
+      "options": [
+        "doesn't",
+        "don't",
+        "isn't",
+        "not"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：doesn't。主语是第三人称单数时用 doesn't，其余人称用 don't，后接动词原形；本题应为 doesn't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "We ______ have any classes today.",
+      "options": [
+        "doesn't",
+        "aren't",
+        "not",
+        "don't"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：don't。主语是第三人称单数时用 doesn't，其余人称用 don't，后接动词原形；本题应为 don't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "Lily ______ eat breakfast at home.",
+      "options": [
+        "isn't",
+        "not",
+        "doesn't",
+        "don't"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：doesn't。主语是第三人称单数时用 doesn't，其余人称用 don't，后接动词原形；本题应为 doesn't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "The students ______ play football after class.",
+      "options": [
+        "not",
+        "don't",
+        "doesn't",
+        "isn't"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：don't。主语是第三人称单数时用 doesn't，其余人称用 don't，后接动词原形；本题应为 don't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "It ______ snow in summer here.",
+      "options": [
+        "doesn't",
+        "don't",
+        "isn't",
+        "not"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：doesn't。主语是第三人称单数时用 doesn't，其余人称用 don't，后接动词原形；本题应为 doesn't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "His parents ______ work in the same factory.",
+      "options": [
+        "doesn't",
+        "aren't",
+        "not",
+        "don't"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：don't。主语是第三人称单数时用 doesn't，其余人称用 don't，后接动词原形；本题应为 don't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "She ______ know the answer.",
+      "options": [
+        "isn't",
+        "not",
+        "doesn't",
+        "don't"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：doesn't。主语是第三人称单数时用 doesn't，其余人称用 don't，后接动词原形；本题应为 doesn't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "You ______ need to finish it today.",
+      "options": [
+        "not",
+        "don't",
+        "doesn't",
+        "aren't"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：don't。主语是第三人称单数时用 doesn't，其余人称用 don't，后接动词原形；本题应为 don't。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "method",
+      "stem": "______ your brother ______ (like) English?",
+      "options": [
+        "Does; like",
+        "Do; like",
+        "Does; likes",
+        "Do; likes"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：Does; like。一般疑问句用助动词提问，主语为第三人称单数用 Does，其余用 Do，助动词后动词用原形；本题应为 Does; like。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "method",
+      "stem": "______ Lily ______ (walk) to school?",
+      "options": [
+        "Do; walk",
+        "Does; walks",
+        "Do; walks",
+        "Does; walk"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Does; walk。一般疑问句用助动词提问，主语为第三人称单数用 Does，其余用 Do，助动词后动词用原形；本题应为 Does; walk。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "method",
+      "stem": "______ the students ______ (play) basketball after school?",
+      "options": [
+        "Do; plays",
+        "Does; plays",
+        "Do; play",
+        "Does; play"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：Do; play。一般疑问句用助动词提问，主语为第三人称单数用 Does，其余用 Do，助动词后动词用原形；本题应为 Do; play。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "method",
+      "stem": "______ your parents ______ (get) up early?",
+      "options": [
+        "Does; gets",
+        "Do; get",
+        "Does; get",
+        "Do; gets"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：Do; get。一般疑问句用助动词提问，主语为第三人称单数用 Does，其余用 Do，助动词后动词用原形；本题应为 Do; get。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "method",
+      "stem": "______ Tom ______ (have) a sister?",
+      "options": [
+        "Does; have",
+        "Do; have",
+        "Does; has",
+        "Do; has"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：Does; have。一般疑问句用助动词提问，主语为第三人称单数用 Does，其余用 Do，助动词后动词用原形；本题应为 Does; have。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "method",
+      "stem": "______ she ______ (do) her homework in the evening?",
+      "options": [
+        "Do; do",
+        "Does; does",
+        "Do; does",
+        "Does; do"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Does; do。一般疑问句用助动词提问，主语为第三人称单数用 Does，其余用 Do，助动词后动词用原形；本题应为 Does; do。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "method",
+      "stem": "______ they ______ (live) in Beijing?",
+      "options": [
+        "Do; lives",
+        "Does; lives",
+        "Do; live",
+        "Does; live"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：Do; live。一般疑问句用助动词提问，主语为第三人称单数用 Does，其余用 Do，助动词后动词用原形；本题应为 Do; live。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "method",
+      "stem": "______ Mike ______ (watch) TV on weekends?",
+      "options": [
+        "Do; watches",
+        "Does; watch",
+        "Do; watch",
+        "Does; watches"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：Does; watch。一般疑问句用助动词提问，主语为第三人称单数用 Does，其余用 Do，助动词后动词用原形；本题应为 Does; watch。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "method",
+      "stem": "______ his friends ______ (come) from Canada?",
+      "options": [
+        "Do; come",
+        "Does; come",
+        "Do; comes",
+        "Does; comes"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：Do; come。一般疑问句用助动词提问，主语为第三人称单数用 Does，其余用 Do，助动词后动词用原形；本题应为 Do; come。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-英语-2",
+      "chapterName": "一般现在时",
+      "type": "single",
+      "dimension": "method",
+      "stem": "______ your mother ______ (work) in a hospital?",
+      "options": [
+        "Do; work",
+        "Does; works",
+        "Do; works",
+        "Does; work"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Does; work。一般疑问句用助动词提问，主语为第三人称单数用 Does，其余用 Do，助动词后动词用原形；本题应为 Does; work。",
+      "difficulty": 2
     }
   ]
 }

@@ -6,9 +6,9 @@
     "id": "初三-历史-1",
     "name": "中国近代史"
   },
-  "generatedAt": "2026-11-14T12:17:34.205Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.098Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdfc3e",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 0,
       "explanation": "A. 正确：近代留学生把先进技术、制度理念和教育方式带回国内，在交通、外交、教育等领域开展实践，推动了中国近代化进程。\nB. 错误：中国实现民族独立是在新民主主义革命胜利、新中国成立之后，近代留学教育本身不能使中国实现民族独立。\nC. 错误：近代中国民主革命任务在近代并未完成，新中国成立后继续推进相关任务，留学教育也不能直接完成民主革命任务。\nD. 错误：中国摆脱半殖民地地位是在新中国成立后，近代留学教育只能推动近代化探索，不能直接改变半殖民地地位。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "英国发动鸦片战争的时间是（ ）",
+      "options": [
+        "1840年",
+        "1839年",
+        "1856年",
+        "1860年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1840年。按列强侵华与不平等条约的史实判断，本题正确答案是「1840年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "中国近代史上第一个不平等条约是（ ）",
+      "options": [
+        "《北京条约》",
+        "《马关条约》",
+        "《辛丑条约》",
+        "《南京条约》"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：《南京条约》。按列强侵华与不平等条约的史实判断，本题正确答案是「《南京条约》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "《南京条约》中割让给英国的是（ ）",
+      "options": [
+        "台湾岛",
+        "澳门",
+        "香港岛",
+        "九龙司地方一区"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：香港岛。按列强侵华与不平等条约的史实判断，本题正确答案是「香港岛」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "第二次鸦片战争期间，抢劫并烧毁圆明园的是（ ）",
+      "options": [
+        "俄国军队",
+        "英法联军",
+        "八国联军",
+        "日本军队"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：英法联军。按列强侵华与不平等条约的史实判断，本题正确答案是「英法联军」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "规定割让台湾全岛及所有附属各岛屿给日本的条约是（ ）",
+      "options": [
+        "《马关条约》",
+        "《南京条约》",
+        "《北京条约》",
+        "《辛丑条约》"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：《马关条约》。按列强侵华与不平等条约的史实判断，本题正确答案是「《马关条约》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "甲午中日战争后清政府被迫签订的条约是（ ）",
+      "options": [
+        "《南京条约》",
+        "《天津条约》",
+        "《辛丑条约》",
+        "《马关条约》"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：《马关条约》。按列强侵华与不平等条约的史实判断，本题正确答案是「《马关条约》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "使中国完全陷入半殖民地半封建社会深渊的条约是（ ）",
+      "options": [
+        "《马关条约》",
+        "《北京条约》",
+        "《辛丑条约》",
+        "《南京条约》"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：《辛丑条约》。按列强侵华与不平等条约的史实判断，本题正确答案是「《辛丑条约》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "八国联军侵华战争爆发于（ ）",
+      "options": [
+        "1894年",
+        "1900年",
+        "1840年",
+        "1856年"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1900年。按列强侵华与不平等条约的史实判断，本题正确答案是「1900年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "中国近代割占中国领土最多的国家是（ ）",
+      "options": [
+        "俄国",
+        "英国",
+        "日本",
+        "法国"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：俄国。按列强侵华与不平等条约的史实判断，本题正确答案是「俄国」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "甲午中日战争黄海海战中壮烈殉国的将领是（ ）",
+      "options": [
+        "林则徐",
+        "左宗棠",
+        "张自忠",
+        "邓世昌"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：邓世昌。按列强侵华与不平等条约的史实判断，本题正确答案是「邓世昌」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "洋务运动提出的口号是（ ）",
+      "options": [
+        "扶清灭洋",
+        "变法维新",
+        "自强、求富",
+        "民主、科学"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：自强、求富。按近代化探索的史实判断，本题正确答案是「自强、求富」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "洋务运动创办的近代军事工业是（ ）",
+      "options": [
+        "开平矿务局",
+        "江南制造总局",
+        "轮船招商局",
+        "汉阳铁厂"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：江南制造总局。按近代化探索的史实判断，本题正确答案是「江南制造总局」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "戊戌变法开始的标志是（ ）",
+      "options": [
+        "1898年光绪帝颁布“明定国是”诏书",
+        "1842年《南京条约》签订",
+        "1894年兴中会成立",
+        "1911年武昌起义爆发"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1898年光绪帝颁布“明定国是”诏书。按近代化探索的史实判断，本题正确答案是「1898年光绪帝颁布“明定国是”诏书」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "戊戌变法中甘愿为变法流血牺牲的是（ ）",
+      "options": [
+        "康有为",
+        "梁启超",
+        "严复",
+        "谭嗣同"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：谭嗣同。按近代化探索的史实判断，本题正确答案是「谭嗣同」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "辛亥革命的指导思想是（ ）",
+      "options": [
+        "自强与求富",
+        "马克思主义",
+        "三民主义",
+        "民主与科学"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：三民主义。按近代化探索的史实判断，本题正确答案是「三民主义」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "中国同盟会成立的时间和地点是（ ）",
+      "options": [
+        "1912年·南京",
+        "1905年·东京",
+        "1894年·檀香山",
+        "1911年·武昌"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1905年·东京。按近代化探索的史实判断，本题正确答案是「1905年·东京」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "中国同盟会的政治纲领是（ ）",
+      "options": [
+        "驱除鞑虏，恢复中华，创立民国，平均地权",
+        "自强、求富",
+        "民主、科学",
+        "扶清灭洋"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：驱除鞑虏，恢复中华，创立民国，平均地权。按近代化探索的史实判断，本题正确答案是「驱除鞑虏，恢复中华，创立民国，平均地权」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "辛亥革命最重要的历史功绩是（ ）",
+      "options": [
+        "完成反帝反封建任务",
+        "建立社会主义制度",
+        "实现民族独立",
+        "推翻清朝统治，结束君主专制制度"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：推翻清朝统治，结束君主专制制度。按近代化探索的史实判断，本题正确答案是「推翻清朝统治，结束君主专制制度」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "新文化运动高举的两面大旗是（ ）",
+      "options": [
+        "变法与维新",
+        "扶清与灭洋",
+        "民主与科学",
+        "自强与求富"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：民主与科学。按近代化探索的史实判断，本题正确答案是「民主与科学」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "新文化运动的主要阵地是（ ）",
+      "options": [
+        "《国闻报》",
+        "《新青年》",
+        "《时务报》",
+        "《民报》"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：《新青年》。按近代化探索的史实判断，本题正确答案是「《新青年》」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "领导虎门销烟的是（ ）",
+      "options": [
+        "林则徐",
+        "邓世昌",
+        "左宗棠",
+        "李鸿章"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：林则徐。按近代民族抗争与探索的史实判断，本题正确答案是「林则徐」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "太平天国运动的领导者是（ ）",
+      "options": [
+        "孙中山",
+        "康有为",
+        "梁启超",
+        "洪秀全"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：洪秀全。按近代民族抗争与探索的史实判断，本题正确答案是「洪秀全」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "义和团运动提出的口号是（ ）",
+      "options": [
+        "民主科学",
+        "驱除鞑虏",
+        "扶清灭洋",
+        "自强求富"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：扶清灭洋。按近代民族抗争与探索的史实判断，本题正确答案是「扶清灭洋」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "左宗棠收复新疆后，清政府于1884年设立（ ）",
+      "options": [
+        "奉天行省",
+        "新疆行省",
+        "西藏行省",
+        "台湾行省"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：新疆行省。按近代民族抗争与探索的史实判断，本题正确答案是「新疆行省」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "五四运动爆发的直接导火线是（ ）",
+      "options": [
+        "巴黎和会上中国外交的失败",
+        "九一八事变的发生",
+        "甲午中日战争失败",
+        "八国联军侵入北京"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：巴黎和会上中国外交的失败。按近代民族抗争与探索的史实判断，本题正确答案是「巴黎和会上中国外交的失败」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "五四运动中北京学生提出的口号是（ ）",
+      "options": [
+        "自强求富",
+        "扶清灭洋",
+        "变法图强",
+        "外争主权，内除国贼"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：外争主权，内除国贼。按近代民族抗争与探索的史实判断，本题正确答案是「外争主权，内除国贼」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "五四运动在中国历史上的地位是（ ）",
+      "options": [
+        "社会主义革命的开端",
+        "改革开放的开端",
+        "中国新民主主义革命的开端",
+        "中国近代史的开端"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：中国新民主主义革命的开端。按近代民族抗争与探索的史实判断，本题正确答案是「中国新民主主义革命的开端」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "九一八事变发生在（ ）",
+      "options": [
+        "1945年",
+        "1931年",
+        "1927年",
+        "1937年"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1931年。按近代民族抗争与探索的史实判断，本题正确答案是「1931年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "西安事变和平解决的历史意义是（ ）",
+      "options": [
+        "抗日民族统一战线初步形成",
+        "国共合作正式建立",
+        "抗日战争取得胜利",
+        "中华人民共和国成立"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：抗日民族统一战线初步形成。按近代民族抗争与探索的史实判断，本题正确答案是「抗日民族统一战线初步形成」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-历史-1",
+      "chapterName": "中国近代史",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "中国人民抗日战争取得胜利的时间是（ ）",
+      "options": [
+        "1931年",
+        "1937年",
+        "1949年",
+        "1945年"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1945年。按近代民族抗争与探索的史实判断，本题正确答案是「1945年」。",
       "difficulty": 2
     }
   ]

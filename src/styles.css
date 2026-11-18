@@ -154,3 +154,25 @@ button, input, textarea { font: inherit; }
 .el-checkbox__inner { border-radius: 6px; }
 .el-tag { border-radius: 999px; }
 .el-table { border-radius: var(--radius-md); overflow: hidden; }
+
+/* ===== 摸底报告解析（本次结果页与历史报告分支共用，必须全局，组件内 scoped 匹配不到子节点） ===== */
+.answer-review { display: grid; gap: 12px; }
+.review-card { padding: 16px; border: 1px solid var(--border); border-left: 4px solid var(--border); border-radius: 12px; background: var(--surface-soft); }
+.review-card.correct { border-left-color: var(--success, #67c23a); }
+.review-card.wrong { border-left-color: var(--danger, #f56c6c); }
+.review-card.self-check { border-left-color: var(--info, #909399); }
+.review-card h4 { margin: 12px 0 8px; line-height: 1.6; }
+.review-line, .review-explanation { margin: 6px 0; font-size: calc(13px * var(--fs-scale)); line-height: 1.6; }
+.review-explanation { color: var(--text); }
+.explanation-list { display: grid; gap: 5px; margin: 4px 0 0; padding: 0; list-style: none; }
+.explanation-list li { display: flex; gap: 8px; align-items: flex-start; line-height: 1.7; border-radius: 10px; padding: 4px 7px; }
+.explanation-list li.right { background: rgba(103, 194, 58, .09); }
+.explanation-list li.wrong { background: rgba(245, 108, 108, .09); }
+.option-badge { display: grid; place-items: center; width: 20px; height: 20px; flex: none; border-radius: 8px; background: #fff; border: 1px solid var(--border); font: 700 11px ui-monospace, monospace; margin-top: 3px; }
+.explanation-list li.right .option-badge { color: var(--success, #67c23a); border-color: var(--success, #67c23a); }
+.explanation-list li.wrong .option-badge { color: var(--danger, #f56c6c); border-color: var(--danger, #f56c6c); }
+.explanation-list .verdict { flex: none; margin-left: auto; align-self: center; font-size: calc(11px * var(--fs-scale)); font-style: normal; color: var(--muted); white-space: nowrap; }
+.explanation-list li.right .verdict { color: var(--success, #67c23a); }
+.explanation-list li.wrong .verdict { color: var(--danger, #f56c6c); }
+.review-fix { margin-top: 10px; padding: 5px 12px; border: 1px solid var(--primary); border-radius: 999px; background: transparent; color: var(--primary); font-family: inherit; font-size: calc(12px * var(--fs-scale)); font-weight: 600; cursor: pointer; }
+.review-fix:hover { background: var(--primary-soft); }

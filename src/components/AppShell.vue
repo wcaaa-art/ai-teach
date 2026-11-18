@@ -3,7 +3,6 @@ import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { ElMessage } from 'element-plus'
 import { useAppStore } from '../stores/app.js'
-import { logoutAccount } from '../services/api.js'
 import { getDataOwner, loadFocusSessions, loadMistakes, loadPlans, saveFocusSession } from '../db/index.js'
 import { shouldPromptWeeklyReport, weekKeyOf } from '../utils/weeklyReportPlans.js'
 import { duePlanCount, NOTICE_PRIORITY, nextDuePlan, staleMistakeCount, startedFocusToday, streakOneMistakeCount } from '../utils/notices.js'
@@ -12,7 +11,6 @@ import { finishStudy } from '../utils/studySession.js'
 import FeedbackWidget from './FeedbackWidget.vue'
 const props = defineProps({ title: { type: String, default: 'Ai学习小伙伴' } })
 const router = useRouter(); const route = useRoute(); const store = useAppStore()
-const loggingOut = ref(false)
 // AI 答疑页本身就是对话界面，隐藏悬浮助手和意见反馈，避免压住底部输入框。
 const hideFloating = computed(() => route.path === '/tutor')
 
@@ -60,7 +58,7 @@ function weeklyNotice() {
   return {
     id: 'weekly-report',
     title: '本周学习周报',
-    text: '新的一周开始了，生成周报看看上周哪些做法值得继续。',
+    text: '新的一周开始了，生成周报看看上周哪些做法值得继续',
     action: '去生成',
     to: { path: '/dashboard', query: { focus: 'weekly-report' } },
     dismissText: '本周不再提示',
@@ -85,8 +83,8 @@ async function buildNotices() {
         id: 'today-plan',
         title: '今日计划',
         text: nextPlan
-          ? `先做「${nextPlan.name}」，今天还有 ${due} 条计划任务待完成。`
-          : `今天还有 ${due} 条计划任务待完成，先挑一条 25 分钟的开工。`,
+          ? `先做「${nextPlan.name}」，今天还有 ${due} 条计划任务待完成`
+          : `今天还有 ${due} 条计划任务待完成，先挑一条 25 分钟的开工`,
         action: '去计划',
         to: { path: '/plans', query: { focusTask: nextPlan.id } },
         dismissText: '今天不再提示',
@@ -100,7 +98,7 @@ async function buildNotices() {
       list.push({
         id: 'mistake-stale',
         title: '错题该复习了',
-        text: `${stale} 道错题超过 7 天没复习，今天挑几道过一遍，别让旧漏洞留到下周。`,
+        text: `${stale} 道错题超过 7 天没复习，今天挑几道过一遍，别让旧漏洞留到下周`,
         action: '去复习',
         to: { path: '/mistakes', query: { filter: 'stale' } },
         dismissText: '今天不再提示',
@@ -114,7 +112,7 @@ async function buildNotices() {
       list.push({
         id: 'mistake-streak',
         title: '错题待巩固',
-        text: `${streakOne} 道错题已经答对 1 次，再对一次就能自动消灭。`,
+        text: `${streakOne} 道错题已经答对 1 次，再对一次就能自动消灭`,
         action: '去复习',
         to: '/mistakes',
         dismissText: '今天不再提示',
@@ -355,7 +353,7 @@ function toggleLiveFocus() {
   const nextRunning = !liveFocus.value.running
   writeLiveFocus({ ...liveFocus.value, running: nextRunning, startedAt: Date.now(), baseRemaining: liveLeft.value })
   refreshLiveFocus()
-  ElMessage.info(nextRunning ? '专注继续，保持节奏。' : '已暂停，随时回来继续。')
+  ElMessage.info(nextRunning ? '专注继续，保持节奏' : '已暂停，随时回来继续')
 }
 
 function openNotice(notice) {
@@ -414,7 +412,7 @@ function dismissTodayNotices() {
   }
   notices.value = notices.value.filter(item => item.scope !== 'day')
   syncDismissedToday()
-  ElMessage.success('今天的提醒已全部关闭。')
+  ElMessage.success('今天的提醒已全部关闭')
 }
 
 // 误点「今天全部不再提示」后可以一键找回，只清当天三个固定键。
@@ -425,7 +423,7 @@ function restoreTodayNotices() {
   }
   syncDismissedToday()
   refreshNotices()
-  ElMessage.success('今天的提醒已恢复。')
+  ElMessage.success('今天的提醒已恢复')
 }
 
 let noticeTimer = null
@@ -468,29 +466,18 @@ onBeforeUnmount(() => {
 watch(() => store.user, refreshNotices)
 watch(() => route.path, refreshNotices)
 
-async function logout() {
-  if (loggingOut.value) return
-  loggingOut.value = true
-  const result = await logoutAccount()
-  loggingOut.value = false
-  if (!result.success) { ElMessage.error(result.error || '退出登录失败，请检查本机服务后重试。'); return }
-  await store.clearUser()
-  ElMessage.success('已退出登录。')
-  router.push('/home')
-}
 // 第二期精简：主导航只保留 7 个日常入口；试卷识别进诊断页、学习看板进主页、设置进右上角账号区。
 const nav = [
   { path: '/home', label: '主页', short: '主页', icon: ['M3.5 10.5 12 4l8.5 6.5', 'M5.5 9.5V20h13V9.5', 'M9.5 20v-5h5v5'] },
-  { path: '/diagnosis', label: '学情诊断', short: '诊断', icon: ['M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z', 'M15.5 8.5l-2 5-5 2 2-5 5-2z'] },
+  { path: '/diagnosis', label: '学情分析', short: '分析', icon: ['M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z', 'M15.5 8.5l-2 5-5 2 2-5 5-2z'] },
   { path: '/materials', label: '学习资料', short: '资料', icon: ['M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5z', 'M13 4h5.5A1.5 1.5 0 0 1 20 5.5v13a1.5 1.5 0 0 1-1.5 1.5H13z', 'M9 8h2', 'M15 8h2'] },
   { path: '/mistakes', label: '错题库', short: '错题', icon: ['M6.5 3.5h11a1 1 0 0 1 1 1V21l-6.5-4.2L5.5 21V4.5a1 1 0 0 1 1-1z', 'M9 8h6'] },
   { path: '/plans', label: '学习计划', short: '计划', icon: ['M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z', 'M4 18.5A2.5 2.5 0 0 1 6.5 16H20', 'M8 7h8'] },
   { path: '/focus', label: '专注空间', short: '专注', icon: ['M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z', 'M12 7.5V12l3 2'] },
-  { path: '/tutor', label: 'AI 答疑', short: '答疑', icon: ['M5 5.5h14a1.5 1.5 0 0 1 1.5 1.5v8a1.5 1.5 0 0 1-1.5 1.5H10l-4 3.5V16.5H5A1.5 1.5 0 0 1 3.5 15V7A1.5 1.5 0 0 1 5 5.5z', 'M8 9.5h8', 'M8 12.5h5'] },
-  { path: '/ai', label: 'AI 能力', short: '能力', icon: ['M12 3.5l1.9 5.1 5.1 1.9-5.1 1.9L12 17.5l-1.9-5.1L5 10.5l5.1-1.9z', 'M18.5 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z'] }
+  { path: '/tutor', label: 'AI 答疑', short: '答疑', icon: ['M5 5.5h14a1.5 1.5 0 0 1 1.5 1.5v8a1.5 1.5 0 0 1-1.5 1.5H10l-4 3.5V16.5H5A1.5 1.5 0 0 1 3.5 15V7A1.5 1.5 0 0 1 5 5.5z', 'M8 9.5h8', 'M8 12.5h5'] }
 ]
-// 手机端底部标签栏只放每天都会用的 6 个入口；学情诊断有主页大按钮承接，AI 能力从首页进入。
-const mobileNav = nav.filter(item => !['/diagnosis', '/ai'].includes(item.path))
+// 手机端底部标签栏只放每天都会用的 6 个入口；学情诊断有主页大按钮承接；AI 能力页保留，从首页 hero 进入。
+const mobileNav = nav.filter(item => item.path !== '/diagnosis')
 const isFocus = computed(() => route.name === 'focus')
 // 沉浸页：专注空间、背诵窗口、练习窗口都自己排标题，隐藏顶部大标题条和右下角浮标，把高度留给内容。
 const isImmersive = computed(() => isFocus.value || route.name === 'recite' || route.name === 'practice')
@@ -554,7 +541,7 @@ watch(() => !isFocus.value && Boolean(liveFocus.value) && !liveDismissed.value, 
           </template>
           <div class="notice-panel">
             <strong class="notice-heading">通知</strong>
-            <p v-if="!notices.length" class="notice-empty">暂时没有新通知。</p>
+            <p v-if="!notices.length" class="notice-empty">暂时没有新通知</p>
             <div v-for="notice in notices" :key="notice.id" class="notice-item">
               <strong>{{ notice.title }}</strong>
               <p>{{ notice.text }}</p>
@@ -563,7 +550,7 @@ watch(() => !isFocus.value && Boolean(liveFocus.value) && !liveDismissed.value, 
             <div v-if="dailyNoticeCount || hasDismissedToday" class="notice-footer"><el-button v-if="dailyNoticeCount" size="small" text class="notice-dismiss-all" @click="dismissTodayNotices">今天全部不再提示</el-button><el-button v-if="hasDismissedToday" size="small" text class="notice-restore" @click="restoreTodayNotices">恢复今天的提醒</el-button></div>
           </div>
         </el-popover>
-        <el-tag v-if="!store.user" type="success" effect="plain">本地模式</el-tag><el-button plain round @click="router.push('/settings')">设置</el-button><el-button v-if="store.user" plain round class="login-link" @click="router.push('/account')">{{ store.user.displayName || store.user.email }}</el-button><el-button v-if="store.user" plain round :loading="loggingOut" @click="logout">退出登录</el-button><el-button v-else plain round class="login-link" @click="router.push('/auth')">登录 / 注册</el-button>
+        <el-tag v-if="!store.user" type="success" effect="plain">本地模式</el-tag><el-button v-if="store.user" plain round class="login-link" @click="router.push('/account')">{{ store.user.displayName || store.user.email }}</el-button><el-button v-else plain round class="login-link" @click="router.push('/auth')">登录 / 注册</el-button><button class="settings-gear" type="button" title="系统设置" aria-label="系统设置" @click="router.push('/settings')"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2" /><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" /></svg></button>
       </div>
       <div class="nav-footer"><span class="status-dot"></span> 数据仅存本机<br><small>{{ store.user ? '隐私优先 · 账号已连接' : '隐私优先 · 无需登录' }}</small></div>
     </aside>
@@ -600,7 +587,7 @@ watch(() => !isFocus.value && Boolean(liveFocus.value) && !liveDismissed.value, 
       </button>
     </nav>
     <main class="main-content">
-      <header v-if="!isImmersive" class="topbar"><div><span class="eyebrow">AI 自适应学习工作台</span><h1>{{ props.title }}</h1></div><div class="top-actions"><el-popover v-model:visible="noticeOpen" placement="bottom-end" :width="320" trigger="click" :teleported="false" popper-class="notice-popover"><template #reference><button class="notice-bell" type="button" :aria-label="notices.length ? `通知：${notices.length} 条待处理` : '通知'"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 1 0-12 0c0 7-2 7-2 9h16c0-2-2-2-2-9" /><path d="M10.5 20a1.8 1.8 0 0 0 3 0" /></svg><span v-if="dailyNoticeCount" class="notice-dot" :class="noticeBadgeTone">{{ dailyNoticeCount }}</span></button></template><div class="notice-panel"><strong class="notice-heading">通知</strong><p v-if="!notices.length" class="notice-empty">暂时没有新通知。</p><div v-for="notice in notices" :key="notice.id" class="notice-item"><strong>{{ notice.title }}</strong><p>{{ notice.text }}</p><div class="notice-actions"><el-button size="small" type="primary" plain @click="openNotice(notice)">{{ notice.action }}</el-button><el-button size="small" text @click="dismissNotice(notice)">{{ notice.dismissText }}</el-button></div></div><div v-if="dailyNoticeCount || hasDismissedToday" class="notice-footer"><el-button v-if="dailyNoticeCount" size="small" text class="notice-dismiss-all" @click="dismissTodayNotices">今天全部不再提示</el-button><el-button v-if="hasDismissedToday" size="small" text class="notice-restore" @click="restoreTodayNotices">恢复今天的提醒</el-button></div></div></el-popover><el-tag v-if="!store.user" class="mode-tag" type="success" effect="plain">本地模式</el-tag><el-button plain round @click="router.push('/settings')">设置</el-button><el-button v-if="store.user" plain round class="login-link account-link" @click="router.push('/account')">{{ store.user.displayName || store.user.email }}</el-button><el-button v-if="store.user" plain round :loading="loggingOut" @click="logout">退出登录</el-button><el-button v-else plain round class="login-link" @click="router.push('/auth')">登录 / 注册</el-button></div></header>
+      <header v-if="!isImmersive" class="topbar"><div><span class="eyebrow">AI 自适应学习工作台</span><h1>{{ props.title }}</h1></div><div class="top-actions"><el-popover v-model:visible="noticeOpen" placement="bottom-end" :width="320" trigger="click" :teleported="false" popper-class="notice-popover"><template #reference><button class="notice-bell" type="button" :aria-label="notices.length ? `通知：${notices.length} 条待处理` : '通知'"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 1 0-12 0c0 7-2 7-2 9h16c0-2-2-2-2-9" /><path d="M10.5 20a1.8 1.8 0 0 0 3 0" /></svg><span v-if="dailyNoticeCount" class="notice-dot" :class="noticeBadgeTone">{{ dailyNoticeCount }}</span></button></template><div class="notice-panel"><strong class="notice-heading">通知</strong><p v-if="!notices.length" class="notice-empty">暂时没有新通知</p><div v-for="notice in notices" :key="notice.id" class="notice-item"><strong>{{ notice.title }}</strong><p>{{ notice.text }}</p><div class="notice-actions"><el-button size="small" type="primary" plain @click="openNotice(notice)">{{ notice.action }}</el-button><el-button size="small" text @click="dismissNotice(notice)">{{ notice.dismissText }}</el-button></div></div><div v-if="dailyNoticeCount || hasDismissedToday" class="notice-footer"><el-button v-if="dailyNoticeCount" size="small" text class="notice-dismiss-all" @click="dismissTodayNotices">今天全部不再提示</el-button><el-button v-if="hasDismissedToday" size="small" text class="notice-restore" @click="restoreTodayNotices">恢复今天的提醒</el-button></div></div></el-popover><el-tag v-if="!store.user" class="mode-tag" type="success" effect="plain">本地模式</el-tag><el-button v-if="store.user" plain round class="login-link account-link" @click="router.push('/account')">{{ store.user.displayName || store.user.email }}</el-button><el-button v-else plain round class="login-link" @click="router.push('/auth')">登录 / 注册</el-button><button class="settings-gear" type="button" title="系统设置" aria-label="系统设置" @click="router.push('/settings')"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2" /><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" /></svg></button></div></header>
       <slot />
     </main>
     <FeedbackWidget v-if="!isImmersive && !hideFloating" :raised="Boolean(liveFocus) && !liveDismissed" />
@@ -612,7 +599,7 @@ watch(() => !isFocus.value && Boolean(liveFocus.value) && !liveDismissed.value, 
 .nav-icon{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 @media(min-width:801px){
 /* 桌面端：白色胶囊导航浮在页面底色上，彩色线性图标 + 选中态浅色胶囊。 */
-.app-shell{--nav-h:80px;flex-direction:column;height:100vh;overflow:hidden}.side-nav{width:auto;min-height:64px;margin:16px 24px 0;flex-direction:row;align-items:center;gap:16px;padding:10px 18px;border-right:0;border-bottom:0;border-radius:20px;background:var(--surface);box-shadow:var(--shadow);position:sticky;top:16px;z-index:20}.brand{flex:none;padding:0 16px 0 0;gap:10px;border-right:1px solid var(--border);border-radius:0}.brand small{font-size:calc(10px*var(--fs-scale))}.side-nav nav{display:flex;flex:1;min-width:0;gap:2px;align-items:center;justify-content:flex-start;overflow-x:auto}.side-nav nav button{position:relative;padding:10px 14px;font-size:calc(14.5px*var(--fs-scale));font-weight:600;gap:8px;white-space:nowrap;border-radius:11px}.side-nav nav button.active{background:var(--primary-soft);color:var(--primary)}.side-nav nav button.active:after{content:'';position:absolute;left:12px;right:12px;bottom:0;height:2px;border-radius:2px;background:var(--primary)}.nav-footer{display:none}.topbar{display:none}/* 桌面端把整页滚动收进内容区：导航固定，只有内容超出时内部才出现滚动条。 */.main-content{width:100%;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}.main-content::-webkit-scrollbar{width:8px}.main-content::-webkit-scrollbar-track{background:transparent}.main-content::-webkit-scrollbar-thumb{border-radius:4px;background:color-mix(in srgb,var(--muted) 26%,transparent)}.main-content::-webkit-scrollbar-thumb:hover{background:color-mix(in srgb,var(--muted) 44%,transparent)}.nav-actions{display:flex;align-items:center;gap:10px;flex:none;padding-left:16px;border-left:1px solid var(--border)}.nav-actions .login-link{max-width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.nav-actions .login-link :deep(span){display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
+.app-shell{--nav-h:80px;flex-direction:column;height:100vh;overflow:hidden}.side-nav{width:auto;min-height:64px;margin:16px 24px 0;flex-direction:row;align-items:center;gap:16px;padding:10px 18px;border-right:0;border-bottom:0;border-radius:20px;background:var(--surface);box-shadow:var(--shadow);position:sticky;top:16px;z-index:20}.brand{flex:none;padding:0 16px 0 0;gap:10px;border-right:1px solid var(--border);border-radius:0}.brand small{font-size:calc(10px*var(--fs-scale))}.side-nav nav{display:flex;flex:1;min-width:0;gap:2px;align-items:center;justify-content:flex-start;overflow-x:auto}.side-nav nav button{position:relative;padding:10px 14px;font-size:calc(14.5px*var(--fs-scale));font-weight:600;gap:8px;white-space:nowrap;border-radius:11px}.side-nav nav button.active{background:var(--primary-soft);color:var(--primary)}.side-nav nav button.active:after{content:'';position:absolute;left:12px;right:12px;bottom:0;height:2px;border-radius:2px;background:var(--primary)}.nav-footer{display:none}.topbar{display:none}/* 桌面端把整页滚动收进内容区：导航固定，只有内容超出时内部才出现滚动条， */.main-content{width:100%;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}.main-content::-webkit-scrollbar{width:8px}.main-content::-webkit-scrollbar-track{background:transparent}.main-content::-webkit-scrollbar-thumb{border-radius:4px;background:color-mix(in srgb,var(--muted) 26%,transparent)}.main-content::-webkit-scrollbar-thumb:hover{background:color-mix(in srgb,var(--muted) 44%,transparent)}.nav-actions{display:flex;align-items:center;gap:10px;flex:none;padding-left:16px;border-left:1px solid var(--border)}.nav-actions .login-link{max-width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.nav-actions .login-link :deep(span){display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
 /* 801–1180px 导航空间有限：只留图标（aria-label 与悬停 title 可读），避免右侧操作区挤爆导航。 */
 @media(min-width:801px) and (max-width:1180px){.brand div{display:none}.side-nav nav button{padding:9px 10px}.side-nav nav button .nav-label{display:none}}
 /* 1121–1280px 导航空间有限：收紧左右留白与导航项间距；收起快捷键入口和「本地模式」标签，保证文字、长称呼与右侧操作区不溢出。 */
@@ -677,6 +664,10 @@ watch(() => !isFocus.value && Boolean(liveFocus.value) && !liveDismissed.value, 
 .notice-bell{position:relative;width:34px;height:34px;padding:0;display:grid;place-items:center;border:1px solid var(--border);border-radius:50%;background:var(--surface);color:var(--muted);cursor:pointer;flex:none}
 .notice-bell:hover{color:var(--primary);border-color:var(--primary)}
 .notice-bell svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+/* 系统设置入口：右侧最末位的齿轮图标，和铃铛同尺寸的圆形按钮。 */
+.settings-gear{width:34px;height:34px;padding:0;display:grid;place-items:center;border:1px solid var(--border);border-radius:50%;background:var(--surface);color:var(--muted);cursor:pointer;flex:none}
+.settings-gear:hover{color:var(--primary);border-color:var(--primary)}
+.settings-gear svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .notice-dot{position:absolute;top:0;right:0;min-width:16px;height:16px;padding:0 4px;box-sizing:border-box;border-radius:999px;background:#e05a5a;color:#fff;font-size:calc(10px*var(--fs-scale));line-height:1;font-weight:600;display:grid;place-items:center;border:2px solid var(--surface)}
 .notice-dot.is-plan{background:#e05a5a}
 .notice-dot.is-stale{background:#f08c3a}

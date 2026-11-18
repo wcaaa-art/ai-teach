@@ -77,10 +77,10 @@ async function attachStudyContext({ mistakeId = '', planId = '' } = {}) {
       const item = (await loadMistakes()).find(entry => entry.id === mistakeId)
       if (item) {
         await newConversation()
-        attachment.value = { label: `错题 · ${item.subject || '综合'}${item.chapterName ? ` · ${item.chapterName}` : ''}`, hint: '发送时会自动附上题目、作答与解析，不用重复粘贴。', block: mistakeContext(item) }
+        attachment.value = { label: `错题 · ${item.subject || '综合'}${item.chapterName ? ` · ${item.chapterName}` : ''}`, hint: '发送时会自动附上题目、作答与解析，不用重复粘贴', block: mistakeContext(item) }
         input.value = isExplain.value
-          ? '请完整讲解这道错题，指出我错在哪一步，再给我一道同类练习。'
-          : '请带我把这道错题重新想一遍，先别直接给答案。'
+          ? '请完整讲解这道错题，指出我错在哪一步，再给我一道同类练习'
+          : '请带我把这道错题重新想一遍，先别直接给答案'
         return
       }
     }
@@ -88,10 +88,10 @@ async function attachStudyContext({ mistakeId = '', planId = '' } = {}) {
       const plan = (await loadPlans()).find(entry => entry.id === planId)
       if (plan) {
         await newConversation()
-        attachment.value = { label: `学习任务 · ${plan.subject || '综合'} · ${clipContext(plan.name, 20)}`, hint: '发送时会自动附上任务、章节与知识点，不用重复描述。', block: planContext(plan) }
+        attachment.value = { label: `学习任务 · ${plan.subject || '综合'} · ${clipContext(plan.name, 20)}`, hint: '发送时会自动附上任务、章节与知识点，不用重复描述', block: planContext(plan) }
         input.value = isExplain.value
-          ? `请完整讲解「${plan.name}」涉及的知识点和常见题型。`
-          : `「${plan.name}」这个任务我没头绪，先带我想第一步。`
+          ? `请完整讲解「${plan.name}」涉及的知识点和常见题型`
+          : `「${plan.name}」这个任务我没头绪，先带我想第一步`
         return
       }
     }
@@ -105,11 +105,11 @@ const tutorMode = ref(localStorage.getItem('ai-teach-tutor-mode') === 'explain' 
 const isExplain = computed(() => tutorMode.value === 'explain')
 const welcomeTitle = computed(() => (isExplain.value ? '哪道题想让我完整讲一遍？' : '今天想把哪个卡点变清楚？'))
 const welcomeNote = computed(() => (isExplain.value
-  ? '贴题目或拍照上传，我会按「考点 → 步骤 → 结论 → 易错点」讲透。'
-  : '可以上传题目截图，我会先带你看条件、想知识点，把答案留给你自己写出来。'))
+  ? '贴题目或拍照上传，我会按「考点 → 步骤 → 结论 → 易错点」讲透'
+  : '可以上传题目截图，我会先带你看条件、想知识点，把答案留给你自己写出来'))
 const composerPlaceholder = computed(() => (isExplain.value ? '贴出题目，我按步骤完整讲一遍…' : '描述你的卡点，我先带你一步步想…'))
 const imageNote = computed(() => (isExplain.value ? '发送后按讲解模式给出完整步骤' : '发送后按引导模式先给下一步思路'))
-const defaultImageQuestion = computed(() => (isExplain.value ? '请完整讲解图片中的这道题，给出步骤、结论和易错点。' : '请分析这张学习图片，并提示我下一步思路。'))
+const defaultImageQuestion = computed(() => (isExplain.value ? '请完整讲解图片中的这道题，给出步骤、结论和易错点' : '请分析这张学习图片，并提示我下一步思路'))
 
 function setTutorMode(value) {
   if (loading.value || streaming.value) return
@@ -140,7 +140,7 @@ async function copyMessage(text = '') {
     await navigator.clipboard.writeText(value)
     ElMessage.success('已复制')
   } catch {
-    ElMessage.info('复制失败，请手动选中文字复制。')
+    ElMessage.info('复制失败，请手动选中文字复制')
   }
 }
 
@@ -243,11 +243,11 @@ function selectImage() { fileInput.value?.click() }
 function handleImage(event) {
   const file = event.target.files?.[0]
   if (!file) return
-  if (!['image/png', 'image/jpeg', 'image/webp', 'image/gif'].includes(file.type)) { ElMessage.warning('请选择 JPG、PNG、WebP 或 GIF 图片。'); return }
-  if (file.size > 5 * 1024 * 1024) { ElMessage.warning('图片请压缩到 5 MB 以内。'); return }
+  if (!['image/png', 'image/jpeg', 'image/webp', 'image/gif'].includes(file.type)) { ElMessage.warning('请选择 JPG、PNG、WebP 或 GIF 图片'); return }
+  if (file.size > 5 * 1024 * 1024) { ElMessage.warning('图片请压缩到 5 MB 以内'); return }
   const reader = new FileReader()
   reader.onload = () => { imageData.value = String(reader.result); imagePreview.value = String(reader.result) }
-  reader.onerror = () => ElMessage.info('图片读取失败，请重试。')
+  reader.onerror = () => ElMessage.info('图片读取失败，请重试')
   reader.readAsDataURL(file)
 }
 
@@ -312,12 +312,12 @@ async function streamAnswer(text, history) {
   }
   streaming.value = false
   if (result.cancelled) {
-    if (!assistant.content) assistant.content = '已停止生成。'
+    if (!assistant.content) assistant.content = '已停止生成'
   } else if (result.error && !assistant.content) {
     assistant.content = result.error
     assistant.source = 'mock'
   } else if (!assistant.content) {
-    assistant.content = '我暂时没有组织出回答，你可以把题目条件再补充一点。'
+    assistant.content = '我暂时没有组织出回答，你可以把题目条件再补充一点'
   }
   // 没有收到 meta 的网络异常，按本地兜底展示，避免无来源标注。
   assistant.source = assistant.source || (result.error ? 'mock' : 'deepseek')
@@ -337,7 +337,7 @@ async function send(text = input.value) {
     // 图片本身仍走一次性请求：体积大、流式收益低且兼容性更脆；
     // 但答复要点会作为文本上下文留在会话里，支持后续多轮追问。
     const result = await askTutorWithImage({ question: apiQuestion, image: imageData.value, history, sessionId: session.id, mode: tutorMode.value })
-    const answer = result.data?.answer || (result.error?.includes('401') ? 'DeepSeek API key 没有通过验证。请检查项目根目录 .env 中的 DEEPSEEK_API_KEY，并重启 npm run dev。' : (isExplain.value ? '这道题可以按「考点 → 步骤 → 结论」来拆。你把原题文字发我，我按步骤完整讲一遍。' : '我先帮你拆出题目中的已知条件，再一起判断要用哪个知识点。'))
+    const answer = result.data?.answer || (result.error?.includes('401') ? 'DeepSeek API key 没有通过验证，请检查项目根目录 .env 中的 DEEPSEEK_API_KEY，并重启 npm run dev' : (isExplain.value ? '这道题可以按「考点 → 步骤 → 结论」来拆，你把原题文字发我，我按步骤完整讲一遍' : '我先帮你拆出题目中的已知条件，再一起判断要用哪个知识点'))
     // 图片链路走一次性请求，后端同样会回传 source（模型 / 安全过滤 / 本地兜底），一并标注。
     messages.value.push({ role: 'assistant', content: answer, source: result.source || (result.success ? 'deepseek' : 'mock'), mode: tutorMode.value, createdAt: Date.now() })
     // 只保留要点文本，不保留 base64：IndexedDB 里不留图片，也不让上下文无限膨胀。
@@ -355,11 +355,11 @@ async function send(text = input.value) {
 function toggleVoice() {
   if (isListening.value) { recognition?.stop(); return }
   const Speech = window.SpeechRecognition || window.webkitSpeechRecognition
-  if (!Speech) { ElMessage.info('当前浏览器暂不支持语音输入。'); return }
+  if (!Speech) { ElMessage.info('当前浏览器暂不支持语音输入'); return }
   recognition = new Speech(); recognition.lang = 'zh-CN'; recognition.continuous = false
   recognition.onstart = () => { isListening.value = true }
   recognition.onend = () => { isListening.value = false }
-  recognition.onerror = () => { isListening.value = false; ElMessage.info('语音输入暂不可用，可以直接打字。') }
+  recognition.onerror = () => { isListening.value = false; ElMessage.info('语音输入暂不可用，可以直接打字') }
   recognition.onresult = event => { input.value = event.results[0][0].transcript }
   try { recognition.start() } catch { isListening.value = false }
 }
@@ -375,7 +375,7 @@ function toggleSpeak(text, index) {
     speakingIndex.value = index
     speechPaused.value = false
     if (!speakWithFriendlyChineseVoice(text, { onend: resetSpeechState, onerror: resetSpeechState })) resetSpeechState()
-  } catch { resetSpeechState(); ElMessage.info('语音朗读暂不可用。') }
+  } catch { resetSpeechState(); ElMessage.info('语音朗读暂不可用') }
 }
 function stopSpeaking() {
   stopSpeech()
@@ -410,7 +410,6 @@ onBeforeUnmount(stopSpeaking)
       <div class="hero-copy">
         <span class="eyebrow">多模态答疑</span>
         <h2 class="page-title">学习问答</h2>
-        <p class="page-subtitle">{{ isExplain ? '讲解模式：完整步骤、结论和易错点，适合对照订正。' : '引导模式：只给下一步思路，答案由你自己写出来。' }}</p>
       </div>
       <div class="hero-actions">
         <el-select v-if="conversations.length" :model-value="session.id" placeholder="历史会话" class="history-select" popper-class="history-popper" @change="id => openConversation(conversations.find(item => item.id === id))">
@@ -518,7 +517,6 @@ onBeforeUnmount(stopSpeaking)
 .tutor-hero{flex:none;display:flex;align-items:flex-end;justify-content:space-between;gap:20px;padding:20px 24px;border:1px solid color-mix(in srgb,var(--primary) 16%,var(--border));border-radius:20px;background:linear-gradient(135deg,color-mix(in srgb,var(--primary-soft) 82%,var(--surface)),color-mix(in srgb,var(--surface) 92%,var(--primary-soft)));box-shadow:var(--shadow)}
 .tutor-hero .eyebrow{font-size:calc(11.5px*var(--fs-scale))}
 .tutor-hero .page-title{margin:5px 0 6px;font-size:calc(26px*var(--fs-scale))}
-.tutor-hero .page-subtitle{font-size:calc(13.5px*var(--fs-scale));line-height:1.6}
 .hero-actions{display:flex;align-items:center;gap:10px;flex:none}
 .history-select{width:260px}
 .history-select :deep(.el-select__wrapper){border-radius:999px;background:var(--surface);box-shadow:0 0 0 1px var(--border) inset}

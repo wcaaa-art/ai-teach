@@ -6,9 +6,9 @@
     "id": "初三-英语-5",
     "name": "阅读理解与推断"
   },
-  "generatedAt": "2026-11-14T12:17:24.446Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.962Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdf4k9",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 1,
       "explanation": "A. 错误：文中老师说 \"use smart devices as helpers, not as family members\"，是建议合理使用，并未要求完全停止使用智能音箱，该选项与原文冲突。\nB. 正确：末句 \"She advises families to use smart devices as helpers, not as family members\" 直接表明老师建议把智能设备当作帮手而非家庭成员。\nC. 错误：文中提到孩子和音箱说话比和父母说话还多，并引用 \"The speaker can answer a question in a second, but it can never ask a child, 'How was your day?'\"，意图是提醒家长多陪伴，而非让孩子多问音箱问题。\nD. 错误：老师引用音箱不会问孩子 \"How was your day?\" 正是暗示家长应多与孩子交流，与“少花时间与孩子交谈”相反。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "When the teacher announced the result, Lisa jumped up and hugged her friend. 由此可以推断（ ）",
+      "options": [
+        "Lisa did well in the test.",
+        "Lisa failed the test.",
+        "Lisa was ill.",
+        "Lisa was late."
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：Lisa did well in the test.。根据文中细节推断言外之意，本题可以推断「Lisa did well in the test.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The street was full of water, and cars moved very slowly. 由此可以推断（ ）",
+      "options": [
+        "It was snowing.",
+        "It was sunny.",
+        "It was windy.",
+        "It had rained heavily."
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：It had rained heavily.。根据文中细节推断言外之意，本题可以推断「It had rained heavily.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Jack kept looking at his phone and smiling. 由此可以推断（ ）",
+      "options": [
+        "Jack was angry.",
+        "Jack was sleepy.",
+        "Jack received good news.",
+        "Jack lost his phone."
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：Jack received good news.。根据文中细节推断言外之意，本题可以推断「Jack received good news.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The lights in the office were still on at midnight. 由此可以推断（ ）",
+      "options": [
+        "The office was new.",
+        "Someone was still working.",
+        "The office was empty.",
+        "The office was closed."
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：Someone was still working.。根据文中细节推断言外之意，本题可以推断「Someone was still working.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Amy put on her coat, took her umbrella and went out. 由此可以推断（ ）",
+      "options": [
+        "The weather was bad.",
+        "It was hot outside.",
+        "Amy was going to bed.",
+        "Amy was at home."
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：The weather was bad.。根据文中细节推断言外之意，本题可以推断「The weather was bad.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The little boy covered his ears when the train passed by. 由此可以推断（ ）",
+      "options": [
+        "The train was empty.",
+        "The train was late.",
+        "The train was slow.",
+        "The train was very noisy."
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：The train was very noisy.。根据文中细节推断言外之意，本题可以推断「The train was very noisy.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The students all stood up and clapped when the old scientist walked in. 由此可以推断（ ）",
+      "options": [
+        "They wanted to leave.",
+        "They were afraid of him.",
+        "They respected the scientist.",
+        "They knew nothing about him."
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：They respected the scientist.。根据文中细节推断言外之意，本题可以推断「They respected the scientist.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Peter ran all the way home and shouted that he got the first prize. 由此可以推断（ ）",
+      "options": [
+        "Peter was angry.",
+        "Peter was excited.",
+        "Peter was sad.",
+        "Peter was tired."
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：Peter was excited.。根据文中细节推断言外之意，本题可以推断「Peter was excited.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The shop assistant checked the price tag twice and said that the item was not for sale. 由此可以推断（ ）",
+      "options": [
+        "The item cannot be bought now.",
+        "The item is free.",
+        "The item is new.",
+        "The item is cheap."
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：The item cannot be bought now.。根据文中细节推断言外之意，本题可以推断「The item cannot be bought now.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "Lucy looked at the menu for a long time and ordered only a cup of tea. 由此可以推断（ ）",
+      "options": [
+        "Lucy was very hungry.",
+        "Lucy liked the restaurant.",
+        "Lucy was a waitress.",
+        "Lucy did not want to spend much."
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Lucy did not want to spend much.。根据文中细节推断言外之意，本题可以推断「Lucy did not want to spend much.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "method",
+      "stem": "It is important for us to protect wild animals. We should stop buying things made from them. 作者的态度是（ ）",
+      "options": [
+        "担心动物太少",
+        "觉得与自己无关",
+        "支持保护动物",
+        "反对保护动物"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：支持保护动物。作者态度通过评价性词语判断，本题体现「支持保护动物」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "method",
+      "stem": "Some students spend too much time on their phones. This is bad for their eyes and study. 作者的态度是（ ）",
+      "options": [
+        "无所谓",
+        "担忧",
+        "赞赏",
+        "支持"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：担忧。作者态度通过评价性词语判断，本题体现「担忧」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "method",
+      "stem": "What a wonderful performance! The dancers did a great job. 作者的态度是（ ）",
+      "options": [
+        "赞赏",
+        "失望",
+        "反对",
+        "担心"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：赞赏。作者态度通过评价性词语判断，本题体现「赞赏」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "method",
+      "stem": "I don't think it is a good idea to eat too much junk food. 作者的态度是（ ）",
+      "options": [
+        "支持",
+        "感激",
+        "好奇",
+        "不赞同"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：不赞同。作者态度通过评价性词语判断，本题体现「不赞同」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "method",
+      "stem": "Reading in bed for a long time may hurt your eyes. 作者的态度是（ ）",
+      "options": [
+        "反对阅读",
+        "开玩笑",
+        "提醒",
+        "祝贺"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：提醒。作者态度通过评价性词语判断，本题体现「提醒」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "method",
+      "stem": "Our team lost the game, but we will try harder next time. 作者的态度是（ ）",
+      "options": [
+        "无所谓",
+        "积极乐观",
+        "消极失望",
+        "生气抱怨"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：积极乐观。作者态度通过评价性词语判断，本题体现「积极乐观」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "method",
+      "stem": "The new rule is unfair to small shops. 作者的态度是（ ）",
+      "options": [
+        "反对",
+        "支持",
+        "感激",
+        "害怕"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：反对。作者态度通过评价性词语判断，本题体现「反对」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "method",
+      "stem": "Thank you for your help. You are so kind. 作者的态度是（ ）",
+      "options": [
+        "抱怨",
+        "怀疑",
+        "骄傲",
+        "感激"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：感激。作者态度通过评价性词语判断，本题体现「感激」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "method",
+      "stem": "The traffic problem is getting worse. We must do something about it. 作者的态度是（ ）",
+      "options": [
+        "兴奋",
+        "骄傲",
+        "担忧",
+        "满意"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：担忧。作者态度通过评价性词语判断，本题体现「担忧」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "method",
+      "stem": "It is fun to learn English through songs. 作者的态度是（ ）",
+      "options": [
+        "失望",
+        "赞同",
+        "反对",
+        "担忧"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：赞同。作者态度通过评价性词语判断，本题体现「赞同」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Come and join our English Club! We meet every Friday afternoon. 这段话的写作目的是（ ）",
+      "options": [
+        "招募成员",
+        "发布通知",
+        "表示感谢",
+        "介绍学校"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：招募成员。看文本的场合和目的，本题的写作目的是「招募成员」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Please remember: no food or drink in the computer room. 这段话的写作目的是（ ）",
+      "options": [
+        "招募成员",
+        "促销商品",
+        "表示感谢",
+        "提醒规则"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：提醒规则。看文本的场合和目的，本题的写作目的是「提醒规则」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Buy one get one free this weekend! 这段话的写作目的是（ ）",
+      "options": [
+        "寻物",
+        "通知停课",
+        "促销",
+        "提醒规则"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：促销。看文本的场合和目的，本题的写作目的是「促销」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Lost: a black wallet. Please call 12345678. 这段话的写作目的是（ ）",
+      "options": [
+        "招聘",
+        "寻物",
+        "招领",
+        "促销"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：寻物。看文本的场合和目的，本题的写作目的是「寻物」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "The school library will be closed on Monday. 这段话的写作目的是（ ）",
+      "options": [
+        "通知",
+        "感谢",
+        "建议",
+        "道歉"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：通知。看文本的场合和目的，本题的写作目的是「通知」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Dear Tom, thank you for inviting me to your birthday party. 这段话的写作目的是（ ）",
+      "options": [
+        "邀请",
+        "投诉",
+        "通知",
+        "感谢"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：感谢。看文本的场合和目的，本题的写作目的是「感谢」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "How to stay healthy: eat well, exercise often and sleep enough. 这段话的写作目的是（ ）",
+      "options": [
+        "促销",
+        "寻物",
+        "建议",
+        "感谢"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：建议。看文本的场合和目的，本题的写作目的是「建议」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Our city has changed a lot in the past ten years. 这段话的写作目的是（ ）",
+      "options": [
+        "表示感谢",
+        "介绍变化",
+        "招募成员",
+        "提醒规则"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：介绍变化。看文本的场合和目的，本题的写作目的是「介绍变化」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Do you want to be a volunteer? Call us at 87654321. 这段话的写作目的是（ ）",
+      "options": [
+        "招募志愿者",
+        "寻物",
+        "促销",
+        "通知停课"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：招募志愿者。看文本的场合和目的，本题的写作目的是「招募志愿者」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-英语-5",
+      "chapterName": "阅读理解与推断",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Please take your umbrella. It will rain this afternoon. 这段话的写作目的是（ ）",
+      "options": [
+        "邀请",
+        "感谢",
+        "促销",
+        "提醒"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：提醒。看文本的场合和目的，本题的写作目的是「提醒」。",
       "difficulty": 2
     }
   ]

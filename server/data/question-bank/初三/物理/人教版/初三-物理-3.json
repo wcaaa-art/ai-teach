@@ -6,9 +6,9 @@
     "id": "初三-物理-3",
     "name": "内能与热机"
   },
-  "generatedAt": "2026-11-13T02:47:33.498Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.226Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedmfzs",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：水吸热公式为 Q吸=cm(t-t0)，代入 m=2 kg、c=4.2×10^3 J/(kg·℃)、t-t0=70℃-20℃=50℃，得 Q吸=4.2×10^3×2×50=4.2×10^5 J。\nB. 错误：2.1×10^5 J 是把质量误取为1 kg或漏乘2 kg所得，与题干中2 kg的水不符。\nC. 错误：8.4×10^5 J 是把温度差误算为100℃或未取实际升温50℃所得，题干中水温只升高50℃。\nD. 错误：4.2×10^6 J 数量级错误，相当于把温度差或质量扩大10倍，代入 Q吸=cm(t-t0) 不成立。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "质量为 0.5 kg 的水温度升高 80 ℃，水吸收的热量是（c水 = 4.2×10^3 J/(kg·℃)）（ ）",
+      "options": [
+        "168000 J",
+        "336000 J",
+        "84000 J",
+        "189000 J"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：168000 J。Q吸 = cmΔt = 4200 × 0.5 × 80 = 168000 J。",
+      "difficulty": 2
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "质量为 2 kg 的水温度升高 30 ℃，水吸收的热量是（c水 = 4.2×10^3 J/(kg·℃)）（ ）",
+      "options": [
+        "504000 J",
+        "126000 J",
+        "273000 J",
+        "252000 J"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：252000 J。Q吸 = cmΔt = 4200 × 2 × 30 = 252000 J。",
+      "difficulty": 2
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "质量为 1 kg 的水温度升高 40 ℃，水吸收的热量是（c水 = 4.2×10^3 J/(kg·℃)）（ ）",
+      "options": [
+        "84000 J",
+        "189000 J",
+        "168000 J",
+        "336000 J"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：168000 J。Q吸 = cmΔt = 4200 × 1 × 40 = 168000 J。",
+      "difficulty": 2
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "质量为 3 kg 的水温度升高 20 ℃，水吸收的热量是（c水 = 4.2×10^3 J/(kg·℃)）（ ）",
+      "options": [
+        "273000 J",
+        "252000 J",
+        "504000 J",
+        "126000 J"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：252000 J。Q吸 = cmΔt = 4200 × 3 × 20 = 252000 J。",
+      "difficulty": 2
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "质量为 4 kg 的水温度升高 10 ℃，水吸收的热量是（c水 = 4.2×10^3 J/(kg·℃)）（ ）",
+      "options": [
+        "168000 J",
+        "336000 J",
+        "84000 J",
+        "189000 J"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：168000 J。Q吸 = cmΔt = 4200 × 4 × 10 = 168000 J。",
+      "difficulty": 2
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "质量为 5 kg 的水温度升高 10 ℃，水吸收的热量是（c水 = 4.2×10^3 J/(kg·℃)）（ ）",
+      "options": [
+        "420000 J",
+        "105000 J",
+        "231000 J",
+        "210000 J"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：210000 J。Q吸 = cmΔt = 4200 × 5 × 10 = 210000 J。",
+      "difficulty": 2
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "质量为 1.5 kg 的水温度升高 20 ℃，水吸收的热量是（c水 = 4.2×10^3 J/(kg·℃)）（ ）",
+      "options": [
+        "63000 J",
+        "147000 J",
+        "126000 J",
+        "252000 J"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：126000 J。Q吸 = cmΔt = 4200 × 1.5 × 20 = 126000 J。",
+      "difficulty": 2
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "质量为 2.5 kg 的水温度升高 40 ℃，水吸收的热量是（c水 = 4.2×10^3 J/(kg·℃)）（ ）",
+      "options": [
+        "441000 J",
+        "420000 J",
+        "840000 J",
+        "210000 J"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：420000 J。Q吸 = cmΔt = 4200 × 2.5 × 40 = 420000 J。",
+      "difficulty": 2
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "质量为 0.2 kg 的水温度升高 50 ℃，水吸收的热量是（c水 = 4.2×10^3 J/(kg·℃)）（ ）",
+      "options": [
+        "42000 J",
+        "84000 J",
+        "21000 J",
+        "63000 J"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：42000 J。Q吸 = cmΔt = 4200 × 0.2 × 50 = 42000 J。",
+      "difficulty": 2
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "质量为 10 kg 的水温度升高 5 ℃，水吸收的热量是（c水 = 4.2×10^3 J/(kg·℃)）（ ）",
+      "options": [
+        "420000 J",
+        "105000 J",
+        "231000 J",
+        "210000 J"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：210000 J。Q吸 = cmΔt = 4200 × 10 × 5 = 210000 J。",
+      "difficulty": 2
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "完全燃烧 1 kg 某种燃料，该燃料的热值为 3×10^7 J/kg，放出的热量是（ ）",
+      "options": [
+        "1.5×10^7 J",
+        "4×10^7 J",
+        "3×10^7 J",
+        "6×10^7 J"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：3×10^7 J。Q放 = mq = 1 kg × 3×10^7 J/kg = 3×10^7 J。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "完全燃烧 2 kg 某种燃料，该燃料的热值为 3×10^7 J/kg，放出的热量是（ ）",
+      "options": [
+        "7×10^7 J",
+        "6×10^7 J",
+        "12×10^7 J",
+        "3×10^7 J"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：6×10^7 J。Q放 = mq = 2 kg × 3×10^7 J/kg = 6×10^7 J。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "完全燃烧 3 kg 某种燃料，该燃料的热值为 3×10^7 J/kg，放出的热量是（ ）",
+      "options": [
+        "9×10^7 J",
+        "18×10^7 J",
+        "4.5×10^7 J",
+        "10×10^7 J"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：9×10^7 J。Q放 = mq = 3 kg × 3×10^7 J/kg = 9×10^7 J。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "完全燃烧 0.5 kg 某种燃料，该燃料的热值为 3×10^7 J/kg，放出的热量是（ ）",
+      "options": [
+        "3×10^7 J",
+        "0.75×10^7 J",
+        "2.5×10^7 J",
+        "1.5×10^7 J"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1.5×10^7 J。Q放 = mq = 0.5 kg × 3×10^7 J/kg = 1.5×10^7 J。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "完全燃烧 1.5 kg 某种燃料，该燃料的热值为 3×10^7 J/kg，放出的热量是（ ）",
+      "options": [
+        "2.25×10^7 J",
+        "5.5×10^7 J",
+        "4.5×10^7 J",
+        "9×10^7 J"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：4.5×10^7 J。Q放 = mq = 1.5 kg × 3×10^7 J/kg = 4.5×10^7 J。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "完全燃烧 2.5 kg 某种燃料，该燃料的热值为 3×10^7 J/kg，放出的热量是（ ）",
+      "options": [
+        "8.5×10^7 J",
+        "7.5×10^7 J",
+        "15×10^7 J",
+        "3.75×10^7 J"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：7.5×10^7 J。Q放 = mq = 2.5 kg × 3×10^7 J/kg = 7.5×10^7 J。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "完全燃烧 0.2 kg 某种燃料，该燃料的热值为 3×10^7 J/kg，放出的热量是（ ）",
+      "options": [
+        "0.6000000000000001×10^7 J",
+        "1.2000000000000002×10^7 J",
+        "0.30000000000000004×10^7 J",
+        "1.6×10^7 J"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：0.6000000000000001×10^7 J。Q放 = mq = 0.2 kg × 3×10^7 J/kg = 0.6000000000000001×10^7 J。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "完全燃烧 0.4 kg 某种燃料，该燃料的热值为 3×10^7 J/kg，放出的热量是（ ）",
+      "options": [
+        "2.4000000000000004×10^7 J",
+        "0.6000000000000001×10^7 J",
+        "2.2×10^7 J",
+        "1.2000000000000002×10^7 J"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1.2000000000000002×10^7 J。Q放 = mq = 0.4 kg × 3×10^7 J/kg = 1.2000000000000002×10^7 J。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "完全燃烧 0.6 kg 某种燃料，该燃料的热值为 3×10^7 J/kg，放出的热量是（ ）",
+      "options": [
+        "0.8999999999999999×10^7 J",
+        "2.8×10^7 J",
+        "1.7999999999999998×10^7 J",
+        "3.5999999999999996×10^7 J"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1.7999999999999998×10^7 J。Q放 = mq = 0.6 kg × 3×10^7 J/kg = 1.7999999999999998×10^7 J。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "完全燃烧 0.8 kg 某种燃料，该燃料的热值为 3×10^7 J/kg，放出的热量是（ ）",
+      "options": [
+        "3.4000000000000004×10^7 J",
+        "2.4000000000000004×10^7 J",
+        "4.800000000000001×10^7 J",
+        "1.2000000000000002×10^7 J"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：2.4000000000000004×10^7 J。Q放 = mq = 0.8 kg × 3×10^7 J/kg = 2.4000000000000004×10^7 J。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某热机消耗燃料放出的热量为 10×10^6 J，用来做有用功的能量为 3×10^6 J，该热机的效率是（ ）",
+      "options": [
+        "30%",
+        "40%",
+        "50%",
+        "75%"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：30%。η = W有用/Q放 × 100% = 3/10 × 100% = 30%。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某热机消耗燃料放出的热量为 8×10^6 J，用来做有用功的能量为 4×10^6 J，该热机的效率是（ ）",
+      "options": [
+        "60%",
+        "70%",
+        "55%",
+        "50%"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：50%。η = W有用/Q放 × 100% = 4/8 × 100% = 50%。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某热机消耗燃料放出的热量为 10×10^6 J，用来做有用功的能量为 6×10^6 J，该热机的效率是（ ）",
+      "options": [
+        "80%",
+        "45%",
+        "60%",
+        "70%"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：60%。η = W有用/Q放 × 100% = 6/10 × 100% = 60%。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某热机消耗燃料放出的热量为 10×10^6 J，用来做有用功的能量为 2.5×10^6 J，该热机的效率是（ ）",
+      "options": [
+        "80%",
+        "25%",
+        "35%",
+        "45%"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：25%。η = W有用/Q放 × 100% = 2.5/10 × 100% = 25%。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某热机消耗燃料放出的热量为 9×10^6 J，用来做有用功的能量为 4.5×10^6 J，该热机的效率是（ ）",
+      "options": [
+        "50%",
+        "60%",
+        "70%",
+        "55%"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：50%。η = W有用/Q放 × 100% = 4.5/9 × 100% = 50%。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某热机消耗燃料放出的热量为 10×10^6 J，用来做有用功的能量为 7×10^6 J，该热机的效率是（ ）",
+      "options": [
+        "80%",
+        "90%",
+        "35%",
+        "70%"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：70%。η = W有用/Q放 × 100% = 7/10 × 100% = 70%。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某热机消耗燃料放出的热量为 6×10^6 J，用来做有用功的能量为 1.2×10^6 J，该热机的效率是（ ）",
+      "options": [
+        "40%",
+        "85%",
+        "20%",
+        "30%"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：20%。η = W有用/Q放 × 100% = 1.2/6 × 100% = 20%。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某热机消耗燃料放出的热量为 5×10^6 J，用来做有用功的能量为 2×10^6 J，该热机的效率是（ ）",
+      "options": [
+        "65%",
+        "40%",
+        "50%",
+        "60%"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：40%。η = W有用/Q放 × 100% = 2/5 × 100% = 40%。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某热机消耗燃料放出的热量为 8×10^6 J，用来做有用功的能量为 5.6×10^6 J，该热机的效率是（ ）",
+      "options": [
+        "70%",
+        "80%",
+        "90%",
+        "35%"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：70%。η = W有用/Q放 × 100% = 5.6/8 × 100% = 70%。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-物理-3",
+      "chapterName": "内能与热机",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某热机消耗燃料放出的热量为 9×10^6 J，用来做有用功的能量为 3.6×10^6 J，该热机的效率是（ ）",
+      "options": [
+        "50%",
+        "60%",
+        "65%",
+        "40%"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：40%。η = W有用/Q放 × 100% = 3.6/9 × 100% = 40%。",
+      "difficulty": 2
     }
   ]
 }

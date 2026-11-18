@@ -6,9 +6,9 @@
     "id": "初一-数学-1",
     "name": "有理数与数轴"
   },
-  "generatedAt": "2026-11-13T02:42:30.938Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.118Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedfufe",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：互为相反数的两个数可表示为 a 与 -a，且 a≠0 时符号相反，因此对应点在原点两侧；又 |a|=|-a|，所以它们到原点的距离相等。\nB. 错误：点M在原点左侧，若点N也在原点左侧，则两点表示的数同号，不可能互为相反数（0除外，但题干已排除点M为原点的情形）。\nC. 错误：互为相反数的两个数绝对值相等，因此它们到原点的距离一定相等，不是“不一定相等”。\nD. 错误：点M在原点左侧，不可能与点N都位于原点右侧。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "-7 的相反数是（ ）",
+      "options": [
+        "7",
+        "-7",
+        "-8",
+        "8"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：7。相反数只改变符号：-7 的相反数是 7。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "5 的相反数是（ ）",
+      "options": [
+        "5",
+        "4",
+        "-4",
+        "-5"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：-5。相反数只改变符号：5 的相反数是 -5。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "-12 的相反数是（ ）",
+      "options": [
+        "-13",
+        "13",
+        "12",
+        "-12"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：12。相反数只改变符号：-12 的相反数是 12。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "9 的相反数是（ ）",
+      "options": [
+        "-8",
+        "-9",
+        "9",
+        "8"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：-9。相反数只改变符号：9 的相反数是 -9。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "-3 的相反数是（ ）",
+      "options": [
+        "3",
+        "-3",
+        "-4",
+        "4"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：3。相反数只改变符号：-3 的相反数是 3。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "8 的相反数是（ ）",
+      "options": [
+        "8",
+        "7",
+        "-7",
+        "-8"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：-8。相反数只改变符号：8 的相反数是 -8。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "-15 的相反数是（ ）",
+      "options": [
+        "-16",
+        "16",
+        "15",
+        "-15"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：15。相反数只改变符号：-15 的相反数是 15。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "6 的相反数是（ ）",
+      "options": [
+        "-5",
+        "-6",
+        "6",
+        "5"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：-6。相反数只改变符号：6 的相反数是 -6。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "-1 的相反数是（ ）",
+      "options": [
+        "1",
+        "-1",
+        "-2",
+        "2"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1。相反数只改变符号：-1 的相反数是 1。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "11 的相反数是（ ）",
+      "options": [
+        "11",
+        "10",
+        "-10",
+        "-11"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：-11。相反数只改变符号：11 的相反数是 -11。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "数轴上点 A 表示 -3，先向右移动 5 个单位到点 B，再向左移动 2 个单位到点 C，则点 C 表示的数是（ ）",
+      "options": [
+        "4",
+        "-10",
+        "0",
+        "-6"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：0。向右记作加、向左记作减：-3 + 5 - 2 = 0。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "数轴上点 A 表示 4，先向右移动 3 个单位到点 B，再向左移动 6 个单位到点 C，则点 C 表示的数是（ ）",
+      "options": [
+        "-5",
+        "1",
+        "7",
+        "13"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1。向右记作加、向左记作减：4 + 3 - 6 = 1。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "数轴上点 A 表示 -6，先向右移动 8 个单位到点 B，再向左移动 -2 个单位到点 C，则点 C 表示的数是（ ）",
+      "options": [
+        "4",
+        "-16",
+        "0",
+        "-12"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：4。向右记作加、向左记作减：-6 + 8 - -2 = 4。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "数轴上点 A 表示 2，先向右移动 7 个单位到点 B，再向左移动 -1 个单位到点 C，则点 C 表示的数是（ ）",
+      "options": [
+        "-6",
+        "8",
+        "-4",
+        "10"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：10。向右记作加、向左记作减：2 + 7 - -1 = 10。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "数轴上点 A 表示 -5，先向右移动 4 个单位到点 B，再向左移动 8 个单位到点 C，则点 C 表示的数是（ ）",
+      "options": [
+        "7",
+        "-17",
+        "-9",
+        "-1"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：-9。向右记作加、向左记作减：-5 + 4 - 8 = -9。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "数轴上点 A 表示 7，先向右移动 5 个单位到点 B，再向左移动 -4 个单位到点 C，则点 C 表示的数是（ ）",
+      "options": [
+        "6",
+        "16",
+        "-2",
+        "8"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：16。向右记作加、向左记作减：7 + 5 - -4 = 16。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "数轴上点 A 表示 -8，先向右移动 6 个单位到点 B，再向左移动 3 个单位到点 C，则点 C 表示的数是（ ）",
+      "options": [
+        "-5",
+        "-11",
+        "1",
+        "-17"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：-5。向右记作加、向左记作减：-8 + 6 - 3 = -5。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "|-9| =（ ）",
+      "options": [
+        "9",
+        "-9",
+        "-10",
+        "10"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：9。绝对值表示到原点的距离，恒为非负数，所以 |-9| = 9。",
+      "difficulty": 1
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "|4| =（ ）",
+      "options": [
+        "-5",
+        "5",
+        "3",
+        "4"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：4。绝对值表示到原点的距离，恒为非负数，所以 |4| = 4。",
+      "difficulty": 1
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "|-17| =（ ）",
+      "options": [
+        "-18",
+        "18",
+        "17",
+        "-17"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：17。绝对值表示到原点的距离，恒为非负数，所以 |-17| = 17。",
+      "difficulty": 1
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "|12| =（ ）",
+      "options": [
+        "11",
+        "12",
+        "-13",
+        "13"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：12。绝对值表示到原点的距离，恒为非负数，所以 |12| = 12。",
+      "difficulty": 1
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "|-6| =（ ）",
+      "options": [
+        "6",
+        "-6",
+        "-7",
+        "7"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：6。绝对值表示到原点的距离，恒为非负数，所以 |-6| = 6。",
+      "difficulty": 1
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "|20| =（ ）",
+      "options": [
+        "-21",
+        "21",
+        "19",
+        "20"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：20。绝对值表示到原点的距离，恒为非负数，所以 |20| = 20。",
+      "difficulty": 1
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "|-25| =（ ）",
+      "options": [
+        "-26",
+        "26",
+        "25",
+        "-25"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：25。绝对值表示到原点的距离，恒为非负数，所以 |-25| = 25。",
+      "difficulty": 1
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "计算 -8 + (5) 的结果是（ ）",
+      "options": [
+        "13",
+        "3",
+        "-3",
+        "-13"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：-3。-8 + (5) = -3：异号相加取绝对值较大的加数的符号，再用较大绝对值减去较小绝对值。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "计算 7 + (-12) 的结果是（ ）",
+      "options": [
+        "5",
+        "-5",
+        "19",
+        "-19"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：-5。7 + (-12) = -5：异号相加取绝对值较大的加数的符号，再用较大绝对值减去较小绝对值。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "计算 -6 + (-9) 的结果是（ ）",
+      "options": [
+        "-15",
+        "3",
+        "-3",
+        "15"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：-15。-6 + (-9) = -15：异号相加取绝对值较大的加数的符号，再用较大绝对值减去较小绝对值。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "计算 13 + (-4) 的结果是（ ）",
+      "options": [
+        "17",
+        "-17",
+        "-9",
+        "9"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：9。13 + (-4) = 9：异号相加取绝对值较大的加数的符号，再用较大绝对值减去较小绝对值。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "计算 -11 + (3) 的结果是（ ）",
+      "options": [
+        "14",
+        "8",
+        "-8",
+        "-14"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：-8。-11 + (3) = -8：异号相加取绝对值较大的加数的符号，再用较大绝对值减去较小绝对值。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-数学-1",
+      "chapterName": "有理数与数轴",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "计算 9 + (-15) 的结果是（ ）",
+      "options": [
+        "6",
+        "-6",
+        "24",
+        "-24"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：-6。9 + (-15) = -6：异号相加取绝对值较大的加数的符号，再用较大绝对值减去较小绝对值。",
+      "difficulty": 2
     }
   ]
 }

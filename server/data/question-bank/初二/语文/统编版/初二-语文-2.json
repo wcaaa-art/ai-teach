@@ -4,16 +4,16 @@
   "edition": "统编版",
   "chapter": {
     "id": "初二-语文-2",
-    "name": "八上：说明文阅读"
+    "name": "说明文阅读"
   },
-  "generatedAt": "2026-11-14T12:14:47.805Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.878Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdbjz2",
       "chapterId": "初二-语文-2",
-      "chapterName": "八上：说明文阅读",
+      "chapterName": "说明文阅读",
       "type": "single",
       "dimension": "concept",
       "stem": "阅读一篇说明文时，要准确把握说明对象及其主要特征。下列做法最恰当的一项是（　　）",
@@ -30,7 +30,7 @@
     {
       "id": "diag-2-mwgdbjz2",
       "chapterId": "初二-语文-2",
-      "chapterName": "八上：说明文阅读",
+      "chapterName": "说明文阅读",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读下面语段，完成题目。\n城市热岛效应是指城市因大量的人工发热、建筑物和道路等高蓄热体及绿地减少等因素，造成城市“高温化”的现象。观测表明，“夏季午后，城区气温可比郊区高出3至5摄氏度”；冬季夜间，城区气温也往往高于郊区。这种效应会使城区夏季空调能耗增加，并加剧近地面臭氧污染。\n文中画线句主要运用了哪两种说明方法？",
@@ -47,7 +47,7 @@
     {
       "id": "diag-3-mwgdbjz2",
       "chapterId": "初二-语文-2",
-      "chapterName": "八上：说明文阅读",
+      "chapterName": "说明文阅读",
       "type": "single",
       "dimension": "transfer",
       "stem": "阅读下面语段，完成题目。\n【语段】城市热岛效应，是指城市中心区气温明显高于周边郊区的现象。据观测，夏季晴朗无风的夜晚，某大城市中心区与郊区的温差可达5℃以上。形成原因主要有三：一是柏油路面和水泥建筑吸热多、升温快；二是绿地和水面减少，蒸发散热能力下降；三是空调、汽车等人为热源集中排放。因此，缓解热岛效应可从增加屋顶绿化、保留通风廊道等方面入手。\n小文要写一篇短文，介绍某内陆城市经过三年改造后热岛效应明显减弱的情况，他打算借鉴上面语段的分析思路。下列构思最恰当的一项是（  ）",
@@ -64,7 +64,7 @@
     {
       "id": "diag-4-mwgdbjz2",
       "chapterId": "初二-语文-2",
-      "chapterName": "八上：说明文阅读",
+      "chapterName": "说明文阅读",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "阅读下面的说明文，完成题目。\n\n萤火虫的“灯”藏在腹部末端。那里有一层特殊的发光细胞，细胞内含有荧光素和荧光素酶。当萤火虫呼吸时，氧气进入发光细胞，荧光素在荧光素酶的催化下与氧结合，便发出光来。这一过程产生的热量极少，几乎全部转化为光能，因此人们称它为“冷光”。\n萤火虫发光并不只是为了好看。不同种类的萤火虫，闪光的时间长短、次数和颜色各不相同，这就像一套独特的“密码”。雄虫发出信号，雌虫若认得出，便会以同样的节奏回应。而幼虫期的萤火虫发光，更多是警告捕食者：我有毒，别碰我。\n如今，城市里的萤火虫越来越少。路灯、车灯把夜晚照得通明，萤火虫那点微光被淹没；河道被硬化、杂草被清除，幼虫失去了潮湿的栖息地；农药和杀虫剂则在它们体内一点点累积。要让这些会发光的小虫重回夏夜，我们总得留出一片真正的黑夜。\n\n下列对文章的理解和分析，不正确的一项是",
@@ -81,7 +81,7 @@
     {
       "id": "diag-5-mwgdbjz2",
       "chapterId": "初二-语文-2",
-      "chapterName": "八上：说明文阅读",
+      "chapterName": "说明文阅读",
       "type": "single",
       "dimension": "concept",
       "stem": "下列关于说明文知识的表述，正确的一项是（　　）",
@@ -98,7 +98,7 @@
     {
       "id": "diag-6-mwgdbjz2",
       "chapterId": "初二-语文-2",
-      "chapterName": "八上：说明文阅读",
+      "chapterName": "说明文阅读",
       "type": "single",
       "dimension": "basic-application",
       "stem": "对下列句子说明方法及作用的分析，正确的一项是（ ）",
@@ -115,7 +115,7 @@
     {
       "id": "diag-7-mwgdbjz2",
       "chapterId": "初二-语文-2",
-      "chapterName": "八上：说明文阅读",
+      "chapterName": "说明文阅读",
       "type": "single",
       "dimension": "transfer",
       "stem": "阅读下面语段，完成题目。\n口袋公园又称袖珍公园，多利用城市边角地、闲置地见缝插针地建设。它面积不大，却像散落在街巷中的绿色“小客厅”：一条长椅、几株乔木、一段步道，便能让附近居民在步行几分钟内歇脚、聊天、锻炼。与大型综合公园相比，口袋公园不追求游乐设施的齐全，而注重就近服务；它也不以游客量为主要目标，而以日常使用率为衡量尺度。正因如此，口袋公园在老旧城区更新中往往比新建大公园更容易落地，也更能细密地织补城市公共空间。\n下列对文段说明方法和说明目的的理解，最恰当的一项是（）",
@@ -132,7 +132,7 @@
     {
       "id": "diag-8-mwgdbjz2",
       "chapterId": "初二-语文-2",
-      "chapterName": "八上：说明文阅读",
+      "chapterName": "说明文阅读",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "阅读下面文段，完成题目。\n①湿地被称为“地球之肾”。②它像一块巨大的海绵，能蓄水、净水。③据研究，一公顷湿地每年可吸收二氧化碳约十吨，相当于三辆小汽车一年的排放量。④因此，保护湿地就是保护我们赖以生存的环境。\n下列对文段的理解或分析，不正确的一项是（　　）",
@@ -149,7 +149,7 @@
     {
       "id": "diag-10-mwgdbjz2",
       "chapterId": "初二-语文-2",
-      "chapterName": "八上：说明文阅读",
+      "chapterName": "说明文阅读",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读下面语段，回答问题。\n\n①竹子是地球上生长最快的植物之一。②以毛竹为例，它在生长旺季一昼夜可长高近一米，四十多天便能完成从笋到成竹的拔节过程。③不过，这种\"快\"并非凭空而来：竹笋破土前，地下茎已在土壤中默默延伸数年，积蓄了充足的养分。④正因如此，竹子前期的\"慢\"与后期的\"快\"构成了一个完整的生长链条。\n\n对上述语段说明方法及作用的分析，正确的一项是（　　）",
@@ -166,7 +166,7 @@
     {
       "id": "diag-1-mwgdbrp7",
       "chapterId": "初二-语文-2",
-      "chapterName": "八上：说明文阅读",
+      "chapterName": "说明文阅读",
       "type": "single",
       "dimension": "concept",
       "stem": "阅读下面语段，完成题目。\n①二维码是用特定几何图形按一定规律在平面上记录信息的一种编码方式。②它由黑白模块组成，黑色模块代表“1”，白色模块代表“0”。③扫码设备读取这些模块的排列后，便能还原出网址、文字等信息。④与普通条形码相比，二维码能在更小面积内存储更多信息。\n下列对该语段说明顺序的分析，正确的一项是（　　）",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 0,
       "explanation": "A. 正确：语段①先概括说明二维码是一种编码方式，②③再具体说明其构成和识读过程，整体呈现由概括到具体的说明顺序。\nB. 错误：语段开头先下定义，后面才展开具体说明，并非先举例、后总结定义。\nC. 错误：语段中没有出现表示时间先后的词语，也没有介绍二维码的发展过程，不能判断为时间顺序。\nD. 错误：虽然②提到黑白模块，但并未按上下、左右等方位依次说明，全文也不是以空间位置为组织线索。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“赵州桥非常雄伟，全长50.82米”运用的说明方法是（　　）",
+      "options": [
+        "列数字",
+        "打比方",
+        "作比较",
+        "分类别"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：列数字。按说明方法及其作用判断，本题正确答案是「列数字」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“苏州园林与北京的园林不同，极少使用彩绘”运用的说明方法是（　　）",
+      "options": [
+        "举例子",
+        "下定义",
+        "摹状貌",
+        "作比较"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：作比较。按说明方法及其作用判断，本题正确答案是「作比较」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“石拱桥的桥洞成弧形，就像虹”运用的说明方法是（　　）",
+      "options": [
+        "分类别",
+        "作诠释",
+        "打比方",
+        "列数字"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：打比方。按说明方法及其作用判断，本题正确答案是「打比方」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“我国的建筑，从古代的宫殿到近代的一般住房，绝大部分是对称的”运用的说明方法是（　　）",
+      "options": [
+        "画图表",
+        "举例子",
+        "下定义",
+        "打比方"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：举例子。按说明方法及其作用判断，本题正确答案是「举例子」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“统筹方法是一种安排工作进程的数学方法”运用的说明方法是（　　）",
+      "options": [
+        "下定义",
+        "举例子",
+        "作比较",
+        "引用"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：下定义。按说明方法及其作用判断，本题正确答案是「下定义」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“按屏的建造材料及其装饰的华丽程度，分为金屏、银屏、锦屏等”运用的说明方法是（　　）",
+      "options": [
+        "列数字",
+        "作比较",
+        "摹状貌",
+        "分类别"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：分类别。按说明方法及其作用判断，本题正确答案是「分类别」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "列数字的作用是（　　）",
+      "options": [
+        "使说明条理清晰",
+        "使说明富有情感",
+        "使说明准确、具体",
+        "使说明生动形象"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：使说明准确、具体。按说明方法及其作用判断，本题正确答案是「使说明准确、具体」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "作比较的作用是（　　）",
+      "options": [
+        "抒发情感",
+        "突出说明对象的特征",
+        "增加文章字数",
+        "设置悬念"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：突出说明对象的特征。按说明方法及其作用判断，本题正确答案是「突出说明对象的特征」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "打比方的作用是（　　）",
+      "options": [
+        "使说明形象生动、通俗易懂",
+        "使说明准确严密",
+        "使说明简洁",
+        "使说明有说服力"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：使说明形象生动、通俗易懂。按说明方法及其作用判断，本题正确答案是「使说明形象生动、通俗易懂」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下定义的作用是（　　）",
+      "options": [
+        "使说明生动形象",
+        "使文章更含蓄",
+        "使情节更曲折",
+        "科学、准确地揭示事物的本质特征"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：科学、准确地揭示事物的本质特征。按说明方法及其作用判断，本题正确答案是「科学、准确地揭示事物的本质特征」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "介绍建筑物通常采用的说明顺序是（　　）",
+      "options": [
+        "逻辑顺序",
+        "倒叙顺序",
+        "空间顺序",
+        "时间顺序"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：空间顺序。按说明顺序、结构与段落作用判断，本题正确答案是「空间顺序」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "介绍事物发展演变过程通常采用的说明顺序是（　　）",
+      "options": [
+        "插叙顺序",
+        "时间顺序",
+        "空间顺序",
+        "逻辑顺序"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：时间顺序。按说明顺序、结构与段落作用判断，本题正确答案是「时间顺序」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "说明事理通常采用的说明顺序是（　　）",
+      "options": [
+        "逻辑顺序",
+        "时间顺序",
+        "空间顺序",
+        "倒叙顺序"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：逻辑顺序。按说明顺序、结构与段落作用判断，本题正确答案是「逻辑顺序」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "逻辑顺序常见的类型不包括（　　）",
+      "options": [
+        "由总到分",
+        "由因到果",
+        "由主到次",
+        "由远及近"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：由远及近。按说明顺序、结构与段落作用判断，本题正确答案是「由远及近」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“总—分—总”结构的特点是（　　）",
+      "options": [
+        "只有总说",
+        "只有分说",
+        "先总说，再分说，最后总结",
+        "先分说再总说"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：先总说，再分说，最后总结。按说明顺序、结构与段落作用判断，本题正确答案是「先总说，再分说，最后总结」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "说明文段首中心句的作用是（　　）",
+      "options": [
+        "交代背景",
+        "概括本段主要内容，统领全段",
+        "设置悬念",
+        "抒发情感"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：概括本段主要内容，统领全段。按说明顺序、结构与段落作用判断，本题正确答案是「概括本段主要内容，统领全段」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "说明文开头的作用通常是（　　）",
+      "options": [
+        "引出说明对象，激发读者兴趣",
+        "总结全文",
+        "深化主题",
+        "塑造人物"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：引出说明对象，激发读者兴趣。按说明顺序、结构与段落作用判断，本题正确答案是「引出说明对象，激发读者兴趣」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "说明文结尾的作用通常是（　　）",
+      "options": [
+        "设置悬念",
+        "引出新情节",
+        "抒发情感",
+        "总结全文，强调说明对象的特点"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：总结全文，强调说明对象的特点。按说明顺序、结构与段落作用判断，本题正确答案是「总结全文，强调说明对象的特点」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "过渡句在说明文中的作用是（　　）",
+      "options": [
+        "描写人物",
+        "论证观点",
+        "连接上下文，使说明层次清晰",
+        "总结全文"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：连接上下文，使说明层次清晰。按说明顺序、结构与段落作用判断，本题正确答案是「连接上下文，使说明层次清晰」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "说明文标题的作用可能是（　　）",
+      "options": [
+        "设置人物冲突",
+        "点明说明对象或特征，吸引读者",
+        "交代作者经历",
+        "抒发作者情感"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：点明说明对象或特征，吸引读者。按说明顺序、结构与段落作用判断，本题正确答案是「点明说明对象或特征，吸引读者」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“这座桥大约建于公元605年”中“大约”一词体现了说明文语言的（　　）",
+      "options": [
+        "准确性",
+        "生动性",
+        "抒情性",
+        "幽默性"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：准确性。按说明文语言的准确性与开放性题目判断，本题正确答案是「准确性」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "说明文中“之一”“主要”“一般”等词语的作用是（　　）",
+      "options": [
+        "使语言更生动",
+        "使文章更含蓄",
+        "增强抒情性",
+        "对说明内容进行限制，使表述更准确"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：对说明内容进行限制，使表述更准确。按说明文语言的准确性与开放性题目判断，本题正确答案是「对说明内容进行限制，使表述更准确」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "判断说明文语言是否准确，主要看（　　）",
+      "options": [
+        "是否使用了比喻",
+        "是否有感叹句",
+        "用词是否恰当地反映了客观实际",
+        "句子是否优美"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：用词是否恰当地反映了客观实际。按说明文语言的准确性与开放性题目判断，本题正确答案是「用词是否恰当地反映了客观实际」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "说明文中使用生动说明的好处是（　　）",
+      "options": [
+        "代替说明方法",
+        "增强可读性，使说明对象更形象",
+        "使说明更枯燥",
+        "减少信息量"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：增强可读性，使说明对象更形象。按说明文语言的准确性与开放性题目判断，本题正确答案是「增强可读性，使说明对象更形象」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "对说明文中的科学观点提出质疑，应该（　　）",
+      "options": [
+        "依据科学事实和可靠资料",
+        "凭主观想象",
+        "随意否定",
+        "只看标题"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：依据科学事实和可靠资料。按说明文语言的准确性与开放性题目判断，本题正确答案是「依据科学事实和可靠资料」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "说明文中引用名言、数据的作用是（　　）",
+      "options": [
+        "增加文学色彩",
+        "抒发情感",
+        "设置悬念",
+        "增强说明的权威性和说服力"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：增强说明的权威性和说服力。按说明文语言的准确性与开放性题目判断，本题正确答案是「增强说明的权威性和说服力」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "阅读说明文，把握说明对象特征的方法是（　　）",
+      "options": [
+        "只看插图",
+        "只读标题",
+        "抓住关键句和说明方法进行分析",
+        "只看开头一句"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：抓住关键句和说明方法进行分析。按说明文语言的准确性与开放性题目判断，本题正确答案是「抓住关键句和说明方法进行分析」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "说明文中“这”“其”等代词，阅读时应（　　）",
+      "options": [
+        "只看字面",
+        "结合上下文明确指代内容",
+        "忽略不看",
+        "随意理解"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：结合上下文明确指代内容。按说明文语言的准确性与开放性题目判断，本题正确答案是「结合上下文明确指代内容」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "说明文中的开放性题目，回答时应（　　）",
+      "options": [
+        "结合文章内容和科学知识，言之有理",
+        "脱离文本随意发挥",
+        "只写个人感受",
+        "照抄原文"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：结合文章内容和科学知识，言之有理。按说明文语言的准确性与开放性题目判断，本题正确答案是「结合文章内容和科学知识，言之有理」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-语文-2",
+      "chapterName": "说明文阅读",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "说明文写作要抓住事物特征，应该（　　）",
+      "options": [
+        "面面俱到罗列材料",
+        "加入大量议论",
+        "虚构事实",
+        "仔细观察，选择恰当的说明方法和顺序"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：仔细观察，选择恰当的说明方法和顺序。按说明文语言的准确性与开放性题目判断，本题正确答案是「仔细观察，选择恰当的说明方法和顺序」。",
       "difficulty": 2
     }
   ]

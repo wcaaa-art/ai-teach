@@ -42,7 +42,7 @@ const weakness = computed(() => {
 const suggestion = computed(() => {
   if (!weakness.value.length) return ''
   const names = weakness.value.slice(0, 2).map(item => `${item.chapterName}（${item.count} 题）`).join('、')
-  return `当前错题集中在${names}，建议先补这些章节：回看教材定义，再做 3–5 道同类变式，最后用章节测试验证。`
+  return `当前错题集中在${names}，建议先补这些章节：回看教材定义，再做 3–5 道同类变式，最后用章节测试验证`
 })
 
 async function reload() {
@@ -61,7 +61,7 @@ onBeforeUnmount(() => { if (previewUrl.value) URL.revokeObjectURL(previewUrl.val
 function handleFile(uploadFile) {
   const raw = uploadFile?.raw
   if (!raw) return
-  if (!raw.type.startsWith('image/')) return ElMessage.warning('请上传题目照片或截图。')
+  if (!raw.type.startsWith('image/')) return ElMessage.warning('请上传题目照片或截图')
   if (previewUrl.value) URL.revokeObjectURL(previewUrl.value)
   file.value = raw
   previewUrl.value = URL.createObjectURL(raw)
@@ -75,18 +75,18 @@ async function recognize() {
   ocrLoading.value = false
   if (result.success && result.data?.text) {
     recognizedText.value = result.data.text.slice(0, 800)
-    ElMessage.success('识别完成，可以手动修改文字。')
+    ElMessage.success('识别完成，可以手动修改文字')
   } else {
-    ElMessage.warning(result.error || '识别失败，可直接手写题干后保存。')
+    ElMessage.warning(result.error || '识别失败，可直接手写题干后保存')
   }
 }
 
 async function save() {
-  if (!props.subject || !props.grade) return ElMessage.warning('请先选择年级和科目。')
+  if (!props.subject || !props.grade) return ElMessage.warning('请先选择年级和科目')
   const chapter = props.chapters.find(item => item.id === chapterId.value)
-  if (!chapter) return ElMessage.warning('请选择这道题对应的章节。')
+  if (!chapter) return ElMessage.warning('请选择这道题对应的章节')
   const text = recognizedText.value.trim()
-  if (!previewUrl.value && !text) return ElMessage.warning('请上传题目照片，或填写题干。')
+  if (!previewUrl.value && !text) return ElMessage.warning('请上传题目照片，或填写题干')
   saving.value = true
   // 有题干时先让 AI 打知识点标签、推测错因；模型不可用时后端返回本地兜底，不阻塞保存。
   analyzing.value = true
@@ -106,14 +106,14 @@ async function save() {
     id: makeId('mistake'), grade: props.grade, subject: props.subject, edition: props.edition,
     chapterId: chapter.id, chapterName: chapter.name, text, createdAt: Date.now(),
     knowledgeTags: Array.isArray(analysis.knowledgeTags) && analysis.knowledgeTags.length ? analysis.knowledgeTags : [chapter.name],
-    errorCause: analysis.errorCause || `本题属于「${chapter.name}」。仅凭题干无法确定具体出错环节，建议对照答案回看是哪一步出错。`,
-    analysisSuggestion: analysis.suggestion || `先回看「${chapter.name}」的定义与例题，再做 3 道同类题。`,
+    errorCause: analysis.errorCause || `本题属于「${chapter.name}」，仅凭题干无法确定具体出错环节，建议对照答案回看是哪一步出错`,
+    analysisSuggestion: analysis.suggestion || `先回看「${chapter.name}」的定义与例题，再做 3 道同类题`,
     analysisSource
   })
   saving.value = false
   await reload()
   emit('saved')
-  ElMessage.success('已记入错题归因，长短板会按章节重新统计。')
+  ElMessage.success('已记入错题归因，长短板会按章节重新统计')
   if (previewUrl.value) URL.revokeObjectURL(previewUrl.value)
   file.value = null
   previewUrl.value = ''
@@ -134,7 +134,7 @@ function videoUrl(item) {
 <template>
   <div class="mistake-card" :class="{ 'is-embedded': formOnly }">
     <div class="mistake-head">
-      <div><span class="eyebrow">错题归因</span><strong>上传错题照片，按章节找出长短板</strong><p class="muted">识别只在本机执行，照片不上传；系统只保存识别文字与章节，用来统计薄弱章节并给出补强建议。</p></div>
+      <div><span class="eyebrow">错题归因</span><strong>上传错题照片，按章节找出长短板</strong><p class="muted">识别只在本机执行，照片不上传；系统只保存识别文字与章节，用来统计薄弱章节并给出补强建议</p></div>
       <el-tag effect="plain">{{ subjectMistakes.length }} 道错题</el-tag>
     </div>
     <div class="mistake-form">
@@ -151,7 +151,7 @@ function videoUrl(item) {
           </el-select>
           <el-button :loading="ocrLoading" :disabled="!file" @click="recognize">{{ ocrReady ? '识别题目文字' : '识别题目文字（首次需加载模型）' }}</el-button>
         </div>
-        <el-input v-model="recognizedText" type="textarea" :rows="3" maxlength="800" placeholder="识别出的题干会出现在这里，识别不准可以直接改；不识别也可以只选章节保存。" />
+        <el-input v-model="recognizedText" type="textarea" :rows="3" maxlength="800" placeholder="识别出的题干会出现在这里，识别不准可以直接改；不识别也可以只选章节保存" />
         <div class="mistake-actions"><el-button type="primary" :loading="saving" @click="save">{{ analyzing ? 'AI 分析中…' : '保存这道错题' }}</el-button><span class="muted">{{ analyzing ? '正在生成知识点标签与错因分析…' : '保存后立即参与下方统计' }}</span></div>
       </div>
     </div>
@@ -171,7 +171,7 @@ function videoUrl(item) {
         </li>
       </ul>
     </div>
-    <p v-else-if="!formOnly" class="muted mistake-empty">还没有错题记录。上传第一道错题后，这里会给出按章节统计的薄弱点与补强建议。</p>
+    <p v-else-if="!formOnly" class="muted mistake-empty">还没有错题记录，上传第一道错题后，这里会给出按章节统计的薄弱点与补强建议</p>
   </div>
 </template>
 

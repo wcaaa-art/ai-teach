@@ -4,19 +4,19 @@
   "edition": "统编版",
   "chapter": {
     "id": "初一-语文-6",
-    "name": "七下：文言文基础"
+    "name": "文言文基础"
   },
-  "generatedAt": "2026-11-14T12:12:58.223Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.872Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgd97hr",
       "chapterId": "初一-语文-6",
-      "chapterName": "七下：文言文基础",
+      "chapterName": "文言文基础",
       "type": "single",
       "dimension": "concept",
-      "stem": "下列对七下文言文句中加点词的解释，不正确的一项是",
+      "stem": "下列对文言文句中加点词的解释，不正确的一项是",
       "options": [
         "“蒙辞以军中多务”（《孙权劝学》）——“辞”：推托。",
         "“但当涉猎”（《孙权劝学》）——“但”：只，只是。",
@@ -30,7 +30,7 @@
     {
       "id": "diag-2-mwgd97hr",
       "chapterId": "初一-语文-6",
-      "chapterName": "七下：文言文基础",
+      "chapterName": "文言文基础",
       "type": "single",
       "dimension": "basic-application",
       "stem": "下列句子中括号内对加点词的解释，不正确的一项是",
@@ -47,7 +47,7 @@
     {
       "id": "diag-3-mwgd97hr",
       "chapterId": "初一-语文-6",
-      "chapterName": "七下：文言文基础",
+      "chapterName": "文言文基础",
       "type": "single",
       "dimension": "transfer",
       "stem": "下列各组句子中，加点词的意义和用法相同的一项是（　　）",
@@ -64,7 +64,7 @@
     {
       "id": "diag-4-mwgd97hr",
       "chapterId": "初一-语文-6",
-      "chapterName": "七下：文言文基础",
+      "chapterName": "文言文基础",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "下列对文言词句的理解，没有错误的一项是（　　）",
@@ -81,7 +81,7 @@
     {
       "id": "diag-5-mwgd97hr",
       "chapterId": "初一-语文-6",
-      "chapterName": "七下：文言文基础",
+      "chapterName": "文言文基础",
       "type": "single",
       "dimension": "concept",
       "stem": "下列对句中指定词的解释，不正确的一项是",
@@ -98,7 +98,7 @@
     {
       "id": "diag-6-mwgd97hr",
       "chapterId": "初一-语文-6",
-      "chapterName": "七下：文言文基础",
+      "chapterName": "文言文基础",
       "type": "single",
       "dimension": "basic-application",
       "stem": "下列句子中括号内词语解释有误的一项是（ ）",
@@ -115,7 +115,7 @@
     {
       "id": "diag-7-mwgd97hr",
       "chapterId": "初一-语文-6",
-      "chapterName": "七下：文言文基础",
+      "chapterName": "文言文基础",
       "type": "single",
       "dimension": "transfer",
       "stem": "阅读下面课外文言短句，回答问题。\n“（王冕）夜潜出，坐佛膝上，执策映长明灯读之，琅琅达旦。”（选自《元史·王冕传》）\n句中“夜”字的用法，与下列句中加点词用法相同的一项是（　　）",
@@ -132,10 +132,10 @@
     {
       "id": "diag-8-mwgd97hr",
       "chapterId": "初一-语文-6",
-      "chapterName": "七下：文言文基础",
+      "chapterName": "文言文基础",
       "type": "single",
       "dimension": "error-analysis",
-      "stem": "下列对七下文言文中加点词语的解释，有误的一项是（ ）",
+      "stem": "下列对文言文中加点词语的解释，有误的一项是（ ）",
       "options": [
         "蒙【辞】以军中多务——辞：推托",
         "尔安敢【轻】吾射——轻：轻视",
@@ -149,7 +149,7 @@
     {
       "id": "diag-10-mwgd97hr",
       "chapterId": "初一-语文-6",
-      "chapterName": "七下：文言文基础",
+      "chapterName": "文言文基础",
       "type": "single",
       "dimension": "basic-application",
       "stem": "下列句子中括号内词语解释不正确的一项是（　　）",
@@ -166,10 +166,10 @@
     {
       "id": "diag-1-mwgd9f59",
       "chapterId": "初一-语文-6",
-      "chapterName": "七下：文言文基础",
+      "chapterName": "文言文基础",
       "type": "single",
       "dimension": "concept",
-      "stem": "下列关于七下文言文中通假现象的理解，正确的一项是（　　）",
+      "stem": "下列关于文言文中通假现象的理解，正确的一项是（　　）",
       "options": [
         "“对镜帖花黄”中的“帖”是“字帖”的意思，不属于通假现象。",
         "“但手熟尔”中的“尔”通“耳”，是语气词，相当于“罢了”。",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：“帖”同“贴”，意为粘贴、贴上，并非“字帖”的意思，属于通假现象。\nB. 正确：“尔”通“耳”，在此处是语气词，相当于“罢了”，符合通假字音同或音近替代本字的特点。\nC. 错误：“杓”同“勺”，指勺子，二者意义相通，属于通假现象。\nD. 错误：通假字与本字通常读音相同或相近，意义也有联系，并非读音和意义都完全不同。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“率妻子邑人来此绝境”中“妻子”的古义是（　　）",
+      "options": [
+        "妻子和儿女",
+        "男子的配偶",
+        "女子的配偶",
+        "全家人"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：妻子和儿女。按文言实词与词类活用知识判断，本题正确答案是「妻子和儿女」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“双兔傍地走”中“走”的古义是（　　）",
+      "options": [
+        "行走",
+        "离开",
+        "逃跑",
+        "跑"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：跑。按文言实词与词类活用知识判断，本题正确答案是「跑」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“及其日中如探汤”中“汤”的古义是（　　）",
+      "options": [
+        "汤药",
+        "米汤",
+        "热水",
+        "汤汁"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：热水。按文言实词与词类活用知识判断，本题正确答案是「热水」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“谈笑有鸿儒”中“鸿儒”的意思是（　　）",
+      "options": [
+        "贫穷的人",
+        "博学的人",
+        "高大的人",
+        "年老的人"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：博学的人。按文言实词与词类活用知识判断，本题正确答案是「博学的人」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“无案牍之劳形”中“劳”的意思是（　　）",
+      "options": [
+        "使……劳累",
+        "劳动",
+        "劳累",
+        "功劳"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：使……劳累。按文言实词与词类活用知识判断，本题正确答案是「使……劳累」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“山不在高，有仙则名”中“名”的意思是（　　）",
+      "options": [
+        "名字",
+        "命名",
+        "名声",
+        "出名、有名"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：出名、有名。按文言实词与词类活用知识判断，本题正确答案是「出名、有名」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“斯是陋室，惟吾德馨”中“馨”的意思是（　　）",
+      "options": [
+        "房屋温暖",
+        "环境幽静",
+        "香气，这里指品德高尚",
+        "香气浓郁"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：香气，这里指品德高尚。按文言实词与词类活用知识判断，本题正确答案是「香气，这里指品德高尚」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“可爱者甚蕃”中“蕃”的意思是（　　）",
+      "options": [
+        "美丽",
+        "多",
+        "茂盛",
+        "稀少"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：多。按文言实词与词类活用知识判断，本题正确答案是「多」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“出淤泥而不染”中“染”的意思是（　　）",
+      "options": [
+        "沾染（污秽）",
+        "染色",
+        "感染",
+        "渲染"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：沾染（污秽）。按文言实词与词类活用知识判断，本题正确答案是「沾染（污秽）」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“陶后鲜有闻”中“鲜”的意思是（　　）",
+      "options": [
+        "新鲜",
+        "鲜艳",
+        "鲜美",
+        "少"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：少。按文言实词与词类活用知识判断，本题正确答案是「少」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“何陋之有”中的“之”是（　　）",
+      "options": [
+        "助词，的",
+        "动词，往",
+        "宾语前置的标志",
+        "代词，指陋室"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：宾语前置的标志。按文言虚词与特殊句式判断，本题正确答案是「宾语前置的标志」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“予独爱莲之出淤泥而不染”中的“之”是（　　）",
+      "options": [
+        "宾语前置的标志",
+        "用在主谓之间，取消句子独立性",
+        "代词，指莲",
+        "助词，的"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：用在主谓之间，取消句子独立性。按文言虚词与特殊句式判断，本题正确答案是「用在主谓之间，取消句子独立性」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“可以调素琴”中的“以”是（　　）",
+      "options": [
+        "用来",
+        "因为",
+        "凭借",
+        "认为"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：用来。按文言虚词与特殊句式判断，本题正确答案是「用来」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“不以物喜，不以己悲”中的“以”是（　　）",
+      "options": [
+        "用来",
+        "凭借",
+        "认为",
+        "因为"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：因为。按文言虚词与特殊句式判断，本题正确答案是「因为」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“莲之爱，同予者何人”中的“者”是（　　）",
+      "options": [
+        "定语后置标志",
+        "语气词",
+        "……的人",
+        "判断句标志"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：……的人。按文言虚词与特殊句式判断，本题正确答案是「……的人」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“斯是陋室”属于（　　）",
+      "options": [
+        "被动句",
+        "判断句",
+        "省略句",
+        "倒装句"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：判断句。按文言虚词与特殊句式判断，本题正确答案是「判断句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“何陋之有”属于（　　）",
+      "options": [
+        "宾语前置句",
+        "判断句",
+        "被动句",
+        "省略句"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：宾语前置句。按文言虚词与特殊句式判断，本题正确答案是「宾语前置句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“谈笑有鸿儒，往来无白丁”运用的修辞是（　　）",
+      "options": [
+        "排比",
+        "夸张",
+        "反问",
+        "对偶"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：对偶。按文言虚词与特殊句式判断，本题正确答案是「对偶」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“予谓菊，花之隐逸者也”属于（　　）",
+      "options": [
+        "省略句",
+        "疑问句",
+        "判断句",
+        "被动句"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：判断句。按文言虚词与特殊句式判断，本题正确答案是「判断句」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "文言文中省略主语的现象很常见，翻译时应该（　　）",
+      "options": [
+        "只译谓语",
+        "根据上下文补出省略的成分",
+        "保留省略不译",
+        "随意添加内容"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：根据上下文补出省略的成分。按文言虚词与特殊句式判断，本题正确答案是「根据上下文补出省略的成分」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "文言文翻译的基本方法是（　　）",
+      "options": [
+        "留、替、调、补、删",
+        "增、删、改、换、编",
+        "抄、读、背、默、写",
+        "只看注释"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：留、替、调、补、删。按文言文翻译方法与内容理解判断，本题正确答案是「留、替、调、补、删」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "翻译中的“留”是指（　　）",
+      "options": [
+        "删去所有虚词",
+        "补充省略成分",
+        "调整语序",
+        "保留人名、地名、官名等专有名词"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：保留人名、地名、官名等专有名词。按文言文翻译方法与内容理解判断，本题正确答案是「保留人名、地名、官名等专有名词」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "翻译中的“替”是指（　　）",
+      "options": [
+        "删除原句",
+        "调整语序",
+        "用现代汉语词语替换古代词语",
+        "保留原词"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：用现代汉语词语替换古代词语。按文言文翻译方法与内容理解判断，本题正确答案是「用现代汉语词语替换古代词语」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "翻译中的“调”是指（　　）",
+      "options": [
+        "增加内容",
+        "调整倒装句的语序，使之符合现代汉语习惯",
+        "保留原语序",
+        "删除句子"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：调整倒装句的语序，使之符合现代汉语习惯。按文言文翻译方法与内容理解判断，本题正确答案是「调整倒装句的语序，使之符合现代汉语习惯」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "翻译中的“补”是指（　　）",
+      "options": [
+        "补出省略的成分",
+        "删去多余成分",
+        "保留专有名词",
+        "替换古今异义词"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：补出省略的成分。按文言文翻译方法与内容理解判断，本题正确答案是「补出省略的成分」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "翻译中的“删”是指（　　）",
+      "options": [
+        "删去所有实词",
+        "删去句子主干",
+        "删去注释",
+        "删去没有实在意义的虚词"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：删去没有实在意义的虚词。按文言文翻译方法与内容理解判断，本题正确答案是「删去没有实在意义的虚词」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "概括文言文内容，应该（　　）",
+      "options": [
+        "只写作者",
+        "只抄注释",
+        "抓住人物、事件和结果",
+        "只译第一句"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：抓住人物、事件和结果。按文言文翻译方法与内容理解判断，本题正确答案是「抓住人物、事件和结果」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "分析文言文中的人物形象，可以结合（　　）",
+      "options": [
+        "注释的多少",
+        "人物的言行和事件",
+        "文章的篇幅",
+        "作者的籍贯"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：人物的言行和事件。按文言文翻译方法与内容理解判断，本题正确答案是「人物的言行和事件」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "阅读文言文得到的启示，应该（　　）",
+      "options": [
+        "联系文章内容和自己的生活实际",
+        "脱离文本随意发挥",
+        "只写文章翻译",
+        "只写作者介绍"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：联系文章内容和自己的生活实际。按文言文翻译方法与内容理解判断，本题正确答案是「联系文章内容和自己的生活实际」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-语文-6",
+      "chapterName": "文言文基础",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "给文言文断句，主要依据是（　　）",
+      "options": [
+        "字数的多少",
+        "标点的位置",
+        "作者的朝代",
+        "句意、语法结构和常见虚词"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：句意、语法结构和常见虚词。按文言文翻译方法与内容理解判断，本题正确答案是「句意、语法结构和常见虚词」。",
+      "difficulty": 2
     }
   ]
 }

@@ -6,9 +6,9 @@
     "id": "初二-道德与法治-5",
     "name": "国家利益与国家安全"
   },
-  "generatedAt": "2026-11-14T12:16:43.742Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.997Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgde95n",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 1,
       "explanation": "A. 错误：制止危害国家安全行为应在法律允许的范围内进行，擅自抢夺他人财物、强行删除照片可能侵犯他人合法权益，甚至使自己违法，不是依法可行的做法。\nB. 正确：维护国家安全是公民的基本义务；发现危害国家安全的行为，公民应当及时向国家安全机关等有关部门报告，并尽可能提供线索，这既履行了法定义务，也有利于有关部门依法处理。\nC. 错误：将可能涉及国家秘密或军事设施的内容转发扩散，可能进一步泄露国家秘密、危害国家安全，与维护国家安全的要求相冲突。\nD. 错误：国家安全与每个公民息息相关，公民有维护国家安全的义务；对危害国家安全的行为不理会，是没有履行法定义务的表现。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "国家利益涉及（　　）等领域",
+      "options": [
+        "政治、经济、文化、社会、军事等",
+        "只有经济",
+        "只有军事",
+        "只有政治"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：政治、经济、文化、社会、军事等。按国家利益的内涵与地位判断，本题正确答案是「政治、经济、文化、社会、军事等」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "国家核心利益包括（　　）",
+      "options": [
+        "个人利益",
+        "企业利益",
+        "地方利益",
+        "国家主权、国家安全、领土完整、国家统一等"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：国家主权、国家安全、领土完整、国家统一等。按国家利益的内涵与地位判断，本题正确答案是「国家主权、国家安全、领土完整、国家统一等」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "国家利益与人民利益的关系是（　　）",
+      "options": [
+        "二者没有关系",
+        "人民利益高于国家利益",
+        "国家利益是人民利益的集中体现，二者根本上一致",
+        "二者完全对立"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：国家利益是人民利益的集中体现，二者根本上一致。按国家利益的内涵与地位判断，本题正确答案是「国家利益是人民利益的集中体现，二者根本上一致」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "国家利益至上，要求我们（　　）",
+      "options": [
+        "无视国家利益",
+        "把国家利益放在第一位，个人利益服从国家利益",
+        "只顾个人利益",
+        "损害国家利益"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：把国家利益放在第一位，个人利益服从国家利益。按国家利益的内涵与地位判断，本题正确答案是「把国家利益放在第一位，个人利益服从国家利益」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列行为维护国家利益的是（　　）",
+      "options": [
+        "保守国家秘密，维护国家统一",
+        "泄露国家秘密",
+        "散布分裂言论",
+        "损害国家荣誉"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：保守国家秘密，维护国家统一。按国家利益的内涵与地位判断，本题正确答案是「保守国家秘密，维护国家统一」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "当个人利益与国家利益发生矛盾时，应该（　　）",
+      "options": [
+        "只顾个人利益",
+        "损害国家利益",
+        "逃避责任",
+        "以国家利益为重，必要时牺牲个人利益"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：以国家利益为重，必要时牺牲个人利益。按国家利益的内涵与地位判断，本题正确答案是「以国家利益为重，必要时牺牲个人利益」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "维护国家利益是（　　）",
+      "options": [
+        "只有军人的责任",
+        "可做可不做",
+        "每个公民的责任和义务",
+        "只有国家机关的责任"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：每个公民的责任和义务。按国家利益的内涵与地位判断，本题正确答案是「每个公民的责任和义务」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列属于损害国家利益的行为是（　　）",
+      "options": [
+        "依法纳税",
+        "在网络上散布危害国家安全的言论",
+        "参加爱国主义教育活动",
+        "维护民族团结"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：在网络上散布危害国家安全的言论。按国家利益的内涵与地位判断，本题正确答案是「在网络上散布危害国家安全的言论」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "树立总体国家安全观，要以（　　）为宗旨",
+      "options": [
+        "人民安全",
+        "政治安全",
+        "经济安全",
+        "军事安全"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：人民安全。按国家利益的内涵与地位判断，本题正确答案是「人民安全」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "坚持国家利益至上，要（　　）",
+      "options": [
+        "只看眼前利益",
+        "忽视国家安全",
+        "追求个人私利",
+        "增强维护国家利益的责任感和使命感"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：增强维护国家利益的责任感和使命感。按国家利益的内涵与地位判断，本题正确答案是「增强维护国家利益的责任感和使命感」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "总体国家安全观以（　　）为根本",
+      "options": [
+        "人民安全",
+        "军事安全",
+        "政治安全",
+        "经济安全"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：政治安全。按总体国家安全观与国家安全义务判断，本题正确答案是「政治安全」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "总体国家安全观以（　　）为基础",
+      "options": [
+        "文化安全",
+        "经济安全",
+        "政治安全",
+        "军事安全"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：经济安全。按总体国家安全观与国家安全义务判断，本题正确答案是「经济安全」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "总体国家安全观以（　　）为保障",
+      "options": [
+        "军事、科技、文化、社会安全",
+        "只有军事安全",
+        "只有科技安全",
+        "只有文化安全"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：军事、科技、文化、社会安全。按总体国家安全观与国家安全义务判断，本题正确答案是「军事、科技、文化、社会安全」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "国家安全包括（　　）等多个领域",
+      "options": [
+        "只有军事",
+        "只有政治",
+        "只有经济",
+        "政治、国土、军事、经济、网络、生态等"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：政治、国土、军事、经济、网络、生态等。按总体国家安全观与国家安全义务判断，本题正确答案是「政治、国土、军事、经济、网络、生态等」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "全民国家安全教育日是每年的（　　）",
+      "options": [
+        "5月12日",
+        "12月4日",
+        "4月15日",
+        "3月15日"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：4月15日。按总体国家安全观与国家安全义务判断，本题正确答案是「4月15日」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "维护国家安全是（　　）",
+      "options": [
+        "可做可不做",
+        "每个公民的法定义务",
+        "国家安全机关的唯一职责",
+        "军人的唯一职责"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：每个公民的法定义务。按总体国家安全观与国家安全义务判断，本题正确答案是「每个公民的法定义务」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "发现危害国家安全的行为，应该（　　）",
+      "options": [
+        "及时向国家安全机关举报",
+        "视而不见",
+        "参与其中",
+        "隐瞒不报"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：及时向国家安全机关举报。按总体国家安全观与国家安全义务判断，本题正确答案是「及时向国家安全机关举报」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "国家安全机关举报受理电话是（　　）",
+      "options": [
+        "12315",
+        "12345",
+        "12369",
+        "12339"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：12339。按总体国家安全观与国家安全义务判断，本题正确答案是「12339」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "网络安全要求我们（　　）",
+      "options": [
+        "攻击他人网络",
+        "泄露国家秘密",
+        "不传播危害国家安全的信息，保护个人信息",
+        "随意传播谣言"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：不传播危害国家安全的信息，保护个人信息。按总体国家安全观与国家安全义务判断，本题正确答案是「不传播危害国家安全的信息，保护个人信息」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "生态安全要求我们（　　）",
+      "options": [
+        "浪费资源",
+        "保护生态环境，践行绿色生活方式",
+        "随意排放污染物",
+        "破坏植被"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：保护生态环境，践行绿色生活方式。按总体国家安全观与国家安全义务判断，本题正确答案是「保护生态环境，践行绿色生活方式」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "国防是国家生存与发展的（　　）",
+      "options": [
+        "重要保障",
+        "唯一条件",
+        "经济负担",
+        "可有可无的"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：重要保障。按国防、民族团结与国家统一的知识判断，本题正确答案是「重要保障」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "依法服兵役是公民的（　　）",
+      "options": [
+        "自愿选择",
+        "额外负担",
+        "只有农村青年的义务",
+        "光荣义务"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：光荣义务。按国防、民族团结与国家统一的知识判断，本题正确答案是「光荣义务」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "加强国防教育，有利于（　　）",
+      "options": [
+        "限制经济发展",
+        "减少国际交流",
+        "增强全民国防观念，维护国家安全",
+        "增加军费开支"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：增强全民国防观念，维护国家安全。按国防、民族团结与国家统一的知识判断，本题正确答案是「增强全民国防观念，维护国家安全」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国处理民族关系的基本原则是（　　）",
+      "options": [
+        "民族同化",
+        "民族平等、民族团结和各民族共同繁荣",
+        "民族歧视",
+        "民族分裂"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：民族平等、民族团结和各民族共同繁荣。按国防、民族团结与国家统一的知识判断，本题正确答案是「民族平等、民族团结和各民族共同繁荣」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "维护民族团结，应该（　　）",
+      "options": [
+        "尊重各民族的风俗习惯、宗教信仰和语言文字",
+        "歧视少数民族",
+        "破坏民族团结",
+        "传播民族分裂言论"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：尊重各民族的风俗习惯、宗教信仰和语言文字。按国防、民族团结与国家统一的知识判断，本题正确答案是「尊重各民族的风俗习惯、宗教信仰和语言文字」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“一国两制”方针的前提是（　　）",
+      "options": [
+        "两个中国",
+        "一国两府",
+        "台湾独立",
+        "一个中国"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：一个中国。按国防、民族团结与国家统一的知识判断，本题正确答案是「一个中国」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "解决台湾问题的基本方针是（　　）",
+      "options": [
+        "台湾独立",
+        "两个中国",
+        "和平统一、一国两制",
+        "武力统一"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：和平统一、一国两制。按国防、民族团结与国家统一的知识判断，本题正确答案是「和平统一、一国两制」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "反对分裂，维护国家统一，是（　　）",
+      "options": [
+        "可做可不做",
+        "每个公民的责任和义务",
+        "只有政府的责任",
+        "只有军队的责任"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：每个公民的责任和义务。按国防、民族团结与国家统一的知识判断，本题正确答案是「每个公民的责任和义务」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列行为有利于维护国家统一的是（　　）",
+      "options": [
+        "坚决反对分裂国家的言论和行为",
+        "传播分裂言论",
+        "支持分裂活动",
+        "破坏民族团结"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：坚决反对分裂国家的言论和行为。按国防、民族团结与国家统一的知识判断，本题正确答案是「坚决反对分裂国家的言论和行为」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-道德与法治-5",
+      "chapterName": "国家利益与国家安全",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "国家安全与个人生活的关系是（　　）",
+      "options": [
+        "国家安全与个人无关",
+        "个人生活不受国家安全影响",
+        "只有军人才需要关注国家安全",
+        "国家安全是人民幸福安康的前提"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：国家安全是人民幸福安康的前提。按国防、民族团结与国家统一的知识判断，本题正确答案是「国家安全是人民幸福安康的前提」。",
       "difficulty": 2
     }
   ]

@@ -6,9 +6,9 @@
     "id": "初二-历史-4",
     "name": "新民主主义革命"
   },
-  "generatedAt": "2026-11-14T12:15:38.945Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.091Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdcv5s",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 0,
       "explanation": "A. 正确：1925年处于国民革命时期，青年团员高呼“打倒列强，除军阀”，其直接任务是推翻北洋军阀统治，完成反帝反封建任务。\nB. 错误：抗日救亡运动主要兴起于1931年九一八事变后，与题干中1925年的时间信息冲突。\nC. 错误：推翻国民党反动统治、建立新中国属于解放战争时期（1946—1949年）的主要任务。\nD. 错误：社会主义改造发生于1953—1956年，不属于1925年新民主主义革命时期的革命任务。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "兴中会成立的时间和地点是（ ）",
+      "options": [
+        "1894年，檀香山",
+        "1894年，东京",
+        "1905年，檀香山",
+        "1905年，东京"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1894年，檀香山。按辛亥革命与五四运动的史实判断，本题正确答案是「1894年，檀香山」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "中国同盟会成立的时间和地点是（ ）",
+      "options": [
+        "1894年，檀香山",
+        "1905年，檀香山",
+        "1912年，南京",
+        "1905年，东京"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1905年，东京。按辛亥革命与五四运动的史实判断，本题正确答案是「1905年，东京」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "同盟会的政治纲领是（ ）",
+      "options": [
+        "扶清灭洋",
+        "民主与科学",
+        "驱除鞑虏，恢复中华，创立民国，平均地权",
+        "自强求富"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：驱除鞑虏，恢复中华，创立民国，平均地权。按辛亥革命与五四运动的史实判断，本题正确答案是「驱除鞑虏，恢复中华，创立民国，平均地权」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "三民主义不包括（ ）",
+      "options": [
+        "民生主义",
+        "民主主义",
+        "民族主义",
+        "民权主义"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：民主主义。按辛亥革命与五四运动的史实判断，本题正确答案是「民主主义」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "武昌起义爆发于（ ）",
+      "options": [
+        "1911年10月10日",
+        "1911年1月1日",
+        "1912年1月1日",
+        "1919年5月4日"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1911年10月10日。按辛亥革命与五四运动的史实判断，本题正确答案是「1911年10月10日」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "中华民国成立的时间是（ ）",
+      "options": [
+        "1911年10月10日",
+        "1915年",
+        "1919年5月4日",
+        "1912年1月1日"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1912年1月1日。按辛亥革命与五四运动的史实判断，本题正确答案是「1912年1月1日」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "辛亥革命的历史意义是（ ）",
+      "options": [
+        "建立社会主义制度",
+        "实现国家富强",
+        "推翻清朝统治，结束君主专制制度",
+        "完成反帝反封建任务"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：推翻清朝统治，结束君主专制制度。按辛亥革命与五四运动的史实判断，本题正确答案是「推翻清朝统治，结束君主专制制度」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "新文化运动开始的标志是（ ）",
+      "options": [
+        "1898年戊戌变法",
+        "1915年陈独秀创办《青年杂志》",
+        "1919年五四运动",
+        "1912年中华民国成立"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1915年陈独秀创办《青年杂志》。按辛亥革命与五四运动的史实判断，本题正确答案是「1915年陈独秀创办《青年杂志》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "五四运动爆发于（ ）",
+      "options": [
+        "1919年",
+        "1911年",
+        "1915年",
+        "1921年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1919年。按辛亥革命与五四运动的史实判断，本题正确答案是「1919年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "五四运动的口号是（ ）",
+      "options": [
+        "「扶清灭洋」",
+        "「自强求富」",
+        "「民主与科学」",
+        "「外争主权，内除国贼」"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：「外争主权，内除国贼」。按辛亥革命与五四运动的史实判断，本题正确答案是「「外争主权，内除国贼」」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "中共一大召开的时间和地点是（ ）",
+      "options": [
+        "1921年，广州",
+        "1927年，南昌",
+        "1921年，上海",
+        "1919年，北京"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1921年，上海。按中共成立与国民革命的史实判断，本题正确答案是「1921年，上海」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "中共一大确定党的中心工作是（ ）",
+      "options": [
+        "建立抗日统一战线",
+        "组织和领导工人运动",
+        "建立革命军队",
+        "开展土地革命"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：组织和领导工人运动。按中共成立与国民革命的史实判断，本题正确答案是「组织和领导工人运动」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "黄埔军校创办于（ ）",
+      "options": [
+        "1924年，广州",
+        "1921年，上海",
+        "1926年，武汉",
+        "1927年，南京"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1924年，广州。按中共成立与国民革命的史实判断，本题正确答案是「1924年，广州」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "北伐战争开始于（ ）",
+      "options": [
+        "1924年",
+        "1927年",
+        "1934年",
+        "1926年"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1926年。按中共成立与国民革命的史实判断，本题正确答案是「1926年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "国民革命失败的标志是（ ）",
+      "options": [
+        "1931年九一八事变",
+        "1936年西安事变",
+        "1927年四一二反革命政变",
+        "1927年南昌起义"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1927年四一二反革命政变。按中共成立与国民革命的史实判断，本题正确答案是「1927年四一二反革命政变」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "南昌起义发生的时间是（ ）",
+      "options": [
+        "1928年4月",
+        "1927年8月1日",
+        "1921年7月1日",
+        "1927年9月9日"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1927年8月1日。按中共成立与国民革命的史实判断，本题正确答案是「1927年8月1日」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "八七会议确定的总方针是（ ）",
+      "options": [
+        "土地革命和武装反抗国民党反动派",
+        "建立抗日民族统一战线",
+        "开展城市游击战",
+        "实行改革开放"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：土地革命和武装反抗国民党反动派。按中共成立与国民革命的史实判断，本题正确答案是「土地革命和武装反抗国民党反动派」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "秋收起义的领导人是（ ）",
+      "options": [
+        "周恩来",
+        "朱德",
+        "叶挺",
+        "毛泽东"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：毛泽东。按中共成立与国民革命的史实判断，本题正确答案是「毛泽东」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "中国第一个农村革命根据地是（ ）",
+      "options": [
+        "延安革命根据地",
+        "鄂豫皖根据地",
+        "井冈山革命根据地",
+        "中央革命根据地"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：井冈山革命根据地。按中共成立与国民革命的史实判断，本题正确答案是「井冈山革命根据地」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "井冈山会师发生在（ ）",
+      "options": [
+        "1934年",
+        "1928年",
+        "1927年",
+        "1931年"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1928年。按中共成立与国民革命的史实判断，本题正确答案是「1928年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "红军长征开始的时间是（ ）",
+      "options": [
+        "1934年10月",
+        "1927年8月",
+        "1935年1月",
+        "1936年10月"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1934年10月。按红军长征与抗日战争的史实判断，本题正确答案是「1934年10月」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "遵义会议召开的时间是（ ）",
+      "options": [
+        "1934年10月",
+        "1936年10月",
+        "1937年7月",
+        "1935年1月"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1935年1月。按红军长征与抗日战争的史实判断，本题正确答案是「1935年1月」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "遵义会议的历史意义是（ ）",
+      "options": [
+        "建立抗日民族统一战线",
+        "宣告长征胜利结束",
+        "确立以毛泽东为核心的党中央的正确领导",
+        "宣告中国共产党成立"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：确立以毛泽东为核心的党中央的正确领导。按红军长征与抗日战争的史实判断，本题正确答案是「确立以毛泽东为核心的党中央的正确领导」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "长征胜利结束的标志是（ ）",
+      "options": [
+        "1934年长征开始",
+        "1936年10月红军三大主力在甘肃会宁会师",
+        "1935年遵义会议",
+        "1935年吴起镇会师"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1936年10月红军三大主力在甘肃会宁会师。按红军长征与抗日战争的史实判断，本题正确答案是「1936年10月红军三大主力在甘肃会宁会师」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "中国人民抗日战争的起点是（ ）",
+      "options": [
+        "九一八事变",
+        "七七事变",
+        "西安事变",
+        "八一三事变"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：九一八事变。按红军长征与抗日战争的史实判断，本题正确答案是「九一八事变」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "西安事变发生在（ ）",
+      "options": [
+        "1931年",
+        "1935年",
+        "1937年",
+        "1936年"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1936年。按红军长征与抗日战争的史实判断，本题正确答案是「1936年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "西安事变的主要发动者是（ ）",
+      "options": [
+        "毛泽东、周恩来",
+        "朱德、彭德怀",
+        "张学良、杨虎城",
+        "蒋介石、汪精卫"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：张学良、杨虎城。按红军长征与抗日战争的史实判断，本题正确答案是「张学良、杨虎城」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "全民族抗战开始的标志是（ ）",
+      "options": [
+        "南京大屠杀",
+        "七七事变",
+        "九一八事变",
+        "西安事变"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：七七事变。按红军长征与抗日战争的史实判断，本题正确答案是「七七事变」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "南京大屠杀发生在（ ）",
+      "options": [
+        "1937年12月",
+        "1931年9月",
+        "1936年12月",
+        "1945年8月"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1937年12月。按红军长征与抗日战争的史实判断，本题正确答案是「1937年12月」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-历史-4",
+      "chapterName": "新民主主义革命",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "抗战以来中国军队取得的第一个胜利是（ ）",
+      "options": [
+        "台儿庄战役",
+        "百团大战",
+        "武汉会战",
+        "平型关大捷"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：平型关大捷。按红军长征与抗日战争的史实判断，本题正确答案是「平型关大捷」。",
       "difficulty": 2
     }
   ]

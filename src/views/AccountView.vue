@@ -19,18 +19,18 @@ async function logout() {
   const result = await logoutAccount()
   loggingOut.value = false
   if (!result.success) {
-    ElMessage.error(result.error || '退出登录失败，请检查本机服务后重试。')
+    ElMessage.error(result.error || '退出登录失败，请检查本机服务后重试')
     return
   }
   await store.clearUser()
-  ElMessage.success('已退出登录。')
+  ElMessage.success('已退出登录')
   router.push('/home')
 }
 </script>
 
 <template>
   <div class="page">
-    <div class="page-header"><div><h2 class="page-title">账号中心</h2><p class="page-subtitle">登录状态由本机账号服务维持，刷新页面后仍然有效。</p></div></div>
+    <div class="page-header"><div><h2 class="page-title">账号中心</h2><p class="page-subtitle">登录状态由本机账号服务维持，刷新页面后仍然有效</p></div></div>
     <div class="grid-2">
       <section class="surface surface-pad">
         <h3 class="section-title">账号信息</h3>
@@ -41,7 +41,7 @@ async function logout() {
       </section>
       <section class="surface surface-pad">
         <h3 class="section-title">数据说明</h3>
-        <p class="muted">学习数据不上云，按账号隔离保存在本浏览器 IndexedDB：退出登录后回到本地模式的数据，不同账号之间互不可见。换设备、清理浏览器缓存或重装系统前，请到「系统设置 → 数据备份」导出 JSON。</p>
+        <p class="muted">学习数据不上云，按账号隔离保存在本浏览器 IndexedDB：退出登录后回到本地模式的数据，不同账号之间互不可见，换设备、清理浏览器缓存或重装系统前，请到「系统设置 → 数据备份」导出 JSON</p>
       </section>
     </div>
   </div>

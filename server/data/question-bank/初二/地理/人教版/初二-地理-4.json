@@ -6,9 +6,9 @@
     "id": "初二-地理-4",
     "name": "中国自然资源"
   },
-  "generatedAt": "2026-11-14T12:16:10.500Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.042Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgddfh8",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：阳光、铁矿和原始森林都直接存在于自然界，并且对人类生产和生活有利用价值，属于自然资源。\nB. 错误：小麦是人工栽培的农产品，闪电目前难以被人类稳定利用，二者不属于自然资源；石油属于自然资源。\nC. 错误：自来水经过人类加工，水稻是人工培育的农作物，二者不属于自然资源；煤炭属于自然资源。\nD. 错误：钢铁是工业加工产品，不是自然界中直接存在的自然资源；风能和海水属于自然资源。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国自然资源的基本特征是（ ）",
+      "options": [
+        "总量丰富，人均不足",
+        "总量贫乏，人均丰富",
+        "总量和人均都很丰富",
+        "总量和人均都贫乏"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：总量丰富，人均不足。按我国土地资源的分布与国情判断，本题正确答案是「总量丰富，人均不足」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国土地资源的基本国情是（ ）",
+      "options": [
+        "类型单一，耕地广阔",
+        "以林地为主",
+        "以耕地为主",
+        "类型齐全，耕地比重小"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：类型齐全，耕地比重小。按我国土地资源的分布与国情判断，本题正确答案是「类型齐全，耕地比重小」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国耕地主要分布在（ ）",
+      "options": [
+        "青藏高原",
+        "大兴安岭山区",
+        "东部季风区的平原、盆地和低缓丘陵",
+        "西北内陆高原"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：东部季风区的平原、盆地和低缓丘陵。按我国土地资源的分布与国情判断，本题正确答案是「东部季风区的平原、盆地和低缓丘陵」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国草地主要分布在（ ）",
+      "options": [
+        "四川盆地",
+        "西部内陆高原山地",
+        "东南沿海平原",
+        "长江中下游平原"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：西部内陆高原山地。按我国土地资源的分布与国情判断，本题正确答案是「西部内陆高原山地」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国林地主要分布在（ ）",
+      "options": [
+        "东北、西南和东南部山区",
+        "西北内陆盆地",
+        "华北平原",
+        "黄土高原"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：东北、西南和东南部山区。按我国土地资源的分布与国情判断，本题正确答案是「东北、西南和东南部山区」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国土地资源利用中存在的问题是（ ）",
+      "options": [
+        "耕地不断增加",
+        "土地资源取之不尽",
+        "不存在任何问题",
+        "耕地减少、土地污染"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：耕地减少、土地污染。按我国土地资源的分布与国情判断，本题正确答案是「耕地减少、土地污染」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国保护耕地的基本国策是（ ）",
+      "options": [
+        "随意占用耕地",
+        "停止城市建设",
+        "十分珍惜和合理利用每一寸土地，切实保护耕地",
+        "大量开垦荒地"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：十分珍惜和合理利用每一寸土地，切实保护耕地。按我国土地资源的分布与国情判断，本题正确答案是「十分珍惜和合理利用每一寸土地，切实保护耕地」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国土地资源属于（ ）",
+      "options": [
+        "人造资源",
+        "可再生资源",
+        "非可再生资源",
+        "取之不尽的资源"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：可再生资源。按我国土地资源的分布与国情判断，本题正确答案是「可再生资源」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国水土流失最严重的地区之一是（ ）",
+      "options": [
+        "黄土高原",
+        "东北平原",
+        "四川盆地",
+        "珠江三角洲"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：黄土高原。按我国土地资源的分布与国情判断，本题正确答案是「黄土高原」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国土地荒漠化最严重的地区是（ ）",
+      "options": [
+        "东南沿海",
+        "长江中下游平原",
+        "四川盆地",
+        "西北内陆地区"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：西北内陆地区。按我国土地资源的分布与国情判断，本题正确答案是「西北内陆地区」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国水资源空间分布的特点是（ ）",
+      "options": [
+        "全国均匀",
+        "南少北多",
+        "南多北少、东多西少",
+        "北多南少、西多东少"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：南多北少、东多西少。按我国水资源的分布、问题与对策判断，本题正确答案是「南多北少、东多西少」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国水资源时间分布的特点是（ ）",
+      "options": [
+        "春季最多",
+        "夏秋多、冬春少",
+        "冬春多、夏秋少",
+        "全年均匀"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：夏秋多、冬春少。按我国水资源的分布、问题与对策判断，本题正确答案是「夏秋多、冬春少」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "解决我国水资源空间分布不均的主要措施是（ ）",
+      "options": [
+        "跨流域调水",
+        "修建水库",
+        "节约用水",
+        "海水淡化"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：跨流域调水。按我国水资源的分布、问题与对策判断，本题正确答案是「跨流域调水」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "解决我国水资源时间分布不均的主要措施是（ ）",
+      "options": [
+        "跨流域调水",
+        "开采地下水",
+        "人工降雨",
+        "修建水库"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：修建水库。按我国水资源的分布、问题与对策判断，本题正确答案是「修建水库」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国南水北调工程的主要目的是（ ）",
+      "options": [
+        "增加北方降水量",
+        "减少南方水量",
+        "缓解北方地区水资源短缺",
+        "缓解南方地区水资源短缺"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：缓解北方地区水资源短缺。按我国水资源的分布、问题与对策判断，本题正确答案是「缓解北方地区水资源短缺」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国水资源总量居世界第（ ）",
+      "options": [
+        "十位",
+        "六位",
+        "一位",
+        "二位"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：六位。按我国水资源的分布、问题与对策判断，本题正确答案是「六位」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国人均水资源占有量（ ）",
+      "options": [
+        "较少",
+        "居世界首位",
+        "十分丰富",
+        "与总量一致"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：较少。按我国水资源的分布、问题与对策判断，本题正确答案是「较少」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "华北地区水资源紧张的主要原因是（ ）",
+      "options": [
+        "人口稀少、降水丰沛",
+        "地形平坦、河网密布",
+        "气候湿润、用水少",
+        "人口稠密、工农业发达、降水较少"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：人口稠密、工农业发达、降水较少。按我国水资源的分布、问题与对策判断，本题正确答案是「人口稠密、工农业发达、降水较少」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列做法中，有利于节约用水的是（ ）",
+      "options": [
+        "长流水洗碗",
+        "随意排放污水",
+        "推广节水灌溉技术",
+        "大水漫灌"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：推广节水灌溉技术。按我国水资源的分布、问题与对策判断，本题正确答案是「推广节水灌溉技术」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国水资源利用中存在的主要问题是（ ）",
+      "options": [
+        "供大于求",
+        "利用率低、浪费和污染严重",
+        "利用率极高",
+        "没有污染"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：利用率低、浪费和污染严重。按我国水资源的分布、问题与对策判断，本题正确答案是「利用率低、浪费和污染严重」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国矿产资源的特点是（ ）",
+      "options": [
+        "总量丰富，分布不均",
+        "总量贫乏，分布均匀",
+        "只有煤炭一种",
+        "全部依赖进口"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：总量丰富，分布不均。按我国矿产、海洋与能源资源的特点判断，本题正确答案是「总量丰富，分布不均」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国煤炭资源最丰富的省级行政区是（ ）",
+      "options": [
+        "广东省",
+        "浙江省",
+        "海南省",
+        "山西省"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：山西省。按我国矿产、海洋与能源资源的特点判断，本题正确答案是「山西省」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国铁矿资源丰富的省级行政区之一是（ ）",
+      "options": [
+        "海南省",
+        "西藏自治区",
+        "辽宁省",
+        "广东省"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：辽宁省。按我国矿产、海洋与能源资源的特点判断，本题正确答案是「辽宁省」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国石油资源主要分布在（ ）",
+      "options": [
+        "云贵高原",
+        "东北、华北和西北地区",
+        "东南沿海",
+        "青藏高原"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：东北、华北和西北地区。按我国矿产、海洋与能源资源的特点判断，本题正确答案是「东北、华北和西北地区」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国最大的渔场是（ ）",
+      "options": [
+        "舟山渔场",
+        "北部湾渔场",
+        "渤海渔场",
+        "南海渔场"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：舟山渔场。按我国矿产、海洋与能源资源的特点判断，本题正确答案是「舟山渔场」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国最大的盐场是（ ）",
+      "options": [
+        "莺歌海盐场",
+        "布袋盐场",
+        "舟山盐场",
+        "长芦盐场"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：长芦盐场。按我国矿产、海洋与能源资源的特点判断，本题正确答案是「长芦盐场」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国海洋资源利用中存在的问题是（ ）",
+      "options": [
+        "没有污染",
+        "完全未开发",
+        "过度捕捞和海洋污染",
+        "资源无限"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：过度捕捞和海洋污染。按我国矿产、海洋与能源资源的特点判断，本题正确答案是「过度捕捞和海洋污染」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国能源消费结构中占比最大的是（ ）",
+      "options": [
+        "水能",
+        "煤炭",
+        "石油",
+        "天然气"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：煤炭。按我国矿产、海洋与能源资源的特点判断，本题正确答案是「煤炭」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列属于非可再生资源的是（ ）",
+      "options": [
+        "煤炭",
+        "森林",
+        "水资源",
+        "土地资源"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：煤炭。按我国矿产、海洋与能源资源的特点判断，本题正确答案是「煤炭」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-地理-4",
+      "chapterName": "中国自然资源",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国风能资源丰富的地区是（ ）",
+      "options": [
+        "四川盆地",
+        "塔里木盆地内部",
+        "云贵高原",
+        "内蒙古高原"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：内蒙古高原。按我国矿产、海洋与能源资源的特点判断，本题正确答案是「内蒙古高原」。",
+      "difficulty": 2
     }
   ]
 }

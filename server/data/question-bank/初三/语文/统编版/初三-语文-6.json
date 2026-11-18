@@ -6,9 +6,9 @@
     "id": "初三-语文-6",
     "name": "中考阅读与写作整合"
   },
-  "generatedAt": "2026-11-14T12:17:03.938Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.908Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdeoqm",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 1,
       "explanation": "A. 错误：直接抄写只是搬用原材料，没有提炼阅读材料中的写法，也没有完成向自己写作内容的迁移，不符合读写整合要求。\nB. 正确：该设计从“抿线头、眯眼穿针、轻轻一拉”等细节中提炼出细节描写方法，并将其迁移到身边类似场景，既扣住“平凡中的诗意”，又体现阅读向写作的转化。\nC. 错误：改写成科幻故事且重点表现未来科技，脱离了原语段“平凡生活细节中的温情与诗意”这一核心，不能形成有效读写整合。\nD. 错误：把语段中心概括为“旧线要经常更换”偏离了原文通过缝补动作表现生活温情的重点，据此写议论文也缺少材料支撑。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "中考记叙文阅读，概括事件通常用（　　）",
+      "options": [
+        "谁＋做了什么＋结果怎样",
+        "只写时间地点",
+        "只写人物外貌",
+        "只写环境"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：谁＋做了什么＋结果怎样。按中考阅读方法与答题规范判断，本题正确答案是「谁＋做了什么＋结果怎样」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "中考说明文阅读，判断说明方法主要看（　　）",
+      "options": [
+        "文章的字数",
+        "作者的身份",
+        "标点的数量",
+        "句子的表达方式和标志性词语"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：句子的表达方式和标志性词语。按中考阅读方法与答题规范判断，本题正确答案是「句子的表达方式和标志性词语」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "中考议论文阅读，寻找中心论点应该（　　）",
+      "options": [
+        "只数段落",
+        "只找论据",
+        "关注标题、开头、结尾和关键句",
+        "只看最后一个字"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：关注标题、开头、结尾和关键句。按中考阅读方法与答题规范判断，本题正确答案是「关注标题、开头、结尾和关键句」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "中考文言文翻译应遵循（　　）",
+      "options": [
+        "只译大意",
+        "直译为主，意译为辅",
+        "只意译",
+        "随意发挥"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：直译为主，意译为辅。按中考阅读方法与答题规范判断，本题正确答案是「直译为主，意译为辅」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "名著阅读题，回答人物情节应该（　　）",
+      "options": [
+        "准确对应原著内容",
+        "凭影视剧改编",
+        "随意编造",
+        "只看简介"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：准确对应原著内容。按中考阅读方法与答题规范判断，本题正确答案是「准确对应原著内容」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "散文阅读中赏析句子，应该（　　）",
+      "options": [
+        "只写“生动形象”",
+        "只抄原文",
+        "只看字数",
+        "指出手法并结合内容分析效果"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：指出手法并结合内容分析效果。按中考阅读方法与答题规范判断，本题正确答案是「指出手法并结合内容分析效果」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "小说阅读中分析人物形象，应该（　　）",
+      "options": [
+        "只看对话",
+        "只凭印象",
+        "结合描写、事件和环境",
+        "只看外貌"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：结合描写、事件和环境。按中考阅读方法与答题规范判断，本题正确答案是「结合描写、事件和环境」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "说明文阅读中回答“能否删去某词”，通常应该（　　）",
+      "options": [
+        "只写“不能”",
+        "表明态度并说明该词的限制作用",
+        "直接说能删",
+        "不作分析"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：表明态度并说明该词的限制作用。按中考阅读方法与答题规范判断，本题正确答案是「表明态度并说明该词的限制作用」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "议论文阅读中补写论据，应该（　　）",
+      "options": [
+        "选择真实典型、能证明论点的材料",
+        "随意编造",
+        "选择无关材料",
+        "只写名言"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：选择真实典型、能证明论点的材料。按中考阅读方法与答题规范判断，本题正确答案是「选择真实典型、能证明论点的材料」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "现代文阅读答题的基本要求是（　　）",
+      "options": [
+        "脱离文本",
+        "只写感受",
+        "越长越好",
+        "紧扣文本，分点作答，术语规范"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：紧扣文本，分点作答，术语规范。按中考阅读方法与答题规范判断，本题正确答案是「紧扣文本，分点作答，术语规范」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "中考作文审题，首先要（　　）",
+      "options": [
+        "套用范文",
+        "随意发挥",
+        "读懂题目要求，抓住关键词",
+        "直接动笔"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：读懂题目要求，抓住关键词。按中考作文的审题、立意与结构要求判断，本题正确答案是「读懂题目要求，抓住关键词」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "作文立意的基本要求是（　　）",
+      "options": [
+        "越模糊越好",
+        "正确、鲜明、深刻",
+        "越离奇越好",
+        "越消极越好"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：正确、鲜明、深刻。按中考作文的审题、立意与结构要求判断，本题正确答案是「正确、鲜明、深刻」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "作文选材应该（　　）",
+      "options": [
+        "选择真实、典型、新颖的材料",
+        "编造离奇故事",
+        "堆砌材料",
+        "只写空话"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：选择真实、典型、新颖的材料。按中考作文的审题、立意与结构要求判断，本题正确答案是「选择真实、典型、新颖的材料」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "作文结构应该（　　）",
+      "options": [
+        "越复杂越好",
+        "没有层次",
+        "只写一段",
+        "条理清晰，详略得当"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：条理清晰，详略得当。按中考作文的审题、立意与结构要求判断，本题正确答案是「条理清晰，详略得当」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "作文开头的作用是（　　）",
+      "options": [
+        "交代字数",
+        "列出提纲",
+        "吸引读者，引出下文",
+        "总结全文"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：吸引读者，引出下文。按中考作文的审题、立意与结构要求判断，本题正确答案是「吸引读者，引出下文」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "作文结尾的作用是（　　）",
+      "options": [
+        "设置人物",
+        "收束全文，深化主题",
+        "引出新故事",
+        "增加字数"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：收束全文，深化主题。按中考作文的审题、立意与结构要求判断，本题正确答案是「收束全文，深化主题」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "细节描写在作文中的作用是（　　）",
+      "options": [
+        "使内容具体生动，增强感染力",
+        "增加文章长度",
+        "代替中心思想",
+        "堆砌辞藻"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：使内容具体生动，增强感染力。按中考作文的审题、立意与结构要求判断，本题正确答案是「使内容具体生动，增强感染力」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "作文语言应该（　　）",
+      "options": [
+        "堆砌辞藻",
+        "大量使用网络语",
+        "越晦涩越好",
+        "准确、通顺、有文采"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：准确、通顺、有文采。按中考作文的审题、立意与结构要求判断，本题正确答案是「准确、通顺、有文采」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "考场作文修改，应该（　　）",
+      "options": [
+        "重写全文",
+        "不做检查",
+        "检查错别字、病句和结构是否完整",
+        "大改立意"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：检查错别字、病句和结构是否完整。按中考作文的审题、立意与结构要求判断，本题正确答案是「检查错别字、病句和结构是否完整」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "作文书写的基本要求是（　　）",
+      "options": [
+        "用多种颜色",
+        "工整、规范、卷面整洁",
+        "越潦草越好",
+        "随意涂改"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：工整、规范、卷面整洁。按中考作文的审题、立意与结构要求判断，本题正确答案是「工整、规范、卷面整洁」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "修改病句“通过这次活动，使我明白了团结的重要性”，正确改法是（　　）",
+      "options": [
+        "删去“通过”或“使”",
+        "增加“非常”",
+        "删去“团结”",
+        "把“明白”改为“知道”"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：删去“通过”或“使”。按语言运用与综合学习的要求判断，本题正确答案是「删去“通过”或“使”」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“他那和蔼可亲的笑容和亲切的话语时常浮现在我眼前”的语病是（　　）",
+      "options": [
+        "成分残缺",
+        "语序不当",
+        "重复啰嗦",
+        "搭配不当"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：搭配不当。按语言运用与综合学习的要求判断，本题正确答案是「搭配不当」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "句子“不仅他会唱歌，而且会跳舞”的语病是（　　）",
+      "options": [
+        "成分残缺",
+        "不合逻辑",
+        "语序不当",
+        "搭配不当"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：语序不当。按语言运用与综合学习的要求判断，本题正确答案是「语序不当」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "仿写句子，应该（　　）",
+      "options": [
+        "照抄原句",
+        "保持句式、修辞和语意的一致",
+        "随意改变句式",
+        "只求字数相同"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：保持句式、修辞和语意的一致。按语言运用与综合学习的要求判断，本题正确答案是「保持句式、修辞和语意的一致」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "综合性学习活动，应该（　　）",
+      "options": [
+        "明确主题，分工合作，形成成果",
+        "各自为战",
+        "不做准备",
+        "只写总结"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：明确主题，分工合作，形成成果。按语言运用与综合学习的要求判断，本题正确答案是「明确主题，分工合作，形成成果」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "口语交际中，表达不同意见应该（　　）",
+      "options": [
+        "打断他人",
+        "人身攻击",
+        "强词夺理",
+        "态度诚恳，有理有据"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：态度诚恳，有理有据。按语言运用与综合学习的要求判断，本题正确答案是「态度诚恳，有理有据」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "拟写宣传标语，应该（　　）",
+      "options": [
+        "晦涩难懂",
+        "脱离主题",
+        "简洁醒目，主题鲜明",
+        "越长越好"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：简洁醒目，主题鲜明。按语言运用与综合学习的要求判断，本题正确答案是「简洁醒目，主题鲜明」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "图表转文字，应该（　　）",
+      "options": [
+        "忽略图表",
+        "抓住主要信息，准确表述变化趋势",
+        "罗列所有数据",
+        "随意推测"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：抓住主要信息，准确表述变化趋势。按语言运用与综合学习的要求判断，本题正确答案是「抓住主要信息，准确表述变化趋势」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "名著阅读积累，应该（　　）",
+      "options": [
+        "了解主要人物、情节和主题",
+        "只看电视剧",
+        "只背书名",
+        "随意编造"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：了解主要人物、情节和主题。按语言运用与综合学习的要求判断，本题正确答案是「了解主要人物、情节和主题」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-语文-6",
+      "chapterName": "中考阅读与写作整合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "语文综合能力的提升，主要依靠（　　）",
+      "options": [
+        "临时抱佛脚",
+        "只做选择题",
+        "只背作文模板",
+        "广泛阅读和持续练习"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：广泛阅读和持续练习。按语言运用与综合学习的要求判断，本题正确答案是「广泛阅读和持续练习」。",
       "difficulty": 2
     }
   ]

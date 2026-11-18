@@ -4,16 +4,16 @@
   "edition": "统编版",
   "chapter": {
     "id": "初二-语文-5",
-    "name": "八下：议论文入门"
+    "name": "议论文入门"
   },
-  "generatedAt": "2026-11-14T12:14:55.367Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.887Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdbtc9",
       "chapterId": "初二-语文-5",
-      "chapterName": "八下：议论文入门",
+      "chapterName": "议论文入门",
       "type": "single",
       "dimension": "concept",
       "stem": "下列关于议论文基本要素的表述，正确的一项是（　　）",
@@ -30,7 +30,7 @@
     {
       "id": "diag-2-mwgdbtc9",
       "chapterId": "初二-语文-5",
-      "chapterName": "八下：议论文入门",
+      "chapterName": "议论文入门",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读下面语段，判断它的中心论点是什么。\n\n读书不仅能增长知识，还能让人在浮躁时静下心来，在困惑时找到方向。古人有“腹有诗书气自华”之说，今天也有许多人在持续阅读中开阔了眼界、锤炼了意志。因此，青少年应把读书当作每日必修课，在长期阅读中充实自我、提升自我。",
@@ -47,7 +47,7 @@
     {
       "id": "diag-3-mwgdbtc9",
       "chapterId": "初二-语文-5",
-      "chapterName": "八下：议论文入门",
+      "chapterName": "议论文入门",
       "type": "single",
       "dimension": "transfer",
       "stem": "围绕“坚持积累是提高语文素养的有效途径”这一观点，下列材料中最适合作为事实论据的一项是（　　）",
@@ -64,7 +64,7 @@
     {
       "id": "diag-4-mwgdbtc9",
       "chapterId": "初二-语文-5",
-      "chapterName": "八下：议论文入门",
+      "chapterName": "议论文入门",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "阅读下面语段，对其中论点、论据和论证的分析，正确的一项是（  ）\n阅读经典的价值，不在于记住多少情节，而在于与伟大的心灵对话。杜甫写民生疾苦，若只背“安得广厦千万间”，却不体会其中忧民之情，便辜负了诗句。因此，读经典要沉入语境，理解作者的情怀。",
@@ -81,7 +81,7 @@
     {
       "id": "diag-5-mwgdbtc9",
       "chapterId": "初二-语文-5",
-      "chapterName": "八下：议论文入门",
+      "chapterName": "议论文入门",
       "type": "single",
       "dimension": "concept",
       "stem": "下列关于议论文三要素的表述，正确的一项是（　　）",
@@ -98,7 +98,7 @@
     {
       "id": "diag-6-mwgdbtc9",
       "chapterId": "初二-语文-5",
-      "chapterName": "八下：议论文入门",
+      "chapterName": "议论文入门",
       "type": "single",
       "dimension": "basic-application",
       "stem": "下列关于议论文基本要素的说法，正确的一项是（　　）",
@@ -115,7 +115,7 @@
     {
       "id": "diag-7-mwgdbtc9",
       "chapterId": "初二-语文-5",
-      "chapterName": "八下：议论文入门",
+      "chapterName": "议论文入门",
       "type": "single",
       "dimension": "transfer",
       "stem": "阅读下面一段议论性文字，完成题目。\n读书贵在思考。有人把书读得滚瓜烂熟，却只会复述作者结论；有人读得不多，却常停下来追问“为什么”“还有没有别的可能”，把书中的观点与自己的生活对照。前者像搬运，后者像消化。可见，读书的价值不在于记住了多少句子，而在于能否通过思考形成自己的判断。\n下列对这段文字论证思路和观点的分析，最恰当的一项是（　）",
@@ -132,7 +132,7 @@
     {
       "id": "diag-8-mwgdbtc9",
       "chapterId": "初二-语文-5",
-      "chapterName": "八下：议论文入门",
+      "chapterName": "议论文入门",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "阅读下面语段，回答问题。\n“读书要善于思考。如果只记诵词句而不追问其义，所得便如浮光掠影。王阳明读朱子书，先信后疑，反复叩问，终有自得；反之，有人读书万卷却食古不化，正因缺少思考。可见，思考是读书深入的关键。”\n下列对该语段的分析，不正确的一项是（　　）",
@@ -149,7 +149,7 @@
     {
       "id": "diag-10-mwgdbtc9",
       "chapterId": "初二-语文-5",
-      "chapterName": "八下：议论文入门",
+      "chapterName": "议论文入门",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读下面一段文字，判断它的中心论点是什么。\n\n读书要讲究方法。首先，读书应带着问题去读，边读边想，才能把书中的知识转化为自己的理解；其次，读书还要勤于动笔，把重要的观点和疑问及时记下来，以便日后回顾。可见，掌握恰当的读书方法，能让阅读更有收获。",
@@ -166,7 +166,7 @@
     {
       "id": "diag-1-mwgdbxj9",
       "chapterId": "初二-语文-5",
-      "chapterName": "八下：议论文入门",
+      "chapterName": "议论文入门",
       "type": "single",
       "dimension": "concept",
       "stem": "某同学拟写一篇短文《谈诚信》，准备把“诚信”作为论题，把“人应当以诚信立身”作为中心论点。下列对这一安排的理解，正确的一项是（　　）",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：论题是文章要讨论的问题或范围，中心论点是作者针对论题提出的明确判断；“诚信”是讨论范围，“人应当以诚信立身”是明确判断，二者关系合理。\nB. 错误：论题与中心论点不必字面完全一致，论题可以是一个词语或短语，中心论点则须表达明确态度和判断。\nC. 错误：论题通常可以用词语或短语概括，中心论点才应是完整的判断句；该项把二者特点说反了。\nD. 错误：中心论点必须表达作者明确的观点和态度，不能只表明讨论范围；“人应当以诚信立身”正是一个明确的判断。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "议论文的三要素是（　　）",
+      "options": [
+        "论点、论据、论证",
+        "时间、地点、人物",
+        "对象、方法、顺序",
+        "意象、意境、情感"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：论点、论据、论证。按议论文三要素与论据类型判断，本题正确答案是「论点、论据、论证」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "论点是（　　）",
+      "options": [
+        "用来证明观点的材料",
+        "证明论点的方法",
+        "文章的结构",
+        "作者对论述问题的见解和主张"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：作者对论述问题的见解和主张。按议论文三要素与论据类型判断，本题正确答案是「作者对论述问题的见解和主张」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "论据是（　　）",
+      "options": [
+        "论证的方法",
+        "文章的标题",
+        "用来证明论点的材料",
+        "作者的观点"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：用来证明论点的材料。按议论文三要素与论据类型判断，本题正确答案是「用来证明论点的材料」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "论证是（　　）",
+      "options": [
+        "材料的来源",
+        "用论据证明论点的过程和方法",
+        "作者的主张",
+        "文章的中心"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：用论据证明论点的过程和方法。按议论文三要素与论据类型判断，本题正确答案是「用论据证明论点的过程和方法」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "中心论点是（　　）",
+      "options": [
+        "文章最主要、最核心的观点",
+        "文章的第一个分论点",
+        "文章的标题",
+        "文章的结论"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：文章最主要、最核心的观点。按议论文三要素与论据类型判断，本题正确答案是「文章最主要、最核心的观点」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "分论点是（　　）",
+      "options": [
+        "与中心论点无关的观点",
+        "文章的论据",
+        "文章的论证方法",
+        "围绕中心论点展开的若干从属观点"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：围绕中心论点展开的若干从属观点。按议论文三要素与论据类型判断，本题正确答案是「围绕中心论点展开的若干从属观点」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "事实论据是指（　　）",
+      "options": [
+        "科学原理",
+        "作者的观点",
+        "用来证明论点的事实材料",
+        "名言警句"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：用来证明论点的事实材料。按议论文三要素与论据类型判断，本题正确答案是「用来证明论点的事实材料」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "道理论据是指（　　）",
+      "options": [
+        "统计数据",
+        "用来证明论点的道理、名言等",
+        "历史事件",
+        "具体事例"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：用来证明论点的道理、名言等。按议论文三要素与论据类型判断，本题正确答案是「用来证明论点的道理、名言等」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列属于事实论据的是（　　）",
+      "options": [
+        "司马迁忍辱负重写成《史记》",
+        "“天行健，君子以自强不息”",
+        "“千里之行，始于足下”",
+        "“学而不思则罔”"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：司马迁忍辱负重写成《史记》。按议论文三要素与论据类型判断，本题正确答案是「司马迁忍辱负重写成《史记》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列属于道理论据的是（　　）",
+      "options": [
+        "司马迁写成《史记》",
+        "居里夫人发现镭",
+        "司马迁受宫刑",
+        "“天行健，君子以自强不息”"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：“天行健，君子以自强不息”。按议论文三要素与论据类型判断，本题正确答案是「“天行健，君子以自强不息”」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“司马迁忍辱负重写成《史记》，正是坚持不懈的典范”运用的论证方法是（　　）",
+      "options": [
+        "对比论证",
+        "比喻论证",
+        "举例论证",
+        "道理论证"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：举例论证。按论证方法及其作用判断，本题正确答案是「举例论证」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“古人云：‘天行健，君子以自强不息。’”运用的论证方法是（　　）",
+      "options": [
+        "比喻论证",
+        "道理论证",
+        "举例论证",
+        "对比论证"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：道理论证。按论证方法及其作用判断，本题正确答案是「道理论证」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“勤奋的人珍惜时间，懒惰的人浪费时间”运用的论证方法是（　　）",
+      "options": [
+        "对比论证",
+        "举例论证",
+        "道理论证",
+        "比喻论证"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：对比论证。按论证方法及其作用判断，本题正确答案是「对比论证」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“读书就像登山，越往上视野越开阔”运用的论证方法是（　　）",
+      "options": [
+        "举例论证",
+        "道理论证",
+        "对比论证",
+        "比喻论证"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：比喻论证。按论证方法及其作用判断，本题正确答案是「比喻论证」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "举例论证的主要作用是（　　）",
+      "options": [
+        "使结构更复杂",
+        "使情节更曲折",
+        "使论证具体、有说服力",
+        "使语言更含蓄"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：使论证具体、有说服力。按论证方法及其作用判断，本题正确答案是「使论证具体、有说服力」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "道理论证的主要作用是（　　）",
+      "options": [
+        "使情节更曲折",
+        "增强论证的权威性和说服力",
+        "使论证更形象",
+        "使文章更生动"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：增强论证的权威性和说服力。按论证方法及其作用判断，本题正确答案是「增强论证的权威性和说服力」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "对比论证的主要作用是（　　）",
+      "options": [
+        "突出论点，使论证更鲜明",
+        "增加文章字数",
+        "使语言委婉",
+        "设置悬念"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：突出论点，使论证更鲜明。按论证方法及其作用判断，本题正确答案是「突出论点，使论证更鲜明」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "比喻论证的主要作用是（　　）",
+      "options": [
+        "使论证更严密",
+        "使文章更简洁",
+        "使结构更复杂",
+        "使论证通俗易懂、形象生动"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：使论证通俗易懂、形象生动。按论证方法及其作用判断，本题正确答案是「使论证通俗易懂、形象生动」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "议论文中引用名言警句，属于（　　）",
+      "options": [
+        "对比论证",
+        "比喻论证",
+        "道理论证",
+        "举例论证"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：道理论证。按论证方法及其作用判断，本题正确答案是「道理论证」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "判断论证方法，主要看（　　）",
+      "options": [
+        "标点的使用",
+        "论据的类型和论证的方式",
+        "文章的字数",
+        "作者的朝代"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：论据的类型和论证的方式。按论证方法及其作用判断，本题正确答案是「论据的类型和论证的方式」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "议论文常见的结构是（　　）",
+      "options": [
+        "提出问题—分析问题—解决问题",
+        "起因—经过—结果",
+        "总—分—总",
+        "时间—空间—逻辑"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：提出问题—分析问题—解决问题。按议论文结构、语言与论证思路判断，本题正确答案是「提出问题—分析问题—解决问题」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "议论文开头的作用通常是（　　）",
+      "options": [
+        "总结全文",
+        "塑造人物",
+        "交代背景",
+        "提出中心论点或引出论题"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：提出中心论点或引出论题。按议论文结构、语言与论证思路判断，本题正确答案是「提出中心论点或引出论题」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "议论文结尾的作用通常是（　　）",
+      "options": [
+        "引出新情节",
+        "描写人物",
+        "总结全文，深化论点",
+        "设置悬念"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：总结全文，深化论点。按议论文结构、语言与论证思路判断，本题正确答案是「总结全文，深化论点」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "议论文语言的基本要求是（　　）",
+      "options": [
+        "幽默、讽刺",
+        "准确、严密、有逻辑性",
+        "含蓄、朦胧",
+        "华丽、夸张"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：准确、严密、有逻辑性。按议论文结构、语言与论证思路判断，本题正确答案是「准确、严密、有逻辑性」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "分析论证思路，应该（　　）",
+      "options": [
+        "理清作者怎样提出问题、分析问题和得出结论",
+        "只看文章标题",
+        "只数段落",
+        "只找论据"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：理清作者怎样提出问题、分析问题和得出结论。按议论文结构、语言与论证思路判断，本题正确答案是「理清作者怎样提出问题、分析问题和得出结论」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "补写论据时，应该（　　）",
+      "options": [
+        "随意编造材料",
+        "选择与论点无关的材料",
+        "只写名言",
+        "选择能证明论点且真实典型的材料"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：选择能证明论点且真实典型的材料。按议论文结构、语言与论证思路判断，本题正确答案是「选择能证明论点且真实典型的材料」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "驳论是指（　　）",
+      "options": [
+        "只叙述事实",
+        "只抒发情感",
+        "反驳对方的错误观点，树立自己的观点",
+        "只提出观点不论证"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：反驳对方的错误观点，树立自己的观点。按议论文结构、语言与论证思路判断，本题正确答案是「反驳对方的错误观点，树立自己的观点」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "议论文中“首先”“其次”“最后”等词语的作用是（　　）",
+      "options": [
+        "设置悬念",
+        "使论证层次清晰",
+        "增加文学色彩",
+        "抒发情感"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：使论证层次清晰。按议论文结构、语言与论证思路判断，本题正确答案是「使论证层次清晰」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "联系实际谈看法时，应该（　　）",
+      "options": [
+        "紧扣文章观点，结合具体事例",
+        "脱离文章随意发挥",
+        "只写个人感受",
+        "否定作者观点"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：紧扣文章观点，结合具体事例。按议论文结构、语言与论证思路判断，本题正确答案是「紧扣文章观点，结合具体事例」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-语文-5",
+      "chapterName": "议论文入门",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "评价议论文的论证是否充分，主要看（　　）",
+      "options": [
+        "文章是否够长",
+        "语言是否华丽",
+        "作者是否有名",
+        "论据是否典型、充足，论证是否严密"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：论据是否典型、充足，论证是否严密。按议论文结构、语言与论证思路判断，本题正确答案是「论据是否典型、充足，论证是否严密」。",
+      "difficulty": 2
     }
   ]
 }

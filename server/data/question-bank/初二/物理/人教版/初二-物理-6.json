@@ -6,9 +6,9 @@
     "id": "初二-物理-6",
     "name": "力与运动"
   },
-  "generatedAt": "2026-11-13T02:45:24.380Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.211Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedjhmo",
@@ -179,6 +179,516 @@
       "correctIndex": 2,
       "explanation": "A. 错误：捏矿泉水瓶使瓶子形状改变，属于力使物体发生形变，不是改变运动状态。\nB. 错误：拉弓使弓变弯，属于力使物体发生形变，不是改变运动状态。\nC. 正确：守门员接球时对足球施加力，使足球由运动变为静止，足球的运动状态发生改变，说明力可以改变物体的运动状态。\nD. 错误：压海绵使海绵体积变小，属于力使物体发生形变，不是改变运动状态。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "质量为 2 kg 的物体受到的重力是（ ）N（g 取 10 N/kg）",
+      "options": [
+        "20",
+        "0.2",
+        "30",
+        "10"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：20。G = mg = 2 × 10 = 20 N。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "质量为 5 kg 的物体受到的重力是（ ）N（g 取 10 N/kg）",
+      "options": [
+        "0.5",
+        "60",
+        "40",
+        "50"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：50。G = mg = 5 × 10 = 50 N。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "质量为 10 kg 的物体受到的重力是（ ）N（g 取 10 N/kg）",
+      "options": [
+        "110",
+        "90",
+        "100",
+        "1"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：100。G = mg = 10 × 10 = 100 N。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "质量为 20 kg 的物体受到的重力是（ ）N（g 取 10 N/kg）",
+      "options": [
+        "190",
+        "200",
+        "2",
+        "210"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：200。G = mg = 20 × 10 = 200 N。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "质量为 50 kg 的物体受到的重力是（ ）N（g 取 10 N/kg）",
+      "options": [
+        "500",
+        "5",
+        "510",
+        "490"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：500。G = mg = 50 × 10 = 500 N。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "质量为 100 kg 的物体受到的重力是（ ）N（g 取 10 N/kg）",
+      "options": [
+        "10",
+        "1010",
+        "990",
+        "1000"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1000。G = mg = 100 × 10 = 1000 N。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "质量为 0.5 kg 的物体受到的重力是（ ）N（g 取 10 N/kg）",
+      "options": [
+        "15",
+        "-5",
+        "5",
+        "0.05"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：5。G = mg = 0.5 × 10 = 5 N。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "质量为 1.5 kg 的物体受到的重力是（ ）N（g 取 10 N/kg）",
+      "options": [
+        "5",
+        "15",
+        "0.15",
+        "25"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：15。G = mg = 1.5 × 10 = 15 N。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "质量为 25 kg 的物体受到的重力是（ ）N（g 取 10 N/kg）",
+      "options": [
+        "250",
+        "2.5",
+        "260",
+        "240"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：250。G = mg = 25 × 10 = 250 N。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "质量为 40 kg 的物体受到的重力是（ ）N（g 取 10 N/kg）",
+      "options": [
+        "4",
+        "410",
+        "390",
+        "400"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：400。G = mg = 40 × 10 = 400 N。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "物体在同一直线上受到两个方向相同的力，大小分别为 10 N 和 15 N，合力是（ ）N",
+      "options": [
+        "30",
+        "20",
+        "25",
+        "5"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：25。同一直线上同向二力的合力等于两力之和：10 + 15 = 25 N。",
+      "difficulty": 1
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "物体在同一直线上受到两个方向相同的力，大小分别为 20 N 和 30 N，合力是（ ）N",
+      "options": [
+        "45",
+        "50",
+        "10",
+        "55"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：50。同一直线上同向二力的合力等于两力之和：20 + 30 = 50 N。",
+      "difficulty": 1
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "物体在同一直线上受到两个方向相同的力，大小分别为 8 N 和 12 N，合力是（ ）N",
+      "options": [
+        "20",
+        "4",
+        "25",
+        "15"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：20。同一直线上同向二力的合力等于两力之和：8 + 12 = 20 N。",
+      "difficulty": 1
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "物体在同一直线上受到两个方向相同的力，大小分别为 25 N 和 35 N，合力是（ ）N",
+      "options": [
+        "10",
+        "65",
+        "55",
+        "60"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：60。同一直线上同向二力的合力等于两力之和：25 + 35 = 60 N。",
+      "difficulty": 1
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "物体在同一直线上受到两个方向相同的力，大小分别为 40 N 和 60 N，合力是（ ）N",
+      "options": [
+        "105",
+        "95",
+        "100",
+        "20"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：100。同一直线上同向二力的合力等于两力之和：40 + 60 = 100 N。",
+      "difficulty": 1
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "物体在同一直线上受到两个方向相同的力，大小分别为 5 N 和 45 N，合力是（ ）N",
+      "options": [
+        "45",
+        "50",
+        "40",
+        "55"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：50。同一直线上同向二力的合力等于两力之和：5 + 45 = 50 N。",
+      "difficulty": 1
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "物体在同一直线上受到两个方向相同的力，大小分别为 12 N 和 18 N，合力是（ ）N",
+      "options": [
+        "30",
+        "6",
+        "35",
+        "25"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：30。同一直线上同向二力的合力等于两力之和：12 + 18 = 30 N。",
+      "difficulty": 1
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "物体在同一直线上受到两个方向相同的力，大小分别为 50 N 和 70 N，合力是（ ）N",
+      "options": [
+        "20",
+        "125",
+        "115",
+        "120"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：120。同一直线上同向二力的合力等于两力之和：50 + 70 = 120 N。",
+      "difficulty": 1
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "物体在同一直线上受到两个方向相同的力，大小分别为 15 N 和 25 N，合力是（ ）N",
+      "options": [
+        "45",
+        "35",
+        "40",
+        "10"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：40。同一直线上同向二力的合力等于两力之和：15 + 25 = 40 N。",
+      "difficulty": 1
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "物体在同一直线上受到两个方向相同的力，大小分别为 30 N 和 90 N，合力是（ ）N",
+      "options": [
+        "115",
+        "120",
+        "60",
+        "125"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：120。同一直线上同向二力的合力等于两力之和：30 + 90 = 120 N。",
+      "difficulty": 1
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "method",
+      "stem": "物体在同一直线上受到两个方向相反的力，大小分别为 50 N 和 20 N，合力是（ ）N",
+      "options": [
+        "30",
+        "70",
+        "-30",
+        "35"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：30。同一直线上反向二力的合力等于两力之差，方向与较大的力相同：50 - 20 = 30 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "method",
+      "stem": "物体在同一直线上受到两个方向相反的力，大小分别为 80 N 和 30 N，合力是（ ）N",
+      "options": [
+        "110",
+        "-50",
+        "55",
+        "50"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：50。同一直线上反向二力的合力等于两力之差，方向与较大的力相同：80 - 30 = 50 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "method",
+      "stem": "物体在同一直线上受到两个方向相反的力，大小分别为 100 N 和 40 N，合力是（ ）N",
+      "options": [
+        "-60",
+        "65",
+        "60",
+        "140"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：60。同一直线上反向二力的合力等于两力之差，方向与较大的力相同：100 - 40 = 60 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "method",
+      "stem": "物体在同一直线上受到两个方向相反的力，大小分别为 60 N 和 15 N，合力是（ ）N",
+      "options": [
+        "50",
+        "45",
+        "75",
+        "-45"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：45。同一直线上反向二力的合力等于两力之差，方向与较大的力相同：60 - 15 = 45 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "method",
+      "stem": "物体在同一直线上受到两个方向相反的力，大小分别为 45 N 和 25 N，合力是（ ）N",
+      "options": [
+        "20",
+        "70",
+        "-20",
+        "25"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：20。同一直线上反向二力的合力等于两力之差，方向与较大的力相同：45 - 25 = 20 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "method",
+      "stem": "物体在同一直线上受到两个方向相反的力，大小分别为 70 N 和 35 N，合力是（ ）N",
+      "options": [
+        "105",
+        "-35",
+        "40",
+        "35"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：35。同一直线上反向二力的合力等于两力之差，方向与较大的力相同：70 - 35 = 35 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "method",
+      "stem": "物体在同一直线上受到两个方向相反的力，大小分别为 90 N 和 45 N，合力是（ ）N",
+      "options": [
+        "-45",
+        "50",
+        "45",
+        "135"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：45。同一直线上反向二力的合力等于两力之差，方向与较大的力相同：90 - 45 = 45 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "method",
+      "stem": "物体在同一直线上受到两个方向相反的力，大小分别为 120 N 和 20 N，合力是（ ）N",
+      "options": [
+        "105",
+        "100",
+        "140",
+        "-100"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：100。同一直线上反向二力的合力等于两力之差，方向与较大的力相同：120 - 20 = 100 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "method",
+      "stem": "物体在同一直线上受到两个方向相反的力，大小分别为 55 N 和 15 N，合力是（ ）N",
+      "options": [
+        "40",
+        "70",
+        "-40",
+        "45"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：40。同一直线上反向二力的合力等于两力之差，方向与较大的力相同：55 - 15 = 40 N。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-物理-6",
+      "chapterName": "力与运动",
+      "type": "single",
+      "dimension": "method",
+      "stem": "物体在同一直线上受到两个方向相反的力，大小分别为 75 N 和 25 N，合力是（ ）N",
+      "options": [
+        "100",
+        "-50",
+        "55",
+        "50"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：50。同一直线上反向二力的合力等于两力之差，方向与较大的力相同：75 - 25 = 50 N。",
+      "difficulty": 2
     }
   ]
 }

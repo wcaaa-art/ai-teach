@@ -8,7 +8,7 @@ const router = createRouter({
     { path: '/', redirect: '/home' },
     { path: '/home', name: 'home', component: () => import('../views/HomeView.vue'), meta: { title: '学习主页' } },
     { path: '/auth', name: 'auth', component: () => import('../views/AuthView.vue'), meta: { title: '登录 / 注册' } },
-    { path: '/diagnosis', name: 'diagnosis', component: () => import('../views/DiagnosisView.vue'), meta: { title: '学情诊断' } },
+    { path: '/diagnosis', name: 'diagnosis', component: () => import('../views/DiagnosisView.vue'), meta: { title: '学情分析' } },
     { path: '/quiz', name: 'quiz', component: () => import('../views/QuizView.vue'), meta: { title: '章节测试' } },
     { path: '/paper-scan', name: 'paper-scan', component: () => import('../views/PaperScanView.vue'), meta: { title: '试卷识别' } },
     { path: '/materials', name: 'materials', component: () => import('../views/MaterialsView.vue'), meta: { title: '学习资料' } },
@@ -20,7 +20,7 @@ const router = createRouter({
     // 练习窗口：计划里的「练习/做题」类任务，本地题库秒出题。
     { path: '/practice', name: 'practice', component: () => import('../views/PracticeView.vue'), meta: { title: '练习做题' } },
     { path: '/tutor', name: 'tutor', component: () => import('../views/TutorView.vue'), meta: { title: 'AI 答疑' } },
-    // AI 能力地图：面向评委展示 Agent / RAG / MCP / 多模态与安全兜底，入口在导航和首页。
+    // AI 能力地图：面向评委展示 Agent / RAG / MCP / 多模态与安全兜底；导航已移除入口，从首页 hero 进入。
     { path: '/ai', name: 'ai-lab', component: () => import('../views/AiLabView.vue'), meta: { title: 'AI 能力' } },
     { path: '/dashboard', name: 'dashboard', component: () => import('../views/DashboardView.vue'), meta: { title: '学习看板' } },
     { path: '/settings', name: 'settings', component: () => import('../views/SettingsView.vue'), meta: { title: '系统设置' } },

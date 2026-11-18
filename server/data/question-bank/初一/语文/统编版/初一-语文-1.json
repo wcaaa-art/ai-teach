@@ -4,16 +4,16 @@
   "edition": "统编版",
   "chapter": {
     "id": "初一-语文-1",
-    "name": "七上：散文与生活体验"
+    "name": "散文与生活体验"
   },
-  "generatedAt": "2026-11-14T12:08:30.265Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.858Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgd3odd",
       "chapterId": "初一-语文-1",
-      "chapterName": "七上：散文与生活体验",
+      "chapterName": "散文与生活体验",
       "type": "single",
       "dimension": "concept",
       "stem": "统编版七年级上册散文单元强调“形散神聚”。这里的“神”主要指什么？",
@@ -30,7 +30,7 @@
     {
       "id": "diag-2-mwgd3odd",
       "chapterId": "初一-语文-1",
-      "chapterName": "七上：散文与生活体验",
+      "chapterName": "散文与生活体验",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读下面句子，从生活体验类散文的阅读方法看，理解最准确的一项是：\n母亲把剥好的橘子一瓣一瓣放进我手心，又转身去厨房，把刚温好的牛奶轻轻推到我面前。",
@@ -47,7 +47,7 @@
     {
       "id": "diag-3-mwgd3odd",
       "chapterId": "初一-语文-1",
-      "chapterName": "七上：散文与生活体验",
+      "chapterName": "散文与生活体验",
       "type": "single",
       "dimension": "transfer",
       "stem": "阅读下面这段文字，完成题目。\n\n雨后的小巷里，青石板泛着微光。我提着书包慢慢走，忽然发现墙角一株不知名的小花，花瓣上还挂着水珠。前几天考试失利时，我也经过这里，只觉得石板路又湿又滑，墙角不过是乱糟糟的杂草。今天再看，那小花竟像举着一盏小灯。\n\n下列生活体验中，与文中“同样的小巷，因心情不同而感受不同”的感悟最接近的一项是（ ）",
@@ -64,10 +64,10 @@
     {
       "id": "diag-4-mwgd3odd",
       "chapterId": "初一-语文-1",
-      "chapterName": "七上：散文与生活体验",
+      "chapterName": "散文与生活体验",
       "type": "single",
       "dimension": "error-analysis",
-      "stem": "下列关于七上散文阅读与理解的说法，有误的一项是（　　）",
+      "stem": "下列关于散文阅读与理解的说法，有误的一项是（　　）",
       "options": [
         "《春》中“小草偷偷地从土里钻出来”一句，“偷偷地”“钻”写出春草萌发时的情态，朗读时语气宜轻快、带欣喜。",
         "《济南的冬天》把济南比作“放在一个小摇篮里”，是为说明济南地方狭小、冬天寒冷难熬。",
@@ -81,7 +81,7 @@
     {
       "id": "diag-5-mwgd3odd",
       "chapterId": "初一-语文-1",
-      "chapterName": "七上：散文与生活体验",
+      "chapterName": "散文与生活体验",
       "type": "single",
       "dimension": "concept",
       "stem": "下列关于“散文与生活体验”关系的理解，最恰当的一项是（ ）",
@@ -98,7 +98,7 @@
     {
       "id": "diag-6-mwgd3odd",
       "chapterId": "初一-语文-1",
-      "chapterName": "七上：散文与生活体验",
+      "chapterName": "散文与生活体验",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读下面一句散文中的生活片段：“母亲把热粥端到桌边，又悄悄把我翻乱的书一页页理平。”要体会这句话中流露的生活体验，最恰当的做法是（ ）",
@@ -115,7 +115,7 @@
     {
       "id": "diag-7-mwgd3odd",
       "chapterId": "初一-语文-1",
-      "chapterName": "七上：散文与生活体验",
+      "chapterName": "散文与生活体验",
       "type": "single",
       "dimension": "transfer",
       "stem": "阅读下面的原创片段，完成题目。\n外婆总把新收的豆角铺在竹筛上，端到屋檐下。竹筛很旧，篾条被岁月磨得发亮。她坐在小凳上，把豆角一根根翻过来，像在整理一段慢下来的时光。夕阳斜照，竹筛的影子落在地上，一格一格的，像外婆没说出口的牵挂。\n\n若要运用“散文往往借助生活片段表达情感体验”这一阅读方法分析片段，下列理解最恰当的一项是（　　）",
@@ -132,7 +132,7 @@
     {
       "id": "diag-8-mwgd3odd",
       "chapterId": "初一-语文-1",
-      "chapterName": "七上：散文与生活体验",
+      "chapterName": "散文与生活体验",
       "type": "single",
       "dimension": "error-analysis",
       "stem": "阅读散文时，同学们对“散文中的生活体验”有如下理解，其中正确的一项是（ ）",
@@ -149,7 +149,7 @@
     {
       "id": "diag-9-mwgd3odd",
       "chapterId": "初一-语文-1",
-      "chapterName": "七上：散文与生活体验",
+      "chapterName": "散文与生活体验",
       "type": "single",
       "dimension": "concept",
       "stem": "下列关于散文中“生活体验”与“情感表达”关系的理解，最恰当的一项是（ ）",
@@ -166,7 +166,7 @@
     {
       "id": "diag-10-mwgd3odd",
       "chapterId": "初一-语文-1",
-      "chapterName": "七上：散文与生活体验",
+      "chapterName": "散文与生活体验",
       "type": "single",
       "dimension": "basic-application",
       "stem": "阅读下面的原创片段，完成题目。\n清晨，母亲把晒好的棉被抱进屋，拍了拍被角，阳光的味道便落在枕边。我忽然想起她昨夜缝补校服时，把线头藏在衣缝里，像把牵挂也藏得不露声色。\n最能体现这段文字“借生活细节表达情感”的一项是（　　）",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：晒棉被、缝校服、藏线头都是寻常生活细节，作者由这些细节体悟到不露声色的母爱，符合散文借生活细节表达情感的特点。\nB. 错误：该项只解释棉被有阳光味道的生活原因，没有落到作者的情感体悟上，与题干“表达情感”的考查指向不符。\nC. 错误：该项只说明缝补校服的实用目的，忽略了文中“像把牵挂也藏得不露声色”的情感寄托。\nD. 错误：文中“想起”是由眼前细节触发情感联想，并非为了说明记性好，该项与文本的情感主旨冲突。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "散文最主要的文体特点是（　　）",
+      "options": [
+        "形散神聚",
+        "情节完整",
+        "以说明为主",
+        "讲究格律"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：形散神聚。按散文文体特点与阅读方法判断，本题正确答案是「形散神聚」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "散文中的“神”通常指（　　）",
+      "options": [
+        "文章的篇幅",
+        "文章的标题",
+        "文章的作者",
+        "文章的中心思想和情感"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：文章的中心思想和情感。按散文文体特点与阅读方法判断，本题正确答案是「文章的中心思想和情感」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "阅读散文，首先要把握（　　）",
+      "options": [
+        "文章的出处",
+        "文章的写作时间",
+        "作者的思想感情",
+        "文章的字数"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：作者的思想感情。按散文文体特点与阅读方法判断，本题正确答案是「作者的思想感情」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列不属于散文常用表现手法的是（　　）",
+      "options": [
+        "以小见大",
+        "列数字",
+        "借景抒情",
+        "托物言志"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：列数字。按散文文体特点与阅读方法判断，本题正确答案是「列数字」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“借景抒情”是指（　　）",
+      "options": [
+        "借助景物描写表达思想感情",
+        "直接说明事物特征",
+        "通过人物对话推进情节",
+        "用数据论证观点"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：借助景物描写表达思想感情。按散文文体特点与阅读方法判断，本题正确答案是「借助景物描写表达思想感情」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“托物言志”是指（　　）",
+      "options": [
+        "描写人物的外貌",
+        "介绍事物的制作过程",
+        "叙述事件的起因",
+        "借助具体事物表达志向和情感"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：借助具体事物表达志向和情感。按散文文体特点与阅读方法判断，本题正确答案是「借助具体事物表达志向和情感」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列属于散文的是（　　）",
+      "options": [
+        "安徒生《皇帝的新装》",
+        "蒲松龄《狼》",
+        "朱自清《春》",
+        "马致远《天净沙·秋思》"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：朱自清《春》。按散文文体特点与阅读方法判断，本题正确答案是「朱自清《春》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "散文中“线索”的作用是（　　）",
+      "options": [
+        "说明写作背景",
+        "贯穿全文，使结构紧凑、脉络清晰",
+        "增加文章字数",
+        "代替中心思想"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：贯穿全文，使结构紧凑、脉络清晰。按散文文体特点与阅读方法判断，本题正确答案是「贯穿全文，使结构紧凑、脉络清晰」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "朗读散文时，重音应落在（　　）",
+      "options": [
+        "表达情感和意义的关键词语上",
+        "每一个字上",
+        "文章的标题上",
+        "标点符号上"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：表达情感和意义的关键词语上。按散文文体特点与阅读方法判断，本题正确答案是「表达情感和意义的关键词语上」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "文章标题的作用一般不包括（　　）",
+      "options": [
+        "概括主要内容",
+        "揭示中心",
+        "设置悬念",
+        "决定文章的篇幅长短"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：决定文章的篇幅长短。按散文文体特点与阅读方法判断，本题正确答案是「决定文章的篇幅长短」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《春》的作者是（　　）",
+      "options": [
+        "史铁生",
+        "鲁迅",
+        "朱自清",
+        "老舍"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：朱自清。按课文内容与作者常识判断，本题正确答案是「朱自清」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《济南的冬天》的作者是（　　）",
+      "options": [
+        "冰心",
+        "老舍",
+        "朱自清",
+        "莫怀戚"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：老舍。按课文内容与作者常识判断，本题正确答案是「老舍」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《秋天的怀念》的作者是（　　）",
+      "options": [
+        "史铁生",
+        "朱自清",
+        "老舍",
+        "鲁迅"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：史铁生。按课文内容与作者常识判断，本题正确答案是「史铁生」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《散步》的作者是（　　）",
+      "options": [
+        "史铁生",
+        "朱自清",
+        "海伦·凯勒",
+        "莫怀戚"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：莫怀戚。按课文内容与作者常识判断，本题正确答案是「莫怀戚」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《春》描绘了春草、春花、春风、春雨和（　　）",
+      "options": [
+        "秋天的果实",
+        "冬天的白雪",
+        "迎春的人们",
+        "夏天的荷花"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：迎春的人们。按课文内容与作者常识判断，本题正确答案是「迎春的人们」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《济南的冬天》突出济南冬天（　　）的特点",
+      "options": [
+        "多风",
+        "温晴",
+        "严寒",
+        "干燥"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：温晴。按课文内容与作者常识判断，本题正确答案是「温晴」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《秋天的怀念》主要表达（　　）",
+      "options": [
+        "对母亲的怀念与愧疚",
+        "对春天的赞美",
+        "对故乡的思念",
+        "对朋友的感激"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：对母亲的怀念与愧疚。按课文内容与作者常识判断，本题正确答案是「对母亲的怀念与愧疚」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《散步》通过一家人散步表现（　　）",
+      "options": [
+        "人与自然的斗争",
+        "对理想的追求",
+        "对战争的控诉",
+        "尊老爱幼的家庭美德"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：尊老爱幼的家庭美德。按课文内容与作者常识判断，本题正确答案是「尊老爱幼的家庭美德」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《从百草园到三味书屋》的作者是（　　）",
+      "options": [
+        "朱自清",
+        "冰心",
+        "鲁迅",
+        "老舍"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：鲁迅。按课文内容与作者常识判断，本题正确答案是「鲁迅」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "《再塑生命的人》写的是（　　）",
+      "options": [
+        "史铁生的母亲",
+        "莎莉文老师对海伦·凯勒的教育",
+        "鲁迅的童年生活",
+        "老舍的求学经历"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：莎莉文老师对海伦·凯勒的教育。按课文内容与作者常识判断，本题正确答案是「莎莉文老师对海伦·凯勒的教育」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“小草偷偷地从土里钻出来”中“钻”字的表达效果是（　　）",
+      "options": [
+        "写出小草破土而出的生命力",
+        "说明小草生长缓慢",
+        "表现春天的寒冷",
+        "突出土壤坚硬"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：写出小草破土而出的生命力。按语言赏析与情感体会的方法判断，本题正确答案是「写出小草破土而出的生命力」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《济南的冬天》中“温晴”一词的作用是（　　）",
+      "options": [
+        "交代写作时间",
+        "说明作者心情",
+        "点明文章体裁",
+        "总写济南冬天的特点，统领全文"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：总写济南冬天的特点，统领全文。按语言赏析与情感体会的方法判断，本题正确答案是「总写济南冬天的特点，统领全文」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "比喻的主要表达作用是（　　）",
+      "options": [
+        "使语言准确严密",
+        "使情节曲折",
+        "使表达形象生动",
+        "使文章结构完整"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：使表达形象生动。按语言赏析与情感体会的方法判断，本题正确答案是「使表达形象生动」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "拟人的主要表达作用是（　　）",
+      "options": [
+        "论证观点",
+        "赋予事物人的情态，生动形象",
+        "增强文章真实性",
+        "说明事物特征"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：赋予事物人的情态，生动形象。按语言赏析与情感体会的方法判断，本题正确答案是「赋予事物人的情态，生动形象」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "景物描写的作用一般不包括（　　）",
+      "options": [
+        "交代作者的姓名",
+        "渲染气氛",
+        "烘托人物心情",
+        "推动情节发展"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：交代作者的姓名。按语言赏析与情感体会的方法判断，本题正确答案是「交代作者的姓名」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“山坡上卧着些小村庄”中“卧”字的妙处是（　　）",
+      "options": [
+        "说明村庄位置低",
+        "表现天气寒冷",
+        "突出房屋矮小",
+        "写出村庄安适宁静的情态"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：写出村庄安适宁静的情态。按语言赏析与情感体会的方法判断，本题正确答案是「写出村庄安适宁静的情态」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "赏析句子通常可以从（　　）入手",
+      "options": [
+        "作者年龄",
+        "写作地点",
+        "修辞手法、关键词语、表达方式等",
+        "文章字数"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：修辞手法、关键词语、表达方式等。按语言赏析与情感体会的方法判断，本题正确答案是「修辞手法、关键词语、表达方式等」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "散文中议论的作用通常是（　　）",
+      "options": [
+        "说明事物特征",
+        "点明主旨、升华情感",
+        "增加故事情节",
+        "介绍写作背景"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：点明主旨、升华情感。按语言赏析与情感体会的方法判断，本题正确答案是「点明主旨、升华情感」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "文章结尾抒情的作用是（　　）",
+      "options": [
+        "深化主题，余味悠长",
+        "增加文章篇幅",
+        "使结构松散",
+        "交代人物身份"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：深化主题，余味悠长。按语言赏析与情感体会的方法判断，本题正确答案是「深化主题，余味悠长」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-语文-1",
+      "chapterName": "散文与生活体验",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "阅读散文时联系生活体验，有利于（　　）",
+      "options": [
+        "代替文本分析",
+        "改变文章主旨",
+        "加快阅读速度",
+        "加深对文章情感的理解"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：加深对文章情感的理解。按语言赏析与情感体会的方法判断，本题正确答案是「加深对文章情感的理解」。",
+      "difficulty": 2
     }
   ]
 }

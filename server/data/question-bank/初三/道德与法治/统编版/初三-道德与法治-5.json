@@ -6,9 +6,9 @@
     "id": "初三-道德与法治-5",
     "name": "时政材料分析"
   },
-  "generatedAt": "2026-11-14T12:18:40.338Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.013Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdgr4g",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 0,
       "explanation": "A. 正确：政务服务“好差评”制度把群众评价纳入政府服务监督，促使政府规范权力运行、改进工作作风，体现了政府坚持依法行政、自觉接受群众监督。\nB. 错误：我国公民主要通过选举代表等间接方式参与国家事务管理，不能直接行使管理国家事务的权力；题干中的评价制度属于监督政府服务，不是公民直接行使国家权力。\nC. 错误：“好差评”制度重在约束和监督政府权力、提升服务质量，不是扩大政府行政权力；将群众评价与“扩权”联系起来与材料主旨不符。\nD. 错误：社会听证制度是公民参与民主决策的具体形式，而材料中的“好差评”制度主要体现民主监督和政府接受监督，不是听证决策程序。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解答时政材料题，第一步应该（　　）",
+      "options": [
+        "认真审题，明确设问要求",
+        "直接抄材料",
+        "随意作答",
+        "先写结论"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：认真审题，明确设问要求。按时政材料题的审题与答题方法判断，本题正确答案是「认真审题，明确设问要求」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "分析时政材料时，应该（　　）",
+      "options": [
+        "脱离材料空谈",
+        "只看材料不看教材",
+        "凭主观想象作答",
+        "提取材料中的关键信息，联系教材知识"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：提取材料中的关键信息，联系教材知识。按时政材料题的审题与答题方法判断，本题正确答案是「提取材料中的关键信息，联系教材知识」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "组织答案时，应该（　　）",
+      "options": [
+        "使用口语化表达",
+        "只写关键词",
+        "分点作答，条理清晰，术语规范",
+        "写成一段不分点"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：分点作答，条理清晰，术语规范。按时政材料题的审题与答题方法判断，本题正确答案是「分点作答，条理清晰，术语规范」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "材料题中“说明了什么”一般要求回答（　　）",
+      "options": [
+        "材料的时间",
+        "材料反映的道理、观点或结论",
+        "材料的字数",
+        "材料的来源"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：材料反映的道理、观点或结论。按时政材料题的审题与答题方法判断，本题正确答案是「材料反映的道理、观点或结论」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "材料题中“启示”类设问，一般要求回答（　　）",
+      "options": [
+        "我们应当怎么做",
+        "材料是什么",
+        "材料有多少条",
+        "材料是谁写的"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：我们应当怎么做。按时政材料题的审题与答题方法判断，本题正确答案是「我们应当怎么做」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "评析类设问要求（　　）",
+      "options": [
+        "只判断不说明",
+        "只说明不判断",
+        "直接照抄材料",
+        "先判断观点正误，再说明理由"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：先判断观点正误，再说明理由。按时政材料题的审题与答题方法判断，本题正确答案是「先判断观点正误，再说明理由」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "多角度分析问题，可以从（　　）等方面展开",
+      "options": [
+        "只看材料表面",
+        "只写一个要点",
+        "国家、社会、个人等",
+        "只看一个角度"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：国家、社会、个人等。按时政材料题的审题与答题方法判断，本题正确答案是「国家、社会、个人等」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "答题时使用学科术语，有利于（　　）",
+      "options": [
+        "代替分析",
+        "准确表达观点，提高得分",
+        "增加字数",
+        "显得高深"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：准确表达观点，提高得分。按时政材料题的审题与答题方法判断，本题正确答案是「准确表达观点，提高得分」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“结合材料”作答，意味着（　　）",
+      "options": [
+        "要把教材知识与材料内容结合起来",
+        "可以完全脱离材料",
+        "只抄材料原文",
+        "只写教材知识"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：要把教材知识与材料内容结合起来。按时政材料题的审题与答题方法判断，本题正确答案是「要把教材知识与材料内容结合起来」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "检查答案时，应该（　　）",
+      "options": [
+        "只看字数",
+        "只看书写",
+        "不需要检查",
+        "看是否切题、要点是否全面、表述是否规范"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：看是否切题、要点是否全面、表述是否规范。按时政材料题的审题与答题方法判断，本题正确答案是「看是否切题、要点是否全面、表述是否规范」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "全国两会是指（　　）",
+      "options": [
+        "最高人民法院和最高人民检察院会议",
+        "地方政府和政协会议",
+        "全国人民代表大会和中国人民政治协商会议",
+        "中国共产党全国代表大会和国务院会议"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：全国人民代表大会和中国人民政治协商会议。按常见时政主题与教材知识的联系判断，本题正确答案是「全国人民代表大会和中国人民政治协商会议」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "乡村振兴战略有利于（　　）",
+      "options": [
+        "减少农业投入",
+        "缩小城乡差距，实现共同富裕",
+        "扩大城乡差距",
+        "只发展城市"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：缩小城乡差距，实现共同富裕。按常见时政主题与教材知识的联系判断，本题正确答案是「缩小城乡差距，实现共同富裕」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "国家重视科技创新，是因为（　　）",
+      "options": [
+        "科技创新是提高社会生产力和综合国力的战略支撑",
+        "创新与经济发展无关",
+        "只需引进技术",
+        "创新只靠企业"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：科技创新是提高社会生产力和综合国力的战略支撑。按常见时政主题与教材知识的联系判断，本题正确答案是「科技创新是提高社会生产力和综合国力的战略支撑」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "加强生态文明建设，要求（　　）",
+      "options": [
+        "先污染后治理",
+        "过度开发资源",
+        "忽视环境保护",
+        "坚持绿水青山就是金山银山，走绿色发展道路"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：坚持绿水青山就是金山银山，走绿色发展道路。按常见时政主题与教材知识的联系判断，本题正确答案是「坚持绿水青山就是金山银山，走绿色发展道路」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "坚定文化自信，要（　　）",
+      "options": [
+        "照搬外来文化",
+        "只追求流行文化",
+        "传承中华优秀传统文化，弘扬革命文化和社会主义先进文化",
+        "否定传统文化"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：传承中华优秀传统文化，弘扬革命文化和社会主义先进文化。按常见时政主题与教材知识的联系判断，本题正确答案是「传承中华优秀传统文化，弘扬革命文化和社会主义先进文化」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "保障和改善民生，有利于（　　）",
+      "options": [
+        "忽视群众利益",
+        "满足人民日益增长的美好生活需要",
+        "扩大贫富差距",
+        "减少公共服务"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：满足人民日益增长的美好生活需要。按常见时政主题与教材知识的联系判断，本题正确答案是「满足人民日益增长的美好生活需要」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "全面依法治国在时政材料中常体现为（　　）",
+      "options": [
+        "科学立法、严格执法、公正司法、全民守法",
+        "以言代法",
+        "以权压法",
+        "徇私枉法"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：科学立法、严格执法、公正司法、全民守法。按常见时政主题与教材知识的联系判断，本题正确答案是「科学立法、严格执法、公正司法、全民守法」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "构建人类命运共同体，体现我国（　　）",
+      "options": [
+        "称霸世界",
+        "闭关锁国",
+        "单边主义",
+        "走和平发展道路，促进合作共赢"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：走和平发展道路，促进合作共赢。按常见时政主题与教材知识的联系判断，本题正确答案是「走和平发展道路，促进合作共赢」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“放管服”改革主要体现（　　）",
+      "options": [
+        "政府放弃监管",
+        "政府干预一切",
+        "政府转变职能，建设服务型政府",
+        "政府扩大权力"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：政府转变职能，建设服务型政府。按常见时政主题与教材知识的联系判断，本题正确答案是「政府转变职能，建设服务型政府」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "分析时政材料中的民生举措，可以联系（　　）",
+      "options": [
+        "以少数人利益为重",
+        "以人民为中心的发展思想",
+        "以经济为唯一目标",
+        "以城市为中心"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：以人民为中心的发展思想。按常见时政主题与教材知识的联系判断，本题正确答案是「以人民为中心的发展思想」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "面对网络上的未经证实的信息，正确做法是（　　）",
+      "options": [
+        "不轻信、不传播，等待权威信息",
+        "立即转发",
+        "随意评论",
+        "添油加醋"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：不轻信、不传播，等待权威信息。按情境判断与观点评析的方法判断，本题正确答案是「不轻信、不传播，等待权威信息」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "评析“只要经济发展了，环境问题可以以后再治理”这一观点，应该（　　）",
+      "options": [
+        "完全赞同",
+        "完全否定不作分析",
+        "避而不答",
+        "指出其片面性，说明要坚持经济发展与环境保护相协调"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：指出其片面性，说明要坚持经济发展与环境保护相协调。按情境判断与观点评析的方法判断，本题正确答案是「指出其片面性，说明要坚持经济发展与环境保护相协调」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "公民参与民主生活，应该（　　）",
+      "options": [
+        "扰乱社会秩序",
+        "无视法律法规",
+        "依法有序参与，理性表达诉求",
+        "采取非法手段"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：依法有序参与，理性表达诉求。按情境判断与观点评析的方法判断，本题正确答案是「依法有序参与，理性表达诉求」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "发现有人破坏公共设施，正确做法是（　　）",
+      "options": [
+        "拍照取笑",
+        "劝阻并向有关部门反映",
+        "视而不见",
+        "一起破坏"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：劝阻并向有关部门反映。按情境判断与观点评析的方法判断，本题正确答案是「劝阻并向有关部门反映」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "面对社会生活中的不公平现象，应该（　　）",
+      "options": [
+        "依法维护公平正义，不采取过激行为",
+        "以暴制暴",
+        "忍气吞声",
+        "传播负面情绪"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：依法维护公平正义，不采取过激行为。按情境判断与观点评析的方法判断，本题正确答案是「依法维护公平正义，不采取过激行为」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "评价一种行为是否合法，主要看（　　）",
+      "options": [
+        "行为是否对自己有利",
+        "行为是否得到他人认可",
+        "行为是否流行",
+        "行为是否符合法律规定"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：行为是否符合法律规定。按情境判断与观点评析的方法判断，本题正确答案是「行为是否符合法律规定」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“权利可以自由行使”这一说法（　　）",
+      "options": [
+        "完全错误不需分析",
+        "与法律无关",
+        "是片面的，行使权利不能损害他人和社会利益",
+        "完全正确"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：是片面的，行使权利不能损害他人和社会利益。按情境判断与观点评析的方法判断，本题正确答案是「是片面的，行使权利不能损害他人和社会利益」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "青少年参与公共事务，应该（　　）",
+      "options": [
+        "只在网上发泄",
+        "增强参与意识，提高参与能力，依法有序参与",
+        "认为与自己无关",
+        "采取过激方式"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：增强参与意识，提高参与能力，依法有序参与。按情境判断与观点评析的方法判断，本题正确答案是「增强参与意识，提高参与能力，依法有序参与」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "面对不同观点，正确的态度是（　　）",
+      "options": [
+        "理性分析，尊重事实，辩证看待",
+        "盲目附和",
+        "一概否定",
+        "人身攻击"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：理性分析，尊重事实，辩证看待。按情境判断与观点评析的方法判断，本题正确答案是「理性分析，尊重事实，辩证看待」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-道德与法治-5",
+      "chapterName": "时政材料分析",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "时政材料分析题的答案应（　　）",
+      "options": [
+        "越长越好",
+        "只写口号",
+        "脱离材料",
+        "观点正确、紧扣材料、条理清晰"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：观点正确、紧扣材料、条理清晰。按情境判断与观点评析的方法判断，本题正确答案是「观点正确、紧扣材料、条理清晰」。",
       "difficulty": 2
     }
   ]

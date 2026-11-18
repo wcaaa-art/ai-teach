@@ -143,7 +143,7 @@ onMounted(async () => {
   const planId = String(route.query.planId || '')
   const found = plans.find(item => item.id === planId)
   if (!found) {
-    ElMessage.warning('这条计划已经不在列表里了，回到学习计划看看。')
+    ElMessage.warning('这条计划已经不在列表里了，回到学习计划看看')
     router.replace({ name: 'plans' })
     return
   }
@@ -182,7 +182,7 @@ async function loadContent() {
     kind: mode.value === 'text' ? 'text' : 'words'
   })
   if (!result?.success || !result.data) {
-    content.value = { kind: 'text', title: plan.value.name, lines: [], needsManual: true, notice: '没能拿到内容，可以手动粘贴原文。' }
+    content.value = { kind: 'text', title: plan.value.name, lines: [], needsManual: true, notice: '没能拿到内容，可以手动粘贴原文' }
     needsManual.value = true
     contentSource.value = 'manual'
     stage.value = 'confirm'
@@ -261,7 +261,7 @@ function prepare() {
 // === 内容确认页：批量编辑 ===
 const editing = ref(false)
 const editText = ref('')
-const editHint = computed(() => mode.value === 'text' ? '一行一句，标点会保留。' : '一行一个词，格式：单词|音标|中文释义|例句（后两项可留空）。')
+const editHint = computed(() => mode.value === 'text' ? '一行一句，标点会保留' : '一行一个词，格式：单词|音标|中文释义|例句（后两项可留空）')
 
 function openEditor() {
   if (mode.value === 'text') {
@@ -274,7 +274,7 @@ function openEditor() {
 
 function applyEdit() {
   const rows = editText.value.split('\n').map(row => row.trim()).filter(Boolean)
-  if (!rows.length) { ElMessage.warning('内容不能为空。'); return }
+  if (!rows.length) { ElMessage.warning('内容不能为空'); return }
   if (mode.value === 'text') {
     content.value = {
       ...content.value,
@@ -294,7 +294,7 @@ function applyEdit() {
   }
   needsManual.value = false
   editing.value = false
-  ElMessage.success('已保存到本机，下次进来直接用。')
+  ElMessage.success('已保存到本机，下次进来直接用')
 }
 
 async function regenerate() {
@@ -313,7 +313,7 @@ async function regenerate() {
     content.value = result.data
     contentSource.value = result.source || ''
     needsManual.value = Boolean(result.data.needsManual)
-  } else ElMessage.warning('这次没拿到新内容，保持原来的。')
+  } else ElMessage.warning('这次没拿到新内容，保持原来的')
 }
 
 // === 语音：模型 + 录音 ===
@@ -336,13 +336,13 @@ async function toggleMic() {
   if (listening.value) { closeRecorder(); return }
   if (!navigator.mediaDevices?.getUserMedia) {
     typingMode.value = true
-    ElMessage.info('这个浏览器不支持麦克风，改成打字核对。')
+    ElMessage.info('这个浏览器不支持麦克风，改成打字核对')
     return
   }
   const ok = await ensureModel()
   if (!ok) {
     typingMode.value = true
-    ElMessage.info('语音模型没加载成功，改成打字核对。')
+    ElMessage.info('语音模型没加载成功，改成打字核对')
     return
   }
   try {
@@ -356,7 +356,7 @@ async function toggleMic() {
   } catch (error) {
     listening.value = false
     typingMode.value = true
-    ElMessage.info('没拿到麦克风权限，改成打字核对。')
+    ElMessage.info('没拿到麦克风权限，改成打字核对')
   }
 }
 
@@ -397,7 +397,7 @@ async function handleSegment(audio) {
     if (!text) return
     applyLineJudge(text)
   } catch (error) {
-    ElMessage.warning('这句没识别出来，再念一次试试。')
+    ElMessage.warning('这句没识别出来，再念一次试试')
   } finally {
     recognizing.value = false
   }
@@ -807,7 +807,7 @@ function backToPlans() {
           <p class="confirm-eyebrow">开始之前先确认内容</p>
           <h2 class="confirm-title">{{ content?.title }}</h2>
           <p class="confirm-note">
-            {{ content?.notice || '内容由 AI 整理，可能和你的课本版本有出入。改一次之后会保存在本机，下次直接用。' }}
+            {{ content?.notice || '内容由 AI 整理，可能和你的课本版本有出入，改一次之后会保存在本机，下次直接用' }}
           </p>
         </div>
         <div class="confirm-actions">
@@ -817,7 +817,7 @@ function backToPlans() {
         </div>
       </div>
       <div v-if="needsManual && !(content?.lines?.length || content?.words?.length)" class="confirm-empty">
-        <p>这一篇本地没有收录。</p>
+        <p>这一篇本地没有收录</p>
         <button type="button" class="btn-primary" @click="openEditor">粘贴课本原文</button>
       </div>
       <ol v-else-if="content?.kind === 'text'" class="confirm-lines">
@@ -1005,7 +1005,7 @@ function backToPlans() {
           <button type="button" class="word-btn unknown" @click="markWord(false)">还不认识</button>
           <button type="button" class="word-btn known" @click="markWord(true)">记住了</button>
         </div>
-        <p class="word-footnote">不认识的会再考一轮，最多三轮，2 分钟能过一遍。</p>
+        <p class="word-footnote">不认识的会再考一轮，最多三轮，2 分钟能过一遍</p>
       </template>
 
       <!-- 打字默写 -->
@@ -1103,9 +1103,9 @@ function backToPlans() {
         <ul>
           <li v-for="(item, index) in summary.wrong" :key="index">{{ item }}</li>
         </ul>
-        <p class="summary-wrong-note">{{ summary.wrongSaved ? `这 ${summary.wrongSaved} 处已存进错题库，按「复习」就能重练。` : '这轮卡壳的地方稍后会汇总进错题库。' }}</p>
+        <p class="summary-wrong-note">{{ summary.wrongSaved ? `这 ${summary.wrongSaved} 处已存进错题库，按「复习」就能重练` : '这轮卡壳的地方稍后会汇总进错题库' }}</p>
       </div>
-      <p v-else class="summary-clean">全过了一遍，没有卡住的地方。</p>
+      <p v-else class="summary-clean">全过了一遍，没有卡住的地方</p>
       <button v-if="mode === 'words'" type="button" class="summary-dictate" @click="dictateFromSummary">
         <strong>{{ inDictation ? '再默一遍' : '默写这组单词' }}</strong>
         <span>{{ inDictation ? '重新听写，把刚才错过的词再打一遍' : `看中文、听发音，把 ${wordTotal} 个词逐个默一遍` }}</span>
@@ -1115,7 +1115,7 @@ function backToPlans() {
         <button type="button" class="btn-ghost" @click="backToPlans">先不做了</button>
         <button type="button" class="btn-primary" @click="completePlanAndBack">完成并回到计划</button>
       </div>
-      <p class="summary-note">本次 {{ Math.max(1, Math.round(summary.seconds / 60)) }} 分钟已计入今天的专注时长。</p>
+      <p class="summary-note">本次 {{ Math.max(1, Math.round(summary.seconds / 60)) }} 分钟已计入今天的专注时长</p>
     </section>
 
     <div v-else class="recite-loading">
@@ -1189,7 +1189,7 @@ function backToPlans() {
 .recite-body.reader-hidden{grid-template-columns:minmax(0,1fr)}
 .recite-body.reader-hidden .recite-reader{display:none}
 /* 隐藏原文后，面板独占、顶部留出呼吸空间。内容少时靠上边距营造居中感，
-   内容超高（打字三栏对比展开）时能随 .main-content 正常滚动，按钮不会被裁掉。 */
+   内容超高（打字三栏对比展开）时能随 .main-content 正常滚动，按钮不会被裁掉， */
 .recite-body.reader-hidden .recite-panel{max-width:480px;justify-self:center;width:100%;align-self:start;margin-top:40px}
 /* 阅读卡按视口高度撑开：句子少的时候不至于在页面下方留一大片空白。 */
 .recite-reader{display:flex;flex-direction:column;min-height:calc(100vh - 220px);border:1px solid var(--recite-line);border-radius:18px;background:#fff;padding:14px 6px 10px 14px}
@@ -1269,7 +1269,7 @@ function backToPlans() {
 .word-card{position:relative;width:100%;height:100%;border:0;border-radius:24px;background:transparent;cursor:pointer;transform-style:preserve-3d;transition:transform .42s cubic-bezier(.4,.2,.2,1)}
 .word-card.flipped{transform:rotateY(180deg)}
 /* 两个视图共用同一套纵向骨架：主行固定在卡片 122px 处，下方内容依次向下排。
-   这样「卡片速记」与「背诵默写」切换时，主信息、按钮行、底部说明都停在同一位置。 */
+   这样「卡片速记」与「背诵默写」切换时，主信息、按钮行、底部说明都停在同一位置， */
 .word-face,.word-back{position:absolute;inset:0;display:grid;justify-items:center;align-content:start;gap:10px;padding:122px 32px 32px;border:1px solid var(--recite-line);border-radius:24px;background:#fff;box-shadow:0 22px 48px -28px rgba(29,58,49,.4);backface-visibility:hidden}
 .word-back{align-content:center;padding:32px;transform:rotateY(180deg);background:var(--recite-soft)}
 .word-text{margin:0;font-size:56px;font-weight:700;letter-spacing:-.02em;text-align:center}

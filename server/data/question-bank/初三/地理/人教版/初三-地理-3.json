@@ -6,9 +6,9 @@
     "id": "初三-地理-3",
     "name": "人口资源环境"
   },
-  "generatedAt": "2026-11-14T12:18:03.787Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.054Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdfvv1",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：环境承载力强调在一定的资源、环境和技术条件下，一个地区能够持续供养的人口的最大规模，体现了人口与资源环境之间的协调关系。\nB. 错误：环境承载力不仅受土地面积影响，还与水资源、矿产资源、生态条件以及居民消费水平等因素有关，土地面积不是唯一决定因素。\nC. 错误：科技进步可以提高资源利用效率，从而可能提高环境承载力，但资源环境条件始终有限，环境承载力不能无限增大。\nD. 错误：当前实际人口数量是现实人口规模，而环境承载力是资源环境条件所能持续供养的最大人口规模，二者不能等同。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "世界人口增长最快的时期是（ ）",
+      "options": [
+        "20世纪以来",
+        "18世纪以前",
+        "19世纪中期",
+        "工业革命以前"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：20世纪以来。按世界人口增长与人口问题的知识判断，本题正确答案是「20世纪以来」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "目前世界人口已超过（ ）",
+      "options": [
+        "60亿",
+        "70亿",
+        "100亿",
+        "80亿"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：80亿。按世界人口增长与人口问题的知识判断，本题正确答案是「80亿」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列地区中，不属于世界人口稠密区的是（ ）",
+      "options": [
+        "亚洲南部",
+        "欧洲西部",
+        "撒哈拉沙漠",
+        "亚洲东部"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：撒哈拉沙漠。按世界人口增长与人口问题的知识判断，本题正确答案是「撒哈拉沙漠」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "人口增长过快带来的问题是（ ）",
+      "options": [
+        "国防兵源不足",
+        "粮食短缺、就业困难、环境恶化",
+        "劳动力短缺",
+        "人口老龄化"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：粮食短缺、就业困难、环境恶化。按世界人口增长与人口问题的知识判断，本题正确答案是「粮食短缺、就业困难、环境恶化」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "人口增长过慢带来的问题是（ ）",
+      "options": [
+        "劳动力短缺、人口老龄化",
+        "资源短缺",
+        "就业困难",
+        "住房紧张"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：劳动力短缺、人口老龄化。按世界人口增长与人口问题的知识判断，本题正确答案是「劳动力短缺、人口老龄化」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "衡量人口增长快慢的主要指标是（ ）",
+      "options": [
+        "人口总数",
+        "人口密度",
+        "城镇化率",
+        "人口自然增长率"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：人口自然增长率。按世界人口增长与人口问题的知识判断，本题正确答案是「人口自然增长率」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "印度面临的主要人口问题是（ ）",
+      "options": [
+        "劳动力严重短缺",
+        "人口老龄化最严重",
+        "人口增长过快",
+        "人口负增长"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：人口增长过快。按世界人口增长与人口问题的知识判断，本题正确答案是「人口增长过快」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "欧洲西部一些国家面临的主要人口问题是（ ）",
+      "options": [
+        "劳动力过剩",
+        "人口老龄化",
+        "人口爆炸",
+        "出生率过高"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：人口老龄化。按世界人口增长与人口问题的知识判断，本题正确答案是「人口老龄化」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国目前的人口政策是（ ）",
+      "options": [
+        "优化生育政策，促进人口长期均衡发展",
+        "鼓励无限制生育",
+        "强制只生一个",
+        "停止人口管理"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：优化生育政策，促进人口长期均衡发展。按世界人口增长与人口问题的知识判断，本题正确答案是「优化生育政策，促进人口长期均衡发展」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "人口增长应与（ ）相协调",
+      "options": [
+        "只与经济增长相协调",
+        "只与资源相协调",
+        "任意增长",
+        "资源、环境和社会经济发展"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：资源、环境和社会经济发展。按世界人口增长与人口问题的知识判断，本题正确答案是「资源、环境和社会经济发展」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "自然资源分为（ ）",
+      "options": [
+        "土地资源和森林资源",
+        "能源和粮食",
+        "可再生资源和非可再生资源",
+        "矿产资源和水资源"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：可再生资源和非可再生资源。按自然资源的分类、分布与利用判断，本题正确答案是「可再生资源和非可再生资源」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列属于可再生资源的是（ ）",
+      "options": [
+        "铁矿",
+        "森林",
+        "煤炭",
+        "石油"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：森林。按自然资源的分类、分布与利用判断，本题正确答案是「森林」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列属于非可再生资源的是（ ）",
+      "options": [
+        "石油",
+        "森林",
+        "水",
+        "太阳能"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：石油。按自然资源的分类、分布与利用判断，本题正确答案是「石油」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国自然资源的基本国情是（ ）",
+      "options": [
+        "总量贫乏，人均丰富",
+        "总量和人均都丰富",
+        "总量和人均都贫乏",
+        "总量丰富，人均不足"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：总量丰富，人均不足。按自然资源的分类、分布与利用判断，本题正确答案是「总量丰富，人均不足」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "世界上石油储量最丰富的地区是（ ）",
+      "options": [
+        "亚马孙平原",
+        "西欧平原",
+        "波斯湾及其沿岸地区",
+        "北冰洋沿岸"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：波斯湾及其沿岸地区。按自然资源的分类、分布与利用判断，本题正确答案是「波斯湾及其沿岸地区」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "石油输出国组织（OPEC）的主要目的是（ ）",
+      "options": [
+        "统一各国货币",
+        "协调石油产量和价格",
+        "禁止石油出口",
+        "禁止石油开采"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：协调石油产量和价格。按自然资源的分类、分布与利用判断，本题正确答案是「协调石油产量和价格」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "水资源短缺已成为全球性问题，其主要原因是（ ）",
+      "options": [
+        "人口增长和污染加剧",
+        "水资源总量降为零",
+        "各国不再用水",
+        "降水完全停止"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：人口增长和污染加剧。按自然资源的分类、分布与利用判断，本题正确答案是「人口增长和污染加剧」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "解决水资源短缺问题的重要途径是（ ）",
+      "options": [
+        "无限制开采地下水",
+        "大量浪费水资源",
+        "停止农业生产",
+        "节约用水、防治水污染"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：节约用水、防治水污染。按自然资源的分类、分布与利用判断，本题正确答案是「节约用水、防治水污染」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "世界森林面积减少的主要原因是（ ）",
+      "options": [
+        "退耕还林",
+        "建立自然保护区",
+        "乱砍滥伐和过度开垦",
+        "植树造林"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：乱砍滥伐和过度开垦。按自然资源的分类、分布与利用判断，本题正确答案是「乱砍滥伐和过度开垦」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国为解决能源短缺而发展的清洁能源包括（ ）",
+      "options": [
+        "泥炭、油页岩",
+        "太阳能、风能、水能",
+        "煤炭、石油",
+        "薪柴、秸秆"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：太阳能、风能、水能。按自然资源的分类、分布与利用判断，本题正确答案是「太阳能、风能、水能」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "全球气候变暖的主要原因是（ ）",
+      "options": [
+        "人类大量排放二氧化碳等温室气体",
+        "地球距太阳变近",
+        "火山喷发减少",
+        "太阳活动减弱"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：人类大量排放二氧化碳等温室气体。按全球环境问题与可持续发展的知识判断，本题正确答案是「人类大量排放二氧化碳等温室气体」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "全球气候变暖带来的影响是（ ）",
+      "options": [
+        "海平面下降",
+        "气候变冷",
+        "冰川增多",
+        "海平面上升、极端天气增多"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：海平面上升、极端天气增多。按全球环境问题与可持续发展的知识判断，本题正确答案是「海平面上升、极端天气增多」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "减少温室气体排放的重要措施是（ ）",
+      "options": [
+        "焚烧森林",
+        "增加汽车尾气排放",
+        "发展低碳经济、提高能源利用率",
+        "大量使用煤炭"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：发展低碳经济、提高能源利用率。按全球环境问题与可持续发展的知识判断，本题正确答案是「发展低碳经济、提高能源利用率」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "臭氧层破坏的主要原因是（ ）",
+      "options": [
+        "火山喷发",
+        "人类排放氟氯烃等物质",
+        "二氧化碳排放",
+        "大量植树"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：人类排放氟氯烃等物质。按全球环境问题与可持续发展的知识判断，本题正确答案是「人类排放氟氯烃等物质」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "酸雨形成的主要原因是（ ）",
+      "options": [
+        "大气中二氧化硫和氮氧化物增多",
+        "大气中氧气增多",
+        "臭氧增多",
+        "水汽减少"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：大气中二氧化硫和氮氧化物增多。按全球环境问题与可持续发展的知识判断，本题正确答案是「大气中二氧化硫和氮氧化物增多」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "治理酸雨的主要措施是（ ）",
+      "options": [
+        "增加煤炭燃烧",
+        "扩大重工业",
+        "焚烧垃圾",
+        "减少化石燃料使用、对废气净化处理"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：减少化石燃料使用、对废气净化处理。按全球环境问题与可持续发展的知识判断，本题正确答案是「减少化石燃料使用、对废气净化处理」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "生物多样性减少的主要原因是（ ）",
+      "options": [
+        "植树造林",
+        "人工繁殖",
+        "栖息地破坏和过度捕猎",
+        "建立自然保护区"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：栖息地破坏和过度捕猎。按全球环境问题与可持续发展的知识判断，本题正确答案是「栖息地破坏和过度捕猎」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "保护生物多样性的有效措施是（ ）",
+      "options": [
+        "随意引进外来物种",
+        "建立自然保护区",
+        "大规模开发栖息地",
+        "过度捕捞"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：建立自然保护区。按全球环境问题与可持续发展的知识判断，本题正确答案是「建立自然保护区」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "可持续发展的核心是（ ）",
+      "options": [
+        "既满足当代人的需要，又不损害后代人的利益",
+        "只满足当代人需要",
+        "完全停止发展",
+        "无止境消耗资源"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：既满足当代人的需要，又不损害后代人的利益。按全球环境问题与可持续发展的知识判断，本题正确答案是「既满足当代人的需要，又不损害后代人的利益」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-地理-3",
+      "chapterName": "人口资源环境",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列日常行为中，符合可持续发展理念的是（ ）",
+      "options": [
+        "随意丢弃垃圾",
+        "大量使用一次性餐具",
+        "浪费水电",
+        "垃圾分类、绿色出行"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：垃圾分类、绿色出行。按全球环境问题与可持续发展的知识判断，本题正确答案是「垃圾分类、绿色出行」。",
+      "difficulty": 2
     }
   ]
 }

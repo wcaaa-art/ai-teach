@@ -6,9 +6,9 @@
     "id": "初一-道德与法治-4",
     "name": "生命安全与健康"
   },
-  "generatedAt": "2026-11-14T12:14:20.946Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.978Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdb6z4",
@@ -179,6 +179,516 @@
       "correctIndex": 2,
       "explanation": "A. 错误：天气炎热不能成为下河游泳的理由，野外水域可能有暗流、水草、水温差等危险，私自下水容易发生溺水事故。\nB. 错误：仅凭目测水浅不能排除危险，水下地形、淤泥和暗坑都可能造成伤害，而且没有成年人看护，不能作为下水依据。\nC. 正确：生命安全第一，应做到不私自下水游泳，不到无安全设施、无救援人员的水域游泳；面对同伴邀约要拒绝并劝阻，选择正规游泳馆且有大人陪同更安全。\nD. 错误：岸边玩水也可能因湿滑、水位变化等发生滑落溺水，不能把“只在岸边玩”当作安全替代方案。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "生命至上，意味着（　　）",
+      "options": [
+        "我们要珍爱生命，尊重生命的价值",
+        "只珍爱自己的生命",
+        "生命可以随意放弃",
+        "生命没有价值"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：我们要珍爱生命，尊重生命的价值。按珍视生命与健康生活方式判断，本题正确答案是「我们要珍爱生命，尊重生命的价值」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "守护生命，首先要关注（　　）",
+      "options": [
+        "自己的成绩",
+        "自己的外貌",
+        "自己的娱乐",
+        "自己的身体"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：自己的身体。按珍视生命与健康生活方式判断，本题正确答案是「自己的身体」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列属于健康生活方式的是（　　）",
+      "options": [
+        "暴饮暴食",
+        "久坐不动",
+        "合理膳食、适量运动、规律作息",
+        "长期熬夜"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：合理膳食、适量运动、规律作息。按珍视生命与健康生活方式判断，本题正确答案是「合理膳食、适量运动、规律作息」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "养护精神，应该（　　）",
+      "options": [
+        "忽视心理健康",
+        "保持积极心态，丰富精神生活",
+        "沉迷网络游戏",
+        "只追求物质享受"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：保持积极心态，丰富精神生活。按珍视生命与健康生活方式判断，本题正确答案是「保持积极心态，丰富精神生活」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列行为危害身体健康的是（　　）",
+      "options": [
+        "吸烟、酗酒",
+        "按时作息",
+        "均衡饮食",
+        "坚持锻炼"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：吸烟、酗酒。按珍视生命与健康生活方式判断，本题正确答案是「吸烟、酗酒」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "保持心理健康，需要（　　）",
+      "options": [
+        "压抑所有情绪",
+        "逃避所有问题",
+        "拒绝与人交流",
+        "学会调节情绪，积极面对压力"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：学会调节情绪，积极面对压力。按珍视生命与健康生活方式判断，本题正确答案是「学会调节情绪，积极面对压力」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "生命是不可逆的，这要求我们（　　）",
+      "options": [
+        "漠视生命",
+        "及时行乐",
+        "珍惜生命，不轻易放弃",
+        "随意冒险"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：珍惜生命，不轻易放弃。按珍视生命与健康生活方式判断，本题正确答案是「珍惜生命，不轻易放弃」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列做法体现对生命负责的是（　　）",
+      "options": [
+        "在马路上追逐打闹",
+        "遵守交通规则，注意安全",
+        "闯红灯",
+        "翻越护栏"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：遵守交通规则，注意安全。按珍视生命与健康生活方式判断，本题正确答案是「遵守交通规则，注意安全」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "青少年应拒绝的不良诱惑是（　　）",
+      "options": [
+        "毒品",
+        "体育锻炼",
+        "阅读书籍",
+        "参加公益活动"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：毒品。按珍视生命与健康生活方式判断，本题正确答案是「毒品」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "遇到心理困惑时，可以（　　）",
+      "options": [
+        "独自承受",
+        "用极端方式解决",
+        "封闭自己",
+        "向老师、家长或心理咨询师求助"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：向老师、家长或心理咨询师求助。按珍视生命与健康生活方式判断，本题正确答案是「向老师、家长或心理咨询师求助」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "发现有人溺水时，应该（　　）",
+      "options": [
+        "悄悄离开",
+        "站在岸边围观",
+        "大声呼救并拨打急救电话，不盲目下水",
+        "立即独自下水救人"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：大声呼救并拨打急救电话，不盲目下水。按安全防范与自救互救知识判断，本题正确答案是「大声呼救并拨打急救电话，不盲目下水」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "遇到火灾时，正确的做法是（　　）",
+      "options": [
+        "返回取贵重物品",
+        "用湿毛巾捂住口鼻，低姿撤离，拨打119",
+        "乘坐电梯逃生",
+        "躲进衣柜"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：用湿毛巾捂住口鼻，低姿撤离，拨打119。按安全防范与自救互救知识判断，本题正确答案是「用湿毛巾捂住口鼻，低姿撤离，拨打119」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "火警电话是（　　）",
+      "options": [
+        "119",
+        "110",
+        "120",
+        "122"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：119。按安全防范与自救互救知识判断，本题正确答案是「119」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "急救电话是（　　）",
+      "options": [
+        "119",
+        "110",
+        "122",
+        "120"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：120。按安全防范与自救互救知识判断，本题正确答案是「120」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "报警电话是（　　）",
+      "options": [
+        "120",
+        "122",
+        "110",
+        "119"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：110。按安全防范与自救互救知识判断，本题正确答案是「110」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "发现有人触电时，首先应该（　　）",
+      "options": [
+        "转身离开",
+        "切断电源或用绝缘物挑开电线",
+        "直接用手拉人",
+        "用水泼人"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：切断电源或用绝缘物挑开电线。按安全防范与自救互救知识判断，本题正确答案是「切断电源或用绝缘物挑开电线」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "遇到校园欺凌时，应该（　　）",
+      "options": [
+        "及时告诉老师和家长，必要时报警",
+        "忍气吞声",
+        "以暴制暴",
+        "加入欺凌者"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：及时告诉老师和家长，必要时报警。按安全防范与自救互救知识判断，本题正确答案是「及时告诉老师和家长，必要时报警」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "上网时保护个人信息，应该（　　）",
+      "options": [
+        "把信息发给陌生网友",
+        "公开银行卡密码",
+        "随意点击不明链接",
+        "不随意透露身份证号、家庭住址等信息"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：不随意透露身份证号、家庭住址等信息。按安全防范与自救互救知识判断，本题正确答案是「不随意透露身份证号、家庭住址等信息」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "购买食品时，应该注意（　　）",
+      "options": [
+        "只挑便宜的",
+        "不看任何标签",
+        "查看生产日期、保质期和生产厂家",
+        "只看包装好看"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：查看生产日期、保质期和生产厂家。按安全防范与自救互救知识判断，本题正确答案是「查看生产日期、保质期和生产厂家」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "在地震发生时，如果来不及撤离，应该（　　）",
+      "options": [
+        "站在窗户边",
+        "躲到坚固的桌子下或承重墙角，保护头部",
+        "跳楼逃生",
+        "乘坐电梯"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：躲到坚固的桌子下或承重墙角，保护头部。按安全防范与自救互救知识判断，本题正确答案是「躲到坚固的桌子下或承重墙角，保护头部」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "挫折是指（　　）",
+      "options": [
+        "人们在实现目标过程中遇到的阻碍和困难",
+        "生活中的一切不顺心",
+        "只有失败",
+        "只有疾病"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：人们在实现目标过程中遇到的阻碍和困难。按挫折应对与生命价值判断，本题正确答案是「人们在实现目标过程中遇到的阻碍和困难」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "面对挫折，下列态度正确的是（　　）",
+      "options": [
+        "逃避退缩",
+        "怨天尤人",
+        "自暴自弃",
+        "勇敢面对，积极寻找解决办法"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：勇敢面对，积极寻找解决办法。按挫折应对与生命价值判断，本题正确答案是「勇敢面对，积极寻找解决办法」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "增强生命韧性，可以（　　）",
+      "options": [
+        "依赖他人",
+        "忽视问题",
+        "培养积极心态，积累应对挫折的经验",
+        "避免一切困难"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：培养积极心态，积累应对挫折的经验。按挫折应对与生命价值判断，本题正确答案是「培养积极心态，积累应对挫折的经验」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“天行健，君子以自强不息”启示我们（　　）",
+      "options": [
+        "逃避责任",
+        "要自强不息，勇于战胜困难",
+        "听天由命",
+        "依赖他人"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：要自强不息，勇于战胜困难。按挫折应对与生命价值判断，本题正确答案是「要自强不息，勇于战胜困难」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列做法有助于实现生命价值的是（　　）",
+      "options": [
+        "努力学习，服务社会，关爱他人",
+        "只顾个人享受",
+        "损害他人利益",
+        "浪费生命"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：努力学习，服务社会，关爱他人。按挫折应对与生命价值判断，本题正确答案是「努力学习，服务社会，关爱他人」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "当朋友遇到挫折时，我们应该（　　）",
+      "options": [
+        "嘲笑他",
+        "远离他",
+        "指责他",
+        "给予关心和支持，帮助他走出困境"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：给予关心和支持，帮助他走出困境。按挫折应对与生命价值判断，本题正确答案是「给予关心和支持，帮助他走出困境」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "生命的意义不在于长短，而在于（　　）",
+      "options": [
+        "个人的地位",
+        "个人的寿命",
+        "对社会的贡献",
+        "个人的财富"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：对社会的贡献。按挫折应对与生命价值判断，本题正确答案是「对社会的贡献」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列行为体现敬畏生命的是（　　）",
+      "options": [
+        "漠视他人痛苦",
+        "关爱他人，救助受伤的小动物",
+        "随意践踏花草",
+        "虐待动物"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：关爱他人，救助受伤的小动物。按挫折应对与生命价值判断，本题正确答案是「关爱他人，救助受伤的小动物」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "面对生活中的困难，我们应该（　　）",
+      "options": [
+        "保持乐观，积极行动",
+        "消极等待",
+        "放弃努力",
+        "把责任推给他人"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：保持乐观，积极行动。按挫折应对与生命价值判断，本题正确答案是「保持乐观，积极行动」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-道德与法治-4",
+      "chapterName": "生命安全与健康",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“平凡的生命也能创造伟大”说明（　　）",
+      "options": [
+        "只有名人才能创造价值",
+        "平凡的人生没有意义",
+        "价值只体现在财富上",
+        "在平凡岗位上尽职尽责也能实现人生价值"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：在平凡岗位上尽职尽责也能实现人生价值。按挫折应对与生命价值判断，本题正确答案是「在平凡岗位上尽职尽责也能实现人生价值」。",
+      "difficulty": 2
     }
   ]
 }

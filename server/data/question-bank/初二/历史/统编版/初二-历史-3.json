@@ -6,9 +6,9 @@
     "id": "初二-历史-3",
     "name": "中国近代化的起步"
   },
-  "generatedAt": "2026-11-14T12:15:34.892Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.087Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdcs17",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 0,
       "explanation": "A. 正确：洋务派以“自强”“求富”为口号，创办安庆内军械所、江南机器制造总局、轮船招商局等近代军事和民用工业，属于近代化起步的重要实践。\nB. 错误：“扶清灭洋”是义和团运动的口号；维新派主张变法图强、实行君主立宪，二者搭配错误。\nC. 错误：“民主与科学”是新文化运动的重要口号；革命派主张推翻清朝统治、建立民主共和制度，二者搭配错误。\nD. 错误：“君主立宪”是维新派的重要主张；激进民主主义者倡导新文化运动，二者搭配错误。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "虎门销烟发生在（ ）",
+      "options": [
+        "1839年",
+        "1840年",
+        "1842年",
+        "1856年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1839年。按两次鸦片战争与太平天国的史实判断，本题正确答案是「1839年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "虎门销烟的主持者是（ ）",
+      "options": [
+        "邓世昌",
+        "李鸿章",
+        "左宗棠",
+        "林则徐"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：林则徐。按两次鸦片战争与太平天国的史实判断，本题正确答案是「林则徐」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "鸦片战争爆发于（ ）",
+      "options": [
+        "1842年",
+        "1856年",
+        "1840年",
+        "1839年"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1840年。按两次鸦片战争与太平天国的史实判断，本题正确答案是「1840年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "中国近代第一个不平等条约是（ ）",
+      "options": [
+        "《北京条约》",
+        "《南京条约》",
+        "《马关条约》",
+        "《辛丑条约》"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：《南京条约》。按两次鸦片战争与太平天国的史实判断，本题正确答案是「《南京条约》」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "《南京条约》割让给英国的是（ ）",
+      "options": [
+        "香港岛",
+        "台湾岛",
+        "澳门",
+        "九龙"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：香港岛。按两次鸦片战争与太平天国的史实判断，本题正确答案是「香港岛」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "《南京条约》开放的通商口岸不包括（ ）",
+      "options": [
+        "广州",
+        "厦门",
+        "上海",
+        "天津"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：天津。按两次鸦片战争与太平天国的史实判断，本题正确答案是「天津」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "鸦片战争的影响是（ ）",
+      "options": [
+        "中国进入封建社会",
+        "中国实现近代化",
+        "中国开始沦为半殖民地半封建社会",
+        "中国完全沦为殖民地"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：中国开始沦为半殖民地半封建社会。按两次鸦片战争与太平天国的史实判断，本题正确答案是「中国开始沦为半殖民地半封建社会」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "第二次鸦片战争发生在（ ）",
+      "options": [
+        "1900—1901年",
+        "1856—1860年",
+        "1840—1842年",
+        "1894—1895年"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1856—1860年。按两次鸦片战争与太平天国的史实判断，本题正确答案是「1856—1860年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "火烧圆明园的侵略者是（ ）",
+      "options": [
+        "英法联军",
+        "八国联军",
+        "日本军队",
+        "沙俄军队"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：英法联军。按两次鸦片战争与太平天国的史实判断，本题正确答案是「英法联军」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "太平天国运动爆发于（ ）",
+      "options": [
+        "1840年虎门销烟",
+        "1898年戊戌变法",
+        "1911年武昌起义",
+        "1851年金田起义"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1851年金田起义。按两次鸦片战争与太平天国的史实判断，本题正确答案是「1851年金田起义」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "洋务运动开始于（ ）",
+      "options": [
+        "19世纪90年代",
+        "20世纪初",
+        "19世纪60年代",
+        "19世纪40年代"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：19世纪60年代。按洋务运动的史实判断，本题正确答案是「19世纪60年代」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "洋务运动的代表人物不包括（ ）",
+      "options": [
+        "张之洞",
+        "康有为",
+        "李鸿章",
+        "曾国藩"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：康有为。按洋务运动的史实判断，本题正确答案是「康有为」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "洋务运动的口号是（ ）",
+      "options": [
+        "「自强」「求富」",
+        "「民主」「科学」",
+        "「扶清灭洋」",
+        "「实业救国」"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：「自强」「求富」。按洋务运动的史实判断，本题正确答案是「「自强」「求富」」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "洋务运动创办的军事工业是（ ）",
+      "options": [
+        "轮船招商局",
+        "汉阳铁厂",
+        "开平煤矿",
+        "江南机器制造总局"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：江南机器制造总局。按洋务运动的史实判断，本题正确答案是「江南机器制造总局」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "洋务运动创办的民用企业是（ ）",
+      "options": [
+        "福州船政局",
+        "安庆内军械所",
+        "轮船招商局",
+        "江南机器制造总局"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：轮船招商局。按洋务运动的史实判断，本题正确答案是「轮船招商局」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "洋务运动创办的新式学堂是（ ）",
+      "options": [
+        "北京大学",
+        "京师同文馆",
+        "京师大学堂",
+        "黄埔军校"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：京师同文馆。按洋务运动的史实判断，本题正确答案是「京师同文馆」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "洋务运动建立的新式海军是（ ）",
+      "options": [
+        "北洋舰队",
+        "太平洋舰队",
+        "东海舰队",
+        "联合舰队"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：北洋舰队。按洋务运动的史实判断，本题正确答案是「北洋舰队」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "洋务运动的性质是（ ）",
+      "options": [
+        "资产阶级革命",
+        "农民战争",
+        "思想解放运动",
+        "地主阶级的自救运动"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：地主阶级的自救运动。按洋务运动的史实判断，本题正确答案是「地主阶级的自救运动」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "洋务运动在中国近代化进程中的地位是（ ）",
+      "options": [
+        "新民主主义革命的开端",
+        "社会主义建设的开端",
+        "中国近代化的开端",
+        "中国近代史的开端"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：中国近代化的开端。按洋务运动的史实判断，本题正确答案是「中国近代化的开端」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "甲午中日战争爆发于（ ）",
+      "options": [
+        "1900年",
+        "1894年",
+        "1840年",
+        "1856年"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1894年。按洋务运动的史实判断，本题正确答案是「1894年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《马关条约》签订于（ ）",
+      "options": [
+        "1895年",
+        "1842年",
+        "1856年",
+        "1901年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1895年。按甲午战争与戊戌变法的史实判断，本题正确答案是「1895年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《马关条约》割让给日本的是（ ）",
+      "options": [
+        "香港岛",
+        "九龙",
+        "澳门",
+        "台湾全岛及所有附属各岛屿、澎湖列岛"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：台湾全岛及所有附属各岛屿、澎湖列岛。按甲午战争与戊戌变法的史实判断，本题正确答案是「台湾全岛及所有附属各岛屿、澎湖列岛」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《马关条约》的影响是（ ）",
+      "options": [
+        "中国完全陷入半殖民地深渊",
+        "中国实现独立",
+        "大大加深中国的半殖民地化程度",
+        "中国开始沦为半殖民地"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：大大加深中国的半殖民地化程度。按甲午战争与戊戌变法的史实判断，本题正确答案是「大大加深中国的半殖民地化程度」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "戊戌变法发生在（ ）",
+      "options": [
+        "1900年",
+        "1898年",
+        "1894年",
+        "1895年"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1898年。按甲午战争与戊戌变法的史实判断，本题正确答案是「1898年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "戊戌变法的主要领导人是（ ）",
+      "options": [
+        "康有为、梁启超",
+        "孙中山、黄兴",
+        "陈独秀、李大钊",
+        "毛泽东、周恩来"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：康有为、梁启超。按甲午战争与戊戌变法的史实判断，本题正确答案是「康有为、梁启超」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "戊戌变法又被称为（ ）",
+      "options": [
+        "洋务运动",
+        "清末新政",
+        "预备立宪",
+        "百日维新"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：百日维新。按甲午战争与戊戌变法的史实判断，本题正确答案是「百日维新」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "戊戌变法失败的直接原因是（ ）",
+      "options": [
+        "八国联军侵华",
+        "辛亥革命爆发",
+        "慈禧太后发动政变",
+        "甲午战争失败"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：慈禧太后发动政变。按甲午战争与戊戌变法的史实判断，本题正确答案是「慈禧太后发动政变」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "翻译《天演论》的是（ ）",
+      "options": [
+        "谭嗣同",
+        "严复",
+        "康有为",
+        "梁启超"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：严复。按甲午战争与戊戌变法的史实判断，本题正确答案是「严复」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "在黄海海战中壮烈殉国的将领是（ ）",
+      "options": [
+        "邓世昌",
+        "丁汝昌",
+        "林则徐",
+        "左宝贵"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：邓世昌。按甲午战争与戊戌变法的史实判断，本题正确答案是「邓世昌」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-历史-3",
+      "chapterName": "中国近代化的起步",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "义和团运动提出的口号是（ ）",
+      "options": [
+        "「自强求富」",
+        "「民主与科学」",
+        "「外争主权，内除国贼」",
+        "「扶清灭洋」"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：「扶清灭洋」。按甲午战争与戊戌变法的史实判断，本题正确答案是「「扶清灭洋」」。",
       "difficulty": 2
     }
   ]

@@ -6,9 +6,9 @@
     "id": "初一-数学-9",
     "name": "不等式与不等式组"
   },
-  "generatedAt": "2026-11-13T02:43:40.288Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.144Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedhg1q",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：解 2x-1>3 得 x>2，解 x-2≤1 得 x≤3，取两个解集的公共部分，得 2<x≤3。\nB. 错误：x>2 只是第一个不等式的解集，没有同时满足第二个不等式 x≤3。\nC. 错误：x≤3 只是第二个不等式的解集，没有同时满足第一个不等式 x>2。\nD. 错误：端点包含关系写反了；当 x=2 时，2x-1=3，不满足 2x-1>3，所以 2 不能包含在解集中。",
       "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解不等式 2x + 3 > 11，解集是（ ）",
+      "options": [
+        "x > 4",
+        "x < 4",
+        "x > 5",
+        "x < 5"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：x > 4。移项得 2x > 8，两边同除以正数 2，不等号方向不变，得 x > 4。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解不等式 3x - 4 > 8，解集是（ ）",
+      "options": [
+        "x < 4",
+        "x > 5",
+        "x < 5",
+        "x > 4"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：x > 4。移项得 3x > 12，两边同除以正数 3，不等号方向不变，得 x > 4。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解不等式 4x + 5 > 21，解集是（ ）",
+      "options": [
+        "x > 5",
+        "x < 5",
+        "x > 4",
+        "x < 4"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：x > 4。移项得 4x > 16，两边同除以正数 4，不等号方向不变，得 x > 4。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解不等式 5x - 2 > 13，解集是（ ）",
+      "options": [
+        "x < 4",
+        "x > 3",
+        "x < 3",
+        "x > 4"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：x > 3。移项得 5x > 15，两边同除以正数 5，不等号方向不变，得 x > 3。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解不等式 6x + 7 > 37，解集是（ ）",
+      "options": [
+        "x > 5",
+        "x < 5",
+        "x > 6",
+        "x < 6"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：x > 5。移项得 6x > 30，两边同除以正数 6，不等号方向不变，得 x > 5。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解不等式 7x - 3 > 18，解集是（ ）",
+      "options": [
+        "x < 3",
+        "x > 4",
+        "x < 4",
+        "x > 3"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：x > 3。移项得 7x > 21，两边同除以正数 7，不等号方向不变，得 x > 3。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解不等式 8x + 1 > 33，解集是（ ）",
+      "options": [
+        "x > 5",
+        "x < 5",
+        "x > 4",
+        "x < 4"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：x > 4。移项得 8x > 32，两边同除以正数 8，不等号方向不变，得 x > 4。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解不等式 9x - 5 > 31，解集是（ ）",
+      "options": [
+        "x < 5",
+        "x > 4",
+        "x < 4",
+        "x > 5"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：x > 4。移项得 9x > 36，两边同除以正数 9，不等号方向不变，得 x > 4。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解不等式 3x + 8 > 29，解集是（ ）",
+      "options": [
+        "x > 7",
+        "x < 7",
+        "x > 8",
+        "x < 8"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：x > 7。移项得 3x > 21，两边同除以正数 3，不等号方向不变，得 x > 7。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "解不等式 4x - 6 > 14，解集是（ ）",
+      "options": [
+        "x < 5",
+        "x > 6",
+        "x < 6",
+        "x > 5"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：x > 5。移项得 4x > 20，两边同除以正数 4，不等号方向不变，得 x > 5。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "满足不等式 1 ≤ x ≤ 3 的整数 x 共有（ ）个",
+      "options": [
+        "4",
+        "5",
+        "3",
+        "2"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：3。从 1 到 3 逐个计数，共 3 - 1 + 1 = 3 个整数。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "满足不等式 2 ≤ x ≤ 4 的整数 x 共有（ ）个",
+      "options": [
+        "6",
+        "3",
+        "2",
+        "4"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：3。从 2 到 4 逐个计数，共 4 - 2 + 1 = 3 个整数。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "满足不等式 3 ≤ x ≤ 5 的整数 x 共有（ ）个",
+      "options": [
+        "3",
+        "2",
+        "4",
+        "8"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：3。从 3 到 5 逐个计数，共 5 - 3 + 1 = 3 个整数。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "满足不等式 1 ≤ x ≤ 6 的整数 x 共有（ ）个",
+      "options": [
+        "5",
+        "7",
+        "8",
+        "6"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：6。从 1 到 6 逐个计数，共 6 - 1 + 1 = 6 个整数。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "满足不等式 4 ≤ x ≤ 7 的整数 x 共有（ ）个",
+      "options": [
+        "5",
+        "11",
+        "4",
+        "3"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：4。从 4 到 7 逐个计数，共 7 - 4 + 1 = 4 个整数。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "满足不等式 2 ≤ x ≤ 8 的整数 x 共有（ ）个",
+      "options": [
+        "10",
+        "7",
+        "6",
+        "8"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：7。从 2 到 8 逐个计数，共 8 - 2 + 1 = 7 个整数。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "满足不等式 5 ≤ x ≤ 9 的整数 x 共有（ ）个",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "14"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：5。从 5 到 9 逐个计数，共 9 - 5 + 1 = 5 个整数。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "满足不等式 3 ≤ x ≤ 10 的整数 x 共有（ ）个",
+      "options": [
+        "7",
+        "9",
+        "13",
+        "8"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：8。从 3 到 10 逐个计数，共 10 - 3 + 1 = 8 个整数。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "满足不等式 6 ≤ x ≤ 11 的整数 x 共有（ ）个",
+      "options": [
+        "7",
+        "17",
+        "6",
+        "5"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：6。从 6 到 11 逐个计数，共 11 - 6 + 1 = 6 个整数。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "满足不等式 4 ≤ x ≤ 12 的整数 x 共有（ ）个",
+      "options": [
+        "16",
+        "9",
+        "8",
+        "10"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：9。从 4 到 12 逐个计数，共 12 - 4 + 1 = 9 个整数。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "学校已有 3 本练习册，每包 5 本，要凑够至少 40 本，至少要再买几包？",
+      "options": [
+        "8",
+        "7",
+        "9",
+        "10"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：8。还差 37 本，37 ÷ 5 ≈ 7.40，向上取整得 8 包。",
+      "difficulty": 3
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "学校已有 4 本练习册，每包 6 本，要凑够至少 50 本，至少要再买几包？",
+      "options": [
+        "7",
+        "9",
+        "10",
+        "8"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：8。还差 46 本，46 ÷ 6 ≈ 7.67，向上取整得 8 包。",
+      "difficulty": 3
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "学校已有 5 本练习册，每包 7 本，要凑够至少 60 本，至少要再买几包？",
+      "options": [
+        "9",
+        "10",
+        "8",
+        "7"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：8。还差 55 本，55 ÷ 7 ≈ 7.86，向上取整得 8 包。",
+      "difficulty": 3
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "学校已有 2 本练习册，每包 8 本，要凑够至少 45 本，至少要再买几包？",
+      "options": [
+        "8",
+        "6",
+        "5",
+        "7"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：6。还差 43 本，43 ÷ 8 ≈ 5.38，向上取整得 6 包。",
+      "difficulty": 3
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "学校已有 6 本练习册，每包 9 本，要凑够至少 75 本，至少要再买几包？",
+      "options": [
+        "8",
+        "7",
+        "9",
+        "10"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：8。还差 69 本，69 ÷ 9 ≈ 7.67，向上取整得 8 包。",
+      "difficulty": 3
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "学校已有 3 本练习册，每包 10 本，要凑够至少 55 本，至少要再买几包？",
+      "options": [
+        "5",
+        "7",
+        "8",
+        "6"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：6。还差 52 本，52 ÷ 10 ≈ 5.20，向上取整得 6 包。",
+      "difficulty": 3
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "学校已有 7 本练习册，每包 4 本，要凑够至少 62 本，至少要再买几包？",
+      "options": [
+        "15",
+        "16",
+        "14",
+        "13"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：14。还差 55 本，55 ÷ 4 ≈ 13.75，向上取整得 14 包。",
+      "difficulty": 3
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "学校已有 5 本练习册，每包 12 本，要凑够至少 85 本，至少要再买几包？",
+      "options": [
+        "9",
+        "7",
+        "6",
+        "8"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：7。还差 80 本，80 ÷ 12 ≈ 6.67，向上取整得 7 包。",
+      "difficulty": 3
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "学校已有 8 本练习册，每包 11 本，要凑够至少 90 本，至少要再买几包？",
+      "options": [
+        "8",
+        "7",
+        "9",
+        "10"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：8。还差 82 本，82 ÷ 11 ≈ 7.45，向上取整得 8 包。",
+      "difficulty": 3
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-数学-9",
+      "chapterName": "不等式与不等式组",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "学校已有 4 本练习册，每包 15 本，要凑够至少 70 本，至少要再买几包？",
+      "options": [
+        "4",
+        "6",
+        "7",
+        "5"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：5。还差 66 本，66 ÷ 15 ≈ 4.40，向上取整得 5 包。",
+      "difficulty": 3
     }
   ]
 }

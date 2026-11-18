@@ -6,9 +6,9 @@
     "id": "初一-道德与法治-1",
     "name": "成长中的我"
   },
-  "generatedAt": "2026-11-14T12:14:10.439Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.968Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdayv6",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "B. 正确：正确认识自己既要看到长处，也要正视不足；发挥板报设计优势，同时通过请教和练习改进数学，体现了全面认识自我和主动完善自我。\nA. 错误：只看到数学短板就认定自己一无是处，是以偏概全，否定了自身在板报设计等方面的优点，不利于健康成长。\nC. 错误：把自己和同桌进行简单比较并认定永远赶不上，容易产生自卑，没有用发展的眼光看待自己。\nD. 错误：只展示长处、回避数学学习任务，是在逃避不足，不能促进全面发展，也不符合正确认识自我的要求。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "进入青春期，我们身体变化的主要表现不包括（　　）",
+      "options": [
+        "智力水平突然下降",
+        "身体外形的变化",
+        "内部器官的完善",
+        "性机能的成熟"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：智力水平突然下降。按认识自我与青春期成长的知识判断，本题正确答案是「智力水平突然下降」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "青春期身体发育的显著特点是（　　）",
+      "options": [
+        "身高停止增长",
+        "体重迅速下降",
+        "性机能尚未发育",
+        "身高、体重迅速增长"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：身高、体重迅速增长。按认识自我与青春期成长的知识判断，本题正确答案是「身高、体重迅速增长」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "认识自己可以通过（　　）",
+      "options": [
+        "只靠他人评价",
+        "只靠外貌判断",
+        "自我评价和他人评价等途径",
+        "只靠自我评价"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：自我评价和他人评价等途径。按认识自我与青春期成长的知识判断，本题正确答案是「自我评价和他人评价等途径」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "对待他人评价，正确的态度是（　　）",
+      "options": [
+        "只接受表扬",
+        "重视他人评价，但也要冷静分析",
+        "完全接受",
+        "完全忽视"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：重视他人评价，但也要冷静分析。按认识自我与青春期成长的知识判断，本题正确答案是「重视他人评价，但也要冷静分析」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "接纳自己，需要（　　）",
+      "options": [
+        "接纳自己的全部，包括优点和不完美",
+        "只接纳优点",
+        "只接纳缺点",
+        "只接纳外貌"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：接纳自己的全部，包括优点和不完美。按认识自我与青春期成长的知识判断，本题正确答案是「接纳自己的全部，包括优点和不完美」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "欣赏自己，应该欣赏自己的（　　）",
+      "options": [
+        "一切方面都优于他人",
+        "外貌和衣着",
+        "家庭条件",
+        "独特性和优点，同时保持谦虚"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：独特性和优点，同时保持谦虚。按认识自我与青春期成长的知识判断，本题正确答案是「独特性和优点，同时保持谦虚」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "做更好的自己，需要（　　）",
+      "options": [
+        "隐藏所有缺点",
+        "与他人比较外貌",
+        "扬长避短，主动改正缺点，不断激发潜能",
+        "只关注自己的优点"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：扬长避短，主动改正缺点，不断激发潜能。按认识自我与青春期成长的知识判断，本题正确答案是「扬长避短，主动改正缺点，不断激发潜能」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "“金无足赤，人无完人”说明（　　）",
+      "options": [
+        "缺点无法改变",
+        "每个人都有优点和缺点，要全面认识自己",
+        "人不可能有优点",
+        "人不需要改正缺点"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：每个人都有优点和缺点，要全面认识自己。按认识自我与青春期成长的知识判断，本题正确答案是「每个人都有优点和缺点，要全面认识自己」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "激发自身潜能的方法不包括（　　）",
+      "options": [
+        "只做自己最擅长的事，回避挑战",
+        "通过积极的心理暗示",
+        "在实践中不断尝试",
+        "与他人合作、寻求帮助"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：只做自己最擅长的事，回避挑战。按认识自我与青春期成长的知识判断，本题正确答案是「只做自己最擅长的事，回避挑战」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "青春期出现矛盾心理是（　　）",
+      "options": [
+        "心理疾病",
+        "不可改变的缺陷",
+        "不需要关注的",
+        "正常的成长现象"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：正常的成长现象。按认识自我与青春期成长的知识判断，本题正确答案是「正常的成长现象」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "学习（　　）",
+      "options": [
+        "只指考试科目",
+        "只在青少年时期进行",
+        "不仅包括在学校学习，也包括生活中的各种学习",
+        "只指课堂学习"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：不仅包括在学校学习，也包括生活中的各种学习。按学习与梦想的相关知识判断，本题正确答案是「不仅包括在学校学习，也包括生活中的各种学习」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "学习过程中（　　）",
+      "options": [
+        "与情绪无关",
+        "有苦也有乐",
+        "只有快乐",
+        "只有痛苦"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：有苦也有乐。按学习与梦想的相关知识判断，本题正确答案是「有苦也有乐」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "学会学习需要（　　）",
+      "options": [
+        "发现并保持学习兴趣，掌握科学的学习方法",
+        "只靠死记硬背",
+        "只靠老师监督",
+        "只靠增加学习时间"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：发现并保持学习兴趣，掌握科学的学习方法。按学习与梦想的相关知识判断，本题正确答案是「发现并保持学习兴趣，掌握科学的学习方法」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "梦想与现实之间的桥梁是（　　）",
+      "options": [
+        "运气",
+        "空想",
+        "等待",
+        "努力"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：努力。按学习与梦想的相关知识判断，本题正确答案是「努力」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "关于努力，下列认识正确的是（　　）",
+      "options": [
+        "努力不需要方向",
+        "努力可以代替方法",
+        "努力需要立志、坚持和方法",
+        "努力一定立即成功"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：努力需要立志、坚持和方法。按学习与梦想的相关知识判断，本题正确答案是「努力需要立志、坚持和方法」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "终身学习是指（　　）",
+      "options": [
+        "毕业后不再学习",
+        "学习贯穿人的一生，不断学习新知识新技能",
+        "只在学校阶段学习",
+        "只学习课本知识"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：学习贯穿人的一生，不断学习新知识新技能。按学习与梦想的相关知识判断，本题正确答案是「学习贯穿人的一生，不断学习新知识新技能」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "学习的重要意义在于（　　）",
+      "options": [
+        "让我们获得知识、增长能力、提升素养",
+        "只为了考试分数",
+        "只为了获得表扬",
+        "只为了赚钱"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：让我们获得知识、增长能力、提升素养。按学习与梦想的相关知识判断，本题正确答案是「让我们获得知识、增长能力、提升素养」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“工欲善其事，必先利其器”启示我们（　　）",
+      "options": [
+        "学习只需要工具",
+        "学习不需要计划",
+        "学习方法无关紧要",
+        "要学会学习，掌握科学的学习方法"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：要学会学习，掌握科学的学习方法。按学习与梦想的相关知识判断，本题正确答案是「要学会学习，掌握科学的学习方法」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列属于自主学习的是（　　）",
+      "options": [
+        "抄袭同学作业",
+        "只在考试前突击",
+        "自己制定学习计划并主动完成",
+        "完全依赖老师安排"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：自己制定学习计划并主动完成。按学习与梦想的相关知识判断，本题正确答案是「自己制定学习计划并主动完成」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "合作学习有利于（　　）",
+      "options": [
+        "避免承担学习责任",
+        "取长补短，共同进步",
+        "完全依赖他人",
+        "减少独立思考"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：取长补短，共同进步。按学习与梦想的相关知识判断，本题正确答案是「取长补短，共同进步」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "生命是来之不易的，也是（　　）",
+      "options": [
+        "独特的、不可替代的",
+        "可以随意复制的",
+        "完全相同的",
+        "可以随意放弃的"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：独特的、不可替代的。按生命教育与挫折应对的知识判断，本题正确答案是「独特的、不可替代的」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "敬畏生命，要求我们（　　）",
+      "options": [
+        "只珍视自己的生命",
+        "只关注他人生命",
+        "漠视生命",
+        "既珍视自己的生命，也尊重他人的生命"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：既珍视自己的生命，也尊重他人的生命。按生命教育与挫折应对的知识判断，本题正确答案是「既珍视自己的生命，也尊重他人的生命」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "守护生命，首先要（　　）",
+      "options": [
+        "只关注物质享受",
+        "忽略身体健康",
+        "关注自己的身体，养成健康的生活方式",
+        "只关注学习成绩"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：关注自己的身体，养成健康的生活方式。按生命教育与挫折应对的知识判断，本题正确答案是「关注自己的身体，养成健康的生活方式」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "养护精神，需要（　　）",
+      "options": [
+        "忽视内心感受",
+        "关注精神生活，保持积极心态",
+        "只追求物质享受",
+        "沉迷网络游戏"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：关注精神生活，保持积极心态。按生命教育与挫折应对的知识判断，本题正确答案是「关注精神生活，保持积极心态」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "生命的意义在于（　　）",
+      "options": [
+        "创造和奉献，实现自身价值",
+        "只追求个人享受",
+        "只关注个人得失",
+        "只追求物质财富"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：创造和奉献，实现自身价值。按生命教育与挫折应对的知识判断，本题正确答案是「创造和奉献，实现自身价值」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "面对挫折，正确的态度是（　　）",
+      "options": [
+        "逃避现实",
+        "自暴自弃",
+        "把责任都推给他人",
+        "正确认识挫折，积极应对"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：正确认识挫折，积极应对。按生命教育与挫折应对的知识判断，本题正确答案是「正确认识挫折，积极应对」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "增强生命韧性，可以（　　）",
+      "options": [
+        "依赖他人解决所有问题",
+        "忽视挫折带来的影响",
+        "培养积极心态，掌握应对挫折的方法",
+        "避免一切挑战"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：培养积极心态，掌握应对挫折的方法。按生命教育与挫折应对的知识判断，本题正确答案是「培养积极心态，掌握应对挫折的方法」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“艰难困苦，玉汝于成”说明（　　）",
+      "options": [
+        "挫折与成长无关",
+        "挫折可以磨炼意志，促进成长",
+        "挫折只会带来痛苦",
+        "挫折越多越好"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：挫折可以磨炼意志，促进成长。按生命教育与挫折应对的知识判断，本题正确答案是「挫折可以磨炼意志，促进成长」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "当自己无法调节不良情绪时，应该（　　）",
+      "options": [
+        "主动寻求老师、家长或专业人员的帮助",
+        "独自承受，不告诉任何人",
+        "用伤害自己的方式发泄",
+        "把情绪发泄到他人身上"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：主动寻求老师、家长或专业人员的帮助。按生命教育与挫折应对的知识判断，本题正确答案是「主动寻求老师、家长或专业人员的帮助」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-道德与法治-1",
+      "chapterName": "成长中的我",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列做法中，体现珍爱生命的是（　　）",
+      "options": [
+        "到陌生水域游泳",
+        "攀爬危险建筑",
+        "熬夜玩手机",
+        "遵守交通规则，不闯红灯"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：遵守交通规则，不闯红灯。按生命教育与挫折应对的知识判断，本题正确答案是「遵守交通规则，不闯红灯」。",
+      "difficulty": 2
     }
   ]
 }

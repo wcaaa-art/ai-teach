@@ -6,9 +6,9 @@
     "id": "初三-物理-7",
     "name": "电磁现象"
   },
-  "generatedAt": "2026-11-13T02:48:13.441Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.238Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwednata",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 1,
       "explanation": "A. 错误：由安培定则判断，通电直导线周围的磁场方向与电流方向有关，若N极向东偏转则对应导线中电流方向相反，与题干电流由南向北矛盾。\nB. 正确：导线中电流由南向北，用右手握住导线，大拇指指向电流方向，四指弯曲方向即磁感线方向；在导线正下方，四指指向西，故该处磁场方向向西，小磁针N极受力方向与磁场方向一致，因此向西偏转。\nC. 错误：通电导线周围存在磁场，会对小磁针产生磁力作用，小磁针不会保持原指向不变；只有导线中无电流时小磁针才指南北。\nD. 错误：水平直导线在其正下方产生的磁场沿水平方向（东西方向），不会使小磁针N极竖直向上翘起。",
+      "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "磁体周围存在（ ）",
+      "options": [
+        "磁场",
+        "电场",
+        "电流",
+        "磁感线"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：磁场。磁体周围存在磁场，看不见摸不着，能对磁体产生力的作用。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在磁体外部，磁感线的方向是（ ）",
+      "options": [
+        "从 S 极出发回到 N 极",
+        "从两极同时出发",
+        "与磁体无关",
+        "从 N 极出发回到 S 极"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：从 N 极出发回到 S 极。磁体外部磁感线从 N 极到 S 极，内部从 S 极到 N 极。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "两个磁体的同名磁极靠近时，它们会（ ）",
+      "options": [
+        "没有作用",
+        "先吸引后排斥",
+        "相互排斥",
+        "相互吸引"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：相互排斥。同名磁极相互排斥，异名磁极相互吸引。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "两个磁体的异名磁极靠近时，它们会（ ）",
+      "options": [
+        "先排斥后吸引",
+        "相互吸引",
+        "相互排斥",
+        "没有作用"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：相互吸引。异名磁极相互吸引。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "指南针能指示南北方向，是因为（ ）",
+      "options": [
+        "地球周围存在地磁场",
+        "地球是导体",
+        "指南针带正电",
+        "空气有浮力"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：地球周围存在地磁场。小磁针在地磁场中受力，静止时指向南北。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "关于磁感线，下列说法正确的是（ ）",
+      "options": [
+        "磁感线是真实存在的曲线",
+        "磁感线可以相交",
+        "磁感线只存在于磁体内部",
+        "磁感线是为了描述磁场而假想的曲线"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：磁感线是为了描述磁场而假想的曲线。磁感线是假想模型，实际并不存在。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "磁场中某点的磁场方向规定为（ ）",
+      "options": [
+        "磁感线由 S 极到 N 极的方向",
+        "电流的方向",
+        "小磁针静止时 N 极所指的方向",
+        "小磁针静止时 S 极所指的方向"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：小磁针静止时 N 极所指的方向。磁场方向规定为小磁针静止时 N 极所指的方向。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "磁体上磁性最强的部分叫做（ ）",
+      "options": [
+        "磁化",
+        "磁极",
+        "磁场",
+        "磁感线"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：磁极。磁体两端磁性最强，称为磁极。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "地磁的北极位于地理（ ）附近",
+      "options": [
+        "南极",
+        "北极",
+        "赤道",
+        "东经 0°"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：南极。地磁北极在地理南极附近，所以小磁针 N 极指北。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "使原来没有磁性的物体获得磁性的过程叫做（ ）",
+      "options": [
+        "磁感",
+        "电磁感应",
+        "磁屏蔽",
+        "磁化"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：磁化。物体在磁体或电流作用下获得磁性的过程叫磁化。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "奥斯特实验说明（ ）",
+      "options": [
+        "电流周围存在电场",
+        "磁场能产生电流",
+        "通电导线周围存在磁场",
+        "磁体周围存在磁场"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：通电导线周围存在磁场。奥斯特发现通电导线下方小磁针偏转，说明电流周围存在磁场。",
+      "difficulty": 1
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "通电螺线管外部的磁场形状与下列哪种磁体相似（ ）",
+      "options": [
+        "磁针",
+        "条形磁体",
+        "蹄形磁体",
+        "环形磁体"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：条形磁体。通电螺线管外部磁场与条形磁体的磁场相似。",
+      "difficulty": 1
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在匝数一定时，增大通过电磁铁的电流，电磁铁的磁性将（ ）",
+      "options": [
+        "增强",
+        "减弱",
+        "不变",
+        "先减弱后增强"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：增强。电流越大，电磁铁磁性越强。",
+      "difficulty": 1
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在电流一定时，增加电磁铁线圈的匝数，电磁铁的磁性将（ ）",
+      "options": [
+        "减弱",
+        "不变",
+        "变为零",
+        "增强"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：增强。匝数越多，电磁铁磁性越强。",
+      "difficulty": 1
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "在通电螺线管中插入铁芯后，它的磁性将（ ）",
+      "options": [
+        "不变",
+        "消失",
+        "增强",
+        "减弱"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：增强。铁芯被磁化后增强磁场，磁性明显增强。",
+      "difficulty": 1
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "与永磁体相比，电磁铁的主要优点是（ ）",
+      "options": [
+        "磁极方向不能改变",
+        "磁性的有无和强弱可以控制",
+        "磁性永远存在",
+        "不需要通电"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：磁性的有无和强弱可以控制。电磁铁通过通断电和控制电流来调节磁性。",
+      "difficulty": 1
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "通电导线周围磁场的方向与下列哪个因素有关（ ）",
+      "options": [
+        "电流的方向",
+        "导线的长度",
+        "导线是否弯曲",
+        "导线的温度"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：电流的方向。改变电流方向，磁场方向随之改变。",
+      "difficulty": 1
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "判断通电螺线管的磁极，应该使用（ ）",
+      "options": [
+        "左手定则",
+        "右手定则",
+        "欧姆定律",
+        "右手螺旋定则"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：右手螺旋定则。用右手螺旋定则（安培定则）判断通电螺线管的 N、S 极。",
+      "difficulty": 1
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "电磁继电器的主要作用是（ ）",
+      "options": [
+        "提高电路中的电压",
+        "储存电能",
+        "利用低电压、弱电流控制高电压、强电流",
+        "增大电路中的电流"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：利用低电压、弱电流控制高电压、强电流。电磁继电器用电磁铁控制触点，实现低压控制高压。",
+      "difficulty": 1
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "电磁起重机能够吸起和放下钢铁，主要利用（ ）",
+      "options": [
+        "发电机",
+        "电磁铁",
+        "永磁体",
+        "电动机"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：电磁铁。电磁起重机利用电磁铁通电有磁性、断电无磁性来工作。",
+      "difficulty": 1
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "电动机的工作原理是（ ）",
+      "options": [
+        "通电导体在磁场中受力运动",
+        "电磁感应现象",
+        "电流的热效应",
+        "电流的磁效应"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：通电导体在磁场中受力运动。电动机利用通电线圈在磁场中受力而转动。",
+      "difficulty": 1
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "电动机工作时，能量转化是（ ）",
+      "options": [
+        "机械能转化为电能",
+        "内能转化为机械能",
+        "化学能转化为电能",
+        "电能转化为机械能"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：电能转化为机械能。电动机消耗电能，获得机械能。",
+      "difficulty": 1
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "发电机的工作原理是（ ）",
+      "options": [
+        "电流的热效应",
+        "磁化现象",
+        "电磁感应现象",
+        "通电导体在磁场中受力"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：电磁感应现象。发电机利用闭合电路的一部分导体切割磁感线产生感应电流。",
+      "difficulty": 1
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "发电机工作时，能量转化是（ ）",
+      "options": [
+        "内能转化为电能",
+        "机械能转化为电能",
+        "电能转化为机械能",
+        "电能转化为内能"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：机械能转化为电能。发电机将机械能转化为电能。",
+      "difficulty": 1
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "直流电动机中换向器的作用是（ ）",
+      "options": [
+        "线圈转过平衡位置时改变线圈中的电流方向",
+        "增大线圈中的电流",
+        "减小线圈中的电流",
+        "改变磁体的磁极"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：线圈转过平衡位置时改变线圈中的电流方向。换向器使线圈持续向同一方向转动。",
+      "difficulty": 1
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "感应电流的方向与下列哪两个因素有关（ ）",
+      "options": [
+        "导体长度和横截面积",
+        "导体电阻和电流大小",
+        "磁场强弱和导体温度",
+        "导体运动方向和磁场方向"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：导体运动方向和磁场方向。改变导体运动方向或磁场方向，感应电流方向都会改变。",
+      "difficulty": 1
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "产生感应电流的条件是（ ）",
+      "options": [
+        "导体沿磁感线方向运动",
+        "电路断开且导体运动",
+        "闭合电路的一部分导体做切割磁感线运动",
+        "导体在磁场中静止"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：闭合电路的一部分导体做切割磁感线运动。必须是闭合电路，且导体做切割磁感线运动。",
+      "difficulty": 1
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "直流电动机能持续转动，主要依靠（ ）",
+      "options": [
+        "保险丝",
+        "换向器",
+        "滑动变阻器",
+        "电磁继电器"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：换向器。换向器在线圈转过平衡位置时改变电流方向。",
+      "difficulty": 1
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "动圈式话筒的工作原理是（ ）",
+      "options": [
+        "电磁感应",
+        "通电导体在磁场中受力",
+        "电流的热效应",
+        "磁化现象"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：电磁感应。声波使膜片带动线圈振动，切割磁感线产生感应电流。",
+      "difficulty": 1
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-物理-7",
+      "chapterName": "电磁现象",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "扬声器的工作原理是（ ）",
+      "options": [
+        "电磁感应",
+        "电流的热效应",
+        "电流的化学效应",
+        "通电导体在磁场中受力"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：通电导体在磁场中受力。变化的电流使线圈在磁场中受力振动，带动纸盆发声。",
       "difficulty": 1
     }
   ]

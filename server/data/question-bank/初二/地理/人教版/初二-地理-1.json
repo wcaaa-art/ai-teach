@@ -6,9 +6,9 @@
     "id": "初二-地理-1",
     "name": "中国疆域与行政区划"
   },
-  "generatedAt": "2026-11-14T12:15:58.699Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.032Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdd1gd",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 0,
       "explanation": "A. 正确：我国大陆海岸线北端起点在辽宁丹东，辽宁省与朝鲜以鸭绿江为界，位置和省级行政区对应正确。\nB. 错误：东兴位于广西壮族自治区，不在广东省；它濒临北部湾，不能表述为“位于广东省，濒临南海”。\nC. 错误：我国沿海直辖市是天津和上海，北京是内陆直辖市，不位于大陆海岸线上。\nD. 错误：沿大陆海岸线考察经过的辽宁、河北、天津、山东、江苏、上海、浙江、福建、广东、广西等均属于沿海省级行政区，并非内陆省级行政区。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国陆地面积约为（ ）",
+      "options": [
+        "960万平方千米",
+        "900万平方千米",
+        "1000万平方千米",
+        "860万平方千米"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：960万平方千米。按我国疆域范围与濒临海洋的知识判断，本题正确答案是「960万平方千米」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国领土最南端在（ ）",
+      "options": [
+        "漠河",
+        "帕米尔高原",
+        "黑瞎子岛",
+        "曾母暗沙"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：曾母暗沙。按我国疆域范围与濒临海洋的知识判断，本题正确答案是「曾母暗沙」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国领土最北端在（ ）",
+      "options": [
+        "帕米尔高原",
+        "钓鱼岛",
+        "黑龙江漠河以北的黑龙江主航道中心线",
+        "曾母暗沙"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：黑龙江漠河以北的黑龙江主航道中心线。按我国疆域范围与濒临海洋的知识判断，本题正确答案是「黑龙江漠河以北的黑龙江主航道中心线」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国领土最东端在（ ）",
+      "options": [
+        "漠河",
+        "黑龙江与乌苏里江主航道中心线的相交处",
+        "帕米尔高原",
+        "曾母暗沙"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：黑龙江与乌苏里江主航道中心线的相交处。按我国疆域范围与濒临海洋的知识判断，本题正确答案是「黑龙江与乌苏里江主航道中心线的相交处」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国领土最西端在（ ）",
+      "options": [
+        "新疆帕米尔高原",
+        "黑龙江漠河",
+        "曾母暗沙",
+        "山东半岛"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：新疆帕米尔高原。按我国疆域范围与濒临海洋的知识判断，本题正确答案是「新疆帕米尔高原」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国陆地面积居世界第（ ）",
+      "options": [
+        "一",
+        "二",
+        "四",
+        "三"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：三。按我国疆域范围与濒临海洋的知识判断，本题正确答案是「三」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国濒临的海洋，从北到南依次是（ ）",
+      "options": [
+        "东海、黄海、渤海、南海",
+        "南海、东海、黄海、渤海",
+        "渤海、黄海、东海、南海",
+        "黄海、渤海、南海、东海"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：渤海、黄海、东海、南海。按我国疆域范围与濒临海洋的知识判断，本题正确答案是「渤海、黄海、东海、南海」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国的内海是（ ）",
+      "options": [
+        "南海",
+        "渤海",
+        "黄海",
+        "东海"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：渤海。按我国疆域范围与濒临海洋的知识判断，本题正确答案是「渤海」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国最大的岛屿是（ ）",
+      "options": [
+        "台湾岛",
+        "海南岛",
+        "崇明岛",
+        "舟山岛"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：台湾岛。按我国疆域范围与濒临海洋的知识判断，本题正确答案是「台湾岛」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "与我国陆上相邻的国家有（ ）",
+      "options": [
+        "8个",
+        "10个",
+        "20个",
+        "14个"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：14个。按我国疆域范围与濒临海洋的知识判断，本题正确答案是「14个」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国省级行政区域单位共有（ ）",
+      "options": [
+        "31个",
+        "36个",
+        "34个",
+        "23个"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：34个。按我国省级行政区的名称、简称与分布判断，本题正确答案是「34个」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国共有（ ）个直辖市",
+      "options": [
+        "5",
+        "4",
+        "2",
+        "3"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：4。按我国省级行政区的名称、简称与分布判断，本题正确答案是「4」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国5个自治区中，面积最大的是（ ）",
+      "options": [
+        "新疆维吾尔自治区",
+        "西藏自治区",
+        "内蒙古自治区",
+        "广西壮族自治区"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：新疆维吾尔自治区。按我国省级行政区的名称、简称与分布判断，本题正确答案是「新疆维吾尔自治区」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国的首都是（ ）",
+      "options": [
+        "上海",
+        "天津",
+        "重庆",
+        "北京"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：北京。按我国省级行政区的名称、简称与分布判断，本题正确答案是「北京」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列属于我国特别行政区的是（ ）",
+      "options": [
+        "珠海",
+        "厦门",
+        "香港",
+        "深圳"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：香港。按我国省级行政区的名称、简称与分布判断，本题正确答案是「香港」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "陕西省的简称是（ ）",
+      "options": [
+        "甘",
+        "陕或秦",
+        "晋",
+        "豫"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：陕或秦。按我国省级行政区的名称、简称与分布判断，本题正确答案是「陕或秦」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "广东省的简称是（ ）",
+      "options": [
+        "粤",
+        "桂",
+        "闽",
+        "湘"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：粤。按我国省级行政区的名称、简称与分布判断，本题正确答案是「粤」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "四川省的简称是（ ）",
+      "options": [
+        "渝",
+        "黔",
+        "滇",
+        "川或蜀"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：川或蜀。按我国省级行政区的名称、简称与分布判断，本题正确答案是「川或蜀」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "山东省的简称是（ ）",
+      "options": [
+        "皖",
+        "苏",
+        "鲁",
+        "冀"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：鲁。按我国省级行政区的名称、简称与分布判断，本题正确答案是「鲁」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "江苏省的简称是（ ）",
+      "options": [
+        "皖",
+        "苏",
+        "浙",
+        "沪"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：苏。按我国省级行政区的名称、简称与分布判断，本题正确答案是「苏」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国位于（ ）",
+      "options": [
+        "东半球、北半球",
+        "西半球、北半球",
+        "东半球、南半球",
+        "西半球、南半球"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：东半球、北半球。按我国地理位置、邻国与海域特征判断，本题正确答案是「东半球、北半球」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国大部分领土位于（ ）",
+      "options": [
+        "热带",
+        "南温带",
+        "北寒带",
+        "北温带"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：北温带。按我国地理位置、邻国与海域特征判断，本题正确答案是「北温带」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国纬度最高的省级行政区是（ ）",
+      "options": [
+        "新疆维吾尔自治区",
+        "吉林省",
+        "黑龙江省",
+        "内蒙古自治区"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：黑龙江省。按我国地理位置、邻国与海域特征判断，本题正确答案是「黑龙江省」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "与我国隔海相望的国家中，位于我国东面的是（ ）",
+      "options": [
+        "蒙古",
+        "日本",
+        "印度",
+        "俄罗斯"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：日本。按我国地理位置、邻国与海域特征判断，本题正确答案是「日本」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "与我国隔海相望的国家中，位于我国东南面的是（ ）",
+      "options": [
+        "菲律宾",
+        "朝鲜",
+        "蒙古",
+        "哈萨克斯坦"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：菲律宾。按我国地理位置、邻国与海域特征判断，本题正确答案是「菲律宾」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国陆上邻国中，面积最大的是（ ）",
+      "options": [
+        "印度",
+        "蒙古",
+        "哈萨克斯坦",
+        "俄罗斯"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：俄罗斯。按我国地理位置、邻国与海域特征判断，本题正确答案是「俄罗斯」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列国家中，与我国新疆维吾尔自治区不相邻的是（ ）",
+      "options": [
+        "吉尔吉斯斯坦",
+        "阿富汗",
+        "朝鲜",
+        "哈萨克斯坦"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：朝鲜。按我国地理位置、邻国与海域特征判断，本题正确答案是「朝鲜」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "琼州海峡位于（ ）",
+      "options": [
+        "舟山群岛与大陆之间",
+        "海南岛与雷州半岛之间",
+        "台湾岛与福建之间",
+        "山东半岛与辽东半岛之间"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：海南岛与雷州半岛之间。按我国地理位置、邻国与海域特征判断，本题正确答案是「海南岛与雷州半岛之间」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国最大的群岛是（ ）",
+      "options": [
+        "舟山群岛",
+        "南沙群岛",
+        "西沙群岛",
+        "澎湖列岛"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：舟山群岛。按我国地理位置、邻国与海域特征判断，本题正确答案是「舟山群岛」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-地理-1",
+      "chapterName": "中国疆域与行政区划",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国大陆海岸线长度约为（ ）",
+      "options": [
+        "2.2万千米",
+        "3.2万千米",
+        "1.2万千米",
+        "1.8万千米"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1.8万千米。按我国地理位置、邻国与海域特征判断，本题正确答案是「1.8万千米」。",
       "difficulty": 2
     }
   ]

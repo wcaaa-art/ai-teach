@@ -6,9 +6,9 @@
     "id": "初二-英语-6",
     "name": "书面表达组织"
   },
-  "generatedAt": "2026-11-14T12:15:26.368Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.946Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdclgc",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 0,
       "explanation": "A. 正确：邀请信正文通常先说明写信意图或邀请原因，再交代活动时间、地点等具体信息，最后表达期待对方回复，层次清楚、逻辑顺畅。\nB. 错误：把期待回复放在开头，读者尚未了解活动信息就被要求回复，且邀请原因被置后，段落衔接不自然。\nC. 错误：期待回复放在活动信息和邀请原因之间，结尾重点不突出，且邀请原因出现太晚，不符合邀请信常见组织顺序。\nD. 错误：先期待回复和邀请原因，再把具体活动信息放到最后，信息重点分散，读者难以快速把握活动安排。",
+      "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "method",
+      "stem": "阅读下面三句话，选出最能概括全段的主题句：\n① We can read books about history.\n② Reading is a good hobby.\n③ We can also read stories.",
+      "options": [
+        "② Reading is a good hobby.",
+        "① We can read books about history.",
+        "③ We can also read stories.",
+        "Reading is a way to spend money."
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：② Reading is a good hobby.。主题句概括全段，其余句子是支持细节；本题主题句是「② Reading is a good hobby.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "method",
+      "stem": "阅读下面三句话，选出最能概括全段的主题句：\n① I like swimming.\n② I also like drawing.\n③ I have a lot of hobbies.",
+      "options": [
+        "① I like swimming.",
+        "② I also like drawing.",
+        "Hobbies take a lot of time.",
+        "③ I have a lot of hobbies."
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：③ I have a lot of hobbies.。主题句概括全段，其余句子是支持细节；本题主题句是「③ I have a lot of hobbies.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "method",
+      "stem": "阅读下面三句话，选出最能概括全段的主题句：\n① There are many flowers in it.\n② My school is beautiful.\n③ The playground is big.",
+      "options": [
+        "③ The playground is big.",
+        "My school is far from my home.",
+        "② My school is beautiful.",
+        "① There are many flowers in it."
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：② My school is beautiful.。主题句概括全段，其余句子是支持细节；本题主题句是「② My school is beautiful.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "method",
+      "stem": "阅读下面三句话，选出最能概括全段的主题句：\n① I have four classes in the morning.\n② After school I have a piano lesson.\n③ Today is a busy day for me.",
+      "options": [
+        "Piano lessons are interesting.",
+        "③ Today is a busy day for me.",
+        "① I have four classes in the morning.",
+        "② After school I have a piano lesson."
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：③ Today is a busy day for me.。主题句概括全段，其余句子是支持细节；本题主题句是「③ Today is a busy day for me.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "method",
+      "stem": "阅读下面三句话，选出最能概括全段的主题句：\n① Dogs are helpful animals.\n② They can help the police.\n③ They can guide the blind.",
+      "options": [
+        "① Dogs are helpful animals.",
+        "② They can help the police.",
+        "③ They can guide the blind.",
+        "Dogs are afraid of strangers."
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：① Dogs are helpful animals.。主题句概括全段，其余句子是支持细节；本题主题句是「① Dogs are helpful animals.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "method",
+      "stem": "阅读下面三句话，选出最能概括全段的主题句：\n① Some listen to music.\n② Different people have different ways to relax.\n③ Others do sports.",
+      "options": [
+        "① Some listen to music.",
+        "③ Others do sports.",
+        "Music makes people happy.",
+        "② Different people have different ways to relax."
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：② Different people have different ways to relax.。主题句概括全段，其余句子是支持细节；本题主题句是「② Different people have different ways to relax.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "method",
+      "stem": "阅读下面三句话，选出最能概括全段的主题句：\n① We should save water.\n② We should plant trees.\n③ It is important to protect the environment.",
+      "options": [
+        "② We should plant trees.",
+        "Trees make the city green.",
+        "③ It is important to protect the environment.",
+        "① We should save water."
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：③ It is important to protect the environment.。主题句概括全段，其余句子是支持细节；本题主题句是「③ It is important to protect the environment.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "method",
+      "stem": "阅读下面三句话，选出最能概括全段的主题句：\n① Spring is my favourite season.\n② The weather is warm.\n③ Flowers come out everywhere.",
+      "options": [
+        "Spring is a good time to travel.",
+        "① Spring is my favourite season.",
+        "② The weather is warm.",
+        "③ Flowers come out everywhere."
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：① Spring is my favourite season.。主题句概括全段，其余句子是支持细节；本题主题句是「① Spring is my favourite season.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "method",
+      "stem": "阅读下面三句话，选出最能概括全段的主题句：\n① We can shop online.\n② The Internet makes our life easier.\n③ We can study online.",
+      "options": [
+        "② The Internet makes our life easier.",
+        "① We can shop online.",
+        "③ We can study online.",
+        "Online shopping is cheap."
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：② The Internet makes our life easier.。主题句概括全段，其余句子是支持细节；本题主题句是「② The Internet makes our life easier.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "method",
+      "stem": "阅读下面三句话，选出最能概括全段的主题句：\n① We visited a farm.\n② We had a picnic there.\n③ Last weekend was unforgettable.",
+      "options": [
+        "① We visited a farm.",
+        "② We had a picnic there.",
+        "Farms are far from the city.",
+        "③ Last weekend was unforgettable."
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：③ Last weekend was unforgettable.。主题句概括全段，其余句子是支持细节；本题主题句是「③ Last weekend was unforgettable.」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "I like English. ______, I am good at it.",
+      "options": [
+        "Because",
+        "Although",
+        "Besides",
+        "However"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：Besides。按句间逻辑选择连接词，本题应为 Besides。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "It was raining. ______, we stayed at home.",
+      "options": [
+        "Besides",
+        "Therefore",
+        "However",
+        "Although"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：Therefore。按句间逻辑选择连接词，本题应为 Therefore。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "______ he is young, he knows a lot.",
+      "options": [
+        "Although",
+        "Because",
+        "So",
+        "Besides"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：Although。按句间逻辑选择连接词，本题应为 Although。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "She was ill. ______, she didn't go to school.",
+      "options": [
+        "Although",
+        "Because",
+        "If",
+        "So"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：So。按句间逻辑选择连接词，本题应为 So。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "I like fruit, ______ apples and bananas.",
+      "options": [
+        "because",
+        "so",
+        "such as",
+        "however"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：such as。按句间逻辑选择连接词，本题应为 such as。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "You should hurry up. ______, you will be late.",
+      "options": [
+        "Therefore",
+        "Otherwise",
+        "Besides",
+        "However"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：Otherwise。按句间逻辑选择连接词，本题应为 Otherwise。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "He didn't study hard. ______, he failed the exam.",
+      "options": [
+        "As a result",
+        "Although",
+        "Besides",
+        "For example"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：As a result。按句间逻辑选择连接词，本题应为 As a result。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "______ having a rest, he went on working.",
+      "options": [
+        "Because of",
+        "Although",
+        "In order to",
+        "Instead of"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Instead of。按句间逻辑选择连接词，本题应为 Instead of。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "She gets up early every day ______ she can catch the first bus.",
+      "options": [
+        "because",
+        "however",
+        "so that",
+        "although"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：so that。按句间逻辑选择连接词，本题应为 so that。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "We should save water ______ it is important.",
+      "options": [
+        "however",
+        "because",
+        "although",
+        "so"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：because。按句间逻辑选择连接词，本题应为 because。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "英语作文中，表示「首先」最常用的表达是（ ）",
+      "options": [
+        "First of all",
+        "At last",
+        "In the end",
+        "By the way"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：First of all。按英语书面表达规范判断，本题应为「First of all」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "英语作文中，表示「最后」最常用的表达是（ ）",
+      "options": [
+        "First",
+        "Besides",
+        "However",
+        "Finally"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Finally。按英语书面表达规范判断，本题应为「Finally」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "英语作文中，表示「例如」的表达是（ ）",
+      "options": [
+        "Therefore",
+        "Although",
+        "For example",
+        "However"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：For example。按英语书面表达规范判断，本题应为「For example」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "英语作文中，表示「总之」的表达是（ ）",
+      "options": [
+        "However",
+        "In a word",
+        "For example",
+        "Besides"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：In a word。按英语书面表达规范判断，本题应为「In a word」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "给老师写英文邮件，开头称呼最恰当的是（ ）",
+      "options": [
+        "Dear Mr. Li,",
+        "Hi Li,",
+        "Li,",
+        "Hello, Mr. Li"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：Dear Mr. Li,。按英语书面表达规范判断，本题应为「Dear Mr. Li,」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "英文正式书信结尾落款前常用（ ）",
+      "options": [
+        "Your friend,",
+        "Thanks a lot,",
+        "Bye",
+        "Yours sincerely,"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：Yours sincerely,。按英语书面表达规范判断，本题应为「Yours sincerely,」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "书面表达中描述过去发生的事，应主要使用（ ）",
+      "options": [
+        "一般将来时",
+        "现在进行时",
+        "一般过去时",
+        "一般现在时"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：一般过去时。按英语书面表达规范判断，本题应为「一般过去时」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "写看图作文时，第一步通常是（ ）",
+      "options": [
+        "不用检查",
+        "仔细观察图片，明确主题",
+        "直接抄写图片上的字",
+        "先写结尾"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：仔细观察图片，明确主题。按英语书面表达规范判断，本题应为「仔细观察图片，明确主题」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "段落中用来支持主题句的句子叫（ ）",
+      "options": [
+        "支持句",
+        "主题句",
+        "结尾句",
+        "连接词"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：支持句。按英语书面表达规范判断，本题应为「支持句」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-英语-6",
+      "chapterName": "书面表达组织",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "一篇短文通常分为（ ）",
+      "options": [
+        "两个部分",
+        "四个部分",
+        "五个部分",
+        "开头、主体、结尾三部分"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：开头、主体、结尾三部分。按英语书面表达规范判断，本题应为「开头、主体、结尾三部分」。",
       "difficulty": 1
     }
   ]

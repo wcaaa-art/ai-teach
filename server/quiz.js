@@ -674,26 +674,12 @@ export async function generateQuiz({ mode = 'daily', stage = '初中', grade = '
   const slots = blueprint.items.flatMap(item => (item.types || []).map((type, typeIndex) => ({
     chapterId: item.chapterId, chapterName: item.chapterName, type, score: item.scores?.[typeIndex]
   })))
-  // 离线题库先行：命中的单选位不再请求模型，未命中的题位继续走模型。
+  // 离线题库先行：题库未命中的题位一律用本地模板补，运行时不再请求模型。
   const bankByIndex = planQuizBankPicks({ grade, subject, edition, slots, excludeStems })
-  const modelIndexes = []
-  const modelSlots = []
-  slots.forEach((slot, index) => {
-    if (bankByIndex.has(index)) return
-    modelIndexes.push(index)
-    modelSlots.push(slot)
-  })
-  const answers = modelSlots.length
-    ? await mapWithLimit(modelSlots, QUIZ_CONCURRENCY, slot => requestSlotQuestion(slot, {
-      mode, stage, grade, subject, edition, attempt, excludeStems, fullScore: blueprint.fullScore
-    }))
-    : []
-  const modelAnswers = new Map(modelIndexes.map((slotIndex, answerIndex) => [slotIndex, answers[answerIndex]]))
 
   const questions = []
-  // 每题单独请求时模型会反复返回 q1，整卷必须按题位重发唯一 id，否则答案会串题。
+  // 题库题的 id 只在单章节内唯一，整卷必须按题位重发唯一 id，否则答案会串题。
   const stamp = Date.now().toString(36)
-  let modelCount = 0
   let bankCount = 0
   slots.forEach((slot, index) => {
     const bankQuestion = bankByIndex.get(index)
@@ -713,14 +699,7 @@ export async function generateQuiz({ mode = 'daily', stage = '初中', grade = '
       bankCount += 1
       return
     }
-    const candidate = modelAnswers.get(index)
-    if (candidate && !excluded.has(stemHash(candidate.stem))) {
-      excluded.add(stemHash(candidate.stem))
-      questions.push({ ...candidate, id: `quiz-${stamp}-${index + 1}`, score: Number(slot.score) || candidate.score, origin: 'model' })
-      modelCount += 1
-      return
-    }
-    // 该题位没有可用模型题时，用本地兜底补一题，保持题目顺序与原卷型一致。
+    // 该题位没有可用题库题时，用本地兜底补一题，保持题目顺序与原卷型一致。
     const fallback = buildFallbackQuizQuestions({
       blueprint: { ...blueprint, items: [{ chapterId: slot.chapterId, chapterName: slot.chapterName, count: 1, types: [slot.type], scores: [slot.score] }] },
       excluded,
@@ -731,11 +710,9 @@ export async function generateQuiz({ mode = 'daily', stage = '初中', grade = '
     questions.push({ ...fallback, id: `quiz-${stamp}-${index + 1}`, score: Number(slot.score) || fallback.score, origin: 'local' })
   })
 
-  const source = !modelCount && bankCount
-    ? bankCount === questions.length ? 'question-bank' : 'question-bank-partial'
-    : !modelCount ? 'local-fallback'
-      : bankCount ? 'question-bank-with-model'
-        : modelCount >= slots.length ? 'deepseek' : 'deepseek-with-local-fill'
+  const source = !questions.length ? 'local-fallback'
+    : bankCount === questions.length ? 'question-bank'
+      : bankCount ? 'question-bank-partial' : 'local-fallback'
   return {
     questions,
     blueprint,

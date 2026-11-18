@@ -6,9 +6,9 @@
     "id": "初二-道德与法治-2",
     "name": "情绪情感与调节"
   },
-  "generatedAt": "2026-11-14T12:16:35.499Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.987Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgde2so",
@@ -179,6 +179,516 @@
       "correctIndex": 2,
       "explanation": "A. 错误：改变认知评价是指从不同角度认识和分析事物，从而调整情绪；题干中并未体现小刚转变对考试的看法。\nB. 错误：转移注意是指把注意力转移到其他事物或活动上，如听音乐、散步等；题干中并未体现注意力的转移。\nC. 正确：深呼吸、逐步放松全身肌肉属于放松训练，是调节情绪的一种常用方法，符合题干描述。\nD. 错误：合理宣泄是指在合适场合以合适方式释放情绪，如向他人倾诉、进行体育运动等；题干中并未体现情绪的宣泄。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "人的基本情绪包括（　　）",
+      "options": [
+        "喜、怒、哀、惧",
+        "喜、怒、哀、乐",
+        "喜、忧、思、悲",
+        "爱、恨、情、愁"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：喜、怒、哀、惧。按情绪的类型与青春期情绪特点判断，本题正确答案是「喜、怒、哀、惧」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "情绪的产生受（　　）影响",
+      "options": [
+        "只受天气影响",
+        "只受他人影响",
+        "只受成绩影响",
+        "个人的需要是否得到满足以及情境等"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：个人的需要是否得到满足以及情境等。按情绪的类型与青春期情绪特点判断，本题正确答案是「个人的需要是否得到满足以及情境等」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "青春期情绪的特点包括（　　）",
+      "options": [
+        "情绪没有变化",
+        "只有消极情绪",
+        "情绪波动大、细腻、闭锁、表现性强",
+        "情绪永远稳定"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：情绪波动大、细腻、闭锁、表现性强。按情绪的类型与青春期情绪特点判断，本题正确答案是「情绪波动大、细腻、闭锁、表现性强」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "情绪对人的影响是（　　）",
+      "options": [
+        "没有任何影响",
+        "既有积极作用，也有消极作用",
+        "只有积极作用",
+        "只有消极作用"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：既有积极作用，也有消极作用。按情绪的类型与青春期情绪特点判断，本题正确答案是「既有积极作用，也有消极作用」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "积极情绪有助于（　　）",
+      "options": [
+        "提高学习和工作效率，促进身心健康",
+        "让人失去理智",
+        "损害身体健康",
+        "降低免疫力"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：提高学习和工作效率，促进身心健康。按情绪的类型与青春期情绪特点判断，本题正确答案是「提高学习和工作效率，促进身心健康」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "消极情绪如果长期得不到调节，会（　　）",
+      "options": [
+        "自动消失",
+        "让人更健康",
+        "提高学习效率",
+        "影响身心健康和人际关系"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：影响身心健康和人际关系。按情绪的类型与青春期情绪特点判断，本题正确答案是「影响身心健康和人际关系」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "情绪是可以调节的，我们应该（　　）",
+      "options": [
+        "压抑所有情绪",
+        "随意发泄情绪",
+        "学会合理调节情绪，做情绪的主人",
+        "被情绪左右"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：学会合理调节情绪，做情绪的主人。按情绪的类型与青春期情绪特点判断，本题正确答案是「学会合理调节情绪，做情绪的主人」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列属于情绪的是（　　）",
+      "options": [
+        "对朋友的信任",
+        "考试前的紧张",
+        "对祖国的热爱",
+        "对父母的感恩"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：考试前的紧张。按情绪的类型与青春期情绪特点判断，本题正确答案是「考试前的紧张」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "情绪与情感的联系是（　　）",
+      "options": [
+        "情感伴随着情绪反应逐渐积累和发展",
+        "二者完全相同",
+        "二者毫无关系",
+        "情绪就是情感"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：情感伴随着情绪反应逐渐积累和发展。按情绪的类型与青春期情绪特点判断，本题正确答案是「情感伴随着情绪反应逐渐积累和发展」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "情绪的表达应该（　　）",
+      "options": [
+        "随心所欲",
+        "完全压抑",
+        "伤害他人",
+        "合理、适度，考虑他人感受"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：合理、适度，考虑他人感受。按情绪的类型与青春期情绪特点判断，本题正确答案是「合理、适度，考虑他人感受」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "情感与情绪的区别在于（　　）",
+      "options": [
+        "二者没有区别",
+        "情感只与生理有关",
+        "情感相对稳定，情绪短暂多变",
+        "情感短暂，情绪稳定"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：情感相对稳定，情绪短暂多变。按情感的类型与作用判断，本题正确答案是「情感相对稳定，情绪短暂多变」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列属于高级情感的是（　　）",
+      "options": [
+        "疲劳感",
+        "爱国主义情感",
+        "喜怒哀惧",
+        "饥饿感"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：爱国主义情感。按情感的类型与作用判断，本题正确答案是「爱国主义情感」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "美好的情感（　　）",
+      "options": [
+        "让我们身心愉悦，丰富生命体验",
+        "只会让人消沉",
+        "与生活无关",
+        "只存在于艺术中"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：让我们身心愉悦，丰富生命体验。按情感的类型与作用判断，本题正确答案是「让我们身心愉悦，丰富生命体验」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "负面情感（　　）",
+      "options": [
+        "完全没有意义",
+        "只会带来伤害",
+        "应该彻底消除",
+        "也有意义，可以丰富人生阅历、促进成长"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：也有意义，可以丰富人生阅历、促进成长。按情感的类型与作用判断，本题正确答案是「也有意义，可以丰富人生阅历、促进成长」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "情感的作用包括（　　）",
+      "options": [
+        "与行为无关",
+        "只影响身体健康",
+        "影响我们的判断和行为，驱动我们行动",
+        "只影响情绪"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：影响我们的判断和行为，驱动我们行动。按情感的类型与作用判断，本题正确答案是「影响我们的判断和行为，驱动我们行动」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "传递情感正能量，需要（　　）",
+      "options": [
+        "冷漠对待他人",
+        "用积极的情感影响他人，营造良好氛围",
+        "传播消极情绪",
+        "只顾自己"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：用积极的情感影响他人，营造良好氛围。按情感的类型与作用判断，本题正确答案是「用积极的情感影响他人，营造良好氛围」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "当我们获得美好情感体验时，应该（　　）",
+      "options": [
+        "与人分享，传递正能量",
+        "独自占有",
+        "贬低他人",
+        "隐藏起来"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：与人分享，传递正能量。按情感的类型与作用判断，本题正确答案是「与人分享，传递正能量」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列做法有助于获得美好情感的是（　　）",
+      "options": [
+        "沉迷网络游戏",
+        "传播谣言",
+        "孤立自己",
+        "阅读好书、参加公益活动、亲近自然"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：阅读好书、参加公益活动、亲近自然。按情感的类型与作用判断，本题正确答案是「阅读好书、参加公益活动、亲近自然」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "“赠人玫瑰，手有余香”说明（　　）",
+      "options": [
+        "情感不需要交流",
+        "只有被帮助才快乐",
+        "帮助他人能获得美好情感体验",
+        "帮助他人会吃亏"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：帮助他人能获得美好情感体验。按情感的类型与作用判断，本题正确答案是「帮助他人能获得美好情感体验」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "情感与想象、创造力之间的关系是（　　）",
+      "options": [
+        "创造力不需要情感",
+        "丰富的情感有助于激发想象力和创造力",
+        "情感会阻碍创造",
+        "二者没有关系"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：丰富的情感有助于激发想象力和创造力。按情感的类型与作用判断，本题正确答案是「丰富的情感有助于激发想象力和创造力」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "情绪调节的方法不包括（　　）",
+      "options": [
+        "把情绪发泄到他人身上",
+        "改变认知评价",
+        "转移注意",
+        "合理宣泄"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：把情绪发泄到他人身上。按情绪调节方法与情绪管理实践判断，本题正确答案是「把情绪发泄到他人身上」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“改变认知评价”是指（　　）",
+      "options": [
+        "压抑情绪",
+        "转移注意力",
+        "进行放松训练",
+        "换个角度看问题，改变对事情的看法"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：换个角度看问题，改变对事情的看法。按情绪调节方法与情绪管理实践判断，本题正确答案是「换个角度看问题，改变对事情的看法」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“转移注意”是指（　　）",
+      "options": [
+        "压抑情绪",
+        "向他人发脾气",
+        "把注意力从引起不良情绪的事情上转移开",
+        "反复回想不快"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：把注意力从引起不良情绪的事情上转移开。按情绪调节方法与情绪管理实践判断，本题正确答案是「把注意力从引起不良情绪的事情上转移开」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "合理宣泄情绪的方式包括（　　）",
+      "options": [
+        "自残",
+        "向信任的人倾诉、适当运动",
+        "打骂他人",
+        "摔东西"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：向信任的人倾诉、适当运动。按情绪调节方法与情绪管理实践判断，本题正确答案是「向信任的人倾诉、适当运动」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "放松训练的方法包括（　　）",
+      "options": [
+        "深呼吸、冥想、肌肉放松",
+        "暴饮暴食",
+        "熬夜",
+        "剧烈运动到受伤"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：深呼吸、冥想、肌肉放松。按情绪调节方法与情绪管理实践判断，本题正确答案是「深呼吸、冥想、肌肉放松」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "当同学情绪低落时，我们应该（　　）",
+      "options": [
+        "嘲笑他",
+        "远离他",
+        "强迫他开心",
+        "倾听、理解并给予适当安慰"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：倾听、理解并给予适当安慰。按情绪调节方法与情绪管理实践判断，本题正确答案是「倾听、理解并给予适当安慰」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "表达情绪时，应该注意（　　）",
+      "options": [
+        "完全压抑",
+        "用攻击性语言",
+        "不影响他人，不伤害自己和他人",
+        "随心所欲"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：不影响他人，不伤害自己和他人。按情绪调节方法与情绪管理实践判断，本题正确答案是「不影响他人，不伤害自己和他人」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "保持乐观心态，可以（　　）",
+      "options": [
+        "抱怨他人",
+        "积极看待问题，寻找解决办法",
+        "只看到事物消极面",
+        "逃避问题"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：积极看待问题，寻找解决办法。按情绪调节方法与情绪管理实践判断，本题正确答案是「积极看待问题，寻找解决办法」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列做法有利于情绪健康的是（　　）",
+      "options": [
+        "培养兴趣爱好，保持规律作息",
+        "长期熬夜",
+        "酗酒",
+        "封闭自己"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：培养兴趣爱好，保持规律作息。按情绪调节方法与情绪管理实践判断，本题正确答案是「培养兴趣爱好，保持规律作息」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-道德与法治-2",
+      "chapterName": "情绪情感与调节",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“冲动是魔鬼”启示我们（　　）",
+      "options": [
+        "情绪无法控制",
+        "冲动是勇敢的表现",
+        "情绪不需要管理",
+        "要学会控制情绪，避免冲动行事"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：要学会控制情绪，避免冲动行事。按情绪调节方法与情绪管理实践判断，本题正确答案是「要学会控制情绪，避免冲动行事」。",
+      "difficulty": 2
     }
   ]
 }

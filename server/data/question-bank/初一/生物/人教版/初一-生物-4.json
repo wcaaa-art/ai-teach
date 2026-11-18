@@ -6,9 +6,9 @@
     "id": "初一-生物-4",
     "name": "人体的营养与呼吸"
   },
-  "generatedAt": "2026-11-14T12:14:06.603Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.794Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdavwp",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：口腔内的唾液腺分泌唾液，唾液中含有唾液淀粉酶，咀嚼时它能把馒头中的一部分淀粉初步分解成麦芽糖。麦芽糖有甜味，所以馒头越嚼越甜；这属于化学性消化。\nB. 错误：唾液淀粉酶只能把淀粉初步分解为麦芽糖，不能彻底分解为葡萄糖；淀粉最终被分解成葡萄糖，是在小肠中由肠液、胰液等完成的。\nC. 错误：淀粉属于大分子有机物，不能被口腔黏膜直接吸收。营养物质主要在小肠内被吸收，且吸收前必须先消化成小分子物质。\nD. 错误：牙齿咀嚼只是把馒头磨碎、增大食物与唾液的接触面积，属于物理性消化，它本身不能把淀粉变成糖类；甜味的产生靠的是酶的化学性消化。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "人体生命活动所需能量主要由（　　）提供",
+      "options": [
+        "糖类",
+        "蛋白质",
+        "脂肪",
+        "维生素"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：糖类。按人体需要的营养物质及其作用判断，本题正确答案是「糖类」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "建造和修复身体的重要原料是（　　）",
+      "options": [
+        "糖类",
+        "脂肪",
+        "水",
+        "蛋白质"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：蛋白质。按人体需要的营养物质及其作用判断，本题正确答案是「蛋白质」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "人体内含量最多的物质是（　　）",
+      "options": [
+        "脂肪",
+        "无机盐",
+        "水",
+        "蛋白质"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：水。按人体需要的营养物质及其作用判断，本题正确答案是「水」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "人体内重要的备用能源物质是（　　）",
+      "options": [
+        "维生素",
+        "脂肪",
+        "糖类",
+        "蛋白质"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：脂肪。按人体需要的营养物质及其作用判断，本题正确答案是「脂肪」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "长期缺乏维生素A容易患（　　）",
+      "options": [
+        "夜盲症",
+        "坏血病",
+        "脚气病",
+        "佝偻病"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：夜盲症。按人体需要的营养物质及其作用判断，本题正确答案是「夜盲症」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "长期缺乏维生素C容易患（　　）",
+      "options": [
+        "夜盲症",
+        "脚气病",
+        "贫血",
+        "坏血病"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：坏血病。按人体需要的营养物质及其作用判断，本题正确答案是「坏血病」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "长期缺乏维生素D，儿童容易患（　　）",
+      "options": [
+        "坏血病",
+        "脚气病",
+        "佝偻病",
+        "夜盲症"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：佝偻病。按人体需要的营养物质及其作用判断，本题正确答案是「佝偻病」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "人体缺乏铁容易引起（　　）",
+      "options": [
+        "地方性甲状腺肿",
+        "贫血",
+        "佝偻病",
+        "夜盲症"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：贫血。按人体需要的营养物质及其作用判断，本题正确答案是「贫血」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "人体缺乏碘容易引起（　　）",
+      "options": [
+        "地方性甲状腺肿",
+        "贫血",
+        "坏血病",
+        "夜盲症"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：地方性甲状腺肿。按人体需要的营养物质及其作用判断，本题正确答案是「地方性甲状腺肿」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "食物中不能被人体消化吸收，但能促进胃肠蠕动的是（　　）",
+      "options": [
+        "蛋白质",
+        "脂肪",
+        "维生素",
+        "膳食纤维"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：膳食纤维。按人体需要的营养物质及其作用判断，本题正确答案是「膳食纤维」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "消化系统由（　　）组成",
+      "options": [
+        "小肠和大肠",
+        "食道和肝脏",
+        "消化道和消化腺",
+        "口腔和胃"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：消化道和消化腺。按消化系统的组成与消化吸收过程判断，本题正确答案是「消化道和消化腺」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "人体最大的消化腺是（　　）",
+      "options": [
+        "胰腺",
+        "肝脏",
+        "唾液腺",
+        "胃腺"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：肝脏。按消化系统的组成与消化吸收过程判断，本题正确答案是「肝脏」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "胆汁中不含消化酶，但能（　　）",
+      "options": [
+        "把脂肪乳化成微粒",
+        "把蛋白质分解成氨基酸",
+        "把淀粉分解成葡萄糖",
+        "把脂肪分解成甘油和脂肪酸"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：把脂肪乳化成微粒。按消化系统的组成与消化吸收过程判断，本题正确答案是「把脂肪乳化成微粒」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "淀粉在口腔中开始被消化，唾液淀粉酶把淀粉分解成（　　）",
+      "options": [
+        "葡萄糖",
+        "氨基酸",
+        "甘油",
+        "麦芽糖"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：麦芽糖。按消化系统的组成与消化吸收过程判断，本题正确答案是「麦芽糖」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "蛋白质开始被消化的部位是（　　）",
+      "options": [
+        "小肠",
+        "大肠",
+        "胃",
+        "口腔"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：胃。按消化系统的组成与消化吸收过程判断，本题正确答案是「胃」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "脂肪开始被消化的部位是（　　）",
+      "options": [
+        "大肠",
+        "小肠",
+        "口腔",
+        "胃"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：小肠。按消化系统的组成与消化吸收过程判断，本题正确答案是「小肠」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "消化和吸收营养物质的主要器官是（　　）",
+      "options": [
+        "小肠",
+        "胃",
+        "大肠",
+        "食道"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：小肠。按消化系统的组成与消化吸收过程判断，本题正确答案是「小肠」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "小肠绒毛和毛细血管等结构有利于（　　）",
+      "options": [
+        "研磨食物",
+        "储存食物",
+        "分泌胆汁",
+        "吸收营养物质"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：吸收营养物质。按消化系统的组成与消化吸收过程判断，本题正确答案是「吸收营养物质」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "淀粉最终被分解成（　　）后进入血液",
+      "options": [
+        "甘油和脂肪酸",
+        "麦芽糖",
+        "葡萄糖",
+        "氨基酸"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：葡萄糖。按消化系统的组成与消化吸收过程判断，本题正确答案是「葡萄糖」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "蛋白质最终被分解成（　　）后进入血液",
+      "options": [
+        "维生素",
+        "氨基酸",
+        "葡萄糖",
+        "甘油和脂肪酸"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：氨基酸。按消化系统的组成与消化吸收过程判断，本题正确答案是「氨基酸」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "呼吸系统由（　　）组成",
+      "options": [
+        "呼吸道和肺",
+        "鼻腔和气管",
+        "肺和心脏",
+        "咽和喉"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：呼吸道和肺。按呼吸系统的结构与气体交换原理判断，本题正确答案是「呼吸道和肺」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "气体交换的主要器官是（　　）",
+      "options": [
+        "气管",
+        "鼻腔",
+        "咽",
+        "肺"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：肺。按呼吸系统的结构与气体交换原理判断，本题正确答案是「肺」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "肺泡适于气体交换的结构特点不包括（　　）",
+      "options": [
+        "肺泡壁很薄，只由一层上皮细胞构成",
+        "肺泡外面缠绕着丰富的毛细血管",
+        "肺泡壁由多层细胞构成",
+        "肺泡数量多"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：肺泡壁由多层细胞构成。按呼吸系统的结构与气体交换原理判断，本题正确答案是「肺泡壁由多层细胞构成」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "吸气时，肋间肌和膈肌（　　）",
+      "options": [
+        "舒张，胸廓容积扩大",
+        "收缩，胸廓容积扩大",
+        "舒张，胸廓容积缩小",
+        "收缩，胸廓容积缩小"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：收缩，胸廓容积扩大。按呼吸系统的结构与气体交换原理判断，本题正确答案是「收缩，胸廓容积扩大」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "吸气时，肺内气压（　　）外界大气压",
+      "options": [
+        "低于",
+        "高于",
+        "等于",
+        "与外界无关"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：低于。按呼吸系统的结构与气体交换原理判断，本题正确答案是「低于」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "肺泡与血液之间进行气体交换时，氧气（　　）",
+      "options": [
+        "由血液进入肺泡",
+        "由血液进入组织细胞",
+        "由组织细胞进入血液",
+        "由肺泡进入血液"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：由肺泡进入血液。按呼吸系统的结构与气体交换原理判断，本题正确答案是「由肺泡进入血液」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "肺泡与血液之间的气体交换依靠（　　）",
+      "options": [
+        "血液循环的推动",
+        "消化作用",
+        "气体扩散作用",
+        "呼吸运动"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：气体扩散作用。按呼吸系统的结构与气体交换原理判断，本题正确答案是「气体扩散作用」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "用鼻呼吸比用口呼吸好，主要是因为鼻腔能（　　）",
+      "options": [
+        "增加肺活量",
+        "温暖、湿润和清洁吸入的空气",
+        "直接进行气体交换",
+        "产生氧气"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：温暖、湿润和清洁吸入的空气。按呼吸系统的结构与气体交换原理判断，本题正确答案是「温暖、湿润和清洁吸入的空气」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "长期吸烟会损害呼吸系统，其中有害物质主要损伤（　　）",
+      "options": [
+        "呼吸道黏膜和肺泡",
+        "骨骼和肌肉",
+        "消化道和肝脏",
+        "肾脏和膀胱"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：呼吸道黏膜和肺泡。按呼吸系统的结构与气体交换原理判断，本题正确答案是「呼吸道黏膜和肺泡」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-生物-4",
+      "chapterName": "人体的营养与呼吸",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "肺活量是指（　　）",
+      "options": [
+        "每分钟呼吸的次数",
+        "平静呼吸时每次吸入的气体量",
+        "肺内储存的气体总量",
+        "尽力吸气后再尽力呼气所能呼出的最大气体量"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：尽力吸气后再尽力呼气所能呼出的最大气体量。按呼吸系统的结构与气体交换原理判断，本题正确答案是「尽力吸气后再尽力呼气所能呼出的最大气体量」。",
+      "difficulty": 2
     }
   ]
 }

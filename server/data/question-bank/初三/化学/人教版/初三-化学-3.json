@@ -6,9 +6,9 @@
     "id": "初三-化学-3",
     "name": "空气与氧气"
   },
-  "generatedAt": "2026-11-13T02:48:33.047Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.841Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwednlme",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 1,
       "explanation": "A. 错误：二氧化锰是催化剂，不是反应物，反应前后质量和化学性质都不变，不能说反应后质量减少。\nB. 正确：过氧化氢在二氧化锰催化下常温分解生成氧气，发生装置不需要加热，因此不需要酒精灯。\nC. 错误：氧气密度比空气大，可用向上排空气法收集；氧气不易溶于水，也可用排水法收集，题中“密度比空气小”和“只能用向下排空气法”均错误。\nD. 错误：二氧化锰作催化剂，反应前后质量和化学性质不变，不会转化为其他物质。",
+      "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "空气中氧气约占总体积的 21%。100 L 空气中约含氧气（ ）",
+      "options": [
+        "21 L",
+        "78 L",
+        "42 L",
+        "10.5 L"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：21 L。氧气体积 = 100 L × 21% = 21 L。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "空气中氧气约占总体积的 21%。200 L 空气中约含氧气（ ）",
+      "options": [
+        "156 L",
+        "84 L",
+        "21 L",
+        "42 L"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：42 L。氧气体积 = 200 L × 21% = 42 L。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "空气中氧气约占总体积的 21%。500 L 空气中约含氧气（ ）",
+      "options": [
+        "210 L",
+        "52.5 L",
+        "105 L",
+        "390 L"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：105 L。氧气体积 = 500 L × 21% = 105 L。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "空气中氧气约占总体积的 21%。1000 L 空气中约含氧气（ ）",
+      "options": [
+        "105 L",
+        "210 L",
+        "780 L",
+        "420 L"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：210 L。氧气体积 = 1000 L × 21% = 210 L。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "空气中氧气约占总体积的 21%。50 L 空气中约含氧气（ ）",
+      "options": [
+        "10.5 L",
+        "39 L",
+        "21 L",
+        "5.25 L"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：10.5 L。氧气体积 = 50 L × 21% = 10.5 L。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "空气中氧气约占总体积的 21%。250 L 空气中约含氧气（ ）",
+      "options": [
+        "195 L",
+        "105 L",
+        "26.25 L",
+        "52.5 L"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：52.5 L。氧气体积 = 250 L × 21% = 52.5 L。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "空气中氧气约占总体积的 21%。400 L 空气中约含氧气（ ）",
+      "options": [
+        "168 L",
+        "42 L",
+        "84 L",
+        "312 L"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：84 L。氧气体积 = 400 L × 21% = 84 L。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "空气中氧气约占总体积的 21%。150 L 空气中约含氧气（ ）",
+      "options": [
+        "15.75 L",
+        "31.5 L",
+        "117 L",
+        "63 L"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：31.5 L。氧气体积 = 150 L × 21% = 31.5 L。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "空气中氧气约占总体积的 21%。300 L 空气中约含氧气（ ）",
+      "options": [
+        "63 L",
+        "234 L",
+        "126 L",
+        "31.5 L"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：63 L。氧气体积 = 300 L × 21% = 63 L。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "空气中氧气约占总体积的 21%。800 L 空气中约含氧气（ ）",
+      "options": [
+        "624 L",
+        "336 L",
+        "84 L",
+        "168 L"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：168 L。氧气体积 = 800 L × 21% = 168 L。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "空气中氮气约占总体积的 78%。100 L 空气中约含氮气（ ）",
+      "options": [
+        "156 L",
+        "39 L",
+        "78 L",
+        "21 L"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：78 L。氮气体积 = 100 L × 78% = 78 L。",
+      "difficulty": 1
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "空气中氮气约占总体积的 78%。200 L 空气中约含氮气（ ）",
+      "options": [
+        "78 L",
+        "156 L",
+        "42 L",
+        "312 L"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：156 L。氮气体积 = 200 L × 78% = 156 L。",
+      "difficulty": 1
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "空气中氮气约占总体积的 78%。50 L 空气中约含氮气（ ）",
+      "options": [
+        "39 L",
+        "10.5 L",
+        "78 L",
+        "19.5 L"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：39 L。氮气体积 = 50 L × 78% = 39 L。",
+      "difficulty": 1
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "空气中氮气约占总体积的 78%。500 L 空气中约含氮气（ ）",
+      "options": [
+        "105 L",
+        "780 L",
+        "195 L",
+        "390 L"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：390 L。氮气体积 = 500 L × 78% = 390 L。",
+      "difficulty": 1
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "空气中氮气约占总体积的 78%。1000 L 空气中约含氮气（ ）",
+      "options": [
+        "1560 L",
+        "390 L",
+        "780 L",
+        "210 L"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：780 L。氮气体积 = 1000 L × 78% = 780 L。",
+      "difficulty": 1
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "空气中氮气约占总体积的 78%。250 L 空气中约含氮气（ ）",
+      "options": [
+        "97.5 L",
+        "195 L",
+        "52.5 L",
+        "390 L"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：195 L。氮气体积 = 250 L × 78% = 195 L。",
+      "difficulty": 1
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "空气中氮气约占总体积的 78%。400 L 空气中约含氮气（ ）",
+      "options": [
+        "312 L",
+        "84 L",
+        "624 L",
+        "156 L"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：312 L。氮气体积 = 400 L × 78% = 312 L。",
+      "difficulty": 1
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "空气中氮气约占总体积的 78%。150 L 空气中约含氮气（ ）",
+      "options": [
+        "31.5 L",
+        "234 L",
+        "58.5 L",
+        "117 L"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：117 L。氮气体积 = 150 L × 78% = 117 L。",
+      "difficulty": 1
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "空气中氮气约占总体积的 78%。300 L 空气中约含氮气（ ）",
+      "options": [
+        "468 L",
+        "117 L",
+        "234 L",
+        "63 L"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：234 L。氮气体积 = 300 L × 78% = 234 L。",
+      "difficulty": 1
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "空气中氮气约占总体积的 78%。800 L 空气中约含氮气（ ）",
+      "options": [
+        "312 L",
+        "624 L",
+        "168 L",
+        "1248 L"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：624 L。氮气体积 = 800 L × 78% = 624 L。",
+      "difficulty": 1
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "硫在氧气中燃烧的现象是（ ）",
+      "options": [
+        "发出蓝紫色火焰，生成有刺激性气味的气体",
+        "发出淡蓝色火焰，生成无色气体",
+        "火星四射，生成黑色固体",
+        "产生大量白烟，生成白色固体"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：发出蓝紫色火焰，生成有刺激性气味的气体。硫在氧气中燃烧发出蓝紫色火焰，生成二氧化硫。",
+      "difficulty": 1
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "硫在空气中燃烧的现象是（ ）",
+      "options": [
+        "发出蓝紫色火焰",
+        "火星四射",
+        "产生大量白烟",
+        "发出淡蓝色火焰"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：发出淡蓝色火焰。空气中氧气浓度较低，硫燃烧呈淡蓝色火焰。",
+      "difficulty": 1
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "红磷在空气中燃烧的现象是（ ）",
+      "options": [
+        "火星四射，生成黑色固体",
+        "发出白光，生成无色气体",
+        "产生大量白烟，放出热量",
+        "发出蓝紫色火焰"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：产生大量白烟，放出热量。红磷燃烧生成五氧化二磷白色固体小颗粒，形成白烟。",
+      "difficulty": 1
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "铁丝在氧气中燃烧的现象是（ ）",
+      "options": [
+        "发出白光，生成无色气体",
+        "剧烈燃烧，火星四射，生成黑色固体",
+        "发出蓝紫色火焰，生成刺激性气体",
+        "产生大量白烟"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：剧烈燃烧，火星四射，生成黑色固体。铁在氧气中燃烧生成四氧化三铁黑色固体。",
+      "difficulty": 1
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "木炭在氧气中燃烧的现象是（ ）",
+      "options": [
+        "发出白光，放出热量",
+        "发出蓝紫色火焰",
+        "产生大量白烟",
+        "火星四射"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：发出白光，放出热量。木炭在氧气中充分燃烧发出白光，生成二氧化碳。",
+      "difficulty": 1
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "镁条在空气中燃烧的现象是（ ）",
+      "options": [
+        "发出淡蓝色火焰",
+        "产生大量白烟，无白光",
+        "火星四射，生成黑色固体",
+        "发出耀眼的白光，生成白色固体"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：发出耀眼的白光，生成白色固体。镁燃烧发出耀眼白光，生成氧化镁白色固体。",
+      "difficulty": 1
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "氧气能支持燃烧，这说明氧气具有（ ）",
+      "options": [
+        "还原性",
+        "腐蚀性",
+        "助燃性",
+        "可燃性"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：助燃性。氧气本身不能燃烧，但能支持其他物质燃烧。",
+      "difficulty": 1
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "检验一瓶气体是否为氧气，应该用（ ）",
+      "options": [
+        "紫色石蕊溶液",
+        "带火星的木条",
+        "燃着的木条",
+        "澄清石灰水"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：带火星的木条。带火星的木条在氧气中复燃，可用于检验氧气。",
+      "difficulty": 1
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列氧气的用途中，利用其支持燃烧性质的是（ ）",
+      "options": [
+        "用于炼钢和焊接金属",
+        "用于医疗急救",
+        "用于潜水供氧",
+        "用于高空飞行供氧"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：用于炼钢和焊接金属。炼钢、焊接利用氧气支持燃烧的性质。",
+      "difficulty": 1
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-化学-3",
+      "chapterName": "空气与氧气",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "关于氧气的物理性质，下列说法正确的是（ ）",
+      "options": [
+        "有刺激性气味的气体，易溶于水",
+        "淡蓝色气体，易溶于水",
+        "无色气体，易溶于水",
+        "无色无味的气体，不易溶于水"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：无色无味的气体，不易溶于水。氧气是无色无味、不易溶于水的气体。",
       "difficulty": 1
     }
   ]

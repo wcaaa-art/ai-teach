@@ -4,6 +4,7 @@ import { ElMessage } from 'element-plus'
 import { useRoute, useRouter } from 'vue-router'
 import ChartPanel from '../components/ChartPanel.vue'
 import { examAverageRate as examAverageRateOf, examSessionRows, learningSuggestions, quizAccuracyOf, subjectAccuracyRows, wrongChapterRows as wrongChapterRowsOf } from '../utils/learningStats.js'
+import { stripBookPrefix } from '../utils/chapterNames.js'
 import { distractionBreakdown, focusStreak, habitAdvice, hourBuckets, peakWindow, weekComparison } from '../utils/focusHabits.js'
 import { buildWeeklyPlanTasks, weekKeyOf } from '../utils/weeklyReportPlans.js'
 import { getDataOwner, loadDistractions, loadExamScores, loadFeedbacks, loadFocusSessions, loadMistakes, loadPlans, loadQuizResults, loadVisualLogs, savePlan } from '../db/index.js'
@@ -299,7 +300,7 @@ async function generateReport() {
   try {
     const response = await generateWeeklyReport(weeklyPayload.value)
     if (!response?.success || !response.data) {
-      ElMessage.warning(response?.error || '周报生成失败，请稍后重试。')
+      ElMessage.warning(response?.error || '周报生成失败，请稍后重试')
       return
     }
     weeklyReport.value = response.data
@@ -313,7 +314,7 @@ async function generateReport() {
     } catch (error) { console.warn('周报缓存写入失败。', error) }
     // 通知 AppShell 收起「本周周报」提醒。
     window.dispatchEvent(new CustomEvent('ai-teach:weekly-report-updated'))
-    if (response.source === 'mock') ElMessage.info('模型暂不可用，已按本地规则生成周报。')
+    if (response.source === 'mock') ElMessage.info('模型暂不可用，已按本地规则生成周报')
   } finally {
     reportLoading.value = false
   }
@@ -335,7 +336,7 @@ async function convertReportToPlan() {
     sequenceStart: plans.value.reduce((max, item) => Math.max(max, Number(item.sequenceOrder) || 0), 0) + 1
   })
   if (!tasks.length) {
-    ElMessage.warning('周报里没有可转换的行动建议。')
+    ElMessage.warning('周报里没有可转换的行动建议')
     return
   }
   convertingPlan.value = true
@@ -343,7 +344,7 @@ async function convertReportToPlan() {
     for (const task of tasks) await savePlan(task)
     plans.value = await loadPlans()
     store.setPlans(plans.value)
-    ElMessage.success(`已把 ${tasks.length} 条行动加入下周计划。`)
+    ElMessage.success(`已把 ${tasks.length} 条行动加入下周计划`)
     router.push('/plans')
   } finally {
     convertingPlan.value = false
@@ -411,7 +412,7 @@ const knowledgeOption = computed(() => {
   }
   // 三维轴上的类别标签换成 K1…Kn 短编号，完整知识点名放进 tooltip，避免长中文串在投影线上互相压住。
   const points = orderedPlans.map((plan, index) => {
-    const topic = plan.knowledgeTags?.[0] || plan.name || '未命名专题'
+    const topic = stripBookPrefix(plan.knowledgeTags?.[0] || plan.name || '未命名专题')
     const mastery = Math.max(0, Math.min(3, Number(masteryByPlan.get(plan.id) ?? plan.masteryBefore) || 0))
     return { code: `K${index + 1}`, order: Number(plan.sequenceOrder) || index + 1, mastery, name: `${plan.subject} · ${topic}` }
   })
@@ -460,7 +461,7 @@ onMounted(async () => {
 <template>
   <div class="page dashboard-page">
     <div class="page-header">
-      <div><span class="eyebrow">学习数据</span><h2 class="page-title">学习效果看板</h2><p class="page-subtitle">把测试、错题和专注习惯放在一起看，找到最该补的那一块。</p></div>
+      <div><span class="eyebrow">学习数据</span><h2 class="page-title">学习效果看板</h2><p class="page-subtitle">把测试、错题和专注习惯放在一起看，找到最该补的那一块</p></div>
       <el-select v-model="range" style="width:130px"><el-option :value="7" label="近 7 天"/><el-option :value="14" label="近 14 天"/><el-option :value="30" label="近 30 天"/><el-option :value="90" label="近 90 天"/></el-select>
     </div>
 
@@ -469,7 +470,7 @@ onMounted(async () => {
         <div>
           <span class="eyebrow">每周复盘</span>
           <h3 class="section-title">本周学习周报</h3>
-          <p class="weekly-sub">汇总 {{ weekLabel }} 的专注、测试、错题和考试成绩。</p>
+          <p class="weekly-sub">汇总 {{ weekLabel }} 的专注、测试、错题和考试成绩</p>
         </div>
         <div class="weekly-actions">
           <span v-if="weeklyReport" class="report-source" :class="{ mock: reportSource === 'mock' }">{{ reportSource === 'mock' ? '本地规则' : 'AI 生成' }}</span>
@@ -497,7 +498,7 @@ onMounted(async () => {
           <span v-for="item in reportCheck.mismatches" :key="item.metric">{{ item.label }}「{{ item.snippet }}」写成 {{ item.reported }}，实际 {{ item.expected }}；</span>
         </p>
       </div>
-      <div v-else class="empty">点击「生成本周周报」，把近 7 天的专注、测试、错题和考试成绩汇总成一份复盘。</div>
+      <div v-else class="empty">点击「生成本周周报」，把近 7 天的专注、测试、错题和考试成绩汇总成一份复盘</div>
     </section>
 
     <div class="outcome-kpis">
@@ -513,10 +514,10 @@ onMounted(async () => {
     </section>
 
     <div class="grid-2" style="margin-top:20px">
-      <section class="surface surface-pad"><h3 class="section-title">测试正确率趋势</h3><div v-if="filteredQuizResults.length"><ChartPanel :option="quizTrendOption"/></div><div v-else class="empty">这个时间窗内还没有章节测试记录。</div></section>
-      <section class="surface surface-pad"><h3 class="section-title">各科测试正确率</h3><div v-if="subjectRows.length"><ChartPanel :option="subjectOption"/></div><div v-else class="empty">完成章节测试后，这里会按科目对比正确率。</div></section>
-      <section class="surface surface-pad"><h3 class="section-title">错题最多的章节</h3><div v-if="wrongChapterRows.length"><ChartPanel :option="wrongChapterOption"/></div><div v-else class="empty">这个时间窗内还没有错题记录。</div></section>
-      <section class="surface surface-pad"><h3 class="section-title">学校考试成绩趋势</h3><div v-if="examSessions.length"><ChartPanel :option="examOption"/></div><div v-else class="empty">在学情诊断页录入考试成绩后，这里会显示得分率变化。</div></section>
+      <section class="surface surface-pad"><h3 class="section-title">测试正确率趋势</h3><div v-if="filteredQuizResults.length"><ChartPanel :option="quizTrendOption"/></div><div v-else class="empty">这个时间窗内还没有章节测试记录</div></section>
+      <section class="surface surface-pad"><h3 class="section-title">各科测试正确率</h3><div v-if="subjectRows.length"><ChartPanel :option="subjectOption"/></div><div v-else class="empty">完成章节测试后，这里会按科目对比正确率</div></section>
+      <section class="surface surface-pad"><h3 class="section-title">错题最多的章节</h3><div v-if="wrongChapterRows.length"><ChartPanel :option="wrongChapterOption"/></div><div v-else class="empty">这个时间窗内还没有错题记录</div></section>
+      <section class="surface surface-pad"><h3 class="section-title">学校考试成绩趋势</h3><div v-if="examSessions.length"><ChartPanel :option="examOption"/></div><div v-else class="empty">在学情分析页录入考试成绩后，这里会显示得分率变化</div></section>
     </div>
 
     <div class="section-divider">专注与习惯</div>
@@ -537,9 +538,9 @@ onMounted(async () => {
     <div class="grid-2" style="margin-top:20px">
       <section class="surface surface-pad"><h3 class="section-title">每日专注时长趋势</h3><ChartPanel :option="focusOption"/></section>
       <section class="surface surface-pad"><h3 class="section-title">任务完成情况</h3><ChartPanel :option="completionOption"/></section>
-      <section class="surface surface-pad"><h3 class="section-title">专注时段分布</h3><div v-if="totalMinutes"><ChartPanel :option="hourOption"/></div><div v-else class="empty">这个时间窗内还没有专注记录。</div></section>
-      <section class="surface surface-pad"><h3 class="section-title">分心与视觉提醒</h3><div v-if="breakdownRows.some(row => row.count > 0)"><ChartPanel :option="breakdownOption"/></div><div v-else class="empty">记录到真实分心或视觉提醒后，这里会按类型对比。</div></section>
-      <section class="surface surface-pad"><div class="section-head"><h3 class="section-title">知识点掌握进度 · 3D</h3><div v-if="plans.length" class="mastery-legend"><span>弱</span><i class="mastery-bar"></i><span>强</span></div></div><div v-if="plans.length"><ChartPanel :option="knowledgeOption" :height="390"/><p class="muted">K1…Kn 为知识点编号，悬停圆点查看全名；竖轴为掌握等级（0–3），深度轴为学习顺序；可拖动旋转查看。</p></div><div v-else class="empty">完成专题摸底或专注任务后，这里会显示你的掌握度立体图。</div></section>
+      <section class="surface surface-pad"><h3 class="section-title">专注时段分布</h3><div v-if="totalMinutes"><ChartPanel :option="hourOption"/></div><div v-else class="empty">这个时间窗内还没有专注记录</div></section>
+      <section class="surface surface-pad"><h3 class="section-title">分心与视觉提醒</h3><div v-if="breakdownRows.some(row => row.count > 0)"><ChartPanel :option="breakdownOption"/></div><div v-else class="empty">记录到真实分心或视觉提醒后，这里会按类型对比</div></section>
+      <section class="surface surface-pad"><div class="section-head"><h3 class="section-title">知识点掌握进度 · 3D</h3><div v-if="plans.length" class="mastery-legend"><span>弱</span><i class="mastery-bar"></i><span>强</span></div></div><div v-if="plans.length"><ChartPanel :option="knowledgeOption" :height="390"/><p class="muted">K1…Kn 为知识点编号，悬停圆点查看全名；竖轴为掌握等级（0–3），深度轴为学习顺序；可拖动旋转查看</p></div><div v-else class="empty">完成专题摸底或专注任务后，这里会显示你的掌握度立体图</div></section>
     </div>
   </div>
 </template>
@@ -575,5 +576,5 @@ onMounted(async () => {
 .weekly-block.risk{border-left:3px solid #b96b63}
 .weekly-block.action{border-left:3px solid #c09a70}
 .weekly-foot{display:flex;justify-content:space-between;gap:12px;margin-top:14px;color:var(--muted);font-size:calc(11px*var(--fs-scale));flex-wrap:wrap}
-@media(max-width:800px){.outcome-kpis,.focus-kpis{grid-template-columns:1fr 1fr}.weekly-columns{grid-template-columns:1fr}.weekly-head{flex-direction:column;gap:10px}/* 专注 KPI 是奇数张，手机端最后一张铺满整行，避免右下留空。*/.focus-kpis .stat-card:last-child{grid-column:span 2}}
+@media(max-width:800px){.outcome-kpis,.focus-kpis{grid-template-columns:1fr 1fr}.weekly-columns{grid-template-columns:1fr}.weekly-head{flex-direction:column;gap:10px}/* 专注 KPI 是奇数张，手机端最后一张铺满整行，避免右下留空，*/.focus-kpis .stat-card:last-child{grid-column:span 2}}
 </style>

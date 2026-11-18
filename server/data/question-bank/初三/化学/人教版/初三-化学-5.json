@@ -6,9 +6,9 @@
     "id": "初三-化学-5",
     "name": "金属与酸碱盐"
   },
-  "generatedAt": "2026-11-13T02:48:47.768Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.848Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedo1au",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 0,
       "explanation": "A. 正确：铁的金属活动性比铜强，能发生置换反应 Fe+CuSO_4→FeSO_4+Cu，析出的铜呈红色，硫酸铜蓝色溶液逐渐变为硫酸亚铁浅绿色溶液。\nB. 错误：置换出的铜是红色固体而不是银白色固体；随着 Cu^{2+} 被消耗，溶液蓝色应变浅而不是加深。\nC. 错误：铁能与硫酸铜溶液反应，铁钉表面会有红色物质析出，溶液颜色也会改变，并非无明显现象。\nD. 错误：反应后溶液中的阳离子由 Cu^{2+} 变为 Fe^{2+}，硫酸亚铁溶液呈浅绿色，不会变为黄色；铁钉也不会完全溶解而留下黄色溶液。",
+      "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Zn-65、H-1，6.5 g 锌与足量稀盐酸完全反应，生成氢气的质量是（ ）",
+      "options": [
+        "0.2 g",
+        "0.4 g",
+        "0.1 g",
+        "0.25 g"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：0.2 g。Zn + 2HCl → ZnCl₂ + H₂↑，65 份锌生成 2 份氢气，所以氢气质量 = 6.5 × 2/65 = 0.2 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Zn-65、H-1，13 g 锌与足量稀盐酸完全反应，生成氢气的质量是（ ）",
+      "options": [
+        "0.8 g",
+        "0.2 g",
+        "0.45 g",
+        "0.4 g"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：0.4 g。Zn + 2HCl → ZnCl₂ + H₂↑，65 份锌生成 2 份氢气，所以氢气质量 = 13 × 2/65 = 0.4 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Zn-65、H-1，19.5 g 锌与足量稀盐酸完全反应，生成氢气的质量是（ ）",
+      "options": [
+        "0.3 g",
+        "0.65 g",
+        "0.6 g",
+        "1.2 g"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：0.6 g。Zn + 2HCl → ZnCl₂ + H₂↑，65 份锌生成 2 份氢气，所以氢气质量 = 19.5 × 2/65 = 0.6 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Zn-65、H-1，26 g 锌与足量稀盐酸完全反应，生成氢气的质量是（ ）",
+      "options": [
+        "0.85 g",
+        "0.8 g",
+        "1.6 g",
+        "0.4 g"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：0.8 g。Zn + 2HCl → ZnCl₂ + H₂↑，65 份锌生成 2 份氢气，所以氢气质量 = 26 × 2/65 = 0.8 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Zn-65、H-1，32.5 g 锌与足量稀盐酸完全反应，生成氢气的质量是（ ）",
+      "options": [
+        "1 g",
+        "2 g",
+        "0.5 g",
+        "1.05 g"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1 g。Zn + 2HCl → ZnCl₂ + H₂↑，65 份锌生成 2 份氢气，所以氢气质量 = 32.5 × 2/65 = 1 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Zn-65、H-1，3.25 g 锌与足量稀盐酸完全反应，生成氢气的质量是（ ）",
+      "options": [
+        "0.2 g",
+        "0.05 g",
+        "0.15 g",
+        "0.1 g"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：0.1 g。Zn + 2HCl → ZnCl₂ + H₂↑，65 份锌生成 2 份氢气，所以氢气质量 = 3.25 × 2/65 = 0.1 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Zn-65、H-1，65 g 锌与足量稀盐酸完全反应，生成氢气的质量是（ ）",
+      "options": [
+        "1 g",
+        "2.05 g",
+        "2 g",
+        "4 g"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：2 g。Zn + 2HCl → ZnCl₂ + H₂↑，65 份锌生成 2 份氢气，所以氢气质量 = 65 × 2/65 = 2 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Zn-65、H-1，9.75 g 锌与足量稀盐酸完全反应，生成氢气的质量是（ ）",
+      "options": [
+        "0.35 g",
+        "0.3 g",
+        "0.6 g",
+        "0.15 g"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：0.3 g。Zn + 2HCl → ZnCl₂ + H₂↑，65 份锌生成 2 份氢气，所以氢气质量 = 9.75 × 2/65 = 0.3 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Zn-65、H-1，16.25 g 锌与足量稀盐酸完全反应，生成氢气的质量是（ ）",
+      "options": [
+        "0.5 g",
+        "1 g",
+        "0.25 g",
+        "0.55 g"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：0.5 g。Zn + 2HCl → ZnCl₂ + H₂↑，65 份锌生成 2 份氢气，所以氢气质量 = 16.25 × 2/65 = 0.5 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "method",
+      "stem": "已知相对原子质量 Zn-65、H-1，39 g 锌与足量稀盐酸完全反应，生成氢气的质量是（ ）",
+      "options": [
+        "2.4 g",
+        "0.6 g",
+        "1.25 g",
+        "1.2 g"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1.2 g。Zn + 2HCl → ZnCl₂ + H₂↑，65 份锌生成 2 份氢气，所以氢气质量 = 39 × 2/65 = 1.2 g。",
+      "difficulty": 3
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "金属活动性顺序中，排在氢前面的金属能（ ）",
+      "options": [
+        "与水反应生成氢气",
+        "与所有盐溶液反应",
+        "与稀盐酸反应放出氢气",
+        "与稀硫酸反应放出氧气"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：与稀盐酸反应放出氢气。氢前金属能与稀酸反应生成氢气。",
+      "difficulty": 1
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列金属活动性由强到弱的顺序正确的是（ ）",
+      "options": [
+        "锌 > 镁 > 铜 > 铁",
+        "镁 > 锌 > 铁 > 铜",
+        "铜 > 铁 > 锌 > 镁",
+        "铁 > 镁 > 铜 > 锌"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：镁 > 锌 > 铁 > 铜。金属活动性顺序为 K Ca Na Mg Al Zn Fe Sn Pb (H) Cu Hg Ag Pt Au。",
+      "difficulty": 1
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "把铁钉放入硫酸铜溶液中，铁钉表面（ ）",
+      "options": [
+        "附着一层红色物质",
+        "附着一层黑色物质",
+        "无明显变化",
+        "产生大量气泡"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：附着一层红色物质。铁置换出铜，铜附着在铁钉表面呈红色。",
+      "difficulty": 1
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "铜不能与稀盐酸反应，是因为铜（ ）",
+      "options": [
+        "排在氢的前面",
+        "不是金属",
+        "表面有氧化膜",
+        "排在氢的后面"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：排在氢的后面。氢后金属不能置换出酸中的氢。",
+      "difficulty": 1
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "湿法冶金中，用铁从硫酸铜溶液中置换铜，说明（ ）",
+      "options": [
+        "铁比铜活泼性弱",
+        "铁和铜活动性相同",
+        "铁的活动性比铜强",
+        "铜的活动性比铁强"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：铁的活动性比铜强。活动性强的金属能把活动性弱的金属从其盐溶液中置换出来。",
+      "difficulty": 1
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "铝制品在空气中具有良好的抗腐蚀性，是因为（ ）",
+      "options": [
+        "铝是银白色金属",
+        "铝表面生成致密的氧化铝薄膜",
+        "铝不与氧气反应",
+        "铝的密度小"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：铝表面生成致密的氧化铝薄膜。氧化铝薄膜阻止内部铝继续被氧化。",
+      "difficulty": 1
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "一般情况下，合金的硬度比组成它的纯金属（ ）",
+      "options": [
+        "大",
+        "小",
+        "相同",
+        "无法比较"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：大。合金的硬度一般大于成分金属，熔点一般低于成分金属。",
+      "difficulty": 1
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "生铁和钢都是铁的合金，它们的区别主要在于（ ）",
+      "options": [
+        "含铁量不同",
+        "颜色不同",
+        "密度不同",
+        "含碳量不同"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：含碳量不同。生铁含碳量 2%~4.3%，钢含碳量 0.03%~2%。",
+      "difficulty": 1
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "铁生锈的条件是铁同时与（ ）接触",
+      "options": [
+        "水和二氧化碳",
+        "氮气和水",
+        "氧气和水",
+        "氧气和二氧化碳"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：氧气和水。铁在潮湿的空气中与氧气和水共同作用而锈蚀。",
+      "difficulty": 1
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列做法中，能防止铁制品生锈的是（ ）",
+      "options": [
+        "用刀刮去铁制品表面",
+        "在铁制品表面涂油漆",
+        "把铁制品浸在水中",
+        "把铁制品放在潮湿处"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：在铁制品表面涂油漆。涂油漆隔绝氧气和水，可防止铁生锈。",
+      "difficulty": 1
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "当溶液的 pH 小于 7 时，该溶液呈（ ）",
+      "options": [
+        "酸性",
+        "碱性",
+        "中性",
+        "无法判断"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：酸性。pH < 7 呈酸性，pH = 7 呈中性，pH > 7 呈碱性。",
+      "difficulty": 1
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "当溶液的 pH 等于 7 时，该溶液呈（ ）",
+      "options": [
+        "酸性",
+        "碱性",
+        "强酸性",
+        "中性"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：中性。pH = 7 时溶液呈中性。",
+      "difficulty": 1
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "当溶液的 pH 大于 7 时，该溶液呈（ ）",
+      "options": [
+        "中性",
+        "弱酸性",
+        "碱性",
+        "酸性"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：碱性。pH > 7 时溶液呈碱性。",
+      "difficulty": 1
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "紫色石蕊溶液遇到酸性溶液会（ ）",
+      "options": [
+        "褪色",
+        "变红",
+        "变蓝",
+        "不变色"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：变红。紫色石蕊遇酸变红，遇碱变蓝。",
+      "difficulty": 1
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "无色酚酞溶液遇到碱性溶液会（ ）",
+      "options": [
+        "变红",
+        "变蓝",
+        "不变色",
+        "变黄"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：变红。无色酚酞遇碱变红，遇酸和中性溶液不变色。",
+      "difficulty": 1
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "人体胃液中含有的酸主要是（ ）",
+      "options": [
+        "硫酸",
+        "硝酸",
+        "醋酸",
+        "盐酸"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：盐酸。胃酸的主要成分是盐酸。",
+      "difficulty": 1
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "氢氧化钠的俗称是（ ）",
+      "options": [
+        "纯碱、苏打",
+        "小苏打",
+        "烧碱、火碱、苛性钠",
+        "熟石灰、消石灰"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：烧碱、火碱、苛性钠。氢氧化钠俗称烧碱、火碱、苛性钠。",
+      "difficulty": 1
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "氢氧化钙的俗称是（ ）",
+      "options": [
+        "小苏打",
+        "熟石灰、消石灰",
+        "烧碱、火碱",
+        "纯碱、苏打"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：熟石灰、消石灰。氢氧化钙俗称熟石灰、消石灰。",
+      "difficulty": 1
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "酸与碱作用生成盐和水的反应叫做（ ）",
+      "options": [
+        "中和反应",
+        "化合反应",
+        "分解反应",
+        "置换反应"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：中和反应。酸与碱生成盐和水的反应属于中和反应。",
+      "difficulty": 1
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-化学-5",
+      "chapterName": "金属与酸碱盐",
+      "type": "single",
+      "dimension": "error-analysis",
+      "stem": "用 pH 试纸测定溶液 pH 时，正确的操作是（ ）",
+      "options": [
+        "先把试纸用水润湿，再蘸取待测液",
+        "把试纸直接浸入待测液中充分反应",
+        "把待测液倒入试纸上加热",
+        "用玻璃棒蘸取待测液滴在试纸上，再与标准比色卡比较"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：用玻璃棒蘸取待测液滴在试纸上，再与标准比色卡比较。pH 试纸不能润湿，也不能浸入待测液，以免污染或稀释。",
       "difficulty": 1
     }
   ]

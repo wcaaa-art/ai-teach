@@ -2,7 +2,7 @@
 const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api'
 // 后端没起、端口不匹配或请求被代理回落成 HTML 时，直接 response.json() 会抛
 // "Unexpected token '<'" 这类原始解析错误，学生看不懂。统一换成可读提示。
-const SERVICE_HINT = '账号服务未启动或不可用，请稍后重试。'
+const SERVICE_HINT = '账号服务未启动或不可用，请稍后重试'
 
 /**
  * @typedef {Object} RequestOptions
@@ -31,11 +31,11 @@ async function request(path, body, options = {}) {
       if (!contentType.includes('application/json')) throw new Error(SERVICE_HINT)
       try { data = JSON.parse(text) } catch { throw new Error(SERVICE_HINT) }
     }
-    if (!response.ok) throw new Error(data?.message || (response.status >= 500 ? SERVICE_HINT : `账号服务返回异常（${response.status}），请稍后重试。`))
+    if (!response.ok) throw new Error(data?.message || (response.status >= 500 ? SERVICE_HINT : `账号服务返回异常（${response.status}），请稍后重试`))
     return data || { success: true }
   } catch (error) {
     const unreachable = error instanceof TypeError || error.name === 'TimeoutError' || error.name === 'AbortError'
-    return { success: false, error: unreachable ? '无法连接本机服务，请确认后端已启动后重试。' : error.message, source: 'fallback' }
+    return { success: false, error: unreachable ? '无法连接本机服务，请确认后端已启动后重试' : error.message, source: 'fallback' }
   }
 }
 
@@ -160,7 +160,7 @@ export async function streamTutor(payload, handlers = {}) {
   } catch (error) {
     result.cancelled = controller.signal.aborted
     if (!result.cancelled) {
-      result.error = (error instanceof TypeError || error.name === 'TimeoutError') ? '无法连接本机服务，请确认后端已启动后重试。' : error.message
+      result.error = (error instanceof TypeError || error.name === 'TimeoutError') ? '无法连接本机服务，请确认后端已启动后重试' : error.message
       handlers.onError?.(result.error)
     }
     return result

@@ -6,9 +6,9 @@
     "id": "初二-英语-1",
     "name": "一般过去时与过去进行时"
   },
-  "generatedAt": "2026-11-14T12:15:00.424Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.930Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdc1fn",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 1,
       "explanation": "B. 正确：at 8:00 last night 表示过去某一具体时刻，when her father came back 表示另一个过去动作打断了正在进行的动作，强调当时正在进行，故用过去进行时 was doing。\nA. 错误：did 是一般过去时，只说明动作发生过，不能表达“昨晚八点那一刻正在进行”，也与 when 引导的打断动作不匹配。\nC. 错误：does 是一般现在时，与 last night 这一过去时间状语冲突。\nD. 错误：is doing 是现在进行时，与 last night 这一过去时间状语冲突。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "At eight o'clock last night, I ______ my homework.",
+      "options": [
+        "was doing",
+        "did",
+        "do",
+        "am doing"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：was doing。过去进行时表示过去某一时刻正在进行的动作，结构为 was/were + 动词-ing；本题应为 was doing。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "At this time yesterday, they ______ basketball.",
+      "options": [
+        "played",
+        "play",
+        "are playing",
+        "were playing"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：were playing。过去进行时表示过去某一时刻正在进行的动作，结构为 was/were + 动词-ing；本题应为 were playing。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "When I got home, my mother ______ dinner.",
+      "options": [
+        "cooks",
+        "is cooking",
+        "was cooking",
+        "cooked"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：was cooking。过去进行时表示过去某一时刻正在进行的动作，结构为 was/were + 动词-ing；本题应为 was cooking。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "At nine yesterday morning, she ______ an English class.",
+      "options": [
+        "is having",
+        "was having",
+        "had",
+        "has"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：was having。过去进行时表示过去某一时刻正在进行的动作，结构为 was/were + 动词-ing；本题应为 was having。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The students ______ when the teacher came in.",
+      "options": [
+        "were talking",
+        "talked",
+        "talk",
+        "are talking"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：were talking。过去进行时表示过去某一时刻正在进行的动作，结构为 was/were + 动词-ing；本题应为 were talking。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "At ten last night, he ______ TV.",
+      "options": [
+        "watched",
+        "watches",
+        "is watching",
+        "was watching"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：was watching。过去进行时表示过去某一时刻正在进行的动作，结构为 was/were + 动词-ing；本题应为 was watching。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "While we ______, it began to rain.",
+      "options": [
+        "walk",
+        "are walking",
+        "were walking",
+        "walked"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：were walking。过去进行时表示过去某一时刻正在进行的动作，结构为 was/were + 动词-ing；本题应为 were walking。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "At 7:00 yesterday evening, my parents ______ the dishes.",
+      "options": [
+        "are washing",
+        "were washing",
+        "washed",
+        "wash"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：were washing。过去进行时表示过去某一时刻正在进行的动作，结构为 was/were + 动词-ing；本题应为 were washing。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "She ______ a book at that time.",
+      "options": [
+        "was reading",
+        "read",
+        "reads",
+        "is reading"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：was reading。过去进行时表示过去某一时刻正在进行的动作，结构为 was/were + 动词-ing；本题应为 was reading。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "The children ______ football when it started to rain.",
+      "options": [
+        "played",
+        "play",
+        "are playing",
+        "were playing"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：were playing。过去进行时表示过去某一时刻正在进行的动作，结构为 was/were + 动词-ing；本题应为 were playing。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "method",
+      "stem": "She was cooking ______ the phone rang.",
+      "options": [
+        "before",
+        "after",
+        "when",
+        "while"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：when。when 后常接短暂性动作，while 后常接持续性动作；本题应填 when。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "method",
+      "stem": "______ I was walking on the street, I met an old friend.",
+      "options": [
+        "If",
+        "While",
+        "Before",
+        "After"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：While。when 后常接短暂性动作，while 后常接持续性动作；本题应填 While。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "method",
+      "stem": "I was doing my homework ______ my mother came back.",
+      "options": [
+        "when",
+        "while",
+        "before",
+        "after"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：when。when 后常接短暂性动作，while 后常接持续性动作；本题应填 when。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "method",
+      "stem": "______ the bell rang, the students were singing.",
+      "options": [
+        "While",
+        "Before",
+        "After",
+        "When"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：When。when 后常接短暂性动作，while 后常接持续性动作；本题应填 When。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "method",
+      "stem": "He was sleeping ______ the phone rang.",
+      "options": [
+        "before",
+        "after",
+        "when",
+        "while"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：when。when 后常接短暂性动作，while 后常接持续性动作；本题应填 when。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "method",
+      "stem": "______ she was cleaning the room, her brother was watching TV.",
+      "options": [
+        "Until",
+        "While",
+        "Before",
+        "After"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：While。when 后常接短暂性动作，while 后常接持续性动作；本题应填 While。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "method",
+      "stem": "They were playing outside ______ it began to rain.",
+      "options": [
+        "when",
+        "while",
+        "before",
+        "after"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：when。when 后常接短暂性动作，while 后常接持续性动作；本题应填 when。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "method",
+      "stem": "______ we were having dinner, the lights went out.",
+      "options": [
+        "Before",
+        "After",
+        "Until",
+        "While"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：While。when 后常接短暂性动作，while 后常接持续性动作；本题应填 While。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "method",
+      "stem": "She was washing her face ______ someone knocked at the door.",
+      "options": [
+        "before",
+        "after",
+        "when",
+        "while"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：when。when 后常接短暂性动作，while 后常接持续性动作；本题应填 when。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "method",
+      "stem": "______ I was reading, my sister was drawing.",
+      "options": [
+        "Until",
+        "While",
+        "Before",
+        "After"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：While。when 后常接短暂性动作，while 后常接持续性动作；本题应填 While。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "I was watching TV ______ eight o'clock last night.",
+      "options": [
+        "at",
+        "on",
+        "in",
+        "for"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：at。先看时间状语：now / at this time yesterday / last Sunday 决定时态，本题应为 at。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "They visited the museum ______.",
+      "options": [
+        "now",
+        "tomorrow",
+        "next week",
+        "yesterday"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：yesterday。先看时间状语：now / at this time yesterday / last Sunday 决定时态，本题应为 yesterday。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "Look! The children ______ football now.",
+      "options": [
+        "played",
+        "play",
+        "are playing",
+        "were playing"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：are playing。先看时间状语：now / at this time yesterday / last Sunday 决定时态，本题应为 are playing。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "She ______ her homework at this time yesterday.",
+      "options": [
+        "is doing",
+        "was doing",
+        "does",
+        "did"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：was doing。先看时间状语：now / at this time yesterday / last Sunday 决定时态，本题应为 was doing。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "My father came back ______.",
+      "options": [
+        "last night",
+        "now",
+        "tomorrow",
+        "every day"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：last night。先看时间状语：now / at this time yesterday / last Sunday 决定时态，本题应为 last night。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "We ______ to the park last Sunday.",
+      "options": [
+        "go",
+        "are going",
+        "will go",
+        "went"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：went。先看时间状语：now / at this time yesterday / last Sunday 决定时态，本题应为 went。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "At nine last night, he ______.",
+      "options": [
+        "slept",
+        "is sleeping",
+        "was sleeping",
+        "sleeps"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：was sleeping。先看时间状语：now / at this time yesterday / last Sunday 决定时态，本题应为 was sleeping。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "The students ______ an English class now.",
+      "options": [
+        "have",
+        "are having",
+        "were having",
+        "had"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：are having。先看时间状语：now / at this time yesterday / last Sunday 决定时态，本题应为 are having。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "It ______ heavily yesterday evening.",
+      "options": [
+        "rained",
+        "rains",
+        "is raining",
+        "will rain"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：rained。先看时间状语：now / at this time yesterday / last Sunday 决定时态，本题应为 rained。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-英语-1",
+      "chapterName": "一般过去时与过去进行时",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "While I ______ TV, my brother was doing his homework.",
+      "options": [
+        "watched",
+        "watch",
+        "am watching",
+        "was watching"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：was watching。先看时间状语：now / at this time yesterday / last Sunday 决定时态，本题应为 was watching。",
       "difficulty": 2
     }
   ]

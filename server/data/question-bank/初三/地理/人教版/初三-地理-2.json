@@ -6,9 +6,9 @@
     "id": "初三-地理-2",
     "name": "世界区域地理综合"
   },
-  "generatedAt": "2026-11-14T12:18:07.865Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.050Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdfx69",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：赤道附近全年高温多雨，热量和水分充足，有利于热带雨林发育；降水丰富且季节分配较均匀，使河流水量丰富、季节变化较小，体现了气候、植被、水文等自然要素的相互联系。\nB. 错误：河流水量季节变化小主要与降水季节分配较均匀有关；地势起伏大、水流湍急影响流速和水能，但不能解释水量季节变化小。\nC. 错误：热带雨林植被茂密，而非稀疏；植被覆盖率高通常有利于减弱水土流失，不能据此得出河流含沙量大的结论。\nD. 错误：题干已说明该区域全年高温多雨，属于湿润气候，不是干旱气候；河流水量丰富主要受降水补给影响，而非主要依靠高山冰雪融水。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "世界上跨纬度最广的大洲是（ ）",
+      "options": [
+        "亚洲",
+        "南美洲",
+        "非洲",
+        "欧洲"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：亚洲。按世界大洲、大洋与地形之最判断，本题正确答案是「亚洲」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "世界上平均海拔最低的大洲是（ ）",
+      "options": [
+        "亚洲",
+        "非洲",
+        "南美洲",
+        "欧洲"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：欧洲。按世界大洲、大洋与地形之最判断，本题正确答案是「欧洲」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "世界上国家数量最多的大洲是（ ）",
+      "options": [
+        "南美洲",
+        "大洋洲",
+        "非洲",
+        "欧洲"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：非洲。按世界大洲、大洋与地形之最判断，本题正确答案是「非洲」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "世界上最大的半岛是（ ）",
+      "options": [
+        "斯堪的纳维亚半岛",
+        "阿拉伯半岛",
+        "印度半岛",
+        "中南半岛"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：阿拉伯半岛。按世界大洲、大洋与地形之最判断，本题正确答案是「阿拉伯半岛」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "世界上最大的群岛国家是（ ）",
+      "options": [
+        "印度尼西亚",
+        "日本",
+        "菲律宾",
+        "马来西亚"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：印度尼西亚。按世界大洲、大洋与地形之最判断，本题正确答案是「印度尼西亚」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "世界上唯一独自占有一个大陆的国家是（ ）",
+      "options": [
+        "新西兰",
+        "巴西",
+        "印度",
+        "澳大利亚"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：澳大利亚。按世界大洲、大洋与地形之最判断，本题正确答案是「澳大利亚」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "世界上海岸线最曲折的大洲是（ ）",
+      "options": [
+        "南美洲",
+        "大洋洲",
+        "欧洲",
+        "非洲"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：欧洲。按世界大洲、大洋与地形之最判断，本题正确答案是「欧洲」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "世界上最深的大洋是（ ）",
+      "options": [
+        "北冰洋",
+        "太平洋",
+        "大西洋",
+        "印度洋"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：太平洋。按世界大洲、大洋与地形之最判断，本题正确答案是「太平洋」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "世界上最长的海峡是（ ）",
+      "options": [
+        "莫桑比克海峡",
+        "马六甲海峡",
+        "英吉利海峡",
+        "直布罗陀海峡"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：莫桑比克海峡。按世界大洲、大洋与地形之最判断，本题正确答案是「莫桑比克海峡」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "世界上最大的淡水湖群位于（ ）",
+      "options": [
+        "非洲",
+        "亚洲",
+        "南美洲",
+        "北美洲"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：北美洲。按世界大洲、大洋与地形之最判断，本题正确答案是「北美洲」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "日本的象征是（ ）",
+      "options": [
+        "阿尔卑斯山",
+        "落基山",
+        "富士山",
+        "乞力马扎罗山"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：富士山。按重点国家的自然与经济特征判断，本题正确答案是「富士山」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "日本发展工业的不利条件是（ ）",
+      "options": [
+        "劳动力充足",
+        "矿产资源贫乏、国内市场狭小",
+        "矿产资源丰富",
+        "国内市场广阔"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：矿产资源贫乏、国内市场狭小。按重点国家的自然与经济特征判断，本题正确答案是「矿产资源贫乏、国内市场狭小」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "印度发展服务外包产业的优势是（ ）",
+      "options": [
+        "英语人才多、劳动力成本低",
+        "矿产资源丰富",
+        "气候寒冷",
+        "人口稀少"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：英语人才多、劳动力成本低。按重点国家的自然与经济特征判断，本题正确答案是「英语人才多、劳动力成本低」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "俄罗斯的工业主要集中在（ ）",
+      "options": [
+        "亚洲部分",
+        "北冰洋沿岸",
+        "远东地区",
+        "欧洲部分"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：欧洲部分。按重点国家的自然与经济特征判断，本题正确答案是「欧洲部分」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "俄罗斯的港口城市圣彼得堡濒临（ ）",
+      "options": [
+        "太平洋",
+        "北冰洋",
+        "波罗的海",
+        "黑海"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：波罗的海。按重点国家的自然与经济特征判断，本题正确答案是「波罗的海」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "澳大利亚被称为“骑在羊背上的国家”，说明其（ ）",
+      "options": [
+        "林业发达",
+        "养羊业发达",
+        "工业发达",
+        "渔业发达"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：养羊业发达。按重点国家的自然与经济特征判断，本题正确答案是「养羊业发达」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "澳大利亚被称为“坐在矿车上的国家”，说明其（ ）",
+      "options": [
+        "矿产资源丰富",
+        "耕地广阔",
+        "森林茂密",
+        "人口稠密"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：矿产资源丰富。按重点国家的自然与经济特征判断，本题正确答案是「矿产资源丰富」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "美国农业生产的特点是（ ）",
+      "options": [
+        "自给自足的小农经济",
+        "以手工作业为主",
+        "只种植一种作物",
+        "地区专门化和机械化"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：地区专门化和机械化。按重点国家的自然与经济特征判断，本题正确答案是「地区专门化和机械化」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "巴西分布着世界上面积最大的（ ）",
+      "options": [
+        "亚寒带针叶林",
+        "沙漠",
+        "热带雨林",
+        "温带草原"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：热带雨林。按重点国家的自然与经济特征判断，本题正确答案是「热带雨林」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "埃及的农业主要分布在（ ）",
+      "options": [
+        "红海沿岸",
+        "尼罗河河谷和三角洲",
+        "沙漠腹地",
+        "西奈半岛山区"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：尼罗河河谷和三角洲。按重点国家的自然与经济特征判断，本题正确答案是「尼罗河河谷和三角洲」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "南极地区的代表性动物是（ ）",
+      "options": [
+        "企鹅",
+        "北极熊",
+        "斑马",
+        "袋鼠"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：企鹅。按极地地区与国际组织的地理常识判断，本题正确答案是「企鹅」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "北极地区的代表性动物是（ ）",
+      "options": [
+        "企鹅",
+        "长颈鹿",
+        "考拉",
+        "北极熊"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：北极熊。按极地地区与国际组织的地理常识判断，本题正确答案是「北极熊」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "我国在北极地区建立的科学考察站是（ ）",
+      "options": [
+        "中山站",
+        "昆仑站",
+        "黄河站",
+        "长城站"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：黄河站。按极地地区与国际组织的地理常识判断，本题正确答案是「黄河站」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "南极地区的气候特征是（ ）",
+      "options": [
+        "四季如春",
+        "酷寒、干燥、烈风",
+        "高温、多雨、湿润",
+        "温暖、湿润、无风"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：酷寒、干燥、烈风。按极地地区与国际组织的地理常识判断，本题正确答案是「酷寒、干燥、烈风」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "南极洲蕴藏着丰富的（ ）",
+      "options": [
+        "煤炭、铁矿等矿产资源",
+        "热带雨林资源",
+        "大面积耕地",
+        "众多人口"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：煤炭、铁矿等矿产资源。按极地地区与国际组织的地理常识判断，本题正确答案是「煤炭、铁矿等矿产资源」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "极地地区环境保护的主要措施是（ ）",
+      "options": [
+        "大规模开发矿产",
+        "大量移民",
+        "随意丢弃垃圾",
+        "限制考察活动规模、保护生态环境"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：限制考察活动规模、保护生态环境。按极地地区与国际组织的地理常识判断，本题正确答案是「限制考察活动规模、保护生态环境」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "欧洲联盟是一个（ ）",
+      "options": [
+        "单一国家",
+        "宗教组织",
+        "区域性经济政治组织",
+        "军事同盟"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：区域性经济政治组织。按极地地区与国际组织的地理常识判断，本题正确答案是「区域性经济政治组织」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "亚太经济合作组织（APEC）属于（ ）",
+      "options": [
+        "单一国家",
+        "区域性经济合作组织",
+        "军事组织",
+        "宗教团体"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：区域性经济合作组织。按极地地区与国际组织的地理常识判断，本题正确答案是「区域性经济合作组织」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "联合国安理会常任理事国共有（ ）",
+      "options": [
+        "5个",
+        "3个",
+        "7个",
+        "10个"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：5个。按极地地区与国际组织的地理常识判断，本题正确答案是「5个」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-地理-2",
+      "chapterName": "世界区域地理综合",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "世界贸易组织的主要职能是（ ）",
+      "options": [
+        "管理各国军队",
+        "制定各国宪法",
+        "组织国际体育比赛",
+        "促进国际贸易自由化"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：促进国际贸易自由化。按极地地区与国际组织的地理常识判断，本题正确答案是「促进国际贸易自由化」。",
+      "difficulty": 2
     }
   ]
 }

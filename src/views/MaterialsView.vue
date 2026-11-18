@@ -2,7 +2,7 @@
 // 学习资料库：左侧筛选 + 掌握度概览，右侧知识点气泡图；点击气泡打开整章资料大窗口。
 import { computed, nextTick, onBeforeUnmount, onMounted, reactive, ref, watch } from 'vue'
 import { ElMessage } from 'element-plus'
-import { useRouter } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { getChapterMaterials, getCurriculumChapters, getCurriculumSubjects, searchMaterials } from '../services/api.js'
 import { loadAssessments, loadMistakes, loadQuizResults } from '../db/index.js'
 import { mergeChapterMastery } from '../utils/mastery.js'
@@ -11,6 +11,7 @@ import { useAppStore } from '../stores/app.js'
 import { formatMathText } from '../utils/formatMath.js'
 
 const router = useRouter()
+const route = useRoute()
 const store = useAppStore()
 const gradeOptions = ref([])
 const subjectOptions = ref([])
@@ -19,7 +20,6 @@ const grade = ref('')
 const subject = ref('')
 const edition = ref('')
 const chapters = ref([])
-const chapterNote = ref('')
 const loading = ref(false)
 const keyword = ref('')
 // 搜索联想：输入关键词时在搜索框下方给出相关知识点，点一下直接打开对应章节。
@@ -77,7 +77,6 @@ async function loadChapters() {
   // 连点年级/科目时只采纳最后一次请求，避免旧目录覆盖新目录。
   if (token !== chapterToken || requestKey !== `${grade.value}|${subject.value}|${edition.value}`) return
   chapters.value = response.data?.chapters || []
-  chapterNote.value = response.data?.curriculumNote || ''
   loading.value = false
   closeModal()
 }
@@ -89,11 +88,23 @@ watch(edition, async () => { await loadChapters() })
 onMounted(async () => {
   const response = await getCurriculumSubjects('初中')
   gradeOptions.value = response.data?.grades || []
-  const preferredGrade = String(store.profile?.grade || '')
-  grade.value = gradeOptions.value.includes(preferredGrade)
+  // 从主页科目卡进来时带 grade/subject，优先于档案里的上次选择。
+  const queryGrade = String(route.query.grade || '')
+  const querySubject = String(route.query.subject || '')
+  const preferredGrade = queryGrade || String(store.profile?.grade || '')
+  let targetGrade = gradeOptions.value.includes(preferredGrade)
     ? preferredGrade
     : (gradeOptions.value.includes('初二') ? '初二' : gradeOptions.value[0] || '')
-  subject.value = String(store.profile?.subject || '')
+  // 该年级没开设这个科目时（如初一没有物理），落到最早开设它的年级，避免被重置成数学。
+  if (querySubject && !((await getCurriculumSubjects('初中', targetGrade)).data?.subjects || []).includes(querySubject)) {
+    for (const option of gradeOptions.value) {
+      if (option === targetGrade) continue
+      const fallback = await getCurriculumSubjects('初中', option)
+      if ((fallback.data?.subjects || []).includes(querySubject)) { targetGrade = option; break }
+    }
+  }
+  grade.value = targetGrade
+  subject.value = querySubject || String(store.profile?.subject || '')
   await refreshSubjects()
   // 用户上次选的版本优先，不在当前科目里再回落到第一个版本。
   if (store.profile?.edition && editionOptions.value.some(item => item.edition === store.profile.edition)) {
@@ -510,7 +521,7 @@ async function openChapter(chapter, context = {}) {
   if (activeChapterId.value !== chapterId || !modalOpen.value) return
   detailLoading.value = false
   if (!response.success) {
-    ElMessage.warning(response.error || '资料加载失败，请稍后再试。')
+    ElMessage.warning(response.error || '资料加载失败，请稍后再试')
     return
   }
   detail.value = response.data
@@ -542,10 +553,10 @@ async function openTopic(topic, { keepKeyword = false } = {}) {
     response = await getCurriculumChapters(topic.grade, topic.subject, '')
   }
   searching.value = false
-  if (!response.success) { ElMessage.warning(response.error || '目录加载失败，请稍后再试。'); return }
+  if (!response.success) { ElMessage.warning(response.error || '目录加载失败，请稍后再试'); return }
   const data = response.data || {}
   const chapter = (data.chapters || []).find(item => item.name === topic.name)
-  if (!chapter) { ElMessage.info(`「${topic.name}」暂时没找到对应章节，换个关键词试试。`); return }
+  if (!chapter) { ElMessage.info(`「${topic.name}」暂时没找到对应章节，换个关键词试试`); return }
   await openChapter(chapter, { grade: topic.grade, subject: topic.subject, edition: data.edition || '' })
 }
 
@@ -557,10 +568,10 @@ async function openRelated(name) {
   searching.value = true
   const response = await searchMaterials({ q: query })
   searching.value = false
-  if (!response.success) { ElMessage.warning(response.error || '相关知识点加载失败，请稍后再试。'); return }
+  if (!response.success) { ElMessage.warning(response.error || '相关知识点加载失败，请稍后再试'); return }
   const topics = response.data?.topics || []
   const topic = topics.find(item => item.name === query) || topics[0]
-  if (!topic) { ElMessage.info(`「${query}」暂时没找到对应章节，换个关键词试试。`); return }
+  if (!topic) { ElMessage.info(`「${query}」暂时没找到对应章节，换个关键词试试`); return }
   await openTopic({ ...topic, name: query }, { keepKeyword: true })
 }
 
@@ -573,9 +584,9 @@ async function runSearch() {
   // 不限年级和学科：用户可能只记得知识点名字，不知道它属于哪一册、哪一科。
   const response = await searchMaterials({ q: query })
   searching.value = false
-  if (!response.success) { ElMessage.warning(response.error || '搜索失败，请稍后再试。'); return }
+  if (!response.success) { ElMessage.warning(response.error || '搜索失败，请稍后再试'); return }
   const topics = response.data?.topics || []
-  if (!topics.length) { ElMessage.info(`没找到「${query}」相关的知识点，换个关键词试试。`); return }
+  if (!topics.length) { ElMessage.info(`没找到「${query}」相关的知识点，换个关键词试试`); return }
   await openTopic(topics.find(item => item.name === query) || topics[0])
 }
 
@@ -656,7 +667,7 @@ function askTutor(chapterName) {
       <div>
         <span class="eyebrow">学习资料</span>
         <h2 class="page-title">学习资料库</h2>
-        <p class="page-subtitle">左侧筛选年级与教材，右侧每个气泡是一个知识点；点开气泡看整章讲解、例题和真题。</p>
+        <p class="page-subtitle">左侧筛选年级与教材，右侧每个气泡是一个知识点；点开气泡看整章讲解、例题和真题</p>
       </div>
       <el-button plain @click="askTutor('本年级本学科')">问 AI 梳理知识框架</el-button>
     </div>
@@ -723,7 +734,7 @@ function askTutor(chapterName) {
             </ul>
           </template>
           <template v-else>
-            <p class="mastery-empty">还没有掌握度记录。先做一次摸底，这里就会告诉你哪些知识点是欠缺的。</p>
+            <p class="mastery-empty">还没有掌握度记录，先做一次摸底，这里就会告诉你哪些知识点是欠缺的</p>
             <el-button size="small" plain @click="router.push('/diagnosis')">去摸底</el-button>
           </template>
         </section>
@@ -751,10 +762,9 @@ function askTutor(chapterName) {
               <small>{{ item.unitLabel }}</small>
             </span>
           </button>
-          <p v-if="!loading && !bubbleItems.length" class="bubble-empty">当前年级和科目还没有章节资料，换个科目试试。</p>
+          <p v-if="!loading && !bubbleItems.length" class="bubble-empty">当前年级和科目还没有章节资料，换个科目试试</p>
         </div>
         <div class="bubble-foot">
-          <span class="bubble-hint">球可以拖着甩，点一下查看整章资料</span>
           <span class="bubble-legend">
             <em class="dot is-unknown"></em>未测
             <em class="dot is-weak"></em>待补强
@@ -763,8 +773,6 @@ function askTutor(chapterName) {
         </div>
       </section>
     </section>
-
-    <p v-if="chapterNote" class="catalog-note muted">{{ chapterNote }}</p>
 
     <Teleport to="body">
       <Transition name="knowledge-modal">
@@ -799,7 +807,7 @@ function askTutor(chapterName) {
                       </div>
                     </div>
                   </template>
-                  <p v-else class="lesson-empty">这一章的讲解正在整理，先看下面的例题和真题。</p>
+                  <p v-else class="lesson-empty">这一章的讲解正在整理，先看下面的例题和真题</p>
                 </div>
 
                 <div v-if="detail.related?.length" class="detail-block">
@@ -834,7 +842,7 @@ function askTutor(chapterName) {
                     </div>
                   </div>
                 </div>
-                <p v-else class="muted empty-text">本章暂无本地题库例题，可以先用视频过一遍，或去章节测试现场出题。</p>
+                <p v-else class="muted empty-text">本章暂无本地题库例题，可以先用视频过一遍，或去章节测试现场出题</p>
 
                 <div v-if="detail.passages?.length || detail.passagesNote" class="detail-block">
                   <h4>真题参考</h4>
@@ -865,7 +873,7 @@ function askTutor(chapterName) {
                   <el-button type="primary" plain size="small" @click="router.push('/quiz')">去章节测试</el-button>
                 </div>
               </template>
-              <p v-else-if="!detailLoading" class="empty-text">资料没加载出来，关掉窗口后重试，或先换个知识点看看。</p>
+              <p v-else-if="!detailLoading" class="empty-text">资料没加载出来，关掉窗口后重试，或先换个知识点看看</p>
             </div>
           </section>
         </div>
@@ -913,7 +921,6 @@ function askTutor(chapterName) {
 .bubble.is-strong small{color:rgba(255,255,255,.82)}
 .bubble-empty{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:70%;margin:0;font-size:calc(13px*var(--fs-scale));color:var(--muted);text-align:center}
 .bubble-foot{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;align-items:center;font-size:calc(11.5px*var(--fs-scale));color:var(--muted)}
-.bubble-hint{opacity:.9}
 .bubble-legend{display:inline-flex;gap:6px;align-items:center}
 .bubble-legend .dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-left:6px;border:1px solid transparent}
 .dot.is-unknown{background:#cfe7e4;border-color:#9fc9c6}
@@ -931,7 +938,6 @@ function askTutor(chapterName) {
 .weak-track{height:5px;border-radius:999px;background:var(--surface-soft);overflow:hidden}
 .weak-track i{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#e0b184,var(--primary))}
 .mastery-empty{margin:0 0 12px;font-size:calc(12.5px*var(--fs-scale));line-height:1.75;color:var(--muted)}
-.catalog-note{margin:12px 0 0;font-size:calc(12px*var(--fs-scale))}
 /* 大窗口：接近满屏的圆角浅青面板，左上角只留「知识点」小标签。 */
 .knowledge-overlay{position:fixed;inset:0;z-index:2200;display:grid;place-items:center;padding:24px;background:rgba(19,44,43,.32);backdrop-filter:blur(3px)}
 .knowledge-window{position:relative;width:min(1060px,94vw);height:min(86vh,920px);display:flex;flex-direction:column;border-radius:34px;border:1px solid rgba(143,195,192,.55);background:linear-gradient(155deg,#e9f7f5,#f7fcfb 46%,#eef8f7);box-shadow:0 30px 80px rgba(24,66,64,.24);overflow:hidden;transition:transform .24s cubic-bezier(.24,.9,.32,1.1)}

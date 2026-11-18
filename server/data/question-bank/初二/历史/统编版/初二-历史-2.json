@@ -6,9 +6,9 @@
     "id": "初二-历史-2",
     "name": "明清时期"
   },
-  "generatedAt": "2026-11-14T12:15:27.201Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.084Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgdcm3j",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：宋应星编写《天工开物》，系统总结了古代农业和手工业生产技术，被誉为“中国17世纪的工艺百科全书”。\nB. 错误：《本草纲目》的作者是李时珍；徐光启的代表作是《农政全书》，该项作者与著作搭配错误。\nC. 错误：《农政全书》的作者是徐光启；李时珍编写的是《本草纲目》，该项作者与著作搭配错误。\nD. 错误：《徐霞客游记》的作者是徐霞客，不是宋应星；宋应星的代表作是《天工开物》，该项搭配错误。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "明朝建立的时间是（ ）",
+      "options": [
+        "1368年",
+        "1271年",
+        "1279年",
+        "1644年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1368年。按明朝政治、对外关系与军事的史实判断，本题正确答案是「1368年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "明朝的建立者是（ ）",
+      "options": [
+        "朱棣",
+        "忽必烈",
+        "皇太极",
+        "朱元璋"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：朱元璋。按明朝政治、对外关系与军事的史实判断，本题正确答案是「朱元璋」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "明朝建立之初的都城是（ ）",
+      "options": [
+        "开封",
+        "临安",
+        "应天府",
+        "北京"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：应天府。按明朝政治、对外关系与军事的史实判断，本题正确答案是「应天府」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "明朝废除丞相制度的是（ ）",
+      "options": [
+        "明神宗",
+        "明太祖",
+        "明成祖",
+        "明英宗"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：明太祖。按明朝政治、对外关系与军事的史实判断，本题正确答案是「明太祖」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "明朝设立的特务机构有（ ）",
+      "options": [
+        "锦衣卫、东厂",
+        "军机处、内阁",
+        "中书省、门下省",
+        "宣政院、澎湖巡检司"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：锦衣卫、东厂。按明朝政治、对外关系与军事的史实判断，本题正确答案是「锦衣卫、东厂」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "明朝科举考试采用（ ）",
+      "options": [
+        "九品中正制",
+        "察举制",
+        "推荐制",
+        "八股取士"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：八股取士。按明朝政治、对外关系与军事的史实判断，本题正确答案是「八股取士」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "郑和下西洋开始于（ ）",
+      "options": [
+        "1433年",
+        "1492年",
+        "1405年",
+        "1368年"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1405年。按明朝政治、对外关系与军事的史实判断，本题正确答案是「1405年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "郑和下西洋最远到达（ ）",
+      "options": [
+        "澳大利亚",
+        "非洲东海岸和红海沿岸",
+        "欧洲西海岸",
+        "美洲西海岸"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：非洲东海岸和红海沿岸。按明朝政治、对外关系与军事的史实判断，本题正确答案是「非洲东海岸和红海沿岸」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "明朝抗倭名将是（ ）",
+      "options": [
+        "戚继光",
+        "岳飞",
+        "郑成功",
+        "林则徐"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：戚继光。按明朝政治、对外关系与军事的史实判断，本题正确答案是「戚继光」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "明朝长城东起（ ）",
+      "options": [
+        "嘉峪关",
+        "临洮",
+        "山海关",
+        "鸭绿江"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：鸭绿江。按明朝政治、对外关系与军事的史实判断，本题正确答案是「鸭绿江」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "清朝建立的时间是（ ）",
+      "options": [
+        "1644年",
+        "1684年",
+        "1636年",
+        "1616年"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1636年。按清朝前期政治与边疆治理的史实判断，本题正确答案是「1636年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "改国号为清的是（ ）",
+      "options": [
+        "康熙帝",
+        "皇太极",
+        "努尔哈赤",
+        "顺治帝"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：皇太极。按清朝前期政治与边疆治理的史实判断，本题正确答案是「皇太极」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "清军入关的时间是（ ）",
+      "options": [
+        "1644年",
+        "1616年",
+        "1636年",
+        "1684年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1644年。按清朝前期政治与边疆治理的史实判断，本题正确答案是「1644年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "清朝设置台湾府的时间是（ ）",
+      "options": [
+        "1662年",
+        "1727年",
+        "1757年",
+        "1684年"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：1684年。按清朝前期政治与边疆治理的史实判断，本题正确答案是「1684年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "清朝设置驻藏大臣的时间是（ ）",
+      "options": [
+        "1757年",
+        "1840年",
+        "1727年",
+        "1684年"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1727年。按清朝前期政治与边疆治理的史实判断，本题正确答案是「1727年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "清朝设立军机处的是（ ）",
+      "options": [
+        "顺治帝",
+        "雍正帝",
+        "康熙帝",
+        "乾隆帝"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：雍正帝。按清朝前期政治与边疆治理的史实判断，本题正确答案是「雍正帝」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "清朝平定大小和卓叛乱后设立（ ）",
+      "options": [
+        "伊犁将军",
+        "驻藏大臣",
+        "澎湖巡检司",
+        "宣政院"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：伊犁将军。按清朝前期政治与边疆治理的史实判断，本题正确答案是「伊犁将军」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "清朝实行闭关锁国政策，只开放（ ）",
+      "options": [
+        "上海一处",
+        "北京一处",
+        "泉州一处",
+        "广州一处"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：广州一处。按清朝前期政治与边疆治理的史实判断，本题正确答案是「广州一处」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "清朝大兴文字狱的目的是（ ）",
+      "options": [
+        "鼓励言论自由",
+        "选拔科技人才",
+        "加强思想控制",
+        "发展文化教育"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：加强思想控制。按清朝前期政治与边疆治理的史实判断，本题正确答案是「加强思想控制」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "清朝前期，中国疆域南至（ ）",
+      "options": [
+        "葱岭",
+        "南海诸岛",
+        "西伯利亚",
+        "外兴安岭"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：南海诸岛。按清朝前期政治与边疆治理的史实判断，本题正确答案是「南海诸岛」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《天工开物》的作者是（ ）",
+      "options": [
+        "宋应星",
+        "李时珍",
+        "徐光启",
+        "曹雪芹"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：宋应星。按明清科技与文学的史实判断，本题正确答案是「宋应星」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《农政全书》的作者是（ ）",
+      "options": [
+        "宋应星",
+        "李时珍",
+        "贾思勰",
+        "徐光启"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：徐光启。按明清科技与文学的史实判断，本题正确答案是「徐光启」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《本草纲目》的作者是（ ）",
+      "options": [
+        "张仲景",
+        "宋应星",
+        "李时珍",
+        "华佗"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：李时珍。按明清科技与文学的史实判断，本题正确答案是「李时珍」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《西游记》的作者是（ ）",
+      "options": [
+        "曹雪芹",
+        "吴承恩",
+        "罗贯中",
+        "施耐庵"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：吴承恩。按明清科技与文学的史实判断，本题正确答案是「吴承恩」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《三国演义》的作者是（ ）",
+      "options": [
+        "罗贯中",
+        "吴承恩",
+        "施耐庵",
+        "曹雪芹"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：罗贯中。按明清科技与文学的史实判断，本题正确答案是「罗贯中」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《水浒传》的作者是（ ）",
+      "options": [
+        "罗贯中",
+        "吴承恩",
+        "曹雪芹",
+        "施耐庵"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：施耐庵。按明清科技与文学的史实判断，本题正确答案是「施耐庵」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《红楼梦》前八十回的作者是（ ）",
+      "options": [
+        "吴承恩",
+        "汤显祖",
+        "曹雪芹",
+        "高鹗"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：曹雪芹。按明清科技与文学的史实判断，本题正确答案是「曹雪芹」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《红楼梦》在中国文学史上的地位是（ ）",
+      "options": [
+        "第一部农书",
+        "中国古典小说的高峰",
+        "第一部诗歌总集",
+        "第一部纪传体通史"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：中国古典小说的高峰。按明清科技与文学的史实判断，本题正确答案是「中国古典小说的高峰」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "明代剧作家汤显祖的代表作是（ ）",
+      "options": [
+        "《牡丹亭》",
+        "《窦娥冤》",
+        "《西厢记》",
+        "《桃花扇》"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：《牡丹亭》。按明清科技与文学的史实判断，本题正确答案是「《牡丹亭》」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-历史-2",
+      "chapterName": "明清时期",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "京剧形成于（ ）",
+      "options": [
+        "明朝",
+        "宋朝",
+        "唐朝",
+        "清朝"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：清朝。按明清科技与文学的史实判断，本题正确答案是「清朝」。",
+      "difficulty": 2
     }
   ]
 }

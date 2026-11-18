@@ -6,9 +6,9 @@
     "id": "初三-物理-6",
     "name": "电功率与家庭电路"
   },
-  "generatedAt": "2026-11-13T02:48:03.637Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.235Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedmzhe",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：额定功率是用电器在额定电压下工作时的功率，因此当实际电压等于额定电压时，实际功率才等于额定功率。\nB. 错误：实际功率由实际电压和用电器电阻等决定，额定功率大的用电器若实际电压较低，其实际功率可能反而较小。\nC. 错误：消耗的电能由W=Pt决定，实际功率大但工作时间很短时，消耗的电能不一定多。\nD. 错误：额定功率是铭牌规定的固有参数，由用电器本身决定，不随实际电压的变化而改变。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某用电器两端电压为 220 V，通过的电流为 0.5 A，它的电功率是（ ）",
+      "options": [
+        "110 W",
+        "220 W",
+        "55 W",
+        "120 W"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：110 W。P = UI = 220 V × 0.5 A = 110 W。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某用电器两端电压为 220 V，通过的电流为 1 A，它的电功率是（ ）",
+      "options": [
+        "440 W",
+        "110 W",
+        "230 W",
+        "220 W"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：220 W。P = UI = 220 V × 1 A = 220 W。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某用电器两端电压为 220 V，通过的电流为 2 A，它的电功率是（ ）",
+      "options": [
+        "220 W",
+        "450 W",
+        "440 W",
+        "880 W"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：440 W。P = UI = 220 V × 2 A = 440 W。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某用电器两端电压为 220 V，通过的电流为 5 A，它的电功率是（ ）",
+      "options": [
+        "1110 W",
+        "1100 W",
+        "2200 W",
+        "550 W"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1100 W。P = UI = 220 V × 5 A = 1100 W。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某用电器两端电压为 6 V，通过的电流为 0.5 A，它的电功率是（ ）",
+      "options": [
+        "3 W",
+        "6 W",
+        "1.5 W",
+        "13 W"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：3 W。P = UI = 6 V × 0.5 A = 3 W。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某用电器两端电压为 12 V，通过的电流为 2 A，它的电功率是（ ）",
+      "options": [
+        "48 W",
+        "12 W",
+        "34 W",
+        "24 W"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：24 W。P = UI = 12 V × 2 A = 24 W。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某用电器两端电压为 36 V，通过的电流为 0.5 A，它的电功率是（ ）",
+      "options": [
+        "9 W",
+        "28 W",
+        "18 W",
+        "36 W"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：18 W。P = UI = 36 V × 0.5 A = 18 W。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某用电器两端电压为 220 V，通过的电流为 0.2 A，它的电功率是（ ）",
+      "options": [
+        "54 W",
+        "44 W",
+        "88 W",
+        "22 W"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：44 W。P = UI = 220 V × 0.2 A = 44 W。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某用电器两端电压为 110 V，通过的电流为 2 A，它的电功率是（ ）",
+      "options": [
+        "220 W",
+        "440 W",
+        "110 W",
+        "230 W"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：220 W。P = UI = 110 V × 2 A = 220 W。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某用电器两端电压为 24 V，通过的电流为 1.5 A，它的电功率是（ ）",
+      "options": [
+        "72 W",
+        "18 W",
+        "46 W",
+        "36 W"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：36 W。P = UI = 24 V × 1.5 A = 36 W。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某用电器功率为 1 kW，正常工作 2 h，消耗的电能是（ ）",
+      "options": [
+        "1 kW·h",
+        "2.5 kW·h",
+        "2 kW·h",
+        "4 kW·h"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：2 kW·h。W = Pt = 1 kW × 2 h = 2 kW·h。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某用电器功率为 0.5 kW，正常工作 4 h，消耗的电能是（ ）",
+      "options": [
+        "2.5 kW·h",
+        "2 kW·h",
+        "4 kW·h",
+        "1 kW·h"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：2 kW·h。W = Pt = 0.5 kW × 4 h = 2 kW·h。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某用电器功率为 2 kW，正常工作 0.5 h，消耗的电能是（ ）",
+      "options": [
+        "1 kW·h",
+        "2 kW·h",
+        "0.5 kW·h",
+        "1.5 kW·h"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1 kW·h。W = Pt = 2 kW × 0.5 h = 1 kW·h。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某用电器功率为 1.5 kW，正常工作 2 h，消耗的电能是（ ）",
+      "options": [
+        "6 kW·h",
+        "1.5 kW·h",
+        "3.5 kW·h",
+        "3 kW·h"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：3 kW·h。W = Pt = 1.5 kW × 2 h = 3 kW·h。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某用电器功率为 0.1 kW，正常工作 10 h，消耗的电能是（ ）",
+      "options": [
+        "0.5 kW·h",
+        "1.5 kW·h",
+        "1 kW·h",
+        "2 kW·h"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：1 kW·h。W = Pt = 0.1 kW × 10 h = 1 kW·h。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某用电器功率为 2.5 kW，正常工作 2 h，消耗的电能是（ ）",
+      "options": [
+        "5.5 kW·h",
+        "5 kW·h",
+        "10 kW·h",
+        "2.5 kW·h"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：5 kW·h。W = Pt = 2.5 kW × 2 h = 5 kW·h。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某用电器功率为 3 kW，正常工作 4 h，消耗的电能是（ ）",
+      "options": [
+        "12 kW·h",
+        "24 kW·h",
+        "6 kW·h",
+        "12.5 kW·h"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：12 kW·h。W = Pt = 3 kW × 4 h = 12 kW·h。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某用电器功率为 0.8 kW，正常工作 5 h，消耗的电能是（ ）",
+      "options": [
+        "8 kW·h",
+        "2 kW·h",
+        "4.5 kW·h",
+        "4 kW·h"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：4 kW·h。W = Pt = 0.8 kW × 5 h = 4 kW·h。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某用电器功率为 1.2 kW，正常工作 3 h，消耗的电能是（ ）",
+      "options": [
+        "1.7999999999999998 kW·h",
+        "4.1 kW·h",
+        "3.5999999999999996 kW·h",
+        "7.199999999999999 kW·h"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：3.5999999999999996 kW·h。W = Pt = 1.2 kW × 3 h = 3.5999999999999996 kW·h。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "某用电器功率为 0.05 kW，正常工作 20 h，消耗的电能是（ ）",
+      "options": [
+        "1.5 kW·h",
+        "1 kW·h",
+        "2 kW·h",
+        "0.5 kW·h"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：1 kW·h。W = Pt = 0.05 kW × 20 h = 1 kW·h。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "method",
+      "stem": "家庭电路电压为 220 V，某用电器功率为 220 W，正常工作时通过它的电流是（ ）",
+      "options": [
+        "1 A",
+        "2 A",
+        "0.5 A",
+        "1.5 A"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：1 A。由 P = UI 得 I = P/U = 220 W ÷ 220 V = 1 A。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "method",
+      "stem": "家庭电路电压为 220 V，某用电器功率为 440 W，正常工作时通过它的电流是（ ）",
+      "options": [
+        "4 A",
+        "1 A",
+        "2.5 A",
+        "2 A"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：2 A。由 P = UI 得 I = P/U = 440 W ÷ 220 V = 2 A。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "method",
+      "stem": "家庭电路电压为 220 V，某用电器功率为 660 W，正常工作时通过它的电流是（ ）",
+      "options": [
+        "1.5 A",
+        "3.5 A",
+        "3 A",
+        "6 A"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：3 A。由 P = UI 得 I = P/U = 660 W ÷ 220 V = 3 A。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "method",
+      "stem": "家庭电路电压为 220 V，某用电器功率为 880 W，正常工作时通过它的电流是（ ）",
+      "options": [
+        "4.5 A",
+        "4 A",
+        "8 A",
+        "2 A"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：4 A。由 P = UI 得 I = P/U = 880 W ÷ 220 V = 4 A。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "method",
+      "stem": "家庭电路电压为 220 V，某用电器功率为 1100 W，正常工作时通过它的电流是（ ）",
+      "options": [
+        "5 A",
+        "10 A",
+        "2.5 A",
+        "5.5 A"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：5 A。由 P = UI 得 I = P/U = 1100 W ÷ 220 V = 5 A。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "method",
+      "stem": "家庭电路电压为 220 V，某用电器功率为 1320 W，正常工作时通过它的电流是（ ）",
+      "options": [
+        "12 A",
+        "3 A",
+        "6.5 A",
+        "6 A"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：6 A。由 P = UI 得 I = P/U = 1320 W ÷ 220 V = 6 A。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "method",
+      "stem": "家庭电路电压为 220 V，某用电器功率为 1540 W，正常工作时通过它的电流是（ ）",
+      "options": [
+        "3.5 A",
+        "7.5 A",
+        "7 A",
+        "14 A"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：7 A。由 P = UI 得 I = P/U = 1540 W ÷ 220 V = 7 A。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "method",
+      "stem": "家庭电路电压为 220 V，某用电器功率为 1760 W，正常工作时通过它的电流是（ ）",
+      "options": [
+        "8.5 A",
+        "8 A",
+        "16 A",
+        "4 A"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：8 A。由 P = UI 得 I = P/U = 1760 W ÷ 220 V = 8 A。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "method",
+      "stem": "家庭电路电压为 220 V，某用电器功率为 1980 W，正常工作时通过它的电流是（ ）",
+      "options": [
+        "9 A",
+        "18 A",
+        "4.5 A",
+        "9.5 A"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：9 A。由 P = UI 得 I = P/U = 1980 W ÷ 220 V = 9 A。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-物理-6",
+      "chapterName": "电功率与家庭电路",
+      "type": "single",
+      "dimension": "method",
+      "stem": "家庭电路电压为 220 V，某用电器功率为 2200 W，正常工作时通过它的电流是（ ）",
+      "options": [
+        "20 A",
+        "5 A",
+        "10.5 A",
+        "10 A"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：10 A。由 P = UI 得 I = P/U = 2200 W ÷ 220 V = 10 A。",
+      "difficulty": 2
     }
   ]
 }

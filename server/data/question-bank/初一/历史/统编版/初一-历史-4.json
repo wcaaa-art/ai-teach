@@ -6,9 +6,9 @@
     "id": "初一-历史-4",
     "name": "三国两晋南北朝"
   },
-  "generatedAt": "2026-11-14T12:13:23.815Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.074Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgd9yw5",
@@ -179,6 +179,516 @@
       "correctIndex": 0,
       "explanation": "A. 正确：祖冲之是南北朝时期的数学家和天文学家，他经过刻苦钻研，把圆周率精确到小数点后第七位，这一成就领先世界近千年。\nB. 错误：贾思勰是北朝农学家，主要成就是撰写《齐民要术》；《水经注》的作者是郦道元，属于地理学著作。\nC. 错误：王羲之是东晋书法家，代表作是《兰亭集序》，被后人称为“书圣”；《洛神赋图》的作者是顾恺之，属于绘画作品。\nD. 错误：张仲景是东汉医学家，著有《伤寒杂病论》；《齐民要术》是贾思勰撰写的农学著作，并非张仲景的成就。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "东汉末年，曹操战胜袁绍的战役是（ ）",
+      "options": [
+        "官渡之战",
+        "赤壁之战",
+        "淝水之战",
+        "巨鹿之战"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：官渡之战。按三国鼎立形成过程的史实判断，本题正确答案是「官渡之战」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "官渡之战发生在（ ）",
+      "options": [
+        "公元208年",
+        "公元220年",
+        "公元383年",
+        "公元200年"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：公元200年。按三国鼎立形成过程的史实判断，本题正确答案是「公元200年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "官渡之战中战胜袁绍的是（ ）",
+      "options": [
+        "孙权",
+        "袁术",
+        "曹操",
+        "刘备"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：曹操。按三国鼎立形成过程的史实判断，本题正确答案是「曹操」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "赤壁之战发生在（ ）",
+      "options": [
+        "公元229年",
+        "公元208年",
+        "公元200年",
+        "公元220年"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：公元208年。按三国鼎立形成过程的史实判断，本题正确答案是「公元208年」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "赤壁之战中曹操的对手是（ ）",
+      "options": [
+        "孙刘联军",
+        "袁绍军队",
+        "前秦军队",
+        "八国联军"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：孙刘联军。按三国鼎立形成过程的史实判断，本题正确答案是「孙刘联军」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "赤壁之战的结果是（ ）",
+      "options": [
+        "曹操统一全国",
+        "袁绍战败",
+        "东晋建立",
+        "曹操败退，为三国鼎立局面形成奠定基础"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：曹操败退，为三国鼎立局面形成奠定基础。按三国鼎立形成过程的史实判断，本题正确答案是「曹操败退，为三国鼎立局面形成奠定基础」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "魏国的建立者是（ ）",
+      "options": [
+        "刘备",
+        "孙权",
+        "曹丕",
+        "曹操"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：曹丕。按三国鼎立形成过程的史实判断，本题正确答案是「曹丕」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "蜀国的建立者是（ ）",
+      "options": [
+        "诸葛亮",
+        "刘备",
+        "孙权",
+        "曹丕"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：刘备。按三国鼎立形成过程的史实判断，本题正确答案是「刘备」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "吴国的建立者是（ ）",
+      "options": [
+        "孙权",
+        "刘备",
+        "曹丕",
+        "周瑜"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：孙权。按三国鼎立形成过程的史实判断，本题正确答案是「孙权」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "三国鼎立局面最终形成的标志是（ ）",
+      "options": [
+        "220年曹丕称帝",
+        "221年刘备称帝",
+        "208年赤壁之战",
+        "229年孙权称帝"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：229年孙权称帝。按三国鼎立形成过程的史实判断，本题正确答案是「229年孙权称帝」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "西晋统一全国的时间是（ ）",
+      "options": [
+        "229年",
+        "316年",
+        "280年",
+        "220年"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：280年。按西晋、东晋与南朝更替的史实判断，本题正确答案是「280年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "西晋的建立者是（ ）",
+      "options": [
+        "曹操",
+        "司马炎",
+        "司马懿",
+        "司马睿"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：司马炎。按西晋、东晋与南朝更替的史实判断，本题正确答案是「司马炎」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "西晋灭亡于（ ）",
+      "options": [
+        "316年",
+        "280年",
+        "317年",
+        "383年"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：316年。按西晋、东晋与南朝更替的史实判断，本题正确答案是「316年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "东晋建立的时间是（ ）",
+      "options": [
+        "316年",
+        "383年",
+        "420年",
+        "317年"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：317年。按西晋、东晋与南朝更替的史实判断，本题正确答案是「317年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "东晋的都城是（ ）",
+      "options": [
+        "长安",
+        "开封",
+        "建康",
+        "洛阳"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：建康。按西晋、东晋与南朝更替的史实判断，本题正确答案是「建康」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "淝水之战发生在（ ）",
+      "options": [
+        "316年",
+        "383年",
+        "200年",
+        "208年"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：383年。按西晋、东晋与南朝更替的史实判断，本题正确答案是「383年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "淝水之战的交战双方是（ ）",
+      "options": [
+        "前秦与东晋",
+        "曹操与孙刘联军",
+        "西晋与东晋",
+        "北魏与南朝"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：前秦与东晋。按西晋、东晋与南朝更替的史实判断，本题正确答案是「前秦与东晋」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "淝水之战的结果是（ ）",
+      "options": [
+        "前秦统一全国",
+        "东晋灭亡",
+        "西晋建立",
+        "东晋以少胜多"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：东晋以少胜多。按西晋、东晋与南朝更替的史实判断，本题正确答案是「东晋以少胜多」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "南朝四个政权依次是（ ）",
+      "options": [
+        "东晋、宋、齐、梁",
+        "北魏、东魏、西魏、北齐",
+        "宋、齐、梁、陈",
+        "魏、蜀、吴、晋"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：宋、齐、梁、陈。按西晋、东晋与南朝更替的史实判断，本题正确答案是「宋、齐、梁、陈」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "北魏统一北方的时间是（ ）",
+      "options": [
+        "494年",
+        "439年",
+        "383年",
+        "420年"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：439年。按西晋、东晋与南朝更替的史实判断，本题正确答案是「439年」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "北魏孝文帝改革的重要措施是（ ）",
+      "options": [
+        "迁都洛阳，推行汉化",
+        "迁都平城，推行胡化",
+        "迁都长安，实行分封",
+        "迁都建康，闭关锁国"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：迁都洛阳，推行汉化。按魏晋南北朝民族交融与科技文化的史实判断，本题正确答案是「迁都洛阳，推行汉化」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "北魏孝文帝改革的作用是（ ）",
+      "options": [
+        "结束三国分裂",
+        "完成南北统一",
+        "建立科举制度",
+        "促进民族交融"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：促进民族交融。按魏晋南北朝民族交融与科技文化的史实判断，本题正确答案是「促进民族交融」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "祖冲之把圆周率精确到（ ）",
+      "options": [
+        "小数点后第五位",
+        "整数位",
+        "小数点后第七位",
+        "小数点后第二位"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：小数点后第七位。按魏晋南北朝民族交融与科技文化的史实判断，本题正确答案是「小数点后第七位」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "祖冲之的数学著作是（ ）",
+      "options": [
+        "《本草纲目》",
+        "《缀术》",
+        "《九章算术》",
+        "《齐民要术》"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：《缀术》。按魏晋南北朝民族交融与科技文化的史实判断，本题正确答案是「《缀术》」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "北朝时期写成《齐民要术》的是（ ）",
+      "options": [
+        "贾思勰",
+        "祖冲之",
+        "郦道元",
+        "王羲之"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：贾思勰。按魏晋南北朝民族交融与科技文化的史实判断，本题正确答案是「贾思勰」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "《齐民要术》是我国现存最早的一部（ ）",
+      "options": [
+        "数学专著",
+        "地理专著",
+        "医学专著",
+        "完整农书"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：完整农书。按魏晋南北朝民族交融与科技文化的史实判断，本题正确答案是「完整农书」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "东晋时期被称为「书圣」的书法家是（ ）",
+      "options": [
+        "颜真卿",
+        "柳公权",
+        "王羲之",
+        "顾恺之"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：王羲之。按魏晋南北朝民族交融与科技文化的史实判断，本题正确答案是「王羲之」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "王羲之的代表作是（ ）",
+      "options": [
+        "《步辇图》",
+        "《兰亭集序》",
+        "《女史箴图》",
+        "《洛神赋图》"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：《兰亭集序》。按魏晋南北朝民族交融与科技文化的史实判断，本题正确答案是「《兰亭集序》」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "东晋画家顾恺之的代表作是（ ）",
+      "options": [
+        "《女史箴图》《洛神赋图》",
+        "《兰亭集序》",
+        "《清明上河图》",
+        "《步辇图》"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：《女史箴图》《洛神赋图》。按魏晋南北朝民族交融与科技文化的史实判断，本题正确答案是「《女史箴图》《洛神赋图》」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初一-历史-4",
+      "chapterName": "三国两晋南北朝",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "云冈石窟和龙门石窟开凿于（ ）",
+      "options": [
+        "西汉时期",
+        "唐朝时期",
+        "宋朝时期",
+        "北朝时期"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：北朝时期。按魏晋南北朝民族交融与科技文化的史实判断，本题正确答案是「北朝时期」。",
+      "difficulty": 2
     }
   ]
 }

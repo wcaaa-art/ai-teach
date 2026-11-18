@@ -6,9 +6,9 @@
     "id": "初二-物理-3",
     "name": "光现象"
   },
-  "generatedAt": "2026-11-13T02:45:08.149Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.203Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedj5ig",
@@ -179,6 +179,516 @@
       "correctIndex": 2,
       "explanation": "A. 错误：3m只是移动后小明到平面镜的距离，没有计算像到平面镜的距离。\nB. 错误：4m是移动前小明到像的距离，移动前物距2m，像距2m，人和像相距4m。\nC. 正确：平面镜成像时像与物到镜面的距离相等；移动后小明到镜面距离为2m+1m=3m，像到镜面距离也为3m，所以像到小明的距离为3m+3m=6m。\nD. 错误：8m没有对应的物理依据，不能把移动前后的距离简单相加。",
       "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "光在真空中传播 1 s，通过的路程是（ ）",
+      "options": [
+        "3×10^8 m",
+        "3×10^6 m",
+        "3×10^7 m",
+        "3×10^5 m"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：3×10^8 m。光速 c = 3×10^8 m/s，s = ct = 3×10^8 × 1 = 3×10^8 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "光在真空中传播 2 s，通过的路程是（ ）",
+      "options": [
+        "6×10^6 m",
+        "6×10^7 m",
+        "6×10^5 m",
+        "6×10^8 m"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：6×10^8 m。光速 c = 3×10^8 m/s，s = ct = 3×10^8 × 2 = 6×10^8 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "光在真空中传播 3 s，通过的路程是（ ）",
+      "options": [
+        "9×10^7 m",
+        "9×10^5 m",
+        "9×10^8 m",
+        "9×10^6 m"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：9×10^8 m。光速 c = 3×10^8 m/s，s = ct = 3×10^8 × 3 = 9×10^8 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "光在真空中传播 4 s，通过的路程是（ ）",
+      "options": [
+        "12×10^5 m",
+        "12×10^8 m",
+        "12×10^6 m",
+        "12×10^7 m"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：12×10^8 m。光速 c = 3×10^8 m/s，s = ct = 3×10^8 × 4 = 12×10^8 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "光在真空中传播 5 s，通过的路程是（ ）",
+      "options": [
+        "15×10^8 m",
+        "15×10^6 m",
+        "15×10^7 m",
+        "15×10^5 m"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：15×10^8 m。光速 c = 3×10^8 m/s，s = ct = 3×10^8 × 5 = 15×10^8 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "光在真空中传播 6 s，通过的路程是（ ）",
+      "options": [
+        "18×10^6 m",
+        "18×10^7 m",
+        "18×10^5 m",
+        "18×10^8 m"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：18×10^8 m。光速 c = 3×10^8 m/s，s = ct = 3×10^8 × 6 = 18×10^8 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "光在真空中传播 7 s，通过的路程是（ ）",
+      "options": [
+        "21×10^7 m",
+        "21×10^5 m",
+        "21×10^8 m",
+        "21×10^6 m"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：21×10^8 m。光速 c = 3×10^8 m/s，s = ct = 3×10^8 × 7 = 21×10^8 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "光在真空中传播 8 s，通过的路程是（ ）",
+      "options": [
+        "24×10^5 m",
+        "24×10^8 m",
+        "24×10^6 m",
+        "24×10^7 m"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：24×10^8 m。光速 c = 3×10^8 m/s，s = ct = 3×10^8 × 8 = 24×10^8 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "光在真空中传播 9 s，通过的路程是（ ）",
+      "options": [
+        "27×10^8 m",
+        "27×10^6 m",
+        "27×10^7 m",
+        "27×10^5 m"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：27×10^8 m。光速 c = 3×10^8 m/s，s = ct = 3×10^8 × 9 = 27×10^8 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "光在真空中传播 10 s，通过的路程是（ ）",
+      "options": [
+        "30×10^6 m",
+        "30×10^7 m",
+        "30×10^5 m",
+        "30×10^8 m"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：30×10^8 m。光速 c = 3×10^8 m/s，s = ct = 3×10^8 × 10 = 30×10^8 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一束光射到平面镜上，入射光线与镜面的夹角为 30°，则反射角是（ ）",
+      "options": [
+        "50°",
+        "150°",
+        "60°",
+        "70°"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：60°。入射角 = 90° - 30° = 60°，反射角等于入射角，也是 60°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一束光射到平面镜上，入射光线与镜面的夹角为 40°，则反射角是（ ）",
+      "options": [
+        "140°",
+        "50°",
+        "60°",
+        "40°"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：50°。入射角 = 90° - 40° = 50°，反射角等于入射角，也是 50°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一束光射到平面镜上，入射光线与镜面的夹角为 50°，则反射角是（ ）",
+      "options": [
+        "40°",
+        "50°",
+        "30°",
+        "130°"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：40°。入射角 = 90° - 50° = 40°，反射角等于入射角，也是 40°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一束光射到平面镜上，入射光线与镜面的夹角为 60°，则反射角是（ ）",
+      "options": [
+        "40°",
+        "20°",
+        "120°",
+        "30°"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：30°。入射角 = 90° - 60° = 30°，反射角等于入射角，也是 30°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一束光射到平面镜上，入射光线与镜面的夹角为 20°，则反射角是（ ）",
+      "options": [
+        "60°",
+        "160°",
+        "70°",
+        "80°"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：70°。入射角 = 90° - 20° = 70°，反射角等于入射角，也是 70°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一束光射到平面镜上，入射光线与镜面的夹角为 70°，则反射角是（ ）",
+      "options": [
+        "110°",
+        "20°",
+        "30°",
+        "10°"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：20°。入射角 = 90° - 70° = 20°，反射角等于入射角，也是 20°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一束光射到平面镜上，入射光线与镜面的夹角为 25°，则反射角是（ ）",
+      "options": [
+        "65°",
+        "75°",
+        "55°",
+        "155°"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：65°。入射角 = 90° - 25° = 65°，反射角等于入射角，也是 65°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一束光射到平面镜上，入射光线与镜面的夹角为 65°，则反射角是（ ）",
+      "options": [
+        "35°",
+        "15°",
+        "115°",
+        "25°"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：25°。入射角 = 90° - 65° = 25°，反射角等于入射角，也是 25°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一束光射到平面镜上，入射光线与镜面的夹角为 45°，则反射角是（ ）",
+      "options": [
+        "35°",
+        "135°",
+        "45°",
+        "55°"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：45°。入射角 = 90° - 45° = 45°，反射角等于入射角，也是 45°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "一束光射到平面镜上，入射光线与镜面的夹角为 15°，则反射角是（ ）",
+      "options": [
+        "165°",
+        "75°",
+        "85°",
+        "65°"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：75°。入射角 = 90° - 15° = 75°，反射角等于入射角，也是 75°。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某人站在平面镜前 1 m 处，他与镜中像的距离是（ ）m",
+      "options": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：2。平面镜成像时像距等于物距，人像距离 = 1 + 1 = 2 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某人站在平面镜前 2 m 处，他与镜中像的距离是（ ）m",
+      "options": [
+        "2",
+        "5",
+        "3",
+        "4"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：4。平面镜成像时像距等于物距，人像距离 = 2 + 2 = 4 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某人站在平面镜前 3 m 处，他与镜中像的距离是（ ）m",
+      "options": [
+        "7",
+        "5",
+        "6",
+        "3"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：6。平面镜成像时像距等于物距，人像距离 = 3 + 3 = 6 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某人站在平面镜前 4 m 处，他与镜中像的距离是（ ）m",
+      "options": [
+        "7",
+        "8",
+        "4",
+        "9"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：8。平面镜成像时像距等于物距，人像距离 = 4 + 4 = 8 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某人站在平面镜前 5 m 处，他与镜中像的距离是（ ）m",
+      "options": [
+        "10",
+        "5",
+        "11",
+        "9"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：10。平面镜成像时像距等于物距，人像距离 = 5 + 5 = 10 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某人站在平面镜前 6 m 处，他与镜中像的距离是（ ）m",
+      "options": [
+        "6",
+        "13",
+        "11",
+        "12"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：12。平面镜成像时像距等于物距，人像距离 = 6 + 6 = 12 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某人站在平面镜前 7 m 处，他与镜中像的距离是（ ）m",
+      "options": [
+        "15",
+        "13",
+        "14",
+        "7"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：14。平面镜成像时像距等于物距，人像距离 = 7 + 7 = 14 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某人站在平面镜前 8 m 处，他与镜中像的距离是（ ）m",
+      "options": [
+        "15",
+        "16",
+        "8",
+        "17"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：16。平面镜成像时像距等于物距，人像距离 = 8 + 8 = 16 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某人站在平面镜前 9 m 处，他与镜中像的距离是（ ）m",
+      "options": [
+        "18",
+        "9",
+        "19",
+        "17"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：18。平面镜成像时像距等于物距，人像距离 = 9 + 9 = 18 m。",
+      "difficulty": 1
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-物理-3",
+      "chapterName": "光现象",
+      "type": "single",
+      "dimension": "method",
+      "stem": "某人站在平面镜前 10 m 处，他与镜中像的距离是（ ）m",
+      "options": [
+        "10",
+        "21",
+        "19",
+        "20"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：20。平面镜成像时像距等于物距，人像距离 = 10 + 10 = 20 m。",
+      "difficulty": 1
     }
   ]
 }

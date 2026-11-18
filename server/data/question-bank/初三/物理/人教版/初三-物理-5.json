@@ -6,9 +6,9 @@
     "id": "初三-物理-5",
     "name": "欧姆定律"
   },
-  "generatedAt": "2026-11-13T02:47:53.422Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:08.233Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwedmvd8",
@@ -179,6 +179,516 @@
       "correctIndex": 1,
       "explanation": "A. 错误：0.2A是电压为4V时的电流，电压升高后电流不会保持不变。\nB. 正确：由欧姆定律得 R=\\frac{U}{I}=\\frac{4V}{0.2A}=20Ω；温度不变时电阻不变，电压为6V时 I'=\\frac{U'}{R}=\\frac{6V}{20Ω}=0.3A。\nC. 错误：若电流为0.4A，则对应电阻 R=\\frac{6V}{0.4A}=15Ω，与已求出的20Ω矛盾。\nD. 错误：若电流为0.6A，则对应电阻 R=\\frac{6V}{0.6A}=10Ω，与已求出的20Ω矛盾。",
       "difficulty": 1
+    },
+    {
+      "id": "g01",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "导体两端电压为 6 V，导体的电阻为 3 Ω，通过导体的电流是（ ）",
+      "options": [
+        "2 A",
+        "4 A",
+        "1 A",
+        "3 A"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：2 A。由欧姆定律 I = U/R = 6 V ÷ 3 Ω = 2 A。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "导体两端电压为 12 V，导体的电阻为 4 Ω，通过导体的电流是（ ）",
+      "options": [
+        "6 A",
+        "1.5 A",
+        "4 A",
+        "3 A"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：3 A。由欧姆定律 I = U/R = 12 V ÷ 4 Ω = 3 A。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "导体两端电压为 10 V，导体的电阻为 5 Ω，通过导体的电流是（ ）",
+      "options": [
+        "1 A",
+        "3 A",
+        "2 A",
+        "4 A"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：2 A。由欧姆定律 I = U/R = 10 V ÷ 5 Ω = 2 A。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "导体两端电压为 9 V，导体的电阻为 3 Ω，通过导体的电流是（ ）",
+      "options": [
+        "4 A",
+        "3 A",
+        "6 A",
+        "1.5 A"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：3 A。由欧姆定律 I = U/R = 9 V ÷ 3 Ω = 3 A。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "导体两端电压为 8 V，导体的电阻为 4 Ω，通过导体的电流是（ ）",
+      "options": [
+        "2 A",
+        "4 A",
+        "1 A",
+        "3 A"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：2 A。由欧姆定律 I = U/R = 8 V ÷ 4 Ω = 2 A。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "导体两端电压为 15 V，导体的电阻为 5 Ω，通过导体的电流是（ ）",
+      "options": [
+        "6 A",
+        "1.5 A",
+        "4 A",
+        "3 A"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：3 A。由欧姆定律 I = U/R = 15 V ÷ 5 Ω = 3 A。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "导体两端电压为 20 V，导体的电阻为 10 Ω，通过导体的电流是（ ）",
+      "options": [
+        "1 A",
+        "3 A",
+        "2 A",
+        "4 A"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：2 A。由欧姆定律 I = U/R = 20 V ÷ 10 Ω = 2 A。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "导体两端电压为 24 V，导体的电阻为 8 Ω，通过导体的电流是（ ）",
+      "options": [
+        "4 A",
+        "3 A",
+        "6 A",
+        "1.5 A"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：3 A。由欧姆定律 I = U/R = 24 V ÷ 8 Ω = 3 A。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "导体两端电压为 18 V，导体的电阻为 6 Ω，通过导体的电流是（ ）",
+      "options": [
+        "3 A",
+        "6 A",
+        "1.5 A",
+        "4 A"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：3 A。由欧姆定律 I = U/R = 18 V ÷ 6 Ω = 3 A。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "导体两端电压为 16 V，导体的电阻为 8 Ω，通过导体的电流是（ ）",
+      "options": [
+        "4 A",
+        "1 A",
+        "3 A",
+        "2 A"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：2 A。由欧姆定律 I = U/R = 16 V ÷ 8 Ω = 2 A。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "通过导体的电流为 2 A，导体的电阻为 5 Ω，导体两端的电压是（ ）",
+      "options": [
+        "5 V",
+        "11 V",
+        "10 V",
+        "20 V"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：10 V。由 I = U/R 得 U = IR = 2 A × 5 Ω = 10 V。",
+      "difficulty": 1
+    },
+    {
+      "id": "g12",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "通过导体的电流为 3 A，导体的电阻为 4 Ω，导体两端的电压是（ ）",
+      "options": [
+        "13 V",
+        "12 V",
+        "24 V",
+        "6 V"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：12 V。由 I = U/R 得 U = IR = 3 A × 4 Ω = 12 V。",
+      "difficulty": 1
+    },
+    {
+      "id": "g13",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "通过导体的电流为 0.5 A，导体的电阻为 20 Ω，导体两端的电压是（ ）",
+      "options": [
+        "10 V",
+        "20 V",
+        "5 V",
+        "11 V"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：10 V。由 I = U/R 得 U = IR = 0.5 A × 20 Ω = 10 V。",
+      "difficulty": 1
+    },
+    {
+      "id": "g14",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "通过导体的电流为 1.5 A，导体的电阻为 4 Ω，导体两端的电压是（ ）",
+      "options": [
+        "12 V",
+        "3 V",
+        "7 V",
+        "6 V"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：6 V。由 I = U/R 得 U = IR = 1.5 A × 4 Ω = 6 V。",
+      "difficulty": 1
+    },
+    {
+      "id": "g15",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "通过导体的电流为 2.5 A，导体的电阻为 8 Ω，导体两端的电压是（ ）",
+      "options": [
+        "10 V",
+        "21 V",
+        "20 V",
+        "40 V"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：20 V。由 I = U/R 得 U = IR = 2.5 A × 8 Ω = 20 V。",
+      "difficulty": 1
+    },
+    {
+      "id": "g16",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "通过导体的电流为 0.2 A，导体的电阻为 50 Ω，导体两端的电压是（ ）",
+      "options": [
+        "11 V",
+        "10 V",
+        "20 V",
+        "5 V"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：10 V。由 I = U/R 得 U = IR = 0.2 A × 50 Ω = 10 V。",
+      "difficulty": 1
+    },
+    {
+      "id": "g17",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "通过导体的电流为 4 A，导体的电阻为 3 Ω，导体两端的电压是（ ）",
+      "options": [
+        "12 V",
+        "24 V",
+        "6 V",
+        "13 V"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：12 V。由 I = U/R 得 U = IR = 4 A × 3 Ω = 12 V。",
+      "difficulty": 1
+    },
+    {
+      "id": "g18",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "通过导体的电流为 0.3 A，导体的电阻为 30 Ω，导体两端的电压是（ ）",
+      "options": [
+        "18 V",
+        "4.5 V",
+        "10 V",
+        "9 V"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：9 V。由 I = U/R 得 U = IR = 0.3 A × 30 Ω = 9 V。",
+      "difficulty": 1
+    },
+    {
+      "id": "g19",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "通过导体的电流为 1.2 A，导体的电阻为 10 Ω，导体两端的电压是（ ）",
+      "options": [
+        "6 V",
+        "13 V",
+        "12 V",
+        "24 V"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：12 V。由 I = U/R 得 U = IR = 1.2 A × 10 Ω = 12 V。",
+      "difficulty": 1
+    },
+    {
+      "id": "g20",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "通过导体的电流为 0.6 A，导体的电阻为 15 Ω，导体两端的电压是（ ）",
+      "options": [
+        "10 V",
+        "9 V",
+        "18 V",
+        "4.5 V"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：9 V。由 I = U/R 得 U = IR = 0.6 A × 15 Ω = 9 V。",
+      "difficulty": 1
+    },
+    {
+      "id": "g21",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "method",
+      "stem": "导体两端电压为 12 V，通过导体的电流为 2 A，导体的电阻是（ ）",
+      "options": [
+        "6 Ω",
+        "12 Ω",
+        "3 Ω",
+        "16 Ω"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：6 Ω。由 I = U/R 得 R = U/I = 12 V ÷ 2 A = 6 Ω。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "method",
+      "stem": "导体两端电压为 9 V，通过导体的电流为 3 A，导体的电阻是（ ）",
+      "options": [
+        "6 Ω",
+        "1.5 Ω",
+        "13 Ω",
+        "3 Ω"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：3 Ω。由 I = U/R 得 R = U/I = 9 V ÷ 3 A = 3 Ω。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "method",
+      "stem": "导体两端电压为 20 V，通过导体的电流为 4 A，导体的电阻是（ ）",
+      "options": [
+        "2.5 Ω",
+        "15 Ω",
+        "5 Ω",
+        "10 Ω"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：5 Ω。由 I = U/R 得 R = U/I = 20 V ÷ 4 A = 5 Ω。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "method",
+      "stem": "导体两端电压为 15 V，通过导体的电流为 5 A，导体的电阻是（ ）",
+      "options": [
+        "13 Ω",
+        "3 Ω",
+        "6 Ω",
+        "1.5 Ω"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：3 Ω。由 I = U/R 得 R = U/I = 15 V ÷ 5 A = 3 Ω。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "method",
+      "stem": "导体两端电压为 6 V，通过导体的电流为 0.5 A，导体的电阻是（ ）",
+      "options": [
+        "12 Ω",
+        "24 Ω",
+        "6 Ω",
+        "22 Ω"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：12 Ω。由 I = U/R 得 R = U/I = 6 V ÷ 0.5 A = 12 Ω。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "method",
+      "stem": "导体两端电压为 18 V，通过导体的电流为 0.6 A，导体的电阻是（ ）",
+      "options": [
+        "60 Ω",
+        "15 Ω",
+        "40 Ω",
+        "30 Ω"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：30 Ω。由 I = U/R 得 R = U/I = 18 V ÷ 0.6 A = 30 Ω。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "method",
+      "stem": "导体两端电压为 10 V，通过导体的电流为 0.2 A，导体的电阻是（ ）",
+      "options": [
+        "25 Ω",
+        "60 Ω",
+        "50 Ω",
+        "100 Ω"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：50 Ω。由 I = U/R 得 R = U/I = 10 V ÷ 0.2 A = 50 Ω。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "method",
+      "stem": "导体两端电压为 24 V，通过导体的电流为 0.8 A，导体的电阻是（ ）",
+      "options": [
+        "40 Ω",
+        "30 Ω",
+        "60 Ω",
+        "15 Ω"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：30 Ω。由 I = U/R 得 R = U/I = 24 V ÷ 0.8 A = 30 Ω。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "method",
+      "stem": "导体两端电压为 36 V，通过导体的电流为 0.4 A，导体的电阻是（ ）",
+      "options": [
+        "90 Ω",
+        "180 Ω",
+        "45 Ω",
+        "100 Ω"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：90 Ω。由 I = U/R 得 R = U/I = 36 V ÷ 0.4 A = 90 Ω。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初三-物理-5",
+      "chapterName": "欧姆定律",
+      "type": "single",
+      "dimension": "method",
+      "stem": "导体两端电压为 8 V，通过导体的电流为 0.4 A，导体的电阻是（ ）",
+      "options": [
+        "40 Ω",
+        "10 Ω",
+        "30 Ω",
+        "20 Ω"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：20 Ω。由 I = U/R 得 R = U/I = 8 V ÷ 0.4 A = 20 Ω。",
+      "difficulty": 2
     }
   ]
 }

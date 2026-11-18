@@ -89,7 +89,7 @@ async function onPhotoChange(event) {
   const files = [...(event.target.files || [])]
   event.target.value = ''
   for (const file of files) {
-    if (photos.value.length >= MAX_PHOTOS) { ElMessage.info(`最多识别 ${MAX_PHOTOS} 页，先删掉不需要的页。`); break }
+    if (photos.value.length >= MAX_PHOTOS) { ElMessage.info(`最多识别 ${MAX_PHOTOS} 页，先删掉不需要的页`); break }
     if (!file.type.startsWith('image/')) continue
     photos.value.push({
       id: makeId('page'),
@@ -129,8 +129,8 @@ async function runOcr() {
       }
     }
     ocrText.value = photos.value.map((photo, index) => photo.text ? `【第 ${index + 1} 页】\n${photo.text}` : '').filter(Boolean).join('\n\n')
-    if (!ocrText.value) ElMessage.error('没有识别到文字，请换清晰照片或手动输入。')
-    else ElMessage.success('文字识别完成，先改掉错字再拆题。')
+    if (!ocrText.value) ElMessage.error('没有识别到文字，请换清晰照片或手动输入')
+    else ElMessage.success('文字识别完成，先改掉错字再拆题')
   } finally {
     ocrRunning.value = false
     ocrProgress.value = ''
@@ -142,9 +142,9 @@ async function parseQuestions() {
   parsing.value = true
   const response = await parsePaperText({ text: ocrText.value, grade: grade.value, subject: subject.value })
   parsing.value = false
-  if (!response.success) { ElMessage.error(response.error || '拆题失败，请稍后重试。'); return }
+  if (!response.success) { ElMessage.error(response.error || '拆题失败，请稍后重试'); return }
   const list = Array.isArray(response.data?.questions) ? response.data.questions : []
-  if (!list.length) { ElMessage.warning('没有拆出题目，可能是文字太乱；请先修正识别文字。'); return }
+  if (!list.length) { ElMessage.warning('没有拆出题目，可能是文字太乱；请先修正识别文字'); return }
   questions.value = list.map(question => ({
     ...question,
     options: Array.isArray(question.options) ? question.options : [],
@@ -154,7 +154,7 @@ async function parseQuestions() {
   parseSource.value = response.data?.notice || (response.source === 'local-fallback' ? '本地按题号拆分，答案需重点核对' : 'AI 拆分')
   paperId.value = ''
   paperCreatedAt.value = 0
-  ElMessage.success(`已拆出 ${list.length} 道题，请逐题核对题干、选项和答案。`)
+  ElMessage.success(`已拆出 ${list.length} 道题，请逐题核对题干、选项和答案`)
 }
 
 function typeLabel(type) { return typeLabels[type] || '解答' }
@@ -170,7 +170,7 @@ function removeQuestion(index) { questions.value.splice(index, 1) }
 
 async function savePaper(showMessage = true) {
   const list = questions.value.filter(question => String(question.stem || '').trim().length >= 4)
-  if (!list.length) { ElMessage.info('还没有可保存的题目。'); return '' }
+  if (!list.length) { ElMessage.info('还没有可保存的题目'); return '' }
   saving.value = true
   try {
     const id = paperId.value || makeId('scan')
@@ -187,7 +187,7 @@ async function savePaper(showMessage = true) {
     paperId.value = id
     paperCreatedAt.value = paperCreatedAt.value || now
     await loadRecent()
-    if (showMessage) ElMessage.success('已保存到试卷库，下次可以直接接着练。')
+    if (showMessage) ElMessage.success('已保存到试卷库，下次可以直接接着练')
     return id
   } finally {
     saving.value = false
@@ -204,20 +204,20 @@ function openRecent(paper) { router.push(`/quiz?scan=${paper.id}`) }
 
 async function removeRecent(paper) {
   try {
-    await ElMessageBox.confirm(`删除「${paper.title}」？识别结果和练习记录会一起移除。`, '删除试卷', {
+    await ElMessageBox.confirm(`删除「${paper.title}」？识别结果和练习记录会一起移除`, '删除试卷', {
       confirmButtonText: '删除', cancelButtonText: '取消', type: 'warning'
     })
   } catch { return }
   await deleteScannedPaper(paper.id)
   if (paperId.value === paper.id) paperId.value = ''
   await loadRecent()
-  ElMessage.success('已删除。')
+  ElMessage.success('已删除')
 }
 
 async function resetScan() {
   if (photos.value.length || questions.value.length) {
     try {
-      await ElMessageBox.confirm('清空当前照片和识别结果？已保存到试卷库的记录不会受影响。', '清空重来', {
+      await ElMessageBox.confirm('清空当前照片和识别结果？已保存到试卷库的记录不会受影响', '清空重来', {
         confirmButtonText: '清空', cancelButtonText: '取消', type: 'warning'
       })
     } catch { return }
@@ -243,7 +243,7 @@ function formatDate(value) {
       <div>
         <span class="eyebrow">试卷拍照识别</span>
         <h2 class="page-title">试卷拍照识别</h2>
-        <p class="page-subtitle">拍下整张试卷，OCR 读出题干，AI 拆成可练习的题目。识别结果会先给你核对，再开始练习。</p>
+        <p class="page-subtitle">拍下整张试卷，OCR 读出题干，AI 拆成可练习的题目，识别结果会先给你核对，再开始练习</p>
       </div>
       <el-button plain @click="resetScan">清空重来</el-button>
     </div>
@@ -254,13 +254,13 @@ function formatDate(value) {
       <div class="scan-upload">
         <input ref="photoInput" type="file" accept="image/*" multiple capture="environment" hidden @change="onPhotoChange">
         <el-button type="primary" plain :disabled="photos.length >= MAX_PHOTOS" @click="photoInput?.click()">拍照 / 上传</el-button>
-        <span class="muted">最多 {{ MAX_PHOTOS }} 页，尽量正对试卷、光线均匀。</span>
+        <span class="muted">最多 {{ MAX_PHOTOS }} 页，尽量正对试卷、光线均匀</span>
       </div>
     </section>
 
     <section v-if="photos.length" class="surface surface-pad">
       <div class="scan-section-head">
-        <div><h3>已选 {{ photos.length }} 页</h3><p class="muted">先识别文字，再交给 AI 拆题；识别慢时可以先改文字。</p></div>
+        <div><h3>已选 {{ photos.length }} 页</h3><p class="muted">先识别文字，再交给 AI 拆题；识别慢时可以先改文字</p></div>
         <el-button type="primary" :loading="ocrRunning" :disabled="!canOcr" @click="runOcr">开始识别文字</el-button>
       </div>
       <p v-if="ocrProgress" class="muted">{{ ocrProgress }}</p>
@@ -278,7 +278,7 @@ function formatDate(value) {
 
     <section v-if="ocrText" class="surface surface-pad">
       <div class="scan-section-head">
-        <div><h3>识别文字</h3><p class="muted">OCR 可能有错字或公式丢失，先修正再拆题，成功率更高。</p></div>
+        <div><h3>识别文字</h3><p class="muted">OCR 可能有错字或公式丢失，先修正再拆题，成功率更高</p></div>
         <el-button type="primary" :loading="parsing" :disabled="!canParse" @click="parseQuestions">AI 拆成题目</el-button>
       </div>
       <el-input v-model="ocrText" type="textarea" :rows="8" placeholder="识别出的试卷文字" />
@@ -295,7 +295,7 @@ function formatDate(value) {
           <el-button type="primary" :loading="saving" @click="startPractice">开始练习</el-button>
         </div>
       </div>
-      <el-alert type="warning" :closable="false" show-icon title="AI 识别和答案仅供参考，请先核对题干、选项与答案；答案不确定的题会改成自评题。" />
+      <el-alert type="warning" :closable="false" show-icon title="AI 识别和答案仅供参考，请先核对题干、选项与答案；答案不确定的题会改成自评题" />
       <el-collapse class="scan-questions">
         <el-collapse-item v-for="(question, index) in questions" :key="question.id" :name="question.id">
           <template #title>
@@ -325,7 +325,7 @@ function formatDate(value) {
     </section>
 
     <section v-if="recent.length" class="surface surface-pad">
-      <div class="scan-section-head"><div><h3>最近识别的试卷</h3><p class="muted">保存在本机，点开可直接练习。</p></div></div>
+      <div class="scan-section-head"><div><h3>最近识别的试卷</h3><p class="muted">保存在本机，点开可直接练习</p></div></div>
       <article v-for="paper in recent" :key="paper.id" class="scan-recent">
         <div>
           <strong>{{ paper.title }}</strong>

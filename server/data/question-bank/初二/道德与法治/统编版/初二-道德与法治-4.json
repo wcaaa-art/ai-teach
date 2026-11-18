@@ -6,9 +6,9 @@
     "id": "初二-道德与法治-4",
     "name": "权利与义务"
   },
-  "generatedAt": "2026-11-14T12:16:41.241Z",
-  "source": "deepseek",
-  "count": 10,
+  "generatedAt": "2026-11-17T13:07:07.994Z",
+  "source": "local-generator",
+  "count": 40,
   "questions": [
     {
       "id": "diag-1-mwgde786",
@@ -178,6 +178,516 @@
       ],
       "correctIndex": 1,
       "explanation": "A. 错误：言论自由不是无限制的，行使权利不得损害国家、社会、集体利益和其他公民合法的自由和权利；未经允许转发同学私人照片可能侵犯隐私权，不是正确行使权利。\nB. 正确：公民依法享有监督权，小丽按程序向教育部门举报是正确行使权利；遵守举报秩序体现了履行守法义务，体现权利与义务相统一。\nC. 错误：宪法规定公民有劳动的权利和义务，学生参加劳动实践是培养劳动习惯、履行劳动义务的表现；拒绝参加是不履行义务。\nD. 错误：在禁放区域燃放烟花违反相关规定，行使权利不能超越法律边界，不是正确行使权利。",
+      "difficulty": 2
+    },
+    {
+      "id": "g01",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "我国公民的基本权利由（　　）规定",
+      "options": [
+        "宪法",
+        "民法典",
+        "刑法",
+        "未成年人保护法"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：宪法。按公民基本权利的内容判断，本题正确答案是「宪法」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g02",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "公民的政治权利包括（　　）",
+      "options": [
+        "劳动权、受教育权",
+        "人身自由、人格尊严",
+        "财产权、继承权",
+        "选举权和被选举权、政治自由、监督权"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：选举权和被选举权、政治自由、监督权。按公民基本权利的内容判断，本题正确答案是「选举权和被选举权、政治自由、监督权」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g03",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "公民享有选举权和被选举权需要年满（　　）",
+      "options": [
+        "16周岁",
+        "20周岁",
+        "18周岁",
+        "14周岁"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：18周岁。按公民基本权利的内容判断，本题正确答案是「18周岁」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g04",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列属于人身自由权利的是（　　）",
+      "options": [
+        "劳动权",
+        "人身自由不受侵犯、人格尊严不受侵犯",
+        "选举权",
+        "受教育权"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：人身自由不受侵犯、人格尊严不受侵犯。按公民基本权利的内容判断，本题正确答案是「人身自由不受侵犯、人格尊严不受侵犯」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g05",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "公民的住宅不受侵犯，禁止（　　）",
+      "options": [
+        "非法搜查或者非法侵入公民的住宅",
+        "依法搜查",
+        "合法进入",
+        "正常走访"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：非法搜查或者非法侵入公民的住宅。按公民基本权利的内容判断，本题正确答案是「非法搜查或者非法侵入公民的住宅」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g06",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "公民的通信自由和通信秘密受法律保护，禁止（　　）",
+      "options": [
+        "依法检查",
+        "正常邮递",
+        "合法监管",
+        "非法检查公民的通信"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：非法检查公民的通信。按公民基本权利的内容判断，本题正确答案是「非法检查公民的通信」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g07",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "下列属于社会经济权利的是（　　）",
+      "options": [
+        "人身自由",
+        "监督权",
+        "财产权、劳动权",
+        "选举权"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：财产权、劳动权。按公民基本权利的内容判断，本题正确答案是「财产权、劳动权」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g08",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "受教育既是公民的（　　）",
+      "options": [
+        "既非权利也非义务",
+        "基本权利，也是基本义务",
+        "只权利",
+        "只义务"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：基本权利，也是基本义务。按公民基本权利的内容判断，本题正确答案是「基本权利，也是基本义务」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g09",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "公民的监督权包括（　　）",
+      "options": [
+        "批评、建议、申诉、控告、检举等权利",
+        "选举权",
+        "受教育权",
+        "劳动权"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：批评、建议、申诉、控告、检举等权利。按公民基本权利的内容判断，本题正确答案是「批评、建议、申诉、控告、检举等权利」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g10",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "concept",
+      "stem": "公民行使权利时（　　）",
+      "options": [
+        "可以不受任何限制",
+        "可以损害他人利益",
+        "可以违反法律",
+        "不得损害国家、社会、集体的利益和其他公民的合法权利"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：不得损害国家、社会、集体的利益和其他公民的合法权利。按公民基本权利的内容判断，本题正确答案是「不得损害国家、社会、集体的利益和其他公民的合法权利」。",
+      "difficulty": 1
+    },
+    {
+      "id": "g11",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "我国公民的基本义务由（　　）规定",
+      "options": [
+        "刑法",
+        "治安管理处罚法",
+        "宪法",
+        "民法典"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：宪法。按公民基本义务的内容判断，本题正确答案是「宪法」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g12",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列属于公民基本义务的是（　　）",
+      "options": [
+        "人格尊严",
+        "遵守宪法和法律",
+        "选举权",
+        "监督权"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：遵守宪法和法律。按公民基本义务的内容判断，本题正确答案是「遵守宪法和法律」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g13",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "维护国家统一和全国各民族团结是（　　）",
+      "options": [
+        "公民的基本义务",
+        "公民的权利",
+        "只有国家机关的责任",
+        "可做可不做的事"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：公民的基本义务。按公民基本义务的内容判断，本题正确答案是「公民的基本义务」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g14",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "依法服兵役是（　　）",
+      "options": [
+        "公民的权利",
+        "只有军人的责任",
+        "自愿行为",
+        "公民的基本义务"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：公民的基本义务。按公民基本义务的内容判断，本题正确答案是「公民的基本义务」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g15",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "依法纳税是（　　）",
+      "options": [
+        "企业的责任",
+        "可自愿选择",
+        "公民的基本义务",
+        "公民的权利"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：公民的基本义务。按公民基本义务的内容判断，本题正确答案是「公民的基本义务」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g16",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "劳动和受教育（　　）",
+      "options": [
+        "与公民无关",
+        "既是公民的基本权利，也是基本义务",
+        "只是权利",
+        "只是义务"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：既是公民的基本权利，也是基本义务。按公民基本义务的内容判断，本题正确答案是「既是公民的基本权利，也是基本义务」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g17",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "维护国家安全、荣誉和利益是（　　）",
+      "options": [
+        "公民的基本义务",
+        "公民的权利",
+        "国家安全机关的责任",
+        "可做可不做"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：公民的基本义务。按公民基本义务的内容判断，本题正确答案是「公民的基本义务」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g18",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "下列行为履行了公民义务的是（　　）",
+      "options": [
+        "逃税漏税",
+        "闯红灯",
+        "破坏公共设施",
+        "依法纳税、遵守交通规则"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：依法纳税、遵守交通规则。按公民基本义务的内容判断，本题正确答案是「依法纳税、遵守交通规则」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g19",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "不履行法定义务的后果是（　　）",
+      "options": [
+        "只会受到道德谴责",
+        "可以自行免除",
+        "要承担相应的法律责任",
+        "没有任何后果"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：要承担相应的法律责任。按公民基本义务的内容判断，本题正确答案是「要承担相应的法律责任」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g20",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "basic-application",
+      "stem": "公民的权利与义务的关系是（　　）",
+      "options": [
+        "二者完全对立",
+        "相互依存、相互促进，权利与义务相统一",
+        "只有权利没有义务",
+        "只有义务没有权利"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：相互依存、相互促进，权利与义务相统一。按公民基本义务的内容判断，本题正确答案是「相互依存、相互促进，权利与义务相统一」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g21",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "公民行使权利有界限，这个界限是（　　）",
+      "options": [
+        "不得损害国家、社会、集体的利益和其他公民的合法权利",
+        "个人意愿",
+        "他人评价",
+        "家庭条件"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：不得损害国家、社会、集体的利益和其他公民的合法权利。按依法行使权利与依法维权判断，本题正确答案是「不得损害国家、社会、集体的利益和其他公民的合法权利」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g22",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "依法行使权利，应该（　　）",
+      "options": [
+        "为所欲为",
+        "损害他人利益",
+        "违反法律规定",
+        "依照法定程序，以合法方式行使"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：依照法定程序，以合法方式行使。按依法行使权利与依法维权判断，本题正确答案是「依照法定程序，以合法方式行使」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g23",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "公民的合法权益受到侵害时，应该（　　）",
+      "options": [
+        "忍气吞声",
+        "非法报复",
+        "依法维权，通过协商、调解、仲裁、诉讼等途径解决",
+        "以暴制暴"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：依法维权，通过协商、调解、仲裁、诉讼等途径解决。按依法行使权利与依法维权判断，本题正确答案是「依法维权，通过协商、调解、仲裁、诉讼等途径解决」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g24",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列属于合法维权途径的是（　　）",
+      "options": [
+        "在网上造谣",
+        "与侵权方协商，向法院提起诉讼",
+        "殴打侵权人",
+        "损坏对方财物"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：与侵权方协商，向法院提起诉讼。按依法行使权利与依法维权判断，本题正确答案是「与侵权方协商，向法院提起诉讼」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g25",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "诉讼是（　　）",
+      "options": [
+        "解决纠纷最正规、最权威的手段",
+        "唯一的维权途径",
+        "最不常用的途径",
+        "不需要证据的途径"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：解决纠纷最正规、最权威的手段。按依法行使权利与依法维权判断，本题正确答案是「解决纠纷最正规、最权威的手段」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g26",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "公民行使监督权的合法途径包括（　　）",
+      "options": [
+        "捏造事实诬告他人",
+        "在网络上造谣",
+        "聚众闹事",
+        "向有关部门反映、举报，通过合法渠道提出建议"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：向有关部门反映、举报，通过合法渠道提出建议。按依法行使权利与依法维权判断，本题正确答案是「向有关部门反映、举报，通过合法渠道提出建议」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g27",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "权利与义务相统一要求我们（　　）",
+      "options": [
+        "只履行义务",
+        "权利和义务都可以放弃",
+        "既要享有权利，也要履行义务",
+        "只享受权利"
+      ],
+      "correctIndex": 2,
+      "explanation": "正确答案：既要享有权利，也要履行义务。按依法行使权利与依法维权判断，本题正确答案是「既要享有权利，也要履行义务」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g28",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "下列做法正确行使权利的是（　　）",
+      "options": [
+        "随意丢弃垃圾",
+        "在不影响他人的前提下进行娱乐活动",
+        "深夜大声喧哗",
+        "占用公共通道"
+      ],
+      "correctIndex": 1,
+      "explanation": "正确答案：在不影响他人的前提下进行娱乐活动。按依法行使权利与依法维权判断，本题正确答案是「在不影响他人的前提下进行娱乐活动」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g29",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "未成年人维护自身合法权益，应该（　　）",
+      "options": [
+        "向家长、老师求助，必要时寻求法律帮助",
+        "忍气吞声",
+        "以暴制暴",
+        "离家出走"
+      ],
+      "correctIndex": 0,
+      "explanation": "正确答案：向家长、老师求助，必要时寻求法律帮助。按依法行使权利与依法维权判断，本题正确答案是「向家长、老师求助，必要时寻求法律帮助」。",
+      "difficulty": 2
+    },
+    {
+      "id": "g30",
+      "chapterId": "初二-道德与法治-4",
+      "chapterName": "权利与义务",
+      "type": "single",
+      "dimension": "transfer",
+      "stem": "“没有无义务的权利，也没有无权利的义务”说明（　　）",
+      "options": [
+        "权利可以脱离义务",
+        "义务可以脱离权利",
+        "二者毫无关系",
+        "权利与义务相互依存"
+      ],
+      "correctIndex": 3,
+      "explanation": "正确答案：权利与义务相互依存。按依法行使权利与依法维权判断，本题正确答案是「权利与义务相互依存」。",
       "difficulty": 2
     }
   ]
