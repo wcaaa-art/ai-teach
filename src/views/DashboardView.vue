@@ -3,6 +3,7 @@ import { computed, nextTick, onMounted, ref, watch } from 'vue'
 import { ElMessage } from 'element-plus'
 import { useRoute, useRouter } from 'vue-router'
 import ChartPanel from '../components/ChartPanel.vue'
+import LimeIcon from '../components/LimeIcon.vue'
 import { examAverageRate as examAverageRateOf, examSessionRows, learningSuggestions, quizAccuracyOf, subjectAccuracyRows, wrongChapterRows as wrongChapterRowsOf } from '../utils/learningStats.js'
 import { distractionBreakdown, focusStreak, habitAdvice, hourBuckets, peakWindow, weekComparison } from '../utils/focusHabits.js'
 import { buildWeeklyPlanTasks, weekKeyOf } from '../utils/weeklyReportPlans.js'
@@ -59,6 +60,17 @@ const todayLime = computed(() => {
     .filter(item => (Number(item.createdAt) || 0) >= start.getTime())
     .reduce((sum, item) => sum + (Number(item.actualSeconds) || 0), 0)
   return { count: Math.floor(seconds / 60 / 25), minutes: Math.round(seconds / 60) }
+})
+
+// 青柠罐：按全部历史专注时长折算累计青柠，不受时间窗筛选影响——奖励是攒出来的，不该被筛选条件抹掉。
+// 每 25 分钟 1 个；余数换算成"再专注 X 分钟得到下一颗"，让目标看得见。
+const limeJar = computed(() => {
+  const seconds = sessions.value.reduce((sum, item) => sum + (Number(item.actualSeconds) || 0), 0)
+  const minutes = Math.round(seconds / 60)
+  const count = Math.floor(minutes / 25)
+  const toNext = 25 - (minutes % 25)
+  const maxShown = 10
+  return { minutes, count, toNext, filled: Math.min(count, maxShown), overflow: Math.max(0, count - maxShown) }
 })
 
 function shortDate(value) {
@@ -534,8 +546,29 @@ onMounted(async () => {
 
     <div class="section-divider">专注与习惯</div>
 
+    <section class="lime-jar">
+      <div class="jar-copy">
+        <span class="eyebrow">我的青柠罐</span>
+        <strong>把每一次专注，攒成看得见的奖励</strong>
+        <span class="jar-sub">每专注 25 分钟收获 1 个青柠 · 累计 {{ limeJar.minutes }} 分钟专注</span>
+      </div>
+      <div class="jar-display">
+        <div class="jar-limes">
+          <template v-if="limeJar.count > 0">
+            <LimeIcon v-for="n in limeJar.filled" :key="n" :size="30" />
+            <span v-if="limeJar.overflow" class="jar-overflow">+{{ limeJar.overflow }}</span>
+          </template>
+          <span v-else class="jar-empty">还没有青柠，完成一轮专注就能收获第一颗</span>
+        </div>
+        <div class="jar-progress">
+          <span class="jar-count"><strong>{{ limeJar.count }}</strong> 个已收获</span>
+          <span class="jar-next" v-if="limeJar.count >= 0">再专注 {{ limeJar.toNext }} 分钟，得到下一颗 <span class="jar-arrow">→</span></span>
+        </div>
+      </div>
+    </section>
+
     <div class="focus-kpis">
-      <div class="stat-card"><div class="stat-label">今日青柠</div><div class="stat-value">{{ todayLime.count }}<small>个</small></div><div class="stat-foot">今日专注 {{ todayLime.minutes }} 分钟 · 每 25 分钟折算 1 个</div></div>
+      <div class="stat-card"><div class="stat-label"><LimeIcon :size="15" /> 今日青柠</div><div class="stat-value">{{ todayLime.count }}<small>个</small></div><div class="stat-foot">今日专注 {{ todayLime.minutes }} 分钟 · 每 25 分钟折算 1 个</div></div>
       <div class="stat-card"><div class="stat-label">累计专注</div><div class="stat-value">{{ totalMinutes }} <small>分钟</small></div><div class="stat-foot">{{ filteredSessions.length }} 次专注记录</div></div>
       <div class="stat-card"><div class="stat-label">任务完成率</div><div class="stat-value">{{ completionRate }}<small>%</small></div><div class="stat-foot">按计时是否走完统计</div></div>
       <div class="stat-card"><div class="stat-label">真实分心</div><div class="stat-value">{{ realDistractions.length }} <small>次</small></div><div class="stat-foot">已排除演示模拟</div></div>
@@ -560,6 +593,20 @@ onMounted(async () => {
 <style scoped>
 .outcome-kpis,.focus-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
 .focus-kpis{grid-template-columns:repeat(4,minmax(0,1fr))}
+.lime-jar{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:16px;padding:20px 24px;border:1px solid color-mix(in srgb,var(--primary) 20%,var(--border));border-radius:18px;background:linear-gradient(118deg,color-mix(in srgb,var(--primary) 10%,var(--surface)),color-mix(in srgb,var(--blue,#3d6ed4) 5%,var(--surface)))}
+.jar-copy{display:flex;flex-direction:column;gap:5px;min-width:220px}
+.jar-copy>strong{font-size:calc(16px*var(--fs-scale));color:var(--text)}
+.jar-sub{font-size:calc(11px*var(--fs-scale));color:var(--muted)}
+.jar-display{display:flex;flex-direction:column;align-items:flex-end;gap:9px;flex:1;min-width:240px}
+.jar-limes{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:2px;min-height:32px}
+.jar-overflow{color:var(--primary);font-weight:700;font-size:calc(13px*var(--fs-scale));margin-left:4px}
+.jar-empty{color:var(--muted);font-size:calc(12px*var(--fs-scale))}
+.jar-progress{display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:flex-end}
+.jar-count{font-size:calc(12px*var(--fs-scale));color:var(--muted)}
+.jar-count strong{font-size:calc(18px*var(--fs-scale));color:var(--primary)}
+.jar-next{font-size:calc(11px*var(--fs-scale));color:var(--text)}
+.jar-arrow{color:var(--primary);font-weight:700}
+.stat-label{display:flex;align-items:center;gap:6px}
 .stat-foot{margin-top:6px;color:var(--muted);font-size:calc(11px*var(--fs-scale))}
 .insight-strip{margin-top:16px;padding:18px 20px;border:1px solid var(--border);border-radius:16px;background:linear-gradient(125deg,var(--primary-soft),var(--surface))}
 .insight-head{display:flex;align-items:baseline;gap:10px;margin-bottom:10px}
