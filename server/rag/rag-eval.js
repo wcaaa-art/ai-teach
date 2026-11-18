@@ -126,7 +126,6 @@ if (jsonMode) {
     const hybridPassed = compare.filter(item => item.passed).length
     const hybridSubject = compare.filter(item => item.subjectHit).length
     const hybridKeyword = compare.filter(item => item.keywordHit).length
-    const hybridAvg = compare.reduce((sum, item) => sum + item.topScore, 0) / (compare.length || 1)
     console.log('  ── 双路对比（稀疏 BM25 vs BM25+稠密 RRF 融合）──')
     console.log(`  稀疏 BM25：通过 ${report.passed}/${report.cases}，学科命中 ${report.subjectAccuracy * 100}%，关键词命中 ${report.keywordAccuracy * 100}%`)
     console.log(`  混合召回：通过 ${hybridPassed}/${compare.length}，学科命中 ${(hybridSubject / (compare.length || 1) * 100).toFixed(1)}%，关键词命中 ${(hybridKeyword / (compare.length || 1) * 100).toFixed(1)}%`)

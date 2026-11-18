@@ -2,7 +2,7 @@
 import { formatClock } from '../utils/liveFocus.js'
 
 // 专注回顾弹窗：从 FocusView 抽出，纯展示 + 事件，删除逻辑由父组件处理。
-const props = defineProps({
+defineProps({
   modelValue: { type: Boolean, default: false },
   records: { type: Array, default: () => [] }
 })

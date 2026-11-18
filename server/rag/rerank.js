@@ -38,6 +38,8 @@ export function rerankScore(passage, { trigrams = [], subject = '' } = {}) {
   }
   const quality = Number(passage?.quality ?? 0.6)
   factor *= 0.9 + 0.25 * quality
+  // 公式抽取损坏的残句再压一档：不改变召回集合，只把不可读片段挤出前排。
+  if (quality < 0.42) factor *= 0.55
   if (STRUCTURE.test(text)) factor += 0.08
   if (subject && passage?.subject === subject) factor += 0.1
   // 语料里的题块最短 60 字，低于 40 的只可能是页眉、分数说明这类残块。

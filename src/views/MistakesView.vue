@@ -684,7 +684,9 @@ function onRedoKeydown(event) {
               :aria-selected="statusFilter === tab.value"
               :class="{ active: statusFilter === tab.value }"
               @click="statusFilter = tab.value"
-            >{{ tab.label }}<span class="tab-count">{{ statusCounts[tab.value] }}</span></button>
+            >
+{{ tab.label }}<span class="tab-count">{{ statusCounts[tab.value] }}</span>
+</button>
           </div>
           <div class="filter-controls">
             <el-input ref="searchInput" v-model="keyword" clearable placeholder="搜索题干 / 知识点" class="mistake-search" />

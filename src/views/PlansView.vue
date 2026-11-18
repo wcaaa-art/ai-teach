@@ -965,7 +965,7 @@ watch(() => route.query.focusTask, value => { if (value) focusTaskFromQuery() })
 
         <div v-if="listItems.length" class="plan-scrollbox">
           <ol ref="planList" class="plan-list" tabindex="0" aria-label="今日计划列表，可滚动" @scroll.passive="syncRail">
-            <template v-for="(item, index) in listItems" :key="item.key">
+            <template v-for="item in listItems" :key="item.key">
               <!-- 每个分组的第一条计划上面插一行日期标题，不占刻度条。 -->
               <li v-if="groupHead(item)" class="plan-day-head" :data-day="groupHead(item).key">
                 <span class="plan-day-label">{{ groupHead(item).label }}</span>

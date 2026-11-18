@@ -5,7 +5,6 @@ import { createInterventionTracker, interventionMessage, attentionSegmentType, I
 
 // tracker 第一次见到某状态时以「此刻」为起点（无从得知它何时开始），所以持续时长要从第二次采样算。
 // 真实链路里视觉状态每秒上报一次，误差不超过 1 秒。
-const at = (state, seconds, base = 1000000) => ({ state, now: base + seconds * 1000 })
 
 test('刚开始走神不打扰，进入阈值前才倒计时', () => {
   const tracker = createInterventionTracker()

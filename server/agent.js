@@ -180,7 +180,9 @@ export const TOOL_LABELS = {
   calc_review_interval: '计算复习间隔',
   rag_knowledge_query: '检索课标知识库',
   get_recent_focus_record: '读取近期专注记录',
-  visual_monitor_get_status: '读取视觉监督状态'
+  visual_monitor_get_status: '读取视觉监督状态',
+  save_weak_point: '记录薄弱知识点',
+  list_weak_points: '读取薄弱点清单'
 }
 
 export function summarizeToolResult(name, result = {}) {
@@ -199,6 +201,11 @@ export function summarizeToolResult(name, result = {}) {
   if (name === 'visual_monitor_get_status') {
     return result.is_present ? '当前在岗' : `连续离开 ${result.continuous_away_seconds || 0} 秒`
   }
+  if (name === 'save_weak_point') {
+    if (result.error) return '薄弱点参数不完整，已跳过'
+    return result.duplicate ? `已累计薄弱点「${result.point}」第 ${result.count} 次` : `已记录薄弱点「${result.point}」`
+  }
+  if (name === 'list_weak_points') return `已记录 ${result.total || 0} 个薄弱点`
   return ''
 }
 

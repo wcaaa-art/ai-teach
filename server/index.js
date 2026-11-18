@@ -1,7 +1,7 @@
 import 'dotenv/config'
 import express from 'express'
 import cors from 'cors'
-import { TOOL_LABELS, buildPlanPrompt, callDeepSeek, extractJson, fallbackPlan, getLlmRequestStats, guardTutorAnswer, normalizeIterationOutput, normalizePlanOutput, normalizeReplacedPlan, safeFilter, streamAgent } from './agent.js'
+import { TOOL_LABELS, buildPlanPrompt, callDeepSeek, extractJson, fallbackPlan, getLlmRequestStats, guardTutorAnswer, normalizeIterationOutput, normalizePlanOutput, normalizeReplacedPlan, publicCitations, safeFilter, streamAgent, summarizeToolResult } from './agent.js'
 import { createAuthRouter, createAuthService } from './auth.js'
 import { executeTool, toolSchemas } from './tools.js'
 import { mcpPrompts, mcpResources, mcpTools } from './mcp-capabilities.js'
@@ -23,9 +23,12 @@ import { getLocalLesson } from './lessons/index.js'
 import { generatePractice } from './practice.js'
 import { formatCitation, isRagReady, ragQualitySummary, searchPassages } from './rag/index.js'
 import { isRerankEnabled, rerankPassages } from './rag/rerank.js'
-import { describeSafetyRules, getSafetyStats, isScreenEnabled, screenInput, screenOutput } from './safety.js'
+import { checkQuota, describeSafetyRules, getAuditLog, getSafetyStats, isScreenEnabled, screenInput, screenOutput } from './safety.js'
 import { runSafetyEval } from './safety-eval.js'
 import { maskPii } from './pii.js'
+import { listWeakPoints } from './weak-points.js'
+import { buildPlanContext, executePlan, planTask, plannerEnabled } from './agent-planner.js'
+import { listAgentRuns, saveAgentRun } from './agent-runs.js'
 import { getToolRuntimeStats } from './tool-runtime.js'
 
 const app = express()
@@ -53,6 +56,16 @@ function cooldownHint(previous) {
 }
 
 const ok = (res, data, extra = {}) => res.json({ success: true, data, ...extra })
+
+// 安全审计与薄弱点清单：都只读本机内存/文件，方便评审直接核验。
+app.get('/api/ai/safety-audit', (_req, res) => ok(res, {
+  stats: getSafetyStats(),
+  rules: describeSafetyRules(),
+  events: getAuditLog(20)
+}))
+
+app.get('/api/agent/weak-points', (req, res) => ok(res, listWeakPoints(Number(req.query.limit) || 20)))
+app.get('/api/agent/runs', (req, res) => ok(res, listAgentRuns(Number(req.query.limit) || 20)))
 
 // 安全评测结果按需计算一次，避免每次请求都跑 60 条样本。
 let safetyEvalCache = null
@@ -757,6 +770,8 @@ app.post('/api/agent/tutor', async (req, res) => {
     if (tutorRate.size > 1000) {
       for (const [key, timestamp] of tutorRate) if (Date.now() - timestamp > 60000) tutorRate.delete(key)
     }
+    const quota = checkQuota(String(req.get('x-client-id') || rateKey))
+    if (!quota.allowed) return ok(res, { answer: `提问有点密集，${quota.retryAfter} 秒后再继续。` }, { source: 'quota-limit', retryAfter: quota.retryAfter })
     // 先跑意图筛查：它给的拒绝话术更具体（自伤会转介热线），命中后再落到关键词兜底。
     if (isScreenEnabled()) {
       const screened = screenInput(body.question || '')
@@ -777,13 +792,43 @@ app.post('/api/agent/tutor', async (req, res) => {
         { type: 'image_url', image_url: { url: body.image, detail: 'high' } }
       ]
     }
-    const result = await callDeepSeek({ messages: [...history, { role: 'user', content: userContent }], systemPrompt: tutorSystemPrompt(tutorMode), context: body.context || {}, useTools: false })
+    const planStartedAt = Date.now()
+    let planBlock = ''
+    let planGoal = ''
+    let planSteps = []
+    // 图片问题走一次性多模态请求，不做工具规划，避免文本计划与图片内容错位。
+    if (!body.image && plannerEnabled()) {
+      const plan = await planTask({ question: body.question || '', history, context: body.context || {}, mode: tutorMode })
+      if (plan) {
+        const results = await executePlan(plan, { recentFocus: body.context?.recentFocus, visualStatus: latestVisualStatus })
+        planBlock = buildPlanContext(plan, results)
+        planGoal = plan.goal
+        planSteps = results.map(item => ({ tool: item.tool, status: item.status, ms: item.ms }))
+      }
+    }
+    const result = await callDeepSeek({
+      messages: [...history, { role: 'user', content: userContent }],
+      systemPrompt: `${tutorSystemPrompt(tutorMode)}${planBlock ? `\n\n${planBlock}` : ''}`,
+      context: body.context || {},
+      useTools: false
+    })
     if (!result.success) return ok(res, { answer: tutorMode === 'explain' ? TUTOR_EXPLAIN_FALLBACK : TUTOR_FALLBACK_ANSWER }, { source: 'mock' })
     // 输出侧先过安全筛查，再把手机号、身份证、邮箱这类信息打码（原文仍发给模型，不影响解题）。
     const screened = isScreenEnabled() ? screenOutput(result.content) : { blocked: false, text: result.content }
     if (screened.blocked) return ok(res, { answer: screened.text }, { source: 'safety-guard', guard: screened.category })
     const masked = maskPii(guardTutorAnswer(screened.text, { mode: tutorMode }))
-    return ok(res, { answer: masked.text }, { source: result.source, pii: masked.hits })
+    if (planGoal) {
+      saveAgentRun({
+        mode: tutorMode,
+        question: body.question || '',
+        goal: planGoal,
+        steps: planSteps,
+        status: 'completed',
+        source: result.source,
+        durationMs: Date.now() - planStartedAt
+      })
+    }
+    return ok(res, { answer: masked.text }, { source: result.source, pii: masked.hits, plan: planGoal ? { goal: planGoal, steps: planSteps } : undefined })
   } catch (error) {
     const invalidKey = /LLM 401/.test(error.message || '')
     return ok(res, { answer: invalidKey ? 'DeepSeek API key 没有通过验证。请在项目根目录 .env 中填写有效的 DEEPSEEK_API_KEY，保存后重启 npm run dev。' : '模型暂时需要休息一下。你可以先写出已知条件和想用的知识点，稍后我再陪你检查。' }, { source: invalidKey ? 'config-error' : 'mock', error: error.message })
@@ -831,6 +876,8 @@ app.post('/api/agent/tutor/stream', async (req, res) => {
   if (question !== body.question) { await streamFallback(question, 'safety-filter'); return res.end() }
   if (Date.now() - previous < TUTOR_COOLDOWN_MS) { await streamFallback(cooldownHint(previous), 'rate-limit'); return res.end() }
   tutorRate.set(rateKey, Date.now())
+  const quota = checkQuota(String(req.get('x-client-id') || rateKey))
+  if (!quota.allowed) { await streamFallback(`提问有点密集，${quota.retryAfter} 秒后再继续。`, 'quota-limit'); return res.end() }
   if (tutorRate.size > 1000) {
     for (const [key, timestamp] of tutorRate) if (Date.now() - timestamp > 60000) tutorRate.delete(key)
   }
@@ -839,14 +886,50 @@ app.post('/api/agent/tutor/stream', async (req, res) => {
     .filter(message => ['user', 'assistant'].includes(message?.role) && typeof message.content === 'string')
     .slice(-12).map(message => ({ role: message.role, content: message.content.slice(0, 4000) })) : []
 
+  // 规划层：先生成 0-3 步工具计划并顺序执行，再把结果注入回答上下文。
+  // 规划失败、超时或返回空计划时回退到原工具循环，前端体验不变。
+  const planStartedAt = Date.now()
+  let planBlock = ''
+  let planGoal = ''
+  let planSteps = []
+  if (plannerEnabled()) {
+    writeEvent('plan', { status: 'planning' })
+    const plan = await planTask({ question: body.question || '', history, context: body.context || {}, mode: tutorMode })
+    if (plan) {
+      writeEvent('plan', { status: 'ready', goal: plan.goal, steps: plan.steps.map(step => ({ tool: step.tool, reason: step.reason })) })
+      const results = await executePlan(plan, { recentFocus: body.context?.recentFocus, visualStatus: latestVisualStatus }, {
+        onStep: step => {
+          const label = TOOL_LABELS[step.tool] || step.tool
+          if (step.phase === 'start') {
+            writeEvent('tool', { name: step.tool, label, status: 'start' })
+            return
+          }
+          writeEvent('tool', {
+            name: step.tool,
+            label,
+            status: 'done',
+            summary: step.status === 'done' ? summarizeToolResult(step.tool, step.result) : '工具执行失败，已跳过',
+            citations: step.tool === 'rag_knowledge_query' ? publicCitations(step.result) : []
+          })
+        }
+      })
+      planBlock = buildPlanContext(plan, results)
+      planGoal = plan.goal
+      planSteps = results.map(item => ({ tool: item.tool, status: item.status, ms: item.ms }))
+    } else {
+      writeEvent('plan', { status: 'skipped' })
+    }
+  }
+
   try {
     writeEvent('meta', { source: 'deepseek', model: process.env.LLM_MODEL_NAME || 'deepseek-flash' })
     let answer = ''
     let trace = []
     for await (const event of streamAgent({
       messages: [...history, { role: 'user', content: body.question }],
-      systemPrompt: tutorSystemPrompt(tutorMode),
+      systemPrompt: `${tutorSystemPrompt(tutorMode)}${planBlock ? `\n\n${planBlock}` : ''}`,
       context: { recentFocus: body.context?.recentFocus, visualStatus: latestVisualStatus },
+      useTools: !planBlock,
       signal: controller.signal
     })) {
       if (event.type === 'fallback') { await streamFallback(tutorMode === 'explain' ? TUTOR_EXPLAIN_FALLBACK : TUTOR_FALLBACK_ANSWER, 'mock'); return res.end() }
@@ -861,10 +944,32 @@ app.post('/api/agent/tutor/stream', async (req, res) => {
     const masked = maskPii(guarded)
     if (masked.text !== answer) writeEvent('replace', { content: masked.text, reason: 'safety-guard' })
     writeEvent('done', { content: masked.text, source: 'deepseek', tools: trace, pii: masked.hits })
+    if (planGoal) {
+      saveAgentRun({
+        mode: tutorMode,
+        question: body.question || '',
+        goal: planGoal,
+        steps: planSteps,
+        status: 'completed',
+        source: 'deepseek',
+        durationMs: Date.now() - planStartedAt
+      })
+    }
     return res.end()
   } catch (error) {
     if (controller.signal.aborted) return res.end()
     console.warn('[tutor-stream]', error?.message || error, error?.cause?.code || error?.cause?.message || '', error?.cause?.cause?.code || '')
+    if (planGoal) {
+      saveAgentRun({
+        mode: tutorMode,
+        question: body.question || '',
+        goal: planGoal,
+        steps: planSteps,
+        status: 'failed',
+        source: 'error',
+        durationMs: Date.now() - planStartedAt
+      })
+    }
     const invalidKey = /LLM 401/.test(error?.message || '')
     await streamFallback(invalidKey ? 'DeepSeek API key 没有通过验证。请在项目根目录 .env 中填写有效的 DEEPSEEK_API_KEY，保存后重启 npm run dev。' : (tutorMode === 'explain' ? TUTOR_EXPLAIN_FALLBACK : TUTOR_FALLBACK_ANSWER), invalidKey ? 'config-error' : 'mock')
     return res.end()

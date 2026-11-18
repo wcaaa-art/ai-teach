@@ -126,7 +126,7 @@ function overlap(left = '', right = '') {
  * @param {{ query?: string, subject?: string, grade?: string, topK?: number, minScore?: number, maxChars?: number, subjectStrict?: boolean }} [options]
  */
 export function hybridSearch(options = {}) {
-  const { query = '', subject = '', grade = '', topK = 4, maxChars = 900, subjectStrict = false } = options
+  const { query = '', subject = '', topK = 4, maxChars = 900, subjectStrict = false } = options
   // 第一步永远是 BM25：它同时是降级目标和融合的一路。
   const sparse = searchPassages(options)
   try {

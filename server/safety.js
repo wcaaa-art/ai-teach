@@ -15,6 +15,10 @@ export function normalizeForScreen(text = '') {
     .replace(/[\uff01-\uff5e]/g, char => String.fromCharCode(char.charCodeAt(0) - 0xfee0))
     .replace(PUNCT, '')
     .toLowerCase()
+    // 常见混写规避：汉字夹拼音首字母或半截拼音，先去壳再匹配。
+    .replace(/自s(?:ha)?/g, '自杀')
+    .replace(/轻sheng/g, '轻生')
+    .replace(/zi杀/g, '自杀')
 }
 
 // 危险对象：只作为"和意图组合"的一半条件，单独出现不拦截。
@@ -72,6 +76,41 @@ const GENERIC_REPLY = '这个问题不适合在学习助手里展开。我们可
 const safetyStats = { inputChecked: 0, inputBlocked: 0, outputChecked: 0, outputBlocked: 0 }
 export function getSafetyStats() { return { ...safetyStats } }
 
+// 审计日志：只留最近 200 条，记录方向、类别、是否拦截与时间，便于事后核查与演示。
+const auditLog = []
+export function recordAudit(entry = {}) {
+  auditLog.push({
+    at: Date.now(),
+    direction: entry.direction || 'input',
+    category: entry.category || '',
+    blocked: Boolean(entry.blocked)
+  })
+  if (auditLog.length > 200) auditLog.splice(0, auditLog.length - 200)
+}
+export function getAuditLog(limit = 20) {
+  return auditLog.slice(-Math.max(1, Math.min(200, limit)))
+}
+
+// 客户端配额：按来源标识做 1 分钟滑动窗口，防止单端刷问耗尽额度。
+const quotaBuckets = new Map()
+export function checkQuota(clientId = 'local', { limit = 30, windowMs = 60000 } = {}) {
+  const now = Date.now()
+  const key = String(clientId || 'local')
+  const bucket = (quotaBuckets.get(key) || []).filter(stamp => now - stamp < windowMs)
+  if (bucket.length >= limit) {
+    quotaBuckets.set(key, bucket)
+    return { allowed: false, retryAfter: Math.ceil((windowMs - (now - bucket[0])) / 1000), remaining: 0 }
+  }
+  bucket.push(now)
+  quotaBuckets.set(key, bucket)
+  if (quotaBuckets.size > 2000) {
+    for (const [id, stamps] of quotaBuckets) {
+      if (!stamps.length || now - stamps[stamps.length - 1] > windowMs) quotaBuckets.delete(id)
+    }
+  }
+  return { allowed: true, retryAfter: 0, remaining: limit - bucket.length }
+}
+
 // 规则概览：不暴露正则细节，只说明覆盖哪几类，便于在能力页展示。
 export function describeSafetyRules() {
   return {
@@ -98,19 +137,21 @@ export function screenInput(text = '') {
   // 自伤类不看意图：只要提到具体方式就优先转介，这是红线。
   if (hazard?.key === 'selfharm') {
     const specific = ['怎么自杀', '如何自杀', '自杀方法', '自杀方式', '割腕', '上吊', '结束生命', '不想活'].some(word => normalized.includes(normalizeForScreen(word)))
-    if (specific) { safetyStats.inputBlocked += 1; return { blocked: true, category: 'self-harm', reply: SELF_HARM_REPLY } }
+    if (specific) { safetyStats.inputBlocked += 1; recordAudit({ direction: 'input', category: 'self-harm', blocked: true }); return { blocked: true, category: 'self-harm', reply: SELF_HARM_REPLY } }
   }
 
-  if (HARM_PATTERNS.some(pattern => pattern.test(normalized))) { safetyStats.inputBlocked += 1; return { blocked: true, category: 'harm-others', reply: HARM_REPLY } }
+  if (HARM_PATTERNS.some(pattern => pattern.test(normalized))) { safetyStats.inputBlocked += 1; recordAudit({ direction: 'input', category: 'harm-others', blocked: true }); return { blocked: true, category: 'harm-others', reply: HARM_REPLY } }
 
   // 内容索取与灰产渠道：没有"制作"语义也要拦。
   if (UNSAFE_REQUEST.some(pattern => pattern.test(normalized))) {
     safetyStats.inputBlocked += 1
+    recordAudit({ direction: 'input', category: 'unsafe-request', blocked: true })
     return { blocked: true, category: 'unsafe-request', reply: HARM_REPLY }
   }
 
   if (hazard && hasIntent && !inStudyContext) {
     safetyStats.inputBlocked += 1
+    recordAudit({ direction: 'input', category: hazard.key, blocked: true })
     return { blocked: true, category: hazard.key, reply: hazard.key === 'selfharm' ? SELF_HARM_REPLY : HARM_REPLY }
   }
 
@@ -129,7 +170,7 @@ export function screenOutput(text = '') {
   // 这里保留标点：规则靠"句子边界"防止跨句误命中，去掉标点反而会让跨度失控。
   const compact = raw.replace(ZERO_WIDTH, '').replace(/[\uff01-\uff5e]/g, char => String.fromCharCode(char.charCodeAt(0) - 0xfee0))
   for (const pattern of OUTPUT_PATTERNS) {
-    if (pattern.test(compact)) { safetyStats.outputBlocked += 1; return { blocked: true, text: GENERIC_REPLY, category: 'unsafe-output' } }
+    if (pattern.test(compact)) { safetyStats.outputBlocked += 1; recordAudit({ direction: 'output', category: 'unsafe-output', blocked: true }); return { blocked: true, text: GENERIC_REPLY, category: 'unsafe-output' } }
   }
   return { blocked: false, text: raw, category: '' }
 }

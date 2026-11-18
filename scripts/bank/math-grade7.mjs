@@ -380,7 +380,6 @@ function systemsOfEquations() {
   const pairs = [[11, 7], [13, 8], [17, 10], [9, 5], [21, 12], [15, 9], [19, 11], [23, 14], [25, 15], [27, 16]]
   pairs.forEach(([a, b], index) => {
     const x = a - b
-    const y = 2 * b - a
     items.push(makeQuestion({
       stem: `已知 2x + y = ${a}，x + y = ${b}，则 x 的值是（ ）`,
       correct: x,

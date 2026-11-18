@@ -987,4 +987,6 @@
 - 排障陷阱：非 admin 调 `GET /branches/main/protection` 返回 **404**（GitHub 对无权资源一律 404 不返 403），`GET /rulesets` 为空是因为用的是 classic 保护而非 ruleset；这两个现象都**不能**作为「没有保护」的依据。验证保护是否生效，用普通写权限账号直接 `git push origin main`，应被 `GH006 Protected branch update failed` 拒绝。
 - 顺手修掉 `server/index.js` 能力清单里重复写两遍的 `rerank` 键（当时 lint 唯一 error）。
 - 公开前的敏感信息扫描结论：无真实密钥入库，`.env` 与 `server/data/` 均未跟踪；MEMORY.md 里只有本机路径 `C:/Users/豪` 与 Gitee 地址，属公开可见信息，未做脱敏。
+- 严格评审后的一轮整改（2026-11-18）：安全侧加客户端 30 次/分钟配额（`x-client-id` 或 IP）、最近 200 条审计日志与 `/api/ai/safety-audit`、汉字夹拼音规避归一化；Agent 新增两个写工具 `save_weak_point` / `list_weak_points`，落盘 `server/data/weak-points.json`（按学科+知识点去重累计，上限 200），并加 `GET /api/agent/weak-points`；重排对 quality<0.42 的残句再压 0.55，Top-3 不可读占比 14.9%→10.9%、通过率仍 100%；答疑图片可在同页面“沿用上一张图”（仅内存，不入库）。验证：lint 0 警告、`npm test` 379 通过、typecheck 通过、build 21.7s、safety:eval 对抗 30/30 且误杀 0、冒烟接口 200。
+- Agent 规划层（2026-11-18 第二批）：新增 `server/agent-planner.js`，答疑前先让模型产出 0-3 步 JSON 计划（工具、参数、理由），用 tools.js 同一份 schema 校验、去重、截断；`executePlan` 顺序执行并记录每步状态与耗时，失败继续不中断；结果压成事实块注入回答系统提示词，回答阶段关闭工具循环避免重复调用。新增 `server/agent-runs.js` 落盘最近 100 次运行（`GET /api/agent/runs`），记录目标、步骤状态、耗时与成败。规划失败/超时/无密钥一律返回 null，自动回退原 `streamAgent` 工具循环；开关 `AGENT_PLANNER=0` 可整体关闭，`AGENT_PLAN_TIMEOUT_MS` 默认 12s。实测非流式 13.8s（规划 1 步检索 382ms），流式事件为 plan→tool→meta→thinking→token→done，361 token，运行记录已落盘。未做：跨请求断点续跑与失败后重新规划（当前为单轮计划、失败跳过）。
 

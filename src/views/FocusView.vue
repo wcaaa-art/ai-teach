@@ -1,7 +1,6 @@
 <script setup>
 import { computed, nextTick, onBeforeUnmount, onMounted, reactive, ref, watch } from 'vue'
 import { ElMessage, ElMessageBox, ElNotification } from 'element-plus'
-import { useRouter } from 'vue-router'
 import CountdownTimer from '../components/CountdownTimer.vue'
 import CameraMonitor from '../components/CameraMonitor.vue'
 import AiFloatingTutor from '../components/AiFloatingTutor.vue'
@@ -9,13 +8,11 @@ import WheelPicker from '../components/WheelPicker.vue'
 import FocusHistoryDialog from '../components/FocusHistoryDialog.vue'
 import { getRecentFocusContext, loadFocusSessions, loadPlans, loadFocusSuggestion, makeId, saveDistraction, saveFeedback, saveFocusSession, saveVisualLog, savePlan, loadProfile, deleteFocusSession } from '../db/index.js'
 import { iteratePlan, pushVisualStatus } from '../services/api.js'
-import { formatMathText } from '../utils/formatMath.js'
 import { clearLiveFocus, formatClock, liveRemaining, readLiveFocus, writeLiveFocus } from '../utils/liveFocus.js'
 import { createInterventionTracker, interventionMessage, attentionSegmentType, INTERVENTION_LEVEL } from '../utils/attentionIntervene.js'
 import { useAppStore } from '../stores/app.js'
 
 const store = useAppStore()
-const router = useRouter()
 const timer = ref(null)
 const camera = ref(null)
 // 三态：待机 / 专注中 / 结束回顾。休息降级为回顾页底部的一条倒计时小条。
@@ -90,7 +87,6 @@ let attentionSince = 0
 const clampMinutes = value => { const number = Number(value); return Number.isFinite(number) && number > 0 ? Math.min(240, Math.max(5, Math.round(number))) : null }
 const totalMinutes = computed(() => { const value = durationMode.value === 'custom' ? clampMinutes(customMinutes.value) ?? 25 : Number(durationMode.value); return Math.min(240, Math.max(5, value)) })
 const duration = () => totalMinutes.value * 60
-const planTitle = computed(() => formatMathText(freeMode.value ? (freeTaskName.value.trim() || '自由专注') : (selectedPlan.value?.name || '准备开始')))
 const suggestionMinutes = computed(() => clampMinutes(focusSuggestion.value?.recommendedMinutes))
 const suggestionPercent = computed(() => { const accuracy = Number(focusSuggestion.value?.accuracy); return Number.isFinite(accuracy) ? Math.round(accuracy * 100) : null })
 const suggestionSource = computed(() => {
@@ -723,8 +719,6 @@ function backToIdle() {
   resetClock()
   view.value = 'idle'
 }
-function exitFocus() { router.push('/plans') }
-
 function openFeedback() { feedbackVisible.value = true }
 async function submitFeedback() {
   if (freeMode.value) { feedbackVisible.value = false; ElMessage.info('自由专注只记录时长，不参与学习计划迭代'); return }
@@ -754,7 +748,6 @@ async function submitFeedback() {
 
 // === 摄像头与页面状态 ===
 function toggleCamera(value) { if (value) camera.value?.requestEnable?.(); else camera.value?.disable?.() }
-async function toggleFullscreen() { try { if (!document.fullscreenElement) await document.documentElement.requestFullscreen(); else await document.exitFullscreen() } catch { ElMessage.info('浏览器未允许全屏，请继续使用当前页面') } }
 function wakeCursor() {
   cursorIdle.value = false
   clearTimeout(cursorTimer)

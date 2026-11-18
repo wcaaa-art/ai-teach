@@ -8,7 +8,7 @@ const ICONS = {
   retest: ['M3 8a5 5 0 1 1 2 4', 'M3 4v4h4'],
   progress: ['M3 12V7M8 12V4M13 12V9']
 }
-const props = defineProps({ step: { type: Object, required: true } })
+defineProps({ step: { type: Object, required: true } })
 // 自定义事件不能叫 click，会和原生同名事件重复派发。
 const emit = defineEmits(['pick'])
 </script>

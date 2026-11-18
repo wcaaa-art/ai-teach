@@ -22,6 +22,8 @@ const conversations = ref([])
 const isListening = ref(false)
 const imageData = ref('')
 const imagePreview = ref('')
+// 上一张图只在本次页面会话内保留，不写 IndexedDB；用于“沿这张图继续问”。
+const lastImageData = ref('')
 const fileInput = ref(null)
 const messagesEl = ref(null)
 const speakingIndex = ref(null)
@@ -238,6 +240,11 @@ async function removeConversation(id) {
 }
 
 function clearImage() { imageData.value = ''; imagePreview.value = ''; if (fileInput.value) fileInput.value.value = '' }
+function reuseLastImage() {
+  if (!lastImageData.value) return
+  imageData.value = lastImageData.value
+  imagePreview.value = lastImageData.value
+}
 
 function selectImage() { fileInput.value?.click() }
 function handleImage(event) {
@@ -343,6 +350,7 @@ async function send(text = input.value) {
     // 只保留要点文本，不保留 base64：IndexedDB 里不留图片，也不让上下文无限膨胀。
     const userMessage = messages.value[messages.value.length - 2]
     if (userMessage?.role === 'user' && result.success) userMessage.imageContext = clipImageContext(answer)
+    lastImageData.value = imageData.value
     clearImage()
   } else {
     await streamAnswer(apiQuestion, history)
@@ -487,6 +495,10 @@ onBeforeUnmount(stopSpeaking)
             <div><strong>图片已添加</strong><small>{{ imageNote }} · 图片只在本次请求中发送；答复要点会留在会话里，方便你继续追问</small></div>
             <button type="button" class="meta-btn" @click="clearImage">移除</button>
           </div>
+          <div v-else-if="lastImageData" class="image-draft reuse">
+            <div><strong>可以沿上一张图继续问</strong><small>同一页面内保留，不会写入本地数据库；刷新或关闭页面即清除</small></div>
+            <button type="button" class="meta-btn" @click="reuseLastImage">沿用上一张图</button>
+          </div>
           <el-input v-model="input" class="composer-input" type="textarea" :rows="2" resize="none" :placeholder="composerPlaceholder" @keydown="onComposerKeydown" />
           <div class="composer-bar">
             <div class="bar-left">
@@ -602,6 +614,7 @@ onBeforeUnmount(stopSpeaking)
 .image-draft div{display:grid;gap:2px;flex:1;min-width:0}
 .image-draft strong{font-size:calc(12.5px*var(--fs-scale))}
 .image-draft small{font-size:calc(11px*var(--fs-scale));color:var(--muted)}
+.image-draft.reuse{background:color-mix(in srgb,var(--surface-soft) 70%,transparent);border:1px dashed color-mix(in srgb,var(--border) 80%,transparent)}
 /* 错题/计划上下文提示：和图片草稿同一块区域，发送前可见、可一键移除。 */
 .context-draft{display:flex;align-items:center;gap:10px;padding:8px 10px;margin-bottom:6px;border-radius:12px;background:color-mix(in srgb,var(--primary-soft) 55%,transparent)}
 .context-mark{width:26px;height:26px;flex:none;display:grid;place-items:center;border-radius:8px;background:var(--primary);color:#fff;font-size:calc(10px*var(--fs-scale));font-weight:700}

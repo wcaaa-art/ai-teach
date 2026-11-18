@@ -820,7 +820,9 @@ function askTutor(chapterName) {
                       class="chip chip-action"
                       :disabled="detailLoading"
                       @click="openRelated(name)"
-                    >{{ name }}</button>
+                    >
+{{ name }}
+</button>
                   </div>
                 </div>
 

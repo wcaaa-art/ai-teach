@@ -151,7 +151,8 @@ test('本地学习记录与视觉状态通过 Agent 上下文读取', () => {
 
 test('工具 schema 保持固定名称和参数契约', () => {
   assert.deepEqual(toolSchemas.map(tool => tool.function.name), [
-    'calc_review_interval', 'rag_knowledge_query', 'get_recent_focus_record', 'visual_monitor_get_status'
+    'calc_review_interval', 'rag_knowledge_query', 'get_recent_focus_record', 'visual_monitor_get_status',
+    'save_weak_point', 'list_weak_points'
   ])
   assert.deepEqual(Object.keys(toolSchemas[0].function.parameters.properties), ['last_study_time', 'mastery_level'])
   assert.equal(validateToolArguments('calc_review_interval', { last_study_time: 10, mastery_level: 2 }), true)

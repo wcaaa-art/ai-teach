@@ -1,14 +1,17 @@
 // @ts-check
 import { searchCurriculum } from './curriculum.js'
-import { searchPassages, formatCitation } from './rag/index.js'
+import { searchPassages } from './rag/index.js'
 import { hybridSearch } from './rag/hybrid.js'
 import { isRerankEnabled, rerankPassages } from './rag/rerank.js'
+import { listWeakPoints, saveWeakPoint } from './weak-points.js'
 
 export const toolSchemas = [
   { type:'function', function:{ name:'calc_review_interval', description:'根据艾宾浩斯遗忘曲线计算复习时间', parameters:{ type:'object', properties:{ last_study_time:{type:'number'}, mastery_level:{type:'integer',enum:[0,1,2,3]} }, required:['last_study_time','mastery_level'], additionalProperties:false } } },
   { type:'function', function:{ name:'rag_knowledge_query', description:'混合检索课标知识点与中考真题解析，返回知识点名称和可引用的原文片段', parameters:{ type:'object', properties:{subject:{type:'string'},grade:{type:'string'},keyword:{type:'string'}}, required:['subject','grade','keyword'], additionalProperties:false } } },
   { type:'function', function:{ name:'get_recent_focus_record', description:'读取IndexedDB历史专注记录，包含：总时长、任务完成率、分心次数、视觉监督下的连续离岗记录', parameters:{type:'object',properties:{days:{type:'number'}},required:['days'],additionalProperties:false} } },
-  { type:'function', function:{ name:'visual_monitor_get_status', description:'读取前端推送的视觉监督状态（前端持续推送状态给后端Agent上下文，不推送图像）', parameters:{type:'object',properties:{is_present:{type:'boolean'},continuous_away_seconds:{type:'number'}},required:['is_present','continuous_away_seconds'],additionalProperties:false} } }
+  { type:'function', function:{ name:'visual_monitor_get_status', description:'读取前端推送的视觉监督状态（前端持续推送状态给后端Agent上下文，不推送图像）', parameters:{type:'object',properties:{is_present:{type:'boolean'},continuous_away_seconds:{type:'number'}},required:['is_present','continuous_away_seconds'],additionalProperties:false} } },
+  { type:'function', function:{ name:'save_weak_point', description:'把本轮确认的薄弱知识点写入本地薄弱点清单，供后续复习与计划调整引用', parameters:{type:'object',properties:{subject:{type:'string'},grade:{type:'string'},point:{type:'string'},reason:{type:'string'}},required:['subject','point'],additionalProperties:false} } },
+  { type:'function', function:{ name:'list_weak_points', description:'读取已记录的薄弱知识点清单', parameters:{type:'object',properties:{limit:{type:'integer'}},required:['limit'],additionalProperties:false} } }
 ]
 
 // 在执行模型生成的工具调用前，按同一份固定 schema 做二次类型校验。
@@ -29,14 +32,6 @@ export function validateToolArguments(name, args) {
             : false
     return validType && (!schema.enum || schema.enum.includes(value))
   })
-}
-
-const knowledge = {
-  数学: ['二次函数的图像与性质','一次函数与方程组','全等三角形判定','概率初步'],
-  物理: ['力与运动','电路与欧姆定律','能量守恒'],
-  化学: ['化学方程式配平','物质构成的奥秘','酸碱盐'],
-  英语: ['阅读理解策略','时态与语态','写作结构'],
-  语文: ['记叙文阅读','古诗文积累','议论文论证']
 }
 
 /**
@@ -86,5 +81,10 @@ export function executeTool(name, args = {}, context = {}) {
   }
   if(name==='get_recent_focus_record') return context.recentFocus || {days:args.days||7,totalFocusMinutes:0,taskCompletionRate:0,distractionCount:0,visualAwayRecords:0}
   if(name==='visual_monitor_get_status') {const status=context.visualStatus||args;return {is_present:Boolean(status.is_present??status.isPresent),continuous_away_seconds:Math.max(0,Number(status.continuous_away_seconds??status.continuousAwaySeconds)||0)}}
+  if(name==='save_weak_point') {
+    if(typeof args.subject!=='string'||!args.subject.trim()||typeof args.point!=='string'||!args.point.trim())return {error:'invalid_arguments'}
+    return saveWeakPoint({subject:args.subject,grade:args.grade||'',point:args.point,reason:args.reason||''})
+  }
+  if(name==='list_weak_points') return listWeakPoints(Number(args.limit)||20)
   return {message:'unknown tool'}
 }

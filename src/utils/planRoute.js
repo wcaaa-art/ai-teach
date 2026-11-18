@@ -15,7 +15,6 @@ const MISTAKE_KEYWORDS = /错题|错题本|易错|重做|订正/
  * @returns {{ kind: 'practice'|'recite'|'mistakes', mode?: string, reason: string }}
  */
 export function detectPlanTask(plan) {
-  const subject = String(plan?.subject || '').trim()
   const name = String(plan?.name || '').trim()
   if (!name) return { kind: 'practice', reason: 'empty' }
 

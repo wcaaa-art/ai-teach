@@ -2,8 +2,8 @@
 // 离线构建稠密向量索引：把真题片段压成定长稠密向量，产物随项目分发。
 // 运行时只读文件、只算点积，不做分词与编码，因此接口延迟不受影响。
 // 产物缺失或损坏时，混合检索会自动退化为纯 BM25，功能不中断。
-import { writeFileSync, readFileSync } from 'node:fs'
-import { gzipSync, gunzipSync } from 'node:zlib'
+import { writeFileSync } from 'node:fs'
+import { gzipSync } from 'node:zlib'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { loadRagIndex } from '../server/rag/index.js'

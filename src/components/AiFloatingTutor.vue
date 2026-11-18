@@ -46,7 +46,8 @@ async function ask(){
 }
 </script>
 <template>
-  <div class="floating-tutor"><el-button type="primary" class="tutor-button" @click="open=!open"><span class="tutor-icon">✦</span><span class="tutor-text">AI 学习助手</span></el-button>
+  <div class="floating-tutor">
+<el-button type="primary" class="tutor-button" @click="open=!open"><span class="tutor-icon">✦</span><span class="tutor-text">AI 学习助手</span></el-button>
     <div v-if="open" class="tutor-panel surface"><div class="tutor-title"><strong>专注小问答</strong><el-button text @click="open=false">×</el-button></div><div class="tutor-messages"><p v-if="!messages.length" class="muted">卡住时可以问我，我会拆解思路和知识点，不直接给完整答案</p><template v-for="(message,index) in messages" :key="index"><AgentTrace v-if="message.role === 'assistant'" :thinking="message.thinking || ''" :tools="message.tools || []" :streaming="Boolean(message.streaming)" /><div v-if="message.content" :class="['bubble',message.role]" v-html="formatMathText(message.content)"></div><AnswerCitations v-if="message.role === 'assistant' && !message.streaming && message.citations?.length" :citations="message.citations" :max="2" /><div v-if="message.role === 'assistant' && message.content && (message.source || message.guard)" class="float-answer-meta"><SourceBadge :source="message.guard || message.source" /></div></template></div><div class="tutor-input"><el-input v-model="question" size="small" placeholder="输入一个小问题…" @keyup.enter="ask"/><el-button size="small" type="primary" :loading="loading && !streaming" :disabled="streaming" @click="ask">问</el-button></div></div>
   </div>
 </template>

@@ -45,7 +45,6 @@ export function generatePractice({ grade, subject, name, questionCount, recentSt
   const chapter = resolveChapter({ grade, subject, name })
   if (!chapter) return { questions: [], chapter: null, source: 'no-chapter', requested: count }
 
-  const chapters = [chapter]
   const edition = resolveTextbookEdition(subject, '').edition
   // 练习计划要严格按计划名里的题量出题，不走章节测试的 5~8 题钳制。
   // 题型配比：单选为主，穿插少量填空/解答，模拟真实练习。
